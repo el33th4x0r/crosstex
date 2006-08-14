@@ -1,0 +1,3 @@
+@conference{sosp, longname = "Symposium on Operating Systems Principles", shortname = "SOSP"}
+@conference{sosp, longname = "Symposium on Operating Systems Principles", shortname = "SOSP",}
+@conference{sosp, longname = "Symposium on Operating Systems Principles\" and Stuff", shortname = "SOSP",}

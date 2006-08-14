@@ -1,0 +1,8 @@
+@inproceedings{udi,
+      author = "Udi Wieder and Moni Naor",
+      title = "{A Simple Fault Tolerant Distributed Hash Table}",
+      booktitle = iptps,
+      address = Berkeley,
+      month = feb,
+      year = 2003
+}

@@ -1,0 +1,392 @@
+#! /usr/bin/env python
+#
+# CROSSTEX: This is a new, object-oriented cross-referencing engine, to
+#         replace BIBTEX.
+#
+# Author: Emin Gun Sirer
+# (c) August 2006, See the file COPYING for copyright info
+#
+#         Features:
+#         Object-oriented: Need only enter conference, workshop, venue, etc
+#            information once, no need to reenter everything under every descriptor
+#            as is required in the relational bibtex model
+#         Can generate short or long form references: Suitable for the space crunch as well
+#            as formal references.
+#         Capitalization works: Things get capitalized the way they appear in the references.
+#         Include files: A bibliography can be broken up into modular units.
+#         Sanity checking: Running crosstex on a bib file will check all entries for conformance.
+#         Backwards compatible with bibtex: at least, for reasonable bib files
+#         Can generate bibtex output: if you must use a bibtex style file, you can
+#
+import sys
+import string
+import crosstexobjects
+import crosstexstyles
+
+citations = []
+styleobj = crosstexstyles.plain()
+strtbl = {}
+preambletbl = {}
+nstrings = 0
+npreambles = 0
+db = crosstexobjects.objectfarm()
+
+def getstring(remainder,curpos):
+    str = "\""
+    lastchar = 'X'
+    line = ""
+    for i in range(1,len(remainder)):
+        charc = remainder[i]
+        str += charc
+        if lastchar != '\\' and charc == "\"":
+            line = remainder[i+1:]
+            break;
+        lastchar = charc
+    if str[-1] != "\"":
+        print "error: string ", str, " is not properly terminated on a single line", curpos
+    return (str, line)
+
+def getbibtexbracestring(remainder,curpos):
+    str = "\""
+    lastchar = 'X'
+    line = ""
+    nesting = 0
+    for i in range(0,len(remainder)):
+        charc = remainder[i]
+        str += charc
+        if lastchar != '\\' and charc == "}":
+            if nesting == 0:
+                line = remainder[i+1:]
+                break;
+            else:
+                nesting -= 1
+        elif lastchar != '\\' and i != 0 and charc == "{":
+                nesting += 1
+        lastchar = charc
+    if str[-1] != "}":
+        print "error: string ", str, " is not properly terminated on a single line", curpos
+    str += "\""
+    return (str, line)
+
+def getidentifier(remainder, ingeneric):
+    str = ""
+    lastchar = 'X'
+    line = ""
+    for i in range(0,len(remainder)):
+        charc = remainder[i]
+        if lastchar != '\\' and (charc == "," or charc == "}" or (ingeneric == 1 and charc == "]")):
+            line = remainder[i:]
+            break;
+        str = "%s%c" % (str, charc)
+        lastchar = charc
+    return (str, line)
+
+def parseauxfile(infilename, options):
+    if infilename[-4:] != ".aux":
+        infilename = infilename + ".aux"
+    if options["dump-files"]:
+        print "Processing file", infilename, "..."
+    infile = open(infilename, 'r')
+    parseaux(infile, infilename, options)
+    infile.close()
+
+# parses the AUX file and builds a list of citations
+def parseaux(instream, infilename, options):
+    global citations
+    while 1:
+        line = instream.readline()
+        if not line:
+            break
+        if line[0:9] == "\\citation":
+            cite = line[10:].strip().rstrip("}")
+            if cite.find(" ") >= 0:
+                print "citation with empty space \"%s\"" % cite
+                if citations != []:
+                    print "    last good citation was", citations[len(citations)-1]
+            cite = cite.strip(", 	")
+            if cite == "":
+                print "empty citation, check for commas in \\cite{} commands"
+                if citations != []:
+                    print "    last good citation was", citations[len(citations)-1]
+            if cite not in set(citations):
+                citations += [cite]
+        elif line[0:9] == "\\bibstyle":
+            sname = line[10:].rstrip().rstrip("}")
+            try:
+                styleobj = getattr(crosstexstyles, sname)()
+            except:
+                print "style %s not found" % sname
+                sys.exit(1)
+        elif line[0:8] == "\\bibdata":
+            fname = line[9:].rstrip().rstrip("}")
+            parsextxfile(fname, options)
+            
+def parsextxfile(infilename, options):
+    if infilename[-4:] != ".xtx":
+        infilename = infilename + ".xtx"
+    if options["dump-files"]:
+        print "Processing file", infilename, "..."
+    infile = open(infilename, 'r')
+    parsextx(infile, infilename, options)
+    infile.close()
+
+# parses the XTX file and builds an object hierarchy
+def parsextx(instream, infilename, options):
+    #
+    # main filtering
+    #
+    lineno = 0
+    ingeneric = 0
+    global nstrings, npreambles, strtbl, preambletbl
+    while 1:
+        lineno = lineno + 1
+        curpos = "%s:%d" % (infilename,lineno)
+        line = instream.readline()
+        if not line:
+            break
+        while line.lstrip() != "":
+            line = line.lstrip()
+            if line[0] == '#':
+                break
+            if line[0] == '%':
+                break
+            if line[0:9].lower() == "@include ":
+                filename = string.split(line)[1]
+                parsextxfile(filename, options)
+                break
+            if line[0:7].lower() == "@string":
+                strtbl[nstrings] = line.strip()
+                nstrings += 1
+
+                objname = string.split(line.lower(), "{")[0].strip("@{ 	")
+                rest = string.split(line,"{")[1]
+                key = rest[:rest.find("=")].strip() 
+                rest = rest[rest.find("=")+1:].strip().rstrip("}")
+
+                strobj = crosstexobjects.stringentry()
+                strobj.setkey(key,curpos)
+                strobj.setvalue(rest,curpos)
+                db.putobject(strobj, curpos)
+                break
+            if line[0:9].lower() == "@preamble":
+                preambletbl[nstrings] = line.strip()
+                npreambles += 1
+                break
+            if line[0] == ",":
+                line = line[1:]
+                continue
+            if line[0] == "}":
+                curobj.endobj(curpos)
+                db.putobject(curobj, curpos)
+                curobj = crosstexobjects.NoObject()
+                line = line[1:]
+                continue
+            if line[0] == "[":
+                ingeneric = 1
+                line = line[1:]
+                continue
+            if line[0] == "]":
+                ingeneric = 0
+                line = line[1:]
+                continue
+            if line[0] == "@":
+                objname = string.split(line.lower(), "{")[0].strip("@{ 	")
+                rest = string.split(line,"{")[1]
+                key = rest[:rest.find(",")].strip() 
+                try:
+                    curobj = getattr(crosstexobjects, objname)()
+                except:
+                    curobj = crosstexobjects.NoObject()
+                    print "error: object type", objname, "is not defined at ", curpos
+                    line = ""
+                    continue
+                curobj.beginobj(curpos)
+                curobj.setkey(key, curpos)
+                #
+                # if there is additional text on the line besides the key,
+                # fall through here and process it
+                #
+                if len(string.split(line,",")) > 1:
+                    line = string.join(string.split(line,",")[1:],",")
+                    if line.lstrip() == "":
+                        continue
+                else:
+                    continue
+            tokens = line.split()
+            if tokens[0].find("=") > 0:
+                fieldname = tokens[0].lower().split("=")[0]
+                equals = "="
+                remainder = line[line.find("=")+1:]
+            else:
+                fieldname = tokens[0].lower()
+                equals = tokens[1]
+                remainder = string.join(tokens[2:])
+            # check to make sure it's a valid fieldname
+            if string.strip(fieldname, "abcdefghijklmnopqrstuvwxyz_") != "":
+                print "error: fieldname ", fieldname, " contains invalid characters at", curpos
+                line = ""
+                continue
+            if equals != "=":
+                print "error: fieldname ", fieldname, " is followed by something other than an equals sign at", curpos
+                line = ""
+                continue
+            # if the value is a string, collect till the end of the string
+            remainder = remainder.lstrip()
+            if remainder[0] == "\"":
+                str, line = getstring(remainder,curpos)
+            elif remainder[0] == "{":
+                str, line = getbibtexbracestring(remainder,curpos)
+            else:
+                str, line = getidentifier(remainder,ingeneric)
+
+            # we'll invoke setFIELDNAME if it exists
+            # if not, we'll invoke setfield
+            if ingeneric:
+                mname = "set%scontext" % fieldname
+            else:
+                mname = "set%s" % fieldname
+            try:
+                if fieldname == "key":
+                    curobj.setfield(fieldname, str, curpos)
+                else:
+                    method = getattr(curobj.__class__, mname)
+                    args = (str, curpos)
+                    result = method(curobj, *args)
+            except:
+                curobj.setfield(fieldname, str, curpos)
+
+def usage():
+    print "crosstex [options] filename"
+    print "  --use-long-conferencenames:\tuse long conference names (default)"
+    print "  --no-use-long-conferencenames:use short conference names"
+    print "  --use-long-monthnames:\tuse full month names (default)"
+    print "  --no-use-long-monthnames:\tuse three/four letter short month prefix"
+    print "  --use-long-statenames:\tuse full state name (default)"
+    print "  --no-use-long-statenames:\tuse use two letter abbreviation for state"
+    print "  --use-long-countrynames:\tuse full country name (default)"
+    print "  --no-use-long-countrynames:\tuse short country name where possible"
+    print "  --use-long-journalnames:\tuse full journal name (default)"
+    print "  --no-use-long-journalnames:\tuse short journal name where possible"
+    print "  --add-proceedingsof:\t\tadd \"Proceedings of the\" for conf and workshop publications"
+    print "  --add-procof:\t\t\tadd \"Proc. of\" for conf and workshop publications"
+    print "  --use-inforarticles:\t\t\tadd \"In\" for articles"
+    print "  --check:\t\t\tsanity check the input (default)"
+    print "  --no-check:\t\t\tskip checking input, generate few complaints"
+    print "  --dump-locations:\t\tdump the location data for debugging"
+    print "  --dump-conferences:\t\tdump the conference data for debugging"
+    print "  --dump-workshops:\t\tdump the workshop data for debugging"
+    print "  --dump-files:\t\t\tdump the input files processed"
+    print "  --xtx2bib:\t\t\tgenerate bib file"
+    sys.exit(1)
+
+options = {}
+options["use-long-monthnames"] = 1
+options["use-long-statenames"] = 1
+options["use-long-countrynames"] = 1
+options["use-long-conferencenames"] = 1
+options["use-long-journalnames"] = 1
+options["use-initials"] = 0
+options["use-citebyinitial"] = 0
+options["use-citebyfullname"] = 1
+options["use-sortcitations"] = 1
+options["add-proceedingsof"] = 0
+options["add-procof"] = 0
+options["use-inforarticles"] = 0
+options["xtx2bib"] = 0
+options["check"] = 1
+options["dump-locations"] = 0
+options["dump-conferences"] = 0
+options["dump-workshops"] = 0
+options["dump-files"] = 0
+
+if int(len(sys.argv) == 0):
+    usage()
+
+# the symlink from "xtx2bib" to this file should turn on the xtx2bib option
+
+pathcomponents = sys.argv[0].split("/")
+basename = pathcomponents[len(pathcomponents)-1]
+options[basename] = 1
+
+nopt = 1
+for opt in sys.argv[1:]:
+    if opt == "--help":
+        usage()
+    elif len(opt) >= 5 and opt[0] == "-" and opt[1] == "-" and opt[2] == "n" and opt[3] == "o" and opt[4] == "-":
+        options[opt[5:]] = 0
+        nopt += 1
+    elif len(opt) >= 2 and opt[0] == "-" and opt[1] == "-":
+        options[opt[2:]] = 1
+        nopt += 1
+
+for infilename in sys.argv[nopt:]:
+    if infilename[-4:] == ".xtx":
+        parsextxfile(infilename, options)
+    else:
+        parseauxfile(infilename, options)
+        bblfilename = infilename + ".bbl"
+        
+    if options["xtx2bib"] > 0:
+        for i in strtbl:
+            print strtbl[i]
+        print ""
+        for i in preambletbl:
+            print preambletbl[i]
+        print ""
+
+    if options["dump-locations"]:
+        print "LOCATIONS:"
+        for key in db._namespaces["location"]:
+            loc = db._namespaces["location"][key]
+            loc.promote(db, 0, options)
+            print key, loc
+            
+    if options["dump-conferences"]:
+        print "CONFERENCES:"
+        for key in db._namespaces["conference"]:
+            conf = db._namespaces["conference"][key]
+            print key,conf._longname
+
+    if options["dump-workshops"]:
+        print "WORKSHOPS:"
+        for key in db._namespaces["workshop"]:
+            conf = db._namespaces["workshop"][key]
+            print key,conf._longname
+
+    types = set(crosstexobjects.citeabletypes)
+
+    # loop over all entries in order of their definition and fill in missing data
+    for (type, key) in db._definitions:
+        if type in types:
+            paper = db._namespaces[type][key]
+            paper.promote(db, 0, options)
+
+    # check to see if an object in one namespace shares a key with objects in others
+    if options["check"]:
+        for (type, key) in db._definitions:
+            if type in types:
+                for t in types:
+                    if t != type and db._namespaces.has_key(t) and db._namespaces[t].has_key(key):
+                        obj1 = db._namespaces[type][key]
+                        obj2 = db._namespaces[t][key]
+                        print "%s: object of type %s has identical key to object of type %s defined at %s" % (obj1._beginline, obj1.myname(), obj2.myname(), obj2._beginline)
+                        
+    # now loop over all entries and do checking or conversion
+    if options["check"] or options["xtx2bib"]:
+        for (type, key) in db._definitions:
+            if type in types:
+                paper = db._namespaces[type][key]
+                if options["check"]:
+                    paper.check()
+                if options["xtx2bib"]:
+                    paper.tobibtex()
+
+    if not options["xtx2bib"]:
+        for c in citations:
+            styleobj.cite(c, db, options)
+
+        bblfile = open(bblfilename, 'w')
+        styleobj.emitcites(bblfile, preambletbl, db, options)
+        bblfile.close()
+
+    sys.exit(0)

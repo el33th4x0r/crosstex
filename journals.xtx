@@ -1,0 +1,39 @@
+%
+% Journals and magazines
+%
+
+% ACM pubs
+@journal{tocs, shortname = "ACM ToCS", longname = "ACM Transactions on Computer Systems"}
+@journal{ton, shortname = "ToN", longname = "IEEE\slash ACM Transactions on Networking"}
+@journal{tods, shortname = "ACM ToDS", longname = "ACM Transactions on Database Systems"}
+@journal{toplas, shortname = "ACM ToPLaS", longname = "ACM Transactions on Programming Languages and Systems"}
+@journal{tomacs, shortname = "ACM ToMaCS", longname =	"ACM Transactions on Modeling and Computer Simulation"}
+@journal{tomacs_scale, shortname = "ACM ToMaCS", longname = "ACM Transactions on Modeling and Computer Simulation, Special Issue on Scalable Network Modeling and Simulation"}
+@journal{cacm, shortname = "CACM", longname = "Communications of the ACM"}
+@journal{jacm, shortname = "JACM", longname = "Journal of the ACM"}
+@journal{acmcs, name = "ACM Computing Surveys"}
+
+% SIG pubs
+@journal{osr, shortname = "OSR", longname = "SIGOPS Operating Systems Review"}
+@journal{ccr, shortname = "CCR", longname = "SIGCOMM Computer Communications Review"}
+
+% IEEE pubs 
+@journal{ieeese, name =		"IEEE Transactions on Software Engineering."}
+@journal{ieeetc, shortname = "IEEE ToC", longname = "IEEE Transactions on Computing"}
+@journal{ieeeis, shortname = "IEEE IS", longname = "IEEE Intelligent Systems"}
+@journal{ieeeis_selfstar, shortname = "IEEE IS", longname =  "IEEE Intelligent Systems, Special Issue on Self-Management through Self-Organization in Information Systems"}
+@journal{jtopds,	name = "IEEE Transactions on Parallel and Distributed Systems"}
+@journal{ieeecomputer, name =	"IEEE Computer"}
+@journal{ieeeconcurrency, name = "IEEE Concurrency"}
+@journal{ieeesac, name =	"IEEE Journal on Selected Areas in Communications"}
+@journal{ieeenetwork, name =	"IEEE Network Magazine"}
+@journal{ieeesecpriv, name =	"IEEE Security and Privacy"}
+
+% misc
+@journal{ibmsj, name =		"IBM Systems Journal"}
+@journal{login, name =		";login:"}
+@journal{scp, name =		"Science of Computer Programming"}
+@journal{compnet, name =	"Computer Networks"}
+@journal{cst, name =		"Computer Science and Technology"}
+@journal{mmsj, name =		"Multimedia Systems Journal"}
+@journal{dse, name =		"Distributed Systems Engineering"}

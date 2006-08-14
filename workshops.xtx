@@ -1,0 +1,85 @@
+% Workshops
+@workshop{hotos,
+  shortname = "HotOS Workshop",
+  longname = "Workshop on Hot Topics in Operating Systems"
+  [year=2005] address=SantaFe,
+  [year=2003] address=Lihue, month=may
+  [year=2001] address=Elmau, month=may
+  [year=1999] address=Rio Rico, month=mar,
+  [year=1997] address=CapeCod, month=may,
+  [year=1995] address=OrcasIsland,
+}
+@workshop{hotnets,
+  shortname = "HotNets Workshop",
+  longname = "Workshop on Hot Topics in Networks"
+  [year=2006] address=Irvine, month=nov,
+  [year=2005] address=CollegePark, month=nov,
+  [year=2004] address=SanDiego, month=nov,
+  [year=2003] address=Boston, month=nov,
+  [year=2002] address=Princeton, month=nov,
+}
+@workshop{worlds,
+  shortname = "WORLDS",
+  longname = "Workshop on Real, Large Distributed Systems", 
+  [year=2006] address=Seattle, month=nov,
+  [year=2005] address=SF, month=dec,
+  [year=2004] address=SF, month=dec,
+}
+@workshop{iptps,
+  shortname = "IPTPS Workshop",
+  longname = "International Workshop on Peer-to-Peer Systems"
+  [year=2006] address=SantaBarbara, month=feb,
+  [year=2005] address=Ithaca, month=feb, editor="Miguel Castro and Robbert van Renesse", publisher="Springer Lecture Notes in Computer Science 3640",
+  [year=2004] address=LaJolla, month=feb, editor="Geoffrey M. Voelker and Scott Shenker", publisher="Springer Lecture Notes in Computer Science 3279",
+  [year=2003] address=Berkeley, month=feb, editor="M. Frans Kaashoek and Ion Stoica", publisher="Springer Lecture Notes in Computer Science 2735",
+  [year=2002] address=CambridgeMA, month=mar, editor="Peter Druschel and M. Frans Kaashoek and Antony I. T. Rowstron", publisher="Springer Lecture Notes in Computer Science 2429", isbn="3-540-44179-4",
+}
+@workshop{p2pecon,
+  shortname = "P2PECON Workshop", 
+  longname = "Workshop on the Economics of Peer-to-Peer Systems"
+  [year=2005] address=Philadelphia, month=aug,
+  [year=2004] address=CambridgeMA,
+  [year=2003] address=Berkeley, month=jun,
+}
+@workshop{esigops,
+  shortname = "ESIGOPS Workshop",
+  longname = "European SIGOPS Workshop"
+  [year=1998] address=Sintra,
+}
+@workshop{wcsss,
+  shortname = "WCSSS Workshop",
+  longname = "Workshop on Compiler Support for System Software"
+  [year=1999] address=Atlanta, month=may,
+  [year=1997] address=Tucson, month=feb,
+}
+@workshop{wwwcaching,
+  shortname = "WWW Caching Workshop",
+  longname = "International WWW Caching Workshop"
+  [year=1999] address=SanDiego, month=mar, 
+  [year=1998] address=Manchester, month=jun,  
+  [year=1997] address=Boulder, month=jun,  
+  [year=1996] address=Warsaw, month=sep,  
+}
+@workshop{imw,
+  shortname = "SIGCOMM Internet Measurement Workshop",
+  longname = "ACM SIGCOMM Internet Measurement Workshop"
+  [year=2002] address=Marseille, month=nov,
+  [year=2001] address=SF, month=nov,
+}
+@workshop{wise,
+  shortname = "WISE",
+  longname = "ACM Workshop on Wireless Security"
+  [year=2002] address=Atlanta, month=sep,
+}
+@workshop{irdps,        shortname = "IRDPS Workshop", longname = "International Workshop on Reliable Peer-to-Peer Distributed Systems"}
+@workshop{ncatnc,	shortname = "NCA-Trusted Network Computing Workshop", longname = "International Symposium on Network Computing and Applications, Trusted Network Computing Workshop"}
+@workshop{ieeeia,	longname = "IEEE Workshop on Internet Applications"}
+@workshop{iwda,		longname = "International Workshop on Distributed Algorithms"}
+@workshop{ngc,		longname = "Workshop on Networked Group Communications"}
+@workshop{wccd,		longname = "International Workshop on Web Content Caching and Distribution"}
+@workshop{ortds,	longname = "IEEE International Workshop on Object-oriented Real-time Dependable Systems"}
+@workshop{iwads,	longname = "International Workshop on Adaptive Distributed Systems"}
+@workshop{blackhat,	longname = "Black Hat USA"}
+@workshop{pkirdw,	longname = "PKI Research and Development Workshop"}
+@workshop{iwd,		longname = "International Workshop on the Web and Databases"}
+

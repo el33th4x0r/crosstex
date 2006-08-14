@@ -1,0 +1,16 @@
+@include dates
+@include locations
+
+@conference{nsdi,	shortname = "NSDI",	longname = "Symposium on Networked System Design and Implementation", 
+  [year = 2006] month = may, address = SanJose,
+  [year = 2005] month = may, address = Boston,
+  [year = 2004] month = mar, address = SF,
+}
+
+@inproceedings{planetlab,
+      title = "{Operating System Support for Planetary-Scale Network Services}",
+      author  = "A. Bavier and M. Bowman and B. Chun and D. Culler and S. Karlin and S. Muir and L. Peterson and T. Roscoe and T. Spalink and M. Wawrzoniak",
+      booktitle = nsdi,
+      year = 2004,
+      pages = "253--266"
+}

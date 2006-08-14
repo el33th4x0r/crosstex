@@ -1,0 +1,335 @@
+%
+% Emin Gun Sirer
+%
+
+% Journals and magazines
+@string{tocs=		"ACM Transactions on Computer Systems"}
+@string{ton=		"IEEE\slash ACM Transactions on Networking"}
+@string{tods=		"ACM Transactions on Database Systems"}
+@string{toplas=		"ACM Transactions on Programming Languages and Systems"}
+@string{tomacs=		"ACM Transactions on Modeling and Computer Simulation"}
+@string{tomacs_scale=	"ACM Transactions on Modeling and Computer Simulation, Special Issue on Scalable Network Modeling and Simulation"}
+@string{jtopds=		"IEEE Transactions on Parallel and Distributed Systems"}
+@string{acmcs=		"ACM Computing Surveys"}
+@string{cacm=		"Communications of the ACM"}
+@string{jacm=		"Journal of the ACM"}
+@string{ibmsj=		"IBM Systems Journal"}
+@string{ieeese=		"IEEE Transactions on Software Engineering."}
+@string{ieeetc=		"IEEE Transactions on Computing"}
+@string{ieeesac=	"IEEE Journal on Selected Areas in Communications"}
+@string{ieeeis=		"IEEE Intelligent Systems"}
+@string{ieeeis_selfstar="IEEE Intelligent Systems, Special Issue on Self-Management through Self-Organization in Information Systems"}
+@string{ieeecomputer=	"IEEE Computer"}
+@string{ieeeconcurrency="IEEE Concurrency"}
+@string{ieeesac=	"IEEE Journal on Selected Areas in Communications"}
+@string{ieeenetwork=	"IEEE Network Magazine"}
+@string{ieeesecpriv=	"IEEE Security and Privacy"}
+@string{osr=		"SIGOPS Operating Systems Review"}
+@string{ccr=		"SIGCOMM Computer Communications Review"}
+@string{login=		";login:"}
+@string{scp=		"Science of Computer Programming"}
+@string{compnet=	"Computer Networks"}
+@string{cst=		"Computer Science and Technology"}
+@string{rfc=		"Request for Comments"}
+@string{mmsj=		"Multimedia Systems Journal"}
+@string{dse=		"Distributed Systems Engineering"}
+
+@string{proc=		"Proceedings of the "}
+
+@include dates
+@include locations
+
+% Conferences
+@conference{sosp,
+  shortname = "SOSP",
+  longname = "Symposium on Operating Systems Principles", 
+  [year = 2007] address = BrettonWoods, month = oct,
+  [year = 2005] address = Brighton, month = oct,
+  [year = 2003] address = BoltonLanding, month = oct,
+  [year = 2001] address = Banff, month = oct,
+  [year = 1999] address = KiawahIsland, month = dec,
+  [year = 1997] address = SaintMalo, month = oct,
+  [year = 1995] address = CopperMountain,
+  [year = 1993] address = Asheville, month = oct,
+  [year = 1991] address = PacificGrove, month = oct,
+  [year = 1989] address = LitchfieldPark, month = dec,
+  [year = 1987] address = Austin, month = nov,
+  [year = 1985] address = OrcasIsland, month = dec,
+  [year = 1983] address = BrettonWoods, month = oct,
+  [year = 1981] address = PacificGrove, month = dec,
+  [year = 1979] address = PacificGrove, month = dec,
+  [year = 1977] address = WestLafayette, month = nov,
+  [year = 1975] address = Austin, month = nov,
+  [year = 1973] address = YorktownHeights, month = oct,
+  [year = 1971] address = PaloAlto, month = oct,
+  [year = 1969] address = Princeton, month = oct,
+  [year = 1967] address = Gatlinburg, month = may,
+}
+@conference{osdi,
+  shortname = "OSDI",
+  longname = "Symposium on Operating System Design and Implementation", 
+  [year = 2006] address = Seattle, month = nov,
+  [year = 2004] address = SF, month = dec,
+  [year = 2002] address = Boston, month = dec,
+  [year = 2000] address = SanDiego, month = oct,
+  [year = 1998] address = NewOrleans, month = oct,
+  [year = 1996] address = Seattle, month = oct,
+  [year = 1994] address = Monterey, month = nov,
+}
+@conference{nsdi,
+  shortname = "NSDI",
+  longname = "Symposium on Networked System Design and Implementation", 
+  [year = 2006] month = may, address = SanJose,
+  [year = 2005] month = may, address = Boston,
+  [year = 2004] month = mar, address = SF,
+}
+@conference{sigcomm,
+  shortname = "SIGCOMM",
+  longname = "SIGCOMM Conference",
+  [year=2006] address=Piza, month=sep, 
+  [year=2005] address=Philadelphia, month=sep, 
+  [year=2004] address=Portland, month=aug, 
+  [year=2003] address=Karlsruhe, month=aug,
+  [year=2002] address=Pittsburgh, month=aug,
+  [year=2001] address=SanDiego, month=aug,
+  [year=2000] address=Stockholm, month=aug,
+  [year=1999] address=CambridgeMA, month=aug,
+  [year=1998] address=Vancouver, month=aug,
+  [year=1997] address=Cannes, month=sep,
+  [year=1996] address=Stanford, month=aug,
+  [year=1995] address=CambridgeMA, month=aug,
+  [year=1994] address=London, month=aug,
+  [year=1993] address=SF, month=sep,
+  [year=1992] address=Baltimore, month=aug,
+  [year=1991] address=Zurich, month=sep,
+  [year=1990] address=Philadelpia, month=sep,
+  [year=1989] address=Austin, month=sep,
+  [year=1988] address=Stanford, month=aug,
+  [year=1986] address=Stowe, month=aug,
+  [year=1985] address=BC, month= sep,
+}
+@conference{infocom,
+  shortname = "INFOCOM",
+  longname = "INFOCOM Conference",
+  [year=2006] address=Barcelona,
+  [year=2005] address=Miami,
+  [year=2004] address=HongKong, month=mar,
+  [year=2003] address=SF, month=mar,
+  [year=2002] address=NYC, month=jun,
+  [year=2001] address=Anchorage, month=apr,
+  [year=2000] address=TelAviv, month=mar,
+  [year=1999] address=NYC, month=mar,
+  [year=1998] address=SF, month=mar,
+  [year=1997] address=Kobe, month=apr,
+  [year=1996] address=SF, month=mar,
+  [year=1995] address=Boston, month=apr,
+  [year=1994] address=Toronto, month=jun,
+  [year=1993] address=SF, month=mar,
+  [year=1992] address=Florence, month=may,
+  [year=1991] address=BalHarbour, month=apr,
+  [year=1990] address=SF, month=jun,
+  [year=1989] address=Ottawa, month=apr,
+  [year=1988] address=NewOrleans,
+  [year=1987] address=SF,
+  [year=1986] address=Miami,
+  [year=1985] address=DC,
+  [year=1984] address=SF, month=apr,
+  [year=1983] address=SanDiego, month=apr
+  [year=1982] address=LasVegas,
+}
+@conference{imc,	
+  shortname = "IMC",	
+  longname = "Conference on Internet Measurement"
+  [year=2005] address=Berkeley, month=oct,
+  [year=2004] address=Taormina, month=oct,
+  [year=2003] address=MiamiBeach, month=oct,
+
+}
+@conference{mobisys,
+  shortname = "MobiSys",	
+  longname = "International Conference on Mobile Systems, Applications, and Services"
+  [year=2006] address=Uppsala, month=jun,
+  [year=2005] address=Seattle, month=jun,
+  [year=2004] address=Boston, month=jun,
+  [year=2003] address=SF,
+}
+@conference{mobihoc,
+  shortname = "MobiHoc",
+  longname = "International Symposium on Mobile Ad Hoc Networking and Computing"
+  [year=2005] address=UrbanaChampaign, month=may,
+  [year=2004] address=Tokyo, month=may,
+  [year=2003] address=Annapolis, month=jun,
+  [year=2002] address=Lausanne, month=jun,
+  [year=2001] address=LongBeach, month=oct,
+  [year=2000] address=Boston,
+}
+@conference{usits, 
+  shortname = "USITS",
+  longname = "USENIX Symposium on Internet Technologies and Systems"
+  [year=2003] address=Seattle, month=mar,
+  [year=2001] address=SF, month=mar,
+  [year=1999] address=Boulder, month=oct,
+  [year=1997] address=Monterey, month=dec,
+}
+@conference{sigmetrics,
+  shortname = "SIGMETRICS", 
+  longname = "SIGMETRICS Conference on Measurement and Modeling of Computer Systems"
+  [year=2006] address=SaintMalo, 
+  [year=2005] address=Banff, month=jun,
+  [year=2004] address=NYC, month=jun,
+  [year=2003] address=SanDiego, month=jun,
+  [year=2002] address=MarinaDelRay, month=jun,
+  [year=2001] address=CambridgeMA, month=jun,
+  [year=2000] address=SantaClara, month=jun,
+  [year=1999] address=Atlanta, month=jun,
+  [year=1998] address=Madison, month=jun,
+  [year=1997] address=Seattle, month=jun,
+  [year=1996] address=Philadelphia, month=may,
+  [year=1995] address=Ottawa, month=may,
+  [year=1994] address=Nashville, month=may,
+  [year=1993] address=SantaClara, month=jun,
+  [year=1992] address=Newport, month=jun,
+  [year=1991] address=SanDiego, month=may,
+  [year=1990] address=Boulder, month=may,
+  [year=1989] address=Berkeley, month=may,
+  [year=1988] address=SantaFe, month=may,
+  [year=1987] address=Banff, month=may,
+  [year=1986] address=NCSU, month=may,
+  [year=1985] address=Austin, month=aug,
+  [year=1984] address=CambridgeMA, month=aug,
+  [year=1982] address=CollegePark, month=apr,
+  [year=1981] address=LasVegas, month=sep,
+}
+@conference{oakland,	longname = "IEEE Symposium on Security and Privacy"}
+@conference{usenixsecurity,	longname = "USENIX Security Symposium"}
+@conference{usenixvm,	longname = "USENIX Virtual Machine Research and Technology Symposium"}
+@conference{usenix,	longname = "USENIX Technical Conference"}
+@conference{usenixsa,	shortname = "USENIX SAC",	longname = "USENIX Systems Administration Conference"}
+@conference{podc,	shortname = "PODC",	longname = "ACM Symposium on Principles of Distributed Computing"}
+@conference{sacmat,	shortname = "SACMAT",	longname = "Symposium on Access Control Models and Technologies"}
+@conference{www,	shortname = "WWW",	longname = "International World Wide Web Conference"}
+@conference{sigcse,	shortname = "SIGCSE",	longname =  "Technical Symposium on Computer Science Education"}
+@conference{ibmwatson,	longname = "Watson Conference on the Interaction between Architecture, Circuits, and Compilers"}
+@conference{hawaiisystems,	longname = "Annual Hawaii International Conference on System Sciences"}
+@conference{dsl,	shortname = "DSL",	longname = "Conference on Domain-Specific Languages"}
+@conference{starconf,	shortname = "STAR",	longname = "International Conference on Software Testing And Review"}
+@conference{sas,	shortname = "SAS",	longname = "Static Analyses Symposium"}
+@conference{sati,	longname = "Symposium on Applications and the Internet"}
+@conference{vldb,	shortname = "VLDB",	longname = "International Conference on Very Large Databases"}
+@conference{focs,	shortname = "FOCS",	longname = "Symposium on Foundations of Computer Science"}
+@conference{stoc,
+  shortname = "STOC",
+  longname = "ACM Symposium on Theory of Computing"
+  [year=2006] address=Seattle,
+  [year=2005] address=Baltimore, month=may,
+  [year=2004] address=Chicago, month=jun,
+  [year=2003] address=SanDiego, month=jun,
+  [year=2002] address=Montreal, month=may,
+  [year=2001] address=Heraklion, month=jul,
+  [year=2000] address=Portland, month=may,
+  [year=1999] address=Atlanta, month=may,
+  [year=1998] address=Dallas, month=may,
+  [year=1997] address=ElPaso, month=may,
+  [year=1996] address=Philadelphia, month=may,
+  [year=1995] address=LasVegas, month=may,
+  [year=1994] address=Montreal, month=may,
+}
+@conference{soda,	shortname = "SODA",	longname = "Symposium on Discrete Algorithms"}
+@conference{calp,	longname = "International Colloquium on Automata, Languages and Programming"}
+@conference{spaa,	shortname = "SPAA",	longname = "Symposium on Parallel Algorithms and Architectures"}
+@conference{icdcs,	shortname = "ICDCS",	longname = "International Conference on Distributed Computing Systems"}
+@conference{itmm,	longname = "ITC Specialist Seminar on Internet Traffic Measurement and Modeling"}
+@conference{globecon,	longname = "IEEE Global Telecommunications Conference"}
+@conference{ieeeccc,	longname = "IEEE International Conference on Computer Communications"}
+@conference{icdsp,	longname = "IFIP/ACM International Conference on Distributed Systems Platforms"}
+@conference{ncsc,	longname = "National Computer Security Conference"}
+@conference{crypt,	longname = "International Cryptology Conference"}
+@conference{hpca,	shortname = "HPCA",	longname = "International Symposium on High Performance Computer Architecture"}
+@conference{collaborative,	longname = "International Conference on Collaborative Computing"}
+@conference{ics,	shortname = "ICS",	longname = "International Conference on Supercomputing"}
+@conference{ndss,	shortname = "NDSS",	longname = "Network and Distributed System Security Symposium"}
+@conference{ccs,	longname = "Conference on Computer and Communications Security"}
+@conference{digitalid,	longname = "Digital ID World Conference"}
+@conference{ncs,	longname = "National Computer Security Conference"}
+@conference{icnp,	shortname = "ICNP",	longname = "International Conference on Network Protocols"}
+@conference{ftc,	shortname = "FTC",	longname = "International Symposium on Fault-Tolerant Computing"}
+@conference{dsn,	shortname = "DSN",	longname = "International Conference on Dependable Systems and Networks"}
+@conference{isdc,	shortname = "ISDC",	longname = "International Symposium on Distributed Computing"}
+@conference{hpdc,	shortname = "HPDC",	longname = "IEEE Symposium on High Performance Distributed Computing"}
+@conference{rds,	shortname = "RDS",	longname = "IEEE Symposium on Reliable Distributed Systems"}
+@conference{pacrimsdc,	longname = "Pacific Rim Symposium on Dependable Computing"}
+@conference{icpids,	shortname = "ICPIDS",	longname = "IEEE International Conference in Parallel and Distributed Information Systems"}
+@conference{issre,	shortname = "SRE",	longname = "International Symposium on Software Reliability Engineering"}
+@conference{ozcsc,	longname = "Australasian Computer Science Conference"}
+@conference{nca,	shortname = "NCA",	longname = "International Symposium on Network Computing and Applications"}
+@conference{dspodp,	longname = "International Conference and Distributed Systems Platforms and Open Distributed Processing"}
+@conference{globint,	longname = "IEEE Global Internet Symposium"}
+@conference{acsac,	longname = "ACSAC"}
+
+% Workshops
+@workshop{hotos,	shortname = "HotOS Workshop",	longname = "Workshop on Hot Topics in Operating Systems"}
+@workshop{hotnets,	shortname = "HotNets Workshop",	longname = "Workshop on Hot Topics in Networks"}
+@workshop{irdps,        shortname = "IRDPS Workshop", longname = "International Workshop on Reliable Peer-to-Peer Distributed Systems"}
+@workshop{iptps,
+  shortname = "IPTPS Workshop",
+  longname = "International Workshop on Peer-to-Peer Systems"
+  [year=2006] address=SantaBarbara, month=feb,
+  [year=2005] address=Ithaca, month=feb, editor="Miguel Castro and Robbert van Renesse", publisher="Springer Lecture Notes in Computer Science 3640",
+  [year=2004] address=LaJolla, month=feb, editor="Geoffrey M. Voelker and Scott Shenker", publisher="Springer Lecture Notes in Computer Science 3279",
+  [year=2003] address=Berkeley, month=feb, editor="M. Frans Kaashoek and Ion Stoica", publisher="Springer Lecture Notes in Computer Science 2735",
+  [year=2002] address=CambridgeMA, month=mar, editor="Peter Druschel and M. Frans Kaashoek and Antony I. T. Rowstron", publisher="Springer Lecture Notes in Computer Science 2429", isbn="3-540-44179-4",
+}
+@workshop{p2pecon,
+  shortname = "P2PECON Workshop", 
+  longname = "Workshop on the Economics of Peer-to-Peer Systems"
+  [year=2005] address=Philadelphia, month=aug,
+  [year=2004] address=CambridgeMA, month=XXX,
+  [year=2003] address=Berkeley, month=XXX,
+}
+@workshop{esigops,
+  shortname = "ESIGOPS Workshop",
+  longname = "European SIGOPS Workshop"
+  [year=1998] address=Sintra, month=XXX,
+}
+@workshop{wcsss,
+  shortname = "WCSSS Workshop",
+  longname = "Workshop on Compiler Support for System Software"
+  [year=1999] address=, month=,
+  [year=1997] address=, month=,
+}
+@workshop{ncatnc,	shortname = "NCA-TNC Workshop", longname = "International Symposium on Network Computing and Applications, Trusted Network Computing Workshop"}
+@workshop{wwwcaching,	shortname = "WWW Caching Workshop", longname = "International WWW Caching Workshop"}
+@workshop{imw,
+  shortname = "SIGCOMM Internet Measurement Workshop",
+  longname = "ACM SIGCOMM Internet Measurement Workshop"
+  [year=2002] address=Marseille, month=nov,
+  [year=2001] address=SF, month=nov,
+}
+@workshop{ieeeia,	longname = "IEEE Workshop on Internet Applications"}
+@workshop{iwda,		longname = "International Workshop on Distributed Algorithms"}
+@workshop{ngc,		longname = "Workshop on Networked Group Communications"}
+@workshop{wccd,		longname = "International Workshop on Web Content Caching and Distribution"}
+@workshop{ortds,	longname = "IEEE International Workshop on Object-oriented Real-time Dependable Systems"}
+@workshop{iwads,	longname = "International Workshop on Adaptive Distributed Systems"}
+@workshop{wise,		longname = "ACM Workshop on Wireless Security"}
+@workshop{blackhat,	longname = "Black Hat USA"}
+@workshop{pkirdw,	longname = "PKI Research and Development Workshop"}
+@workshop{iwd,		longname = "International Workshop on the Web and Databases"}
+
+@PREAMBLE {"\newcommand{\biburl}[1]{\texttt{#1}}"}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Peer-to-peer
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@inproceedings{kelips,
+      author = "Indranil Gupta and Ken Birman and Prakash Linga and Al Demers and Robert van Rennesse",
+      title = "{Kelips: Building an Efficient and Stable P2P DHT Through Increased Memory and Background Overhead}",
+      booktitle = iptps,
+      address = Berkeley,
+      month = feb,
+      year = 2003
+}
+

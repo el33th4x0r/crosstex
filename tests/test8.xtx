@@ -1,0 +1,7 @@
+@phdthesis{perlman,
+      author = "Radia Perlman",
+      title = "{Network Layer Protocols with Byzantine Robustness}",
+      school = {MIT},
+      year = 1988,
+      url = {http://hdl.handle.net/1721.1/14403}
+}

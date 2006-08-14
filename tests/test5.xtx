@@ -1,0 +1,12 @@
+@article{ ibm-coproc-smith,
+      author= "Sean W. Smith and Steve Weingart",
+      title= "{Building a High-Performance, Programmable Secure Coprocessor}", 
+      journal = compnet,
+      volume = 31,
+      number = 9,
+      month= apr,
+      year= 1999, 
+      pages= "831--860",
+      issn = "1389-1286",
+}
+

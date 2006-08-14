@@ -1,0 +1,110 @@
+\documentclass[10pt]{article}
+\usepackage{array}%For font control in tabular envs
+\renewcommand{\thepage}{} % temporarily turn off the page numbering
+\newcounter{alphacounter}
+\newenvironment{alphlist}
+    {\begin{list}
+        {\arabic{alphacounter}.\ }
+        {\usecounter{alphacounter}
+         \settowidth{\labelwidth}{11.\ }
+         \settowidth{\leftmargin}{~~~11.\ }
+         \setlength{\parsep}{0cm}
+         \setlength{\itemsep}{0cm}
+         \setlength{\topsep}{0cm}
+         \setlength{\partopsep}{0cm}
+        }}{ \end{list} }
+\newcounter{romancounter}
+\renewcommand{\theromancounter}{\roman{romancounter}}
+\newenvironment{romanlist}
+{\begin{list}
+        {\roman{romancounter}.\ }
+        {\usecounter{romancounter}
+         \settowidth{\labelwidth}{11.\ }
+         \settowidth{\leftmargin}{~~~11.\ }
+         \setlength{\parsep}{0cm}
+         \setlength{\itemsep}{0cm}
+         \setlength{\topsep}{0cm}
+         \setlength{\partopsep}{0cm}
+        }}{ \end{list} }
+
+
+%For 1" margins and 6.5"x9" text.
+%\setlength{\textheight}{9.0in}
+\setlength{\textwidth}{5.50in}
+%\setlength{\footheight}{0.0in}
+%\setlength{\topmargin}{0.125in}
+\setlength{\evensidemargin}{0in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\hoffset}{.5in}
+
+\title{Papers by Emin Gun Sirer}
+\author{Emin G\"un Sirer}
+\date{}
+
+%\topmargin=0in
+%\columnwidth=\textwidth
+%\oddsidemargin=0in
+%\evensidemargin=0in
+%\textwidth=6.25in
+%\textheight=8.0in
+\newcommand{\ie}{{\em i\/.e.\/}}
+\newcommand{\eg}{{\em e\/.g.\/}}
+\newcommand{\cf}{{\em c\/.f.\/}}
+\newcommand{\etc}{{\em etc}}
+\newcommand{\omitthis}[1]{}
+
+\pagestyle{plain}
+
+\begin{document}
+\maketitle
+
+\section{Peer-to-Peer Systems}
+
+  Beehive and Honeycomb \cite{corona:login,corona,heuristicsharmful,cobweb:tr,me:rss,me:dns,codons,beehive,corsso,beehive:tr}
+
+  Credence \cite{credence,credence:p2pecon,credence:tr}
+
+  Meridian \cite{closestnode,meridian,meridian:tr:extended,meridian:tr}
+
+  Herbivore \cite{herbivore,herbivore:tr,cliquenet}
+
+  Karma \cite{karma}
+
+\section{Ad Hoc Networks}
+
+  Magnetos \cite{magnetos,magnetos:motivation,magnetos:tr}
+
+  Sextant \cite{sextant},
+
+  SHARP \cite{sharp}
+
+  StagedSim \cite{stagedsim,stagedsim:wcs}
+
+  Optimal Transmission \cite{optxmit}
+
+  Pathset Selection \cite{pathset}
+
+\section{Operating Systems}
+
+  Nexus \cite{dan:paramselect}
+
+  Trickles \cite{trickles}
+
+  Portos \cite{portos}
+
+  Kimera \cite{kimera:scp,kimera,kimera:dsl,kimera:star,kimera:sas,kimera:wcsss,kimera:esigops,kimera:tr}
+
+  Spin \cite{sysprogm3,strands,spin:wcsss2,spin:wcsss1,spin,spin:protection,spin:osr,spin:esigops,spin:tr}
+
+\section{Misc}
+
+ Voltage scaling \cite{voltagescaling}
+
+ Access control for the web \cite{webacl}
+
+\bibliographystyle{plain}
+\bibliography{egs}
+\pagebreak
+
+\end{document}
+

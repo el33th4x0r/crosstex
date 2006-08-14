@@ -1,0 +1,2636 @@
+%
+% Emin Gun Sirer
+%
+
+@include dates
+@include locations
+@include journals
+@include conferences
+@include workshops
+
+@PREAMBLE {"\newcommand{\biburl}[1]{\texttt{#1}}"}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Peer-to-peer
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@inproceedings{planetlab,
+      title = "{Operating System Support for Planetary-Scale Network Services}",
+      author  = "A. Bavier and M. Bowman and B. Chun and D. Culler and S. Karlin and S. Muir and L. Peterson and T. Roscoe and T. Spalink and M. Wawrzoniak",
+      booktitle =  nsdi,
+      year = 2004,
+      pages = "253--266"
+}
+
+% p2p substrates
+
+@inproceedings{mercury,
+author = "A. Bharambe and M. Agrawal and S. Seshan",
+      title = "{Mercury: Supporting Scalable Multi-Attribute Range Queries}",
+      booktitle = sigcomm,
+      year = 2004
+}
+
+@inproceedings{dabek:dht,
+      author = "Frank Dabek and Jinyang Li and Emil Sit and M. Frans Kaashoek and Robert Morris and Chuck Blake",
+      title = "{Designing a DHT for Low Latency and High Throughput}",
+      booktitle = nsdi,
+      year = 2004
+}
+
+@inproceedings{ptrees,
+      author = "Adina Crainiceanu and Prakash. Linga and Johannes Gehrke and Jai Shanmugasundaram",
+      title = "{Querying Peer-to-Peer Networks Using P-Trees}",
+      booktitle = iwd,
+      address = Paris,
+      month = jun,
+      year = 2004
+}
+
+@inproceedings{codeen,
+       author =	 "Limin Park and KyoungSoo Park and Ruoming Pang and Vivek Pai and Larry Peterson",
+       title =	 "{Reliability and Security in the CoDeeN Content Distribution Network}",
+       booktitle = usenix,
+       address = Boston,
+       month =	 jun,
+       year =	 2004,
+}
+
+@inproceedings{kelips,
+      author = "Indranil Gupta and Ken Birman and Prakash Linga and Al Demers and Robert van Rennesse",
+      title = "{Kelips: Building an Efficient and Stable P2P DHT Through Increased Memory and Background Overhead}",
+      booktitle = iptps,
+      address = Berkeley,
+      month = feb,
+      year = 2003
+}
+
+@inproceedings{liskov,
+      author = "Anjali Gupta and Barbara Liskov and Rodrigo Rodrigues",
+      title = "{One Hop Lookups for Peer-to-Peer Overlays}",
+      booktitle = hotos,
+      year = 2003 
+}
+
+@inproceedings{koorde,
+      author = "Frans Kaashoek and David Karger",
+      title = "{Koorde: A Simple Degree-Optimal Distributed Hash Table}",
+      booktitle = iptps,
+      year = 2003
+}
+
+@inproceedings{udi,
+      author = "Udi Wieder and Moni Naor",
+      title = "{A Simple Fault Tolerant Distributed Hash Table}",
+      booktitle = iptps,
+      year = 2003
+}
+
+@article{tapestry,
+      author = "Ben Zhao and Ling Huang and Jeremy Stribling and Sean Rhea and Anthony Joseph and John Kubiatowicz",
+      title = "{Tapestry: A Resilient Global-scale Overlay for Service Deployment}",
+      journal = ieeesac,
+      year = 2003
+}
+
+@techreport{proximity1,
+      author = "Miguel Castro and Peter Druschel and Charlie Hu and Antony Rowstron",
+      title = "{Proximity Neighbor Selection in Tree-Based Structured Peer-to-Peer Overlays}",
+      institution = "Microsoft Research",
+      number = "MSR-TR-2003-52",
+      month = sep,
+      year = 2003
+}
+
+@techreport{proximity2,
+      author = "M. Castro and P. Druschel and Y. Hu and A. Rowstron",
+      title = "{Exploiting Network Proximity in Peer-to-Peer Overlay Networks}",
+      institution = "Microsoft Research",
+      number = "MSR-TR-2003-82",
+      year = 2002
+}
+
+@inproceedings{skipnet,
+      author = "Nicholas Harvey and Michael B. Jones and Stefan Saroiu and Marvin Theimer and Alec Wolman",
+      title = "{SkipNet: A Scalable Overlay Network with Practical Locality Properties}",
+      booktitle = usits,
+      address = Seattle,
+      month = mar,
+      year = 2003
+}
+
+@inproceedings{cohen,
+      author = "Edith Cohen and Scott Shenker",
+      title = "{Replication Strategies in Unstructured Peer-to-Peer Networks}",
+      booktitle = sigcomm,
+      year = 2002
+}
+
+@inproceedings{viceroy,
+      author = "Dahlia Malkhi and Moni Naor and David Ratajczak",
+      title = "{Viceroy:  A Scalable and Dynamic Emulation of the Butterfly}",
+      booktitle = podc,
+      year = 2002
+}
+
+@inproceedings{kademlia,
+      author = "Petar Maymounkov and David Mazieres",
+      title = "{Kademlia: A Peer-to-peer Information System Based on the XOR Metric}",
+      booktitle = iptps,
+      year = 2002
+}
+
+@inproceedings{castro:osdi2002,
+      author = "Miguel Castro and Peter Druschel and Ayalvadi Ganesh and Antony Rowstron and Dan Wallach",
+      title = "{Secure Routing for Structured Peer-to-Peer Overlay Networks}",
+      booktitle = osdi,
+      year = 2002
+}
+
+@inproceedings{farsite,
+      author = "John R. Douceur and Atul Adya and William J.Bolosky and Dan Simon",
+      title = "{Reclaiming Space from Duplicate Files in a Serverless Distributed File System}",
+      booktitle = icdcs,
+      address = Vienna,
+      month = jul,
+      year = 2002
+}
+
+@inproceedings{can,
+      author = "Sylvia Ratnasamy and Paul Francis and Mark Hadley and Richard Karp and Scott Shenker",
+      title = "{A Scalable Content-Addressable Network}",
+      booktitle = sigcomm,
+      address = SanDiego,
+      month = aug,
+      year = 2001
+}
+
+@inproceedings{pastry,
+      author = "Antony Rowstorn and Peter Druschel",
+      title = "{Pastry: Scalable, Decentralized Object Location and Routing for Large-scale Peer-to-Peer Systems}",
+      booktitle = icdsp,
+      address = Heidelberg,
+      month = nov,
+      year = 2001
+}
+
+@inproceedings{chord,
+      author = "Ion Stoica and Robert Morris and David Karger and Frans Kaashoek and Hari Balakrishnan",
+      title = "{Chord: A Scalable Peer-to-peer Lookup Service for Internet Applications}",
+      booktitle = sigcomm,
+      address = SanDiego,
+      month = aug,
+      year = 2001
+}
+
+@article{plaxton,
+      author = "Greg Plaxton and Rajmohan Rajaraman and Andrea Richa",
+      title = "{Accessing Nearby Copies of Replicated Objects in a Distributed Environment}",
+      journal = "Theory of Computing Systems",
+      volume = 32,
+      pages = "241--280",
+      year = 1999
+}
+
+% p2p apps
+
+@inproceedings{skype,
+      author =	 "Saikat Guha and Neil Daswani",
+      title =	 "{An Experimental Study of the Skype Peer-to-Peer VoIP System}",
+      booktitle =	 iptps,
+      address =	 SantaBarbara,
+      month =	 feb,
+      year =	 2006,
+}
+
+@inproceedings{vishnumurthy:francis,
+      author = "Vivek Vishnumurthy and Paul Francis",
+      title = "{On Heterogeneous Overlay Construction and Random Node Selection in Unstructured P2P Networks}",
+      booktitle = infocom,
+      year = 2006,
+}
+
+@inproceedings{opendht,
+      author = "Sean Rhea and Brighten Godfrey and Brad Karp and John Kubiatowicz and Sylvia Ratnasamy and Scott Shenker and Ion Stoica and Harlan Yu",
+      title = "{OpenDHT: A Public DHT Service and Its Uses}",
+      booktitle = sigcomm,
+      year = 2005
+}
+
+@inproceedings{accordion,
+      author = "Jinyang Li and Jeremy Stribling and Robert Morris and M. Frans Kaashoek",
+      title = "{Bandwidth-Efficient Management of DHT Routing Tables}",
+      booktitle = nsdi,
+      month = may,
+      year = 2005,
+}
+
+@inproceedings{feedtree,
+      author = "Dan Sandler and Alan Mislove and Ansley Post and Peter Druschel",
+      title = "{FeedTree: Sharing Web Micronews with Peer-to-Peer Event Notification}",
+      booktitle = iptps,
+      year = 2005
+}
+
+@inproceedings{macedon,
+      author = "Adolfo Rodriguez and Charles Killian and Sooraj Bhat and Dejan Kostic and Amin Vahdat",
+      title = "{MACEDON: Methodology for Automatically Creating, Evaluating, and Designing Overlay Networks}",
+      booktitle = nsdi,
+      year = 2004,
+} 
+
+@inproceedings{bamboo,
+      title = "{Handling Churn in a DHT}",
+      author = "Sean Rhea and Dennis Geels and Timothy Roscoe and John Kubiatowicz",
+      booktitle = usenix,
+      address = Boston,
+      month= jun,
+      year = 2004
+}
+
+@inproceedings{willow,
+      author = "Robbert van Renesse and Adrian Bozdog",
+      title =  "{Willow: DHT, Aggregation, and Publish/Subscribe in One Protocol}",
+      booktitle = iptps,
+      year = 2004
+}
+
+@inproceedings{miguel:handling:churn,
+      author    = "Miguel Castro and Manuel Costa and Antony I. T. Rowstron",
+      title     = "{Performance and Dependability of Structured Peer-to-Peer Overlays}",
+      booktitle = dsn,
+      address   = Florence,
+      month     = jun,
+      year      = 2004,
+}
+
+@inproceedings{coralcdn,
+      author = "M. Freedman and E. Freudenthal and D. Mazieres",
+      title = "{Democratizing Content Publication with Coral}",
+      booktitle = nsdi,
+      year = 2004,
+}
+
+@inproceedings{pier,
+      author = "Ryan Huebsch and Joseph M Hellerstein and Nick Lanham and Boon Thau Loo and Scott Shenker and Ion Stoica", 
+      title = "{Querying the Internet with PIER}",
+      booktitle = vldb,
+      address = Berlin,
+      month = sep,
+      year = 2003
+}
+
+@inproceedings{post,
+      author = "Alan Mislove and Ansley Post and Charles Reis and Paul Willmann and Peter Druschel and Dan S Wallach and Xavier Bonnaire and Pierre Sens and Jean-Michel Busca and Luciana Arantes-Bezerra",
+      title = "{POST: A Secure, Resilient, Cooperative Messaging System}",
+      booktitle = iptps,
+      address = Berkeley,
+      month = feb,
+      year = 2003
+}
+
+@inproceedings{superpeers,
+      author = "Alper Mizrak and Yuchung Cheng and Vineet Kumar and Stefan Savage",
+      title = "{Structured Superpeer: Leveraging Heterogeneity to Provide Constant-time Lookup}",
+      booktitle = ieeeia,
+      address = SF,
+      month = apr,
+      year = 2003
+}
+
+@techreport{cone,
+      author = "Ranjita Bhagwan and George Varghese and Geoff M. Voelker",
+      title = "{Cone: Augmenting DHTs to Support Distributed Resource Discovery}",
+      institution = "University of California San Diego",
+      number = "CS2003-0755",
+      month = jul,
+      year = 2003,
+}
+
+@inproceedings{cups,
+      author = "Mema Roussopoulos and Mary Baker", 
+      title = "{CUP: Controlled Update Propagation in Peer-to-Peer Networks}",
+      booktitle = usenix,
+      month = jun, 
+      year = 2003
+}
+
+@inproceedings{iyer02squirrel,
+      author =	 "Sitaram Iyer and Antony Rowstron and Peter Druschel",
+      title =	 "{Squirrel: A Decentralized Peer-to-Peer Web Cache}",
+      booktitle =	 podc,
+      address =	 Monterey,
+      month =	 jul,
+      year =	 2002,
+}
+
+@inproceedings{stading02peer,
+      author =	 "Tyron Stading and Petros Maniatis and Mary Baker",
+      title =	 "{Peer-to-Peer Caching Schemes to Address Flash Crowds}",
+      booktitle =	 iptps,
+      address =	 CambridgeMA,
+      month =	 mar,
+      year =	 2002,
+}
+
+@inproceedings{stavrou02lightweight,
+      author =	 "Angelos Stavrou and Dan Rubenstein and Sambit Sahu",
+      title =	 "{A Lightweight, Robust P2P System to Handle Flash Crowds}",
+      booktitle =	 icnp,
+      address =	 Paris,
+      month =	 nov,
+      year =	 2002,
+}
+
+@inproceedings{cfs,
+      author = "Frank Dabek and M. Frans Kaashoek and David Karger and Robert Morris and Ion Stoica",
+      title = "{Wide-Area Cooperative Storage with CFS}",
+      booktitle = sosp,
+      year = 2001
+}
+
+@inproceedings{past,
+      author = "Antony Rowstorn and Peter Druschel",
+     title = "{Storage Management and Caching in PAST, a Large-scale, Persistent Peer-to-Peer Storage Utility}",
+      booktitle = sosp,
+      year = 2001
+} 
+
+@inproceedings{scribe,
+      author = "Antony Rowstron and Anne-Marie Kermarrec and Miguel Castro and Peter Druschel",
+      title = "{SCRIBE: The Design of a Large-scale Event Notification Infrastructure}",
+      booktitle = ngc,
+      address = London,
+      month =  nov,
+      year = 2001 
+}
+
+@inproceedings{herald,
+      author = "Luis Felipe Cabera and Michael B. Jones and Marvin Theimer",
+      title = "{Herald: Achieving a Global Event Notification Service}",
+      booktitle = hotos,
+      year = 2001
+}
+
+
+% webcaching and CDN papers
+
+@inproceedings{ttlcache,
+      author = "Jaeyon Jung and Arthur Berger and Hari Balakrishnan",
+      title = "{Modeling TTL-based Internet Caches}",
+      booktitle = infocom,
+      year = 2003
+}
+
+@article{saroiu02analysis,
+      author = "Stefan Saroiu and Krishna P. Gummadi and Richard J. Dunn and Steven D. Gribble and Henry M. Levy",
+      title = "{An Analysis of Internet Content Delivery Systems}",
+      journal = osr,
+      volume = 36,
+      number = 3,
+      year = 2002,
+      pages = "315--327",
+}
+
+@inproceedings{cdnredirection,
+      author = "Limin Wang and Vivek Pai and Larry Peterson",
+      title = "{The Effectiveness of Request Redirection on CDN Robustness}",
+      booktitle = osdi,
+      year = 2002,
+}
+
+@inproceedings{flashcrowd,
+      author = "Jaeyeon Jung and Balachander Krishnamurthy and Michael Rabinovich",
+      title = "{Flash Crowds and Denial of Service Attacks: Characterization and Implications for CDNs and Web Sites}",
+      booktitle = www,
+      address = Honolulu,
+      month = may,
+      year = 2002
+}
+
+@article{rodriguez01analysis,
+      author =	 "Pablo Rodriguez and Christian Spanner and Ernst W. Biersack",
+      title =	 "{Analysis of Web Caching Architectures: Hierarchical and Distributed Caching}",
+      journal =	 ton,
+      volume =	 9,
+      number =	 4,
+      year =	 2001,
+      pages =	 "404--418",
+}
+
+@article{gadde01web,
+      author =	 "Syam Gadde and Jeffrey S. Chase and Michael Rabinovich",
+      title =	 "{Web Caching and Content Distribution: A View From The Interior}",
+      journal =	 "Computer Communications",
+      volume =	 24,
+      number =	 2,
+      year =	 2001,
+      pages =	 "222--231",
+}
+
+@inproceedings{krishnamurthy01performance,
+      author =	 "Balachander Krishnamurthy and Craig Wills and Yin Zhang",
+      title =	 "{On the Use and Performance of Content Distribution Networks}",
+      booktitle =	 imw,
+      address =	 SF,
+      month =	 nov,
+      year =	 2001,
+}
+
+@inproceedings{Johnson-CDN,
+      author = "Kirk L. Johnson and John Carr and Mark S. Day and M. Frans Kaashoek",
+      title = "{The Measured Performance of Content Distribution Networks}",
+      booktitle = wccd,
+      address = Lisbon,
+      month = may,
+      year = 2000
+}
+
+@article{menaud,
+     author = "Jean-Marc Menaud and Valérie Issarny and Michel Banâtre",
+     title = "{A Scalable and Efficient Cooperative System for Web Caches}",
+     journal = ieeeconcurrency,
+     volume = 8,
+     number = 3,
+     year = 2000,
+     issn = "1092-3063",
+     pages = "56--62",
+}
+
+@article{fan00summary,
+     author = "Li Fan and Pei Cao and Jussara Almeida and Andrei Z. Broder",
+     title = "{Summary Cache: A Scalable Wide-area Web Cache Sharing Protocol}",
+     journal = ton,
+     volume = 8,
+     number = 3,
+     year = 2000,
+     pages = "281--293",
+}
+
+@article{wang99survey,
+      author =	 "Jia Wang",
+      title =	 "{A Survey of Web Caching Schemes for the Internet}",
+      journal =	 ccr,
+      volume =	 25,
+      number =	 9,
+      year =	 1999,
+      pages =	 "36--46",
+}
+
+@inproceedings{webobjsharing,
+      author = "Alec Wolman and Geoff Voelker and Nitin Sharma and Neal Cardwell and Molly Brown and Tashana Landray and Denise Pinnel and Anna Karlin and Henry Levy",
+      title = "{Organization-Based Analysis of Web-Object Sharing and Caching}",
+      booktitle = usits,
+      year = 1999,
+}
+
+@inproceedings{webcachingscale,
+      author = "Alec Wolman and Goeffrey Voelker and Nitin Sharma and Neal Cardwell and Anna Karlin and Henry Levy",
+      title = "{On the Scale and Performance of Cooperative Web Proxy Caching}",
+      booktitle = sosp,
+      year = 1999
+}
+
+@inproceedings{zipf,
+      author = "Lee Breslau and Pei Cao and Li Fan and Graham Phillips and Scott Shenker",
+      title = "{Web Caching and Zipf-like Distributions: Evidence and Implications}",
+      booktitle = infocom,
+      year = 1999
+}
+
+@inproceedings{tewari99design,
+      author = "Renu Tewari and Michael Dahlin and Harrick M. Vin and Jonathan S. Kay",
+      title = "{Design Considerations for Distributed Caching on the Internet}",
+      booktitle = icdcs,
+      year = 1999,
+}
+
+@article{barford99changes,
+      author =	 "Paul Barford and Azer Bestavros and Adam Bradley and Mark Crovella",
+      title =	 "{Changes in Web Client Access Patterns: Characteristics and Caching Implications}",
+      journal =	 "World Wide Web",
+      publisher =	 "Kluwer Academic Publishers",
+      volume =	 2,
+      number =	 "1-2",
+      year =	 1999,
+      issn =	 "1386-145X",
+      pages =	 "15--28",
+}
+
+@inproceedings{adaptiveweb,
+      author = "Scott Michel and Khoi Nguyen and Adam Rosenstein and Lixia Zhang and Sally Floyd and Van Jacobson",
+      title = "{Adaptive Web Caching: Towards a New Global Caching Architecture}",
+      booktitle = wwwcaching,
+      year = 1998,
+}
+
+@article{squid,
+      author = "Duane Wessels and kc claffy",
+      title = "{ICP and the Squid Web Cache}",
+      journal = ieeesac,
+      volume =	 16,
+      number =	 3,
+      pages =	 "345--357",
+      year = 1998,
+}
+
+@inproceedings{rateofchange,
+      author =	 "Fred Douglis and Anja Feldman and Balachander Krishnamurthy and Jeffrey Mogul",
+      title =	 "{Rate of Change and Other Metrics: a Live Study of the World Wide Web}",
+      booktitle =	 usits,
+      address =	 Monterey,
+      month =	 dec,
+      year =	 1997,
+}
+
+@inproceedings{kroeger97exploring,
+      author =	 "Tom M. Kroeger and Darrell D. E. Long and Jeffrey C. Mogul",
+      title =	 "{Exploring the Bounds of Web Latency Reduction from Caching and Prefetching}",
+      booktitle =	 usits,
+      address =	 Monterey,
+      month =	 dec,
+      year =	 1997,
+}
+
+@inproceedings{duska,
+      author = "Bradley M. Duska and David Marwood and Michael Feeley",
+      title = "{The Measured Access Characteristics of World Wide Web Client Proxy Caches}",
+      booktitle = usits,
+      address = Monterey,
+      month = dec,
+      year = 1997
+}
+
+@inproceedings{povey97distributed,
+      author =	 "D. Povey and J. Harrison",
+      title =	 "{A Distributed Internet Cache}",
+      booktitle =	 ozcsc,
+      address =	 Sydney,
+      month =	 feb,
+      year =	 1997,
+}
+
+@article{ross97hashrouting,
+      author = "K. W. Ross",
+      title = "{Hash-Routing for Collections of Shared Web Caches}",
+      journal = ieeenetwork,
+      year = 1997,
+}
+
+@inproceedings{consistent-hashing,
+      author = "David Karger and Eric Lehman and Tom Leighton and Matthew Levine and Daniel Lewin and Rina Panigrahy",
+      title = "{Consistent Hashing and Random Trees: Distributed Caching Protocols for Relieving Hot Spots on the World Wide Web}",
+      booktitle = stoc,
+      month = may,
+      year = 1997,
+      pages = "654--663",
+}
+
+@inproceedings{almeida96characterizing,
+      author =	 "Virgilio Almeida and Azer Bestavros and Mark Crovella and Adriana de Oliveira",
+      title =	 "{Characterizing Reference Locality in the WWW}",
+      booktitle =	 icpids,
+      address =	 Tokyo,
+      month =	 jun,
+      year =	 1996,
+}
+
+@inproceedings{harvest,
+      author = "Anawat Chankhunthod and Peter B. Danzig and Chuck Neerdaels and Michael F. Schwartz and Kurt J. Worrell",
+      title = "{A Hierarchical Internet Object Cache}",
+      booktitle = usenix,
+      year = 1996,
+      pages = "153--164",
+}
+
+@article{glassman94caching,
+      author =	 "Steven Glassman",
+      title =	 "{A Caching Relay for the World Wide Web}",
+      journal =	 "Computer Networks and ISDN Systems",
+      volume =	 27,
+      number =	 2,
+      year =	 1994,
+      pages =	 "165--173",
+}
+
+% network location and overlay routing
+
+@inproceedings{Vivaldi,
+      author = "Frank Dabek and Russel Cox and Frans Kaashoek and Robert Morris",
+      title = "{Vivaldi: A Decentralized Network Coordinate System}",
+      booktitle = sigcomm,
+      address = Portland,
+      month = aug,
+      year = 2004
+}
+
+@inproceedings{PCoord,
+author = "L. Lehman and S. Lerman",
+      title = "{PCoord: Network Position Estimation Using Peer-to-Peer Measurements}",
+      booktitle = nca,
+      address = CambridgeMA,
+      month = aug,
+      year = 2004
+}
+
+@inproceedings{NPS,
+author = "T. Ng and H. Zhang",
+      title = "{A Network Positioning System for the Internet}",
+      booktitle = usenix,
+      address = Boston,
+      month = jun,
+      year = 2004
+}
+
+@inproceedings{PIC,
+author = "M. Costa and M. Castro and A. Rowstron and P. Key",
+      title = "{PIC: Practical Internet Coordinates for Distance Estimation}",
+      booktitle = icdcs,
+      address = Tokyo,
+      month = mar,
+      year = 2004
+}
+
+@inproceedings{VirtualLandmarks,
+author = "L. Tang and M. Crovella",
+      title = "{Virtual Landmarks for the Internet}",
+      booktitle = imc,
+      address = MiamiBeach,
+      month = oct,
+      year = 2003,
+}
+
+@inproceedings{Lighthouse,
+author = "M. Pias and J. Crowcroft and S. Wilbur and T. Harris and S. Bhatti",
+      title = "{Lighthouses for Scalable Distributed Location}",
+      booktitle = iptps,
+      address = Berkeley,
+      month = feb,
+      year = 2003,
+}
+
+@inproceedings{BBS,
+author = "Y. Shavitt and T. Tankel",
+      title = "{Big-Bang Simulation for Embedding Network Distances in Euclidean Space}",
+      booktitle = infocom,
+      year = 2003,
+}
+
+@inproceedings{Lim-InternetCoord,
+author = "H. Lim and J. Hou and C. Choi",
+      title = "{Constructing Internet Coordinate System Based on Delay Measurement}",
+      booktitle = imc,
+      address = MiamiBeach,
+      month = oct,
+      year = 2003
+}
+
+@inproceedings{Maniatis-PeerReplicas,
+author = "P. Maniatis and M. Roussopoulos and T. Giuli and D. Rosenthal and M. Baker and Y. Muliadi",
+      title = "{Preserving Peer Replicas by Rate-Limited Sampled Voting}",
+      booktitle = sosp,
+      year = 2003
+}
+
+@inproceedings{GNP,
+author = "T. Ng and H. Zhang",
+      title = "{Predicting Internet Network Distance with Coordinates-Based Approaches}",
+      booktitle = infocom,
+      year = 2002
+}
+
+@inproceedings{RON,
+ author = "D. Andersen and H. Balakrishnan and M. Kaashoek and R. Morris",
+      title = "{Resilient Overlay Networks}",
+      booktitle = sosp,
+      year = 2001
+}
+
+@article{IDMaps,
+author = "P. Francis and S. Jamin and C. Jin and Y. Jin and D. Raz and Y. Shavitt and L. Zhang",
+      title = "{IDMaps: A Global Internet Host Distance Estimation Service}",
+      journal = ton,
+      volume = 9,
+      month = oct,
+      year = 2001,
+      pages = "525--540",
+}
+
+@inproceedings{Narada,
+author = "Y. Chu and S. Rao and H. Zhang",
+      title = "{A Case for End System Multicast}",
+      booktitle = sigmetrics,
+      address = SantaClara,
+      month = jun,
+      year = 2000
+}
+
+@article{Carter2-ServerSelection,
+author = "R. Carter and M. Crovella",
+      title = "{On the Network Impact of Dynamic Server Selection}",
+      journal = "Computer Networks",
+      volume = 31,
+      year = 1999
+}
+
+@inproceedings{Detour,
+author = "S. Savage and A. Collins and E. Hoffman",
+      title = "{The End-to-End Effects of Internet Path Selection}",
+      booktitle = sigcomm,
+      year = 1999
+}
+
+@inproceedings{Fei-ServerSelection,
+author = "Z. Fei and S. Bhattacharjee and E. Zegura and M. Ammar",
+      title = "{A Novel Server Selection Technique for Improving the Response Time of a Replicated Service}",
+      booktitle = infocom,
+      year = 1998
+}
+
+@inproceedings{Carter-ServerSelection,
+author = "R. Carter and M. Crovella",
+      title = "{Server Selection Using Dynamic Path Characterization in Wide-Area Networks}",
+      booktitle = infocom,
+      year = 1997
+}
+
+@inproceedings{Guyton-ServerSelection,
+author = "J. Guyton and M. Schwartz",
+      title = "{Locating Nearby Copies of Replicated Internet Servers}",
+      booktitle = sigcomm,
+      address = CambridgeMA,
+      month = aug,
+      year = 1995
+}
+
+@inproceedings{Kommareddy,
+author = "C. Kommareddy and N. Shankar and B. Bhattacharjee",
+      title = "{Finding Close Friends on the Internet}",
+      booktitle = icnp,
+      address = Riverside,
+      month = nov,
+      year = 2001,
+}
+
+@inproceedings{Binning,
+author = "S. Ratnasamy and M. Handley and R. Karp and S. Shenker",
+      title = "{Topologically-Aware Overlay Construction and Server Selection}",
+      booktitle = infocom,
+      year = 2002
+}
+
+@inproceedings{Tiers,
+author = "S. Banerjee and C. Kommareddy and B. Bhattacharjee",
+      title = "{Scalable Peer Finding on the Internet}",
+      booktitle = globint,
+      address = Taipei,
+      month = nov,
+      year = 2002
+}
+
+@inproceedings{NetMap,
+author = "K. Shanahan and M. Freedman",
+      title = "{Locality Prediction for Oblivious Clients}",
+      booktitle = iptps,
+      address = Ithaca,
+      month = feb,
+      year = 2005
+}
+
+@inproceedings{Sli05-PODC,
+author = "A. Slivkins",
+      title = "{Distance Estimation and Object Location via Rings of Neighbors}",
+      booktitle = podc,
+      address = LasVegas,
+      month = jul,
+      year = 2005
+}
+
+% networking
+
+@inproceedings{ yajnik99measurement,
+      author =     "Maya Yajnik and Sue B. Moon and James F. Kurose and Donald F. Towsley",
+      title =      "{Measurement and Modeling of the Temporal Dependence in Packet Loss}",
+      booktitle =  infocom,
+      year =       1999,
+      pages =      "345-352",
+}
+
+@article{srm,
+      author =	 "Sally Floyd and Van Jacobson and Ching-Gung Liu and Steven McCanne and Lixia Zhang",
+      title =	 "{A Reliable Multicast Framework for Light-Weight Sessions and Application Level Framing}",
+      journal =	 ton,
+      month =	 dec,
+      year =	 1997,
+      pages =	 "784--803",
+}
+
+@inproceedings{paxson,
+      author = "Vern Paxson",
+      title = "{End-to-End Internet Packet Dynamics}",
+      booktitle = sigcomm,
+      year = 1997,
+}
+
+@article{activenetworks,
+      author = "David Tennenhouse and David Wetherall",
+      title = "{Towards an Active Network Architecture}",
+      journal = ccr,
+      volume = 26,
+      number = 2,
+      year = 1996
+}
+
+% bgp
+
+@misc{bgpsecurity,
+      author = "Blaine Christian and Tony Tauber",
+      title = "{BGP Security Requirements}",
+      howpublished = "IETF Internet Draft RPSEC BGPSECREC-06",
+      month = apr,
+      year = 2006
+}
+
+@misc{as7007,
+      author = "Stephen A. Misel",
+      title = "{Wow, AS7007!}",
+      institution = {NANOG Mail Archives},
+      howpublished = {http://www.merit.edu/mail.archives/nanog/1997-04/msg00340},
+      month = apr,
+      year = 1997
+}
+
+@phdthesis{perlman,
+      author = "Radia Perlman",
+      title = "{Network Layer Protocols with Byzantine Robustness}",
+      school = {MIT},
+      year = 1988,
+      url = {http://hdl.handle.net/1721.1/14403}
+}
+
+@inproceedings{fud,
+      title = "{BGP Vulnerability Testing: Separating Fact from FUD}",
+      author = "Sean Convery and Matthew Franz",
+      booktitle = blackhat,
+      address = LasVegas,
+      year= 2003
+}
+
+@techreport{threats,
+      author = "Abbie Barbir and Sandy Murphy and Yi Yang",
+      title = "{Generic Threats to Routing Protocols}",
+      institution = {IETF},
+      year = 2004,
+      month = oct,
+}
+
+@article{sbgp,
+      author = "Stephen Kent and Charles Lynn and Karen Seo",
+      title = "{Secure Border Gateway Protocol (S-BGP)}",
+      journal = ieeesac,
+      volume = 18,
+      number = 4,
+      year = 2000,
+      month = apr,
+}
+
+@inproceedings{spv,
+      title = "{SPV: Secure Path Vector Routing for Securing BGP}",
+      author = "Yih-Chun Hu and Adrian Perrig and Marvin Sirbu",
+      booktitle = sigcomm,
+      year = 2004,
+}
+
+@inproceedings{Subramanian04,
+      title = "{Listen and Whisper: Security Mechanisms for BGP}",
+      author = "Lakshminarayanan Subramanian and Volker Roth and Ion Stoica and Scott Shenker and Randy H. Katz",
+      booktitle = nsdi,
+      year = 2004,
+}
+
+@inproceedings{Cheung97,
+      title = "{An Efficient Message Authentication Scheme for Link State Routing}",
+      author = "Steven Cheung",
+      booktitle = acsac,
+      year = 1997,
+      month = dec,
+      address = SanDiego,
+}
+
+@article{Clark05,
+      author = "David Clark and John Wroclawski and Karen Sollins and Robert Braden",
+      title = "{Tussle in Cyberspace: Defining Tomorrow's Internet}",
+      journal = ton,
+      volume = 13,
+      number = 3,
+      year = 2005
+}
+
+@inproceedings{Smith97,
+      title = "{Securing Distance-Vector Routing Protocols}",
+      author = "Bradley Smith and Shree Murthy and J.J. Garcia-Luna-Aceves",
+      booktitle = ndss,
+      address = SanDiego,
+      month = feb,
+      year = 1997,
+}
+
+@techreport{Zhou99,
+      author = "Lidong Zhou and Zygmunt Haas",
+      title = "{Securing Ad Hoc Networks}",
+      number = {TR99-1772},
+      institution = {Cornell University},
+      address = Ithaca,
+      year = 1999,
+}
+
+@inproceedings{Awerbuch02,
+      author = "Baruch Awerbuch and David Holmer and Cristina Nita-Rotaru and Herbert Rubens",
+      title = "{An On-Demand Secure Routing Protocol Resilient to Byzantine Failures}",
+      booktitle = wise,
+      year = 2002,
+      isbn = {1-58113-585-8},
+      address = Atlanta,
+      doi = {http://doi.acm.org/10.1145/570681.570684},
+}
+
+@article{Pei04,
+      author = "Dan Pei and Lixia Zhang and Dan Massey",
+      title = "{A Framework for Resilient Internet Routing Protocols}",
+      journal = {IEEE Network},
+      volume = 18,
+      number = 2,
+      year = 2004
+}
+
+@inproceedings{Zhao05-pkirdw,
+      title = "{Evaluating the Performance Impact of PKI on BGP Security}",
+      author = "Meiyuan Zhao and Sean Smith and David Nicol",
+      booktitle = pkirdw,
+      year = 2005,
+      month = apr,
+      address = Gathersberg,
+}
+
+@inproceedings{Feamster04-hotnets,
+      title = "{Some Foundational Problems in Interdomain Routing}",
+      author = "Nick Feamster and Hari Balakrishnan and Jennifer Rexford",
+      booktitle = hotnets,
+      year = 2004
+}
+
+@inproceedings{Wan05,
+      title = "{Pretty Secure BGP (psBGP)}",
+      author = "Tao Wan and Evangelos Kranakis and P.C. van Oorschot",
+      booktitle = ndss,
+      year = 2005,
+}
+
+@inproceedings{Subramanian05,
+      author = "Lakshminarayanan Subramanian and Matthew Caesar and Cheng Tien Ee and Mark Handley and Morley Mao and Scott Shenker and Ion Stoica",
+      title = "{HLP: A Next Generation Inter-Domain Routing Protocol}",
+      booktitle = sigcomm,
+      year = 2005,
+      isbn = {1-59593-009-4},
+      address = Philadelphia,
+      doi = {http://doi.acm.org/10.1145/1080091.1080095},
+}
+
+@inproceedings{Zhao05-ccs,
+      author = "Meiyuan Zhao and Sean W. Smith and David M. Nicol",
+      title = "{Aggregated Path Authentication for Efficient BGP Security}",
+      booktitle = ccs,
+      year = 2005,
+      isbn = {1-59593-226-7},
+      address = Alexandria,
+      doi = {http://doi.acm.org/10.1145/1102120.1102139},
+}
+
+@inproceedings{Shi05,
+      title = "{BIND: A Fine-Grained Attestation Service for Secure Distributed Systems}",
+      author = "Elaine Shi and Adrian Perrig and Leendert van Doorn",
+      booktitle = oakland,
+      year = 2005,
+      address = Oakland,
+}
+
+@article{Nordstrom04,
+      author = "Ola Nordstrom and Constantinos Dovrolis",
+      title = "{Beware of BGP Attacks}",
+      journal = {SIGCOMM Comput. Commun. Rev.},
+      volume = 34,
+      number = 2,
+      year = 2004,
+      issn = {0146-4833},
+      pages = {1--8},
+      doi = {http://doi.acm.org/10.1145/997150.997152},
+      publisher = {ACM Press},
+      address = NYC,
+}
+
+@article{Pei05,
+      author = "Dan Pei and Matt Azuma and Dan Massey and Lixia Zhang",
+      title = "{BGP-RCN: Improving BGP Convergence Through Root Cause Notification}",
+      journal = {Computer Networks and ISDN Systems},
+      volume = 48,
+      number = 2,
+      year = 2005,
+      issn = {0169-7552},
+      pages = {175--194},
+      doi = {http://dx.doi.org/10.1016/j.comnet.2004.09.008},
+      publisher = {Elsevier Science Publishers B. V.},
+      address = Amsterdam,
+}
+
+@article{Papadimitratos02,
+      author = "Panagiotis Papadimitratos and Zygmunt Haas",
+      title = "{Securing the Internet Routing Infrastructure}",
+      journal = {IEEE Communications Magazine},
+      volume = 40,
+      number = 10,
+      year = 2002
+}
+
+@inproceedings{Zhao02,
+      author = "Xiaoliang Zhao and Dan Pei and Lan Wang and Dan Massey and Allison Mankin and Shyhtsun Felix Wu and Lixia Zhang",
+      title = "{Detection of Invalid Routing Announcement in the Internet}",
+      booktitle = dsn,
+      year = 2002,
+      isbn = {0-7695-1597-5},
+      address = DC,
+}
+
+@inproceedings{Aiello03,
+      author = "William Aiello and John Ioannidis and Patrick McDaniel",
+      title = "{Origin Authentication in Interdomain Routing}",
+      booktitle = ccs,
+      year = 2003,
+      isbn = {1-58113-738-9},
+      address = DC,
+      doi = {http://doi.acm.org/10.1145/948109.948133},
+}
+
+@article{Padmanabhan03,
+      author = "Venkata N. Padmanabhan and Daniel R. Simon",
+      title = "{Secure Traceroute to Detect Faulty or Malicious Routing}",
+      journal = ccr,
+      volume = 33,
+      number = 1,
+      year = 2003,
+      issn = {0146-4833},
+      pages = {77--82},
+      doi = {http://doi.acm.org/10.1145/774763.774775},
+      publisher = {ACM Press},
+      address = NYC,
+}
+
+@article{Zhu03,
+      author = "Dapeng Zhu and Mark Gritter and David R. Cheriton",
+      title = "{Feedback Based Routing}",
+      journal = ccr,
+      volume = 33,
+      number = 1,
+      year = 2003,
+      month=Jan,
+      issn = {0146-4833},
+      pages = {71--76},
+      doi = {http://doi.acm.org/10.1145/774763.774774},
+      publisher = {ACM Press},
+      address = NYC,
+}
+
+@inproceedings{Kent00,
+      title = "{Secure Border Gateway Protocol (S-BGP)}---Real World Performance and Deployment Issues",
+      author = "Stephen Kent and Charles Lynn and Joanne Mikkelson and Karen Seo",
+      booktitle = ndss,
+      year = 2000,
+      month = feb,
+      address = SanDiego,
+}
+
+@article{Mahajan02,
+      author = "Ratul Mahajan and David Wetherall and Tom Anderson",
+      title = "{Understanding BGP Misconfiguration}",
+      journal = ccr,
+      volume = 32,
+      number = 4,
+      year = 2002,
+      issn = {0146-4833},
+      pages = {3--16},
+      doi = {http://doi.acm.org/10.1145/964725.633027},
+      publisher = {ACM Press},
+      address = NYC,
+}
+
+@inproceedings{Hu03-ndss,
+      title = "{Efficient Security Mechanisms for Routing Protocols}",
+      author = "Yih-Chun Hu and Adrian Perrig and David Johnson",
+      booktitle = ndss,
+      year = 2003,
+      month = feb,
+      address = SanDiego,
+}
+
+@inproceedings{Hu03-wise,
+      author = "Yih-Chun Hu and Adrian Perrig and David B. Johnson",
+      title = "{Rushing Attacks and Defense in Wireless Ad Hoc Network Routing Protocols}",
+      booktitle = wise,
+      year = 2003,
+      month = sep,
+      address = SanDiego,
+}
+
+@inproceedings{Zhang98,
+      title = "{Efficient Protocols for Signing Routing Messages}",
+      author = "Kan Zhang",
+      booktitle = ndss,
+      year = 1998,
+      address = SanDiego,
+}
+
+@article{Ayanoglu93,
+      author = "Ender Ayanoglu and Chih-Lin I and R. D. Gitlin and J. E. Mazo",
+      title = "{Diversity Coding for Transparent Self-Healing and Fault-Tolerant Communication Networks}",
+      journal = "{IEEE} Transactions on Communications",
+      volume = 41,
+      number = 11,
+      month = nov,
+      year = 1993,
+      pages = "1677--1686",
+      url = "citeseer.ist.psu.edu/ayanoglu93diversity.html" 
+}
+
+@article{Kumar93,
+      author = "Brijesh Kumar",
+      title = "{Integration of Security in Network Routing Protocols}",
+      journal = "SIGSAC Review",
+      volume = 11,
+      number = 2,
+      year = 1993,
+      pages = {18--25},
+      doi = {http://doi.acm.org/10.1145/153949.153953},
+      publisher = {ACM Press},
+      address = NYC,
+}
+
+@inproceedings{Hauser97,
+      author = "Ralf Hauser and Antoni Przygienda and Gene Tsudik",
+      title = "{Reducing the Cost of Security in Link-State Routing}",
+      booktitle = ndss,
+      year = 1997,
+      month=Feb,
+      isbn = {0-8186-7767-8},
+      address = SanDiego,
+}
+
+@inproceedings{Smith96,
+      title = "{Securing the Border Gateway Routing Protocol}",
+      author = "Bradley Smith and J.J. Garcia-Luna-Aceves",
+      booktitle = globint,
+      year = 1996,
+      month = nov,
+      address = London,
+}
+
+@inproceedings{Murphy96,
+      author = "S. L. Murphy and M. R. Badger",
+      title = "{Digital Signature Protection of the OSPF Routing Protocol}",
+      booktitle = ndss,
+      year = 1996,
+      isbn = {0-8186-7222-6},
+}
+
+@techreport{Ng04,
+      author = "James Ng",
+      title = "{Extensions to BGP to Support Secure Origin BGP (soBGP)}",
+      institution = {IETF Network Working Group},
+      year = 2004,
+      month = apr
+}
+
+@inproceedings{Necula96,
+      title = "{Safe Kernel Extensions Without Run-Time Checking}",
+      author = "George Necula and Peter Lee",
+      booktitle = osdi,
+      year = 1996,
+}
+
+@article{Wang03,
+      author = "Lan Wang and Xiaoliang Zhao and Dan Pei and Randy Bush and Daniel Massey and Lixia Zhang",
+      title = "{Protecting BGP Routes to Top-Level DNS Servers}",
+      journal = jtopds,
+      volume = 14,
+      number = 9,
+      pages = "851--860",
+      month = sep,
+      year = 2003
+}
+
+@techreport{Feamster04-tr,
+      author = "Nick Feamster and Hari Balakrishnan",
+      title = "{Verifying the Correctness of Wide-Area Internet Routing}",
+      number = "MIT-LCS-TR-948",
+      institution = "MIT",
+      month = may,
+      year = 2004
+}
+
+@techreport{White06,
+      author = "Russ White and Bora Akyol and Nick Feamster",
+      title = "{Considerations in Validating the Path in BGP}",
+      institution = "IETF",
+      month = feb,
+      year = 2006
+}
+
+@misc{caida-as,
+      key = "caida-as",
+      title = "The {CAIDA AS} Relationships Dataset, {June} 26th, 2006.",
+      howpublished = "http://www.caida.org/data/active/as-relationships/"
+}
+
+% failures and fault tolerance
+
+@inproceedings{failuredetection:infocom05,
+      author = "Shelley Zhuang and Dennis Geels and Ion Stoica and Randy Katz",
+      title = "{On Failure Detection Algorithms in Overlay Networks}",
+      booktitle = infocom,
+      year = 2005,
+}
+
+@inproceedings{accrualfd,
+      title =        "{Definition and Specification of Accrual Failure Detectors}",
+      author =       "Xavier Defago and Peter Urban and Naohiro Hayashibara and Takuya Katayama",
+      booktitle =    dsn,
+      address =      Yokohama,
+      month =        jun,
+      year =         2005,
+}
+
+@inproceedings{fuse,
+      title =        "{FUSE: Lightweight Guaranteed Distributed Failure Notification}",
+      author =       "John Dunagan and Nicholas J. A. Harvey and Michael B. Jones and Dejan Kostic and Marvin Theimer and Alec Wolman",
+      booktitle =    osdi,
+      year =         2004,
+}
+
+@inproceedings{varphifd,
+author =       "N. Hayashibara and X. Defago and T. Katayama",
+      title =        "{Two-ways Adaptive Failure Detection with the $\varphi$-failure Detector}",
+      booktitle =    iwads,
+address =      "Italy",
+      month =        oct,
+      year =         2003,
+}
+
+@inproceedings{bmshierarchical,
+author =       "M. Bertier and O. Marin and P. Sens",
+      title =        "{Performance Analysis of Hierarchical Failure Detector}",
+      booktitle =    dsn,
+      address =      SF,
+      year =         2003,
+      month =        jun,
+}
+
+@inproceedings{Weatherspoon,
+author = "H. Weatherspoon and T. Moscovitz and J. Kubiatowicz",
+      title = "{Introspective Failure Analysis: Avoiding Correlated Failures in Peer-to-Peer Systems}",
+      booktitle = irdps,
+      address = Osaka,
+      month = oct,
+      year = 2002
+}
+
+@inproceedings{Cui,
+author = "W. Cui and I. Stoica and R. Katz",
+      title = "{Backup Path Allocation based on a Correlated Link Failure Probability Model in Overlay Networks}",
+      booktitle = icnp,
+      address = Paris,
+      month = nov,
+      year = 2002
+}
+
+@inproceedings{bms02,
+author =       "M. Bertier and O. Marin and P. Sens",
+      title =        "{Implementation and Performance Evaluation of an Adaptable Failure Detector}",
+      booktitle =    dsn,
+      address =      DC,
+      month =        jun,
+      year =         2002,
+}
+
+@article{wei02,
+      author = "Wei Chen and Sam Toueg and Marcos Kawazoe Aguilera",
+      title = "{On the Quality of Service of Failure Detectors}",
+      journal = "IEEE Transactions on Computers",
+      volume = 51,
+      number = 5,
+      month = may,
+      year = 2002,
+}
+
+@techreport{gulfstream,
+author =	 "S. A. Fakhouri and G. S. Goldszmidt and I. Gupta",
+      title =	 "{Gulfstream - A System for Dynamic Topology Management in Multi-domain Server Farms}",
+      institution =	 "IBM T.J. Watson Research Center",
+      number =	 "RC21954",
+      month =	 feb,
+      year =	 2001,
+}
+
+@inproceedings{frt01,
+author =       "C. Fetzer and M. Raynal and F. Tronel",
+      title =        "{An Adaptive Failure Detection Protocol}",
+      booktitle =    pacrimsdc,
+      address =      Seoul,
+      month =        dec,
+      year =         2001,
+}
+
+@inproceedings{gupta01fd,
+      author = "Indranil Gupta and Tushar D. Chandra and Germ\&\#225;n S. Goldszmidt",
+      title = "{On Scalable and Efficient Distributed Failure Detectors}",
+      booktitle = podc,
+      address = Newport,
+      month = aug,
+      year = 2001,
+}
+
+@phdthesis{chen:thesis,
+      author = "Wei Chen",
+      title = "{On the Quality of Service of Failure Detectors}",
+      school = "Cornell University",
+      month = may,
+      year = 2000,
+}
+
+@inproceedings{lfa00,
+author =       "M. Larrea and A. Fernandez and S. Arevalo",
+      title =        "{Optimal Implementation of the Weakest Failure Detector for Solving Consensus}",
+      booktitle =    podc,
+      address =      Portland,
+      month =        jul,
+      year =         2000,
+}
+
+@inproceedings{laf99,
+author =       "M. Larrea and  S. Arevalo and A. Fernandez",
+      title =        "{Efficient Algorithms to Implement Unreliable Failure Detectors in Partially Synchronous Systems}",
+      booktitle =    isdc,
+      address =      Bratislava,
+      year =         1999,
+      month =        sep,
+}
+
+@inproceedings{corba:replication,
+      author =       "X. Defago and P. Felber and A. Schiper",
+      title =        "{Optimization Techniques for Replicating CORBA Objects}",
+      booktitle =    ortds,
+      address =      SantaBarbara,
+      month =        jan,
+      year =         1999,
+}
+
+@inproceedings{ vanrenesse98gossipstyle,
+      author = "Robbert Van Renesse and Yaron Minsky and Mark Hayden",
+      title = "{A Gossip-Style Failure Detection Service}",
+      booktitle = dspodp,
+      address = Vienna,
+      month = sep,
+      year = 1998,
+}
+
+@inproceedings{act98,
+      author =       "Marcos Kawazoe Aguilera and Wei Chen and Sam Toueg",
+      title =        "{Failure Detection and Consensus in the Crash-Recovery Model}",
+      booktitle =    isdc,
+      address =      Andros,
+      month =        sep,
+      year =         1998,
+}
+
+@inproceedings{sfk98,
+author =       "P. Stelling and I. Foster and C. Kesselman and C. Lee and G. von Laszewski",
+      title =        "{A Fault Detection Service for Wide Area Distributed Computations}",
+      booktitle =    hpdc,
+      year =         1998,
+      month =        jul,
+      address =      Chicago,
+}
+
+@inproceedings{heartbeat,
+      author =       "Marcos Kawazoe Aguilera and Wei Chen and Sam Toueg",
+      title =        "{Heartbeat: a Timeout-free Failure Detector for Quiescent Reliable Communication}",
+      booktitle =    iwda,
+      address =      Saarbrucken,
+      year =         1997,
+      month =        sep,
+}
+
+@article{chandra:toueg,
+      author = "Tushar Deepak Chandra and Sam Toueg",
+      title = "{Unreliable Failure Detectors for Reliable Distributed Systems}",
+      journal = jacm,
+      volume = 43,
+      number = 2,
+      month = mar,
+      year = 1996,
+      pages = "225--267",
+}
+
+@inproceedings{fc96,
+      author =	 "Christof Fetzer and Flaviu Cristian",
+      title =	 "{Fail-Awareness in Timed Asynchronous Systems}",
+      booktitle =	 podc,
+      address =	 Philadelphia,
+      month =	 may,
+      year =	 1996,
+}
+
+@article{totem,
+      author =	 "Louise E. Moser and P. M. Melliar-Smith and Deborah A. Argarwal and Ravi K. Budhia and Collen A. Lingley-Papadopoulos",
+      title =	 "{Totem: A Fault-tolerant Multicast Group Communication System}",
+      journal =	 cacm,
+      volume =	 39,
+      number =	 4,
+      month =	 apr,
+      year =	 1996,
+      pages =	 "54--63",
+}
+
+@inproceedings{relacs,
+author =       "O. Babaoglu and R. Davoli and L. A. Giachini and M. G. Baker",
+      title =        "{Relacs: A Communication Infrastructure for Constructing Reliable Applications}",
+      booktitle =    hawaiisystems,
+      month =        jan,
+      address =      Maui,
+      year =         1995,
+}
+
+@inproceedings{gls95,
+      title =        "{Non-blocking Atomic Commitment with an Unreliable Failure Detector}",
+      author =       "Rachid Guerraoui and Michael Larrea and Andre Schiper",
+      booktitle =    rds,
+      address =      BadNeuenahr,
+      month =        sep,
+      year =         1995,
+}
+
+@inproceedings{transis,
+      title =        "{Transis: A Communication Sub-system for High Availability}",
+      author =       "Yair Amir and Danny Dolev and Schlomo Kramer and Dalia Malkhi",
+      booktitle =    ftc,
+      address =      Boston,
+      month =        jul,
+      year =         1992,
+}
+
+
+% network embeddings
+
+@inproceedings{Hildrum-DOL,
+author = "K. Hildrum and J. Kubiatowicz and S. Rao and B. Zhao",
+      title = "{Distributed Object Location in a Dynamic Network}",
+      booktitle = spaa,
+      address = Winnipeg,
+      month = aug,
+      year = 2002
+}
+
+@inproceedings{Karger-NearestNeighbors,
+author = "D. Karger and M. Ruhl",
+      title = "{Finding Nearest Neighbors in Growth-restricted Metrics}",
+      booktitle = stoc,
+      address = Montreal,
+      month = may,
+      year = 2002
+}
+
+@misc{Hei01,
+      author = "J. Heinonen",
+      title = "{Lectures on Analysis on Metric Spaces}",
+      note = "Springer Verlag, Universitext 2001"
+}
+
+@inproceedings{Hil03,
+author = "K. Hildrum and J. Kubiatowicz and S. Rao",
+      title = "{Another Way to Find the Nearest Neighbor in Growth-Restricted Metrics}",
+      booktitle = "UC Berkeley CSD ETR, UCB/CSD-03-1267",
+      address = Berkeley,
+      month = aug,
+      year = 2003
+}
+
+@inproceedings{Hil04a,
+author = "K. Hildrum and J. Kubiatowicz and S. Ma and S. Rao",
+      title = "{A Note on Finding the Nearest Neighbor in Growth-Restricted Metrics}",
+      booktitle = soda,
+      address = NewOrleans,
+      month = jan,
+      year = 2004
+}
+
+@inproceedings{Hil04b,
+author = "K. Hildrum and R. Krauthgamer and J. Kubiatowicz",
+      title = "{Object Location in Realistic Networks}",
+      booktitle = spaa,
+      address = Barcelona,
+      month = jun,
+      year = 2004
+}
+
+@inproceedings{Kem01,
+author = "D. Kempe and J. Kleinberg and A. Demers",
+      title = "{Spatial Gossip and Resource Location Protocols}",
+      booktitle = stoc,
+      address = Heraklion,
+      month = jul,
+      year = 2001
+}
+
+@inproceedings{Kle04,
+      author = "Jon Kleinberg and Aleksandrs. Slivkins and Thomas Wexler",
+      title = "{Triangulation and Embedding using Small Sets of Beacons}",
+      booktitle = focs,
+      address = Rome,
+      month = oct,
+      year = 2004
+}
+
+@inproceedings{Kra03,
+      author = "R. Krauthgamer and J.R. Lee",
+      title = "{The Intrinsic Dimensionality of Graphs}",
+      booktitle = stoc,
+      address = SanDiego,
+      month = jun,
+      year = 2003
+}
+
+@inproceedings{Gup03,
+      author = "A. Gupta and R. Krauthgamer and J.R. Lee",
+      title = "{Bounded Geometries, Fractals, and Low-Distortion Embeddings}",
+      booktitle = focs,
+      address = CambridgeMA,
+      month = oct,
+      year = 2003
+}
+
+@inproceedings{Kra04,
+      author = "R. Krauthgamer and J.R. Lee",
+      title = "{Navigating Nets: Simple Algorithms for Proximity Search}",
+      booktitle = soda,
+      address = NewOrleans, 
+      month = jan,
+      year = 2004
+}
+
+@inproceedings{Kra04b,
+      author = "R. Krauthgamer and J.R. Lee",
+      title = "{The Black-Box Complexity of Nearest Neighbor Search}",
+      booktitle = calp,
+      address = Turku,
+      month = jul,
+      year = 2004
+}
+
+@inproceedings{Kra04c,
+      author = "R. Krauthgamer and J.R. Lee and M. Mendel and A. Naor",
+      title = "{Measured Descent: A New Embedding Method for Finite Metrics}",
+      booktitle = focs,
+      address = Rome,
+      month = oct,
+      year = 2004
+}
+
+@inproceedings{Kun04,
+author = "K. Talwar",
+      title = "{Bypassing the Embedding: Approximation Schemes and Compact Representations for Growth Restricted Metrics}",
+      booktitle = stoc,
+      address = Chicago,
+      month = jun,
+      year = 2004
+}
+
+@inproceedings{Sli05,
+      author = "Aleksandrs Slivkins",
+      title = "{Distributed Approaches to Triangulation and Embedding}",
+      booktitle = soda,
+      address = Vancouver,
+      month = jan,
+      year = 2005
+}
+
+@inproceedings{Mithos,
+      author = "M. Waldvogel and R. Rinaldi",
+      title = "{Efficient Topology-Aware Overlay Network}",
+      booktitle = hotnets,
+      year = 2002
+}
+
+@article{Assouad83,
+      author = "P. Assouad",
+      title = "{Plongements Lipschitziens dans $R^n$}",
+      journal = "Bull. Soc. Math. France",
+      volume = "111(4)",
+      year = 1983
+}
+
+@phdthesis{hotz-thesis,
+      author = "S. Hotz",
+      title = "{Routing Information Organization to Support Scalable Interdomain Routing with Heterogeneous Path Requirements}",
+      school =  "Univ. of Southern California",
+      year = 1994
+}
+
+% distributed systems
+
+@article{coca,
+      author = "Lidong Zhou and Fred B. Schneider and Robbert van Renesse",
+      title = "{COCA: A Secure Distributed On-line Certification Authority}",
+      journal = tocs,
+      volume = 20,
+      number = 4,
+      month = nov,
+      year = 2002,
+      pages = "329--368",
+}
+
+@inproceedings{epidemic,
+author = "A. Demers and D. Greene and C. Hauser and W. Irish and J. Larson and S. Shenker and H. Sturgis and D. Swinehart and D. Terry",
+      title = "{Epidemic Algorithms for Replicated Database Maintenance}",
+      booktitle = podc,
+      address = Vancouver,
+      month = aug,
+      year = 1987
+}
+
+@ARTICLE{isis,
+      author =	 "Bradford Glade and Kenneth P. Birman and Robert Cooper and Robert van Renesse",
+      title =	 "{Light-Weight Process Groups in the ISIS System}",
+      journal =	 dse,
+      volume =	 1,
+      number =	 1,
+      month =	 sep,
+      year =	 1993,
+      pages =	 "29--36",
+}
+
+@article{horus,
+      AUTHOR =	 "Robbert van Renesse and Kenneth P. Birman and Silvano Maffeis",
+      TITLE =	 "{Horus: A Flexible Group Communication System}",
+      JOURNAL =	 cacm,
+      VOLUME =	 39,
+      NUMBER =	 4,
+      MONTH =	 apr,
+      YEAR =	 1996,
+      PAGES =	 "76--83",
+}
+
+@phdthesis{hayden:thesis,
+      title = "{The Ensemble System}",
+      author = "Mark Garland Hayden",
+      school = "Cornell University",
+      month = jan,
+      year = 1998,
+}
+
+
+% dns
+
+@inproceedings{pappas,
+      author = "Vasileios Pappas and Zhiguo Xu and Songwu Lu and Daniel Massey and Andreas Terzis and Lixia Zhang",
+      title = "{Impact of Configuration Errors on DNS Robustness}",
+      booktitle = sigcomm,
+      address = Portland,
+      month = aug,
+      year = 2004
+}
+
+@inproceedings{codns,
+      author = "KyoungSoo Park and Vivek Pai and Larry Peterson",
+      title = "{CoDNS: Improving DNS Performance and Reliability via Cooperative Lookups}",
+      booktitle = osdi,
+      year = 2004,
+}
+
+@inproceedings{dhash,
+      author = "Russ Cox and Athicha Mutitacharoen and Robert Morris",
+      title = "{Serving DNS using a Peer-to-Peer Lookup Service}",
+      booktitle = iptps,
+      address = CambridgeMA,
+      month = mar,
+      year = 2002
+}
+
+@inproceedings{dnszipf,
+      author = "Jaeyon Jung and Emil Sit and Hari Balakrishnan and Robert Morris",
+      title = "{DNS Performance and Effectiveness of Caching}",
+      booktitle = imw,
+      address = SF,
+      month = nov,
+      year = 2001
+}
+
+@inproceedings{serverselection,
+      author = "Anees Shaikh and Renu Tewari and Mukesh Agarwal",
+      title = "{On the Effectiveness of DNS-based Server Selection}",
+      booktitle = infocom,
+      year = 2001
+}
+
+@inproceedings{dnsperformance,
+      author = "Jaeyeon Jung and Emil Sit and Hari Balakrishnan and Robbert Morris",
+      title = "{DNS Performance and the Effectiveness of Caching}",
+      booktitle = imw,
+      address = SF,
+      year = 2001,
+}
+
+@inproceedings{dnsrootserver,
+      author = "N. Brownlee and kc claffy and E. Nemeth",
+      title = "{DNS Measurements at a Root Server}",
+      booktitle = globecon,
+      address = SanAntonio,
+      year = 2001,
+}
+
+@inproceedings{dnsroot2,
+      author = "Nevil Brownlee and kc claffy and Evi Nemeth",
+      title = "{DNS Root/gTLD Performance Measurements}",
+      booktitle = usenixsa,
+      address = SanDiego,
+      month = dec,
+      year = 2001
+}
+
+@inproceedings{cohendns,
+      author = "Edith Cohen and Haim Kaplan",
+      title = "{Proactive Caching of DNS Records: Addressing a Performance Bottleneck}",
+      booktitle = sati,
+      address = SanDiego,
+      month = jan,
+      year = 2001
+}
+
+@inproceedings{dnssnag,
+      author="C. Huitema and S. Weerahandi",
+      title = "{Internet Measurements: The Rising Tide and The DNS Snag}",
+      booktitle = itmm,
+      address = Monterey,
+      year=2000
+}
+
+@techreport{wills,
+      author = "Craig Wills",
+      title = "{The Contribution of DNS Lookup Costs to Web Object Retrieval}",
+      institution = "Worcester Polytechnic Institute",
+      number = "TR-00-12",
+      month = jul,
+      year = 2000
+}
+
+@article{bowman:reasoning,
+      author =	 "Mic Bowman and Saumya K. Debray and Larry L. Peterson",
+      title =	 "{Reasoning About Naming Systems}",
+      journal =	 toplas,
+      volume =	 1,
+      number =	 5,
+      month =	 nov,
+      year =	 1993,
+      pages =	 "795--825",
+}
+
+@inproceedings{dnstraffic,
+      author = "Peter Danzig and Katia Obraczka and Anant Kumar",
+      title = "{An Analysis of Wide-Area Name Server Traffic: A study of the Internet Domain Name System}",
+      booktitle = sigcomm,
+      year = 1992
+}
+
+@inproceedings{dnsretro,
+      author = "Paul Mockapetris and Kevin Dunlop",
+      title = "{Development of the Domain Name System}",
+      booktitle = sigcomm,
+      year = 1988
+}
+
+% pubsub
+
+@inproceedings{xtreenet,
+      author =	 "William Fenner and Michael Rabinovich and K K Ramakrishnan and Divesh Srivastava and Yin Zhang",
+      title =	 "{XTreeNet: Scalable Overlay Networks for XML Content Dissemination and Querying}",
+      booktitle =	 wccd,
+      address =	 SophiaAntipolis,
+      month =	 sep,
+      year =	 2005,
+}
+
+@inproceedings{yfilter,
+      author =	"Yanlei Diao and Shariq Rizvi and Michael Franklin",
+      title =	"{Towards an Internet-Scale XML Dissemination Service}",
+      booktitle =	 vldb,
+      address =	 Toronto,
+      month =	 aug,
+      year =	 2004,
+}
+
+@inproceedings{sdims,
+      author = "Praveen Yalagandula and Mike Dahlin", 
+      title = "{A Scalable Distributed Information Management System}",
+      booktitle = sigcomm,
+      address = Portland,
+      month = aug,
+      year = 2004
+}
+
+@misc{fuselet,
+      author = "James Milligan and James Hendler",
+      title = "{JBI Fuselet Definition Document}",
+      howpublished = "\biburl{http:\-//www.fuselet.org\-/specifications}",
+      month = feb,
+      year = 2004
+}
+
+@inproceedings{gryphon,
+      author =	 "Robert Strom and Guruduth Banavar and Tushar Chandra and Marc Kaplan and Kevan Miller and Bodhi Mukherjee and Daniel Sturman and Michael Ward",
+      title =	 "{Gryphon: An Information Flow Based Approach to Message Brokering}",
+      booktitle =	 issre,
+      address =	 Paderborn,
+      month =	 nov,
+      year =	 1998,
+}
+
+@article{astrolabe,
+      author = "Robbert van Renesse and Kenneth P Birman and Werner Vogels",
+      title =  "{Astrolabe: A Robust and Scalable Technology For Distributed Systems Monitoring, Management, and Data Mining}",
+      journal =  tocs,
+      volume = 21,
+      number = 3,
+      month = may,
+      year = 2003
+}
+
+@article{siena,
+      author = "Antonio Carzaniga and David S. Rosenblum and Alexander L. Wolf",
+      title = "{Design and Evaluation of a Wide-Area Event Notification Service}",
+      journal = tocs,
+      volume =  19,
+      number = 3,
+      month = aug,
+      year = 2001,
+      pages = "332--383", 
+} 
+
+@techreport{jbi,
+      key = "United States Scientific Advisory Board",
+      author = "{United States Scientific Advisory Board}",
+      title = "{Joint Battlespace Infosphere: Executive Summary}",
+      institution = "{United States Scientific Advisory Board}",
+      number = "SAB-TR-99-02",
+      month = dec,
+      year = 1999,
+}
+
+% measurement
+
+@inproceedings{filesharingworkload,
+      author = "Krishna P. Gummadi and Richard J. Dunn and Stefan Saroiu and Steven D. Gribble and Henry M. Levy and  John Zahorjan",
+      title = "{Measurement, Modeling and Analysis of a Peer-to-Peer File-Sharing Workload}",
+      booktitle = sosp,
+      year = 2003
+}
+
+@article{p2phostmeasurements,
+      author    = "Stefan Saroiu and Krishna Gummadi and Steven D. Gribble",
+      title     = "{Measuring and Analyzing the Characteristics of Napster and Gnutella Hosts}",
+      journal   = mmsj,
+      volume    = 9,
+      number    = 2,
+      month     = aug, 
+      year      = 2003,
+      pages     = "170-184",
+}
+
+@inproceedings{king,
+      author = "Krishna Gummadi and Stefan Saroiu and Steve Gribble",
+      title = "{King: Estimating Latency between Arbitrary Internet End Hosts}",
+      booktitle = imw,
+      address = Marseille,
+      month = nov,
+      year = 2002
+}
+
+@inproceedings{gribble97system, 
+      author = "Steven D. Gribble and Eric A. Brewer",
+      title = "{System Design Issues for Internet Middleware Services: Deductions From a Large Client Trace}",
+      booktitle = usits,
+      year = 1997
+}
+
+@misc{Lawrence-keynote,
+author = "R. Lawrence",
+      title = "{Running Massively Multiplayer Games as a Business}",
+      note = "Keynote speech from Networked Systems Design and Implementation",
+      address = SF,
+      month = mar,
+      year = 2004
+}
+
+@article{Qhull,
+author = "C. Barber and D. Dobkin and H. Huhdanpaa",
+      title = "{The Quickhull Algorithm for Convex Hulls}",
+      journal = "Transactions on Mathematical Software",
+      volume = 22,
+      number = 4,
+      year = 1996
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Operating Systems
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@inproceedings{vtpm,
+      title = "{vTPM: Virtualizing the Trusted Platform Module}",
+      author = "Stefan Berger and Ram\'on C\'aceres and Kenneth A. Goldman and Ronald Perez and Reiner Sailer and Leendert van Doorn",
+      booktitle = usenixsecurity,
+      address = Vancouver,
+      month = aug,
+      year = 2006,
+}
+
+@inproceedings{asbestos,
+      title = "{Labels and Event Processes in the Asbestos Operating System}",
+      author = "Petros Efstathopoulos and Maxwell Krohn and Steve VanDeBogart and Cliff Frey and David Ziegler and Eddie Kohler and David Mazi\`eres and M. Frans Kaashoek and Robert T. Morris",
+      booktitle = sosp,
+      year = 2005,
+}
+
+@inproceedings{pioneer,
+      title = "{Pioneer: Verifying Integrity and Guaranteeing Execution of Code on Legacy Platforms}",
+      author = "Arvind Seshadri and Mark Luk and Elaine Shi and Adrian Perrig and Leendert van Doorn and Pradeep Khosla",
+      booktitle = sosp,
+      year = 2005,
+}
+
+@inproceedings{swatt,
+      title = "{SWATT: Software-based Attestation for Embedded Devices}",
+      author = "Arvind Seshadri and Adrian Perrig and Leendert van Doorn and Pradeep Khosla",
+      booktitle = oakland,
+      address = Oakland,
+      month = may,
+      year = 2004,
+}
+
+@techreport{singularity,
+      author = "Galen C. Hunt and James R. Larus and Martín Abadi and Mark Aiken and Paul Barham and Manuel Fahndrich and Chris Hawblitzel and Orion Hodson and Steven Levi and Nick Murphy and Bjarne Steensgaard and David Tarditi and Ted Wobber and Brian Zill",
+      title = "{An Overview of the Singularity Project}",
+      institution = "Microsoft Research",
+      number = "MSR-TR-2005-135", 
+      address = Redmond,
+      month = oct,
+      year = 2005,
+}
+
+@inproceedings{nizza,
+      author = "Hermann {H\"artig} and Michael Hohmuth and Norman Feske and Christian Helmuth and Adam Lackorzynski and Frank Mehnert and Michael Peter",
+      title = "{The Nizza Secure-System Architecture}",
+      booktitle = collaborative,
+      address = SanJose,
+      month = dec,
+      year = 2005,
+}
+
+@misc{tcg,
+      author = "{Trusted Computing Group}",
+      title = "{Design Principles}",
+      howpublished = "{TPM Specification Version 1.2 Revision 85}, \biburl{https://www.trustedcomputinggroup.org/home}",
+      month = feb,
+      year=2005
+}
+
+@inproceedings{TCGLinux,
+      title = "{Design and Implementation of a TCG-based Integrity Measurement Architecture}",
+      author = "Reiner Sailer and Xiaolan Zhang and Trent Jaeger and Leendert van Doorn",
+      booktitle = usenixsecurity,
+      address = SanDiego,
+      month = aug,
+      year = 2004,
+}
+
+@inproceedings{semanticattest,
+      author = "Vivek Haldar and Deepak Chandra and Michael Franz",
+      title = "{Semantic Remote Attestation: A Virtual Machine Directed Approach to Trusted Computing}",
+      booktitle = usenixvm,
+      address = SanJose,
+      month = may,
+      year = 2004,
+}
+
+@inproceedings{copilot,
+      author = "Nick L. {Petroni, Jr.} and Timothy Fraser and Jesus Molina and William A. Arbaugh",
+      title = "{Copilot - a Coprocessor-based Kernel Runtime Integrity Monitor}",
+      booktitle = usenixsecurity,
+      address = SanDiego,
+      month = aug,
+      year = 2004, 
+}
+
+@article{palladium,
+      author = "Paul England and Butler Lampson and John Manferdelli and Marcus Peinado and Bryan Willman",
+      title = "{A Trusted Open Platform}",
+      journal = ieeecomputer,
+      volume = 36,
+      number = 7,
+      month = jul,
+      year = 2003,
+      pages = "55--62",
+}
+
+@inproceedings{xomos,
+      author = "David Lie and Chandramohan A. Thekkath and Mark Horowitz",
+      title = "{Implementing an Untrusted Operating System on Trusted Hardware}",
+      booktitle = sosp,
+      year = 2003,
+}
+
+@inproceedings{xom,
+      author = "David Lie and John Mitchell and Chandramohan A. Thekkath and Mark Horowitz",
+      title = "{Specifying and Verifying Hardware for Tamper-Resistant Software}",
+      booktitle = oakland,
+      address = Oakland,
+      month = may,
+      year = 2003,
+}
+
+@inproceedings{terra,
+      author = "Tal Garfinkel and Ben Pfaff and Jim Chow and Mendel Rosenblum and Dan Boneh",
+      title = "{Terra: A Virtual Machine-Based Platform for Trusted Computing}",
+      booktitle = sosp,
+      year = 2003,
+}
+
+@article{felten,
+     title = "{Understanding Trusted Computing: Will Its Benefits Outweigh Its Drawbacks?}",
+     author = "Edward W. Felten",
+     journal = ieeesecpriv,
+     volume = 1,
+     number = 3,
+     month = may, 
+     year = 2003,
+     pages = "60--62",
+}
+
+@inproceedings{aegis,
+      author = "G. Edward Suh and Dwaine Clarke and Blaise Gassend and Marten van Dijk and Srinivas Devadas",
+      title = "{Aegis: Architecture for Tamper-evident and Tamper-resistant Processing}",
+      booktitle = ics,
+      address = SF,
+      month = jun,
+      year = 2003,
+}
+
+@inproceedings{hashtree-cache,
+      author = "Blaise Gassend and Dwaine Clarke and G. Edward Suh and Marten van Dijk and Srinivas Devadas",
+      title = "{Caches and Hash Trees for Efficient Memory Integrity Verification}",
+      booktitle = hpca,
+      address = Anaheim,
+      month = feb,
+      year = 2003
+}
+
+@inproceedings{tdb,
+      author = "Umesh Maheshwari and Radek Vingralek and William Shapiro",
+      title = "{How to Build a Trusted Database System on Untrusted Storage}",
+      booktitle = osdi,
+      year = 2000,
+}
+
+@article{ ibm-coproc-smith,
+      author= "Sean W. Smith and Steve Weingart",
+      title= "{Building a High-Performance, Programmable Secure Coprocessor}", 
+      journal = compnet,
+      volume = 31,
+      number = 9,
+      month= apr,
+      year= 1999, 
+      pages= "831--860",
+      issn = "1389-1286",
+}
+
+@phdthesis{sec-coproc-yee,
+      author = "Bennet Yee",
+      title = "{Using Secure Coprocessors}",
+      school = "School of Computer Science, Carnegie Mellon University",
+      address = Pittsburgh,
+      month = may,
+      year = 1994,
+}
+
+@phdthesis{jones-thesis-interpose,
+      author = "Michael B. Jones",
+      title = "{Transparently Interposing User Code at the System Interface}",
+      school = "School of Computer Science, Carnegie Mellon University",
+      address = Pittsburgh,
+      month = sep,
+      year = 1992,
+}
+
+@inproceedings{lampsondssa,
+      author = "Morrie Gasser and Andy Goldstein and Charlie Kaufman and Butler Lampson",
+      title = "{The Digital Distributed System Security Architecture}",
+      booktitle = ncsc,
+      address = Baltimore,
+      month = oct,
+      year = 1989,
+}
+
+@inproceedings{Merkle2,
+      author = "Ralph C. Merkle",
+      title = "{A Certified Digital Signature}",
+      booktitle = crypt, 
+      address = SantaBarbara,
+      month = aug,
+      year = 1989,
+}
+
+@inproceedings{Merkle1,
+      author = "Ralph C. Merkle",
+      title = "{Protocols for Public Key Cryptosystems}",
+      booktitle = oakland,
+      address = Oakland,
+      month = may,
+      year = 1980,
+}
+
+% user level drivers
+
+@inproceedings{ nooks-recovering,
+      author = "Michael M. Swift and Muthukaruppan Annamalai and Brian N. Bershad and Henry M. Levy",
+      title = "{Recovering Device Drivers}",
+      booktitle = osdi,
+      year = 2004
+}
+
+@inproceedings{nooks,
+      author = "Michael M. Swift and Brian N. Bershad and Henry M. Levy",
+      title = "{Improving the Reliability of Commodity Operating Systems}",
+      booktitle = sosp,
+      year = 2003
+}
+
+@article{udriver-achieved,
+      author = "Ben Leslie and Peter Chubb and Nicholas Fitzroy-Dale and Stefan {G\"otz} and Charles Gray and Luke Macpherson and Daniel Potts and Yueting Shen and Kevin Elphinstone and Gernot Heiser",
+      title = "{User-Level Device Drivers: Achieved Performance}",
+      journal = cst,
+      volume = 20,
+      number = 5,
+      month = sep,
+      year = 2005,
+      pages = "654--664",
+}
+
+@inproceedings{driver-reuse, 
+      author = "Joshua LeVasseur and Volkmar Uhlig and Jan Stoess and Stefan {G\"otz}", 
+      title = "{Unmodified Device Driver Reuse and Improved System Dependability via Virtual Machines}", 
+      booktitle = osdi,
+      year = 2004, 
+}
+
+@inproceedings{sec-coproc-ids,
+      author = "Xiaolan Zhang and Leendert van Doorn and Trent Jaeger and Ronald Perez and Reiner Sailer",
+      title = "{Secure Coprocessor-based Intrusion Detection}", 
+      booktitle = esigops,
+      address = SaintEmilion,
+      month = sep,
+      year = 2002,
+}
+
+% core os
+
+@inproceedings{ ostia-interpose,
+      author = "Tal Garfinkel and Ben Pfaff and Mendel Rosenblum",
+      title = "{Ostia: A Delegating Architecture for Secure System Call Interposition}",
+      booktitle = ndss,
+      address = SanDiego,
+      month = feb,
+      year = 2004,
+}
+
+@inproceedings{infokernel,
+      title = "{Transforming Policies into Mechanisms with Infokernel}",
+      author = "Andrea C. Arpaci-Dusseau and Remzi H. Arpaci-Dusseau and Nathan C. Burnett and Timothy E. Denehy and Thomas J. Engle and Haryadi S. Gunawi and James A. Nugent and Florentina I. Popovici",
+      booktitle = sosp,
+      year = 2003,
+}
+
+@inproceedings{spin:dispatcher,
+      title = "{Dynamic Binding for an Extensible System}",
+      author = "Przemyslaw Pardyak and Brian Bershad", 
+      booktitle = osdi,
+      year = 1996
+}
+
+@inproceedings{L4,
+      author = "Hermann {H\"artig} and Michael Hohmuth and Jochen Liedtke and Sebastian {Sch\"onberg}",
+      title = "{The Performance of $\mu$-Kernel-Based Systems}",
+      booktitle = sosp,
+      year = 1997,
+}
+
+@inproceedings{vino,
+      author = "Margo I. Seltzer and Yasuhiro Endo and Christopher Small and Keith A. Smith",
+      title = "{Dealing with Disaster: Surviving Misbehaving Kernel Extensions}",
+      booktitle = osdi,
+      year = 1996,
+}
+
+@article{plan9,
+      title = "{Plan 9 from Bell Labs}",
+      author = "Rob Pike and Dave Presotto and Sean Dorward and Bob Flandrena and Ken Thompson and Howard Trickey and Phil Winterbottom",
+      journal = "Computing Systems", 
+      volume = 8, 
+      number = 3, 
+      month = "Summer",
+      year = 1995,
+      pages = "221--254", 
+}
+
+@inproceedings{sfi,
+      author = "Robert Wahbe and Steven Lucco and Thomas E. Anderson and Susan L. Graham",
+      title = "{Efficient Software-Based Fault Isolation}",
+      booktitle = sosp,
+      year = 1993,
+      pages = "203--216",
+}
+
+@inproceedings{graybox,
+      author = "Andrea C. Arpaci-Dusseau and Remzi H. Arpaci-Dusseau",
+      title = "{Information and Control in Gray-Box Systems}",
+      booktitle = sosp,
+      year = 2001,
+}
+
+@techreport{shype,
+      author = "Reiner Sailer and Enriquillo Valdez and Trent Jaeger and Ronald Perez and Leendert van Doorn and John Linwood Griffin and Stefan Berger",
+      title = "{sHype: Secure Hypervisor Approach to Trusted Virtualized Systems}",
+      institution = "IBM Research Division, Thomas J. Watson Research Center", 
+      address = YorktownHeights,
+      number = "RC23511 (W0502-006)",
+      month = feb,
+      year = 2005,
+}
+
+@inproceedings{privacy:preserving,
+      author = "Dan Boneh and Hovav Shacham", 
+      title = "{Group Signatures with Verifier-Local Revocation}",
+      booktitle = ccs,
+      address = DC,
+      month = oct,
+      year = 2004
+}
+@book{intel-lagrande,
+      author = "{Intel Corporation}",
+      title = "{LaGrande Technology Preliminary Architecture Specification}",
+      publisher = "Intel Inc.",
+      month = mar,
+      year = 2006
+}
+
+@inproceedings{amd-presidio,
+      author = "Geoffrey Strongin",
+      title = "{AMD's Vision for Trustworthy Computing}",
+      booktitle = digitalid,
+      month = oct,
+      address = Denver,
+      year = 2004,
+}
+
+% oldies
+
+@book{Rag95,
+author = "R. Motwani and P. Raghavan",
+      title = "{Randomized Algorithms}",
+      publisher = "Cambridge University Press",
+      year = 1995
+}
+
+@article{herlihy:methodology,
+      author =	 "Maurice Herlihy",
+      title =	 "{A Methodology for Implementing Highly Concurrent Data Objects}",
+      journal =	 toplas,
+      volume =	 15,
+      number =	 5,
+      month =	 nov,
+      year =	 1993,
+      pages =	 "745--770",
+}
+
+@inproceedings{rbac,
+      author = "David Ferraiolo and Richard Kuhn",
+      title = "{Role-Based Access Control}",
+      booktitle = ncs,
+      address = Baltimore,
+      month = oct,
+      year = 1992,
+}
+
+@article{linda,
+      author =	 "Nicholas Carriero and David Gelernter",
+      title =	 "{Linda in Context}",
+      journal =	 cacm,
+      volume =	 32,
+      number =	 4,
+      month =	 apr,
+      year =	 1989,
+      pages =	 "444--458",
+}
+
+@article{vkernel,
+      author =	 "David Cheriton",
+      title =	 "{The V Distributed System}",
+      journal =	 cacm,
+      volume =	 31,
+      number =	 3,
+      month =	 mar,
+      year =	 1988,
+      pages =	 "314--333",
+}
+
+@article{kenthompson,
+      author =	 "Ken Thompson",
+      title =	 "{Reflections on Trusting Trust}",
+      journal =	 cacm,
+      volume =	 27,
+      number =	 8,
+      month =	 aug,
+      year =	 1984,
+}
+
+@article{flp,
+      author = "Michael J. Fischer and Nancy A. Lynch and Michael S. Paterson",
+      title = "{Impossibility of Distributed Consensus with One Faulty Process}",
+      journal = jacm,
+      volume = 32,
+      number = 2,
+      month = apr,
+      year = 1985,
+      pages = "374--382",
+}
+
+@inproceedings{lampson,
+      author = "Butler W. Lampson",
+      title = "{Hints for Computer Systems Design}",
+      booktitle = sosp,
+      year = 1983
+}
+
+@article{bloomfilters,
+      author =	 "Burton H. Bloom",
+      title =	 "{Space/Time Trade-offs in Hash Coding with Allowable Errors}",
+      journal =	 cacm,
+      volume =	 13,
+      number =	 7,
+      year =	 1970,
+      pages =	 "422--426",
+}
+
+% crypto
+
+@inproceedings{tweakable,
+      author = "Moses Liskov and Ronald L. Rivest and David Wager",
+      title = "{Tweakable Block Ciphers}",
+      booktitle = crypt,
+      address = SantaBarbara,
+      month = aug,
+      year = 2002
+}
+
+@misc{loop-aes,
+      key = "Crypt-LOOP-AES",
+      title = "{loop-aes}",
+      howpublished = "\biburl{http://loop-aes.sourceforge.net/}"
+}
+@misc{dm-crypt,
+      key = "Crypt-DM",
+      title = "{dm-crypt}",
+      howpublished = "\biburl{http://www.saout.de/misc/dm-crypt/}"
+}
+@misc{lrw-aes,
+      author = "{IEEE Security in Storage Working Group}",
+      title = "{Draft Proposal for Tweakable Narrow-block Encryption}",
+      editor = "Clement Kent",
+      howpublished =  "\biburl{http://www.siswg.org/docs/LRW-AES-10-19-2004.pdf}"
+}
+% rfcs, internet drafts, standards and urls
+
+@misc{straw,
+      key = "Straw",
+      title = "{Straw}",
+      howpublished = "\biburl{http:\-//www.nongnu.org\-/straw}"
+}
+
+@misc{xml,
+      author = "Francois Yergeau and Tim Bray and Jean Paoli C. M. Sperberg-McQueen and Eve Maler",
+      title = "{Extensible Markup Language (XML) 1.0 (Third Edition)}", 
+      howpublished = "\biburl{http:\-//www.w3.org\-/TR\-/2004\-/REC-xml-20040204}",
+      month = feb,
+      year = 2004
+}
+
+@misc{xpath,
+      author = "Anders Berglund and Scott Boag and Don Chamberlin and Mary F. Fernandez and Michael Kay and Jonathan Robie and Jerome Simeon",
+      title =  "{XML Path Language (XPath) 2.0}",
+      howpublished = "\biburl{http:\-//www.w3.org\-/TR\-/xpath20}",
+      month = jul,
+      year = 2004
+}
+
+@misc{xquery,
+      author = "Scott Boag and Don Chamberlin and Mary F. Fernandez and Daniela Florescu and Jonathan Robie and Jerome Simeon",
+      title =  "{XQuery 1.0: An XML Query Language}",
+      howpublished = "\biburl{http:\-//www.w3.org\-/TR\-/xpath}",
+      month = jul,
+      year = 2004
+}
+
+@misc{xslt,
+     author = "Michael Kay",
+     title = "{XSL Transformations (XSLT) Version 2.0}",
+     howpublished = "\biburl{http:\-//www.w3.org\-/TR\-/xslt20}",
+     month = nov,
+     year = 2003
+}
+
+@misc{namespace,
+      author = "Tim Bray and Dave Hollander and Andrew Layman",
+      title = "{Namespaces in XML}",
+      howpublished = "\biburl{http://www.w3.org/TR/REC-xml-names}",
+      month = jan,
+      year = 1999
+}
+
+@misc{rssspec,
+      key =	 "RSS",
+      title =	 "{RSS 2.0 Specifications}",
+      howpublished = "\biburl{http://blogs.law.harvard.edu/tech/rss}",
+      year =	 2005,
+}
+
+@misc{rssdata,
+      key =		 "RSS",
+      title =	 "{RSS Data}",
+      howpublished = "\biburl{http://radio.xmlstoragesystem.com/rcsPublic/rssHotlist}",
+}
+
+@rfc{Heffernan98,
+      author = "Andy Heffernan",
+      title = "{RFC 2385: Protection of BGP Sessions via the TCP MD5 Signature Option}",
+      number = "2385",
+      year = 1998,
+      month = aug,
+}
+
+@rfc{dnssecbiz,
+author =	 "R. Arends and R. Austein and M. Larson and D. Massey and S. Rose",
+      title =	 "{Protocol Modifications for the Domain Name System Security Extensions}",
+      number = "4035",
+      month =	 mar,
+      year =	 2005,
+}
+
+@rfc{dnssec,
+      author = "Donald Eastlake",
+      title = "{Domain Name System Security Extensions}",
+      number = "2335",
+      month = mar,
+      year = 1999
+}
+
+@rfc{ICP,
+      author =	 "Duane Wessels and kc claffy",
+      title =	 "{Internet Cache Protocol, version 2}",
+      number = "2186",
+      month = sep,
+      year =	 1997,
+}
+
+@rfc{negativednscaching,
+      author = "Mark Andrews",
+      title = "{Negative Caching of DNS Queries}",
+      number = "2308",
+      month = mar,
+      year = 1998
+}
+      
+@rfc{load,
+      author = "Thomas Brisco",
+      title = "{DNS Support for Load Balancing}",
+      number = "1794",
+      month = apr,
+      year = 1995
+}
+
+@rfc{dnserrors,
+      author = "Anant Kumar and Jon Postel and Clifford Neuman and Paul Danzig and Steve Miller",
+      title = "{Common DNS Implementation Errors and Suggested Fixes}",
+      number = "1536",
+      month = oct,
+      year = 1993
+}
+
+@rfc{dnsrfc2,
+      author = "Paul Mockapetris",
+      title = "{Domain Names: Implementation and Specification}",
+      number = "1035",
+      month = nov,
+      year = 1987
+}
+
+@rfc{dnsrfc,
+      author = "Paul Mockapetris",
+      title = "{Domain Names: Concepts and Facilities}",
+      number = "1034",
+      month = nov,
+      year = 1987
+}
+
+@misc{CARP,
+      author =	 "Keith W. Ross",
+      title =	 "{Cache Array Routing Protocol 1.0}",
+      howpublished = "Internet Draft",
+      year =	 1998,
+}
+
+@misc{atom,
+      key =	 "Atom",
+      title =	 "{Atom Syndication Format}",
+      howpublished = "\biburl{http://www.atomenabled.org/developers/syndication}",
+}
+
+@misc{gaim,
+      author =	 "GAIM",
+      title =	 "{A Multi-Protocol Instant Messaging Client}",
+      howpublished = "\biburl{http://gaim.sourceforge.net}",
+}
+
+@misc{mplayer,
+      key = "mplayer",
+      title = "{MPlayer - The Movie Player}",
+      howpublished = "\biburl{http://www.mplayerhq.hu/}",
+}
+
+@misc{gnutella,
+      author =	 "Gnutella",
+      title =	 "{The Gnutella Protocol Specification}",
+      howpublished = "\biburl{http://www9.limewire.com/developer/gnutella\_protocol\_0.4.pdf}",
+}
+
+@misc{gush,
+      key =		 "Gush",
+      title =	 "{Gush}",
+      howpublished = "\biburl{http://www.2entwine.com}",
+}
+
+@misc{ircache,
+      key =		 "IRCache",
+      title =	 "{IRCache}",
+      howpublished = "\biburl{http://www.ircache.net}",
+}
+
+@misc{isc,
+      key =		 "BIND",
+      title =	 "{BIND Vulnerabilities}",
+      howpublished = "\biburl{http://www.isc.org/sw/bind/bind-security.php}",
+      month =	 feb,
+      year =	 2004,
+}
+
+@misc{stribling,
+      author =	 "Jeremy Stribling",
+      title =	 "{PlanetLab All Pairs Ping Data}",
+      howpublished = "\biburl{http://pdos.csail.mit.edu/\~{}strib/pl\_app}",
+}
+
+@misc{tcpdump,
+      AUTHOR =	 "Van Jacobson and Craig Leres and Steven McCanne",
+      TITLE =	 "{tcpdump}",
+      howpublished = "\biburl{http://www.tcpdump.org/}"
+}
+
+@misc{tibco,
+      key =		 "TIBCO",
+      title =	 "{TIBCO Publish-Subscribe}",
+      howpublished = "\biburl{http://www.tibco.com}",
+}
+@misc{tspace,
+      key =		 "TSpaces",
+      title =	 "{TSpaces}",
+      howpublished = "\biburl{http://www.almaden.ibm.com/cs/TSpaces/}",
+}
+
+% DO NOT JUST ADD THINGS HERE - sort by topic first, then by year.

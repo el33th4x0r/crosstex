@@ -1,0 +1,7 @@
+@inproceedings{test,
+      author =	 "Roy Jimbo John Arends and R. Austein, Jr. and M. {von Larson} and D. {de O'Massey, Jr.} and S. Rose",
+      title =	 "{Protocol Modifications for the Domain Name System Security Extensions}",
+      booktitle = sosp,
+      year =	 2005,
+}
+
