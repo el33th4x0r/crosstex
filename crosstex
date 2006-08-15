@@ -24,7 +24,7 @@ import crosstexobjects
 import crosstexstyles
 
 citations = []
-styleobj = crosstexstyles.plain()
+styleobj = crosstexstyles.formatter()
 strtbl = {}
 preambletbl = {}
 nstrings = 0
@@ -112,21 +112,39 @@ def parseaux(instream, infilename, options):
                 citations += [cite]
         elif line[0:9] == "\\bibstyle":
             sname = line[10:].rstrip().rstrip("}")
-            try:
-                styleobj = getattr(crosstexstyles, sname)()
-            except:
-                print "style %s not found" % sname
-                sys.exit(1)
+            styleobj.style(sname, options)
         elif line[0:8] == "\\bibdata":
-            fname = line[9:].rstrip().rstrip("}")
-            parsextxfile(fname, options)
+            fnamesfull = line[9:].rstrip().rstrip("}")
+            fnames = fnamesfull.split(",")
+            for fname in fnames:
+                parsextxfile(fname, options)
             
+def pathopen(name, mode, options):
+    if name[0] == "/":
+        if options["dump-files"]:
+            print "processing ", name, "..."
+        return openfile(name, mode)
+
+    # filename is relative, try all elements of the path
+    for path in options["path"].split(":"):
+        try:
+            file = open(path + name, mode)
+            if options["dump-files"]:
+                print "processing ", path + name, "..."
+            return file
+        except:
+            pass
+    print "file %s not found in path %s" % (infilename, options["path"])
+    raise IOError, 'File not found'
+    
 def parsextxfile(infilename, options):
     if infilename[-4:] != ".xtx":
         infilename = infilename + ".xtx"
-    if options["dump-files"]:
-        print "Processing file", infilename, "..."
-    infile = open(infilename, 'r')
+    try:
+        infile = pathopen(infilename, 'r', options)
+    except:
+        print "bibliography database %s not found, skipping" % infilename
+        return
     parsextx(infile, infilename, options)
     infile.close()
 
@@ -160,13 +178,13 @@ def parsextx(instream, infilename, options):
 
                 objname = string.split(line.lower(), "{")[0].strip("@{ 	")
                 rest = string.split(line,"{")[1]
-                key = rest[:rest.find("=")].strip() 
+                key = rest[:rest.find("=")].strip()
                 rest = rest[rest.find("=")+1:].strip().rstrip("}")
 
                 strobj = crosstexobjects.stringentry()
                 strobj.setkey(key,curpos)
                 strobj.setvalue(rest,curpos)
-                db.putobject(strobj, curpos)
+                db.putobject(strobj, options, curpos)
                 break
             if line[0:9].lower() == "@preamble":
                 preambletbl[nstrings] = line.strip()
@@ -177,7 +195,7 @@ def parsextx(instream, infilename, options):
                 continue
             if line[0] == "}":
                 curobj.endobj(curpos)
-                db.putobject(curobj, curpos)
+                db.putobject(curobj, options, curpos)
                 curobj = crosstexobjects.NoObject()
                 line = line[1:]
                 continue
@@ -253,29 +271,50 @@ def parsextx(instream, infilename, options):
                     args = (str, curpos)
                     result = method(curobj, *args)
             except:
-                curobj.setfield(fieldname, str, curpos)
+                try:
+                    curobj.setfield(fieldname, str, curpos)
+                except:
+                    print "%s: object of type %s does not have field %s" % (curpos, curobj.myname(), fieldname)
 
 def usage():
     print "crosstex [options] filename"
-    print "  --use-long-conferencenames:\tuse long conference names (default)"
+    print ""
+    print " Options regarding object appearance in the bibliography:"
+    print "  --path /path1:/path2:\tuse path to look for files (default=.:/usr/share/texmf/crosstex)"
+    print "  --use-long-conferencenames:\tuse long conference names (default=on)"
     print "  --no-use-long-conferencenames:use short conference names"
-    print "  --use-long-monthnames:\tuse full month names (default)"
+    print "  --use-long-monthnames:\tuse full month names (default=on)"
     print "  --no-use-long-monthnames:\tuse three/four letter short month prefix"
-    print "  --use-long-statenames:\tuse full state name (default)"
+    print "  --use-long-statenames:\tuse full state name (default=on)"
     print "  --no-use-long-statenames:\tuse use two letter abbreviation for state"
-    print "  --use-long-countrynames:\tuse full country name (default)"
+    print "  --use-long-countrynames:\tuse full country name (default=on)"
     print "  --no-use-long-countrynames:\tuse short country name where possible"
-    print "  --use-long-journalnames:\tuse full journal name (default)"
+    print "  --use-long-journalnames:\tuse full journal name (default=on)"
     print "  --no-use-long-journalnames:\tuse short journal name where possible"
     print "  --add-proceedingsof:\t\tadd \"Proceedings of the\" for conf and workshop publications"
     print "  --add-procof:\t\t\tadd \"Proc. of\" for conf and workshop publications"
     print "  --use-inforarticles:\t\t\tadd \"In\" for articles"
-    print "  --check:\t\t\tsanity check the input (default)"
-    print "  --no-check:\t\t\tskip checking input, generate few complaints"
+    print ""
+    print " Options regarding citation style:"
+    print "  --ignore-doc-style:\t\tCommand line options override style in latex file (default=off)"
+    print "  --use-initials:\t\tShorten first names in bib entries to just initials (default=off)"
+    print "  --use-citebyinitial:\t\tRefer to papers by concatenation of author initials (default=off)"
+    print "  --use-citebyfullname:\t\tRefer to papers by full last names (default=off)"
+    print "  --use-sortcitations:\t\tSort the bibliography by citation key (default=on)"
+    print "  --no-use-sortcitations:\t\tBibliography in citation order"
+    print ""
+    print " Sanity checking of the object database:"
+    print "  --check:\t\t\tsanity check the input (default=on)"
+    print "  --no-check:\t\t\tskip checking input, generate no complaints"
+    print "  --strict:\t\t\tapply strict checks (default=off)"
+    print ""
+    print " Debugging:"
     print "  --dump-locations:\t\tdump the location data for debugging"
     print "  --dump-conferences:\t\tdump the conference data for debugging"
     print "  --dump-workshops:\t\tdump the workshop data for debugging"
     print "  --dump-files:\t\t\tdump the input files processed"
+    print ""
+    print " Conversion:"
     print "  --xtx2bib:\t\t\tgenerate bib file"
     sys.exit(1)
 
@@ -294,6 +333,8 @@ options["add-procof"] = 0
 options["use-inforarticles"] = 0
 options["xtx2bib"] = 0
 options["check"] = 1
+options["strict"] = 0
+options["ignore-doc-style"] = 0
 options["dump-locations"] = 0
 options["dump-conferences"] = 0
 options["dump-workshops"] = 0
@@ -303,7 +344,6 @@ if int(len(sys.argv) == 0):
     usage()
 
 # the symlink from "xtx2bib" to this file should turn on the xtx2bib option
-
 pathcomponents = sys.argv[0].split("/")
 basename = pathcomponents[len(pathcomponents)-1]
 options[basename] = 1
@@ -312,6 +352,12 @@ nopt = 1
 for opt in sys.argv[1:]:
     if opt == "--help":
         usage()
+    elif opt == "--path":
+        if len(sys.argv) <= nopt+1:
+            usage()
+        else:
+            options[opt[2:]] = sys.argv[nopt+1]
+            nopt += 2
     elif len(opt) >= 5 and opt[0] == "-" and opt[1] == "-" and opt[2] == "n" and opt[3] == "o" and opt[4] == "-":
         options[opt[5:]] = 0
         nopt += 1
@@ -319,9 +365,13 @@ for opt in sys.argv[1:]:
         options[opt[2:]] = 1
         nopt += 1
 
+if not options.has_key("path"):
+    options["path"] = ".:/usr/share/texmf/bibtex"
+    
 for infilename in sys.argv[nopt:]:
     if infilename[-4:] == ".xtx":
         parsextxfile(infilename, options)
+        bblfilename = ""
     else:
         parseauxfile(infilename, options)
         bblfilename = infilename + ".bbl"
@@ -381,7 +431,13 @@ for infilename in sys.argv[nopt:]:
                 if options["xtx2bib"]:
                     paper.tobibtex()
 
-    if not options["xtx2bib"]:
+    # generate the BBL file if one needs to be generated
+    if not options["xtx2bib"] and bblfilename != "":
+        for c in citations:
+            styleobj.prepcite(c, db, options)
+
+        styleobj.fixupkeys(db, options)
+
         for c in citations:
             styleobj.cite(c, db, options)
 

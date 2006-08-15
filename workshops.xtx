@@ -72,6 +72,7 @@
   [year=2002] address=Atlanta, month=sep,
 }
 @workshop{irdps,        shortname = "IRDPS Workshop", longname = "International Workshop on Reliable Peer-to-Peer Distributed Systems"}
+@workshop{nspw,	        shortname = "NSPW", longname = "New Security Paradigm Workshop"}
 @workshop{ncatnc,	shortname = "NCA-Trusted Network Computing Workshop", longname = "International Symposium on Network Computing and Applications, Trusted Network Computing Workshop"}
 @workshop{ieeeia,	longname = "IEEE Workshop on Internet Applications"}
 @workshop{iwda,		longname = "International Workshop on Distributed Algorithms"}

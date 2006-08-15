@@ -1,12 +1,13 @@
-@month{jan, longname="January", shortname="Jan."}
-@month{feb, longname="February", shortname="Feb."}
-@month{mar, longname="March", shortname="Mar."}
-@month{apr, longname="April", shortname="Apr."}
-@month{may, longname="May", shortname="May"}
-@month{jun, longname="June", shortname="June"}
-@month{jul, longname="July", shortname="July"}
-@month{aug, longname="August", shortname="Aug."}
-@month{sep, longname="September", shortname="Sept."}
-@month{oct, longname="October", shortname="Oct."}
-@month{nov, longname="November", shortname="Nov."}
-@month{dec, longname="December", shortname="Dec."}
+@month{jan, monthno= 1, longname="January", shortname="Jan."}
+@month{feb, monthno= 2, longname="February", shortname="Feb."}
+@month{mar, monthno= 3, longname="March", shortname="Mar."}
+@month{apr, monthno= 4, longname="April", shortname="Apr."}
+@month{may, monthno= 5, longname="May", shortname="May"}
+@month{jun, monthno= 6, longname="June", shortname="June"}
+@month{jul, monthno= 7, longname="July", shortname="July"}
+@month{aug, monthno= 8, longname="August", shortname="Aug."}
+@month{sep, monthno= 9, longname="September", shortname="Sept."}
+@month{oct, monthno=10, longname="October", shortname="Oct."}
+@month{nov, monthno=11, longname="November", shortname="Nov."}
+@month{dec, monthno=12, longname="December", shortname="Dec."}
+

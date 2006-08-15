@@ -12,8 +12,13 @@ class objectfarm:
         self._namespaces = {}
         self._definitions = []
 
+    # checks two objects to see if they are identical, useful for multiple defn check
+    def objidentical(self, obj1, obj2):
+        #XXX need to implement field by field check
+        return 1
+    
     # stores an object under its key in a namespace named by its type
-    def putobject(self, obj, curpos):
+    def putobject(self, obj, options, curpos):
         nsname = "%s" % obj.__class__
         nsname = nsname[len("crosstexobjects."):]        
         if self._namespaces.has_key(nsname):
@@ -22,7 +27,11 @@ class objectfarm:
             ns = {}
             self._namespaces[nsname] = ns
         if ns.has_key(obj.key):
-            print "%s: object with key %s of type %s already exists" % (curpos, obj.key, nsname)
+            if options["strict"]:
+                print "%s: object with key %s of type %s already exists" % (curpos, obj.key, nsname)
+            if not self.objidentical(obj, ns[obj.key]):
+                print "%s: different object with key %s of type %s already exists" % (curpos, obj.key, nsname)
+            return
         ns[obj.key] = obj
         self._definitions += [(nsname, obj.key)]
         
@@ -149,14 +158,22 @@ class namedobject:
 class journal(namedobject):
     pass
 
-class month(namedobject):
-    pass
-
 class country(namedobject):
     pass
 
 class state(namedobject):
     pass
+
+class month(namedobject):
+    def beginobj(self, curpos):
+        self._monthno = 0
+        
+    def setmonthno(self, arg, curpos):
+        self._monthno = int(arg)
+
+    def promote(self, db, intoobj, options):
+        intoobj._monthno = self._monthno
+        return namedobject.promote(self, db, intoobj, options)
 
 class location:
     def beginobj(self, curpos):
@@ -362,7 +379,8 @@ class inproceedings(pub):
                 conf = db.getobject("stringentry", self._booktitle)
                 self._booktitle = conf.promote(db, self, options)
             else:
-                print "Conference %s is not defined, leaving it as is" % self._booktitle
+                if options["check"]:
+                    print "conference %s is not defined, leaving it as is" % self._booktitle
 
 class article(pub):
     def __init__(self):
@@ -382,7 +400,8 @@ class article(pub):
                 conf = db.getobject("stringentry", self._journal)
                 self._journal = conf.promote(db, self, options)
             else:
-                print "Journal %s is not defined, leaving it as is" % self._journal
+                if options["check"]:
+                    print "journal %s is not defined, leaving it as is" % self._journal
 
 class misc(pub):
     def __init__(self):

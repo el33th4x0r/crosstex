@@ -26,6 +26,13 @@
 
 % p2p substrates
 
+@phdthesis{rama:thesis,
+      author = "Venugopalan Ramasubramanian",
+      school = "Cornell University, Department of Computer Science",
+      month = sep,
+      year = 2006,
+}
+
 @inproceedings{mercury,
 author = "A. Bharambe and M. Agrawal and S. Seshan",
       title = "{Mercury: Supporting Scalable Multi-Attribute Range Queries}",
@@ -300,6 +307,15 @@ author = "A. Bharambe and M. Agrawal and S. Seshan",
       year = 2003
 }
 
+@inproceedings{pond,
+      author = "Sean Rhea and Patrick Eaton and Dennis Geels",
+      title = "{Pond: The OceanStore Prototype}",
+      booktitle = fast,
+      address = SF,
+      month = apr,
+      year = 2003,
+}
+
 @techreport{cone,
       author = "Ranjita Bhagwan and George Varghese and Geoff M. Voelker",
       title = "{Cone: Augmenting DHTs to Support Distributed Resource Discovery}",
@@ -315,6 +331,15 @@ author = "A. Bharambe and M. Agrawal and S. Seshan",
       booktitle = usenix,
       month = jun, 
       year = 2003
+}
+
+@inproceedings{ivy,
+      author = "Athicha Mutitacharoen and Robert Morris and Thomer M. Gil and Benjie Chen",
+      title = "{Ivy: A Read/Write Peer-to-Peer File System}",
+      booktitle = osdi,
+      address = Boston,
+      month = dec,
+      year = 2002
 }
 
 @inproceedings{iyer02squirrel,
@@ -865,7 +890,7 @@ author = "A. Slivkins",
 @phdthesis{perlman,
       author = "Radia Perlman",
       title = "{Network Layer Protocols with Byzantine Robustness}",
-      school = {MIT},
+      school = "Massachussetts Institute of Technology",
       year = 1988,
       url = {http://hdl.handle.net/1721.1/14403}
 }
@@ -2013,12 +2038,18 @@ author = "C. Barber and D. Dobkin and H. Huhdanpaa",
       year=2005
 }
 
-@inproceedings{TCGLinux,
+@inproceedings{tcglinux,
       title = "{Design and Implementation of a TCG-based Integrity Measurement Architecture}",
       author = "Reiner Sailer and Xiaolan Zhang and Trent Jaeger and Leendert van Doorn",
       booktitle = usenixsecurity,
       address = SanDiego,
       month = aug,
+      year = 2004,
+}
+@inproceedings{property:based:attestation,
+      title = "{Property-based Attestation for Computing Platforms: Caring about Policies, not Mechanisms}",
+      author = "Ahmad-Reza Sadeghi and Christian {St\"uble}",
+      booktitle = nspw,
       year = 2004,
 }
 
@@ -2110,7 +2141,72 @@ author = "C. Barber and D. Dobkin and H. Huhdanpaa",
       year = 2000,
 }
 
-@article{ ibm-coproc-smith,
+% security
+
+@inproceedings{sundr,
+      author = "Jinyuan Li and Maxwell Krohn and David Mazieres and Dennis Shasha",
+      title = "{Secure Untrusted Data Repository (SUNDR)}",
+      booktitle = osdi,
+      address = SF,
+      month = dec,
+      year = 2004
+}
+
+@inproceedings{bft,
+      author = "Miguel Castro and Barbara Liskov",
+      title = "{Practical Byzantine Fault Tolerance}",
+      booktitle = sosp,
+      address = KiawahIsland,
+      month = dec,
+      year = 1999,
+}
+
+@inproceedings{duchamp,
+      author = "Dan Duchamp",
+      title = "{A Toolkit Approach to Partially Disconnected Operation}",
+      booktitle = usenix,
+      address = SanDiego,
+      month = jan,
+      year = 1997,
+}
+
+@inproceedings{sirius,
+      author = "Eu-Jin Goh and Hovav Shacham and Nagendra Modadugu and Dan Boneh",
+      title = "{SiRiUS: Securing Remote Untrusted Storage}",
+      booktitle = ndss,
+      year = 2003,
+      month = feb,
+}
+
+@inproceedings{plutus,
+      author = "M. Kallahalla and E. Riedel and R. Swaminathan and Q. Wang and K. Fu.",
+      title = "{Plutus: Scalabale Secure File Sharing on Untrusted Storage}",
+      booktitle = fast,
+      address = SF,
+      month = apr,
+      year = 2003,
+}
+
+@article{sfsro,
+      author = "Kevin Fu and M. Frans Kaashoek and David Mazieres",
+      title = "{Fast and Secure Distributed Read-Only File System}",
+      journal = tocs,
+      volume = 20,
+      number = 1,
+      pages = "1--24",
+      month = feb,
+      year = 2004,
+}
+
+@inproceedings{Merkle:hashtrees,
+      author = "Ralph C. Merkle",
+      title = "{A Digital Signature Based on a Conventional Encryption Function}",
+      booktitle = crypto,
+      address = Berlin,
+      year = 1987,
+}
+
+@article{ibm-coproc-smith,
       author= "Sean W. Smith and Steve Weingart",
       title= "{Building a High-Performance, Programmable Secure Coprocessor}", 
       journal = compnet,

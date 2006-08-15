@@ -297,6 +297,7 @@
 @conference{usenixsecurity,	shortname = "USENIX Security",	longname = "USENIX Security Symposium"}
 @conference{usenixvm,	shortname = "USENIX VM",	longname = "USENIX Virtual Machine Research and Technology Symposium"}
 @conference{usenixsa,	shortname = "USENIX SAC",	longname = "USENIX Systems Administration Conference"}
+@conference{fast,	shortname = "FAST",	longname = "USENIX Conference on File and Storage Technologies"}
 @conference{calp,	shortname = "CALP",	longname = "International Colloquium on Automata, Languages and Programming"}
 @conference{spaa,	shortname = "SPAA",	longname = "Symposium on Parallel Algorithms and Architectures"}
 @conference{sacmat,	shortname = "SACMAT",	longname = "Symposium on Access Control Models and Technologies"}
@@ -326,6 +327,7 @@
 @conference{icdsp,	name = "IFIP/ACM International Conference on Distributed Systems Platforms"}
 @conference{ncsc,	name = "National Computer Security Conference"}
 @conference{crypt,	name = "International Cryptology Conference"}
+@conference{crypto,	name = "Advances in Cryptology"}
 @conference{collaborative,	name = "International Conference on Collaborative Computing"}
 @conference{ccs,	name = "Conference on Computer and Communications Security"}
 @conference{digitalid,	name = "Digital ID World Conference"}
