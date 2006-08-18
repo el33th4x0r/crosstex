@@ -7,6 +7,13 @@ import math
 import string
 import crosstexobjects
 
+def hasfield(obj, fieldname):
+    try:
+        field = getattr(obj, "_" + fieldname)
+        return 1
+    except:
+        return 0
+
 class formatter:
     def __init__(self):
         # list of cited object, initially in order of citation, later sorted
@@ -30,7 +37,7 @@ class formatter:
         nesting = 0
         for i in range(0,len(name)):
             charc = name[i]
-            if lastchar != '\\' and lastchar != ' ' and charc == " ":
+            if nesting == 0 and lastchar != '\\' and lastchar != ' ' and charc == " ":
                 names.append(str)
                 str =""
             elif lastchar != '\\' and charc == "}":
@@ -41,7 +48,7 @@ class formatter:
                     nesting -= 1
             elif lastchar != '\\' and charc == "{":
                 nesting += 1
-            elif lastchar != '\\' and charc == ",":
+            elif nesting == 0 and lastchar != '\\' and charc == ",":
                 pass
             else:
                 str += charc
@@ -172,31 +179,27 @@ class formatter:
 
                 keystr = ""
                 sortkey = ""
-                try:
+                providedmonth = 1
+                providedyear = providedkey = providedauthor = ""
+                if hasfield(ref, "year"):
                     providedyear = ref._year
-                except:
-                    providedyear = ""
-                try:
+                if hasfield(ref, "key"):
                     providedkey = ref._key.strip("\"")
-                except:
-                    providedkey = ""
-                try:
+                if hasfield(ref, "monthno"):
                     providedmonth = ref._monthno
-                except:
-                    providedmonth = 1
-                try:
+                if hasfield(ref, "author"):
                     providedauthor = ref._author
-                except:
-                    providedauthor = ""
 
                 if providedkey != "":
                     citekey = self.processcitekey(providedkey, providedyear, db, options)
                 elif options["use-citebyinitial"] or options["use-citebyfullname"]:
                     citekey = self.processcitekey(providedauthor, providedyear, db, options)
+                    providedkey = providedauthor
                 else:
                     citekey = ""
+                    providedkey = providedauthor
                 sortkey = self.processsortkey(providedkey, providedyear, providedmonth, db, options)
-                    
+
                 obj = [sortkey, citekey, refkey, ref, providedauthor, providedyear, 0, ""]
                 self.citations.append(obj)
                 self.citationsbykey[refkey] = obj
@@ -229,7 +232,6 @@ class formatter:
         # if the entries are cited by initial or name, they are not guaranteed
         # to be unique. need to check and uniquify them.
         if options["use-citebyinitial"] or options["use-citebyfullname"]:
-
             for obj in self.citations:
                 citekey = obj[1]
                 if citekey in self.usedkeys:
@@ -240,7 +242,6 @@ class formatter:
                     self.finduniquekey(obj, db, options)
                 else:
                     self.usedkeys[citekey] = obj
-
 
     def cite(self, key, db, options):
         try:
@@ -260,10 +261,15 @@ class formatter:
         refstr = "\\bibitem%s{%s}\n" % (citestr, refkey)
         if providedauthor != "":
             authstr = "%s.\n" % (self.processauthors(providedauthor, db, options))
-        try:
+        if hasfield(ref, "title") and hasfield(ref, "booktitle") and hasfield(ref, "editor"):
+            titlestr = "\\newblock {%s}. In %s, %s, ed.\n" % (self.processtitle(ref._title, db, options),
+                                                              self.processtitle(ref._booktitle, db, options),
+                                                              self.processauthors(ref._editor, db, options))
+        elif hasfield(ref, "title") and hasfield(ref, "editor"):
+            titlestr = "\\newblock {%s, %s, ed.}\n" % (self.processtitle(ref._title, db, options),
+                                                       self.processauthors(ref._editor, db, options))
+        elif hasfield(ref, "title"):
             titlestr = "\\newblock {%s}.\n" % (self.processtitle(ref._title, db, options))
-        except:
-            titlestr = ""
 
         # ARTICLE
         if ref.myname() == "article":
@@ -271,21 +277,12 @@ class formatter:
                 pubstr = "\\newblock In {\\em %s}" % (ref._journal.strip("\""))
             else:
                 pubstr = "\\newblock {\\em %s}" % (ref._journal.strip("\""))
-            try:
-                if ref._volume:
-                    pubstr += " " + ref._volume
-            except:
-                pass
-            try:
-                if ref._number:
-                    pubstr += "(" + ref._number + ")"
-            except:
-                pass
-            try:
-                if ref._pages:
-                    pubstr += ":" + ref._pages
-            except:
-                pass
+            if hasfield(ref, "volume"):
+                pubstr += " " + ref._volume
+            if hasfield(ref, "number"):
+                pubstr += "(" + ref._number + ")"
+            if hasfield(ref, "pages"):
+                pubstr += ":" + ref._pages.strip("\"")
 
         # INPROCEEDINGS
         elif ref.myname() == "inproceedings":
@@ -297,66 +294,55 @@ class formatter:
             pubstr = "\\newblock In %s{\\em %s}" % (procstr, ref._booktitle.strip("\""))
 
         # THESES
-        elif ref.myname() == "phdthesis":
-            try:
-                pubstr = "\\newblock Ph.D. Thesis, %s" % ref._school.strip("\"")
-            except:
-                pubstr = "\\newblock Ph.D. Thesis"
-        elif ref.myname() == "masterthesis":
-            try:
-                pubstr = "\\newblock Masters Thesis, %s" % ref._school.strip("\"")
-            except:
-                pubstr = "\\newblock Masters Thesis"
+        elif ref.myname() == "phdthesis" or ref.myname() == "masterthesis":
+            if ref.myname() == "phdthesis":
+                thesistype = "Ph.D."
+            else:
+                thesistype = "Masters"
+            if hasfield(ref, "school"):
+                pubstr = "\\newblock %s Thesis, %s" % (thesistype, ref._school.strip("\""))
+            else:
+                pubstr = "\\newblock %s Thesis" % thesistype
 
         # BOOK
         elif ref.myname() == "book":
-            try:
-                pubstr = "\\newblock {\em %s}" % ref._title
-            except:
-                pass
-            print "TODO: book citations are broken"
+            pubstr = ""
+            if hasfield(ref, "publisher") and hasfield(ref, "address"):
+                pubstr = "\\newblock %s,%s" % (ref._publisher.strip("\""), ref._address.strip("\""))
+            elif hasfield(ref, "publisher") and not hasfield(ref, "address"):
+                pubstr = "\\newblock %s" % ref._publisher.strip("\"")
+            elif not hasfield(ref, "publisher") and hasfield(ref, "address"):
+                pubstr = "\\newblock %s" % ref._address.strip("\"")
 
         # TECHREPORT
         elif ref.myname() == "techreport":
-            try:
-                if ref._number and ref._institution:
-                    pubstr = "\\newblock Technical Report %s, %s" % (ref._number.strip("\""), ref._institution.strip("\""))
-            except:
-                try:
-                    if ref._institution:
-                        pubstr = "\\newblock Technical Report, %s" % ref._institution.strip("\"")
-                except:
-                    pubstr = "\\newblock Technical Report"
+            if hasfield(ref, "number") and hasfield(ref, "institution"):
+                pubstr = "\\newblock Technical Report %s, %s" % (ref._number.strip("\""), ref._institution.strip("\""))
+            elif hasfield(ref, "institution"):
+                pubstr = "\\newblock Technical Report, %s" % ref._institution.strip("\"")
+            else:
+                pubstr = "\\newblock Technical Report"
 
         # RFC
         elif ref.myname() == "rfc":
-            try:
+            if hasfield(ref, "number"):
                 pubstr = "\\newblock IETF Request for Comments RFC-%s" % ref._number.strip("\"")
-            except:
+            else:
                 pubstr = ""
 
         # MISC
         elif ref.myname() == "misc":
-            try:
-                if ref._howpublished:
-                    pubstr = "\\newblock %s" % ref._howpublished.strip("\"")
-            except:
-                try:
-                    if ref._note:
-                        pubstr = "\\newblock %s" % ref._note.strip("\"")
-                except:
-                    pass
-        try:
+            if hasfield(ref, "_howpublished"):
+                pubstr = "\\newblock %s" % ref._howpublished.strip("\"")
+            elif hasfield(ref, "_note"):
+                pubstr = "\\newblock %s" % ref._note.strip("\"")
+
+        if hasfield(ref, "month") and hasfield(ref, "year"):
             datestr = "%s %s" % (ref._month.strip("\""), ref._year.strip("\""))
-        except:
-            try:
-                datestr = ref._year.strip("\"")
-            except:
-                pass
-        try:
+        elif hasfield(ref, "year"):
+            datestr = ref._year.strip("\"")
+        if hasfield(ref, "address"):
             locstr = ref._address.strip("\"")
-        except:
-            pass
         bibstr = refstr + authstr + titlestr + pubstr 
         if locstr != "":
             bibstr += ", " + locstr
@@ -391,12 +377,16 @@ class formatter:
             if len(citekey) > len(maxstr):
                 maxstr = citekey
 
-        strlen = int(math.ceil(math.log(len(self.citations), 10)))
-        if maxstr == "":
-            maxstr = "00000000000"[0:strlen]
-        elif len(maxstr) >= 13:
-            print "------------------->", maxstr
-            maxstr = "XXXXXXXXXXXXX"
+        if len(self.citations) != 0:
+            strlen = int(math.ceil(math.log(len(self.citations), 10)))
+            if maxstr == "":
+                maxstr = "00000000000"[0:strlen]
+            elif len(maxstr) >= 13:
+                print "------------------->", maxstr
+                maxstr = "XXXXXXXXXXXXX"
+        else:
+            maxstr = "X"
+        
             
         fp.write("\\begin{thebibliography}{" + maxstr + "}\n")
         

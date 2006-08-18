@@ -128,9 +128,10 @@ def pathopen(name, mode, options):
     # filename is relative, try all elements of the path
     for path in options["path"].split(":"):
         try:
-            file = open(path + name, mode)
+#            print "trying ", path + "/" + name, "..."
+            file = open(path + "/" + name, mode)
             if options["dump-files"]:
-                print "processing ", path + name, "..."
+                print "processing ", path + "/" + name, "..."
             return file
         except:
             pass
@@ -366,7 +367,7 @@ for opt in sys.argv[1:]:
         nopt += 1
 
 if not options.has_key("path"):
-    options["path"] = ".:/usr/share/texmf/bibtex"
+    options["path"] = ".:/usr/share/texmf/crosstex"
     
 for infilename in sys.argv[nopt:]:
     if infilename[-4:] == ".xtx":
