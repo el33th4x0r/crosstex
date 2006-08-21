@@ -310,6 +310,12 @@ address = "Hawaii",
   month = mar,
   year = 2002
 }
+@phdthesis{egs:thesis,
+  title = "{Secure, Efficient and Manageable Virtual Machine Systems}",
+  author = "Emin {G\"un} Sirer",
+  school = "University of Washington",
+  year = 2002
+}
 @techreport{cliquenet,
   title = "{CliqueNet: A Self-Organizing, Scalable, Peer-to-Peer Anonymous Communication Substrate}",
   author = "Emin {G\"un} Sirer and Milo Polte and Mark Robson",
