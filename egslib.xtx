@@ -2498,7 +2498,7 @@ author = "R. Motwani and P. Raghavan",
 % crypto
 
 @inproceedings{tweakable,
-      author = "Moses Liskov and Ronald L. Rivest and David Wager",
+      author = "Moses Liskov and Ronald L. Rivest and David Wagner",
       title = "{Tweakable Block Ciphers}",
       booktitle = crypt,
       address = SantaBarbara,
