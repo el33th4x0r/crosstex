@@ -397,7 +397,6 @@ def pathopen(name, mode):
             return file
         except:
             pass
-    print "file %s not found in path %s" % (infilename, options["path"])
     raise IOError, 'File not found'
     
 def parsextxfile(infilename):
