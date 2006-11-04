@@ -26,14 +26,15 @@ class objectfarm:
         else:
             ns = {}
             self._namespaces[nsname] = ns
-        if ns.has_key(obj.key):
-            if options["strict"]:
-                print "%s: object with key %s of type %s already exists" % (curpos, obj.key, nsname)
-            if not self.objidentical(obj, ns[obj.key]):
-                print "%s: different object with key %s of type %s already exists" % (curpos, obj.key, nsname)
-            return
-        ns[obj.key] = obj
-        self._definitions += [(nsname, obj.key)]
+        for key in [obj.key] + obj.aliases:
+            if ns.has_key(key):
+                if options["strict"]:
+                    print "%s: object with key %s of type %s already exists" % (curpos, key, nsname)
+                if not self.objidentical(obj, ns[key]):
+                    print "%s: different object with key %s of type %s already exists" % (curpos, key, nsname)
+                return
+            ns[key] = obj
+            self._definitions += [(nsname, key)]
         
     # retrieves an object by a key from a namespace named by type
     def getobject(self, nsname, key):
@@ -74,13 +75,16 @@ class stringentry:
     def setkey(self, arg, curpos):
         self.key = arg
 
+    def setaliases(self, arg, curpos):
+        self.aliases = arg
+
     def setvalue(self, arg, curpos):
         self._value = arg
 
     def endobj(self, curpos):
         self._endline = curpos
 
-    def tobibtex(self):
+    def tobibtex(self, options):
         pass
 
     def promote(self, db, intoobj, options):
@@ -101,6 +105,8 @@ class author:
 
     def setkey(self, arg, curpos):
         self.key = arg
+    def setaliases(self, arg, curpos):
+        self.aliases = arg
 
     def setname(self, arg, curpos):
         self._name = arg
@@ -114,7 +120,7 @@ class author:
     def endobj(self, curpos):
         self._endline = curpos
 
-    def tobibtex(self):
+    def tobibtex(self, options):
         pass
 
     def promote(self, db, intoobj, options):
@@ -132,6 +138,9 @@ class namedobject:
 
     def setkey(self, arg, curpos):
         self.key = arg
+
+    def setaliases(self, arg, curpos):
+        self.aliases = arg
 
     def setname(self, arg, curpos):
         self._shortname = self._longname = arg
@@ -152,7 +161,7 @@ class namedobject:
             return self._longname
         else:
             return self._shortname
-    def tobibtex(self):
+    def tobibtex(self, options):
         pass
             
 class journal(namedobject):
@@ -181,6 +190,8 @@ class location:
         self._city = self._state = self._country = "\"\""
     def setkey(self, arg, curpos):
         self.key = arg
+    def setaliases(self, arg, curpos):
+        self.aliases = arg
     def setcity(self, arg, curpos):
         self._city = arg
     def setstate(self, arg, curpos):
@@ -189,7 +200,7 @@ class location:
         self._country = arg
     def endobj(self, curpos):
         self._endline = curpos
-    def tobibtex(self):
+    def tobibtex(self, options):
         pass
     def __str__(self):
         str = ""
@@ -232,6 +243,9 @@ class conference(namedobject):
     def setkey(self, arg, curpos):
         self.key = arg
 
+    def setaliases(self, arg, curpos):
+        self.aliases = arg
+
     def setyearcontext(self, arg, curpos):
         self._year = arg
 
@@ -257,8 +271,6 @@ class conference(namedobject):
             if address[0] != "\"":
                 if db.checkobject("location", address):
                     address = db.getobject("location", address).promote(db, intoobj, options)
-                elif db.checkobject("stringentry", address):
-                    address = db.getobject("stringentry", address).promote(db, intoobj, options)
                 else:
                     print "Location %s is not defined, leaving it as is" % address
             try:
@@ -309,7 +321,7 @@ class pub(namedobject):
         self._endline = curpos
 
     # check to see if all mandatory fields have been defined
-    def check(self):
+    def check(self, options):
         for fname in self._mfields:
             internalfname = '_%s' % fname
             try:
@@ -319,6 +331,9 @@ class pub(namedobject):
 
     def setkey(self, arg, curpos):
         self.key = arg
+
+    def setaliases(self, arg, curpos):
+        self.aliases = arg
 
     # set a named field to a given value
     def setfield(self, fname, value, curpos):
@@ -344,7 +359,7 @@ class pub(namedobject):
             pass
     
     # convert object to bibtex format
-    def tobibtex(self):
+    def tobibtex(self, options):
         print "@%s{%s," % (self.bibtexname(), self.key)
         fieldorder = ["key", "author", "title", "booktitle", "journal", "institution", "school", "volume", "number", "month", "year", "address", "pages", "publisher", "editor", "howpublished", "issn", "isbn", "doi", "url", "note"]
         for field in fieldorder:
@@ -375,9 +390,6 @@ class inproceedings(pub):
             elif db.checkobject("workshop", self._booktitle):
                 conf = db.getobject("workshop", self._booktitle)
                 self._booktitle = conf.promote(db, self, options)
-            elif db.checkobject("stringentry", self._booktitle):
-                conf = db.getobject("stringentry", self._booktitle)
-                self._booktitle = conf.promote(db, self, options)
             else:
                 if options["check"]:
                     print "conference %s is not defined, leaving it as is" % self._booktitle
@@ -396,9 +408,6 @@ class article(pub):
             if db.checkobject("journal", self._journal):
                 journal = db.getobject("journal", self._journal)
                 self._journal = journal.promote(db, self, options)
-            elif db.checkobject("stringentry", self._journal):
-                conf = db.getobject("stringentry", self._journal)
-                self._journal = conf.promote(db, self, options)
             else:
                 if options["check"]:
                     print "journal %s is not defined, leaving it as is" % self._journal
@@ -431,9 +440,9 @@ class rfc(pub):
     def bibtexname(self):
         return "misc"
 
-    def tobibtex(self):
+    def tobibtex(self, options):
         self._howpublished = "\"Request for Comments RFC-" + self._number.strip("\"") + "\""
-        pub.tobibtex(self)
+        pub.tobibtex(self, options)
 
 class thesis(pub):
     def __init__(self):

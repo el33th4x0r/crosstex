@@ -1320,7 +1320,7 @@ author =       "M. Bertier and O. Marin and P. Sens",
 }
 
 @inproceedings{Weatherspoon,
-author = "H. Weatherspoon and T. Moscovitz and J. Kubiatowicz",
+author = "Hakim Weatherspoon and T. Moscovitz and J. Kubiatowicz",
       title = "{Introspective Failure Analysis: Avoiding Correlated Failures in Peer-to-Peer Systems}",
       booktitle = irdps,
       address = Osaka,
@@ -1329,7 +1329,7 @@ author = "H. Weatherspoon and T. Moscovitz and J. Kubiatowicz",
 }
 
 @inproceedings{Cui,
-author = "W. Cui and I. Stoica and R. Katz",
+author = "W. Cui and Ion Stoica and Randy Katz",
       title = "{Backup Path Allocation based on a Correlated Link Failure Probability Model in Overlay Networks}",
       booktitle = icnp,
       address = Paris,
@@ -1410,7 +1410,7 @@ author =       "M. Larrea and  S. Arevalo and A. Fernandez",
 }
 
 @inproceedings{corba:replication,
-      author =       "X. Defago and P. Felber and A. Schiper",
+author =       "X. Defago and P. Felber and A. Schiper",
       title =        "{Optimization Techniques for Replicating CORBA Objects}",
       booktitle =    ortds,
       address =      SantaBarbara,
@@ -1495,8 +1495,8 @@ author =       "O. Babaoglu and R. Davoli and L. A. Giachini and M. G. Baker",
 }
 
 @inproceedings{gls95,
-      title =        "{Non-blocking Atomic Commitment with an Unreliable Failure Detector}",
       author =       "Rachid Guerraoui and Michael Larrea and Andre Schiper",
+      title =        "{Non-blocking Atomic Commitment with an Unreliable Failure Detector}",
       booktitle =    rds,
       address =      BadNeuenahr,
       month =        sep,
@@ -1504,8 +1504,8 @@ author =       "O. Babaoglu and R. Davoli and L. A. Giachini and M. G. Baker",
 }
 
 @inproceedings{transis,
-      title =        "{Transis: A Communication Sub-system for High Availability}",
       author =       "Yair Amir and Danny Dolev and Schlomo Kramer and Dalia Malkhi",
+      title =        "{Transis: A Communication Sub-system for High Availability}",
       booktitle =    ftc,
       address =      Boston,
       month =        jul,

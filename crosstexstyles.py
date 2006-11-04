@@ -172,40 +172,41 @@ class formatter:
             title = title[1:len(title)-1]
         return title
     
-    def prepcite(self, refkey, db, options):
+    def findcite(self, refkey, db, options):
         for type in crosstexobjects.citeabletypes:
             if db._namespaces.has_key(type) and db._namespaces[type].has_key(refkey):
-                ref = db._namespaces[type][refkey]
-
-                keystr = ""
-                sortkey = ""
-                providedmonth = 1
-                providedyear = providedkey = providedauthor = ""
-                if hasfield(ref, "year"):
-                    providedyear = ref._year
-                if hasfield(ref, "key"):
-                    providedkey = ref._key.strip("\"")
-                if hasfield(ref, "monthno"):
-                    providedmonth = ref._monthno
-                if hasfield(ref, "author"):
-                    providedauthor = ref._author
-
-                if providedkey != "":
-                    citekey = self.processcitekey(providedkey, providedyear, db, options)
-                elif options["use-citebyinitial"] or options["use-citebyfullname"]:
-                    citekey = self.processcitekey(providedauthor, providedyear, db, options)
-                    providedkey = providedauthor
-                else:
-                    citekey = ""
-                    providedkey = providedauthor
-                sortkey = self.processsortkey(providedkey, providedyear, providedmonth, db, options)
-
-                obj = [sortkey, citekey, refkey, ref, providedauthor, providedyear, 0, ""]
-                self.citations.append(obj)
-                self.citationsbykey[refkey] = obj
-                return
+                return db._namespaces[type][refkey]
         else:
             print "citation %s not found" % refkey
+
+    def prepcite(self, ref, refkey, db, options):
+        keystr = ""
+        sortkey = ""
+        providedmonth = 1
+        providedyear = providedkey = providedauthor = ""
+        if hasfield(ref, "year"):
+            providedyear = ref._year
+        if hasfield(ref, "key"):
+            providedkey = ref._key.strip("\"")
+        if hasfield(ref, "monthno"):
+            providedmonth = ref._monthno
+        if hasfield(ref, "author"):
+            providedauthor = ref._author
+
+        if providedkey != "":
+            citekey = self.processcitekey(providedkey, providedyear, db, options)
+        elif options["use-citebyinitial"] or options["use-citebyfullname"]:
+            citekey = self.processcitekey(providedauthor, providedyear, db, options)
+            providedkey = providedauthor
+        else:
+            citekey = ""
+            providedkey = providedauthor
+            sortkey = self.processsortkey(providedkey, providedyear, providedmonth, db, options)
+
+        obj = [sortkey, citekey, refkey, ref, providedauthor, providedyear, 0, ""]
+        self.citations.append(obj)
+        self.citationsbykey[refkey] = obj
+        return
 
     def finduniquekey(self, obj, db, options):
         #if we have processed this entry, do not redo it
@@ -306,7 +307,6 @@ class formatter:
 
         # BOOK
         elif ref.myname() == "book":
-            pubstr = ""
             if hasfield(ref, "publisher") and hasfield(ref, "address"):
                 pubstr = "\\newblock %s,%s" % (ref._publisher.strip("\""), ref._address.strip("\""))
             elif hasfield(ref, "publisher") and not hasfield(ref, "address"):
@@ -327,14 +327,12 @@ class formatter:
         elif ref.myname() == "rfc":
             if hasfield(ref, "number"):
                 pubstr = "\\newblock IETF Request for Comments RFC-%s" % ref._number.strip("\"")
-            else:
-                pubstr = ""
 
         # MISC
         elif ref.myname() == "misc":
-            if hasfield(ref, "_howpublished"):
+            if hasfield(ref, "howpublished"):
                 pubstr = "\\newblock %s" % ref._howpublished.strip("\"")
-            elif hasfield(ref, "_note"):
+            elif hasfield(ref, "note"):
                 pubstr = "\\newblock %s" % ref._note.strip("\"")
 
         if hasfield(ref, "month") and hasfield(ref, "year"):
@@ -352,21 +350,14 @@ class formatter:
 
         obj[7] = bibstr
             
-    def emitcites(self, fp, preambletbl, db, options):
+    def emitbblcites(self, fp, preambletbl, db, options):
 
         # in case we need this
         fp.write("\\newcommand{\\etalchar}[1]{$^{#1}$}\n")
 
         # dump preambles
         for i in preambletbl:
-            preamble = preambletbl[i]
-            preamble = preamble[len("@PREAMBLE")+1:]
-            preamble = preamble.strip()
-            if preamble[0] == '{' and preamble[-1:] == "}":
-                preamble = preamble[1:len(preamble)-1]
-            if preamble[0] == '\"' and preamble[-1:] == "\"":
-                preamble = preamble[1:len(preamble)-1]
-            fp.write(preamble)
+            fp.write(preambletbl[i])
             fp.write("\n")
 
         # find the longest string to ref a citation by
@@ -382,11 +373,9 @@ class formatter:
             if maxstr == "":
                 maxstr = "00000000000"[0:strlen]
             elif len(maxstr) >= 13:
-                print "------------------->", maxstr
                 maxstr = "XXXXXXXXXXXXX"
         else:
             maxstr = "X"
-        
             
         fp.write("\\begin{thebibliography}{" + maxstr + "}\n")
         
@@ -396,9 +385,8 @@ class formatter:
         fp.write("\\end{thebibliography}\n")
 
     def style(self, sname, options):
-        if options["ignore-doc-style"] == 1:
-            return
-
+        optionnames = ["use-initials", "use-citebyinitial", "use-citebyfullname", "use-sortcitations", "add-proceedingsof", "add-procof", "use-inforarticles"]
+        
         # order is shorten-firstnames, cite-by-initials, cite-byfullname, sort, proceedingsof, procof, in-for-articles
         if sname == "abbrv":
             choices = [1, 0, 0, 1, 0, 0, 0]
@@ -411,10 +399,9 @@ class formatter:
                 print "style %s not found, using plain instead" % sname
             choices = [0, 0, 0, 1, 0, 0, 0]
 
-        options["use-initials"] = choices[0]
-        options["use-citebyinitial"] = choices[1]
-        options["use-citebyfullname"] = choices[2]
-        options["use-sortcitations"] = choices[3]
-        options["add-proceedingsof"] = choices[4]
-        options["add-procof"] = choices[5]
-        options["use-inforarticles"] = choices[6]
+        for i in range(0, len(optionnames)):
+            # set the value to the default associated with the style, if
+            #  it has not been overridden on the command line
+            if options[optionnames[i]] != 2 and options[optionnames[i]] != -2:
+                options[optionnames[i]] = choices[i]
+            

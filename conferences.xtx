@@ -71,7 +71,7 @@
   shortname = "INFOCOM",
   longname = "IEEE International Conference on Computer Communications",
   [year=2006] address=Barcelona, month=apr,
-  [year=2005] address=Miami, month=mar
+  [year=2005] address=Miami, month=mar,
   [year=2004] address=HongKong, month=mar,
   [year=2003] address=SF, month=mar,
   [year=2002] address=NYC, month=jun,
@@ -93,19 +93,19 @@
   [year=1986] address=Miami,
   [year=1985] address=DC,
   [year=1984] address=SF, month=apr,
-  [year=1983] address=SanDiego, month=apr
+  [year=1983] address=SanDiego, month=apr,
   [year=1982] address=LasVegas,
 }
 @conference{imc,	
   shortname = "IMC",	
-  longname = "Conference on Internet Measurement"
+  longname = "Conference on Internet Measurement",
   [year=2005] address=Berkeley, month=oct,
   [year=2004] address=Taormina, month=oct,
   [year=2003] address=MiamiBeach, month=oct,
 }
 @conference{mobisys,
   shortname = "MobiSys",	
-  longname = "International Conference on Mobile Systems, Applications, and Services"
+  longname = "International Conference on Mobile Systems, Applications, and Services",
   [year=2006] address=Uppsala, month=jun,
   [year=2005] address=Seattle, month=jun,
   [year=2004] address=Boston, month=jun,
@@ -113,7 +113,7 @@
 }
 @conference{mobihoc,
   shortname = "MobiHoc",
-  longname = "International Symposium on Mobile Ad Hoc Networking and Computing"
+  longname = "International Symposium on Mobile Ad Hoc Networking and Computing",
   [year=2005] address=UrbanaChampaign, month=may,
   [year=2004] address=Tokyo, month=may,
   [year=2003] address=Annapolis, month=jun,
@@ -123,7 +123,7 @@
 }
 @conference{usits, 
   shortname = "USITS",
-  longname = "USENIX Symposium on Internet Technologies and Systems"
+  longname = "USENIX Symposium on Internet Technologies and Systems",
   [year=2003] address=Seattle, month=mar,
   [year=2001] address=SF, month=mar,
   [year=1999] address=Boulder, month=oct,
@@ -131,7 +131,7 @@
 }
 @conference{sigmetrics,
   shortname = "SIGMETRICS", 
-  longname = "SIGMETRICS Conference on Measurement and Modeling of Computer Systems"
+  longname = "SIGMETRICS Conference on Measurement and Modeling of Computer Systems",
   [year=2006] address=SaintMalo, 
   [year=2005] address=Banff, month=jun,
   [year=2004] address=NYC, month=jun,
@@ -160,14 +160,14 @@
 }
 @conference{usenix,	
   name = "USENIX Technical Conference",
-  [year=2005], address=Anaheim, month=jun,
-  [year=2004], address=Boston, month=jun,
-  [year=2003], address=SanAntonio, month=jun,
-  [year=2002], address=Monterey, month=jun,
-  [year=2001], address=Boston, month=jun,
-  [year=2000], address=SanDiego, month=jun,
-  [year=1999], address=Monterey, month=jun,
-  [year=1996], address=SanDiego, month=jan,
+  [year=2005] address=Anaheim, month=jun,
+  [year=2004] address=Boston, month=jun,
+  [year=2003] address=SanAntonio, month=jun,
+  [year=2002] address=Monterey, month=jun,
+  [year=2001] address=Boston, month=jun,
+  [year=2000] address=SanDiego, month=jun,
+  [year=1999] address=Monterey, month=jun,
+  [year=1996] address=SanDiego, month=jan,
 }
 @conference{podc,
   shortname = "PODC",
@@ -252,7 +252,7 @@
 }
 @conference{icdcs,
   shortname = "ICDCS",
-  longname = "International Conference on Distributed Computing Systems"
+  longname = "International Conference on Distributed Computing Systems",
   [year=2005] address=Columbus, month=jun,
   [year=2004] address=Tokyo, month=mar,
   [year=2003] address=Providence, month=may,
@@ -280,7 +280,7 @@
 }
 @conference{ndss,
   shortname = "NDSS",
-  longname = "Network and Distributed System Security Symposium"
+  longname = "Network and Distributed System Security Symposium",
   [year=2006] address=SanDiego,
   [year=2005] address=SanDiego,
   [year=2004] address=SanDiego,

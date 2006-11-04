@@ -11,87 +11,346 @@
 #            information once, no need to reenter everything under every descriptor
 #            as is required in the relational bibtex model
 #         Can generate short or long form references: Suitable for the space crunch as well
-#            as formal references.
+#            as formal, long-form references.
 #         Capitalization works: Things get capitalized the way they appear in the references.
 #         Include files: A bibliography can be broken up into modular units.
-#         Sanity checking: Running crosstex on a bib file will check all entries for conformance.
-#         Backwards compatible with bibtex: at least, for reasonable bib files
+#         Sanity checking: Running crosstex on a bib/xtx file will check all entries for conformance.
+#         Supports entries with multiple keys, e.g. @book{x=y=z, author=...}
+#         Backwards compatible with bibtex
 #         Can generate bibtex output: if you must use a bibtex style file, you can
 #
 import sys
+sys.path.append("/usr/share/texmf/crosstex")
+
+import ply.lex as lex
+import ply.yacc as yacc
+
 import string
 import crosstexobjects
 import crosstexstyles
 
+options = {}
 citations = []
-styleobj = crosstexstyles.formatter()
 strtbl = {}
-preambletbl = {}
 nstrings = 0
+preambletbl = {}
 npreambles = 0
+styleobj = crosstexstyles.formatter()
 db = crosstexobjects.objectfarm()
 
-def getstring(remainder,curpos):
-    str = "\""
-    lastchar = 'X'
-    line = ""
-    for i in range(1,len(remainder)):
-        charc = remainder[i]
-        str += charc
-        if lastchar != '\\' and charc == "\"":
-            line = remainder[i+1:]
-            break;
-        lastchar = charc
-    if str[-1] != "\"":
-        print "error: string ", str, " is not properly terminated on a single line", curpos
-    return (str, line)
+# Lexer
 
-def getbibtexbracestring(remainder,curpos):
-    str = "\""
-    lastchar = 'X'
-    line = ""
-    nesting = 0
-    for i in range(0,len(remainder)):
-        charc = remainder[i]
-        str += charc
-        if lastchar != '\\' and charc == "}":
-            if nesting == 0:
-                line = remainder[i+1:]
-                break;
+# Tokens
+tokens = (
+    'AT', 'COMMA', 'SHARP', 'OPENBRACE', 'CLOSEBRACE', 'LBRACK', 'RBRACK', 'EQUALS', 
+    'ATINCLUDE', 'ATSTRING', 'ATPREAMBLE',
+    'NUMBER', 'NAME', 'STRING',
+    )
+
+def t_COMMENT(t):
+    r'\%.*'
+    pass
+    # No return value. Token discarded
+
+def t_ATINCLUDE(t):
+    r'@[iI][nN][cC][lL][uU][dD][eE]'
+    t.lexer.followsequals = 0
+    return t
+    
+def t_ATSTRING(t):
+    r'@[sS][tT][rR][iI][nN][gG]'
+    t.lexer.followsequals = 0
+    return t
+    
+def t_ATPREAMBLE(t):
+    r'@[pP][rR][eE][aA][mM][bB][lL][eE]'
+    t.lexer.followsequals = 0
+    return t
+    
+def t_NUMBER(t):
+    r'\d+'
+    t.lexer.followsequals = 0
+    return t
+
+def t_STRING(t):
+    r'"(\\.|[^\\"])*"'
+    if t.value.count("{") != t.value.count("}"):
+        print "crosstex: mismatched braces in string on line ", t.lexer.lineno
+    str = t.value
+    t.lexer.lineno += str.count("\n")
+    t.lexer.followsequals = 0
+    return t
+
+def t_EQUALS(t):
+    r'='
+    t.lexer.followsequals = 1
+    return t
+
+def t_OPENBRACE(t):
+    r'\{'
+    # if the open brace is a value, treat it like a string
+    if t.lexer.followsequals == 1:
+        bracelevel = 1
+        # add a char at a time until we have a matching brace
+        while bracelevel > 0:
+            c = t.lexer.lexdata[t.lexer.lexpos]
+            t.lexer.lexpos += 1
+            if c == "{" and t.value[-1] != "\\":
+                bracelevel += 1
+            if c == "}" and t.value[-1] != "\\":
+                bracelevel -= 1
+            t.value += c
+        t.type = "STRING"
+        str = t.value
+        t.lexer.lineno += str.count("\n")
+        t.lexer.followsequals = 0
+        return t
+    return t
+
+def t_CLOSEBRACE(t):
+    r'\}'
+    t.lexer.followsequals = 0
+    return t
+
+def t_AT(t):
+    r'@'
+    t.lexer.followsequals = 0
+    return t
+    
+def t_SHARP(t):
+    r'\#'
+    t.lexer.followsequals = 0
+    return t
+    
+def t_COMMA(t):
+    r','
+    t.lexer.followsequals = 0
+    return t
+
+def t_LBRACK(t):
+    r'\['
+    t.lexer.followsequals = 0
+    return t
+
+def t_RBRACK(t):
+    r'\]'
+    t.lexer.followsequals = 0
+    return t
+
+def t_NAME(t):
+    r'[a-zA-Z_][a-zA-Z:0-9_]*'
+    t.lexer.followsequals = 0
+    return t
+
+# Ignored characters
+t_ignore = " \t"
+
+def t_newline(t):
+    r'\n+'
+    t.lexer.lineno += t.value.count("\n")
+
+def t_error(t):
+    print "crosstex: syntax error at '%s' on line %d" % (t.value[0], t.lexer.lineno)
+    t.skip(1)
+    
+# Grammar
+
+# Parsing rules
+precedence = ( )
+
+def p_stmts_singleton(t):
+    'stmts : stmt'
+    pass
+
+def p_stmts_multiple(t):
+    'stmts : stmt stmts'
+    pass
+
+def p_stmt_object(t):
+    'stmt : object'
+    t[0] = t[1]
+
+def p_stmt_include(t):
+    'stmt : ATINCLUDE NAME'
+    filename = t[2]
+    parsextxfile(filename)
+        
+def p_stmt_string(t):
+    'stmt : ATSTRING OPENBRACE NAME EQUALS STRING CLOSEBRACE'
+    global nstrings
+    global strtbl
+    strtbl[nstrings] = "@string{%s=%s}" % (t[3], t[5])
+    nstrings += 1
+
+    key = t[3]
+    value = t[5]
+    strobj = crosstexobjects.stringentry()
+    strobj.setkey(key, t.lexer.lineno)
+    strobj.setaliases([], t.lexer.lineno)
+    strobj.setvalue(value, t.lexer.lineno)
+    db.putobject(strobj, options, t.lexer.lineno)
+        
+def p_stmt_preamble(t):
+    'stmt : ATPREAMBLE OPENBRACE STRING CLOSEBRACE'
+    global npreambles
+    global preambletbl
+    preambletbl[npreambles] = t[3].strip("\"")
+    npreambles += 1
+
+def define_object(objname, objnamelineno, objendlineno, keys, keyslinespan, fields, fieldlinespan):
+    try:
+        curobj = getattr(crosstexobjects, objname)()
+    except:
+        print "error: object type", objname, "is not defined at ", objnamelineno
+        return
+    curobj.beginobj(objnamelineno)
+
+    # process the primary key
+    primarykey = keys[0]
+    (dummy, primarykeylineno) = keyslinespan
+    curobj.setkey(primarykey, primarykeylineno)
+
+    # process the aliases
+    aliases = keys[1:]
+    curobj.setaliases(aliases, primarykeylineno)
+
+    for field in fields:
+        (fstart, fend) = fieldlinespan
+        vlineno = flineno = fend
+        if len(field) == 2:
+            (fieldname, value) = field
+            ingeneric = 0
+        elif len(field) == 3:
+            (str, fieldname, value) = field
+            if str != "__CONTEXT__":
+                print "internal error near", flineno
+            ingeneric = 1
+            
+        # we'll invoke setFIELDNAME if it exists
+        # if not, we'll invoke setfield
+        if ingeneric:
+            mname = "set%scontext" % fieldname
+        else:
+            mname = "set%s" % fieldname
+        try:
+            if fieldname == "key":
+                curobj.setfield(fieldname, value, flineno)
             else:
-                nesting -= 1
-        elif lastchar != '\\' and i != 0 and charc == "{":
-                nesting += 1
-        lastchar = charc
-    if str[-1] != "}":
-        print "error: string ", str, " is not properly terminated on a single line", curpos
-    str += "\""
-    return (str, line)
+                method = getattr(curobj.__class__, mname)
+                args = (value, vlineno)
+                result = method(curobj, *args)
+        except:
+            try:
+                curobj.setfield(fieldname, value, flineno)
+            except:
+                print "%s: object of type <%s> does not have field \"%s\"" % (flineno, curobj.myname(), fieldname)
 
-def getidentifier(remainder, ingeneric):
-    str = ""
-    lastchar = 'X'
-    line = ""
-    for i in range(0,len(remainder)):
-        charc = remainder[i]
-        if lastchar != '\\' and (charc == "," or charc == "}" or (ingeneric == 1 and charc == "]")):
-            line = remainder[i:]
-            break;
-        str = "%s%c" % (str, charc)
-        lastchar = charc
-    return (str, line)
+    curobj.endobj(objendlineno)
+    db.putobject(curobj, options, objnamelineno)
+    
 
-def parseauxfile(infilename, options):
+def p_object_defn(t):
+    'object : AT NAME OPENBRACE keys COMMA fieldlist CLOSEBRACE'
+    t[0] = (t[2], t[4], t[6])
+    type =  t[2]
+    typelineno = t.lineno(2)
+    keys = t[4]
+    keyslinespan = t.linespan(4)
+    fields = t[6]
+    fieldslinespan = t.linespan(6)
+    closebracelineno = t.lineno(len(t) - 1)
+
+    define_object(type, typelineno, closebracelineno, keys, keyslinespan, fields, fieldslinespan)
+
+def p_object_error(t):
+    'object : error CLOSEBRACE'
+    pass
+
+def p_keys_singleton(t):
+    'keys : NAME'
+    t[0] = [t[1]]
+
+def p_keys_multiple(t):
+    'keys : NAME EQUALS keys'
+    t[0] = [t[1]] + t[3]
+
+def p_fieldlist(t):
+    '''fieldlist : fields'''
+    t[0] = t[1]
+
+def p_fields_multiple(t):
+    '''fields :
+              | optqual field
+              | optqual field COMMA fieldlist'''
+    if len(t) > 3:
+        if t[1] != None:
+            (field, value) = t[1][0]
+            t[0] = [('__CONTEXT__', field, value)] + t[2] + t[4]
+        else:
+            t[0] = t[2] + t[4]
+    elif len(t) > 1:
+        if t[1] != None:
+            t[0] = t[1] + t[2]
+        else:
+            t[0] = t[2]
+    else:
+        t[0] = []
+
+def p_optqual(t):
+    '''optqual :
+               | LBRACK field RBRACK'''
+    if len(t) > 1:
+        t[0] = t[2]
+    else:
+        t[0] = None
+              
+def p_field(t):
+    'field : NAME EQUALS value'
+    t[0] = [(t[1], t[3])]
+
+def p_value_singleton(t):
+    'value : simplevalue'
+    t[0] = t[1]
+
+def p_value_concat(t):
+    'value : value SHARP simplevalue'
+    t[0] = t[1].rstrip("\"") + t[3].lstrip("\"")
+
+def p_simplevalue_number(t):
+    'simplevalue : NUMBER'
+    t[0] = t[1]
+    
+def p_simplevalue_name(t):
+    'simplevalue : NAME'
+    # do the string lookup right now
+    literal = t[1]
+    if db.checkobject("stringentry", literal):
+        t[0] = db.getobject("stringentry", literal)._value
+    else:
+        t[0] = t[1]
+    
+def p_simplevalue_string(t):
+    'simplevalue : STRING'
+    t[0] = t[1]
+
+def p_error(t):
+    print "crosstex: syntax error at '%s' on line %d" % (t.value, t.lexer.lineno)
+        
+def parseauxfile(infilename):
     if infilename[-4:] != ".aux":
         infilename = infilename + ".aux"
     if options["dump-files"]:
         print "Processing file", infilename, "..."
-    infile = open(infilename, 'r')
-    parseaux(infile, infilename, options)
+    try:
+        infile = open(infilename, 'r')
+    except:
+        print "crosstex: file %s does not exist" % infilename
+        sys.exit(1)
+    parseaux(infile, infilename)
     infile.close()
 
 # parses the AUX file and builds a list of citations
-def parseaux(instream, infilename, options):
+def parseaux(instream, infilename):
     global citations
     while 1:
         line = instream.readline()
@@ -104,8 +363,11 @@ def parseaux(instream, infilename, options):
                 if citations != []:
                     print "    last good citation was", citations[len(citations)-1]
             cite = cite.strip(", 	")
-            if cite == "":
-                print "empty citation, check for commas in \\cite{} commands"
+            if cite == "*":
+                options["doallcitations"] = 1
+                continue
+            elif cite == "":
+                print "empty citation, check for spurious commas in \\cite{} commands"
                 if citations != []:
                     print "    last good citation was", citations[len(citations)-1]
             if cite not in set(citations):
@@ -117,9 +379,9 @@ def parseaux(instream, infilename, options):
             fnamesfull = line[9:].rstrip().rstrip("}")
             fnames = fnamesfull.split(",")
             for fname in fnames:
-                parsextxfile(fname, options)
+                parsextxfile(fname)
             
-def pathopen(name, mode, options):
+def pathopen(name, mode):
     if name[0] == "/":
         if options["dump-files"]:
             print "processing ", name, "..."
@@ -138,150 +400,45 @@ def pathopen(name, mode, options):
     print "file %s not found in path %s" % (infilename, options["path"])
     raise IOError, 'File not found'
     
-def parsextxfile(infilename, options):
-    if infilename[-4:] != ".xtx":
-        infilename = infilename + ".xtx"
-    try:
-        infile = pathopen(infilename, 'r', options)
-    except:
+def parsextxfile(infilename):
+    suffixes = [".xtx", ".bib"]
+
+    if options["dump-files"]:
+        print "Processing file", infilename, "..."
+    for suffix in suffixes:
+        if infilename[-4:] != suffix:
+            filename = infilename + suffix
+        else:
+            filename = infilename
+        try:
+            infile = pathopen(filename, 'r')
+            # we get here only if we succeed
+            infilename = filename
+            break
+        except:
+            pass
+    else:
         print "bibliography database %s not found, skipping" % infilename
         return
-    parsextx(infile, infilename, options)
+    parsextx(infile, infilename)
     infile.close()
 
 # parses the XTX file and builds an object hierarchy
-def parsextx(instream, infilename, options):
-    #
-    # main filtering
-    #
-    lineno = 0
-    ingeneric = 0
-    global nstrings, npreambles, strtbl, preambletbl
-    while 1:
-        lineno = lineno + 1
-        curpos = "%s:%d" % (infilename,lineno)
-        line = instream.readline()
-        if not line:
-            break
-        while line.lstrip() != "":
-            line = line.lstrip()
-            if line[0] == '#':
-                break
-            if line[0] == '%':
-                break
-            if line[0:9].lower() == "@include ":
-                filename = string.split(line)[1]
-                parsextxfile(filename, options)
-                break
-            if line[0:7].lower() == "@string":
-                strtbl[nstrings] = line.strip()
-                nstrings += 1
-
-                objname = string.split(line.lower(), "{")[0].strip("@{ 	")
-                rest = string.split(line,"{")[1]
-                key = rest[:rest.find("=")].strip()
-                rest = rest[rest.find("=")+1:].strip().rstrip("}")
-
-                strobj = crosstexobjects.stringentry()
-                strobj.setkey(key,curpos)
-                strobj.setvalue(rest,curpos)
-                db.putobject(strobj, options, curpos)
-                break
-            if line[0:9].lower() == "@preamble":
-                preambletbl[nstrings] = line.strip()
-                npreambles += 1
-                break
-            if line[0] == ",":
-                line = line[1:]
-                continue
-            if line[0] == "}":
-                curobj.endobj(curpos)
-                db.putobject(curobj, options, curpos)
-                curobj = crosstexobjects.NoObject()
-                line = line[1:]
-                continue
-            if line[0] == "[":
-                ingeneric = 1
-                line = line[1:]
-                continue
-            if line[0] == "]":
-                ingeneric = 0
-                line = line[1:]
-                continue
-            if line[0] == "@":
-                objname = string.split(line.lower(), "{")[0].strip("@{ 	")
-                rest = string.split(line,"{")[1]
-                key = rest[:rest.find(",")].strip() 
-                try:
-                    curobj = getattr(crosstexobjects, objname)()
-                except:
-                    curobj = crosstexobjects.NoObject()
-                    print "error: object type", objname, "is not defined at ", curpos
-                    line = ""
-                    continue
-                curobj.beginobj(curpos)
-                curobj.setkey(key, curpos)
-                #
-                # if there is additional text on the line besides the key,
-                # fall through here and process it
-                #
-                if len(string.split(line,",")) > 1:
-                    line = string.join(string.split(line,",")[1:],",")
-                    if line.lstrip() == "":
-                        continue
-                else:
-                    continue
-            tokens = line.split()
-            if tokens[0].find("=") > 0:
-                fieldname = tokens[0].lower().split("=")[0]
-                equals = "="
-                remainder = line[line.find("=")+1:]
-            else:
-                fieldname = tokens[0].lower()
-                equals = tokens[1]
-                remainder = string.join(tokens[2:])
-            # check to make sure it's a valid fieldname
-            if string.strip(fieldname, "abcdefghijklmnopqrstuvwxyz_") != "":
-                print "error: fieldname ", fieldname, " contains invalid characters at", curpos
-                line = ""
-                continue
-            if equals != "=":
-                print "error: fieldname ", fieldname, " is followed by something other than an equals sign at", curpos
-                line = ""
-                continue
-            # if the value is a string, collect till the end of the string
-            remainder = remainder.lstrip()
-            if remainder[0] == "\"":
-                str, line = getstring(remainder,curpos)
-            elif remainder[0] == "{":
-                str, line = getbibtexbracestring(remainder,curpos)
-            else:
-                str, line = getidentifier(remainder,ingeneric)
-
-            # we'll invoke setFIELDNAME if it exists
-            # if not, we'll invoke setfield
-            if ingeneric:
-                mname = "set%scontext" % fieldname
-            else:
-                mname = "set%s" % fieldname
-            try:
-                if fieldname == "key":
-                    curobj.setfield(fieldname, str, curpos)
-                else:
-                    method = getattr(curobj.__class__, mname)
-                    args = (str, curpos)
-                    result = method(curobj, *args)
-            except:
-                try:
-                    curobj.setfield(fieldname, str, curpos)
-                except:
-                    print "%s: object of type %s does not have field %s" % (curpos, curobj.myname(), fieldname)
+def parsextx(instream, infilename):
+    # Build the lexer and initialize the parser
+    lexer = lex.lex()
+    lexer.followsequals = 0
+    parser = yacc.yacc(debug=1, write_tables=1)
+    s = instream.read()
+    parser.parse(s, lexer=lexer)
 
 def usage():
     print "crosstex [options] filename"
     print ""
-    print " Options regarding object appearance in the bibliography:"
+    print " General Options"
     print "  --path /path1:/path2:\tuse path to look for files (default=.:/usr/share/texmf/crosstex)"
+    print ""
+    print " Options for reference appearance in the bibliography:"
     print "  --use-long-conferencenames:\tuse long conference names (default=on)"
     print "  --no-use-long-conferencenames:use short conference names"
     print "  --use-long-monthnames:\tuse full month names (default=on)"
@@ -294,15 +451,16 @@ def usage():
     print "  --no-use-long-journalnames:\tuse short journal name where possible"
     print "  --add-proceedingsof:\t\tadd \"Proceedings of the\" for conf and workshop publications"
     print "  --add-procof:\t\t\tadd \"Proc. of\" for conf and workshop publications"
-    print "  --use-inforarticles:\t\t\tadd \"In\" for articles"
-    print ""
-    print " Options regarding citation style:"
-    print "  --ignore-doc-style:\t\tCommand line options override style in latex file (default=off)"
+    print "  --use-inforarticles:\t\tadd \"In\" for articles"
+
     print "  --use-initials:\t\tShorten first names in bib entries to just initials (default=off)"
-    print "  --use-citebyinitial:\t\tRefer to papers by concatenation of author initials (default=off)"
-    print "  --use-citebyfullname:\t\tRefer to papers by full last names (default=off)"
     print "  --use-sortcitations:\t\tSort the bibliography by citation key (default=on)"
     print "  --no-use-sortcitations:\t\tBibliography in citation order"
+    print ""
+    print " Options for citation style:"
+    print "  --use-citebynumber:\t\tRefer to papers by numbers, e.g. [1] (default=on)"
+    print "  --use-citebyinitial:\t\tRefer to papers by concatenation of lastname initials, e.g. [SBRD04b] (default=off)"
+    print "  --use-citebyfullname:\t\tRefer to papers by last names, e.g. [Sirer et al. 04] (default=off)"
     print ""
     print " Sanity checking of the object database:"
     print "  --check:\t\t\tsanity check the input (default=on)"
@@ -319,7 +477,6 @@ def usage():
     print "  --xtx2bib:\t\t\tgenerate bib file"
     sys.exit(1)
 
-options = {}
 options["use-long-monthnames"] = 1
 options["use-long-statenames"] = 1
 options["use-long-countrynames"] = 1
@@ -335,16 +492,16 @@ options["use-inforarticles"] = 0
 options["xtx2bib"] = 0
 options["check"] = 1
 options["strict"] = 0
-options["ignore-doc-style"] = 0
 options["dump-locations"] = 0
 options["dump-conferences"] = 0
 options["dump-workshops"] = 0
 options["dump-files"] = 0
+options["doallcitations"] = 0
 
 if int(len(sys.argv) == 0):
     usage()
 
-# the symlink from "xtx2bib" to this file should turn on the xtx2bib option
+# the symlink from "xtx2bib" to this file turns on the xtx2bib option
 pathcomponents = sys.argv[0].split("/")
 basename = pathcomponents[len(pathcomponents)-1]
 options[basename] = 1
@@ -360,24 +517,34 @@ for opt in sys.argv[1:]:
             options[opt[2:]] = sys.argv[nopt+1]
             nopt += 2
     elif len(opt) >= 5 and opt[0] == "-" and opt[1] == "-" and opt[2] == "n" and opt[3] == "o" and opt[4] == "-":
-        options[opt[5:]] = 0
+        options[opt[5:]] = -2
         nopt += 1
     elif len(opt) >= 2 and opt[0] == "-" and opt[1] == "-":
-        options[opt[2:]] = 1
+        options[opt[2:]] = 2
         nopt += 1
 
 if not options.has_key("path"):
     options["path"] = ".:/usr/share/texmf/crosstex"
-    
+
 for infilename in sys.argv[nopt:]:
     if infilename[-4:] == ".xtx":
-        parsextxfile(infilename, options)
+        parsextxfile(infilename)
         bblfilename = ""
     else:
-        parseauxfile(infilename, options)
+        parseauxfile(infilename)
         bblfilename = infilename + ".bbl"
+
+    # override the defaults in the aux file with command line options
+    for opt in options:
+        if options[opt] == 2:
+            options[opt] = 1
+        elif options[opt] == -2:
+            options[opt] = 0
+
+    if options["xtx2bib"]:
+        options["doallcitations"] = 1
         
-    if options["xtx2bib"] > 0:
+    if options["xtx2bib"]:
         for i in strtbl:
             print strtbl[i]
         print ""
@@ -423,27 +590,37 @@ for infilename in sys.argv[nopt:]:
                         print "%s: object of type %s has identical key to object of type %s defined at %s" % (obj1._beginline, obj1.myname(), obj2.myname(), obj2._beginline)
                         
     # now loop over all entries and do checking or conversion
-    if options["check"] or options["xtx2bib"]:
+    if options["check"] or options["doallcitations"]:
         for (type, key) in db._definitions:
             if type in types:
-                paper = db._namespaces[type][key]
+                citation = db._namespaces[type][key]
                 if options["check"]:
-                    paper.check()
-                if options["xtx2bib"]:
-                    paper.tobibtex()
+                    citation.check(options)
+                if options["doallcitations"]:
+                    citations += [key]
+
+    for refkey in citations:
+        ref = styleobj.findcite(refkey, db, options)
+        styleobj.prepcite(ref, refkey, db, options)
+        
+    styleobj.fixupkeys(db, options)
+
+    for refkey in citations:
+        if options["xtx2bib"]:
+            ref = styleobj.findcite(refkey, db, options)
+            ref.tobibtex(options)
+        else:
+            styleobj.cite(refkey, db, options)
 
     # generate the BBL file if one needs to be generated
-    if not options["xtx2bib"] and bblfilename != "":
-        for c in citations:
-            styleobj.prepcite(c, db, options)
-
-        styleobj.fixupkeys(db, options)
-
-        for c in citations:
-            styleobj.cite(c, db, options)
-
-        bblfile = open(bblfilename, 'w')
-        styleobj.emitcites(bblfile, preambletbl, db, options)
-        bblfile.close()
+    if bblfilename != "":
+        outfile = open(bblfilename, 'w')
+    else:
+        outfile = sys.stdout
+    if not options["xtx2bib"]:
+        styleobj.emitbblcites(outfile, preambletbl, db, options)
+    outfile.close()
 
     sys.exit(0)
+
+

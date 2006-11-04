@@ -179,6 +179,7 @@
 @location{Poznan,	city="Poznan", country=Poland}
 @location{PuertoVallarta,city="Puerto Vallarta", country=Mexico}
 @location{QuebecCity,	city="Quebec City", country=Canada}
+@location{RioRico,	city="Rio Rico", country="XXX"}
 @location{Rome,		city="Rome", country=Italy}
 @location{Saarbrucken,	city="{Saarbr\"ucken}", country=Germany}
 @location{SaintEmilion,	city="Saint Emilion", country=France}

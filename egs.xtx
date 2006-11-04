@@ -8,24 +8,32 @@
 @include conferences
 @include workshops
 
-@author{egs,	name = "Emin {G\"un} Sirer"}
-@author{fbs,	name = "Fred B. Schneider"}
+@author{egs,	 name = "Emin {G\"un} Sirer"}
+@author{fbs,	 name = "Fred B. Schneider"}
 
-@author{rama,	name = "Venugopalan Ramasubramanian"}
-@author{ryanp,	name = "Ryan Peterson"}
-@author{bwong,	name = "Bernard Wong"}
-@author{kwalsh,	name = "Kevin Walsh"}
-@author{liuhz,	name = "Hongzhou Liu"}
-@author{yeejiun,name = "Yee Jiun Song"}
+@author{rama,	 name = "Venugopalan Ramasubramanian"}
+@author{ryanp,	 name = "Ryan Peterson"}
+@author{bwong,	 name = "Bernard Wong"}
+@author{kwalsh,	 name = "Kevin Walsh"}
+@author{liuhz,	 name = "Hongzhou Liu"}
+@author{yeejiun, name = "Yee Jiun Song"}
 @author{slivkins,name = "Aleksandrs Slivkins"}
 
 @author{ivan,	name = "Ivan Stoyanov"}
 
 @PREAMBLE {"\newcommand{\url}[1]{\texttt{#1}}"}
 
+@misc{sqrts,
+  author = "Kelvin So and Emin {G\"un} Sirer",
+  title = "{$\sqrt{S}$: Bandwidth- and Latency-Optimal Failure Detection}",
+  howpublished = "Submitted to the European Systems Conference (EuroSys)",
+  month = sep,
+  year = 2006
+}
+
 @inproceedings{octant:worlds,
-  title = "{Geolocalization on the Internet through Constraint Satisfaction}"
-  author = "Bernard Wong and Ivan Stoyanov and Emin {G\"un} Sirer",
+  author = "Bernard Wong and Ivan Stoyanov and Emin {G\"un} Sirer", 
+  title = "{Geolocalization on the Internet through Constraint Satisfaction}",
   booktitle = worlds,
   address = Seattle,
   month = nov,
@@ -63,6 +71,8 @@
   title = "{Heuristics Considered Harmful: Using Mathematical Optimization for Resource Management in Distributed Systems}",
   author = "Emin {G\"un} Sirer",
   journal = ieeeis_selfstar,
+  volume = 21,
+  number = 2,
   month = "Mar/Apr",
   year = 2006
 }
@@ -199,6 +209,8 @@
   title = "{Staged Simulation: A General Technique for Improving Simulation Scale and Performance}",
   author = "Kevin Walsh and Emin {G\"un} Sirer",
   journal = tomacs_scale,
+  volume = 14,
+  number = 2,
   month = apr, 
   year = 2004
 }
@@ -396,6 +408,7 @@ address = "Hawaii",
   author = "Marc E. Fiuczynski and Wilson Hsieh and Emin {G\"un} Sirer and Przemyslaw Pardyak and Brian N. Bershad",
   journal = "Threads, Modula-3 Systems Journal", 
   volume = 3, 
+  number = 4,
   month = "Fall",
   year = 1997 
 }
@@ -448,7 +461,7 @@ address = "Hawaii",
   number = 1,
   month = jan,
   year = 1995,
-  pages = "74--77", 
+  pages = "74--77",
 }
 @inproceedings{spin:esigops,
   title = "SPIN - An Extensible Microkernel for Application-specific Operating System Services",
