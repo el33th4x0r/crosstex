@@ -141,7 +141,7 @@ class formatter:
                 keystr += lname
             keystr += " "
         if year != "":
-            keystr += ("%02d" % (int(year) % 100))
+            keystr += ("%02d" % (int(year.strip("\"").strip("\{").strip("\}")) % 100))
         return keystr
         
     # determine the sort key (the key used to sort the bib entries by)
@@ -185,13 +185,25 @@ class formatter:
         providedmonth = 1
         providedyear = providedkey = providedauthor = ""
         if hasfield(ref, "year"):
-            providedyear = ref._year
+            providedyear = ref._year.strip("\"")
         if hasfield(ref, "key"):
             providedkey = ref._key.strip("\"")
         if hasfield(ref, "monthno"):
             providedmonth = ref._monthno
         if hasfield(ref, "author"):
             providedauthor = ref._author
+        if hasfield(ref, "volume"):
+            try:
+                ref._volume = int(ref._volume.strip("\""))
+            except:
+                pass
+        if hasfield(ref, "number"):
+            try:
+                ref._number = int(ref._number.strip("\""))
+            except:
+                pass
+        if hasfield(ref, "pages"):
+            ref._pages = ref._pages.strip("\"")
 
         if providedkey != "":
             citekey = self.processcitekey(providedkey, providedyear, db, options)
@@ -279,7 +291,10 @@ class formatter:
             else:
                 pubstr = "\\newblock {\\em %s}" % (ref._journal.strip("\""))
             if hasfield(ref, "volume"):
-                pubstr += " " + ref._volume
+                if not hasfield(ref, "number") and not hasfield(ref, "pages"):
+                    pubstr += (" Volume %d" % ref._volume)
+                else:
+                    pubstr += (" %d" % ref._volume)
             if hasfield(ref, "number"):
                 pubstr += "(" + ref._number + ")"
             if hasfield(ref, "pages"):
