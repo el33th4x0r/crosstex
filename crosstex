@@ -3,7 +3,7 @@
 # CROSSTEX: This is a new, object-oriented cross-referencing engine, to
 #         replace BIBTEX.
 #
-# Author: Emin Gun Sirer
+# Author: Emin Gun Sirer (egs at cs dot cornell dot edu)
 # (c) August 2006, See the file COPYING for copyright info
 #
 #         Features:

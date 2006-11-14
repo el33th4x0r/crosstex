@@ -1,3 +1,5 @@
+# Author: Emin Gun Sirer (egs at cs dot cornell dot edu)
+# (c) August 2006, See the file COPYING for copyright info
 #
 # This file describes the object hierarchy in the bibliography itself
 # 
