@@ -2038,7 +2038,7 @@ author = "C. Barber and D. Dobkin and H. Huhdanpaa",
       year=2005
 }
 
-@inproceedings{tcglinux,
+@inproceedings{TCGLinux,
       title = "{Design and Implementation of a TCG-based Integrity Measurement Architecture}",
       author = "Reiner Sailer and Xiaolan Zhang and Trent Jaeger and Leendert van Doorn",
       booktitle = usenixsecurity,

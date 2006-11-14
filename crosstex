@@ -198,6 +198,7 @@ def p_stmt_preamble(t):
     npreambles += 1
 
 def define_object(objname, objnamelineno, objendlineno, keys, keyslinespan, fields, fieldlinespan):
+    objname = objname.lower()
     try:
         curobj = getattr(crosstexobjects, objname)()
     except:
@@ -226,6 +227,7 @@ def define_object(objname, objnamelineno, objendlineno, keys, keyslinespan, fiel
                 print "internal error near", flineno
             ingeneric = 1
             
+        fieldname = fieldname.lower()
         # we'll invoke setFIELDNAME if it exists
         # if not, we'll invoke setfield
         if ingeneric:

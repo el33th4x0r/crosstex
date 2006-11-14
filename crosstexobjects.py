@@ -6,6 +6,9 @@ import string
 
 citeabletypes = ["article", "inproceedings", "phdthesis", "masterthesis", "book", "techreport", "rfc", "misc"]
 
+def isobjref(str):
+    return (str[0] != "\"" and str[0] != "{")
+            
 class objectfarm:
     # a namespace is a dictionary of dictionaries
     def __init__(self):
@@ -215,16 +218,16 @@ class location:
                 str = "%s, " % str
             str = "%s%s" % (str, self._country.strip("\""))
         return "\"%s\"" % str
-        
+
     def promote(self, db, intoobj, options):
         # if a field is not an enclosed string, and there is an object
         # with that key, call on the promote method of that object to
         # promote this object reference to a string
-        if self._city[0] != "\"" and db.checkobject("city", self._city):
+        if isobjref(self._city) and db.checkobject("city", self._city):
             self._city = db.getobject("city", self._city).promote(db, self, options)
-        if self._state[0] != "\"" and db.checkobject("state", self._state):
+        if isobjref(self._state) and db.checkobject("state", self._state):
             self._state = db.getobject("state", self._state).promote(db, self, options)
-        if self._country[0] != "\"" and db.checkobject("country", self._country):
+        if isobjref(self._country) and db.checkobject("country", self._country):
             self._country = db.getobject("country", self._country).promote(db, self, options)
         return self.__str__()
 
@@ -268,7 +271,7 @@ class conference(namedobject):
 
         if self._address.has_key(intoobj._year):
             address = self._address[intoobj._year]
-            if address[0] != "\"":
+            if isobjref(address):
                 if db.checkobject("location", address):
                     address = db.getobject("location", address).promote(db, intoobj, options)
                 else:
@@ -281,7 +284,7 @@ class conference(namedobject):
             intoobj._address = address
         if self._month.has_key(intoobj._year):
             month = self._month[intoobj._year]
-            if month[0] != "\"" and db.checkobject("month", month):
+            if isobjref(month) and db.checkobject("month", month):
                 month = db.getobject("month", month).promote(db, intoobj, options)
             try:
                 if intoobj._month != month:
@@ -348,12 +351,12 @@ class pub(namedobject):
     def promote(self, db, intoobj, options):
         # ignore any exceptions thrown when month or address are not defined
         try:
-            if self._month[0] != "\"" and db.checkobject("month", self._month):
+            if isobjref(self._month) and db.checkobject("month", self._month):
                 self._month = db.getobject("month", self._month).promote(db, self, options)
         except:
             pass
         try:
-            if self._address[0] != "\"" and db.checkobject("location", self._address):
+            if isobjref(self._address) and db.checkobject("location", self._address):
                 self._address = db.getobject("location", self._address).promote(db, self, options)
         except:
             pass
@@ -383,7 +386,7 @@ class inproceedings(pub):
         # promote month and address first
         pub.promote(self, db, intoobj, options)
         # now pick up info from the conference
-        if self._booktitle[0] != "\"":
+        if isobjref(self._booktitle):
             if db.checkobject("conference", self._booktitle):
                 conf = db.getobject("conference", self._booktitle)
                 self._booktitle = conf.promote(db, self, options)
@@ -404,7 +407,7 @@ class article(pub):
         # promote month and address first
         pub.promote(self, db, intoobj, options)
         # now pick up info from the conference
-        if self._journal[0] != "\"":
+        if isobjref(self._journal):
             if db.checkobject("journal", self._journal):
                 journal = db.getobject("journal", self._journal)
                 self._journal = journal.promote(db, self, options)

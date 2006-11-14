@@ -193,15 +193,9 @@ class formatter:
         if hasfield(ref, "author"):
             providedauthor = ref._author
         if hasfield(ref, "volume"):
-            try:
-                ref._volume = int(ref._volume.strip("\""))
-            except:
-                pass
+            ref._volume = ref._volume.strip("\"")
         if hasfield(ref, "number"):
-            try:
-                ref._number = int(ref._number.strip("\""))
-            except:
-                pass
+            ref._number = ref._number.strip("\"")
         if hasfield(ref, "pages"):
             ref._pages = ref._pages.strip("\"")
 
@@ -292,9 +286,9 @@ class formatter:
                 pubstr = "\\newblock {\\em %s}" % (ref._journal.strip("\""))
             if hasfield(ref, "volume"):
                 if not hasfield(ref, "number") and not hasfield(ref, "pages"):
-                    pubstr += (" Volume %d" % ref._volume)
+                    pubstr += (" Volume " + ref._volume)
                 else:
-                    pubstr += (" %d" % ref._volume)
+                    pubstr += (" " + ref._volume)
             if hasfield(ref, "number"):
                 pubstr += "(" + ref._number + ")"
             if hasfield(ref, "pages"):
