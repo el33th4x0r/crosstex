@@ -126,6 +126,7 @@
 @location{Princeton,		city="Princeton", state=NJ, country=USA}
 @location{Redmond,		city="Redmond", state=WA, country=USA}
 @location{RedondoBeach,		city="Redondo Beach", state=CA, country=USA}
+@location{RioRico,		city="Rio Rico", state=AZ, country=USA}
 @location{Riverside,		city="Riverside", state=CA, country=USA}
 @location{SanAntonio,		city="San Antonio", state=TX, country=USA}
 @location{SanDiego,		city="San Diego", state=CA, country=USA}
@@ -179,7 +180,6 @@
 @location{Poznan,	city="Poznan", country=Poland}
 @location{PuertoVallarta,city="Puerto Vallarta", country=Mexico}
 @location{QuebecCity,	city="Quebec City", country=Canada}
-@location{RioRico,	city="Rio Rico", country="XXX"}
 @location{Rome,		city="Rome", country=Italy}
 @location{Saarbrucken,	city="{Saarbr\"ucken}", country=Germany}
 @location{SaintEmilion,	city="Saint Emilion", country=France}
