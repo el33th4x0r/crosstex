@@ -38,6 +38,7 @@ preambletbl = {}
 npreambles = 0
 styleobj = crosstexstyles.formatter()
 db = crosstexobjects.objectfarm()
+curfile = ""
 
 # Lexer
 
@@ -199,13 +200,14 @@ def p_stmt_preamble(t):
     npreambles += 1
 
 def define_object(objname, objnamelineno, objendlineno, keys, keyslinespan, fields, fieldlinespan):
+    global curfile
     objname = objname.lower()
     try:
         curobj = getattr(crosstexobjects, objname)()
     except:
         print "error: object type", objname, "is not defined at ", objnamelineno
         return
-    curobj.beginobj(objnamelineno)
+    curobj.beginobj("%s:%d" % (curfile, objnamelineno))
 
     # process the primary key
     primarykey = keys[0]
@@ -389,7 +391,7 @@ def pathopen(name, mode):
     if name[0] == "/":
         if options["dump-files"]:
             print "processing ", name, "..."
-        return openfile(name, mode)
+        return open(name, mode)
 
     # filename is relative, try all elements of the path
     for path in options["path"].split(":"):
@@ -404,8 +406,10 @@ def pathopen(name, mode):
     raise IOError, 'File not found'
     
 def parsextxfile(infilename):
+    global curfile
+    
+    oldcurfile = curfile
     suffixes = [".xtx", ".bib"]
-
     if options["dump-files"]:
         print "Processing file", infilename, "..."
     for suffix in suffixes:
@@ -416,6 +420,7 @@ def parsextxfile(infilename):
         try:
             infile = pathopen(filename, 'r')
             # we get here only if we succeed
+            curfile = filename
             infilename = filename
             break
         except:
@@ -425,7 +430,8 @@ def parsextxfile(infilename):
         return
     parsextx(infile, infilename)
     infile.close()
-
+    curfile = oldcurfile
+    
 # parses the XTX file and builds an object hierarchy
 def parsextx(instream, infilename):
     # Build the lexer and initialize the parser

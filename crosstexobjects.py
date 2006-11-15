@@ -5,7 +5,6 @@
 #
 # This file describes the object hierarchy in the bibliography itself
 # 
-
 import string
 
 citeabletypes = ["article", "inproceedings", "phdthesis", "masterthesis", "book", "techreport", "rfc", "misc"]
