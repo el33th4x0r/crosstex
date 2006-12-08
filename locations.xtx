@@ -106,6 +106,7 @@
 @location{LasVegas,		city="Las Vegas", state=ND, country=USA}
 @location{Lihue,		city="Lihue", state=HI, country=USA}
 @location{LitchfieldPark,	city="Litchfield Park", state=AZ, country=USA}
+@location{LosAngeles,		city="Los Angeles", state=CA, country=USA}
 @location{Maui,			city="Maui", state=HI, country=USA}
 @location{Miami,		city="Miami", state=FL, country=USA}
 @location{MiamiBeach,		city="Miami Beach", state=FL, country=USA}
@@ -137,6 +138,7 @@
 @location{SantaFe,		city="Santa Fe", state=NM, country=USA}
 @location{Seattle,		city="Seattle", state=WA, country=USA}
 @location{Stanford,		city="Stanford", state=CA, country=USA}
+@location{Stowe,		city="Stowe", state=VT, country=USA}
 @location{Tucson,		city="Tucson", state=AZ, country=USA}
 @location{UrbanaChampaign,	city="Urbana-Champaign", state=IL, country=USA}
 @location{DC,			city="Washington", state=DC, country=USA}
@@ -174,9 +176,10 @@
 @location{Minaki,	city="Minaki", country=Canada}
 @location{Montreal,	city="{Montr\'eal}", country=Canada}
 @location{Osaka,	city="Osaka", country=Japan}
-@location{Ottowa,	city="Ottowa", country=Canada}
+@location{Ottawa,	city="Ottawa", country=Canada}
 @location{Paderborn,	city="Paderborn", country=Germany}
 @location{Paris,	city="Paris", country=France}
+@location{Piza,		city="Piza", country=Italy}
 @location{Poznan,	city="Poznan", country=Poland}
 @location{PuertoVallarta,city="Puerto Vallarta", country=Mexico}
 @location{QuebecCity,	city="Quebec City", country=Canada}

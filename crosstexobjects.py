@@ -309,7 +309,7 @@ class workshop(conference):
 class pub(namedobject):
     def __init__(self):
         self._mfields = set([])
-        self._dfields = set(["author", "title", "month", "year", "address", "pages", "url", "doi", "isbn", "issn", "note", "editor"])
+        self._dfields = set(["author", "title", "month", "year", "address", "pages", "url", "doi", "isbn", "issn", "note", "editor", "ee", "bibsource"])
 
     # return the name of the class
     def myname(self):
@@ -346,6 +346,8 @@ class pub(namedobject):
         internalfname = '_%s' % fname
         for i in (self._dfields | self._mfields):
             if i == fname:
+                if fname == "year":
+                    value = value.strip("{}")
                 setattr(self, internalfname, value)
                 return
         print "%s: object of type %s does not have field named %s" % (curpos, self.__class__, fname)
@@ -382,7 +384,7 @@ class inproceedings(pub):
     def __init__(self):
         pub.__init__(self)
         self._mfields = set(["author", "title", "booktitle", "address", "month", "year"])
-        self._dfields = set(["pages", "publisher", "editor", "issn", "isbn", "doi", "url", "key", "note"])
+        self._dfields = set(["pages", "publisher", "editor", "issn", "isbn", "doi", "url", "key", "note", "ee", "bibsource"])
 
     # promote values associated with subobjects (conferences, etc) up to the parent
     def promote(self, db, intoobj, options):
@@ -404,7 +406,7 @@ class article(pub):
     def __init__(self):
         pub.__init__(self)
         self._mfields = set(["author", "title", "journal", "volume", "number", "year"])
-        self._dfields = set(["address", "month", "pages", "publisher", "editor", "issn", "isbn", "doi", "url", "key", "note"])
+        self._dfields = set(["address", "month", "pages", "publisher", "editor", "issn", "isbn", "doi", "url", "key", "note", "ee", "bibsource"])
 
     def promote(self, db, intoobj, options):
         # promote month and address first
