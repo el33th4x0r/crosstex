@@ -462,6 +462,11 @@ def usage():
     print "  --add-procof:\t\t\tadd \"Proc. of\" for conf and workshop publications"
     print "  --use-inforarticles:\t\tadd \"In\" for articles"
 
+    print "  --title-asis:\t\tuse the title as it appears in the database"
+    print "  --title-lowercase:\t\tmake titles all lowercase"
+    print "  --title-uppercase:\t\tmake titles all uppercase"
+    print "  --title-titlecase:\t\tmake titles in titlecase"
+
     print "  --use-initials:\t\tShorten first names in bib entries to just initials (default=off)"
     print "  --use-sortcitations:\t\tSort the bibliography by citation key (default=on)"
     print "  --no-use-sortcitations:\t\tBibliography in citation order"
@@ -498,6 +503,10 @@ options["use-sortcitations"] = 1
 options["add-proceedingsof"] = 0
 options["add-procof"] = 0
 options["use-inforarticles"] = 0
+options["title-asis"] = 1
+options["title-lowercase"] = 0
+options["title-uppercase"] = 0
+options["title-titlecase"] = 0
 options["xtx2bib"] = 0
 options["check"] = 1
 options["strict"] = 0

@@ -170,9 +170,24 @@ class formatter:
         return authstr
         
     def processtitle(self, title, db, options):
+        # XXX this could be a lot smarter about escaped characters
+        # and math mode. Also, I prefer "Foo and Bar" in titlecase,
+        # but .title() yields "Foo And Bar"
         title = title.strip("\"")
         if title[0] == "{" and title[len(title)-1] == "}":
             title = title[1:len(title)-1]
+        if options["title-uppercase"]:
+            # capitalize all letters
+            title = title.upper()
+        elif options["title-lowercase"]:
+            # capitalize first letter, all else is small
+            allsmall = title.lower()
+            title = allsmall[0:1].upper() + allsmall[1:]
+        elif options["title-titlecase"]:
+            title = title.title()
+        else:
+            # leave as is
+            pass
         return title
     
     def findcite(self, refkey, db, options):
