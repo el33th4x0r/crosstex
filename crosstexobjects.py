@@ -391,6 +391,10 @@ class inproceedings(pub):
         # promote month and address first
         pub.promote(self, db, intoobj, options)
         # now pick up info from the conference
+        try:
+            f = getattr(self, "_booktitle")
+        except:
+            return
         if isobjref(self._booktitle):
             if db.checkobject("conference", self._booktitle):
                 conf = db.getobject("conference", self._booktitle)
