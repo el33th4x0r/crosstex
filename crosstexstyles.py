@@ -9,6 +9,7 @@
 import math
 import string
 import crosstexobjects
+import crosstexutils
 
 def hasfield(obj, fieldname):
     try:
@@ -170,21 +171,17 @@ class formatter:
         return authstr
         
     def processtitle(self, title, db, options):
-        # XXX this could be a lot smarter about escaped characters
-        # and math mode. Also, I prefer "Foo and Bar" in titlecase,
-        # but .title() yields "Foo And Bar"
         title = title.strip("\"")
-        if title[0] == "{" and title[len(title)-1] == "}":
-            title = title[1:len(title)-1]
+        if len(title) >= 3 and title[0] == "{" and title[-1] == "}" and title[-2] != "\\":
+            title = title[1:-1]
         if options["title-uppercase"]:
             # capitalize all letters
-            title = title.upper()
+            title = crosstexutils.citationcase(title, "upper")
         elif options["title-lowercase"]:
             # capitalize first letter, all else is small
-            allsmall = title.lower()
-            title = allsmall[0:1].upper() + allsmall[1:]
+            title = crosstexutils.citationcase(title, "lower")
         elif options["title-titlecase"]:
-            title = title.title()
+            title = crosstexutils.citationcase(title, "title")
         else:
             # leave as is
             pass

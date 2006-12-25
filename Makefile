@@ -3,7 +3,7 @@ VERSION=`cat version`
 all:
 	@echo nothing to make, try make install
 
-install: plyinstall
+install:
 	mkdir -p /usr/share/texmf/crosstex
 	cp *.py  /usr/share/texmf/crosstex
 	cp *.xtx /usr/share/texmf/crosstex
