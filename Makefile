@@ -15,7 +15,7 @@ plyinstall:
 	cd ply-* && python ./setup.py install
 
 clean:
-	rm -f *~ *.aux *.bbl *.dvi *.log
+	rm -f *~ *.pyc *.aux *.bbl *.dvi *.log
 
 rpm:
 	cd .. && tar czf crosstex-$(VERSION).tar.gz crosstex
