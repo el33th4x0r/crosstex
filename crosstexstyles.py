@@ -109,10 +109,26 @@ class formatter:
             lastchar = string[i]
         return str
 
+    def getauthlist(self, authors):
+        authors = authors.strip("\"")
+        # get rid of newlines, tabs and spurious spaces
+        authors = authors.replace("\n", "")
+        authors = authors.expandtabs(1)
+        old = ""
+        new = authors
+        while new != old:
+            old = new
+            new = old.replace("  ", " ")
+        authors = new
+        if authors[0] == "{" and authors[-1] == "}":
+            authors = authors[1:-1]
+
+        authlist = authors.split(" and ")
+        return authlist
+    
     # determine the cite key (the key used to cite the paper by)
     def processcitekey(self, authors, year, db, options):
-        authors = authors.strip("\"")
-        authlist = authors.split(" and ")
+        authlist = self.getauthlist(authors)
         
         # go over all the names
         keystr = ""
@@ -155,22 +171,7 @@ class formatter:
         return self.processcitekey(authors, year, db, options).lower() + str(monthno)
 
     def processauthors(self, authors, db, options):
-        authors = authors.strip("\"")
-        # get rid of newlines, tabs and spurious spaces
-        authors = authors.replace("\n", "")
-        authors = authors.expandtabs(1)
-        old = ""
-        new = authors
-        while new != old:
-            old = new
-            new = old.replace("  ", " ")
-        authors = new
-        if authors[0] == "{" and authors[-1] == "}":
-            authors = authors[1:-1]
-
-        authlist = authors.split(" and ")
-        print authors
-        print authlist
+        authlist = self.getauthlist(authors)
         
         # go over all the names
         authstr = ""
