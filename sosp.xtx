@@ -1,3 +1,4 @@
+@include dates
 @include locations
 
 @conference{sosp,
@@ -25,6 +26,8 @@
   [year=1969] address=Princeton, month=oct,
   [year=1967] address=Gatlinburg, month=may,
 }
+
+@author{abadi, name="Mart{\'{\i}}n Abadi"}
 
 %
 % SOSP 71
@@ -2165,8 +2168,8 @@
 %
 @inproceedings{DBLP:conf/sosp/BurrowsAN89,
   author    = {Michael Burrows and
-               Mart\'{\i}n Abadi and
-               Roger M. Needham},
+	       abadi and 
+	       Roger M. Needham},
   title     = {A Logic of Authentication},
   booktitle = sosp,
   year      = {1989},
@@ -2510,8 +2513,7 @@
 }
 
 @inproceedings{DBLP:conf/sosp/LampsonABW91,
-  author    = {Butler W. Lampson and
-               Mart\'{\i}n Abadi and
+  author    = {Butler W. Lampson and abadi and
                Michael Burrows and
                Edward Wobber},
   title     = {Authentication in Distributed Systems: Theory and Practice},
@@ -2781,8 +2783,7 @@
 }
 
 @inproceedings{DBLP:conf/sosp/WobberABL93,
-  author    = {Edward Wobber and
-               Mart\'{\i}n Abadi and
+  author    = {Edward Wobber and abadi and 
                Michael Burrows and
                Butler W. Lampson},
   title     = {Authentication in the Taos Operating System},

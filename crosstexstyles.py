@@ -33,7 +33,7 @@ class formatter:
         if name.find(" ") < 0 and db.checkobject("author", name):
             auth = db.getobject("author", name)
             name = auth.promote(db, self, options).strip("\" ")
-            
+
         # first tokenize the name into components
         str = ""
         lastchar = ' '
@@ -45,12 +45,14 @@ class formatter:
                 names.append(str)
                 str =""
             elif lastchar != '\\' and charc == "}":
+                str += charc
                 if nesting == 0:
                     names.append(str)
                     str =""
                 else:
                     nesting -= 1
             elif lastchar != '\\' and charc == "{":
+                str += charc
                 nesting += 1
             elif nesting == 0 and lastchar != '\\' and charc == ",":
                 pass
@@ -154,7 +156,21 @@ class formatter:
 
     def processauthors(self, authors, db, options):
         authors = authors.strip("\"")
+        # get rid of newlines, tabs and spurious spaces
+        authors = authors.replace("\n", "")
+        authors = authors.expandtabs(1)
+        old = ""
+        new = authors
+        while new != old:
+            old = new
+            new = old.replace("  ", " ")
+        authors = new
+        if authors[0] == "{" and authors[-1] == "}":
+            authors = authors[1:-1]
+
         authlist = authors.split(" and ")
+        print authors
+        print authlist
         
         # go over all the names
         authstr = ""
@@ -276,6 +292,8 @@ class formatter:
         ref = obj[3]
         providedauthor = obj[4]
         providedyear = obj[5]
+        if ref == None:
+            return
 
         citestr = authstr = titlestr = pubstr = datestr = locstr = ""
         if citekey != "":

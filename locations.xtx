@@ -142,6 +142,7 @@
 @location{Tucson,		city="Tucson", state=AZ, country=USA}
 @location{UrbanaChampaign,	city="Urbana-Champaign", state=IL, country=USA}
 @location{DC,			city="Washington", state=DC, country=USA}
+@location{WestLafayette,	city="West Lafayette", state=IN, country=USA}
 @location{YorktownHeights,	city="Yorktown Heights", state=NY, country=USA}
 
 % international locations  
