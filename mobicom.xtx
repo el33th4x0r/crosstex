@@ -1,0 +1,4486 @@
+@include dates
+@include locations
+
+@conference{mobicom, 
+   shortname = "Mobicom",
+   longname = "International Conference on Mobile Computing and Networking",
+   [year=2006] address=LosAngeles, month=sep,
+   ...
+   [year=1995] address=Berkeley, month=nov,
+}
+
+		   
+%
+% mobicom 1995
+%
+@inproceedings{DBLP:conf/mobicom/BalakrishnanSAK95,
+  author    = {Hari Balakrishnan and
+               Srinivasan Seshan and
+               Elan Amir and
+               Randy H. Katz},
+  title     = {Improving TCI/IP Performance over Wireless Networks},
+  booktitle = mobicom,
+  year      = 1995,
+  pages     = {2-11},
+  ee        = {http://doi.acm.org/10.1145/215530.215544},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/GovilCW95,
+  author    = {Kinshuk Govil and
+               Edwin Chan and
+               Hal Wasserman},
+  title     = {Comparing Algorithm for Dynamic Speed-Setting of a Low-Power CPU},
+  booktitle = mobicom,
+  year      = 1995,
+  pages     = {13-25},
+  ee        = {http://doi.acm.org/10.1145/215530.215546},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/SamfatMA95,
+  author    = {Didier Samfat and
+               Refik Molva and
+               N. Asokan},
+  title     = {Untraceability in Mobile Networks},
+  booktitle = mobicom,
+  year      = 1995,
+  pages     = {26-36},
+  ee        = {http://doi.acm.org/10.1145/215530.215548},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/TennenhouseB95,
+  author    = {David L. Tennenhouse and
+               Vanu G. Bose},
+  title     = {SpectrumWare: A Software-Oriented Approach to Wireless Signal
+               Processing.},
+  booktitle = mobicom,
+  year      = 1995,
+  pages     = {37-47},
+  ee        = {http://doi.acm.org/10.1145/215530.215551},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/Toh95,
+  author    = {Chai-Keong Toh},
+  title     = {The Design {\&} Implementation of a Hybrid Handover Protocol
+               for Multi-Media Wireless LANs},
+  booktitle = mobicom,
+  year      = 1995,
+  pages     = {49-61},
+  ee        = {http://doi.acm.org/10.1145/215530.215555},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/Lee95,
+  author    = {Kam Lee},
+  title     = {Adaptive Network Support for Mobile Multimedia.},
+  booktitle = mobicom,
+  year      = 1995,
+  pages     = {62-74},
+  ee        = {http://doi.acm.org/10.1145/215530.215557},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/FullmerG95,
+  author    = {Chane L. Fullmer and
+               J. J. Garcia-Luna-Aceves},
+  title     = {FAMA-PJ: A Channel Access Protocol for Wireless LANs.},
+  booktitle = mobicom,
+  year      = 1995,
+  pages     = {76-85},
+  ee        = {http://doi.acm.org/10.1145/215530.215559},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/MurthyG95,
+  author    = {Shree Murthy and
+               J. J. Garcia-Luna-Aceves},
+  title     = {A Routing Protocol for Packet Radio Networks.},
+  booktitle = mobicom,
+  year      = 1995,
+  pages     = {86-95},
+  ee        = {http://doi.acm.org/10.1145/215530.215560},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/BakreB95,
+  author    = {Ajay V. Bakre and
+               B. R. Badrinath},
+  title     = {M-RPC: A Remote Procedure Call Service for Mobile Clients.},
+  booktitle = mobicom,
+  year      = 1995,
+  pages     = {97-110},
+  ee        = {http://doi.acm.org/10.1145/215530.215562},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/LiuMM95,
+  author    = {George Y. Liu and
+               Alexander Marlevi and
+               Gerald Q. Maguire Jr.},
+  title     = {A Mobile Virtual-Distributed System Architecture for Supporting
+               Wireless Mobile Computing and Communications.},
+  booktitle = mobicom,
+  year      = 1995,
+  pages     = {111-118},
+  ee        = {http://doi.acm.org/10.1145/215530.215563},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/TaitLAC95,
+  author    = {Carl D. Tait and
+               Hui Lei and
+               Swarup Acharya and
+               Henry Chang},
+  title     = {Intelligent File Hoarding for Mobile Computers.},
+  booktitle = mobicom,
+  year      = 1995,
+  pages     = {119-125},
+  ee        = {http://doi.acm.org/10.1145/215530.215564},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/Rajagopalan95,
+  author    = {Bala Rajagopalan},
+  title     = {Mobility Management in Integrated Wireless-ATM Networks.},
+  booktitle = mobicom,
+  year      = 1995,
+  pages     = {127-141},
+  ee        = {http://doi.acm.org/10.1145/215530.215566},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/LevineAN95,
+  author    = {David A. Levine and
+               Ian F. Akyildiz and
+               Mahmoud Naghshineh},
+  title     = {The Shadow Cluster Concept for Resource Allocation and Call
+               Admission in ATM-Based Wireless Networks.},
+  booktitle = mobicom,
+  year      = 1995,
+  pages     = {142-150},
+  ee        = {http://doi.acm.org/10.1145/215530.215565},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/CondonDJKLSV95,
+  author    = {J. H. Condon and
+               T. S. Duff and
+               M. F. Jukl and
+               Charles R. Kalmanek and
+               Bart N. Locanthi and
+               J. P. Savicki and
+               J. H. Venutolo},
+  title     = {Rednet: A Wireless ATM Local Area Network Using Infrared
+               Links.},
+  booktitle = mobicom,
+  year      = 1995,
+  pages     = {151-159},
+  ee        = {http://doi.acm.org/10.1145/215530.215568},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/ShivakumarW95,
+  author    = {Narayanan Shivakumar and
+               Jennifer Widom},
+  title     = {User Profile Replication for Faster Location Lookup in Mobile
+               Environments.},
+  booktitle = mobicom,
+  year      = 1995,
+  pages     = {161-169},
+  ee        = {http://doi.acm.org/10.1145/215530.215570},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/RajagopalanB95,
+  author    = {Subhashini Rajagopalan and
+               B. R. Badrinath},
+  title     = {An Adaptive Location Management Strategy for Mobile IP.},
+  booktitle = mobicom,
+  year      = 1995,
+  pages     = {170-180},
+  ee        = {http://doi.acm.org/10.1145/215530.215572},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HoA95,
+  author    = {Joseph S. M. Ho and
+               Ian F. Akyildiz},
+  title     = {Local Anchor Scheme for Reducing Location Tracking Costs
+               in PCNs.},
+  booktitle = mobicom,
+  year      = 1995,
+  pages     = {181-193},
+  ee        = {http://doi.acm.org/10.1145/215530.215573},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/ShortBK95,
+  author    = {Joel Short and
+               Rajive Bagrodia and
+               Leonard Kleinrock},
+  title     = {Mobile Wireless Network System Simulation.},
+  booktitle = mobicom,
+  year      = 1995,
+  pages     = {195-209},
+  ee        = {http://doi.acm.org/10.1145/215530.215575},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/Malesinska95,
+  author    = {Ewa Malesinska},
+  title     = {An Optimization Method for the Channel Assignment in Mixed
+               Environments.},
+  booktitle = mobicom,
+  year      = 1995,
+  pages     = {210-217},
+  ee        = {http://doi.acm.org/10.1145/215530.215576},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+%
+% mobicom 1996
+%
+@inproceedings{DBLP:conf/mobicom/DegermarkENP96,
+  author    = {Mikael Degermark and
+               Mathias Engan and
+               Bj{\"o}rn Nordgren and
+               Stephen Pink},
+  title     = {Low-Loss TCP/IP Header Compression for Wireless Networks.},
+  booktitle = mobicom,
+  year      = 1996,
+  pages     = {1-14},
+  ee        = {http://doi.acm.org/10.1145/236387.236388},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/DurstMT96,
+  author    = {Robert C. Durst and
+               Gregory J. Miller and
+               Eric J. Travis},
+  title     = {TCP Extensions for Space Communications.},
+  booktitle = mobicom,
+  year      = 1996,
+  pages     = {15-26},
+  ee        = {http://doi.acm.org/10.1145/236387.236398},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/PerkinsJ96,
+  author    = {Charles E. Perkins and
+               David B. Johnson},
+  title     = {Mobility Support in IPv6.},
+  booktitle = mobicom,
+  year      = 1996,
+  pages     = {27-37},
+  ee        = {http://doi.acm.org/10.1145/236387.236400},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/JanninkLWCS96,
+  author    = {Jan Jannink and
+               Derek Lam and
+               Jennifer Widom and
+               Donald C. Cox and
+               Narayanan Shivakumar},
+  title     = {Efficient and Flexible Location Management Techniques for
+               Wireless Communication Systems.},
+  booktitle = mobicom,
+  year      = 1996,
+  pages     = {38-49},
+  ee        = {http://doi.acm.org/10.1145/236387.236401},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/AwducheGG96,
+  author    = {Daniel O. Awduche and
+               Arthur S. Gaylord and
+               Aura Ganz},
+  title     = {On Resource Discovery in Distributed Systems with Mobile
+               Hosts.},
+  booktitle = mobicom,
+  year      = 1996,
+  pages     = {50-55},
+  ee        = {http://doi.acm.org/10.1145/236387.236403},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/CaceresP96,
+  author    = {Ram{\'o}n C{\'a}ceres and
+               Venkata N. Padmanabhan},
+  title     = {Fast and Scalable Handoffs for Wireless Internetworks.},
+  booktitle = mobicom,
+  year      = 1996,
+  pages     = {56-66},
+  ee        = {http://doi.acm.org/10.1145/236387.236405},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/VukovicM96,
+  author    = {Ivan Vukovic and
+               John McKown},
+  title     = {Spectrum Sharing Under the Asynchronous UPCS Etiquette:
+               The Performance of Collocated Systems under Heavy Load.},
+  booktitle = mobicom,
+  year      = 1996,
+  pages     = {67-72},
+  ee        = {http://doi.acm.org/10.1145/236387.236407},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/DasSJ96,
+  author    = {Sajal K. Das and
+               Sanjoy K. Sen and
+               Rajeev Jayaram},
+  title     = {A Dynamic Load Balancing Strategy for Channel Assignment
+               Using Selective Borrowing in Cellular Mobile Environment.},
+  booktitle = mobicom,
+  year      = 1996,
+  pages     = {73-84},
+  ee        = {http://doi.acm.org/10.1145/236387.236409},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/MittsHIV96,
+  author    = {H{\aa}kan Mitts and
+               Harri Hans{\'e}n and
+               Jukka Immonen and
+               Simo Veikkolainen},
+  title     = {Lossless Handover for Wireless ATM.},
+  booktitle = mobicom,
+  year      = 1996,
+  pages     = {85-96},
+  ee        = {http://doi.acm.org/10.1145/236387.236411},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/LongKAA96,
+  author    = {Sue Long and
+               Rob Kooper and
+               Gregory D. Abowd and
+               Christopher G. Atkeson},
+  title     = {Rapid Prototyping of Mobile Context-Aware Applications:
+               The Cyberguide Case Study.},
+  booktitle = mobicom,
+  year      = 1996,
+  pages     = {97-107},
+  ee        = {http://doi.acm.org/10.1145/236387.236412},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HouselL96,
+  author    = {Barron C. Housel and
+               David B. Lindquist},
+  title     = {WebExpress: A System for Optimizing Web Browsing in a Wireless
+               Environment.},
+  booktitle = mobicom,
+  year      = 1996,
+  pages     = {108-116},
+  ee        = {http://doi.acm.org/10.1145/236387.236416},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/JosephK96,
+  author    = {Anthony D. Joseph and
+               M. Frans Kaashoek},
+  title     = {Building Reliable Mobile-Aware Applications Using the Rover
+               Toolkit.},
+  booktitle = mobicom,
+  year      = 1996,
+  pages     = {117-129},
+  ee        = {http://doi.acm.org/10.1145/236387.236420},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HelmboldLS96,
+  author    = {David P. Helmbold and
+               Darrell D. E. Long and
+               Bruce Sherrod},
+  title     = {A Dynamic Disk Spin-Down Technique for Mobile Computing.},
+  booktitle = mobicom,
+  year      = 1996,
+  pages     = {130-142},
+  ee        = {http://doi.acm.org/10.1145/236387.236423},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/LorchS96,
+  author    = {Jacob R. Lorch and
+               Alan Jay Smith},
+  title     = {Reducing Processor Power Consumption by Improving Processor
+               Time Management in a Single-user Operating System.},
+  booktitle = mobicom,
+  year      = 1996,
+  pages     = {143-154},
+  ee        = {http://doi.acm.org/10.1145/236387.236437},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/FoxG96,
+  author    = {Armando Fox and
+               Steven D. Gribble},
+  title     = {Security on the Move: Indirect Authentication using Kerberos.},
+  booktitle = mobicom,
+  year      = 1996,
+  pages     = {155-164},
+  ee        = {http://doi.acm.org/10.1145/236387.236439},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/NenonenM96,
+  author    = {Liina Nenonen and
+               Jouni Mikkonen},
+  title     = {Wireless ATM MAC Performance Evaluation, Case Study: HIPERLAN
+               vs. modified MDR.},
+  booktitle = mobicom,
+  year      = 1996,
+  pages     = {165-175},
+  ee        = {http://doi.acm.org/10.1145/236387.236440},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/LiuVE96,
+  author    = {Zhao Liu and
+               Malathi Veeraraghavan and
+               Kai Y. Eng},
+  title     = {A Scalable Wireless Virtual LAN.},
+  booktitle = mobicom,
+  year      = 1996,
+  pages     = {176-186},
+  ee        = {http://doi.acm.org/10.1145/236387.236444},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+%
+% mobicom 1997
+%
+@inproceedings{DBLP:conf/mobicom/HodesKSR97,
+  author    = {Todd D. Hodes and
+               Randy H. Katz and
+               Edouard Servan-Schreiber and
+               Lawrence A. Rowe},
+  title     = {Composable ad-hoc Mobile Services for Universal Interaction.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {1-12},
+  ee        = {http://doi.acm.org/10.1145/262116.262121},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/InouyeBW97,
+  author    = {Jon Inouye and
+               Jim Binkley and
+               Jonathan Walpole},
+  title     = {Dynamic Network Reconfiguration Support for Mobile Computers.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {13-22},
+  ee        = {http://doi.acm.org/10.1145/262116.262122},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/Maass97,
+  author    = {Henning Maa{\ss}},
+  title     = {Location-Aware Mobile Applications Based on Directory Services.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {23-33},
+  ee        = {http://doi.acm.org/10.1145/262116.262123},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/PaganiR97,
+  author    = {Elena Pagani and
+               Gian Paolo Rossi},
+  title     = {Reliable Broadcast in Mobile Multihop Packet Networks.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {34-42},
+  ee        = {http://doi.acm.org/10.1145/262116.262125},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/DommetyVS97,
+  author    = {Gopal Dommety and
+               Malathi Veeraraghavan and
+               Mukesh Singhal},
+  title     = {Route Optimization in Mobile ATM Networks.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {43-54},
+  ee        = {http://doi.acm.org/10.1145/262116.262129},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/BenningtonB97,
+  author    = {Bernard J. Bennington and
+               Charles R. Bartel},
+  title     = {Wireless Andrew: Experience Building a High Speed, Campus-Wide
+               Wireless Data Network.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {55-65},
+  ee        = {http://doi.acm.org/10.1145/262116.262131},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/NavasI97,
+  author    = {Julio C. Navas and
+               Tomasz Imielinski},
+  title     = {GeoCast - Geographic Addressing and Routing.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {66-76},
+  ee        = {http://doi.acm.org/10.1145/262116.262132},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/BalakrishnanPK97,
+  author    = {Hari Balakrishnan and
+               Venkata N. Padmanabhan and
+               Randy H. Katz},
+  title     = {The Effects of Asymmetry on TCP Performance.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {77-89},
+  ee        = {http://doi.acm.org/10.1145/262116.262134},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HameedV97,
+  author    = {Sohail Hameed and
+               Nitin H. Vaidya},
+  title     = {Log-Time Algorithms for Scheduling Single and Multiple Channel
+               Data Broadcast.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {90-99},
+  ee        = {http://doi.acm.org/10.1145/262116.262136},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HashimotoSU97,
+  author    = {Yukio Hashimoto and
+               Beh\c{c}et Sarikaya and
+               Mehmet Ulema},
+  title     = {Multimedia Communication in Cellular PACS Network.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {100-109},
+  ee        = {http://doi.acm.org/10.1145/262116.262138},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/CaponeS97,
+  author    = {Jeffrey M. Capone and
+               Ioannis Stavrakakis},
+  title     = {Delivering Diverse Delay/Dropping QoS Requirements in a
+               TDMA Environment.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {110-119},
+  ee        = {http://doi.acm.org/10.1145/262116.262139},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/ChoiS97,
+  author    = {Sunghyun Choi and
+               Kang G. Shin},
+  title     = {Uplink CDMA Systems with Diverse QoS Guarantees for Heterogeneous
+               Traffic.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {120-130},
+  ee        = {http://doi.acm.org/10.1145/262116.262140},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/Joe97,
+  author    = {Inwhee Joe},
+  title     = {An Adaptive Hybrid ARQ Scheme with Concatenated FEC Codes
+               for Wireless ATM.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {131-138},
+  ee        = {http://doi.acm.org/10.1145/262116.262141},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/LettieriFS97,
+  author    = {Paul Lettieri and
+               Christina Fragouli and
+               Mani B. Srivastava},
+  title     = {Low Power Error Control for Wireless Links.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {139-150},
+  ee        = {http://doi.acm.org/10.1145/262116.262142},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HarrisonWMB97,
+  author    = {Tim G. Harrison and
+               Carey L. Williamson and
+               Wayne L. Mackrell and
+               Richard B. Bunt},
+  title     = {Mobile Multicast (MoM) Protocol: Multicast Support for Mobile
+               Hosts.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {151-160},
+  ee        = {http://doi.acm.org/10.1145/262116.262143},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/MysoreB97,
+  author    = {Jayanth Mysore and
+               Vaduvur Bharghavan},
+  title     = {A New Multicasting-Based Architecture for Internet Host
+               Mobility.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {161-172},
+  ee        = {http://doi.acm.org/10.1145/262116.262144},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/ZaoKGTCHYC97,
+  author    = {John Zao and
+               Stephen T. Kent and
+               Joshua Gahm and
+               Gregory Troxel and
+               Matthew Condell and
+               Pam Helinek and
+               Nina Yuan and
+               Isidro Castineyra},
+  title     = {A Public-Key Based Secure Mobile IP.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {173-184},
+  ee        = {http://doi.acm.org/10.1145/262116.262145},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/DasS97,
+  author    = {Sajal K. Das and
+               Sanjoy K. Sen},
+  title     = {A New Location Update Strategy for Cellular Networks and
+               Its Implementation Using a Genetic Algorithm.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {185-194},
+  ee        = {http://doi.acm.org/10.1145/262116.262146},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/WanL97,
+  author    = {Guang Wan and
+               Eric C. Lin},
+  title     = {A Dynamic Paging Scheme for Wireless Communication Systems.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {195-203},
+  ee        = {http://doi.acm.org/10.1145/262116.262147},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/UzunaliogluYA97,
+  author    = {H{\"u}seyin Uzunalioglu and
+               Wei Yen and
+               Ian F. Akyildiz},
+  title     = {A Connection Handover Protocol for LEO Satellite ATM Networks.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {204-214},
+  ee        = {http://doi.acm.org/10.1145/262116.262148},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HagimontI97,
+  author    = {Daniel Hagimont and
+               Leila Ismail},
+  title     = {A Protection Scheme for Mobile Agents on Java.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {215-222},
+  ee        = {http://doi.acm.org/10.1145/262116.262149},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/PatelC97,
+  author    = {Bhrat Patel and
+               Jon Crowcroft},
+  title     = {Ticket Based Service Access for the Mobile User.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {223-233},
+  ee        = {http://doi.acm.org/10.1145/262116.262150},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/SpreitzerTPDT97,
+  author    = {Mike Spreitzer and
+               Marvin Theimer and
+               Karin Petersen and
+               Alan J. Demers and
+               Douglas B. Terry},
+  title     = {Dealing with Server Corruption in Weakly Consistent, Replicated
+               Data Systems.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {234-240},
+  ee        = {http://doi.acm.org/10.1145/262116.262151},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/CitrinHGW97,
+  author    = {Wayne Citrin and
+               Paul Hamill and
+               Mark D. Gross and
+               Adrienne Warmack},
+  title     = {Support for Mobile Pen-Based Applications.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {241-247},
+  ee        = {http://doi.acm.org/10.1145/262116.262152},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/ZenelD97,
+  author    = {Bruce Zenel and
+               Dan Duchamp},
+  title     = {A General Purpose Proxy Filtering Mechanism Applied to the
+               Mobile Environment.},
+  booktitle = mobicom,
+  year      = 1997,
+  pages     = {248-259},
+  ee        = {http://doi.acm.org/10.1145/262116.262153},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+%
+% mobicom 1998
+%
+@inproceedings{DBLP:conf/mobicom/RamanathanA98,
+  author    = {Parameswaran Ramanathan and
+               Prathima Agrawal},
+  title     = {Adapting Packet Fair Queueing Algorithms to Wireless Networks.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {1-9},
+  ee        = {http://doi.acm.org/10.1145/288235.288239},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/LuNB98,
+  author    = {Songwu Lu and
+               Thyagarajan Nandagopal and
+               Vaduvur Bharghavan},
+  title     = {A Wireless Fair Service Algorithm for Packet Cellular Networks.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {10-20},
+  ee        = {http://doi.acm.org/10.1145/288235.288242},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/OzugurNKORC98,
+  author    = {Timucin Ozugur and
+               Mahmoud Naghshineh and
+               Parviz Kermani and
+               C. Michael Olsen and
+               Babak Rezvani and
+               John A. Copeland},
+  title     = {Balanced Media Access Methods for Wireless Networks.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {21-32},
+  ee        = {http://doi.acm.org/10.1145/288235.288244},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/SuT98,
+  author    = {Chi-Jiun Su and
+               Leandros Tassiulas},
+  title     = {Joint Broadcast Scheduling and User's Cache Management for
+               Efficient Information Delivery.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {33-42},
+  ee        = {http://doi.acm.org/10.1145/288235.288246},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/AcharyaM98,
+  author    = {Swarup Acharya and
+               S. Muthukrishnan},
+  title     = {Scheduling On-Demand Broadcasts: New Metrics and Algorithms.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {43-54},
+  ee        = {http://doi.acm.org/10.1145/288235.288248},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/PersoneGM98,
+  author    = {Vittoria De Nitto Persone and
+               Vincenzo Grassi and
+               Antonio Morlupi},
+  title     = {Modeling and Evaluation of Prefetching Policies for Context-Aware
+               Information Services.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {55-65},
+  ee        = {http://doi.acm.org/10.1145/288235.288249},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/KoV98,
+  author    = {Young-Bae Ko and
+               Nitin H. Vaidya},
+  title     = {Location-Aided Routing (LAR) in Mobile Ad Hoc Networks.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {66-75},
+  ee        = {http://doi.acm.org/10.1145/288235.288252},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/BasagniCSW98,
+  author    = {Stefano Basagni and
+               Imrich Chlamtac and
+               Violet R. Syrotiuk and
+               Barry A. Woodward},
+  title     = {A Distance Routing Effect Algorithm for Mobility (DREAM).},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {76-84},
+  ee        = {http://doi.acm.org/10.1145/288235.288254},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/BrochMJHJ98,
+  author    = {Josh Broch and
+               David A. Maltz and
+               David B. Johnson and
+               Yih-Chun Hu and
+               Jorjeta G. Jetcheva},
+  title     = {A Performance Comparison of Multi-Hop Wireless Ad Hoc Network
+               Routing Protocols.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {85-97},
+  ee        = {http://doi.acm.org/10.1145/288235.288256},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/BalasubramaniamP98,
+  author    = {Sundar Balasubramaniam and
+               Benjamin C. Pierce},
+  title     = {What is a File Synchronizer?},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {98-108},
+  ee        = {http://doi.acm.org/10.1145/288235.288261},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/YeJK98,
+  author    = {Tao Ye and
+               Hans-Arno Jacobsen and
+               Randy H. Katz},
+  title     = {Mobile Awareness in a Wide Area Wireless Network of Info-Stations.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {109-120},
+  ee        = {http://doi.acm.org/10.1145/288235.288264},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/WuAA98,
+  author    = {Daniel Wu and
+               Divyakant Agrawal and
+               Amr El Abbadi},
+  title     = {StratOSphere: Mobile Processing of Distributed Objects in
+               Java.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {121-132},
+  ee        = {http://doi.acm.org/10.1145/288235.288267},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/McIlhaggaLW98,
+  author    = {Malcolm McIlhagga and
+               Ann Light and
+               Ian Wakeman},
+  title     = {Towards a Design Methodology for Adaptive Applications.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {133-144},
+  ee        = {http://doi.acm.org/10.1145/288235.288270},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/ZhaoCB98,
+  author    = {Xinhua Zhao and
+               Claude Castelluccia and
+               Mary Baker},
+  title     = {Flexible Network Support for Mobility.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {145-156},
+  ee        = {http://doi.acm.org/10.1145/288235.288274},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/KravetsK98,
+  author    = {Robin Kravets and
+               P. Krishnan},
+  title     = {Power Management Techniques for Mobile Communication.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {157-168},
+  ee        = {http://doi.acm.org/10.1145/288235.288276},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/TalukdarBA98,
+  author    = {Anup Kumar Talukdar and
+               B. R. Badrinath and
+               Arup Acharya},
+  title     = {Rate Adaptation Schemes in Networks with Mobile Hosts.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {169-180},
+  ee        = {http://doi.acm.org/10.1145/288235.288278},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/SinghWR98,
+  author    = {Suresh Singh and
+               Mike Woo and
+               C. S. Raghavendra},
+  title     = {Power-Aware Routing in Mobile Ad Hoc Networks.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {181-190},
+  ee        = {http://doi.acm.org/10.1145/288235.288286},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/LiaoC98,
+  author    = {Raymond R.-F. Liao and
+               Andrew T. Campbell},
+  title     = {On Programmable Universal Mobile Channels in a Cellular
+               Internet.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {191-202},
+  ee        = {http://doi.acm.org/10.1145/288235.288287},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/LeonhardtM98,
+  author    = {Ulf Leonhardt and
+               Jeff Magee},
+  title     = {Multi-Sensor Location Tracking.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {203-214},
+  ee        = {http://doi.acm.org/10.1145/288235.288291},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/BejeranoC98,
+  author    = {Yigal Bejerano and
+               Israel Cidon},
+  title     = {An Efficient Mobility Management Strategy for Personal Communication
+               Systems.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {215-222},
+  ee        = {http://doi.acm.org/10.1145/288235.288295},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/KrishnamurthiAS98,
+  author    = {Govind Krishnamurthi and
+               Murat Azizoglu and
+               Arun K. Somani},
+  title     = {Optimal Location Management Algorithms for Mobile Networks.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {223-232},
+  ee        = {http://doi.acm.org/10.1145/288235.288300},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/KimK98,
+  author    = {Jeong Geun Kim and
+               Marwan Krunz},
+  title     = {Effective Bandwidth in Wireless ATM Networks.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {233-241},
+  ee        = {http://doi.acm.org/10.1145/288235.288308},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/WongCL98,
+  author    = {Vincent W. S. Wong and
+               Henry C. B. Chan and
+               Victor C. M. Leung},
+  title     = {Performance Evaluations of Path Optimization Schemes for
+               Inter-Switch Handoffs in Wireless ATM Networks.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {242-252},
+  ee        = {http://doi.acm.org/10.1145/288235.288310},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/CalviH98,
+  author    = {Andrea Calvi and
+               Francisco Cano Hila},
+  title     = {Integration of Circuit and Packet Switched Transport in
+               a 3$^{\mbox{RD}}$ Generation Mobile Network.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {252-263},
+  ee        = {http://doi.acm.org/10.1145/288235.288314},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/ChoiS98,
+  author    = {Sunghyun Choi and
+               Kang G. Shin},
+  title     = {Comparison of Connection Admission-Control Schemes in the
+               Presence of Hand-Offs in Cellular Networks.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {264-275},
+  ee        = {http://doi.acm.org/10.1145/288235.288319},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/SenJBKD98,
+  author    = {Sanjoy K. Sen and
+               Jastinder Jawanda and
+               Kalyan Basu and
+               Naveen K. Kakani and
+               Sajal K. Das},
+  title     = {TCP Source Activity and Its Impact on Call Admission Control
+               in CDMA Voice/Data Network.},
+  booktitle = mobicom,
+  year      = 1998,
+  pages     = {276-283},
+  ee        = {http://doi.acm.org/10.1145/288235.288323},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+%
+% mobicom 1999
+%
+@inproceedings{DBLP:conf/mobicom/BhattacharyaD99,
+  author    = {Amiya Bhattacharya and
+               Sajal K. Das},
+  title     = {LeZi-Update: An Information-Theoretic Approach to Track
+               Mobile Users in PCS Networks.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {1-12},
+  ee        = {http://doi.acm.org/10.1145/313451.313457},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/TangB99,
+  author    = {Diane Tang and
+               Mary Baker},
+  title     = {Analysis of a Metropolitan-Area Wireless Network.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {13-23},
+  ee        = {http://doi.acm.org/10.1145/313451.313460},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/CzerwinskiZHJK99,
+  author    = {Steven E. Czerwinski and
+               Ben Y. Zhao and
+               Todd D. Hodes and
+               Anthony D. Joseph and
+               Randy H. Katz},
+  title     = {An Architecture for a Secure Service Discovery Service.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {24-35},
+  ee        = {http://doi.acm.org/10.1145/313451.313462},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HaahrCC99,
+  author    = {Mads Haahr and
+               Raymond Cunningham and
+               Vinny Cahill},
+  title     = {Supporting CORBA Applications in a Mobile Environment.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {36-47},
+  ee        = {http://doi.acm.org/10.1145/313451.313463},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/KangasR99,
+  author    = {Kari Kangas and
+               Juha R{\"o}ning},
+  title     = {Using Code Mobility to Create Ubiquitous and Active Augmented
+               Reality in Mobile Computing.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {48-58},
+  ee        = {http://doi.acm.org/10.1145/313451.313467},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HarterHSWW99,
+  author    = {Andy Harter and
+               Andy Hopper and
+               Pete Steggles and
+               Andy Ward and
+               Paul Webster},
+  title     = {The Anatomy of a Context-Aware Application.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {59-68},
+  ee        = {http://doi.acm.org/10.1145/313451.313476},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/BhagwatKBNT99,
+  author    = {Pravin Bhagwat and
+               Ibrahim Korpeoglu and
+               Chatschik Bisdikian and
+               Mahmoud Naghshineh and
+               Satish K. Tripathi},
+  title     = {BlueSky: A Cordless Networking Solution for Palmtop Computers.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {69-76},
+  ee        = {http://doi.acm.org/10.1145/313451.313480},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HavingaS99,
+  author    = {Paul J. M. Havinga and
+               Gerard J. M. Smit},
+  title     = {Octopus: Embracing the Energy Efficiency of Handheld Multimedia
+               Computers.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {77-87},
+  ee        = {http://doi.acm.org/10.1145/313451.313482},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/ChiasseriniR99,
+  author    = {Carla-Fabiana Chiasserini and
+               Ramesh R. Rao},
+  title     = {Pulsed Battery Discharge in Communication Devices.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {88-95},
+  ee        = {http://doi.acm.org/10.1145/313451.313488},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/AyyagariE99,
+  author    = {Deepak Ayyagari and
+               Anthony Ephremides},
+  title     = {Power Control for Link Quality Protection in Cellular DS-CDMA
+               Networks with Integrated (packet and circuit) Services.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {96-101},
+  ee        = {http://doi.acm.org/10.1145/313451.313495},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/OhW99,
+  author    = {Seong-Jun Oh and
+               Kimberly M. Wasserman},
+  title     = {Optimality of Greedy Power Control and Variable Spreading
+               Gain in Multi-Class CDMA Mobile Networks.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {102-112},
+  ee        = {http://doi.acm.org/10.1145/313451.313498},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/LudwigKJ99,
+  author    = {Reiner Ludwig and
+               Almudena Konrad and
+               Anthony D. Joseph},
+  title     = {Optimizing the End-to-End Performance of Reliable Flows
+               Over Wireless Links.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {113-119},
+  ee        = {http://doi.acm.org/10.1145/313451.313513},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/Garcia-Luna-AcevesT99,
+  author    = {J. J. Garcia-Luna-Aceves and
+               Asimakis Tzamaloukas},
+  title     = {Reversing the Collision-Avoidance Handshake in Wireless
+               Networks.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {120-131},
+  ee        = {http://doi.acm.org/10.1145/313451.313516},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/NandagopalLB99,
+  author    = {Thyagarajan Nandagopal and
+               Songwu Lu and
+               Vaduvur Bharghavan},
+  title     = {A Unified Architecture for the Design and Evaluation of
+               Wireless Fair Queueing Algorithms.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {132-142},
+  ee        = {http://doi.acm.org/10.1145/313451.313520},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/ColomboLMCS99,
+  author    = {G. Colombo and
+               Luciano Lenzini and
+               Enzo Mingozzi and
+               B. Cornaglia and
+               R. Santaniello},
+  title     = {Performance Evaluation of PRADOS: A Scheduling Algorithm
+               for Traffic Integration in a Wireless ATM Network.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {143-150},
+  ee        = {http://doi.acm.org/10.1145/313451.313522},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/NiTCS99,
+  author    = {Sze-Yao Ni and
+               Yu-Chee Tseng and
+               Yuh-Shyan Chen and
+               Jang-Ping Sheu},
+  title     = {The Broadcast Storm Problem in a Mobile ad hoc Network.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {151-162},
+  ee        = {http://doi.acm.org/10.1145/313451.313525},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HuLL99,
+  author    = {Qinglong Hu and
+               Dik Lun Lee and
+               Wang-Chien Lee},
+  title     = {Performance Evaluation of a Wireless Hierarchical Data Dissemination
+               System.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {163-173},
+  ee        = {http://doi.acm.org/10.1145/313451.313528},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HeinzelmanKB99,
+  author    = {Wendi Rabiner Heinzelman and
+               Joanna Kulik and
+               Hari Balakrishnan},
+  title     = {Adaptive Protocols for Information Dissemination in Wireless
+               Sensor Networks.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {174-185},
+  ee        = {http://doi.acm.org/10.1145/313451.313529},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/CastanedaD99,
+  author    = {Robert Casta{\~n}eda and
+               Samir Ranjan Das},
+  title     = {Query Localization Techniques for On-Demand Routing Protocols
+               in ad hoc Networks.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {186-194},
+  ee        = {http://doi.acm.org/10.1145/313451.313534},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/JohanssonLHMD99,
+  author    = {Per Johansson and
+               Tony Larsson and
+               Nicklas Hedman and
+               Bartosz Mielczarek and
+               Mikael Degermark},
+  title     = {Scenario-Based Performance Analysis of Routing Protocols
+               for Mobile ad-hoc Networks.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {195-206},
+  ee        = {http://doi.acm.org/10.1145/313451.313535},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/RoyerP99,
+  author    = {Elizabeth M. Belding-Royer and
+               Charles E. Perkins},
+  title     = {Multicast Operation of the Ad-Hoc On-Demand Distance Vector
+               Routing Protocol.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {207-218},
+  ee        = {http://doi.acm.org/10.1145/313451.313538},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HollandV99,
+  author    = {Gavin Holland and
+               Nitin H. Vaidya},
+  title     = {Analysis of TCP Performance over Mobile Ad Hoc Networks.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {219-230},
+  ee        = {http://doi.acm.org/10.1145/313451.313540},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/SinhaVSB99,
+  author    = {Prasun Sinha and
+               Narayanan Venkitaraman and
+               Raghupathy Sivakumar and
+               Vaduvur Bharghavan},
+  title     = {WTCP: A Reliable Transport Protocol for Wireless Wide-Area
+               Networks.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {231-241},
+  ee        = {http://doi.acm.org/10.1145/313451.313541},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/BoseWG99,
+  author    = {Vanu G. Bose and
+               David Wetherall and
+               John V. Guttag},
+  title     = {Next Century Challenges: RadioActive Networks.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {242-248},
+  ee        = {http://doi.acm.org/10.1145/313451.313544},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HohlKLRS99,
+  author    = {Fritz Hohl and
+               Uwe Kubach and
+               Alexander Leonhardi and
+               Kurt Rothermel and
+               Markus Schwehm},
+  title     = {Next Century Challenges: Nexus - An Open Global Infrastructure
+               for Spatial-Aware Applications.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {249-255},
+  ee        = {http://doi.acm.org/10.1145/313451.313549},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/EslerHAB99,
+  author    = {Mike Esler and
+               Jeffrey Hightower and
+               Thomas E. Anderson and
+               Gaetano Borriello},
+  title     = {Next Century Challenges: Data-Centric Networking for Invisible
+               Computing.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {256-262},
+  ee        = {http://doi.acm.org/10.1145/313451.313553},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/EstrinGHK99,
+  author    = {Deborah Estrin and
+               Ramesh Govindan and
+               John S. Heidemann and
+               Satish Kumar},
+  title     = {Next Century Challenges: Scalable Coordination in Sensor
+               Networks.},
+  booktitle = mobicom,
+  year      = 1999,
+  pages     = {263-270},
+  ee        = {http://doi.acm.org/10.1145/313451.313556},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+%
+% mobicom 2000
+%
+@inproceedings{DBLP:conf/mobicom/TangB00,
+  author    = {Diane Tang and
+               Mary Baker},
+  title     = {Analysis of a local-area wireless network.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {1-10},
+  ee        = {http://doi.acm.org/10.1145/345910.345912},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/SimunicBGM00,
+  author    = {Tajana Simunic and
+               Luca Benini and
+               Peter W. Glynn and
+               Giovanni De Micheli},
+  title     = {Dynamic power management for portable systems.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {11-19},
+  ee        = {http://doi.acm.org/10.1145/345910.345914},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/CheverstDMF00,
+  author    = {Keith Cheverst and
+               Nigel Davies and
+               Keith Mitchell and
+               Adrian Friday},
+  title     = {Experiences of developing and deploying a context-aware
+               tourist guide: the GUIDE project.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {20-31},
+  ee        = {http://doi.acm.org/10.1145/345910.345916},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/PriyanthaCB00,
+  author    = {Nissanka B. Priyantha and
+               Anit Chakraborty and
+               Hari Balakrishnan},
+  title     = {The Cricket location-support system.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {32-43},
+  ee        = {http://doi.acm.org/10.1145/345910.345917},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/LiR00,
+  author    = {Qun Li and
+               Daniela Rus},
+  title     = {Sending messages to mobile users in disconnected ad-hoc
+               wireless networks.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {44-55},
+  ee        = {http://doi.acm.org/10.1145/345910.345918},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/IntanagonwiwatGE00,
+  author    = {Chalermek Intanagonwiwat and
+               Ramesh Govindan and
+               Deborah Estrin},
+  title     = {Directed diffusion: a scalable and robust communication
+               paradigm for sensor networks.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {56-67},
+  ee        = {http://doi.acm.org/10.1145/345910.345920},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/JuglB00,
+  author    = {Enrico Jugl and
+               Holger Boche},
+  title     = {Analysis of analytical mobility models with resect to the
+               applicability for handover modeling and to the estimation
+               of signaling cost.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {68-75},
+  ee        = {http://doi.acm.org/10.1145/345910.345921},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/LuoLB00,
+  author    = {Haiyun Luo and
+               Songwu Lu and
+               Vaduvur Bharghavan},
+  title     = {A new model for packet scheduling in multihop wireless networks.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {76-86},
+  ee        = {http://doi.acm.org/10.1145/345910.345923},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/NandagopalKGB00,
+  author    = {Thyagarajan Nandagopal and
+               Tae-eun Kim and
+               Xia Gao and
+               Vaduvur Bharghavan},
+  title     = {Achieving MAC layer fairness in wireless packet networks.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {87-98},
+  ee        = {http://doi.acm.org/10.1145/345910.345925},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/WangA00,
+  author    = {Wenye Wang and
+               Ian F. Akyildiz},
+  title     = {Intersystem location update and paging schemes for multitier
+               wireless networks.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {99-109},
+  ee        = {http://doi.acm.org/10.1145/345910.345928},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/Naor00,
+  author    = {Zohar Naor},
+  title     = {Tracking mobile users with uncertain parameters.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {110-119},
+  ee        = {http://doi.acm.org/10.1145/345910.345929},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/LiJCKM00,
+  author    = {Jinyang Li and
+               John Jannotti and
+               Douglas S. J. De Couto and
+               David R. Karger and
+               Robert Morris},
+  title     = {A scalable location service for geographic ad hoc routing.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {120-130},
+  ee        = {http://doi.acm.org/10.1145/345910.345931},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/LilleyYBS00,
+  author    = {Jeremy Lilley and
+               Jason Yang and
+               Hari Balakrishnan and
+               Srinivasan Seshan},
+  title     = {A unified header compression framework for low-bandwidth
+               links.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {131-142},
+  ee        = {http://doi.acm.org/10.1145/345910.345933},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/CampLM00,
+  author    = {Tracy Camp and
+               John C. Lusth and
+               Jeff Matocha},
+  title     = {Reduced cell switching in a mobile computing environment.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {143-154},
+  ee        = {http://doi.acm.org/10.1145/345910.345935},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/SnoerenB00,
+  author    = {Alex C. Snoeren and
+               Hari Balakrishnan},
+  title     = {An end-to-end approach to host mobility.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {155-166},
+  ee        = {http://doi.acm.org/10.1145/345910.345938},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/VaidyaBG00,
+  author    = {Nitin H. Vaidya and
+               Paramvir Bahl and
+               Seema Gupta},
+  title     = {Distributed fair scheduling in a wireless LAN.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {167-178},
+  ee        = {http://doi.acm.org/10.1145/345910.345939},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/JoshiKPS00,
+  author    = {Niranjan Joshi and
+               Srinivas R. Kadaba and
+               Sarvar Patel and
+               Ganapathy S. Sundaram},
+  title     = {Downlink scheduling in CDMA data networks.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {179-190},
+  ee        = {http://doi.acm.org/10.1145/345910.345941},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/ElaoudR00,
+  author    = {Moncef Elaoud and
+               Parameswaran Ramanathan},
+  title     = {Adaptive allocation of CDMA resources for network-level
+               QoS assurances.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {191-199},
+  ee        = {http://doi.acm.org/10.1145/345910.345943},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/Cao00,
+  author    = {Guohong Cao},
+  title     = {A scalable low-latency cache invalidation strategy for mobile
+               environments.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {200-209},
+  ee        = {http://doi.acm.org/10.1145/345910.345945},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/RenD00,
+  author    = {Qun Ren and
+               Margaret H. Dunham},
+  title     = {Using semantic caching to manage location dependent data
+               in mobile computing.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {210-221},
+  ee        = {http://doi.acm.org/10.1145/345910.345948},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/Bar-NoyNS00,
+  author    = {Amotz Bar-Noy and
+               Joseph Naor and
+               Baruch Schieber},
+  title     = {Pushing dependent data in clients-providers-servers systems.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {222-230},
+  ee        = {http://doi.acm.org/10.1145/345910.345950},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HuJ00,
+  author    = {Yih-Chun Hu and
+               David B. Johnson},
+  title     = {Caching strategies in on-demand routing protocols for wireless
+               ad hoc networks.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {231-242},
+  ee        = {http://doi.acm.org/10.1145/345910.345952},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/KarpK00,
+  author    = {Brad Karp and
+               H. T. Kung},
+  title     = {GPSR: greedy perimeter stateless routing for wireless networks.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {243-254},
+  ee        = {http://doi.acm.org/10.1145/345910.345953},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/MartiGLB00,
+  author    = {Sergio Marti and
+               Thomas J. Giuli and
+               Kevin Lai and
+               Mary Baker},
+  title     = {Mitigating routing misbehavior in mobile ad hoc networks.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {255-265},
+  ee        = {http://doi.acm.org/10.1145/345910.345955},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/BanavarBGMSZ00,
+  author    = {Guruduth Banavar and
+               James Beck and
+               Eugene Gluzberg and
+               Jonathan Munson and
+               Jeremy B. Sussman and
+               Deborra J. Zukowski},
+  title     = {Challenges: an application model for pervasive computing.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {266-274},
+  ee        = {http://doi.acm.org/10.1145/345910.345957},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/ZhangL00,
+  author    = {Yongguang Zhang and
+               Wenke Lee},
+  title     = {Intrusion detection in wireless ad-hoc networks.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {275-283},
+  ee        = {http://doi.acm.org/10.1145/345910.345958},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/UedaTN00,
+  author    = {Hirotaka Ueda and
+               Masahiko Tsukamoto and
+               Shojiro Nishio},
+  title     = {W-mail: an electronic mail system for wearable computing
+               environments.},
+  booktitle = mobicom,
+  year      = 2000,
+  pages     = {284-291},
+  ee        = {http://doi.acm.org/10.1145/345910.345960},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+%
+% mobicom 2001
+%
+@inproceedings{DBLP:conf/mobicom/PriyanthaMBT01,
+  author    = {Nissanka B. Priyantha and
+               Allen K. L. Miu and
+               Hari Balakrishnan and
+               Seth J. Teller},
+  title     = {The cricket compass for context-aware mobile applications.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {1-14},
+  ee        = {http://doi.acm.org/10.1145/381677.381679},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/KubachR01,
+  author    = {Uwe Kubach and
+               Kurt Rothermel},
+  title     = {Exploiting location information for infostation-based hoarding.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {15-27},
+  ee        = {http://doi.acm.org/10.1145/381677.381680},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/CastroGMKBP01,
+  author    = {Paul Castro and
+               Benjamin Greenstein and
+               Richard R. Muntz and
+               Parviz Kermani and
+               Chatschik Bisdikian and
+               Maria Papadopouli},
+  title     = {Locating application data across service discovery domains.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {28-42},
+  ee        = {http://doi.acm.org/10.1145/381677.381681},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/GoffAPK01,
+  author    = {Tom Goff and
+               Nael B. Abu-Ghazaleh and
+               Dhananjay S. Phatak and
+               Ridvan Kahvecioglu},
+  title     = {Preemptive routing in Ad Hoc networks.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {43-52},
+  ee        = {http://doi.acm.org/10.1145/381677.381682},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/FaragoS01,
+  author    = {Andr{\'a}s Farag{\'o} and
+               Violet R. Syrotiuk},
+  title     = {Merit: A unified framework for routing protocol assessment
+               in mobile Ad Hoc networks.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {53-60},
+  ee        = {http://doi.acm.org/10.1145/381677.381683},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/LiBCLM01,
+  author    = {Jinyang Li and
+               Charles Blake and
+               Douglas S. J. De Couto and
+               Hu Imm Lee and
+               Robert Morris},
+  title     = {Capacity of Ad Hoc wireless networks.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {61-69},
+  ee        = {http://doi.acm.org/10.1145/381677.381684},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/XuHE01,
+  author    = {Ya Xu and
+               John S. Heidemann and
+               Deborah Estrin},
+  title     = {Geography-informed energy conservation for Ad Hoc routing.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {70-84},
+  ee        = {http://doi.acm.org/10.1145/381677.381685},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/ChenJBM01,
+  author    = {Benjie Chen and
+               Kyle Jamieson and
+               Hari Balakrishnan and
+               Robert Morris},
+  title     = {Span: An energy-efficient coordination algorithm for topology
+               maintenance in Ad Hoc wireless networks.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {85-96},
+  ee        = {http://doi.acm.org/10.1145/381677.381686},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/LiAR01,
+  author    = {Qun Li and
+               Javed A. Aslam and
+               Daniela Rus},
+  title     = {Online power-aware routing in wireless Ad-hoc networks.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {97-107},
+  ee        = {http://doi.acm.org/10.1145/381677.381687},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HuangLBF01,
+  author    = {Andrew C. Huang and
+               Benjamin C. Ling and
+               John J. Barton and
+               Armando Fox},
+  title     = {Making computers disappear: appliance data services.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {108-121},
+  ee        = {http://doi.acm.org/10.1145/381677.381688},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/SchilitTHK01,
+  author    = {Bill N. Schilit and
+               Jonathan Trevor and
+               David M. Hilbert and
+               Tzu Khiau Koh},
+  title     = {m-links: An infrastructure for very small internet devices.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {122-131},
+  ee        = {http://doi.acm.org/10.1145/381677.381689},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/SrivastavaMP01,
+  author    = {Mani B. Srivastava and
+               Richard R. Muntz and
+               Miodrag Potkonjak},
+  title     = {Smart kindergarten: sensor-based wireless networks for smart
+               developmental problem-solving enviroments.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {132-138},
+  ee        = {http://doi.acm.org/10.1145/381677.381690},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/MeguerdichianKQP01,
+  author    = {Seapahn Meguerdichian and
+               Farinaz Koushanfar and
+               Gang Qu and
+               Miodrag Potkonjak},
+  title     = {Exposure in wireless Ad-Hoc sensor networks.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {139-150},
+  ee        = {http://doi.acm.org/10.1145/381677.381691},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/SchwiebertGW01,
+  author    = {Loren Schwiebert and
+               Sandeep K. S. Gupta and
+               Jennifer Weinmann},
+  title     = {Research challenges in wireless networks of biomedical sensors.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {151-165},
+  ee        = {http://doi.acm.org/10.1145/381677.381692},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/SavvidesHS01,
+  author    = {Andreas Savvides and
+               Chih-Chieh Han and
+               Mani B. Srivastava},
+  title     = {Dynamic fine-grained localization in Ad-Hoc networks of
+               sensors.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {166-179},
+  ee        = {http://doi.acm.org/10.1145/381677.381693},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/BorisovGW01,
+  author    = {Nikita Borisov and
+               Ian Goldberg and
+               David Wagner},
+  title     = {Intercepting mobile communications: the insecurity of 802.11.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {180-189},
+  ee        = {http://doi.acm.org/10.1145/381677.381695},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/PerrigSWCT01,
+  author    = {Adrian Perrig and
+               Robert Szewczyk and
+               Victor Wen and
+               David E. Culler and
+               J. D. Tygar},
+  title     = {SPINS: security protocols for sensor netowrks.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {189-199},
+  ee        = {http://doi.acm.org/10.1145/381677.381696},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/KanodiaLSSK01,
+  author    = {Vikram Kanodia and
+               Chengzhi Li and
+               Ashutosh Sabharwal and
+               Bahareh Sadeghi and
+               Edward W. Knightly},
+  title     = {Distributed multi-hop scheduling and medium access with
+               delay and throughput constraints.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {200-209},
+  ee        = {http://doi.acm.org/10.1145/381677.381697},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/BaoG01,
+  author    = {Lichun Bao and
+               J. J. Garcia-Luna-Aceves},
+  title     = {A new approach to channel access scheduling for Ad Hoc networks.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {210-221},
+  ee        = {http://doi.acm.org/10.1145/381677.381698},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/WooC01,
+  author    = {Alec Woo and
+               David E. Culler},
+  title     = {A transmission control scheme for media access in sensor
+               networks.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {221-235},
+  ee        = {http://doi.acm.org/10.1145/381677.381699},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HollandVB01,
+  author    = {Gavin Holland and
+               Nitin H. Vaidya and
+               Paramvir Bahl},
+  title     = {A rate-adaptive MAC protocol for multi-Hop wireless networks.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {236-251},
+  ee        = {http://doi.acm.org/10.1145/381677.381700},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/PouwelseLS01,
+  author    = {Johan A. Pouwelse and
+               Koen Langendoen and
+               Henk J. Sips},
+  title     = {Dynamic voltage scaling on a low-power microprocessor.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {251-259},
+  ee        = {http://doi.acm.org/10.1145/381677.381701},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/FlautnerRM01,
+  author    = {Kriszti{\'a}n Flautner and
+               Steven K. Reinhardt and
+               Trevor N. Mudge},
+  title     = {Automatic performance setting for dynamic voltage scaling.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {260-271},
+  ee        = {http://doi.acm.org/10.1145/381677.381702},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/ShihCIMSWC01,
+  author    = {Eugene Shih and
+               Seong-Hwan Cho and
+               Nathan Ickes and
+               Rex Min and
+               Amit Sinha and
+               Alice Wang and
+               Anantha Chandrakasan},
+  title     = {Physical layer driven protocol and algorithm design for
+               energy-efficient wireless sensor networks.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {272-287},
+  ee        = {http://doi.acm.org/10.1145/381677.381703},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/MascoloCGSW01,
+  author    = {Saverio Mascolo and
+               Claudio Casetti and
+               Mario Gerla and
+               M. Y. Sanadidi and
+               Ren Wang},
+  title     = {TCP westwood: Bandwidth estimation for enhanced transport
+               over wireless links.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {287-297},
+  ee        = {http://doi.acm.org/10.1145/381677.381704},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/KimN01,
+  author    = {Minkyong Kim and
+               Brian D. Noble},
+  title     = {Mobile network estimation.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {298-309},
+  ee        = {http://doi.acm.org/10.1145/381677.381705},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/KwokL01,
+  author    = {Yu-Kwong Kwok and
+               Vincent K. N. Lau},
+  title     = {Design and analysis of a new approach multiple burst admission
+               control for cdma2000.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {310-321},
+  ee        = {http://doi.acm.org/10.1145/381677.381706},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/RitterFGFN01,
+  author    = {Mike Ritter and
+               Robert J. Friday and
+               Rodrigo Garc{\'e}s and
+               Weill San Filippo and
+               Cuong-Thinh Nguyen},
+  title     = {Mobile connectivity protocols and throughput measurements
+               in the Ricochet Microcellular data network (MCDN) system.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {322-331},
+  ee        = {http://doi.acm.org/10.1145/381677.381707},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/RamjeeLPK01,
+  author    = {Ramachandran Ramjee and
+               Li Li and
+               Thomas F. La Porta and
+               Sneha Kumar Kasera},
+  title     = {IP paging service for mobile hosts.},
+  booktitle = mobicom,
+  year      = 2001,
+  pages     = {332-345},
+  ee        = {http://doi.acm.org/10.1145/381677.381708},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+%
+% mobicom 2002
+%
+
+@inproceedings{DBLP:conf/mobicom/WanCK02,
+  author    = {Chieh-Yih Wan and
+               Andrew T. Campbell and
+               Lakshman Krishnamurthy},
+  title     = {PSFQ: a reliable transport protocol for wireless sensor
+               networks.},
+  booktitle = {WSNA},
+  year      = 2002,
+  pages     = {1-11},
+  ee        = {http://doi.acm.org/10.1145/570738.570740},
+  crossref  = {DBLP:conf/mobicom/2002wsna},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/ServettoB02,
+  author    = {Sergio D. Servetto and
+               Guillermo Barrenechea},
+  title     = {Constrained random walks on random graphs: routing algorithms
+               for large scale wireless sensor networks.},
+  booktitle = {WSNA},
+  year      = 2002,
+  pages     = {12-21},
+  ee        = {http://doi.acm.org/10.1145/570738.570741},
+  crossref  = {DBLP:conf/mobicom/2002wsna},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/BraginskyE02,
+  author    = {David Braginsky and
+               Deborah Estrin},
+  title     = {Rumor routing algorthim for sensor networks.},
+  booktitle = {WSNA},
+  year      = 2002,
+  pages     = {22-31},
+  ee        = {http://doi.acm.org/10.1145/570738.570742},
+  crossref  = {DBLP:conf/mobicom/2002wsna},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/TianG02,
+  author    = {Di Tian and
+               Nicolas D. Georganas},
+  title     = {A coverage-preserving node scheduling scheme for large wireless
+               sensor networks.},
+  booktitle = {WSNA},
+  year      = 2002,
+  pages     = {32-41},
+  ee        = {http://doi.acm.org/10.1145/570738.570744},
+  crossref  = {DBLP:conf/mobicom/2002wsna},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/ClouqueurPRS02,
+  author    = {Thomas Clouqueur and
+               Veradej Phipatanasuphorn and
+               Parameswaran Ramanathan and
+               Kewal K. Saluja},
+  title     = {Sensor deployment strategy for target detection.},
+  booktitle = {WSNA},
+  year      = 2002,
+  pages     = {42-48},
+  ee        = {http://doi.acm.org/10.1145/570738.570745},
+  crossref  = {DBLP:conf/mobicom/2002wsna},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/TilakAH02,
+  author    = {Sameer Tilak and
+               Nael B. Abu-Ghazaleh and
+               Wendi Rabiner Heinzelman},
+  title     = {Infrastructure tradeoffs for sensor networks.},
+  booktitle = {WSNA},
+  year      = 2002,
+  pages     = {49-58},
+  ee        = {http://doi.acm.org/10.1145/570738.570746},
+  crossref  = {DBLP:conf/mobicom/2002wsna},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/WhitehouseC02,
+  author    = {Kamin Whitehouse and
+               David E. Culler},
+  title     = {Calibration as parameter estimation in sensor networks.},
+  booktitle = {WSNA},
+  year      = 2002,
+  pages     = {59-67},
+  ee        = {http://doi.acm.org/10.1145/570738.570747},
+  crossref  = {DBLP:conf/mobicom/2002wsna},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/BeaufourLB02,
+  author    = {Allan Beaufour and
+               Martin Leopold and
+               Philippe Bonnet},
+  title     = {Smart-tag based data dissemination.},
+  booktitle = {WSNA},
+  year      = 2002,
+  pages     = {68-77},
+  ee        = {http://doi.acm.org/10.1145/570738.570749},
+  crossref  = {DBLP:conf/mobicom/2002wsna},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/RatnasamyKYYEGS02,
+  author    = {Sylvia Ratnasamy and
+               Brad Karp and
+               Li Yin and
+               Fang Yu and
+               Deborah Estrin and
+               Ramesh Govindan and
+               Scott Shenker},
+  title     = {GHT: a geographic hash table for data-centric storage.},
+  booktitle = {WSNA},
+  year      = 2002,
+  pages     = {78-87},
+  ee        = {http://doi.acm.org/10.1145/570738.570750},
+  crossref  = {DBLP:conf/mobicom/2002wsna},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/MainwaringCPSA02,
+  author    = {Alan M. Mainwaring and
+               David E. Culler and
+               Joseph Polastre and
+               Robert Szewczyk and
+               John Anderson},
+  title     = {Wireless sensor networks for habitat monitoring.},
+  booktitle = {WSNA},
+  year      = 2002,
+  pages     = {88-97},
+  ee        = {http://doi.acm.org/10.1145/570738.570751},
+  crossref  = {DBLP:conf/mobicom/2002wsna},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/ColeriEK02,
+  author    = {Sinem Coleri and
+               Mustafa Ergen and
+               T. John Koo},
+  title     = {Lifetime analysis of a sensor network with hybrid automata
+               modelling.},
+  booktitle = {WSNA},
+  year      = 2002,
+  pages     = {98-104},
+  ee        = {http://doi.acm.org/10.1145/570738.570752},
+  crossref  = {DBLP:conf/mobicom/2002wsna},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/NasipuriL02,
+  author    = {Asis Nasipuri and
+               Kai Li},
+  title     = {A directionality based location discovery scheme for wireless
+               sensor networks.},
+  booktitle = {WSNA},
+  year      = 2002,
+  pages     = {105-111},
+  ee        = {http://doi.acm.org/10.1145/570738.570754},
+  crossref  = {DBLP:conf/mobicom/2002wsna},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/SavvidesPS02,
+  author    = {Andreas Savvides and
+               Heemin Park and
+               Mani B. Srivastava},
+  title     = {The bits and flops of the n-hop multilateration primitive
+               for node localization problems.},
+  booktitle = {WSNA},
+  year      = 2002,
+  pages     = {112-121},
+  ee        = {http://doi.acm.org/10.1145/570738.570755},
+  crossref  = {DBLP:conf/mobicom/2002wsna},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2002wsna,
+  editor    = {Cauligi S. Raghavendra and
+               Krishna M. Sivalingam},
+  title     = {Proceedings of the First ACM International Workshop on Wireless
+               Sensor Networks and Applications, WSNA 2002, Atlanta, Georgia,
+               USA, September 28, 2002},
+  booktitle = {WSNA},
+  publisher = {ACM},
+  year      = 2002,
+  isbn      = {1-58113-589-0},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/StaddonBD02,
+  author    = {Jessica Staddon and
+               Dirk Balfanz and
+               Glenn Durfee},
+  title     = {Efficient tracing of failed nodes in sensor networks.},
+  booktitle = {WSNA},
+  year      = 2002,
+  pages     = {122-130},
+  ee        = {http://doi.acm.org/10.1145/570738.570756},
+  crossref  = {DBLP:conf/mobicom/2002wsna},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2002wsna,
+  editor    = {Cauligi S. Raghavendra and
+               Krishna M. Sivalingam},
+  title     = {Proceedings of the First ACM International Workshop on Wireless
+               Sensor Networks and Applications, WSNA 2002, Atlanta, Georgia,
+               USA, September 28, 2002},
+  booktitle = {WSNA},
+  publisher = {ACM},
+  year      = 2002,
+  isbn      = {1-58113-589-0},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+%
+% mobicom 2003
+%
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HsiehKZS03,
+  author    = {Hung-Yun Hsieh and
+               Kyu-Han Kim and
+               Yujie Zhu and
+               Raghupathy Sivakumar},
+  title     = {A receiver-centric transport protocol for mobile hosts with
+               heterogeneous wireless interfaces.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {1-15},
+  ee        = {http://doi.acm.org/10.1145/938985.938987},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/XuGQS03,
+  author    = {Kaixin Xu and
+               Mario Gerla and
+               Lantao Qi and
+               Yantai Shu},
+  title     = {Enhancing TCP fairness in ad hoc wireless networks using
+               neighborhood RED.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {16-28},
+  ee        = {http://doi.acm.org/10.1145/938985.938988},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HsiehS03,
+  author    = {Robert Hsieh and
+               Aruna Seneviratne},
+  title     = {A comparison of mechanisms for improving mobile IP handoff
+               latency for end-to-end TCP.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {29-41},
+  ee        = {http://doi.acm.org/10.1145/938985.938989},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/KodialamN03,
+  author    = {Murali S. Kodialam and
+               Thyagarajan Nandagopal},
+  title     = {Characterizing achievable rates in multi-hop wireless networks:
+               the joint routing and scheduling problem.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {42-54},
+  ee        = {http://doi.acm.org/10.1145/938985.938991},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/KozatT03,
+  author    = {Ulas Kozat and
+               Leandros Tassiulas},
+  title     = {Throughput capacity of random ad hoc networks with infrastructure
+               support.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {55-65},
+  ee        = {http://doi.acm.org/10.1145/938985.938992},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/JainPPQ03,
+  author    = {Kamal Jain and
+               Jitendra Padhye and
+               Venkata N. Padmanabhan and
+               Lili Qiu},
+  title     = {Impact of interference on multi-hop wireless network performance.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {66-80},
+  ee        = {http://doi.acm.org/10.1145/938985.938993},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HeHBSA03,
+  author    = {Tian He and
+               Chengdu Huang and
+               Brian M. Blum and
+               John A. Stankovic and
+               Tarek F. Abdelzaher},
+  title     = {Range-free localization schemes for large scale sensor networks.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {81-95},
+  ee        = {http://doi.acm.org/10.1145/938985.938995},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/RaoPSS03,
+  author    = {Ananth Rao and
+               Christos H. Papadimitriou and
+               Scott Shenker and
+               Ion Stoica},
+  title     = {Geographic routing without location information.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {96-108},
+  ee        = {http://doi.acm.org/10.1145/938985.938996},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/BejeranoINS03,
+  author    = {Yigal Bejerano and
+               Nicole Immorlica and
+               Joseph Naor and
+               Mark Smith},
+  title     = {Efficient location area planning for personal communication
+               systems.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {109-121},
+  ee        = {http://doi.acm.org/10.1145/938985.938997},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/SrinivasM03,
+  author    = {Anand Srinivas and
+               Eytan Modiano},
+  title     = {Minimum energy disjoint path routing in wireless ad-hoc
+               networks.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {122-133},
+  ee        = {http://doi.acm.org/10.1145/938985.938999},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/CoutoABM03,
+  author    = {Douglas S. J. De Couto and
+               Daniel Aguayo and
+               John C. Bicket and
+               Robert Morris},
+  title     = {A high-throughput path metric for multi-hop wireless routing.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {134-146},
+  ee        = {http://doi.acm.org/10.1145/938985.939000},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/ZhouWA03,
+  author    = {Nianjun Zhou and
+               Huaming Wu and
+               Alhussein A. Abouzeid},
+  title     = {Reactive routing overhead in networks with unreliable nodes.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {147-160},
+  ee        = {http://doi.acm.org/10.1145/938985.939001},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/QiaoCJS03,
+  author    = {Daji Qiao and
+               Sunghyun Choi and
+               Amit Jain and
+               Kang G. Shin},
+  title     = {MiSer: an optimal low-energy transmission strategy for IEEE
+               802.11a/h.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {161-175},
+  ee        = {http://doi.acm.org/10.1145/938985.939003},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/AnandNF03,
+  author    = {Manish Anand and
+               Edmund B. Nightingale and
+               Jason Flinn},
+  title     = {Self-tuning wireless network power management.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {176-189},
+  ee        = {http://doi.acm.org/10.1145/938985.939004},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/KimH03,
+  author    = {Hwangnam Kim and
+               Jennifer C. Hou},
+  title     = {Improving protocol capacity with model-based frame scheduling
+               in IEEE 802.11-operated WLANs.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {190-204},
+  ee        = {http://doi.acm.org/10.1145/938985.939005},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/YoonLN03,
+  author    = {Jungkeun Yoon and
+               Mingyan Liu and
+               Brian Noble},
+  title     = {Sound mobility models.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {205-216},
+  ee        = {http://doi.acm.org/10.1145/938985.939007},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/JardoshBAS03,
+  author    = {Amit Jardosh and
+               Elizabeth M. Belding-Royer and
+               Kevin C. Almeroth and
+               Subhash Suri},
+  title     = {Towards realistic mobility models for mobile ad hoc networks.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {217-229},
+  ee        = {http://doi.acm.org/10.1145/938985.939008},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/ZerfosZCLLL03,
+  author    = {Petros Zerfos and
+               Gary Zhong and
+               Jerry Cheng and
+               Haiyun Luo and
+               Songwu Lu and
+               Jia-Ru Li},
+  title     = {DIRAC: a software-based wireless router system.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {230-244},
+  ee        = {http://doi.acm.org/10.1145/938985.939009},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/AndereggE03,
+  author    = {Luzi Anderegg and
+               Stephan Eidenbenz},
+  title     = {Ad hoc-VCG: a truthful and cost-efficient routing protocol
+               for mobile ad hoc networks with selfish agents.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {245-259},
+  ee        = {http://doi.acm.org/10.1145/938985.939011},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/NiculescuN03,
+  author    = {Dragos Niculescu and
+               Badri Nath},
+  title     = {Trajectory based forwarding and its applications.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {260-272},
+  ee        = {http://doi.acm.org/10.1145/938985.939012},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/CarterYRK03,
+  author    = {Casey Carter and
+               Seung Yi and
+               Prashant Ratanchandani and
+               Robin Kravets},
+  title     = {Manycast: exploring the space between anycast and multicast
+               in ad hoc networks.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {273-285},
+  ee        = {http://doi.acm.org/10.1145/938985.939013},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/PanHCSS03,
+  author    = {Jianping Pan and
+               Yiwei Thomas Hou and
+               Lin Cai and
+               Yi Shi and
+               Sherman X. Shen},
+  title     = {Topology control for wireless sensor networks.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {286-299},
+  ee        = {http://doi.acm.org/10.1145/938985.939015},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HajiaghayiIM03,
+  author    = {Mohammad Taghi Hajiaghayi and
+               Nicole Immorlica and
+               Vahab S. Mirrokni},
+  title     = {Power optimization in fault-tolerant topology control algorithms
+               for wireless multi-hop networks.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {300-312},
+  ee        = {http://doi.acm.org/10.1145/938985.939016},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/LiRR03,
+  author    = {Qun Li and
+               Michael DeRosa and
+               Daniela Rus},
+  title     = {Distributed algorithms for guiding navigation across a sensor
+               network.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {313-325},
+  ee        = {http://doi.acm.org/10.1145/938985.939017},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/LinCDB03,
+  author    = {Haitao Lin and
+               Mainak Chatterjee and
+               Sajal K. Das and
+               Kalyan Basu},
+  title     = {ARC: an integrated admission and rate control framework
+               for CDMA data networks based on non-cooperative games.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {326-338},
+  ee        = {http://doi.acm.org/10.1145/938985.939019},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/BonaldP03,
+  author    = {Thomas Bonald and
+               Alexandre Prouti{\'e}re},
+  title     = {Wireless downlink data channels: user performance and cell
+               dimensioning.},
+  booktitle = mobicom,
+  year      = 2003,
+  pages     = {339-352},
+  ee        = {http://doi.acm.org/10.1145/938985.939020},
+  crossref  = {DBLP:conf/mobicom/2003},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2003,
+  editor    = {David B. Johnson and
+               Anthony D. Joseph and
+               Nitin H. Vaidya},
+  title     = {Proceedings of the Ninth Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2003, 2003,
+               San Diego, CA, USA, September 14-19, 2003},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2003,
+  isbn      = {1-58113-753-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+%
+% mobicom 2004
+%
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/BarattoPSN04,
+  author    = {Ricardo A. Baratto and
+               Shaya Potter and
+               Gong Su and
+               Jason Nieh},
+  title     = {MobiDesk: mobile virtual desktop computing.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {1-15},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023722},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/PopaARPT04,
+  author    = {Lucian Popa 0002 and
+               Irina Athanasiu and
+               Costin Raiciu and
+               Raju Pandey and
+               Radu Teodorescu},
+  title     = {Using code collection to support large applications on mobile
+               devices.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {16-29},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023723},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/AdyaBCQ04,
+  author    = {Atul Adya and
+               Paramvir Bahl and
+               Ranveer Chandra and
+               Lili Qiu},
+  title     = {Architecture and techniques for diagnosing faults in IEEE
+               802.11 infrastructure networks.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {30-44},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023724},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HuE04,
+  author    = {Lingxuan Hu and
+               David Evans},
+  title     = {Localization for mobile sensor networks.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {45-57},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023726},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/NiculescuN04,
+  author    = {Dragos Niculescu and
+               Badri Nath},
+  title     = {VOR base stations for indoor 802.11 positioning.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {58-69},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023727},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HaeberlenFLRWK04,
+  author    = {Andreas Haeberlen and
+               Eliot Flannery and
+               Andrew M. Ladd and
+               Algis Rudys and
+               Dan S. Wallach and
+               Lydia E. Kavraki},
+  title     = {Practical robust localization over large-scale 802.11 wireless
+               networks.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {70-84},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023728},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/ChangL04,
+  author    = {Nicholas Chang and
+               Mingyan Liu},
+  title     = {Revisiting the TTL-based controlled flooding search: optimality
+               and randomization.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {85-99},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023730},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/BasuBMR04,
+  author    = {Anindya Basu and
+               Brian Boshes and
+               Sayandev Mukherjee and
+               Sharad Ramanathan},
+  title     = {Network deformation: traffic-aware algorithms for dynamically
+               reducing end-to-end delay in multi-hop wireless networks.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {100-113},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023731},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/DravesPZ04,
+  author    = {Richard Draves and
+               Jitendra Padhye and
+               Brian Zill},
+  title     = {Routing in multi-radio, multi-hop wireless mesh networks.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {114-128},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023732},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/GuiM04,
+  author    = {Chao Gui and
+               Prasant Mohapatra},
+  title     = {Power conservation and quality of surveillance in target
+               tracking sensor networks.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {129-143},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023734},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/KumarLB04,
+  author    = {Santosh Kumar and
+               Ten-Hwang Lai and
+               J{\'o}zsef Balogh},
+  title     = {On k-coverage in a mostly sleeping sensor network.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {144-158},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023735},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/ChakravortyBRCP04,
+  author    = {Rajiv Chakravorty and
+               Suman Banerjee and
+               Pablo Rodriguez and
+               Julian Chesterfield and
+               Ian Pratt},
+  title     = {Performance optimizations for wireless wide-area networks:
+               comparative study and experimental evaluation.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {159-173},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023737},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/MengWYL04,
+  author    = {Xiaoqiao (George) Meng and
+               Starsky H. Y. Wong and
+               Yuan Yuan and
+               Songwu Lu},
+  title     = {Characterizing flows in large wireless data networks.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {174-186},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023738},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/HendersonKA04,
+  author    = {Tristan Henderson and
+               David Kotz and
+               Ilya Abyzov},
+  title     = {The changing usage of a mature campus-wide wireless network.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {187-201},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023739},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/AadHK04,
+  author    = {Imad Aad and
+               Jean-Pierre Hubaux and
+               Edward W. Knightly},
+  title     = {Denial of service resilience in ad hoc networks.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {202-215},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023741},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/BahlCD04,
+  author    = {Paramvir Bahl and
+               Ranveer Chandra and
+               John Dunagan},
+  title     = {SSCH: slotted seeded channel hopping for capacity improvement
+               in IEEE 802.11 ad-hoc wireless networks.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {216-230},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023742},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/Yu04,
+  author    = {Xin Yu},
+  title     = {Improving TCP performance over mobile ad hoc networks by
+               exploiting cross-layer information awareness.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {231-244},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023743},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/WangLW04,
+  author    = {Weizhao Wang and
+               Xiang-Yang Li and
+               Yu Wang},
+  title     = {Truthful multicast routing in selfish wireless networks.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {245-259},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023745},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/KuhnMW04,
+  author    = {Fabian Kuhn and
+               Thomas Moscibroda and
+               Roger Wattenhofer},
+  title     = {Initializing newly deployed ad hoc and sensor networks.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {260-274},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023746},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/LiH04,
+  author    = {Ning Li and
+               Jennifer C. Hou},
+  title     = {FLSS: a fault-tolerant topology control algorithm for wireless
+               networks.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {275-286},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023747},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/GambirozaSK04,
+  author    = {Violeta Gambiroza and
+               Bahareh Sadeghi and
+               Edward W. Knightly},
+  title     = {End-to-end performance and fairness in multihop wireless
+               backhaul networks.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {287-301},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023749},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/SangWMG04,
+  author    = {Aimin Sang and
+               Xiaodong Wang and
+               Mohammad Madihian and
+               Richard D. Gitlin},
+  title     = {Coordinated load balancing, handoff/cell-site selection,
+               and scheduling in multi-cell packet data systems.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {302-314},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023750},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/BejeranoHL04,
+  author    = {Yigal Bejerano and
+               Seung-Jae Han and
+               Erran L. Li},
+  title     = {Fairness and load balancing in wireless LANs using association
+               control.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {315-329},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023751},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/CarvalhoG04,
+  author    = {Marcelo M. Carvalho and
+               Jose Joaquin Garcia-Luna-Aceves},
+  title     = {A scalable model for channel access protocols in multihop
+               ad hoc networks.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {330-344},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023753},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/JiYZTB04,
+  author    = {Zhengrong Ji and
+               Yi Yang and
+               Junlan Zhou and
+               Mineo Takai and
+               Rajive Bagrodia},
+  title     = {Exploiting medium access diversity in rate adaptive wireless
+               LANs.},
+  booktitle = mobicom,
+  year      = 2004,
+  pages     = {345-359},
+  ee        = {http://doi.acm.org/10.1145/1023720.1023754},
+  crossref  = {DBLP:conf/mobicom/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2004,
+  editor    = {Zygmunt J. Haas and
+               Samir R. Das and
+               Ravi Jain},
+  title     = {Proceedings of the 10th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2004, 2004,
+               Philadelphia, PA, USA, September 26 - October 1, 2004},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2004,
+  isbn      = {1-58113-868-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+%
+% mobicom 2005
+%
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/LiSW05,
+  author    = {Xiang-Yang Li and
+               Wen-Zhan Song and
+               Weizhao Wang},
+  title     = {A unified energy-efficient topology for unicast and broadcast.},
+  booktitle = mobicom,
+  year      = 2005,
+  pages     = {1-15},
+  ee        = {http://doi.acm.org/10.1145/1080829.1080831},
+  crossref  = {DBLP:conf/mobicom/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/MiuBK05,
+  author    = {Allen K. L. Miu and
+               Hari Balakrishnan and
+               Can Emre Koksal},
+  title     = {Improving loss resilience with multi-radio diversity in
+               wireless networks.},
+  booktitle = mobicom,
+  year      = 2005,
+  pages     = {16-30},
+  ee        = {http://doi.acm.org/10.1145/1080829.1080832},
+  crossref  = {DBLP:conf/mobicom/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/BicketABM05,
+  author    = {John C. Bicket and
+               Daniel Aguayo and
+               Sanjit Biswas and
+               Robert Morris},
+  title     = {Architecture and evaluation of an unplanned 802.11b mesh
+               network.},
+  booktitle = mobicom,
+  year      = 2005,
+  pages     = {31-42},
+  ee        = {http://doi.acm.org/10.1145/1080829.1080833},
+  crossref  = {DBLP:conf/mobicom/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/KyasanurV05,
+  author    = {Pradeep Kyasanur and
+               Nitin H. Vaidya},
+  title     = {Capacity of multi-channel wireless networks: impact of number
+               of channels and interfaces.},
+  booktitle = mobicom,
+  year      = 2005,
+  pages     = {43-57},
+  ee        = {http://doi.acm.org/10.1145/1080829.1080835},
+  crossref  = {DBLP:conf/mobicom/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/AlicherryBL05,
+  author    = {Mansoor Alicherry and
+               Randeep Bhatia and
+               Erran L. Li},
+  title     = {Joint channel assignment and routing for throughput optimization
+               in multi-radio wireless mesh networks.},
+  booktitle = mobicom,
+  year      = 2005,
+  pages     = {58-72},
+  ee        = {http://doi.acm.org/10.1145/1080829.1080836},
+  crossref  = {DBLP:conf/mobicom/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/KodialamN05,
+  author    = {Murali S. Kodialam and
+               Thyaga Nandagopal},
+  title     = {Characterizing the capacity region in multi-radio multi-channel
+               wireless mesh networks.},
+  booktitle = mobicom,
+  year      = 2005,
+  pages     = {73-87},
+  ee        = {http://doi.acm.org/10.1145/1080829.1080837},
+  crossref  = {DBLP:conf/mobicom/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/BruckGJ05,
+  author    = {Jehoshua Bruck and
+               Jie Gao and
+               Anxiao Jiang},
+  title     = {MAP: medial axis based geometric routing in sensor networks.},
+  booktitle = mobicom,
+  year      = 2005,
+  pages     = {88-102},
+  ee        = {http://doi.acm.org/10.1145/1080829.1080839},
+  crossref  = {DBLP:conf/mobicom/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/MuthusamyPJ05,
+  author    = {Vinod Muthusamy and
+               Milenko Petrovic and
+               Hans-Arno Jacobsen},
+  title     = {Effects of routing computations in content-based routing
+               networks with mobile data sources.},
+  booktitle = mobicom,
+  year      = 2005,
+  pages     = {103-116},
+  ee        = {http://doi.acm.org/10.1145/1080829.1080840},
+  crossref  = {DBLP:conf/mobicom/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/ZhongLLY05,
+  author    = {Sheng Zhong and
+               Erran L. Li and
+               Yanbin Grace Liu and
+               Yang (Richard) Yang},
+  title     = {On designing incentive-compatible routing and forwarding
+               protocols in wireless ad-hoc networks: an integrated approach
+               using game theoretical and cryptographic techniques.},
+  booktitle = mobicom,
+  year      = 2005,
+  pages     = {117-131},
+  ee        = {http://doi.acm.org/10.1145/1080829.1080841},
+  crossref  = {DBLP:conf/mobicom/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/Ramanathan05,
+  author    = {Ram Ramanathan},
+  title     = {Challenges: a radically new architecture for next generation
+               mobile ad hoc networks.},
+  booktitle = mobicom,
+  year      = 2005,
+  pages     = {132-139},
+  ee        = {http://doi.acm.org/10.1145/1080829.1080843},
+  crossref  = {DBLP:conf/mobicom/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/ZhuS05,
+  author    = {Yujie Zhu and
+               Raghupathy Sivakumar},
+  title     = {Challenges: communication through silence in wireless sensor
+               networks.},
+  booktitle = mobicom,
+  year      = 2005,
+  pages     = {140-147},
+  ee        = {http://doi.acm.org/10.1145/1080829.1080844},
+  crossref  = {DBLP:conf/mobicom/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/BitonSSZZ05,
+  author    = {Erez Biton and
+               Danny Sade and
+               Dan Shklarsky and
+               Mota Zussman and
+               Gil Zussman},
+  title     = {Challenge: CeTV and Ca-Fi - cellular and Wi-Fi over CATV.},
+  booktitle = mobicom,
+  year      = 2005,
+  pages     = {148-155},
+  ee        = {http://doi.acm.org/10.1145/1080829.1080845},
+  crossref  = {DBLP:conf/mobicom/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/RamanC05,
+  author    = {Bhaskaran Raman and
+               Kameswari Chebrolu},
+  title     = {Design and evaluation of a new MAC protocol for long-distance
+               802.11 mesh networks.},
+  booktitle = mobicom,
+  year      = 2005,
+  pages     = {156-169},
+  ee        = {http://doi.acm.org/10.1145/1080829.1080847},
+  crossref  = {DBLP:conf/mobicom/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/JainLB05,
+  author    = {Ravi Jain and
+               Dan Lelescu and
+               Mahadevan Balakrishnan},
+  title     = {Model T: an empirical model for user registration patterns
+               in a campus wireless LAN.},
+  booktitle = mobicom,
+  year      = 2005,
+  pages     = {170-184},
+  ee        = {http://doi.acm.org/10.1145/1080829.1080848},
+  crossref  = {DBLP:conf/mobicom/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/AkellaJSS05,
+  author    = {Aditya Akella and
+               Glenn Judd and
+               Srinivasan Seshan and
+               Peter Steenkiste},
+  title     = {Self-management in chaotic wireless deployments.},
+  booktitle = mobicom,
+  year      = 2005,
+  pages     = {185-199},
+  ee        = {http://doi.acm.org/10.1145/1080829.1080849},
+  crossref  = {DBLP:conf/mobicom/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/GarettoSK05,
+  author    = {Michele Garetto and
+               Jingpu Shi and
+               Edward W. Knightly},
+  title     = {Modeling media access in embedded two-flow topologies of
+               multi-hop wireless networks.},
+  booktitle = mobicom,
+  year      = 2005,
+  pages     = {200-214},
+  ee        = {http://doi.acm.org/10.1145/1080829.1080851},
+  crossref  = {DBLP:conf/mobicom/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/NogueiraBE05,
+  author    = {Georges Nogueira and
+               Bruno Baynat and
+               Pierre Eisenmann},
+  title     = {An analytical model for the dimensioning of a GPRS/EDGE
+               network with a capacity constraint on a group of cells.},
+  booktitle = mobicom,
+  year      = 2005,
+  pages     = {215-227},
+  ee        = {http://doi.acm.org/10.1145/1080829.1080852},
+  crossref  = {DBLP:conf/mobicom/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/ChakravortyABP05,
+  author    = {Rajiv Chakravorty and
+               Sulabh Agarwal and
+               Suman Banerjee and
+               Ian Pratt},
+  title     = {MoB: a mobile bazaar for wide-area wireless services.},
+  booktitle = mobicom,
+  year      = 2005,
+  pages     = {228-242},
+  ee        = {http://doi.acm.org/10.1145/1080829.1080854},
+  crossref  = {DBLP:conf/mobicom/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/MotaniSN05,
+  author    = {Mehul Motani and
+               Vikram Srinivasan and
+               Pavan Nuggehalli},
+  title     = {PeopleNet: engineering a wireless virtual social network.},
+  booktitle = mobicom,
+  year      = 2005,
+  pages     = {243-257},
+  ee        = {http://doi.acm.org/10.1145/1080829.1080855},
+  crossref  = {DBLP:conf/mobicom/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/BelottiDNSV05,
+  author    = {Rudi Belotti and
+               Corsin Decurtins and
+               Moira C. Norrie and
+               Beat Signer and
+               Ljiljana Vukelja},
+  title     = {Experimental platform for mobile information systems.},
+  booktitle = mobicom,
+  year      = 2005,
+  pages     = {258-269},
+  ee        = {http://doi.acm.org/10.1145/1080829.1080856},
+  crossref  = {DBLP:conf/mobicom/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/WangSC05,
+  author    = {Wei Wang and
+               Vikram Srinivasan and
+               Kee Chaing Chua},
+  title     = {Using mobile relays to prolong the lifetime of wireless
+               sensor networks.},
+  booktitle = mobicom,
+  year      = 2005,
+  pages     = {270-283},
+  ee        = {http://doi.acm.org/10.1145/1080829.1080858},
+  crossref  = {DBLP:conf/mobicom/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/mobicom/KumarLA05,
+  author    = {Santosh Kumar and
+               Ten-Hwang Lai and
+               Anish Arora},
+  title     = {Barrier coverage with wireless sensors.},
+  booktitle = mobicom,
+  year      = 2005,
+  pages     = {284-298},
+  ee        = {http://doi.acm.org/10.1145/1080829.1080859},
+  crossref  = {DBLP:conf/mobicom/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mobicom/2005,
+  editor    = {Tom La Porta and
+               Christoph Lindemann and
+               Elizabeth M. Belding-Royer and
+               Songwu Lu},
+  title     = {Proceedings of the 11th Annual International Conference
+               on Mobile Computing and Networking, MOBICOM 2005, Cologne,
+               Germany, August 28 - September 2, 2005},
+  booktitle = mobicom,
+  publisher = {ACM},
+  year      = 2005,
+  isbn      = {1-59593-020-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+

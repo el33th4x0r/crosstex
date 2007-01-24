@@ -26,8 +26,11 @@ def getbibtex(str):
 #years = range(1985,2007,1)
 #name = "nsdi"
 #years = [2004]
-name = "podc"
-years = range(82,100,1) + range(2000,2007,1)
+#name = "podc"
+#years = range(82,100,1) + range(2000,2007,1)
+name = "mobicom"
+years = range(1995,2006,1)
+
 for i in years:
     print "%%\n%% %s %d\n%%" % (name, i)
     str = "http://www.informatik.uni-trier.de/~ley/db/conf/%s/%s%s.html" % (name,name,i)
