@@ -28,11 +28,16 @@ def getbibtex(str):
 #years = [2004]
 #name = "podc"
 #years = range(82,100,1) + range(2000,2007,1)
-name = "mobicom"
-years = range(1995,2006,1)
-
+#name = "mobicom"
+#years = range(1995,2006,1)
+#name = "soda"
+#years = range(90, 100, 1) + range(2000, 2007, 1)
+#name = "usenix"
+#years = ["_su86", "_su87", "_wi88", "_su90", "_wi91", "_su91", "_wi93", "_su93", "_wi94", "_su94", "_wi95", "96", "1999f", "1999g", "2000f", "2000g", "2001f", "2001g", "2002f", "2002g", "2003f", "2003g", "2004f", "2004g"]
+name = "icdcs"
+years = [82] + range(84, 91, 1) + range(92, 100, 1) + range(2000, 2007, 1) + ["w2000", "w2002", "w2003", "w2004", "w2005", "w2006"]
 for i in years:
-    print "%%\n%% %s %d\n%%" % (name, i)
+    print "%%\n%% %s %s\n%%" % (name, i)
     str = "http://www.informatik.uni-trier.de/~ley/db/conf/%s/%s%s.html" % (name,name,i)
     url = urllib.urlopen(str)
     contents = url.read()

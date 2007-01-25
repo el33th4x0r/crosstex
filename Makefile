@@ -1,27 +1,33 @@
-VERSION=`cat version`
+VERSION = `cat version`
+PACKAGE = crosstex-${VERSION}
 
 all:
 	@echo nothing to make, try make install
 
 install:
-	mkdir -p /usr/share/texmf/crosstex
-	cp *.py  /usr/share/texmf/crosstex
-	cp *.xtx /usr/share/texmf/crosstex
-	cp crosstex /usr/bin
-	rm -f /usr/bin/xtx2bib
-	ln -s /usr/bin/crosstex /usr/bin/xtx2bib 
-
-plyinstall:
-	cd ply-* && python ./setup.py install
+	mkdir -p $(ROOT)/usr/bin
+	mkdir -p $(ROOT)/usr/share/texmf/crosstex
+	cp *.py *.xtx $(ROOT)/usr/share/texmf/crosstex
+	cp crosstex $(ROOT)/usr/bin
+	ln -sf crosstex $(ROOT)/usr/bin/xtx2bib
 
 clean:
-	rm -f *~ *.pyc *.aux *.bbl *.dvi *.log
+	rm -rf *~ *.pyc *.aux *.bbl *.dvi *.log *.tar.gz *.rpm ${PACKAGE}-rpm
 
-rpm:
-	cd .. && tar czf crosstex-$(VERSION).tar.gz crosstex
-	cp ../crosstex-$(VERSION).tar.gz /usr/src/redhat/SOURCES
-	sudo cp crosstexrpm.spec /usr/src/redhat/SPECS/crosstexrpm-$(VERSION).spec
-	sudo rpmbuild -ba /usr/src/redhat/SPECS/crosstexrpm-$(VERSION).spec
+dist: ${PACKAGE}.tar.gz
 
+${PACKAGE}.tar.gz: Makefile COPYING version crosstex crosstexrpm.spec
+	rm -rf ${PACKAGE}
+	mkdir ${PACKAGE} ${PACKAGE}/tests
+	cp Makefile COPYING version crosstex *.tex *.py *.xtx ${PACKAGE}
+	sed "/^%define version/c %define version ${VERSION}" \
+		crosstexrpm.spec >${PACKAGE}/crosstexrpm.spec
+	cp tests/*.xtx ${PACKAGE}/tests
+	tar czf ${PACKAGE}.tar.gz ${PACKAGE}
+	rm -rf ${PACKAGE}
 
-
+rpm: ${PACKAGE}.tar.gz
+	mkdir -p ${PACKAGE}-rpm/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
+	rpmbuild -ta --define "_topdir `pwd`/${PACKAGE}-rpm" ${PACKAGE}.tar.gz
+	find ${PACKAGE}-rpm -name \*.rpm -exec mv {} . \;
+	rm -r ${PACKAGE}-rpm
