@@ -1,13 +1,4 @@
-@include dates
-@include locations
-
-@conference{mobicom, 
-   shortname = "Mobicom",
-   longname = "International Conference on Mobile Computing and Networking",
-   [year=2006] address=LosAngeles, month=sep,
-   ...
-   [year=1995] address=Berkeley, month=nov,
-}
+@include conferences
 
 		   
 %

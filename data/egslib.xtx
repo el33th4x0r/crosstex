@@ -2,8 +2,6 @@
 % Emin Gun Sirer
 %
 
-@include dates
-@include locations
 @include journals
 @include conferences
 @include workshops

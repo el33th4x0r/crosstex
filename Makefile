@@ -5,9 +5,8 @@ all:
 	@echo nothing to make, try make install
 
 install:
-	mkdir -p $(ROOT)/usr/bin
-	mkdir -p $(ROOT)/usr/share/texmf/crosstex
-	cp *.py *.xtx $(ROOT)/usr/share/texmf/crosstex
+	mkdir -p $(ROOT)/usr/bin $(ROOT)/usr/share/texmf/crosstex
+	cp *.py data/*.xtx $(ROOT)/usr/share/texmf/crosstex
 	cp crosstex $(ROOT)/usr/bin
 	ln -sf crosstex $(ROOT)/usr/bin/xtx2bib
 
@@ -16,13 +15,14 @@ clean:
 
 dist: ${PACKAGE}.tar.gz
 
-${PACKAGE}.tar.gz: Makefile COPYING version crosstex crosstexrpm.spec
+${PACKAGE}.tar.gz: Makefile COPYING version crosstex crosstex.spec
 	rm -rf ${PACKAGE}
-	mkdir ${PACKAGE} ${PACKAGE}/tests
-	cp Makefile COPYING version crosstex *.tex *.py *.xtx ${PACKAGE}
+	mkdir ${PACKAGE} ${PACKAGE}/tests ${PACKAGE}/data
+	cp Makefile COPYING version crosstex *.py *.xtx ${PACKAGE}
 	sed "/^%define version/c %define version ${VERSION}" \
-		crosstexrpm.spec >${PACKAGE}/crosstexrpm.spec
+		crosstex.spec >${PACKAGE}/crosstex.spec
 	cp tests/*.xtx ${PACKAGE}/tests
+	cp data/*.xtx ${PACKAGE}/data
 	tar czf ${PACKAGE}.tar.gz ${PACKAGE}
 	rm -rf ${PACKAGE}
 
