@@ -1,5 +1,6 @@
 % Countries
 @country{Oz, name = "Australia"}
+@country{Austria, name = "Austria"}
 @country{Belgium, name = "Belgium"}
 @country{Canada, name = "Canada"}
 @country{China, name = "China"}
@@ -17,141 +18,154 @@
 @country{NewZealand, name="New Zealand"}
 @country{Poland, name = "Poland"}
 @country{Portugal, name = "Portugal"}
-@country{Scotland, shortname = "Scotland", longname = "Scotland, UK"}
+@country{PuertoRico, name="Puerto Rico"}
+@country{Scotland, name = "Scotland"}
 @country{Slovakia, name = "Slovakia"}
 @country{Spain, name = "Spain"}
 @country{Sweden, name = "Sweden"}
 @country{Switzerland, name = "Switzerland"}
+@country{Taiwan, name = "Taiwan"}
 @country{Turkey, name = "Turkey"}
 @country{UK, longname = "United Kingdom", shortname = "UK"}
-@country{USA, longname = "", shortname = ""}
+@country{USA, name = ""}
 
 % US States
-@state{AL, longname="Alabama", shortname="AL"}
-@state{AK, longname="Alaska", shortname="AK"}
-@state{AZ, longname="Arizona", shortname="AZ"}
-@state{AR, longname="Arkansas", shortname="AR"}
-@state{CA, longname="California", shortname="CA"}
-@state{CO, longname="Colorado", shortname="CO"}
-@state{CT, longname="Connecticut", shortname="CT"}
-@state{DE, longname="Delaware", shortname="DE"}
-@state{FL, longname="Florida", shortname="FL"}
-@state{GA, longname="Georgia", shortname="GA"}
-@state{HI, longname="Hawaii", shortname="HI"}
-@state{ID, longname="Idaho", shortname="ID"}
-@state{IL, longname="Illinois", shortname="IL"}
-@state{IN, longname="Indiana", shortname="IN"}
-@state{IA, longname="Iowa", shortname="IA"}
-@state{KS, longname="Kansas", shortname="KS"}
-@state{KY, longname="Kentucky", shortname="KY"}
-@state{LA, longname="Louisiana", shortname="LA"}
-@state{ME, longname="Maine", shortname="ME"}
-@state{MD, longname="Maryland", shortname="MD"}
-@state{MA, longname="Massachusetts", shortname="MA"}
-@state{MI, longname="Michigan", shortname="MI"}
-@state{MN, longname="Minnesota", shortname="MN"}
-@state{MS, longname="Mississippi", shortname="MS"}
-@state{MO, longname="Missouri", shortname="MO"}
-@state{MT, longname="Montana", shortname="MT"}
-@state{NE, longname="Nebraska", shortname="NE"}
-@state{NV, longname="Nevada", shortname="NV"}
-@state{NH, longname="New Hampshire", shortname="NH"}
-@state{NJ, longname="New Jersey", shortname="NJ"}
-@state{NM, longname="New Mexico", shortname="NM"}
-@state{NY, longname="New York", shortname="NY"}
-@state{NC, longname="North Carolina", shortname="NC"}
-@state{ND, longname="North Dakota", shortname="ND"}
-@state{OH, longname="Ohio", shortname="OH"}
-@state{OK, longname="Oklahoma", shortname="OK"}
-@state{OR, longname="Oregon", shortname="OR"}
-@state{PA, longname="Pennsylvania", shortname="PA"}
-@state{RI, longname="Rhode Island", shortname="RI"}
-@state{SC, longname="South Carolina", shortname="SC"}
-@state{SD, longname="South Dakota", shortname="SD"}
-@state{TN, longname="Tennessee", shortname="TN"}
-@state{TX, longname="Texas", shortname="TX"}
-@state{UT, longname="Utah", shortname="UT"}
-@state{VT, longname="Vermont", shortname="VT"}
-@state{VA, longname="Virginia", shortname="VA"}
-@state{WA, longname="Washington", shortname="WA"}
-@state{WV, longname="West Virginia", shortname="WV"}
-@state{WI, longname="Wisconsin", shortname="WI"}
-@state{WY, longname="Wyoming", shortname="WY"}
+@state{AL, longname="Alabama", shortname="AL", country=USA}
+@state{AK, longname="Alaska", shortname="AK", country=USA}
+@state{AZ, longname="Arizona", shortname="AZ", country=USA}
+@state{AR, longname="Arkansas", shortname="AR", country=USA}
+@state{CA, longname="California", shortname="CA", country=USA}
+@state{CO, longname="Colorado", shortname="CO", country=USA}
+@state{CT, longname="Connecticut", shortname="CT", country=USA}
+@state{DE, longname="Delaware", shortname="DE", country=USA}
+@state{FL, longname="Florida", shortname="FL", country=USA}
+@state{GA, longname="Georgia", shortname="GA", country=USA}
+@state{HI, longname="Hawaii", shortname="HI", country=USA}
+@state{ID, longname="Idaho", shortname="ID", country=USA}
+@state{IL, longname="Illinois", shortname="IL", country=USA}
+@state{IN, longname="Indiana", shortname="IN", country=USA}
+@state{IA, longname="Iowa", shortname="IA", country=USA}
+@state{KS, longname="Kansas", shortname="KS", country=USA}
+@state{KY, longname="Kentucky", shortname="KY", country=USA}
+@state{LA, longname="Louisiana", shortname="LA", country=USA}
+@state{ME, longname="Maine", shortname="ME", country=USA}
+@state{MD, longname="Maryland", shortname="MD", country=USA}
+@state{MA, longname="Massachusetts", shortname="MA", country=USA}
+@state{MI, longname="Michigan", shortname="MI", country=USA}
+@state{MN, longname="Minnesota", shortname="MN", country=USA}
+@state{MS, longname="Mississippi", shortname="MS", country=USA}
+@state{MO, longname="Missouri", shortname="MO", country=USA}
+@state{MT, longname="Montana", shortname="MT", country=USA}
+@state{NE, longname="Nebraska", shortname="NE", country=USA}
+@state{NV, longname="Nevada", shortname="NV", country=USA}
+@state{NH, longname="New Hampshire", shortname="NH", country=USA}
+@state{NJ, longname="New Jersey", shortname="NJ", country=USA}
+@state{NM, longname="New Mexico", shortname="NM", country=USA}
+@state{NY, longname="New York", shortname="NY", country=USA}
+@state{NC, longname="North Carolina", shortname="NC", country=USA}
+@state{ND, longname="North Dakota", shortname="ND", country=USA}
+@state{OH, longname="Ohio", shortname="OH", country=USA}
+@state{OK, longname="Oklahoma", shortname="OK", country=USA}
+@state{OR, longname="Oregon", shortname="OR", country=USA}
+@state{PA, longname="Pennsylvania", shortname="PA", country=USA}
+@state{RI, longname="Rhode Island", shortname="RI", country=USA}
+@state{SC, longname="South Carolina", shortname="SC", country=USA}
+@state{SD, longname="South Dakota", shortname="SD", country=USA}
+@state{TN, longname="Tennessee", shortname="TN", country=USA}
+@state{TX, longname="Texas", shortname="TX", country=USA}
+@state{UT, longname="Utah", shortname="UT", country=USA}
+@state{VT, longname="Vermont", shortname="VT", country=USA}
+@state{VA, longname="Virginia", shortname="VA", country=USA}
+@state{WA, longname="Washington", shortname="WA", country=USA}
+@state{WV, longname="West Virginia", shortname="WV", country=USA}
+@state{WI, longname="Wisconsin", shortname="WI", country=USA}
+@state{WY, longname="Wyoming", shortname="WY", country=USA}
 
 % US locations
-@location{Alexandria,		city="Alexandria", state=VA, country=USA}
-@location{Anaheim,		city="Anaheim", state=CA, country=USA}
-@location{Anchorage,		city="Anchorage", state=AK, country=USA}
-@location{Annapolis,		city="Annapolis", state=MD, country=USA}
-@location{Asheville,		city="Asheville", state=NC, country=USA}
-@location{Atlanta,		city="Atlanta", state=GA, country=USA}
-@location{Austin,		city="Austin", state=TX, country=USA}
-@location{BalHarbour,		city="Bal Harbour", state=FL, country=USA}
-@location{Baltimore,		city="Baltimore", state=MD, country=USA}
-@location{Berkeley,		city="Berkeley", state=CA, country=USA}
-@location{BoltonLanding,	city="Bolton Landing", state=NY, country=USA}
-@location{Boston,		city="Boston", state=MA, country=USA}
-@location{Boulder,		city="Boulder", state=CO, country=USA}
-@location{BrettonWoods,		city="Bretton Woods", state=NH, country=USA}
-@location{CapeCod,		city="Cape Cod", state=MA, country=USA}
-@location{CambridgeMA,		city="Cambridge", state=MA, country=USA}
-@location{Chicago,		city="Chicago", state=IL, country=USA}
-@location{Cincinnati,		city="Cincinnati", state=OH, country=USA}
-@location{CopperMountain,	city="Copper Mountain", state=CO, country=USA}
-@location{Dallas,		city="Dallas", state=TX, country=USA}
-@location{Denver,		city="Denver", state=CO, country=USA}
-@location{ElPaso,		city="El Paso", state=TX, country=USA}
-@location{Gathersberg,		city="Gathersberg", state=MD, country=USA}
-@location{Gatlinburg,		city="Gatlinburg", state=TN, country=USA}
-@location{Honolulu,		city="Honolulu", state=HI, country=USA}
-@location{Ithaca,		city="Ithaca", state=NY, country=USA}
-@location{KiawahIsland,		city="Kiawah Island", state=SC, country=USA}
-@location{LaJolla,		city="La Jolla", state=CA, country=USA}
-@location{LasVegas,		city="Las Vegas", state=ND, country=USA}
-@location{Lihue,		city="Lihue", state=HI, country=USA}
-@location{LitchfieldPark,	city="Litchfield Park", state=AZ, country=USA}
-@location{LosAngeles,		city="Los Angeles", state=CA, country=USA}
-@location{Maui,			city="Maui", state=HI, country=USA}
-@location{Miami,		city="Miami", state=FL, country=USA}
-@location{MiamiBeach,		city="Miami Beach", state=FL, country=USA}
-@location{MarinaDelRay,		city="Marina Del Ray", state=CA, country=USA}
-@location{Monterey,		city="Monterey", state=CA, country=USA}
-@location{Nashville,		city="Nashville", state=TN, country=USA}
-@location{NewOrleans,		city="New Orleans", state=LA, country=USA}
-@location{NCSU,			city="North Carolina State University", state=NC, country=USA}
-@location{Newport,		city="Newport", state=RI, country=USA}
-@location{NewportBeach,		city="Newport Beach", state=CA, country=USA}
-@location{NYC,			city="New York", state=NY, country=USA}
-@location{Oakland,		city="Oakland", state=CA, country=USA}
-@location{OrcasIsland,		city="Orcas Island", state=WA, country=USA}
-@location{PacificGrove,		city="Pacific Grove", state=CA, country=USA}
-@location{PaloAlto,		city="Palo Alto", state=CA, country=USA}
-@location{Philadelphia,		city="Philadelphia", state=PA, country=USA}
-@location{Phoenix,		city="Phoenix", state=AZ, country=USA}
-@location{Pittsburgh,		city="Pittsburgh", state=PA, country=USA}
-@location{Portland,		city="Portland", state=OR, country=USA}
-@location{Princeton,		city="Princeton", state=NJ, country=USA}
-@location{Redmond,		city="Redmond", state=WA, country=USA}
-@location{RedondoBeach,		city="Redondo Beach", state=CA, country=USA}
-@location{RioRico,		city="Rio Rico", state=AZ, country=USA}
-@location{Riverside,		city="Riverside", state=CA, country=USA}
-@location{Rye,			city="Rye", state=NY, country=USA}
-@location{SaltLake,		city="Salt Lake City", state=UT, country=USA}
-@location{SanAntonio,		city="San Antonio", state=TX, country=USA}
-@location{SanDiego,		city="San Diego", state=CA, country=USA}
-@location{SF,			city="San Francisco", state=CA, country=USA}
-@location{SanJose,		city="San Jose", state=CA, country=USA}
-@location{SantaBarbara,		city="Santa Barbara", state=CA, country=USA}
-@location{SantaClara,		city="Santa Clara", state=CA, country=USA}
-@location{SantaFe,		city="Santa Fe", state=NM, country=USA}
-@location{Seattle,		city="Seattle", state=WA, country=USA}
-@location{Stanford,		city="Stanford", state=CA, country=USA}
-@location{Stowe,		city="Stowe", state=VT, country=USA}
-@location{Tucson,		city="Tucson", state=AZ, country=USA}
-@location{UrbanaChampaign,	city="Urbana-Champaign", state=IL, country=USA}
-@location{DC,			city="Washington", state=DC, country=USA}
-@location{WestLafayette,	city="West Lafayette", state=IN, country=USA}
-@location{YorktownHeights,	city="Yorktown Heights", state=NY, country=USA}
+@location{Alexandria,		city="Alexandria", state=VA}
+@location{Anaheim,		city="Anaheim", state=CA}
+@location{Anchorage,		city="Anchorage", state=AK}
+@location{Annapolis,		city="Annapolis", state=MD}
+@location{Arlington,		city="Arlington", state=TX}
+@location{ArlingtonVA,		city="Arlington", state=VA}
+@location{Asheville,		city="Asheville", state=NC}
+@location{Atlanta,		city="Atlanta", state=GA}
+@location{Austin,		city="Austin", state=TX}
+@location{BalHarbour,		city="Bal Harbour", state=FL}
+@location{Baltimore,		city="Baltimore", state=MD}
+@location{Berkeley,		city="Berkeley", state=CA}
+@location{BeverlyHills,		city="Beverly Hills", state=CA}
+@location{BoltonLanding,	city="Bolton Landing", state=NY}
+@location{Boston,		city="Boston", state=MA}
+@location{Boulder,		city="Boulder", state=CO}
+@location{BrettonWoods,		city="Bretton Woods", state=NH}
+@location{CambridgeMA,		city="Cambridge", state=MA}
+@location{CapeCod,		city="Cape Cod", state=MA}
+@location{Chicago,		city="Chicago", state=IL}
+@location{Cincinnati,		city="Cincinnati", state=OH}
+@location{CollegePark,	city="College Park", state=MD}
+@location{Columbus,		city="Columbus", state=OH}
+@location{CopperMountain,	city="Copper Mountain", state=CO}
+@location{Dallas,		city="Dallas", state=TX}
+@location{DC,			city="Washington", state="D.C.", country=USA}
+@location{Denver,		city="Denver", state=CO}
+@location{ElPaso,		city="El Paso", state=TX}
+@location{FortLauderdale,	city="Fort Lauderdale", state=FL}
+@location{Gathersberg,		city="Gathersberg", state=MD}
+@location{Gatlinburg,		city="Gatlinburg", state=TN}
+@location{Honolulu,		city="Honolulu", state=HI}
+@location{Irvine,		city="Irvine", state=CA}
+@location{Ithaca,		city="Ithaca", state=NY}
+@location{KiawahIsland,		city="Kiawah Island", state=SC}
+@location{LaJolla,		city="La Jolla", state=CA}
+@location{LasVegas,		city="Las Vegas", state=ND}
+@location{Lihue,		city="Lihue", state=HI}
+@location{LitchfieldPark,	city="Litchfield Park", state=AZ}
+@location{LongBeach,	city="Long Beach", state=CA}
+@location{LosAngeles,		city="Los Angeles", state=CA}
+@location{Madison,	city="Madison", state=WI}
+@location{MarinaDelRay,		city="Marina Del Ray", state=CA}
+@location{Maui,			city="Maui", state=HI}
+@location{MiamiBeach,		city="Miami Beach", state=FL}
+@location{Miami,		city="Miami", state=FL}
+@location{Monterey,		city="Monterey", state=CA}
+@location{Nashville,		city="Nashville", state=TN}
+@location{NCSU,			city="North Carolina State University", state=NC}
+@location{NewOrleans,		city="New Orleans", state=LA}
+@location{NewportBeach,		city="Newport Beach", state=CA}
+@location{Newport,		city="Newport", state=RI}
+@location{NYC,			city="New York", state=NY}
+@location{Oakland,		city="Oakland", state=CA}
+@location{OrcasIsland,		city="Orcas Island", state=WA}
+@location{Orlando,		city="Orlando", state=FL}
+@location{PacificGrove,		city="Pacific Grove", state=CA}
+@location{PaloAlto,		city="Palo Alto", state=CA}
+@location{Philadelphia,		city="Philadelphia", state=PA}
+@location{Phoenix,		city="Phoenix", state=AZ}
+@location{Pittsburgh,		city="Pittsburgh", state=PA}
+@location{Portland,		city="Portland", state=OR}
+@location{Princeton,		city="Princeton", state=NJ}
+@location{Providence,		city="Providence", state=RI}
+@location{Redmond,		city="Redmond", state=WA}
+@location{RedondoBeach,		city="Redondo Beach", state=CA}
+@location{RioRico,		city="Rio Rico", state=AZ}
+@location{Riverside,		city="Riverside", state=CA}
+@location{Rye,			city="Rye", state=NY}
+@location{SaltLake,		city="Salt Lake City", state=UT}
+@location{SanAntonio,		city="San Antonio", state=TX}
+@location{SanDiego,		city="San Diego", state=CA}
+@location{SanJose,		city="San Jose", state=CA}
+@location{SantaBarbara,		city="Santa Barbara", state=CA}
+@location{SantaClara,		city="Santa Clara", state=CA}
+@location{SantaFe,		city="Santa Fe", state=NM}
+@location{Seattle,		city="Seattle", state=WA}
+@location{SF,			city="San Francisco", state=CA}
+@location{Stanford,		city="Stanford", state=CA}
+@location{Stowe,		city="Stowe", state=VT}
+@location{Tucson,		city="Tucson", state=AZ}
+@location{UrbanaChampaign,	city="Urbana-Champaign", state=IL}
+@location{WestLafayette,	city="West Lafayette", state=IN}
+@location{YorktownHeights,	city="Yorktown Heights", state=NY}
 
 % International locations  
 @location{Amsterdam,	city="Amsterdam", country=Netherlands}
@@ -166,6 +180,7 @@
 @location{Budapest,	city="Budapest", country=Hungary}
 @location{Calgary,	city="Calgary", country=Canada}
 @location{CambridgeUK,	city="Cambridge", country=UK}
+@location{Cancun,	city="Canc{\'u}n", country=Mexico}
 @location{Cannes,	city="Cannes", country=France}
 @location{Chiba,	city="Chiba", country=Japan}
 @location{Cologne,	city="Cologne", country=Germany}
@@ -174,6 +189,7 @@
 @location{Edmonton,	city="Edmonton", country=Canada}
 @location{Elmau,	city="Elmau", country=Germany}
 @location{Florence,	city="Florence", country=Italy}
+@location{Geneva,	city="Geneva", country=Switzerland}
 @location{Heidelberg,	city="Heidelberg", country=Germany}
 @location{Heraklion,	city="Heraklion", country=Greece}
 @location{HongKong,	city="Hong Kong", country=China}
@@ -188,6 +204,7 @@
 @location{Marseille,	city="Marseille", country=France}
 @location{Minaki,	city="Minaki", country=Canada}
 @location{Montreal,	city="{Montr\'eal}", country=Canada}
+@location{Nice,		city="Nice", country=France}
 @location{Osaka,	city="Osaka", country=Japan}
 @location{Ottawa,	city="Ottawa", country=Canada}
 @location{Paderborn,	city="Paderborn", country=Germany}
@@ -200,12 +217,14 @@
 @location{Saarbrucken,	city="{Saarbr\"ucken}", country=Germany}
 @location{SaintEmilion,	city="Saint Emilion", country=France}
 @location{SaintMalo,	city="Saint Malo", country=France}
+@location{SanJuan,	city="San Juan", country=PuertoRico}
 @location{Seoul,	city="Seoul", country=Korea}
 @location{Sintra,	city="Sintra", country=Portugal}
 @location{SophiaAntipolis,city="Sophia Antipolis", country=France}
 @location{Stockholm,	city="Stockholm", country=Sweden}
 @location{StJohns,	city="{St.~John\'s}", country=Canada}
-@location{Sydney,	city="Sydney", country=Australia}
+@location{Sydney,	city="Sydney", country=Oz}
+@location{Taormina,	city="Taormina", country=Italy}
 @location{Taipei,	city="Taipei", country=Taiwan}
 @location{TelAviv,	city="Tel Aviv", country=Israel}
 @location{Tokyo,	city="Tokyo", country=Japan}

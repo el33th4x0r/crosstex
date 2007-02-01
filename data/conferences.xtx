@@ -45,15 +45,7 @@
   [year=1985] address=Denver, month=may,
   [year=1984] address=SF, month=may,
   [year=1982] address=Miami, month=oct,
-  [year=1981] address=Paris,
-}
-
-@conference{imc,	
-  shortname = "IMC",	
-  longname = "Conference on Internet Measurement",
-  [year=2005] address=Berkeley, month=oct,
-  [year=2004] address=Taormina, month=oct,
-  [year=2003] address=MiamiBeach, month=oct,
+  [year=1981] address=Paris, month=apr,
 }
 
 @conference{infocom,
@@ -86,8 +78,38 @@
   [year=1982] address=LasVegas,
 }
 
+@conference{ipdps,
+  shortname = "IP(D)PS",
+  longname = "International Parallel (and Distributed) Processing Symposium",
+  [year=2005] address=Denver, month=apr,
+  [year=2004] address=SantaFe, month=apr,
+  [year=2003] address=Nice, month=apr,
+  [year=2002] address=FortLauderdale, month=apr,
+  [year=2001] address=SF, month=apr,
+  [year=2000] address=Cancun, month=may,
+}
+
+@conference{ipps-spdp,
+  shortname = "IPPS/SPDP",
+  longname = "International Parallel Processing Symposium / Symposium on Parallel and Distributed Processing",
+  [year=1999] address=SanJuan, month=apr,
+  [year=1998] address=Orlando, month=mar,
+}
+
+@conference{ipps,
+  shortname = "IPPS",
+  longname = "International Parallel Processing Symposium",
+  [year=1997] address=Geneva, month=apr,
+  [year=1996] address=Honolulu, month=apr,
+  [year=1995] address=SantaBarbara, month=apr,
+  [year=1994] address=Cancun, month=apr,
+  [year=1993] address=NewportBeach, month=apr,
+  [year=1992] address=BeverlyHills, month=mar,
+  [year=1991] address=Anaheim, month=apr,
+}
+
 @conference{mobicom,
-   shortname = "Mobicom",
+   shortname = "MOBICOM",
    longname = "International Conference on Mobile Computing and Networking",
    [year=2006] address=LosAngeles, month=sep,
    [year=2005] address=Cologne, month=aug,
@@ -101,43 +123,6 @@
    [year=1997] address=Budapest, month=sep,
    [year=1996] address=Rye, month=nov,
    [year=1995] address=Berkeley, month=nov,
-}
-
-@conference{mobihoc,
-  shortname = "MobiHoc",
-  longname = "International Symposium on Mobile Ad Hoc Networking and Computing",
-  [year=2005] address=UrbanaChampaign, month=may,
-  [year=2004] address=Tokyo, month=may,
-  [year=2003] address=Annapolis, month=jun,
-  [year=2002] address=Lausanne, month=jun,
-  [year=2001] address=LongBeach, month=oct,
-  [year=2000] address=Boston,
-}
-
-@conference{mobisys,
-  shortname = "MobiSys",	
-  longname = "International Conference on Mobile Systems, Applications, and Services",
-  [year=2006] address=Uppsala, month=jun,
-  [year=2005] address=Seattle, month=jun,
-  [year=2004] address=Boston, month=jun,
-  [year=2003] address=SF,
-}
-
-@conference{ndss,
-  shortname = "NDSS",
-  longname = "Network and Distributed System Security Symposium",
-  [year=2006] address=SanDiego,
-  [year=2005] address=SanDiego,
-  [year=2004] address=SanDiego,
-  [year=2003] address=SanDiego,
-  [year=2002] address=SanDiego,
-  [year=2001] address=SanDiego,
-  [year=2000] address=SanDiego,
-  [year=1999] address=SanDiego,
-  [year=1998] address=SanDiego,
-  [year=1997] address=SanDiego,
-  [year=1996] address=SanDiego,
-  [year=1995] address=SanDiego,
 }
 
 @conference{nsdi,
@@ -155,7 +140,7 @@
   [year=2004] address=SF, month=dec,
   [year=2002] address=Boston, month=dec,
   [year=2000] address=SanDiego, month=oct,
-  [year=1998] address=NewOrleans, month=oct,
+  [year=1999] address=NewOrleans, month=feb,
   [year=1996] address=Seattle, month=oct,
   [year=1994] address=Monterey, month=nov,
 }
@@ -163,6 +148,7 @@
 @conference{podc,
   shortname = "PODC",
   longname = "ACM Symposium on Principles of Distributed Computing",
+  [year=2006] address=Denver, month=jul,
   [year=2005] address=LasVegas, month=jul,
   [year=2004] address=StJohns, month=jul,
   [year=2003] address=Boston, month=jul,
@@ -174,6 +160,7 @@
   [year=1997] address=SantaBarbara, month=aug,
   [year=1996] address=Philadelphia, month=may,
   [year=1995] address=Ottawa, month=aug,
+  [year=1994] address=LosAngeles, month=aug,
   [year=1993] address=Ithaca, month=aug,
   [year=1992] address=Vancouver, month=aug,
   [year=1991] address=Montreal, month=aug,
@@ -214,36 +201,6 @@
   [year=1985] address=BC, month= sep,
 }
 
-@conference{sigmetrics,
-  shortname = "SIGMETRICS", 
-  longname = "SIGMETRICS Conference on Measurement and Modeling of Computer Systems",
-  [year=2006] address=SaintMalo, 
-  [year=2005] address=Banff, month=jun,
-  [year=2004] address=NYC, month=jun,
-  [year=2003] address=SanDiego, month=jun,
-  [year=2002] address=MarinaDelRay, month=jun,
-  [year=2001] address=CambridgeMA, month=jun,
-  [year=2000] address=SantaClara, month=jun,
-  [year=1999] address=Atlanta, month=jun,
-  [year=1998] address=Madison, month=jun,
-  [year=1997] address=Seattle, month=jun,
-  [year=1996] address=Philadelphia, month=may,
-  [year=1995] address=Ottawa, month=may,
-  [year=1994] address=Nashville, month=may,
-  [year=1993] address=SantaClara, month=jun,
-  [year=1992] address=Newport, month=jun,
-  [year=1991] address=SanDiego, month=may,
-  [year=1990] address=Boulder, month=may,
-  [year=1989] address=Berkeley, month=may,
-  [year=1988] address=SantaFe, month=may,
-  [year=1987] address=Banff, month=may,
-  [year=1986] address=NCSU, month=may,
-  [year=1985] address=Austin, month=aug,
-  [year=1984] address=CambridgeMA, month=aug,
-  [year=1982] address=CollegePark, month=apr,
-  [year=1981] address=LasVegas, month=sep,
-}
-
 @conference{soda,
   shortname = "SODA",
   longname = "Symposium on Discrete Algorithms",
@@ -260,7 +217,7 @@
   [year=1997] address=NewOrleans, month=jan,
   [year=1996] address=Atlanta, month=jan,
   [year=1995] address=SF, month=jan,
-  [year=1994] address=Arlington, month=jan,
+  [year=1994] address=ArlingtonVA, month=jan,
   [year=1993] address=Austin, month=jan,
   [year=1992] address=Orlando, month=jan,
   [year=1991] address=SF, month=jan,
@@ -276,7 +233,7 @@
   [year=2001] address=Banff, month=oct,
   [year=1999] address=KiawahIsland, month=dec,
   [year=1997] address=SaintMalo, month=oct,
-  [year=1995] address=CopperMountain,
+  [year=1995] address=CopperMountain, month=dec,
   [year=1993] address=Asheville, month=oct,
   [year=1991] address=PacificGrove, month=oct,
   [year=1989] address=LitchfieldPark, month=dec,
@@ -296,7 +253,7 @@
 @conference{stoc,
   shortname = "STOC",
   longname = "ACM Symposium on Theory of Computing",
-  [year=2006] address=Seattle,
+  [year=2006] address=Seattle, month=may,
   [year=2005] address=Baltimore, month=may,
   [year=2004] address=Chicago, month=jun,
   [year=2003] address=SanDiego, month=jun,
@@ -309,6 +266,7 @@
   [year=1996] address=Philadelphia, month=may,
   [year=1995] address=LasVegas, month=may,
   [year=1994] address=Montreal, month=may,
+  [year=1993] address=SanDiego, month=jun,
 }
 
 @conference{usenix = usenixg,	
@@ -371,15 +329,6 @@
   [year=1983] address=SanDiego,
 }
 
-@conference{usits, 
-  shortname = "USITS",
-  longname = "USENIX Symposium on Internet Technologies and Systems",
-  [year=2003] address=Seattle, month=mar,
-  [year=2001] address=SF, month=mar,
-  [year=1999] address=Boulder, month=oct,
-  [year=1997] address=Monterey, month=dec,
-}
-
 @conference{www,
   shortname = "WWW",
   longname = "International World Wide Web Conference",
@@ -416,10 +365,89 @@
   [year=2001] address=HongKong, month=may,
 }
 
-@conference{wwwsw,
-  shortname = "WWW",
-  longname = "International World Wide Web Conference, Workshop on Application Design, Development and Implementation Issues in the Semantic Web",
-  [year=2004] address=NYC, month=may,
+% Not here
+@conference{imc,	
+  shortname = "IMC",	
+  longname = "Conference on Internet Measurement",
+  [year=2005] address=Berkeley, month=oct,
+  [year=2004] address=Taormina, month=oct,
+  [year=2003] address=MiamiBeach, month=oct,
+}
+
+@conference{mobihoc,
+  shortname = "MobiHoc",
+  longname = "International Symposium on Mobile Ad Hoc Networking and Computing",
+  [year=2005] address=UrbanaChampaign, month=may,
+  [year=2004] address=Tokyo, month=may,
+  [year=2003] address=Annapolis, month=jun,
+  [year=2002] address=Lausanne, month=jun,
+  [year=2001] address=LongBeach, month=oct,
+  [year=2000] address=Boston,
+}
+
+@conference{mobisys,
+  shortname = "MobiSys",	
+  longname = "International Conference on Mobile Systems, Applications, and Services",
+  [year=2006] address=Uppsala, month=jun,
+  [year=2005] address=Seattle, month=jun,
+  [year=2004] address=Boston, month=jun,
+  [year=2003] address=SF,
+}
+
+@conference{ndss,
+  shortname = "NDSS",
+  longname = "Network and Distributed System Security Symposium",
+  [year=2006] address=SanDiego,
+  [year=2005] address=SanDiego,
+  [year=2004] address=SanDiego,
+  [year=2003] address=SanDiego,
+  [year=2002] address=SanDiego,
+  [year=2001] address=SanDiego,
+  [year=2000] address=SanDiego,
+  [year=1999] address=SanDiego,
+  [year=1998] address=SanDiego,
+  [year=1997] address=SanDiego,
+  [year=1996] address=SanDiego,
+  [year=1995] address=SanDiego,
+}
+
+@conference{sigmetrics,
+  shortname = "SIGMETRICS", 
+  longname = "SIGMETRICS Conference on Measurement and Modeling of Computer Systems",
+  [year=2006] address=SaintMalo, 
+  [year=2005] address=Banff, month=jun,
+  [year=2004] address=NYC, month=jun,
+  [year=2003] address=SanDiego, month=jun,
+  [year=2002] address=MarinaDelRay, month=jun,
+  [year=2001] address=CambridgeMA, month=jun,
+  [year=2000] address=SantaClara, month=jun,
+  [year=1999] address=Atlanta, month=jun,
+  [year=1998] address=Madison, month=jun,
+  [year=1997] address=Seattle, month=jun,
+  [year=1996] address=Philadelphia, month=may,
+  [year=1995] address=Ottawa, month=may,
+  [year=1994] address=Nashville, month=may,
+  [year=1993] address=SantaClara, month=jun,
+  [year=1992] address=Newport, month=jun,
+  [year=1991] address=SanDiego, month=may,
+  [year=1990] address=Boulder, month=may,
+  [year=1989] address=Berkeley, month=may,
+  [year=1988] address=SantaFe, month=may,
+  [year=1987] address=Banff, month=may,
+  [year=1986] address=NCSU, month=may,
+  [year=1985] address=Austin, month=aug,
+  [year=1984] address=CambridgeMA, month=aug,
+  [year=1982] address=CollegePark, month=apr,
+  [year=1981] address=LasVegas, month=sep,
+}
+
+@conference{usits, 
+  shortname = "USITS",
+  longname = "USENIX Symposium on Internet Technologies and Systems",
+  [year=2003] address=Seattle, month=mar,
+  [year=2001] address=SF, month=mar,
+  [year=1999] address=Boulder, month=oct,
+  [year=1997] address=Monterey, month=dec,
 }
 
 @conference{acsac,	name = "ACSAC"}
@@ -444,7 +472,6 @@
 @conference{icnp,	shortname = "ICNP",	longname = "International Conference on Network Protocols"}
 @conference{icpids,	shortname = "ICPIDS",	longname = "IEEE International Conference in Parallel and Distributed Information Systems"}
 @conference{ics,	shortname = "ICS",	longname = "International Conference on Supercomputing"}
-@conference{ipdps,	shortname = "IP(D)PS",	longname = "International Parallel (and Distributed) Processing Symposium"}
 @conference{isdc,	shortname = "ISDC",	longname = "International Symposium on Distributed Computing"}
 @conference{issre,	shortname = "SRE",	longname = "International Symposium on Software Reliability Engineering"}
 @conference{itmm,	name = "ITC Specialist Seminar on Internet Traffic Measurement and Modeling"}

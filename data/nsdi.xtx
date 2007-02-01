@@ -1,11 +1,10 @@
-%
-% nsdi 2004
-%
+@include conferences
+
 @inproceedings{DBLP:conf/nsdi/Lawrence04,
   author    = {Richard Lawrence},
-  title     = {Running Massively Multiplayer Games as a Business.},
-  booktitle = {NSDI},
-  year      = {2004},
+  title     = {Running Massively Multiplayer Games as a Business},
+  booktitle = nsdi,
+  year      = 2004,
   crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
@@ -20,9 +19,9 @@
                Eric A. Brewer and
                David E. Culler},
   title     = {The Emergence of Networking Abstractions and Techniques
-               in TinyOS.},
-  booktitle = {NSDI},
-  year      = {2004},
+               in TinyOS},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {1-14},
   ee        = {http://www.usenix.org/events/nsdi04/tech/levisEmerge.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -36,9 +35,9 @@
                Scott Shenker},
   title     = {Trickle: A Self-Regulating Algorithm for Code Propagation
                and Maintenance in Wireless Sensor Networks (Awarded Best
-               Paper!).},
-  booktitle = {NSDI},
-  year      = {2004},
+               Paper!)},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {15-28},
   ee        = {http://www.usenix.org/events/nsdi04/tech/levisTrickle.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -48,9 +47,9 @@
 @inproceedings{DBLP:conf/nsdi/WelshM04,
   author    = {Matt Welsh and
                Geoff Mainland},
-  title     = {Programming Sensor Networks Using Abstract Regions.},
-  booktitle = {NSDI},
-  year      = {2004},
+  title     = {Programming Sensor Networks Using Abstract Regions},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {29-42},
   ee        = {http://www.usenix.org/events/nsdi04/tech/welsh.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -62,9 +61,9 @@
                Yee-Man Chan and
                Terence Kelly},
   title     = {Design, Implementation, and Evaluation of Duplicate Transfer
-               Detection in HTTP.},
-  booktitle = {NSDI},
-  year      = {2004},
+               Detection in HTTP},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {43-56},
   ee        = {http://www.usenix.org/events/nsdi04/tech/mogul.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -74,9 +73,9 @@
 @inproceedings{DBLP:conf/nsdi/ShaikhG04,
   author    = {Aman Shaikh and
                Albert G. Greenberg},
-  title     = {OSPF Monitoring: Architecture, Design, and Deployment Experience.},
-  booktitle = {NSDI},
-  year      = {2004},
+  title     = {OSPF Monitoring: Architecture, Design, and Deployment Experience},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {57-70},
   ee        = {http://www.usenix.org/events/nsdi04/tech/shaikh.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -89,9 +88,9 @@
                Hari Balakrishnan and
                Randy H. Katz},
   title     = {OverQoS: An Overlay Based Architecture for Enhancing Internet
-               QoS.},
-  booktitle = {NSDI},
-  year      = {2004},
+               QoS},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {71-84},
   ee        = {http://www.usenix.org/events/nsdi04/tech/subramanianOver.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -105,9 +104,9 @@
                James Robertson and
                M. Frans Kaashoek and
                Robert Morris},
-  title     = {Designing a DHT for Low Latency and High Throughput.},
-  booktitle = {NSDI},
-  year      = {2004},
+  title     = {Designing a DHT for Low Latency and High Throughput},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {85-98},
   ee        = {http://www.usenix.org/events/nsdi04/tech/dabek.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -118,9 +117,9 @@
   author    = {Venugopalan Ramasubramanian and
                Emin G{\"u}n Sirer},
   title     = {Beehive: O(1) Lookup Performance for Power-Law Query Distributions
-               in Peer-to-Peer Overlays.},
-  booktitle = {NSDI},
-  year      = {2004},
+               in Peer-to-Peer Overlays},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {99-112},
   ee        = {http://www.usenix.org/events/nsdi04/tech/ramasubramanian.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -131,9 +130,9 @@
   author    = {Anjali Gupta and
                Barbara Liskov and
                Rodrigo Rodrigues},
-  title     = {Efficient Routing for Peer-to-Peer Overlays.},
-  booktitle = {NSDI},
-  year      = {2004},
+  title     = {Efficient Routing for Peer-to-Peer Overlays},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {113-126},
   ee        = {http://www.usenix.org/events/nsdi04/tech/gupta.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -147,9 +146,9 @@
                Scott Shenker and
                Randy H. Katz},
   title     = {Listen and Whisper: Security Mechanisms for BGP (Awarded
-               Best Student Paper!).},
-  booktitle = {NSDI},
-  year      = {2004},
+               Best Student Paper!)},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {127-140},
   ee        = {http://www.usenix.org/events/nsdi04/tech/subramanianListen.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -160,9 +159,9 @@
   author    = {Stefan Saroiu and
                Steven D. Gribble and
                Henry M. Levy},
-  title     = {Measurement and Analysis of Spyware in a University Environment.},
-  booktitle = {NSDI},
-  year      = {2004},
+  title     = {Measurement and Analysis of Spyware in a University Environment},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {141-153},
   ee        = {http://www.usenix.org/events/nsdi04/tech/saroiu.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -172,9 +171,9 @@
 @inproceedings{DBLP:conf/nsdi/MusuvathiE04,
   author    = {Madanlal Musuvathi and
                Dawson R. Engler},
-  title     = {Model Checking Large Network Protocol Implementations.},
-  booktitle = {NSDI},
-  year      = {2004},
+  title     = {Model Checking Large Network Protocol Implementations},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {155-168},
   ee        = {http://www.usenix.org/events/nsdi04/tech/musuvathi.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -186,9 +185,9 @@
                Richard S. Cox and
                Marianne Shaw and
                Steven D. Gribble},
-  title     = {Constructing Services with Interposable Virtual Hardware.},
-  booktitle = {NSDI},
-  year      = {2004},
+  title     = {Constructing Services with Interposable Virtual Hardware},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {169-182},
   ee        = {http://www.usenix.org/events/nsdi04/tech/whitaker.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -198,9 +197,9 @@
 @inproceedings{DBLP:conf/nsdi/ZhengN04,
   author    = {Haoqiang Zheng and
                Jason Nieh},
-  title     = {SWAP: A Scheduler with Automatic Process Dependency Detection.},
-  booktitle = {NSDI},
-  year      = {2004},
+  title     = {SWAP: A Scheduler with Automatic Process Dependency Detection},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {183-196},
   ee        = {http://www.usenix.org/events/nsdi04/tech/zheng.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -212,9 +211,9 @@
                Hari Balakrishnan and
                Michael Stonebraker},
   title     = {Contract-Based Load Management in Federated Distributed
-               Systems.},
-  booktitle = {NSDI},
-  year      = {2004},
+               Systems},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {197-210},
   ee        = {http://www.usenix.org/events/nsdi04/tech/balazinska.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -225,9 +224,9 @@
   author    = {Chunqiang Tang and
                Sandhya Dwarkadas},
   title     = {Hybrid Global-Local Indexing for Efficient Peer-to-Peer
-               Information Retrieval.},
-  booktitle = {NSDI},
-  year      = {2004},
+               Information Retrieval},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {211-224},
   ee        = {http://www.usenix.org/events/nsdi04/tech/tang.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -237,9 +236,9 @@
 @inproceedings{DBLP:conf/nsdi/WalfishB04,
   author    = {Michael Walfish and
                Hari Balakrishnan},
-  title     = {Untangling the Web from DNS.},
-  booktitle = {NSDI},
-  year      = {2004},
+  title     = {Untangling the Web from DNS},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {225-238},
   ee        = {http://www.usenix.org/events/nsdi04/tech/walfish.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -250,9 +249,9 @@
   author    = {Michael J. Freedman and
                Eric Freudenthal and
                David Mazi{\`e}res},
-  title     = {Democratizing Content Publication with Coral.},
-  booktitle = {NSDI},
-  year      = {2004},
+  title     = {Democratizing Content Publication with Coral},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {239-252},
   ee        = {http://www.usenix.org/events/nsdi04/tech/freedman.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -270,9 +269,9 @@
                Timothy Roscoe and
                Tammo Spalink and
                Mike Wawrzoniak},
-  title     = {Operating Systems Support for Planetary-Scale Network Services.},
-  booktitle = {NSDI},
-  year      = {2004},
+  title     = {Operating Systems Support for Planetary-Scale Network Services},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {253-266},
   ee        = {http://www.usenix.org/events/nsdi04/tech/bavier.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -286,9 +285,9 @@
                Dejan Kostic and
                Amin Vahdat},
   title     = {MACEDON: Methodology for Automatically Creating, Evaluating,
-               and Designing Overlay Networks.},
-  booktitle = {NSDI},
-  year      = {2004},
+               and Designing Overlay Networks},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {267-280},
   ee        = {http://www.usenix.org/events/nsdi04/tech/rodriguez.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -297,9 +296,9 @@
 
 @inproceedings{DBLP:conf/nsdi/Shen04,
   author    = {Kai Shen},
-  title     = {Structure Management for Scalable Overlay Service Construction.},
-  booktitle = {NSDI},
-  year      = {2004},
+  title     = {Structure Management for Scalable Overlay Service Construction},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {281-294},
   ee        = {http://www.usenix.org/events/nsdi04/tech/shen.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -310,9 +309,9 @@
   author    = {Benjamin C. Ling and
                Emre Kiciman and
                Armando Fox},
-  title     = {Session State: Beyond Soft State.},
-  booktitle = {NSDI},
-  year      = {2004},
+  title     = {Session State: Beyond Soft State},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {295-308},
   ee        = {http://www.usenix.org/events/nsdi04/tech/ling.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -326,9 +325,9 @@
                David A. Patterson and
                Armando Fox and
                Eric A. Brewer},
-  title     = {Path-Based Failure and Evolution Management.},
-  booktitle = {NSDI},
-  year      = {2004},
+  title     = {Path-Based Failure and Evolution Management},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {309-322},
   ee        = {http://www.usenix.org/events/nsdi04/tech/chen.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -338,9 +337,9 @@
 @inproceedings{DBLP:conf/nsdi/YuV04,
   author    = {Haifeng Yu and
                Amin Vahdat},
-  title     = {Consistent and Automatic Replica Regeneration.},
-  booktitle = {NSDI},
-  year      = {2004},
+  title     = {Consistent and Automatic Replica Regeneration},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {323-336},
   ee        = {http://www.usenix.org/events/nsdi04/tech/yu.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -354,9 +353,9 @@
                Stefan Savage and
                Geoffrey M. Voelker},
   title     = {Total Recall: System Support for Automated Availability
-               Management.},
-  booktitle = {NSDI},
-  year      = {2004},
+               Management},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {337-350},
   ee        = {http://www.usenix.org/events/nsdi04/tech/bhagwan.html},
   crossref  = {DBLP:conf/nsdi/2004},
@@ -367,11 +366,26 @@
   author    = {Chuang-Hue Moh and
                Barbara Liskov},
   title     = {TimeLine: A High Performance Archive for a Distributed Object
-               Store.},
-  booktitle = {NSDI},
-  year      = {2004},
+               Store},
+  booktitle = nsdi,
+  year      = 2004,
   pages     = {351-364},
   ee        = {http://www.usenix.org/events/nsdi04/tech/moh.html},
+  crossref  = {DBLP:conf/nsdi/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/nsdi/BentTAAL04,
+  author    = {John Bent and
+               Douglas Thain and
+               Andrea C. Arpaci-Dusseau and
+               Remzi H. Arpaci-Dusseau and
+               Miron Livny},
+  title     = {Explicit Control in the Batch-Aware Distributed File System},
+  booktitle = nsdi,
+  year      = 2004,
+  pages     = {365-378},
+  ee        = {http://www.usenix.org/events/nsdi04/tech/bent.html},
   crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }

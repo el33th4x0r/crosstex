@@ -5,466 +5,530 @@
 #
 # This file describes the object hierarchy in the bibliography itself
 # 
-import string
 
-citeabletypes = ["article", "inproceedings", "phdthesis", "masterthesis", "book", "techreport", "rfc", "misc"]
+from crosstexutils import authorstring, authornames, citationcase
 
-def isobjref(str):
-    return (str[0] != "\"" and str[0] != "{")
-            
-class objectfarm:
-    # a namespace is a dictionary of dictionaries
-    def __init__(self):
-        self._namespaces = {}
-        self._definitions = []
+# Co-ordination so as not to re-use citation keys
+usedlabels = set()
 
-    # checks two objects to see if they are identical, useful for multiple defn check
-    def objidentical(self, obj1, obj2):
-        #XXX need to implement field by field check
-        return 1
-    
-    # stores an object under its key in a namespace named by its type
-    def putobject(self, obj, options, curpos):
-        nsname = "%s" % obj.__class__
-        nsname = nsname[len("crosstexobjects."):]        
-        if self._namespaces.has_key(nsname):
-            ns = self._namespaces[nsname]
-        else:
-            ns = {}
-            self._namespaces[nsname] = ns
-        for key in [obj.key] + obj.aliases:
-            if ns.has_key(key):
-                if options["strict"]:
-                    print "%s: object with key %s of type %s already exists" % (curpos, key, nsname)
-                if not self.objidentical(obj, ns[key]):
-                    print "%s: different object with key %s of type %s already exists" % (curpos, key, nsname)
-                return
-            ns[key] = obj
-            self._definitions += [(nsname, key)]
-        
-    # retrieves an object by a key from a namespace named by type
-    def getobject(self, nsname, key):
-        if self._namespaces.has_key(nsname):
-            ns = self._namespaces[nsname]
-            if ns.has_key(key):
-                return ns[key]
-            else:
-                print "no object with key %s exists of type %s" % (key, nsname)
-        else:
-            print "no objects exist of type %s" % (nsname)
+# Base class of bibliography objects
+class bibobject(object):
+    _line = 0
+    _file = ''
+    _name = ''
+    _options = {}
+    _assigned = set()
+    _conditionals = []
+    _citekey = ''
 
-    # checks if specified object exists
-    def checkobject(self, nsname, key):
-        if self._namespaces.has_key(nsname):
-            if self._namespaces[nsname].has_key(key):
-                return 1
-        return 0
-    
-# this is a sentinel object
-class NoObject:
-    def beginobj(self, curpos):
-        print "NoObject is not a valid object name", curpos
-        raise Exception, "should not happen"
+    def __init__(self, conditionals, file, line, options = {}):
+	self._line = line
+	self._file = file
+	self._name = type(self).__name__
+	self._name = self._name[self._name.find('.') + 1:]
+	self._options = options
+	self._assigned = set()
+	self._conditionals = conditionals
 
-    def endobj(self, curpos):
-        print "Ill-formed object at", curpos
+	while self._applyconditions():
+	    pass
 
-#an entry for a @string definition
-class stringentry:
-    def beginobj(self, curpos):
-        self._beginline = curpos
-    
-    def myname(self):
-        longclassname = "%s" % self.__class__
-        return longclassname[len("crosstexobjects."):]
+	for field in self._fields():
+	    if getattr(self, field) == None:
+		raise ValueError, "field %s, required by %s, is missing" % (field, self._name)
 
-    def setkey(self, arg, curpos):
-        self.key = arg
+    def _fields(self):
+	return [key for key in dir(self) if key[0] != '_']
 
-    def setaliases(self, arg, curpos):
-        self.aliases = arg
+    def _meets(self, condition):
+	if condition == None:
+	    return True
+	for field in condition:
+	    if not hasattr(self, field) or getattr(self, field) != condition[field]:
+		return False
+	return True
 
-    def setvalue(self, arg, curpos):
-        self._value = arg
+    def _assign(self, key, value):
+	key = key.lower()
+	if not hasattr(self, key):
+	    raise ValueError, "%s has no such field %s" % (self._name, key)
+	else:
+	    if hasattr(value, '_bibpromote'):
+		value._bibpromote(self)
+	    if key not in self._assigned:
+		self._assigned.add(key)
+	        setattr(self, key, value)
 
-    def endobj(self, curpos):
-        self._endline = curpos
+    def _applyconditions(self):
+	unmet = []
+	apply = []
+	for condition, fields in self._conditionals:
+	    if self._meets(condition):
+		apply += [fields]
+	    else:
+		unmet += [(condition, fields)]
+	self._conditionals = unmet
+	for fields in apply:
+	    for key in fields:
+		self._assign(key, fields[key])
+	return len(apply) > 0
 
-    def tobibtex(self, options):
-        pass
+    def _filter(self, other, fields):
+	filtered = {}
+	for name in other._fields():
+	    if name in fields:
+		filtered[name] = fields[name]
+	return filtered
 
-    def promote(self, db, intoobj, options):
-        return self._value
+    def _bibpromote(self, other):
+	attrs = {}
+	for field in self._fields():
+	    attrs[field] = getattr(self, field)
+	for condition, fields in self._conditionals + [(None, attrs)]:
+	    other._conditionals += [(condition, self._filter(other, fields))]
 
-# a person, for use in author lists, only the name is used for citations
-class author:
-    def beginobj(self, curpos):
-        self._beginline = curpos
-        self._name = ""
-        self._email = ""
-        self._phone = ""
-        self._institution = ""
+    def _tobibtex(self):
+	pass
 
-    def myname(self):
-        longclassname = "%s" % self.__class__
-        return longclassname[len("crosstexobjects."):]
+class authorlist(list):
+    def __init__(self, options):
+	self._options = options
 
-    def setkey(self, arg, curpos):
-        self.key = arg
-    def setaliases(self, arg, curpos):
-        self.aliases = arg
-
-    def setname(self, arg, curpos):
-        self._name = arg
-    def setemail(self, arg, curpos):
-        self._email = arg
-    def setphone(self, arg, curpos):
-        self._phone = arg
-    def setinstitution(self, arg, curpos):
-        self._institution = arg
-
-    def endobj(self, curpos):
-        self._endline = curpos
-
-    def tobibtex(self, options):
-        pass
-
-    def promote(self, db, intoobj, options):
-        return self._name
-
-# an object with just a long and short name
-class namedobject:
-    def beginobj(self, curpos):
-        self._beginline = curpos
-        self._shortname = self._longname = ""
-
-    def myname(self):
-        longclassname = "%s" % self.__class__
-        return longclassname[len("crosstexobjects."):]
-
-    def setkey(self, arg, curpos):
-        self.key = arg
-
-    def setaliases(self, arg, curpos):
-        self.aliases = arg
-
-    def setname(self, arg, curpos):
-        self._shortname = self._longname = arg
-
-    def setlongname(self, arg, curpos):
-        self._longname = arg
-
-    def setshortname(self, arg, curpos):
-        self._shortname = arg
-
-    def endobj(self, curpos):
-        self._endline = curpos
-        if self._shortname == "":
-            self._shortname = self._longname
-
-    def promote(self, db, intoobj, options):
-        if options["use-long-" + self.myname() + "names"]:
-            return self._longname
-        else:
-            return self._shortname
-    def tobibtex(self, options):
-        pass
-            
-class journal(namedobject):
-    pass
-
-class country(namedobject):
-    pass
-
-class state(namedobject):
-    pass
-
-class month(namedobject):
-    def beginobj(self, curpos):
-        self._monthno = 0
-        
-    def setmonthno(self, arg, curpos):
-        self._monthno = int(arg)
-
-    def promote(self, db, intoobj, options):
-        intoobj._monthno = self._monthno
-        return namedobject.promote(self, db, intoobj, options)
-
-class location:
-    def beginobj(self, curpos):
-        self._beginline = curpos
-        self._city = self._state = self._country = "\"\""
-    def setkey(self, arg, curpos):
-        self.key = arg
-    def setaliases(self, arg, curpos):
-        self.aliases = arg
-    def setcity(self, arg, curpos):
-        self._city = arg
-    def setstate(self, arg, curpos):
-        self._state = arg
-    def setcountry(self, arg, curpos):
-        self._country = arg
-    def endobj(self, curpos):
-        self._endline = curpos
-    def tobibtex(self, options):
-        pass
     def __str__(self):
-        str = ""
-        if self._city != "\"\"":
-            str = self._city.strip("\"")
-        if self._state != "\"\"":
-            if str != "\"\"":
-                str = "%s, " % str
-            str = "%s%s" % (str, self._state.strip("\""))
-        if self._country != "\"\"":
-            if str != "":
-                str = "%s, " % str
-            str = "%s%s" % (str, self._country.strip("\""))
-        return "\"%s\"" % str
+	if 'xtx2bib' in self._options and self._options['xtx2bib']:
+	    return ' and '.join([ str(author) for author in self ])
+	value = ''
+	for i in range(0, len(self)):
+	    if value != '':
+		if i == len(self) - 1:
+		    value += ' and '
+		else:
+		    value += ', '
+	    (fnames, lname, sname) = authornames(str(self[i]))
+	    value += authorstring(fnames, lname, sname, self._options)
+	return value
+	    
+    def _bibpromote(self, other):
+	for obj in self:
+	    if hasattr(obj, '_bibpromote'):
+	        obj._bibpromote(other)
+	    
+class string(bibobject):
+    name = None
+    shortname = None
 
-    def promote(self, db, intoobj, options):
-        # if a field is not an enclosed string, and there is an object
-        # with that key, call on the promote method of that object to
-        # promote this object reference to a string
-        if isobjref(self._city) and db.checkobject("city", self._city):
-            self._city = db.getobject("city", self._city).promote(db, self, options)
-        if isobjref(self._state) and db.checkobject("state", self._state):
-            self._state = db.getobject("state", self._state).promote(db, self, options)
-        if isobjref(self._country) and db.checkobject("country", self._country):
-            self._country = db.getobject("country", self._country).promote(db, self, options)
-        return self.__str__()
+    def _assign(self, key, value):
+	# longname is an alias for name
+	if key == 'longname':
+	    key = 'name'
 
-class conference(namedobject):
-    def beginobj(self, curpos):
-        self._beginline = curpos
-        self._address = {}
-        self._month = {}
-        self._editor = {}
-        self._publisher = {}
-        self._isbn = {}
+	# With shortname, name is optional and vice versa
+	if key == 'shortname' and self.name == None:
+	    self.__dict__['name'] = value
+	if key == 'name' and self.shortname == None:
+	    self.__dict__['shortname'] = value
+	bibobject._assign(self, key, value)
 
-    def endobj(self, curpos):
-        self._endline = curpos
+    def __str__(self):
+        optname = 'use-short-' + self._name + 'names'
+	if optname in self._options and self._options[optname]:
+	    return str(self.shortname)
+	else:
+	    return str(self.name)
 
-    def setkey(self, arg, curpos):
-        self.key = arg
+class author(string):
+    address = ''
+    affiliation = ''
+    email = ''
+    institution = ''
+    organization = ''
+    phone = ''
+    school = ''
+    url = ''
 
-    def setaliases(self, arg, curpos):
-        self.aliases = arg
+class state(string):
+    country = ''
 
-    def setyearcontext(self, arg, curpos):
-        self._year = arg
-
-    # set a named field to a given value
-    def setfield(self, fname, value, curpos):
-        internalfname = '_%s' % fname
-        if fname in set(["address", "month", "editor", "publisher", "isbn"]):
-            dict = getattr(self, internalfname, value)
-            if dict.has_key(self._year):
-                print "%s: %s for conference %s already set for year %s" % (curpos, fname, self.key, self._year)
-            dict[self._year] = value
-            return
-        print "%s: object of type %s does not have field named %s" % (curpos, self.myname(), fname)
-
-    def promote(self, db, intoobj, options):
-#        for fname in set(["address", "month", "editor", "publisher", "isbn"]):
-#            dict = getattr(self, internalfname, value)
-#            if dict.has_key(self._year):
-#                dict[self._year] = value
-
-        if self._address.has_key(intoobj._year):
-            address = self._address[intoobj._year]
-            if isobjref(address):
-                if db.checkobject("location", address):
-                    address = db.getobject("location", address).promote(db, intoobj, options)
-                else:
-                    print "Location %s is not defined, leaving it as is" % address
-            try:
-                if intoobj._address != address:
-                    print "%s: object with key %s has address field %s in conflict with conference %s address %s" % (intoobj._beginline, intoobj.key, intoobj._address, self.key, address)
-            except:
-                pass
-            intoobj._address = address
-        if self._month.has_key(intoobj._year):
-            month = self._month[intoobj._year]
-            if isobjref(month) and db.checkobject("month", month):
-                month = db.getobject("month", month).promote(db, intoobj, options)
-            try:
-                if intoobj._month != month:
-                    print "%s: object with key %s has month field %s in conflict with conference %s month %s" % (intoobj._beginline, intoobj.key, intoobj._month, self.key, month)
-            except:
-                pass
-            intoobj._month = month
-        if options["use-long-conferencenames"]:
-            return self._longname
-        else:
-            return self._shortname
-
-    def __str__():
-        return "Proceedings of the %s. " % self._longname
-
-class workshop(conference):
+class country(string):
     pass
 
-class pub(namedobject):
-    def __init__(self):
-        self._mfields = set([])
-        self._dfields = set(["author", "title", "month", "year", "address", "pages", "url", "doi", "isbn", "issn", "note", "editor", "ee", "bibsource"])
+class location(bibobject):
+    city = ''
+    state = ''
+    country = ''
 
-    # return the name of the class
-    def myname(self):
-        longclassname = "%s" % self.__class__
-        return longclassname[len("crosstexobjects."):]
+    def __str__(self):
+	value = ''
+	state = str(self.state)
+	country = str(self.country)
+	if 'city' in self._assigned:
+	    value += str(self.city)
+	if state != '':
+	    if value != '':
+		value += ', '
+	    value += state
+	if country != '':
+	    if value != '':
+		value += ', '
+	    value += country
+	return value
 
-    # return the name of the bibtex record for this object
-    def bibtexname(self):
-        return self.myname()
+class month(string):
+    monthno = None
 
-    def beginobj(self, curpos):
-        self._beginline = curpos
+class journal(string):
+    pass
 
-    def endobj(self, curpos):
-        self._endline = curpos
+# Base for all publications, everything optional.
+class misc(bibobject):
+    abstract = ''
+    address = ''
+    affiliation = ''
+    annote = ''
+    author = []
+    bibsource = ''
+    booktitle = ''
+    chapter = ''
+    contents = ''
+    copyright = ''
+    crossref = ''
+    edition = ''
+    editor = ''
+    ee = ''
+    howpublished = ''
+    institution = ''
+    isbn = ''
+    issn = ''
+    journal = ''
+    key = ''
+    keywords = ''
+    language = ''
+    lccn = ''
+    location = ''
+    month = ''
+    monthno = ''
+    mrnumber = ''
+    note = ''
+    number = ''
+    organization = ''
+    pages = ''
+    price = ''
+    publisher = ''
+    school = ''
+    series = ''
+    size = ''
+    title = ''
+    type = ''
+    url = ''
+    volume = ''
+    year = ''
 
-    # check to see if all mandatory fields have been defined
-    def check(self, options):
-        for fname in self._mfields:
-            internalfname = '_%s' % fname
-            try:
-                f = getattr(self, internalfname)
-            except:
-                print "%s: object of type %s is missing mandatory field <%s>" % (self._beginline, self.myname(), fname)
+    def _assign(self, key, value):
+	# With author, editor is optional and vice versa
+	if key == 'editor' and self.editor == None and self.author == None:
+	    self.__dict__['author'] = []
+	if key == 'author' and self.editor == None and self.author == None:
+	    self.__dict__['editor'] = ''
 
-    def setkey(self, arg, curpos):
-        self.key = arg
+	# With chapter, pages is optional and vice versa
+	if key == 'chapter' and self.chapter == None and self.pages == None:
+	    self.__dict__['pages'] = ''
+	if key == 'pages' and self.chapter == None and self.pages == None:
+	    self.__dict__['chapter'] = ''
 
-    def setaliases(self, arg, curpos):
-        self.aliases = arg
+	bibobject._assign(self, key, value)
 
-    # set a named field to a given value
-    def setfield(self, fname, value, curpos):
-        internalfname = '_%s' % fname
-        for i in (self._dfields | self._mfields):
-            if i == fname:
-                if fname == "year":
-                    value = value.strip("{}")
-                setattr(self, internalfname, value)
-                return
-        print "%s: object of type %s does not have field named %s" % (curpos, self.__class__, fname)
+    def _label(self):
+	# Compute a new label
+	global usedlabels
+	if hasattr(self, '_citelabel'):
+	    return self._citelabel
+	label = ''
+	authors = [ str(name) for name in self.author ]
+	if len(authors) == 0 and self.editor != '':
+	    authors = [ str(self.editor) ]
+	if len(authors) == 0:
+	    label = str(self.key)
+	elif 'cite-by' in self._options and self._options['cite-by'] == 'initials':
+	    if len(authors) == 1:
+		(fnames, lname, sname) = authornames(authors[0])
+		label += lname[0:3]
+	    elif len(authors) <= 4:
+		for i in range(0, min(len(authors), 4)):
+		    (fnames, lname, sname) = authornames(authors[i])
+		    label += lname[0]
+	    else:
+		for i in range(0, min(len(authors), 3)):
+		    (fnames, lname, sname) = authornames(authors[i])
+		    label += lname[0]
+		label += "{\etalchar{+}}"
+	    if self.year != '':
+   	        label += "%02d" % (int(str(self.year)) % 100)
+	elif 'cite-by' in self._options and self._options['cite-by'] == 'fullname':
+	    if len(authors) == 2:
+		(fnames1, lname1, sname1) = authornames(authors[0])
+		(fnames2, lname2, sname2) = authornames(authors[1])
+		label += lname1 + " \& " + lname2
+	    else:
+		(fnames, lname, sname) = authornames(authors[0])
+		label += lname
+		if len(authors) > 2:
+		    label += " et al."
+	    if self.year != '':
+   	        label += " %02d" % (int(str(self.year)) % 100)
+	else:
+	    label = ''
+        # Ensure the label is unique
+	if label in usedlabels:
+	    for char in "abcdefghijklmnopqrstuvwxyz":
+		if label + char not in usedlabels:
+		    label += char
+		    break
+	    else:
+		sys.stderr.write("crosstex: too many citations with key %s" % label)
+	if label != '':
+	    usedlabels.add(label)
+	self._citelabel = label
+	return self._citelabel
 
-    # promote values associated with subobjects (conferences, etc) up to the parent
-    def promote(self, db, intoobj, options):
-        # ignore any exceptions thrown when month or address are not defined
-        try:
-            if isobjref(self._month) and db.checkobject("month", self._month):
-                self._month = db.getobject("month", self._month).promote(db, self, options)
-        except:
-            pass
-        try:
-            if isobjref(self._address) and db.checkobject("location", self._address):
-                self._address = db.getobject("location", self._address).promote(db, self, options)
-        except:
-            pass
-    
-    # convert object to bibtex format
-    def tobibtex(self, options):
-        print "@%s{%s," % (self.bibtexname(), self.key)
-        fieldorder = ["key", "author", "title", "booktitle", "journal", "institution", "school", "volume", "number", "month", "year", "address", "pages", "publisher", "editor", "howpublished", "issn", "isbn", "doi", "url", "note"]
-        for field in fieldorder:
-            if field in (self._dfields | self._mfields):
-                fname = '_%s' % (field)
-                try:
-                    f = getattr(self, fname)
-                    print "\t%s=%s%s," % (field, "\t\t"[min(len(field)/7,1):], f)
-                except:
-                    pass
-        print "}"
-        
-class inproceedings(pub):
-    def __init__(self):
-        pub.__init__(self)
-        self._mfields = set(["author", "title", "booktitle", "address", "month", "year"])
-        self._dfields = set(["pages", "publisher", "editor", "issn", "isbn", "doi", "url", "key", "note", "ee", "bibsource"])
+    def _sortkey(self):
+	if self._label() != '':
+	    return self._label()
+	authors = [ str(name) for name in self.author ]
+	if len(authors) == 0 and self.editor != '':
+	    authors = [ str(self.editor) ]
+	return [ [ authornames(name)[1] for name in authors ], self.year, self.monthno ]
 
-    # promote values associated with subobjects (conferences, etc) up to the parent
-    def promote(self, db, intoobj, options):
-        # promote month and address first
-        pub.promote(self, db, intoobj, options)
-        # now pick up info from the conference
-        try:
-            f = getattr(self, "_booktitle")
-        except:
-            return
-        if isobjref(self._booktitle):
-            if db.checkobject("conference", self._booktitle):
-                conf = db.getobject("conference", self._booktitle)
-                self._booktitle = conf.promote(db, self, options)
-            elif db.checkobject("workshop", self._booktitle):
-                conf = db.getobject("workshop", self._booktitle)
-                self._booktitle = conf.promote(db, self, options)
-            else:
-                if options["check"]:
-                    print "conference %s is not defined, leaving it as is" % self._booktitle
+    def _title(self):
+	value = str(self.title)
+	if value != '':
+	    if 'title-uppercase' in self._options and self._options['title-uppercase']:
+		value = citationcase(value, "upper")
+	    elif 'title-lowercase' in self._options and self._options['title-lowercase']:
+		value = citationcase(value, "lower")
+	    elif 'title-titlecase' in self._options and self._options['title-titlecase']:
+		value = citationcase(value, "title")
+	    if self.booktitle != '':
+		value += ". In {\\em %s}" % str(self.booktitle)
+	    if self.editor != '':
+		value += ", %s, ed." % str(self.editor)
+	return value
 
-class article(pub):
-    def __init__(self):
-        pub.__init__(self)
-        self._mfields = set(["author", "title", "journal", "volume", "number", "year"])
-        self._dfields = set(["address", "month", "pages", "publisher", "editor", "issn", "isbn", "doi", "url", "key", "note", "ee", "bibsource"])
+    def _publication(self):
+	return str(self.howpublished)
 
-    def promote(self, db, intoobj, options):
-        # promote month and address first
-        pub.promote(self, db, intoobj, options)
-        # now pick up info from the conference
-        if isobjref(self._journal):
-            if db.checkobject("journal", self._journal):
-                journal = db.getobject("journal", self._journal)
-                self._journal = journal.promote(db, self, options)
-            else:
-                if options["check"]:
-                    print "journal %s is not defined, leaving it as is" % self._journal
+    def _fulltitle(self):
+	value = self._title()
+	if value != '':
+	    value = "\\newblock {%s}" % value
+	    if value[-2] != '.':
+		value += '.'
+	    value += "\n"
+	return value
 
-class misc(pub):
-    def __init__(self):
-        pub.__init__(self)
-        self._mfields = set([])
-        self._dfields = set(["key", "author", "title", "howpublished", "volume", "number", "month", "year", "address", "pages", "institution", "publisher", "editor", "issn", "isbn", "doi", "url", "key", "note"])
+    def _fullpublication(self):
+	value = self._publication()
+	if self.address != '':
+	    if value != '':
+		value += ', '
+	    value += str(self.address)
+	if self.year != '':
+	    if value != '':
+		value += ', '
+	    if self.month != '':
+		value += str(self.month) + ' '
+	    value += str(self.year)
+	if value != '':
+	    value = "\\newblock {%s}.\n" % value
+	return value
 
-class techreport(pub):
-    def __init__(self):
-        pub.__init__(self)
-        self._mfields = set(["author", "title", "institution", "number", "month", "year"])
-        self._dfields = set(["address", "publisher", "editor", "issn", "isbn", "doi", "url", "key", "note"])
-        
-class book(pub):
-    def __init__(self):
-        pub.__init__(self)
-        self._mfields = set(["author", "title", "publisher", "year"])
-        self._dfields = set(["month", "address", "publisher", "editor", "issn", "isbn", "doi", "url", "key", "note"])
-        
-class rfc(pub):
-    def __init__(self):
-        pub.__init__(self)
-        self._mfields = set(["author", "title", "number", "month", "year"])
-        self._dfields = set(["howpublished", "issn", "isbn", "doi", "url", "key", "note"])
+    def __str__(self):
+	if 'xtx2bib' in self._options and self._options['xtx2bib']:
+	    value = "@%s{%s" % (self._name, self._citekey)
+	    for field in self._assigned:
+		fieldvalue = str(getattr(self, field))
+		if len(fieldvalue) != 0:
+		    value += ",\n\t%s = \"%s\"" % (field, getattr(self, field))
+	    value += "}\n\n"
+	else:
+	    label = self._label()
+	    if label != '':
+		label = '[%s]' % label
+	    value = "\\bibitem%s{%s}\n" % (label, self._citekey)
+	    value += str(self.author) + ".\n"
+	    value += self._fulltitle()
+	    value += self._fullpublication()
+	    value += "\n"
+	return value
 
-    # override default with misc
-    def bibtexname(self):
-        return "misc"
+class article(misc):
+    author = None
+    title = None
+    journal = None
+    year = None
 
-    def tobibtex(self, options):
-        self._howpublished = "\"Request for Comments RFC-" + self._number.strip("\"") + "\""
-        pub.tobibtex(self, options)
+    def _publication(self):
+	value = ''
+	if 'use-inforarticles' in self._options and self._options['use-inforarticles']:
+	    value = 'In '
+	value += "{\\em %s}" % str(self.journal)
+	if self.volume != '':
+	    if self.number == '' and self.pages == '':
+		value += ' Volume'
+	    value += " %s" % str(self.volume)
+	if self.number != '':
+	    value += "(%s)" % str(self.number)
+	if self.pages != '':
+	    value += ":%s" % str(self.pages)
+	return value
 
-class thesis(pub):
-    def __init__(self):
-        pub.__init__(self)
-        self._mfields = set(["author", "title", "school", "year"])
-        self._dfields = set(["month", "address", "publisher", "editor", "issn", "isbn", "doi", "url", "key", "note"])
+class book(misc):
+    author = None
+    editor = None
+    title = None
+    publisher = None
+    year = None
+
+    def _publication(self):
+	return str(self.publisher)
+
+class booklet(misc):
+    title = None
+
+class inbook(misc):
+    author = None
+    editor = None
+    title = None
+    chapter = None
+    pages = None
+    publisher = None
+    year = None
+
+class incollection(misc):
+    author = None
+    title = None
+    booktitle = None
+    publisher = None
+    year = None
+
+class inproceedings(misc):
+    author = None
+    title = None
+    booktitle = None
+    year = None
+
+    def _title(self):
+	value = str(self.title)
+	if value != '':
+	    if 'title-uppercase' in self._options and self._options['title-uppercase']:
+		value = citationcase(value, "upper")
+	    elif 'title-lowercase' in self._options and self._options['title-lowercase']:
+		value = citationcase(value, "lower")
+	    elif 'title-titlecase' in self._options and self._options['title-titlecase']:
+		value = citationcase(value, "title")
+	    procof = ''
+	    if 'add-proceedingsof' in self._options and self._options['add-proceedingsof']:
+		procof = 'Proceedings of the '
+	    elif 'add-procof' in self._options and self._options['add-procof']:
+		procof = 'Proc. of '
+	    if self.booktitle != '':
+		value += ". In {\\em %s}" % (procof + str(self.booktitle))
+	    if self.editor != '':
+		value += ", %s, ed." % str(self.editor)
+	return value
+
+class manual(misc):
+    title = None
+
+class thesis(misc):
+    author = None
+    title = None
+    school = None
+    year = None
+
+    _thesistype = ''
+
+    def _publication(self):
+	value = self._thesistype
+	if value != '':
+	    value += ' '
+	value += 'Thesis'
+	if self.school != '':
+	    value += ", %s" % str(self.school)
+	return value
+
+class mastersthesis(thesis):
+    _thesistype = 'Masters'
 
 class phdthesis(thesis):
+    _thesistype = 'Ph.D.'
+
+class patent(misc):
     pass
 
-class masterthesis(thesis):
+class proceedings(misc):
+    title = None
+    year = None
+
+class collection(proceedings):
     pass
 
+class techreport(misc):
+    author = None
+    title = None
+    institution = None
+    year = None
+
+    def _publication(self):
+	value = 'Technical Report'
+	if self.number != '':
+	    value += " %s" % str(self.number)
+	if self.institution != '':
+	    value += ", %s" % str(self.institution)
+	return value
+
+class unpublished(misc):
+    author = None
+    title = None
+    note = None
+
+# New objects in CrossTeX:
+
+# In BibTeX, conference was the same as inproceedings.
+# This one's a string instead, and is closer to proceedings.
+class conference(string):
+    address = ''
+    crossref = ''
+    editor = ''
+    institution = ''
+    isbn = ''
+    key = ''
+    keywords = ''
+    language = ''
+    location = ''
+    month = ''
+    publisher = ''
+    url = ''
+    year = ''
+
+class conferencetrack(conference):
+    conference = ''
+
+    def __str__(self):
+	if self.conference != '':
+	    return str(self.conference) + ", " + string.__str__(self)
+	else:
+	    return string.__str__(self)
+
+class workshop(conferencetrack):
+    pass
+
+class rfc(misc):
+    author = None
+    title = None
+    number = None
+    month = None
+    year = None
+
+    def _publication(self):
+	return "IETF Request For Comments %s" % str(self.number)

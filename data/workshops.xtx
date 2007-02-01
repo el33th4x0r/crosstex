@@ -1,3 +1,6 @@
+@include dates
+@include locations
+
 @workshop{esigops,
   shortname = "ESIGOPS Workshop",
   longname = "European SIGOPS Workshop",
@@ -25,11 +28,83 @@
   [year=1995] address=OrcasIsland,
 }
 
+@workshop{icdcsw,
+  shortname = "ICDCS",
+  longname = "International Conference on Distributed Computing Systems Workshops",
+  [year=2007] address=Toronto, month=jun,
+  [year=2006] address=Lisbon, month=jul,
+  [year=2005] address=Columbus, month=jun,
+  [year=2004] address=Tokyo, month=mar,
+  [year=2003] address=Providence, month=may,
+  [year=2002] address=Vienna, month=jul,
+}
+
+@workshop{icdcskd,
+  shortname = "ICDCS",
+  longname = "International Conference on Distributed Computing Systems Workshop of Knowledge Discovery and Data Mining in the World-Wide Web",
+  [year=2000] address=Taipei, month=apr,
+}
+
+@workshop{icdcsrt,
+  shortname = "ICDCS",
+  longname = "International Conference on Distributed Computing Systems Workshop on Distributed Real-Time Systems",
+  [year=2000] address=Taipei, month=apr,
+}
+
+@workshop{icdcsv,
+  shortname = "ICDCS",
+  longname = "International Conference on Distributed Computing Systems Workshop on Distributed Systems Validation and Verification",
+  [year=2000] address=Taipei, month=apr,
+}
+
+@workshop{icdcsg,
+  shortname = "ICDCS",
+  longname = "International Conference on Distributed Computing Systems Workshop on Group Communications and Computations",
+  [year=2000] address=Taipei, month=apr,
+}
+
+@workshop{icdcsi,
+  shortname = "ICDCS",
+  longname = "International Conference on Distributed Computing Systems Workshop on Internet",
+  [year=2000] address=Taipei, month=apr,
+}
+
+@workshop{icdcswn,
+  shortname = "ICDCS",
+  longname = "International Conference on Distributed Computing Systems Workshop on Wireless Networks and Mobile Computing",
+  [year=2000] address=Taipei, month=apr,
+}
+
 @workshop{imw,
   shortname = "SIGCOMM Internet Measurement Workshop",
   longname = "ACM SIGCOMM Internet Measurement Workshop",
   [year=2002] address=Marseille, month=nov,
   [year=2001] address=SF, month=nov,
+}
+
+@workshop{ipdpsw,
+  shortname = "IP(D)PS",
+  longname = "International Parallel (and Distributed) Processing Symposium Workshops",
+  [year=2005] address=Denver, month=apr,
+  [year=2004] address=SantaFe, month=apr,
+  [year=2003] address=Nice, month=apr,
+  [year=2002] address=FortLauderdale, month=apr,
+  [year=2001] address=SF, month=apr,
+  [year=2000] address=Cancun, month=may,
+}
+
+@workshop{ipps-spdpw,
+  shortname = "IPPS/SPDP",
+  longname = "International Parallel Processing Symposium / Symposium on Parallel and Distributed Processing Workshops",
+  [year=1999] address=SanJuan, month=apr,
+  [year=1998] address=Orlando, month=mar,
+}
+
+@workshop{ipps-spdp-jsspp,
+  shortname = "IPPS/SPDP",
+  longname = "International Parallel Processing Symposium / Symposium on Parallel and Distributed Processing Job Scheduling Strategies for Parallel Processing Workshop",
+  [year=1999] address=SanJuan, month=apr,
+  [year=1998] address=Orlando, month=mar,
 }
 
 @workshop{iptps,
@@ -40,6 +115,24 @@
   [year=2004] address=LaJolla, month=feb, editor="Geoffrey M. Voelker and Scott Shenker", publisher="Springer Lecture Notes in Computer Science 3279",
   [year=2003] address=Berkeley, month=feb, editor="M. Frans Kaashoek and Ion Stoica", publisher="Springer Lecture Notes in Computer Science 2735",
   [year=2002] address=CambridgeMA, month=mar, editor="Peter Druschel and M. Frans Kaashoek and Antony I. T. Rowstron", publisher="Springer Lecture Notes in Computer Science 2429", isbn="3-540-44179-4",
+}
+
+@workshop{mobicomm,
+   shortname = "MOBICOM",
+   longname = "International Workshop on Mobility Management {\&} Wireless Access Protocols",
+   [year=2004] address=Philadelphia, month=oct,
+}
+
+@workshop{mobicomv,
+   shortname = "MOBICOM",
+   longname = "International Workshop on Vehicular Ad Hoc Networks",
+   [year=2004] address=Philadelphia, month=oct,
+}
+
+@workshop{mobicomw,
+   shortname = "MOBICOM",
+   longname = "International Workshop on Wireless Sensor Networks and Applications",
+   [year=2002] address=Atlanta, month=sep,
 }
 
 @workshop{p2pecon,
@@ -78,6 +171,12 @@
   [year=1998] address=Manchester, month=jun,  
   [year=1997] address=Boulder, month=jun,  
   [year=1996] address=Warsaw, month=sep,  
+}
+
+@workshop{wwwsw,
+  shortname = "WWW",
+  longname = "International World Wide Web Conference, Workshop on Application Design, Development and Implementation Issues in the Semantic Web",
+  [year=2004] address=NYC, month=may,
 }
 
 @workshop{blackhat,	longname = "Black Hat USA"}

@@ -18,11 +18,11 @@ dist: ${PACKAGE}.tar.gz
 ${PACKAGE}.tar.gz: Makefile COPYING version crosstex crosstex.spec
 	rm -rf ${PACKAGE}
 	mkdir ${PACKAGE} ${PACKAGE}/tests ${PACKAGE}/data
-	cp Makefile COPYING version crosstex *.py *.xtx ${PACKAGE}
-	sed "/^%define version/c %define version ${VERSION}" \
-		crosstex.spec >${PACKAGE}/crosstex.spec
+	cp Makefile COPYING version crosstex *.py ${PACKAGE}
 	cp tests/*.xtx ${PACKAGE}/tests
 	cp data/*.xtx ${PACKAGE}/data
+	sed "/^%define version/c %define version ${VERSION}" \
+		crosstex.spec >${PACKAGE}/crosstex.spec
 	tar czf ${PACKAGE}.tar.gz ${PACKAGE}
 	rm -rf ${PACKAGE}
 
