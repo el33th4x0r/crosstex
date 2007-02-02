@@ -9,6 +9,7 @@ install:
 	cp *.py data/*.xtx $(ROOT)/usr/share/texmf/crosstex
 	cp crosstex $(ROOT)/usr/bin
 	ln -sf crosstex $(ROOT)/usr/bin/xtx2bib
+	ln -sf crosstex $(ROOT)/usr/bin/xtx2html
 
 clean:
 	rm -rf *~ *.pyc *.aux *.bbl *.dvi *.log *.tar.gz *.rpm ${PACKAGE}-rpm

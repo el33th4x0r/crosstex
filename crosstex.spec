@@ -35,6 +35,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 /usr/bin/crosstex
 /usr/bin/xtx2bib
+/usr/bin/xtx2html
 /usr/share/texmf/crosstex
 
 %changelog
