@@ -54,7 +54,7 @@ styles = {
     },
     'unsrt': {
 	'cite-by': 'number',
-	'use-unsorted': True,
+	'sort': '',
     },
     'plain': {
     },
@@ -83,27 +83,41 @@ class bibliography(dict):
     options = {}
 
     def cite(self, key):
-	self.citations += [key]
-
-    def cleanupkeys(self):
-	unique = []
-	for key in self.citations:
+	if key == '*':
+	    for i in self.primarykeys:
+		if hasattr(self[i], '_label') and i not in self.citations:
+		    self.citations += [i]
+	else:
 	    if key in self:
-		if hasattr(self[key], '_sortkey'):
-		    if self.aliases[key] != key:
-			self.error("crosstex: citation for non-primary key %s" % key)
-		    elif key not in unique:
-		        unique += [self.aliases[key]]
-		elif 'cite-all' not in self.options or not self.options['cite-all']:
-		    self.error("crosstex: %s %s is not citable" % (self[key]._name, key))
+		if hasattr(self[key], '_label'):
+		    if self.aliases[key] == key:
+			if key not in self.citations:
+			    self.citations += [key]
+		    else:
+			self.warning("crosstex: citation for non-primary key %s" % key)
+		else:
+		    self.warning("crosstex: %s %s is not citable" % (self[key]._name, key))
 	    else:
-		self.error("crosstex: unknown citation key %s" % key)
-	self.citations = unique
+		self.warning("crosstex: citation for non-existant key %s" % key)
 
-	if 'use-unsorted' not in self.options or not self.options['use-unsorted']:
-	    sortedcitations = [ (self[key]._sortkey(), key) for key in self.citations ]
-	    sortedcitations.sort()
-	    self.citations = [ key for _, key in sortedcitations ]
+    def sortcitations(self):
+        if 'sort' in self.options and self.options['sort'] != '':
+	    keys = self.options['sort'].split(',')
+	    keys.reverse()
+	    for key in keys:
+		reverse = False
+		if key[0] == '-':
+		    reverse = True
+		    key = key[1:]
+		def keyfunc(x):
+		    try:
+			if key == 'label':
+			    return self[x]._label()
+			else:
+			    return getattr(self[x], key)
+		    except Exception, details:
+			return ''
+	        self.citations.sort(key=keyfunc, reverse=reverse)
 
     def addobject(self, name, keys, data, file, line, options):
         name = name.strip().lower()
@@ -426,14 +440,12 @@ def parseaux(instream, infilename, bib):
                     if bib.citations != []:
                         bib.error("    last good citation was", bib.citations[len(bib.citations)-1])
                 cite = cite.strip(", 	")
-                if cite == "*":
-                    bib.options["cite-all"] = True
-                    continue
-                elif cite == "":
+                if cite == "":
                     bib.error("empty citation, check for spurious commas in \\cite{} commands")
                     if bib.citations != []:
                         bib.error("    last good citation was", bib.citations[len(bib.citations)-1])
-		bib.cite(cite)
+		else:
+		    bib.cite(cite)
         elif line[0:9] == "\\bibstyle":
 	    for opt in line[10:].rstrip().rstrip("}").split(','):
 		pos = opt.find('=')
@@ -538,14 +550,16 @@ def usage():
     print "  --title-lowercase:\t\tmake titles all lowercase"
     print "  --title-uppercase:\t\tmake titles all uppercase"
     print "  --title-titlecase:\t\tmake titles in titlecase"
-    print "  --use-unsorted:\t\tLeave the bibliography in citation order"
     print "  --break-lines:\t\tInsert line breaks between author, title, and publication information"
     print "  --blank-labels:\t\tShow no labels in the bibliography (for generating standalone bibliographies)"
-    print "  --cite-all:\t\t\tImplicitly cite all entries in the bibliography"
     print "  --links none:\t\t\tDo not use hyperlinks (default)"
     print "  --links default:\t\tInclude hyperlinks found in a common set of fields"
     print "  --links field,field,...:\tInclude hyperlinks if found in the specified fields"
     print "  --title-head:\t\t\tMake the title come before the authors and bold"
+    print "  --sort field,-field,...:\tSort entries based on specified fields (default=label,author,year,month)"
+    print "  --sort none:\t\t\tLeave entries in citation order"
+    print "  --cite key:\t\t\tCite the specified key"
+    print "  --cite *:\t\t\tCite all entries (may require shell escape)"
     print ""
     print " Options for citation style:"
     print "  --style name:\t\t\tOverride with named style, e.g. plain, unsrt, abbrv, full, alpha"
@@ -590,6 +604,21 @@ for opt in args:
         else:
             options[opt[2:]] = args[nopt+1]
             nopt += 2
+    elif opt == "--cite":
+        if len(args) <= nopt+1:
+            usage()
+	if 'cite' not in options:
+	    options['cite'] = ''
+	if options['cite'] != '':
+	    options['cite'] += ','
+        options[opt[2:]] += args[nopt+1]
+        nopt += 2
+    elif opt == "--sort":
+        if len(args) <= nopt+1:
+            usage()
+	if args[nopt+1] != 'none':
+            options[opt[2:]] = args[nopt+1]
+        nopt += 2
     elif opt == "--links":
         if len(args) <= nopt+1:
             usage()
@@ -626,6 +655,9 @@ if nopt >= len(args):
 if 'path' not in options:
     options['path'] = ".:%s" % topdir
 
+if 'sort' not in options:
+    options['sort'] = 'label,author,year,month'
+
 for infilename in args[nopt:]:
     # Use a difference environment for each file.
     bib = bibliography()
@@ -651,6 +683,9 @@ for infilename in args[nopt:]:
 
     # Ensure command-line arguments overwrite options in any .aux files.
     bib.options.update(options)
+    if 'cite' in bib.options:
+        for citation in bib.options['cite'].split(','):
+	    bib.cite(citation)
 
     # Handle dump-locations, dump-conferences, etc.
     for option in bib.options:
@@ -662,16 +697,10 @@ for infilename in args[nopt:]:
 		    sys.stderr.write("%s\t%s\n" % (key, bib[key]))
 
     if len(bib.citations) == 0 and (('xtx2bib' in bib.options and bib.options['xtx2bib']) or ('xtx2html' in bib.options and bib.options['xtx2html'])):
-	bib.options['cite-all'] = True
+	bib.cite('*')
 
-    # Clean up the citation list, including sorting if necessary.
-    if 'cite-all' in bib.options and bib.options['cite-all']:
-	for key in bib.primarykeys:
-	    try:
-		bib.cite(key)
-	    except:
-		pass
-    bib.cleanupkeys()
+    # Prepare the citation list.
+    bib.sortcitations()
 
     # Print headers required by output format.
     if 'xtx2bib' in bib.options and bib.options['xtx2bib']:

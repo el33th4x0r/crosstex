@@ -193,6 +193,12 @@ class author(string):
         # return the person info as a 3-tuple
         return (names[0:mnameoffset+1], lname, sname)
 
+    def __cmp__(self, other):
+	if isinstance(other, author):
+	    return cmp(self._names()[1], other._names()[1])
+	else:
+	    return cmp(self._names()[1], other)
+
     def __str__(self):
         optname = 'use-short-' + self._name + 'names'
         if optname in self._options and self._options[optname] and 'shortname' in self._assigned:
@@ -255,6 +261,12 @@ class location(bibobject):
 
 class month(string):
     monthno = None
+
+    def __cmp__(self, other):
+	if isinstance(other, month):
+	    return cmp(int(self.monthno), int(other.monthno))
+	else:
+	    return cmp(int(self.monthno), other)
 
 class journal(string):
     pass
@@ -334,8 +346,8 @@ class misc(bibobject):
             return self._citelabel
         label = ''
         authors = self.author
-        if len(authors) == 0 and len(self.editor) != 0:
-            authors = self.editor
+	if len(authors) == 0 and len(self.editor) != 0:
+	    authors = self.editor
         if len(authors) == 0 and 'cite-by' in self._options and self._options['cite-by'] != 'number':
             label = str(self.key)
         elif 'cite-by' in self._options and self._options['cite-by'] == 'initials':
@@ -379,14 +391,6 @@ class misc(bibobject):
             usedlabels.add(label)
         self._citelabel = label
         return self._citelabel
-
-    def _sortkey(self):
-        if self._label() != '':
-            return self._label()
-        authors = self.author
-        if len(authors) == 0 and len(self.editor) != 0:
-            authors = self.editor
-        return [ [ name._names()[1] for name in authors ], self.year, self.monthno ]
 
     def _title(self):
         value = str(self.title)
