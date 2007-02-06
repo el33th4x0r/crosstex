@@ -9,6 +9,10 @@
 from crosstexutils import citationcase
 import re
 
+# Matching URIs
+linkre = re.compile("[a-zA-Z][-+.a-zA-Z0-9]*://([:/?#[\]@!$&'()*+,;=a-zA-Z0-9_\-.~]|%[0-9a-fA-F][0-9a-fA-F]|\\-|\s)*")
+linksub = re.compile("\\-\s")
+
 # Co-ordination so as not to re-use citation keys
 usedlabels = set()
 
@@ -471,16 +475,16 @@ class misc(bibobject):
 
             abstractlink = False
             if 'links' in self._options and self._options['links'] != 'none':
-                linkre = re.compile("^\w+://")
-                links = ''
+		links = ''
                 for field in self._options['links'].split(','):
                     myfield = field.lower()
                     if hasattr(self, myfield) and getattr(self, myfield) != '':
-                        fieldvalue = str(getattr(self, myfield))
-                        if linkre.match(fieldvalue):
+                        for m in linkre.finditer(str(getattr(self, myfield))):
+			    uri = m.group()
+			    linksub.sub(uri, "")
                             if links != '':
                                 links += ' '
-                            links += "\\href{%s}{\\small\\textsc{%s}}" % (fieldvalue, field)
+                            links += "\\href{%s}{\\small\\textsc{%s}}" % (uri, field)
                             if myfield == 'abstract':
                                 abstractlink = True
                 if links != '':
