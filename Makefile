@@ -1,4 +1,4 @@
-VERSION = `cat version`
+VERSION = $(shell ./crosstex --version | cut -d' ' -f2)
 PACKAGE = crosstex-${VERSION}
 
 all:
@@ -12,14 +12,13 @@ install:
 	ln -sf crosstex $(ROOT)/usr/bin/xtx2html
 
 clean:
-	rm -rf *~ *.pyc *.aux *.bbl *.dvi *.log *.tar.gz *.rpm ${PACKAGE}-rpm
+	rm -rf *~ *.pyc *.aux *.bbl *.dvi *.log *.tar.gz *.rpm *.html ${PACKAGE}-rpm
 
-dist: ${PACKAGE}.tar.gz
 
-${PACKAGE}.tar.gz: Makefile COPYING version crosstex crosstex.spec
+${PACKAGE}.tar.gz: Makefile COPYING crosstex crosstex.spec
 	rm -rf ${PACKAGE}
 	mkdir ${PACKAGE} ${PACKAGE}/tests ${PACKAGE}/data
-	cp Makefile COPYING version crosstex *.py ${PACKAGE}
+	cp Makefile COPYING crosstex *.py ${PACKAGE}
 	cp tests/*.xtx ${PACKAGE}/tests
 	cp data/*.xtx ${PACKAGE}/data
 	sed "/^%define version/c %define version ${VERSION}" \
@@ -27,7 +26,11 @@ ${PACKAGE}.tar.gz: Makefile COPYING version crosstex crosstex.spec
 	tar czf ${PACKAGE}.tar.gz ${PACKAGE}
 	rm -rf ${PACKAGE}
 
-rpm: ${PACKAGE}.tar.gz
+.PHONY: dist
+dist: ${PACKAGE}.tar.gz
+
+.PHONY: rpm
+rpm: dist
 	mkdir -p ${PACKAGE}-rpm/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
 	rpmbuild -ta --define "_topdir `pwd`/${PACKAGE}-rpm" ${PACKAGE}.tar.gz
 	find ${PACKAGE}-rpm -name \*.rpm -exec mv {} . \;

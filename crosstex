@@ -31,6 +31,7 @@ import copy
 import math
 import pipes
 import re
+import optparse
 import string
 import tempfile
 
@@ -40,92 +41,164 @@ import crosstexobjects
 # Pre-defined styles.
 
 styles = {
-    'abbrv': {
-	'use-short-authornames': True,
-	'cite-by': 'initials',
-    },
-    'alpha': {
-	'cite-by': 'initials',
-    },
-    'full': {
-	'cite-by': 'fullname',
-	'add-proceedingsof': True,
-	'use-infforarticles': True,
-    },
-    'unsrt': {
-	'cite-by': 'number',
-	'sort': '',
-    },
-    'plain': {
-    },
-    'html': {
-	'links': 'Abstract,URL,PS,PDF,HTML,DVI,TEX,BIB,FTP,HTTP,RTF',
-	'break-lines': True,
-    },
-    'xtx2html': {
-	'links': 'Abstract,URL,PS,PDF,HTML,DVI,TEX,BIB,FTP,HTTP,RTF',
-	'break-lines': True,
-	'blank-labels': True,
-	'title-head': True,
-	'abstract': True,
-	'keywords': True,
-    },
+    'abbrv': ['--no-break-lines', '--no-blank-labels', '--no-title-head', '--no-abstract', '--no-keywords', '--short', 'author', '--cite-by', 'initials'],
+    'alpha': ['--no-break-lines', '--no-blank-labels', '--no-title-head', '--no-abstract', '--no-keywords', '--cite-by', 'initials'],
+    'full': ['--no-break-lines', '--no-blank-labels', '--no-title-head', '--no-abstract', '--no-keywords', '--cite-by', 'fullname', '--add-proceedings', '--add-in'],
+    'unsrt': ['--no-break-lines', '--no-blank-labels', '--no-title-head', '--no-abstract', '--no-keywords', '--cite-by', 'number', '--no-sort'],
+    'plain': ['--no-break-lines', '--no-blank-labels', '--no-title-head', '--no-abstract', '--no-keywords', '--cite-by', 'number'],
+    'html': ['-l', 'Abstract', '-l', 'URL', '-l', 'PS', '-l', 'PDF', '-l', 'HTML', '-l', 'DVI', '-l', 'TeX', '-l', 'Bib', '-l', 'FTP', '-l', 'HTTP', '-l', 'RTF', '--break-lines', '--blank-labels', '--title-head', '--abstract', '--keywords'],
 }
 
 
-# An entire bibliographic environment.
+# Set up options.
+
+optparser = optparse.OptionParser(usage="usage: %prog [options] files", version="CrossTeX 0.1", description="A modern, object-oriented bibliographic tool intended to replace BibTeX.")
+
+def optstyle(option, opt, value, parser):
+    global styles
+    for i in range(len(styles[value])):
+        parser.rargs.insert(i, styles[value][i])
+
+def optsort(option, opt, value, parser, reversed=False):
+    if parser.values.sort == None or value == 'none':
+	parser.values.sort = []
+    parser.values.sort.append((reversed, value))
+
+def optconvert(option, opt, value, parser):
+    global styles
+    parser.values.convert = opt[6:]
+    if opt[6:] in styles:
+        for i in range(len(styles[opt[6:]])):
+            parser.rargs.insert(i, styles[opt[6:]][i])
+
+optparser.add_option('-d', '--dir', type='string', action='append', help="Add a directory in which to find data files, searched from last specified to first. Default: %default")
+optparser.add_option('--quiet', action='store_const', const=0, dest='check', help="Do not sanity check the input.")
+optparser.add_option('--strict', action='store_const', const=2, dest='check', help="Apply stricter checks.")
+optparser.add_option('--dump', metavar='TYPE', type='choice', choices=['file']+[ name for name in dir(crosstexobjects) if isinstance(getattr(crosstexobjects, name), type) and issubclass(getattr(crosstexobjects, name), crosstexobjects.bibobject) ], action='append', help="After parsing the bibliography, dump a list of all objects of the type specified, or, with \"file\", print a list of files processed.")
+
+optparser.add_option('--cite', type='string', action='append', help="Cite a key exactly as with the \\cite LaTeX command.")
+optparser.add_option('-l', '--link', metavar='FIELD', type='string', action='append', help="Add to the list of fields used to generate links. LaTeX documents should make use of links by including the hyperref package. When converting to html, this defaults to [Abstract, URL, PS, PDF, HTML, DVI, TEX, BIB, FTP, HTTP, and RTF].")
+optparser.add_option('--no-link', action='store_const', const=[], dest='link')
+
+optparser.add_option('--cite-by', type='choice', choices=['number', 'initials', 'fullname'], help="With \"number\", use numeric labels such as [1]. With \"initials\", use labels based on author last-names such as [SBRD04b]. With \"fullname\", use labels based on author names such as [Sirer et al. 04].")
+optparser.add_option('--style', type='choice', choices=styles.keys(), action='callback', callback=optstyle, help="Use a standard style such as plain, unsrt, abbrv, full, or alpha.  Options set by the style may be overidden by further command-line options.")
+
+optparser.add_option('-s', '--sort', metavar='FIELD', type='string', action='callback', callback=optsort, help="Sort by specified field. Multiple sort orders are applied in the order specified, e.g. \"-s year -s author\" will cause elements to be grouped primarily by author and sub-grouped by year.")
+optparser.add_option('-S', '--reverse-sort', metavar='FIELD', type='string', action='callback', callback=optsort, callback_args=(True,), help="Exactly as --sort, but sort by descending field values rather than ascending.")
+optparser.add_option('--no-sort', action='store_const', const=[], dest='sort')
+
+optparser.add_option('--heading', metavar='FIELD', action='store', help="Divide entries and create headings in bibliography by the value of the given field.")
+
+optparser.add_option('--short', metavar='TYPE', type='choice', choices=[ name for name in dir(crosstexobjects) if isinstance(getattr(crosstexobjects, name), type) and issubclass(getattr(crosstexobjects, name), crosstexobjects.string) ], action='append', help="Specify any string-like object, i.e. one with name and shortname fields. Whenever possible, the short name will be used, e.g. two-letter state codes for \"state\", conference acronyms such as NSDI for \"conference\", or initials such as E. G. Sirer for \"author\".")
+optparser.add_option('--add-in', action='store_const', const='In', dest='in_str', help="Add \"In\" for articles.")
+optparser.add_option('--add-proc', action='store_const', const='Proc. of', dest='proceedings_str', help="Add \"Proc. of\" for conference and workshop publications.")
+optparser.add_option('--add-proceedings', action='store_const', const='Proceedings of the', dest='proceedings_str', help="Add \"Proceedings of the\" for conference and workshop publications.")
+optparser.add_option('--abstract', action='store_true', help="In the bibliography, include paper abstracts if available.")
+optparser.add_option('--no-abstract', action='store_false', dest='abstract')
+optparser.add_option('--keywords', action='store_true', help="In the bibliography, include paper keywords if available.")
+optparser.add_option('--no-keywords', action='store_false', dest='keywords')
+optparser.add_option('--titlecase', type='choice', choices=['lower', 'upper', 'title', 'default'], help="In the bibliography, force titles into lower-, upper-, or title-case.  Default: Leave titles unchanged.")
+optparser.add_option('--title-head', action='store_true', help="In the bibliography, put the title bold and first.")
+optparser.add_option('--no-title-head', action='store_false', dest='title_head')
+optparser.add_option('--blank-labels', action='store_true', help="In the bibliography, leave out item labels.")
+optparser.add_option('--no-blank-labels', action='store_false', dest='blank_labels')
+optparser.add_option('--break-lines', action='store_true', help="In the bibliography, put author, title, and publication information on separate lines.")
+optparser.add_option('--no-break-lines', action='store_false', dest='break_lines')
+
+optparser.add_option('--xtx2bib', action='callback', callback=optconvert, help="Convert the bibliography information to old-style BibTeX.")
+optparser.add_option('--xtx2html', action='callback', callback=optconvert, help="Format the bibliography as HTML.")
+
+
+# A self-contained bibliographic environment.
 
 class bibliography(dict):
-    primarykeys = []
-    aliases = {}
-    citations = []
-    preambles = []
-    options = {}
+    def __init__(self):
+	self.optlist = []
+	self.primarykeys = []
+	self.aliases = {}
+	self.preambles = []
+	self._citations = None
 
-    def cite(self, key):
-	if key == '*':
-	    for i in self.primarykeys:
-		if hasattr(self[i], '_label') and i not in self.citations:
-		    self.citations += [i]
-	else:
-	    if key in self:
-		if hasattr(self[key], '_label'):
-		    if self.aliases[key] == key:
-			if key not in self.citations:
-			    self.citations += [key]
-		    else:
-			self.warning("crosstex: citation for non-primary key %s" % key)
-		else:
-		    self.warning("crosstex: %s %s is not citable" % (self[key]._name, key))
+    def setoptions(self, optlist):
+	global optparser
+	self.optlist = optlist + self.optlist
+	optparser.set_defaults(
+	    check=1,
+	    cite=[],
+	    cite_by='number',
+	    convert='bbl',
+	    dir=[topdir, '.'],
+	    dump=[],
+	    heading='',
+	    in_str='',
+	    link=[],
+	    proceedings_str='',
+	    short=[],
+	    sort=[(False, 'author'), (False, 'year'), (False, 'month'), (False, 'label')],
+	    titlecase='default',
+	)
+	(self.options, args) = optparser.parse_args(args=self.optlist)
+	self.options.dir.reverse()
+	self._citations = None
+
+    def citations(self):
+	if self._citations != None:
+	    return self._citations
+	self._citations = []
+
+	for key in self.options.cite:
+	    if key == '*':
+		for i in self.primarykeys:
+		    if hasattr(self[i], '_label') and i not in self._citations:
+			self._citations += [i]
 	    else:
-		self.warning("crosstex: citation for non-existant key %s" % key)
-
-    def sortcitations(self):
-        if 'sort' in self.options and self.options['sort'] != '':
-	    keys = self.options['sort'].split(',')
-	    keys.reverse()
-	    for key in keys:
-		reverse = False
-		if key[0] == '-':
-		    reverse = True
-		    key = key[1:]
-		def keyfunc(x):
-		    try:
-			if key == 'label':
-			    return self[x]._label()
+		if key in self:
+		    if hasattr(self[key], '_label'):
+			if self.aliases[key] == key:
+			    if key not in self._citations:
+				self._citations += [key]
 			else:
-			    return getattr(self[x], key)
-		    except Exception, details:
-			return ''
-	        self.citations.sort(key=keyfunc, reverse=reverse)
+			    self.warning("crosstex: citation for non-primary key %s" % key)
+		    else:
+			self.warning("crosstex: %s %s is not citable" % (self[key]._name, key))
+		else:
+		    self.warning("crosstex: citation for non-existant key %s" % key)
 
-    def addobject(self, name, keys, data, file, line, options):
+	for reverse, field in self.options.sort:
+	    def keyfunc(x):
+		try:
+		    if field == 'label':
+			return self[x]._label()
+		    elif field == 'citation':
+			return self._citations.index(x)
+		    else:
+			return getattr(self[x], field)
+		except Exception, details:
+		    return ''
+	    self._citations.sort(key=keyfunc, reverse=reverse)
+
+	self._divided = {}
+	if self.options.heading != '':
+	    for cite in self._citations:
+		key = ''
+		if hasattr(self[cite], self.options.heading):
+		    key = str(getattr(self[cite], self.options.heading))
+		if key not in self._divided:
+		    self._divided[key] = []
+		self._divided[key].append(cite)
+	else:
+	    self._divided[''] = self._citations
+
+	return self._citations
+
+    def divided(self):
+	self.citations()
+	return self._divided
+
+    def addobject(self, name, keys, data, file, line):
         name = name.strip().lower()
         try:
-            obj = getattr(crosstexobjects, name)(data, file, line, options)
-        except AttributeError:
-	    raise KeyError, "object type %s is not defined" % (name)
-        else:
+            obj = getattr(crosstexobjects, name)(data, file, line, self.options)
             obj._citekey = None
             for key in keys:
                 if key in self:
@@ -140,13 +213,16 @@ class bibliography(dict):
                         obj._citekey = key
                         self.primarykeys += [key]
                     self.aliases[key] = obj._citekey
+	    return obj
+        except AttributeError:
+	    raise KeyError, "object type %s is not defined" % (name)
 
     def error(self, message):
-	if 'quiet' not in self.options or not self.options['quiet']:
+	if self.options.check > 0:
 	    sys.stderr.write(str(message) + "\n")
 
     def warning(self, message):
-	if 'strict' in self.options and self.options['strict']:
+	if self.options.check > 1:
 	    sys.stderr.write(str(message) + "\n")
 
 # Lexer
@@ -154,7 +230,7 @@ class bibliography(dict):
 # Tokens
 tokens = (
     'AT', 'COMMA', 'SHARP', 'OPENBRACE', 'CLOSEBRACE', 'LBRACK', 'RBRACK', 'EQUALS', 
-    'ATINCLUDE', 'ATSTRING', 'ATPREAMBLE', 'ATCOMMENT',
+    'ATINCLUDE', 'ATSTRING', 'ATPREAMBLE', 'ATCOMMENT', 'ATDEFAULT',
     'NUMBER', 'NAME', 'STRING',
     )
 
@@ -180,6 +256,15 @@ def t_ATPREAMBLE(t):
 
 def t_ATCOMMENT(t):
     r'@[Cc][Oo][Mm][Mm][Ee][Nn][Tt]'
+    return t
+
+def t_ATDEFAULT(t):
+    r'@[Dd][Ee][Ff][Aa][Uu][Ll][Tt]'
+    return t
+    
+def t_NUMBER(t):
+    r'\d+'
+    t.lexer.followsequals = 1
     return t
     
 def t_NUMBER(t):
@@ -290,7 +375,7 @@ def p_stmt_object(t):
 def p_stmt_include(t):
     'stmt : ATINCLUDE NAME'
     filename = t[2]
-    parsextxfile(filename, t.lexer.bib, t.lexer.seenfiles)
+    processfile(filename, t.lexer.bib, t.lexer.seenfiles, ['.xtx', '.bib', '.aux'])
 
 def p_stmt_preamble(t):
     'stmt : ATPREAMBLE OPENBRACE STRING CLOSEBRACE'
@@ -300,11 +385,16 @@ def p_stmt_comment(t):
     'stmt : ATCOMMENT STRING'
     pass
 
+def p_stmt_default(t):
+    'stmt : ATDEFAULT field'
+    t.lexer.defaults.update(t[2])
+    pass
+
 def p_stmt_string(t):
     'stmt : ATSTRING OPENBRACE fields CLOSEBRACE'
     for key in t[3]:
 	try:
-	    t.lexer.bib.addobject('string', [key], [(None, {'name': t[3][key]})], t.lexer.file, t.lineno(3), t.lexer.bib.options)
+	    t.lexer.bib.addobject('string', [key], [(None, {'name': t[3][key]})], t.lexer.file, t.lineno(3))
 	except Warning, detail:
 	    t.lexer.bib.warning("%s:%d: %s" % (t.lexer.file, t.lineno(3), detail))
 	except Exception, detail:
@@ -314,7 +404,12 @@ def p_object_defn(t):
     'object : AT NAME OPENBRACE keys COMMA fields conditionals CLOSEBRACE'
     t[2] = t[2].lower()
     try:
-        t.lexer.bib.addobject(t[2], t[4], [(None, t[6])] + t[7], t.lexer.file, t.lineno(2), t.lexer.bib.options)
+        obj = t.lexer.bib.addobject(t[2], t[4], [(None, t[6])] + t[7], t.lexer.file, t.lineno(2))
+	for defkey in t.lexer.defaults:
+	    try:
+	        obj._assign(defkey, t.lexer.defaults[defkey])
+	    except:
+		pass
     except Warning, detail:
 	t.lexer.bib.warning("%s:%d: %s" % (t.lexer.file, t.lineno(2), detail))
     except Exception, detail:
@@ -372,7 +467,7 @@ def p_field(t):
 		    values += [t.lexer.bib[key]]
 		else:
 		    try:
-			t.lexer.bib.addobject('author', [key], [(None, {'name': key})], t.lexer.file, t.lineno(3), t.lexer.bib.options)
+			t.lexer.bib.addobject('author', [key], [(None, {'name': key})], t.lexer.file, t.lineno(3))
 			values += [t.lexer.bib[key]]
 		    except Warning, detail:
 			t.lexer.bib.warning("%s:%d: %s" % (t.lexer.file, t.lineno(3), detail))
@@ -411,23 +506,46 @@ def p_simplevalue_string(t):
 
 def p_error(t):
     t.lexer.bib.error("%s:%d: parse error at '%s'" % (t.lexer.file, t.lexer.lineno, t.value[0]))
-        
-def parseauxfile(infilename, bib=bibliography()):
-    if infilename[-4:] != ".aux":
-        infilename += ".aux"
-    if 'dump-files' in bib.options and bib.options['dump-files']:
-        sys.stderr.write("Processing file %s...\n" % infilename)
-    try:
-        infile = open(infilename, 'r')
-    except:
-        bib.error("crosstex: file %s does not exist" % infilename)
-        sys.exit(1)
-    parseaux(infile, infilename, bib)
-    infile.close()
 
-# parses the AUX file and builds a list of citations
-def parseaux(instream, infilename, bib):
-    seenfiles = set()
+def processfile(infilename, bib, seenfiles=set(), exts=['.aux', '.xtx', '.bib']):
+    if infilename in seenfiles:
+	if 'file' in bib.options.dump:
+            sys.stderr.write("File %s already processed, skipping.\n" % infilename)
+	return
+
+    names = []
+    if infilename[infilename.rfind('.'):] in exts:
+	names = [infilename]
+    else:
+	names = [infilename + ext for ext in exts]
+
+    paths = []
+    if infilename[0] == '/':
+	paths = names
+    else:
+	for path in bib.options.dir:
+	    paths.extend(['/'.join([path, name]) for name in names])
+
+    for filename in paths:
+	try:
+	    instream = open(filename, 'r')
+	    if 'file' in bib.options.dump:
+		sys.stderr.write("Processing %s...\n" % filename)
+	    if filename.endswith('.aux'):
+		parseaux(instream, infilename, bib, seenfiles)
+	    else:
+		parsextx(instream, infilename, bib, seenfiles)
+	    instream.close()
+	    seenfiles.add(infilename)
+	    return filename
+	except:
+	    continue
+    else:
+        raise IOError, '%s does not exist or is not a bibliographic database' % infilename
+
+def parseaux(instream, infilename, bib, seenfiles):
+    options = []
+    datafiles = []
     while 1:
         line = instream.readline()
         if not line:
@@ -437,312 +555,145 @@ def parseaux(instream, infilename, bib):
             for cite in citeline.split(","):
                 if cite.find(" ") >= 0:
                     bib.error("citation with empty space \"%s\"" % cite)
-                    if bib.citations != []:
-                        bib.error("    last good citation was", bib.citations[len(bib.citations)-1])
-                cite = cite.strip(", 	")
-                if cite == "":
-                    bib.error("empty citation, check for spurious commas in \\cite{} commands")
-                    if bib.citations != []:
-                        bib.error("    last good citation was", bib.citations[len(bib.citations)-1])
-		else:
-		    bib.cite(cite)
-        elif line[0:9] == "\\bibstyle":
-	    for opt in line[10:].rstrip().rstrip("}").split(','):
-		pos = opt.find('=')
-		if pos > 0:
-		    if opt[0:pos] == 'style':
-			try:
-			    style(opt[pos+1:], bib.options)
-			except Exception, detail:
-			    bib.error(detail)
+                else:
+		    cite = cite.strip(", 	")
+		    if cite == "":
+			bib.error("empty citation, check for spurious commas in \\cite{} commands")
 		    else:
-			bib.options[opt[0:pos]] = opt[pos+1:]
-		else:
-		    try:
-			style(opt, bib.options)
-		    except:
-			bib.options[opt] = True
+			options.extend(['--cite', cite])
+        elif line[0:9] == "\\bibstyle":
+	    options.extend(['--style'] + line[10:].rstrip().rstrip("}").split(','))
         elif line[0:8] == "\\bibdata":
-            fnamesfull = line[9:].rstrip().rstrip("}")
-            fnames = fnamesfull.split(",")
-            for fname in fnames:
-                parsextxfile(fname, bib, seenfiles)
-            
-def pathopen(name, mode, bib):
-    if name[0] == "/":
-        if 'dump-files' in bib.options and bib.options['dump-files']:
-            sys.stderr.write("Processing %s...\n" % name)
-        return open(name, mode)
-
-    # filename is relative, try all elements of the path
-    for path in bib.options["path"].split(":"):
-        try:
-             file = open(path + "/" + name, mode)
-             if 'dump-files' in bib.options and bib.options['dump-files']:
-                 sys.stderr.write("Processing %s...\n" % (path + "/" + name))
-             return file
-        except:
-             pass
-    raise IOError, 'File not found'
+            datafiles.extend(line[9:].rstrip().rstrip("}").split(','))
+    bib.setoptions(options)
+    for datafile in datafiles:
+	try:
+	    processfile(datafile, bib, seenfiles, ['.xtx', '.bib', '.aux'])
+	except:
+	    bib.error("Could not process data file %s" % datafile)
     
-def parsextxfile(infilename, bib=bibliography(), seenfiles=set()):
-    suffixes = [".xtx", ".bib"]
-    if 'dump-files' in bib.options and bib.options['dump-files']:
-        sys.stderr.write("Processing file %s...\n" % infilename)
-    if infilename in seenfiles:
-	if 'dump-files' in bib.options and bib.options['dump-files']:
-            sys.stderr.write("File %s already processed, skipping.\n" % infilename)
-	return
-    for suffix in suffixes:
-        if not infilename.endswith(suffix):
-            filename = infilename + suffix
-        else:
-            filename = infilename
-        try:
-            infile = pathopen(filename, 'r', bib)
-            # we get here only if we succeed
-	    seenfiles.add(infilename)
-	    parsextx(infile, filename, bib, seenfiles)
-            infile.close()
-	    return
-        except IOError:
-	    pass
-    else:
-        bib.error("Bibliography database %s not found, skipping" % infilename)
-        return
-    
-# parses the XTX file and builds an object hierarchy
 def parsextx(instream, infilename, bib, seenfiles):
-    # Build the lexer and initialize the parser
-    global topdir
     lexer = lex.lex()
     lexer.bib = bib
     lexer.file = infilename
     lexer.lineno = 1
     lexer.seenfiles = seenfiles
     lexer.followsequals = 0
-    #parser = yacc.yacc(debug=1, write_tables=1)
-    parser = yacc.yacc(debug=0, write_tables=0)
+    lexer.defaults = {}
+    parser = yacc.yacc(debug=0, write_tables=0) # set these to 1 for icky debugging
     parser.parse(instream.read(), lexer=lexer)
 
-def style(style, options):
-    global styles
-    if style not in styles:
-	raise Warning, "unkown bibliography style %s" % style
-    options.update(styles[style])
 
-def usage():
-    print "crosstex [options] filename"
-    print ""
-    print " General Options"
-    print "  --path /path1:/path2:\tuse path to look for files (default=.:%s)" % topdir
-    print ""
-    print " Options for reference appearance in the bibliography:"
-    print "  --use-short-authornames:\tShorten first names in bib entries to just initials"
-    print "  --use-short-conferencenames:\tuse short conference names"
-    print "  --use-short-monthnames:\tuse three/four letter short month prefix"
-    print "  --use-short-statenames:\tuse use two letter abbreviation for state"
-    print "  --use-short-countrynames:\tuse short country name where possible"
-    print "  --use-short-journalnames:\tuse short journal name where possible"
-    print "  --add-proceedingsof:\t\tadd \"Proceedings of the\" for conf and workshop publications"
-    print "  --add-procof:\t\t\tadd \"Proc. of\" for conf and workshop publications"
-    print "  --use-inforarticles:\t\tadd \"In\" for articles"
-    print "  --title-lowercase:\t\tmake titles all lowercase"
-    print "  --title-uppercase:\t\tmake titles all uppercase"
-    print "  --title-titlecase:\t\tmake titles in titlecase"
-    print "  --break-lines:\t\tInsert line breaks between author, title, and publication information"
-    print "  --blank-labels:\t\tShow no labels in the bibliography (for generating standalone bibliographies)"
-    print "  --links none:\t\t\tDo not use hyperlinks (default)"
-    print "  --links default:\t\tInclude hyperlinks found in a common set of fields"
-    print "  --links field,field,...:\tInclude hyperlinks if found in the specified fields"
-    print "  --title-head:\t\t\tMake the title come before the authors and bold"
-    print "  --sort field,-field,...:\tSort entries based on specified fields (default=label,author,year,month)"
-    print "  --sort none:\t\t\tLeave entries in citation order"
-    print "  --cite key:\t\t\tCite the specified key"
-    print "  --cite *:\t\t\tCite all entries (may require shell escape)"
-    print ""
-    print " Options for citation style:"
-    print "  --style name:\t\t\tOverride with named style, e.g. plain, unsrt, abbrv, full, alpha"
-    print "  --cite-by number:\t\tRefer to papers by numbers, e.g. [1] (default)"
-    print "  --cite-by initials:\t\tRefer to papers by concatenation of lastname initials, e.g. [SBRD04b]"
-    print "  --cite-by fullname:\t\tRefer to papers by last names, e.g. [Sirer et al. 04]"
-    print ""
-    print " Sanity checking of the object database:"
-    print "  --quiet:\t\t\tdo not sanity check the input"
-    print "  --strict:\t\t\tapply stricter checks"
-    print ""
-    print " Debugging:"
-    print "  --dump-locations:\t\tdump the location data for debugging"
-    print "  --dump-conferences:\t\tdump the conference data for debugging"
-    print "  --dump-workshops:\t\tdump the workshop data for debugging"
-    print "  --dump-files:\t\t\tdump the input files processed"
-    print ""
-    print " Conversion:"
-    print "  --xtx2bib:\t\t\tconvert to plain BibTeX on standard output"
-    print "  --xtx2html:\t\t\tconvert to html with HeVeA"
-    print ""
-    print " Options override defaults from .aux files"
-    print " De-activate a boolean option with e.g. --no-option-name"
-    sys.exit(1)
+namearg = '--' + sys.argv[0].split('/')[-1]
+if optparser.has_option(namearg):
+    sys.argv.insert(1, namearg)
 
-if int(len(sys.argv) == 0):
-    usage()
+(options, args) = optparser.parse_args()
+if len(args) == 0:
+    optparser.print_help()
+    sys.exit(0)
 
-options = {}
-
-# The symlink from "xtx2bib" to this file turns on the xtx2bib option.
-args = [ '--' + sys.argv[0].split("/")[-1] ] + sys.argv[1:]
-
-# Parse arguments.
-nopt = 0
-for opt in args:
-    if opt == "--help":
-        usage()
-    elif opt == "--path" or opt == "--cite-by":
-        if len(args) <= nopt+1:
-            usage()
-        else:
-            options[opt[2:]] = args[nopt+1]
-            nopt += 2
-    elif opt == "--cite":
-        if len(args) <= nopt+1:
-            usage()
-	if 'cite' not in options:
-	    options['cite'] = ''
-	if options['cite'] != '':
-	    options['cite'] += ','
-        options[opt[2:]] += args[nopt+1]
-        nopt += 2
-    elif opt == "--sort":
-        if len(args) <= nopt+1:
-            usage()
-	if args[nopt+1] != 'none':
-            options[opt[2:]] = args[nopt+1]
-        nopt += 2
-    elif opt == "--links":
-        if len(args) <= nopt+1:
-            usage()
-	if args[nopt+1] == 'default':
-            options[opt[2:]] = styles['html']['links']
-            nopt += 2
-        else:
-            options[opt[2:]] = args[nopt+1]
-            nopt += 2
-    elif opt == "--style":
-        if len(args) <= nopt+1:
-            usage()
-        else:
-	    try:
-	        style(args[nopt+1], options)
-	    except Exception, detail:
-		sys.stderr.write("crosstex: %s\n" % detail)
-            nopt += 2
-    elif len(opt) >= 5 and opt[0] == "-" and opt[1] == "-" and opt[2] == "n" and opt[3] == "o" and opt[4] == "-":
-        options[opt[5:]] = False
-        nopt += 1
-    elif len(opt) >= 2 and opt[0] == "-" and opt[1] == "-":
-        options[opt[2:]] = True
-        nopt += 1
-	if opt[2:] == 'xtx2html':
-	    try:
-	        style('xtx2html', options)
-	    except:
-		pass
-
-if nopt >= len(args):
-  usage()
-
-if 'path' not in options:
-    options['path'] = ".:%s" % topdir
-
-if 'sort' not in options:
-    options['sort'] = 'label,author,year,month'
-
-for infilename in args[nopt:]:
-    # Use a difference environment for each file.
+for infilename in args:
+    # Use a different environment for each file.
     bib = bibliography()
-    bib.options.update(options)
+    bib.setoptions(sys.argv[1:])
 
     # Parse the file.
-    outfile = sys.stdout
-    if infilename[-4:] == ".xtx" or infilename[-4:] == ".bib":
-        parsextxfile(infilename, bib)
-	if 'xtx2html' in bib.options and bib.options['xtx2html']:
-	    t = pipes.Template()
-	    t.append('hevea -O', '--')
-	    if infilename.endswith('.xtx') or infilename.endswith('.bib'):
-	        outfile = t.open(infilename[:-4] + '.html', 'w')
+    outfile = None
+    filename = None
+    try:
+	filename = processfile(infilename, bib)
+	outfilename = filename.split('/')[-1]
+	outfilename = outfilename[:outfilename.rfind('.') + 1] + bib.options.convert
+	try:
+	    if bib.options.convert == 'html':
+		t = pipes.Template()
+		t.append('hevea -O', '--')
+		outfile = t.open(outfilename, 'w')
 	    else:
-	        outfile = t.open(infilename + '.html', 'w')
-    else:
-        parseauxfile(infilename, bib)
-	if infilename.endswith('.aux'):
-	    outfile = open(infilename[:-4] + '.bbl', 'w')
-	else:
-	    outfile = open(infilename + '.bbl', 'w')
+		outfile = open(outfilename, 'w')
+	except:
+	    raise IOError, "unable to open output file %s" % outfilename
+    except Exception, details:
+	bib.error("crosstex: unable to process file %s: %s" % (infilename, details))
+	continue
 
-    # Ensure command-line arguments overwrite options in any .aux files.
-    bib.options.update(options)
-    if 'cite' in bib.options:
-        for citation in bib.options['cite'].split(','):
-	    bib.cite(citation)
+    if len(bib.options.cite) == 0 and not filename.endswith('.aux'):
+	bib.setoptions(['--cite', '*'])
 
     # Handle dump-locations, dump-conferences, etc.
-    for option in bib.options:
-	if option.startswith('dump-') and option[5:-1] in dir(crosstexobjects) and bib.options[option]:
-	    dumpclass = option[5:-1].lower()
-	    sys.stderr.write("%s\n" % (option[5:].upper() + ':'))
-	    for key in bib.primarykeys:
-		if bib[key]._name == dumpclass:
-		    sys.stderr.write("%s\t%s\n" % (key, bib[key]))
-
-    if len(bib.citations) == 0 and (('xtx2bib' in bib.options and bib.options['xtx2bib']) or ('xtx2html' in bib.options and bib.options['xtx2html'])):
-	bib.cite('*')
-
-    # Prepare the citation list.
-    bib.sortcitations()
+    for objtype in set(bib.options.dump):
+	objs = [ "%s\t%s\n" % (key, bib[key]) for key in bib.primarykeys if hasattr(crosstexobjects, objtype) and isinstance(bib[key], getattr(crosstexobjects, objtype)) ]
+	if len(objs) != 0:
+	    sys.stderr.write("%s\n" % (objtype.upper() + ':'))
+	    for i in objs:
+	        sys.stderr.write(i)
 
     # Print headers required by output format.
-    if 'xtx2bib' in bib.options and bib.options['xtx2bib']:
+    if bib.options.convert == 'bib':
 	for i in bib.preambles:
 	    outfile.write("@PREAMBLE { \"" + i + "\" }\n\n")
     else:
-	if 'xtx2html' in bib.options and bib.options['xtx2html']:
+	if bib.options.convert == 'html':
 	    outfile.write("\\documentclass{report}\n")
 	    outfile.write("\\usepackage{hyperref}\n")
 	    outfile.write("\\begin{document}\n")
 	for i in bib.preambles:
 	    outfile.write(i)
 	    outfile.write("\n")
+	if bib.options.blank_labels:
+	    outfile.write("\\makeatletter\\def\\@biblabel#1{}\\makeatother\n")
+        if bib.options.break_lines:
+	    outfile.write("\\renewcommand{\\newblock}{\\\\}")
+	outfile.write("\\newcommand{\\etalchar}[1]{$^{#1}$}\n")
+
+    # Format each titled section.
+    divided = bib.divided()
+    headings = divided.keys()
+    headings.sort()
+    for heading in headings:
+	if heading == '':
+	    continue
 	maxstr = ''
-	for key in bib.citations:
+	for key in divided[heading]:
 	    citekey = bib[key]._label().replace("{\\etalchar{+}}", "X")
 	    if len(citekey) > len(maxstr):
 		maxstr = citekey
-	if len(bib.citations) != 0:
-	    strlen = int(math.ceil(math.log(len(bib.citations), 10)))
-	    if maxstr == "" and ('blank-labels' not in bib.options or not bib.options['blank-labels']):
+	if len(divided[heading]) != 0:
+	    strlen = int(math.ceil(math.log(len(divided[heading]), 10)))
+	    if maxstr == "":
 		maxstr = "00000000000"[0:strlen]
 	    elif len(maxstr) >= 13:
-                maxstr = "XXXXXXXXXXXXX"
+		maxstr = "XXXXXXXXXXXXX"
 	else:
 	    maxstr = "X"
-	if 'blank-labels' in bib.options and bib.options['blank-labels']:
-	    outfile.write("\\makeatletter\\def\\@biblabel#1{}\\makeatother\n")
-        if 'break-lines' in bib.options and bib.options['break-lines']:
-	    outfile.write("\\renewcommand{\\newblock}{\\\\}")
-	outfile.write("\\newcommand{\\etalchar}[1]{$^{#1}$}\n")
+	outfile.write("{\\renewcommand{\\refname}{%s}\n" % heading)
 	outfile.write("\\begin{thebibliography}{" + maxstr + "}\n")
+	for key in divided[heading]:
+	    outfile.write(str(bib[key]))
+        outfile.write("\\end{thebibliography}}\n")
 
-    # Format each cited work.
-    for key in bib.citations:
-	outfile.write(str(bib[key]))
+    # Format the rest of the bibliography.
+    if '' in divided:
+	maxstr = ''
+	for key in divided['']:
+	    citekey = bib[key]._label().replace("{\\etalchar{+}}", "X")
+	    if len(citekey) > len(maxstr):
+		maxstr = citekey
+	if len(divided['']) != 0:
+	    strlen = int(math.ceil(math.log(len(divided['']), 10)))
+	    if maxstr == "":
+		maxstr = "00000000000"[0:strlen]
+	    elif len(maxstr) >= 13:
+		maxstr = "XXXXXXXXXXXXX"
+	else:
+	    maxstr = "X"
+	outfile.write("\\begin{thebibliography}{" + maxstr + "}\n")
+	for key in divided['']:
+	    outfile.write(str(bib[key]))
+	outfile.write("\\end{thebibliography}\n")
 
     # Print footers required by output format.
-    if 'xtx2bib' in bib.options and bib.options['xtx2bib']:
-	pass
-    else:
-        outfile.write("\\end{thebibliography}\n")
-	if 'xtx2html' in bib.options and bib.options['xtx2html']:
-	    outfile.write("\\end{document}\n")
+    if bib.options.convert == 'html':
+	outfile.write("\\end{document}\n")
     outfile.close()

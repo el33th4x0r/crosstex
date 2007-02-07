@@ -14,6 +14,8 @@
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+@default category = "Peer-to-Peer"
+
 @inproceedings{planetlab,
       title = "{Operating System Support for Planetary-Scale Network Services}",
       author  = "A. Bavier and M. Bowman and B. Chun and D. Culler and S. Karlin and S. Muir and L. Peterson and T. Roscoe and T. Spalink and M. Wawrzoniak",
@@ -23,6 +25,7 @@
 }
 
 % p2p substrates
+@default category = "Peer-to-Peer Substrates"
 
 @phdthesis{rama:thesis,
       author = "Venugopalan Ramasubramanian",
@@ -200,6 +203,7 @@ author = "A. Bharambe and M. Agrawal and S. Seshan",
 }
 
 % p2p apps
+@default category = "Peer-to-Peer Applications"
 
 @inproceedings{skype,
       author =	 "Saikat Guha and Neil Daswani",
@@ -399,6 +403,7 @@ author = "A. Bharambe and M. Agrawal and S. Seshan",
 
 
 % webcaching and CDN papers
+@default category = "Webcaching and Content Delivery"
 
 @inproceedings{ttlcache,
       author = "Jaeyon Jung and Arthur Berger and Hari Balakrishnan",
@@ -639,6 +644,7 @@ author = "A. Bharambe and M. Agrawal and S. Seshan",
 }
 
 % network location and overlay routing
+@default category = "Network location and overlay routing"
 
 @inproceedings{Vivaldi,
       author = "Frank Dabek and Russel Cox and Frans Kaashoek and Robert Morris",
@@ -832,6 +838,7 @@ author = "A. Slivkins",
 }
 
 % networking
+@default category = "Networking"
 
 @inproceedings{ yajnik99measurement,
       author =     "Maya Yajnik and Sue B. Moon and James F. Kurose and Donald F. Towsley",
@@ -867,6 +874,7 @@ author = "A. Slivkins",
 }
 
 % bgp
+@default category = "BGP"
 
 @misc{bgpsecurity,
       author = "Blaine Christian and Tony Tauber",
@@ -1275,6 +1283,7 @@ author = "A. Slivkins",
 }
 
 % failures and fault tolerance
+@default category = "Failures and Fault-Tolerance"
 
 @inproceedings{failuredetection:infocom05,
       author = "Shelley Zhuang and Dennis Geels and Ion Stoica and Randy Katz",
@@ -1512,6 +1521,7 @@ author =       "O. Babaoglu and R. Davoli and L. A. Giachini and M. G. Baker",
 
 
 % network embeddings
+@default category = "Network embeddings"
 
 @inproceedings{Hildrum-DOL,
 author = "K. Hildrum and J. Kubiatowicz and S. Rao and B. Zhao",
@@ -1668,6 +1678,7 @@ author = "K. Talwar",
 }
 
 % distributed systems
+@default category = "Distributed systems"
 
 @article{coca,
       author = "Lidong Zhou and Fred B. Schneider and Robbert van Renesse",
@@ -1721,6 +1732,7 @@ author = "A. Demers and D. Greene and C. Hauser and W. Irish and J. Larson and S
 
 
 % dns
+@default category = "DNS"
 
 @inproceedings{pappas,
       author = "Vasileios Pappas and Zhiguo Xu and Songwu Lu and Daniel Massey and Andreas Terzis and Lixia Zhang",
@@ -1840,6 +1852,7 @@ author = "A. Demers and D. Greene and C. Hauser and W. Irish and J. Larson and S
 }
 
 % pubsub
+@default category = "Pub-Sub"
 
 @inproceedings{xtreenet,
       author =	 "William Fenner and Michael Rabinovich and K K Ramakrishnan and Divesh Srivastava and Yin Zhang",
@@ -1917,6 +1930,7 @@ author = "A. Demers and D. Greene and C. Hauser and W. Irish and J. Larson and S
 }
 
 % measurement
+@default category = "Measurement"
 
 @inproceedings{filesharingworkload,
       author = "Krishna P. Gummadi and Richard J. Dunn and Stefan Saroiu and Steven D. Gribble and Henry M. Levy and  John Zahorjan",
@@ -1976,6 +1990,7 @@ author = "C. Barber and D. Dobkin and H. Huhdanpaa",
 %% Operating Systems
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@default category = "Operating Systems"
 
 @inproceedings{vtpm,
       title = "{vTPM: Virtualizing the Trusted Platform Module}",
@@ -2140,6 +2155,7 @@ author = "C. Barber and D. Dobkin and H. Huhdanpaa",
 }
 
 % security
+@default category = "Security"
 
 @inproceedings{sundr,
       author = "Jinyuan Li and Maxwell Krohn and David Mazieres and Dennis Shasha",
@@ -2262,6 +2278,7 @@ author = "C. Barber and D. Dobkin and H. Huhdanpaa",
 }
 
 % user level drivers
+@default category = "User-level drivers"
 
 @inproceedings{ nooks-recovering,
       author = "Michael M. Swift and Muthukaruppan Annamalai and Brian N. Bershad and Henry M. Levy",
@@ -2305,6 +2322,7 @@ author = "C. Barber and D. Dobkin and H. Huhdanpaa",
 }
 
 % core os
+@default category = "Core Operating System"
 
 @inproceedings{ ostia-interpose,
       author = "Tal Garfinkel and Ben Pfaff and Mendel Rosenblum",
@@ -2405,6 +2423,7 @@ author = "C. Barber and D. Dobkin and H. Huhdanpaa",
 }
 
 % oldies
+@default category = "Oldies"
 
 @book{Rag95,
 author = "R. Motwani and P. Raghavan",
@@ -2494,6 +2513,7 @@ author = "R. Motwani and P. Raghavan",
 }
 
 % crypto
+@default category = "Crypto"
 
 @inproceedings{tweakable,
       author = "Moses Liskov and Ronald L. Rivest and David Wagner",
@@ -2520,7 +2540,9 @@ author = "R. Motwani and P. Raghavan",
       editor = "Clement Kent",
       howpublished =  "\biburl{http://www.siswg.org/docs/LRW-AES-10-19-2004.pdf}"
 }
+
 % rfcs, internet drafts, standards and urls
+@default category = "RFCs, Internet Drafts, Standards, and URLs"
 
 @misc{straw,
       key = "Straw",

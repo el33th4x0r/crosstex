@@ -21,12 +21,11 @@ class bibobject(object):
     _line = 0
     _file = ''
     _name = ''
-    _options = {}
     _assigned = set()
     _conditionals = []
     _citekey = ''
 
-    def __init__(self, conditionals, file, line, options = {}):
+    def __init__(self, conditionals, file, line, options):
         self._line = line
         self._file = file
         self._name = type(self).__name__
@@ -99,7 +98,7 @@ class authorlist(list):
         self._options = options
 
     def __str__(self):
-        if 'xtx2bib' in self._options and self._options['xtx2bib']:
+        if self._options.convert == 'bib':
             return ' and '.join([ str(author) for author in self ])
         value = ''
         for i in range(0, len(self)):
@@ -133,8 +132,7 @@ class string(bibobject):
         bibobject._assign(self, key, value)
 
     def __str__(self):
-        optname = 'use-short-' + self._name + 'names'
-        if optname in self._options and self._options[optname]:
+        if self._name in self._options.short:
             return str(self.shortname)
         else:
             return str(self.name)
@@ -193,6 +191,21 @@ class author(string):
         # return the person info as a 3-tuple
         return (names[0:mnameoffset+1], lname, sname)
 
+    def _last_initials(self, size):
+	(fnames, lname, sname) = self._names()
+	namestr = ""
+	first = 0
+	while first < len(lname):
+	    if lname[first] not in "{}\\":
+		namestr += lname[first]
+		if len(namestr) >= size:
+		    break
+	    elif lname[first] == "\\":
+		first += 2
+	    else:
+		first += 1
+	return namestr
+
     def __cmp__(self, other):
 	if isinstance(other, author):
 	    return cmp(self._names()[1], other._names()[1])
@@ -200,15 +213,14 @@ class author(string):
 	    return cmp(self._names()[1], other)
 
     def __str__(self):
-        optname = 'use-short-' + self._name + 'names'
-        if optname in self._options and self._options[optname] and 'shortname' in self._assigned:
+        if self._name in self._options.short and 'shortname' in self._assigned:
             return str(self.shortname)
         else:
             (fnames, lname, sname) = self._names()
             namestr = ""
             for n in fnames:
                 pad = ""
-                if optname in self._options and self._options[optname]:
+                if self._name in self._options.short:
                     first = 0
                     while first < len(n):
                         if n[first] not in "{}\\":
@@ -281,6 +293,7 @@ class misc(bibobject):
     bib = ''
     bibsource = ''
     booktitle = ''
+    category = ''
     chapter = ''
     contents = ''
     copyright = ''
@@ -348,24 +361,22 @@ class misc(bibobject):
         authors = self.author
 	if len(authors) == 0 and len(self.editor) != 0:
 	    authors = self.editor
-        if len(authors) == 0 and 'cite-by' in self._options and self._options['cite-by'] != 'number':
-            label = str(self.key)
-        elif 'cite-by' in self._options and self._options['cite-by'] == 'initials':
+        if len(authors) == 0:
+	    if self._options.cite_by != 'number':
+                label = str(self.key)
+        elif self._options.cite_by == 'initials':
             if len(authors) == 1:
-                (fnames, lname, sname) = authors[0]._names()
-                label += lname[0:3]
+                label += authors[0]._last_initials(3)
             elif len(authors) <= 4:
                 for i in range(0, min(len(authors), 4)):
-                    (fnames, lname, sname) = authors[i]._names()
-                    label += lname[0]
+                    label += authors[i]._last_initials(1)
             else:
                 for i in range(0, min(len(authors), 3)):
-                    (fnames, lname, sname) = authors[i]._names()
-                    label += lname[0]
+                    label += authors[i]._last_initials(1)
                 label += "{\etalchar{+}}"
             if self.year != '':
                    label += "%02d" % (int(str(self.year)) % 100)
-        elif 'cite-by' in self._options and self._options['cite-by'] == 'fullname':
+        elif self._options.cite_by == 'fullname':
             if len(authors) == 2:
                 (fnames1, lname1, sname1) = authors[0]._names()
                 (fnames2, lname2, sname2) = authors[1]._names()
@@ -377,8 +388,6 @@ class misc(bibobject):
                     label += " et al."
             if self.year != '':
                    label += " %02d" % (int(str(self.year)) % 100)
-        else:
-            label = ''
         # Ensure the label is unique
         if label in usedlabels:
             for char in "abcdefghijklmnopqrstuvwxyz":
@@ -395,12 +404,8 @@ class misc(bibobject):
     def _title(self):
         value = str(self.title)
         if value != '':
-            if 'title-uppercase' in self._options and self._options['title-uppercase']:
-                value = citationcase(value, "upper")
-            elif 'title-lowercase' in self._options and self._options['title-lowercase']:
-                value = citationcase(value, "lower")
-            elif 'title-titlecase' in self._options and self._options['title-titlecase']:
-                value = citationcase(value, "title")
+	    if self._options.titlecase != 'default':
+                value = citationcase(value, self._options.titlecase)
         return value
 
     def _publication(self):
@@ -442,7 +447,7 @@ class misc(bibobject):
         return value
 
     def __str__(self):
-        if 'xtx2bib' in self._options and self._options['xtx2bib']:
+        if self._options.convert == 'bib':
             value = "@%s{%s" % (self._name, self._citekey)
             for field in self._assigned:
                 fieldvalue = str(getattr(self, field))
@@ -454,7 +459,7 @@ class misc(bibobject):
 	    valueauthor = self._fullauthors()
 	    valuetitle = self._fulltitle()
 	    valuepublication = self._fullpublication()
-	    if 'title-head' in self._options and self._options['title-head']:
+	    if self._options.title_head:
 		if valuetitle != '':
 		    if value != '':
 			value += "\n\\newblock "
@@ -478,29 +483,28 @@ class misc(bibobject):
 		value += valuepublication
 
             abstractlink = False
-            if 'links' in self._options and self._options['links'] != 'none':
-		links = ''
-                for field in self._options['links'].split(','):
-                    myfield = field.lower()
-                    if hasattr(self, myfield) and getattr(self, myfield) != '':
-                        for m in linkre.finditer(str(getattr(self, myfield))):
-			    uri = m.group()
-			    linksub.sub(uri, "")
-                            if links != '':
-                                links += ' '
-                            links += "\\href{%s}{\\small\\textsc{%s}}" % (uri, field)
-                            if myfield == 'abstract':
-                                abstractlink = True
-                if links != '':
-                    if value != '':
-                        value += "\n\\newblock "
-                    value += links
+	    links = ''
+	    for field in self._options.link:
+		myfield = field.lower()
+		if hasattr(self, myfield) and getattr(self, myfield) != '':
+		    for m in linkre.finditer(str(getattr(self, myfield))):
+			uri = m.group()
+			linksub.sub(uri, "")
+			if links != '':
+			    links += ' '
+			links += "\\href{%s}{\\small\\textsc{%s}}" % (uri, field)
+			if myfield == 'abstract':
+			    abstractlink = True
+	    if links != '':
+		if value != '':
+		    value += "\n\\newblock "
+		value += links
 
-            if self.abstract != '' and 'abstract' in self._options and self._options['abstract'] and not abstractlink:
+            if self.abstract != '' and self._options.abstract and not abstractlink:
                 if value != '':
                     value += "\n"
                 value += "\\begin{quotation}\\noindent\\begin{small}%s\\end{small}\\end{quotation}" % str(self.abstract)
-            if self.keywords != '' and 'keywords' in self._options and self._options['keywords']:
+            if self.keywords != '' and self._options.keywords:
                 if value != '':
                     value += "\n"
                 value += "\\begin{quote}\\begin{small}\\textsc{Keywords:} %s\\end{small}\\end{quote}" % str(self.keywords)
@@ -518,9 +522,9 @@ class article(misc):
     year = None
 
     def _publication(self):
-        value = ''
-        if 'use-inforarticles' in self._options and self._options['use-inforarticles']:
-            value = 'In '
+        value = self._options.in_str
+        if value != '':
+            value += ' '
         value += "{\\em %s}" % str(self.journal)
         if self.volume != '':
             if self.number == '' and self.pages == '':
@@ -568,12 +572,10 @@ class inproceedings(misc):
     year = None
 
     def _publication(self):
-        procof = ''
-        if 'add-proceedingsof' in self._options and self._options['add-proceedingsof']:
-            procof = 'Proceedings of the '
-        elif 'add-procof' in self._options and self._options['add-procof']:
-            procof = 'Proc. of '
-        value = "In %s{\\em %s}" % (procof, str(self.booktitle))
+        value = ' '.join(['In', self._options.proceedings_str])
+        if value != '':
+            value += ' '
+        value += "{\\em %s}" % str(self.booktitle)
         if self.editor != '':
             value += ", %s, ed." % str(self.editor)
         return value
