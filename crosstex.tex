@@ -105,27 +105,28 @@ This aliasing can be done for any object and can be used anywhere in the databas
 
 \subsection{Representation}
 
-Every kind of object, such as \texttt{month}, \texttt{location}, \texttt{author}, and \texttt{article}, knows how to represent itself as a string suitable for inclusion in \LaTeX{}. For example, when \texttt{mypaper} referred to \texttt{sep} in the example, the actual value assigned was ``September''. Some objects, such as \texttt{mypaper}, will produce entire bibliography entries when referred to. In fact, when generating bibliographies, \texttt{crosstex} simply prints out the string representations of all the objects cited in the document. Naturally, each object takes note of certain options and represents itself accordingly.
+Every kind of object, such as \texttt{month}, \texttt{location}, \texttt{author}, and \texttt{article}, knows how to convert itself into a string suitable for inclusion in the references section of a scholarly publication. For example, when \texttt{mypaper} referred to \texttt{sep} in the example, the actual value assigned was ``September''. Some objects, such as \texttt{mypaper}, will produce entire bibliography entries when referred to. In fact, when generating bibliographies, \texttt{crosstex} simply prints out the string representations of all the objects cited in the document.  Each object takes note of options passed into CrossTeX and generates a string representation accordingly.
 
 Simple, named objects, such as \texttt{month}, \texttt{location}, \texttt{author}, and others, have two forms: A long form and a short form. The object \texttt{sep} could be defined:
 
 \begin{small}\begin{verbatim}
 @month{sep,
   name = "September",
-  shortname = "Sep."
+  shortname = "Sept."
 }
 \end{verbatim}\end{small}
 
-By default, long names are used. If, however, the option \texttt{--short month} were given, the same object would represent itself as ``Sep.'' instead of ``September''. If only a name (no shortname) is specified, or, conversely, if only a shortname but no name is specified, the name given will be used in all cases. All named objects follow this pattern.
+By default, long names are used when generating bibliographic entries. If, however, the option \texttt{--short month} were given, the same month object would be shown as ``Sept.'' instead of ``September''. If only a name (no shortname) is specified, or, conversely, if only a shortname but no name is specified, the name given will be used in all cases. All named objects follow this pattern.
 
-However, because person names are so complicated, \texttt{author} objects are somewhat magic. If \texttt{--short author} is specified, authors will be represented with initials and a last name---the object \texttt{egs} would be represented ``E. G. Sirer''. If a \texttt{shortname} field is explicitly given for an author, that takes precedence and can be used for special cases. By default, however, \XTeX{} is aware of many kinds of names and can correctly handle complexities such as Jr., Sr., III, IV, von, van, de, bin, and ibn. Just write the names out in full in their natural order, and \XTeX{} will handle them properly, including such entries as:
+However, because person names are so complicated, \texttt{author} objects are somewhat magical. If \texttt{--short author} is specified, authors will be represented with initials and a last name---the object \texttt{egs} would be represented ``E. G. Sirer''. If a \texttt{shortname} field is explicitly given for an author, that takes precedence and can be used for special cases. 
+By default, \XTeX{} is aware of many kinds of names and can correctly handle suffixes and last name modifiers such as Jr., Sr., III, IV, von, van, de, bin, and ibn. Just write the names out in full in their natural order, and \XTeX{} will render them properly, including such entries as:
 
 \begin{small}\begin{verbatim}
 @author{rvr, name = "Robbert van Renesse"}
 @author{ldv, name = "Louis de Vargas, III"}
 \end{verbatim}\end{small}
 
-The \texttt{author} field (not to be confused with the \texttt{author} kind of object) is also somewhat special. Users of \BibTeX{} are familiar with specifying multiple authors thus:
+The \texttt{author} field is also somewhat special. Users of \BibTeX{} are familiar with specifying multiple authors as follows:
 
 \begin{small}\begin{verbatim}
 @inproceedings{credence,
@@ -137,9 +138,16 @@ The \texttt{author} field (not to be confused with the \texttt{author} kind of o
 }
 \end{verbatim}\end{small}
 
-And, assuming the objects \texttt{kwalsh} and \texttt{egs} are defined appropriately, the following correctly refers to them:
+Having looked up the rather non-trivial escape sequence to get the umlaut 
+correct, and having made sure that all names are spelled correctly, there
+is no need to repeat or cut-and-paste the same information over and over
+again. The following sequence has the same effect as the previous one, 
+and is much easier to maintain:
+
 
 \begin{small}\begin{verbatim}
+@author{kwalsh, name = "Kevin Walsh"}
+@author{egs, name = "Emin {G\"un} Sirer"}
 @inproceedings{credence,
   title = "{Experience with an Object
             Reputation System for 
@@ -149,14 +157,13 @@ And, assuming the objects \texttt{kwalsh} and \texttt{egs} are defined appropria
 }
 \end{verbatim}\end{small}
 
-Otherwise, \texttt{month = sep} and \texttt{month = "sep"} are very different things; the first refers to the \texttt{sep} object, while the second uses the literal string ``sep''.
-
+In all other contexts, string literals and object references are quite different: \texttt{month = sep} refers to the \texttt{sep} object, which carries additional fields and is rendered differently depending on the context and options, while \texttt{month = "sep"} always generates the literal string ``sep''.
 
 \subsection{Under the hood: References}
 
-Making a reference to a defined object such as \texttt{month = sep} causes the \texttt{month} field to gain the stringified value of the object \texttt{sep}, in this case ``September''. However, it also causes something else to happen after all the fields have been assigned: Any required or optional fields that do not yet have values will try to inherit them from the referenced object \texttt{sep}, if it has them. The actual \texttt{month} objects defined in the included \texttt{dates.xtx}, for example, defined \texttt{monthno} fields in addition to their names, which will be pulled along into objects that refer to them. This mechanism is essentially equivalent to the \texttt{crossref} field from \BibTeX{}, but occurs for all fields.
+Referring to an object, as in \texttt{month = sep}, assigns the stringified value of the object \te\xttt{sep}, in this case ``September'', to the \texttt{month} field of the object. In addition, it triggers something else to happen after all the fields have been assigned: Any required or optional fields in the referring object that do not yet have values will try to inherit them from the referenced object \texttt{sep}, if it has them. The actual \texttt{month} objects defined in the included \texttt{dates.xtx}, for example, define \texttt{monthno} fields in addition to their names. This value will be pulled along into objects that refer to months, enabling such objects to be sorted by month number easily. Power-users of \BibTeX{} will note that this mechanism is essentially equivalent to the \texttt{crossref} field in \BibTeX{}. The main difference here is that \XTeX{} supports this mechanism in a uniform manner across all object fields.
 
-This can be combined with a new, advanced feature of \XTeX{}: Conditional fields. Here is an example:
+This can be combined with a new, advanced feature of \XTeX{}, conditional fields, to greatly simplfy object specifications. Here is an example:
 
 \begin{small}\begin{verbatim}
 @conference{nsdi,
@@ -168,9 +175,15 @@ This can be combined with a new, advanced feature of \XTeX{}: Conditional fields
 }
 \end{verbatim}\end{small}
 
-This is a simple \texttt{conference} object, which is string-like and subject to \texttt{--short conference}, etc. (\texttt{longname} is an alias for \texttt{name}.) However, if the \texttt{year} field is equal to 2006, it additionally has the fields \texttt{address=SanJose, month=may}. In a different year, a different conditional might be triggered. Any, all, or none of the conditionals mentioned may be appropriate (although obviously in this case, the year can only have one value). By itself, this isn't so useful; it sets no extra fields in the \texttt{nsdi} object because \texttt{year} isn't even set in it.
+This is a simple \texttt{conference} object whose short name is "NSDI"
+and long name is "Symposium on Networked System Design and
+Implementation". In addition, it carries some conditional fields; that is, 
+fields that are included in the object only if they match the data in the
+referring context. For instance, if the \texttt{year} field of the referring object is equal to 2006, the nsdi object additionally has the fields \texttt{address=SanJose, month=may}. In a different year, a different conditional might be triggered. Any, all, or none of the conditionals mentioned may be appropriate (although obviously in this case, the year can only have one value).
 
-However, look at the following reference:
+By itself, conditional fields are not very useful; their value in 
+simplifying object references becomes apparent when they are used
+in context. Look at the following reference:
 
 \begin{small}\begin{verbatim}
 @inproceedings{credence,
@@ -181,12 +194,27 @@ However, look at the following reference:
 }
 \end{verbatim}\end{small}
 
-The \texttt{credence} object will know that it occurred in San Jose in May, because it inherits all the fields, including conditional ones from \texttt{kwalsh}, \texttt{egs}, and \texttt{nsdi}. If, however, it had already set the month field, it would not be missing and thus would not be inherited. (The address still would be.)
+Conditional fields defined in the \textt{nsdi} object will define the
+address and month fields of the conference based on the reference, 
+and the resulting \texttt{credence} object will know that it occurred
+in San Jose in May through inheritence. This allows paper citations
+to avoid common errors by allowing all conference dates and locations
+to be defined in one place, and inherited correctly, without typos,
+by all papers that appeared at that conference. 
 
+If one wanted to override field inheritence for whatever reason, it would suffice to specify, say, a different month for the \texttt{credence} object. Only those fields that are missing in the referring context are inherited. Thus explicitly assigned information has precedence.
 
 \subsection{Managing databases}
 
-Obviously, re-inventing \texttt{sep} and \texttt{SanJose} in every database would be exhausting. Instead, like objects can be collected together---for example, in \texttt{dates.xtx} and \texttt{locations.xtx}, as they are in the \XTeX{} distribution---and included where needed. For example, here is a potentially complete \texttt{.xtx} file based on the standard \XTeX{} distribution:
+Obviously, re-inventing \texttt{sep} and \texttt{SanJose} in every
+database would be exhausting. Instead, like objects can be collected
+together---for example, the standard \XTeX{} distribution provides 
+\texttt{dates.xtx}, which defines English month names, and 
+\texttt{locations.xtx}, which defines all locations at which a 
+major computer science conference was held in the recent years.
+Such modules can be includes with the \textt{@include} primitive.
+For example, here is a complete \texttt{.xtx}
+file based on the standard \XTeX{} distribution:
 
 \begin{small}\begin{verbatim}
 @include conferences
@@ -212,6 +240,16 @@ This will search for \texttt{conferences.xtx} or \texttt{conferences.bib} and in
 \end{verbatim}\end{small}
 
 Thus, the \texttt{credence} object has access to well-defined locations, dates, and conference names.
+
+It is possible for the same object to be defined multiple times under the 
+same key (sometimes, this is inevitable when there are multiple bibliographic
+databases involved maintained by different entities). By default, \XTeX{}
+will silently ignore such definitions as long as all versions of the object
+are identical. When two separate objects defined under the same key are not
+identical, it points to an inconsistency in the bibliographic database, which
+will cause \XTeX{} to issue a warning. Passing \XTeX{} the \textt{--strict} flag will force it to issue such warnings even when the objects are identical,
+to help facilitate people who might want to maintain databases free of
+duplicate entries.
 
 When databases get exceptionally long and many elements have very similar fields---e.g., they are all in the same conference or have the same informative \texttt{category} field---you can make use of another special \XTeX{} command, \texttt{@default}. For example, here is the beginning of the \texttt{usenix.xtx} database:
 
@@ -305,8 +343,10 @@ Later in the file are entries with different years. A new \texttt{@default} comm
 ...
 \end{verbatim}\end{small}
 
-The defaults for \texttt{booktitle} and \texttt{bibsource} remain. Another important thing to note is that, as usual, fields that are explicitly set will take that value: They will only inherit default fields if those fields are not already defined.
-
+As with field values inherited from references objects, field values
+inherited from \texttt{default} definitions have lower precedence. Any
+object that explicitly assigns a value to a field will override any 
+\texttt{default} definitions in effect at that point in the bibliography.
 
 
 \section{Invoking \texttt{crosstex}}
