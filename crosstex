@@ -149,20 +149,23 @@ class bibliography(dict):
 	if self._citations != None:
 	    return self._citations
 	self._citations = []
+	cited = set()
 
 	for key in self.options.cite:
 	    if key == '*':
 		for i in self.primarykeys:
-		    if hasattr(self[i], '_label') and i not in self._citations:
+		    if hasattr(self[i], '_label') and i not in cited:
 			self._citations += [i]
+			cited.add(i)
 	    else:
 		if key in self:
 		    if hasattr(self[key], '_label'):
-			if self.aliases[key] == key:
-			    if key not in self._citations:
-				self._citations += [key]
+			if self.aliases[key] not in cited:
+			    self[key]._citekey = key
+			    self._citations.append(key)
+			    cited.add(self.aliases[key])
 			else:
-			    self.warning("crosstex: citation for non-primary key %s" % key)
+			    self.warning("crosstex: duplicate citation %s; each object may be cited by only one alias" % key)
 		    else:
 			self.warning("crosstex: %s %s is not citable" % (self[key]._name, key))
 		else:
