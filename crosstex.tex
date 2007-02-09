@@ -1,8 +1,10 @@
 \documentclass{article}
 \usepackage{hyperref}
 
+%HEVEA \renewcommand{\TeX}{TeX}
 \newcommand{\XTeX}{Cross\TeX}
 \newcommand{\BibTeX}{\textsc{Bib}\TeX}
+%HEVEA \renewcommand{\par}{\begin{rawhtml}<p>\end{rawhtml}}
 
 \title{\XTeX{} Tutorial}
 \author{Emin G\"un Sirer and Robert Burgess}
@@ -161,7 +163,7 @@ In all other contexts, string literals and object references are quite different
 
 \subsection{Under the hood: References}
 
-Referring to an object, as in \texttt{month = sep}, assigns the stringified value of the object \te\xttt{sep}, in this case ``September'', to the \texttt{month} field of the object. In addition, it triggers something else to happen after all the fields have been assigned: Any required or optional fields in the referring object that do not yet have values will try to inherit them from the referenced object \texttt{sep}, if it has them. The actual \texttt{month} objects defined in the included \texttt{dates.xtx}, for example, define \texttt{monthno} fields in addition to their names. This value will be pulled along into objects that refer to months, enabling such objects to be sorted by month number easily. Power-users of \BibTeX{} will note that this mechanism is essentially equivalent to the \texttt{crossref} field in \BibTeX{}. The main difference here is that \XTeX{} supports this mechanism in a uniform manner across all object fields.
+Referring to an object, as in \texttt{month = sep}, assigns the stringified value of the object \texttt{sep}, in this case ``September'', to the \texttt{month} field of the object. In addition, it triggers something else to happen after all the fields have been assigned: Any required or optional fields in the referring object that do not yet have values will try to inherit them from the referenced object \texttt{sep}, if it has them. The actual \texttt{month} objects defined in the included \texttt{dates.xtx}, for example, define \texttt{monthno} fields in addition to their names. This value will be pulled along into objects that refer to months, enabling such objects to be sorted by month number easily. Power-users of \BibTeX{} will note that this mechanism is essentially equivalent to the \texttt{crossref} field in \BibTeX{}. The main difference here is that \XTeX{} supports this mechanism in a uniform manner across all object fields.
 
 This can be combined with a new, advanced feature of \XTeX{}, conditional fields, to greatly simplfy object specifications. Here is an example:
 
@@ -194,7 +196,7 @@ in context. Look at the following reference:
 }
 \end{verbatim}\end{small}
 
-Conditional fields defined in the \textt{nsdi} object will define the
+Conditional fields defined in the \texttt{nsdi} object will define the
 address and month fields of the conference based on the reference, 
 and the resulting \texttt{credence} object will know that it occurred
 in San Jose in May through inheritence. This allows paper citations
@@ -212,7 +214,7 @@ together---for example, the standard \XTeX{} distribution provides
 \texttt{dates.xtx}, which defines English month names, and 
 \texttt{locations.xtx}, which defines all locations at which a 
 major computer science conference was held in the recent years.
-Such modules can be includes with the \textt{@include} primitive.
+Such modules can be includes with the \texttt{@include} primitive.
 For example, here is a complete \texttt{.xtx}
 file based on the standard \XTeX{} distribution:
 
@@ -247,7 +249,7 @@ databases involved maintained by different entities). By default, \XTeX{}
 will silently ignore such definitions as long as all versions of the object
 are identical. When two separate objects defined under the same key are not
 identical, it points to an inconsistency in the bibliographic database, which
-will cause \XTeX{} to issue a warning. Passing \XTeX{} the \textt{--strict} flag will force it to issue such warnings even when the objects are identical,
+will cause \XTeX{} to issue a warning. Passing \XTeX{} the \texttt{--strict} flag will force it to issue such warnings even when the objects are identical,
 to help facilitate people who might want to maintain databases free of
 duplicate entries.
 

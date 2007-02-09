@@ -615,7 +615,14 @@ class phdthesis(thesis):
     _thesistype = 'Ph.D.'
 
 class patent(misc):
-    pass
+    author = None
+    title = None
+    number = None
+    month = None
+    year = None
+
+    def _publication(self):
+        return "United States Patent %s", str(self.number)
 
 class proceedings(misc):
     title = None
