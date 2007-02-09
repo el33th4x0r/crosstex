@@ -8,7 +8,6 @@
   year      = 2006,
   pages     = {1},
   ee        = {http://doi.acm.org/10.1145/1161089.1161090},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -22,7 +21,6 @@
   year      = 2006,
   pages     = {2-13},
   ee        = {http://doi.acm.org/10.1145/1161089.1161092},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -36,7 +34,6 @@
   year      = 2006,
   pages     = {14-25},
   ee        = {http://doi.acm.org/10.1145/1161089.1161093},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -50,7 +47,6 @@
   year      = 2006,
   pages     = {26-37},
   ee        = {http://doi.acm.org/10.1145/1161089.1161094},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -63,7 +59,6 @@
   year      = 2006,
   pages     = {38-49},
   ee        = {http://doi.acm.org/10.1145/1161089.1161095},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -79,7 +74,6 @@
   year      = 2006,
   pages     = {50-61},
   ee        = {http://doi.acm.org/10.1145/1161089.1161097},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -94,7 +88,6 @@
   year      = 2006,
   pages     = {62-73},
   ee        = {http://doi.acm.org/10.1145/1161089.1161098},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -108,7 +101,6 @@
   year      = 2006,
   pages     = {74-85},
   ee        = {http://doi.acm.org/10.1145/1161089.1161099},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -122,7 +114,6 @@
   year      = 2006,
   pages     = {86-97},
   ee        = {http://doi.acm.org/10.1145/1161089.1161100},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -136,7 +127,6 @@
   year      = 2006,
   pages     = {98-109},
   ee        = {http://doi.acm.org/10.1145/1161089.1161102},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -153,7 +143,6 @@
   year      = 2006,
   pages     = {110-121},
   ee        = {http://doi.acm.org/10.1145/1161089.1161103},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -166,7 +155,6 @@
   year      = 2006,
   pages     = {122-133},
   ee        = {http://doi.acm.org/10.1145/1161089.1161104},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -179,7 +167,6 @@
   year      = 2006,
   pages     = {134-145},
   ee        = {http://doi.acm.org/10.1145/1161089.1161105},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -193,7 +180,6 @@
   year      = 2006,
   pages     = {146-157},
   ee        = {http://doi.acm.org/10.1145/1161089.1161107},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -209,7 +195,6 @@
   year      = 2006,
   pages     = {158-169},
   ee        = {http://doi.acm.org/10.1145/1161089.1161108},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -225,7 +210,6 @@
   year      = 2006,
   pages     = {170-181},
   ee        = {http://doi.acm.org/10.1145/1161089.1161109},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -240,7 +224,6 @@
   year      = 2006,
   pages     = {182-193},
   ee        = {http://doi.acm.org/10.1145/1161089.1161111},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -255,7 +238,6 @@
   year      = 2006,
   pages     = {194-205},
   ee        = {http://doi.acm.org/10.1145/1161089.1161112},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -269,7 +251,6 @@
   year      = 2006,
   pages     = {206-214},
   ee        = {http://doi.acm.org/10.1145/1161089.1161113},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -284,7 +265,6 @@
   year      = 2006,
   pages     = {215-226},
   ee        = {http://doi.acm.org/10.1145/1161089.1161114},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -297,7 +277,6 @@
   year      = 2006,
   pages     = {227-238},
   ee        = {http://doi.acm.org/10.1145/1161089.1161116},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -310,7 +289,6 @@
   year      = 2006,
   pages     = {239-250},
   ee        = {http://doi.acm.org/10.1145/1161089.1161117},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -323,7 +301,6 @@
   year      = 2006,
   pages     = {251-261},
   ee        = {http://doi.acm.org/10.1145/1161089.1161118},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -339,7 +316,6 @@
   year      = 2006,
   pages     = {262-273},
   ee        = {http://doi.acm.org/10.1145/1161089.1161119},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -352,7 +328,6 @@
   year      = 2006,
   pages     = {274-285},
   ee        = {http://doi.acm.org/10.1145/1161089.1161121},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -365,7 +340,6 @@
   year      = 2006,
   pages     = {286-297},
   ee        = {http://doi.acm.org/10.1145/1161089.1161122},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -379,7 +353,6 @@
   year      = 2006,
   pages     = {298-309},
   ee        = {http://doi.acm.org/10.1145/1161089.1161123},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -394,7 +367,6 @@
   year      = 2006,
   pages     = {310-321},
   ee        = {http://doi.acm.org/10.1145/1161089.1161124},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -406,7 +378,6 @@
   year      = 2006,
   pages     = {322-333},
   ee        = {http://doi.acm.org/10.1145/1161089.1161126},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -422,7 +393,6 @@
   year      = 2006,
   pages     = {334-345},
   ee        = {http://doi.acm.org/10.1145/1161089.1161127},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -434,7 +404,6 @@
   year      = 2006,
   pages     = {346-357},
   ee        = {http://doi.acm.org/10.1145/1161089.1161128},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -447,7 +416,6 @@
   year      = 2006,
   pages     = {358-365},
   ee        = {http://doi.acm.org/10.1145/1161089.1161129},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -461,7 +429,6 @@
   year      = 2006,
   pages     = {366-377},
   ee        = {http://doi.acm.org/10.1145/1161089.1161131},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -476,7 +443,6 @@
   year      = 2006,
   pages     = {378-389},
   ee        = {http://doi.acm.org/10.1145/1161089.1161132},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -489,7 +455,6 @@
   year      = 2006,
   pages     = {390-401},
   ee        = {http://doi.acm.org/10.1145/1161089.1161133},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -504,7 +469,6 @@
   year      = 2006,
   pages     = {402-413},
   ee        = {http://doi.acm.org/10.1145/1161089.1161134},
-  crossref  = {DBLP:conf/mobicom/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -517,7 +481,6 @@
   year      = 2005,
   pages     = {1-15},
   ee        = {http://doi.acm.org/10.1145/1080829.1080831},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -531,7 +494,6 @@
   year      = 2005,
   pages     = {16-30},
   ee        = {http://doi.acm.org/10.1145/1080829.1080832},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -546,7 +508,6 @@
   year      = 2005,
   pages     = {31-42},
   ee        = {http://doi.acm.org/10.1145/1080829.1080833},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -559,7 +520,6 @@
   year      = 2005,
   pages     = {43-57},
   ee        = {http://doi.acm.org/10.1145/1080829.1080835},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -573,7 +533,6 @@
   year      = 2005,
   pages     = {58-72},
   ee        = {http://doi.acm.org/10.1145/1080829.1080836},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -586,7 +545,6 @@
   year      = 2005,
   pages     = {73-87},
   ee        = {http://doi.acm.org/10.1145/1080829.1080837},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -599,7 +557,6 @@
   year      = 2005,
   pages     = {88-102},
   ee        = {http://doi.acm.org/10.1145/1080829.1080839},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -613,7 +570,6 @@
   year      = 2005,
   pages     = {103-116},
   ee        = {http://doi.acm.org/10.1145/1080829.1080840},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -629,7 +585,6 @@
   year      = 2005,
   pages     = {117-131},
   ee        = {http://doi.acm.org/10.1145/1080829.1080841},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -641,7 +596,6 @@
   year      = 2005,
   pages     = {132-139},
   ee        = {http://doi.acm.org/10.1145/1080829.1080843},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -654,7 +608,6 @@
   year      = 2005,
   pages     = {140-147},
   ee        = {http://doi.acm.org/10.1145/1080829.1080844},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -669,7 +622,6 @@
   year      = 2005,
   pages     = {148-155},
   ee        = {http://doi.acm.org/10.1145/1080829.1080845},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -682,7 +634,6 @@
   year      = 2005,
   pages     = {156-169},
   ee        = {http://doi.acm.org/10.1145/1080829.1080847},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -696,7 +647,6 @@
   year      = 2005,
   pages     = {170-184},
   ee        = {http://doi.acm.org/10.1145/1080829.1080848},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -710,7 +660,6 @@
   year      = 2005,
   pages     = {185-199},
   ee        = {http://doi.acm.org/10.1145/1080829.1080849},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -724,7 +673,6 @@
   year      = 2005,
   pages     = {200-214},
   ee        = {http://doi.acm.org/10.1145/1080829.1080851},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -738,7 +686,6 @@
   year      = 2005,
   pages     = {215-227},
   ee        = {http://doi.acm.org/10.1145/1080829.1080852},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -752,7 +699,6 @@
   year      = 2005,
   pages     = {228-242},
   ee        = {http://doi.acm.org/10.1145/1080829.1080854},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -765,7 +711,6 @@
   year      = 2005,
   pages     = {243-257},
   ee        = {http://doi.acm.org/10.1145/1080829.1080855},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -780,7 +725,6 @@
   year      = 2005,
   pages     = {258-269},
   ee        = {http://doi.acm.org/10.1145/1080829.1080856},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -794,7 +738,6 @@
   year      = 2005,
   pages     = {270-283},
   ee        = {http://doi.acm.org/10.1145/1080829.1080858},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -807,7 +750,6 @@
   year      = 2005,
   pages     = {284-298},
   ee        = {http://doi.acm.org/10.1145/1080829.1080859},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -822,7 +764,6 @@
   year      = 2005,
   pages     = {299-312},
   ee        = {http://doi.acm.org/10.1145/1080829.1080860},
-  crossref  = {DBLP:conf/mobicom/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -836,7 +777,6 @@
   year      = 2004,
   pages     = {1-15},
   ee        = {http://doi.acm.org/10.1145/1023720.1023722},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -852,7 +792,6 @@
   year      = 2004,
   pages     = {16-29},
   ee        = {http://doi.acm.org/10.1145/1023720.1023723},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -867,7 +806,6 @@
   year      = 2004,
   pages     = {30-44},
   ee        = {http://doi.acm.org/10.1145/1023720.1023724},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -879,7 +817,6 @@
   year      = 2004,
   pages     = {45-57},
   ee        = {http://doi.acm.org/10.1145/1023720.1023726},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -891,7 +828,6 @@
   year      = 2004,
   pages     = {58-69},
   ee        = {http://doi.acm.org/10.1145/1023720.1023727},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -908,7 +844,6 @@
   year      = 2004,
   pages     = {70-84},
   ee        = {http://doi.acm.org/10.1145/1023720.1023728},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -921,7 +856,6 @@
   year      = 2004,
   pages     = {85-99},
   ee        = {http://doi.acm.org/10.1145/1023720.1023730},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -936,7 +870,6 @@
   year      = 2004,
   pages     = {100-113},
   ee        = {http://doi.acm.org/10.1145/1023720.1023731},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -949,7 +882,6 @@
   year      = 2004,
   pages     = {114-128},
   ee        = {http://doi.acm.org/10.1145/1023720.1023732},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -962,7 +894,6 @@
   year      = 2004,
   pages     = {129-143},
   ee        = {http://doi.acm.org/10.1145/1023720.1023734},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -975,7 +906,6 @@
   year      = 2004,
   pages     = {144-158},
   ee        = {http://doi.acm.org/10.1145/1023720.1023735},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -991,7 +921,6 @@
   year      = 2004,
   pages     = {159-173},
   ee        = {http://doi.acm.org/10.1145/1023720.1023737},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1005,7 +934,6 @@
   year      = 2004,
   pages     = {174-186},
   ee        = {http://doi.acm.org/10.1145/1023720.1023738},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1018,7 +946,6 @@
   year      = 2004,
   pages     = {187-201},
   ee        = {http://doi.acm.org/10.1145/1023720.1023739},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1031,7 +958,6 @@
   year      = 2004,
   pages     = {202-215},
   ee        = {http://doi.acm.org/10.1145/1023720.1023741},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1045,7 +971,6 @@
   year      = 2004,
   pages     = {216-230},
   ee        = {http://doi.acm.org/10.1145/1023720.1023742},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1057,7 +982,6 @@
   year      = 2004,
   pages     = {231-244},
   ee        = {http://doi.acm.org/10.1145/1023720.1023743},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1070,7 +994,6 @@
   year      = 2004,
   pages     = {245-259},
   ee        = {http://doi.acm.org/10.1145/1023720.1023745},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1083,7 +1006,6 @@
   year      = 2004,
   pages     = {260-274},
   ee        = {http://doi.acm.org/10.1145/1023720.1023746},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1096,7 +1018,6 @@
   year      = 2004,
   pages     = {275-286},
   ee        = {http://doi.acm.org/10.1145/1023720.1023747},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1110,7 +1031,6 @@
   year      = 2004,
   pages     = {287-301},
   ee        = {http://doi.acm.org/10.1145/1023720.1023749},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1125,7 +1045,6 @@
   year      = 2004,
   pages     = {302-314},
   ee        = {http://doi.acm.org/10.1145/1023720.1023750},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1139,7 +1058,6 @@
   year      = 2004,
   pages     = {315-329},
   ee        = {http://doi.acm.org/10.1145/1023720.1023751},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1152,7 +1070,6 @@
   year      = 2004,
   pages     = {330-344},
   ee        = {http://doi.acm.org/10.1145/1023720.1023753},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1168,7 +1085,6 @@
   year      = 2004,
   pages     = {345-359},
   ee        = {http://doi.acm.org/10.1145/1023720.1023754},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1182,7 +1098,6 @@
   year      = 2004,
   pages     = {360-373},
   ee        = {http://doi.acm.org/10.1145/1023720.1023755},
-  crossref  = {DBLP:conf/mobicom/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1194,7 +1109,6 @@
   year      = 2004,
   pages     = {1},
   ee        = {http://doi.acm.org/10.1145/1023783.1023784},
-  crossref  = {DBLP:conf/mobicom/2004wac},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1207,7 +1121,6 @@
   year      = 2004,
   pages     = {2-9},
   ee        = {http://doi.acm.org/10.1145/1023783.1023786},
-  crossref  = {DBLP:conf/mobicom/2004wac},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1221,7 +1134,6 @@
   year      = 2004,
   pages     = {10-18},
   ee        = {http://doi.acm.org/10.1145/1023783.1023787},
-  crossref  = {DBLP:conf/mobicom/2004wac},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1236,7 +1148,6 @@
   year      = 2004,
   pages     = {19-26},
   ee        = {http://doi.acm.org/10.1145/1023783.1023788},
-  crossref  = {DBLP:conf/mobicom/2004wac},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1250,7 +1161,6 @@
   year      = 2004,
   pages     = {27-34},
   ee        = {http://doi.acm.org/10.1145/1023783.1023790},
-  crossref  = {DBLP:conf/mobicom/2004wac},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1264,7 +1174,6 @@
   year      = 2004,
   pages     = {35-42},
   ee        = {http://doi.acm.org/10.1145/1023783.1023791},
-  crossref  = {DBLP:conf/mobicom/2004wac},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1278,7 +1187,6 @@
   year      = 2004,
   pages     = {43-50},
   ee        = {http://doi.acm.org/10.1145/1023783.1023792},
-  crossref  = {DBLP:conf/mobicom/2004wac},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1291,7 +1199,6 @@
   year      = 2004,
   pages     = {51-55},
   ee        = {http://doi.acm.org/10.1145/1023783.1023793},
-  crossref  = {DBLP:conf/mobicom/2004wac},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1303,7 +1210,6 @@
   year      = 2004,
   pages     = {56-63},
   ee        = {http://doi.acm.org/10.1145/1023783.1023795},
-  crossref  = {DBLP:conf/mobicom/2004wac},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1316,7 +1222,6 @@
   year      = 2004,
   pages     = {64-71},
   ee        = {http://doi.acm.org/10.1145/1023783.1023796},
-  crossref  = {DBLP:conf/mobicom/2004wac},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1329,7 +1234,6 @@
   year      = 2004,
   pages     = {72-78},
   ee        = {http://doi.acm.org/10.1145/1023783.1023797},
-  crossref  = {DBLP:conf/mobicom/2004wac},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1345,7 +1249,6 @@
   year      = 2004,
   pages     = {79-82},
   ee        = {http://doi.acm.org/10.1145/1023783.1023799},
-  crossref  = {DBLP:conf/mobicom/2004wac},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1359,7 +1262,6 @@
   year      = 2004,
   pages     = {83-87},
   ee        = {http://doi.acm.org/10.1145/1023783.1023800},
-  crossref  = {DBLP:conf/mobicom/2004wac},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1372,7 +1274,6 @@
   year      = 2004,
   pages     = {88-97},
   ee        = {http://doi.acm.org/10.1145/1023783.1023801},
-  crossref  = {DBLP:conf/mobicom/2004wac},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1386,7 +1287,6 @@
   year      = 2004,
   pages     = {98-105},
   ee        = {http://doi.acm.org/10.1145/1023783.1023802},
-  crossref  = {DBLP:conf/mobicom/2004wac},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1402,7 +1302,6 @@
   year      = 2004,
   pages     = {106-110},
   ee        = {http://doi.acm.org/10.1145/1023783.1023804},
-  crossref  = {DBLP:conf/mobicom/2004wac},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1415,7 +1314,6 @@
   year      = 2004,
   pages     = {111-118},
   ee        = {http://doi.acm.org/10.1145/1023783.1023805},
-  crossref  = {DBLP:conf/mobicom/2004wac},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1428,7 +1326,6 @@
   year      = 2004,
   pages     = {119-121},
   ee        = {http://doi.acm.org/10.1145/1023783.1023807},
-  crossref  = {DBLP:conf/mobicom/2004wac},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1440,7 +1337,6 @@
   year      = 2004,
   pages     = {122-124},
   ee        = {http://doi.acm.org/10.1145/1023783.1023808},
-  crossref  = {DBLP:conf/mobicom/2004wac},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1455,7 +1351,6 @@
   year      = 2004,
   pages     = {125-126},
   ee        = {http://doi.acm.org/10.1145/1023783.1023809},
-  crossref  = {DBLP:conf/mobicom/2004wac},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1471,7 +1366,6 @@
   year      = 2004,
   pages     = {127-129},
   ee        = {http://doi.acm.org/10.1145/1023783.1023810},
-  crossref  = {DBLP:conf/mobicom/2004wac},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1485,7 +1379,6 @@
   year      = 2004,
   pages     = {130-131},
   ee        = {http://doi.acm.org/10.1145/1023783.1023811},
-  crossref  = {DBLP:conf/mobicom/2004wac},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1503,7 +1396,6 @@
   year      = 2004,
   pages     = {1-9},
   ee        = {http://doi.acm.org/10.1145/1023875.1023877},
-  crossref  = {DBLP:conf/mobicom/2004vanet},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1517,7 +1409,6 @@
   year      = 2004,
   pages     = {10-18},
   ee        = {http://doi.acm.org/10.1145/1023875.1023878},
-  crossref  = {DBLP:conf/mobicom/2004vanet},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1531,7 +1422,6 @@
   year      = 2004,
   pages     = {19-28},
   ee        = {http://doi.acm.org/10.1145/1023875.1023879},
-  crossref  = {DBLP:conf/mobicom/2004vanet},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1544,7 +1434,6 @@
   year      = 2004,
   pages     = {29-37},
   ee        = {http://doi.acm.org/10.1145/1023875.1023881},
-  crossref  = {DBLP:conf/mobicom/2004vanet},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1557,7 +1446,6 @@
   year      = 2004,
   pages     = {38-46},
   ee        = {http://doi.acm.org/10.1145/1023875.1023882},
-  crossref  = {DBLP:conf/mobicom/2004vanet},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1572,7 +1460,6 @@
   year      = 2004,
   pages     = {47-56},
   ee        = {http://doi.acm.org/10.1145/1023875.1023884},
-  crossref  = {DBLP:conf/mobicom/2004vanet},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1586,7 +1473,6 @@
   year      = 2004,
   pages     = {57-65},
   ee        = {http://doi.acm.org/10.1145/1023875.1023885},
-  crossref  = {DBLP:conf/mobicom/2004vanet},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1600,7 +1486,6 @@
   year      = 2004,
   pages     = {66-75},
   ee        = {http://doi.acm.org/10.1145/1023875.1023886},
-  crossref  = {DBLP:conf/mobicom/2004vanet},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1615,7 +1500,6 @@
   year      = 2004,
   pages     = {76-85},
   ee        = {http://doi.acm.org/10.1145/1023875.1023887},
-  crossref  = {DBLP:conf/mobicom/2004vanet},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1627,7 +1511,6 @@
   year      = 2004,
   pages     = {86-87},
   ee        = {http://doi.acm.org/10.1145/1023875.1023889},
-  crossref  = {DBLP:conf/mobicom/2004vanet},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1643,7 +1526,6 @@
   year      = 2004,
   pages     = {88},
   ee        = {http://doi.acm.org/10.1145/1023875.1023890},
-  crossref  = {DBLP:conf/mobicom/2004vanet},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1658,7 +1540,6 @@
   year      = 2004,
   pages     = {89-90},
   ee        = {http://doi.acm.org/10.1145/1023875.1023891},
-  crossref  = {DBLP:conf/mobicom/2004vanet},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1670,7 +1551,6 @@
   year      = 2004,
   pages     = {91-92},
   ee        = {http://doi.acm.org/10.1145/1023875.1023892},
-  crossref  = {DBLP:conf/mobicom/2004vanet},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1684,7 +1564,6 @@
   year      = 2004,
   pages     = {93-94},
   ee        = {http://doi.acm.org/10.1145/1023875.1023893},
-  crossref  = {DBLP:conf/mobicom/2004vanet},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1698,7 +1577,6 @@
   year      = 2004,
   pages     = {95-96},
   ee        = {http://doi.acm.org/10.1145/1023875.1023894},
-  crossref  = {DBLP:conf/mobicom/2004vanet},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1711,7 +1589,6 @@
   year      = 2004,
   pages     = {97-98},
   ee        = {http://doi.acm.org/10.1145/1023875.1023895},
-  crossref  = {DBLP:conf/mobicom/2004vanet},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1726,7 +1603,6 @@
   year      = 2003,
   pages     = {1-15},
   ee        = {http://doi.acm.org/10.1145/938985.938987},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1741,7 +1617,6 @@
   year      = 2003,
   pages     = {16-28},
   ee        = {http://doi.acm.org/10.1145/938985.938988},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1754,7 +1629,6 @@
   year      = 2003,
   pages     = {29-41},
   ee        = {http://doi.acm.org/10.1145/938985.938989},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1767,7 +1641,6 @@
   year      = 2003,
   pages     = {42-54},
   ee        = {http://doi.acm.org/10.1145/938985.938991},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1780,7 +1653,6 @@
   year      = 2003,
   pages     = {55-65},
   ee        = {http://doi.acm.org/10.1145/938985.938992},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1794,7 +1666,6 @@
   year      = 2003,
   pages     = {66-80},
   ee        = {http://doi.acm.org/10.1145/938985.938993},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1809,7 +1680,6 @@
   year      = 2003,
   pages     = {81-95},
   ee        = {http://doi.acm.org/10.1145/938985.938995},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1823,7 +1693,6 @@
   year      = 2003,
   pages     = {96-108},
   ee        = {http://doi.acm.org/10.1145/938985.938996},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1838,7 +1707,6 @@
   year      = 2003,
   pages     = {109-121},
   ee        = {http://doi.acm.org/10.1145/938985.938997},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1851,7 +1719,6 @@
   year      = 2003,
   pages     = {122-133},
   ee        = {http://doi.acm.org/10.1145/938985.938999},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1865,7 +1732,6 @@
   year      = 2003,
   pages     = {134-146},
   ee        = {http://doi.acm.org/10.1145/938985.939000},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1878,7 +1744,6 @@
   year      = 2003,
   pages     = {147-160},
   ee        = {http://doi.acm.org/10.1145/938985.939001},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1893,7 +1758,6 @@
   year      = 2003,
   pages     = {161-175},
   ee        = {http://doi.acm.org/10.1145/938985.939003},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1906,7 +1770,6 @@
   year      = 2003,
   pages     = {176-189},
   ee        = {http://doi.acm.org/10.1145/938985.939004},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1919,7 +1782,6 @@
   year      = 2003,
   pages     = {190-204},
   ee        = {http://doi.acm.org/10.1145/938985.939005},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1932,7 +1794,6 @@
   year      = 2003,
   pages     = {205-216},
   ee        = {http://doi.acm.org/10.1145/938985.939007},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1946,7 +1807,6 @@
   year      = 2003,
   pages     = {217-229},
   ee        = {http://doi.acm.org/10.1145/938985.939008},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1962,7 +1822,6 @@
   year      = 2003,
   pages     = {230-244},
   ee        = {http://doi.acm.org/10.1145/938985.939009},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1975,7 +1834,6 @@
   year      = 2003,
   pages     = {245-259},
   ee        = {http://doi.acm.org/10.1145/938985.939011},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1987,7 +1845,6 @@
   year      = 2003,
   pages     = {260-272},
   ee        = {http://doi.acm.org/10.1145/938985.939012},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2002,7 +1859,6 @@
   year      = 2003,
   pages     = {273-285},
   ee        = {http://doi.acm.org/10.1145/938985.939013},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2017,7 +1873,6 @@
   year      = 2003,
   pages     = {286-299},
   ee        = {http://doi.acm.org/10.1145/938985.939015},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2031,7 +1886,6 @@
   year      = 2003,
   pages     = {300-312},
   ee        = {http://doi.acm.org/10.1145/938985.939016},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2045,7 +1899,6 @@
   year      = 2003,
   pages     = {313-325},
   ee        = {http://doi.acm.org/10.1145/938985.939017},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2060,7 +1913,6 @@
   year      = 2003,
   pages     = {326-338},
   ee        = {http://doi.acm.org/10.1145/938985.939019},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2073,7 +1925,6 @@
   year      = 2003,
   pages     = {339-352},
   ee        = {http://doi.acm.org/10.1145/938985.939020},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2088,7 +1939,6 @@
   year      = 2003,
   pages     = {353-367},
   ee        = {http://doi.acm.org/10.1145/938985.939021},
-  crossref  = {DBLP:conf/mobicom/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2100,7 +1950,6 @@
   year      = 2002,
   pages     = {1-11},
   ee        = {http://doi.acm.org/10.1145/570645.570647},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2114,7 +1963,6 @@
   year      = 2002,
   pages     = {12-23},
   ee        = {http://doi.acm.org/10.1145/570645.570648},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2128,7 +1976,6 @@
   year      = 2002,
   pages     = {24-35},
   ee        = {http://doi.acm.org/10.1145/570645.570650},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2140,7 +1987,6 @@
   year      = 2002,
   pages     = {36-47},
   ee        = {http://doi.acm.org/10.1145/570645.570651},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2153,7 +1999,6 @@
   year      = 2002,
   pages     = {48-58},
   ee        = {http://doi.acm.org/10.1145/570645.570652},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2168,7 +2013,6 @@
   year      = 2002,
   pages     = {59-70},
   ee        = {http://doi.acm.org/10.1145/570645.570653},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2181,7 +2025,6 @@
   year      = 2002,
   pages     = {71-82},
   ee        = {http://doi.acm.org/10.1145/570645.570655},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2194,7 +2037,6 @@
   year      = 2002,
   pages     = {83-94},
   ee        = {http://doi.acm.org/10.1145/570645.570656},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2206,7 +2048,6 @@
   year      = 2002,
   pages     = {95-106},
   ee        = {http://doi.acm.org/10.1145/570645.570657},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2218,7 +2059,6 @@
   year      = 2002,
   pages     = {107-118},
   ee        = {http://doi.acm.org/10.1145/570645.570659},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2230,7 +2070,6 @@
   year      = 2002,
   pages     = {119-130},
   ee        = {http://doi.acm.org/10.1145/570645.570660},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2245,7 +2084,6 @@
   year      = 2002,
   pages     = {131-139},
   ee        = {http://doi.acm.org/10.1145/570645.570661},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2258,7 +2096,6 @@
   year      = 2002,
   pages     = {140-147},
   ee        = {http://doi.acm.org/10.1145/570645.570663},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2274,7 +2111,6 @@
   year      = 2002,
   pages     = {148-159},
   ee        = {http://doi.acm.org/10.1145/570645.570664},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2288,7 +2124,6 @@
   year      = 2002,
   pages     = {160-171},
   ee        = {http://doi.acm.org/10.1145/570645.570666},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2302,7 +2137,6 @@
   year      = 2002,
   pages     = {172-182},
   ee        = {http://doi.acm.org/10.1145/570645.570667},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2316,7 +2150,6 @@
   year      = 2002,
   pages     = {183-192},
   ee        = {http://doi.acm.org/10.1145/570645.570668},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2327,7 +2160,6 @@
   year      = 2002,
   pages     = {193-204},
   ee        = {http://doi.acm.org/10.1145/570645.570670},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2339,7 +2171,6 @@
   year      = 2002,
   pages     = {205-214},
   ee        = {http://doi.acm.org/10.1145/570645.570671},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2351,7 +2182,6 @@
   year      = 2002,
   pages     = {215-226},
   ee        = {http://doi.acm.org/10.1145/570645.570672},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2367,7 +2197,6 @@
   year      = 2002,
   pages     = {227-238},
   ee        = {http://doi.acm.org/10.1145/570645.570674},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2380,7 +2209,6 @@
   year      = 2002,
   pages     = {239-250},
   ee        = {http://doi.acm.org/10.1145/570645.570675},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2395,7 +2223,6 @@
   year      = 2002,
   pages     = {251-262},
   ee        = {http://doi.acm.org/10.1145/570645.570676},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2408,7 +2235,6 @@
   year      = 2002,
   pages     = {263-270},
   ee        = {http://doi.acm.org/10.1145/570645.570678},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2422,7 +2248,6 @@
   year      = 2002,
   pages     = {271-278},
   ee        = {http://doi.acm.org/10.1145/570645.570679},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2436,7 +2261,6 @@
   year      = 2002,
   pages     = {279-286},
   ee        = {http://doi.acm.org/10.1145/570645.570680},
-  crossref  = {DBLP:conf/mobicom/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2450,7 +2274,6 @@
   year      = 2002,
   pages     = {1-11},
   ee        = {http://doi.acm.org/10.1145/570738.570740},
-  crossref  = {DBLP:conf/mobicom/2002wsna},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2463,7 +2286,6 @@
   year      = 2002,
   pages     = {12-21},
   ee        = {http://doi.acm.org/10.1145/570738.570741},
-  crossref  = {DBLP:conf/mobicom/2002wsna},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2475,7 +2297,6 @@
   year      = 2002,
   pages     = {22-31},
   ee        = {http://doi.acm.org/10.1145/570738.570742},
-  crossref  = {DBLP:conf/mobicom/2002wsna},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2488,7 +2309,6 @@
   year      = 2002,
   pages     = {32-41},
   ee        = {http://doi.acm.org/10.1145/570738.570744},
-  crossref  = {DBLP:conf/mobicom/2002wsna},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2502,7 +2322,6 @@
   year      = 2002,
   pages     = {42-48},
   ee        = {http://doi.acm.org/10.1145/570738.570745},
-  crossref  = {DBLP:conf/mobicom/2002wsna},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2515,7 +2334,6 @@
   year      = 2002,
   pages     = {49-58},
   ee        = {http://doi.acm.org/10.1145/570738.570746},
-  crossref  = {DBLP:conf/mobicom/2002wsna},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2527,7 +2345,6 @@
   year      = 2002,
   pages     = {59-67},
   ee        = {http://doi.acm.org/10.1145/570738.570747},
-  crossref  = {DBLP:conf/mobicom/2002wsna},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2540,7 +2357,6 @@
   year      = 2002,
   pages     = {68-77},
   ee        = {http://doi.acm.org/10.1145/570738.570749},
-  crossref  = {DBLP:conf/mobicom/2002wsna},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2557,7 +2373,6 @@
   year      = 2002,
   pages     = {78-87},
   ee        = {http://doi.acm.org/10.1145/570738.570750},
-  crossref  = {DBLP:conf/mobicom/2002wsna},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2572,7 +2387,6 @@
   year      = 2002,
   pages     = {88-97},
   ee        = {http://doi.acm.org/10.1145/570738.570751},
-  crossref  = {DBLP:conf/mobicom/2002wsna},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2586,7 +2400,6 @@
   year      = 2002,
   pages     = {98-104},
   ee        = {http://doi.acm.org/10.1145/570738.570752},
-  crossref  = {DBLP:conf/mobicom/2002wsna},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2599,7 +2412,6 @@
   year      = 2002,
   pages     = {105-111},
   ee        = {http://doi.acm.org/10.1145/570738.570754},
-  crossref  = {DBLP:conf/mobicom/2002wsna},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2613,7 +2425,6 @@
   year      = 2002,
   pages     = {112-121},
   ee        = {http://doi.acm.org/10.1145/570738.570755},
-  crossref  = {DBLP:conf/mobicom/2002wsna},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2626,7 +2437,6 @@
   year      = 2002,
   pages     = {122-130},
   ee        = {http://doi.acm.org/10.1145/570738.570756},
-  crossref  = {DBLP:conf/mobicom/2002wsna},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2641,7 +2451,6 @@
   year      = 2002,
   pages     = {131-139},
   ee        = {http://doi.acm.org/10.1145/570738.570757},
-  crossref  = {DBLP:conf/mobicom/2002wsna},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 

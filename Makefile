@@ -12,13 +12,18 @@ install:
 	ln -sf crosstex $(ROOT)/usr/bin/xtx2html
 
 clean:
-	rm -rf *~ *.pyc *.aux *.bbl *.dvi *.log *.tar.gz *.rpm *.html ${PACKAGE}-rpm
+	rm -rf *~ *.pyc *.aux *.bbl *.dvi *.log *.tar.gz *.rpm *.html *.out *.toc *.pdf *.haux *.htoc *-rpm
 
+crosstex.pdf: crosstex.tex
+	pdflatex crosstex && pdflatex crosstex
 
-${PACKAGE}.tar.gz: Makefile COPYING crosstex crosstex.spec
+.PHONY: pdf
+pdf: crosstex.pdf
+
+${PACKAGE}.tar.gz: Makefile COPYING crosstex crosstex.spec crosstex.tex
 	rm -rf ${PACKAGE}
 	mkdir ${PACKAGE} ${PACKAGE}/tests ${PACKAGE}/data
-	cp Makefile COPYING crosstex *.py ${PACKAGE}
+	cp Makefile COPYING crosstex *.py crosstex.tex ${PACKAGE}
 	cp tests/*.xtx ${PACKAGE}/tests
 	cp data/*.xtx ${PACKAGE}/data
 	sed "/^%define version/c %define version ${VERSION}" \

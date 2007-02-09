@@ -5,7 +5,6 @@
   title     = {Running Massively Multiplayer Games as a Business},
   booktitle = nsdi,
   year      = 2004,
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -24,7 +23,6 @@
   year      = 2004,
   pages     = {1-14},
   ee        = {http://www.usenix.org/events/nsdi04/tech/levisEmerge.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -40,7 +38,6 @@
   year      = 2004,
   pages     = {15-28},
   ee        = {http://www.usenix.org/events/nsdi04/tech/levisTrickle.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -52,7 +49,6 @@
   year      = 2004,
   pages     = {29-42},
   ee        = {http://www.usenix.org/events/nsdi04/tech/welsh.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -66,7 +62,6 @@
   year      = 2004,
   pages     = {43-56},
   ee        = {http://www.usenix.org/events/nsdi04/tech/mogul.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -78,7 +73,6 @@
   year      = 2004,
   pages     = {57-70},
   ee        = {http://www.usenix.org/events/nsdi04/tech/shaikh.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -93,7 +87,6 @@
   year      = 2004,
   pages     = {71-84},
   ee        = {http://www.usenix.org/events/nsdi04/tech/subramanianOver.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -109,7 +102,6 @@
   year      = 2004,
   pages     = {85-98},
   ee        = {http://www.usenix.org/events/nsdi04/tech/dabek.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -122,7 +114,6 @@
   year      = 2004,
   pages     = {99-112},
   ee        = {http://www.usenix.org/events/nsdi04/tech/ramasubramanian.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -135,7 +126,6 @@
   year      = 2004,
   pages     = {113-126},
   ee        = {http://www.usenix.org/events/nsdi04/tech/gupta.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -151,7 +141,6 @@
   year      = 2004,
   pages     = {127-140},
   ee        = {http://www.usenix.org/events/nsdi04/tech/subramanianListen.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -164,7 +153,6 @@
   year      = 2004,
   pages     = {141-153},
   ee        = {http://www.usenix.org/events/nsdi04/tech/saroiu.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -176,7 +164,6 @@
   year      = 2004,
   pages     = {155-168},
   ee        = {http://www.usenix.org/events/nsdi04/tech/musuvathi.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -190,7 +177,6 @@
   year      = 2004,
   pages     = {169-182},
   ee        = {http://www.usenix.org/events/nsdi04/tech/whitaker.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -202,7 +188,6 @@
   year      = 2004,
   pages     = {183-196},
   ee        = {http://www.usenix.org/events/nsdi04/tech/zheng.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -216,7 +201,6 @@
   year      = 2004,
   pages     = {197-210},
   ee        = {http://www.usenix.org/events/nsdi04/tech/balazinska.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -229,7 +213,6 @@
   year      = 2004,
   pages     = {211-224},
   ee        = {http://www.usenix.org/events/nsdi04/tech/tang.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -241,7 +224,6 @@
   year      = 2004,
   pages     = {225-238},
   ee        = {http://www.usenix.org/events/nsdi04/tech/walfish.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -254,7 +236,6 @@
   year      = 2004,
   pages     = {239-252},
   ee        = {http://www.usenix.org/events/nsdi04/tech/freedman.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -274,7 +255,6 @@
   year      = 2004,
   pages     = {253-266},
   ee        = {http://www.usenix.org/events/nsdi04/tech/bavier.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -290,7 +270,6 @@
   year      = 2004,
   pages     = {267-280},
   ee        = {http://www.usenix.org/events/nsdi04/tech/rodriguez.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -301,7 +280,6 @@
   year      = 2004,
   pages     = {281-294},
   ee        = {http://www.usenix.org/events/nsdi04/tech/shen.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -314,7 +292,6 @@
   year      = 2004,
   pages     = {295-308},
   ee        = {http://www.usenix.org/events/nsdi04/tech/ling.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -330,7 +307,6 @@
   year      = 2004,
   pages     = {309-322},
   ee        = {http://www.usenix.org/events/nsdi04/tech/chen.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -342,7 +318,6 @@
   year      = 2004,
   pages     = {323-336},
   ee        = {http://www.usenix.org/events/nsdi04/tech/yu.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -358,7 +333,6 @@
   year      = 2004,
   pages     = {337-350},
   ee        = {http://www.usenix.org/events/nsdi04/tech/bhagwan.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -371,7 +345,6 @@
   year      = 2004,
   pages     = {351-364},
   ee        = {http://www.usenix.org/events/nsdi04/tech/moh.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -386,6 +359,5 @@
   year      = 2004,
   pages     = {365-378},
   ee        = {http://www.usenix.org/events/nsdi04/tech/bent.html},
-  crossref  = {DBLP:conf/nsdi/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }

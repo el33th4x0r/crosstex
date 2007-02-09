@@ -8,7 +8,6 @@
   year      = 2006,
   pages     = {1-10},
   ee        = {http://doi.acm.org/10.1145/1132516.1132518},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -20,7 +19,6 @@
   year      = 2006,
   pages     = {11-20},
   ee        = {http://doi.acm.org/10.1145/1132516.1132519},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -32,7 +30,6 @@
   year      = 2006,
   pages     = {21-30},
   ee        = {http://doi.acm.org/10.1145/1132516.1132520},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -44,7 +41,6 @@
   year      = 2006,
   pages     = {31-40},
   ee        = {http://doi.acm.org/10.1145/1132516.1132522},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -55,7 +51,6 @@
   year      = 2006,
   pages     = {41-50},
   ee        = {http://doi.acm.org/10.1145/1132516.1132523},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -68,7 +63,6 @@
   year      = 2006,
   pages     = {51-60},
   ee        = {http://doi.acm.org/10.1145/1132516.1132524},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -80,7 +74,6 @@
   year      = 2006,
   pages     = {61-70},
   ee        = {http://doi.acm.org/10.1145/1132516.1132526},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -93,7 +86,6 @@
   year      = 2006,
   pages     = {71-78},
   ee        = {http://doi.acm.org/10.1145/1132516.1132527},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -105,7 +97,6 @@
   year      = 2006,
   pages     = {79-88},
   ee        = {http://doi.acm.org/10.1145/1132516.1132528},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -118,7 +109,6 @@
   year      = 2006,
   pages     = {89-98},
   ee        = {http://doi.acm.org/10.1145/1132516.1132529},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -132,7 +122,6 @@
   year      = 2006,
   pages     = {99-108},
   ee        = {http://doi.acm.org/10.1145/1132516.1132531},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -146,7 +135,6 @@
   year      = 2006,
   pages     = {109-118},
   ee        = {http://doi.acm.org/10.1145/1132516.1132532},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -160,7 +148,6 @@
   year      = 2006,
   pages     = {119-128},
   ee        = {http://doi.acm.org/10.1145/1132516.1132533},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -172,7 +159,6 @@
   year      = 2006,
   pages     = {129},
   ee        = {http://doi.acm.org/10.1145/1132516.1132535},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -185,7 +171,6 @@
   year      = 2006,
   pages     = {130-139},
   ee        = {http://doi.acm.org/10.1145/1132516.1132537},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -196,7 +181,6 @@
   year      = 2006,
   pages     = {140-149},
   ee        = {http://doi.acm.org/10.1145/1132516.1132538},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -207,7 +191,6 @@
   year      = 2006,
   pages     = {150-158},
   ee        = {http://doi.acm.org/10.1145/1132516.1132539},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -220,7 +203,6 @@
   year      = 2006,
   pages     = {159-168},
   ee        = {http://doi.acm.org/10.1145/1132516.1132540},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -233,7 +215,6 @@
   year      = 2006,
   pages     = {169-178},
   ee        = {http://doi.acm.org/10.1145/1132516.1132542},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -247,7 +228,6 @@
   year      = 2006,
   pages     = {179-186},
   ee        = {http://doi.acm.org/10.1145/1132516.1132543},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -258,7 +238,6 @@
   year      = 2006,
   pages     = {187-196},
   ee        = {http://doi.acm.org/10.1145/1132516.1132544},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -271,7 +250,6 @@
   year      = 2006,
   pages     = {197-204},
   ee        = {http://doi.acm.org/10.1145/1132516.1132545},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -284,7 +262,6 @@
   year      = 2006,
   pages     = {205-214},
   ee        = {http://doi.acm.org/10.1145/1132516.1132547},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -296,7 +273,6 @@
   year      = 2006,
   pages     = {215-224},
   ee        = {http://doi.acm.org/10.1145/1132516.1132548},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -309,7 +285,6 @@
   year      = 2006,
   pages     = {225-231},
   ee        = {http://doi.acm.org/10.1145/1132516.1132550},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -321,7 +296,6 @@
   year      = 2006,
   pages     = {232-240},
   ee        = {http://doi.acm.org/10.1145/1132516.1132551},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -332,7 +306,6 @@
   year      = 2006,
   pages     = {241-250},
   ee        = {http://doi.acm.org/10.1145/1132516.1132553},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -347,7 +320,6 @@
   year      = 2006,
   pages     = {251-260},
   ee        = {http://doi.acm.org/10.1145/1132516.1132555},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -363,7 +335,6 @@
   year      = 2006,
   pages     = {261-270},
   ee        = {http://doi.acm.org/10.1145/1132516.1132556},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -376,7 +347,6 @@
   year      = 2006,
   pages     = {271-286},
   ee        = {http://doi.acm.org/10.1145/1132516.1132557},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -388,7 +358,6 @@
   year      = 2006,
   pages     = {287-295},
   ee        = {http://doi.acm.org/10.1145/1132516.1132559},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -399,7 +368,6 @@
   year      = 2006,
   pages     = {296-305},
   ee        = {http://doi.acm.org/10.1145/1132516.1132560},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -411,7 +379,6 @@
   year      = 2006,
   pages     = {306-315},
   ee        = {http://doi.acm.org/10.1145/1132516.1132561},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -424,7 +391,6 @@
   year      = 2006,
   pages     = {316-325},
   ee        = {http://doi.acm.org/10.1145/1132516.1132563},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -435,7 +401,6 @@
   year      = 2006,
   pages     = {326-335},
   ee        = {http://doi.acm.org/10.1145/1132516.1132564},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -448,7 +413,6 @@
   year      = 2006,
   pages     = {336-343},
   ee        = {http://doi.acm.org/10.1145/1132516.1132565},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -461,7 +425,6 @@
   year      = 2006,
   pages     = {344-353},
   ee        = {http://doi.acm.org/10.1145/1132516.1132567},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -475,7 +438,6 @@
   year      = 2006,
   pages     = {354-362},
   ee        = {http://doi.acm.org/10.1145/1132516.1132568},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -487,7 +449,6 @@
   year      = 2006,
   pages     = {363-372},
   ee        = {http://doi.acm.org/10.1145/1132516.1132569},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -498,7 +459,6 @@
   year      = 2006,
   pages     = {373-374},
   ee        = {http://doi.acm.org/10.1145/1132516.1132571},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -510,7 +470,6 @@
   year      = 2006,
   pages     = {375-384},
   ee        = {http://doi.acm.org/10.1145/1132516.1132573},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -523,7 +482,6 @@
   year      = 2006,
   pages     = {385-390},
   ee        = {http://doi.acm.org/10.1145/1132516.1132574},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -535,7 +493,6 @@
   year      = 2006,
   pages     = {391-400},
   ee        = {http://doi.acm.org/10.1145/1132516.1132575},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -548,7 +505,6 @@
   year      = 2006,
   pages     = {401-416},
   ee        = {http://doi.acm.org/10.1145/1132516.1132576},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -561,7 +517,6 @@
   year      = 2006,
   pages     = {417-426},
   ee        = {http://doi.acm.org/10.1145/1132516.1132578},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -575,7 +530,6 @@
   year      = 2006,
   pages     = {427-436},
   ee        = {http://doi.acm.org/10.1145/1132516.1132579},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -590,7 +544,6 @@
   year      = 2006,
   pages     = {437-446},
   ee        = {http://doi.acm.org/10.1145/1132516.1132580},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -602,7 +555,6 @@
   year      = 2006,
   pages     = {447-456},
   ee        = {http://doi.acm.org/10.1145/1132516.1132581},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -616,7 +568,6 @@
   year      = 2006,
   pages     = {457-466},
   ee        = {http://doi.acm.org/10.1145/1132516.1132583},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -627,7 +578,6 @@
   year      = 2006,
   pages     = {467-476},
   ee        = {http://doi.acm.org/10.1145/1132516.1132584},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -640,7 +590,6 @@
   year      = 2006,
   pages     = {477-486},
   ee        = {http://doi.acm.org/10.1145/1132516.1132586},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -652,7 +601,6 @@
   year      = 2006,
   pages     = {487-496},
   ee        = {http://doi.acm.org/10.1145/1132516.1132587},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -664,7 +612,6 @@
   year      = 2006,
   pages     = {497-506},
   ee        = {http://doi.acm.org/10.1145/1132516.1132589},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -676,7 +623,6 @@
   year      = 2006,
   pages     = {507-516},
   ee        = {http://doi.acm.org/10.1145/1132516.1132590},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -689,7 +635,6 @@
   year      = 2006,
   pages     = {517-526},
   ee        = {http://doi.acm.org/10.1145/1132516.1132592},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -701,7 +646,6 @@
   year      = 2006,
   pages     = {527-536},
   ee        = {http://doi.acm.org/10.1145/1132516.1132593},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -716,7 +660,6 @@
   year      = 2006,
   pages     = {537-546},
   ee        = {http://doi.acm.org/10.1145/1132516.1132594},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -730,7 +673,6 @@
   year      = 2006,
   pages     = {547-556},
   ee        = {http://doi.acm.org/10.1145/1132516.1132595},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -743,7 +685,6 @@
   year      = 2006,
   pages     = {557-563},
   ee        = {http://doi.acm.org/10.1145/1132516.1132597},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -756,7 +697,6 @@
   year      = 2006,
   pages     = {564-573},
   ee        = {http://doi.acm.org/10.1145/1132516.1132598},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -769,7 +709,6 @@
   year      = 2006,
   pages     = {574-583},
   ee        = {http://doi.acm.org/10.1145/1132516.1132599},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -783,7 +722,6 @@
   year      = 2006,
   pages     = {584-593},
   ee        = {http://doi.acm.org/10.1145/1132516.1132600},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -798,7 +736,6 @@
   year      = 2006,
   pages     = {594-603},
   ee        = {http://doi.acm.org/10.1145/1132516.1132602},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -813,7 +750,6 @@
   year      = 2006,
   pages     = {604-617},
   ee        = {http://doi.acm.org/10.1145/1132516.1132603},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -827,7 +763,6 @@
   year      = 2006,
   pages     = {618-633},
   ee        = {http://doi.acm.org/10.1145/1132516.1132604},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -839,7 +774,6 @@
   year      = 2006,
   pages     = {634-643},
   ee        = {http://doi.acm.org/10.1145/1132516.1132605},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -852,7 +786,6 @@
   year      = 2006,
   pages     = {644-652},
   ee        = {http://doi.acm.org/10.1145/1132516.1132607},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -866,7 +799,6 @@
   year      = 2006,
   pages     = {653-662},
   ee        = {http://doi.acm.org/10.1145/1132516.1132608},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -881,7 +813,6 @@
   year      = 2006,
   pages     = {663-670},
   ee        = {http://doi.acm.org/10.1145/1132516.1132609},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -896,7 +827,6 @@
   year      = 2006,
   pages     = {671-680},
   ee        = {http://doi.acm.org/10.1145/1132516.1132611},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -908,7 +838,6 @@
   year      = 2006,
   pages     = {681-690},
   ee        = {http://doi.acm.org/10.1145/1132516.1132612},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -922,7 +851,6 @@
   year      = 2006,
   pages     = {691-700},
   ee        = {http://doi.acm.org/10.1145/1132516.1132613},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -936,7 +864,6 @@
   year      = 2006,
   pages     = {701-710},
   ee        = {http://doi.acm.org/10.1145/1132516.1132614},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -948,7 +875,6 @@
   year      = 2006,
   pages     = {711-720},
   ee        = {http://doi.acm.org/10.1145/1132516.1132615},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -962,7 +888,6 @@
   year      = 2006,
   pages     = {721-729},
   ee        = {http://doi.acm.org/10.1145/1132516.1132617},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -974,7 +899,6 @@
   year      = 2006,
   pages     = {730-738},
   ee        = {http://doi.acm.org/10.1145/1132516.1132618},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -988,7 +912,6 @@
   year      = 2006,
   pages     = {739-748},
   ee        = {http://doi.acm.org/10.1145/1132516.1132619},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1000,7 +923,6 @@
   year      = 2006,
   pages     = {749-756},
   ee        = {http://doi.acm.org/10.1145/1132516.1132620},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1013,7 +935,6 @@
   year      = 2006,
   pages     = {757-766},
   ee        = {http://doi.acm.org/10.1145/1132516.1132621},
-  crossref  = {DBLP:conf/stoc/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1029,7 +950,6 @@
   year      = 2005,
   pages     = {1-10},
   ee        = {http://doi.acm.org/10.1145/1060590.1060592},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1040,7 +960,6 @@
   year      = 2005,
   pages     = {11-20},
   ee        = {http://doi.acm.org/10.1145/1060590.1060593},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1051,7 +970,6 @@
   year      = 2005,
   pages     = {21-30},
   ee        = {http://doi.acm.org/10.1145/1060590.1060594},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1062,7 +980,6 @@
   year      = 2005,
   pages     = {31-38},
   ee        = {http://doi.acm.org/10.1145/1060590.1060595},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1075,7 +992,6 @@
   year      = 2005,
   pages     = {39-48},
   ee        = {http://doi.acm.org/10.1145/1060590.1060597},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1086,7 +1002,6 @@
   year      = 2005,
   pages     = {49-56},
   ee        = {http://doi.acm.org/10.1145/1060590.1060598},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1099,7 +1014,6 @@
   year      = 2005,
   pages     = {57-66},
   ee        = {http://doi.acm.org/10.1145/1060590.1060599},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1111,7 +1025,6 @@
   year      = 2005,
   pages     = {67-73},
   ee        = {http://doi.acm.org/10.1145/1060590.1060600},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1124,7 +1037,6 @@
   year      = 2005,
   pages     = {74-83},
   ee        = {http://doi.acm.org/10.1145/1060590.1060601},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1136,7 +1048,6 @@
   year      = 2005,
   pages     = {84-93},
   ee        = {http://doi.acm.org/10.1145/1060590.1060603},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1147,7 +1058,6 @@
   year      = 2005,
   pages     = {94-103},
   ee        = {http://doi.acm.org/10.1145/1060590.1060604},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1160,7 +1070,6 @@
   year      = 2005,
   pages     = {104-111},
   ee        = {http://doi.acm.org/10.1145/1060590.1060606},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1172,7 +1081,6 @@
   year      = 2005,
   pages     = {112-119},
   ee        = {http://doi.acm.org/10.1145/1060590.1060607},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1183,7 +1091,6 @@
   year      = 2005,
   pages     = {120-127},
   ee        = {http://doi.acm.org/10.1145/1060590.1060609},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1195,7 +1102,6 @@
   year      = 2005,
   pages     = {128-137},
   ee        = {http://doi.acm.org/10.1145/1060590.1060611},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1207,7 +1113,6 @@
   year      = 2005,
   pages     = {138-146},
   ee        = {http://doi.acm.org/10.1145/1060590.1060612},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1219,7 +1124,6 @@
   year      = 2005,
   pages     = {147-156},
   ee        = {http://doi.acm.org/10.1145/1060590.1060613},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1232,7 +1136,6 @@
   year      = 2005,
   pages     = {157-166},
   ee        = {http://doi.acm.org/10.1145/1060590.1060614},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1245,7 +1148,6 @@
   year      = 2005,
   pages     = {167-175},
   ee        = {http://doi.acm.org/10.1145/1060590.1060616},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1257,7 +1159,6 @@
   year      = 2005,
   pages     = {176-182},
   ee        = {http://doi.acm.org/10.1145/1060590.1060617},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1271,7 +1172,6 @@
   year      = 2005,
   pages     = {183-192},
   ee        = {http://doi.acm.org/10.1145/1060590.1060618},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1285,7 +1185,6 @@
   year      = 2005,
   pages     = {193-201},
   ee        = {http://doi.acm.org/10.1145/1060590.1060619},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1298,7 +1197,6 @@
   year      = 2005,
   pages     = {202-208},
   ee        = {http://doi.acm.org/10.1145/1060590.1060621},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1310,7 +1208,6 @@
   year      = 2005,
   pages     = {209-217},
   ee        = {http://doi.acm.org/10.1145/1060590.1060622},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1322,7 +1219,6 @@
   year      = 2005,
   pages     = {218-224},
   ee        = {http://doi.acm.org/10.1145/1060590.1060623},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1336,7 +1232,6 @@
   year      = 2005,
   pages     = {225-233},
   ee        = {http://doi.acm.org/10.1145/1060590.1060624},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1348,7 +1243,6 @@
   year      = 2005,
   pages     = {234-243},
   ee        = {http://doi.acm.org/10.1145/1060590.1060626},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1362,7 +1256,6 @@
   year      = 2005,
   pages     = {244-250},
   ee        = {http://doi.acm.org/10.1145/1060590.1060627},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1373,7 +1266,6 @@
   year      = 2005,
   pages     = {251-256},
   ee        = {http://doi.acm.org/10.1145/1060590.1060628},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1386,7 +1278,6 @@
   year      = 2005,
   pages     = {257-265},
   ee        = {http://doi.acm.org/10.1145/1060590.1060629},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1398,7 +1289,6 @@
   year      = 2005,
   pages     = {266-275},
   ee        = {http://doi.acm.org/10.1145/1060590.1060631},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1410,7 +1300,6 @@
   year      = 2005,
   pages     = {276-283},
   ee        = {http://doi.acm.org/10.1145/1060590.1060632},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1422,7 +1311,6 @@
   year      = 2005,
   pages     = {284-293},
   ee        = {http://doi.acm.org/10.1145/1060590.1060633},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1436,7 +1324,6 @@
   year      = 2005,
   pages     = {294-303},
   ee        = {http://doi.acm.org/10.1145/1060590.1060634},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1450,7 +1337,6 @@
   year      = 2005,
   pages     = {304-312},
   ee        = {http://doi.acm.org/10.1145/1060590.1060636},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1462,7 +1348,6 @@
   year      = 2005,
   pages     = {313-322},
   ee        = {http://doi.acm.org/10.1145/1060590.1060637},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1475,7 +1360,6 @@
   year      = 2005,
   pages     = {323-330},
   ee        = {http://doi.acm.org/10.1145/1060590.1060638},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1487,7 +1371,6 @@
   year      = 2005,
   pages     = {331-337},
   ee        = {http://doi.acm.org/10.1145/1060590.1060639},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1499,7 +1382,6 @@
   year      = 2005,
   pages     = {338-347},
   ee        = {http://doi.acm.org/10.1145/1060590.1060641},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1512,7 +1394,6 @@
   year      = 2005,
   pages     = {348-355},
   ee        = {http://doi.acm.org/10.1145/1060590.1060642},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1525,7 +1406,6 @@
   year      = 2005,
   pages     = {356-365},
   ee        = {http://doi.acm.org/10.1145/1060590.1060644},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1537,7 +1417,6 @@
   year      = 2005,
   pages     = {366-375},
   ee        = {http://doi.acm.org/10.1145/1060590.1060645},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1548,7 +1427,6 @@
   year      = 2005,
   pages     = {376-385},
   ee        = {http://doi.acm.org/10.1145/1060590.1060647},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1564,7 +1442,6 @@
   year      = 2005,
   pages     = {386-395},
   ee        = {http://doi.acm.org/10.1145/1060590.1060649},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1576,7 +1453,6 @@
   year      = 2005,
   pages     = {396-402},
   ee        = {http://doi.acm.org/10.1145/1060590.1060650},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1587,7 +1463,6 @@
   year      = 2005,
   pages     = {403-412},
   ee        = {http://doi.acm.org/10.1145/1060590.1060651},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1601,7 +1476,6 @@
   year      = 2005,
   pages     = {413-422},
   ee        = {http://doi.acm.org/10.1145/1060590.1060652},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1612,7 +1486,6 @@
   year      = 2005,
   pages     = {423-430},
   ee        = {http://doi.acm.org/10.1145/1060590.1060654},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1624,7 +1497,6 @@
   year      = 2005,
   pages     = {431-440},
   ee        = {http://doi.acm.org/10.1145/1060590.1060655},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1638,7 +1510,6 @@
   year      = 2005,
   pages     = {441-449},
   ee        = {http://doi.acm.org/10.1145/1060590.1060656},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1651,7 +1522,6 @@
   year      = 2005,
   pages     = {450-459},
   ee        = {http://doi.acm.org/10.1145/1060590.1060657},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1663,7 +1533,6 @@
   year      = 2005,
   pages     = {460-467},
   ee        = {http://doi.acm.org/10.1145/1060590.1060659},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1675,7 +1544,6 @@
   year      = 2005,
   pages     = {468-474},
   ee        = {http://doi.acm.org/10.1145/1060590.1060660},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1688,7 +1556,6 @@
   year      = 2005,
   pages     = {475-480},
   ee        = {http://doi.acm.org/10.1145/1060590.1060661},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1700,7 +1567,6 @@
   year      = 2005,
   pages     = {481-485},
   ee        = {http://doi.acm.org/10.1145/1060590.1060662},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1714,7 +1580,6 @@
   year      = 2005,
   pages     = {486-493},
   ee        = {http://doi.acm.org/10.1145/1060590.1060664},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1728,7 +1593,6 @@
   year      = 2005,
   pages     = {494-503},
   ee        = {http://doi.acm.org/10.1145/1060590.1060665},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1739,7 +1603,6 @@
   year      = 2005,
   pages     = {504-512},
   ee        = {http://doi.acm.org/10.1145/1060590.1060666},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1752,7 +1615,6 @@
   year      = 2005,
   pages     = {513-522},
   ee        = {http://doi.acm.org/10.1145/1060590.1060668},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1763,7 +1625,6 @@
   year      = 2005,
   pages     = {523-532},
   ee        = {http://doi.acm.org/10.1145/1060590.1060669},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1776,7 +1637,6 @@
   year      = 2005,
   pages     = {533-542},
   ee        = {http://doi.acm.org/10.1145/1060590.1060670},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1789,7 +1649,6 @@
   year      = 2005,
   pages     = {543-552},
   ee        = {http://doi.acm.org/10.1145/1060590.1060671},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1802,7 +1661,6 @@
   year      = 2005,
   pages     = {553-562},
   ee        = {http://doi.acm.org/10.1145/1060590.1060673},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1816,7 +1674,6 @@
   year      = 2005,
   pages     = {563-572},
   ee        = {http://doi.acm.org/10.1145/1060590.1060674},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1831,7 +1688,6 @@
   year      = 2005,
   pages     = {573-581},
   ee        = {http://doi.acm.org/10.1145/1060590.1060675},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1843,7 +1699,6 @@
   year      = 2005,
   pages     = {582-591},
   ee        = {http://doi.acm.org/10.1145/1060590.1060676},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1856,7 +1711,6 @@
   year      = 2005,
   pages     = {592-601},
   ee        = {http://doi.acm.org/10.1145/1060590.1060678},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1868,7 +1722,6 @@
   year      = 2005,
   pages     = {602-609},
   ee        = {http://doi.acm.org/10.1145/1060590.1060679},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1882,7 +1735,6 @@
   year      = 2005,
   pages     = {610-618},
   ee        = {http://doi.acm.org/10.1145/1060590.1060681},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1898,7 +1750,6 @@
   year      = 2005,
   pages     = {619-625},
   ee        = {http://doi.acm.org/10.1145/1060590.1060682},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1909,7 +1760,6 @@
   year      = 2005,
   pages     = {626-633},
   ee        = {http://doi.acm.org/10.1145/1060590.1060684},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1920,7 +1770,6 @@
   year      = 2005,
   pages     = {634-643},
   ee        = {http://doi.acm.org/10.1145/1060590.1060686},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1934,7 +1783,6 @@
   year      = 2005,
   pages     = {644-653},
   ee        = {http://doi.acm.org/10.1145/1060590.1060687},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1946,7 +1794,6 @@
   year      = 2005,
   pages     = {654-663},
   ee        = {http://doi.acm.org/10.1145/1060590.1060688},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1957,7 +1804,6 @@
   year      = 2005,
   pages     = {664-673},
   ee        = {http://doi.acm.org/10.1145/1060590.1060689},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1969,7 +1815,6 @@
   year      = 2005,
   pages     = {674-683},
   ee        = {http://doi.acm.org/10.1145/1060590.1060691},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1982,7 +1827,6 @@
   year      = 2005,
   pages     = {684-693},
   ee        = {http://doi.acm.org/10.1145/1060590.1060692},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1997,7 +1841,6 @@
   year      = 2005,
   pages     = {694-703},
   ee        = {http://doi.acm.org/10.1145/1060590.1060693},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2008,7 +1851,6 @@
   year      = 2005,
   pages     = {704-713},
   ee        = {http://doi.acm.org/10.1145/1060590.1060694},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2022,7 +1864,6 @@
   year      = 2005,
   pages     = {714-722},
   ee        = {http://doi.acm.org/10.1145/1060590.1060696},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2033,7 +1874,6 @@
   year      = 2005,
   pages     = {723-732},
   ee        = {http://doi.acm.org/10.1145/1060590.1060697},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2045,7 +1885,6 @@
   year      = 2005,
   pages     = {733-739},
   ee        = {http://doi.acm.org/10.1145/1060590.1060698},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2056,7 +1895,6 @@
   year      = 2005,
   pages     = {740-746},
   ee        = {http://doi.acm.org/10.1145/1060590.1060700},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2071,7 +1909,6 @@
   year      = 2005,
   pages     = {747-754},
   ee        = {http://doi.acm.org/10.1145/1060590.1060701},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2083,7 +1920,6 @@
   year      = 2005,
   pages     = {755-761},
   ee        = {http://doi.acm.org/10.1145/1060590.1060702},
-  crossref  = {DBLP:conf/stoc/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2099,7 +1935,6 @@
   year      = 2004,
   pages     = {1-10},
   ee        = {http://doi.acm.org/10.1145/1007352.1007361},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2112,7 +1947,6 @@
   year      = 2004,
   pages     = {11-20},
   ee        = {http://doi.acm.org/10.1145/1007352.1007362},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2128,7 +1962,6 @@
   year      = 2004,
   pages     = {21-27},
   ee        = {http://doi.acm.org/10.1145/1007352.1007363},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2141,7 +1974,6 @@
   year      = 2004,
   pages     = {28-34},
   ee        = {http://doi.acm.org/10.1145/1007352.1007364},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2153,7 +1985,6 @@
   year      = 2004,
   pages     = {35-44},
   ee        = {http://doi.acm.org/10.1145/1007352.1007366},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2166,7 +1997,6 @@
   year      = 2004,
   pages     = {45-53},
   ee        = {http://doi.acm.org/10.1145/1007352.1007367},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2180,7 +2010,6 @@
   year      = 2004,
   pages     = {54-63},
   ee        = {http://doi.acm.org/10.1145/1007352.1007368},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2192,7 +2021,6 @@
   year      = 2004,
   pages     = {64-71},
   ee        = {http://doi.acm.org/10.1145/1007352.1007369},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2204,7 +2032,6 @@
   year      = 2004,
   pages     = {72-80},
   ee        = {http://doi.acm.org/10.1145/1007352.1007371},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2217,7 +2044,6 @@
   year      = 2004,
   pages     = {81-90},
   ee        = {http://doi.acm.org/10.1145/1007352.1007372},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2230,7 +2056,6 @@
   year      = 2004,
   pages     = {91-100},
   ee        = {http://doi.acm.org/10.1145/1007352.1007374},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2243,7 +2068,6 @@
   year      = 2004,
   pages     = {101-110},
   ee        = {http://doi.acm.org/10.1145/1007352.1007375},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2254,7 +2078,6 @@
   year      = 2004,
   pages     = {111},
   ee        = {http://doi.acm.org/10.1145/1007352.1007354},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2265,7 +2088,6 @@
   year      = 2004,
   pages     = {112-117},
   ee        = {http://doi.acm.org/10.1145/1007352.1007377},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2276,7 +2098,6 @@
   year      = 2004,
   pages     = {118-127},
   ee        = {http://doi.acm.org/10.1145/1007352.1007378},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2290,7 +2111,6 @@
   year      = 2004,
   pages     = {128-137},
   ee        = {http://doi.acm.org/10.1145/1007352.1007379},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2303,7 +2123,6 @@
   year      = 2004,
   pages     = {138-145},
   ee        = {http://doi.acm.org/10.1145/1007352.1007381},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2316,7 +2135,6 @@
   year      = 2004,
   pages     = {146-155},
   ee        = {http://doi.acm.org/10.1145/1007352.1007382},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2329,7 +2147,6 @@
   year      = 2004,
   pages     = {156-165},
   ee        = {http://doi.acm.org/10.1145/1007352.1007383},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2344,7 +2161,6 @@
   year      = 2004,
   pages     = {166-174},
   ee        = {http://doi.acm.org/10.1145/1007352.1007385},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2357,7 +2173,6 @@
   year      = 2004,
   pages     = {175-183},
   ee        = {http://doi.acm.org/10.1145/1007352.1007386},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2370,7 +2185,6 @@
   year      = 2004,
   pages     = {184-191},
   ee        = {http://doi.acm.org/10.1145/1007352.1007387},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2383,7 +2197,6 @@
   year      = 2004,
   pages     = {192-201},
   ee        = {http://doi.acm.org/10.1145/1007352.1007389},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2395,7 +2208,6 @@
   year      = 2004,
   pages     = {202-211},
   ee        = {http://doi.acm.org/10.1145/1007352.1007390},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2409,7 +2221,6 @@
   year      = 2004,
   pages     = {212-221},
   ee        = {http://doi.acm.org/10.1145/1007352.1007391},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2422,7 +2233,6 @@
   year      = 2004,
   pages     = {222-231},
   ee        = {http://doi.acm.org/10.1145/1007352.1007355},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2434,7 +2244,6 @@
   year      = 2004,
   pages     = {232-241},
   ee        = {http://doi.acm.org/10.1145/1007352.1007393},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2447,7 +2256,6 @@
   year      = 2004,
   pages     = {242-251},
   ee        = {http://doi.acm.org/10.1145/1007352.1007394},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2462,7 +2270,6 @@
   year      = 2004,
   pages     = {252-261},
   ee        = {http://doi.acm.org/10.1145/1007352.1007395},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2476,7 +2283,6 @@
   year      = 2004,
   pages     = {262-271},
   ee        = {http://doi.acm.org/10.1145/1007352.1007396},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2489,7 +2295,6 @@
   year      = 2004,
   pages     = {272-280},
   ee        = {http://doi.acm.org/10.1145/1007352.1007398},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2501,7 +2306,6 @@
   year      = 2004,
   pages     = {281-290},
   ee        = {http://doi.acm.org/10.1145/1007352.1007399},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2513,7 +2317,6 @@
   year      = 2004,
   pages     = {291-300},
   ee        = {http://doi.acm.org/10.1145/1007352.1007400},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2526,7 +2329,6 @@
   year      = 2004,
   pages     = {301-309},
   ee        = {http://doi.acm.org/10.1145/1007352.1007401},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2538,7 +2340,6 @@
   year      = 2004,
   pages     = {310-314},
   ee        = {http://doi.acm.org/10.1145/1007352.1007403},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2551,7 +2352,6 @@
   year      = 2004,
   pages     = {315-320},
   ee        = {http://doi.acm.org/10.1145/1007352.1007404},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2565,7 +2365,6 @@
   year      = 2004,
   pages     = {321-330},
   ee        = {http://doi.acm.org/10.1145/1007352.1007406},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2577,7 +2376,6 @@
   year      = 2004,
   pages     = {331-340},
   ee        = {http://doi.acm.org/10.1145/1007352.1007407},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2588,7 +2386,6 @@
   year      = 2004,
   pages     = {341-342},
   ee        = {http://doi.acm.org/10.1145/1007352.1007356},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2600,7 +2397,6 @@
   year      = 2004,
   pages     = {343-352},
   ee        = {http://doi.acm.org/10.1145/1007352.1007409},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2613,7 +2409,6 @@
   year      = 2004,
   pages     = {353-362},
   ee        = {http://doi.acm.org/10.1145/1007352.1007410},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2628,7 +2423,6 @@
   year      = 2004,
   pages     = {363-372},
   ee        = {http://doi.acm.org/10.1145/1007352.1007411},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2639,7 +2433,6 @@
   year      = 2004,
   pages     = {373-380},
   ee        = {http://doi.acm.org/10.1145/1007352.1007413},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2652,7 +2445,6 @@
   year      = 2004,
   pages     = {381-390},
   ee        = {http://doi.acm.org/10.1145/1007352.1007414},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2664,7 +2456,6 @@
   year      = 2004,
   pages     = {391-397},
   ee        = {http://doi.acm.org/10.1145/1007352.1007415},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2677,7 +2468,6 @@
   year      = 2004,
   pages     = {398-406},
   ee        = {http://doi.acm.org/10.1145/1007352.1007417},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2688,7 +2478,6 @@
   year      = 2004,
   pages     = {407-416},
   ee        = {http://doi.acm.org/10.1145/1007352.1007418},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2703,7 +2492,6 @@
   year      = 2004,
   pages     = {417-426},
   ee        = {http://doi.acm.org/10.1145/1007352.1007419},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2715,7 +2503,6 @@
   year      = 2004,
   pages     = {427-435},
   ee        = {http://doi.acm.org/10.1145/1007352.1007421},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2726,7 +2513,6 @@
   year      = 2004,
   pages     = {436-444},
   ee        = {http://doi.acm.org/10.1145/1007352.1007422},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2739,7 +2525,6 @@
   year      = 2004,
   pages     = {445-454},
   ee        = {http://doi.acm.org/10.1145/1007352.1007423},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2751,7 +2536,6 @@
   year      = 2004,
   pages     = {455-464},
   ee        = {http://doi.acm.org/10.1145/1007352.1007357},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2762,7 +2546,6 @@
   year      = 2004,
   pages     = {465-474},
   ee        = {http://doi.acm.org/10.1145/1007352.1007358},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2775,7 +2558,6 @@
   year      = 2004,
   pages     = {475-485},
   ee        = {http://doi.acm.org/10.1145/1007352.1007425},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2787,7 +2569,6 @@
   year      = 2004,
   pages     = {486-493},
   ee        = {http://doi.acm.org/10.1145/1007352.1007426},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2800,7 +2581,6 @@
   year      = 2004,
   pages     = {494-501},
   ee        = {http://doi.acm.org/10.1145/1007352.1007427},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2811,7 +2591,6 @@
   year      = 2004,
   pages     = {502-510},
   ee        = {http://doi.acm.org/10.1145/1007352.1007428},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2823,7 +2602,6 @@
   year      = 2004,
   pages     = {511-518},
   ee        = {http://doi.acm.org/10.1145/1007352.1007430},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2835,7 +2613,6 @@
   year      = 2004,
   pages     = {519-528},
   ee        = {http://doi.acm.org/10.1145/1007352.1007431},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2852,7 +2629,6 @@
   year      = 2004,
   pages     = {529-538},
   ee        = {http://doi.acm.org/10.1145/1007352.1007432},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2863,7 +2639,6 @@
   year      = 2004,
   pages     = {539-545},
   ee        = {http://doi.acm.org/10.1145/1007352.1007433},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2875,7 +2650,6 @@
   year      = 2004,
   pages     = {546-553},
   ee        = {http://doi.acm.org/10.1145/1007352.1007435},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2887,7 +2661,6 @@
   year      = 2004,
   pages     = {554-560},
   ee        = {http://doi.acm.org/10.1145/1007352.1007436},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2899,7 +2672,6 @@
   year      = 2004,
   pages     = {561-568},
   ee        = {http://doi.acm.org/10.1145/1007352.1007438},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2911,7 +2683,6 @@
   year      = 2004,
   pages     = {569-578},
   ee        = {http://doi.acm.org/10.1145/1007352.1007439},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2923,7 +2694,6 @@
   year      = 2004,
   pages     = {579},
   ee        = {http://doi.acm.org/10.1145/1007352.1007359},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2937,7 +2707,6 @@
   year      = 2004,
   pages     = {580-586},
   ee        = {http://doi.acm.org/10.1145/1007352.1007441},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2950,7 +2719,6 @@
   year      = 2004,
   pages     = {587-593},
   ee        = {http://doi.acm.org/10.1145/1007352.1007442},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2962,7 +2730,6 @@
   year      = 2004,
   pages     = {594-603},
   ee        = {http://doi.acm.org/10.1145/1007352.1007443},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2975,7 +2742,6 @@
   year      = 2004,
   pages     = {604-612},
   ee        = {http://doi.acm.org/10.1145/1007352.1007445},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2990,7 +2756,6 @@
   year      = 2004,
   pages     = {613-622},
   ee        = {http://doi.acm.org/10.1145/1007352.1007446},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3003,7 +2768,6 @@
   year      = 2004,
   pages     = {623-632},
   ee        = {http://doi.acm.org/10.1145/1007352.1007447},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3015,7 +2779,6 @@
   year      = 2004,
   pages     = {633-641},
   ee        = {http://doi.acm.org/10.1145/1007352.1007353},
-  crossref  = {DBLP:conf/stoc/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3030,7 +2793,6 @@
   year      = 2003,
   pages     = {1-9},
   ee        = {http://doi.acm.org/10.1145/780542.780544},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3042,7 +2804,6 @@
   year      = 2003,
   pages     = {10-19},
   ee        = {http://doi.acm.org/10.1145/780542.780545},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3055,7 +2816,6 @@
   year      = 2003,
   pages     = {20-29},
   ee        = {http://doi.acm.org/10.1145/780542.780546},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3068,7 +2828,6 @@
   year      = 2003,
   pages     = {30-39},
   ee        = {http://doi.acm.org/10.1145/780542.780548},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3079,7 +2838,6 @@
   year      = 2003,
   pages     = {40-49},
   ee        = {http://doi.acm.org/10.1145/780542.780549},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3093,7 +2851,6 @@
   year      = 2003,
   pages     = {50-58},
   ee        = {http://doi.acm.org/10.1145/780542.780550},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3109,7 +2866,6 @@
   year      = 2003,
   pages     = {59-68},
   ee        = {http://doi.acm.org/10.1145/780542.780552},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3120,7 +2876,6 @@
   year      = 2003,
   pages     = {69-76},
   ee        = {http://doi.acm.org/10.1145/780542.780553},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3131,7 +2886,6 @@
   year      = 2003,
   pages     = {77-81},
   ee        = {http://doi.acm.org/10.1145/780542.780554},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3143,7 +2897,6 @@
   year      = 2003,
   pages     = {82-89},
   ee        = {http://doi.acm.org/10.1145/780542.780556},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3156,7 +2909,6 @@
   year      = 2003,
   pages     = {90-99},
   ee        = {http://doi.acm.org/10.1145/780542.780557},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3171,7 +2923,6 @@
   year      = 2003,
   pages     = {100-105},
   ee        = {http://doi.acm.org/10.1145/780542.780558},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3184,7 +2935,6 @@
   year      = 2003,
   pages     = {106-115},
   ee        = {http://doi.acm.org/10.1145/780542.780560},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3195,7 +2945,6 @@
   year      = 2003,
   pages     = {116-125},
   ee        = {http://doi.acm.org/10.1145/780542.780561},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3207,7 +2956,6 @@
   year      = 2003,
   pages     = {126-135},
   ee        = {http://doi.acm.org/10.1145/780542.780562},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3220,7 +2968,6 @@
   year      = 2003,
   pages     = {136-142},
   ee        = {http://doi.acm.org/10.1145/780542.780563},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3232,7 +2979,6 @@
   year      = 2003,
   pages     = {143-148},
   ee        = {http://doi.acm.org/10.1145/780542.780565},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3244,7 +2990,6 @@
   year      = 2003,
   pages     = {149-158},
   ee        = {http://doi.acm.org/10.1145/780542.780566},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3256,7 +3001,6 @@
   year      = 2003,
   pages     = {159-166},
   ee        = {http://doi.acm.org/10.1145/780542.780567},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3268,7 +3012,6 @@
   year      = 2003,
   pages     = {167-176},
   ee        = {http://doi.acm.org/10.1145/780542.780568},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3280,7 +3023,6 @@
   year      = 2003,
   pages     = {177-185},
   ee        = {http://doi.acm.org/10.1145/780542.780570},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3293,7 +3035,6 @@
   year      = 2003,
   pages     = {186-195},
   ee        = {http://doi.acm.org/10.1145/780542.780571},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3305,7 +3046,6 @@
   year      = 2003,
   pages     = {195-205},
   ee        = {http://doi.acm.org/10.1145/780542.780573},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3318,7 +3058,6 @@
   year      = 2003,
   pages     = {206-212},
   ee        = {http://doi.acm.org/10.1145/780542.780574},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3330,7 +3069,6 @@
   year      = 2003,
   pages     = {213-222},
   ee        = {http://doi.acm.org/10.1145/780542.780576},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3342,7 +3080,6 @@
   year      = 2003,
   pages     = {223-231},
   ee        = {http://doi.acm.org/10.1145/780542.780577},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3354,7 +3091,6 @@
   year      = 2003,
   pages     = {232-241},
   ee        = {http://doi.acm.org/10.1145/780542.780578},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3367,7 +3103,6 @@
   year      = 2003,
   pages     = {242-250},
   ee        = {http://doi.acm.org/10.1145/780542.780580},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3381,7 +3116,6 @@
   year      = 2003,
   pages     = {251-258},
   ee        = {http://doi.acm.org/10.1145/780542.780581},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3395,7 +3129,6 @@
   year      = 2003,
   pages     = {259-268},
   ee        = {http://doi.acm.org/10.1145/780542.780582},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3406,7 +3139,6 @@
   year      = 2003,
   pages     = {269-278},
   ee        = {http://doi.acm.org/10.1145/780542.780584},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3418,7 +3150,6 @@
   year      = 2003,
   pages     = {279-286},
   ee        = {http://doi.acm.org/10.1145/780542.780585},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3430,7 +3161,6 @@
   year      = 2003,
   pages     = {287-296},
   ee        = {http://doi.acm.org/10.1145/780542.780586},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3442,7 +3172,6 @@
   year      = 2003,
   pages     = {297-306},
   ee        = {http://doi.acm.org/10.1145/780542.780588},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3454,7 +3183,6 @@
   year      = 2003,
   pages     = {307-315},
   ee        = {http://doi.acm.org/10.1145/780542.780589},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3471,7 +3199,6 @@
   year      = 2003,
   pages     = {316-324},
   ee        = {http://doi.acm.org/10.1145/780542.780590},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3483,7 +3210,6 @@
   year      = 2003,
   pages     = {325-334},
   ee        = {http://doi.acm.org/10.1145/780542.780592},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3494,7 +3220,6 @@
   year      = 2003,
   pages     = {335-344},
   ee        = {http://doi.acm.org/10.1145/780542.780593},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3507,7 +3232,6 @@
   year      = 2003,
   pages     = {345-354},
   ee        = {http://doi.acm.org/10.1145/780542.780594},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3520,7 +3244,6 @@
   year      = 2003,
   pages     = {355-364},
   ee        = {http://doi.acm.org/10.1145/780542.780595},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3534,7 +3257,6 @@
   year      = 2003,
   pages     = {365-372},
   ee        = {http://doi.acm.org/10.1145/780542.780597},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3547,7 +3269,6 @@
   year      = 2003,
   pages     = {373-382},
   ee        = {http://doi.acm.org/10.1145/780542.780598},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3562,7 +3283,6 @@
   year      = 2003,
   pages     = {383-388},
   ee        = {http://doi.acm.org/10.1145/780542.780599},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3575,7 +3295,6 @@
   year      = 2003,
   pages     = {389-395},
   ee        = {http://doi.acm.org/10.1145/780542.780600},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3587,7 +3306,6 @@
   year      = 2003,
   pages     = {396-406},
   ee        = {http://doi.acm.org/10.1145/780542.780602},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3598,7 +3316,6 @@
   year      = 2003,
   pages     = {407-416},
   ee        = {http://doi.acm.org/10.1145/780542.780603},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3612,7 +3329,6 @@
   year      = 2003,
   pages     = {417-425},
   ee        = {http://doi.acm.org/10.1145/780542.780604},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3624,7 +3340,6 @@
   year      = 2003,
   pages     = {426-437},
   ee        = {http://doi.acm.org/10.1145/780542.780605},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3636,7 +3351,6 @@
   year      = 2003,
   pages     = {438-447},
   ee        = {http://doi.acm.org/10.1145/780542.780607},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3650,7 +3364,6 @@
   year      = 2003,
   pages     = {448-455},
   ee        = {http://doi.acm.org/10.1145/780542.780608},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3662,7 +3375,6 @@
   year      = 2003,
   pages     = {456-462},
   ee        = {http://doi.acm.org/10.1145/780542.780609},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3676,7 +3388,6 @@
   year      = 2003,
   pages     = {463-472},
   ee        = {http://doi.acm.org/10.1145/780542.780610},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3690,7 +3401,6 @@
   year      = 2003,
   pages     = {473-482},
   ee        = {http://doi.acm.org/10.1145/780542.780612},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3703,7 +3413,6 @@
   year      = 2003,
   pages     = {483-492},
   ee        = {http://doi.acm.org/10.1145/780542.780613},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3716,7 +3425,6 @@
   year      = 2003,
   pages     = {493-502},
   ee        = {http://doi.acm.org/10.1145/780542.780614},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3729,7 +3437,6 @@
   year      = 2003,
   pages     = {503-510},
   ee        = {http://doi.acm.org/10.1145/780542.780616},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3743,7 +3450,6 @@
   year      = 2003,
   pages     = {511-520},
   ee        = {http://doi.acm.org/10.1145/780542.780617},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3756,7 +3462,6 @@
   year      = 2003,
   pages     = {521-530},
   ee        = {http://doi.acm.org/10.1145/780542.780618},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3769,7 +3474,6 @@
   year      = 2003,
   pages     = {531-540},
   ee        = {http://doi.acm.org/10.1145/780542.780620},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3783,7 +3487,6 @@
   year      = 2003,
   pages     = {541-546},
   ee        = {http://doi.acm.org/10.1145/780542.780621},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3796,7 +3499,6 @@
   year      = 2003,
   pages     = {547-555},
   ee        = {http://doi.acm.org/10.1145/780542.780622},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3811,7 +3513,6 @@
   year      = 2003,
   pages     = {556-564},
   ee        = {http://doi.acm.org/10.1145/780542.780624},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3823,7 +3524,6 @@
   year      = 2003,
   pages     = {565-574},
   ee        = {http://doi.acm.org/10.1145/780542.780625},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3838,7 +3538,6 @@
   year      = 2003,
   pages     = {575-584},
   ee        = {http://doi.acm.org/10.1145/780542.780626},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3850,7 +3549,6 @@
   year      = 2003,
   pages     = {585-594},
   ee        = {http://doi.acm.org/10.1145/780542.780628},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3865,7 +3563,6 @@
   year      = 2003,
   pages     = {595-601},
   ee        = {http://doi.acm.org/10.1145/780542.780629},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3879,7 +3576,6 @@
   year      = 2003,
   pages     = {602-611},
   ee        = {http://doi.acm.org/10.1145/780542.780630},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3894,7 +3590,6 @@
   year      = 2003,
   pages     = {612-621},
   ee        = {http://doi.acm.org/10.1145/780542.780631},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3906,7 +3601,6 @@
   year      = 2003,
   pages     = {622-628},
   ee        = {http://doi.acm.org/10.1145/780542.780633},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3918,7 +3612,6 @@
   year      = 2003,
   pages     = {629-638},
   ee        = {http://doi.acm.org/10.1145/780542.780634},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3931,7 +3624,6 @@
   year      = 2003,
   pages     = {639-648},
   ee        = {http://doi.acm.org/10.1145/780542.780635},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3942,7 +3634,6 @@
   year      = 2003,
   pages     = {649-658},
   ee        = {http://doi.acm.org/10.1145/780542.780636},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3954,7 +3645,6 @@
   year      = 2003,
   pages     = {659-666},
   ee        = {http://doi.acm.org/10.1145/780542.780638},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3968,7 +3658,6 @@
   year      = 2003,
   pages     = {667-672},
   ee        = {http://doi.acm.org/10.1145/780542.780639},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3981,7 +3670,6 @@
   year      = 2003,
   pages     = {673-682},
   ee        = {http://doi.acm.org/10.1145/780542.780640},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3993,7 +3681,6 @@
   year      = 2003,
   pages     = {683-692},
   ee        = {http://doi.acm.org/10.1145/780542.780641},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -4004,7 +3691,6 @@
   year      = 2003,
   pages     = {693-699},
   ee        = {http://doi.acm.org/10.1145/780542.780643},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -4016,7 +3702,6 @@
   year      = 2003,
   pages     = {700-709},
   ee        = {http://doi.acm.org/10.1145/780542.780644},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -4030,7 +3715,6 @@
   year      = 2003,
   pages     = {710-719},
   ee        = {http://doi.acm.org/10.1145/780542.780645},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -4041,7 +3725,6 @@
   year      = 2003,
   pages     = {720-724},
   ee        = {http://doi.acm.org/10.1145/780542.780646},
-  crossref  = {DBLP:conf/stoc/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -10892,7 +10575,6 @@
   year      = 1995,
   pages     = {1-10},
   ee        = {http://doi.acm.org/10.1145/225058.225066},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -10904,7 +10586,6 @@
   year      = 1995,
   pages     = {11-17},
   ee        = {http://doi.acm.org/10.1145/225058.225069},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -10917,7 +10598,6 @@
   year      = 1995,
   pages     = {18-25},
   ee        = {http://doi.acm.org/10.1145/225058.225073},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -10930,7 +10610,6 @@
   year      = 1995,
   pages     = {26-35},
   ee        = {http://doi.acm.org/10.1145/225058.225075},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -10943,7 +10622,6 @@
   year      = 1995,
   pages     = {36-44},
   ee        = {http://doi.acm.org/10.1145/225058.225077},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -10956,7 +10634,6 @@
   year      = 1995,
   pages     = {45-56},
   ee        = {http://doi.acm.org/10.1145/225058.225080},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -10969,7 +10646,6 @@
   year      = 1995,
   pages     = {57-66},
   ee        = {http://doi.acm.org/10.1145/225058.225084},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -10980,7 +10656,6 @@
   year      = 1995,
   pages     = {67-75},
   ee        = {http://doi.acm.org/10.1145/225058.225085},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -10992,7 +10667,6 @@
   year      = 1995,
   pages     = {76-82},
   ee        = {http://doi.acm.org/10.1145/225058.225086},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11005,7 +10679,6 @@
   year      = 1995,
   pages     = {83-92},
   ee        = {http://doi.acm.org/10.1145/225058.225088},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11017,7 +10690,6 @@
   year      = 1995,
   pages     = {93-102},
   ee        = {http://doi.acm.org/10.1145/225058.225090},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11031,7 +10703,6 @@
   year      = 1995,
   pages     = {103-111},
   ee        = {http://doi.acm.org/10.1145/225058.225093},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11043,7 +10714,6 @@
   year      = 1995,
   pages     = {112-129},
   ee        = {http://doi.acm.org/10.1145/225058.225095},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11055,7 +10725,6 @@
   year      = 1995,
   pages     = {130-139},
   ee        = {http://doi.acm.org/10.1145/225058.225098},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11067,7 +10736,6 @@
   year      = 1995,
   pages     = {140-146},
   ee        = {http://doi.acm.org/10.1145/225058.225101},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11080,7 +10748,6 @@
   year      = 1995,
   pages     = {147-156},
   ee        = {http://doi.acm.org/10.1145/225058.225103},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11093,7 +10760,6 @@
   year      = 1995,
   pages     = {157-168},
   ee        = {http://doi.acm.org/10.1145/225058.225106},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11106,7 +10772,6 @@
   year      = 1995,
   pages     = {169-177},
   ee        = {http://doi.acm.org/10.1145/225058.225108},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11119,7 +10784,6 @@
   year      = 1995,
   pages     = {178-189},
   ee        = {http://doi.acm.org/10.1145/225058.225112},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11133,7 +10797,6 @@
   year      = 1995,
   pages     = {190-199},
   ee        = {http://doi.acm.org/10.1145/225058.225114},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11145,7 +10808,6 @@
   year      = 1995,
   pages     = {200-208},
   ee        = {http://doi.acm.org/10.1145/225058.225118},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11158,7 +10820,6 @@
   year      = 1995,
   pages     = {209-218},
   ee        = {http://doi.acm.org/10.1145/225058.225121},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11171,7 +10832,6 @@
   year      = 1995,
   pages     = {219-228},
   ee        = {http://doi.acm.org/10.1145/225058.225125},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11183,7 +10843,6 @@
   year      = 1995,
   pages     = {229-237},
   ee        = {http://doi.acm.org/10.1145/225058.225129},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11197,7 +10856,6 @@
   year      = 1995,
   pages     = {238-247},
   ee        = {http://doi.acm.org/10.1145/225058.225131},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11209,7 +10867,6 @@
   year      = 1995,
   pages     = {248-257},
   ee        = {http://doi.acm.org/10.1145/225058.225133},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11221,7 +10878,6 @@
   year      = 1995,
   pages     = {258-267},
   ee        = {http://doi.acm.org/10.1145/225058.225136},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11232,7 +10888,6 @@
   year      = 1995,
   pages     = {268-276},
   ee        = {http://doi.acm.org/10.1145/225058.225138},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11247,7 +10902,6 @@
   year      = 1995,
   pages     = {277-283},
   ee        = {http://doi.acm.org/10.1145/225058.225139},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11261,7 +10915,6 @@
   year      = 1995,
   pages     = {284-293},
   ee        = {http://doi.acm.org/10.1145/225058.225140},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11275,7 +10928,6 @@
   year      = 1995,
   pages     = {294-302},
   ee        = {http://doi.acm.org/10.1145/225058.225143},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11290,7 +10942,6 @@
   year      = 1995,
   pages     = {303-314},
   ee        = {http://doi.acm.org/10.1145/225058.225147},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11302,7 +10953,6 @@
   year      = 1995,
   pages     = {315-324},
   ee        = {http://doi.acm.org/10.1145/225058.225151},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11313,7 +10963,6 @@
   year      = 1995,
   pages     = {325-334},
   ee        = {http://doi.acm.org/10.1145/225058.225153},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11328,7 +10977,6 @@
   year      = 1995,
   pages     = {335-342},
   ee        = {http://doi.acm.org/10.1145/225058.225155},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11342,7 +10990,6 @@
   year      = 1995,
   pages     = {343-352},
   ee        = {http://doi.acm.org/10.1145/225058.225158},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11357,7 +11004,6 @@
   year      = 1995,
   pages     = {353-362},
   ee        = {http://doi.acm.org/10.1145/225058.225159},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11371,7 +11017,6 @@
   year      = 1995,
   pages     = {363-372},
   ee        = {http://doi.acm.org/10.1145/225058.225161},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11385,7 +11030,6 @@
   year      = 1995,
   pages     = {373-382},
   ee        = {http://doi.acm.org/10.1145/225058.225162},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11396,7 +11040,6 @@
   year      = 1995,
   pages     = {383-387},
   ee        = {http://doi.acm.org/10.1145/225058.225163},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11407,7 +11050,6 @@
   year      = 1995,
   pages     = {388-397},
   ee        = {http://doi.acm.org/10.1145/225058.225165},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11419,7 +11061,6 @@
   year      = 1995,
   pages     = {398-406},
   ee        = {http://doi.acm.org/10.1145/225058.225166},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11431,7 +11072,6 @@
   year      = 1995,
   pages     = {407-416},
   ee        = {http://doi.acm.org/10.1145/225058.225167},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11444,7 +11084,6 @@
   year      = 1995,
   pages     = {417-426},
   ee        = {http://doi.acm.org/10.1145/225058.225171},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11458,7 +11097,6 @@
   year      = 1995,
   pages     = {427-436},
   ee        = {http://doi.acm.org/10.1145/225058.225173},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11474,7 +11112,6 @@
   year      = 1995,
   pages     = {437-446},
   ee        = {http://doi.acm.org/10.1145/225058.225178},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11485,7 +11122,6 @@
   year      = 1995,
   pages     = {447-456},
   ee        = {http://doi.acm.org/10.1145/225058.225181},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11498,7 +11134,6 @@
   year      = 1995,
   pages     = {457-468},
   ee        = {http://doi.acm.org/10.1145/225058.225183},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11511,7 +11146,6 @@
   year      = 1995,
   pages     = {469-478},
   ee        = {http://doi.acm.org/10.1145/225058.225186},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11524,7 +11158,6 @@
   year      = 1995,
   pages     = {479-488},
   ee        = {http://doi.acm.org/10.1145/225058.225188},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11539,7 +11172,6 @@
   year      = 1995,
   pages     = {489-498},
   ee        = {http://doi.acm.org/10.1145/225058.225191},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11551,7 +11183,6 @@
   year      = 1995,
   pages     = {499-508},
   ee        = {http://doi.acm.org/10.1145/225058.225267},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11564,7 +11195,6 @@
   year      = 1995,
   pages     = {509-518},
   ee        = {http://doi.acm.org/10.1145/225058.225268},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11577,7 +11207,6 @@
   year      = 1995,
   pages     = {519-527},
   ee        = {http://doi.acm.org/10.1145/225058.225269},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11592,7 +11221,6 @@
   year      = 1995,
   pages     = {528-537},
   ee        = {http://doi.acm.org/10.1145/225058.225270},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11605,7 +11233,6 @@
   year      = 1995,
   pages     = {538-547},
   ee        = {http://doi.acm.org/10.1145/225058.225271},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11624,7 +11251,6 @@
   year      = 1995,
   pages     = {548-558},
   ee        = {http://doi.acm.org/10.1145/225058.225272},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11637,7 +11263,6 @@
   year      = 1995,
   pages     = {559-568},
   ee        = {http://doi.acm.org/10.1145/225058.225273},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11650,7 +11275,6 @@
   year      = 1995,
   pages     = {569-574},
   ee        = {http://doi.acm.org/10.1145/225058.225274},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11663,7 +11287,6 @@
   year      = 1995,
   pages     = {575-584},
   ee        = {http://doi.acm.org/10.1145/225058.225275},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11676,7 +11299,6 @@
   year      = 1995,
   pages     = {585-595},
   ee        = {http://doi.acm.org/10.1145/225058.225276},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11689,7 +11311,6 @@
   year      = 1995,
   pages     = {596-605},
   ee        = {http://doi.acm.org/10.1145/225058.225277},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11701,7 +11322,6 @@
   year      = 1995,
   pages     = {606-615},
   ee        = {http://doi.acm.org/10.1145/225058.225278},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11716,7 +11336,6 @@
   year      = 1995,
   pages     = {616-625},
   ee        = {http://doi.acm.org/10.1145/225058.225279},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11728,7 +11347,6 @@
   year      = 1995,
   pages     = {626-634},
   ee        = {http://doi.acm.org/10.1145/225058.225280},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11740,7 +11358,6 @@
   year      = 1995,
   pages     = {635-640},
   ee        = {http://doi.acm.org/10.1145/225058.225281},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11752,7 +11369,6 @@
   year      = 1995,
   pages     = {641-649},
   ee        = {http://doi.acm.org/10.1145/225058.225282},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11764,7 +11380,6 @@
   year      = 1995,
   pages     = {650-661},
   ee        = {http://doi.acm.org/10.1145/225058.225283},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11775,7 +11390,6 @@
   year      = 1995,
   pages     = {662-671},
   ee        = {http://doi.acm.org/10.1145/225058.225284},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11789,7 +11403,6 @@
   year      = 1995,
   pages     = {672-682},
   ee        = {http://doi.acm.org/10.1145/225058.225285},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11804,7 +11417,6 @@
   year      = 1995,
   pages     = {683-692},
   ee        = {http://doi.acm.org/10.1145/225058.225286},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11817,7 +11429,6 @@
   year      = 1995,
   pages     = {693-702},
   ee        = {http://doi.acm.org/10.1145/225058.225287},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11829,7 +11440,6 @@
   year      = 1995,
   pages     = {703-712},
   ee        = {http://doi.acm.org/10.1145/225058.225288},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11844,7 +11454,6 @@
   year      = 1995,
   pages     = {713-722},
   ee        = {http://doi.acm.org/10.1145/225058.225289},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11857,7 +11466,6 @@
   year      = 1995,
   pages     = {723-732},
   ee        = {http://doi.acm.org/10.1145/225058.225290},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11868,7 +11476,6 @@
   year      = 1995,
   pages     = {733-740},
   ee        = {http://doi.acm.org/10.1145/225058.225291},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11880,7 +11487,6 @@
   year      = 1995,
   pages     = {741-750},
   ee        = {http://doi.acm.org/10.1145/225058.225292},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -11892,7 +11498,6 @@
   year      = 1995,
   pages     = {751-761},
   ee        = {http://doi.acm.org/10.1145/225058.225293},
-  crossref  = {DBLP:conf/stoc/STOC27},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 

@@ -9,7 +9,6 @@
   year      = 2004,
   pages     = {1-14},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/general/ruan.html},
-  crossref  = {DBLP:conf/usenix/2004g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -22,7 +21,6 @@
   year      = 2004,
   pages     = {15-28},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/general/cantrill.html},
-  crossref  = {DBLP:conf/usenix/2004g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -37,7 +35,6 @@
   year      = 2004,
   pages     = {29-44},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/general/srinivasan.html},
-  crossref  = {DBLP:conf/usenix/2004g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -52,7 +49,6 @@
   year      = 2004,
   pages     = {45-58},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/general/twining.html},
-  crossref  = {DBLP:conf/usenix/2004g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -66,7 +62,6 @@
   year      = 2004,
   pages     = {59-72},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/general/kulkarni.html},
-  crossref  = {DBLP:conf/usenix/2004g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -79,7 +74,6 @@
   year      = 2004,
   pages     = {73-86},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/general/policroniades.html},
-  crossref  = {DBLP:conf/usenix/2004g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -94,7 +88,6 @@
   year      = 2004,
   pages     = {87-98},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/general/cheng.html},
-  crossref  = {DBLP:conf/usenix/2004g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -110,7 +103,6 @@
   year      = 2004,
   pages     = {99-112},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/general/zhang.html},
-  crossref  = {DBLP:conf/usenix/2004g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -124,7 +116,6 @@
   year      = 2004,
   pages     = {113-126},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/general/akella.html},
-  crossref  = {DBLP:conf/usenix/2004g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -138,7 +129,6 @@
   year      = 2004,
   pages     = {127-140},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/general/rhea.html},
-  crossref  = {DBLP:conf/usenix/2004g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -150,7 +140,6 @@
   year      = 2004,
   pages     = {141-154},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/general/ng.html},
-  crossref  = {DBLP:conf/usenix/2004g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -168,7 +157,6 @@
   year      = 2004,
   pages     = {155-170},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/general/chu.html},
-  crossref  = {DBLP:conf/usenix/2004g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -184,7 +172,6 @@
   year      = 2004,
   pages     = {171-184},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/general/wang.html},
-  crossref  = {DBLP:conf/usenix/2004g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -195,7 +182,6 @@
   year      = 2004,
   pages     = {185-198},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/general/krohn.html},
-  crossref  = {DBLP:conf/usenix/2004g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -211,7 +197,6 @@
   year      = 2004,
   pages     = {199-212},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/general/kaminsky.html},
-  crossref  = {DBLP:conf/usenix/2004g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -225,7 +210,6 @@
   year      = 2004,
   pages     = {213-226},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/general/sinha.html},
-  crossref  = {DBLP:conf/usenix/2004g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -238,7 +222,6 @@
   year      = 2004,
   pages     = {227-240},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/general/brecht.html},
-  crossref  = {DBLP:conf/usenix/2004g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -252,7 +235,6 @@
   year      = 2004,
   pages     = {241-254},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/general/elmeleegy.html},
-  crossref  = {DBLP:conf/usenix/2004g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -264,7 +246,6 @@
   year      = 2004,
   pages     = {255-268},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/general/papathanasiou.html},
-  crossref  = {DBLP:conf/usenix/2004g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -276,7 +257,6 @@
   year      = 2004,
   pages     = {269-282},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/general/tan.html},
-  crossref  = {DBLP:conf/usenix/2004g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -293,7 +273,6 @@
   year      = 2004,
   pages     = {283-296},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/general/girod.html},
-  crossref  = {DBLP:conf/usenix/2004g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -307,7 +286,6 @@
   year      = 2004,
   pages     = {1-8},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/freenix/fowler.html},
-  crossref  = {DBLP:conf/usenix/2004f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -320,7 +298,6 @@
   year      = 2004,
   pages     = {9-18},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/freenix/cecchet.html},
-  crossref  = {DBLP:conf/usenix/2004f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -334,7 +311,6 @@
   year      = 2004,
   pages     = {19-28},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/freenix/cornell.html},
-  crossref  = {DBLP:conf/usenix/2004f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -346,7 +322,6 @@
   year      = 2004,
   pages     = {29-40},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/freenix/nilsson.html},
-  crossref  = {DBLP:conf/usenix/2004f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -357,7 +332,6 @@
   year      = 2004,
   pages     = {41-50},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/freenix/anholt.html},
-  crossref  = {DBLP:conf/usenix/2004f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -368,7 +342,6 @@
   year      = 2004,
   pages     = {51-61},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/freenix/sharp.html},
-  crossref  = {DBLP:conf/usenix/2004f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -380,7 +353,6 @@
   year      = 2004,
   pages     = {63-72},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/freenix/kreibich.html},
-  crossref  = {DBLP:conf/usenix/2004f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -392,7 +364,6 @@
   year      = 2004,
   pages     = {73-80},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/freenix/rahimi.html},
-  crossref  = {DBLP:conf/usenix/2004f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -404,7 +375,6 @@
   year      = 2004,
   pages     = {81-91},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/freenix/hallyn.html},
-  crossref  = {DBLP:conf/usenix/2004f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -414,7 +384,6 @@
                Environment},
   booktitle = usenixf,
   year      = 2004,
-  crossref  = {DBLP:conf/usenix/2004f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -425,7 +394,6 @@
   year      = 2004,
   pages     = {93-102},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/freenix/michlmayr.html},
-  crossref  = {DBLP:conf/usenix/2004f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -437,7 +405,6 @@
   year      = 2004,
   pages     = {103-113},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/freenix/bauer.html},
-  crossref  = {DBLP:conf/usenix/2004f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -446,7 +413,6 @@
   title     = {Current Gtk+ Development},
   booktitle = usenixf,
   year      = 2004,
-  crossref  = {DBLP:conf/usenix/2004f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -463,7 +429,6 @@
   year      = 2004,
   pages     = {115-126},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/freenix/faure.html},
-  crossref  = {DBLP:conf/usenix/2004f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -475,7 +440,6 @@
   year      = 2004,
   pages     = {127-134},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/freenix/larsen.html},
-  crossref  = {DBLP:conf/usenix/2004f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -492,7 +456,6 @@
   year      = 2004,
   pages     = {135-144},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/tech/freenix/clark.html},
-  crossref  = {DBLP:conf/usenix/2004f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -504,7 +467,6 @@
   year      = 2003,
   pages     = {1-14},
   ee        = {http://www.usenix.org/events/usenix03/tech/brown.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -519,7 +481,6 @@
   year      = 2003,
   pages     = {15-28},
   ee        = {http://www.usenix.org/events/usenix03/tech/tan.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -534,7 +495,6 @@
   year      = 2003,
   pages     = {29-41},
   ee        = {http://www.usenix.org/events/usenix03/tech/lillibridge.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -549,7 +509,6 @@
   year      = 2003,
   pages     = {43-56},
   ee        = {http://www.usenix.org/events/usenix03/tech/zeng.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -562,7 +521,6 @@
   year      = 2003,
   pages     = {57-70},
   ee        = {http://www.usenix.org/events/usenix03/tech/huang.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -575,7 +533,6 @@
   year      = 2003,
   pages     = {71-84},
   ee        = {http://www.usenix.org/events/usenix03/tech/king.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -588,7 +545,6 @@
   year      = 2003,
   pages     = {85-98},
   ee        = {http://www.usenix.org/events/usenix03/tech/czajkowski.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -600,7 +556,6 @@
   year      = 2003,
   pages     = {99-112},
   ee        = {http://www.usenix.org/events/usenix03/tech/padioleau.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -612,7 +567,6 @@
   year      = 2003,
   pages     = {113-126},
   ee        = {http://www.usenix.org/events/usenix03/tech/douglis.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -629,7 +583,6 @@
   year      = 2003,
   pages     = {127-140},
   ee        = {http://www.usenix.org/events/usenix03/tech/tolia.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -651,7 +604,6 @@
   year      = 2003,
   pages     = {141-154},
   ee        = {http://www.usenix.org/events/usenix03/tech/soules.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -663,7 +615,6 @@
   year      = 2003,
   pages     = {155-165},
   ee        = {http://www.usenix.org/events/usenix03/tech/zandy.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -675,7 +626,6 @@
   year      = 2003,
   pages     = {167-180},
   ee        = {http://www.usenix.org/events/usenix03/tech/roussopoulos.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -688,7 +638,6 @@
   year      = 2003,
   pages     = {181-196},
   ee        = {http://www.usenix.org/events/usenix03/tech/keromytis.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -701,7 +650,6 @@
   year      = 2003,
   pages     = {197-210},
   ee        = {http://www.usenix.org/events/usenix03/tech/wright.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -714,7 +662,6 @@
   year      = 2003,
   pages     = {211-224},
   ee        = {http://www.usenix.org/events/usenix03/tech/prasad.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -726,7 +673,6 @@
   year      = 2003,
   pages     = {225-238},
   ee        = {http://www.usenix.org/events/usenix03/tech/rosu.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -742,7 +688,6 @@
   year      = 2003,
   pages     = {239-252},
   ee        = {http://www.usenix.org/events/usenix03/tech/zeldovich.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -755,7 +700,6 @@
   year      = 2003,
   pages     = {253-268},
   ee        = {http://www.usenix.org/events/usenix03/tech/ji.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -768,7 +712,6 @@
   year      = 2003,
   pages     = {269-281},
   ee        = {http://www.usenix.org/events/usenix03/tech/chen.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -783,7 +726,6 @@
   year      = 2003,
   pages     = {283-296},
   ee        = {http://www.usenix.org/events/usenix03/tech/hibler.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -796,7 +738,6 @@
   year      = 2003,
   pages     = {297-310},
   ee        = {http://www.usenix.org/events/usenix03/tech/popovici.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -810,7 +751,6 @@
   year      = 2003,
   pages     = {311-323},
   ee        = {http://www.usenix.org/events/usenix03/tech/nugent.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -823,7 +763,6 @@
   year      = 2003,
   pages     = {325-338},
   ee        = {http://www.usenix.org/events/usenix03/tech/fraser.html},
-  crossref  = {DBLP:conf/usenix/2003g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -835,7 +774,6 @@
   year      = 2003,
   pages     = {1-14},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/lifantsev.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -848,7 +786,6 @@
   year      = 2003,
   pages     = {15-27},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/gschwind.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -862,7 +799,6 @@
   year      = 2003,
   pages     = {29-38},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/arthorne.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -873,7 +809,6 @@
   year      = 2003,
   pages     = {39-50},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/warsaw.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -884,7 +819,6 @@
   year      = 2003,
   pages     = {51-62},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/paganini.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -898,7 +832,6 @@
   year      = 2003,
   pages     = {63-76},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/massey.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -910,7 +843,6 @@
   year      = 2003,
   pages     = {77-89},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/lefkowitz.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -923,7 +855,6 @@
   year      = 2003,
   pages     = {91-100},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/rasch.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -935,7 +866,6 @@
   year      = 2003,
   pages     = {101-114},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/ellard.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -949,7 +879,6 @@
   year      = 2003,
   pages     = {115-124},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/agnew.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -962,7 +891,6 @@
   year      = 2003,
   pages     = {125-135},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/kistler.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -973,7 +901,6 @@
   year      = 2003,
   pages     = {137-150},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/zec.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -991,7 +918,6 @@
   year      = 2003,
   pages     = {151-163},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/gabber.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1007,7 +933,6 @@
   year      = 2003,
   pages     = {165-178},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/miltchev.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1019,7 +944,6 @@
   year      = 2003,
   pages     = {179-186},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/dowdeswell.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1030,7 +954,6 @@
   year      = 2003,
   pages     = {187-196},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/worth.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1041,7 +964,6 @@
   year      = 2003,
   pages     = {197-205},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/allum.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1053,7 +975,6 @@
   year      = 2003,
   pages     = {207-218},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/packard.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1068,7 +989,6 @@
   year      = 2003,
   pages     = {219-230},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/vandrunen.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1081,7 +1001,6 @@
   year      = 2003,
   pages     = {231-244},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/shapiro.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1097,7 +1016,6 @@
   year      = 2003,
   pages     = {245-258},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/perkins.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1108,7 +1026,6 @@
   year      = 2003,
   pages     = {259-272},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/gruenbacher.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1119,7 +1036,6 @@
   year      = 2003,
   pages     = {273-284},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/kilpatrick.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1134,7 +1050,6 @@
   year      = 2003,
   pages     = {285-296},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/watson.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1149,7 +1064,6 @@
   year      = 2003,
   pages     = {297-309},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/arcangeli.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1161,7 +1075,6 @@
   year      = 2003,
   pages     = {311-321},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/mcgarry.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1180,7 +1093,6 @@
   year      = 2003,
   pages     = {323-336},
   ee        = {http://www.usenix.org/events/usenix03/tech/freenix03/appavoo.html},
-  crossref  = {DBLP:conf/usenix/2003f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1199,7 +1111,6 @@
   year      = 2002,
   pages     = {1-14},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/magoutis.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1214,7 +1125,6 @@
   year      = 2002,
   pages     = {15-28},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/wang.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1228,7 +1138,6 @@
   year      = 2002,
   pages     = {29-44},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/burnett.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1242,7 +1151,6 @@
   year      = 2002,
   pages     = {45-58},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/golm.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1254,7 +1162,6 @@
   year      = 2002,
   pages     = {59-72},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/shapiro.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1269,7 +1176,6 @@
   year      = 2002,
   pages     = {73-86},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/fassino.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1287,7 +1193,6 @@
   year      = 2002,
   pages     = {87-102},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/behren.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1299,7 +1204,6 @@
   year      = 2002,
   pages     = {103-114},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/larus.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1313,7 +1217,6 @@
   year      = 2002,
   pages     = {115-130},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/fu.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1328,7 +1231,6 @@
   year      = 2002,
   pages     = {131-146},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/yang.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1340,7 +1242,6 @@
   year      = 2002,
   pages     = {147-159},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/ott.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1352,7 +1253,6 @@
   year      = 2002,
   pages     = {161-175},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/wong.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1365,7 +1265,6 @@
   year      = 2002,
   pages     = {177-190},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/denehy.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1379,7 +1278,6 @@
   year      = 2002,
   pages     = {191-204},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/anastaiadis.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1391,7 +1289,6 @@
   year      = 2002,
   pages     = {205-217},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/blake.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1403,7 +1300,6 @@
   year      = 2002,
   pages     = {219-228},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/korn.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1420,7 +1316,6 @@
   year      = 2002,
   pages     = {229-242},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/mao.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1433,7 +1328,6 @@
   year      = 2002,
   pages     = {243-259},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/subramanian.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1445,7 +1339,6 @@
   year      = 2002,
   pages     = {261-274},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/buchholz.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1461,7 +1354,6 @@
   year      = 2002,
   pages     = {275-288},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/jim.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1476,7 +1368,6 @@
   year      = 2002,
   pages     = {289-302},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/adyahowell.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1490,7 +1381,6 @@
   year      = 2002,
   pages     = {303-316},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/huang.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1504,7 +1394,6 @@
   year      = 2002,
   pages     = {317-327},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/savarese.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1517,7 +1406,6 @@
   year      = 2002,
   pages     = {329-342},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/chandra.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1530,7 +1418,6 @@
   year      = 2002,
   pages     = {343-356},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/adyabahl.html},
-  crossref  = {DBLP:conf/usenix/2002g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1542,7 +1429,6 @@
   year      = 2002,
   pages     = {1-12},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/kersting.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1554,7 +1440,6 @@
   year      = 2002,
   pages     = {13-18},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/koster.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1566,7 +1451,6 @@
   year      = 2002,
   pages     = {19-27},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/lampoudi.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1578,7 +1462,6 @@
   year      = 2002,
   pages     = {29-40},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/lever.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1591,7 +1474,6 @@
   year      = 2002,
   pages     = {41-48},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/miltchev.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1603,7 +1485,6 @@
   year      = 2002,
   pages     = {49-62},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/sarolahti.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1614,7 +1495,6 @@
   year      = 2002,
   pages     = {63-69},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/gettys.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1626,7 +1506,6 @@
   year      = 2002,
   pages     = {71-83},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/sharp.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1638,7 +1517,6 @@
   year      = 2002,
   pages     = {85-97},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/gallesio.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1650,7 +1528,6 @@
   year      = 2002,
   pages     = {99-108},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/williams.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1662,7 +1539,6 @@
   year      = 2002,
   pages     = {109-119},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/nikander.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1673,7 +1549,6 @@
   year      = 2002,
   pages     = {121-131},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/watanabe.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1685,7 +1560,6 @@
   year      = 2002,
   pages     = {133-142},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/goel.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1696,7 +1570,6 @@
   year      = 2002,
   pages     = {143-156},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/regehr.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1709,7 +1582,6 @@
   year      = 2002,
   pages     = {157-170},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/yang.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1721,7 +1593,6 @@
   year      = 2002,
   pages     = {171-180},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/hartmeier.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1733,7 +1604,6 @@
   year      = 2002,
   pages     = {181-194},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/spadavecchia.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1745,7 +1615,6 @@
   year      = 2002,
   pages     = {195-206},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/hume.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1758,7 +1627,6 @@
   year      = 2002,
   pages     = {207-220},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/shapiro.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1771,7 +1639,6 @@
   year      = 2002,
   pages     = {221-234},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/massey.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1783,7 +1650,6 @@
   year      = 2002,
   pages     = {235-243},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/tso.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1795,7 +1661,6 @@
   year      = 2002,
   pages     = {245-258},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/dowse.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1808,7 +1673,6 @@
   year      = 2002,
   pages     = {259-274},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/bryant.htmli},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1824,7 +1688,6 @@
   year      = 2002,
   pages     = {275-285},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/yamamura.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1835,7 +1698,6 @@
   year      = 2002,
   pages     = {287-297},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/zadok.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1846,7 +1708,6 @@
   year      = 2002,
   pages     = {299-308},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix02/tech/freenix/miller.html},
-  crossref  = {DBLP:conf/usenix/2002f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1860,7 +1721,6 @@
   year      = 2001,
   pages     = {1-14},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/sugerman.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1873,7 +1733,6 @@
   year      = 2001,
   pages     = {15-33},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/bonwick.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1886,7 +1745,6 @@
   year      = 2001,
   pages     = {35-49},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/yang.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1901,7 +1759,6 @@
   year      = 2001,
   pages     = {51-63},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/garg.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1913,7 +1770,6 @@
   year      = 2001,
   pages     = {65-78},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/davis.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1926,7 +1782,6 @@
   year      = 2001,
   pages     = {79-90},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/stein.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1940,7 +1795,6 @@
   year      = 2001,
   pages     = {91-104},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/zhou.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1953,7 +1807,6 @@
   year      = 2001,
   pages     = {105-118},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/kroeger.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1965,7 +1818,6 @@
   year      = 2001,
   pages     = {119-132},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/cortes.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1978,7 +1830,6 @@
   year      = 2001,
   pages     = {133-145},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/hsieh.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1990,7 +1841,6 @@
   year      = 2001,
   pages     = {147-160},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/beazley.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2002,7 +1852,6 @@
   year      = 2001,
   pages     = {161-174},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/miller.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2018,7 +1867,6 @@
   year      = 2001,
   pages     = {175-187},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/joubert.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2033,7 +1881,6 @@
   year      = 2001,
   pages     = {189-202},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/voigt.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2047,7 +1894,6 @@
   year      = 2001,
   pages     = {203-216},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/shriver.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2059,7 +1905,6 @@
   year      = 2001,
   pages     = {217-230},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/hohmuth.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2071,7 +1916,6 @@
   year      = 2001,
   pages     = {231-244},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/chandra.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2084,7 +1928,6 @@
   year      = 2001,
   pages     = {245-259},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/nieh.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2095,7 +1938,6 @@
   year      = 2001,
   pages     = {261-274},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/mazieres.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2108,7 +1950,6 @@
   year      = 2001,
   pages     = {275-288},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/huang.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2123,7 +1964,6 @@
   year      = 2001,
   pages     = {289-304},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/zadok.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2136,7 +1976,6 @@
   year      = 2001,
   pages     = {305-317},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/yocum.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2150,7 +1989,6 @@
   year      = 2001,
   pages     = {319-332},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/ng.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2162,7 +2000,6 @@
   year      = 2001,
   pages     = {333-346},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/chen.html},
-  crossref  = {DBLP:conf/usenix/2001g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2173,7 +2010,6 @@
   year      = 2001,
   pages     = {1-13},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/fraser.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2185,7 +2021,6 @@
   year      = 2001,
   pages     = {15-28},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/watson.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2198,7 +2033,6 @@
   year      = 2001,
   pages     = {29-42},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/loscocco.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2209,7 +2043,6 @@
   year      = 2001,
   pages     = {43-53},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/ward.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2221,7 +2054,6 @@
   year      = 2001,
   pages     = {55-68},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/massey.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2232,7 +2064,6 @@
   year      = 2001,
   pages     = {69-79},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/mewburn.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2244,7 +2075,6 @@
   year      = 2001,
   pages     = {81-92},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/dieter.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2255,7 +2085,6 @@
   year      = 2001,
   pages     = {93-104},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/wood.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2267,7 +2096,6 @@
   year      = 2001,
   pages     = {105-117},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/bohra.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2279,7 +2107,6 @@
   year      = 2001,
   pages     = {119-126},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/prevelakis.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2291,7 +2118,6 @@
   year      = 2001,
   pages     = {127-134},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/ioannidis.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2303,7 +2129,6 @@
   year      = 2001,
   pages     = {135-139},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/hagino.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2314,7 +2139,6 @@
   year      = 2001,
   pages     = {141-153},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/lemon.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2325,7 +2149,6 @@
   year      = 2001,
   pages     = {155-164},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/lehey.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2336,7 +2159,6 @@
   year      = 2001,
   pages     = {165-172},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/riel.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2350,7 +2172,6 @@
   year      = 2001,
   pages     = {173-183},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/schermerhorn.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2362,7 +2183,6 @@
   year      = 2001,
   pages     = {185-197},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/teigland.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2377,7 +2197,6 @@
   year      = 2001,
   pages     = {199-212},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/cattaneo.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2388,7 +2207,6 @@
   year      = 2001,
   pages     = {213-224},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/packard.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2401,7 +2219,6 @@
   year      = 2001,
   pages     = {225-234},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/badros.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2413,7 +2230,6 @@
   year      = 2001,
   pages     = {235-243},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/gettys.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2429,7 +2245,6 @@
   year      = 2001,
   pages     = {245-252},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/schultz.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2440,7 +2255,6 @@
   year      = 2001,
   pages     = {253-266},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/brown.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2453,7 +2267,6 @@
   year      = 2001,
   pages     = {267-272},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/westerlund.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2465,7 +2278,6 @@
   year      = 2001,
   pages     = {273-283},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/alicherry.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2477,7 +2289,6 @@
   year      = 2001,
   pages     = {285-295},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/molloy.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2489,7 +2300,6 @@
   year      = 2001,
   pages     = {297-308},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix01/freenix01/moore.html},
-  crossref  = {DBLP:conf/usenix/2001f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2501,7 +2311,6 @@
   year      = 2000,
   pages     = {1-10},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/murdock.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2512,7 +2321,6 @@
   year      = 2000,
   pages     = {11-20},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/studenmund.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2527,7 +2335,6 @@
   year      = 2000,
   pages     = {21-34},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/gopinath.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2538,7 +2345,6 @@
   year      = 2000,
   pages     = {35-48},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/dutton.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2550,7 +2356,6 @@
   year      = 2000,
   pages     = {49-56},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/mcclure.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2560,7 +2365,6 @@
   booktitle = usenixf,
   year      = 2000,
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/cameron.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2578,7 +2382,6 @@
   booktitle = usenixf,
   year      = 2000,
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/mostek.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2590,7 +2393,6 @@
   year      = 2000,
   pages     = {77-88},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/czezatke.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2601,7 +2403,6 @@
   year      = 2000,
   pages     = {89-98},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/perazzoli.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2612,7 +2413,6 @@
   year      = 2000,
   pages     = {99-108},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/metzprotocol.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2624,7 +2424,6 @@
   year      = 2000,
   pages     = {109-120},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/provos.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2636,7 +2435,6 @@
   year      = 2000,
   pages     = {121-128},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/molloy.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2648,7 +2446,6 @@
   year      = 2000,
   pages     = {129-140},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/rosenthal.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2666,7 +2463,6 @@
   year      = 2000,
   pages     = {141-152},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/bakker.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2677,7 +2473,6 @@
   year      = 2000,
   pages     = {153-164},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/pouwelse.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2689,7 +2484,6 @@
   year      = 2000,
   pages     = {165-174},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/quintero.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2700,7 +2494,6 @@
   year      = 2000,
   pages     = {175-186},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/packardefficient.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2714,7 +2507,6 @@
   year      = 2000,
   pages     = {187-200},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/fowler.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2726,7 +2518,6 @@
   year      = 2000,
   pages     = {201-214},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/hallqvist.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2738,7 +2529,6 @@
   year      = 2000,
   pages     = {215-226},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/keromytis.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2749,7 +2539,6 @@
   year      = 2000,
   pages     = {227-234},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/metzsafety.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2761,7 +2550,6 @@
   year      = 2000,
   pages     = {235-249},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/nikander.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2772,7 +2560,6 @@
   year      = 2000,
   pages     = {249-263},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/seeley.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2785,7 +2572,6 @@
   year      = 2000,
   pages     = {263-270},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/cho.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2796,7 +2582,6 @@
   year      = 2000,
   pages     = {271-278},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/bothner.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2807,7 +2592,6 @@
   year      = 2000,
   pages     = {279-284},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/packardrender.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2819,7 +2603,6 @@
   year      = 2000,
   pages     = {285-290},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/silvers.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2831,7 +2614,6 @@
   year      = 2000,
   pages     = {291-300},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/hagino.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2843,7 +2625,6 @@
   year      = 2000,
   pages     = {301-311},
   ee        = {http://www.usenix.org/publications/library/proceedings/usenix2000/freenix/lever.html},
-  crossref  = {DBLP:conf/usenix/2000f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2857,7 +2638,6 @@
   year      = 1999,
   pages     = {1-14},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/petrou/petrou.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2873,7 +2653,6 @@
   year      = 1999,
   pages     = {15-26},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/bruno/bruno.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2885,7 +2664,6 @@
   year      = 1999,
   pages     = {27-41},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/douglis/douglis.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2898,7 +2676,6 @@
   year      = 1999,
   pages     = {43-56},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/lee/lee.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2911,7 +2688,6 @@
   year      = 1999,
   pages     = {57-70},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/zadok/zadok.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2924,7 +2700,6 @@
   year      = 1999,
   pages     = {71-84},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/shriver/shriver.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2937,7 +2712,6 @@
   year      = 1999,
   pages     = {85-99},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/brecht/brecht.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2950,7 +2724,6 @@
   year      = 1999,
   pages     = {101-116},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/wilson/wilson.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2962,7 +2735,6 @@
   year      = 1999,
   pages     = {117-130},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/cranor/cranor.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2974,7 +2746,6 @@
   year      = 1999,
   pages     = {131-144},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/miller/miller.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2985,7 +2756,6 @@
   year      = 1999,
   pages     = {145-155},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/stein/stein.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3000,7 +2770,6 @@
   year      = 1999,
   pages     = {157-170},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/gribble/gribble.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3014,7 +2783,6 @@
   year      = 1999,
   pages     = {171-184},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/vingralek/vingralek.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3027,7 +2795,6 @@
   year      = 1999,
   pages     = {185-198},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/aron/aron.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3040,7 +2807,6 @@
   year      = 1999,
   pages     = {199-212},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/pai/pai.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3053,7 +2819,6 @@
   year      = 1999,
   pages     = {213-224},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/gschwind/gschwind.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3066,7 +2831,6 @@
   year      = 1999,
   pages     = {225-238},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/maltzahn/maltzahn.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3081,7 +2845,6 @@
   year      = 1999,
   pages     = {239-252},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/choi/choi.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3094,7 +2857,6 @@
   year      = 1999,
   pages     = {253-265},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/banga/banga.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3109,7 +2871,6 @@
   year      = 1999,
   pages     = {267-282},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/gabber/gabber.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3121,7 +2882,6 @@
   year      = 1999,
   pages     = {283-294},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/deller/deller.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3135,7 +2895,6 @@
   year      = 1999,
   pages     = {295-307},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/nightingale/nightingale.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3147,7 +2906,6 @@
   year      = 1999,
   pages     = {309-322},
   ee        = {http://www.usenix.org/events/usenix99/full_papers/anderson/anderson.pdf},
-  crossref  = {DBLP:conf/usenix/1999g},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3160,7 +2918,6 @@
   year      = 1999,
   pages     = {1-17},
   ee        = {http://www.usenix.org/events/usenix99/mckusick.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3172,7 +2929,6 @@
   year      = 1999,
   pages     = {19-26},
   ee        = {http://www.usenix.org/events/usenix99/evans.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3183,7 +2939,6 @@
   year      = 1999,
   pages     = {27-40},
   ee        = {http://www.usenix.org/events/usenix99/tso.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3195,7 +2950,6 @@
   year      = 1999,
   pages     = {41-51},
   ee        = {http://www.usenix.org/events/usenix99/kobayashi.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3207,7 +2961,6 @@
   year      = 1999,
   pages     = {53-56},
   ee        = {http://www.usenix.org/events/usenix99/furuta.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3218,7 +2971,6 @@
   year      = 1999,
   pages     = {57-68},
   ee        = {http://www.usenix.org/events/usenix99/lehey.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3232,7 +2984,6 @@
   year      = 1999,
   pages     = {69-74},
   ee        = {http://www.usenix.org/events/usenix99/braam.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3244,7 +2995,6 @@
   year      = 1999,
   pages     = {75-80},
   ee        = {http://www.usenix.org/events/usenix99/kiselyov.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3256,7 +3006,6 @@
   year      = 1999,
   pages     = {81-91},
   ee        = {http://www.usenix.org/events/usenix99/provos.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3271,7 +3020,6 @@
   year      = 1999,
   pages     = {93-101},
   ee        = {http://www.usenix.org/events/usenix99/deraadt.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3282,7 +3030,6 @@
   booktitle = usenixf,
   year      = 1999,
   pages     = {103-108},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3295,7 +3042,6 @@
   year      = 1999,
   pages     = {109-119},
   ee        = {http://www.usenix.org/events/usenix99/gallatin.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3306,7 +3052,6 @@
   year      = 1999,
   pages     = {121-128},
   ee        = {http://www.usenix.org/events/usenix99/cho.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3318,7 +3063,6 @@
   year      = 1999,
   pages     = {129-137},
   ee        = {http://www.usenix.org/events/usenix99/cranor_f.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3329,7 +3073,6 @@
   year      = 1999,
   pages     = {139-142},
   ee        = {http://www.usenix.org/events/usenix99/sanchez.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3340,7 +3083,6 @@
   year      = 1999,
   pages     = {143-147},
   ee        = {http://www.usenix.org/events/usenix99/rosenberg.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3352,7 +3094,6 @@
   year      = 1999,
   pages     = {149-158},
   ee        = {http://www.usenix.org/events/usenix99/shapiro.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3364,7 +3105,6 @@
   booktitle = usenixf,
   year      = 1999,
   pages     = {159-164},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3375,7 +3115,6 @@
   year      = 1999,
   pages     = {165-174},
   ee        = {http://www.usenix.org/events/usenix99/metz.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3388,7 +3127,6 @@
   year      = 1999,
   pages     = {175-178},
   ee        = {http://www.usenix.org/events/usenix99/millert.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3399,7 +3137,6 @@
   year      = 1999,
   pages     = {179-181},
   ee        = {http://www.usenix.org/events/usenix99/millerf.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3412,7 +3149,6 @@
   year      = 1999,
   pages     = {183-191},
   ee        = {http://www.usenix.org/events/usenix99/olson.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3423,7 +3159,6 @@
   year      = 1999,
   pages     = {193},
   ee        = {http://www.usenix.org/events/usenix99/asami.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3435,7 +3170,6 @@
   year      = 1999,
   pages     = {195-205},
   ee        = {http://www.usenix.org/events/usenix99/hagino.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3448,7 +3182,6 @@
   year      = 1999,
   pages     = {207-218},
   ee        = {http://www.usenix.org/events/usenix99/cervera.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3459,7 +3192,6 @@
   year      = 1999,
   pages     = {219-221},
   ee        = {http://www.usenix.org/events/usenix99/fischer.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -3470,7 +3202,6 @@
   year      = 1999,
   pages     = {223-230},
   ee        = {http://www.usenix.org/events/usenix99/lewis.html},
-  crossref  = {DBLP:conf/usenix/1999f},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 

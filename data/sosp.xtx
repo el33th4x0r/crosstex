@@ -6,7 +6,6 @@
   booktitle = sosp,
   year      = 2005,
   ee        = {http://doi.acm.org/10.1145/1095810.1105661},
-  crossref  = {DBLP:conf/sosp/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -16,7 +15,6 @@
   booktitle = sosp,
   year      = 2005,
   ee        = {http://doi.acm.org/10.1145/1095810.1105662},
-  crossref  = {DBLP:conf/sosp/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -33,7 +31,6 @@
   year      = 2005,
   pages     = {1-16},
   ee        = {http://doi.acm.org/10.1145/1095810.1095812},
-  crossref  = {DBLP:conf/sosp/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -52,7 +49,6 @@
   year      = 2005,
   pages     = {17-30},
   ee        = {http://doi.acm.org/10.1145/1095810.1095813},
-  crossref  = {DBLP:conf/sosp/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -66,7 +62,6 @@
   year      = 2005,
   pages     = {31-44},
   ee        = {http://doi.acm.org/10.1145/1095810.1095814},
-  crossref  = {DBLP:conf/sosp/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -82,7 +77,6 @@
   year      = 2005,
   pages     = {45-58},
   ee        = {http://doi.acm.org/10.1145/1095810.1095816},
-  crossref  = {DBLP:conf/sosp/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -97,7 +91,6 @@
   year      = 2005,
   pages     = {59-74},
   ee        = {http://doi.acm.org/10.1145/1095810.1095817},
-  crossref  = {DBLP:conf/sosp/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -113,7 +106,6 @@
   year      = 2005,
   pages     = {75-90},
   ee        = {http://doi.acm.org/10.1145/1095810.1095818},
-  crossref  = {DBLP:conf/sosp/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -128,7 +120,6 @@
   year      = 2005,
   pages     = {91-104},
   ee        = {http://doi.acm.org/10.1145/1095810.1095820},
-  crossref  = {DBLP:conf/sosp/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -144,7 +135,6 @@
   year      = 2005,
   pages     = {105-118},
   ee        = {http://doi.acm.org/10.1145/1095810.1095821},
-  crossref  = {DBLP:conf/sosp/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -156,7 +146,6 @@
   year      = 2005,
   pages     = {119-132},
   ee        = {http://doi.acm.org/10.1145/1095810.1095822},
-  crossref  = {DBLP:conf/sosp/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -173,7 +162,6 @@
   year      = 2005,
   pages     = {133-147},
   ee        = {http://doi.acm.org/10.1145/1095810.1095824},
-  crossref  = {DBLP:conf/sosp/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -192,7 +180,6 @@
   year      = 2005,
   pages     = {148-162},
   ee        = {http://doi.acm.org/10.1145/1095810.1095825},
-  crossref  = {DBLP:conf/sosp/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -207,7 +194,6 @@
   year      = 2005,
   pages     = {163-176},
   ee        = {http://doi.acm.org/10.1145/1095810.1095826},
-  crossref  = {DBLP:conf/sosp/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -223,7 +209,6 @@
   year      = 2005,
   pages     = {177-190},
   ee        = {http://doi.acm.org/10.1145/1095810.1095828},
-  crossref  = {DBLP:conf/sosp/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -236,7 +221,6 @@
   year      = 2005,
   pages     = {191-205},
   ee        = {http://doi.acm.org/10.1145/1095810.1095829},
-  crossref  = {DBLP:conf/sosp/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -252,7 +236,6 @@
   year      = 2005,
   pages     = {206-220},
   ee        = {http://doi.acm.org/10.1145/1095810.1095830},
-  crossref  = {DBLP:conf/sosp/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -266,7 +249,6 @@
   year      = 2005,
   pages     = {221-234},
   ee        = {http://doi.acm.org/10.1145/1095810.1095832},
-  crossref  = {DBLP:conf/sosp/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -281,7 +263,6 @@
   year      = 2005,
   pages     = {235-248},
   ee        = {http://doi.acm.org/10.1145/1095810.1095833},
-  crossref  = {DBLP:conf/sosp/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -293,7 +274,6 @@
   year      = 2005,
   pages     = {249-262},
   ee        = {http://doi.acm.org/10.1145/1095810.1095835},
-  crossref  = {DBLP:conf/sosp/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -307,7 +287,6 @@
   year      = 2005,
   pages     = {263-276},
   ee        = {http://doi.acm.org/10.1145/1095810.1095836},
-  crossref  = {DBLP:conf/sosp/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -320,7 +299,6 @@
   year      = 2005,
   pages     = {277-290},
   ee        = {http://doi.acm.org/10.1145/1095810.1095837},
-  crossref  = {DBLP:conf/sosp/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 

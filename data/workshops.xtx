@@ -1,5 +1,4 @@
-@include dates
-@include locations
+@include conferences
 
 @workshop{esigops,
   shortname = "ESIGOPS Workshop",
@@ -29,50 +28,38 @@
 }
 
 @workshop{icdcsw,
-  shortname = "ICDCS",
-  longname = "International Conference on Distributed Computing Systems Workshops",
-  [year=2007] address=Toronto, month=jun,
-  [year=2006] address=Lisbon, month=jul,
-  [year=2005] address=Columbus, month=jun,
-  [year=2004] address=Tokyo, month=mar,
-  [year=2003] address=Providence, month=may,
-  [year=2002] address=Vienna, month=jul,
+  name = "Workshops",
+  conference = icdcs,
 }
 
 @workshop{icdcskd,
-  shortname = "ICDCS",
-  longname = "International Conference on Distributed Computing Systems Workshop of Knowledge Discovery and Data Mining in the World-Wide Web",
-  [year=2000] address=Taipei, month=apr,
+  name = "Workshop of Knowledge Discovery and Data Mining in the World-Wide Web",
+  conference = icdcs,
 }
 
 @workshop{icdcsrt,
-  shortname = "ICDCS",
-  longname = "International Conference on Distributed Computing Systems Workshop on Distributed Real-Time Systems",
-  [year=2000] address=Taipei, month=apr,
+  name = "Workshop on Distributed Real-Time Systems",
+  conference = icdcs,
 }
 
 @workshop{icdcsv,
-  shortname = "ICDCS",
-  longname = "International Conference on Distributed Computing Systems Workshop on Distributed Systems Validation and Verification",
-  [year=2000] address=Taipei, month=apr,
+  name = "Workshop on Distributed Systems Validation and Verification",
+  conference = icdcs,
 }
 
 @workshop{icdcsg,
-  shortname = "ICDCS",
-  longname = "International Conference on Distributed Computing Systems Workshop on Group Communications and Computations",
-  [year=2000] address=Taipei, month=apr,
+  name = "Workshop on Group Communications and Computations",
+  conference = icdcs,
 }
 
 @workshop{icdcsi,
-  shortname = "ICDCS",
-  longname = "International Conference on Distributed Computing Systems Workshop on Internet",
-  [year=2000] address=Taipei, month=apr,
+  name = "Workshop on Internet",
+  conference = icdcs,
 }
 
 @workshop{icdcswn,
-  shortname = "ICDCS",
-  longname = "International Conference on Distributed Computing Systems Workshop on Wireless Networks and Mobile Computing",
-  [year=2000] address=Taipei, month=apr,
+  name = "Workshop on Wireless Networks and Mobile Computing",
+  conference = icdcs,
 }
 
 @workshop{imw,
@@ -83,28 +70,18 @@
 }
 
 @workshop{ipdpsw,
-  shortname = "IP(D)PS",
-  longname = "International Parallel (and Distributed) Processing Symposium Workshops",
-  [year=2005] address=Denver, month=apr,
-  [year=2004] address=SantaFe, month=apr,
-  [year=2003] address=Nice, month=apr,
-  [year=2002] address=FortLauderdale, month=apr,
-  [year=2001] address=SF, month=apr,
-  [year=2000] address=Cancun, month=may,
+  name = "Workshops",
+  conference = ipdps,
 }
 
 @workshop{ipps-spdpw,
-  shortname = "IPPS/SPDP",
-  longname = "International Parallel Processing Symposium / Symposium on Parallel and Distributed Processing Workshops",
-  [year=1999] address=SanJuan, month=apr,
-  [year=1998] address=Orlando, month=mar,
+  name = "Workshops",
+  conference = ipps-spdp,
 }
 
 @workshop{ipps-spdp-jsspp,
-  shortname = "IPPS/SPDP",
-  longname = "International Parallel Processing Symposium / Symposium on Parallel and Distributed Processing Job Scheduling Strategies for Parallel Processing Workshop",
-  [year=1999] address=SanJuan, month=apr,
-  [year=1998] address=Orlando, month=mar,
+  name = "Job Scheduling Strategies for Parallel Processing Workshop",
+  conference = ipps-spdp,
 }
 
 @workshop{iptps,
@@ -174,9 +151,8 @@
 }
 
 @workshop{wwwsw,
-  shortname = "WWW",
-  longname = "International World Wide Web Conference, Workshop on Application Design, Development and Implementation Issues in the Semantic Web",
-  [year=2004] address=NYC, month=may,
+  name = "Workshop on Application Design, Development and Implementation Issues in the Semantic Web",
+  conference = www,
 }
 
 @workshop{blackhat,	longname = "Black Hat USA"}

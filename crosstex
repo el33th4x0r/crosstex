@@ -59,6 +59,9 @@ def optstyle(option, opt, value, parser):
     for i in range(len(styles[value])):
         parser.rargs.insert(i, styles[value][i])
 
+def optheading(option, opt, value, parser, reversed=False):
+    parser.values.heading = (reversed, value)
+
 def optsort(option, opt, value, parser, reversed=False):
     if parser.values.sort == None or value == 'none':
 	parser.values.sort = []
@@ -87,7 +90,8 @@ optparser.add_option('-s', '--sort', metavar='FIELD', type='string', action='cal
 optparser.add_option('-S', '--reverse-sort', metavar='FIELD', type='string', action='callback', callback=optsort, callback_args=(True,), help="Exactly as --sort, but sort by descending field values rather than ascending.")
 optparser.add_option('--no-sort', action='store_const', const=[], dest='sort')
 
-optparser.add_option('--heading', metavar='FIELD', action='store', help="Divide entries and create headings in bibliography by the value of the given field.")
+optparser.add_option('--heading', metavar='FIELD', type='string', action='callback', callback=optheading, help="Divide entries and create headings in bibliography by the value of the given field.")
+optparser.add_option('--reverse-heading', metavar='FIELD', type='string', action='callback', callback=optheading, callback_args=(True,), help="Divide entries and create headings in bibliography by the value of the given field.")
 
 optparser.add_option('--short', metavar='TYPE', type='choice', choices=[ name for name in dir(crosstexobjects) if isinstance(getattr(crosstexobjects, name), type) and issubclass(getattr(crosstexobjects, name), crosstexobjects.string) ], action='append', help="Specify any string-like object, i.e. one with name and shortname fields. Whenever possible, the short name will be used, e.g. two-letter state codes for \"state\", conference acronyms such as NSDI for \"conference\", or initials such as E. G. Sirer for \"author\".")
 optparser.add_option('--add-in', action='store_const', const='In', dest='in_str', help="Add \"In\" for articles.")
@@ -129,12 +133,12 @@ class bibliography(dict):
 	    convert='bbl',
 	    dir=[topdir, '.'],
 	    dump=[],
-	    heading='',
+	    heading=(False, None),
 	    in_str='',
 	    link=[],
 	    proceedings_str='',
 	    short=[],
-	    sort=[(False, 'author'), (False, 'year'), (False, 'month'), (False, 'label')],
+	    sort=[(False, 'month'), (False, 'year'), (False, 'author'), (False, 'label')],
 	    titlecase='default',
 	)
 	(self.options, args) = optparser.parse_args(args=self.optlist)
@@ -178,11 +182,11 @@ class bibliography(dict):
 	    self._citations.sort(key=keyfunc, reverse=reverse)
 
 	self._divided = {}
-	if self.options.heading != '':
+	if self.options.heading[1] != None:
 	    for cite in self._citations:
 		key = ''
-		if hasattr(self[cite], self.options.heading):
-		    key = str(getattr(self[cite], self.options.heading))
+		if hasattr(self[cite], self.options.heading[1]):
+		    key = str(getattr(self[cite], self.options.heading[1]))
 		if key not in self._divided:
 		    self._divided[key] = []
 		self._divided[key].append(cite)
@@ -195,10 +199,10 @@ class bibliography(dict):
 	self.citations()
 	return self._divided
 
-    def addobject(self, name, keys, data, file, line):
+    def addobject(self, name, keys, data, defaults, file, line):
         name = name.strip().lower()
         try:
-            obj = getattr(crosstexobjects, name)(data, file, line, self.options)
+            obj = getattr(crosstexobjects, name)(data, defaults, file, line, self.options)
             obj._citekey = None
             for key in keys:
                 if key in self:
@@ -388,13 +392,12 @@ def p_stmt_comment(t):
 def p_stmt_default(t):
     'stmt : ATDEFAULT field'
     t.lexer.defaults.update(t[2])
-    pass
 
 def p_stmt_string(t):
     'stmt : ATSTRING OPENBRACE fields CLOSEBRACE'
     for key in t[3]:
 	try:
-	    t.lexer.bib.addobject('string', [key], [(None, {'name': t[3][key]})], t.lexer.file, t.lineno(3))
+	    t.lexer.bib.addobject('string', [key], [(None, {'name': t[3][key]})], t.lexer.defaults, t.lexer.file, t.lineno(3))._check()
 	except Warning, detail:
 	    t.lexer.bib.warning("%s:%d: %s" % (t.lexer.file, t.lineno(3), detail))
 	except Exception, detail:
@@ -404,12 +407,7 @@ def p_object_defn(t):
     'object : AT NAME OPENBRACE keys COMMA fields conditionals CLOSEBRACE'
     t[2] = t[2].lower()
     try:
-        obj = t.lexer.bib.addobject(t[2], t[4], [(None, t[6])] + t[7], t.lexer.file, t.lineno(2))
-	for defkey in t.lexer.defaults:
-	    try:
-	        obj._assign(defkey, t.lexer.defaults[defkey])
-	    except:
-		pass
+        t.lexer.bib.addobject(t[2], t[4], [(None, t[6])] + t[7], t.lexer.defaults, t.lexer.file, t.lineno(2))._check()
     except Warning, detail:
 	t.lexer.bib.warning("%s:%d: %s" % (t.lexer.file, t.lineno(2), detail))
     except Exception, detail:
@@ -467,12 +465,13 @@ def p_field(t):
 		    values += [t.lexer.bib[key]]
 		else:
 		    try:
-			t.lexer.bib.addobject('author', [key], [(None, {'name': key})], t.lexer.file, t.lineno(3))
+			t.lexer.bib.addobject('author', [key], [(None, {'name': key})], t.lexer.defaults, t.lexer.file, t.lineno(3))._check()
 			values += [t.lexer.bib[key]]
 		    except Warning, detail:
 			t.lexer.bib.warning("%s:%d: %s" % (t.lexer.file, t.lineno(3), detail))
 		    except Exception, detail:
 			t.lexer.bib.error("%s:%d: %s" % (t.lexer.file, t.lineno(3), detail))
+			raise
 	else:
 	    values += [t[3]]
 	t[0] = {t[1]: values}
@@ -651,6 +650,8 @@ for infilename in args:
     divided = bib.divided()
     headings = divided.keys()
     headings.sort()
+    if bib.options.heading[0]:
+	headings.reverse()
     for heading in headings:
 	if heading == '':
 	    continue

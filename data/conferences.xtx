@@ -177,7 +177,7 @@
 
 @conference{sigcomm,
   shortname = "SIGCOMM",
-  longname = "SIGCOMM Conference",
+  longname = "ACM Special Interest Group on Data Communications",
   [year=2006] address=Piza, month=sep, 
   [year=2005] address=Philadelphia, month=sep, 
   [year=2004] address=Portland, month=aug, 
@@ -282,16 +282,9 @@
   [year=1996] address=SanDiego, month=jan,
 }
 
-@conference{usenixf,	
-  shortname = "USENIX",
-  longname = "USENIX Annual Technical Conference, FREENIX Track",
-  [year=2005] address=Anaheim, month=apr,
-  [year=2004] address=Boston, month=jun,
-  [year=2003] address=SanAntonio, month=jun,
-  [year=2002] address=Monterey, month=jun,
-  [year=2001] address=Boston, month=jun,
-  [year=2000] address=SanDiego, month=jun,
-  [year=1999] address=Monterey, month=jun,
+@conferencetrack{usenixf,
+  name = "FREENIX Track",
+  conference = usenix,
 }
 
 @conference{usenixs,	
@@ -341,31 +334,20 @@
   [year=2001] address=HongKong, month=may,
 }
 
-@conference{wwwa,
-  shortname = "WWW",
-  longname = "International World Wide Web Conference, Alternate Track",
-  [year=2007] address=Banff, month=may,
-  [year=2006] address=Edinburgh, month=may,
-  [year=2005] address=Chiba, month=may,
-  [year=2004] address=NYC, month=may,
-  [year=2003] address=Budapest, month=may,
-  [year=2002] address=Honolulu, month=may,
-  [year=2001] address=HongKong, month=may,
+@conferencetrack{wwwa,
+  name = "Alternate Track",
+  conference = www,
 }
 
-@conference{wwws,
-  shortname = "WWW",
-  longname = "International World Wide Web Conference, Special interest track",
-  [year=2007] address=Banff, month=may,
-  [year=2006] address=Edinburgh, month=may,
-  [year=2005] address=Chiba, month=may,
-  [year=2004] address=NYC, month=may,
-  [year=2003] address=Budapest, month=may,
-  [year=2002] address=Honolulu, month=may,
-  [year=2001] address=HongKong, month=may,
+@conferencetrack{wwws,
+  name = "Special Interest Track",
+  conference = www,
 }
 
-% Not here
+%
+% These conferences have no corresponding .xtx file yet
+%
+
 @conference{imc,	
   shortname = "IMC",	
   longname = "Conference on Internet Measurement",

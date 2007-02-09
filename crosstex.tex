@@ -1,0 +1,579 @@
+\documentclass{article}
+\usepackage{hyperref}
+
+\newcommand{\XTeX}{Cross\TeX}
+\newcommand{\BibTeX}{\textsc{Bib}\TeX}
+
+\title{\XTeX{} Tutorial}
+\author{Emin G\"un Sirer and Robert Burgess}
+\date{}
+
+\begin{document}
+\maketitle
+
+\textit{This tutorial will show you everything you need to know about \XTeX{}. It assumes basic familiarity with \BibTeX{}. You should have \XTeX{} installed.}
+
+\XTeX{} is a modern bibliography typesetting tool that works in conjunction with \LaTeX{}. It first builds an object hierarchy based on the bibliography database. Then it parses the text at hand to determine which objects are being cited. Then it formats these objects according to the style selected in the document, as modified by the command line options. It then produces a references section that \LaTeX{} can incorporate into the original document.
+
+%HEVEA \begin{small}(This document is also available in \href{crosstex.pdf}{PDF}.)\end{small}
+
+
+
+\section{Quick start}
+
+First, make sure \XTeX{} is installed. Then, where you used to type:
+
+\begin{small}\begin{verbatim}
+$ latex paper  # Generate the .aux file
+$ bibtex paper # Generate the .bbl file
+$ latex paper  # Incorporate the bibliographic information
+$ latex paper  # Get the labels right
+\end{verbatim}\end{small}
+
+Instead use:
+
+\begin{small}\begin{verbatim}
+$ latex paper    # Generate the .aux file
+$ crosstex paper # Generate the .bbl file
+$ latex paper    # Incorporate the bibliographic information
+$ latex paper    # Get the labels right
+\end{verbatim}\end{small}
+
+\XTeX{} is backwards-compatible with \BibTeX{} and supports the standard \texttt{abbrv}, \texttt{alpha}, \texttt{full}, and \texttt{plain} bibliography styles.
+
+
+
+\section{Inside the \texttt{.xtx} file}
+
+
+\subsection{Objects}
+
+Everything in \XTeX{} is an object. Every object has a \textit{key} that can be used to refer to it, and \textit{fields} containing values. Here are some objects:
+
+\begin{small}\begin{verbatim}
+@month{sep, name = "September"}
+
+@location{rio, name = "Rio de Janeiro, Brazil"}
+
+@author{egs, name = "Emin {G\"un} Sirer"}
+
+@article{mypaper,
+	   author = egs,
+	   title = "This is My Paper",
+	   journal = "Journal of Improbable Results",
+	   address = rio,
+	   year = 2018,
+	   month = sep
+}
+\end{verbatim}\end{small}
+
+The first line defines a \texttt{month} object, henceforth known as \texttt{sep}, that has a single field called \texttt{name}, which consists of the string ``September''. From here on, other objects can simply refer to \texttt{sep} wherever a month is called for, and they will be referring to this object. The second line defines a \texttt{location} object named \texttt{rio}, while the third line defines an \texttt{author} object whose name requires complicated \LaTeX{} punctuation to format properly. The final entry defines an \texttt{article}, published in Rio de Janeiro in September. Note how it refers to the previous objects by their keys. The fields of \texttt{mypaper} end up as though it had been defined thus:
+
+\begin{small}\begin{verbatim}
+@article{mypaper,
+	   author = "Emin {G\"un} Sirer",
+	   title = "This is My Paper",
+	   journal = "Journal of Improbable Results",
+	   address = "Rio de Janeiro, Brazil",
+	   year = 2018,
+	   month = "September"
+}
+\end{verbatim}\end{small}
+
+Objects can be given multiple keys, as well. Take for example the following author:
+
+\begin{small}\begin{verbatim}
+@author{rama, name="Venugopalan Ramasubramanian"}
+\end{verbatim}\end{small}
+
+However, Rama uses Venu and Arun as names for his alter egos. So we can define his object as follows:
+
+\begin{small}\begin{verbatim}
+@author{rama = arun = venu, name="Venugopalan Ramasubramanian"}
+\end{verbatim}\end{small}
+
+Thereafter, the following are equivalent.
+
+\begin{small}\begin{verbatim}
+author = "rama and egs"
+author = "arun and egs"
+author = "venu and egs"
+\end{verbatim}\end{small}
+
+This aliasing can be done for any object and can be used anywhere in the database. The \texttt{.tex} file, however, must cite all objects by their first, primary keys (in this case \texttt{rama}).
+
+
+\subsection{Representation}
+
+Every kind of object, such as \texttt{month}, \texttt{location}, \texttt{author}, and \texttt{article}, knows how to represent itself as a string suitable for inclusion in \LaTeX{}. For example, when \texttt{mypaper} referred to \texttt{sep} in the example, the actual value assigned was ``September''. Some objects, such as \texttt{mypaper}, will produce entire bibliography entries when referred to. In fact, when generating bibliographies, \texttt{crosstex} simply prints out the string representations of all the objects cited in the document. Naturally, each object takes note of certain options and represents itself accordingly.
+
+Simple, named objects, such as \texttt{month}, \texttt{location}, \texttt{author}, and others, have two forms: A long form and a short form. The object \texttt{sep} could be defined:
+
+\begin{small}\begin{verbatim}
+@month{sep,
+  name = "September",
+  shortname = "Sep."
+}
+\end{verbatim}\end{small}
+
+By default, long names are used. If, however, the option \texttt{--short month} were given, the same object would represent itself as ``Sep.'' instead of ``September''. If only a name (no shortname) is specified, or, conversely, if only a shortname but no name is specified, the name given will be used in all cases. All named objects follow this pattern.
+
+However, because person names are so complicated, \texttt{author} objects are somewhat magic. If \texttt{--short author} is specified, authors will be represented with initials and a last name---the object \texttt{egs} would be represented ``E. G. Sirer''. If a \texttt{shortname} field is explicitly given for an author, that takes precedence and can be used for special cases. By default, however, \XTeX{} is aware of many kinds of names and can correctly handle complexities such as Jr., Sr., III, IV, von, van, de, bin, and ibn. Just write the names out in full in their natural order, and \XTeX{} will handle them properly, including such entries as:
+
+\begin{small}\begin{verbatim}
+@author{rvr, name = "Robbert van Renesse"}
+@author{ldv, name = "Louis de Vargas, III"}
+\end{verbatim}\end{small}
+
+The \texttt{author} field (not to be confused with the \texttt{author} kind of object) is also somewhat special. Users of \BibTeX{} are familiar with specifying multiple authors thus:
+
+\begin{small}\begin{verbatim}
+@inproceedings{credence,
+  title = "{Experience with an Object
+            Reputation System for 
+            Peer-to-Peer Filesharing}",
+  author = "Kevin Walsh and Emin {G\"un} Sirer",
+  ...
+}
+\end{verbatim}\end{small}
+
+And, assuming the objects \texttt{kwalsh} and \texttt{egs} are defined appropriately, the following correctly refers to them:
+
+\begin{small}\begin{verbatim}
+@inproceedings{credence,
+  title = "{Experience with an Object
+            Reputation System for 
+            Peer-to-Peer Filesharing}",
+  author = "kwalsh and egs",
+  ...
+}
+\end{verbatim}\end{small}
+
+Otherwise, \texttt{month = sep} and \texttt{month = "sep"} are very different things; the first refers to the \texttt{sep} object, while the second uses the literal string ``sep''.
+
+
+\subsection{Under the hood: References}
+
+Making a reference to a defined object such as \texttt{month = sep} causes the \texttt{month} field to gain the stringified value of the object \texttt{sep}, in this case ``September''. However, it also causes something else to happen after all the fields have been assigned: Any required or optional fields that do not yet have values will try to inherit them from the referenced object \texttt{sep}, if it has them. The actual \texttt{month} objects defined in the included \texttt{dates.xtx}, for example, defined \texttt{monthno} fields in addition to their names, which will be pulled along into objects that refer to them. This mechanism is essentially equivalent to the \texttt{crossref} field from \BibTeX{}, but occurs for all fields.
+
+This can be combined with a new, advanced feature of \XTeX{}: Conditional fields. Here is an example:
+
+\begin{small}\begin{verbatim}
+@conference{nsdi,
+  shortname = "NSDI",
+  longname = "Symposium on Networked System Design and Implementation", 
+  [year=2006] address=SanJose, month=may,
+  [year=2005] address=Boston, month=may,
+  [year=2004] address=SF, month=mar,
+}
+\end{verbatim}\end{small}
+
+This is a simple \texttt{conference} object, which is string-like and subject to \texttt{--short conference}, etc. (\texttt{longname} is an alias for \texttt{name}.) However, if the \texttt{year} field is equal to 2006, it additionally has the fields \texttt{address=SanJose, month=may}. In a different year, a different conditional might be triggered. Any, all, or none of the conditionals mentioned may be appropriate (although obviously in this case, the year can only have one value). By itself, this isn't so useful; it sets no extra fields in the \texttt{nsdi} object because \texttt{year} isn't even set in it.
+
+However, look at the following reference:
+
+\begin{small}\begin{verbatim}
+@inproceedings{credence,
+  title = "Experience with an Object Reputation System for Peer-to-Peer Filesharing",
+  author = "kwalsh and egs",
+  booktitle = nsdi,
+  year = 2006
+}
+\end{verbatim}\end{small}
+
+The \texttt{credence} object will know that it occurred in San Jose in May, because it inherits all the fields, including conditional ones from \texttt{kwalsh}, \texttt{egs}, and \texttt{nsdi}. If, however, it had already set the month field, it would not be missing and thus would not be inherited. (The address still would be.)
+
+
+\subsection{Managing databases}
+
+Obviously, re-inventing \texttt{sep} and \texttt{SanJose} in every database would be exhausting. Instead, like objects can be collected together---for example, in \texttt{dates.xtx} and \texttt{locations.xtx}, as they are in the \XTeX{} distribution---and included where needed. For example, here is a potentially complete \texttt{.xtx} file based on the standard \XTeX{} distribution:
+
+\begin{small}\begin{verbatim}
+@include conferences
+
+@author{egs, name = "Emin {G\"un} Sirer"}
+@author{kwalsh, name = "Kevin Walsh"}
+
+@inproceedings{credence,
+  title = "Experience with an Object Reputation System for Peer-to-Peer Filesharing",
+  author = "kwalsh and egs",
+  booktitle = nsdi,
+  year = 2006
+}
+\end{verbatim}\end{small}
+
+This will search for \texttt{conferences.xtx} or \texttt{conferences.bib} and include it in the appropriate place before parsing the rest of the file. \XTeX{} by default looks in a standard system directory and the current directory; additional search paths can be specified with the \texttt{--dir} option. The standard \texttt{conferences.xtx} begins:
+
+\begin{small}\begin{verbatim}
+@include dates
+@include locations
+
+...
+\end{verbatim}\end{small}
+
+Thus, the \texttt{credence} object has access to well-defined locations, dates, and conference names.
+
+When databases get exceptionally long and many elements have very similar fields---e.g., they are all in the same conference or have the same informative \texttt{category} field---you can make use of another special \XTeX{} command, \texttt{@default}. For example, here is the beginning of the \texttt{usenix.xtx} database:
+
+\begin{small}\begin{verbatim}
+@include conferences
+
+@inproceedings{DBLP:conf/usenix/RuanP04,
+  author    = {Yaoping Ruan and
+               Vivek S. Pai},
+  title     = {Making the "Box" Transparent: System Call Performance as
+               a First-Class Result},
+  booktitle = usenixg,
+  year      = 2004,
+  pages     = {1-14},
+  ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/t
+ech/general/ruan.html},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/usenix/CantrillSL04,
+  author    = {Bryan Cantrill and
+               Michael W. Shapiro and
+               Adam H. Leventhal},
+  title     = {Dynamic Instrumentation of Production Systems},
+  booktitle = usenixg,
+  year      = 2004,
+  pages     = {15-28},
+  ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/t
+ech/general/cantrill.html},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+...
+\end{verbatim}\end{small}
+
+With \texttt{@default}, it could be shortened:
+
+\begin{small}\begin{verbatim}
+@include conferences
+
+@default booktitle = usenixg
+@default year = 2004
+@default bibsource = {DBLP, http://dblp.uni-trier.de}
+
+@inproceedings{DBLP:conf/usenix/RuanP04,
+  author    = {Yaoping Ruan and
+               Vivek S. Pai},
+  title     = {Making the "Box" Transparent: System Call Performance as
+               a First-Class Result},
+  pages     = {1-14},
+  ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/t
+ech/general/ruan.html},
+}
+
+@inproceedings{DBLP:conf/usenix/CantrillSL04,
+  author    = {Bryan Cantrill and
+               Michael W. Shapiro and
+               Adam H. Leventhal},
+  title     = {Dynamic Instrumentation of Production Systems},
+  pages     = {15-28},
+  ee        = {http://www.usenix.org/publications/library/proceedings/usenix04/t
+ech/general/cantrill.html},
+}
+
+...
+\end{verbatim}\end{small}
+
+Later in the file are entries with different years. A new \texttt{@default} command takes precedence over the first:
+
+\begin{small}\begin{verbatim}
+...
+
+@default year = 2003
+
+@inproceedings{DBLP:conf/usenix/PadioleauR03,
+  author    = {Yoann Padioleau and
+               Olivier Ridoux},
+  title     = {A Logic File System},
+  pages     = {99-112},
+  ee        = {http://www.usenix.org/events/usenix03/tech/padioleau.html},
+}
+
+@inproceedings{DBLP:conf/usenix/DouglisI03,
+  author    = {Fred Douglis and
+               Arun Iyengar},
+  title     = {Application-specific Delta-encoding via Resemblance Detection},
+  pages     = {113-126},
+  ee        = {http://www.usenix.org/events/usenix03/tech/douglis.html},
+}
+
+...
+\end{verbatim}\end{small}
+
+The defaults for \texttt{booktitle} and \texttt{bibsource} remain. Another important thing to note is that, as usual, fields that are explicitly set will take that value: They will only inherit default fields if those fields are not already defined.
+
+
+
+\section{Invoking \texttt{crosstex}}
+
+The \texttt{crosstex} program will search for each file listed on the command line, including versions with \texttt{.aux}, \texttt{.xtx}, and \texttt{.bib} appended. It will then convert each file to a \texttt{.bbl} file containing the appropriate bibliography. Generally, no options are necessary except when tweaking a bibliography's style. There are many more options than are shown here; run \texttt{crosstex --help} for a complete list with explanations.
+
+\begin{description}
+\item[\texttt{-d DIR}, \texttt{--dir=DIR}]
+By default, \XTeX{} searches for files in the current directory and a central system directory such as \texttt{/usr/share/texmf/crosstex}. This option adds a new directory that will be searched before them.
+\end{description}
+
+
+\subsection{Debugging options}
+
+\begin{description}
+\item[\texttt{--quiet}]
+Prevents errors from being printed.
+
+\item[\texttt{--strict}]
+Causes warnings to be printed.
+\end{description}
+
+
+\subsection{Style options}
+
+\begin{description}
+\item[\texttt{--cite=CITE}]
+Generate a citation, exactly as though \texttt{\textbackslash{}cite\{CITE\}} had appeared, including the \LaTeX{} convention \texttt{*} for ``cite everything''.
+
+\item[\texttt{--style=STYLE}]
+Specify the bibliography style, as though \texttt{\textbackslash{}bibliographystyle\{STYLE\}} had appeared.
+
+\item[\texttt{-s FIELD}, \texttt{--sort=FIELD}]
+Sort entries by the specified field. Multiple sort orders are applied (stably) in the order specified, e.g. \texttt{-s year -s author} will cause elements to be grouped primarily by author and sub-grouped by year.
+
+\item[\texttt{-S FIELD}, \texttt{--reverse-sort=FIELD}]
+Exactly as --sort, but sort by descending field values rather than ascending.
+
+\item[\texttt{--no-sort}]
+Leave the bibliography in citation order.
+
+\item[\texttt{--heading=FIELD}]
+Use the specified field to divide the bibliography into several sections. For example, with \texttt{--heading category}, all entries with the same category will be collected together under a heading containing the their mutual \texttt{category} field. Another useful one could be \texttt{--heading year}. This has no influence on sort order, but simply partitions the sorted elements.
+
+\item[\texttt{--short=TYPE}]
+Where TYPE is some string-like object (\texttt{author}, \texttt{conference}, \texttt{conferencetrack}, \texttt{country}, \texttt{journal}, \texttt{month}, \texttt{state}, \texttt{string}, or \texttt{workshop}), abbreviate all objects of that type.
+
+\item[\texttt{--add-in}]
+Add ``In'' for \texttt{article} entries.
+
+\item[\texttt{--add-proceedings}]
+Add ``In Proceedings of'' for conference and workshop publications.
+
+\item[\texttt{--add-proc}]
+Add ``Proc. of'' for conference and workshop publications.
+
+\item[\texttt{-l FIELD}, \texttt{--link=FIELD}, \texttt{--no-link}]
+For each field given as \texttt{-l \textrm{\textit{fieldname}}}, if an entry has that field and it appears to be a URL, it will be included in the bibliography as a link named after the field. For example, with \texttt{-l Abstract}, entries with an \texttt{abstract} field consisting of a URL will have a link to that URL, which appears as \textsc{Abstract}. To empty this list of fields (i.e. cause no links to be generated), use \texttt{--no-link}.
+
+Normally, no links are generated; when generating HTML, the default fields are Abstract, URL, PS, PDF, HTML, DVI, TEX, BIB, FTP, HTTP, and RTF. If this option is used, the document use \texttt{\textbackslash{}usepackage\{hyperref\}}.
+
+\item[\texttt{--abstract}, \texttt{--no-abstract}]
+Include (or do not include) paper abstracts in the bibliography when they are provided. If \texttt{--link abstract} has also been specified, and the abstract was decided to consist of a URL, it will appear as a link and not be included also by this option. If, however, it existed but did not consist of a link, it will appear in full as normal.
+
+\item[\texttt{--keywords}, \texttt{--no-keywords}]
+Include (or do not include) keywords in the bibliography when they are provided.
+
+\end{description}
+
+
+\subsection{Converting back to \BibTeX{}}
+
+When invoked as \texttt{xtx2bib} or given the \texttt{--xtx2bib} option, the database information will be collected and re-output as a \texttt{.bib} file for processing by \BibTeX{}.
+
+
+\subsection{Generating HTML}
+
+When invoked as \texttt{xtx2html} or given the \texttt{--xtx2html} option, a standalone bibliography will be generated and translated to HTML. This can be used to conveniently prepare an entire bibliographic database (say, of your own publications) or the citations of a paper for inclusion in a web site such as a home page. By defaults \texttt{xtx2html} turns on some pretty non-traditional options, which can of course be changed by command-line options (\texttt{xtx2html --style plain \textrm{\textit{files}}}, for example, makes something very tame).
+
+
+
+\section{Inside the \texttt{.tex} file}
+
+The \texttt{.tex} source file never needs to know you're using \XTeX{}, because it is completely backwards compatible. The \texttt{\textbackslash{}bibliographystyle\{\textrm{\textit{foo}}\}} command will cause the equivalent of the command-line option \texttt{--style \textrm{\textit{foo}}}.
+
+However, the \texttt{\textbackslash{}bibliographystyle} command can cause other magic as well. Arbitrary command line options may be specified after the style name, separated by commas. For example:
+
+\begin{small}\begin{verbatim}
+\bibliographystyle{plain,--add-in,--add-proceedings,--short,author}
+\end{verbatim}\end{small}
+
+This allows documents to have fine-grained control over styling. Run-time options will still take precedence over document defaults.
+
+
+
+\section{Extending \XTeX{}}
+\label{extending}
+
+\XTeX{} is designed to be easy to extend with very trivial knowledge of Python. Before continuing, it is very important to have a look at the standard object types and fields in Section~\ref{objects}, which are already supported by \XTeX{}. New objects or fields are defined by editing the file \texttt{crosstexobjects.py}, which is typically installed in \texttt{/usr/share/texmf/crosstex}.
+
+To create a new field for a particular object type, find its definition (e.g., the section defining the \texttt{string} object begins \texttt{class string}). Most objects already define some fields; simply copy that syntax for your own field. If a field is assigned \texttt{None} to begin with, it will be required; by assigning it some default value, even the empty string, it becomes optional.
+
+To make an optional field required or a required field optional, simply assign it \texttt{None} or some default, respectively, in the class where you want the change.
+
+To create an entirely new class \textit{foo} which is identical to a current one named \textit{bar}, add the following to the end of \texttt{crosstexobjects.py}.
+
+\begin{small}\begin{verbatim}
+class foo(misc):
+    pass
+\end{verbatim}\end{small}
+
+If \textit{foo} should have different required or optional fields form \textit{bar}, define them as noted above. (The \texttt{pass} is only necessary if the body of the \texttt{class} definition is empty, e.g. it does not set the values of any fields.)
+
+If you are more advanced at Python programming and want to change the behavior of objects, simply look at the ones that exist. The string value of an object is obtained, appropriately enough, from its \texttt{\_\_str\_\_} method, should you want to change the appearance of any objects. Similarly, every object has access to an \texttt{\_options} member containing the options set on the command line.
+
+Happy hacking!
+
+
+
+\section{Standard object types}
+\label{objects}
+
+These are the kinds of objects \XTeX{} knows about by default. For information about extending this notion, see Extending \XTeX{} in Section~\ref{extending}.
+
+\begin{description}
+
+\item[\texttt{string}]
+\textsc{Required:} \texttt{name} and/or \texttt{shortname} (\texttt{longname} is an alias for \texttt{name}.)
+\textsc{Relevant arguments:} \texttt{--short}
+
+\item[\texttt{author}] As \texttt{string}, except:
+\textsc{Optional:} \texttt{address}, \texttt{affiliation}, \texttt{email}, \texttt{institution}, \texttt{organization}, \texttt{phone}, \texttt{school}, \texttt{url}
+
+\item[\texttt{state}] As \texttt{string}, except:
+\textsc{Optional:} \texttt{country}
+
+\item[\texttt{country}] As \texttt{string}.
+
+\item[\texttt{location}]
+\textsc{Optional:} \texttt{city}, \texttt{state}, \texttt{country}
+
+\item[\texttt{month}] As \texttt{string}.
+
+\item[\texttt{journal}] As \texttt{string}.
+
+\item[\texttt{misc}]
+\textsc{Optional:}
+\texttt{abstract},
+\texttt{address},
+\texttt{affiliation},
+\texttt{annote},
+\texttt{author},
+\texttt{bib},
+\texttt{bibsource},
+\texttt{booktitle},
+\texttt{category},
+\texttt{chapter},
+\texttt{contents},
+\texttt{copyright},
+\texttt{crossref},
+\texttt{doi},
+\texttt{dvi},
+\texttt{edition},
+\texttt{editor},
+\texttt{ee},
+\texttt{ftp},
+\texttt{howpublished},
+\texttt{html},
+\texttt{http},
+\texttt{institution},
+\texttt{isbn},
+\texttt{issn},
+\texttt{journal},
+\texttt{key},
+\texttt{keywords},
+\texttt{language},
+\texttt{lccn},
+\texttt{location},
+\texttt{month},
+\texttt{monthno},
+\texttt{mrnumber},
+\texttt{note},
+\texttt{number},
+\texttt{organization},
+\texttt{pages},
+\texttt{pdf},
+\texttt{price},
+\texttt{ps},
+\texttt{publisher},
+\texttt{rtf},
+\texttt{school},
+\texttt{series},
+\texttt{size},
+\texttt{title},
+\texttt{type},
+\texttt{url},
+\texttt{volume},
+\texttt{year}
+\textsc{Relevant arguments:} \texttt{--cite-by}, \texttt{--titlecase}, \texttt{--link}, \texttt{--abstract}, \texttt{--keywords}
+
+\item[\texttt{article}] As \texttt{misc}, except:
+\textsc{Required:} \texttt{author}, \texttt{title}, \texttt{journal}, \texttt{year}
+\textsc{Relevant arguments:} \texttt{--add-in}
+
+\item[\texttt{book}] As \texttt{misc}, except:
+\textsc{Required:} \texttt{author} and/or \texttt{editor}, \texttt{title}, \texttt{publisher}, \texttt{year}
+
+\item[\texttt{booklet}] As \texttt{misc}, except:
+\textsc{Required:} \texttt{title}
+
+\item[\texttt{inbook}] As \texttt{misc}, except:
+\textsc{Required:} \texttt{author} and/or \texttt{editor}, \texttt{title}, \texttt{chapter} and/or \texttt{pages}, \texttt{publisher}, \texttt{year}
+
+\item[\texttt{incollection}] As \texttt{misc}, except:
+\textsc{Required:} \texttt{author}, \texttt{title}, \texttt{booktitle}, \texttt{publisher}, \texttt{year}
+
+\item[\texttt{inproceedings}] As \texttt{misc}, except:
+\textsc{Required:} \texttt{author}, \texttt{title}, \texttt{booktitle}, \texttt{year}
+\textsc{Relevant arguments:} \texttt{--add-proceedings}, \texttt{--add-proc}
+
+\item[\texttt{manual}] As \texttt{misc}, except:
+\textsc{Required:} \texttt{title}
+
+\item[\texttt{thesis}] As \texttt{misc}, except:
+\textsc{Required:} \texttt{author}, \texttt{title}, \texttt{school}, \texttt{year}
+
+\item[\texttt{mastersthesis}] As \texttt{thesis}.
+
+\item[\texttt{phdthesis}] As \texttt{thesis}.
+
+\item[\texttt{patent}] As \texttt{misc}.
+
+\item[\texttt{proceedings}] As \texttt{misc}, except:
+\textsc{Required:} \texttt{title}, \texttt{year}
+
+\item[\texttt{collection}] As \texttt{proceedings}.
+
+\item[\texttt{techreport}] As \texttt{misc}, except:
+\textsc{Required:} \texttt{author}, \texttt{title}, \texttt{institution}, \texttt{year}
+
+\item[\texttt{unpublished}] As \texttt{misc}, except:
+\textsc{Required:} \texttt{author}, \texttt{title}, \texttt{note}
+
+\item[\texttt{conference}] As \texttt{string}, except:
+\textsc{Optional:}
+\texttt{address},
+\texttt{crossref},
+\texttt{editor},
+\texttt{institution},
+\texttt{isbn},
+\texttt{key},
+\texttt{keywords},
+\texttt{language},
+\texttt{location},
+\texttt{month},
+\texttt{publisher},
+\texttt{url},
+\texttt{year}
+
+\item[\texttt{conferencetrack}] As \texttt{conference}, except:
+\textsc{Optional:} \texttt{conference}
+
+\item[\texttt{workshop}] As \texttt{conferencetrack}.
+
+\item[\texttt{rfc}] As \texttt{misc}, except:
+\textsc{Required:} \texttt{author}, \texttt{title}, \texttt{number}, \texttt{month}, \texttt{year}
+
+\end{description}
+
+\end{document}

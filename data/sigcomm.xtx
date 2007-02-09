@@ -8,7 +8,6 @@
   year      = 2006,
   pages     = {1-2},
   ee        = {http://doi.acm.org/10.1145/1159913.1159914},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -23,7 +22,6 @@
   year      = 2006,
   pages     = {3-14},
   ee        = {http://doi.acm.org/10.1145/1159913.1159916},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -36,7 +34,6 @@
   year      = 2006,
   pages     = {15-26},
   ee        = {http://doi.acm.org/10.1145/1159913.1159917},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -49,7 +46,6 @@
   year      = 2006,
   pages     = {27-38},
   ee        = {http://doi.acm.org/10.1145/1159913.1159918},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -65,7 +61,6 @@
   year      = 2006,
   pages     = {39-50},
   ee        = {http://doi.acm.org/10.1145/1159913.1159920},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -81,7 +76,6 @@
   year      = 2006,
   pages     = {51-62},
   ee        = {http://doi.acm.org/10.1145/1159913.1159921},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -96,7 +90,6 @@
   year      = 2006,
   pages     = {63-74},
   ee        = {http://doi.acm.org/10.1145/1159913.1159922},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -111,7 +104,6 @@
   year      = 2006,
   pages     = {75-86},
   ee        = {http://doi.acm.org/10.1145/1159913.1159923},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -124,7 +116,6 @@
   year      = 2006,
   pages     = {87-98},
   ee        = {http://doi.acm.org/10.1145/1159913.1159925},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -140,7 +131,6 @@
   year      = 2006,
   pages     = {99-110},
   ee        = {http://doi.acm.org/10.1145/1159913.1159926},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -152,7 +142,6 @@
   year      = 2006,
   pages     = {111-122},
   ee        = {http://doi.acm.org/10.1145/1159913.1159928},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -163,7 +152,6 @@
   year      = 2006,
   pages     = {123-134},
   ee        = {http://doi.acm.org/10.1145/1159913.1159929},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -178,7 +166,6 @@
   year      = 2006,
   pages     = {135-146},
   ee        = {http://doi.acm.org/10.1145/1159913.1159930},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -191,7 +178,6 @@
   year      = 2006,
   pages     = {147-158},
   ee        = {http://doi.acm.org/10.1145/1159913.1159931},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -203,7 +189,6 @@
   year      = 2006,
   pages     = {159-170},
   ee        = {http://doi.acm.org/10.1145/1159913.1159933},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -215,7 +200,6 @@
   year      = 2006,
   pages     = {171-182},
   ee        = {http://doi.acm.org/10.1145/1159913.1159934},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -228,7 +212,6 @@
   year      = 2006,
   pages     = {183-194},
   ee        = {http://doi.acm.org/10.1145/1159913.1159935},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -243,7 +226,6 @@
   year      = 2006,
   pages     = {195-206},
   ee        = {http://doi.acm.org/10.1145/1159913.1159937},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -258,7 +240,6 @@
   year      = 2006,
   pages     = {207-218},
   ee        = {http://doi.acm.org/10.1145/1159913.1159938},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -271,7 +252,6 @@
   year      = 2006,
   pages     = {219-230},
   ee        = {http://doi.acm.org/10.1145/1159913.1159939},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -285,7 +265,6 @@
   year      = 2006,
   pages     = {231-242},
   ee        = {http://doi.acm.org/10.1145/1159913.1159940},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -301,7 +280,6 @@
   year      = 2006,
   pages     = {243-254},
   ee        = {http://doi.acm.org/10.1145/1159913.1159942},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -315,7 +293,6 @@
   year      = 2006,
   pages     = {255-266},
   ee        = {http://doi.acm.org/10.1145/1159913.1159943},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -329,7 +306,6 @@
   year      = 2006,
   pages     = {267-278},
   ee        = {http://doi.acm.org/10.1145/1159913.1159945},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -343,7 +319,6 @@
   year      = 2006,
   pages     = {279-290},
   ee        = {http://doi.acm.org/10.1145/1159913.1159946},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -355,7 +330,6 @@
   year      = 2006,
   pages     = {291-302},
   ee        = {http://doi.acm.org/10.1145/1159913.1159947},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -370,7 +344,6 @@
   year      = 2006,
   pages     = {303-314},
   ee        = {http://doi.acm.org/10.1145/1159913.1159948},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -386,7 +359,6 @@
   year      = 2006,
   pages     = {315-326},
   ee        = {http://doi.acm.org/10.1145/1159913.1159950},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -399,7 +371,6 @@
   year      = 2006,
   pages     = {327-338},
   ee        = {http://doi.acm.org/10.1145/1159913.1159951},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -415,7 +386,6 @@
   year      = 2006,
   pages     = {339-350},
   ee        = {http://doi.acm.org/10.1145/1159913.1159952},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -430,7 +400,6 @@
   year      = 2006,
   pages     = {351-362},
   ee        = {http://doi.acm.org/10.1145/1159913.1159954},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -445,7 +414,6 @@
   year      = 2006,
   pages     = {363-374},
   ee        = {http://doi.acm.org/10.1145/1159913.1159955},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -461,7 +429,6 @@
   year      = 2006,
   pages     = {375-386},
   ee        = {http://doi.acm.org/10.1145/1159913.1159956},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -472,7 +439,6 @@
   year      = 2006,
   pages     = {387-398},
   ee        = {http://doi.acm.org/10.1145/1159913.1159957},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -486,7 +452,6 @@
   year      = 2006,
   pages     = {399-410},
   ee        = {http://doi.acm.org/10.1145/1159913.1159959},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -500,7 +465,6 @@
   year      = 2006,
   pages     = {411-422},
   ee        = {http://doi.acm.org/10.1145/1159913.1159960},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -513,7 +477,6 @@
   year      = 2006,
   pages     = {423-434},
   ee        = {http://doi.acm.org/10.1145/1159913.1159961},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -527,7 +490,6 @@
   year      = 2006,
   pages     = {435-446},
   ee        = {http://doi.acm.org/10.1145/1159913.1159962},
-  crossref  = {DBLP:conf/sigcomm/2006},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -539,7 +501,6 @@
   year      = 2005,
   pages     = {1-12},
   ee        = {http://doi.acm.org/10.1145/1080091.1080094},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -556,7 +517,6 @@
   year      = 2005,
   pages     = {13-24},
   ee        = {http://doi.acm.org/10.1145/1080091.1080095},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -570,7 +530,6 @@
   year      = 2005,
   pages     = {25-36},
   ee        = {http://doi.acm.org/10.1145/1080091.1080096},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -584,7 +543,6 @@
   year      = 2005,
   pages     = {37-48},
   ee        = {http://doi.acm.org/10.1145/1080091.1080098},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -596,7 +554,6 @@
   year      = 2005,
   pages     = {49-60},
   ee        = {http://doi.acm.org/10.1145/1080091.1080099},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -607,7 +564,6 @@
   year      = 2005,
   pages     = {61-72},
   ee        = {http://doi.acm.org/10.1145/1080091.1080100},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -625,7 +581,6 @@
   year      = 2005,
   pages     = {73-84},
   ee        = {http://doi.acm.org/10.1145/1080091.1080102},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -639,7 +594,6 @@
   year      = 2005,
   pages     = {85-96},
   ee        = {http://doi.acm.org/10.1145/1080091.1080103},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -655,7 +609,6 @@
   year      = 2005,
   pages     = {97-108},
   ee        = {http://doi.acm.org/10.1145/1080091.1080104},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -670,7 +623,6 @@
   year      = 2005,
   pages     = {109-120},
   ee        = {http://doi.acm.org/10.1145/1080091.1080106},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -685,7 +637,6 @@
   year      = 2005,
   pages     = {121-132},
   ee        = {http://doi.acm.org/10.1145/1080091.1080107},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -697,7 +648,6 @@
   year      = 2005,
   pages     = {133-144},
   ee        = {http://doi.acm.org/10.1145/1080091.1080108},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -710,7 +660,6 @@
   year      = 2005,
   pages     = {145-156},
   ee        = {http://doi.acm.org/10.1145/1080091.1080110},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -724,7 +673,6 @@
   year      = 2005,
   pages     = {157-168},
   ee        = {http://doi.acm.org/10.1145/1080091.1080111},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -738,7 +686,6 @@
   year      = 2005,
   pages     = {169-180},
   ee        = {http://doi.acm.org/10.1145/1080091.1080112},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -753,7 +700,6 @@
   year      = 2005,
   pages     = {181-192},
   ee        = {http://doi.acm.org/10.1145/1080091.1080114},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -767,7 +713,6 @@
   year      = 2005,
   pages     = {193-204},
   ee        = {http://doi.acm.org/10.1145/1080091.1080115},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -779,7 +724,6 @@
   year      = 2005,
   pages     = {205-216},
   ee        = {http://doi.acm.org/10.1145/1080091.1080116},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -792,7 +736,6 @@
   year      = 2005,
   pages     = {217-228},
   ee        = {http://doi.acm.org/10.1145/1080091.1080118},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -805,7 +748,6 @@
   year      = 2005,
   pages     = {229-240},
   ee        = {http://doi.acm.org/10.1145/1080091.1080119},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -818,7 +760,6 @@
   year      = 2005,
   pages     = {241-252},
   ee        = {http://doi.acm.org/10.1145/1080091.1080120},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -832,7 +773,6 @@
   year      = 2005,
   pages     = {253-264},
   ee        = {http://doi.acm.org/10.1145/1080091.1080122},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -849,7 +789,6 @@
   year      = 2005,
   pages     = {265-276},
   ee        = {http://doi.acm.org/10.1145/1080091.1080123},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -865,7 +804,6 @@
   year      = 2005,
   pages     = {277-288},
   ee        = {http://doi.acm.org/10.1145/1080091.1080124},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -880,7 +818,6 @@
   year      = 2005,
   pages     = {289-300},
   ee        = {http://doi.acm.org/10.1145/1080091.1080126},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -892,7 +829,6 @@
   year      = 2005,
   pages     = {301-312},
   ee        = {http://doi.acm.org/10.1145/1080091.1080127},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -905,7 +841,6 @@
   year      = 2005,
   pages     = {313-324},
   ee        = {http://doi.acm.org/10.1145/1080091.1080128},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -916,7 +851,6 @@
   year      = 2005,
   pages     = {325},
   ee        = {http://doi.acm.org/10.1145/1080091.1080092},
-  crossref  = {DBLP:conf/sigcomm/2005},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -927,7 +861,6 @@
   year      = 2004,
   pages     = {1-2},
   ee        = {http://doi.acm.org/10.1145/1015467.1015468},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -942,7 +875,6 @@
   year      = 2004,
   pages     = {3-14},
   ee        = {http://doi.acm.org/10.1145/1015467.1015470},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -956,7 +888,6 @@
   year      = 2004,
   pages     = {15-26},
   ee        = {http://doi.acm.org/10.1145/1015467.1015471},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -973,7 +904,6 @@
   year      = 2004,
   pages     = {27-40},
   ee        = {http://doi.acm.org/10.1145/1015467.1015472},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -989,7 +919,6 @@
   year      = 2004,
   pages     = {41-54},
   ee        = {http://doi.acm.org/10.1145/1015467.1015474},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1004,7 +933,6 @@
   year      = 2004,
   pages     = {55-66},
   ee        = {http://doi.acm.org/10.1145/1015467.1015475},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1019,7 +947,6 @@
   year      = 2004,
   pages     = {67-78},
   ee        = {http://doi.acm.org/10.1145/1015467.1015476},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1034,7 +961,6 @@
   year      = 2004,
   pages     = {79-92},
   ee        = {http://doi.acm.org/10.1145/1015467.1015478},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1049,7 +975,6 @@
   year      = 2004,
   pages     = {93-106},
   ee        = {http://doi.acm.org/10.1145/1015467.1015479},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1064,7 +989,6 @@
   year      = 2004,
   pages     = {107-120},
   ee        = {http://doi.acm.org/10.1145/1015467.1015480},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1079,7 +1003,6 @@
   year      = 2004,
   pages     = {121-132},
   ee        = {http://doi.acm.org/10.1145/1015467.1015482},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1093,7 +1016,6 @@
   year      = 2004,
   pages     = {133-144},
   ee        = {http://doi.acm.org/10.1145/1015467.1015483},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1106,7 +1028,6 @@
   year      = 2004,
   pages     = {145-158},
   ee        = {http://doi.acm.org/10.1145/1015467.1015484},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1123,7 +1044,6 @@
   year      = 2004,
   pages     = {159-166},
   ee        = {http://doi.acm.org/10.1145/1015467.1015485},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1135,7 +1055,6 @@
   year      = 2004,
   pages     = {167-178},
   ee        = {http://doi.acm.org/10.1145/1015467.1015487},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1148,7 +1067,6 @@
   year      = 2004,
   pages     = {179-192},
   ee        = {http://doi.acm.org/10.1145/1015467.1015488},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1163,7 +1081,6 @@
   year      = 2004,
   pages     = {193-204},
   ee        = {http://doi.acm.org/10.1145/1015467.1015489},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1178,7 +1095,6 @@
   year      = 2004,
   pages     = {205-218},
   ee        = {http://doi.acm.org/10.1145/1015467.1015491},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1191,7 +1107,6 @@
   year      = 2004,
   pages     = {219-230},
   ee        = {http://doi.acm.org/10.1145/1015467.1015492},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1205,7 +1120,6 @@
   year      = 2004,
   pages     = {231-244},
   ee        = {http://doi.acm.org/10.1145/1015467.1015493},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1219,7 +1133,6 @@
   year      = 2004,
   pages     = {245-256},
   ee        = {http://doi.acm.org/10.1145/1015467.1015495},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1232,7 +1145,6 @@
   year      = 2004,
   pages     = {257-268},
   ee        = {http://doi.acm.org/10.1145/1015467.1015496},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1244,7 +1156,6 @@
   year      = 2004,
   pages     = {269-280},
   ee        = {http://doi.acm.org/10.1145/1015467.1015497},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1257,7 +1168,6 @@
   year      = 2004,
   pages     = {281-292},
   ee        = {http://doi.acm.org/10.1145/1015467.1015499},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1272,7 +1182,6 @@
   year      = 2004,
   pages     = {293-306},
   ee        = {http://doi.acm.org/10.1145/1015467.1015500},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1286,7 +1195,6 @@
   year      = 2004,
   pages     = {307-318},
   ee        = {http://doi.acm.org/10.1145/1015467.1015501},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1302,7 +1210,6 @@
   year      = 2004,
   pages     = {319-330},
   ee        = {http://doi.acm.org/10.1145/1015467.1015503},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1315,7 +1222,6 @@
   year      = 2004,
   pages     = {331-342},
   ee        = {http://doi.acm.org/10.1145/1015467.1015504},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1331,7 +1237,6 @@
   year      = 2004,
   pages     = {343-352},
   ee        = {http://doi.acm.org/10.1145/1015467.1015505},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1344,7 +1249,6 @@
   year      = 2004,
   pages     = {353-366},
   ee        = {http://doi.acm.org/10.1145/1015467.1015507},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1357,7 +1261,6 @@
   year      = 2004,
   pages     = {367-378},
   ee        = {http://doi.acm.org/10.1145/1015467.1015508},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1369,7 +1272,6 @@
   year      = 2004,
   pages     = {379-390},
   ee        = {http://doi.acm.org/10.1145/1015467.1015509},
-  crossref  = {DBLP:conf/sigcomm/2004},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1383,7 +1285,6 @@
   year      = 2003,
   pages     = {3-10},
   ee        = {http://doi.acm.org/10.1145/863955.863957},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1396,7 +1297,6 @@
   year      = 2003,
   pages     = {11-18},
   ee        = {http://doi.acm.org/10.1145/863955.863958},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1408,7 +1308,6 @@
   year      = 2003,
   pages     = {19-26},
   ee        = {http://doi.acm.org/10.1145/863955.863959},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1419,7 +1318,6 @@
   year      = 2003,
   pages     = {27-34},
   ee        = {http://doi.acm.org/10.1145/863955.863960},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1433,7 +1331,6 @@
   year      = 2003,
   pages     = {37-48},
   ee        = {http://doi.acm.org/10.1145/863955.863962},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1444,7 +1341,6 @@
   year      = 2003,
   pages     = {49-60},
   ee        = {http://doi.acm.org/10.1145/863955.863963},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1457,7 +1353,6 @@
   year      = 2003,
   pages     = {61-72},
   ee        = {http://doi.acm.org/10.1145/863955.863964},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1470,7 +1365,6 @@
   year      = 2003,
   pages     = {75-86},
   ee        = {http://doi.acm.org/10.1145/863955.863966},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1485,7 +1379,6 @@
   year      = 2003,
   pages     = {87-98},
   ee        = {http://doi.acm.org/10.1145/863955.863967},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1498,7 +1391,6 @@
   year      = 2003,
   pages     = {99-110},
   ee        = {http://doi.acm.org/10.1145/863955.863968},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1511,7 +1403,6 @@
   year      = 2003,
   pages     = {113-124},
   ee        = {http://doi.acm.org/10.1145/863955.863970},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1525,7 +1416,6 @@
   year      = 2003,
   pages     = {125-136},
   ee        = {http://doi.acm.org/10.1145/863955.863971},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1539,7 +1429,6 @@
   year      = 2003,
   pages     = {137-148},
   ee        = {http://doi.acm.org/10.1145/863955.863972},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1553,7 +1442,6 @@
   year      = 2003,
   pages     = {151-162},
   ee        = {http://doi.acm.org/10.1145/863955.863974},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1565,7 +1453,6 @@
   year      = 2003,
   pages     = {163-174},
   ee        = {http://doi.acm.org/10.1145/863955.863975},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1579,7 +1466,6 @@
   year      = 2003,
   pages     = {175-186},
   ee        = {http://doi.acm.org/10.1145/863955.863976},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1596,7 +1482,6 @@
   year      = 2003,
   pages     = {189-200},
   ee        = {http://doi.acm.org/10.1145/863955.863978},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1609,7 +1494,6 @@
   year      = 2003,
   pages     = {201-212},
   ee        = {http://doi.acm.org/10.1145/863955.863979},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1623,7 +1507,6 @@
   year      = 2003,
   pages     = {213-224},
   ee        = {http://doi.acm.org/10.1145/863955.863980},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1636,7 +1519,6 @@
   year      = 2003,
   pages     = {227-238},
   ee        = {http://doi.acm.org/10.1145/863955.863982},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1649,7 +1531,6 @@
   year      = 2003,
   pages     = {239-250},
   ee        = {http://doi.acm.org/10.1145/863955.863983},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1663,7 +1544,6 @@
   year      = 2003,
   pages     = {251-262},
   ee        = {http://doi.acm.org/10.1145/863955.863984},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1677,7 +1557,6 @@
   year      = 2003,
   pages     = {265-276},
   ee        = {http://doi.acm.org/10.1145/863955.863986},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1691,7 +1570,6 @@
   year      = 2003,
   pages     = {277-285},
   ee        = {http://doi.acm.org/10.1145/863955.863987},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1703,7 +1581,6 @@
   year      = 2003,
   pages     = {287-298},
   ee        = {http://doi.acm.org/10.1145/863955.863988},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1717,7 +1594,6 @@
   year      = 2003,
   pages     = {301-312},
   ee        = {http://doi.acm.org/10.1145/863955.863990},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1730,7 +1606,6 @@
   year      = 2003,
   pages     = {313-324},
   ee        = {http://doi.acm.org/10.1145/863955.863991},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1743,7 +1618,6 @@
   year      = 2003,
   pages     = {325-336},
   ee        = {http://doi.acm.org/10.1145/863955.863992},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1756,7 +1630,6 @@
   year      = 2003,
   pages     = {339-351},
   ee        = {http://doi.acm.org/10.1145/863955.863994},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1771,7 +1644,6 @@
   year      = 2003,
   pages     = {353-364},
   ee        = {http://doi.acm.org/10.1145/863955.863995},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1785,7 +1657,6 @@
   year      = 2003,
   pages     = {365-378},
   ee        = {http://doi.acm.org/10.1145/863955.863996},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1801,7 +1672,6 @@
   year      = 2003,
   pages     = {381-394},
   ee        = {http://doi.acm.org/10.1145/863955.863998},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1816,7 +1686,6 @@
   year      = 2003,
   pages     = {395-406},
   ee        = {http://doi.acm.org/10.1145/863955.863999},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1831,7 +1700,6 @@
   year      = 2003,
   pages     = {407-418},
   ee        = {http://doi.acm.org/10.1145/863955.864000},
-  crossref  = {DBLP:conf/sigcomm/2003},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1844,7 +1712,6 @@
   year      = 2002,
   pages     = {3-16},
   ee        = {http://doi.acm.org/10.1145/633025.633027},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1856,7 +1723,6 @@
   year      = 2002,
   pages     = {17-29},
   ee        = {http://doi.acm.org/10.1145/633025.633028},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1868,7 +1734,6 @@
   year      = 2002,
   pages     = {31-44},
   ee        = {http://doi.acm.org/10.1145/633025.633029},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1882,7 +1747,6 @@
   year      = 2002,
   pages     = {47-60},
   ee        = {http://doi.acm.org/10.1145/633025.633031},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1895,7 +1759,6 @@
   year      = 2002,
   pages     = {61-72},
   ee        = {http://doi.acm.org/10.1145/633025.633032},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1910,7 +1773,6 @@
   year      = 2002,
   pages     = {73-86},
   ee        = {http://doi.acm.org/10.1145/633025.633033},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1923,7 +1785,6 @@
   year      = 2002,
   pages     = {89-102},
   ee        = {http://doi.acm.org/10.1145/633025.633035},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1935,7 +1796,6 @@
   year      = 2002,
   pages     = {103-116},
   ee        = {http://doi.acm.org/10.1145/633025.633036},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1951,7 +1811,6 @@
   year      = 2002,
   pages     = {117-130},
   ee        = {http://doi.acm.org/10.1145/633025.633037},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1964,7 +1823,6 @@
   year      = 2002,
   pages     = {133-145},
   ee        = {http://doi.acm.org/10.1145/633025.633039},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1979,7 +1837,6 @@
   year      = 2002,
   pages     = {147-159},
   ee        = {http://doi.acm.org/10.1145/633025.633040},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1994,7 +1851,6 @@
   year      = 2002,
   pages     = {161-174},
   ee        = {http://doi.acm.org/10.1145/633025.633041},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2006,7 +1862,6 @@
   year      = 2002,
   pages     = {177-190},
   ee        = {http://doi.acm.org/10.1145/633025.633043},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2021,7 +1876,6 @@
   year      = 2002,
   pages     = {191-204},
   ee        = {http://doi.acm.org/10.1145/633025.633044},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2034,7 +1888,6 @@
   year      = 2002,
   pages     = {205-217},
   ee        = {http://doi.acm.org/10.1145/633025.633045},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2048,7 +1901,6 @@
   year      = 2002,
   pages     = {221-233},
   ee        = {http://doi.acm.org/10.1145/633025.633047},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2063,7 +1915,6 @@
   year      = 2002,
   pages     = {235-247},
   ee        = {http://doi.acm.org/10.1145/633025.633048},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2076,7 +1927,6 @@
   year      = 2002,
   pages     = {251-264},
   ee        = {http://doi.acm.org/10.1145/633025.633050},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2089,7 +1939,6 @@
   year      = 2002,
   pages     = {265-278},
   ee        = {http://doi.acm.org/10.1145/633025.633051},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2102,7 +1951,6 @@
   year      = 2002,
   pages     = {279-292},
   ee        = {http://doi.acm.org/10.1145/633025.633052},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2115,7 +1963,6 @@
   year      = 2002,
   pages     = {295-308},
   ee        = {http://doi.acm.org/10.1145/633025.633054},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2129,7 +1976,6 @@
   year      = 2002,
   pages     = {309-322},
   ee        = {http://doi.acm.org/10.1145/633025.633055},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2141,7 +1987,6 @@
   year      = 2002,
   pages     = {323-336},
   ee        = {http://doi.acm.org/10.1145/633025.633056},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2154,7 +1999,6 @@
   year      = 2002,
   pages     = {339-346},
   ee        = {http://doi.acm.org/10.1145/633025.633058},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -2168,7 +2012,6 @@
   year      = 2002,
   pages     = {347-356},
   ee        = {http://doi.acm.org/10.1145/633025.633059},
-  crossref  = {DBLP:conf/sigcomm/2002},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -6725,7 +6568,6 @@
   year      = 1986,
   pages     = {6-12},
   ee        = {http://doi.acm.org/10.1145/18172.18173},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -6736,7 +6578,6 @@
   year      = 1986,
   pages     = {13-18},
   ee        = {http://doi.acm.org/10.1145/18172.18174},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -6747,7 +6588,6 @@
   year      = 1986,
   pages     = {19-29},
   ee        = {http://doi.acm.org/10.1145/18172.18175},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -6758,7 +6598,6 @@
   year      = 1986,
   pages     = {30-37},
   ee        = {http://doi.acm.org/10.1145/18172.18176},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -6772,7 +6611,6 @@
   year      = 1986,
   pages     = {40-44},
   ee        = {http://doi.acm.org/10.1145/18172.18177},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -6784,7 +6622,6 @@
   year      = 1986,
   pages     = {45-51},
   ee        = {http://doi.acm.org/10.1145/18172.18178},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -6797,7 +6634,6 @@
   year      = 1986,
   pages     = {52-57},
   ee        = {http://doi.acm.org/10.1145/18172.18179},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -6808,7 +6644,6 @@
   year      = 1986,
   pages     = {58-66},
   ee        = {http://doi.acm.org/10.1145/18172.18180},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -6820,7 +6655,6 @@
   year      = 1986,
   pages     = {68-74},
   ee        = {http://doi.acm.org/10.1145/18172.18181},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -6833,7 +6667,6 @@
   year      = 1986,
   pages     = {75-83},
   ee        = {http://doi.acm.org/10.1145/18172.18182},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -6844,7 +6677,6 @@
   year      = 1986,
   pages     = {84-91},
   ee        = {http://doi.acm.org/10.1145/18172.18183},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -6855,7 +6687,6 @@
   year      = 1986,
   pages     = {92-100},
   ee        = {http://doi.acm.org/10.1145/18172.18184},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -6869,7 +6700,6 @@
   year      = 1986,
   pages     = {102-110},
   ee        = {http://doi.acm.org/10.1145/18172.18185},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -6884,7 +6714,6 @@
   year      = 1986,
   pages     = {111-119},
   ee        = {http://doi.acm.org/10.1145/18172.18186},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -6898,7 +6727,6 @@
   year      = 1986,
   pages     = {120-125},
   ee        = {http://doi.acm.org/10.1145/18172.18187},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -6913,7 +6741,6 @@
   year      = 1986,
   pages     = {126-136},
   ee        = {http://doi.acm.org/10.1145/18172.18188},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -6927,7 +6754,6 @@
   year      = 1986,
   pages     = {138-147},
   ee        = {http://doi.acm.org/10.1145/18172.18189},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -6939,7 +6765,6 @@
   year      = 1986,
   pages     = {148-156},
   ee        = {http://doi.acm.org/10.1145/18172.18190},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -6951,7 +6776,6 @@
   year      = 1986,
   pages     = {157-166},
   ee        = {http://doi.acm.org/10.1145/18172.18191},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -6965,7 +6789,6 @@
   year      = 1986,
   pages     = {167-175},
   ee        = {http://doi.acm.org/10.1145/18172.18192},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -6978,7 +6801,6 @@
   year      = 1986,
   pages     = {178-185},
   ee        = {http://doi.acm.org/10.1145/18172.18193},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -6990,7 +6812,6 @@
   year      = 1986,
   pages     = {186-193},
   ee        = {http://doi.acm.org/10.1145/18172.18194},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7006,7 +6827,6 @@
   year      = 1986,
   pages     = {194-203},
   ee        = {http://doi.acm.org/10.1145/18172.18195},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7018,7 +6838,6 @@
   year      = 1986,
   pages     = {204-213},
   ee        = {http://doi.acm.org/10.1145/18172.18196},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7030,7 +6849,6 @@
   year      = 1986,
   pages     = {216-226},
   ee        = {http://doi.acm.org/10.1145/18172.18197},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7044,7 +6862,6 @@
   year      = 1986,
   pages     = {227-235},
   ee        = {http://doi.acm.org/10.1145/18172.18198},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7055,7 +6872,6 @@
   year      = 1986,
   pages     = {236-240},
   ee        = {http://doi.acm.org/10.1145/18172.18199},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7067,7 +6883,6 @@
   year      = 1986,
   pages     = {254-264},
   ee        = {http://doi.acm.org/10.1145/18172.18201},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7080,7 +6895,6 @@
   year      = 1986,
   pages     = {265-274},
   ee        = {http://doi.acm.org/10.1145/18172.18202},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7092,7 +6906,6 @@
   year      = 1986,
   pages     = {275-281},
   ee        = {http://doi.acm.org/10.1145/18172.18203},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7104,7 +6917,6 @@
   year      = 1986,
   pages     = {282-289},
   ee        = {http://doi.acm.org/10.1145/18172.18204},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7116,7 +6928,6 @@
   year      = 1986,
   pages     = {292-301},
   ee        = {http://doi.acm.org/10.1145/18172.18205},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7128,7 +6939,6 @@
   year      = 1986,
   pages     = {302-309},
   ee        = {http://doi.acm.org/10.1145/18172.18206},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7140,7 +6950,6 @@
   year      = 1986,
   pages     = {310-317},
   ee        = {http://doi.acm.org/10.1145/18172.18207},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7153,7 +6962,6 @@
   year      = 1986,
   pages     = {320-327},
   ee        = {http://doi.acm.org/10.1145/18172.18208},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7164,7 +6972,6 @@
   year      = 1986,
   pages     = {328-337},
   ee        = {http://doi.acm.org/10.1145/18172.18209},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7176,7 +6983,6 @@
   year      = 1986,
   pages     = {338-347},
   ee        = {http://doi.acm.org/10.1145/18172.18210},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7188,7 +6994,6 @@
   year      = 1986,
   pages     = {348-356},
   ee        = {http://doi.acm.org/10.1145/18172.18211},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7200,7 +7005,6 @@
   year      = 1986,
   pages     = {358-367},
   ee        = {http://doi.acm.org/10.1145/18172.18212},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7212,7 +7016,6 @@
   year      = 1986,
   pages     = {368-376},
   ee        = {http://doi.acm.org/10.1145/18172.18213},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7224,7 +7027,6 @@
   year      = 1986,
   pages     = {377-384},
   ee        = {http://doi.acm.org/10.1145/18172.18214},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7236,7 +7038,6 @@
   year      = 1986,
   pages     = {386-396},
   ee        = {http://doi.acm.org/10.1145/18172.18215},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7247,7 +7048,6 @@
   year      = 1986,
   pages     = {397-405},
   ee        = {http://doi.acm.org/10.1145/18172.18216},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7259,7 +7059,6 @@
   year      = 1986,
   pages     = {406-415},
   ee        = {http://doi.acm.org/10.1145/18172.18217},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -7271,7 +7070,6 @@
   year      = 1986,
   pages     = {541-550},
   ee        = {http://doi.acm.org/10.1145/18172.18200},
-  crossref  = {DBLP:conf/sigcomm/1986},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 

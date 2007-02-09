@@ -25,7 +25,7 @@ class bibobject(object):
     _conditionals = []
     _citekey = ''
 
-    def __init__(self, conditionals, file, line, options):
+    def __init__(self, conditionals, defaults, file, line, options):
         self._line = line
         self._file = file
         self._name = type(self).__name__
@@ -37,6 +37,14 @@ class bibobject(object):
         while self._applyconditions():
             pass
 
+	for key in defaults:
+	    if hasattr(self, key):
+	        self._assign(key, defaults[key])
+
+        while self._applyconditions():
+            pass
+
+    def _check(self):
         for field in self._fields():
             if getattr(self, field) == None:
                 raise ValueError, "field %s, required by %s, is missing" % (field, self._name)
