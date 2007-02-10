@@ -102,8 +102,7 @@ author = "arun and egs"
 author = "venu and egs"
 \end{verbatim}\end{small}
 
-This aliasing can be done for any object and can be used anywhere in the database. The \texttt{.tex} file, however, must cite all objects by their first, primary keys (in this case \texttt{rama}).
-
+This aliasing can be done for any object and can be used anywhere in the database. The \texttt{.tex} file can cite any object by any one of its synonymous tags. There is a strange quirk with the use of synonymous tags stemming from a design error in LaTeX that users should keep in mind: If a \texttt{.tex} file cites a paper with citation tags name1 and name2 twice, once with each tag, the reference will appear twice in the produced bibliography. As a result, feel free to use any one of the tags to cite papers, but it's not a good idea to use more than one tag to refer to a citation within a given paper.
 
 \subsection{Representation}
 
