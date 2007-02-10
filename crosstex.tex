@@ -102,8 +102,6 @@ author = "arun and egs"
 author = "venu and egs"
 \end{verbatim}\end{small}
 
-This aliasing can be done for any object and can be used anywhere in the database. The \texttt{.tex} file can cite any object by any one of its synonymous tags. There is a strange quirk with the use of synonymous tags stemming from a design error in LaTeX that users should keep in mind: If a \texttt{.tex} file cites a paper with citation tags name1 and name2 twice, once with each tag, the reference will appear twice in the produced bibliography. As a result, feel free to use any one of the tags to cite papers, but it's not a good idea to use more than one tag to refer to a citation within a given paper.
-
 \subsection{Representation}
 
 Every kind of object, such as \texttt{month}, \texttt{location}, \texttt{author}, and \texttt{article}, knows how to convert itself into a string suitable for inclusion in the references section of a scholarly publication. For example, when \texttt{mypaper} referred to \texttt{sep} in the example, the actual value assigned was ``September''. Some objects, such as \texttt{mypaper}, will produce entire bibliography entries when referred to. In fact, when generating bibliographies, \texttt{crosstex} simply prints out the string representations of all the objects cited in the document.  Each object takes note of options passed into CrossTeX and generates a string representation accordingly.
@@ -251,6 +249,17 @@ identical, it points to an inconsistency in the bibliographic database, which
 will cause \XTeX{} to issue a warning. Passing \XTeX{} the \texttt{--strict} flag will force it to issue such warnings even when the objects are identical,
 to help facilitate people who might want to maintain databases free of
 duplicate entries.
+
+Recall that \XTeX{} enables an object to appear under multiple keys. 
+This aliasing can be done for any object and can be used anywhere in
+the database. The \texttt{.tex} file can cite any object by any one of
+its synonymous keys. There is a strange quirk with the use of
+synonymous keys stemming from a design error in LaTeX, which users
+should keep in mind: If a \texttt{.tex} file cites a paper with
+citation keys name1 and name2 twice, under both keys, the reference
+will appear twice in the produced bibliography. As a result, feel free
+to use any one of the tags to cite papers, but it's not a good idea to
+use more than one tag to refer to a citation within a given paper.
 
 When databases get exceptionally long and many elements have very similar fields---e.g., they are all in the same conference or have the same informative \texttt{category} field---you can make use of another special \XTeX{} command, \texttt{@default}. For example, here is the beginning of the \texttt{usenix.xtx} database:
 
