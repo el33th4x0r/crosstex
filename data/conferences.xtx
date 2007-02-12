@@ -1,6 +1,13 @@
 @include dates
 @include locations
 
+@conference{eurosys,
+  name = "European Conference on Computer Systems",
+  shortname = "EuroSys"
+  [year=2007] address=Lisbon, month=mar,
+  [year=2006] address=Leuven, month=apr,
+}
+
 @conference{focs,
   shortname = "FOCS",
   longname = "Symposium on Foundations of Computer Science",
@@ -79,8 +86,8 @@
 }
 
 @conference{ipdps,
-  shortname = "IP(D)PS",
-  longname = "International Parallel (and Distributed) Processing Symposium",
+  shortname = "IPDPS",
+  longname = "International Parallel and Distributed Processing Symposium",
   [year=2005] address=Denver, month=apr,
   [year=2004] address=SantaFe, month=apr,
   [year=2003] address=Nice, month=apr,

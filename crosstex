@@ -359,7 +359,7 @@ def t_newline(t):
     t.lexer.lineno += t.value.count("\n")
 
 def t_error(t):
-    t.lexer.bib.error("%s:%d: syntax error at '%s'" % (lexer.file, t.lexer.lineno, t.value[0]))
+    t.lexer.bib.error("%s:%d: syntax error at '%s'" % (t.lexer.file, t.lexer.lineno, t.value[0]))
     t.skip(1)
     
 # Grammar
