@@ -47,8 +47,124 @@ $ latex paper    # Get the labels right
 
 
 
-\section{Inside the \texttt{.xtx} file}
+\section{Invoking \texttt{crosstex}}
 
+In its most simply invocation, \texttt{crosstex} simply takes one or more file names, e.g. \texttt{crosstex \textrm{\textit{file1 file2 ...}}}. Each file is processed separately. Files are found in a search path containing the current directory and a central system directory (e.g. \texttt{/usr/share/texmf/crosstex}); this search path can be extended with the \texttt{--dir} option. Extensions (\texttt{.aux}, \texttt{.xtx}, \texttt{.bib}) will be added if left unspecified. The output is always in the current directory, under the same name as the file being processed with the extension changed to \texttt{.bbl}, appropriate to be picked up by \LaTeX{}.
+
+If \texttt{crosstex} is invoked as \texttt{xtx2bib} or the \texttt{--xtx2bib} option is given, the output extension will be \texttt{.bib}; the bibliographic information is back-converted to plain \BibTeX{}.
+
+If \texttt{crosstex} is invoked as \texttt{xtx2html} or the \texttt{--xtx2html} option is given, the output extension will be \texttt{.html}; some style information will be changed as appropriate for formatting a web bibliography, and the output is wrapped into a \LaTeX{} document and translated into HTML by piping it through \texttt{hevea}. (Sometimes it is necessary to run this more than once to get labels right, as with \LaTeX{}; \texttt{hevea} will print an appropriate message if needed.) By default, the style used for HTML is pretty non-traditional, but can of course be overridden by further options: \texttt{xtx2html --style plain \textrm{\textit{file}}} looks nice and tame.
+
+A number of options can be specified to change the style of the bibliography to override or tweak that specified by a document.
+
+\paragraph{Abbreviation}
+
+The \texttt{--short} option allows many kinds of objects to be abbreviated in the bibliography. For example, to use shortened month names (`Jan.', `Feb.') instead of long ones (`January', `February'), simply use the option \texttt{--short month}. This allows the creators of the database to specify both month names just once, refer to the relevant \texttt{month} objects in their entries, and the formatting of month names to be consistently chosen when the bibliography is formatted.
+
+Anything with a name can be abbreviated this way---so a conference can be shortened from ``Networked Systems Design and Implementation'' to ``NSDI'' when under the space crunch or filled back out later with a simple option. Databases mention each name only once, and, even more importantly, what name to use is left to the document and the user and is not imposed on the database maintainer.
+
+Objects that can be shortened include \texttt{author}, \texttt{conference}, \texttt{conferencetrack}, \texttt{country}, \texttt{journal}, \texttt{month}, \texttt{state}, \texttt{string}, and \texttt{workshop}.
+
+\paragraph{Authors}
+
+Author names can be complicated, and are the source of much confusion in \BibTeX{}. The same author might appear with a middle name, without a middle name, last name first, with abbreviated first names, or even mis-spelled. And how do you represent ``Louis de Vargas, III''?
+
+In \XTeX{}, the database maintainer enters the name just once, and it's all sorted out by options. The \texttt{--short author} option generates abbreviated author names such as ``E. G. Sirer'' automatically if an author doesn't have an explicitly mentioned short name, and \XTeX{} careful to handle complicated names with accents and modifiers correctly when abbreviating and sorting without any help at all.
+
+\paragraph{Titles}
+
+Title case is one of the most common inconsistencies. With \XTeX{} it is simple: \texttt{--titlecase lower} will make everything but the first letter lower-case. For all upper-case titles, it's just a matter of \texttt{--titlecase upper}. Finally, \texttt{--titlecase title} raises the case of the first letter of each word, but is careful about small words and known acronyms and phrases such as ``BGP'' and ``Peer-to-Peer''. Words in braces are protected, and it is always possible to just leave titles alone with \texttt{--titlecase default}. Even if the database is old and has bizarre titles, \XTeX{} can sort out the mess.
+
+\paragraph{Proceedings}
+
+Should a conference appear as ``In Proceedings of the Eighth'' or just ``In Proc.'' or something else entirely? It is your choice. With \texttt{--add-proceedings}, \XTeX{} will generate book titles for conferences beginning with ``In Proceedings of'', while \texttt{--add-proc} uses the shorter ``In Proc.'' and without any options, nothing is added. \texttt{--add-in} will cause ``In'' to be used for journal names in articles. As always, the choice will be applied consistently and produce more professional-looking bibliographies.
+
+\paragraph{Sorting and headings}
+
+By default, entries will be sorted by their citation keys, or by their authors and publication dates. The \texttt{--sort} option provides finer control over the sort order. By specifying \texttt{--sort \textrm\textit{field}}, the database will be stably sorted by field; later specifying \texttt{--sort \textrm\textit{field2}} will cause the bibliography to be sorted by field2, but the entries will still be sub-sorted by the first field. To sort in the reverse order, simply use \texttt{--reverse-sort} in the same way.
+
+When processing large bibliographies, it can be nice to partition the entries into labeled categories. Specifying the \texttt{--heading \textrm{\textit{field}}} option specifies a field to be used to divide the entries into sections. For example, \texttt{--heading year} will cause the entries to be grouped by year and given headings for each different year. (\texttt{--reverse-heading} will reverse the order in which the sections appear.) When converting a bibliography of personal publications to HTML, for example, it might be convenient to group by an information field such as \texttt{--heading category} to nicely organize the produced bibliography.
+
+\subsection{Usage}
+
+\begin{small}\begin{verbatim}
+usage: crosstex [options] files
+
+A modern, object-oriented bibliographic tool intended to replace BibTeX.
+
+options:
+  --version             show program's version number and exit
+  -h, --help            show this help message and exit
+  -d DIR, --dir=DIR     Add a directory in which to find data files, searched
+                        from last specified to first. Default: none
+  --quiet               Do not sanity check the input.
+  --strict              Apply stricter checks.
+  --dump=TYPE           After parsing the bibliography, dump a list of all
+                        objects of the type specified, or, with "file", print
+                        a list of files processed.
+  --cite=CITE           Cite a key exactly as with the \cite LaTeX command.
+  -l FIELD, --link=FIELD
+                        Add to the list of fields used to generate links.
+                        LaTeX documents should make use of links by including
+                        the hyperref package. When converting to html, this
+                        defaults to [Abstract, URL, PS, PDF, HTML, DVI, TEX,
+                        BIB, FTP, HTTP, and RTF].
+  --no-link             
+  --cite-by=CITE_BY     With "number", use numeric labels such as [1]. With
+                        "initials", use labels based on author last-names such
+                        as [SBRD04b]. With "fullname", use labels based on
+                        author names such as [Sirer et al. 04].
+  --style=STYLE         Use a standard style such as plain, unsrt, abbrv,
+                        full, or alpha.  Options set by the style may be
+                        overidden by further command-line options.
+  -s FIELD, --sort=FIELD
+                        Sort by specified field. Multiple sort orders are
+                        applied in the order specified, e.g. "-s year -s
+                        author" will cause elements to be grouped primarily by
+                        author and sub-grouped by year.
+  -S FIELD, --reverse-sort=FIELD
+                        Exactly as --sort, but sort by descending field values
+                        rather than ascending.
+  --no-sort             
+  --heading=FIELD       Divide entries and create headings in bibliography by
+                        the value of the given field.
+  --reverse-heading=FIELD
+                        Divide entries and create headings in bibliography by
+                        the value of the given field.
+  --short=TYPE          Specify any string-like object, i.e. one with name and
+                        shortname fields. Whenever possible, the short name
+                        will be used, e.g. two-letter state codes for "state",
+                        conference acronyms such as NSDI for "conference", or
+                        initials such as E. G. Sirer for "author".
+  --add-in              Add "In" for articles.
+  --add-proc            Add "Proc. of" for conference and workshop
+                        publications.
+  --add-proceedings     Add "Proceedings of the" for conference and workshop
+                        publications.
+  --abstract            In the bibliography, include paper abstracts if
+                        available.
+  --no-abstract         
+  --keywords            In the bibliography, include paper keywords if
+                        available.
+  --no-keywords         
+  --titlecase=TITLECASE
+                        In the bibliography, force titles into lower-, upper-,
+                        or title-case.  Default: Leave titles unchanged.
+  --title-head          In the bibliography, put the title bold and first.
+  --no-title-head       
+  --blank-labels        In the bibliography, leave out item labels.
+  --no-blank-labels     
+  --break-lines         In the bibliography, put author, title, and
+                        publication information on separate lines.
+  --no-break-lines      
+  --xtx2bib             Convert the bibliography information to old-style
+                        BibTeX.
+  --xtx2html            Format the bibliography as HTML.
+\end{verbatim}\end{small}
+
+
+
+\section{Inside the \texttt{.xtx} file}
 
 \subsection{Objects}
 
@@ -242,6 +358,8 @@ This will search for \texttt{conferences.xtx} or \texttt{conferences.bib} and in
 
 Thus, the \texttt{credence} object has access to well-defined locations, dates, and conference names.
 
+\XTeX{} always includes the \texttt{dates} bibliography first, for backwards compatibility with \BibTeX{}.
+
 It is possible for the same object to be defined multiple times under the 
 same key (sometimes, this is inevitable when there are multiple bibliographic
 databases involved maintained by different entities). By default, \XTeX{}
@@ -262,6 +380,7 @@ citation keys name1 and name2 twice, under both keys, the reference
 will appear twice in the produced bibliography. As a result, feel free
 to use any one of the tags to cite papers, but it's not a good idea to
 use more than one tag to refer to a citation within a given paper.
+(\XTeX{} will issue a warning if an entry would be duplicated.)
 
 When databases get exceptionally long and many elements have very similar fields---e.g., they are all in the same conference or have the same informative \texttt{category} field---you can make use of another special \XTeX{} command, \texttt{@default}. For example, here is the beginning of the \texttt{usenix.xtx} database:
 
@@ -359,87 +478,6 @@ As with field values inherited from references objects, field values
 inherited from \texttt{default} definitions have lower precedence. Any
 object that explicitly assigns a value to a field will override any 
 \texttt{default} definitions in effect at that point in the bibliography.
-
-
-\section{Invoking \texttt{crosstex}}
-
-The \texttt{crosstex} program will search for each file listed on the command line, including versions with \texttt{.aux}, \texttt{.xtx}, and \texttt{.bib} appended. It will then convert each file to a \texttt{.bbl} file containing the appropriate bibliography. Generally, no options are necessary except when tweaking a bibliography's style. There are many more options than are shown here; run \texttt{crosstex --help} for a complete list with explanations.
-
-\begin{description}
-\item[\texttt{-d DIR}, \texttt{--dir=DIR}]
-By default, \XTeX{} searches for files in the current directory and a central system directory such as \texttt{/usr/share/texmf/crosstex}. This option adds a new directory that will be searched before them.
-\end{description}
-
-
-\subsection{Debugging options}
-
-\begin{description}
-\item[\texttt{--quiet}]
-Prevents errors from being printed.
-
-\item[\texttt{--strict}]
-Causes warnings to be printed.
-\end{description}
-
-
-\subsection{Style options}
-
-\begin{description}
-\item[\texttt{--cite=CITE}]
-Generate a citation, exactly as though \texttt{\textbackslash{}cite\{CITE\}} had appeared, including the \LaTeX{} convention \texttt{*} for ``cite everything''.
-
-\item[\texttt{--style=STYLE}]
-Specify the bibliography style, as though \texttt{\textbackslash{}bibliographystyle\{STYLE\}} had appeared.
-
-\item[\texttt{-s FIELD}, \texttt{--sort=FIELD}]
-Sort entries by the specified field. Multiple sort orders are applied (stably) in the order specified, e.g. \texttt{-s year -s author} will cause elements to be grouped primarily by author and sub-grouped by year.
-
-\item[\texttt{-S FIELD}, \texttt{--reverse-sort=FIELD}]
-Exactly as --sort, but sort by descending field values rather than ascending.
-
-\item[\texttt{--no-sort}]
-Leave the bibliography in citation order.
-
-\item[\texttt{--heading=FIELD}]
-Use the specified field to divide the bibliography into several sections. For example, with \texttt{--heading category}, all entries with the same category will be collected together under a heading containing the their mutual \texttt{category} field. Another useful one could be \texttt{--heading year}. This has no influence on sort order, but simply partitions the sorted elements.
-
-\item[\texttt{--short=TYPE}]
-Where TYPE is some string-like object (\texttt{author}, \texttt{conference}, \texttt{conferencetrack}, \texttt{country}, \texttt{journal}, \texttt{month}, \texttt{state}, \texttt{string}, or \texttt{workshop}), abbreviate all objects of that type.
-
-\item[\texttt{--add-in}]
-Add ``In'' for \texttt{article} entries.
-
-\item[\texttt{--add-proceedings}]
-Add ``In Proceedings of'' for conference and workshop publications.
-
-\item[\texttt{--add-proc}]
-Add ``Proc. of'' for conference and workshop publications.
-
-\item[\texttt{-l FIELD}, \texttt{--link=FIELD}, \texttt{--no-link}]
-For each field given as \texttt{-l \textrm{\textit{fieldname}}}, if an entry has that field and it appears to be a URL, it will be included in the bibliography as a link named after the field. For example, with \texttt{-l Abstract}, entries with an \texttt{abstract} field consisting of a URL will have a link to that URL, which appears as \textsc{Abstract}. To empty this list of fields (i.e. cause no links to be generated), use \texttt{--no-link}.
-
-Normally, no links are generated; when generating HTML, the default fields are Abstract, URL, PS, PDF, HTML, DVI, TEX, BIB, FTP, HTTP, and RTF. If this option is used, the document use \texttt{\textbackslash{}usepackage\{hyperref\}}.
-
-\item[\texttt{--abstract}, \texttt{--no-abstract}]
-Include (or do not include) paper abstracts in the bibliography when they are provided. If \texttt{--link abstract} has also been specified, and the abstract was decided to consist of a URL, it will appear as a link and not be included also by this option. If, however, it existed but did not consist of a link, it will appear in full as normal.
-
-\item[\texttt{--keywords}, \texttt{--no-keywords}]
-Include (or do not include) keywords in the bibliography when they are provided.
-
-\item[\texttt{--titlecase=CASE}]
-Force titles into the specified case. One can specify \texttt{lower}, for the first letter to be capitalized and everything forced to small case; \texttt{upper}, which forces all letters to upper-case; or \texttt{title}, which capitalizes the first letters of most words, but knows about small words (`a', `the') and certain specific phrases (`BGP', `Peer-to-Peer'). The default, which can be mentioned explicitly with \texttt{--titlecase default}, is to leave titles exactly as in the database.
-
-\end{description}
-
-
-\subsection{Converting back to \BibTeX{}}
-
-When invoked as \texttt{xtx2bib} or given the \texttt{--xtx2bib} option, the database information will be collected and re-output as a \texttt{.bib} file for processing by \BibTeX{}.
-
-
-\subsection{Generating HTML}
-
-When invoked as \texttt{xtx2html} or given the \texttt{--xtx2html} option, a standalone bibliography will be generated and translated to HTML. This can be used to conveniently prepare an entire bibliographic database (say, of your own publications) or the citations of a paper for inclusion in a web site such as a home page. By defaults \texttt{xtx2html} turns on some pretty non-traditional options, which can of course be changed by command-line options (\texttt{xtx2html --style plain \textrm{\textit{files}}}, for example, makes something very tame).
 
 
 
