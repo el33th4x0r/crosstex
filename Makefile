@@ -20,10 +20,10 @@ crosstex.pdf: crosstex.tex
 .PHONY: pdf
 pdf: crosstex.pdf
 
-${PACKAGE}.tar.gz: Makefile COPYING crosstex crosstex.spec crosstex.tex
+${PACKAGE}.tar.gz: Makefile COPYING crosstex crosstex.spec crosstex.tex crosstex.pdf
 	rm -rf ${PACKAGE}
 	mkdir ${PACKAGE} ${PACKAGE}/tests ${PACKAGE}/data
-	cp Makefile COPYING crosstex *.py crosstex.tex ${PACKAGE}
+	cp Makefile COPYING crosstex *.py crosstex.tex crosstex.pdf ${PACKAGE}
 	cp tests/*.xtx ${PACKAGE}/tests
 	cp data/*.xtx ${PACKAGE}/data
 	sed "/^%define version/c %define version ${VERSION}" \
