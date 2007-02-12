@@ -3,7 +3,7 @@
 
 @conference{eurosys,
   name = "European Conference on Computer Systems",
-  shortname = "EuroSys"
+  shortname = "EuroSys",
   [year=2007] address=Lisbon, month=mar,
   [year=2006] address=Leuven, month=apr,
 }
