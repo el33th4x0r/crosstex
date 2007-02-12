@@ -2,8 +2,10 @@
 \usepackage{hyperref}
 
 %HEVEA \renewcommand{\TeX}{TeX}
+%HEVEA \renewcommand{\LaTeX}{LaTeX}
 \newcommand{\XTeX}{Cross\TeX}
 \newcommand{\BibTeX}{\textsc{Bib}\TeX}
+
 %HEVEA \renewcommand{\par}{\begin{rawhtml}<p>\end{rawhtml}}
 
 \title{\XTeX{} Tutorial}
@@ -423,6 +425,9 @@ Include (or do not include) paper abstracts in the bibliography when they are pr
 
 \item[\texttt{--keywords}, \texttt{--no-keywords}]
 Include (or do not include) keywords in the bibliography when they are provided.
+
+\item[\texttt{--titlecase=CASE}]
+Force titles into the specified case. One can specify \texttt{lower}, for the first letter to be capitalized and everything forced to small case; \texttt{upper}, which forces all letters to upper-case; or \texttt{title}, which capitalizes the first letters of most words, but knows about small words (`a', `the') and certain specific phrases (`BGP', `Peer-to-Peer'). The default, which can be mentioned explicitly with \texttt{--titlecase default}, is to leave titles exactly as in the database.
 
 \end{description}
 

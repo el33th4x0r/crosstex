@@ -599,6 +599,12 @@ for infilename in args:
     # Use a different environment for each file.
     bib = bibliography()
     bib.setoptions(sys.argv[1:])
+    
+    # Include dates by default for compatibility.
+    try:
+	processfile('dates', bib)
+    except:
+	pass
 
     # Parse the file.
     outfile = None
