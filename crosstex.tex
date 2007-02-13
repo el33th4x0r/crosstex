@@ -384,21 +384,92 @@ Objects that can be shortened include \texttt{author}, \texttt{conference}, \tex
 
 \paragraph{Authors}
 
-Author names can be complicated, and are the source of much confusion in \BibTeX{}. The same author might appear with a middle name, without a middle name, last name first, with abbreviated first names, or even mis-spelled. And how do you represent ``Louis de Vargas, III''?
+Author names can be complicated, and are the source of much confusion
+in \BibTeX{}. The same author might appear with a middle name, without
+a middle name, last name first, with abbreviated first names, or even
+mis-spelled. 
 
-In \XTeX{}, the database maintainer enters the name just once, and it's all sorted out by options. The \texttt{--short author} option generates abbreviated author names such as ``E. G. Sirer'' automatically if an author doesn't have an explicitly mentioned short name, and \XTeX{} careful to handle complicated names with accents and modifiers correctly when abbreviating and sorting without any help at all.
+In \XTeX{}, the database maintainer can enter the name just once in an
+author object and control the way it is formatted via options. The
+\texttt{--short author} option generates abbreviated author names such
+as ``E. G. Sirer'' automatically if an author doesn't have an
+explicitly mentioned short name, and \XTeX{} is careful to handle
+complicated names with accents and modifiers correctly when
+abbreviating or generating citation keys. 
 
 \paragraph{Titles}
 
-Title case is one of the most common inconsistencies. With \XTeX{} it is simple: \texttt{--titlecase lower} will make everything but the first letter lower-case. For all upper-case titles, it's just a matter of \texttt{--titlecase upper}. Finally, \texttt{--titlecase title} raises the case of the first letter of each word, but is careful about small words and known acronyms and phrases such as ``BGP'' and ``Peer-to-Peer''. Words in braces are protected, and it is always possible to just leave titles alone with \texttt{--titlecase default}. Even if the database is old and has bizarre titles, \XTeX{} can sort out the mess.
+Title case is one of the most common inconsistencies when using
+BibTex. Often, some papers are cited with lower-case titles, some are
+all upper-case, and some follow mixed title-case. Key acronyms
+(e.g. BGP) and proper nouns (e.g. Internet) are haphazardly
+capitalized, or not, depending on how diligent the author was when
+putting together the bibliographic database.
+
+\XTeX{} can ensure that all titles follow the same uniform capitalization
+standard, based on the following options:
+
+\begin{description}
+
+\item\texttt{--titlecase lower} will make the entire title, except the first letter,
+lower-case. It is smart enough to preserve the capitalization of key acronyms 
+and proper nouns, as well as the capitalization of the first word that follows
+punctuation (e.g. ``Aardwark: A system for peer-to-peer BGP routing on the Internet.'').
+
+
+\item\texttt{--titlecase upper} will make the entire title upper-case
+(e.g. ``AARDVARK: A SYSTEM FOR PEER-TO-PEER BGP ROUTING ON THE INTERNET.'').
+
+\item\texttt{--titlecase title} will follow the standard convention in use
+in many fields wherein the first letter of each word is capitalized. The 
+actual rule is a bit more complicated: ``small words'' such as prepositions 
+are not capitalized, acronyms and proper nouns are always capitalized, and
+hyphenated compound terms such as ``Peer-to-Peer'' are always capitalized
+using a well-defined standard (e.g. ``Aardwark: A System for Peer-to-Peer BGP Routing on the Internet.'').
+
+\end{description}
+
+Words in braces are not modified in any way,
+and it is always possible to just leave all titles alone with
+\texttt{--titlecase default}. Even if the bibliographic database has
+a mix of title styles, \XTeX{} can sort out the mess and unify the way 
+paper titles look in the references section.
 
 \paragraph{Proceedings}
 
-Should a conference appear as ``In Proceedings of the Eighth'' or just ``In Proc.'' or something else entirely? It is your choice. With \texttt{--add-proceedings}, \XTeX{} will generate book titles for conferences beginning with ``In Proceedings of'', while \texttt{--add-proc} uses the shorter ``In Proc.'' and without any options, nothing is added. \texttt{--add-in} will cause ``In'' to be used for journal names in articles. As always, the choice will be applied consistently and produce more professional-looking bibliographies.
+There are a variety of styles in use when citing papers at conferences. Some
+people prefer to precede the conference name with ``In Proceedings of the ''. 
+These same people usually use ``In Proc. of '' when pressed for space.
+With \texttt{--add-proceedings}, \XTeX{}
+will generate book titles for conferences beginning with ``In
+Proceedings of'', while \texttt{--add-proc} uses the shorter ``In
+Proc.'' and without any options, only ``In '' is used for papers
+in conferences with proceedings. 
+
+For journal articles, the usual convention is to simply put the 
+conference name in italics following the author names, and this is
+the default \XTeX{} and BibTeX behavior. Some people prefer to prepend
+``In '' to the name of the journal; this can be accomplished with the 
+\texttt{--add-in} option.
+
+BibTeX users affect these personal preferences by modifying the bibliographic
+database. Such changes are potentially disruptive and can introduce errors. 
+\XTeX{} enables such stylistic changes, which do not affect the underlying data, 
+to be affected without modifying the database, and ensures that the choice will
+be applied consistently throughout.
 
 \paragraph{Sorting and headings}
 
-By default, entries will be sorted by their citation keys, or by their authors and publication dates. The \texttt{--sort} option provides finer control over the sort order. By specifying \texttt{--sort \textrm{\textit{field}}}, the database will be stably sorted by field; later specifying \texttt{--sort \textrm{\textit{field2}}} will cause the bibliography to be sorted by field2, but the entries will still be sub-sorted by the first field. To sort in the reverse order, simply use \texttt{--reverse-sort} in the same way.
+Sorting affects the order in which references will appear in the bibliography.
+By default, entries will be sorted by their citation keys, or by their
+authors and publication dates, depending on the citation style. 
+The \texttt{--sort} option provides
+finer control over the sort order. By specifying \texttt{--sort
+\textrm{\textit{field}}}, the database will be stably sorted by field;
+later specifying \texttt{--sort \textrm{\textit{field2}}} will cause
+the bibliography to be sorted by field2, but the entries will still be
+sub-sorted by the first field. To sort in descending order, 
+use \texttt{--reverse-sort} in the same way.
 
 When processing large bibliographies, it can be nice to partition the entries into labeled categories. Specifying the \texttt{--heading \textrm{\textit{field}}} option specifies a field to be used to divide the entries into sections. For example, \texttt{--heading year} will cause the entries to be grouped by year and given headings for each different year. (\texttt{--reverse-heading} will reverse the order in which the sections appear.) When converting a bibliography of personal publications to HTML, for example, it might be convenient to group by an information field such as \texttt{--heading category} to nicely organize the produced bibliography.
 
