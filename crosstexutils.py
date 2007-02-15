@@ -16,17 +16,17 @@ case_compoundwords = ["Peer-to-Peer", "Pub-Sub",]
 titlecase_specialcases = case_days + case_months + case_names + case_csacronyms + case_compoundwords
 lowercase_specialcases = case_days + case_months + case_names + case_csacronyms
 
-titlecase_alwayscaps = set(sc.lower() for sc in titlecase_specialcases)
-lowercase_alwayscaps = set(sc.lower() for sc in lowercase_specialcases)
-smallwords = set(["the", "as", "of", "in", "on", "is", "a", "an", "and", "for", "from", "to", "upon", "with", "through"])
-punctuation = set([":", "!", ".", "-"])
+titlecase_alwayscaps = [ sc.lower() for sc in titlecase_specialcases ]
+lowercase_alwayscaps = [ sc.lower() for sc in lowercase_specialcases ]
+smallwords = ["the", "as", "of", "in", "on", "is", "a", "an", "and", "for", "from", "to", "upon", "with", "through"]
+punctuation = [":", "!", ".", "-"]
 
-def citationcase(str, case):
-    str = str.strip("\"")
-    if len(str) >= 3 and str[0] == "{" and str[-1] == "}" and str[-2] != "\\":
-        str = str[1:-1]
-    newstr = ""
-    words = str.split()
+def citationcase(title, case):
+    title = title.strip("\"")
+    if len(title) >= 3 and title[0] == "{" and title[-1] == "}" and title[-2] != "\\":
+        title = title[1:-1]
+    newtitle = ""
+    words = title.split()
     needscaps = 1
     nestingdepth = 0
     for word in words:
@@ -66,7 +66,7 @@ def citationcase(str, case):
                 word = word[0].title() + word[1:]
             else:
                 word = word.lower()
-        if newstr == "":
+        if newtitle == "":
             sep = ""
         else:
             sep = " "
@@ -75,5 +75,5 @@ def citationcase(str, case):
         if word[-1] in punctuation:
             needscaps = 1
         nestingdepth += (lcount - rcount)
-        newstr = newstr + sep + word
-    return newstr
+        newtitle = newtitle + sep + word
+    return newtitle

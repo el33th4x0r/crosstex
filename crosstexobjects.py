@@ -8,20 +8,21 @@
 
 from crosstexutils import citationcase
 import re
+import sys
 
 # Matching URIs
 linkre = re.compile("[a-zA-Z][-+.a-zA-Z0-9]*://([:/?#[\]@!$&'()*+,;=a-zA-Z0-9_\-.~]|%[0-9a-fA-F][0-9a-fA-F]|\\-|\s)*")
 linksub = re.compile("\\-\s")
 
 # Co-ordination so as not to re-use citation keys
-usedlabels = set()
+usedlabels = []
 
 # Base class of bibliography objects
 class bibobject(object):
     _line = 0
     _file = ''
     _name = ''
-    _assigned = set()
+    _assigned = []
     _conditionals = []
     _citekey = ''
 
@@ -31,7 +32,7 @@ class bibobject(object):
         self._name = type(self).__name__
         self._name = self._name[self._name.find('.') + 1:]
         self._options = options
-        self._assigned = set()
+        self._assigned = []
         self._conditionals = conditionals
 
         while self._applyconditions():
@@ -67,22 +68,22 @@ class bibobject(object):
             if hasattr(value, '_bibpromote'):
                 value._bibpromote(self)
             if key not in self._assigned:
-                self._assigned.add(key)
+                self._assigned.append(key)
                 setattr(self, key, value)
 
     def _applyconditions(self):
         unmet = []
-        apply = []
+        valid = []
         for condition, fields in self._conditionals:
             if self._meets(condition):
-                apply += [fields]
+                valid += [fields]
             else:
                 unmet += [(condition, fields)]
         self._conditionals = unmet
-        for fields in apply:
+        for fields in valid:
             for key in fields:
                 self._assign(key, fields[key])
-        return len(apply) > 0
+        return len(valid) > 0
 
     def _filter(self, other, fields):
         filtered = {}
@@ -157,74 +158,81 @@ class author(string):
 
     def _names(self):
         name = string.__str__(self)
-        str = ""
+        value = ""
         lastchar = ' '
         names = []
         nesting = 0
         for i in range(0,len(name)):
             charc = name[i]
             if nesting == 0 and lastchar != '\\' and lastchar != ' ' and charc == " ":
-                names.append(str)
-                str =""
+                names.append(value)
+                value = ""
             elif lastchar != '\\' and charc == "}":
-                str += charc
+                value += charc
                 if nesting == 0:
-                    names.append(str)
-                    str =""
+                    names.append(value)
+                    value =""
                 else:
                     nesting -= 1
             elif lastchar != '\\' and charc == "{":
-                str += charc
+                value += charc
                 nesting += 1
             elif nesting == 0 and lastchar != '\\' and charc == ",":
                 pass
             else:
-                str += charc
+                value += charc
             lastchar = charc
-        names.append(str)
+        names.append(value)
 
         # extract lastname, check suffixes and last name modifiers
         # extract also a list of first names
+        snames = ["Jr.", "Sr.", "Jr", "Sr", "III", "IV"]
+	mnames = ["van", "von", "de", "bin", "ibn"]
         sname = ""
-        lnameoffset = len(names)-1
-        if names[lnameoffset] in set(["Jr.", "Sr.", "Jr", "Sr", "III", "IV"]):
-            sname = names[lnameoffset]
-            lnameoffset -= 1
-        mnameoffset = lnameoffset-1
-        lname = names[lnameoffset]
-        if names[mnameoffset] in set(["van", "von", "de", "bin", "ibn"]):
-            lname = names[mnameoffset] + " " + lname
-            mnameoffset -= 1
-
+        snameoffset = len(names)
+        while snameoffset > 0 and names[snameoffset - 1] in snames:
+	    snameoffset -= 1
+        mnameoffset = 0
+        while mnameoffset < snameoffset and names[mnameoffset] not in mnames:
+	    mnameoffset += 1
+	lnameoffset = snameoffset
+        while lnameoffset > 0 and names[lnameoffset - 1] not in mnames:
+	    lnameoffset -= 1
+	if lnameoffset <= mnameoffset:
+	    lnameoffset = mnameoffset = snameoffset - 1
+	    
         # return the person info as a 3-tuple
-        return (names[0:mnameoffset+1], lname, sname)
+        return (names[:mnameoffset], names[mnameoffset:lnameoffset], names[lnameoffset:snameoffset], names[snameoffset:])
 
     def _last_initials(self, size):
-	(fnames, lname, sname) = self._names()
+	(fnames, mnames, lnames, snames) = self._names()
 	namestr = ""
-	first = 0
-	while first < len(lname):
-	    if lname[first] not in "{}\\":
-		namestr += lname[first]
-		if len(namestr) >= size:
-		    break
-	    elif lname[first] == "\\":
-		first += 2
-	    else:
-		first += 1
+	for lname in lnames:
+	    if len(namestr) >= size:
+		break
+	    first = 0
+	    while first < len(lname):
+	        if lname[first] not in "{}\\":
+		    namestr += lname[first]
+		    if len(namestr) >= size:
+		        break
+	        elif lname[first] == "\\":
+		    first += 2
+	        else:
+		    first += 1
 	return namestr
 
     def __cmp__(self, other):
 	if isinstance(other, author):
-	    return cmp(self._names()[1], other._names()[1])
+	    return cmp(self._names()[2], other._names()[2])
 	else:
-	    return cmp(self._names()[1], other)
+	    return cmp(self._names()[2], other)
 
     def __str__(self):
         if self._name in self._options.short and 'shortname' in self._assigned:
             return str(self.shortname)
         else:
-            (fnames, lname, sname) = self._names()
+            (fnames, mnames, lnames, snames) = self._names()
             namestr = ""
             for n in fnames:
                 pad = ""
@@ -233,8 +241,8 @@ class author(string):
                     while first < len(n):
                         if n[first] not in "{}\\":
                             if namestr != "":
-                                pad = "~"
-                            namestr += pad + n[first] + "."
+                                namestr += "~"
+                            namestr += n[first] + "."
                             break
                         elif n[first] == "\\":
                             first += 2
@@ -242,14 +250,20 @@ class author(string):
                             first += 1
                 else:
                     if namestr != "":
-                        pad = " "
-                    namestr += pad + n
-            if namestr != "":
-                namestr += " "
-            if sname != "":
-                namestr += lname + ", " + sname
-            else:
-                namestr += lname
+                        namestr += " "
+                    namestr += n
+	    for n in mnames:
+                if namestr != "":
+                    namestr += " "
+		namestr += n
+	    for n in lnames:
+                if namestr != "":
+                    namestr += " "
+		namestr += n
+	    for n in snames:
+                if namestr != "":
+                    namestr += ", "
+		namestr += n
             return namestr
 
 class state(string):
@@ -386,26 +400,26 @@ class misc(bibobject):
                    label += "%02d" % (int(str(self.year)) % 100)
         elif self._options.cite_by == 'fullname':
             if len(authors) == 2:
-                (fnames1, lname1, sname1) = authors[0]._names()
-                (fnames2, lname2, sname2) = authors[1]._names()
-                label += lname1 + " \& " + lname2
+                (fnames1, mnames1, lnames1, snames1) = authors[0]._names()
+                (fnames2, mnames1, lnames2, snames2) = authors[1]._names()
+                label += ' '.join(lnames1) + " \& " + ' '.join(lnames2)
             else:
-                (fnames, lname, sname) = authors[0]._names()
-                label += lname
+                (fnames1, mnames1, lnames1, snames1) = authors[0]._names()
+                label += ' '.join(lnames1)
                 if len(authors) > 2:
                     label += " et al."
             if self.year != '':
                    label += " %02d" % (int(str(self.year)) % 100)
         # Ensure the label is unique
         if label in usedlabels:
-            for char in "abcdefghijklmnopqrstuvwxyz":
+            for char in list("abcdefghijklmnopqrstuvwxyz"):
                 if label + char not in usedlabels:
                     label += char
                     break
             else:
                 sys.stderr.write("crosstex: too many citations with key %s" % label)
         if label != '':
-            usedlabels.add(label)
+            usedlabels.append(label)
         self._citelabel = label
         return self._citelabel
 

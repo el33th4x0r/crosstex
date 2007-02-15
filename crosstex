@@ -84,7 +84,7 @@ optparser.add_option('-l', '--link', metavar='FIELD', type='string', action='app
 optparser.add_option('--no-link', action='store_const', const=[], dest='link')
 
 optparser.add_option('--cite-by', type='choice', choices=['number', 'initials', 'fullname'], help="With \"number\", use numeric labels such as [1]. With \"initials\", use labels based on author last-names such as [SBRD04b]. With \"fullname\", use labels based on author names such as [Sirer et al. 04].")
-optparser.add_option('--style', type='choice', choices=styles.keys(), action='callback', callback=optstyle, help="Use a standard style such as plain, unsrt, abbrv, full, or alpha.  Options set by the style may be overidden by further command-line options.")
+optparser.add_option('--style', metavar='STYLE', type='choice', choices=styles.keys(), action='callback', callback=optstyle, help="Use a standard style such as plain, unsrt, abbrv, full, or alpha.  Options set by the style may be overidden by further command-line options.")
 
 optparser.add_option('-s', '--sort', metavar='FIELD', type='string', action='callback', callback=optsort, help="Sort by specified field. Multiple sort orders are applied in the order specified, e.g. \"-s year -s author\" will cause elements to be grouped primarily by author and sub-grouped by year.")
 optparser.add_option('-S', '--reverse-sort', metavar='FIELD', type='string', action='callback', callback=optsort, callback_args=(True,), help="Exactly as --sort, but sort by descending field values rather than ascending.")
@@ -122,6 +122,7 @@ class bibliography(dict):
 	self.aliases = {}
 	self.preambles = []
 	self._citations = None
+	self.seenfiles = []
 
     def setoptions(self, optlist):
 	global optparser
@@ -149,21 +150,21 @@ class bibliography(dict):
 	if self._citations != None:
 	    return self._citations
 	self._citations = []
-	cited = set()
+	cited = []
 
 	for key in self.options.cite:
 	    if key == '*':
 		for i in self.primarykeys:
 		    if hasattr(self[i], '_label') and i not in cited:
 			self._citations += [i]
-			cited.add(i)
+			cited.append(i)
 	    else:
 		if key in self:
 		    if hasattr(self[key], '_label'):
 			if self.aliases[key] not in cited:
 			    self[key]._citekey = key
 			    self._citations.append(key)
-			    cited.add(self.aliases[key])
+			    cited.append(self.aliases[key])
 			else:
 			    self.warning("crosstex: duplicate citation %s; each object may be cited by only one alias" % key)
 		    else:
@@ -180,9 +181,13 @@ class bibliography(dict):
 			return self._citations.index(x)
 		    else:
 			return getattr(self[x], field)
-		except Exception, details:
+		except:
 		    return ''
-	    self._citations.sort(key=keyfunc, reverse=reverse)
+	    sorted = [ (keyfunc(citation), i, citation) for i, citation in enumerate(self._citations) ]
+	    sorted.sort()
+	    if reverse:
+		sorted.reverse()
+	    self._citations = [ citation for _, _, citation in sorted ]
 
 	self._divided = {}
 	if self.options.heading[1] != None:
@@ -267,11 +272,6 @@ def t_ATCOMMENT(t):
 
 def t_ATDEFAULT(t):
     r'@[Dd][Ee][Ff][Aa][Uu][Ll][Tt]'
-    return t
-    
-def t_NUMBER(t):
-    r'\d+'
-    t.lexer.followsequals = 1
     return t
     
 def t_NUMBER(t):
@@ -382,7 +382,7 @@ def p_stmt_object(t):
 def p_stmt_include(t):
     'stmt : ATINCLUDE NAME'
     filename = t[2]
-    processfile(filename, t.lexer.bib, t.lexer.seenfiles, ['.xtx', '.bib', '.aux'])
+    processfile(filename, t.lexer.bib, ['.xtx', '.bib', '.aux'])
 
 def p_stmt_preamble(t):
     'stmt : ATPREAMBLE OPENBRACE STRING CLOSEBRACE'
@@ -394,7 +394,8 @@ def p_stmt_comment(t):
 
 def p_stmt_default(t):
     'stmt : ATDEFAULT field'
-    t.lexer.defaults.update(t[2])
+    for key in t[2]:
+	t.lexer.defaults[key] = t[2][key]
 
 def p_stmt_string(t):
     'stmt : ATSTRING OPENBRACE fields CLOSEBRACE'
@@ -455,7 +456,8 @@ def p_fields_singleton(t):
 def p_fields(t):
     'fields : field COMMA fields'
     t[0] = t[1]
-    t[0].update(t[3])
+    for key in t[3]:
+	t[0][key] = t[3][key]
               
 def p_field(t):
     'field : NAME EQUALS value'
@@ -509,8 +511,8 @@ def p_simplevalue_string(t):
 def p_error(t):
     t.lexer.bib.error("%s:%d: parse error at '%s'" % (t.lexer.file, t.lexer.lineno, t.value[0]))
 
-def processfile(infilename, bib, seenfiles=set(), exts=['.aux', '.xtx', '.bib']):
-    if infilename in seenfiles:
+def processfile(infilename, bib, exts=['.aux', '.xtx', '.bib']):
+    if infilename in bib.seenfiles:
 	if 'file' in bib.options.dump:
             sys.stderr.write("File %s already processed, skipping.\n" % infilename)
 	return
@@ -534,18 +536,18 @@ def processfile(infilename, bib, seenfiles=set(), exts=['.aux', '.xtx', '.bib'])
 	    if 'file' in bib.options.dump:
 		sys.stderr.write("Processing %s...\n" % filename)
 	    if filename.endswith('.aux'):
-		parseaux(instream, infilename, bib, seenfiles)
+		parseaux(instream, bib)
 	    else:
-		parsextx(instream, infilename, bib, seenfiles)
+		parsextx(instream, infilename, bib)
 	    instream.close()
-	    seenfiles.add(infilename)
+	    bib.seenfiles.append(infilename)
 	    return filename
 	except:
 	    continue
     else:
         raise IOError, '%s does not exist or is not a bibliographic database' % infilename
 
-def parseaux(instream, infilename, bib, seenfiles):
+def parseaux(instream, bib):
     options = []
     datafiles = []
     while 1:
@@ -570,16 +572,15 @@ def parseaux(instream, infilename, bib, seenfiles):
     bib.setoptions(options)
     for datafile in datafiles:
 	try:
-	    processfile(datafile, bib, seenfiles, ['.xtx', '.bib', '.aux'])
+	    processfile(datafile, bib, ['.xtx', '.bib', '.aux'])
 	except:
 	    bib.error("Could not process data file %s" % datafile)
     
-def parsextx(instream, infilename, bib, seenfiles):
+def parsextx(instream, infilename, bib):
     lexer = lex.lex()
     lexer.bib = bib
     lexer.file = infilename
     lexer.lineno = 1
-    lexer.seenfiles = seenfiles
     lexer.followsequals = 0
     lexer.defaults = {}
     parser = yacc.yacc(debug=0, write_tables=0) # set these to 1 for icky debugging
@@ -630,7 +631,7 @@ for infilename in args:
 	bib.setoptions(['--cite', '*'])
 
     # Handle dump-locations, dump-conferences, etc.
-    for objtype in set(bib.options.dump):
+    for objtype in bib.options.dump:
 	objs = [ "%s\t%s\n" % (key, bib[key]) for key in bib.primarykeys if hasattr(crosstexobjects, objtype) and isinstance(bib[key], getattr(crosstexobjects, objtype)) ]
 	if len(objs) != 0:
 	    sys.stderr.write("%s\n" % (objtype.upper() + ':'))
