@@ -463,16 +463,16 @@ class misc(bibobject):
             else:
                 value += ' '
             value += "{\\em %s}" % str(self.journal)
-        if self.volume != '':
-            if self.number == '' and self.pages == '':
-                if value != '':
-                    value += ' '
-                value += 'Volume'
-            value += " %s" % str(self.volume)
-        if self.number != '':
-            value += "(%s)" % str(self.number)
-        if self.pages != '':
-            value += ":%s" % str(self.pages)
+	    if self.volume != '':
+		if self.number == '' and self.pages == '':
+		    if value != '':
+			value += ' '
+		    value += 'Volume'
+		value += " %s" % str(self.volume)
+	    if self.number != '':
+		value += "(%s)" % str(self.number)
+	    if self.pages != '':
+		value += ":%s" % str(self.pages)
         if str(self.author) != '' and str(self.editor) != '':
             if value != '':
                 value += ', '
