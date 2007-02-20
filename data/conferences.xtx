@@ -430,6 +430,17 @@
   [year=1981] address=LasVegas, month=sep,
 }
 
+@conference{usenixsecurity,
+  shortname = "USENIX Security",
+  longname = "USENIX Security Symposium",
+  [year=2006] address=Vancouver, month=jul,
+  [year=2004] address=SanDiego, month=aug,
+  [year=2002] address=SF, month=aug,
+  [year=2001] address=DC,
+  [year=1995] address=SaltLake,
+  [year=1993] address=SantaClara,
+}
+
 @conference{usits, 
   shortname = "USITS",
   longname = "USENIX Symposium on Internet Technologies and Systems",
@@ -478,6 +489,5 @@
 @conference{spaa,	shortname = "SPAA",	longname = "Symposium on Parallel Algorithms and Architectures"}
 @conference{starconf,	shortname = "STAR",	longname = "International Conference on Software Testing And Review"}
 @conference{usenixsa,	shortname = "USENIX SAC",	longname = "USENIX Systems Administration Conference"}
-@conference{usenixsecurity,	shortname = "USENIX Security",	longname = "USENIX Security Symposium"}
 @conference{usenixvm,	shortname = "USENIX VM",	longname = "USENIX Virtual Machine Research and Technology Symposium"}
 @conference{vldb,	shortname = "VLDB",	longname = "International Conference on Very Large Databases"}

@@ -207,8 +207,8 @@ class author(string):
     def _last_initials(self, size):
 	(fnames, mnames, lnames, snames) = self._names()
 	namestr = ""
-	for lname in lnames:
-	    if len(namestr) >= size:
+	for lname in mnames + lnames:
+	    if len(namestr) >= len(mnames) + size:
 		break
 	    first = 0
 	    while first < len(lname):
@@ -426,22 +426,21 @@ class misc(bibobject):
     def _title(self):
         value = str(self.title)
         if value != '':
-	    if self._options.titlecase != 'default':
+            if self._options.titlecase != 'default':
                 value = citationcase(value, self._options.titlecase)
         return value
 
     def _publication(self):
-        value = str(self.howpublished)
-        if self.booktitle != '':
-                value += ". In {\\em %s}" % str(self.booktitle)
-        if len(self.editor) != 0:
-            value += ", %s, ed." % str(self.editor)
-        return value
+        return str(self.howpublished)
 
     def _fullauthors(self):
         value = str(self.author)
         if value != '':
             value += "."
+        else:
+            value = str(self.editor)
+            if value != '':
+                value += ", ed."
         return value
 
     def _fulltitle(self):
@@ -454,6 +453,34 @@ class misc(bibobject):
 
     def _fullpublication(self):
         value = self._publication()
+        if self.booktitle != '' and value == '':
+            value += "In {\\em %s}" % str(self.booktitle)
+        if self.journal != '':
+            if self.value != '':
+                self.value += ', '
+            if self._options.in_str != '':
+                value += self._options.in_str
+            else:
+                value += ' '
+            value += "{\\em %s}" % str(self.journal)
+        if self.volume != '':
+            if self.number == '' and self.pages == '':
+                if value != '':
+                    value += ' '
+                value += 'Volume'
+            value += " %s" % str(self.volume)
+        if self.number != '':
+            value += "(%s)" % str(self.number)
+        if self.pages != '':
+            value += ":%s" % str(self.pages)
+        if str(self.author) != '' and str(self.editor) != '':
+            if value != '':
+                value += ', '
+            value += "%s, ed." % str(self.editor)
+        if self.publisher != '':
+            if value != '':
+                value += ', '
+            value += str(self.publisher)
         if self.address != '':
             if value != '':
                 value += ', '
@@ -543,30 +570,12 @@ class article(misc):
     journal = None
     year = None
 
-    def _publication(self):
-        value = self._options.in_str
-        if value != '':
-            value += ' '
-        value += "{\\em %s}" % str(self.journal)
-        if self.volume != '':
-            if self.number == '' and self.pages == '':
-                value += ' Volume'
-            value += " %s" % str(self.volume)
-        if self.number != '':
-            value += "(%s)" % str(self.number)
-        if self.pages != '':
-            value += ":%s" % str(self.pages)
-        return value
-
 class book(misc):
     author = None
     editor = None
     title = None
     publisher = None
     year = None
-
-    def _publication(self):
-        return str(self.publisher)
 
 class booklet(misc):
     title = None
@@ -598,8 +607,6 @@ class inproceedings(misc):
         if value != '':
             value += ' '
         value += "{\\em %s}" % str(self.booktitle)
-        if self.editor != '':
-            value += ", %s, ed." % str(self.editor)
         return value
 
 class manual(misc):
@@ -704,3 +711,27 @@ class rfc(misc):
 
     def _publication(self):
         return "IETF Request For Comments %s" % str(self.number)
+
+class url(misc):
+    url = None
+    accessmonth = ''
+    accessyear = ''
+
+    def _publication(self):
+	value = self.url
+        if self.accessyear != '':
+            if value != '':
+                value += ', Accessed '
+            if self.accessmonth != '':
+                value += str(self.accessmonth) + ' '
+            value += str(self.accessyear)
+
+class newspaperarticle(article):
+    author = ''
+    def _assign(self, key, value):
+         # newspaper is an alias for journal
+         if key == 'newspaper':
+             key = 'journal'
+
+class newspaper(journal):
+    pass

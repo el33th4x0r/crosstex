@@ -616,6 +616,8 @@ These are the kinds of objects \XTeX{} knows about by default. For information a
 
 \item[\texttt{journal}] As \texttt{string}.
 
+\item[\texttt{newspaper}] As \texttt{journal}.
+
 \item[\texttt{misc}]
 \textsc{Optional:}
 \texttt{abstract},
@@ -674,6 +676,8 @@ These are the kinds of objects \XTeX{} knows about by default. For information a
 \item[\texttt{article}] As \texttt{misc}, except:
 \textsc{Required:} \texttt{author}, \texttt{title}, \texttt{journal}, \texttt{year}
 \textsc{Relevant arguments:} \texttt{--add-in}
+
+\item[\texttt{newspaperarticle}] As \texttt{article}, except: (\texttt{newspaper} is an alias for \texttt{journal})
 
 \item[\texttt{book}] As \texttt{misc}, except:
 \textsc{Required:} \texttt{author} and/or \texttt{editor}, \texttt{title}, \texttt{publisher}, \texttt{year}
@@ -737,6 +741,10 @@ These are the kinds of objects \XTeX{} knows about by default. For information a
 
 \item[\texttt{rfc}] As \texttt{misc}, except:
 \textsc{Required:} \texttt{author}, \texttt{title}, \texttt{number}, \texttt{month}, \texttt{year}
+
+\item[\texttt{url}] As \texttt{misc}, except:
+\textsc{Required:} \texttt{url}
+\textsc{Optional:} \texttt{accessyear}, \texttt{accessmonth}
 
 \end{description}
 
