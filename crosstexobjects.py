@@ -456,8 +456,8 @@ class misc(bibobject):
         if self.booktitle != '' and value == '':
             value += "In {\\em %s}" % str(self.booktitle)
         if self.journal != '':
-            if self.value != '':
-                self.value += ', '
+            if value != '':
+                value += ', '
             if self._options.in_str != '':
                 value += self._options.in_str
             else:
