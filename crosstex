@@ -52,7 +52,7 @@ styles = {
 
 # Set up options.
 
-optparser = optparse.OptionParser(usage="usage: %prog [options] files", version="CrossTeX 0.1", description="A modern, object-oriented bibliographic tool intended to replace BibTeX.")
+optparser = optparse.OptionParser(usage="usage: %prog [options] files", version="CrossTeX 0.2", description="A modern, object-oriented bibliographic tool intended to replace BibTeX.")
 
 def optstyle(option, opt, value, parser):
     global styles
