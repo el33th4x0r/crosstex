@@ -164,7 +164,7 @@ In all other contexts, string literals and object references are quite different
 
 Referring to an object, as in \texttt{month = sep}, assigns the stringified value of the object \texttt{sep}, in this case ``September'', to the \texttt{month} field of the object. In addition, it triggers something else to happen after all the fields have been assigned: Any required or optional fields in the referring object that do not yet have values will try to inherit them from the referenced object \texttt{sep}, if it has them. The actual \texttt{month} objects defined in the included \texttt{dates.xtx}, for example, define \texttt{monthno} fields in addition to their names. This value will be pulled along into objects that refer to months, enabling such objects to be sorted by month number easily. Power-users of \BibTeX{} will note that this mechanism is essentially equivalent to the \texttt{crossref} field in \BibTeX{}. The main difference here is that \XTeX{} supports this mechanism in a uniform manner across all object fields.
 
-This can be combined with a new, advanced feature of \XTeX{}, conditional fields, to greatly simplfy object specifications. Here is an example:
+This can be combined with a new, advanced feature of \XTeX{}, conditional fields, to greatly simplify object specifications. Here is an example:
 
 \begin{small}\begin{verbatim}
 @conference{nsdi,
@@ -198,12 +198,12 @@ in context. Look at the following reference:
 Conditional fields defined in the \texttt{nsdi} object will define the
 address and month fields of the conference based on the reference, 
 and the resulting \texttt{credence} object will know that it occurred
-in San Jose in May through inheritence. This allows paper citations
+in San Jose in May through inheritance. This allows paper citations
 to avoid common errors by allowing all conference dates and locations
 to be defined in one place, and inherited correctly, without typos,
 by all papers that appeared at that conference. 
 
-If one wanted to override field inheritence for whatever reason, it would suffice to specify, say, a different month for the \texttt{credence} object. Only those fields that are missing in the referring context are inherited. Thus explicitly assigned information has precedence.
+If one wanted to override field inheritance for whatever reason, it would suffice to specify, say, a different month for the \texttt{credence} object. Only those fields that are missing in the referring context are inherited. Thus explicitly assigned information has precedence.
 
 \subsection{Managing databases}
 
@@ -258,7 +258,7 @@ Recall that \XTeX{} enables an object to appear under multiple keys.
 This aliasing can be done for any object and can be used anywhere in
 the database. The \texttt{.tex} file can cite any object by any one of
 its synonymous keys. There is a strange quirk with the use of
-synonymous keys stemming from a design error in LaTeX, which users
+synonymous keys stemming from a design error in \LaTeX{}, which users
 should keep in mind: If a \texttt{.tex} file cites a paper with
 citation keys name1 and name2 twice, under both keys, the reference
 will appear twice in the produced bibliography. As a result, feel free
@@ -401,7 +401,7 @@ abbreviating or generating citation keys.
 \paragraph{Titles}
 
 Title case is one of the most common inconsistencies when using
-BibTex. Often, some papers are cited with lower-case titles, some are
+BibTeX. Often, some papers are cited with lower-case titles, some are
 all upper-case, and some follow mixed title-case. Key acronyms
 (e.g. BGP) and proper nouns (e.g. Internet) are haphazardly
 capitalized, or not, depending on how diligent the author was when
@@ -415,7 +415,7 @@ standard, based on the following options:
 \item\texttt{--titlecase lower} will make the entire title, except the first letter,
 lower-case. It is smart enough to preserve the capitalization of key acronyms 
 and proper nouns, as well as the capitalization of the first word that follows
-punctuation (e.g. ``Aardwark: A system for peer-to-peer BGP routing on the Internet.'').
+punctuation (e.g. ``Aardvark: A system for peer-to-peer BGP routing on the Internet.'').
 
 
 \item\texttt{--titlecase upper} will make the entire title upper-case
@@ -426,7 +426,7 @@ in many fields wherein the first letter of each word is capitalized. The
 actual rule is a bit more complicated: ``small words'' such as prepositions 
 are not capitalized, acronyms and proper nouns are always capitalized, and
 hyphenated compound terms such as ``Peer-to-Peer'' are always capitalized
-using a well-defined standard (e.g. ``Aardwark: A System for Peer-to-Peer BGP Routing on the Internet.'').
+using a well-defined standard (e.g. ``Aardvark: A System for Peer-to-Peer BGP Routing on the Internet.'').
 
 \end{description}
 
@@ -449,7 +449,7 @@ in conferences with proceedings.
 
 For journal articles, the usual convention is to simply put the 
 conference name in italics following the author names, and this is
-the default \XTeX{} and BibTeX behavior. Some people prefer to prepend
+the default \XTeX{} and \BibTeX{} behavior. Some people prefer to prepend
 ``In '' to the name of the journal; this can be accomplished with the 
 \texttt{--add-in} option.
 
@@ -479,7 +479,7 @@ When processing large bibliographies, it can be nice to partition the entries in
 \begin{small}\begin{verbatim}
 usage: crosstex [options] files
 
-A modern, object-oriented bibliographic tool intended to replace BibTeX.
+A modern, object-oriented bibliographic tool intended to replace \BibTeX{}.
 
 options:
   --version             show program's version number and exit
@@ -505,7 +505,7 @@ options:
                         author names such as [Sirer et al. 04].
   --style=STYLE         Use a standard style such as plain, unsrt, abbrv,
                         full, or alpha.  Options set by the style may be
-                        overidden by further command-line options.
+                        overridden by further command-line options.
   -s FIELD, --sort=FIELD
                         Sort by specified field. Multiple sort orders are
                         applied in the order specified, e.g. "-s year -s
@@ -706,7 +706,8 @@ These are the kinds of objects \XTeX{} knows about by default. For information a
 
 \item[\texttt{phdthesis}] As \texttt{thesis}.
 
-\item[\texttt{patent}] As \texttt{misc}.
+\item[\texttt{patent}] As \texttt{misc}, except:
+\textsc{Required:} \texttt{author}, \texttt{title}, \texttt{number}, \texttt{month}, \texttt{year}
 
 \item[\texttt{proceedings}] As \texttt{misc}, except:
 \textsc{Required:} \texttt{title}, \texttt{year}
