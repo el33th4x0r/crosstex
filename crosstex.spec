@@ -11,6 +11,8 @@ Group: Applications/Publishing
 Packager: Emin Gun Sirer, egs at cs.cornell.edu
 URL: http://www.cs.cornell.edu/people/egs/crosstex/
 Source: http://www.cs.cornell.edu/people/egs/crosstex/%{name}-%{version}.tar.gz
+Requires: python >= 2.0
+Requires: ply >= 2.2
 
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
