@@ -20,9 +20,14 @@
 #         Backwards compatible with bibtex
 #         Can generate bibtex output: if you must use a bibtex style file, you can
 #
+version = 'Testing'
+xtxlib = '.'
+plylib = '/usr/local/lib/crosstex'
+
 import sys
-topdir = "/usr/share/texmf/crosstex"
-sys.path.append(topdir)
+sys.path.append(xtxlib)
+if plylib not in sys.path:
+    sys.path.append(plylib)
 
 import ply.lex as lex
 import ply.yacc as yacc
@@ -52,7 +57,7 @@ styles = {
 
 # Set up options.
 
-optparser = optparse.OptionParser(usage="usage: %prog [options] files", version="CrossTeX 0.2", description="A modern, object-oriented bibliographic tool intended to replace BibTeX.")
+optparser = optparse.OptionParser(usage="usage: %prog [options] files", version="CrossTeX %s" % version, description="A modern, object-oriented bibliographic tool intended to replace BibTeX.")
 
 def optstyle(option, opt, value, parser):
     global styles
@@ -132,7 +137,7 @@ class bibliography(dict):
 	    cite=[],
 	    cite_by='number',
 	    convert='bbl',
-	    dir=[topdir, '.'],
+	    dir=[xtxlib, '.'],
 	    dump=[],
 	    heading=(False, None),
 	    in_str='',

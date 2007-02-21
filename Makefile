@@ -1,18 +1,26 @@
-VERSION = $(shell ./crosstex --version | cut -d' ' -f2)
-PACKAGE = crosstex-${VERSION}
+VERSION=0.2
+RELEASE=1
+PACKAGE=crosstex-${VERSION}
+
+ROOT=
+PREFIX=/usr/local
+LIBDIR=/lib/crosstex
+BINDIR=/bin
+PLY=${LIBDIR}
 
 all:
 	@echo nothing to make, try make install
 
 install:
-	mkdir -p $(ROOT)/usr/bin $(ROOT)/usr/share/texmf/crosstex
-	cp *.py data/*.xtx $(ROOT)/usr/share/texmf/crosstex
-	cp crosstex $(ROOT)/usr/bin
-	ln -sf crosstex $(ROOT)/usr/bin/xtx2bib
-	ln -sf crosstex $(ROOT)/usr/bin/xtx2html
-
-clean:
-	rm -rf *~ *.pyc *.aux *.bbl *.dvi *.log *.tar.gz *.rpm *.html *.out *.toc *.pdf *.haux *.htoc *-rpm
+	mkdir -p $(ROOT)$(PREFIX)$(BINDIR) $(ROOT)$(PREFIX)$(LIBDIR)
+	cp *.py data/*.xtx $(ROOT)$(PREFIX)$(LIBDIR)
+	sed -e "/^version = /c version = '${VERSION}'" \
+	    -e "/^xtxlib = /c xtxlib = '${PREFIX}${LIBDIR}'" \
+	    -e "/^plylib = /c plylib = '${PLY}'" \
+	    crosstex >$(ROOT)$(PREFIX)$(BINDIR)/crosstex
+	chmod 0755 $(ROOT)$(PREFIX)$(BINDIR)/crosstex
+	ln -sf crosstex $(ROOT)$(PREFIX)$(BINDIR)/xtx2bib
+	ln -sf crosstex $(ROOT)$(PREFIX)$(BINDIR)/xtx2html
 
 crosstex.pdf: crosstex.tex
 	pdflatex crosstex && pdflatex crosstex
@@ -26,8 +34,15 @@ ${PACKAGE}.tar.gz: Makefile COPYING crosstex crosstex.spec crosstex.tex crosstex
 	cp Makefile COPYING crosstex *.py crosstex.tex crosstex.pdf ${PACKAGE}
 	cp tests/*.xtx ${PACKAGE}/tests
 	cp data/*.xtx ${PACKAGE}/data
-	sed "/^%define version/c %define version ${VERSION}" \
-		crosstex.spec >${PACKAGE}/crosstex.spec
+	sed -e "1i %define name crosstex" \
+	    -e "1i %define version ${VERSION}" \
+	    -e "1i %define release ${RELEASE}" \
+	    -e "1i %define prefix ${PREFIX}" \
+	    -e "1i %define bindir ${BINDIR}" \
+	    -e "1i %define libdir ${LIBDIR}" \
+	    -e "1i %define ply ${PLY}" \
+	    -e "/^%define release/c %define release ${RELEASE}" \
+	    crosstex.spec >${PACKAGE}/crosstex.spec
 	tar czf ${PACKAGE}.tar.gz ${PACKAGE}
 	rm -rf ${PACKAGE}
 
@@ -40,3 +55,7 @@ rpm: dist
 	rpmbuild -ta --define "_topdir `pwd`/${PACKAGE}-rpm" ${PACKAGE}.tar.gz
 	find ${PACKAGE}-rpm -name \*.rpm -exec mv {} . \;
 	rm -r ${PACKAGE}-rpm
+
+clean:
+	rm -rf *~ *.pyc *.aux *.bbl *.dvi *.log *.tar.gz *.rpm *.html \
+	       *.out *.toc *.pdf *.haux *.htoc *-rpm *.bak
