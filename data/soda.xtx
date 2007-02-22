@@ -1,4 +1,4 @@
-@include conferences
+@include conferences-cs
 
 @inproceedings{DBLP:conf/soda/VassilevskaWW06,
   author    = {Virginia Vassilevska and

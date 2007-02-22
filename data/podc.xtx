@@ -1,4 +1,4 @@
-@include conferences
+@include conferences-cs
 
 @inproceedings{DBLP:conf/podc/Herlihy06,
   author    = {Maurice Herlihy},

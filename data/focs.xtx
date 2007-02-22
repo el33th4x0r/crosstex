@@ -1,4 +1,4 @@
-@include conferences
+@include conferences-cs
 
 @default bibsource = "DBLP, http://dblp.uni-trier.de"
 @default booktitle = focs

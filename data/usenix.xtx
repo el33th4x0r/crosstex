@@ -1,4 +1,4 @@
-@include conferences
+@include conferences-cs
 
 @inproceedings{DBLP:conf/usenix/RuanP04,
   author    = {Yaoping Ruan and
@@ -398,7 +398,7 @@
 }
 
 @inproceedings{DBLP:conf/usenix/Bauer04,
-  author    = {Andreas Bauer 0002},
+  author    = {Andreas Bauer},
   title     = {Creating a Portable Programming Language Using Open Source
                Software},
   booktitle = usenixf,
@@ -780,7 +780,7 @@
 @inproceedings{DBLP:conf/usenix/GschwindS03,
   author    = {Thomas Gschwind and
                Benjamin A. Schmit},
-  title     = {CSE - A C++ Servlet Environment for High-Performance Web
+  title     = {CSE---A C++ Servlet Environment for High-Performance Web
                Applications},
   booktitle = usenixf,
   year      = 2003,
@@ -2134,7 +2134,7 @@
 
 @inproceedings{DBLP:conf/usenix/Lemon01,
   author    = {Jonathan Lemon},
-  title     = {Kqueue - A Generic and Scalable Event Notification Facility},
+  title     = {Kqueue---A Generic and Scalable Event Notification Facility},
   booktitle = usenixf,
   year      = 2001,
   pages     = {141-153},
@@ -2225,7 +2225,7 @@
 @inproceedings{DBLP:conf/usenix/GettysP01,
   author    = {Jim Gettys and
                Keith Packard},
-  title     = {The X Resize and Rotate Extension - RandR},
+  title     = {The X Resize and Rotate Extension---RandR},
   booktitle = usenixf,
   year      = 2001,
   pages     = {235-243},
@@ -2239,7 +2239,7 @@
                Erez Zadok and
                Manasi Bhattacharyya and
                Salvatore J. Stolfo},
-  title     = {MEF: Malicious Email Filter - A UNIX Mail Filter That Detects
+  title     = {MEF: Malicious Email Filter---A UNIX Mail Filter That Detects
                Malicious Windows Executables},
   booktitle = usenixf,
   year      = 2001,
@@ -2261,7 +2261,7 @@
 @inproceedings{DBLP:conf/usenix/WesterlundD01,
   author    = {Assar Westerlund and
                Johan Danielsson},
-  title     = {Heimdal and Windows 2000 Kerberos - How to Get Them to Play
+  title     = {Heimdal and Windows 2000 Kerberos---How to Get Them to Play
                Together},
   booktitle = usenixf,
   year      = 2001,
@@ -2388,7 +2388,7 @@
 @inproceedings{DBLP:conf/usenix/CzezatkeE00,
   author    = {Christian Czezatke and
                M. Anton Ertl},
-  title     = {LinLogFS - A Log-Structured File System for Linux},
+  title     = {LinLogFS---A Log-Structured File System for Linux},
   booktitle = usenixf,
   year      = 2000,
   pages     = {77-88},
@@ -2813,7 +2813,7 @@
 @inproceedings{DBLP:conf/usenix/GschwindH99,
   author    = {Thomas Gschwind and
                Manfred Hauswirth},
-  title     = {NewsCache - A High-Performance Cache Implementation for
+  title     = {NewsCache---A High-Performance Cache Implementation for
                Usenet News},
   booktitle = usenixg,
   year      = 1999,
@@ -3121,7 +3121,7 @@
 @inproceedings{DBLP:conf/usenix/MillerR99,
   author    = {Todd C. Miller and
                Theo de Raadt},
-  title     = {strlcpy and strlcat - Consistent, Safe, String Copy and
+  title     = {strlcpy and strlcat---Consistent, Safe, String Copy and
                Concatenation},
   booktitle = usenixf,
   year      = 1999,
@@ -3227,7 +3227,7 @@
 @inproceedings{DBLP:conf/usenix/SavageW96,
   author    = {Stefan Savage and
                John Wilkes},
-  title     = {AFRAID - A Frequently Redundant Array of Independent Disks},
+  title     = {AFRAID---A Frequently Redundant Array of Independent Disks},
   booktitle = usenix,
   year      = 1996,
   pages     = {27-39},
@@ -3522,7 +3522,7 @@
 
 @inproceedings{DBLP:conf/usenix/John95,
   author    = {Aju John},
-  title     = {Dynamic Vnodes - Design and Implementation},
+  title     = {Dynamic Vnodes---Design and Implementation},
   booktitle = usenixw,
   year      = 1995,
   pages     = {11-23},
@@ -3677,7 +3677,7 @@
 @inproceedings{DBLP:conf/usenix/YanG95,
   author    = {Tak W. Yan and
                Hector Garcia-Molina},
-  title     = {SIFT - a Tool for Wide-Area Information Dissemination},
+  title     = {SIFT---a Tool for Wide-Area Information Dissemination},
   booktitle = usenixw,
   year      = 1995,
   pages     = {177-186},
@@ -4104,7 +4104,7 @@
 
 @inproceedings{DBLP:conf/usenix/Fowler94,
   author    = {Glenn S. Fowler},
-  title     = {cql - A Flat File Database Query Language},
+  title     = {cql---A Flat File Database Query Language},
   booktitle = usenixw,
   year      = 1994,
   pages     = {11-21},
@@ -4675,7 +4675,7 @@
 
 @inproceedings{DBLP:conf/usenix/Plank93,
   author    = {James S. Plank},
-  title     = {Jgraph - A Filter for Plotting Graphs in PostScript},
+  title     = {Jgraph---A Filter for Plotting Graphs in PostScript},
   booktitle = usenixw,
   year      = 1993,
   pages     = {61-66},
@@ -4716,7 +4716,7 @@
 
 @inproceedings{DBLP:conf/usenix/Sterling93,
   author    = {Nicholas Sterling},
-  title     = {WARLOCK - A Static Data Race Analysis Tool},
+  title     = {WARLOCK---A Static Data Race Analysis Tool},
   booktitle = usenixw,
   year      = 1993,
   pages     = {97-106},
@@ -4726,7 +4726,7 @@
 @inproceedings{DBLP:conf/usenix/GolanH93,
   author    = {Michael Golan and
                David R. Hanson},
-  title     = {DUEL - A Very High-Level Debugging Language},
+  title     = {DUEL---A Very High-Level Debugging Language},
   booktitle = usenixw,
   year      = 1993,
   pages     = {107-118},
@@ -4786,7 +4786,7 @@
 @inproceedings{DBLP:conf/usenix/NeumannN93,
   author    = {Gustaf Neumann and
                Stefan Nusser},
-  title     = {Wafe - An X Toolkit Based Frontend for Application Programs
+  title     = {Wafe---An X Toolkit Based Frontend for Application Programs
                in Various Programming Languages},
   booktitle = usenixw,
   year      = 1993,
@@ -5156,7 +5156,7 @@
 
 @inproceedings{DBLP:conf/usenix/Markey91,
   author    = {Brian Markey},
-  title     = {Emerging Hypermedia Standards - Hypermedia Marketplace Frepares
+  title     = {Emerging Hypermedia Standards---Hypermedia Marketplace Frepares
                for HyTime and MHEG},
   booktitle = usenixs,
   year      = 1991,
@@ -5375,7 +5375,7 @@
 @inproceedings{DBLP:conf/usenix/DrapeauG91,
   author    = {George D. Drapeau and
                Howard Greenfield},
-  title     = {MAEstro - A Distributed Multimedia Authoring Environment},
+  title     = {MAEstro---A Distributed Multimedia Authoring Environment},
   booktitle = usenixs,
   year      = 1991,
   pages     = {315-328},
@@ -5484,7 +5484,7 @@
 @inproceedings{DBLP:conf/usenix/KolstadG91,
   author    = {Rob Kolstad and
                Daniel E. Geer Jr},
-  title     = {Software and Intellectual Property - Who Owns Your Work?},
+  title     = {Software and Intellectual Property---Who Owns Your Work?},
   booktitle = usenixs,
   year      = 1991,
   pages     = {453-454},
@@ -5617,7 +5617,7 @@
 
 @inproceedings{DBLP:conf/usenix/Uhler91,
   author    = {Stephen A. Uhler},
-  title     = {\HOME MOVIE - Tools for Building Demos on a Sparcstation},
+  title     = {\\HOME MOVIE---Tools for Building Demos on a Sparcstation},
   booktitle = usenixw,
   year      = 1991,
   pages     = {127-136},
@@ -6027,7 +6027,7 @@
 
 @inproceedings{DBLP:conf/usenix/Kenyon90,
   author    = {Kenyon Kenyon},
-  title     = {IAW - The Intelligence Analyst Workbench},
+  title     = {IAW---The Intelligence Analyst Workbench},
   booktitle = usenixs,
   year      = 1990,
   pages     = {193-198},
@@ -6199,7 +6199,7 @@
                Zalman Stern and
                Miles Bader and
                Thom Peters},
-  title     = {The Andrew Toolkit - An Overview},
+  title     = {The Andrew Toolkit---An Overview},
   booktitle = usenixw,
   year      = 1988,
   pages     = {9-22},
@@ -6685,7 +6685,7 @@
 @inproceedings{DBLP:conf/usenix/BatchelderD87,
   author    = {Ned Batchelder and
                Trevor Darrell},
-  title     = {PSFIG - A DITROFF Preprocessor for Postscript Figures},
+  title     = {PSFIG---A DITROFF Preprocessor for Postscript Figures},
   booktitle = usenixs,
   year      = 1987,
   pages     = {31-42},

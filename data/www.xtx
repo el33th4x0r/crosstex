@@ -1,5 +1,5 @@
-@include conferences
-@include workshops
+@include conferences-cs
+@include workshops-cs
 
 @default year = 2006
 @default bibsource = "DBLP, http://dblp.uni-trier.de"

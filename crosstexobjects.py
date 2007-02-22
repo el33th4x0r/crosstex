@@ -6,7 +6,6 @@
 # This file describes the object hierarchy in the bibliography itself
 # 
 
-from crosstexutils import citationcase
 import re
 import sys
 
@@ -26,12 +25,13 @@ class bibobject(object):
     _conditionals = []
     _citekey = ''
 
-    def __init__(self, conditionals, defaults, file, line, options):
+    def __init__(self, conditionals, defaults, file, line, bib):
+        self._bib = bib
         self._line = line
         self._file = file
         self._name = type(self).__name__
         self._name = self._name[self._name.find('.') + 1:]
-        self._options = options
+        self._options = self._bib.options
         self._assigned = []
         self._conditionals = conditionals
 
@@ -116,7 +116,10 @@ class authorlist(list):
                     value += ' and '
                 else:
                     value += ', '
-            value += str(self[i])
+            if i == 0 and self._options.last_first:
+                value += self[i]._last_first()
+            else:
+                value += str(self[i])
         return value
             
     def _bibpromote(self, other):
@@ -141,10 +144,12 @@ class string(bibobject):
         bibobject._assign(self, key, value)
 
     def __str__(self):
-        if self._name in self._options.short:
-            return str(self.shortname)
-        else:
-            return str(self.name)
+	value = self.name
+	if self._name in self._options.short:
+	    value = self.shortname
+	if self._name in self._options.capitalize:
+	    value = self._bib.titlecase(value, 'upper', False)
+	return value
 
 class author(string):
     address = ''
@@ -228,14 +233,23 @@ class author(string):
 	else:
 	    return cmp(self._names()[2], other)
 
-    def __str__(self):
+    def _last_first(self):
         if self._name in self._options.short and 'shortname' in self._assigned:
             return str(self.shortname)
         else:
             (fnames, mnames, lnames, snames) = self._names()
             namestr = ""
+            for n in mnames:
+                if namestr != "":
+                    namestr += " "
+                namestr += n
+            for n in lnames:
+                if namestr != "":
+                    namestr += " "
+                namestr += n
+            if len(fnames) > 0:
+                namestr += ', '
             for n in fnames:
-                pad = ""
                 if self._name in self._options.short:
                     first = 0
                     while first < len(n):
@@ -252,14 +266,43 @@ class author(string):
                     if namestr != "":
                         namestr += " "
                     namestr += n
-	    for n in mnames:
+	    for n in snames:
+                if namestr != "":
+                    namestr += ", "
+		namestr += n
+            return namestr
+
+    def __str__(self):
+        if self._name in self._options.short and 'shortname' in self._assigned:
+            return str(self.shortname)
+        else:
+            (fnames, mnames, lnames, snames) = self._names()
+            namestr = ""
+            for n in fnames:
+                if self._name in self._options.short:
+                    first = 0
+                    while first < len(n):
+                        if n[first] not in "{}\\":
+                            if namestr != "":
+                                namestr += "~"
+                            namestr += n[first] + "."
+                            break
+                        elif n[first] == "\\":
+                            first += 2
+                        else:
+                            first += 1
+                else:
+                    if namestr != "":
+                        namestr += " "
+                    namestr += n
+            for n in mnames:
                 if namestr != "":
                     namestr += " "
-		namestr += n
-	    for n in lnames:
+                namestr += n
+            for n in lnames:
                 if namestr != "":
                     namestr += " "
-		namestr += n
+                namestr += n
 	    for n in snames:
                 if namestr != "":
                     namestr += ", "
@@ -409,7 +452,7 @@ class misc(bibobject):
                 if len(authors) > 2:
                     label += " et al."
             if self.year != '':
-                   label += " %02d" % (int(str(self.year)) % 100)
+                label += str(self.year)
         # Ensure the label is unique
         if label in usedlabels:
             for char in list("abcdefghijklmnopqrstuvwxyz"):
@@ -426,8 +469,8 @@ class misc(bibobject):
     def _title(self):
         value = str(self.title)
         if value != '':
-            if self._options.titlecase != 'default':
-                value = citationcase(value, self._options.titlecase)
+            if self._options.titlecase != 'as-is':
+                value = self._bib.titlecase(value, self._options.titlecase)
         return value
 
     def _publication(self):

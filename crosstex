@@ -82,13 +82,13 @@ def optconvert(option, opt, value, parser):
 optparser.add_option('-d', '--dir', type='string', action='append', help="Add a directory in which to find data files, searched from last specified to first. Default: %default")
 optparser.add_option('--quiet', action='store_const', const=0, dest='check', help="Do not sanity check the input.")
 optparser.add_option('--strict', action='store_const', const=2, dest='check', help="Apply stricter checks.")
-optparser.add_option('--dump', metavar='TYPE', type='choice', choices=['file']+[ name for name in dir(crosstexobjects) if isinstance(getattr(crosstexobjects, name), type) and issubclass(getattr(crosstexobjects, name), crosstexobjects.bibobject) ], action='append', help="After parsing the bibliography, dump a list of all objects of the type specified, or, with \"file\", print a list of files processed.")
+optparser.add_option('--dump', metavar='TYPE', type='choice', choices=['file', 'titlephrase']+[ name for name in dir(crosstexobjects) if isinstance(getattr(crosstexobjects, name), type) and issubclass(getattr(crosstexobjects, name), crosstexobjects.bibobject) ], action='append', help="After parsing the bibliography, dump a list of all objects of the type specified, or, with \"file\", print a list of files processed.")
 
 optparser.add_option('--cite', type='string', action='append', help="Cite a key exactly as with the \\cite LaTeX command.")
 optparser.add_option('-l', '--link', metavar='FIELD', type='string', action='append', help="Add to the list of fields used to generate links. LaTeX documents should make use of links by including the hyperref package. When converting to html, this defaults to [Abstract, URL, PS, PDF, HTML, DVI, TEX, BIB, FTP, HTTP, and RTF].")
 optparser.add_option('--no-link', action='store_const', const=[], dest='link')
 
-optparser.add_option('--cite-by', type='choice', choices=['number', 'initials', 'fullname'], help="With \"number\", use numeric labels such as [1]. With \"initials\", use labels based on author last-names such as [SBRD04b]. With \"fullname\", use labels based on author names such as [Sirer et al. 04].")
+optparser.add_option('--cite-by', type='choice', choices=['number', 'initials', 'fullname'], help="With \"number\", use numeric labels such as [1]. With \"initials\", use labels based on author last-names such as [SBRD04b]. With \"fullname\", use labels based on author names such as [Sirer et al. 2004].")
 optparser.add_option('--style', metavar='STYLE', type='choice', choices=styles.keys(), action='callback', callback=optstyle, help="Use a standard style such as plain, unsrt, abbrv, full, or alpha.  Options set by the style may be overidden by further command-line options.")
 
 optparser.add_option('-s', '--sort', metavar='FIELD', type='string', action='callback', callback=optsort, help="Sort by specified field. Multiple sort orders are applied in the order specified, e.g. \"-s year -s author\" will cause elements to be grouped primarily by author and sub-grouped by year.")
@@ -99,6 +99,8 @@ optparser.add_option('--heading', metavar='FIELD', type='string', action='callba
 optparser.add_option('--reverse-heading', metavar='FIELD', type='string', action='callback', callback=optheading, callback_args=(True,), help="Divide entries and create headings in bibliography by the value of the given field.")
 
 optparser.add_option('--short', metavar='TYPE', type='choice', choices=[ name for name in dir(crosstexobjects) if isinstance(getattr(crosstexobjects, name), type) and issubclass(getattr(crosstexobjects, name), crosstexobjects.string) ], action='append', help="Specify any string-like object, i.e. one with name and shortname fields. Whenever possible, the short name will be used, e.g. two-letter state codes for \"state\", conference acronyms such as NSDI for \"conference\", or initials such as E. G. Sirer for \"author\".")
+optparser.add_option('--capitalize', metavar='TYPE', type='choice', choices=[ name for name in dir(crosstexobjects) if isinstance(getattr(crosstexobjects, name), type) and issubclass(getattr(crosstexobjects, name), crosstexobjects.string) ], action='append', help="Specify any string-like object, i.e. one with name and shortname fields. Strings of the specified types will appear in ALL CAPS.")
+
 optparser.add_option('--add-in', action='store_const', const='In', dest='in_str', help="Add \"In\" for articles.")
 optparser.add_option('--add-proc', action='store_const', const='Proc. of', dest='proceedings_str', help="Add \"Proc. of\" for conference and workshop publications.")
 optparser.add_option('--add-proceedings', action='store_const', const='Proceedings of the', dest='proceedings_str', help="Add \"Proceedings of the\" for conference and workshop publications.")
@@ -106,13 +108,15 @@ optparser.add_option('--abstract', action='store_true', help="In the bibliograph
 optparser.add_option('--no-abstract', action='store_false', dest='abstract')
 optparser.add_option('--keywords', action='store_true', help="In the bibliography, include paper keywords if available.")
 optparser.add_option('--no-keywords', action='store_false', dest='keywords')
-optparser.add_option('--titlecase', type='choice', choices=['lower', 'upper', 'title', 'default'], help="In the bibliography, force titles into lower-, upper-, or title-case.  Default: Leave titles unchanged.")
+optparser.add_option('--titlecase', type='choice', choices=['lower', 'upper', 'as-is', 'default'], help="In the bibliography, force titles into lower-, upper-, or title-case.  Default: Leave titles unchanged.")
 optparser.add_option('--title-head', action='store_true', help="In the bibliography, put the title bold and first.")
 optparser.add_option('--no-title-head', action='store_false', dest='title_head')
 optparser.add_option('--blank-labels', action='store_true', help="In the bibliography, leave out item labels.")
 optparser.add_option('--no-blank-labels', action='store_false', dest='blank_labels')
 optparser.add_option('--break-lines', action='store_true', help="In the bibliography, put author, title, and publication information on separate lines.")
 optparser.add_option('--no-break-lines', action='store_false', dest='break_lines')
+optparser.add_option('--last-first', action='store_true', help="The first name in each author list will appear 'Last, First' instead of 'First Last' (the latter is the default).")
+optparser.add_option('--no-last-first', action='store_false', dest='last_first')
 
 optparser.add_option('--xtx2bib', action='callback', callback=optconvert, help="Convert the bibliography information to old-style BibTeX.")
 optparser.add_option('--xtx2html', action='callback', callback=optconvert, help="Format the bibliography as HTML.")
@@ -121,13 +125,68 @@ optparser.add_option('--xtx2html', action='callback', callback=optconvert, help=
 # A self-contained bibliographic environment.
 
 class bibliography(dict):
-    def __init__(self):
-	self.optlist = []
-	self.primarykeys = []
-	self.aliases = {}
-	self.preambles = []
-	self._citations = None
-	self.seenfiles = []
+    optlist = []
+    primarykeys = []
+    aliases = {}
+    preambles = []
+    seenfiles = []
+    titlephrases = {}
+    titlesmall = {}
+    punctuation = re.compile('.*([:!.?]|-{2,})$')
+    _citations = None
+    
+    def addtitlephrase(self, phrase):
+        self.titlephrases[re.sub(r'([\[\]^$*+?{\\|()])', r'\\\1', phrase.lower())] = phrase
+    
+    def addtitlesmall(self, phrase):
+        self.titlesmall[re.sub(r'([\[\]^$*+?{\\|()])', r'\\\1', phrase.lower())] = phrase
+        
+    def specialres(self):
+        return '|'.join([ r'\b' + re.sub(r'([\[\]^$*+?{\\|()])', r'\\\1', phrase.lower()) + r'\b' for phrase in self.titlephrases.keys() + self.titlesmall.keys() ])
+
+    def titlecase(self, title, case, usespecial=True, atstart=True):
+        if len(title) >= 3 and title[0] == "{" and title[-1] == "}" and title[-2] != "\\":
+            title = title[1:-1]
+        newtitle = ''
+        needscaps = atstart
+        nestingdepth = 0
+        wordrestr = r'(-+|\s+|\\\w+|\\\W+|\$[^\$]*\$|[{}]|'
+        if usespecial:
+            wordrestr += '|' + self.specialres()
+        wordrestr += ')'
+        wordre = re.compile(wordrestr, re.IGNORECASE)
+        specialre = re.compile(r'^(\\.*|\$[^\$]*\$)$')
+        spacere = re.compile(r'^\s*$')
+        for word in wordre.split(title):
+            if word == '{':
+                nestingdepth += 1
+                needscaps = False
+            elif word == '}':
+                nestingdepth -= 1
+                needscaps = False
+            elif spacere.match(word) or word == '-':
+                pass
+            elif specialre.match(word) or (case != 'upper' and not word.islower() and not word.istitle() and len(word) > 1):
+                needscaps = self.punctuation.match(word)
+            else: # if nestingdepth == 0
+                lowerword = word.lower()
+                oldword = word
+                if usespecial and lowerword in self.titlephrases:
+                    word = self.titlephrases[lowerword]
+                elif case == 'upper':
+                    word = word.upper()
+                elif needscaps:
+                    word = word.title()
+                elif usespecial and lowerword in self.titlesmall:
+                    word = self.titlesmall[lowerword]
+                elif case == 'default':
+                    word = word.title()
+                else:
+                    word = lowerword
+                needscaps = self.punctuation.match(word)
+            atstart = False
+            newtitle += word
+        return newtitle
 
     def setoptions(self, optlist):
 	global optparser
@@ -144,6 +203,7 @@ class bibliography(dict):
 	    link=[],
 	    proceedings_str='',
 	    short=[],
+	    capitalize=[],
 	    sort=[(False, 'month'), (False, 'year'), (False, 'author'), (False, 'label')],
 	    titlecase='default',
 	)
@@ -215,7 +275,7 @@ class bibliography(dict):
     def addobject(self, name, keys, data, defaults, file, line):
         name = name.strip().lower()
         try:
-            obj = getattr(crosstexobjects, name)(data, defaults, file, line, self.options)
+            obj = getattr(crosstexobjects, name)(data, defaults, file, line, self)
             obj._citekey = None
             for key in keys:
                 if key in self:
@@ -247,7 +307,7 @@ class bibliography(dict):
 # Tokens
 tokens = (
     'AT', 'COMMA', 'SHARP', 'OPENBRACE', 'CLOSEBRACE', 'LBRACK', 'RBRACK', 'EQUALS', 
-    'ATINCLUDE', 'ATSTRING', 'ATPREAMBLE', 'ATCOMMENT', 'ATDEFAULT',
+    'ATINCLUDE', 'ATSTRING', 'ATPREAMBLE', 'ATCOMMENT', 'ATDEFAULT', 'ATTITLEPHRASE', 'ATTITLESMALL',
     'NUMBER', 'NAME', 'STRING',
     )
 
@@ -277,6 +337,14 @@ def t_ATCOMMENT(t):
 
 def t_ATDEFAULT(t):
     r'@[Dd][Ee][Ff][Aa][Uu][Ll][Tt]'
+    return t
+
+def t_ATTITLEPHRASE(t):
+    r'@[Tt][Ii][Tt][Ll][Ee][Pp][Hh][Rr][Aa][Ss][Ee]'
+    return t
+
+def t_ATTITLESMALL(t):
+    r'@[Tt][Ii][Tt][Ll][Ee][Ss][Mm][Aa][Ll][Ll]'
     return t
     
 def t_NUMBER(t):
@@ -402,6 +470,14 @@ def p_stmt_default(t):
     for key in t[2]:
 	t.lexer.defaults[key] = t[2][key]
 
+def p_stmt_titlephrase(t):
+    'stmt : ATTITLEPHRASE STRING'
+    t.lexer.bib.addtitlephrase(t[2])
+
+def p_stmt_titlesmall(t):
+    'stmt : ATTITLESMALL STRING'
+    t.lexer.bib.addtitlesmall(t[2])
+
 def p_stmt_string(t):
     'stmt : ATSTRING OPENBRACE fields CLOSEBRACE'
     for key in t[3]:
@@ -520,7 +596,7 @@ def processfile(infilename, bib, exts=['.aux', '.xtx', '.bib']):
     if infilename in bib.seenfiles:
 	if 'file' in bib.options.dump:
             sys.stderr.write("File %s already processed, skipping.\n" % infilename)
-	return
+	return infilename
 
     names = []
     if infilename[infilename.rfind('.'):] in exts:
@@ -606,9 +682,9 @@ for infilename in args:
     bib = bibliography()
     bib.setoptions(sys.argv[1:])
     
-    # Include dates by default for compatibility.
+    # Include standard databases.
     try:
-	processfile('dates', bib)
+	processfile('standard', bib)
     except:
 	pass
 
@@ -642,6 +718,13 @@ for infilename in args:
 	    sys.stderr.write("%s\n" % (objtype.upper() + ':'))
 	    for i in objs:
 	        sys.stderr.write(i)
+    if 'titlephrase' in bib.options.dump:
+        sys.stderr.write("TITLE PHRASES:\n")
+        for phrase in bib.titlephrases.values():
+            sys.stderr.write("%s\n" % phrase)
+        sys.stderr.write("TITLE SMALL WORDS:\n")
+        for small in bib.titlesmall:
+            sys.stderr.write("%s\n" % small)
 
     # Print headers required by output format.
     if bib.options.convert == 'bib':

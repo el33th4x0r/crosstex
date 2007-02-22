@@ -1,4 +1,4 @@
-@include conferences
+@include conferences-cs
 
 @workshop{esigops,
   shortname = "ESIGOPS Workshop",

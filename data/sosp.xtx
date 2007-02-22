@@ -1,4 +1,4 @@
-@include conferences
+@include conferences-cs
 
 @inproceedings{DBLP:conf/sosp/Birman05,
   author    = {Kenneth P. Birman},
@@ -1703,7 +1703,7 @@
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
-@article{DBLP:journals/tocs/ChenECMDSS96,
+@article{DBLP:journals-cs/tocs/ChenECMDSS96,
   author    = {J. Bradley Chen and
                Yasuhiro Endo and
                Kee Chan and
@@ -2410,7 +2410,7 @@
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
-@article{DBLP:journals/tocs/HowardKMNSSW88,
+@article{DBLP:journals-cs/tocs/HowardKMNSSW88,
   author    = {John H. Howard and
                Michael L. Kazar and
                Sherri G. Menees and
@@ -2439,7 +2439,7 @@
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
-@article{DBLP:journals/tocs/NelsonWO88,
+@article{DBLP:journals-cs/tocs/NelsonWO88,
   author    = {Michael N. Nelson and
                Brent B. Welch and
                John K. Ousterhout},
@@ -2568,7 +2568,7 @@
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
-@article{DBLP:journals/tocs/TerryS88,
+@article{DBLP:journals-cs/tocs/TerryS88,
   author    = {Douglas B. Terry and
                Daniel C. Swinehart},
   title     = {Managing Stored Voice in the Etherphone System},
@@ -2593,7 +2593,7 @@
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
-@article{DBLP:journals/tocs/JulLHB88,
+@article{DBLP:journals-cs/tocs/JulLHB88,
   author    = {Eric Jul and
                Henry M. Levy and
                Norman C. Hutchinson and
@@ -2620,7 +2620,7 @@
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
-@article{DBLP:journals/tocs/HaskinMSC88,
+@article{DBLP:journals-cs/tocs/HaskinMSC88,
   author    = {Roger L. Haskin and
                Yoni Malachi and
                Wayne Sawdon and
@@ -2645,7 +2645,7 @@
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
-@article{DBLP:journals/tocs/ChangM88,
+@article{DBLP:journals-cs/tocs/ChangM88,
   author    = {Albert Chang and
                Mark F. Mergen},
   title     = {801 Storage: Architecture and Programming},
@@ -2723,7 +2723,7 @@
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
-@article{DBLP:journals/tocs/KronenbergLS86,
+@article{DBLP:journals-cs/tocs/KronenbergLS86,
   author    = {Nancy P. Kronenberg and
                Henry M. Levy and
                William D. Strecker},
@@ -2759,7 +2759,7 @@
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
-@article{DBLP:journals/tocs/FitzgeraldR86,
+@article{DBLP:journals-cs/tocs/FitzgeraldR86,
   author    = {Robert P. Fitzgerald and
                Richard F. Rashid},
   title     = {The Integration of Virtual Memory Management and Interprocess
@@ -2918,7 +2918,7 @@
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
-@article{DBLP:journals/tocs/CarrieroG86,
+@article{DBLP:journals-cs/tocs/CarrieroG86,
   author    = {Nicholas Carriero and
                David Gelernter},
   title     = {The S/Net's Linda Kernel},
@@ -2975,7 +2975,7 @@
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
-@article{DBLP:journals/tocs/LindsayHMWY84,
+@article{DBLP:journals-cs/tocs/LindsayHMWY84,
   author    = {Bruce G. Lindsay and
                Laura M. Haas and
                C. Mohan and
@@ -3002,7 +3002,7 @@
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
-@article{DBLP:journals/tocs/BirrelN84,
+@article{DBLP:journals-cs/tocs/BirrelN84,
   author    = {Andrew Birrell and
                Bruce Jay Nelson},
   title     = {Implementing Remote Procedure Calls},
@@ -3149,7 +3149,7 @@
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
-@article{DBLP:journals/tocs/SchroederBN84,
+@article{DBLP:journals-cs/tocs/SchroederBN84,
   author    = {Michael D. Schroeder and
                Andrew Birrell and
                Roger M. Needham},

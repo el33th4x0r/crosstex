@@ -1,4 +1,4 @@
-@include conferences
+@include conferences-cs
 
 @inproceedings{DBLP:conf/stoc/GuruswamiR06,
   author    = {Venkatesan Guruswami and

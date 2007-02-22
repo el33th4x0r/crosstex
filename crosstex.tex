@@ -242,7 +242,7 @@ This will search for \texttt{conferences.xtx} or \texttt{conferences.bib} and in
 
 Thus, the \texttt{credence} object has access to well-defined locations, dates, and conference names.
 
-\XTeX{} always includes the \texttt{dates} bibliography first, for backwards compatibility with \BibTeX{}.
+On startup, \texttt{crosstex} will read in the database \texttt{standard}, which in the distribution pulls in the \texttt{dates} database and some information to help accurate formatting of titles.  Having the dates available by default is necessary for backwards compatibility with \BibTeX{}; however, the administrator may edit the standard database in order to automatically include other important files such as an institution-local bibliography.
 
 It is possible for the same object to be defined multiple times under the 
 same key (sometimes, this is inevitable when there are multiple bibliographic
@@ -365,7 +365,7 @@ object that explicitly assigns a value to a field will override any
 
 
 
-\section{Invoking \texttt{crosstex}}
+\section{Using \texttt{crosstex}}
 
 In its most simply invocation, \texttt{crosstex} simply takes one or more file names, e.g. \texttt{crosstex \textrm{\textit{file1 file2 ...}}}. Each file is processed separately. Files are found in a search path containing the current directory and a central system directory (e.g. \texttt{/usr/share/texmf/crosstex}); this search path can be extended with the \texttt{--dir} option. Extensions (\texttt{.aux}, \texttt{.xtx}, \texttt{.bib}) will be added if left unspecified. The output is always in the current directory, under the same name as the file being processed with the extension changed to \texttt{.bbl}, appropriate to be picked up by \LaTeX{}.
 
@@ -396,7 +396,9 @@ author object and control the way it is formatted via options. The
 as ``E. G. Sirer'' automatically if an author doesn't have an
 explicitly mentioned short name, and \XTeX{} is careful to handle
 complicated names with accents and modifiers correctly when
-abbreviating or generating citation keys. 
+abbreviating or generating citation keys.
+
+The option \texttt{--last-first} causes the first author in each list to be formatted `Last, First' instead of `First Last'.  \XTeX{} does the Right Thing with modifiers here, too.  When author names are capitalized with \texttt{--capitalize author}, \XTeX{} carefully works around \LaTeX{} commands and accents to produce clean-looking names.
 
 \paragraph{Titles}
 
@@ -407,34 +409,31 @@ all upper-case, and some follow mixed title-case. Key acronyms
 capitalized, or not, depending on how diligent the author was when
 putting together the bibliographic database.
 
-\XTeX{} can ensure that all titles follow the same uniform capitalization
-standard, based on the following options:
+\XTeX{} ensures that all titles follow the same uniform capitalization standard, even if they appear in a wild variety of styles in the database.  The first letter of each word will become capitalized, the rest lower, the standard known as ``titlecase''.  \XTeX{} is very careful to ensure the titles come out looking ``good''---words in StudlyCaps or ALLCAPS are retained as-is, \LaTeX{} commands and anything in math mode are protected, compound words such as ``Peer-to-Peer'' are split into words, capitalized correctly, and re-assembled, and additionally a list of known phrases are carefully found and formatted.  For example, any appearance of a string that is (ignoring case) equivalent to ``USENIX'' appears as ``USENIX''.  These phrases are found at run-time by \XTeX{} in \texttt{@titlephrase} commands, such as:
 
-\begin{description}
+\begin{small}\begin{verbatim}
+@titlephrase "USENIX"
+@titlephrase "Linux"
+\end{verbatim}\end{small}
 
-\item\texttt{--titlecase lower} will make the entire title, except the first letter,
-lower-case. It is smart enough to preserve the capitalization of key acronyms 
-and proper nouns, as well as the capitalization of the first word that follows
-punctuation (e.g. ``Aardvark: A system for peer-to-peer BGP routing on the Internet.'').
+The standard include files define certain common Computer Science phrases such as these, but they can appear anywhere in the \texttt{.xtx} file.
 
+Small words, such as ``a'', ``an'', ``the'', etc. are also handled specially: They are made lower-case except at the beginning of the title or after certain punctuation, such as long dashes or colons.  These, too, are defined at run-time by \texttt{@titlesmall} commands:
 
-\item\texttt{--titlecase upper} will make the entire title upper-case
-(e.g. ``AARDVARK: A SYSTEM FOR PEER-TO-PEER BGP ROUTING ON THE INTERNET.'').
+\begin{small}\begin{verbatim}
+@titlesmall "a"
+@titlesmall "the"
+\end{verbatim}\end{small}
 
-\item\texttt{--titlecase title} will follow the standard convention in use
-in many fields wherein the first letter of each word is capitalized. The 
-actual rule is a bit more complicated: ``small words'' such as prepositions 
-are not capitalized, acronyms and proper nouns are always capitalized, and
-hyphenated compound terms such as ``Peer-to-Peer'' are always capitalized
-using a well-defined standard (e.g. ``Aardvark: A System for Peer-to-Peer BGP Routing on the Internet.'').
+Again, the standard include files define important English small words to start with.
 
-\end{description}
+An example title with the default might be ``Aardvark: A System for Peer-to-Peer BGP Routing on the Internet''.
 
-Words in braces are not modified in any way,
-and it is always possible to just leave all titles alone with
-\texttt{--titlecase default}. Even if the bibliographic database has
-a mix of title styles, \XTeX{} can sort out the mess and unify the way 
-paper titles look in the references section.
+With \texttt{--titlecase lower}, Only the first letter of the title and those following punctuation are capitalized, the rest put into lower-case.  All of the special cases for the default title-case still apply.  Thus, the example title would appear ``Aardvark: A system for peer-to-peer BGP routing on the Internet''.
+
+With \texttt{--titlecase upper}, everything, even known phrases and small words, are put into upper-case thus: ``AARDVARK: A SYSTEM FOR PEER-TO-PEER BGP ROUTING ON THE INTERNET''.  Commands and math-mode are still protected.
+
+Finally, to allow titles to appear as they are specified in the database, use \texttt{--titlecase as-is}.
 
 \paragraph{Proceedings}
 
@@ -479,7 +478,7 @@ When processing large bibliographies, it can be nice to partition the entries in
 \begin{small}\begin{verbatim}
 usage: crosstex [options] files
 
-A modern, object-oriented bibliographic tool intended to replace \BibTeX{}.
+A modern, object-oriented bibliographic tool intended to replace BibTeX.
 
 options:
   --version             show program's version number and exit
@@ -502,10 +501,10 @@ options:
   --cite-by=CITE_BY     With "number", use numeric labels such as [1]. With
                         "initials", use labels based on author last-names such
                         as [SBRD04b]. With "fullname", use labels based on
-                        author names such as [Sirer et al. 04].
+                        author names such as [Sirer et al. 2004].
   --style=STYLE         Use a standard style such as plain, unsrt, abbrv,
                         full, or alpha.  Options set by the style may be
-                        overridden by further command-line options.
+                        overidden by further command-line options.
   -s FIELD, --sort=FIELD
                         Sort by specified field. Multiple sort orders are
                         applied in the order specified, e.g. "-s year -s
@@ -525,6 +524,9 @@ options:
                         will be used, e.g. two-letter state codes for "state",
                         conference acronyms such as NSDI for "conference", or
                         initials such as E. G. Sirer for "author".
+  --capitalize=TYPE     Specify any string-like object, i.e. one with name and
+                        shortname fields. Strings of the specified types will
+                        appear in ALL CAPS.
   --add-in              Add "In" for articles.
   --add-proc            Add "Proc. of" for conference and workshop
                         publications.
@@ -546,12 +548,14 @@ options:
   --break-lines         In the bibliography, put author, title, and
                         publication information on separate lines.
   --no-break-lines      
+  --last-first          The first name in each author list will appear 'Last,
+                        First' instead of 'First Last' (the latter is the
+                        default).
+  --no-last-first       
   --xtx2bib             Convert the bibliography information to old-style
                         BibTeX.
   --xtx2html            Format the bibliography as HTML.
 \end{verbatim}\end{small}
-
-
 
 \section{Inside the \texttt{.tex} file}
 
