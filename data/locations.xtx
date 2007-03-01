@@ -82,6 +82,7 @@
 @state{WY, longname="Wyoming", shortname="WY", country=USA}
 
 % US locations
+@location{Albuquerque,		city="Albuquerque", state=NM}
 @location{Alexandria,		city="Alexandria", state=VA}
 @location{Anaheim,		city="Anaheim", state=CA}
 @location{Anchorage,		city="Anchorage", state=AK}
@@ -101,6 +102,7 @@
 @location{BrettonWoods,		city="Bretton Woods", state=NH}
 @location{CambridgeMA,		city="Cambridge", state=MA}
 @location{CapeCod,		city="Cape Cod", state=MA}
+@location{Charleston,		city="Charleston", state=SC}
 @location{Chicago,		city="Chicago", state=IL}
 @location{Cincinnati,		city="Cincinnati", state=OH}
 @location{CollegePark,	city="College Park", state=MD}
@@ -160,10 +162,15 @@
 @location{SantaFe,		city="Santa Fe", state=NM}
 @location{Seattle,		city="Seattle", state=WA}
 @location{SF,			city="San Francisco", state=CA}
+@location{Snowbird,		city="Snowbird", state=UT}
+@location{StPaul,		city="Saint Paul", state=MN}
+@location{StPetersburgBeach,	city="Saint Petersburg Beach", state=FL}
 @location{Stanford,		city="Stanford", state=CA}
 @location{Stowe,		city="Stowe", state=VT}
 @location{Tucson,		city="Tucson", state=AZ}
 @location{UrbanaChampaign,	city="Urbana-Champaign", state=IL}
+@location{WhitePlains,		city="White Plains", state=NY}
+@location{Williamsburg,		city="Williamsburg", state=VA}
 @location{WestLafayette,	city="West Lafayette", state=IN}
 @location{YorktownHeights,	city="Yorktown Heights", state=NY}
 
@@ -204,6 +211,7 @@
 @location{Marseille,	city="Marseille", country=France}
 @location{Minaki,	city="Minaki", country=Canada}
 @location{Montreal,	city="{Montr\'eal}", country=Canada}
+@location{Munich,	city="Munich", country=Germany}
 @location{Nice,		city="Nice", country=France}
 @location{Osaka,	city="Osaka", country=Japan}
 @location{Ottawa,	city="Ottawa", country=Canada}
