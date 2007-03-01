@@ -6,14 +6,14 @@ ROOT=
 PREFIX=/usr/local
 LIBDIR=/lib/crosstex
 BINDIR=/bin
-PLY=${LIBDIR}
+PLY=${PREFIX}${LIBDIR}
 
 all:
 	@echo nothing to make, try make install
 
 install:
 	mkdir -p $(ROOT)$(PREFIX)$(BINDIR) $(ROOT)$(PREFIX)$(LIBDIR)
-	cp *.py data/*.xtx $(ROOT)$(PREFIX)$(LIBDIR)
+	install -m 0644 *.py data/*.xtx $(ROOT)$(PREFIX)$(LIBDIR)
 	echo '/^version = /c\' >crosstex.sed
 	echo "version = '${VERSION}'" >>crosstex.sed
 	echo '/^xtxlib = /c\' >>crosstex.sed
