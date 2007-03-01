@@ -14,10 +14,13 @@ all:
 install:
 	mkdir -p $(ROOT)$(PREFIX)$(BINDIR) $(ROOT)$(PREFIX)$(LIBDIR)
 	cp *.py data/*.xtx $(ROOT)$(PREFIX)$(LIBDIR)
-	sed -e "/^version = /c\\version = '${VERSION}'" \
-	    -e "/^xtxlib = /c\\xtxlib = '${PREFIX}${LIBDIR}'" \
-	    -e "/^plylib = /c\\plylib = '${PLY}'" \
-	    crosstex >$(ROOT)$(PREFIX)$(BINDIR)/crosstex
+	echo '/^version = /c\' >crosstex.sed
+	echo "version = '${VERSION}'" >>crosstex.sed
+	echo '/^xtxlib = /c\' >>crosstex.sed
+	echo "xtxlib = '${PREFIX}${LIBDIR}'" >>crosstex.sed
+	echo '/^plylib = /c\' >>crosstex.sed
+	echo "plylib = '${PLY}'" >>crosstex.sed
+	sed -f crosstex.sed <crosstex >$(ROOT)$(PREFIX)$(BINDIR)/crosstex
 	chmod 0755 $(ROOT)$(PREFIX)$(BINDIR)/crosstex
 	ln -sf crosstex $(ROOT)$(PREFIX)$(BINDIR)/xtx2bib
 	ln -sf crosstex $(ROOT)$(PREFIX)$(BINDIR)/xtx2html
@@ -57,4 +60,4 @@ rpm: dist
 
 clean:
 	rm -rf *~ *.pyc *.aux *.bbl *.dvi *.log *.tar.gz *.rpm *.html \
-	       *.out *.toc *.pdf *.haux *.htoc *-rpm *.bak
+	       *.out *.toc *.pdf *.haux *.htoc *-rpm *.bak crosstex.sed
