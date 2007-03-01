@@ -135,6 +135,7 @@
 @conference{nsdi,
   shortname = "NSDI",
   longname = "Symposium on Networked System Design and Implementation", 
+  [year=2007] address=CambridgeMA, month=apr,
   [year=2006] address=SanJose, month=may,
   [year=2005] address=Boston, month=may,
   [year=2004] address=SF, month=mar,
@@ -263,7 +264,7 @@
 
 @conference{sigcomm,
   shortname = "SIGCOMM",
-  longname = "ACM Special Interest Group on Data Communications",
+  longname = "SIGCOMM Conference",
   [year=2006] address=Piza, month=sep, 
   [year=2005] address=Philadelphia, month=sep, 
   [year=2004] address=Portland, month=aug, 
@@ -436,7 +437,7 @@
 
 @conference{imc,	
   shortname = "IMC",	
-  longname = "Conference on Internet Measurement",
+  longname = "Internet Measurement Conference",
   [year=2005] address=Berkeley, month=oct,
   [year=2004] address=Taormina, month=oct,
   [year=2003] address=MiamiBeach, month=oct,
