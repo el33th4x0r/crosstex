@@ -14,9 +14,9 @@ all:
 install:
 	mkdir -p $(ROOT)$(PREFIX)$(BINDIR) $(ROOT)$(PREFIX)$(LIBDIR)
 	cp *.py data/*.xtx $(ROOT)$(PREFIX)$(LIBDIR)
-	sed -e "s/^version = .*/version = '${VERSION}'/" \
-	    -e "s/^xtxlib = /xtxlib = '${PREFIX}${LIBDIR}'/" \
-	    -e "s/^plylib = /plylib = '${PLY}'/" \
+	sed -e "/^version = /c\\version = '${VERSION}'" \
+	    -e "/^xtxlib = /c\\xtxlib = '${PREFIX}${LIBDIR}'" \
+	    -e "/^plylib = /c\\plylib = '${PLY}'" \
 	    crosstex >$(ROOT)$(PREFIX)$(BINDIR)/crosstex
 	chmod 0755 $(ROOT)$(PREFIX)$(BINDIR)/crosstex
 	ln -sf crosstex $(ROOT)$(PREFIX)$(BINDIR)/xtx2bib
@@ -41,7 +41,6 @@ ${PACKAGE}.tar.gz: Makefile COPYING crosstex crosstex.spec crosstex.tex crosstex
 	    -e "1i %define bindir ${BINDIR}" \
 	    -e "1i %define libdir ${LIBDIR}" \
 	    -e "1i %define ply ${PLY}" \
-	    -e "s/^%define release/%define release ${RELEASE}/" \
 	    crosstex.spec >${PACKAGE}/crosstex.spec
 	tar czf ${PACKAGE}.tar.gz ${PACKAGE}
 	rm -rf ${PACKAGE}
