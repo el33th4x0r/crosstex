@@ -254,7 +254,10 @@ class bibliography(dict):
 			return tryint(getattr(self[x], field))
 		except:
 		    return ''
-	    sorted = [ (keyfunc(citation), i, citation) for i, citation in enumerate(self._citations) ]
+	    citelist = copy.copy(self._citations)
+	    if reverse:
+		citelist.reverse()
+	    sorted = [ (keyfunc(citation), i, citation) for i, citation in enumerate(citelist) ]
 	    sorted.sort()
 	    if reverse:
 		sorted.reverse()
