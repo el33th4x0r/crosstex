@@ -221,6 +221,7 @@ class author(string):
 		    namestr += lname[first]
 		    if len(namestr) >= size:
 		        break
+		    first += 1
 	        elif lname[first] == "\\":
 		    first += 2
 	        else:
@@ -552,24 +553,24 @@ class misc(bibobject):
 	    valuetitle = self._fulltitle()
 	    valuepublication = self._fullpublication()
 	    if self._options.title_head:
-		if valuetitle != '':
+		if valuetitle != None and valuetitle != '':
 		    if value != '':
 			value += "\n\\newblock "
 		    value += "\\textbf{%s}" % self._fulltitle()
-		if valueauthor != '':
+		if valueauthor != None and valueauthor != '':
 		    if value != '':
 			value += "\n\\newblock "
 		    value += valueauthor
 	    else:
-		if valueauthor != '':
+		if valueauthor != None and valueauthor != '':
 		    if value != '':
 			value += "\n\\newblock "
 		    value += valueauthor
-		if valuetitle != '':
+		if valuetitle != None and valuetitle != '':
 		    if value != '':
 			value += "\n\\newblock "
 		    value += valuetitle
-	    if valuepublication != '':
+	    if valuepublication != None and valuepublication != '':
 		if value != '':
 		    value += "\n\\newblock "
 		value += valuepublication
@@ -768,6 +769,7 @@ class url(misc):
             if self.accessmonth != '':
                 value += str(self.accessmonth) + ' '
             value += str(self.accessyear)
+	return value
 
 class newspaperarticle(article):
     author = ''

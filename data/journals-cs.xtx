@@ -2,6 +2,7 @@
 @journal{acmcs, name = "ACM Computing Surveys"}
 @journal{cacm, shortname = "CACM", longname = "Communications of the ACM"}
 @journal{jacm, shortname = "JACM", longname = "Journal of the ACM"}
+@journal{tissec, shortname = "ACM TISSEC", longname = "ACM Transactions on Information and System Security"}
 @journal{tocs, shortname = "ACM ToCS", longname = "ACM Transactions on Computer Systems"}
 @journal{tods, shortname = "ACM ToDS", longname = "ACM Transactions on Database Systems"}
 @journal{tomacs_scale, shortname = "ACM ToMaCS", longname = "ACM Transactions on Modeling and Computer Simulation, Special Issue on Scalable Network Modeling and Simulation"}
