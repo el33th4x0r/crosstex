@@ -224,18 +224,92 @@ class bibliography(dict):
 			self._citations += [i]
 			cited.append(i)
 	    else:
-		if key in self:
-		    if hasattr(self[key], '_label'):
-			if self.aliases[key] not in cited:
-			    self[key]._citekey = key
-			    self._citations.append(key)
-			    cited.append(self.aliases[key])
-			else:
-			    self.warning("crosstex: duplicate citation %s; each object may be cited by only one alias" % key)
-		    else:
-			self.warning("crosstex: %s %s is not citable" % (self[key]._name, key))
-		else:
-		    self.warning("crosstex: citation for non-existant key %s" % key)
+                # a leading ! indicates that the citation key
+                # specifies a set of nbibtex-style constraints.
+                # constraints are of the form field=value, but
+                # default to author for first field, title for
+                # second, and year for third.
+                if key[0] == "!":
+                    try:
+                        def cspec_splitter(x):
+                            if x.find("=") > 0:
+                                fields = x.split("=")
+                                return [fields[0], fields[1].split("-")]
+                            else:
+                                return ["", x.split("-")]
+                        cspec = map(cspec_splitter, string.split(key[1:].lower(), ":"))
+                        # fill in defaults
+                        if len(cspec) > 0 and cspec[0][0] == '':
+                            cspec[0][0] = "author"
+                        if len(cspec) > 1 and cspec[1][0] == '':
+                            if int(cspec[1][1][0]) > 0:
+                                cspec[1][0] = "year"
+                            else:
+                                cspec[1][0] = "title"
+                        if len(cspec) > 2 and cspec[2][0] == "":
+                            cspec[2][0] = "year"
+
+                        # check to make sure that constraint specification is not just "!"
+                        if len(cspec) == 0:
+                                self.error("crosstex: citation constraint <%s> is missing a value constraint" % key)
+                                raise Exception("missing field in constrained citation")
+                        # check for underspecified constraints -- missing fieldname
+                        for constraint in cspec:
+                            if constraint[0] == '':
+                                self.error("crosstex: citation constraint <%s> is missing a field qualifier" % key)
+                                raise Exception("missing fieldname in constrained citation")
+                        # check for underspecified constraints -- missing value
+                        for constraint in cspec:
+                            if constraint[1] == ['']:
+                                self.error("crosstex: citation constraint <%s> is missing a value constraint" % key)
+                                raise Exception("missing value in constrained citation")
+                    except:
+                        continue
+                    # at this point, we have all the constraints on the citation
+                    # cspec = [['author', ['sirer']], ['title', ['sharp', 'hybrid']]]
+                    match = None
+                    # look through all objects for all matching citations, we'll cite it if the citation is unique
+                    for objkey in self.primarykeys:
+                        try:
+                            # only cite citeable objects
+                            if not hasattr(self[objkey], '_label'):
+                                continue
+                            # go through all constraints
+                            for (fieldname, values) in cspec:
+                                # check if constrained field exists
+                                if hasattr(self[objkey], fieldname):
+                                    fieldvalue = str(getattr(self[objkey], fieldname)).lower()
+                                    # check if constrained field contains all the values specified in the citation
+                                    for val in values:
+                                        string.index(fieldvalue, val)
+                            else:
+                                # we get here only when all constraints are satisfied
+                                if match != None:
+                                    self.error("crosstex: citation constraint %s is ambiguous, both %s and %s match" % (key, match, objkey))
+                                    raise Exception("non-unique constraint citation")
+                                match = objkey
+                                if self.aliases[objkey] not in cited:
+                                    self[objkey]._citekey = key
+                                    self._citations.append(objkey)
+                                    cited.append(self.aliases[objkey])
+                                else:
+                                    self.error("crosstex: multiply cited object <%s> must be cited under the same key or alias in all citations" % objkey)
+                        except Exception, e:
+                            if str(e) == "non-unique constraint citation":
+                                break
+                else:
+                    if key in self:
+                        if hasattr(self[key], '_label'):
+                            if self.aliases[key] not in cited:
+                                self[key]._citekey = key
+                                self._citations.append(key)
+                                cited.append(self.aliases[key])
+                            else:
+                                self.warning("crosstex: duplicate citation %s; each object may be cited by only one alias" % key)
+                        else:
+                            self.warning("crosstex: %s %s is not citeable" % (self[key]._name, key))
+                    else:
+                        self.warning("crosstex: citation for non-existant key %s" % key)
 
 	def tryint(x):
 	    try:

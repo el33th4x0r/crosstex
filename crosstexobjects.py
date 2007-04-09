@@ -360,6 +360,7 @@ class misc(bibobject):
     bibsource = ''
     booktitle = ''
     category = ''
+    subcategory = ''
     chapter = ''
     contents = ''
     copyright = ''
