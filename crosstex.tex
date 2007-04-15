@@ -606,6 +606,18 @@ use \texttt{--reverse-sort} in the same way.
 
 When processing large bibliographies, it can be nice to partition the entries into labeled categories. Specifying the \texttt{--heading \textrm{\textit{field}}} option specifies a field to be used to divide the entries into sections. For example, \texttt{--heading year} will cause the entries to be grouped by year and given headings for each different year. (\texttt{--reverse-heading} will reverse the order in which the sections appear.) When converting a bibliography of personal publications to HTML, for example, it might be convenient to group by an information field such as \texttt{--heading category} to nicely organize the produced bibliography.
 
+\paragraph{Inside the \texttt{.tex} file}
+
+The \texttt{.tex} source file never needs to know you're using \XTeX{}, because it is completely backwards compatible. The \texttt{\textbackslash{}bibliographystyle\{\textrm{\textit{foo}}\}} command will cause the equivalent of the command-line option \texttt{--style \textrm{\textit{foo}}}.
+
+However, the \texttt{\textbackslash{}bibliographystyle} command can cause other magic as well. Arbitrary command line options may be specified after the style name, separated by commas. For example:
+
+\begin{small}\begin{verbatim}
+\bibliographystyle{plain,--add-in,--add-proceedings,--short,author}
+\end{verbatim}\end{small}
+
+This allows documents to have fine-grained control over styling. Run-time options will still take precedence over document defaults.
+
 \subsection{Usage}
 
 \begin{small}\begin{verbatim}
@@ -689,20 +701,6 @@ options:
                         BibTeX.
   --xtx2html            Format the bibliography as HTML.
 \end{verbatim}\end{small}
-
-\section{Inside the \texttt{.tex} file}
-
-The \texttt{.tex} source file never needs to know you're using \XTeX{}, because it is completely backwards compatible. The \texttt{\textbackslash{}bibliographystyle\{\textrm{\textit{foo}}\}} command will cause the equivalent of the command-line option \texttt{--style \textrm{\textit{foo}}}.
-
-However, the \texttt{\textbackslash{}bibliographystyle} command can cause other magic as well. Arbitrary command line options may be specified after the style name, separated by commas. For example:
-
-\begin{small}\begin{verbatim}
-\bibliographystyle{plain,--add-in,--add-proceedings,--short,author}
-\end{verbatim}\end{small}
-
-This allows documents to have fine-grained control over styling. Run-time options will still take precedence over document defaults.
-
-
 
 \section{Extending \XTeX{}}
 \label{extending}
