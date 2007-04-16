@@ -365,7 +365,7 @@ object that explicitly assigns a value to a field will override any
 \section{Citing References}
 
 Once you have defined your objects in the .XTX file, you may refer to them in your .TEX file. Such
-references are known as citations, and are accomplished with the \texttt{\\cite} command in LaTeX. 
+references are known as citations, and are accomplished with the \verb"\cite" command in LaTeX. 
 \XTeX{} supports two kinds of citations, both backwards compatible with standard LaTeX citations.
 
 \subsection{Plain Citations}
@@ -376,8 +376,8 @@ following the object definition, match the cited key. For instance, given the de
 above, the following are examples of plain citations:
 
 \begin{small}\begin{verbatim}
-Credence~\\cite{credence} provides a reputation system for peer-to-peer systems.
-These two papers ~\\cite{DBLP:conf/usenix/PadioleauR03,DBLP:conf/usenix/DouglisI03} appeared
+Credence~\cite{credence} provides a reputation system for peer-to-peer systems.
+These two papers ~\cite{DBLP:conf/usenix/PadioleauR03,DBLP:conf/usenix/DouglisI03} appeared
 at the Usenix annual conference.
 \end{verbatim}\end{small}
 
@@ -398,9 +398,9 @@ Overall, there really are not that many frills to plain citations. They work exa
 one would imagine they would. Their big drawback, however, is that you need to remember
 the precise key for every object you want to cite. Often, this requires browsing database
 files, searching for author names and keywords in the title so you can figure out whether
-you named the key ``credence'' or ``credence_nsdi04'' or ``nsdi04_credence''. Even though 
+you named the key ``credence'' or ``credence\_nsdi04'' or ``nsdi04\_credence''. Even though 
 the standard libraries that come with \XTeX{} follow the uniform naming rule from the DBLP
-database, figuring out theuniform name still requires knowing the authors and the year, which
+database, figuring out the uniform name still requires knowing the authors and the year, which
 often requires a google search.  To make the citation process even easier and simpler, \XTeX{} supports a 
 second kind of citation, where the user need not recall the object key precisely.
 
@@ -418,9 +418,9 @@ supposed to automate boring tasks. That's where constrained citations come in.
 A constrained citation begins with an exclamation point, and specifies a series of colon-separated
 terms that identify the reference being cited. Some examples of constrained citations are:
 \begin{small}\begin{verbatim}
-\\cite{!author=sirer:title=virtual:year=1999}
-\\cite{!author=sirer:title=virtual:title=machines:year=1999}
-\\cite{!author=sirer:author=walsh:year=2006}
+\cite{!author=sirer:title=virtual:year=1999}
+\cite{!author=sirer:title=virtual:title=machines:year=1999}
+\cite{!author=sirer:author=walsh:year=2006}
 \end{verbatim}\end{small}
 Colons separate constraints. Each constraint identifies 
 a field that the reference must have, as well as a string that should appear somewhere within that 
@@ -434,9 +434,9 @@ as in the second and third examples above, is perfectly acceptable, but gets ted
 way to specify multiple constraints for the same field; every word separated by a ``-'' sign is treated
 as a separate constraint. So the examples above can be shortened down to:
 \begin{small}\begin{verbatim}
-\\cite{!author=sirer:title=virtual:year=1999}
-\\cite{!author=sirer:title=virtual-machines:year=1999}
-\\cite{!author=sirer-walsh:year=2006}
+\cite{!author=sirer:title=virtual:year=1999}
+\cite{!author=sirer:title=virtual-machines:year=1999}
+\cite{!author=sirer-walsh:year=2006}
 \end{verbatim}\end{small}
 
 Multiple constraints within a given field are not ordered and can appear anywhere in the string, so 
@@ -448,9 +448,9 @@ for fieldnames. If the fieldnames are missing, the first constraint defaults to 
 second constraint defaults to ``title'' if the value is not numeric; if it is, it defaults to ``year.'' 
 Finally, the last constraint defaults to ``year.'' So the examples above can be shortened even further:
 \begin{small}\begin{verbatim}
-\\cite{!sirer:virtual:1999}
-\\cite{!sirer:virtual-machines:1999}
-\\cite{!sirer-walsh:2006}
+\cite{!sirer:virtual:1999}
+\cite{!sirer:virtual-machines:1999}
+\cite{!sirer-walsh:2006}
 \end{verbatim}\end{small}
 
 Two caveats are worth remembering about constrained citations. First, the citation needs to be

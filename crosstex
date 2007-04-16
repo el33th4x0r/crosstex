@@ -215,14 +215,12 @@ class bibliography(dict):
 	if self._citations != None:
 	    return self._citations
 	self._citations = []
-	cited = []
 
 	for key in self.options.cite:
 	    if key == '*':
 		for i in self.primarykeys:
-		    if hasattr(self[i], '_label') and i not in cited:
-			self._citations += [i]
-			cited.append(i)
+		    if hasattr(self[i], '_label') and (self[i]._citekey == None or self[i]._citekey == i):
+			self._citations.append(i)
 	    else:
                 # a leading ! indicates that the citation key
                 # specifies a set of nbibtex-style constraints.
@@ -288,28 +286,26 @@ class bibliography(dict):
                                     self.error("crosstex: citation constraint %s is ambiguous, both %s and %s match" % (key, match, objkey))
                                     raise Exception("non-unique constraint citation")
                                 match = objkey
-                                if self.aliases[objkey] not in cited:
-                                    self[objkey]._citekey = key
+				if self[objkey]._citekey == None:
+				    self[objkey]._citekey = objkey
                                     self._citations.append(objkey)
-                                    cited.append(self.aliases[objkey])
-                                else:
-                                    self.error("crosstex: multiply cited object <%s> must be cited under the same key or alias in all citations" % objkey)
+                                if objkey != self[objkey]._citekey:
+                                    self.error("crosstex: multiply cited object <%s> must be cited under the same key or alias in all citations (attempted to cite it as %s)" % (self[objkey]._citekey, objkey))
                         except Exception, e:
                             if str(e) == "non-unique constraint citation":
                                 break
                 else:
                     if key in self:
                         if hasattr(self[key], '_label'):
-                            if self.aliases[key] not in cited:
-                                self[key]._citekey = key
-                                self._citations.append(key)
-                                cited.append(self.aliases[key])
-                            else:
-                                self.warning("crosstex: duplicate citation %s; each object may be cited by only one alias" % key)
+			    if self[key]._citekey == None:
+				self[key]._citekey = key
+				self._citations.append(key)
+			    if key != self[key]._citekey:
+				self.error("crosstex: multiply cited object <%s> must be cited under the same key or alias in all citations (attempted to cite it as %s)" % (self[key]._citekey, key))
                         else:
                             self.warning("crosstex: %s %s is not citeable" % (self[key]._name, key))
                     else:
-                        self.warning("crosstex: citation for non-existant key %s" % key)
+                        self.error("crosstex: citation for non-existant key %s" % key)
 
 	def tryint(x):
 	    try:
@@ -360,6 +356,7 @@ class bibliography(dict):
         try:
             obj = getattr(crosstexobjects, name)(data, defaults, file, line, self)
             obj._citekey = None
+            obj._primarykey = None
             for key in keys:
                 if key in self:
                     other = self[key]
@@ -369,10 +366,10 @@ class bibliography(dict):
                         raise KeyError, "%s %s is already defined at %s:%d" % (obj._name, key, other._file, other._line)
                 else:
                     self[key] = obj
-                    if obj._citekey == None:
-                        obj._citekey = key
+                    if obj._primarykey == None:
+                        obj._primarykey = key
                         self.primarykeys += [key]
-                    self.aliases[key] = obj._citekey
+                    self.aliases[key] = obj._primarykey
 	    return obj
         except AttributeError:
 	    raise KeyError, "object type %s is not defined" % (name)
@@ -416,18 +413,22 @@ def t_ATPREAMBLE(t):
 
 def t_ATCOMMENT(t):
     r'@[Cc][Oo][Mm][Mm][Ee][Nn][Tt]'
+    t.lexer.followsequals = 1
     return t
 
 def t_ATDEFAULT(t):
     r'@[Dd][Ee][Ff][Aa][Uu][Ll][Tt]'
+    t.lexer.followsequals = 0
     return t
 
 def t_ATTITLEPHRASE(t):
     r'@[Tt][Ii][Tt][Ll][Ee][Pp][Hh][Rr][Aa][Ss][Ee]'
+    t.lexer.followsequals = 1
     return t
 
 def t_ATTITLESMALL(t):
     r'@[Tt][Ii][Tt][Ll][Ee][Ss][Mm][Aa][Ll][Ll]'
+    t.lexer.followsequals = 1
     return t
     
 def t_NUMBER(t):
@@ -440,7 +441,8 @@ def t_STRING(t):
     if t.value.count("{") != t.value.count("}"):
         t.lexer.bib.error("%s:%d: mismatched braces in string" % (t.lexer.file, t.lexer.lineno))
     t.lexer.followsequals = 0
-    t.lexer.lineno += t.value.count("\n")
+    for i in re.finditer('\r\n|\r|\n', t.value):
+	t.lexer.lineno += 1
     t.value = t.value[1:-1]
     return t
 
@@ -464,7 +466,8 @@ def t_OPENBRACE(t):
                 bracelevel -= 1
             t.value += c
         t.lexer.followsequals = 0
-        t.lexer.lineno += t.value.count("\n")
+	for i in re.finditer('\r\n|\r|\n', t.value):
+	    t.lexer.lineno += 1
 	t.value = t.value[1:-1]
 	if re.compile('\d+').match(t.value):
             t.type = "NUMBER"
@@ -511,8 +514,8 @@ def t_NAME(t):
 t_ignore = " \t"
 
 def t_newline(t):
-    r'\n+'
-    t.lexer.lineno += t.value.count("\n")
+    r'(\r\n|\r|\n)'
+    t.lexer.lineno += 1
 
 def t_error(t):
     t.lexer.bib.error("%s:%d: syntax error at '%s'" % (t.lexer.file, t.lexer.lineno, t.value[0]))
@@ -852,11 +855,13 @@ for infilename in args:
 		maxstr = "XXXXXXXXXXXXX"
 	else:
 	    maxstr = "X"
-	outfile.write("{\\renewcommand{\\refname}{%s}\n" % heading)
-	outfile.write("\\begin{thebibliography}{" + maxstr + "}\n")
+	if bib.options.convert != 'bib':
+	    outfile.write("{\\renewcommand{\\refname}{%s}\n" % heading)
+	    outfile.write("\\begin{thebibliography}{" + maxstr + "}\n")
 	for key in divided[heading]:
 	    outfile.write(str(bib[key]))
-        outfile.write("\\end{thebibliography}}\n")
+	if bib.options.convert != 'bib':
+            outfile.write("\\end{thebibliography}}\n")
 
     # Format the rest of the bibliography.
     if '' in divided:
@@ -873,10 +878,12 @@ for infilename in args:
 		maxstr = "XXXXXXXXXXXXX"
 	else:
 	    maxstr = "X"
-	outfile.write("\\begin{thebibliography}{" + maxstr + "}\n")
+	if bib.options.convert != 'bib':
+	    outfile.write("\\begin{thebibliography}{" + maxstr + "}\n")
 	for key in divided['']:
 	    outfile.write(str(bib[key]))
-	outfile.write("\\end{thebibliography}\n")
+	if bib.options.convert != 'bib':
+	    outfile.write("\\end{thebibliography}\n")
 
     # Print footers required by output format.
     if bib.options.convert == 'html':

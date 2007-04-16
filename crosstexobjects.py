@@ -23,7 +23,7 @@ class bibobject(object):
     _name = ''
     _assigned = []
     _conditionals = []
-    _citekey = ''
+    _citekey = None
 
     def __init__(self, conditionals, defaults, file, line, bib):
         self._bib = bib
@@ -518,6 +518,9 @@ class misc(bibobject):
 		value += "(%s)" % str(self.number)
 	    if self.pages != '':
 		value += ":%s" % str(self.pages)
+	else:
+            if self.pages != '':
+	        value += ", pages %s" % str(self.pages)
         if str(self.author) != '' and str(self.editor) != '':
             if value != '':
                 value += ', '
@@ -542,7 +545,7 @@ class misc(bibobject):
 
     def __str__(self):
         if self._options.convert == 'bib':
-            value = "@%s{%s" % (self._name, self._citekey)
+            value = "@%s{%s" % (self._name, self._primarykey)
             for field in self._assigned:
                 fieldvalue = str(getattr(self, field))
                 if len(fieldvalue) != 0:
@@ -603,9 +606,16 @@ class misc(bibobject):
                     value += "\n"
                 value += "\\begin{quote}\\begin{small}\\textsc{Keywords:} %s\\end{small}\\end{quote}" % str(self.keywords)
 
+	    if self.note != '':
+		if value != '':
+		    value += "\n\\newblock "
+		value += "%s." % self.note
+
             label = self._label()
             if label != '':
                 label = '[%s]' % label
+	    if self._citekey == None:
+		self._citekey = ''
             value = "\\bibitem%s{%s}\n%s\n\n" % (label, self._citekey, value)
         return value
 

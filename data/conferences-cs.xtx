@@ -225,7 +225,7 @@
 
 @conference{popl,
   shortname = "POPL",
-  longname = "Symposium on Pinciples of Programming Languages",
+  longname = "Symposium on Principles of Programming Languages",
   [year=2007] address=Nice, month = jan,
   [year=2006] address=Charleston, month = jan,
   [year=2005] address=LongBeach, month = jan,

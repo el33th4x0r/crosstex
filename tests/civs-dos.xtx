@@ -1,0 +1,34 @@
+@include conferences-cs
+
+@comment{
+@conference{popl,
+  longname = {Symposium on Principles of Programming Languages},
+  [year=2010] address={The Moon}
+}
+}
+
+@INPROCEEDINGS{Myers99,
+  author = {Andrew C. Myers},
+  title = {JFlow: Practical Mostly-Static Information Flow Control},
+  booktitle = popl,
+  year = 1999,
+  pages = {228--241},
+}
+
+@URL{jif,
+  author = {Andrew C. Myers and Lantian Zheng and Steve Zdancewic and Stephen Chong and Nathaniel Nystrom},
+  title = {Jif: Java Information Flow},
+  note = {Software Release},
+  url = {http://www.cs.cornell.edu/jif},
+  month = jul,
+% Uncomment the next line to crash crosstex
+  year = 2001,
+}
+
+@INPROCEEDINGS{Clarkson10,
+  author = {Michael R. Clarkson},
+  title = {Jif 2010},
+  booktitle = popl,
+  year = 2010,
+  pages = {1--10},
+}
