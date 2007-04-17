@@ -134,6 +134,7 @@ class bibliography(dict):
     titlesmall = {}
     punctuation = re.compile('.*([:!.?]|-{2,})$')
     _citations = None
+    location = []
     
     def addtitlephrase(self, phrase):
         self.titlephrases[re.sub(r'([\[\]^$*+?{\\|()])', r'\\\1', phrase.lower())] = phrase
@@ -697,18 +698,22 @@ def processfile(infilename, bib, exts=['.aux', '.xtx', '.bib']):
     if infilename[0] == '/':
 	paths = names
     else:
-	for path in bib.options.dir:
-	    paths.extend(['/'.join([path, name]) for name in names])
+	for name in names:
+	    if bib.location:
+	        paths.append('/'.join([bib.location[-1], name]))
+	    paths.extend(['/'.join([path, name]) for path in bib.options.dir])
 
     for filename in paths:
 	try:
 	    instream = open(filename, 'r')
 	    if 'file' in bib.options.dump:
 		sys.stderr.write("Processing %s...\n" % filename)
+	    bib.location.append(filename[0:filename.rfind("/")])
 	    if filename.endswith('.aux'):
 		parseaux(instream, bib)
 	    else:
 		parsextx(instream, infilename, bib)
+	    bib.location.pop()
 	    instream.close()
 	    bib.seenfiles.append(infilename)
 	    return filename
@@ -782,8 +787,7 @@ for infilename in args:
     filename = None
     try:
 	filename = processfile(infilename, bib)
-	outfilename = filename.split('/')[-1]
-	outfilename = outfilename[:outfilename.rfind('.') + 1] + bib.options.convert
+	outfilename = filename[:filename.rfind('.') + 1] + bib.options.convert
 	try:
 	    if bib.options.convert == 'html':
 		t = pipes.Template()
