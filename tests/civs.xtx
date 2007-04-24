@@ -1,10 +1,7 @@
 @include conferences-cs
 
-@comment{
-@conference{popl,
-  longname = {Symposium on Principles of Programming Languages},
+@extend{popl,
   [year=2010] address={The Moon}
-}
 }
 
 @INPROCEEDINGS{Myers99,

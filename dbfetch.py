@@ -27,17 +27,18 @@ def getbibtex(str):
 for name in sys.argv[1:]:
     file = open(name + '.bib', 'w')
 
-    print name
+    print name, base + name + '/index.html'
     confurl = urllib.urlopen(base + name + '/index.html')
     confcontents = confurl.read()
     confurl.close()
 
-    for confmatch in re.compile(contentre, re.M).finditer(confcontents):
+    linkre = re.compile("<a href=\"([^/]+[^\"/]*.html)\">")
+
+    for confmatch in linkre.finditer(confcontents):
 	year = confmatch.group(1)
-        yearstr = re.compile('[^/]*/\.\./').sub('/', base + name + '/' + year)
 
         print '  ' + year
-	yearurl = urllib.urlopen(yearstr)
+	yearurl = urllib.urlopen(base + name + '/' + year)
 	contents = yearurl.read()
 	yearurl.close()
 

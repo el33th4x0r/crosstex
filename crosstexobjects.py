@@ -16,88 +16,90 @@ linksub = re.compile("\\-\s")
 # Co-ordination so as not to re-use citation keys
 usedlabels = []
 
+# Some sugar to make extension really easy.
+class requirement:
+    def __str__(self):
+	return ''
+
+def unassigned(field):
+    return isinstance(field, requirement) or str(field) == ''
+
+REQUIRED = requirement()
+OPTIONAL = requirement()
+
 # Base class of bibliography objects
 class bibobject(object):
-    _line = 0
-    _file = ''
-    _name = ''
-    _assigned = []
-    _conditionals = []
-    _citekey = None
 
-    def __init__(self, conditionals, defaults, file, line, bib):
+    def __init__(self, file, line, bib):
         self._bib = bib
         self._line = line
         self._file = file
         self._name = type(self).__name__
         self._name = self._name[self._name.find('.') + 1:]
         self._options = self._bib.options
-        self._assigned = []
-        self._conditionals = conditionals
+	self._fields = [key for key in dir(self) if key[0] != '_']
+	self._conditionals = []
+	self._citekey = None
 
-        while self._applyconditions():
-            pass
-
-	for key in defaults:
-	    if hasattr(self, key):
-	        self._assign(key, defaults[key])
-
-        while self._applyconditions():
-            pass
-
-    def _check(self):
-        for field in self._fields():
-            if getattr(self, field) == None:
-                raise ValueError, "field %s, required by %s, is missing" % (field, self._name)
-
-    def _fields(self):
-        return [key for key in dir(self) if key[0] != '_']
-
-    def _meets(self, condition):
-        if condition == None:
-            return True
-        for field in condition:
-            if not hasattr(self, field) or getattr(self, field) != condition[field]:
-                return False
-        return True
-
-    def _assign(self, key, value):
-        if not hasattr(self, key):
+    def _assign(self, key, value, condition={}):
+	try:
+            if not unassigned(getattr(self, key)):
+	        raise ValueError, "field %s has already been assigned" % key
+	except AttributeError:
             raise ValueError, "%s has no such field %s" % (self._name, key)
-        else:
-            if hasattr(value, '_bibpromote'):
-                value._bibpromote(self)
-            if key not in self._assigned:
-                self._assigned.append(key)
-                setattr(self, key, value)
+	meets = True
+	for field in condition:
+	    try:
+		fieldvalue = getattr(self, field)
+		if unassigned(fieldvalue):
+		    meets = False
+		elif fieldvalue != condition[field]:
+		    raise ValueError, "condition on %s is false" % field
+	    except AttributeError:
+                raise ValueError, "%s has no such field %s" % (self._name, key)
+	if meets:
+	    setattr(self, key, value)
+	elif (key, value, condition) not in self._conditionals:
+	    self._conditionals += [(key, value, condition)]
+	return meets
 
     def _applyconditions(self):
-        unmet = []
-        valid = []
-        for condition, fields in self._conditionals:
-            if self._meets(condition):
-                valid += [fields]
-            else:
-                unmet += [(condition, fields)]
-        self._conditionals = unmet
-        for fields in valid:
-            for key in fields:
-                self._assign(key, fields[key])
-        return len(valid) > 0
+	changed = True
+	while self._conditionals and changed:
+            unmet = self._conditionals
+	    self._conditionals = []
+	    changed = False
+	    for key, value, condition in unmet:
+		try:
+		    if self._assign(key, value, condition):
+			changed = True
+		except ValueError:
+		    pass
 
-    def _filter(self, other, fields):
-        filtered = {}
-        for name in other._fields():
-            if name in fields:
-                filtered[name] = fields[name]
-        return filtered
+    def _applyinheritance(self):
+	for field in self._fields:
+	    value = getattr(self, field)
+	    if isinstance(value, bibobject):
+		self._inherit(value)
 
-    def _bibpromote(self, other):
-        attrs = {}
-        for field in self._fields():
-            attrs[field] = getattr(self, field)
-        for condition, fields in self._conditionals + [(None, attrs)]:
-            other._conditionals += [(condition, self._filter(other, fields))]
+    def _inherit(self, value):
+	for field in value._fields:
+	    valuefield = getattr(value, field)
+	    if not unassigned(valuefield):
+		try:
+		    self._assign(field, valuefield)
+		except ValueError:
+		    pass
+	for field, valuefield, condition in value._conditionals:
+	    try:
+		self._assign(field, valuefield, condition)
+	    except ValueError:
+		pass
+
+    def _check(self):
+        for field in self._fields:
+            if getattr(self, field) == REQUIRED:
+                raise ValueError, "field %s, required by %s, is missing" % (field, self._name)
 
     def _tobibtex(self):
         pass
@@ -128,38 +130,47 @@ class authorlist(list):
                 obj._bibpromote(other)
             
 class string(bibobject):
-    name = None
-    shortname = None
+    name = REQUIRED
+    shortname = REQUIRED
 
-    def _assign(self, key, value):
+    def _assign(self, key, value, condition={}):
         # longname is an alias for name
         if key == 'longname':
             key = 'name'
 
-        # With shortname, name is optional and vice versa
-        if key == 'shortname' and self.name == None:
-            self.__dict__['name'] = value
-        if key == 'name' and self.shortname == None:
-            self.__dict__['shortname'] = value
-        bibobject._assign(self, key, value)
+        value = bibobject._assign(self, key, value, condition)
+	if value:
+
+            # With shortname, name is optional and vice versa
+            if key == 'shortname' and self.name == REQUIRED:
+                self.name = OPTIONAL
+            if key == 'name' and self.shortname == REQUIRED:
+                self.shortname = OPTIONAL
+
+        return value
 
     def __str__(self):
-	value = self.name
+	value = REQUIRED
 	if self._name in self._options.short:
 	    value = self.shortname
+	if unassigned(value):
+	    value = self.name
+	if unassigned(value):
+	    value = self.shortname
+	value = str(value)
 	if self._name in self._options.capitalize:
 	    value = self._bib.titlecase(value, 'upper', False)
 	return value
 
 class author(string):
-    address = ''
-    affiliation = ''
-    email = ''
-    institution = ''
-    organization = ''
-    phone = ''
-    school = ''
-    url = ''
+    address = OPTIONAL
+    affiliation = OPTIONAL
+    email = OPTIONAL
+    institution = OPTIONAL
+    organization = OPTIONAL
+    phone = OPTIONAL
+    school = OPTIONAL
+    url = OPTIONAL
 
     def _names(self):
         name = string.__str__(self)
@@ -235,7 +246,7 @@ class author(string):
 	    return cmp(self._names()[2], other)
 
     def _last_first(self):
-        if self._name in self._options.short and 'shortname' in self._assigned:
+        if self._name in self._options.short and not unassigned(self.shortname):
             return str(self.shortname)
         else:
             (fnames, mnames, lnames, snames) = self._names()
@@ -274,7 +285,7 @@ class author(string):
             return namestr
 
     def __str__(self):
-        if self._name in self._options.short and 'shortname' in self._assigned:
+        if self._name in self._options.short and not unassigned(self.shortname):
             return str(self.shortname)
         else:
             (fnames, mnames, lnames, snames) = self._names()
@@ -311,34 +322,34 @@ class author(string):
             return namestr
 
 class state(string):
-    country = ''
+    country = OPTIONAL
 
 class country(string):
     pass
 
 class location(bibobject):
-    city = ''
-    state = ''
-    country = ''
+    city = OPTIONAL
+    state = OPTIONAL
+    country = OPTIONAL
 
     def __str__(self):
         value = ''
-        state = str(self.state)
-        country = str(self.country)
-        if 'city' in self._assigned:
+        if not unassigned(self.city):
+            if value != '':
+                value += ', '
             value += str(self.city)
-        if state != '':
+        if not unassigned(self.state):
             if value != '':
                 value += ', '
-            value += state
-        if country != '':
+            value += str(self.state)
+        if not unassigned(self.country):
             if value != '':
                 value += ', '
-            value += country
+            value += str(self.country)
         return value
 
 class month(string):
-    monthno = None
+    monthno = REQUIRED
 
     def __cmp__(self, other):
 	if isinstance(other, month):
@@ -351,73 +362,76 @@ class journal(string):
 
 # Base for all publications, everything optional.
 class misc(bibobject):
-    abstract = ''
-    address = ''
-    affiliation = ''
-    annote = ''
-    author = ''
-    bib = ''
-    bibsource = ''
-    booktitle = ''
-    category = ''
-    subcategory = ''
-    chapter = ''
-    contents = ''
-    copyright = ''
-    crossref = ''
-    doi = ''
-    dvi = ''
-    edition = ''
-    editor = ''
-    ee = ''
-    ftp = ''
-    howpublished = ''
-    html = ''
-    http = ''
-    institution = ''
-    isbn = ''
-    issn = ''
-    journal = ''
-    key = ''
-    keywords = ''
-    language = ''
-    lccn = ''
-    location = ''
-    month = ''
-    monthno = ''
-    mrnumber = ''
-    note = ''
-    number = ''
-    organization = ''
-    pages = ''
-    pdf = ''
-    price = ''
-    ps = ''
-    publisher = ''
-    rtf = ''
-    school = ''
-    series = ''
-    size = ''
-    title = ''
-    type = ''
-    url = ''
-    volume = ''
-    year = ''
+    abstract = OPTIONAL
+    address = OPTIONAL
+    affiliation = OPTIONAL
+    annote = OPTIONAL
+    author = OPTIONAL
+    bib = OPTIONAL
+    bibsource = OPTIONAL
+    booktitle = OPTIONAL
+    category = OPTIONAL
+    subcategory = OPTIONAL
+    chapter = OPTIONAL
+    contents = OPTIONAL
+    copyright = OPTIONAL
+    crossref = OPTIONAL
+    doi = OPTIONAL
+    dvi = OPTIONAL
+    edition = OPTIONAL
+    editor = OPTIONAL
+    ee = OPTIONAL
+    ftp = OPTIONAL
+    howpublished = OPTIONAL
+    html = OPTIONAL
+    http = OPTIONAL
+    institution = OPTIONAL
+    isbn = OPTIONAL
+    issn = OPTIONAL
+    journal = OPTIONAL
+    key = OPTIONAL
+    keywords = OPTIONAL
+    language = OPTIONAL
+    lccn = OPTIONAL
+    location = OPTIONAL
+    month = OPTIONAL
+    monthno = OPTIONAL
+    mrnumber = OPTIONAL
+    note = OPTIONAL
+    number = OPTIONAL
+    organization = OPTIONAL
+    pages = OPTIONAL
+    pdf = OPTIONAL
+    price = OPTIONAL
+    ps = OPTIONAL
+    publisher = OPTIONAL
+    rtf = OPTIONAL
+    school = OPTIONAL
+    series = OPTIONAL
+    size = OPTIONAL
+    title = OPTIONAL
+    type = OPTIONAL
+    url = OPTIONAL
+    volume = OPTIONAL
+    year = OPTIONAL
 
-    def _assign(self, key, value):
-        # With author, editor is optional and vice versa
-        if key == 'editor' and self.editor == None and self.author == None:
-            self.__dict__['author'] = ''
-        if key == 'author' and self.editor == None and self.author == None:
-            self.__dict__['editor'] = ''
+    def _assign(self, key, value, condition={}):
+	value = bibobject._assign(self, key, value, condition)
+	if value:
+	
+            # With author, editor is optional and vice versa
+            if key == 'editor' and self.author == REQUIRED:
+                self.author = OPTIONAL
+            if key == 'author' and self.editor == REQUIRED:
+                self.editor = OPTIONAL
 
-        # With chapter, pages is optional and vice versa
-        if key == 'chapter' and self.chapter == None and self.pages == None:
-            self.__dict__['pages'] = ''
-        if key == 'pages' and self.chapter == None and self.pages == None:
-            self.__dict__['chapter'] = ''
+            # With chapter, pages is optional and vice versa
+            if key == 'chapter' and self.pages == REQUIRED:
+                self.pages = OPTIONAL
+            if key == 'pages' and self.chapter == REQUIRED:
+                self.chapter = OPTIONAL
 
-        bibobject._assign(self, key, value)
+	return value
 
     def _label(self):
         # Compute a new label
@@ -426,11 +440,11 @@ class misc(bibobject):
             return self._citelabel
         label = ''
         authors = self.author
-	if len(authors) == 0 and len(self.editor) != 0:
+	if unassigned(authors):
 	    authors = self.editor
-        if len(authors) == 0:
-	    if self._options.cite_by != 'number':
-                label = str(self.key)
+        if unassigned(authors) or len(authors) == 0:
+	    if self._options.cite_by != 'number' and not unassigned(self.key):
+	        label = str(self.key)
         elif self._options.cite_by == 'initials':
             if len(authors) == 1:
                 label += authors[0]._last_initials(3)
@@ -441,7 +455,7 @@ class misc(bibobject):
                 for i in range(0, min(len(authors), 3)):
                     label += authors[i]._last_initials(1)
                 label += "{\etalchar{+}}"
-            if self.year != '':
+            if not unassigned(self.year):
                    label += "%02d" % (int(str(self.year)) % 100)
         elif self._options.cite_by == 'fullname':
             if len(authors) == 2:
@@ -453,7 +467,7 @@ class misc(bibobject):
                 label += ' '.join(lnames1)
                 if len(authors) > 2:
                     label += " et al."
-            if self.year != '':
+            if not unassigned(self.year):
                 label += str(self.year)
         # Ensure the label is unique
         if label in usedlabels:
@@ -469,20 +483,26 @@ class misc(bibobject):
         return self._citelabel
 
     def _title(self):
-        value = str(self.title)
-        if value != '':
+        value = ''
+	if not unassigned(self.title):
+	    value = str(self.title)
             if self._options.titlecase != 'as-is':
                 value = self._bib.titlecase(value, self._options.titlecase)
         return value
 
     def _publication(self):
-        return str(self.howpublished)
+	value = ''
+	if not unassigned(self.howpublished):
+	    value = str(self.howpublished)
+	return value
 
     def _fullauthors(self):
-        value = str(self.author)
-        if value != '':
-            value += "."
-        else:
+	value = ''
+	if not unassigned(self.author):
+            value = str(self.author)
+            if value != '':
+                value += "."
+        elif not unassigned(self.editor):
             value = str(self.editor)
             if value != '':
                 value += ", ed."
@@ -498,9 +518,9 @@ class misc(bibobject):
 
     def _fullpublication(self):
         value = self._publication()
-        if self.booktitle != '' and value == '':
+        if not unassigned(self.booktitle) and value == '':
             value += "In {\\em %s}" % str(self.booktitle)
-        if self.journal != '':
+        if not unassigned(self.journal):
             if value != '':
                 value += ', '
             if self._options.in_str != '':
@@ -508,35 +528,35 @@ class misc(bibobject):
             else:
                 value += ' '
             value += "{\\em %s}" % str(self.journal)
-	    if self.volume != '':
-		if self.number == '' and self.pages == '':
+	    if not unassigned(self.volume):
+		if not unassigned(self.number) and not unassigned(self.pages):
 		    if value != '':
 			value += ' '
 		    value += 'Volume'
 		value += " %s" % str(self.volume)
-	    if self.number != '':
+	    if not unassigned(self.number):
 		value += "(%s)" % str(self.number)
-	    if self.pages != '':
+	    if not unassigned(self.pages):
 		value += ":%s" % str(self.pages)
 	else:
-            if self.pages != '':
+            if not unassigned(self.pages):
 	        value += ", pages %s" % str(self.pages)
-        if str(self.author) != '' and str(self.editor) != '':
+        if not unassigned(self.author) and not unassigned(self.editor):
             if value != '':
                 value += ', '
             value += "%s, ed." % str(self.editor)
-        if self.publisher != '':
+        if not unassigned(self.publisher):
             if value != '':
                 value += ', '
             value += str(self.publisher)
-        if self.address != '':
+        if not unassigned(self.address):
             if value != '':
                 value += ', '
             value += str(self.address)
-        if self.year != '':
+        if not unassigned(self.year):
             if value != '':
                 value += ', '
-            if self.month != '':
+            if not unassigned(self.month):
                 value += str(self.month) + ' '
             value += str(self.year)
         if value != '':
@@ -546,10 +566,10 @@ class misc(bibobject):
     def __str__(self):
         if self._options.convert == 'bib':
             value = "@%s{%s" % (self._name, self._primarykey)
-            for field in self._assigned:
-                fieldvalue = str(getattr(self, field))
-                if len(fieldvalue) != 0:
-                    value += ",\n\t%s = \"%s\"" % (field, getattr(self, field))
+            for field in self._fields:
+                fieldvalue = getattr(self, field)
+		if not unassigned(fieldvalue):
+                    value += ",\n\t%s = \"%s\"" % (field, str(fieldvalue))
             value += "}\n\n"
         else:
             value = ''
@@ -557,24 +577,24 @@ class misc(bibobject):
 	    valuetitle = self._fulltitle()
 	    valuepublication = self._fullpublication()
 	    if self._options.title_head:
-		if valuetitle != None and valuetitle != '':
+		if valuetitle != '':
 		    if value != '':
 			value += "\n\\newblock "
 		    value += "\\textbf{%s}" % self._fulltitle()
-		if valueauthor != None and valueauthor != '':
+		if valueauthor != '':
 		    if value != '':
 			value += "\n\\newblock "
 		    value += valueauthor
 	    else:
-		if valueauthor != None and valueauthor != '':
+		if valueauthor != '':
 		    if value != '':
 			value += "\n\\newblock "
 		    value += valueauthor
-		if valuetitle != None and valuetitle != '':
+		if valuetitle != '':
 		    if value != '':
 			value += "\n\\newblock "
 		    value += valuetitle
-	    if valuepublication != None and valuepublication != '':
+	    if valuepublication != '':
 		if value != '':
 		    value += "\n\\newblock "
 		value += valuepublication
@@ -597,19 +617,19 @@ class misc(bibobject):
 		    value += "\n\\newblock "
 		value += links
 
-            if self.abstract != '' and self._options.abstract and not abstractlink:
+            if not unassigned(self.abstract) and self._options.abstract and not abstractlink:
                 if value != '':
                     value += "\n"
                 value += "\\begin{quotation}\\noindent\\begin{small}%s\\end{small}\\end{quotation}" % str(self.abstract)
-            if self.keywords != '' and self._options.keywords:
+            if not unassigned(self.keywords) and self._options.keywords:
                 if value != '':
                     value += "\n"
                 value += "\\begin{quote}\\begin{small}\\textsc{Keywords:} %s\\end{small}\\end{quote}" % str(self.keywords)
 
-	    if self.note != '':
+	    if not unassigned(self.note):
 		if value != '':
 		    value += "\n\\newblock "
-		value += "%s." % self.note
+		value += "%s." % str(self.note)
 
             label = self._label()
             if label != '':
@@ -620,42 +640,42 @@ class misc(bibobject):
         return value
 
 class article(misc):
-    author = None
-    title = None
-    journal = None
-    year = None
+    author = REQUIRED
+    title = REQUIRED
+    journal = REQUIRED
+    year = REQUIRED
 
 class book(misc):
-    author = None
-    editor = None
-    title = None
-    publisher = None
-    year = None
+    author = REQUIRED
+    editor = REQUIRED
+    title = REQUIRED
+    publisher = REQUIRED
+    year = REQUIRED
 
 class booklet(misc):
-    title = None
+    title = REQUIRED
 
 class inbook(misc):
-    author = None
-    editor = None
-    title = None
-    chapter = None
-    pages = None
-    publisher = None
-    year = None
+    author = REQUIRED
+    editor = REQUIRED
+    title = REQUIRED
+    chapter = REQUIRED
+    pages = REQUIRED
+    publisher = REQUIRED
+    year = REQUIRED
 
 class incollection(misc):
-    author = None
-    title = None
-    booktitle = None
-    publisher = None
-    year = None
+    author = REQUIRED
+    title = REQUIRED
+    booktitle = REQUIRED
+    publisher = REQUIRED
+    year = REQUIRED
 
 class inproceedings(misc):
-    author = None
-    title = None
-    booktitle = None
-    year = None
+    author = REQUIRED
+    title = REQUIRED
+    booktitle = REQUIRED
+    year = REQUIRED
 
     def _publication(self):
         value = ' '.join(['In', self._options.proceedings_str])
@@ -665,13 +685,13 @@ class inproceedings(misc):
         return value
 
 class manual(misc):
-    title = None
+    title = REQUIRED
 
 class thesis(misc):
-    author = None
-    title = None
-    school = None
-    year = None
+    author = REQUIRED
+    title = REQUIRED
+    school = REQUIRED
+    year = REQUIRED
 
     _thesistype = ''
 
@@ -680,7 +700,7 @@ class thesis(misc):
         if value != '':
             value += ' '
         value += 'Thesis'
-        if self.school != '':
+        if not unassigned(self.school):
             value += ", %s" % str(self.school)
         return value
 
@@ -691,65 +711,65 @@ class phdthesis(thesis):
     _thesistype = 'Ph.D.'
 
 class patent(misc):
-    author = None
-    title = None
-    number = None
-    month = None
-    year = None
+    author = REQUIRED
+    title = REQUIRED
+    number = REQUIRED
+    month = REQUIRED
+    year = REQUIRED
 
     def _publication(self):
         return "United States Patent %s", str(self.number)
 
 class proceedings(misc):
-    title = None
-    year = None
+    title = REQUIRED
+    year = REQUIRED
 
 class collection(proceedings):
     pass
 
 class techreport(misc):
-    author = None
-    title = None
-    institution = None
-    year = None
+    author = REQUIRED
+    title = REQUIRED
+    institution = REQUIRED
+    year = REQUIRED
 
     def _publication(self):
         value = 'Technical Report'
-        if self.number != '':
+        if not unassigned(self.number):
             value += " %s" % str(self.number)
-        if self.institution != '':
+        if not unassigned(self.institution):
             value += ", %s" % str(self.institution)
         return value
 
 class unpublished(misc):
-    author = None
-    title = None
-    note = None
+    author = REQUIRED
+    title = REQUIRED
+    note = REQUIRED
 
 # New objects in CrossTeX:
 
 # In BibTeX, conference was the same as inproceedings.
 # This one's a string instead, and is closer to proceedings.
 class conference(string):
-    address = ''
-    crossref = ''
-    editor = ''
-    institution = ''
-    isbn = ''
-    key = ''
-    keywords = ''
-    language = ''
-    location = ''
-    month = ''
-    publisher = ''
-    url = ''
-    year = ''
+    address = OPTIONAL
+    crossref = OPTIONAL
+    editor = OPTIONAL
+    institution = OPTIONAL
+    isbn = OPTIONAL
+    key = OPTIONAL
+    keywords = OPTIONAL
+    language = OPTIONAL
+    location = OPTIONAL
+    month = OPTIONAL
+    publisher = OPTIONAL
+    url = OPTIONAL
+    year = OPTIONAL
 
 class conferencetrack(conference):
-    conference = ''
+    conference = OPTIONAL
 
     def __str__(self):
-        if self.conference != '':
+        if not unassigned(self.conference):
             return str(self.conference) + ", " + string.__str__(self)
         else:
             return string.__str__(self)
@@ -758,36 +778,39 @@ class workshop(conferencetrack):
     pass
 
 class rfc(misc):
-    author = None
-    title = None
-    number = None
-    month = None
-    year = None
+    author = REQUIRED
+    title = REQUIRED
+    number = REQUIRED
+    month = REQUIRED
+    year = REQUIRED
 
     def _publication(self):
         return "IETF Request For Comments %s" % str(self.number)
 
 class url(misc):
-    url = None
-    accessmonth = ''
-    accessyear = ''
+    url = REQUIRED
+    accessmonth = OPTIONAL
+    accessyear = OPTIONAL
 
     def _publication(self):
-	value = self.url
-        if self.accessyear != '':
+	value = str(self.url)
+        if not unassigned(self.accessyear):
             if value != '':
                 value += ', Accessed '
-            if self.accessmonth != '':
+            if not unassigned(self.accessmonth):
                 value += str(self.accessmonth) + ' '
             value += str(self.accessyear)
 	return value
 
 class newspaperarticle(article):
-    author = ''
-    def _assign(self, key, value):
+    author = OPTIONAL
+
+    def _assign(self, key, value, condition={}):
          # newspaper is an alias for journal
          if key == 'newspaper':
              key = 'journal'
+
+         return article._assign(self, key, value, condition)
 
 class newspaper(journal):
     pass

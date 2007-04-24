@@ -354,26 +354,83 @@ class bibliography(dict):
 
     def addobject(self, name, keys, data, defaults, file, line):
         name = name.strip().lower()
+	obj = None
         try:
-            obj = getattr(crosstexobjects, name)(data, defaults, file, line, self)
-            obj._citekey = None
-            obj._primarykey = None
-            for key in keys:
-                if key in self:
-                    other = self[key]
-                    if other == obj:
-                        raise Warning, "re-definition of %s %s at %s:%d" % (obj._name, key, other._file, other._line)
-                    else:
-                        raise KeyError, "%s %s is already defined at %s:%d" % (obj._name, key, other._file, other._line)
-                else:
-                    self[key] = obj
-                    if obj._primarykey == None:
-                        obj._primarykey = key
-                        self.primarykeys += [key]
-                    self.aliases[key] = obj._primarykey
-	    return obj
+            obj = getattr(crosstexobjects, name)(file, line, self)
         except AttributeError:
 	    raise KeyError, "object type %s is not defined" % (name)
+	obj._citekey = None
+	obj._primarykey = None
+
+	for condition, fields in data:
+	    for key in fields:
+		try:
+		    obj._assign(key, fields[key], condition)
+		except ValueError, details:
+		    self.warning("%s:%d: %s" % (file, line, details))
+	obj._applyconditions()
+	obj._applyinheritance()
+	obj._applyconditions()
+	for key in defaults:
+	    try:
+		obj._assign(key, defaults[key])
+	    except ValueError, details:
+		pass
+	obj._applyconditions()
+	obj._applyinheritance()
+	obj._applyconditions()
+
+	for key in keys:
+	    if key in self:
+		other = self[key]
+		if other == obj:
+		    raise Warning, "re-definition of %s %s at %s:%d" % (obj._name, key, other._file, other._line)
+		else:
+		    raise KeyError, "%s %s is already defined at %s:%d" % (obj._name, key, other._file, other._line)
+	    else:
+		self[key] = obj
+		if obj._primarykey == None:
+		    obj._primarykey = key
+		    self.primarykeys += [key]
+		self.aliases[key] = obj._primarykey
+	return obj
+
+    def extendobject(self, keys, data, defaults, file, line):
+	base = None
+	for key in keys:
+	    if key in self:
+		if base != None and base != self[key]:
+		    raise KeyError, "aliases do not refer to a single object"
+		base = self[key]
+	if base == None:
+	    raise KeyError, "no object found to extend"
+
+	obj = getattr(crosstexobjects, base._name)(base._file, base._line, self)
+	obj._citekey = base._citekey
+	obj._primarykey = base._primarykey
+	
+	for condition, fields in data:
+	    for key in fields:
+		try:
+		    obj._assign(key, fields[key], condition)
+		except ValueError, details:
+		    self.warning("%s:%d: %s" % (file, line, details))
+	obj._inherit(base)
+	obj._applyconditions()
+	obj._applyinheritance()
+	obj._applyconditions()
+	for key in defaults:
+	    try:
+		obj._assign(key, defaults[key])
+	    except ValueError, details:
+		pass
+	obj._applyconditions()
+	obj._applyinheritance()
+	obj._applyconditions()
+	
+	for key in keys:
+	    self[key] = obj
+	return obj
 
     def error(self, message):
 	if self.options.check > 0:
@@ -388,7 +445,7 @@ class bibliography(dict):
 # Tokens
 tokens = (
     'AT', 'COMMA', 'SHARP', 'OPENBRACE', 'CLOSEBRACE', 'LBRACK', 'RBRACK', 'EQUALS', 
-    'ATINCLUDE', 'ATSTRING', 'ATPREAMBLE', 'ATCOMMENT', 'ATDEFAULT', 'ATTITLEPHRASE', 'ATTITLESMALL',
+    'ATINCLUDE', 'ATSTRING', 'ATEXTEND', 'ATPREAMBLE', 'ATCOMMENT', 'ATDEFAULT', 'ATTITLEPHRASE', 'ATTITLESMALL',
     'NUMBER', 'NAME', 'STRING',
     )
 
@@ -404,6 +461,11 @@ def t_ATINCLUDE(t):
     
 def t_ATSTRING(t):
     r'@[sS][tT][rR][iI][nN][gG]'
+    t.lexer.followsequals = 0
+    return t
+
+def t_ATEXTEND(t):
+    r'@[eE][xX][tT][eE][nN][dD]'
     t.lexer.followsequals = 0
     return t
     
@@ -572,7 +634,7 @@ def p_stmt_string(t):
     'stmt : ATSTRING OPENBRACE fields CLOSEBRACE'
     for key in t[3]:
 	try:
-	    t.lexer.bib.addobject('string', [key], [(None, {'name': t[3][key]})], t.lexer.defaults, t.lexer.file, t.lineno(3))._check()
+	    t.lexer.bib.addobject('string', [key], [({}, {'name': t[3][key]})], t.lexer.defaults, t.lexer.file, t.lineno(3))._check()
 	except Warning, detail:
 	    t.lexer.bib.warning("%s:%d: %s" % (t.lexer.file, t.lineno(3), detail))
 	except Exception, detail:
@@ -582,7 +644,16 @@ def p_object_defn(t):
     'object : AT NAME OPENBRACE keys COMMA fields conditionals CLOSEBRACE'
     t[2] = t[2].lower()
     try:
-        t.lexer.bib.addobject(t[2], t[4], [(None, t[6])] + t[7], t.lexer.defaults, t.lexer.file, t.lineno(2))._check()
+        t.lexer.bib.addobject(t[2], t[4], [({}, t[6])] + t[7], t.lexer.defaults, t.lexer.file, t.lineno(2))._check()
+    except Warning, detail:
+	t.lexer.bib.warning("%s:%d: %s" % (t.lexer.file, t.lineno(2), detail))
+    except Exception, detail:
+	t.lexer.bib.error("%s:%d: %s" % (t.lexer.file, t.lineno(2), detail))
+
+def p_object_extension(t):
+    'object : ATEXTEND OPENBRACE keys COMMA fields conditionals CLOSEBRACE'
+    try:
+        t.lexer.bib.extendobject(t[3], [({}, t[5])] + t[6], t.lexer.defaults, t.lexer.file, t.lineno(1))
     except Warning, detail:
 	t.lexer.bib.warning("%s:%d: %s" % (t.lexer.file, t.lineno(2), detail))
     except Exception, detail:
@@ -641,7 +712,7 @@ def p_field(t):
 		    values += [t.lexer.bib[key]]
 		else:
 		    try:
-			t.lexer.bib.addobject('author', [key], [(None, {'name': key})], t.lexer.defaults, t.lexer.file, t.lineno(3))._check()
+			t.lexer.bib.addobject('author', [key], [({}, {'name': key})], t.lexer.defaults, t.lexer.file, t.lineno(3))._check()
 			values += [t.lexer.bib[key]]
 		    except Warning, detail:
 			t.lexer.bib.warning("%s:%d: %s" % (t.lexer.file, t.lineno(3), detail))
@@ -741,7 +812,7 @@ def parseaux(instream, bib):
 		    else:
 			options.extend(['--cite', cite])
         elif line[0:9] == "\\bibstyle":
-	    options.extend(['--style'] + line[10:].rstrip().rstrip("}").split(','))
+	    options.extend(['--style'] + line[10:].rstrip().rstrip("}").split(' '))
         elif line[0:8] == "\\bibdata":
             datafiles.extend(line[9:].rstrip().rstrip("}").split(','))
     bib.setoptions(options)
