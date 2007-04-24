@@ -3,12 +3,12 @@
 
 %HEVEA \renewcommand{\TeX}{TeX}
 %HEVEA \renewcommand{\LaTeX}{LaTeX}
-\newcommand{\XTeX}{Cross\TeX}
+\newcommand{\XTX}{Cross\TeX}
 \newcommand{\BibTeX}{\textsc{Bib}\TeX}
 
 %HEVEA \renewcommand{\par}{\begin{rawhtml}<p>\end{rawhtml}}
 
-\title{\XTeX{} Tutorial}
+\title{\XTX{} Tutorial}
 \author{Emin G\"un Sirer and Robert Burgess}
 \date{}
 
@@ -16,17 +16,25 @@
 \maketitle
 
 \textit{
-This tutorial will show you everything you need to know about \XTeX{}. It assumes basic familiarity with \BibTeX{}. You should have \XTeX{} installed.
+This tutorial will show you everything you need to know about \XTX{}. It
+assumes basic familiarity with \BibTeX{}. You should have \XTX{}
+installed.
 %HEVEA \begin{small}(This document is also available in \href{crosstex.pdf}{PDF}.)\end{small}
 }
 
-\XTeX{} is a modern bibliography typesetting tool that works in conjunction with \LaTeX{}. It first builds an object hierarchy based on the bibliography database. Then it parses the text at hand to determine which objects are being cited. Then it formats these objects according to the style selected in the document, as modified by the command line options. It then produces a references section that \LaTeX{} can incorporate into the original document.
+\XTX{} is a modern bibliography typesetting tool that works in
+conjunction with \LaTeX{}. It first builds an object hierarchy based on
+the bibliography database. Then it parses the text at hand to determine
+which objects are being cited. Then it formats these objects according
+to the style selected in the document, as modified by the command
+line options. It then produces a references section that \LaTeX{} can
+incorporate into the original document.
 
 
 
 \section{Quick start}
 
-First, make sure \XTeX{} is installed. Then, where you used to type:
+First, make sure \XTX{} is installed. Then, where you used to type:
 
 \begin{small}\begin{verbatim}
 $ latex paper  # Generate the .aux file
@@ -44,13 +52,17 @@ $ latex paper    # Incorporate the bibliographic information
 $ latex paper    # Get the labels right
 \end{verbatim}\end{small}
 
-\XTeX{} is backwards-compatible with \BibTeX{} and supports the standard \texttt{abbrv}, \texttt{alpha}, \texttt{full}, and \texttt{plain} bibliography styles.
+\XTX{} is backwards-compatible with \BibTeX{} and supports the standard
+\texttt{abbrv}, \texttt{alpha}, \texttt{full}, and \texttt{plain}
+bibliography styles.
 
-\section{Defining Objects: Inside the \texttt{.xtx} file}
+\section{Defining Objects: Inside the \texttt{.xtx} file\label{sec:objects}}
 
 \subsection{Objects}
 
-Everything in \XTeX{} is an object. Every object has a \textit{key} that can be used to refer to it, and \textit{fields} containing values. Here are some objects:
+Everything in \XTX{} is an object. Every object has a \textit{key} that
+can be used to refer to it, and \textit{fields} containing values. Here
+are some objects:
 
 \begin{small}\begin{verbatim}
 @month{sep, name = "September"}
@@ -69,7 +81,16 @@ Everything in \XTeX{} is an object. Every object has a \textit{key} that can be 
 }
 \end{verbatim}\end{small}
 
-The first line defines a \texttt{month} object, henceforth known as \texttt{sep}, that has a single field called \texttt{name}, which consists of the string ``September''. From here on, other objects can simply refer to \texttt{sep} wherever a month is called for, and they will be referring to this object. The second line defines a \texttt{location} object named \texttt{rio}, while the third line defines an \texttt{author} object whose name requires complicated \LaTeX{} punctuation to format properly. The final entry defines an \texttt{article}, published in Rio de Janeiro in September. Note how it refers to the previous objects by their keys. The fields of \texttt{mypaper} end up as though it had been defined thus:
+The first line defines a \texttt{month} object, henceforth known as
+\texttt{sep}, that has a single field called \texttt{name}, which consists
+of the string ``September''. From here on, other objects can simply refer
+to \texttt{sep} wherever a month is called for, and they will be referring
+to this object. The second line defines a \texttt{location} object named
+\texttt{rio}, while the third line defines an \texttt{author} object whose
+name requires complicated \LaTeX{} punctuation to format properly. The
+final entry defines an \texttt{article}, published in Rio de Janeiro in
+September. Note how it refers to the previous objects by their keys. The
+fields of \texttt{mypaper} end up as though it had been defined thus:
 
 \begin{small}\begin{verbatim}
 @article{mypaper,
@@ -82,13 +103,15 @@ The first line defines a \texttt{month} object, henceforth known as \texttt{sep}
 }
 \end{verbatim}\end{small}
 
-Objects can be given multiple keys, as well. Take for example the following author:
+Objects can be given multiple keys, as well. Take for example the
+following author:
 
 \begin{small}\begin{verbatim}
 @author{rama, name="Venugopalan Ramasubramanian"}
 \end{verbatim}\end{small}
 
-However, Rama uses Venu and Arun as names for his alter egos. So we can define his object as follows:
+However, Rama uses Venu and Arun as names for his alter egos. So we can
+define his object as follows:
 
 \begin{small}\begin{verbatim}
 @author{rama = arun = venu, name="Venugopalan Ramasubramanian"}
@@ -104,9 +127,20 @@ author = "venu and egs"
 
 \subsection{Representation}
 
-Every kind of object, such as \texttt{month}, \texttt{location}, \texttt{author}, and \texttt{article}, knows how to convert itself into a string suitable for inclusion in the references section of a scholarly publication. For example, when \texttt{mypaper} referred to \texttt{sep} in the example, the actual value assigned was ``September''. Some objects, such as \texttt{mypaper}, will produce entire bibliography entries when referred to. In fact, when generating bibliographies, \texttt{crosstex} simply prints out the string representations of all the objects cited in the document.  Each object takes note of options passed into CrossTeX and generates a string representation accordingly.
+Every kind of object, such as \texttt{month}, \texttt{location},
+\texttt{author}, and \texttt{article}, knows how to convert itself into
+a string suitable for inclusion in the references section of a scholarly
+publication. For example, when \texttt{mypaper} referred to \texttt{sep}
+in the example, the actual value assigned was ``September''. Some objects,
+such as \texttt{mypaper} itself, will produce entire bibliography
+entries when referred to. In fact, when generating bibliographies,
+\texttt{crosstex} simply prints out the string representations of all
+the objects cited in the document.  Each object takes note of options
+passed into \XTX{} and generates a string representation accordingly.
 
-Simple, named objects, such as \texttt{month}, \texttt{location}, \texttt{author}, and others, have two forms: A long form and a short form. The object \texttt{sep} could be defined:
+Simple, named objects, such as \texttt{month}, \texttt{location},
+\texttt{author}, and others, have two forms: A long form and a short
+form. The object \texttt{sep} could be defined:
 
 \begin{small}\begin{verbatim}
 @month{sep,
@@ -115,17 +149,31 @@ Simple, named objects, such as \texttt{month}, \texttt{location}, \texttt{author
 }
 \end{verbatim}\end{small}
 
-By default, long names are used when generating bibliographic entries. If, however, the option \texttt{--short month} were given, the same month object would be shown as ``Sept.'' instead of ``September''. If only a name (no shortname) is specified, or, conversely, if only a shortname but no name is specified, the name given will be used in all cases. All named objects follow this pattern.
+By default, long names are used when generating bibliographic entries. If,
+however, the option \texttt{--short month} were given, the same month
+object would be shown as ``Sept.'' instead of ``September''. If only a
+name (no shortname) is specified, or, conversely, if only a shortname
+but no name is specified, the name given will be used in all cases. All
+named objects follow this pattern.
 
-However, because person names are so complicated, \texttt{author} objects are somewhat magical. If \texttt{--short author} is specified, authors will be represented with initials and a last name---the object \texttt{egs} would be represented ``E. G. Sirer''. If a \texttt{shortname} field is explicitly given for an author, that takes precedence and can be used for special cases. 
-By default, \XTeX{} is aware of many kinds of names and can correctly handle suffixes and last name modifiers such as Jr., Sr., III, IV, von, van, de, bin, and ibn. Just write the names out in full in their natural order, and \XTeX{} will render them properly, including such entries as:
+However, because person names are so complicated, \texttt{author}
+objects are somewhat magical. If \texttt{--short author} is specified,
+authors will be represented with initials and a last name---the object
+\texttt{egs} would be represented ``E. G. Sirer''. If a \texttt{shortname}
+field is explicitly given for an author, that takes precedence and can
+be used for special cases.  By default, \XTX{} is aware of many kinds of
+names and can correctly handle suffixes and last name modifiers such as
+Jr., Sr., III, IV, von, van, de, bin, and ibn. Just write the names out
+in full in their natural order, and \XTX{} will render them properly,
+including such entries as:
 
 \begin{small}\begin{verbatim}
 @author{rvr, name = "Robbert van Renesse"}
 @author{ldv, name = "Louis de Vargas, III"}
 \end{verbatim}\end{small}
 
-The \texttt{author} field is also somewhat special. Users of \BibTeX{} are familiar with specifying multiple authors as follows:
+The \texttt{author} field is also somewhat special. Users of \BibTeX{}
+are familiar with specifying multiple authors as follows:
 
 \begin{small}\begin{verbatim}
 @inproceedings{credence,
@@ -137,12 +185,11 @@ The \texttt{author} field is also somewhat special. Users of \BibTeX{} are famil
 }
 \end{verbatim}\end{small}
 
-Having looked up the rather non-trivial escape sequence to get the umlaut 
+Having looked up the rather non-trivial escape sequence to get the umlaut
 correct, and having made sure that all names are spelled correctly, there
 is no need to repeat or cut-and-paste the same information over and over
-again. The following sequence has the same effect as the previous one, 
+again. The following sequence has the same effect as the previous one,
 and is much easier to maintain:
-
 
 \begin{small}\begin{verbatim}
 @author{kwalsh, name = "Kevin Walsh"}
@@ -156,13 +203,31 @@ and is much easier to maintain:
 }
 \end{verbatim}\end{small}
 
-In all other contexts, string literals and object references are quite different: \texttt{month = sep} refers to the \texttt{sep} object, which carries additional fields and is rendered differently depending on the context and options, while \texttt{month = "sep"} always generates the literal string ``sep''.
+In all other contexts, string literals and object references are quite
+different: \texttt{month = sep} refers to the \texttt{sep} object, which
+carries additional fields and is rendered differently depending on the
+context and options, while \texttt{month = "sep"} always generates the
+literal string ``sep''.
 
 \subsection{Under the hood: References}
 
-Referring to an object, as in \texttt{month = sep}, assigns the stringified value of the object \texttt{sep}, in this case ``September'', to the \texttt{month} field of the object. In addition, it triggers something else to happen after all the fields have been assigned: Any required or optional fields in the referring object that do not yet have values will try to inherit them from the referenced object \texttt{sep}, if it has them. The actual \texttt{month} objects defined in the included \texttt{dates.xtx}, for example, define \texttt{monthno} fields in addition to their names. This value will be pulled along into objects that refer to months, enabling such objects to be sorted by month number easily. Power-users of \BibTeX{} will note that this mechanism is essentially equivalent to the \texttt{crossref} field in \BibTeX{}. The main difference here is that \XTeX{} supports this mechanism in a uniform manner across all object fields.
+Referring to an object, as in \texttt{month = sep}, assigns the
+stringified value of the object \texttt{sep}, in this case ``September'',
+to the \texttt{month} field of the object. In addition, it triggers
+something else to happen after all the fields have been assigned:
+Any required or optional fields in the referring object that do not
+yet have values will try to inherit them from the referenced object
+\texttt{sep}, if it has them. The actual \texttt{month} objects defined
+in the included \texttt{dates.xtx}, for example, define \texttt{monthno}
+fields in addition to their names. This value will be pulled along into
+objects that refer to months, enabling such objects to be sorted by month
+number easily. Power-users of \BibTeX{} will note that this mechanism is
+essentially equivalent to the \texttt{crossref} field in \BibTeX{}. The
+main difference here is that \XTX{} supports this mechanism in a uniform
+manner across all object fields.
 
-This can be combined with a new, advanced feature of \XTeX{}, conditional fields, to greatly simplify object specifications. Here is an example:
+This can be combined with a new, advanced feature of \XTX{}, conditional
+fields, to greatly simplify object specifications. Here is an example:
 
 \begin{small}\begin{verbatim}
 @conference{nsdi,
@@ -174,15 +239,20 @@ This can be combined with a new, advanced feature of \XTeX{}, conditional fields
 }
 \end{verbatim}\end{small}
 
-This is a simple \texttt{conference} object whose short name is "NSDI"
-and long name is "Symposium on Networked System Design and
-Implementation". In addition, it carries some conditional fields; that is, 
-fields that are included in the object only if they match the data in the
-referring context. For instance, if the \texttt{year} field of the referring object is equal to 2006, the nsdi object additionally has the fields \texttt{address=SanJose, month=may}. In a different year, a different conditional might be triggered. Any, all, or none of the conditionals mentioned may be appropriate (although obviously in this case, the year can only have one value).
+This is a simple \texttt{conference} object whose short name is
+``NSDI'' and long name is ``Symposium on Networked System Design and
+Implementation''. In addition, it carries some conditional fields; that
+is, fields that are included in the object only if they match the data
+in the referring context. For instance, if the \texttt{year} field of the
+referring object is equal to 2006, the \texttt{nsdi} object additionally
+has the fields \texttt{address=SanJose, month=may}. In a different year,
+a different conditional might be triggered. Any, all, or none of the
+conditionals mentioned may be appropriate (although obviously in this
+case, the year can only have one value).
 
-By itself, conditional fields are not very useful; their value in 
-simplifying object references becomes apparent when they are used
-in context. Look at the following reference:
+By itself, conditional fields are not very useful; their value in
+simplifying object references becomes apparent when they are used in
+context. Look at the following reference:
 
 \begin{small}\begin{verbatim}
 @inproceedings{credence,
@@ -193,30 +263,33 @@ in context. Look at the following reference:
 }
 \end{verbatim}\end{small}
 
-Conditional fields defined in the \texttt{nsdi} object will define the
-address and month fields of the conference based on the reference, 
+Conditional fields defined in the \texttt{nsdi} object will define
+the address and month fields of the conference based on the reference,
 and the resulting \texttt{credence} object will know that it occurred
-in San Jose in May through inheritance. This allows paper citations
-to avoid common errors by allowing all conference dates and locations
-to be defined in one place, and inherited correctly, without typos,
-by all papers that appeared at that conference. 
+in San Jose in May through inheritance. This allows paper citations to
+avoid common errors by allowing all conference dates and locations to
+be defined in one place, and inherited correctly, without typos, by all
+papers that appeared at that conference.
 
-If one wanted to override field inheritance for whatever reason, it would suffice to specify, say, a different month for the \texttt{credence} object. Only those fields that are missing in the referring context are inherited. Thus explicitly assigned information has precedence.
+If one wanted to override field inheritance for whatever reason, it would
+suffice to specify, say, a different month for the \texttt{credence}
+object. Only those fields that are missing in the referring context are
+inherited. Thus explicitly assigned information has precedence.
 
-\subsection{Managing databases}
+\subsection{Including other databases}
 
 Obviously, re-inventing \texttt{sep} and \texttt{SanJose} in every
-database would be exhausting. Instead, like objects can be collected
-together---for example, the standard \XTeX{} distribution provides 
-\texttt{dates.xtx}, which defines English month names, and 
-\texttt{locations.xtx}, which defines all locations at which a 
-major computer science conference was held in the recent years.
-Such modules can be includes with the \texttt{@include} primitive.
-For example, here is a complete \texttt{.xtx}
-file based on the standard \XTeX{} distribution:
+database would be exhausting. Instead, similar objects can be
+collected together---for example, the standard \XTX{} distribution
+provides \texttt{dates.xtx}, which defines English month names, and
+\texttt{locations.xtx}, which defines all locations at which a major
+computer science conference was held in the recent years.  Such modules
+can be includes with the \texttt{@include} primitive.  For example,
+here is a complete \texttt{.xtx} file based on the standard \XTX{}
+distribution:
 
 \begin{small}\begin{verbatim}
-@include conferences
+@include conferences-cs
 
 @author{egs, name = "Emin {G\"un} Sirer"}
 @author{kwalsh, name = "Kevin Walsh"}
@@ -229,7 +302,12 @@ file based on the standard \XTeX{} distribution:
 }
 \end{verbatim}\end{small}
 
-This will search for \texttt{conferences.xtx} or \texttt{conferences.bib} and include it in the appropriate place before parsing the rest of the file. \XTeX{} by default looks in a standard system directory and the current directory; additional search paths can be specified with the \texttt{--dir} option. The standard \texttt{conferences.xtx} begins:
+This will search for \texttt{conferences-cs.xtx} or \texttt{conferences-cs.bib}
+and include it in the appropriate place before parsing the rest of the
+file. \XTX{} by default looks in a standard system directory and the
+directory containing the database or document being processed; additional
+search paths can be specified with the \texttt{--dir} option. The standard
+\texttt{conferences-cs.xtx} begins:
 
 \begin{small}\begin{verbatim}
 @include dates
@@ -238,36 +316,94 @@ This will search for \texttt{conferences.xtx} or \texttt{conferences.bib} and in
 ...
 \end{verbatim}\end{small}
 
-Thus, the \texttt{credence} object has access to well-defined locations, dates, and conference names.
+Thus, the \texttt{credence} object has access to well-defined locations,
+dates, and conference names.
 
-On startup, \texttt{crosstex} will read in the database \texttt{standard}, which in the distribution pulls in the \texttt{dates} database and some information to help accurate formatting of titles.  Having the dates available by default is necessary for backwards compatibility with \BibTeX{}; however, the administrator may edit the standard database in order to automatically include other important files such as an institution-local bibliography.
+On startup, \texttt{crosstex} will read in the database \texttt{standard},
+which in the distribution pulls in the \texttt{dates} database and
+some information to help accurate formatting of titles.  Having the
+dates available by default is necessary for backwards compatibility
+with \BibTeX{}; the administrator may also edit the standard database
+in order to automatically include additional important files such as an
+institution-local bibliography.
 
-It is possible for the same object to be defined multiple times under the 
-same key (sometimes, this is inevitable when there are multiple bibliographic
-databases involved maintained by different entities). By default, \XTeX{}
-will silently ignore such definitions as long as all versions of the object
-are identical. When two separate objects defined under the same key are not
-identical, it points to an inconsistency in the bibliographic database, which
-will cause \XTeX{} to issue a warning. Passing \XTeX{} the \texttt{--strict} flag will force it to issue such warnings even when the objects are identical,
-to help facilitate people who might want to maintain databases free of
-duplicate entries.
+It is possible for the same object to be defined multiple times under
+the same key (sometimes, this is inevitable when there are multiple
+bibliographic databases involved maintained by different entities). By
+default, \XTX{} will silently ignore such definitions as long as all
+versions of the object are identical. When two separate objects defined
+under the same key are not identical, it points to an inconsistency
+in the bibliographic database, which will cause \XTX{} to issue a
+warning. Passing \XTX{} the \texttt{--strict} flag will force it to issue
+such warnings even when the objects are identical, to help facilitate
+people who might want to maintain databases free of duplicate entries.
 
-Recall that \XTeX{} enables an object to appear under multiple keys. 
-This aliasing can be done for any object and can be used anywhere in
-the database. The \texttt{.tex} file can cite any object by any one of
-its synonymous keys. There is a strange quirk with the use of
-synonymous keys stemming from a design error in \LaTeX{}, which users
-should keep in mind: If a \texttt{.tex} file cites a paper with
-citation keys name1 and name2 twice, under both keys, the reference
-will appear twice in the produced bibliography. As a result, feel free
-to use any one of the tags to cite papers, but it's not a good idea to
-use more than one tag to refer to a citation within a given paper.
-(\XTeX{} will issue a warning if an entry would be duplicated.)
+\subsection{Extending objects}
 
-When databases get exceptionally long and many elements have very similar fields---e.g., they are all in the same conference or have the same informative \texttt{category} field---you can make use of another special \XTeX{} command, \texttt{@default}. For example, here is the beginning of the \texttt{usenix.xtx} database:
+Occasionally it is useful to add information to an object that already
+exists.  For example, say you have a paper to cite that appeared in
+USENIX 2006, but the system database only has the following information
+about the USENIX conference:
 
 \begin{small}\begin{verbatim}
-@include conferences
+@conference{usenix = usenixg,
+  shortname = "USENIX",
+  longname = "USENIX Annual Technical Conference",
+  [year=2005] address=Anaheim, month=apr,
+  [year=2004] address=Boston, month=jun,
+  [year=2003] address=SanAntonio, month=jun,
+  [year=2002] address=Monterey, month=jun,
+  [year=2001] address=Boston, month=jun,
+  [year=2000] address=SanDiego, month=jun,
+  [year=1999] address=Monterey, month=jun,
+  [year=1996] address=SanDiego, month=jan,
+}
+\end{verbatim}\end{small}
+
+Obviously, the best solution is to add the following line to the entry
+in the system conferences database:
+
+\begin{small}\begin{verbatim}
+  [year=2006] address=Boston, month=may,
+\end{verbatim}\end{small}
+
+However, you may not have permission to edit the database.  Now there are
+two options: Cut-and-paste the usenix object into some local database with
+a new name so there is no conflict, or put the address and month directly
+into the paper's entry.  Neither one is a good solution.  What you want is
+to be able to extend the \texttt{usenix} object even though it is in
+another database you can't edit.
+
+Enter the \texttt{@extend} primitive.  The following solves the example:
+
+\begin{small}\begin{verbatim}
+@extend{usenix,
+  [year=2006] address=Boston, month=may,
+}
+\end{verbatim}\end{small}
+
+An \texttt{@extend} entry looks just like an object definition.  However,
+rather than defining a new object, the object with the specified key is
+re-built with the information provided, inheriting its old fields with
+lower priority so that extended fields take precedence.
+
+It is possible to create new aliases along the way.  Simply list aliases
+in the exact same syntax as for object definition; all the aliases listed
+must either be a new, unused alias or refer to the same unique object.
+After the object is extended, all the aliases mentioned will be handles
+to refer to the newly-extended object.  This can be useful for defining
+shorter, easier-to-remember names for database objects.
+
+\subsection{Default fields}
+
+When databases get exceptionally long and many elements have very
+similar fields---e.g., they are all in the same conference or have the
+same informative \texttt{category} field---you can make use of another
+special \XTX{} command, \texttt{@default}. For example, here is the
+beginning of the \texttt{usenix.xtx} database:
+
+\begin{small}\begin{verbatim}
+@include conferences-cs
 
 @inproceedings{DBLP:conf/usenix/RuanP04,
   author    = {Yaoping Ruan and
@@ -301,7 +437,7 @@ ech/general/cantrill.html},
 With \texttt{@default}, it could be shortened:
 
 \begin{small}\begin{verbatim}
-@include conferences
+@include conferences-cs
 
 @default booktitle = usenixg
 @default year = 2004
@@ -330,7 +466,8 @@ ech/general/cantrill.html},
 ...
 \end{verbatim}\end{small}
 
-Later in the file are entries with different years. A new \texttt{@default} command takes precedence over the first:
+Later in the file are entries with different years. A new
+\texttt{@default} command takes precedence over the first:
 
 \begin{small}\begin{verbatim}
 ...
@@ -358,265 +495,416 @@ Later in the file are entries with different years. A new \texttt{@default} comm
 
 As with field values inherited from references objects, field values
 inherited from \texttt{default} definitions have lower precedence. Any
-object that explicitly assigns a value to a field will override any 
+object that explicitly assigns a value to a field will override any
 \texttt{default} definitions in effect at that point in the bibliography.
 
+\subsection{Comments}
 
-\section{Citing References}
+Comments in \XTX{} can be accomplished in a number of ways.  Simple comments
+that last until the end of the line are introduced with a \texttt{\%} character.
+For example:
 
-Once you have defined your objects in the .XTX file, you may refer to them in your .TEX file. Such
-references are known as citations, and are accomplished with the \verb"\cite" command in LaTeX. 
-\XTeX{} supports two kinds of citations, both backwards compatible with standard LaTeX citations.
+\begin{small}\begin{verbatim}
+@include conferences-cs   % Because we need nsdi later on
+\end{verbatim}\end{small}
+
+More involved, potentially multi-line comments appear as their own kind of
+primitive:
+
+\begin{small}\begin{verbatim}
+@comment "This is a database for...
+Yadda yadda...
+Now I've said enough."
+\end{verbatim}\end{small}
+
+This syntax can also take advantage of the
+\verb"{"\textit{\ldots}\verb"}" form of strings in order to comment
+out whole objects or sets of objects, since braces are counted and matched
+correctly so that embedded strings don't accidentally end the comment.
+
+\begin{small}\begin{verbatim}
+@comment {
+  @inproceedings{bad,
+    title = "Some paper we want to temporarily comment out",
+    author = "Somebody and Somebody Else",
+    ...
+  }
+}
+\end{verbatim}\end{small}
+
+\section{Citing References\label{sec:citing}}
+
+Once you have defined your objects in the \texttt{.xtx} file, you may
+refer to them in your \texttt{.tex} file. Such references are known as
+citations, and are accomplished with the \verb"\cite" command in \LaTeX{}.
+\XTX{} supports two kinds of citations, both backwards compatible with
+standard \LaTeX{} citations.
 
 \subsection{Plain Citations}
 
-The first type are plain citations based on an object key. Plain citations simply take a comma-separated
-list of object keys, and cite the objects whose keys, specified in the XTX file as the first item 
-following the object definition, match the cited key. For instance, given the definitions
-above, the following are examples of plain citations:
+The first type are plain citations based on an object key. Plain citations
+simply take a comma-separated list of object keys, and cite the objects
+whose keys, specified in the XTX file as the first item following
+the object definition, match the cited key. For instance, given the
+definitions above, the following are examples of plain citations:
 
 \begin{small}\begin{verbatim}
-Credence~\cite{credence} provides a reputation system for peer-to-peer systems.
-These two papers ~\cite{DBLP:conf/usenix/PadioleauR03,DBLP:conf/usenix/DouglisI03} appeared
-at the Usenix annual conference.
+Credence~\cite{credence} provides a reputation
+system for peer-to-peer systems.  These two
+papers~\cite{DBLP:conf/usenix/PadioleauR03,DBLP:conf/usenix/DouglisI03}
+appeared at the Usenix annual conference.
 \end{verbatim}\end{small}
 
-The key used in a plain citation must match, exactly, the key used in the object definition. The
-matching is case sensitive, so ``foo'' and ``FOO'' refer to different objects. 
+The key used in a plain citation must match, exactly, the key used in
+the object definition. The matching is case sensitive, so ``foo'' and
+``FOO'' refer to different objects.
 
-Recall that \XTeX{} allows any object to have multiple keys, and any object can be 
-cited using any of its keys. However, due to a limitation in LaTeX, objects that 
-have multiple keys should only be cited under a single key in any given document. Because 
-LaTeX assumes that every unique key refers to a separate document, citing  
-the same document under multiple keys will cause LaTeX to emit a separate citation
-for each key, resulting in duplicate items on the output. Luckily, it is usually pretty 
-easy to stick to the one key per document rule, and \XTeX{} will detect and emit a warning
-if you cite the same paper by more than one key. Perhaps one of these days, LaTeX can be
-modified to deal correctly with items that appear under multiple keys.
+Recall that \XTX{} enables an object to appear under multiple keys.
+This aliasing can be done for any object and can be used anywhere in the
+database. The \texttt{.tex} file can cite any object by any one of its
+synonymous keys. There is a strange quirk with the use of synonymous
+keys stemming from a design error in \LaTeX{}, which users should
+keep in mind: \LaTeX{} assumes that each object has only one key, and
+thus citing the same object under two different keys would require it
+appearing twice in the references.  Therefore, authors must be careful
+to cite each paper by only one of its aliases.  Fortunately, it does not
+matter which alias is used in the document, so long as it is consistent,
+and it is easy for \XTX{} to detect when multiple aliases are being used,
+so an error message will appear.
 
-Overall, there really are not that many frills to plain citations. They work exactly the way
-one would imagine they would. Their big drawback, however, is that you need to remember
-the precise key for every object you want to cite. Often, this requires browsing database
-files, searching for author names and keywords in the title so you can figure out whether
-you named the key ``credence'' or ``credence\_nsdi04'' or ``nsdi04\_credence''. Even though 
-the standard libraries that come with \XTeX{} follow the uniform naming rule from the DBLP
-database, figuring out the uniform name still requires knowing the authors and the year, which
-often requires a google search.  To make the citation process even easier and simpler, \XTeX{} supports a 
-second kind of citation, where the user need not recall the object key precisely.
+Overall, there really are not that many frills to plain citations. They
+work exactly the way one would imagine they would. Their big drawback,
+however, is that you need to remember the precise key for every
+object you want to cite. Often, this requires browsing database files,
+searching for author names and keywords in the title so you can figure
+out whether you named the key ``credence'' or ``credence\_nsdi04'' or
+``nsdi04\_credence''. Even though the standard libraries that come with
+\XTX{} follow the uniform naming rule from the DBLP database, figuring
+out the uniform name still requires knowing the authors and the year,
+which often requires a Google search.  To make the citation process
+even easier and simpler, \XTX{} supports a second kind of citation,
+where the user need not recall the object key precisely.
 
 \subsection{Constrained Citations}
 
-The second kind of citation that \XTeX{} supports is known as a \textit{constrained citation}.
-Constrained citations enable the user to cite a paper by specifying pieces of information about
-the reference that uniquely identify it. For instance, suppose you want to reference 
-that paper I wrote in 1999 on how to split up virtual machines, and you remember that it appeared
-at SOSP. You could search your database for some partial terms that appear in the entry (e.g. 1999,
-sosp, sirer), copy the key for the entry, and issue a plain citation using that precise key. This
-is what many BibTeX users do without thinking.  But it is a lot of pointless boring work, and computers were  
-supposed to automate boring tasks. That's where constrained citations come in. 
+The second kind of citation that \XTX{} supports is known as a
+\textit{constrained citation}.  Constrained citations enable the user
+to cite a paper by specifying pieces of information about the reference
+that uniquely identify it. For instance, suppose you want to reference
+that paper I wrote in 1999 on how to split up virtual machines, and
+you remember that it appeared at SOSP. You could search your database
+for some partial terms that appear in the entry (e.g. 1999, sosp,
+sirer), copy the key for the entry, and issue a plain citation using
+that precise key. This is what many \BibTeX{} users do without thinking.
+But it is a lot of pointless boring work, and computers were supposed
+to automate boring tasks. That's where constrained citations come in.
 
-A constrained citation begins with an exclamation point, and specifies a series of colon-separated
-terms that identify the reference being cited. Some examples of constrained citations are:
+A constrained citation begins with an exclamation point, and specifies
+a series of colon-separated terms that identify the reference being
+cited. Some examples of constrained citations are:
+
 \begin{small}\begin{verbatim}
 \cite{!author=sirer:title=virtual:year=1999}
 \cite{!author=sirer:title=virtual:title=machines:year=1999}
 \cite{!author=sirer:author=walsh:year=2006}
 \end{verbatim}\end{small}
-Colons separate constraints. Each constraint identifies 
-a field that the reference must have, as well as a string that should appear somewhere within that 
-named field. 
 
-Each string in a constrained citation is checked for a partial match in the corresponding field. So 
-``author=smith'' will match both ``Smith'' and ``Smithson.''
+Colons separate constraints. Each constraint identifies a field that the
+reference must have, as well as a string that should appear somewhere
+within that named field.
 
-Sometimes, there are multiple constraints that apply to the same field. Specifying the same field multiple times, 
-as in the second and third examples above, is perfectly acceptable, but gets tedious. So \XTeX{} provides a
-way to specify multiple constraints for the same field; every word separated by a ``-'' sign is treated
-as a separate constraint. So the examples above can be shortened down to:
+Each string in a constrained citation is checked for a partial match in
+the corresponding field. So ``author=smith'' will match both ``Smith''
+and ``Smithson.''
+
+Sometimes, there are multiple constraints that apply to the same
+field. Specifying the same field multiple times, as in the second and
+third examples above, is perfectly acceptable, but gets tedious. So \XTX{}
+provides a way to specify multiple constraints for the same field; every
+word separated by a ``-'' sign is treated as a separate constraint. So
+the examples above can be shortened down to:
+
 \begin{small}\begin{verbatim}
 \cite{!author=sirer:title=virtual:year=1999}
 \cite{!author=sirer:title=virtual-machines:year=1999}
 \cite{!author=sirer-walsh:year=2006}
 \end{verbatim}\end{small}
 
-Multiple constraints within a given field are not ordered and can appear anywhere in the string, so 
-``virtual-machines'' will match ``virtual machines,'' as well as ``machines virtual,'' and even 
-``building a machineshop virtually.'' 
+Multiple constraints within a given field are not ordered and can appear
+anywhere in the string, so ``virtual-machines'' will match ``virtual
+machines,'' as well as ``machines virtual,'' and even ``building a
+machineshop virtually.''
 
-Several shorthands make constrained citations even easier to specify by providing defaults 
-for fieldnames. If the fieldnames are missing, the first constraint defaults to ``author.'' The
-second constraint defaults to ``title'' if the value is not numeric; if it is, it defaults to ``year.'' 
-Finally, the last constraint defaults to ``year.'' So the examples above can be shortened even further:
+Several shorthands make constrained citations even easier to specify by
+providing defaults for fieldnames. If the fieldnames are missing, the
+first constraint defaults to ``author.'' The second constraint defaults to
+``title'' if the value is not numeric; if it is, it defaults to ``year.''
+Finally, the last constraint defaults to ``year.'' So the examples above
+can be shortened even further:
+
 \begin{small}\begin{verbatim}
 \cite{!sirer:virtual:1999}
 \cite{!sirer:virtual-machines:1999}
 \cite{!sirer-walsh:2006}
 \end{verbatim}\end{small}
 
-Two caveats are worth remembering about constrained citations. First, the citation needs to be
-uniquely identifiable. If the constraints you specified match more than one object, \XTeX{} will 
-print an error and identify the matching objects. You can then specify more constraints until
-you have nailed down the reference you had in mind or switch to a plain citation. Second, 
-due to a limitation in LaTeX, referring to the same paper through different constraints (e.g. 
-``!sirer:virtual:1999'' and ``!sirer:virtual-machines:1999'') will cause that paper to appear
-twice in the references section. For each paper, you should figure out the constraints you had
-in mind and stick to them throughout your document. 
+Two caveats are worth remembering about constrained citations. First,
+the citation needs to be uniquely identifiable. If the constraints you
+specified match more than one object, \XTX{} will print an error and
+identify the matching objects. You can then specify more constraints until
+you have nailed down the reference you had in mind or switch to a plain
+citation. Second, due to a limitation in \LaTeX{} mentioned above for plain
+citations, referring to the same paper through different constraints
+(e.g.  ``!sirer:virtual:1999'' and ``!sirer:virtual-machines:1999'')
+will cause an error so the paper does not appear twice in the references
+section. For each paper, you should figure out the constraints you had
+in mind and stick to them throughout your document.
 
-Overall, constrained citations are a very convenient way to cite papers without having to
-look anything up. They fit naturally to the way people recall citations. The entire concept
-was lifted in its entireity from Norman Ramsey's nbibtex system.
+Overall, constrained citations are a very convenient way to cite papers
+without having to look anything up. They fit naturally to the way people
+recall citations. The concept was entirely lifted from Norman Ramsey's
+\texttt{nbibtex} system.
 
 \subsection{Citation Appearance}
 
 How the citation itself appears is controlled by the citation style,
-and is controlled by options specified to crosstex either in the LaTeX
-file or passed on the command line during invocation. The argument to
-the \texttt{--cite-by} option determines how the citations appear in
-the body of the text.  There are three possible arguments to
-\texttt{--cite-by}.
+and is controlled by options specified to crosstex either in the \LaTeX{}
+file or passed on the command line during invocation. The argument to the
+\texttt{--cite-by} option determines how the citations appear in the body
+of the text.  There are three possible arguments to \texttt{--cite-by}.
 
 \texttt{numeric} produces citations that appear like this ``[1]''. The
 numbers correspond to the location of the entry in the references
-section. Another option determines how the references section is
-sorted (e.g. in the order cited, alphabetized by author, or sorted
-according to any field of choice), and thus affects the particular
-number used to refer to a particular reference.
+section. Another option determines how the references section is sorted
+(e.g. in the order cited, alphabetized by author, or sorted according
+to any field of choice), and thus affects the particular number used to
+refer to a particular reference.
 
-\texttt{initials} produces citations that appear like this ``[WS04]''. The particular rule used to derive the initials from 
-author names is somewhat complex, but roughly speaking, the citation string consists of the first initials of the authors
-last names, appended with the year of publication. If there is a single author, then the first three letters of the
-author's last name is used instead. A paper by Sirer in 2006 would be cited as ``[Sir06]'' under this scheme. If there are five or more authors, the first three initials are appended with a ``+'' sign and the year. For instance, a paper by Aardvark, Dewey, Chethem, and Howe
-would be cited as ``[ADCH06]'', but if Aardvark and friends sign on Elvis as a couathor, the citation string becomes ``[ADC+06]''. 
-Finally, last name modifiers (such as ``van'') are preserved in lower case. A paper by Sirer and van Renesse would be 
-cited as ``[SvR07]''.
+\texttt{initials} produces citations that appear like this ``[WS04]''. The
+particular rule used to derive the initials from author names is
+somewhat complex, but roughly speaking, the citation string consists of
+the first initials of the authors last names, appended with the year of
+publication. If there is a single author, then the first three letters
+of the author's last name is used instead. A paper by Sirer in 2006
+would be cited as ``[Sir06]'' under this scheme. If there are five
+or more authors, the first three initials are appended with a ``+''
+sign and the year. For instance, a paper by Aardvark, Dewey, Chethem,
+and Howe would be cited as ``[ADCH06]'', but if Aardvark and friends
+sign on Elvis as a coauthor, the citation string becomes ``[ADC+06]''.
+Finally, last name modifiers (such as ``van'') are preserved in lower
+case. A paper by Sirer and van Renesse would be cited as ``[SvR07]''.
 
-\texttt{fullname} produces citations that appear like this ``[Walsh and Sirer 06]''. The last names appear in full for
-references authored by up to two authors. A paper by Dewey, Chethem and Howe would be cited as ``[Dewey et al. 06]''.
-Fullname citations are the most readable and should be used whenever possible. 
+\texttt{fullname} produces citations that appear like this ``[Walsh and
+Sirer 06]''. The last names appear in full for references authored by
+up to two authors. A paper by Dewey, Chethem and Howe would be cited as
+``[Dewey et al. 06]''.  Fullname citations are the most readable and
+should be used whenever possible.
 
-\section{The References Section}
+\section{The References Section\label{sec:references}}
 
-\XTeX{} provides many options that enable the user to control the appearance
-of the references within a document. This section describes various options
-that can be passed to \XTeX{} for achieving the precise formatting desired. 
+\XTX{} provides many options that enable the user to control the
+appearance of the references within a document. This section describes
+various options that can be passed to \XTX{} for achieving the precise
+formatting desired.
 
-\paragraph{Invoking CrossTeX}
+\paragraph{Invoking \XTX{}}
 
-In its simplest invocation, \texttt{crosstex} takes one or more file names, e.g. \texttt{crosstex \textrm{\textit{file1 file2 ...}}}. Each file is processed separately. Files are found in a search path containing the current directory and a central system directory (e.g. \texttt{/usr/share/texmf/crosstex}); this search path can be extended with the \texttt{--dir} option. Extensions (\texttt{.aux}, \texttt{.xtx}, \texttt{.bib}) will be added if left unspecified. The output will always appear in the current directory, under the same name as the file being processed with the extension changed to \texttt{.bbl}.
+In its simplest invocation, \texttt{crosstex} takes one or more file
+names, e.g. \texttt{crosstex \textrm{\textit{file1 file2 ...}}}. Each
+file is processed separately. Files are found in a search path containing
+the directory containing the file being processed and a central system
+directory (e.g. \texttt{/usr/local/crosstex/lib}); this search path can
+be extended with the \texttt{--dir} option. Extensions (\texttt{.aux},
+\texttt{.xtx}, \texttt{.bib}) will be added if necessary to find the
+file. Each output will always appear in the same directory as the
+file processed, under the same name but with the extension changed to
+\texttt{.bbl}.
 
-If \texttt{crosstex} is invoked as \texttt{xtx2bib} or the \texttt{--xtx2bib} option is given, the output extension will be \texttt{.bib}, and the bibliographic information will be back-converted to plain \BibTeX{}.
+If \texttt{crosstex} is invoked as \texttt{xtx2bib} or the
+\texttt{--xtx2bib} option is given, the output extension will be
+\texttt{.bib}, and the bibliographic information will be back-converted
+to plain \BibTeX{}.
 
-If \texttt{crosstex} is invoked as \texttt{xtx2html} or the \texttt{--xtx2html} option is given, the output extension will be \texttt{.html}; some style information will be changed as appropriate for formatting a web bibliography, and the output will be wrapped into a \LaTeX{} document and translated into HTML by piping it through \texttt{hevea}. Sometimes it is necessary to run this more than once to get labels right, as with \LaTeX{}; \texttt{hevea} will print an appropriate message if this is necessary. By default, the style used for HTML is pretty non-traditional, but can be overridden by further options: \texttt{xtx2html --style plain \textrm{\textit{file}}} looks nice and tame.
+If \texttt{crosstex} is invoked as \texttt{xtx2html} or the
+\texttt{--xtx2html} option is given, the output extension will be
+\texttt{.html}; some style information will be changed as appropriate
+for formatting a web bibliography, and the output will be wrapped
+into a \LaTeX{} document and translated into HTML by piping it through
+\texttt{hevea}. Sometimes it is necessary to run this more than once
+to get labels right, as with \LaTeX{}; \texttt{hevea} will print an
+appropriate message if this is necessary. By default, the style used
+for HTML is pretty non-traditional, but can be overridden by further
+options: \texttt{xtx2html --style plain \textrm{\textit{file}}} looks
+nice and tame.
 
-A number of options can be specified to change the style of the bibliography to override or tweak that specified by a document.
+A number of options can be specified to change the style of the
+bibliography to override or tweak that specified by a document.
 
 \paragraph{Abbreviation}
 
-The \texttt{--short} option allows many kinds of objects to be abbreviated in the bibliography. For example, to use shortened month names (`Jan.', `Feb.') instead of long ones (`January', `February'), simply use the option \texttt{--short month}. This allows the creators of the database to specify both month names just once, refer to the relevant \texttt{month} objects in their entries, and the formatting of month names to be consistently chosen when the bibliography is formatted.
+The \texttt{--short} option allows many kinds of objects to be abbreviated
+in the bibliography. For example, to use shortened month names (`Jan.',
+`Feb.') instead of long ones (`January', `February'), simply use
+the option \texttt{--short month}. This allows the creators of the
+database to specify both month names just once, refer to the relevant
+\texttt{month} objects in their entries, and the formatting of month
+names to be consistently chosen when the bibliography is formatted.
 
-Anything with a name can be abbreviated this way---so a conference can be shortened from ``Networked Systems Design and Implementation'' to ``NSDI'' when under the space crunch or filled back out later with a simple option. Databases mention each name only once, and, even more importantly, what name to use is left to the document and the user and is not imposed on the database maintainer.
+Anything with a name can be abbreviated this way---so a conference can
+be shortened from ``Networked Systems Design and Implementation'' to
+``NSDI'' when under the space crunch or filled back out later with a
+simple option. Databases mention each name only once, and, even more
+importantly, what name to use is left to the document and the user and
+is not imposed on the database maintainer.
 
-Objects that can be shortened include \texttt{author}, \texttt{conference}, \texttt{conferencetrack}, \texttt{country}, \texttt{journal}, \texttt{month}, \texttt{state}, \texttt{string}, and \texttt{workshop}.
+Objects that can be shortened include \texttt{author},
+\texttt{conference}, \texttt{conferencetrack}, \texttt{country},
+\texttt{journal}, \texttt{month}, \texttt{state}, \texttt{string},
+and \texttt{workshop}.
 
 \paragraph{Authors}
 
 Author names can be complicated, and are the source of much confusion
-in \BibTeX{}. The same author might appear with a middle name, without
-a middle name, last name first, with abbreviated first names, mis-spelled,
+in \BibTeX{}. The same author might appear with a middle name, without a
+middle name, last name first, with abbreviated first names, mis-spelled,
 with different combinations of accents, and so forth.
 
-In \XTeX{}, the database maintainer can enter the name just once in an
+In \XTX{}, the database maintainer can enter the name just once in an
 author object and control the way it is formatted via options. The
 \texttt{--short author} option generates abbreviated author names
 automatically if an author doesn't have an explicitly mentioned short
-name, and \XTeX{} is careful to handle complicated names with accents
+name, and \XTX{} is careful to handle complicated names with accents
 and modifiers correctly when abbreviating or generating citation keys.
 
-The option \texttt{--last-first} causes the first author in each list to be formatted `Last, First' instead of `First Last'.  \XTeX{} does the Right Thing with modifiers here, too.  When author names are capitalized with \texttt{--capitalize author}, \XTeX{} carefully works around \LaTeX{} commands and accents to produce clean-looking names.
+The option \texttt{--last-first} causes the first author in each list
+to be formatted `Last, First' instead of `First Last'.  \XTX{} does the
+Right Thing with modifiers here, too.  When author names are capitalized
+with \texttt{--capitalize author}, \XTX{} carefully works around \LaTeX{}
+commands and accents to produce clean-looking names.
 
 \paragraph{Titles}
 
 Title case is one of the most common inconsistencies when using
-BibTeX. Often, some papers are cited with lower-case titles, some are
-all upper-case, and some follow mixed title-case. Key acronyms
-(e.g. BGP) and proper nouns (e.g. Internet) are haphazardly
-capitalized, or not, depending on how diligent the author was when
-putting together the bibliographic database.
+\BibTeX{}. Often, some papers are cited with lower-case titles, some are all
+upper-case, and some follow mixed title-case. Key acronyms (e.g. BGP)
+and proper nouns (e.g. Internet) are haphazardly capitalized, or not,
+depending on how diligent the author was when putting together the
+bibliographic database.
 
-\XTeX{} ensures that all titles follow the same uniform capitalization standard, even if they appear in a wild variety of styles in the database.  The first letter of each word will become capitalized, the rest lower, the standard known as ``titlecase''.  \XTeX{} is very careful to ensure the titles come out looking ``good''---words in StudlyCaps or ALLCAPS are retained as-is, \LaTeX{} commands and anything in math mode are protected, compound words such as ``Peer-to-Peer'' are split into words, capitalized correctly, and re-assembled, and additionally a list of known phrases are carefully found and formatted.  For example, any appearance of a string that is (ignoring case) equivalent to ``USENIX'' appears as ``USENIX''.  These phrases are found at run-time by \XTeX{} in \texttt{@titlephrase} commands, such as:
+\XTX{} ensures that all titles follow the same uniform capitalization
+standard, even if they appear in a wild variety of styles in the database.
+The first letter of each word will become capitalized, the rest lower,
+the standard known as ``titlecase''.  \XTX{} is very careful to ensure
+the titles come out looking ``good''---words in StudlyCaps or ALLCAPS are
+retained as-is, \LaTeX{} commands and anything in math mode are protected,
+compound words such as ``Peer-to-Peer'' are split into words, capitalized
+correctly, and re-assembled, and additionally a list of known phrases are
+carefully found and formatted.  For example, any appearance of a string
+that is (ignoring case) equivalent to ``USENIX'' appears as ``USENIX''.
+These phrases are found at run-time by \XTX{} in \texttt{@titlephrase}
+commands, such as:
 
 \begin{small}\begin{verbatim}
 @titlephrase "USENIX"
 @titlephrase "Linux"
 \end{verbatim}\end{small}
 
-The standard include files define certain common Computer Science phrases such as these, but they can appear anywhere in the \texttt{.xtx} file.
-Small words, such as ``a'', ``an'', ``the'', etc. are also handled specially: They are made lower-case except at the beginning of the title or after certain punctuation, such as long dashes or colons.  These, too, are defined at run-time by \texttt{@titlesmall} commands:
+The standard include files define certain common Computer Science phrases
+such as these, but they can appear anywhere in the \texttt{.xtx} file.
+Small words, such as ``a'', ``an'', ``the'', etc. are also handled
+specially: They are made lower-case except at the beginning of the title
+or after certain punctuation, such as long dashes or colons.  These,
+too, are defined at run-time by \texttt{@titlesmall} commands:
 
 \begin{small}\begin{verbatim}
 @titlesmall "a"
 @titlesmall "the"
 \end{verbatim}\end{small}
 
-Again, the standard include files define important English small words to start with.
+Again, the standard include files define important English small words
+to start with.
 
-An example title with the default might be ``Aardvark: A System for Peer-to-Peer BGP Routing on the Internet''.
+An example title with the default might be ``Aardvark: A System for
+Peer-to-Peer BGP Routing on the Internet''.
 
-With \texttt{--titlecase lower}, Only the first letter of the title and those following punctuation are capitalized, the rest put into lower-case.  All of the special cases for the default title-case still apply.  Thus, the example title would appear ``Aardvark: A system for peer-to-peer BGP routing on the Internet''.
+With \texttt{--titlecase lower}, Only the first letter of the title and
+those following punctuation are capitalized, the rest put into lower-case.
+All of the special cases for the default title-case still apply.  Thus,
+the example title would appear ``Aardvark: A system for peer-to-peer
+BGP routing on the Internet''.
 
-With \texttt{--titlecase upper}, everything, even known phrases and small words, are put into upper-case thus: ``AARDVARK: A SYSTEM FOR PEER-TO-PEER BGP ROUTING ON THE INTERNET''.  Commands and math-mode are still protected.
+With \texttt{--titlecase upper}, everything, even known phrases and
+small words, are put into upper-case thus: ``AARDVARK: A SYSTEM FOR
+PEER-TO-PEER BGP ROUTING ON THE INTERNET''.  Commands and math-mode are
+still protected.
 
-Finally, to allow titles to appear as they are specified in the database, use \texttt{--titlecase as-is}.
+Finally, to allow titles to appear as they are specified in the database,
+use \texttt{--titlecase as-is}.
 
 \paragraph{Proceedings}
 
-There are a variety of styles in use when citing papers at conferences. Some
-people prefer to precede the conference name with ``In Proceedings of the ''. 
-These same people usually use ``In Proc. of '' when pressed for space.
-With \texttt{--add-proceedings}, \XTeX{}
-will generate book titles for conferences beginning with ``In
-Proceedings of'', while \texttt{--add-proc} uses the shorter ``In
-Proc.'' and without any options, only ``In '' is used for papers
-in conferences with proceedings. 
+There are a variety of styles in use when citing papers at
+conferences. Some people prefer to precede the conference name with
+``In Proceedings of the ''.  These same people usually use ``In Proc. of
+'' when pressed for space.  With \texttt{--add-proceedings}, \XTX{} will
+generate book titles for conferences beginning with ``In Proceedings of'',
+while \texttt{--add-proc} uses the shorter ``In Proc.'' and without any
+options, only ``In '' is used for papers in conferences with proceedings.
 
-For journal articles, the usual convention is to simply put the 
-conference name in italics following the author names, and this is
-the default \XTeX{} and \BibTeX{} behavior. Some people prefer to prepend
-``In '' to the name of the journal; this can be accomplished with the 
-\texttt{--add-in} option.
+For journal articles, the usual convention is to simply put the journal
+name in italics following the author names, and this is the default \XTX{}
+and \BibTeX{} behavior. Some people prefer to prepend ``In '' to the
+name of the journal; this can be accomplished with the \texttt{--add-in}
+option.
 
-BibTeX users affect these personal preferences by modifying the bibliographic
-database. Such changes are potentially disruptive and can introduce errors. 
-\XTeX{} enables such stylistic changes, which do not affect the underlying data, 
-to be affected without modifying the database, and ensures that the choice will
-be applied consistently throughout.
+\BibTeX{} users affect these personal preferences by modifying the
+bibliographic database. Such changes are potentially disruptive and can
+introduce errors.  \XTX{} enables such stylistic changes, which do not
+affect the underlying data, to be affected without modifying the database,
+and ensures that the choice will be applied consistently throughout.
 
 \paragraph{Sorting and Headings}
 
-Sorting affects the order in which references will appear in the bibliography.
-By default, entries will be sorted by their citation keys, or by their
-authors and publication dates, depending on the citation style. 
-The \texttt{--sort} option provides
-finer control over the sort order. By specifying \texttt{--sort
-\textrm{\textit{field}}}, the database will be stably sorted by field;
-later specifying \texttt{--sort \textrm{\textit{field2}}} will cause
-the bibliography to be sorted by field2, but the entries will still be
-sub-sorted by the first field. To sort in descending order, 
-use \texttt{--reverse-sort} in the same way.
+Sorting affects the order in which references will appear in the
+bibliography.  By default, entries will be sorted by their citation keys,
+or by their authors and publication dates, depending on the citation
+style.  The \texttt{--sort} option provides finer control over the
+sort order. By specifying \texttt{--sort \textrm{\textit{field}}}, the
+database will be stably sorted by field; later specifying \texttt{--sort
+\textrm{\textit{field2}}} will cause the bibliography to be sorted by
+field2, but the entries will still be sub-sorted by the first field. To
+sort in descending order, use \texttt{--reverse-sort} in the same way.
 
-When processing large bibliographies, it can be nice to partition the entries into labeled categories. Specifying the \texttt{--heading \textrm{\textit{field}}} option specifies a field to be used to divide the entries into sections. For example, \texttt{--heading year} will cause the entries to be grouped by year and given headings for each different year. (\texttt{--reverse-heading} will reverse the order in which the sections appear.) When converting a bibliography of personal publications to HTML, for example, it might be convenient to group by an information field such as \texttt{--heading category} to nicely organize the produced bibliography.
+When processing large bibliographies, it can be nice to partition
+the entries into labeled categories. Specifying the \texttt{--heading
+\textrm{\textit{field}}} option specifies a field to be used to divide
+the entries into sections. For example, \texttt{--heading year} will
+cause the entries to be grouped by year and given headings for each
+different year. (\texttt{--reverse-heading} will reverse the order in
+which the sections appear.) When converting a bibliography of personal
+publications to HTML, for example, it might be convenient to group by an
+information field such as \texttt{--heading category} to nicely organize
+the produced bibliography.
 
 \paragraph{Inside the \texttt{.tex} file}
 
-The \texttt{.tex} source file never needs to know you're using \XTeX{}, because it is completely backwards compatible. The \texttt{\textbackslash{}bibliographystyle\{\textrm{\textit{foo}}\}} command will cause the equivalent of the command-line option \texttt{--style \textrm{\textit{foo}}}.
+The \texttt{.tex} source file never needs to know you're using
+\XTX{}, because it is completely backwards compatible with normal
+\LaTeX{} auxiliary files that note citations and styles. The
+\verb"\bibliographystyle{"\textit{foo}\verb"}" command will
+cause the equivalent of the command-line option \texttt{--style
+\textrm{\textit{foo}}}.
 
-However, the \texttt{\textbackslash{}bibliographystyle} command can cause other magic as well. Arbitrary command line options may be specified after the style name, separated by commas. For example:
+However, the \verb"\bibliographystyle" command can cause other magic as
+well. Arbitrary command line options may be specified after the style
+name, separated by single spaces. For example:
 
 \begin{small}\begin{verbatim}
-\bibliographystyle{plain,--add-in,--add-proceedings,--short,author}
+\bibliographystyle{plain --add-in --add-proceedings --short author}
 \end{verbatim}\end{small}
 
-This allows documents to have fine-grained control over styling. Run-time options will still take precedence over document defaults.
+This allows documents to have fine-grained control over styling. Run-time
+options will still take precedence over document defaults.
 
 \subsection{Usage}
 
@@ -702,43 +990,68 @@ options:
   --xtx2html            Format the bibliography as HTML.
 \end{verbatim}\end{small}
 
-\section{Extending \XTeX{}}
-\label{extending}
 
-\XTeX{} is designed to be easy to extend with very trivial knowledge of Python. Before continuing, it is very important to have a look at the standard object types and fields in Section~\ref{objects}, which are already supported by \XTeX{}. New objects or fields are defined by editing the file \texttt{crosstexobjects.py}, which is typically installed in \texttt{/usr/share/texmf/crosstex}.
+\section{Extending \XTX{}\label{sec:extending}}
 
-To create a new field for a particular object type, find its definition (e.g., the section defining the \texttt{string} object begins \texttt{class string}). Most objects already define some fields; simply copy that syntax for your own field. If a field is assigned \texttt{None} to begin with, it will be required; by assigning it some default value, even the empty string, it becomes optional.
+\XTX{} is designed to be easy to extend with very trivial knowledge
+of Python. Before continuing, it is very important to have a look at
+the standard object types and fields in Appendix~\ref{sec:standard},
+which are already supported by \XTX{}. New objects or fields are defined
+by editing the file \texttt{crosstexobjects.py}, which is typically
+installed in \texttt{/usr/local/crosstex/lib}.
 
-To make an optional field required or a required field optional, simply assign it \texttt{None} or some default, respectively, in the class where you want the change.
+To create a new field for a particular object type, find its definition
+(e.g., the section defining the \texttt{string} object begins
+\texttt{class string}). Most objects already define some fields;
+simply copy that syntax for your own field.
 
-To create an entirely new class \textit{foo} which is identical to a current one named \textit{bar}, add the following to the end of \texttt{crosstexobjects.py}.
+Fields are defined as optional or required by assigning them the
+values \texttt{OPTIONAL} and \texttt{REQUIRED}, respectively.  To make
+an optional field required or a required field optional, simply assign
+it the new value in the class where you want the change.
+
+To create an entirely new class \textit{foo} which is identical to
+a current one named \textit{bar}, add the following to the end of
+\texttt{crosstexobjects.py}.
 
 \begin{small}\begin{verbatim}
 class foo(bar):
     pass
 \end{verbatim}\end{small}
 
-If \textit{foo} should have different required or optional fields form \textit{bar}, define them as noted above. (The \texttt{pass} is only necessary if the body of the \texttt{class} definition is empty, e.g. it does not set the values of any fields.)
+If \textit{foo} should have different required or optional fields form
+\textit{bar}, define them as noted above. (The \texttt{pass} is only
+necessary if the body of the \texttt{class} definition is empty, e.g. it
+does not set the values of any fields.)
 
-If you are more advanced at Python programming and want to change the behavior of objects, simply look at the ones that exist. The string value of an object is obtained, appropriately enough, from its \texttt{\_\_str\_\_} method, should you want to change the appearance of any objects. Similarly, every object has access to an \texttt{\_options} member containing the options set on the command line.
+If you are more advanced at Python programming and want to change
+the behavior of objects, simply look at the ones that exist. The
+string value of an object is obtained, appropriately enough, from its
+\texttt{\_\_str\_\_} method, should you want to change the appearance of
+any objects. Similarly, every object has access to an \texttt{\_options}
+member containing the options set on the command line.
 
 Happy hacking!
 
 
+\appendix
+\section{Standard object types\label{sec:standard}}
 
-\section{Standard object types}
-\label{objects}
-
-These are the kinds of objects \XTeX{} knows about by default. For information about extending this notion, see Extending \XTeX{} in Section~\ref{extending}.
+These are the kinds of objects \XTX{} knows about by default. For
+information about extending this notion, see Extending \XTX{} in
+Section~\ref{sec:extending}.
 
 \begin{description}
 
 \item[\texttt{string}]
-\textsc{Required:} \texttt{name} and/or \texttt{shortname} (\texttt{longname} is an alias for \texttt{name}.)
+\textsc{Required:} \texttt{name} and/or \texttt{shortname}
+(\texttt{longname} is an alias for \texttt{name}.)
 \textsc{Relevant arguments:} \texttt{--short}
 
 \item[\texttt{author}] As \texttt{string}, except:
-\textsc{Optional:} \texttt{address}, \texttt{affiliation}, \texttt{email}, \texttt{institution}, \texttt{organization}, \texttt{phone}, \texttt{school}, \texttt{url}
+\textsc{Optional:} \texttt{address}, \texttt{affiliation}, \texttt{email},
+\texttt{institution}, \texttt{organization}, \texttt{phone},
+\texttt{school}, \texttt{url}
 
 \item[\texttt{state}] As \texttt{string}, except:
 \textsc{Optional:} \texttt{country}
@@ -807,42 +1120,51 @@ These are the kinds of objects \XTeX{} knows about by default. For information a
 \texttt{url},
 \texttt{volume},
 \texttt{year}
-\textsc{Relevant arguments:} \texttt{--cite-by}, \texttt{--titlecase}, \texttt{--link}, \texttt{--abstract}, \texttt{--keywords}
+\textsc{Relevant arguments:} \texttt{--cite-by}, \texttt{--titlecase},
+\texttt{--link}, \texttt{--abstract}, \texttt{--keywords}
 
 \item[\texttt{article}] As \texttt{misc}, except:
-\textsc{Required:} \texttt{author}, \texttt{title}, \texttt{journal}, \texttt{year}
+\textsc{Required:} \texttt{author}, \texttt{title}, \texttt{journal},
+\texttt{year}
 \textsc{Relevant arguments:} \texttt{--add-in}
 
-\item[\texttt{newspaperarticle}] As \texttt{article}, except: (\texttt{newspaper} is an alias for \texttt{journal})
+\item[\texttt{newspaperarticle}] As \texttt{article}, except:
+(\texttt{newspaper} is an alias for \texttt{journal})
 
 \item[\texttt{book}] As \texttt{misc}, except:
-\textsc{Required:} \texttt{author} and/or \texttt{editor}, \texttt{title}, \texttt{publisher}, \texttt{year}
+\textsc{Required:} \texttt{author} and/or \texttt{editor}, \texttt{title},
+\texttt{publisher}, \texttt{year}
 
 \item[\texttt{booklet}] As \texttt{misc}, except:
 \textsc{Required:} \texttt{title}
 
 \item[\texttt{inbook}] As \texttt{misc}, except:
-\textsc{Required:} \texttt{author} and/or \texttt{editor}, \texttt{title}, \texttt{chapter} and/or \texttt{pages}, \texttt{publisher}, \texttt{year}
+\textsc{Required:} \texttt{author} and/or \texttt{editor}, \texttt{title},
+\texttt{chapter} and/or \texttt{pages}, \texttt{publisher}, \texttt{year}
 
 \item[\texttt{incollection}] As \texttt{misc}, except:
-\textsc{Required:} \texttt{author}, \texttt{title}, \texttt{booktitle}, \texttt{publisher}, \texttt{year}
+\textsc{Required:} \texttt{author}, \texttt{title}, \texttt{booktitle},
+\texttt{publisher}, \texttt{year}
 
 \item[\texttt{inproceedings}] As \texttt{misc}, except:
-\textsc{Required:} \texttt{author}, \texttt{title}, \texttt{booktitle}, \texttt{year}
+\textsc{Required:} \texttt{author}, \texttt{title}, \texttt{booktitle},
+\texttt{year}
 \textsc{Relevant arguments:} \texttt{--add-proceedings}, \texttt{--add-proc}
 
 \item[\texttt{manual}] As \texttt{misc}, except:
 \textsc{Required:} \texttt{title}
 
 \item[\texttt{thesis}] As \texttt{misc}, except:
-\textsc{Required:} \texttt{author}, \texttt{title}, \texttt{school}, \texttt{year}
+\textsc{Required:} \texttt{author}, \texttt{title}, \texttt{school},
+\texttt{year}
 
 \item[\texttt{mastersthesis}] As \texttt{thesis}.
 
 \item[\texttt{phdthesis}] As \texttt{thesis}.
 
 \item[\texttt{patent}] As \texttt{misc}, except:
-\textsc{Required:} \texttt{author}, \texttt{title}, \texttt{number}, \texttt{month}, \texttt{year}
+\textsc{Required:} \texttt{author}, \texttt{title}, \texttt{number},
+\texttt{month}, \texttt{year}
 
 \item[\texttt{proceedings}] As \texttt{misc}, except:
 \textsc{Required:} \texttt{title}, \texttt{year}
@@ -850,7 +1172,8 @@ These are the kinds of objects \XTeX{} knows about by default. For information a
 \item[\texttt{collection}] As \texttt{proceedings}.
 
 \item[\texttt{techreport}] As \texttt{misc}, except:
-\textsc{Required:} \texttt{author}, \texttt{title}, \texttt{institution}, \texttt{year}
+\textsc{Required:} \texttt{author}, \texttt{title}, \texttt{institution},
+\texttt{year}
 
 \item[\texttt{unpublished}] As \texttt{misc}, except:
 \textsc{Required:} \texttt{author}, \texttt{title}, \texttt{note}
@@ -877,7 +1200,8 @@ These are the kinds of objects \XTeX{} knows about by default. For information a
 \item[\texttt{workshop}] As \texttt{conferencetrack}.
 
 \item[\texttt{rfc}] As \texttt{misc}, except:
-\textsc{Required:} \texttt{author}, \texttt{title}, \texttt{number}, \texttt{month}, \texttt{year}
+\textsc{Required:} \texttt{author}, \texttt{title}, \texttt{number},
+\texttt{month}, \texttt{year}
 
 \item[\texttt{url}] As \texttt{misc}, except:
 \textsc{Required:} \texttt{url}
