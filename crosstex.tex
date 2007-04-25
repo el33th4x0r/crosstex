@@ -704,10 +704,10 @@ should be used whenever possible.
 
 \XTX{} provides many options that enable the user to control the
 appearance of the references within a document. This section describes
-various options that can be passed to \XTX{} for achieving the precise
-formatting desired.
+various options that can be passed to the \texttt{crosstex} tool for
+achieving the precise formatting desired.
 
-\paragraph{Invoking \XTX{}}
+\subsection{Invoking \XTX{}}
 
 In its simplest invocation, \texttt{crosstex} takes one or more file
 names, e.g. \texttt{crosstex \textrm{\textit{file1 file2 ...}}}. Each
@@ -740,7 +740,7 @@ nice and tame.
 A number of options can be specified to change the style of the
 bibliography to override or tweak that specified by a document.
 
-\paragraph{Abbreviation}
+\subsection{Abbreviation}
 
 The \texttt{--short} option allows many kinds of objects to be abbreviated
 in the bibliography. For example, to use shortened month names (`Jan.',
@@ -762,7 +762,7 @@ Objects that can be shortened include \texttt{author},
 \texttt{journal}, \texttt{month}, \texttt{state}, \texttt{string},
 and \texttt{workshop}.
 
-\paragraph{Authors}
+\subsection{Authors}
 
 Author names can be complicated, and are the source of much confusion
 in \BibTeX{}. The same author might appear with a middle name, without a
@@ -782,7 +782,13 @@ Right Thing with modifiers here, too.  When author names are capitalized
 with \texttt{--capitalize author}, \XTX{} carefully works around \LaTeX{}
 commands and accents to produce clean-looking names.
 
-\paragraph{Titles}
+\subsection{Capitalization}
+
+Any object that can be abbreviated with \texttt{--short} can be coerced to
+all upper case with \texttt{--capitalize}.  For example, to cause authors
+to appear capitalized, issue \texttt{--capitalize author}.
+
+\subsection{Titles}
 
 Title case is one of the most common inconsistencies when using
 \BibTeX{}. Often, some papers are cited with lower-case titles, some are all
@@ -841,7 +847,7 @@ still protected.
 Finally, to allow titles to appear as they are specified in the database,
 use \texttt{--titlecase as-is}.
 
-\paragraph{Proceedings}
+\subsection{Proceedings}
 
 There are a variety of styles in use when citing papers at
 conferences. Some people prefer to precede the conference name with
@@ -863,7 +869,7 @@ introduce errors.  \XTX{} enables such stylistic changes, which do not
 affect the underlying data, to be affected without modifying the database,
 and ensures that the choice will be applied consistently throughout.
 
-\paragraph{Sorting and Headings}
+\subsection{Sorting and Headings}
 
 Sorting affects the order in which references will appear in the
 bibliography.  By default, entries will be sorted by their citation keys,
@@ -886,7 +892,108 @@ publications to HTML, for example, it might be convenient to group by an
 information field such as \texttt{--heading category} to nicely organize
 the produced bibliography.
 
-\paragraph{Inside the \texttt{.tex} file}
+\subsection{Hyperlinks}
+
+\XTX{} supports searching fields to find hyperlinks and presenting them
+in the references section.  This is useful for any target format with
+hyperlinks, including PDF and HTML.  Normally, no fields are treated
+as possible links, except when converting to HTML, when the list
+defaults to Abstract, URL, PS, PDF, HTML, DVI, TEX, BIB, FTP, HTTP,
+and RTF.  A new field can be added with \texttt{-l~}\textit{field} or
+\texttt{--link~}\textit{field}; \texttt{--no-link} clears the list in
+order to disable link-finding or start over.
+
+If any of the fields, case insensitive (e.g. \texttt{--link~PDF} and
+\texttt{--link~pdf} are equivalent), consists of a URL, it will appear
+at the end of the reference as a hyperlink with its label as the name
+of the field given to \texttt{--link} (e.g. the former would match the
+same field, but produce links labeled ``PDF'' and ``pdf'' respectively).
+
+\subsection{Abstracts and Keywords}
+
+Some detailed database entries might include a list of keywords related
+to the paper or even a complete abstract.  By default, these fields are
+accepted but do not appear in the reference.  With \texttt{--abstract},
+abstracts will appear in blocks following the appropriate entries.
+The \texttt{--keywords} option invokes similar behavior for keyword
+lists.  To explicitly set the defaults, \texttt{--no-abstract} and
+\texttt{--no-keywords} disable these extra blocks.
+
+If both \texttt{--link~Abstract} and \texttt{--abstract} are specified,
+\XTX{} tries to be intelligent: The abstract will either appear as a
+link or as a block, based on whether it appears to be a complete text
+or a link to the real abstract.
+
+\subsection{Putting the title first}
+
+Ordinarily, each entry begins with the author or editor first, then the
+title.  A simple kind of re-ordering can be accomplished by specifying
+\texttt{--title-head}, which causes the title to come first and bold.
+This option can be negated with \texttt{--no-title-head}, but it is
+default only with \texttt{--style~html} or \texttt{--xtx2html}.
+
+\subsection{Splitting up lines}
+
+Ordinarily, each entry takes up one logical line, which might wrap.
+The \texttt{--break-lines} option instead puts each major field (author,
+title, publication information, any hyperlinks, etc.) on its own line,
+in the same order they would have appeared on a single line.  This can be
+combined with putting the title first with \texttt{--title-head} to cause
+the title to come on the first line all by itself, which is the default
+with \texttt{--style~html} or \texttt{--xtx2html}.  To explicitly cause
+entries to appear on a single logical line, use \texttt{--no-break-lines}.
+
+\subsection{Label appearance}
+
+By default, each entry in the references section is labeled with
+its citation key as it would appear in the document, e.g. ``[1]'' or
+``[WS04]''.  It is also possible, with the option \texttt{--blank-labels},
+to leave entries un-labeled; this does not influence how citations
+appear in the document body in any way, but leaves out labels in the
+bibliography.
+
+By itself, this option would probably produce a bibliography in which it
+is impossible to track down citations.  However, it can be useful when
+converting a database to HTML, for example, when there is no document
+anyway and the labels look messy.  Thus, leaving labels blank is the
+default with \texttt{--style~html} or \texttt{--xtx2html}.  To explicitly
+include labels, use \texttt{--no-blank-labels}.
+
+\subsection{Styles}
+
+Styles, such as \texttt{plain}, \texttt{abbrv}, etc., are simply
+collections of arguments to \XTX{} that produce the appropriate
+appearance, and \XTX{} is designed to make it easy to change or add
+styles.  The style \texttt{html} sets a bunch of link fields and other
+stylistic choices appropriate for the web, and the basic \BibTeX{}
+styles are also implemented by default:
+
+\begin{description} \item[\texttt{abbrv}] is equivalent to
+  \texttt{--no-break-lines --no-blank-labels --no-title-head --no-abstract
+  --no-keywords --short author --cite-by initials}
+\item[\texttt{alpha}] is equivalent to
+  \texttt{--no-break-lines --no-blank-labels --no-title-head --no-abstract
+  --no-keywords --cite-by initials}
+\item[\texttt{full}] is equivalent to
+  \texttt{--no-break-lines --no-blank-labels --no-title-head --no-abstract
+  --no-keywords --cite-by fullname --add-proceedings --add-in}
+\item[\texttt{unsrt}] is equivalent to
+  \texttt{--no-break-lines --no-blank-labels --no-title-head --no-abstract
+  --no-keywords --cite-by number --no-sort}
+\item[\texttt{plain}] is equivalent to
+  \texttt{--no-break-lines --no-blank-labels --no-title-head --no-abstract
+  --no-keywords --cite-by number}
+\item[\texttt{html}] is equivalent to
+  \texttt{-l Abstract -l URL -l PS -l PDF -l HTML -l DVI -l TeX -l
+  Bib -l FTP -l HTTP -l RTF --break-lines --blank-labels --title-head
+  --abstract --keywords}
+\end{description}
+
+Styles allow complex requirements to be conveniently bundled, either
+in the \verb"\bibliographystyle" command or on the command line with
+\texttt{--style~}\textit{name}.
+
+\subsection{Inside the \texttt{.tex} file}
 
 The \texttt{.tex} source file never needs to know you're using
 \XTX{}, because it is completely backwards compatible with normal
@@ -906,89 +1013,44 @@ name, separated by single spaces. For example:
 This allows documents to have fine-grained control over styling. Run-time
 options will still take precedence over document defaults.
 
-\subsection{Usage}
+\subsection{Adding citations}
 
-\begin{small}\begin{verbatim}
-usage: crosstex [options] files
+Normally, only entries that are cited in the \LaTeX{} document appear
+in the references section.  When processing a database directly,
+the default is for all entries to appear.  These behaviors can be
+manipulated at run-time with the \texttt{--cite} option.  It behaves
+exactly as a \LaTeX{} \verb"\cite" command, including the use of the
+asterisk (\texttt{--cite *}, modulo shell-escaping) to cite all entries,
+and constrained citation.  When processing \LaTeX{} documents, this
+adds entries to the references; when processing databases directly,
+this overrides the default to cite everything and cites only the entries
+specifically mentioned on the command line.
 
-A modern, object-oriented bibliographic tool intended to replace BibTeX.
+\subsection{Manipulating \texttt{crosstex}}
 
-options:
-  --version             show program's version number and exit
-  -h, --help            show this help message and exit
-  -d DIR, --dir=DIR     Add a directory in which to find data files, searched
-                        from last specified to first. Default: none
-  --quiet               Do not sanity check the input.
-  --strict              Apply stricter checks.
-  --dump=TYPE           After parsing the bibliography, dump a list of all
-                        objects of the type specified, or, with "file", print
-                        a list of files processed.
-  --cite=CITE           Cite a key exactly as with the \cite LaTeX command.
-  -l FIELD, --link=FIELD
-                        Add to the list of fields used to generate links.
-                        LaTeX documents should make use of links by including
-                        the hyperref package. When converting to html, this
-                        defaults to [Abstract, URL, PS, PDF, HTML, DVI, TEX,
-                        BIB, FTP, HTTP, and RTF].
-  --no-link             
-  --cite-by=CITE_BY     With "number", use numeric labels such as [1]. With
-                        "initials", use labels based on author last-names such
-                        as [SBRD04b]. With "fullname", use labels based on
-                        author names such as [Sirer et al. 2004].
-  --style=STYLE         Use a standard style such as plain, unsrt, abbrv,
-                        full, or alpha.  Options set by the style may be
-                        overidden by further command-line options.
-  -s FIELD, --sort=FIELD
-                        Sort by specified field. Multiple sort orders are
-                        applied in the order specified, e.g. "-s year -s
-                        author" will cause elements to be grouped primarily by
-                        author and sub-grouped by year.
-  -S FIELD, --reverse-sort=FIELD
-                        Exactly as --sort, but sort by descending field values
-                        rather than ascending.
-  --no-sort             
-  --heading=FIELD       Divide entries and create headings in bibliography by
-                        the value of the given field.
-  --reverse-heading=FIELD
-                        Divide entries and create headings in bibliography by
-                        the value of the given field.
-  --short=TYPE          Specify any string-like object, i.e. one with name and
-                        shortname fields. Whenever possible, the short name
-                        will be used, e.g. two-letter state codes for "state",
-                        conference acronyms such as NSDI for "conference", or
-                        initials such as E. G. Sirer for "author".
-  --capitalize=TYPE     Specify any string-like object, i.e. one with name and
-                        shortname fields. Strings of the specified types will
-                        appear in ALL CAPS.
-  --add-in              Add "In" for articles.
-  --add-proc            Add "Proc. of" for conference and workshop
-                        publications.
-  --add-proceedings     Add "Proceedings of the" for conference and workshop
-                        publications.
-  --abstract            In the bibliography, include paper abstracts if
-                        available.
-  --no-abstract         
-  --keywords            In the bibliography, include paper keywords if
-                        available.
-  --no-keywords         
-  --titlecase=TITLECASE
-                        In the bibliography, force titles into lower-, upper-,
-                        or title-case.  Default: Leave titles unchanged.
-  --title-head          In the bibliography, put the title bold and first.
-  --no-title-head       
-  --blank-labels        In the bibliography, leave out item labels.
-  --no-blank-labels     
-  --break-lines         In the bibliography, put author, title, and
-                        publication information on separate lines.
-  --no-break-lines      
-  --last-first          The first name in each author list will appear 'Last,
-                        First' instead of 'First Last' (the latter is the
-                        default).
-  --no-last-first       
-  --xtx2bib             Convert the bibliography information to old-style
-                        BibTeX.
-  --xtx2html            Format the bibliography as HTML.
-\end{verbatim}\end{small}
+Numerous options help control or debug \texttt{crosstex} itself.  The
+\texttt{--version} option will cause \texttt{crosstex} to print out its
+version and exit.  To get a list of all supported options and brief
+descriptions, use \texttt{--help} or \texttt{-h}.
+
+Two options change the level of error reporting.  By default, only
+errors that will definitely change the appearance of the bibliography
+are produced.  With \texttt{--strict}, more warnings, such as for unknown
+fields or other problems, will be printed.  With \texttt{--quiet}, on the
+other hand, no errors or warnings will appear at all.
+
+The \texttt{--dump} option provides very detailed debugging.  Processing
+will continue exactly as normal, but at the end, any kinds of objects
+specified to \texttt{--dump} will be listed as output.  For example, to
+list all the \texttt{author} objects defined in a bibliography \textit{foo},
+\texttt{crosstex --dump author foo} would process foo and print a list.
+
+Two additional, non-object dumps are permitted.  With \texttt{--dump~file},
+\texttt{crosstex} will print a trace of the path to every database it
+processes; this allows one to examine whether it is choosing the right files
+based on the search path and explore what standard databases are being
+automatically pulled in.  The various title phrases and small words that
+control title capitalization can be dumped with \texttt{--dump~titlephrase}.
 
 
 \section{Extending \XTX{}\label{sec:extending}}

@@ -306,7 +306,7 @@ class bibliography(dict):
                         else:
                             self.warning("crosstex: %s %s is not citeable" % (self[key]._name, key))
                     else:
-                        self.error("crosstex: citation for non-existant key %s" % key)
+                        self.error("crosstex: citation for nonexistant key %s" % key)
 
 	def tryint(x):
 	    try:
