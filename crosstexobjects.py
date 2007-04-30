@@ -415,6 +415,8 @@ class misc(bibobject):
     volume = OPTIONAL
     year = OPTIONAL
 
+    _numbertype = ''
+
     def _assign(self, key, value, condition={}):
 	value = bibobject._assign(self, key, value, condition)
 	if value:
@@ -519,26 +521,37 @@ class misc(bibobject):
     def _fullpublication(self):
         value = self._publication()
         if not unassigned(self.booktitle) and value == '':
-            value += "In {\\em %s}" % str(self.booktitle)
+            value += "In \emph{%s}" % str(self.booktitle)
         if not unassigned(self.journal):
             if value != '':
                 value += ', '
             if self._options.in_str != '':
-                value += self._options.in_str
-            else:
-                value += ' '
-            value += "{\\em %s}" % str(self.journal)
+                value += self._options.in_str + ' '
+            value += "\emph{%s}" % str(self.journal)
 	    if not unassigned(self.volume):
 		if not unassigned(self.number) and not unassigned(self.pages):
 		    if value != '':
-			value += ' '
-		    value += 'Volume'
-		value += " %s" % str(self.volume)
+			value += ', '
+		value += str(self.volume)
 	    if not unassigned(self.number):
 		value += "(%s)" % str(self.number)
 	    if not unassigned(self.pages):
 		value += ":%s" % str(self.pages)
 	else:
+	    if not unassigned(self.number):
+		if value != '':
+		    value += ', '
+		if self._numbertype != '':
+		    value += self._numbertype + ' '
+		value += str(self.number)
+	    if not unassigned(self.institution):
+		if value != '':
+		    value += ', '
+		value += str(self.institution)
+	    elif not unassigned(self.school):
+		if value != '':
+		    value += ', '
+		value += str(self.school)
             if not unassigned(self.pages):
 	        value += ", pages %s" % str(self.pages)
         if not unassigned(self.author) and not unassigned(self.editor):
@@ -681,7 +694,7 @@ class inproceedings(misc):
         value = ' '.join(['In', self._options.proceedings_str])
         if value != '':
             value += ' '
-        value += "{\\em %s}" % str(self.booktitle)
+        value += "\emph{%s}" % str(self.booktitle)
         return value
 
 class manual(misc):
@@ -705,20 +718,10 @@ class thesis(misc):
         return value
 
 class mastersthesis(thesis):
-    _thesistype = 'Masters'
+    _thesistype = "Master's"
 
 class phdthesis(thesis):
-    _thesistype = 'Ph.D.'
-
-class patent(misc):
-    author = REQUIRED
-    title = REQUIRED
-    number = REQUIRED
-    month = REQUIRED
-    year = REQUIRED
-
-    def _publication(self):
-        return "United States Patent %s", str(self.number)
+    _thesistype = "Ph.D."
 
 class proceedings(misc):
     title = REQUIRED
@@ -727,19 +730,22 @@ class proceedings(misc):
 class collection(proceedings):
     pass
 
+class patent(misc):
+    author = REQUIRED
+    title = REQUIRED
+    number = REQUIRED
+    month = REQUIRED
+    year = REQUIRED
+
+    _numbertype = 'United States Patent'
+
 class techreport(misc):
     author = REQUIRED
     title = REQUIRED
     institution = REQUIRED
     year = REQUIRED
 
-    def _publication(self):
-        value = 'Technical Report'
-        if not unassigned(self.number):
-            value += " %s" % str(self.number)
-        if not unassigned(self.institution):
-            value += ", %s" % str(self.institution)
-        return value
+    _numbertype = 'Technical Report'
 
 class unpublished(misc):
     author = REQUIRED

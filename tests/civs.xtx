@@ -4,10 +4,12 @@
   [year=2010] address={The Moon}
 }
 
+@extend{mypopl = popl}
+
 @INPROCEEDINGS{Myers99,
   author = {Andrew C. Myers},
   title = {JFlow: Practical Mostly-Static Information Flow Control},
-  booktitle = popl,
+  booktitle = mypopl,
   year = 1999,
   pages = {228--241},
 }
@@ -26,7 +28,7 @@
 @INPROCEEDINGS{Clarkson10,
   author = {Michael R. Clarkson},
   title = {Jif 2010},
-  booktitle = popl,
+  booktitle = mypopl,
   year = 2010,
   pages = {1--10},
 }

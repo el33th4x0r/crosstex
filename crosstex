@@ -219,9 +219,10 @@ class bibliography(dict):
 
 	for key in self.options.cite:
 	    if key == '*':
-		for i in self.primarykeys:
-		    if hasattr(self[i], '_label') and (self[i]._citekey == None or self[i]._citekey == i):
-			self._citations.append(i)
+		for key in self.primarykeys:
+		    if hasattr(self[key], '_label') and self[key]._citekey == None:
+			self[key]._citekey = key
+			self._citations.append(key)
 	    else:
                 # a leading ! indicates that the citation key
                 # specifies a set of nbibtex-style constraints.
@@ -597,10 +598,6 @@ def p_stmt_multiple(t):
     'stmts : stmt stmts'
     pass
 
-def p_stmt_object(t):
-    'stmt : object'
-    t[0] = t[1]
-
 def p_stmt_include(t):
     'stmt : ATINCLUDE NAME'
     filename = t[2]
@@ -640,6 +637,10 @@ def p_stmt_string(t):
 	except Exception, detail:
 	    t.lexer.bib.error("%s:%d: %s" % (t.lexer.file, t.lineno(3), detail))
 
+def p_stmt_object(t):
+    'stmt : object'
+    t[0] = t[1]
+
 def p_object_defn(t):
     'object : AT NAME OPENBRACE keys COMMA fields conditionals CLOSEBRACE'
     t[2] = t[2].lower()
@@ -655,9 +656,18 @@ def p_object_extension(t):
     try:
         t.lexer.bib.extendobject(t[3], [({}, t[5])] + t[6], t.lexer.defaults, t.lexer.file, t.lineno(1))
     except Warning, detail:
-	t.lexer.bib.warning("%s:%d: %s" % (t.lexer.file, t.lineno(2), detail))
+	t.lexer.bib.warning("%s:%d: %s" % (t.lexer.file, t.lineno(1), detail))
     except Exception, detail:
-	t.lexer.bib.error("%s:%d: %s" % (t.lexer.file, t.lineno(2), detail))
+	t.lexer.bib.error("%s:%d: %s" % (t.lexer.file, t.lineno(1), detail))
+
+def p_object_extension_empty(t):
+    'object : ATEXTEND OPENBRACE keys CLOSEBRACE'
+    try:
+        t.lexer.bib.extendobject(t[3], [], t.lexer.defaults, t.lexer.file, t.lineno(1))
+    except Warning, detail:
+	t.lexer.bib.warning("%s:%d: %s" % (t.lexer.file, t.lineno(1), detail))
+    except Exception, detail:
+	t.lexer.bib.error("%s:%d: %s" % (t.lexer.file, t.lineno(1), detail))
 
 def p_object_error(t):
     'object : error CLOSEBRACE'
