@@ -172,7 +172,7 @@ class author(string):
     school = OPTIONAL
     url = OPTIONAL
 
-    def _names(self):
+    def _names(self, plain=False):
         name = string.__str__(self)
         value = ""
         lastchar = ' '
@@ -184,19 +184,22 @@ class author(string):
                 names.append(value)
                 value = ""
             elif lastchar != '\\' and charc == "}":
-                value += charc
+		if not plain:
+                    value += charc
                 if nesting == 0:
                     names.append(value)
                     value =""
                 else:
                     nesting -= 1
             elif lastchar != '\\' and charc == "{":
-                value += charc
+		if not plain:
+                    value += charc
                 nesting += 1
             elif nesting == 0 and lastchar != '\\' and charc == ",":
                 pass
             else:
-                value += charc
+		if not plain or (charc != '\\' and lastchar != '\\'):
+                    value += charc
             lastchar = charc
         names.append(value)
 
@@ -241,9 +244,9 @@ class author(string):
 
     def __cmp__(self, other):
 	if isinstance(other, author):
-	    return cmp(self._names()[2], other._names()[2])
+	    return cmp(self._names(True)[2], other._names(True)[2])
 	else:
-	    return cmp(self._names()[2], other)
+	    return cmp(self._names(True)[2], other)
 
     def _last_first(self):
         if self._name in self._options.short and not unassigned(self.shortname):
@@ -537,21 +540,21 @@ class misc(bibobject):
 		value += "(%s)" % str(self.number)
 	    if not unassigned(self.pages):
 		value += ":%s" % str(self.pages)
-	else:
+        if not unassigned(self.institution):
+	    if value != '':
+		value += ', '
+            value += str(self.institution)
+        if not unassigned(self.school):
+	    if value != '':
+		value += ', '
+            value += str(self.school)
+	if unassigned(self.journal):
 	    if not unassigned(self.number):
 		if value != '':
 		    value += ', '
 		if self._numbertype != '':
 		    value += self._numbertype + ' '
 		value += str(self.number)
-	    if not unassigned(self.institution):
-		if value != '':
-		    value += ', '
-		value += str(self.institution)
-	    elif not unassigned(self.school):
-		if value != '':
-		    value += ', '
-		value += str(self.school)
             if not unassigned(self.pages):
 	        value += ", pages %s" % str(self.pages)
         if not unassigned(self.author) and not unassigned(self.editor):
@@ -639,6 +642,11 @@ class misc(bibobject):
                     value += "\n"
                 value += "\\begin{quote}\\begin{small}\\textsc{Keywords:} %s\\end{small}\\end{quote}" % str(self.keywords)
 
+	    if not unassigned(self.url) and self._name != 'url':
+		if value != '':
+		    value += "\n\\newblock "
+		value += "%s." % str(self.url)
+
 	    if not unassigned(self.note):
 		if value != '':
 		    value += "\n\\newblock "
@@ -709,12 +717,12 @@ class thesis(misc):
     _thesistype = ''
 
     def _publication(self):
-        value = self._thesistype
-        if value != '':
-            value += ' '
-        value += 'Thesis'
-        if not unassigned(self.school):
-            value += ", %s" % str(self.school)
+	value = self.type
+	if unassigned(value):
+            value = self._thesistype
+            if value != '':
+                value += ' '
+            value += 'Thesis'
         return value
 
 class mastersthesis(thesis):
