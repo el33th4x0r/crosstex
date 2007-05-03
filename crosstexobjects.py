@@ -524,7 +524,19 @@ class misc(bibobject):
     def _fullpublication(self):
         value = self._publication()
         if not unassigned(self.booktitle) and value == '':
+            if value != '':
+                value += '. '
             value += "In \emph{%s}" % str(self.booktitle)
+	    if not unassigned(self.volume):
+	        if value != '':
+	            value += ', '
+	        value += "Volume %s" % str(self.volume)
+		if not unassigned(self.series):
+		    value += " of \em{%s}" % str(self.series)
+	    if not unassigned(self.chapter):
+	        if value != '':
+	            value += ', '
+	        value += "Chapter %s" % str(self.chapter)
         if not unassigned(self.journal):
             if value != '':
                 value += ', '
