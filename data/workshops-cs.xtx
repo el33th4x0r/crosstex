@@ -19,7 +19,7 @@
 @workshop{hotos,
   shortname = "HotOS Workshop",
   longname = "Workshop on Hot Topics in Operating Systems",
-  [year=2005] address=SanDiego, month=may,
+  [year=2007] address=SanDiego, month=may,
   [year=2005] address=SantaFe, month=may,
   [year=2003] address=Lihue, month=may,
   [year=2001] address=Elmau, month=may,
