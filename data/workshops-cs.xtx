@@ -150,6 +150,13 @@
   [year=1996] address=Warsaw, month=sep,  
 }
 
+@workshop{fudico,
+  shortname = "FuDiCo Workshop",
+[year=2007]  longname="Workshop on Future Directions in Distributed Computing: Building MAD Systems", address=Bertinoro, month=jun,
+[year=2004]  longname="Workshop on Future Directions in Distributed Computing: S.O.S Survivability: Obstacles and Solutions", address=Bertinoro, month=jun
+[year=2002]  longname="Workshop on Future Directions in Distributed Computing", address=Bertinoro, month=jun
+}
+
 @workshop{wwwsw,
   name = "Workshop on Application Design, Development and Implementation Issues in the Semantic Web",
   conference = www,
