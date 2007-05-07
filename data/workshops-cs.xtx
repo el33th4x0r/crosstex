@@ -151,10 +151,11 @@
 }
 
 @workshop{fudico,
+  longname="Workshop on Future Directions in Distributed Computing", 
   shortname = "FuDiCo Workshop",
-[year=2007]  longname="Workshop on Future Directions in Distributed Computing: Building MAD Systems", address=Bertinoro, month=jun,
-[year=2004]  longname="Workshop on Future Directions in Distributed Computing: S.O.S Survivability: Obstacles and Solutions", address=Bertinoro, month=jun
-[year=2002]  longname="Workshop on Future Directions in Distributed Computing", address=Bertinoro, month=jun
+  [year=2007]  address=Bertinoro, month=jun,
+  [year=2004]  address=Bertinoro, month=jun,
+  [year=2002]  address=Bertinoro, month=jun
 }
 
 @workshop{wwwsw,
