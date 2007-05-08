@@ -16,6 +16,21 @@ linksub = re.compile("\\-\s")
 # Co-ordination so as not to re-use citation keys
 usedlabels = []
 
+# Piece an entry together.
+def punctuate(bib, string, punctuation, tail=' ', braces=False):
+    value = str.strip(string)
+    if value == '':
+	return value
+    addpunct = True
+    if bib.punctuation.match(string):
+	addpunct = False
+    if braces:
+        value = '{' + value + '}'
+    if addpunct:
+	value += punctuation
+    value += tail
+    return value
+
 # Glue for object references.
 class objref:
 
@@ -545,91 +560,74 @@ class misc(bibobject):
     def _fullauthors(self):
 	value = ''
 	if not unassigned(self.author):
-            value = str(self.author)
-            if value != '':
-                value += "."
+	    value = punctuate(self._bib, str(self.author), '.', '')
         elif not unassigned(self.editor):
-            value = str(self.editor)
-            if value != '':
-                value += ", ed."
+	    value = punctuate(self._bib, str(self.editor), ',', ' ed.')
         return value
 
     def _fulltitle(self):
-        value = self._title()
-        if value != '':
-            value = "{%s}" % value
-            if value[-2] != '.':
-                value += '.'
-        return value
+        return punctuate(self._bib, self._title(), '.', '', braces=True)
 
     def _fullpublication(self):
         value = self._publication()
         if not unassigned(self.booktitle) and value == '':
-            if value != '':
-                value += '. '
+	    value = punctuate(self._bib, value, '.')
             value += "In \emph{%s}" % str(self.booktitle)
 	    if not unassigned(self.volume):
-	        if value != '':
-	            value += ', '
-	        value += "Volume %s" % str(self.volume)
+	        value += ", volume %s" % str(self.volume)
 		if not unassigned(self.series):
 		    value += " of \em{%s}" % str(self.series)
 	    if not unassigned(self.chapter):
-	        if value != '':
-	            value += ', '
-	        value += "Chapter %s" % str(self.chapter)
-        if not unassigned(self.journal):
-            if value != '':
-                value += ', '
-            if self._options.in_str != '':
-                value += self._options.in_str + ' '
+	        value += ", chapter %s" % str(self.chapter)
+	    if not unassigned(self.pages):
+	        value += ", pages %s" % str(self.pages)
+        elif not unassigned(self.journal):
+	    value = punctuate(self._bib, value, ',')
+            value += self._options.in_str
+	    value = punctuate(self._bib, value, '')
             value += "\emph{%s}" % str(self.journal)
+	    if not unassigned(self.number) or not unassigned(self.pages) or not unassigned(self.volume):
+		value = punctuate(self._bib, value, ',')
 	    if not unassigned(self.volume):
-		if not unassigned(self.number) and not unassigned(self.pages):
-		    if value != '':
-			value += ', '
 		value += str(self.volume)
 	    if not unassigned(self.number):
 		value += "(%s)" % str(self.number)
 	    if not unassigned(self.pages):
-		value += ":%s" % str(self.pages)
+		if not unassigned(self.volume) or not unassigned(self.number):
+		    value += ":%s" % str(self.pages)
+		else:
+		    value += "pages %s" % str(self.pages)
         if not unassigned(self.institution):
-	    if value != '':
-		value += ', '
+	    value = punctuate(self._bib, value, ',')
             value += str(self.institution)
         if not unassigned(self.school):
-	    if value != '':
-		value += ', '
+	    value = punctuate(self._bib, value, ',')
             value += str(self.school)
 	if unassigned(self.journal):
 	    if not unassigned(self.number):
-		if value != '':
-		    value += ', '
-		if self._numbertype != '':
-		    value += self._numbertype + ' '
+	        value = punctuate(self._bib, value, ',')
+		value += self._numbertype
+	        value = punctuate(self._bib, value, '')
 		value += str(self.number)
             if not unassigned(self.pages):
-	        value += ", pages %s" % str(self.pages)
+	        value = punctuate(self._bib, value, ',')
+	        value += "pages %s" % str(self.pages)
         if not unassigned(self.author) and not unassigned(self.editor):
-            if value != '':
-                value += ', '
+	    value = punctuate(self._bib, value, ',')
             value += "%s, ed." % str(self.editor)
         if not unassigned(self.publisher):
-            if value != '':
-                value += ', '
+	    value = punctuate(self._bib, value, ',')
             value += str(self.publisher)
         if not unassigned(self.address):
-            if value != '':
-                value += ', '
+	    value = punctuate(self._bib, value, ',')
             value += str(self.address)
         if not unassigned(self.year):
-            if value != '':
-                value += ', '
+	    value = punctuate(self._bib, value, ',')
             if not unassigned(self.month):
-                value += str(self.month) + ' '
+                value += str(self.month)
+	        value = punctuate(self._bib, value, '')
             value += str(self.year)
-        if value != '':
-            value = "{%s}." % value
+	value = punctuate(self._bib, value, '.', braces=True)
         return value
 
     def __str__(self):
@@ -660,27 +658,24 @@ class misc(bibobject):
 	    valueauthor = self._fullauthors()
 	    valuetitle = self._fulltitle()
 	    valuepublication = self._fullpublication()
+	    if valuetitle != '':
+		valuetitle = "\\textbf{%s}" % valuetitle
 	    if self._options.title_head:
 		if valuetitle != '':
-		    if value != '':
-			value += "\n\\newblock "
-		    value += "\\textbf{%s}" % self._fulltitle()
+		    value = punctuate(self._bib, value, "\n\\newblock")
+		    value += valuetitle
 		if valueauthor != '':
-		    if value != '':
-			value += "\n\\newblock "
+		    value = punctuate(self._bib, value, "\n\\newblock")
 		    value += valueauthor
 	    else:
 		if valueauthor != '':
-		    if value != '':
-			value += "\n\\newblock "
+		    value = punctuate(self._bib, value, "\n\\newblock")
 		    value += valueauthor
 		if valuetitle != '':
-		    if value != '':
-			value += "\n\\newblock "
+		    value = punctuate(self._bib, value, "\n\\newblock")
 		    value += valuetitle
 	    if valuepublication != '':
-		if value != '':
-		    value += "\n\\newblock "
+		value = punctuate(self._bib, value, "\n\\newblock")
 		value += valuepublication
 
             abstractlink = False
@@ -691,42 +686,36 @@ class misc(bibobject):
 		    for m in linkre.finditer(str(getattr(self, myfield))):
 			uri = m.group()
 			linksub.sub(uri, "")
-			if links != '':
-			    links += ' '
+			links = punctuate(self._bib, links, '')
 			links += "\\href{%s}{\\small\\textsc{%s}}" % (uri, field)
 			if myfield == 'abstract':
 			    abstractlink = True
 	    if links != '':
-		if value != '':
-		    value += "\n\\newblock "
+		value = punctuate(self._bib, value, "\n\\newblock")
 		value += links
 
             if not unassigned(self.abstract) and self._options.abstract and not abstractlink:
-                if value != '':
-                    value += "\n"
+		value = punctuate(self._bib, value, "\n")
                 value += "\\begin{quotation}\\noindent\\begin{small}%s\\end{small}\\end{quotation}" % str(self.abstract)
             if not unassigned(self.keywords) and self._options.keywords:
-                if value != '':
-                    value += "\n"
+		value = punctuate(self._bib, value, "\n")
                 value += "\\begin{quote}\\begin{small}\\textsc{Keywords:} %s\\end{small}\\end{quote}" % str(self.keywords)
 
 	    if not unassigned(self.url) and self._name != 'url':
-		if value != '':
-		    value += "\n\\newblock "
-		value += "%s." % str(self.url)
+		value = punctuate(self._bib, value, "\n\\newblock")
+		value += punctuate(self._bib, str(self.url), '.')
 
 	    if not unassigned(self.note):
-		if value != '':
-		    value += "\n\\newblock "
-		value += "%s." % str(self.note)
+		value = punctuate(self._bib, value, "\n\\newblock")
+		value += punctuate(self._bib, str(self.note), '.')
 
             label = self._label()
             if label != '':
                 label = '[%s]' % label
 	    if self._citekey == None:
-                value = "\\bibitem%s{}\n%s\n\n" % (label, value)
+                value = "\\bibitem%s{}\n%s\n\n" % (label, str.strip(value))
 	    else:
-                value = "\\bibitem%s{%s}\n%s\n\n" % (label, self._citekey, value)
+                value = "\\bibitem%s{%s}\n%s\n\n" % (label, self._citekey, str.strip(value))
         return value
 
 class article(misc):
@@ -768,9 +757,8 @@ class inproceedings(misc):
     year = REQUIRED
 
     def _publication(self):
-        value = ' '.join(['In', self._options.proceedings_str])
-        if value != '':
-            value += ' '
+        value = 'In ' + self._options.proceedings_str
+	value = punctuate(self._bib, value, '')
         value += "\emph{%s}" % str(self.booktitle)
         return value
 
@@ -789,8 +777,7 @@ class thesis(misc):
 	value = self.type
 	if unassigned(value):
             value = self._thesistype
-            if value != '':
-                value += ' '
+	    value = punctuate(self._bib, value, '')
             value += 'Thesis'
         return value
 
@@ -878,10 +865,12 @@ class url(misc):
     def _publication(self):
 	value = str(self.url)
         if not unassigned(self.accessyear):
-            if value != '':
-                value += ', Accessed '
+	    value = punctuate(self._bib, value, ',')
+	    value += 'Accessed'
+	    value = punctuate(self._bib, value, '')
             if not unassigned(self.accessmonth):
-                value += str(self.accessmonth) + ' '
+                value += str(self.accessmonth)
+	        value = punctuate(self._bib, value, '')
             value += str(self.accessyear)
 	return value
 

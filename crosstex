@@ -954,7 +954,7 @@ for infilename in args:
 	    for heading in headings:
 		if bib.options.convert == 'html' or bib.options.convert == 'bbl':
 		    if heading != '':
-			outfile.write("{\\renewcommand{\\refname}{%s}\n" % categories[heading])
+			outfile.write("{\\renewcommand{\\refname}{%s}\n" % heading)
 		    outfile.write("\\begin{thebibliography}{" + maxstr(categories[heading], bib) + "}\n")
 		if bib.options.convert == 'xtx' and len(bib.options.heading):
 		    outfile.write("@default " + crosstexobjects.fieldval(bib.options.heading[-bib.options.headingdepth-1][1], heading) + "\n\n")
