@@ -145,6 +145,7 @@ class bibliography(dict):
         self.punctuation = re.compile('.*([:!.?]|-{2,})$')
         self._citations = None
         self.location = []
+	self.errors = 0
     
     def addtitlephrase(self, phrase):
         self.titlephrases[re.sub(r'([\[\]^$*+?{\\|()])', r'\\\1', phrase.lower())] = phrase
@@ -434,10 +435,12 @@ class bibliography(dict):
 
     def error(self, message):
 	if self.options.check > 0:
+	    self.errors += 1
 	    sys.stderr.write(str(message) + "\n")
 
     def warning(self, message):
 	if self.options.check > 1:
+	    self.errors += 1
 	    sys.stderr.write(str(message) + "\n")
 
 # Lexer
@@ -858,6 +861,7 @@ if len(args) == 0:
     optparser.print_help()
     sys.exit(0)
 
+errors = 0
 for infilename in args:
     # Use a different environment for each file.
     bib = bibliography()
@@ -978,3 +982,7 @@ for infilename in args:
     if bib.options.convert == 'html':
 	outfile.write("\\end{document}\n")
     outfile.close()
+
+    errors += bib.errors
+
+sys.exit(errors)
