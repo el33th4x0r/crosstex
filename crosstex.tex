@@ -725,6 +725,16 @@ If \texttt{crosstex} is invoked as \texttt{xtx2bib} or the
 \texttt{.bib}, and the bibliographic information will be back-converted
 to plain \BibTeX{}.
 
+If \texttt{crosstex} is invoked as \texttt{bib2xtx} or the
+\texttt{--bib2xtx} option is given, the output extension will be
+\texttt{.xtx}, and the bibliographic information will be output using
+\XTX{}'s advanced features where possible.  Currently, it is possible
+to use the \texttt{--heading} and \texttt{--reverse-heading} as usual
+to specify any number of fields to pull out with \texttt{@default}
+statements.  This feature can be very convenient for converting old
+\BibTeX{} databases to \XTX{}, but might lose some information if used
+on an already optimized \XTX{} database.
+
 If \texttt{crosstex} is invoked as \texttt{xtx2html} or the
 \texttt{--xtx2html} option is given, the output extension will be
 \texttt{.html}; some style information will be changed as appropriate

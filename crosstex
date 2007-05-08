@@ -65,7 +65,8 @@ def optstyle(option, opt, value, parser):
         parser.rargs.insert(i, styles[value][i])
 
 def optheading(option, opt, value, parser, reversed=False):
-    parser.values.heading = (reversed, value)
+    parser.values.heading.append((reversed, value))
+    parser.values.headinglevel += 1
 
 def optsort(option, opt, value, parser, reversed=False):
     if parser.values.sort == None or value == 'none':
@@ -120,21 +121,30 @@ optparser.add_option('--no-last-first', action='store_false', dest='last_first')
 
 optparser.add_option('--xtx2bib', action='callback', callback=optconvert, help="Convert the bibliography information to old-style BibTeX.")
 optparser.add_option('--xtx2html', action='callback', callback=optconvert, help="Format the bibliography as HTML.")
+optparser.add_option('--bib2xtx', action='callback', callback=optconvert, help="Format the bibliography as HTML.")
 
 
 # A self-contained bibliographic environment.
 
+def tryint(x):
+    try:
+	return int(str(x))
+    except ValueError:
+	return x
+
 class bibliography(dict):
-    optlist = []
-    primarykeys = []
-    aliases = {}
-    preambles = []
-    seenfiles = []
-    titlephrases = {}
-    titlesmall = {}
-    punctuation = re.compile('.*([:!.?]|-{2,})$')
-    _citations = None
-    location = []
+
+    def __init__(self):
+        self.optlist = []
+        self.primarykeys = []
+        self.aliases = {}
+        self.preambles = []
+        self.seenfiles = []
+        self.titlephrases = {}
+        self.titlesmall = {}
+        self.punctuation = re.compile('.*([:!.?]|-{2,})$')
+        self._citations = None
+        self.location = []
     
     def addtitlephrase(self, phrase):
         self.titlephrases[re.sub(r'([\[\]^$*+?{\\|()])', r'\\\1', phrase.lower())] = phrase
@@ -199,7 +209,9 @@ class bibliography(dict):
 	    convert='bbl',
 	    dir=[xtxlib, '.'],
 	    dump=[],
-	    heading=(False, None),
+	    heading=[],
+	    headinglevel=0,
+	    headingdepth=0,
 	    in_str='',
 	    link=[],
 	    proceedings_str='',
@@ -211,6 +223,7 @@ class bibliography(dict):
 	(self.options, args) = optparser.parse_args(args=self.optlist)
 	self.options.dir.reverse()
 	self._citations = None
+	return args
 
     def citations(self):
 	if self._citations != None:
@@ -309,12 +322,6 @@ class bibliography(dict):
                     else:
                         self.error("crosstex: citation for nonexistant key %s" % key)
 
-	def tryint(x):
-	    try:
-		return int(str(x))
-	    except ValueError:
-		return x
-
 	for reverse, field in self.options.sort:
 	    def keyfunc(x):
 		try:
@@ -335,23 +342,21 @@ class bibliography(dict):
 		sorted.reverse()
 	    self._citations = [ citation for _, _, citation in sorted ]
 
-	self._divided = {}
-	if self.options.heading[1] != None:
-	    for cite in self._citations:
-		key = ''
-		if hasattr(self[cite], self.options.heading[1]):
-		    key = tryint(getattr(self[cite], self.options.heading[1]))
-		if key not in self._divided:
-		    self._divided[key] = []
-		self._divided[key].append(cite)
-	else:
-	    self._divided[''] = self._citations
-
 	return self._citations
 
-    def divided(self):
-	self.citations()
-	return self._divided
+    def divide(self, list=[], heading=-1):
+	if self.options.headinglevel + heading < 0:
+	    return {'': list}
+	results = {}
+	for cite in list:
+	    key = ''
+	    if hasattr(self[cite], self.options.heading[heading][1]):
+		key = tryint(getattr(self[cite], self.options.heading[heading][1]))
+	    results.setdefault(key, []).append(cite)
+	if self.options.headinglevel + heading > 0:
+	    for key in results:
+		results[key] = self.divide(results[key], heading - 1)
+	return results
 
     def addobject(self, name, keys, data, defaults, file, line):
         name = name.strip().lower()
@@ -369,22 +374,17 @@ class bibliography(dict):
 		    obj._assign(key, fields[key], condition)
 		except ValueError, details:
 		    self.warning("%s:%d: %s" % (file, line, details))
-	obj._applyconditions()
-	obj._applyinheritance()
-	obj._applyconditions()
 	for key in defaults:
 	    try:
-		obj._assign(key, defaults[key])
+		obj._assign(key, defaults[key], {}, True)
 	    except ValueError, details:
 		pass
-	obj._applyconditions()
-	obj._applyinheritance()
-	obj._applyconditions()
+	obj._resolve()
 
 	for key in keys:
 	    if key in self:
 		other = self[key]
-		if other == obj:
+		if other._fields == obj._fields and other._name == obj._name and [getattr(other, x) for x in other._fields] == [getattr(obj, x) for x in obj._fields]:
 		    raise Warning, "re-definition of %s %s at %s:%d" % (obj._name, key, other._file, other._line)
 		else:
 		    raise KeyError, "%s %s is already defined at %s:%d" % (obj._name, key, other._file, other._line)
@@ -416,18 +416,17 @@ class bibliography(dict):
 		    obj._assign(key, fields[key], condition)
 		except ValueError, details:
 		    self.warning("%s:%d: %s" % (file, line, details))
-	obj._inherit(base)
-	obj._applyconditions()
-	obj._applyinheritance()
-	obj._applyconditions()
-	for key in defaults:
+	for key, value, condition in base._conditionals:
 	    try:
-		obj._assign(key, defaults[key])
+		obj._assign(key, value, condition)
 	    except ValueError, details:
 		pass
-	obj._applyconditions()
-	obj._applyinheritance()
-	obj._applyconditions()
+	for key in defaults:
+	    try:
+		obj._assign(key, defaults[key], {}, True)
+	    except ValueError, details:
+		pass
+	obj._resolve(base)
 	
 	for key in keys:
 	    self[key] = obj
@@ -617,7 +616,13 @@ def p_stmt_comment(t):
 def p_stmt_default(t):
     'stmt : ATDEFAULT field'
     for key in t[2]:
-	t.lexer.defaults[key] = t[2][key]
+	if t[2][key] == '':
+	    try:
+	        del t.lexer.defaults[key]
+	    except KeyError:
+		pass
+	else:
+	    t.lexer.defaults[key] = t[2][key]
 
 def p_stmt_titlephrase(t):
     'stmt : ATTITLEPHRASE STRING'
@@ -749,11 +754,11 @@ def p_simplevalue_number(t):
     
 def p_simplevalue_name(t):
     'simplevalue : NAME'
-    key = t[1]
-    if key in t.lexer.bib:
-	t[0] = t.lexer.bib[key]
-    else:
-	t.lexer.bib.error("%s:%d: undefined reference to object %s; using it as a string" % (t.lexer.file, t.lineno(1), key))
+    t[0] = crosstexobjects.objref(t[1], t.lexer.bib)
+    try:
+	strval = str(t[0].value())
+    except KeyError:
+	t.lexer.bib.warning("%s:%d: reference to undefined object '%s', using it as a string" % (t.lexer.file, t.lineno(1), t[1]))
 	t[0] = t[1]
     
 def p_simplevalue_string(t):
@@ -798,7 +803,7 @@ def processfile(infilename, bib, exts=['.aux', '.xtx', '.bib']):
 	    instream.close()
 	    bib.seenfiles.append(infilename)
 	    return filename
-	except:
+	except IOError:
 	    continue
     else:
         raise IOError, '%s does not exist or is not a bibliographic database' % infilename
@@ -829,8 +834,8 @@ def parseaux(instream, bib):
     for datafile in datafiles:
 	try:
 	    processfile(datafile, bib, ['.xtx', '.bib', '.aux'])
-	except:
-	    bib.error("Could not process data file %s" % datafile)
+	except Exception, details:
+	    bib.error("Could not process data file %s: %s" % (datafile, details))
     
 def parsextx(instream, infilename, bib):
     lexer = lex.lex()
@@ -847,7 +852,8 @@ namearg = '--' + sys.argv[0].split('/')[-1]
 if optparser.has_option(namearg):
     sys.argv.insert(1, namearg)
 
-(options, args) = optparser.parse_args()
+startbib = bibliography()
+args = startbib.setoptions(sys.argv[1:])
 if len(args) == 0:
     optparser.print_help()
     sys.exit(0)
@@ -869,6 +875,8 @@ for infilename in args:
     try:
 	filename = processfile(infilename, bib)
 	outfilename = filename[:filename.rfind('.') + 1] + bib.options.convert
+	if outfilename == filename:
+	    outfilename += '.new'
 	try:
 	    if bib.options.convert == 'html':
 		t = pipes.Template()
@@ -901,14 +909,14 @@ for infilename in args:
             sys.stderr.write("%s\n" % small)
 
     # Print headers required by output format.
-    if bib.options.convert == 'bib':
+    if bib.options.convert == 'bib' or bib.options.convert == 'xtx':
 	for i in bib.preambles:
 	    outfile.write("@PREAMBLE { \"" + i + "\" }\n\n")
-    else:
-	if bib.options.convert == 'html':
-	    outfile.write("\\documentclass{report}\n")
-	    outfile.write("\\usepackage{hyperref}\n")
-	    outfile.write("\\begin{document}\n")
+    if bib.options.convert == 'html':
+	outfile.write("\\documentclass{report}\n")
+	outfile.write("\\usepackage{hyperref}\n")
+	outfile.write("\\begin{document}\n")
+    if bib.options.convert == 'html' or bib.options.convert == 'bbl':
 	for i in bib.preambles:
 	    outfile.write(i)
 	    outfile.write("\n")
@@ -918,57 +926,53 @@ for infilename in args:
 	    outfile.write("\\renewcommand{\\newblock}{\\\\}")
 	outfile.write("\\newcommand{\\etalchar}[1]{$^{#1}$}\n")
 
-    # Format each titled section.
-    divided = bib.divided()
-    headings = divided.keys()
-    headings.sort()
-    if bib.options.heading[0]:
-	headings.reverse()
-    for heading in headings:
-	if heading == '':
-	    continue
-	maxstr = ''
-	for key in divided[heading]:
-	    citekey = bib[key]._label().replace("{\\etalchar{+}}", "X")
-	    if len(citekey) > len(maxstr):
-		maxstr = citekey
-	if len(divided[heading]) != 0:
-	    strlen = int(math.ceil(math.log(len(divided[heading]), 10)))
-	    if maxstr == "":
-		maxstr = "00000000000"[0:strlen]
+    # Determine the space to allocate for labels
+    def maxstr(citations, bib):
+	if citations:
+	    maxstr = ''
+	    for key in citations:
+		citekey = bib[key]._label().replace("{\\etalchar{+}}", "X")
+		if len(citekey) > len(maxstr):
+		    maxstr = citekey
+	    strlen = int(math.ceil(math.log(len(citations), 10)))
+	    if maxstr == '':
+		return '0' * strlen
 	    elif len(maxstr) >= 13:
-		maxstr = "XXXXXXXXXXXXX"
-	else:
-	    maxstr = "X"
-	if bib.options.convert != 'bib':
-	    outfile.write("{\\renewcommand{\\refname}{%s}\n" % heading)
-	    outfile.write("\\begin{thebibliography}{" + maxstr + "}\n")
-	for key in divided[heading]:
-	    outfile.write(str(bib[key]))
-	if bib.options.convert != 'bib':
-            outfile.write("\\end{thebibliography}}\n")
+		return 'X' * 13
+	return 'X'
 
-    # Format the rest of the bibliography.
-    if '' in divided:
-	maxstr = ''
-	for key in divided['']:
-	    citekey = bib[key]._label().replace("{\\etalchar{+}}", "X")
-	    if len(citekey) > len(maxstr):
-		maxstr = citekey
-	if len(divided['']) != 0:
-	    strlen = int(math.ceil(math.log(len(divided['']), 10)))
-	    if maxstr == "":
-		maxstr = "00000000000"[0:strlen]
-	    elif len(maxstr) >= 13:
-		maxstr = "XXXXXXXXXXXXX"
-	else:
-	    maxstr = "X"
-	if bib.options.convert != 'bib':
-	    outfile.write("\\begin{thebibliography}{" + maxstr + "}\n")
-	for key in divided['']:
-	    outfile.write(str(bib[key]))
-	if bib.options.convert != 'bib':
-	    outfile.write("\\end{thebibliography}\n")
+    # Display a hierarchal bibliography in categories
+    def writecategories(categories, bib, outfile):
+	if isinstance(categories, list):
+	    for key in categories:
+		outfile.write(str(bib[key]))
+	elif isinstance(categories, dict):
+	    headings = categories.keys()
+	    headings.sort()
+	    if len(bib.options.heading) and bib.options.heading[-bib.options.headingdepth-1][0]:
+		headings.reverse()
+	    for heading in headings:
+		if bib.options.convert == 'html' or bib.options.convert == 'bbl':
+		    if heading != '':
+			outfile.write("{\\renewcommand{\\refname}{%s}\n" % categories[heading])
+		    outfile.write("\\begin{thebibliography}{" + maxstr(categories[heading], bib) + "}\n")
+		if bib.options.convert == 'xtx' and len(bib.options.heading):
+		    outfile.write("@default " + crosstexobjects.fieldval(bib.options.heading[-bib.options.headingdepth-1][1], heading) + "\n\n")
+	        bib.options.headingdepth += 1
+		writecategories(categories[heading], bib, outfile)
+	        bib.options.headingdepth -= 1
+		if bib.options.convert == 'html' or bib.options.convert == 'bbl':
+		    if heading != '':
+			outfile.write("\\end{thebibliography}}\n")
+		    else:
+			outfile.write("\\end{thebibliography}\n")
+
+    # Format each titled section.
+    if bib.options.convert != 'xtx' and bib.options.headinglevel > 1:
+	bib.options.headinglevel = 1
+    citations = bib.citations()
+    divided = bib.divide(citations)
+    writecategories(divided, bib, outfile)
 
     # Print footers required by output format.
     if bib.options.convert == 'html':

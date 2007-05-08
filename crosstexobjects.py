@@ -16,6 +16,35 @@ linksub = re.compile("\\-\s")
 # Co-ordination so as not to re-use citation keys
 usedlabels = []
 
+# Glue for object references.
+class objref:
+
+    def __init__(self, key, bib):
+	self.key = key
+	self.bib = bib
+
+    def value(self):
+	return self.bib[self.key]
+
+    def __str__(self):
+	return str(self.value())
+
+    def __eq__(self, other):
+	return isinstance(other, objref) and self.bib == other.bib and self.key == other.key
+
+    def __ne__(self, other):
+	return not self.__eq__(other)
+
+# Formatter for field = value strings
+def fieldval(field, value):
+    if isinstance(value, objref):
+	return "%s = %s" % (field, value.key)
+    else:
+	try:
+	    return "%s = %d" % (field, int(str(value)))
+	except ValueError:
+	    return "%s = \"%s\"" % (field, str(value))
+
 # Some sugar to make extension really easy.
 class requirement:
     def __str__(self):
@@ -39,62 +68,73 @@ class bibobject(object):
         self._options = self._bib.options
 	self._fields = [key for key in dir(self) if key[0] != '_']
 	self._conditionals = []
+	self._defaults = []
 	self._citekey = None
-
-    def _assign(self, key, value, condition={}):
-	try:
-            if not unassigned(getattr(self, key)):
-	        raise ValueError, "field %s has already been assigned" % key
-	except AttributeError:
-            raise ValueError, "%s has no such field %s" % (self._name, key)
-	meets = True
-	for field in condition:
-	    try:
-		fieldvalue = getattr(self, field)
-		if unassigned(fieldvalue):
-		    meets = False
-		elif fieldvalue != condition[field]:
-		    raise ValueError, "condition on %s is false" % field
-	    except AttributeError:
-                raise ValueError, "%s has no such field %s" % (self._name, key)
-	if meets:
-	    setattr(self, key, value)
-	elif (key, value, condition) not in self._conditionals:
-	    self._conditionals += [(key, value, condition)]
-	return meets
-
-    def _applyconditions(self):
-	changed = True
-	while self._conditionals and changed:
-            unmet = self._conditionals
-	    self._conditionals = []
-	    changed = False
-	    for key, value, condition in unmet:
-		try:
-		    if self._assign(key, value, condition):
-			changed = True
-		except ValueError:
-		    pass
-
-    def _applyinheritance(self):
+	self._requirements = {}
 	for field in self._fields:
-	    value = getattr(self, field)
-	    if isinstance(value, bibobject):
-		self._inherit(value)
+	    self._requirements[field] = getattr(self, field)
+
+    def _assign(self, key, value, condition={}, default=False):
+	if not hasattr(self, key):
+            raise ValueError, "%s has no such field %s" % (self._name, key)
+	for field in condition:
+	    if not hasattr(self, field):
+                raise ValueError, "%s has no such field %s" % (self._name, field)
+	if default:
+	    if (key, value, condition) not in self._defaults:
+	        self._defaults += [(key, value, condition)]
+	else:
+	    if (key, value, condition) not in self._conditionals:
+	        self._conditionals += [(key, value, condition)]
+
+    def _resolve(self):
+	for field in self._fields:
+	    setattr(self, field, self._requirements[field])
+	next = self._conditionals[:]
+	changed = True
+	usedefaults = True
+	if not self._defaults:
+	    usedefaults = False
+	while changed:
+	    changed = False
+	    conditionals = next
+	    inherit = []
+	    next = []
+	    for key, value, condition in conditionals:
+		if not hasattr(self, key) or not unassigned(getattr(self, key)):
+		    continue
+		meets = 1
+		for field in condition:
+		    fieldvalue = getattr(self, field)
+		    if unassigned(fieldvalue):
+			meets = 0
+		    elif fieldvalue != condition[field]:
+			meets = -1
+		if meets == 1:
+		    setattr(self, key, value)
+		    if isinstance(value, objref):
+			inherit += self._inherit(value.value())
+		    changed = True
+		elif meets == 0:
+		    next += [(key, value, condition)]
+	    next += inherit
+	    if not changed and usedefaults:
+		next += self._defaults
+		usedefaults = False
+		changed = True
 
     def _inherit(self, value):
-	for field in value._fields:
-	    valuefield = getattr(value, field)
-	    if not unassigned(valuefield):
-		try:
-		    self._assign(field, valuefield)
-		except ValueError:
-		    pass
-	for field, valuefield, condition in value._conditionals:
-	    try:
-		self._assign(field, valuefield, condition)
-	    except ValueError:
-		pass
+	fields = []
+	for key, value, condition in value._conditionals:
+	    possible = True
+	    if not hasattr(self, key):
+		possible = False
+	    for field in condition:
+		if not hasattr(self, key):
+		    possible = False
+	    if possible:
+		fields += [(key, value, condition)]
+	return fields
 
     def _check(self):
         for field in self._fields:
@@ -109,7 +149,7 @@ class authorlist(list):
         self._options = options
 
     def __str__(self):
-        if self._options.convert == 'bib':
+        if self._options.convert == 'bib' or self._options.convert == 'xtx':
             return ' and '.join([ str(author) for author in self ])
         value = ''
         for i in range(0, len(self)):
@@ -133,21 +173,21 @@ class string(bibobject):
     name = REQUIRED
     shortname = REQUIRED
 
-    def _assign(self, key, value, condition={}):
+    def _assign(self, key, value, condition={}, default=False):
         # longname is an alias for name
         if key == 'longname':
             key = 'name'
 
-        value = bibobject._assign(self, key, value, condition)
-	if value:
+	bibobject._assign(self, key, value, condition, default)
 
+	try:
             # With shortname, name is optional and vice versa
-            if key == 'shortname' and self.name == REQUIRED:
-                self.name = OPTIONAL
-            if key == 'name' and self.shortname == REQUIRED:
-                self.shortname = OPTIONAL
-
-        return value
+            if key == 'shortname':
+		self._requirements['name'] = OPTIONAL
+            if key == 'name':
+		self._requirements['shortname'] = OPTIONAL
+	except ValueError:
+	    pass
 
     def __str__(self):
 	value = REQUIRED
@@ -420,23 +460,24 @@ class misc(bibobject):
 
     _numbertype = ''
 
-    def _assign(self, key, value, condition={}):
-	value = bibobject._assign(self, key, value, condition)
-	if value:
-	
+    def _assign(self, key, value, condition={}, default=False):
+	bibobject._assign(self, key, value, condition, default)
+	try:
+
             # With author, editor is optional and vice versa
-            if key == 'editor' and self.author == REQUIRED:
-                self.author = OPTIONAL
-            if key == 'author' and self.editor == REQUIRED:
-                self.editor = OPTIONAL
+            if key == 'editor':
+		self._requirements['author'] = OPTIONAL
+            if key == 'author':
+		self._requirements['editor'] = OPTIONAL
 
             # With chapter, pages is optional and vice versa
-            if key == 'chapter' and self.pages == REQUIRED:
-                self.pages = OPTIONAL
-            if key == 'pages' and self.chapter == REQUIRED:
-                self.chapter = OPTIONAL
+            if key == 'pages':
+		self._requirements['chapter'] = OPTIONAL
+            if key == 'chapter':
+		self._requirements['pages'] = OPTIONAL
 
-	return value
+	except ValueError:
+	    pass
 
     def _label(self):
         # Compute a new label
@@ -597,7 +638,22 @@ class misc(bibobject):
             for field in self._fields:
                 fieldvalue = getattr(self, field)
 		if not unassigned(fieldvalue):
-                    value += ",\n\t%s = \"%s\"" % (field, str(fieldvalue))
+		    value += ",\n\t" + fieldval(field, fieldvalue)
+            value += "}\n\n"
+        elif self._options.convert == 'xtx':
+            value = "@%s{%s" % (self._name, self._primarykey)
+            for field, fieldvalue, condition in self._conditionals:
+		if self._bib.options.heading and field in [x[1] for x in self._bib.options.heading[-self._bib.options.headingdepth-1:]]:
+		    continue
+		value += ",\n\t"
+		if condition:
+		    value += '['
+		    for k, v in condition:
+			if value[-1] != '[':
+			    value += ', '
+			value += fieldval(k, v)
+		    value += '] '
+		value += fieldval(field, fieldvalue)
             value += "}\n\n"
         else:
             value = ''
@@ -668,8 +724,9 @@ class misc(bibobject):
             if label != '':
                 label = '[%s]' % label
 	    if self._citekey == None:
-		self._citekey = ''
-            value = "\\bibitem%s{%s}\n%s\n\n" % (label, self._citekey, value)
+                value = "\\bibitem%s{}\n%s\n\n" % (label, value)
+	    else:
+                value = "\\bibitem%s{%s}\n%s\n\n" % (label, self._citekey, value)
         return value
 
 class article(misc):
@@ -831,12 +888,12 @@ class url(misc):
 class newspaperarticle(article):
     author = OPTIONAL
 
-    def _assign(self, key, value, condition={}):
+    def _assign(self, key, value, condition={}, default=False):
          # newspaper is an alias for journal
          if key == 'newspaper':
              key = 'journal'
 
-         return article._assign(self, key, value, condition)
+         article._assign(self, key, value, condition, default)
 
 class newspaper(journal):
     pass

@@ -36,6 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 %{prefix}%{bindir}/crosstex
 %{prefix}%{bindir}/xtx2bib
 %{prefix}%{bindir}/xtx2html
+%{prefix}%{bindir}/bib2xtx
 %{prefix}%{libdir}
 
 %changelog

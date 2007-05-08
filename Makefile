@@ -1,4 +1,4 @@
-VERSION=0.5
+VERSION=0.5.2
 RELEASE=1
 PACKAGE=crosstex-${VERSION}
 
@@ -24,6 +24,7 @@ install:
 	chmod 0755 $(ROOT)$(PREFIX)$(BINDIR)/crosstex
 	ln -sf crosstex $(ROOT)$(PREFIX)$(BINDIR)/xtx2bib
 	ln -sf crosstex $(ROOT)$(PREFIX)$(BINDIR)/xtx2html
+	ln -sf crosstex $(ROOT)$(PREFIX)$(BINDIR)/bib2xtx
 
 crosstex.pdf: crosstex.tex
 	pdflatex crosstex && pdflatex crosstex

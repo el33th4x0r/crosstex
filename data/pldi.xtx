@@ -1,0 +1,3050 @@
+@include conferences-cs
+
+@default bibsource = "DBLP, http://dblp.uni-trier.de"
+
+@default booktitle = pldi-best
+
+@default year = 2004
+
+@default year = 1999
+
+@inproceedings{DBLP:conf/pldi/BlellochC99a,
+	title = "On bounding time and space for multiprocessor garbage collection
+               (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989456",
+	author = "Guy E. Blelloch and Perry Cheng",
+	pages = "626-641"}
+
+@inproceedings{DBLP:conf/pldi/Frigo99a,
+	title = "A fast Fourier transform compiler (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989457",
+	author = "Matteo Frigo",
+	pages = "642-655"}
+
+@inproceedings{DBLP:conf/pldi/GrantPMCE99a,
+	title = "An evaluation of staged run-time optimizations in DyC (with
+               retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989458",
+	author = "Brian Grant and Matthai Philipose and Markus Mock and Craig Chambers and Susan J. Eggers",
+	pages = "656-669"}
+
+@default year = 1998
+
+@inproceedings{DBLP:conf/pldi/AmmonsL98a,
+	title = "Improving data-flow analysis with path profiles (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989451",
+	author = "Glenn Ammons and James R. Larus",
+	pages = "568-582"}
+
+@inproceedings{DBLP:conf/pldi/BaconKMS98a,
+	title = "Thin locks: featherweight Synchronization for Java (with
+               retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989452",
+	author = "David F. Bacon and Ravi B. Konuru and Chet Murthy and Mauricio J. Serrano",
+	pages = "583-595"}
+
+@inproceedings{DBLP:conf/pldi/BodikGS98a,
+	title = "Complete removal of redundant expressions (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989453",
+	author = "Rastislav Bod\'{\i}k and Rajiv Gupta and Mary Lou Soffa",
+	pages = "596-611"}
+
+@inproceedings{DBLP:conf/pldi/NeculaL98a,
+	title = "The design and implementation of a certifying compiler (with
+               retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989454",
+	author = "George C. Necula and Peter Lee",
+	pages = "612-625"}
+
+@default year = 1996
+
+@inproceedings{DBLP:conf/pldi/LeeL96a,
+	title = "Optimizing ML with run-time code generation (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989448",
+	author = "Peter Lee and Mark Leone",
+	pages = "540-553"}
+
+@inproceedings{DBLP:conf/pldi/TarditiMCSHL96a,
+	title = "TIL: a type-directed, optimizing compiler for ML (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989449",
+	author = "David Tarditi and J. Gregory Morrisett and Perry Cheng and Chris Stone and Robert Harper and Peter Lee",
+	pages = "554-567"}
+
+@default year = 1994
+
+@inproceedings{DBLP:conf/pldi/SrivastavaE94a,
+	title = "ATOM: a system for building customized program analysis
+               tools (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989446",
+	author = "Amitabh Srivastava and Alan Eustace",
+	pages = "528-539"}
+
+@default year = 1993
+
+@inproceedings{DBLP:conf/pldi/Boehm93a,
+	title = "Space efficient conservative garbage collection (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989442",
+	author = "Hans-Juergen Boehm",
+	pages = "490-501"}
+
+@inproceedings{DBLP:conf/pldi/FlanaganSDF93a,
+	title = "The essence of compiling with continuations (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989443",
+	author = "Cormac Flanagan and Amr Sabry and Bruce F. Duba and Matthias Felleisen",
+	pages = "502-514"}
+
+@inproceedings{DBLP:conf/pldi/KernsE93a,
+	title = "Balanced scheduling: instruction scheduling when memory
+               latency is uncertain (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989444",
+	author = "Daniel R. Kerns and Susan J. Eggers",
+	pages = "515-527"}
+
+@default year = 1992
+
+@inproceedings{DBLP:conf/pldi/KnoopRS92a,
+	title = "Lazy code motion (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989439",
+	author = "Jens Knoop and Oliver R{\"u}thing and Bernhard Steffen",
+	pages = "460-472"}
+
+@inproceedings{DBLP:conf/pldi/LandiR92a,
+	title = "A safe approximate algorithm for interprocedural pointer
+               aliasing (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989440",
+	author = "William Landi and Barbara G. Ryder",
+	pages = "473-489"}
+
+@default year = 1991
+
+@inproceedings{DBLP:conf/pldi/CartwrightF91a,
+	title = "Soft typing (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989435",
+	author = "Robert Cartwright and Mike Fagan",
+	pages = "412-428"}
+
+@inproceedings{DBLP:conf/pldi/LamW91,
+	title = "A data locality optimizing algorithm (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989437",
+	author = "Monica S. Lam and Michael E. Wolf",
+	pages = "442-459"}
+
+@inproceedings{DBLP:conf/pldi/Wall91a,
+	title = "Predicting program behavior using real or estimated profiles
+               (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989436",
+	author = "David W. Wall",
+	pages = "429-441"}
+
+@default year = 1990
+
+@inproceedings{DBLP:conf/pldi/CallahanCK90a,
+	title = "Improving register allocation for subscripted variables
+               (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989428",
+	author = "David Callahan and Steve Carr and Ken Kennedy",
+	pages = "328-342"}
+
+@inproceedings{DBLP:conf/pldi/ChaseWZ90a,
+	title = "Analysis of pointers and structures (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989429",
+	author = "David Chase and Mark N. Wegman and F. Kenneth Zadeck",
+	pages = "343-359"}
+
+@inproceedings{DBLP:conf/pldi/Clinger90a,
+	title = "How to read floating point numbers accurately (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989430",
+	author = "William D. Clinger",
+	pages = "360-371"}
+
+@inproceedings{DBLP:conf/pldi/Kessler90a,
+	title = "Fast breakpoints: design and implementation (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989432",
+	author = "Peter B. Kessler",
+	pages = "390-397"}
+
+@inproceedings{DBLP:conf/pldi/PettisHD90,
+	title = "Profile guided code positioning (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989433",
+	author = "Karl Pettis and Robert C. Hansen and Jack W. Davidson",
+	pages = "398-411"}
+
+@inproceedings{DBLP:conf/pldi/SteeleW90a,
+	title = "How to print floating-point numbers accurately (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989431",
+	author = "Guy L. Steele, Jr. and Jon L. White",
+	pages = "372-389"}
+
+@default year = 1989
+
+@inproceedings{DBLP:conf/pldi/BriggsCKT89a,
+	title = "Coloring heuristics for register allocation (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989424",
+	author = "Preston Briggs and Keith D. Cooper and Ken Kennedy and Linda Torczon",
+	pages = "283-294"}
+
+@inproceedings{DBLP:conf/pldi/ChambersU89a,
+	title = "A retrospective on: ``customization: optimizing compiler
+               technology for self, a dynamically-typed object-oriented
+               programming language'' (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989425",
+	author = "Craig Chambers and David Ungar",
+	pages = "295-312"}
+
+@inproceedings{DBLP:conf/pldi/Schonberg89a,
+	title = "On-the-fly detection of access anomalies (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989426",
+	author = "Edith Schonberg",
+	pages = "313-327"}
+
+@default year = 1988
+
+@inproceedings{DBLP:conf/pldi/Appel88,
+	title = "Real-time concurrent collection on stock multiprocessors
+               (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989417",
+	author = "Andrew W. Appel",
+	pages = "205-216"}
+
+@inproceedings{DBLP:conf/pldi/CooperK88a,
+	title = "Interprocedural side-effect analysis in linear time (with
+               retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989418",
+	author = "Keith D. Cooper and Ken Kennedy",
+	pages = "217-228"}
+
+@inproceedings{DBLP:conf/pldi/HorwitzRB88a,
+	title = "Interprocedural slicing using dependence graphs (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989419",
+	author = "Susan Horwitz and Thomas W. Reps and David Binkley",
+	pages = "229-243"}
+
+@inproceedings{DBLP:conf/pldi/Lam88a,
+	title = "Software pipelining: an effective scheduling technique for
+               VLIW machines (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989420",
+	author = "Monica S. Lam",
+	pages = "244-256"}
+
+@inproceedings{DBLP:conf/pldi/Shivers88a,
+	title = "Higher-order control-flow analysis in retrospect: lessons
+               learned, lessons abandoned (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989421",
+	author = "Olin Shivers",
+	pages = "257-269"}
+
+@inproceedings{DBLP:conf/pldi/Wall88a,
+	title = "Register windows vs. register allocation (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989422",
+	author = "David W. Wall",
+	pages = "270-282"}
+
+@default year = 1986
+
+@inproceedings{DBLP:conf/pldi/BurkeC86,
+	title = "Interprocedural dependence analysis and parallelization
+               (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989411",
+	author = "Michael G. Burke and Ron Cytron",
+	pages = "139-154"}
+
+@inproceedings{DBLP:conf/pldi/CallahanCKT86,
+	title = "Interprocedural constant propagation (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989412",
+	author = "David Callahan and Keith D. Cooper and Ken Kennedy and Linda Torczon",
+	pages = "155-166"}
+
+@inproceedings{DBLP:conf/pldi/KranzKRHPA86,
+	title = "Orbit: an optimizing compiler for scheme (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989414",
+	author = "David A. Kranz and Richard Kelsey and Jonathan Rees and Paul Hudak and James Philbin and Norman Adams",
+	pages = "175-191"}
+
+@inproceedings{DBLP:conf/pldi/MuchnickG86,
+	title = "Efficient instruction scheduling for a pipelined architecture
+               (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989413",
+	author = "Steven S. Muchnick and Phillip B. Gibbons",
+	pages = "167-174"}
+
+@inproceedings{DBLP:conf/pldi/Wall86,
+	title = "Global register allocation at link time (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989415",
+	author = "David W. Wall",
+	pages = "192-204"}
+
+@default year = 1984
+
+@inproceedings{DBLP:conf/pldi/AllenK84,
+	title = "Automatic loop interchange (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989405",
+	author = "Randy Allen and Ken Kennedy",
+	pages = "75-90"}
+
+@inproceedings{DBLP:conf/pldi/ChowH84,
+	title = "Register allocation by priority-based coloring (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989406",
+	author = "Fred C. Chow and John L. Hennessy",
+	pages = "91-103"}
+
+@inproceedings{DBLP:conf/pldi/DavidsonF84,
+	title = "Automatic generation of peephole optimizations (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989407",
+	author = "Jack W. Davidson and Christopher W. Fraser",
+	pages = "104-111"}
+
+@inproceedings{DBLP:conf/pldi/FisherERN84,
+	title = "Parallel processing: a smart compiler and a dumb machine
+               (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989408",
+	author = "Joseph A. Fisher and John R. Ellis and John C. Ruttenberg and Alexandru Nicolau",
+	pages = "112-124"}
+
+@inproceedings{DBLP:conf/pldi/Johnsson84,
+	title = "Efficient compilation of lazy evaluation (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989409",
+	author = "Thomas Johnsson",
+	pages = "125-138"}
+
+@default year = 1982
+
+@inproceedings{DBLP:conf/pldi/AuslanderH82,
+	title = "An overview of the PL.8 compiler (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989400",
+	author = "Marc A. Auslander and Martin Hopkins",
+	pages = "38-48"}
+
+@inproceedings{DBLP:conf/pldi/Chaitin82,
+	title = "Register allocation and spilling via graph coloring (with
+               retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989403",
+	author = "Gregory J. Chaitin",
+	pages = "66-74"}
+
+@inproceedings{DBLP:conf/pldi/GrahamKM82,
+	title = "gprof: a call graph execution profiler (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989401",
+	author = "Susan L. Graham and Peter B. Kessler and Marshall K. McKusick",
+	pages = "49-57"}
+
+@inproceedings{DBLP:conf/pldi/MarksteinMC82,
+	title = "Optimization of range checking (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989402",
+	author = "Victoria Markstein and Peter W. Markstein and John Cocke",
+	pages = "58-65"}
+
+@default year = 1979
+
+@inproceedings{DBLP:conf/pldi/CattellNL79,
+	title = "Code generation in a machine-independent compiler (with
+               retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989395",
+	author = "R. G. G. Cattell and Joseph M. Newcomer and Bruce W. Leverett",
+	pages = "1-13"}
+
+@inproceedings{DBLP:conf/pldi/FabriA79,
+	title = "Automatic storage optimization (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989398",
+	author = "Janet Fabri and Frances E. Allen",
+	pages = "28-37"}
+
+@inproceedings{DBLP:conf/pldi/PennelloD79,
+	title = "Efficient computation of LALR(1) look-ahead sets (with retrospective)",
+	ee = "http://doi.acm.org/10.1145/989393.989396",
+	author = "Thomas J. Pennello and Frank DeRemer",
+	pages = "14-27"}
+
+@default booktitle = pldi
+
+@default year = 2006
+
+@inproceedings{DBLP:conf/pldi/AcarBBT06,
+	title = "An experimental analysis of self-adjusting computation.",
+	ee = "http://doi.acm.org/10.1145/1133981.1133993",
+	author = "Umut A. Acar and Guy E. Blelloch and Matthias Blume and Kanat Tangwongsan",
+	pages = "96-107"}
+
+@inproceedings{DBLP:conf/pldi/Adl-TabatabaiLMMSS06,
+	title = "Compiler and runtime support for efficient software transactional
+               memory.",
+	ee = "http://doi.acm.org/10.1145/1133981.1133985",
+	author = "Ali-Reza Adl-Tabatabai and Brian T. Lewis and Vijay Menon and Brian R. Murphy and Bratin Saha and Tatiana Shpeisman",
+	pages = "26-37"}
+
+@inproceedings{DBLP:conf/pldi/BartonCAZFCA06,
+	title = "Shared memory programming for large scale machines.",
+	ee = "http://doi.acm.org/10.1145/1133981.1133995",
+	author = "Christopher Barton and Calin Cascaval and George Alm{\'a}si and Yili Zheng and Montse Farreras and Siddhartha Chatterjee and Jos{\'e} Nelson Amaral",
+	pages = "108-117"}
+
+@inproceedings{DBLP:conf/pldi/BergerZ06,
+	title = "DieHard: probabilistic memory safety for unsafe languages.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134000",
+	author = "Emery D. Berger and Benjamin G. Zorn",
+	pages = "158-168"}
+
+@inproceedings{DBLP:conf/pldi/BridgesVOA06,
+	title = "Automatic instruction scheduler retargeting by reverse-engineering.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134008",
+	author = "Matthew J. Bridges and Neil Vachharajani and Guilherme Ottoni and David I. August",
+	pages = "228-238"}
+
+@inproceedings{DBLP:conf/pldi/CarlstromMCCMKO06,
+	title = "The Atomos transactional programming language.",
+	ee = "http://doi.acm.org/10.1145/1133981.1133983",
+	author = "Brian D. Carlstrom and Austen McDonald and Hassan Chafi and JaeWoong Chung and Chi Cao Minh and Christoforos E. Kozyrakis and Kunle Olukotun",
+	pages = "1-13"}
+
+@inproceedings{DBLP:conf/pldi/ChenBCGC06,
+	title = "Profile-guided proactive garbage collection for locality
+               optimization.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134021",
+	author = "Wen-ke Chen and Sanjay Bhansali and Trishul M. Chilimbi and Xiaofeng Gao and Weihaw Chuang",
+	pages = "332-340"}
+
+@inproceedings{DBLP:conf/pldi/ChenLKI06,
+	title = "Reducing NoC energy consumption through compiler-directed
+               channel voltage scaling.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134004",
+	author = "Guangyu Chen and Feihui Li and Mahmut T. Kandemir and Mary Jane Irwin",
+	pages = "193-203"}
+
+@inproceedings{DBLP:conf/pldi/ChilimbiS06,
+	title = "Cache-conscious coallocation of hot data streams.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134011",
+	author = "Trishul M. Chilimbi and Ran Shaham",
+	pages = "252-262"}
+
+@inproceedings{DBLP:conf/pldi/CookPR06,
+	title = "Termination proofs for systems code.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134029",
+	author = "Byron Cook and Andreas Podelski and Andrey Rybalchenko",
+	pages = "415-426"}
+
+@inproceedings{DBLP:conf/pldi/DhurjatiKA06,
+	title = "SAFECode: enforcing alias analysis for weakly typed languages.",
+	ee = "http://doi.acm.org/10.1145/1133981.1133999",
+	author = "Dinakar Dhurjati and Sumant Kowshik and Vikram S. Adve",
+	pages = "144-157"}
+
+@inproceedings{DBLP:conf/pldi/ErtlCG06,
+	title = "Fast and flexible instruction selection with on-demand tree-parsing
+               automata.",
+	ee = "http://doi.acm.org/10.1145/1133981.1133988",
+	author = "M. Anton Ertl and Kevin Casey and David Gregg",
+	pages = "52-60"}
+
+@inproceedings{DBLP:conf/pldi/FeiM06,
+	title = "Artemis: practical runtime monitoring of applications for
+               execution anomalies.",
+	ee = "http://doi.acm.org/10.1145/1133981.1133992",
+	author = "Long Fei and Samuel P. Midkiff",
+	pages = "84-95"}
+
+@inproceedings{DBLP:conf/pldi/FengSVXN06,
+	title = "Modular verification of assembly code with stack-based control
+               abstractions.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134028",
+	author = "Xinyu Feng and Zhong Shao and Alexander Vaynberg and Sen Xiang and Zhaozhong Ni",
+	pages = "401-414"}
+
+@inproceedings{DBLP:conf/pldi/Grimm06,
+	title = "Better extensibility through modular syntax.",
+	ee = "http://doi.acm.org/10.1145/1133981.1133987",
+	author = "Robert Grimm",
+	pages = "38-51"}
+
+@inproceedings{DBLP:conf/pldi/GulwaniT06,
+	title = "Combining abstract interpreters.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134026",
+	author = "Sumit Gulwani and Ashish Tiwari",
+	pages = "376-386"}
+
+@inproceedings{DBLP:conf/pldi/GuyerMF06,
+	title = "Free-Me: a static analysis for automatic individual object
+               reclamation.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134024",
+	author = "Samuel Z. Guyer and Kathryn S. McKinley and Daniel Frampton",
+	pages = "364-375"}
+
+@inproceedings{DBLP:conf/pldi/HarrisPST06,
+	title = "Optimizing memory transactions.",
+	ee = "http://doi.acm.org/10.1145/1133981.1133984",
+	author = "Tim Harris and Mark Plesko and Avraham Shinnar and David Tarditi",
+	pages = "14-25"}
+
+@inproceedings{DBLP:conf/pldi/JarviGWLS06,
+	title = "Algorithm specialization in generic programming: challenges
+               of constrained generics in C++.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134014",
+	author = "Jaakko J{\"a}rvi and Douglas Gregor and Jeremiah Willcock and Andrew Lumsdaine and Jeremy Siek",
+	pages = "272-282"}
+
+@inproceedings{DBLP:conf/pldi/JohnsonE06,
+	title = "Context-sensitive domain-independent algorithm composition
+               and selection.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134003",
+	author = "Troy A. Johnson and Rudolf Eigenmann",
+	pages = "181-192"}
+
+@inproceedings{DBLP:conf/pldi/KermanyP06,
+	title = "The Compressor: concurrent, incremental, and parallel compaction.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134023",
+	author = "Haim Kermany and Erez Petrank",
+	pages = "354-363"}
+
+@inproceedings{DBLP:conf/pldi/KoesG06,
+	title = "A global progressive register allocator.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134006",
+	author = "David Ryan Koes and Seth Copen Goldstein",
+	pages = "204-215"}
+
+@inproceedings{DBLP:conf/pldi/LauAHC06,
+	title = "Online performance auditing: using hot optimizations without
+               getting burned.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134010",
+	author = "Jeremy Lau and Matthew Arnold and Michael Hind and Brad Calder",
+	pages = "239-251"}
+
+@inproceedings{DBLP:conf/pldi/NaikAW06,
+	title = "Effective static race detection for Java.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134018",
+	author = "Mayur Naik and Alex Aiken and John Whaley",
+	pages = "308-319"}
+
+@inproceedings{DBLP:conf/pldi/NakaikeIKN06,
+	title = "Profile-based global live-range splitting.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134007",
+	author = "Takuya Nakaike and Tatsushi Inagaki and Hideaki Komatsu and Toshio Nakatani",
+	pages = "216-227"}
+
+@inproceedings{DBLP:conf/pldi/NeamtiuHSO06,
+	title = "Practical dynamic software updating for C.",
+	ee = "http://doi.acm.org/10.1145/1133981.1133991",
+	author = "Iulian Neamtiu and Michael W. Hicks and Gareth Stoyle and Manuel Oriol",
+	pages = "72-83"}
+
+@inproceedings{DBLP:conf/pldi/NuzmanRZ06,
+	title = "Auto-vectorization of interleaved data for SIMD.",
+	ee = "http://doi.acm.org/10.1145/1133981.1133997",
+	author = "Dorit Nuzman and Ira Rosen and Ayal Zaks",
+	pages = "132-143"}
+
+@inproceedings{DBLP:conf/pldi/PratikakisFH06,
+	title = "LOCKSMITH: context-sensitive correlation analysis for race
+               detection.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134019",
+	author = "Polyvios Pratikakis and Jeffrey S. Foster and Michael W. Hicks",
+	pages = "320-331"}
+
+@inproceedings{DBLP:conf/pldi/RenWP06,
+	title = "Optimizing data permutations for SIMD devices.",
+	ee = "http://doi.acm.org/10.1145/1133981.1133996",
+	author = "Gang Ren and Peng Wu and David A. Padua",
+	pages = "118-131"}
+
+@inproceedings{DBLP:conf/pldi/ShiversM06,
+	title = "Continuations and transducer composition.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134016",
+	author = "Olin Shivers and Matthew Might",
+	pages = "295-307"}
+
+@inproceedings{DBLP:conf/pldi/SpoonhowerABCG06,
+	title = "Eventrons: a safe programming construct for high-frequency
+               hard real-time applications.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134015",
+	author = "Daniel Spoonhower and Joshua S. Auerbach and David F. Bacon and Perry Cheng and David Grove",
+	pages = "283-294"}
+
+@inproceedings{DBLP:conf/pldi/SridharanB06,
+	title = "Refinement-based context-sensitive points-to analysis for
+               Java.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134027",
+	author = "Manu Sridharan and Rastislav Bod\'{\i}k",
+	pages = "387-400"}
+
+@inproceedings{DBLP:conf/pldi/TriantafyllisBROA06,
+	title = "A framework for unrestricted whole-program optimization.",
+	ee = "http://doi.acm.org/10.1145/1133981.1133989",
+	author = "Spyridon Triantafyllis and Matthew J. Bridges and Easwaran Raman and Guilherme Ottoni and David I. August",
+	pages = "61-71"}
+
+@inproceedings{DBLP:conf/pldi/VechevYB06,
+	title = "Correctness-preserving derivation of concurrent garbage
+               collection algorithms.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134022",
+	author = "Martin T. Vechev and Eran Yahav and David F. Bacon",
+	pages = "341-353"}
+
+@inproceedings{DBLP:conf/pldi/ZhangGG06,
+	title = "Pruning dynamic slices with confidence.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134002",
+	author = "Xiangyu Zhang and Neelam Gupta and Rajiv Gupta",
+	pages = "169-180"}
+
+@inproceedings{DBLP:conf/pldi/ZhuangSCC06,
+	title = "Accurate, efficient, and adaptive calling context profiling.",
+	ee = "http://doi.acm.org/10.1145/1133981.1134012",
+	author = "Xiaotong Zhuang and Mauricio J. Serrano and Harold W. Cain and Jong-Deok Choi",
+	pages = "263-271"}
+
+@default year = 2001
+
+@inproceedings{DBLP:conf/pldi/AggarwalR01,
+	title = "Related Field Analysis.",
+	author = "Aneesh Aggarwal and Keith H. Randall",
+	pages = "214-220"}
+
+@inproceedings{DBLP:conf/pldi/AmmeDFR01,
+	title = "SafeTSA: A Type Safe and Referentially Secure Mobile-Code
+               Representation Based on Static Single Assignment Form.",
+	author = "Wolfram Amme and Niall Dalton and Michael Franz and Jeffery von Ronne",
+	pages = "137-147"}
+
+@inproceedings{DBLP:conf/pldi/AppelG01,
+	title = "Optimal Spilling for CISC Machines with Few Registers.",
+	author = "Andrew W. Appel and Lal George",
+	pages = "243-253"}
+
+@inproceedings{DBLP:conf/pldi/ArnoldR01,
+	title = "A Framework for Reducing the Cost of Instrumented Code.",
+	author = "Matthew Arnold and Barbara G. Ryder",
+	pages = "168-179"}
+
+@inproceedings{DBLP:conf/pldi/BaconALRS01,
+	title = "Java without the Coffee Breaks: A Nonintrusive Multiprocessor
+               Garbage Collector.",
+	author = "David F. Bacon and C. Richard Attanasio and Han Lee and V. T. Rajan and Stephen Smith",
+	pages = "92-103"}
+
+@inproceedings{DBLP:conf/pldi/BallMMR01,
+	title = "Automatic Predicate Abstraction of C Programs.",
+	author = "Thomas Ball and Rupak Majumdar and Todd D. Millstein and Sriram K. Rajamani",
+	pages = "203-213"}
+
+@inproceedings{DBLP:conf/pldi/BergerZM01,
+	title = "Composing High-Performance Memory Allocators.",
+	author = "Emery D. Berger and Benjamin G. Zorn and Kathryn S. McKinley",
+	pages = "114-124"}
+
+@inproceedings{DBLP:conf/pldi/ChatterjeePHL01,
+	title = "Exact Analysis of the Cache Behavior of Nested Loops.",
+	author = "Siddhartha Chatterjee and Erin Parker and Philip J. Hanlon and Alvin R. Lebeck",
+	pages = "286-297"}
+
+@inproceedings{DBLP:conf/pldi/ChengB01,
+	title = "A Parallel, Real-Time Garbage Collector.",
+	author = "Perry Cheng and Guy E. Blelloch",
+	pages = "125-136"}
+
+@inproceedings{DBLP:conf/pldi/Chilimbi01,
+	title = "Efficient Representations and Abstractions for Quantifying
+               and Exploiting Data Reference Locality.",
+	author = "Trishul M. Chilimbi",
+	pages = "191-202"}
+
+@inproceedings{DBLP:conf/pldi/DeLineF01,
+	title = "Enforcing High-Level Protocols in Low-Level Software.",
+	author = "Robert DeLine and Manuel F{\"a}hndrich",
+	pages = "59-69"}
+
+@inproceedings{DBLP:conf/pldi/EvansF01,
+	title = "Bytecode Compression via Profiled Grammar Rewriting.",
+	author = "William S. Evans and Christopher W. Fraser",
+	pages = "148-155"}
+
+@inproceedings{DBLP:conf/pldi/GayA01,
+	title = "Language Support for Regions.",
+	author = "David Gay and Alexander Aiken",
+	pages = "70-80"}
+
+@inproceedings{DBLP:conf/pldi/GhiyaLS01,
+	title = "On the Importance of Points-to Analysis and Other Memory
+               Disambiguation Methods for C Programs.",
+	author = "Rakesh Ghiya and Daniel M. Lavery and David C. Sehr",
+	pages = "47-58"}
+
+@inproceedings{DBLP:conf/pldi/HansonP01,
+	title = "Dynamic Variables.",
+	author = "David R. Hanson and Todd A. Proebsting",
+	pages = "264-273"}
+
+@inproceedings{DBLP:conf/pldi/HeintzeT01,
+	title = "Demand-Driven Pointer Analysis.",
+	author = "Nevin Heintze and Olivier Tardieu",
+	pages = "24-34"}
+
+@inproceedings{DBLP:conf/pldi/HeintzeT01a,
+	title = "Ultra-fast Aliasing Analysis using CLA: A Million Lines
+               of C Code in a Second.",
+	author = "Nevin Heintze and Olivier Tardieu",
+	pages = "254-263"}
+
+@inproceedings{DBLP:conf/pldi/HicksMN01,
+	title = "Dynamic Software Updating.",
+	author = "Michael W. Hicks and Jonathan T. Moore and Scott Nettles",
+	pages = "13-23"}
+
+@inproceedings{DBLP:conf/pldi/KennedyS01,
+	title = "Design and Implementation of Generics for the .NET Common
+               Language Runtime.",
+	author = "Andrew Kennedy and Don Syme",
+	pages = "1-12"}
+
+@inproceedings{DBLP:conf/pldi/KrintzC01,
+	title = "Using Annotation to Reduce Dynamic Optimization Time.",
+	author = "Chandra Krintz and Brad Calder",
+	pages = "156-167"}
+
+@inproceedings{DBLP:conf/pldi/KumarMYL01,
+	title = "ESP: A Language for Programmable Devices.",
+	author = "Sanjeev Kumar and Yitzhak Mandelbaum and Xiang Yu and Kai Li",
+	pages = "309-320"}
+
+@inproceedings{DBLP:conf/pldi/MarlowJMR01,
+	title = "Asynchronous Exceptions in Haskell.",
+	author = "Simon Marlow and Simon L. Peyton Jones and Andrew Moran and John H. Reppy",
+	pages = "274-285"}
+
+@inproceedings{DBLP:conf/pldi/MollerS01,
+	title = "The Pointer Assertion Logic Engine.",
+	author = "Anders M{\o}ller and Michael I. Schwartzbach",
+	pages = "221-231"}
+
+@inproceedings{DBLP:conf/pldi/MonnierSS01,
+	title = "Principled Scavenging.",
+	author = "Stefan Monnier and Bratin Saha and Zhong Shao",
+	pages = "81-91"}
+
+@inproceedings{DBLP:conf/pldi/SchnarrHL01,
+	title = "Facile: A Language and Compiler for High-Performance Processor
+               Simulators.",
+	author = "Eric Schnarr and Mark D. Hill and James R. Larus",
+	pages = "321-331"}
+
+@inproceedings{DBLP:conf/pldi/ShahamKS01,
+	title = "Heap Profiling for Space-Efficient Java.",
+	author = "Ran Shaham and Elliot K. Kolodner and Shmuel Sagiv",
+	pages = "104-113"}
+
+@inproceedings{DBLP:conf/pldi/ThiesVSA01,
+	title = "A Unified Framework for Schedule and Storage Optimization.",
+	author = "William Thies and Fr{\'e}d{\'e}ric Vivien and Jeffrey Sheldon and Saman P. Amarasinghe",
+	pages = "232-242"}
+
+@inproceedings{DBLP:conf/pldi/VivienR01,
+	title = "Incrementalized Pointer and Escape Analysis.",
+	author = "Fr{\'e}d{\'e}ric Vivien and Martin C. Rinard",
+	pages = "35-46"}
+
+@inproceedings{DBLP:conf/pldi/XiongJJP01,
+	title = "SPL: A Language and Compiler for DSP Algorithms.",
+	author = "Jianxin Xiong and Jeremy Johnson and Robert W. Johnson and David A. Padua",
+	pages = "298-308"}
+
+@inproceedings{DBLP:conf/pldi/ZhangG01,
+	title = "Timestamped Whole Program Path Representation and its Applications.",
+	author = "Youtao Zhang and Rajiv Gupta",
+	pages = "180-190"}
+
+@default year = 2000
+
+@inproceedings{DBLP:conf/pldi/BalaDB00,
+	title = "Dynamo: a transparent dynamic optimization system.",
+	ee = "http://doi.acm.org/10.1145/349299.349303",
+	author = "Vasanth Bala and Evelyn Duesterwald and Sanjeev Banerjia",
+	pages = "1-12"}
+
+@inproceedings{DBLP:conf/pldi/BodikGS00,
+	title = "ABCD: eliminating array bounds checks on demand.",
+	ee = "http://doi.acm.org/10.1145/349299.349342",
+	author = "Rastislav Bod\'{\i}k and Rajiv Gupta and Vivek Sarkar",
+	pages = "321-333"}
+
+@inproceedings{DBLP:conf/pldi/Boothe00,
+	title = "Efficient algorithms for bidirectional debugging.",
+	ee = "http://doi.acm.org/10.1145/349299.349339",
+	author = "Bob Boothe",
+	pages = "299-310"}
+
+@inproceedings{DBLP:conf/pldi/CannarozziPC00,
+	title = "Contaminated garbage collection.",
+	ee = "http://doi.acm.org/10.1145/349299.349334",
+	author = "Dante J. Cannarozzi and Michael P. Plezbert and Ron Cytron",
+	pages = "264-273"}
+
+@inproceedings{DBLP:conf/pldi/ChengH00,
+	title = "Modular interprocedural pointer analysis using access paths:
+               design, implementation, and evaluation.",
+	ee = "http://doi.acm.org/10.1145/349299.349311",
+	author = "Ben-Chung Cheng and Wen-mei W. Hwu",
+	pages = "57-69"}
+
+@inproceedings{DBLP:conf/pldi/CierniakLS00,
+	title = "Practicing JUDO: Java under dynamic optimizations.",
+	ee = "http://doi.acm.org/10.1145/349299.349306",
+	author = "Michal Cierniak and Guei-Yuan Lueh and James M. Stichnoth",
+	pages = "13-26"}
+
+@inproceedings{DBLP:conf/pldi/ColbyLNBPC00,
+	title = "A certifying compiler for Java.",
+	ee = "http://doi.acm.org/10.1145/349299.349315",
+	author = "Christopher Colby and Peter Lee and George C. Necula and Fred Blau and Mark Plesko and Kenneth Cline",
+	pages = "95-107"}
+
+@inproceedings{DBLP:conf/pldi/Das00,
+	title = "Unification-based pointer analysis with directional assignments.",
+	ee = "http://doi.acm.org/10.1145/349299.349309",
+	author = "Manuvir Das",
+	pages = "35-46"}
+
+@inproceedings{DBLP:conf/pldi/DolbyC00,
+	title = "An automatic object inlining optimization and its evaluation.",
+	ee = "http://doi.acm.org/10.1145/349299.349344",
+	author = "Julian Dolby and Andrew A. Chien",
+	pages = "345-357"}
+
+@inproceedings{DBLP:conf/pldi/DomaniKP00,
+	title = "A generational on-the-fly garbage collector for Java.",
+	ee = "http://doi.acm.org/10.1145/349299.349336",
+	author = "Tamar Domani and Elliot K. Kolodner and Erez Petrank",
+	pages = "274-284"}
+
+@inproceedings{DBLP:conf/pldi/FahndrichRD00,
+	title = "Scalable context-sensitive flow analysis using instantiation
+               constraints.",
+	ee = "http://doi.acm.org/10.1145/349299.349332",
+	author = "Manuel F{\"a}hndrich and Jakob Rehof and Manuvir Das",
+	pages = "253-263"}
+
+@inproceedings{DBLP:conf/pldi/FlanaganF00,
+	title = "Type-based race detection for Java.",
+	ee = "http://doi.acm.org/10.1145/349299.349328",
+	author = "Cormac Flanagan and Stephen N. Freund",
+	pages = "219-232"}
+
+@inproceedings{DBLP:conf/pldi/GhemawatRS00,
+	title = "Field analysis: getting useful and low-cost interprocedural
+               information.",
+	ee = "http://doi.acm.org/10.1145/349299.349343",
+	author = "Sanjay Ghemawat and Keith H. Randall and Daniel J. Scales",
+	pages = "334-344"}
+
+@inproceedings{DBLP:conf/pldi/HeydonLY00,
+	title = "Caching function calls using precise dependencies.",
+	ee = "http://doi.acm.org/10.1145/349299.349341",
+	author = "Allan Heydon and Roy Levin and Yuan Yu",
+	pages = "311-320"}
+
+@inproceedings{DBLP:conf/pldi/LarsenA00,
+	title = "Exploiting superword level parallelism with multimedia instruction
+               sets.",
+	ee = "http://doi.acm.org/10.1145/349299.349320",
+	author = "Samuel Larsen and Saman P. Amarasinghe",
+	pages = "145-156"}
+
+@inproceedings{DBLP:conf/pldi/LinP00,
+	title = "Compiler analysis of irregular memory accesses.",
+	ee = "http://doi.acm.org/10.1145/349299.349322",
+	author = "Yuan Lin and David A. Padua",
+	pages = "157-168"}
+
+@inproceedings{DBLP:conf/pldi/Lucco00,
+	title = "Split-stream dictionary program compression.",
+	ee = "http://doi.acm.org/10.1145/349299.349307",
+	author = "Steven Lucco",
+	pages = "27-34"}
+
+@inproceedings{DBLP:conf/pldi/Necula00,
+	title = "Translation validation for an optimizing compiler.",
+	ee = "http://doi.acm.org/10.1145/349299.349314",
+	author = "George C. Necula",
+	pages = "83-94"}
+
+@inproceedings{DBLP:conf/pldi/Ramalingam00,
+	title = "On loops, dominators, and dominance frontier.",
+	ee = "http://doi.acm.org/10.1145/349299.349330",
+	author = "G. Ramalingam",
+	pages = "233-241"}
+
+@inproceedings{DBLP:conf/pldi/RamseyJ00,
+	title = "A single intermediate language that supports multiple implementations
+               of exceptions.",
+	ee = "http://doi.acm.org/10.1145/349299.349337",
+	author = "Norman Ramsey and Simon L. Peyton Jones",
+	pages = "285-298"}
+
+@inproceedings{DBLP:conf/pldi/RouhtevC00,
+	title = "Off-line variable substitution for scaling points-to analysis.",
+	ee = "http://doi.acm.org/10.1145/349299.349310",
+	author = "Atanas Rountev and Satish Chandra",
+	pages = "47-56"}
+
+@inproceedings{DBLP:conf/pldi/Ruf00,
+	title = "Effective synchronization removal for Java.",
+	ee = "http://doi.acm.org/10.1145/349299.349327",
+	author = "Erik Ruf",
+	pages = "208-218"}
+
+@inproceedings{DBLP:conf/pldi/RuginaR00,
+	title = "Symbolic bounds analysis of pointers, array indices, and
+               accessed memory regions.",
+	ee = "http://doi.acm.org/10.1145/349299.349325",
+	author = "Radu Rugina and Martin C. Rinard",
+	pages = "182-195"}
+
+@inproceedings{DBLP:conf/pldi/SreedharBC00,
+	title = "A framework for interprocedural optimization in the presence
+               of dynamic class loading.",
+	ee = "http://doi.acm.org/10.1145/349299.349326",
+	author = "Vugranam C. Sreedhar and Michael G. Burke and Jong-Deok Choi",
+	pages = "196-207"}
+
+@inproceedings{DBLP:conf/pldi/StephensonBA00,
+	title = "Bitwidth analysis with application to silicon compilation.",
+	ee = "http://doi.acm.org/10.1145/349299.349317",
+	author = "Mark Stephenson and Jonathan Babb and Saman P. Amarasinghe",
+	pages = "108-120"}
+
+@inproceedings{DBLP:conf/pldi/WanH00,
+	title = "Functional reactive programming from first principles.",
+	ee = "http://doi.acm.org/10.1145/349299.349331",
+	author = "Zhanyong Wan and Paul Hudak",
+	pages = "242-252"}
+
+@inproceedings{DBLP:conf/pldi/WilkenLH00,
+	title = "Optimal instruction scheduling using integer programming.",
+	ee = "http://doi.acm.org/10.1145/349299.349318",
+	author = "Kent D. Wilken and Jack Liu and Mark Heffernan",
+	pages = "121-133"}
+
+@inproceedings{DBLP:conf/pldi/XuMR00,
+	title = "Safety checking of machine code.",
+	ee = "http://doi.acm.org/10.1145/349299.349313",
+	author = "Zhichen Xu and Barton P. Miller and Thomas W. Reps",
+	pages = "70-82"}
+
+@inproceedings{DBLP:conf/pldi/YiAK00,
+	title = "Transforming loops to recursion for multi-level memory hierarchies.",
+	ee = "http://doi.acm.org/10.1145/349299.349323",
+	author = "Qing Yi and Vikram S. Adve and Ken Kennedy",
+	pages = "169-181"}
+
+@inproceedings{DBLP:conf/pldi/ZalameaLAV00,
+	title = "Improved spill code generation for software pipelined loops.",
+	ee = "http://doi.acm.org/10.1145/349299.349319",
+	author = "Javier Zalamea and Josep Llosa and Eduard Ayguad{\'e} and Mateo Valero",
+	pages = "134-144"}
+
+@default year = 1999
+
+@inproceedings{DBLP:conf/pldi/BlellochC99,
+	title = "On Bounding Time and Space for Multiprocessor Garbage Collection.",
+	ee = "http://doi.acm.org/10.1145/301618.301648",
+	author = "Guy E. Blelloch and Perry Cheng",
+	pages = "104-117"}
+
+@inproceedings{DBLP:conf/pldi/BodikGS99,
+	title = "Load-Reuse Analysis: Design and Evaluation.",
+	ee = "http://doi.acm.org/10.1145/301618.301643",
+	author = "Rastislav Bod\'{\i}k and Rajiv Gupta and Mary Lou Soffa",
+	pages = "64-76"}
+
+@inproceedings{DBLP:conf/pldi/ChilimbiDL99,
+	title = "Cache-Conscious Structure Definition.",
+	ee = "http://doi.acm.org/10.1145/301618.301635",
+	author = "Trishul M. Chilimbi and Bob Davidson and James R. Larus",
+	pages = "13-24"}
+
+@inproceedings{DBLP:conf/pldi/ChilimbiHL99,
+	title = "Cache-Conscious Structure Layout.",
+	ee = "http://doi.acm.org/10.1145/301618.301633",
+	author = "Trishul M. Chilimbi and Mark D. Hill and James R. Larus",
+	pages = "1-12"}
+
+@inproceedings{DBLP:conf/pldi/CooperM99,
+	title = "Enhanced Code Compression for Embedded RISC Processors.",
+	ee = "http://doi.acm.org/10.1145/301618.301655",
+	author = "Keith D. Cooper and Nathaniel McIntosh",
+	pages = "139-149"}
+
+@inproceedings{DBLP:conf/pldi/CraryHP99,
+	title = "What is a Recursive Module?",
+	ee = "http://doi.acm.org/10.1145/301618.301641",
+	author = "Karl Crary and Robert Harper and Sidd Puri",
+	pages = "50-63"}
+
+@inproceedings{DBLP:conf/pldi/DingK99,
+	title = "Improving Cache Performance in Dynamic Applications through
+               Data and Computation Reorganization at Run Time.",
+	ee = "http://doi.acm.org/10.1145/301618.301670",
+	author = "Chen Ding and Ken Kennedy",
+	pages = "229-241"}
+
+@inproceedings{DBLP:conf/pldi/FisherR99,
+	title = "The Design of a Class Mechanism for Moby.",
+	ee = "http://doi.acm.org/10.1145/301618.301638",
+	author = "Kathleen Fisher and John H. Reppy",
+	pages = "37-49"}
+
+@inproceedings{DBLP:conf/pldi/FosterFA99,
+	title = "A Theory of Type Qualifiers.",
+	ee = "http://doi.acm.org/10.1145/301618.301665",
+	author = "Jeffrey S. Foster and Manuel F{\"a}hndrich and Alexander Aiken",
+	pages = "192-203"}
+
+@inproceedings{DBLP:conf/pldi/Fraser99,
+	title = "Automatic Inference of Models for Statistical Code Compression.",
+	ee = "http://doi.acm.org/10.1145/301618.301672",
+	author = "Christopher W. Fraser",
+	pages = "242-246"}
+
+@inproceedings{DBLP:conf/pldi/FraserP99,
+	title = "Finite-Static Code Generation.",
+	ee = "http://doi.acm.org/10.1145/301618.301680",
+	author = "Christopher W. Fraser and Todd A. Proebsting",
+	pages = "270-280"}
+
+@inproceedings{DBLP:conf/pldi/Frigo99,
+	title = "A Fast Fourier Transform Compiler.",
+	ee = "http://doi.acm.org/10.1145/301618.301661",
+	author = "Matteo Frigo",
+	pages = "169-180"}
+
+@inproceedings{DBLP:conf/pldi/GrantPMCE99,
+	title = "An Evaluation of Staged Run-Time Optimizations in DyC.",
+	ee = "http://doi.acm.org/10.1145/301618.301683",
+	author = "Brian Grant and Matthai Philipose and Markus Mock and Craig Chambers and Susan J. Eggers",
+	pages = "293-304"}
+
+@inproceedings{DBLP:conf/pldi/JonesRHHM99,
+	title = "A Semantics for Imprecise Exceptions.",
+	ee = "http://doi.acm.org/10.1145/301618.301637",
+	author = "Simon L. Peyton Jones and Alastair Reid and Fergus Henderson and C. A. R. Hoare and Simon Marlow",
+	pages = "25-36"}
+
+@inproceedings{DBLP:conf/pldi/Larus99,
+	title = "Whole Program Paths.",
+	ee = "http://doi.acm.org/10.1145/301618.301678",
+	author = "James R. Larus",
+	pages = "259-269"}
+
+@inproceedings{DBLP:conf/pldi/LeungG99,
+	title = "Static Single Assignment Form for machine Code.",
+	ee = "http://doi.acm.org/10.1145/301618.301667",
+	author = "Allen Leung and Lal George",
+	pages = "204-214"}
+
+@inproceedings{DBLP:conf/pldi/MarletCB99,
+	title = "Efficient Incremental Run-Time Specialization for Free.",
+	ee = "http://doi.acm.org/10.1145/301618.301681",
+	author = "Renaud Marlet and Charles Consel and Philippe Boinot",
+	pages = "281-292"}
+
+@inproceedings{DBLP:conf/pldi/Pugh99,
+	title = "Compressing Java Class Files.",
+	ee = "http://doi.acm.org/10.1145/301618.301676",
+	author = "William Pugh",
+	pages = "247-258"}
+
+@inproceedings{DBLP:conf/pldi/RaoP99,
+	title = "Storage Assignment Optimizations to Generate Compact and
+               Efficient Code on Embedded DSPs.",
+	ee = "http://doi.acm.org/10.1145/301618.301653",
+	author = "Amit Rao and Santosh Pande",
+	pages = "128-138"}
+
+@inproceedings{DBLP:conf/pldi/RuginaR99,
+	title = "Pointer Analysis for Multithreaded Programs.",
+	ee = "http://doi.acm.org/10.1145/301618.301645",
+	author = "Radu Rugina and Martin C. Rinard",
+	pages = "77-90"}
+
+@inproceedings{DBLP:conf/pldi/SchlanskerMJ99,
+	title = "Control CPR: A Branch Height Reduction Optimization for
+               EPIC Architectures.",
+	ee = "http://doi.acm.org/10.1145/301618.301659",
+	author = "Michael S. Schlansker and Scott A. Mahlke and Richard Johnson",
+	pages = "155-168"}
+
+@inproceedings{DBLP:conf/pldi/SongL99,
+	title = "New Tiling Techniques to Improve Cache Temporal Locality.",
+	ee = "http://doi.acm.org/10.1145/301618.301668",
+	author = "Yonghong Song and Zhiyuan Li",
+	pages = "215-228"}
+
+@inproceedings{DBLP:conf/pldi/StichnothLC99,
+	title = "Support for Garbage Collection at Every Instruction in a
+               Java Compiler.",
+	ee = "http://doi.acm.org/10.1145/301618.301652",
+	author = "James M. Stichnoth and Guei-Yuan Lueh and Michal Cierniak",
+	pages = "118-127"}
+
+@inproceedings{DBLP:conf/pldi/Vegdahl99,
+	title = "Using Node Merging to Enhance Graph Coloring.",
+	ee = "http://doi.acm.org/10.1145/301618.301657",
+	author = "Steven R. Vegdahl",
+	pages = "150-154"}
+
+@inproceedings{DBLP:conf/pldi/WuMPOH99,
+	title = "A New Framework for Debugging Globally Optimized Code.",
+	ee = "http://doi.acm.org/10.1145/301618.301663",
+	author = "Le-Chun Wu and Rajiv Mirani and Harish Patil and Bruce Olsen and Wen-mei W. Hwu",
+	pages = "181-191"}
+
+@inproceedings{DBLP:conf/pldi/YongHR99,
+	title = "Pointer Analysis for Programs with Structures and Casting.",
+	ee = "http://doi.acm.org/10.1145/301618.301647",
+	author = "Suan Hsi Yong and Susan Horwitz and Thomas W. Reps",
+	pages = "91-103"}
+
+@default year = 1998
+
+@inproceedings{DBLP:conf/pldi/Adl-TabatabaiCLPS98,
+	title = "Fast, Effective Code Generation in a Just-In-Time Java Compiler.",
+	author = "Ali-Reza Adl-Tabatabai and Michal Cierniak and Guei-Yuan Lueh and Vishesh M. Parikh and James M. Stichnoth",
+	pages = "280-290"}
+
+@inproceedings{DBLP:conf/pldi/AdveM98,
+	title = "Using Integer Sets for Data-Parallel Program Analysis and
+               Optimization.",
+	author = "Vikram S. Adve and John M. Mellor-Crummey",
+	pages = "186-198"}
+
+@inproceedings{DBLP:conf/pldi/AgesenDM98,
+	title = "Garbage Collection and Local Variable Type-Precision and
+               Liveness in Java Virtual Machines.",
+	author = "Ole Agesen and David Detlefs and J. Eliot B. Moss",
+	pages = "269-279"}
+
+@inproceedings{DBLP:conf/pldi/AmmonsL98,
+	title = "Improving Data-flow Analysis with Path Profiles.",
+	author = "Glenn Ammons and James R. Larus",
+	pages = "72-84"}
+
+@inproceedings{DBLP:conf/pldi/AyersJPS98,
+	title = "Scalable Cross-Module Optimization.",
+	author = "Andrew Ayers and Stuart de Jong and John Peyton and Richard Schooler",
+	pages = "301-312"}
+
+@inproceedings{DBLP:conf/pldi/BaconKMS98,
+	title = "Thin Locks: Featherweight Synchronization for Java.",
+	author = "David F. Bacon and Ravi B. Konuru and Chet Murthy and Mauricio J. Serrano",
+	pages = "258-268"}
+
+@inproceedings{DBLP:conf/pldi/BodikGS98,
+	title = "Complete Removal of Redundant Computations.",
+	author = "Rastislav Bod\'{\i}k and Rajiv Gupta and Mary Lou Soffa",
+	pages = "1-14"}
+
+@inproceedings{DBLP:conf/pldi/ChengHL98,
+	title = "Generational Stack Collection and Profile-Driven Pretenuring.",
+	author = "Perry Cheng and Robert Harper and Peter Lee",
+	pages = "162-173"}
+
+@inproceedings{DBLP:conf/pldi/ChowKLLT98,
+	title = "Register Promotion by Partial Redundancy Elimination of
+               Loads and Stores.",
+	author = "Fred C. Chow and Robert Kennedy and Shin-Ming Liu and Raymond Lo and Peng Tu",
+	pages = "26-37"}
+
+@inproceedings{DBLP:conf/pldi/Clinger98,
+	title = "Proper Tail Recursion and Space Efficiency.",
+	author = "William D. Clinger",
+	pages = "174-185"}
+
+@inproceedings{DBLP:conf/pldi/ColbyGJ98,
+	title = "Automatically Closing Open Reactive Programs.",
+	author = "Christopher Colby and Patrice Godefroid and Lalita Jategaonkar Jagadeesan",
+	pages = "345-357"}
+
+@inproceedings{DBLP:conf/pldi/DiwanMM98,
+	title = "Type-Based Alias Analysis.",
+	author = "Amer Diwan and Kathryn S. McKinley and J. Eliot B. Moss",
+	pages = "106-117"}
+
+@inproceedings{DBLP:conf/pldi/FahndrichFSA98,
+	title = "Partial Online Cycle Elimination in Inclusion Constraint
+               Graphs.",
+	author = "Manuel F{\"a}hndrich and Jeffrey S. Foster and Zhendong Su and Alexander Aiken",
+	pages = "85-96"}
+
+@inproceedings{DBLP:conf/pldi/FessantPS98,
+	title = "An Implementation for Complete, Asynchronous, Distributed
+               Garbage Collection.",
+	author = "Fabrice Le Fessant and Ian Piumarta and Marc Shapiro",
+	pages = "152-161"}
+
+@inproceedings{DBLP:conf/pldi/FlattF98,
+	title = "Units: Cool Modules for HOT Languages.",
+	author = "Matthew Flatt and Matthias Felleisen",
+	pages = "236-248"}
+
+@inproceedings{DBLP:conf/pldi/FrigoLR98,
+	title = "The Implementation of the Cilk-5 Multithreaded Language.",
+	author = "Matteo Frigo and Charles E. Leiserson and Keith H. Randall",
+	pages = "212-223"}
+
+@inproceedings{DBLP:conf/pldi/GayA98,
+	title = "Memory Management with Explicit Regions.",
+	author = "David Gay and Alexander Aiken",
+	pages = "313-323"}
+
+@inproceedings{DBLP:conf/pldi/HastiH98,
+	title = "Using Static Single Assignment Form to Improve Flow-Insensitive
+               Pointer Analysis.",
+	author = "Rebecca Hasti and Susan Horwitz",
+	pages = "97-105"}
+
+@inproceedings{DBLP:conf/pldi/LewisLS98,
+	title = "The Implementation and Evaluation of Fusion and Contraction
+               in Array Languages.",
+	author = "E. Christopher Lewis and Calvin Lin and Lawrence Snyder",
+	pages = "50-59"}
+
+@inproceedings{DBLP:conf/pldi/NeculaL98,
+	title = "The Design and Implementation of a Certifying Compiler.",
+	author = "George C. Necula and Peter Lee",
+	pages = "333-344"}
+
+@inproceedings{DBLP:conf/pldi/PaekHP98,
+	title = "Simplification of Array Access Patterns for Compiler Optimizations.",
+	author = "Yunheung Paek and Jay Hoeflinger and David A. Padua",
+	pages = "60-71"}
+
+@inproceedings{DBLP:conf/pldi/PiumartaR98,
+	title = "Optimizing Direct-threaded Code by Selective Inlining.",
+	author = "Ian Piumarta and Fabio Riccardi",
+	pages = "291-300"}
+
+@inproceedings{DBLP:conf/pldi/RiveraT98,
+	title = "Data Transformations for Eliminating Conflict Misses.",
+	author = "Gabriel Rivera and Chau-Wen Tseng",
+	pages = "38-49"}
+
+@inproceedings{DBLP:conf/pldi/SastryJ98,
+	title = "A New Algorithm for Scalar Register Promotion based on SSA
+               Form.",
+	author = "A. V. S. Sastry and Roy Dz-Ching Ju",
+	pages = "15-25"}
+
+@inproceedings{DBLP:conf/pldi/SastryPS98,
+	title = "Exploiting Idle Floating-Point Resources for Integer Execution.",
+	author = "S. Subramanya Sastry and Subbarao Palacharla and James E. Smith",
+	pages = "118-129"}
+
+@inproceedings{DBLP:conf/pldi/SweeneyT98,
+	title = "A Study of Dead Data Members in C++ Applications.",
+	author = "Peter F. Sweeney and Frank Tip",
+	pages = "324-332"}
+
+@inproceedings{DBLP:conf/pldi/TraubHS98,
+	title = "Quality and Speed in Linear-scan Register Allocation.",
+	author = "Omri Traub and Glenn H. Holloway and Michael D. Smith",
+	pages = "142-151"}
+
+@inproceedings{DBLP:conf/pldi/WicklineLP98,
+	title = "Run-time Code Generation and Modal-ML.",
+	author = "Philip Wickline and Peter Lee and Frank Pfenning",
+	pages = "224-235"}
+
+@inproceedings{DBLP:conf/pldi/XiP98,
+	title = "Eliminating Array Bound Checking Through Dependent Types.",
+	author = "Hongwei Xi and Frank Pfenning",
+	pages = "249-257"}
+
+@inproceedings{DBLP:conf/pldi/YangUW98,
+	title = "Improving Performance by Branch Reordering.",
+	author = "Minghui Yang and Gang-Ryung Uh and David B. Whalley",
+	pages = "130-141"}
+
+@inproceedings{DBLP:conf/pldi/ZhuH98,
+	title = "Communication Optimizations for Parallel C Programs.",
+	author = "Yingchun Zhu and Laurie J. Hendren",
+	pages = "199-211"}
+
+@default year = 1997
+
+@inproceedings{DBLP:conf/pldi/AmmonsBL97,
+	title = "Exploiting Hardware Performance Counters with Flow and Context
+               Sensitive Profiling.",
+	author = "Glenn Ammons and Thomas Ball and James R. Larus",
+	pages = "85-96"}
+
+@inproceedings{DBLP:conf/pldi/AyersGS97,
+	title = "Aggressive Inlining.",
+	author = "Andrew Ayers and Robert Gottlieb and Richard Schooler",
+	pages = "134-145"}
+
+@inproceedings{DBLP:conf/pldi/BergnerDEO97,
+	title = "Spill Code Minimization via Interference Region Spilling.",
+	author = "Peter Bergner and Peter Dahl and David Engebretsen and Matthew T. O'Keefe",
+	pages = "287-295"}
+
+@inproceedings{DBLP:conf/pldi/BodikG97,
+	title = "Partial Dead Code Elimination using Slicing Transformations.",
+	author = "Rastislav Bod\'{\i}k and Rajiv Gupta",
+	pages = "159-170"}
+
+@inproceedings{DBLP:conf/pldi/BodikGS97,
+	title = "Interprocedural Conditional Branch Elimination.",
+	author = "Rastislav Bod\'{\i}k and Rajiv Gupta and Mary Lou Soffa",
+	pages = "146-158"}
+
+@inproceedings{DBLP:conf/pldi/ChandraCCMNA97,
+	title = "Data Distribution Support on Distributed Shared Memory Multiprocessors.",
+	author = "Rohit Chandra and Ding-Kai Chen and Robert Cox and Dror E. Maydan and Nenad Nedeljkovic and Jennifer-Ann M. Anderson",
+	pages = "334-345"}
+
+@inproceedings{DBLP:conf/pldi/ChowCKLLT97,
+	title = "A New Algorithm for Partial Redundancy Elimination based
+               on SSA Form.",
+	author = "Fred C. Chow and Sun Chan and Robert Kennedy and Shin-Ming Liu and Raymond Lo and Peng Tu",
+	pages = "273-286"}
+
+@inproceedings{DBLP:conf/pldi/ClingerH97,
+	title = "Generational Garbage Collection and the Radioactive Decay
+               Model.",
+	author = "William D. Clinger and Lars Thomas Hansen",
+	pages = "97-108"}
+
+@inproceedings{DBLP:conf/pldi/Collberg97,
+	title = "Reverse Interpretation + Mutation Analysis = Automatic Retargeting.",
+	author = "Christian S. Collberg",
+	pages = "57-70"}
+
+@inproceedings{DBLP:conf/pldi/CooperL97,
+	title = "Register Promotion in C Programs.",
+	author = "Keith D. Cooper and John Lu",
+	pages = "308-319"}
+
+@inproceedings{DBLP:conf/pldi/DinizR97,
+	title = "Dynamic Feedback: An Effective Technique for Adaptive Computing.",
+	author = "Pedro C. Diniz and Martin C. Rinard",
+	pages = "71-84"}
+
+@inproceedings{DBLP:conf/pldi/Dolby97,
+	title = "Automatic Inline Allocation of Objects.",
+	author = "Julian Dolby",
+	pages = "7-17"}
+
+@inproceedings{DBLP:conf/pldi/DussartHH97,
+	title = "Module-Sensitive Program Specialisation.",
+	author = "Dirk Dussart and Rogardt Heldal and John Hughes",
+	pages = "206-214"}
+
+@inproceedings{DBLP:conf/pldi/EichenbergerD97,
+	title = "Efficient Formulation for Optimal Modulo Schedulers.",
+	author = "Alexandre E. Eichenberger and Edward S. Davidson",
+	pages = "194-205"}
+
+@inproceedings{DBLP:conf/pldi/EideFFLL97,
+	title = "Flick: A Flexible, Optimizing IDL Compiler.",
+	author = "Eric Eide and Kevin Frei and Bryan Ford and Jay Lepreau and Gary Lindstrom",
+	pages = "44-56"}
+
+@inproceedings{DBLP:conf/pldi/ErnstEFLP97,
+	title = "Code Compression.",
+	author = "Jens Ernst and William S. Evans and Christopher W. Fraser and Steven Lucco and Todd A. Proebsting",
+	pages = "358-365"}
+
+@inproceedings{DBLP:conf/pldi/FlanaganF97,
+	title = "Componential Set-Based Analysis.",
+	author = "Cormac Flanagan and Matthias Felleisen",
+	pages = "235-248"}
+
+@inproceedings{DBLP:conf/pldi/Goodwin97,
+	title = "Interprocedural Dataflow Analysis in an Executable Optimizer.",
+	author = "David W. Goodwin",
+	pages = "122-133"}
+
+@inproceedings{DBLP:conf/pldi/HashemiKC97,
+	title = "Efficient Procedure Mapping Using Cache Line Coloring.",
+	author = "Amir H. Hashemi and David R. Kaeli and Brad Calder",
+	pages = "171-182"}
+
+@inproceedings{DBLP:conf/pldi/HeintzeM97,
+	title = "Linear-time Subtransitive Control Flow Analysis.",
+	author = "Nevin Heintze and David A. McAllester",
+	pages = "261-272"}
+
+@inproceedings{DBLP:conf/pldi/JensenJKS97,
+	title = "Automatic Verification of Pointer Programs using Monadic
+               Second-Order Logic.",
+	author = "Jakob L. Jensen and Michael E. J{\o}rgensen and Nils Klarlund and Michael I. Schwartzbach",
+	pages = "226-236"}
+
+@inproceedings{DBLP:conf/pldi/KodukulaAP97,
+	title = "Data-centric Multi-level Blocking.",
+	author = "Induprakas Kodukula and Nawaaz Ahmed and Keshav Pingali",
+	pages = "346-357"}
+
+@inproceedings{DBLP:conf/pldi/LuehG97,
+	title = "Call-Cost Directed Register Allocation.",
+	author = "Guei-Yuan Lueh and Thomas R. Gross",
+	pages = "296-307"}
+
+@inproceedings{DBLP:conf/pldi/PolettoEK97,
+	title = "tcc: A System for Fast, Flexible, and High-level Dynamic
+               Code Generation.",
+	author = "Massimiliano Poletto and Dawson R. Engler and M. Frans Kaashoek",
+	pages = "109-121"}
+
+@inproceedings{DBLP:conf/pldi/Proebsting97,
+	title = "Simple Translation of Goal-Directed Evaluation.",
+	author = "Todd A. Proebsting",
+	pages = "1-6"}
+
+@inproceedings{DBLP:conf/pldi/RamalingamS97,
+	title = "A Member Lookup Algorithm for C++.",
+	author = "G. Ramalingam and Harini Srinivasan",
+	pages = "18-30"}
+
+@inproceedings{DBLP:conf/pldi/SperberT97,
+	title = "Two for the Price of One: Composing Partial Evaluation and
+               Compilation.",
+	author = "Michael Sperber and Peter Thiemann",
+	pages = "215-225"}
+
+@inproceedings{DBLP:conf/pldi/TauraY97,
+	title = "Fine-grain Multithreading with Minimal Compiler Support
+               - A Cost Effective Approach to Implementing Efficient Multithreading
+               Languages.",
+	author = "Kenjiro Taura and Akinori Yonezawa",
+	pages = "320-333"}
+
+@inproceedings{DBLP:conf/pldi/WagnerG97,
+	title = "Incremental Analysis of real Programming Languages.",
+	author = "Tim A. Wagner and Susan L. Graham",
+	pages = "31-43"}
+
+@inproceedings{DBLP:conf/pldi/Webber97,
+	title = "Program Analysis Using Binary Relations.",
+	author = "Adam Brooks Webber",
+	pages = "249-260"}
+
+@inproceedings{DBLP:conf/pldi/YoungJKS97,
+	title = "Near-optimal Intraprocedural Branch Alignment.",
+	author = "Cliff Young and David S. Johnson and David R. Karger and Michael D. Smith",
+	pages = "183-193"}
+
+@default year = 1996
+
+@inproceedings{DBLP:conf/pldi/Adl-TabatabaiG96,
+	title = "Source-Level Debugging of Scalar Optimized Code.",
+	author = "Ali-Reza Adl-Tabatabai and Thomas R. Gross",
+	pages = "33-43"}
+
+@inproceedings{DBLP:conf/pldi/Adl-TabatabaiLLW96,
+	title = "Efficient and Language-Independent Mobile Programs.",
+	author = "Ali-Reza Adl-Tabatabai and Geoff Langdale and Steven Lucco and Robert Wahbe",
+	pages = "127-136"}
+
+@inproceedings{DBLP:conf/pldi/AuslanderPCEB96,
+	title = "Fast, Effective Dynamic Compilation.",
+	author = "Joel Auslander and Matthai Philipose and Craig Chambers and Susan J. Eggers and Brian N. Bershad",
+	pages = "149-159"}
+
+@inproceedings{DBLP:conf/pldi/BaileyD96,
+	title = "Target-Sensitive Construction of Diagnostic Programs for
+               Procedure Calling Sequence Generators.",
+	author = "Mark W. Bailey and Jack W. Davidson",
+	pages = "249-257"}
+
+@inproceedings{DBLP:conf/pldi/BilardiP96,
+	title = "Generalized Dominance and Control Dependence.",
+	author = "Gianfranco Bilardi and Keshav Pingali",
+	pages = "291-300"}
+
+@inproceedings{DBLP:conf/pldi/Boehm96,
+	title = "Simple Garbage-Collector-Safety.",
+	author = "Hans-Juergen Boehm",
+	pages = "89-98"}
+
+@inproceedings{DBLP:conf/pldi/BruggemanWD96,
+	title = "Representing Control in the Presence of One-Shot Continuations.",
+	author = "Carl Bruggeman and Oscar Waddell and R. Kent Dybvig",
+	pages = "99-107"}
+
+@inproceedings{DBLP:conf/pldi/BurgerD96,
+	title = "Printing Floating-Point Numbers Quickly and Accurately.",
+	author = "Robert G. Burger and R. Kent Dybvig",
+	pages = "108-116"}
+
+@inproceedings{DBLP:conf/pldi/ChakrabartiGC96,
+	title = "Global Communication Analysis and Optimization.",
+	author = "Soumen Chakrabarti and Manish Gupta and Jong-Deok Choi",
+	pages = "68-78"}
+
+@inproceedings{DBLP:conf/pldi/ChandraRL96,
+	title = "Teapot: Language Support for Writing Memory Coherence Protocols.",
+	author = "Satish Chandra and Brad Richards and James R. Larus",
+	pages = "237-248"}
+
+@inproceedings{DBLP:conf/pldi/DawsonRW96,
+	title = "Practical Program Analysis Using General Purpose Logic Programming
+               Systems - A Case Study.",
+	author = "Steven Dawson and C. R. Ramakrishnan and David Scott Warren",
+	pages = "117-126"}
+
+@inproceedings{DBLP:conf/pldi/EichenbergerD96,
+	title = "A Reduced Multipipeline Machine Description that Preserves
+               Scheduling Constraints.",
+	author = "Alexandre E. Eichenberger and Edward S. Davidson",
+	pages = "12-22"}
+
+@inproceedings{DBLP:conf/pldi/Engler96,
+	title = "VCODE: a Retargetable, Extensible, Very Fast Dynamic Code
+               Generation System.",
+	author = "Dawson R. Engler",
+	pages = "160-170"}
+
+@inproceedings{DBLP:conf/pldi/Evans96,
+	title = "Static Detection of Dynamic Memory Errors.",
+	author = "David Evans",
+	pages = "44-53"}
+
+@inproceedings{DBLP:conf/pldi/FlanaganFKWF96,
+	title = "Static Debugging: Browsing the Web of Program Invariants.",
+	author = "Cormac Flanagan and Matthew Flatt and Shriram Krishnamurthi and Stephanie Weirich and Matthias Felleisen",
+	pages = "23-32"}
+
+@inproceedings{DBLP:conf/pldi/JagannathanW96,
+	title = "Flow-directed Inlining.",
+	author = "Suresh Jagannathan and Andrew K. Wright",
+	pages = "193-205"}
+
+@inproceedings{DBLP:conf/pldi/KnoblockR96,
+	title = "Data Specialization.",
+	author = "Todd B. Knoblock and Erik Ruf",
+	pages = "215-225"}
+
+@inproceedings{DBLP:conf/pldi/LeeL96,
+	title = "Optimizing ML with Run-Time Code Generation.",
+	author = "Peter Lee and Mark Leone",
+	pages = "137-148"}
+
+@inproceedings{DBLP:conf/pldi/Ramalingam96,
+	title = "Data Flow Frequency Analysis.",
+	author = "G. Ramalingam",
+	pages = "267-277"}
+
+@inproceedings{DBLP:conf/pldi/Ramsey96,
+	title = "Relocating Machine Instructions by Currying.",
+	author = "Norman Ramsey",
+	pages = "226-236"}
+
+@inproceedings{DBLP:conf/pldi/ReppyR96,
+	title = "Simple Objects for Standard ML.",
+	author = "John H. Reppy and Jon G. Riecke",
+	pages = "171-180"}
+
+@inproceedings{DBLP:conf/pldi/RinardD96,
+	title = "Commutativity Analysis: A New Analysis Framework for Parallelizing
+               Compilers.",
+	author = "Martin C. Rinard and Pedro C. Diniz",
+	pages = "54-67"}
+
+@inproceedings{DBLP:conf/pldi/RussinovichC96,
+	title = "Replay For Concurrent Non-Deterministic Shared Memory Applications.",
+	author = "Mark Russinovich and Bryce Cogswell",
+	pages = "258-266"}
+
+@inproceedings{DBLP:conf/pldi/RuttenbergGLS96,
+	title = "Software Pipelining Showdown: Optimal vs. Heuristic Methods
+               in a Production Compiler.",
+	author = "John C. Ruttenberg and Guang R. Gao and Woody Lichtenstein and Artour Stoutchinin",
+	pages = "1-11"}
+
+@inproceedings{DBLP:conf/pldi/SperberT96,
+	title = "Realistic Compilation by Partial Evaluation.",
+	author = "Michael Sperber and Peter Thiemann",
+	pages = "206-214"}
+
+@inproceedings{DBLP:conf/pldi/SreedharGL96,
+	title = "A New Framework for Exhaustive and Incremental Data Flow
+               Analysis Using DJ Graphs.",
+	author = "Vugranam C. Sreedhar and Guang R. Gao and Yong-Fong Lee",
+	pages = "278-290"}
+
+@inproceedings{DBLP:conf/pldi/TarditiMCSHL96,
+	title = "TIL: A Type-Directed Optimizing Compiler for ML.",
+	author = "David Tarditi and J. Gregory Morrisett and Perry Cheng and Chris Stone and Robert Harper and Peter Lee",
+	pages = "181-192"}
+
+@inproceedings{DBLP:conf/pldi/TrinderHMPJ96,
+	title = "GUM: A Portable Parallel Implementation of Haskell.",
+	author = "Philip W. Trinder and Kevin Hammond and James S. Mattson, Jr. and A. S. Partridge and Simon L. Peyton Jones",
+	pages = "79-88"}
+
+@default year = 1995
+
+@inproceedings{DBLP:conf/pldi/AgrawalSD95,
+	title = "Interprocedural Partial Redundancy Elimination and its Application
+               to Distributed Memory Compilation.",
+	author = "Gagan Agrawal and Joel H. Saltz and Raja Das",
+	pages = "258-269"}
+
+@inproceedings{DBLP:conf/pldi/AikenFL95,
+	title = "Better Static Memory Management: Improving Region-Based
+               Analysis of Higher-Order Languages.",
+	author = "Alexander Aiken and Manuel F{\"a}hndrich and Raph Levien",
+	pages = "174-185"}
+
+@inproceedings{DBLP:conf/pldi/AltmanGG95,
+	title = "Scheduling and Mapping: Software Pipelining in the Presence
+               of Structural Hazards.",
+	author = "Erik R. Altman and Ramaswamy Govindarajan and Guang R. Gao",
+	pages = "139-150"}
+
+@inproceedings{DBLP:conf/pldi/AmagbegnonBG95,
+	title = "Implementation of the Data-Flow Synchronous Language SIGNAL.",
+	author = "Pascalin Amagb{\'e}gnon and Lo\"{\i}c Besnard and Paul Le Guernic",
+	pages = "163-173"}
+
+@inproceedings{DBLP:conf/pldi/BarrettZ95,
+	title = "Garbage Collection Using a Dynamic Threatening Boundary.",
+	author = "David A. Barrett and Benjamin G. Zorn",
+	pages = "301-314"}
+
+@inproceedings{DBLP:conf/pldi/BurgerWD95,
+	title = "Register Allocation Using Lazy Saves, Eager Restores, and
+               Greedy Shuffling.",
+	author = "Robert G. Burger and Oscar Waddell and R. Kent Dybvig",
+	pages = "130-138"}
+
+@inproceedings{DBLP:conf/pldi/CalderGLMMZ95,
+	title = "Corpus-Based Static Branch Prediction.",
+	author = "Brad Calder and Dirk Grunwald and Donald C. Lindsay and James H. Martin and Michael Mozer and Benjamin G. Zorn",
+	pages = "79-92"}
+
+@inproceedings{DBLP:conf/pldi/CariniH95,
+	title = "Flow-Sensitive Interprocedural Constant Propagation.",
+	author = "Paul R. Carini and Michael Hind",
+	pages = "23-31"}
+
+@inproceedings{DBLP:conf/pldi/CierniakL95,
+	title = "Unifying Data and Control Transformations for Distributed
+               Shared Memory Machines.",
+	author = "Michal Cierniak and Wei Li",
+	pages = "205-217"}
+
+@inproceedings{DBLP:conf/pldi/Click95,
+	title = "Global Code Motion / Global Value Mumbering.",
+	author = "Cliff Click",
+	pages = "246-257"}
+
+@inproceedings{DBLP:conf/pldi/ColemanM95,
+	title = "Tile Size Selection Using Cache Organization and Data Layout.",
+	author = "Stephanie Coleman and Kathryn S. McKinley",
+	pages = "279-290"}
+
+@inproceedings{DBLP:conf/pldi/DeanCG95,
+	title = "Selective Specialization for Object-Oriented Languages.",
+	author = "Jeffrey Dean and Craig Chambers and David Grove",
+	pages = "93-102"}
+
+@inproceedings{DBLP:conf/pldi/Ertl95,
+	title = "Stack Caching for Interpreters.",
+	author = "M. Anton Ertl",
+	pages = "315-327"}
+
+@inproceedings{DBLP:conf/pldi/Fernandez95,
+	title = "Simple and Effective Link-Time Optimization of Modula-3
+               Programs.",
+	author = "Mary F. Fernandez",
+	pages = "103-115"}
+
+@inproceedings{DBLP:conf/pldi/KnoopRS95,
+	title = "The Power of Assignment Motion.",
+	author = "Jens Knoop and Oliver R{\"u}thing and Bernhard Steffen",
+	pages = "233-245"}
+
+@inproceedings{DBLP:conf/pldi/KolteW95,
+	title = "Elimination of Redundant Array Subscript Range Checks.",
+	author = "Priyadarshan Kolte and Michael Wolfe",
+	pages = "270-278"}
+
+@inproceedings{DBLP:conf/pldi/KrishnamurthyY95,
+	title = "Optimizing Parallel Programs with Explicit Synchronization.",
+	author = "Arvind Krishnamurthy and Katherine A. Yelick",
+	pages = "196-204"}
+
+@inproceedings{DBLP:conf/pldi/LarusS95,
+	title = "EEL: Machine-Independent Executable Editing.",
+	author = "James R. Larus and Eric Schnarr",
+	pages = "291-300"}
+
+@inproceedings{DBLP:conf/pldi/LiaoDKTW95,
+	title = "Storage Assignment to Decrease Code Size.",
+	author = "Stan Y. Liao and Srinivas Devadas and Kurt Keutzer and Steven W. K. Tjiang and Albert Wang",
+	pages = "186-195"}
+
+@inproceedings{DBLP:conf/pldi/LoE95,
+	title = "Improving Balanced Scheduling with Compiler Optimizations
+               that Increase Instruction-Level Parallelism.",
+	author = "Jack L. Lo and Susan J. Eggers",
+	pages = "151-162"}
+
+@inproceedings{DBLP:conf/pldi/MuellerW95,
+	title = "Avoiding Conditional Branches by Code Replication.",
+	author = "Frank Mueller and David B. Whalley",
+	pages = "56-66"}
+
+@inproceedings{DBLP:conf/pldi/Patterson95,
+	title = "Accurate Static Branch Prediction by Value Range Propagation.",
+	author = "Jason R. C. Patterson",
+	pages = "67-78"}
+
+@inproceedings{DBLP:conf/pldi/PingaliB95,
+	title = "APT: A Data Structure for Optimal Control Dependence Computation.",
+	author = "Keshav Pingali and Gianfranco Bilardi",
+	pages = "32-46"}
+
+@inproceedings{DBLP:conf/pldi/RauchwergerP95,
+	title = "The LRPD Test: Speculative Run-Time Parallelization of Loops
+               with Privatization and Reduction Parallelization.",
+	author = "Lawrence Rauchwerger and David A. Padua",
+	pages = "218-232"}
+
+@inproceedings{DBLP:conf/pldi/Ruf95,
+	title = "Context-Insensitive Alias Analysis Reconsidered.",
+	author = "Erik Ruf",
+	pages = "13-22"}
+
+@inproceedings{DBLP:conf/pldi/ShaoA95,
+	title = "A Type-Based Compiler for Standard ML.",
+	author = "Zhong Shao and Andrew W. Appel",
+	pages = "116-129"}
+
+@inproceedings{DBLP:conf/pldi/TuP95,
+	title = "Efficient Building and Placing of Gating Functions.",
+	author = "Peng Tu and David A. Padua",
+	pages = "47-55"}
+
+@inproceedings{DBLP:conf/pldi/WilsonL95,
+	title = "Efficient Context-Sensitive Pointer Analysis for C Programs.",
+	author = "Robert P. Wilson and Monica S. Lam",
+	pages = "1-"}
+
+@default year = 1994
+
+@inproceedings{DBLP:conf/pldi/Agrawal94,
+	title = "On Slicing Programs with Jump Statements.",
+	author = "Hiralal Agrawal",
+	pages = "302-312"}
+
+@inproceedings{DBLP:conf/pldi/AppelM94,
+	title = "Separate Compilation for Standard ML.",
+	author = "Andrew W. Appel and David B. MacQueen",
+	pages = "13-23"}
+
+@inproceedings{DBLP:conf/pldi/AustinBS94,
+	title = "Efficient Detection of All Pointer and Array Access Errors.",
+	author = "Todd M. Austin and Scott E. Breach and Gurindar S. Sohi",
+	pages = "290-301"}
+
+@inproceedings{DBLP:conf/pldi/BriggsC94,
+	title = "Effective Partial Redundancy Elimination.",
+	author = "Preston Briggs and Keith D. Cooper",
+	pages = "159-170"}
+
+@inproceedings{DBLP:conf/pldi/DavidsonJ94,
+	title = "Memory Access Coalescing: A technique for Eliminating Redundant
+               memory Accesses.",
+	author = "Jack W. Davidson and Sanjay Jinturkar",
+	pages = "186-195"}
+
+@inproceedings{DBLP:conf/pldi/Deutsch94,
+	title = "Interprocedural May-Alias Analysis for Pointers: Beyond
+               {\it }-limiting.",
+	author = "Alain Deutsch",
+	pages = "230-241"}
+
+@inproceedings{DBLP:conf/pldi/EbciogluGKSZ94,
+	title = "VLIW Compilation Techniques in a Superscalar Environment.",
+	author = "Kemal Ebcioglu and Randy D. Groves and Ki-Chang Kim and Gabriel M. Silberman and Isaac Ziv",
+	pages = "36-48"}
+
+@inproceedings{DBLP:conf/pldi/EmamiGH94,
+	title = "Context-Sensitive Interprocedural Points-to Analysis in
+               the Presence of Function Pointers.",
+	author = "Maryam Emami and Rakesh Ghiya and Laurie J. Hendren",
+	pages = "242-256"}
+
+@inproceedings{DBLP:conf/pldi/FisherG94,
+	title = "Parallelizing Complex Scans and Reductions.",
+	author = "Allan L. Fisher and Anwar M. Ghuloum",
+	pages = "135-146"}
+
+@inproceedings{DBLP:conf/pldi/GranlundM94,
+	title = "Division by Invariant Integers using Multiplication.",
+	author = "Torbj{\"o}rn Granlund and Peter L. Montgomery",
+	pages = "61-72"}
+
+@inproceedings{DBLP:conf/pldi/HanxledenK94,
+	title = "GIVE-N-TAKE - A Balanced Code Placement Framework.",
+	author = "Reinhard von Hanxleden and Ken Kennedy",
+	pages = "107-120"}
+
+@inproceedings{DBLP:conf/pldi/HentenryckCC94,
+	title = "Type Analysis of Prolog Using Type Graphs.",
+	author = "Pascal Van Hentenryck and Agostino Cortesi and Baudouin Le Charlier",
+	pages = "337-348"}
+
+@inproceedings{DBLP:conf/pldi/HentenryckR94,
+	title = "Backtracking without Trailing in CLP(R-lin).",
+	author = "Pascal Van Hentenryck and Viswanath Ramachandran",
+	pages = "349-360"}
+
+@inproceedings{DBLP:conf/pldi/HolzleU94,
+	title = "Optimizing Dynamically-Dispatched Calls with Run-Time Type
+               Feedback.",
+	author = "Urs H{\"o}lzle and David Ungar",
+	pages = "326-336"}
+
+@inproceedings{DBLP:conf/pldi/HummelHN94,
+	title = "A General Data Dependence Test for Dynamic, Pointer-Based
+               Data Structures.",
+	author = "Joseph Hummel and Laurie J. Hendren and Alexandru Nicolau",
+	pages = "218-229"}
+
+@inproceedings{DBLP:conf/pldi/JohnsonPP94,
+	title = "The Program Structure Tree: Computing Control Regions in
+               Linear Time.",
+	author = "Richard Johnson and David Pearson and Keshav Pingali",
+	pages = "171-185"}
+
+@inproceedings{DBLP:conf/pldi/KnoopRS94,
+	title = "Partial Dead Code Elimination.",
+	author = "Jens Knoop and Oliver R{\"u}thing and Bernhard Steffen",
+	pages = "147-158"}
+
+@inproceedings{DBLP:conf/pldi/Krall94,
+	title = "Improving Semi-static Branch Prediction by Code Replication.",
+	author = "Andreas Krall",
+	pages = "97-106"}
+
+@inproceedings{DBLP:conf/pldi/KurlanderF94,
+	title = "Zero-cost Range Splitting.",
+	author = "Steven M. Kurlander and Charles N. Fischer",
+	pages = "257-265"}
+
+@inproceedings{DBLP:conf/pldi/LaunchburyJ94,
+	title = "Lazy Functional State Threads.",
+	author = "John Launchbury and Simon L. Peyton Jones",
+	pages = "24-35"}
+
+@inproceedings{DBLP:conf/pldi/NetzerW94,
+	title = "Optimal Tracing and Incremental Reexecution for Debugging
+               Long-Running Programs.",
+	author = "Robert H. B. Netzer and Mark H. Weaver",
+	pages = "313-325"}
+
+@inproceedings{DBLP:conf/pldi/NorrisP94,
+	title = "register Allocation over the Program Dependence Graph.",
+	author = "Cindy Norris and Lori L. Pollock",
+	pages = "266-277"}
+
+@inproceedings{DBLP:conf/pldi/Pugh94,
+	title = "Counting Solutions to Presburger Formulas: How and Why.",
+	author = "William Pugh",
+	pages = "121-134"}
+
+@inproceedings{DBLP:conf/pldi/Reinhold94,
+	title = "Cache Performance of Garbage-Collected Programs.",
+	author = "Mark B. Reinhold",
+	pages = "206-217"}
+
+@inproceedings{DBLP:conf/pldi/SabryF94,
+	title = "Is Continuation-Passing Useful for Data Flow Analysis?",
+	author = "Amr Sabry and Matthias Felleisen",
+	pages = "1-12"}
+
+@inproceedings{DBLP:conf/pldi/SrivastavaE94,
+	title = "ATOM - A System for Building Customized Program Analysis
+               Tools.",
+	author = "Amitabh Srivastava and Alan Eustace",
+	pages = "196-205"}
+
+@inproceedings{DBLP:conf/pldi/SrivastavaW94,
+	title = "Link-Time Optimization of Address Calculation on a 64-bit
+               Architecture.",
+	author = "Amitabh Srivastava and David W. Wall",
+	pages = "49-60"}
+
+@inproceedings{DBLP:conf/pldi/WagnerMGH94,
+	title = "Accurate Static Estimators for Program Optimization.",
+	author = "Tim A. Wagner and Vance Maverick and Susan L. Graham and Michael A. Harrison",
+	pages = "85-96"}
+
+@inproceedings{DBLP:conf/pldi/Wang94,
+	title = "Precise Compile-Time Performance Prediction for Superscalar-Based
+               Computers.",
+	author = "Ko-Yang Wang",
+	pages = "73-84"}
+
+@inproceedings{DBLP:conf/pldi/Wismuller94,
+	title = "Debugging of Globally Optimized Programs Using Data Flow
+               Analysis.",
+	author = "Roland Wism{\"u}ller",
+	pages = "278-289"}
+
+@default year = 1993
+
+@inproceedings{DBLP:conf/pldi/AdamsCS93,
+	title = "First-Class Data-Type Representations in SchemeXerox.",
+	author = "Norman Adams and Pavel Curtis and Mike Spreitzer",
+	pages = "139-146"}
+
+@inproceedings{DBLP:conf/pldi/Adl-TabatabaiG93,
+	title = "Detection and Recovery of Endangered Variables Caused by
+               Instruction Scheduling.",
+	author = "Ali-Reza Adl-Tabatabai and Thomas R. Gross",
+	pages = "13-25"}
+
+@inproceedings{DBLP:conf/pldi/AmarasingheL93,
+	title = "Communication Optimization and Code Generation for Distributed
+               Memory Machines.",
+	author = "Saman P. Amarasinghe and Monica S. Lam",
+	pages = "126-138"}
+
+@inproceedings{DBLP:conf/pldi/AndersonL93,
+	title = "Global Optimizations for Parallelism and Locality on Scalable
+               Parallel Machines.",
+	author = "Jennifer-Ann M. Anderson and Monica S. Lam",
+	pages = "112-125"}
+
+@inproceedings{DBLP:conf/pldi/BallL93,
+	title = "Branch Prediction For Free.",
+	author = "Thomas Ball and James R. Larus",
+	pages = "300-313"}
+
+@inproceedings{DBLP:conf/pldi/BarrettZ93,
+	title = "Using Lifetime Predictors to Improve Memory Allocation Performance.",
+	author = "David A. Barrett and Benjamin G. Zorn",
+	pages = "187-196"}
+
+@inproceedings{DBLP:conf/pldi/Boehm93,
+	title = "Space Efficient Conservative Garbage Collection.",
+	author = "Hans-Juergen Boehm",
+	pages = "197-206"}
+
+@inproceedings{DBLP:conf/pldi/Bourdoncle93,
+	title = "Abstract Debugging of Higher-Order Imperative Languages.",
+	author = "Fran\c{c}ois Bourdoncle",
+	pages = "46-55"}
+
+@inproceedings{DBLP:conf/pldi/BoydW93,
+	title = "Isolation and Analysis of Optimization Errors.",
+	author = "Mickey R. Boyd and David B. Whalley",
+	pages = "26-35"}
+
+@inproceedings{DBLP:conf/pldi/CytronG93,
+	title = "Efficient Accomodation of May-Alias Information in SSA Form.",
+	author = "Ron Cytron and Reid Gershbein",
+	pages = "36-45"}
+
+@inproceedings{DBLP:conf/pldi/DuesterwaldGS93,
+	title = "A Practical Data Flow Framework for Array Reference Analysis
+               and its Use in Optimizations.",
+	author = "Evelyn Duesterwald and Rajiv Gupta and Mary Lou Soffa",
+	pages = "68-77"}
+
+@inproceedings{DBLP:conf/pldi/DybvigBE93,
+	title = "Guardians in a Generation-Based Garbage Collector.",
+	author = "R. Kent Dybvig and Carl Bruggeman and David Eby",
+	pages = "207-216"}
+
+@inproceedings{DBLP:conf/pldi/FlanaganSDF93,
+	title = "The Essence of Compiling with Continuations.",
+	author = "Cormac Flanagan and Amr Sabry and Bruce F. Duba and Matthias Felleisen",
+	pages = "237-247"}
+
+@inproceedings{DBLP:conf/pldi/GrahamLS93,
+	title = "Orchestrating Interactions Among Parallel Computations.",
+	author = "Susan L. Graham and Steven Lucco and Oliver Sharp",
+	pages = "100-111"}
+
+@inproceedings{DBLP:conf/pldi/GroveT93,
+	title = "Interprocedural Constant Propagation: A Study of Jump Function
+               Implementations.",
+	author = "Dan Grove and Linda Torczon",
+	pages = "90-99"}
+
+@inproceedings{DBLP:conf/pldi/GrunwaldZH93,
+	title = "Improving the Cache Locality of Memory Allocation.",
+	author = "Dirk Grunwald and Benjamin G. Zorn and Robert Henderson",
+	pages = "177-186"}
+
+@inproceedings{DBLP:conf/pldi/HongG93,
+	title = "Compiling Real-Time Programs into Schedulable Code.",
+	author = "Seongsoo Hong and Richard Gerber",
+	pages = "166-176"}
+
+@inproceedings{DBLP:conf/pldi/Huff93,
+	title = "Lifetime-Sensitive Modulo Scheduling.",
+	author = "Richard A. Huff",
+	pages = "258-267"}
+
+@inproceedings{DBLP:conf/pldi/JohnsonP93,
+	title = "Dependence-Based Program Analysis.",
+	author = "Richard Johnson and Keshav Pingali",
+	pages = "78-89"}
+
+@inproceedings{DBLP:conf/pldi/KernsE93,
+	title = "Balanced Scheduling: Instruction Scheduling When Memory
+               Latency is Uncertain.",
+	author = "Daniel R. Kerns and Susan J. Eggers",
+	pages = "278-289"}
+
+@inproceedings{DBLP:conf/pldi/KolteH93,
+	title = "Load/Store Range Analysis for Global Register Allocation.",
+	author = "Priyadarshan Kolte and Mary Jean Harrold",
+	pages = "268-277"}
+
+@inproceedings{DBLP:conf/pldi/LandiRZ93,
+	title = "Interprocedural Side Effect Analysis With Pointer Aliasing.",
+	author = "William Landi and Barbara G. Ryder and Sean Zhang",
+	pages = "56-67"}
+
+@inproceedings{DBLP:conf/pldi/NettlesO93,
+	title = "Real-Time Replication Garbage Collection.",
+	author = "Scott Nettles and James O'Toole",
+	pages = "217-226"}
+
+@inproceedings{DBLP:conf/pldi/PetersonJ93,
+	title = "Implementing Type Classes.",
+	author = "John Peterson and Mark P. Jones",
+	pages = "227-236"}
+
+@inproceedings{DBLP:conf/pldi/Pinter93,
+	title = "Register Allocation with Instruction Scheduling: A New Approach.",
+	author = "Shlomit S. Pinter",
+	pages = "248-257"}
+
+@inproceedings{DBLP:conf/pldi/Sitaram93,
+	title = "Handling Control.",
+	author = "Dorai Sitaram",
+	pages = "147-155"}
+
+@inproceedings{DBLP:conf/pldi/WahbeLG93,
+	title = "Practical Data Breakpoints: Design and Implementation.",
+	author = "Robert Wahbe and Steven Lucco and Susan L. Graham",
+	pages = "1-12"}
+
+@inproceedings{DBLP:conf/pldi/WarterMHR93,
+	title = "Reverse If-Conversion.",
+	author = "Nancy J. Warter and Scott A. Mahlke and Wen-mei W. Hwu and B. Ramakrishna Rau",
+	pages = "290-299"}
+
+@inproceedings{DBLP:conf/pldi/WeiseC93,
+	title = "Programmable Syntax Macros.",
+	author = "Daniel Weise and Roger F. Crew",
+	pages = "156-165"}
+
+@default year = 1992
+
+@inproceedings{DBLP:conf/pldi/BriggsCT92,
+	title = "Rematerialization.",
+	author = "Preston Briggs and Keith D. Cooper and Linda Torczon",
+	pages = "311-321"}
+
+@inproceedings{DBLP:conf/pldi/BrooksHS92,
+	title = "A New Approach to Debugging Optimized Code.",
+	author = "Gary Brooks and Gilbert J. Hansen and Steve Simmons",
+	pages = "1-11"}
+
+@inproceedings{DBLP:conf/pldi/ChenC92,
+	title = "Prototyping Fortran-90 Compilers for Massively Parallel
+               Machines.",
+	author = "Marina C. Chen and James R. Cowie",
+	pages = "94-105"}
+
+@inproceedings{DBLP:conf/pldi/DhamdhereRZ92,
+	title = "How to Analyze Large Programs Efficiently and Informatively.",
+	author = "Dhananjay M. Dhamdhere and Barry K. Rosen and F. Kenneth Zadeck",
+	pages = "212-223"}
+
+@inproceedings{DBLP:conf/pldi/DiwanMH92,
+	title = "Compiler Support for Garbage Collection in a Statically
+               Typed Language.",
+	author = "Amer Diwan and J. Eliot B. Moss and Richard L. Hudson",
+	pages = "273-282"}
+
+@inproceedings{DBLP:conf/pldi/GranlundK92,
+	title = "Eliminating Branches using a Superoptimizer and the GNU
+               C Compiler.",
+	author = "Torbj{\"o}rn Granlund and Richard Kenner",
+	pages = "341-352"}
+
+@inproceedings{DBLP:conf/pldi/HanxledenK92,
+	title = "Relaxing SIMD Control Flow Constraints using Loop Transformations.",
+	author = "Reinhard von Hanxleden and Ken Kennedy",
+	pages = "188-199"}
+
+@inproceedings{DBLP:conf/pldi/HendrenHN92,
+	title = "Abstractions for Recursive Pointer Data Structures: Improving
+               the Analysis of Imperative Programs.",
+	author = "Laurie J. Hendren and Joseph Hummel and Alexandru Nicolau",
+	pages = "249-260"}
+
+@inproceedings{DBLP:conf/pldi/HolzleCU92,
+	title = "Debugging Optimized Code with Dynamic Deoptimization.",
+	author = "Urs H{\"o}lzle and Craig Chambers and David Ungar",
+	pages = "32-43"}
+
+@inproceedings{DBLP:conf/pldi/Hoover92,
+	title = "Alphonse: Incremental Computation as a Programming Abstraction.",
+	author = "Roger Hoover",
+	pages = "261-272"}
+
+@inproceedings{DBLP:conf/pldi/JaffarMSY92,
+	title = "An Abstract Machine for CLP(R).",
+	author = "Joxan Jaffar and Spiro Michaylov and Peter J. Stuckey and Roland H. C. Yap",
+	pages = "128-139"}
+
+@inproceedings{DBLP:conf/pldi/JagannathanP92,
+	title = "A Customizable Substrate for Concurrent Languages.",
+	author = "Suresh Jagannathan and James Philbin",
+	pages = "55-67"}
+
+@inproceedings{DBLP:conf/pldi/KnoopRS92,
+	title = "Lazy Code Motion.",
+	author = "Jens Knoop and Oliver R{\"u}thing and Bernhard Steffen",
+	pages = "224-234"}
+
+@inproceedings{DBLP:conf/pldi/LandiR92,
+	title = "A Safe Approximate Algorithm for Interprocedural Pointer
+               Aliasing.",
+	author = "William Landi and Barbara G. Ryder",
+	pages = "235-248"}
+
+@inproceedings{DBLP:conf/pldi/Lucco92,
+	title = "A Dynamic Scheduling Technique for Irregular Parallel Programs.",
+	author = "Steven Lucco",
+	pages = "200-211"}
+
+@inproceedings{DBLP:conf/pldi/Maslov92,
+	title = "Delinearization: An Efficient Way to Break Multiloop Dependence
+               Equations.",
+	author = "Vadim Maslov",
+	pages = "152-161"}
+
+@inproceedings{DBLP:conf/pldi/MuellerW92,
+	title = "Avoiding Unconditional Jumps by Code Replication.",
+	author = "Frank Mueller and David B. Whalley",
+	pages = "322-330"}
+
+@inproceedings{DBLP:conf/pldi/OgataKID92,
+	title = "The Design and Implementation of HoME.",
+	author = "Kazuhiro Ogata and Satoshi Kurihara and Mikio Inari and Norihisa Doi",
+	pages = "44-54"}
+
+@inproceedings{DBLP:conf/pldi/ParkG92,
+	title = "Escape Analysis on Lists.",
+	author = "Young Gil Park and Benjamin Goldberg",
+	pages = "116-127"}
+
+@inproceedings{DBLP:conf/pldi/Proebsting92,
+	title = "Simple and Efficient BURS Table Generation.",
+	author = "Todd A. Proebsting",
+	pages = "331-340"}
+
+@inproceedings{DBLP:conf/pldi/ProebstingF92,
+	title = "Probalistic Register Allocation.",
+	author = "Todd A. Proebsting and Charles N. Fischer",
+	pages = "300-310"}
+
+@inproceedings{DBLP:conf/pldi/PughW92,
+	title = "Eliminating False Data Dependences using the Omega Test.",
+	author = "William Pugh and David Wonnacott",
+	pages = "140-151"}
+
+@inproceedings{DBLP:conf/pldi/RamseyH92,
+	title = "A Retargetable Debugger.",
+	author = "Norman Ramsey and David R. Hanson",
+	pages = "22-31"}
+
+@inproceedings{DBLP:conf/pldi/RauLTS92,
+	title = "Register Allocation for Software Pipelined Loops.",
+	author = "B. Ramakrishna Rau and M. Lee and Parthasarathy P. Tirumalai and Michael S. Schlansker",
+	pages = "283-299"}
+
+@inproceedings{DBLP:conf/pldi/SarkarT92,
+	title = "A General Framework for Iteration-Reordering Loop Transformations.",
+	author = "Vivek Sarkar and Radhika Thekkath",
+	pages = "175-187"}
+
+@inproceedings{DBLP:conf/pldi/Sosic92,
+	title = "Dynascope: A Tool for Program Directing.",
+	author = "Rok Sosic",
+	pages = "12-21"}
+
+@inproceedings{DBLP:conf/pldi/TanL92,
+	title = "Compiling Dataflow Analysis of Logic Programs.",
+	author = "Jichang Tan and I-Peng Lin",
+	pages = "106-115"}
+
+@inproceedings{DBLP:conf/pldi/TjiangH92,
+	title = "Sharlit - A Tool for Building Optimizers.",
+	author = "Steven W. K. Tjiang and John L. Hennessy",
+	pages = "82-93"}
+
+@inproceedings{DBLP:conf/pldi/Wolfe92,
+	title = "Beyond Induction Variables.",
+	author = "Michael Wolfe",
+	pages = "162-174"}
+
+@inproceedings{DBLP:conf/pldi/WortmanJ92,
+	title = "A Concurrent Compiler for Modula-2+.",
+	author = "David B. Wortman and Michael D. Junkin",
+	pages = "68-81"}
+
+@default year = 1991
+
+@inproceedings{DBLP:conf/pldi/BernsteinR91,
+	title = "Global Instruction Scheduling for Superscalar Machines.",
+	author = "David Bernstein and Michael Rodeh",
+	pages = "241-255"}
+
+@inproceedings{DBLP:conf/pldi/Bertot91,
+	title = "Occurences in Debugger Specifications.",
+	author = "Yves Bertot",
+	pages = "327-337"}
+
+@inproceedings{DBLP:conf/pldi/BoehmDS91,
+	title = "Mostly Parallel Garbage Collection.",
+	author = "Hans-Juergen Boehm and Alan J. Demers and Scott Shenker",
+	pages = "157-164"}
+
+@inproceedings{DBLP:conf/pldi/BradleeHE91,
+	title = "The Marion System for Retargetable Instruction Scheduling.",
+	author = "David G. Bradlee and Robert R. Henry and Susan J. Eggers",
+	pages = "229-240"}
+
+@inproceedings{DBLP:conf/pldi/BromleyHMS91,
+	title = "Fortran at Ten Gigaflops: The Connection Machine Convolution
+               Compiler.",
+	author = "Mark Bromley and Steven Heller and Timothy S. McNerney and Guy L. Steele, Jr.",
+	pages = "145-156"}
+
+@inproceedings{DBLP:conf/pldi/CallahanK91,
+	title = "Register Allocation via Hierarchical Graph Coloring.",
+	author = "David Callahan and Brian Koblenz",
+	pages = "192-203"}
+
+@inproceedings{DBLP:conf/pldi/CartwrightF91,
+	title = "Soft Typing.",
+	author = "Robert Cartwright and Mike Fagan",
+	pages = "278-292"}
+
+@inproceedings{DBLP:conf/pldi/ChatterjeeBF91,
+	title = "Size and Access Inference for Data-Parallel Programs.",
+	author = "Siddhartha Chatterjee and Guy E. Blelloch and Allan L. Fisher",
+	pages = "130-144"}
+
+@inproceedings{DBLP:conf/pldi/ConselK91,
+	title = "Parameterized Partial Evaluation.",
+	author = "Charles Consel and Siau-Cheng Khoo",
+	pages = "92-106"}
+
+@inproceedings{DBLP:conf/pldi/FreemanP91,
+	title = "Refinement Types for ML.",
+	author = "Tim Freeman and Frank Pfenning",
+	pages = "268-277"}
+
+@inproceedings{DBLP:conf/pldi/FritzsonGKS91,
+	title = "Generalized Algorithmic Debugging and Testing.",
+	author = "Peter Fritzson and Tibor Gyim{\'o}thy and Mariam Kamkar and Nahid Shahmehri",
+	pages = "317-326"}
+
+@inproceedings{DBLP:conf/pldi/GaoWN91,
+	title = "A Timed Petri-Net Model for Fine-Grain Loop Scheduling.",
+	author = "Guang R. Gao and Yue-Bong Wong and Qi Ning",
+	pages = "204-218"}
+
+@inproceedings{DBLP:conf/pldi/GoffKT91,
+	title = "Practical Dependence Testing.",
+	author = "Gina Goff and Ken Kennedy and Chau-Wen Tseng",
+	pages = "15-29"}
+
+@inproceedings{DBLP:conf/pldi/Goldberg91,
+	title = "Tag-Free Garbage Collection for Strongly Typed Programming
+               Languages.",
+	author = "Benjamin Goldberg",
+	pages = "165-176"}
+
+@inproceedings{DBLP:conf/pldi/JaffarMY91,
+	title = "A Methodology for Managing Hard Constraints in CLP Systems.",
+	author = "Joxan Jaffar and Spiro Michaylov and Roland H. C. Yap",
+	pages = "306-316"}
+
+@inproceedings{DBLP:conf/pldi/Jain91,
+	title = "Circular Scheduling: A New Technique to Perform Software
+               Pipelining.",
+	author = "Suneel Jain",
+	pages = "219-228"}
+
+@inproceedings{DBLP:conf/pldi/KishonHC91,
+	title = "Monitoring Semantics: A Formal Framework for Specifying,
+               Implementing, and Reasoning about Execution Monitors.",
+	author = "Amir Kishon and Paul Hudak and Charles Consel",
+	pages = "338-352"}
+
+@inproceedings{DBLP:conf/pldi/Launchbury91,
+	title = "Strictness and Binding-Time Analyses: Two for the Price
+               of One.",
+	author = "John Launchbury",
+	pages = "80-91"}
+
+@inproceedings{DBLP:conf/pldi/MaydanHL91,
+	title = "Efficient and Exact Data Dependence Analysis.",
+	author = "Dror E. Maydan and John L. Hennessy and Monica S. Lam",
+	pages = "1-14"}
+
+@inproceedings{DBLP:conf/pldi/McFarling91,
+	title = "Procedure Merging with Instruction Caches.",
+	author = "Scott McFarling",
+	pages = "71-79"}
+
+@inproceedings{DBLP:conf/pldi/Morris91,
+	title = "CCG: A Prototype Coagulating Code Generator.",
+	author = "W. G. Morris",
+	pages = "45-58"}
+
+@inproceedings{DBLP:conf/pldi/ProebstingF91,
+	title = "Linear-Time, Optimal Code Scheduling for Delayed-Load Architectures.",
+	author = "Todd A. Proebsting and Charles N. Fischer",
+	pages = "256-267"}
+
+@inproceedings{DBLP:conf/pldi/Pugh91,
+	title = "Advice to Authors of Extended Abstracts.",
+	author = "William Pugh",
+	pages = "353-356"}
+
+@inproceedings{DBLP:conf/pldi/Reppy91,
+	title = "CML: A Higher-Order Concurrent Language.",
+	author = "John H. Reppy",
+	pages = "293-305"}
+
+@inproceedings{DBLP:conf/pldi/Venkatesh91,
+	title = "The Semantic Approach to Program Slicing.",
+	author = "G. A. Venkatesh",
+	pages = "107-119"}
+
+@inproceedings{DBLP:conf/pldi/Wall91,
+	title = "Predicting Program Behavior Using Real or Estimated Profiles.",
+	author = "David W. Wall",
+	pages = "59-70"}
+
+@inproceedings{DBLP:conf/pldi/WhitfieldS91,
+	title = "Automatic Generation of Global Optimizers.",
+	author = "Deborah Whitfield and Mary Lou Soffa",
+	pages = "120-129"}
+
+@inproceedings{DBLP:conf/pldi/WilsonLM91,
+	title = "Effective ``Static-Graph'' Reorganization to Improve Locality
+               in Garbage-Collected Systems.",
+	author = "Paul R. Wilson and Michael S. Lam and Thomas G. Moher",
+	pages = "177-191"}
+
+@inproceedings{DBLP:conf/pldi/WolfL91,
+	title = "A Data Locality Optimizing Algorithm.",
+	author = "Michael E. Wolf and Monica S. Lam",
+	pages = "30-44"}
+
+@default year = 1990
+
+@inproceedings{DBLP:conf/pldi/AgrawalH90,
+	title = "Dynamic Program Slicing.",
+	author = "Hiralal Agrawal and Joseph Robert Horgan",
+	pages = "246-256"}
+
+@inproceedings{DBLP:conf/pldi/AmmarguellatH90,
+	title = "Automatic Recognition of Induction Variables and Recurrence
+               Relations by Abstract Interpretation.",
+	author = "Zahira Ammarguellat and Williams Ludwell Harrison, III",
+	pages = "283-295"}
+
+@inproceedings{DBLP:conf/pldi/AndersonH90,
+	title = "Compilation of Haskell Array Comprehensions for Scientific
+               Computing.",
+	author = "Steven Anderson and Paul Hudak",
+	pages = "137-149"}
+
+@inproceedings{DBLP:conf/pldi/BallanceMO90,
+	title = "The Program Dependence Web: A Representation Supporting
+               Control, Data, and Demand-Driven Interpretation of Imperative
+               Languages.",
+	author = "Robert A. Ballance and Arthur B. Maccabe and Karl J. Ottenstein",
+	pages = "257-271"}
+
+@inproceedings{DBLP:conf/pldi/CallahanCK90,
+	title = "Improving Register Allocation for Subscripted Variables.",
+	author = "David Callahan and Steve Carr and Ken Kennedy",
+	pages = "53-65"}
+
+@inproceedings{DBLP:conf/pldi/ChambersU90,
+	title = "Iterative Type Analysis and Extended Message Splitting:
+               Optimizing Dynamically-Typed Object-Oriented Programs.",
+	author = "Craig Chambers and David Ungar",
+	pages = "150-164"}
+
+@inproceedings{DBLP:conf/pldi/ChaseWZ90,
+	title = "Analysis of Pointers and Structures.",
+	author = "David R. Chase and Mark N. Wegman and F. Kenneth Zadeck",
+	pages = "296-310"}
+
+@inproceedings{DBLP:conf/pldi/Clinger90,
+	title = "How to Read Floating-Point Numbers Accurately.",
+	author = "William D. Clinger",
+	pages = "92-101"}
+
+@inproceedings{DBLP:conf/pldi/CormackW90,
+	title = "Type-Dependent Parameter Inference.",
+	author = "Gordon V. Cormack and Andrew K. Wright",
+	pages = "127-136"}
+
+@inproceedings{DBLP:conf/pldi/CytronFS90,
+	title = "Compact Representations for Control Dependence.",
+	author = "Ron Cytron and Jeanne Ferrante and Vivek Sarkar",
+	pages = "337-351"}
+
+@inproceedings{DBLP:conf/pldi/DebrayLH90,
+	title = "Task Granularity Analysis in Logic Programs.",
+	author = "Saumya K. Debray and Nai-Wei Lin and Manuel V. Hermenegildo",
+	pages = "174-188"}
+
+@inproceedings{DBLP:conf/pldi/Giegerich90,
+	title = "On the Structure of Verifiable Code Generator Specifications.",
+	author = "Robert Giegerich",
+	pages = "1-8"}
+
+@inproceedings{DBLP:conf/pldi/Gupta90,
+	title = "A Fresh Look at Optimizing Array Bound Checking.",
+	author = "Rajiv Gupta",
+	pages = "272-282"}
+
+@inproceedings{DBLP:conf/pldi/HenryWF90,
+	title = "The University of Washington Illustrating Compiler.",
+	author = "Robert R. Henry and Kenneth M. Whaley and Bruce Forstall",
+	pages = "223-233"}
+
+@inproceedings{DBLP:conf/pldi/HiebDB90,
+	title = "Representing Control in the Presence of First-Class Continuations.",
+	author = "Robert Hieb and R. Kent Dybvig and Carl Bruggeman",
+	pages = "66-77"}
+
+@inproceedings{DBLP:conf/pldi/Horwitz90,
+	title = "Identifying the Semantic and Textual Differences Between
+               Two Versions of a Program.",
+	author = "Susan Horwitz",
+	pages = "234-245"}
+
+@inproceedings{DBLP:conf/pldi/Jacobs90,
+	title = "Type Declarations as Subtype Constraints in Logic Programming.",
+	author = "Dean Jacobs",
+	pages = "165-173"}
+
+@inproceedings{DBLP:conf/pldi/JourdanPJDB90,
+	title = "Design, Implementation and Evaluation of the FNC-2 Attribute
+               Grammar System.",
+	author = "Martin Jourdan and Didier Parigot and Catherine Juli{\'e} and Olivier Durin and Carole Le Bellec",
+	pages = "209-222"}
+
+@inproceedings{DBLP:conf/pldi/Kessler90,
+	title = "Fast Breakpoints: Design and Implementation.",
+	author = "Peter B. Kessler",
+	pages = "78-84"}
+
+@inproceedings{DBLP:conf/pldi/LeeB90,
+	title = "Optimizing Programs over the Constructive Reals.",
+	author = "Vernon A. Lee, Jr. and Hans-Juergen Boehm",
+	pages = "102-111"}
+
+@inproceedings{DBLP:conf/pldi/MitsolidesH90,
+	title = "Generators and the Replicator Control Structures in the
+               Parallel Environment of ALLOY.",
+	author = "Thanasis Mitsolides and Malcolm Harrison",
+	pages = "189-196"}
+
+@inproceedings{DBLP:conf/pldi/Nickerson90,
+	title = "Graph Coloring Register Allocation for Processors with Multi-Register
+               Operands.",
+	author = "Brian R. Nickerson",
+	pages = "40-52"}
+
+@inproceedings{DBLP:conf/pldi/PettisH90,
+	title = "Profile Guided Code Positioning.",
+	author = "Karl Pettis and Robert C. Hansen",
+	pages = "16-27"}
+
+@inproceedings{DBLP:conf/pldi/PughW90,
+	title = "Two-Directional Record Layout for Multiple Inheritance.",
+	author = "William Pugh and Grant E. Weddell",
+	pages = "85-91"}
+
+@inproceedings{DBLP:conf/pldi/SanthanamO90,
+	title = "Register Allocation Across Procedure and Module Boundaries.",
+	author = "Vatsa Santhanam and Daryl Odnert",
+	pages = "28-39"}
+
+@inproceedings{DBLP:conf/pldi/Sarkar90,
+	title = "Instruction Reordering for Fork-Join Parallelism.",
+	author = "Vivek Sarkar",
+	pages = "322-336"}
+
+@inproceedings{DBLP:conf/pldi/SteeleW90,
+	title = "How to Print Floating-Point Numbers Accurately.",
+	author = "Guy L. Steele, Jr. and Jon L. White",
+	pages = "112-126"}
+
+@inproceedings{DBLP:conf/pldi/TeitelbaumC90,
+	title = "Higher-Order Attribute Grammars and Editing Environments.",
+	author = "Tim Teitelbaum and Richard Chapman",
+	pages = "197-208"}
+
+@inproceedings{DBLP:conf/pldi/Tseng90,
+	title = "Compiling Programs for a Linear Systolic Array.",
+	author = "Ping-Sheng Tseng",
+	pages = "311-321"}
+
+@inproceedings{DBLP:conf/pldi/Wendt90,
+	title = "Fast Code Generation Using Automatically-Generated Decision
+               Trees.",
+	author = "Alan L. Wendt",
+	pages = "9-15"}
+
+@default year = 1989
+
+@inproceedings{DBLP:conf/pldi/AtkinsonDHJKW89,
+	title = "Experiences Creating a Portable Cedar.",
+	author = "Russell R. Atkinson and Alan J. Demers and Carl Hauser and Christian Jacobi and Peter Kessler and Mark Weiser",
+	pages = "322-329"}
+
+@inproceedings{DBLP:conf/pldi/BalasundaramK89,
+	title = "A Technique for Summarizing Data Access and Its Use in Parallelism
+               Enhancing Transformations.",
+	author = "Vasanth Balasundaram and Ken Kennedy",
+	pages = "41-53"}
+
+@inproceedings{DBLP:conf/pldi/BernsteinGGKMNP89,
+	title = "Spill Code Minimization Techniques for Optimizing Compilers.",
+	author = "David Bernstein and Dina Q. Goldin and Martin Charles Golumbic and Hugo Krawczyk and Yishay Mansour and Itai Nahshon and Ron Y. Pinter",
+	pages = "258-263"}
+
+@inproceedings{DBLP:conf/pldi/Boehm89,
+	title = "Type Inference in the Presence of Type Abstraction.",
+	author = "Hans-Juergen Boehm",
+	pages = "192-206"}
+
+@inproceedings{DBLP:conf/pldi/BriggsCKT89,
+	title = "Coloring Heuristics for Register Allocation.",
+	author = "Preston Briggs and Keith D. Cooper and Ken Kennedy and Linda Torczon",
+	pages = "275-284"}
+
+@inproceedings{DBLP:conf/pldi/CartwrightF89,
+	title = "The Semantics of Program Dependence.",
+	author = "Robert Cartwright and Matthias Felleisen",
+	pages = "13-27"}
+
+@inproceedings{DBLP:conf/pldi/ChambersU89,
+	title = "Customization: Optimizing Compiler Technology for SELF,
+               A Dynamically-Typed Object-Oriented Programming Language.",
+	author = "Craig Chambers and David Ungar",
+	pages = "146-160"}
+
+@inproceedings{DBLP:conf/pldi/ChiD89,
+	title = "Unified Management of Registers and Cache Using Liveness
+               and Cache Bypass.",
+	author = "Chi-Hung Chi and Henry G. Dietz",
+	pages = "344-355"}
+
+@inproceedings{DBLP:conf/pldi/Cormack89,
+	title = "An LR Substring Parser for Noncorrecting Syntax Error Recovery.",
+	author = "Gordon V. Cormack",
+	pages = "161-169"}
+
+@inproceedings{DBLP:conf/pldi/CytronHH89,
+	title = "Automatic Generation of DAG Parallelism.",
+	author = "Ron Cytron and Michael Hind and Wilson C. Hsieh",
+	pages = "54-68"}
+
+@inproceedings{DBLP:conf/pldi/EmmelmannSL89,
+	title = "BEG - A Generator for Efficient Back Ends.",
+	author = "Helmut Emmelmann and Friedrich-Wilhelm Schr{\"o}er and Rudolf Landwehr",
+	pages = "227-237"}
+
+@inproceedings{DBLP:conf/pldi/FarrowS89,
+	title = "A VHDL Compiler Based on Attribute Grammar Methodology.",
+	author = "Rodney Farrow and Alec G. Stanculescu",
+	pages = "120-130"}
+
+@inproceedings{DBLP:conf/pldi/Fraser89,
+	title = "A Language for Writing Code Generators.",
+	author = "Christopher W. Fraser",
+	pages = "238-245"}
+
+@inproceedings{DBLP:conf/pldi/Goldberg89,
+	title = "Generational Reference Counting: A Reduced-Communication
+               Distributed Storage Reclamation Scheme.",
+	author = "Benjamin Goldberg",
+	pages = "313-321"}
+
+@inproceedings{DBLP:conf/pldi/GrossZZ89,
+	title = "Parallel Compilation for a Parallel Machine.",
+	author = "Thomas R. Gross and Angelika Zobel and Markus Zolg",
+	pages = "91-100"}
+
+@inproceedings{DBLP:conf/pldi/GuptaSS89,
+	title = "Register Allocation via Clique Separators.",
+	author = "Rajiv Gupta and Mary Lou Soffa and Tim Steele",
+	pages = "264-274"}
+
+@inproceedings{DBLP:conf/pldi/HeeringKR89,
+	title = "Incremental Generation of Parsers.",
+	author = "Jan Heering and Paul Klint and J. Rekers",
+	pages = "179-191"}
+
+@inproceedings{DBLP:conf/pldi/HorwatCD89,
+	title = "Experience with CST: Programming and Implementation.",
+	author = "Waldemar Horwat and Andrew A. Chien and William J. Dally",
+	pages = "101-109"}
+
+@inproceedings{DBLP:conf/pldi/HorwitzPR89,
+	title = "Dependence Analysis for Pointer Variables.",
+	author = "Susan Horwitz and Phil Pfeiffer and Thomas W. Reps",
+	pages = "28-40"}
+
+@inproceedings{DBLP:conf/pldi/HwuC89,
+	title = "Inline Function Expansion for Compiling C Programs.",
+	author = "Wen-mei W. Hwu and Pohua P. Chang",
+	pages = "246-257"}
+
+@inproceedings{DBLP:conf/pldi/JouvelotG89,
+	title = "Reasoning about Continuations with Control Effects.",
+	author = "Pierre Jouvelot and David K. Gifford",
+	pages = "218-226"}
+
+@inproceedings{DBLP:conf/pldi/KoopmanL89,
+	title = "A Fresh Look at Combinator Graph Reduction.",
+	author = "Philip J. Koopman, Jr. and Peter Lee",
+	pages = "110-119"}
+
+@inproceedings{DBLP:conf/pldi/KranzHM89,
+	title = "Mul-T: A High-Performance Parallel Lisp.",
+	author = "David A. Kranz and Robert H. Halstead, Jr. and Eric Mohr",
+	pages = "81-90"}
+
+@inproceedings{DBLP:conf/pldi/OTooleG89,
+	title = "Type Reconstruction with First-Class Polymorphic Values.",
+	author = "James O'Toole and David K. Gifford",
+	pages = "207-217"}
+
+@inproceedings{DBLP:conf/pldi/RogersP89,
+	title = "Process Decomposition Through Locality of Reference.",
+	author = "Anne Rogers and Keshav Pingali",
+	pages = "69-80"}
+
+@inproceedings{DBLP:conf/pldi/SalomonC89,
+	title = "Scannerless NSLR(1) Parsing of Programming Languages.",
+	author = "Daniel J. Salomon and Gordon V. Cormack",
+	pages = "170-178"}
+
+@inproceedings{DBLP:conf/pldi/Sarkar89,
+	title = "Determining Average Program Execution Times and their Variance.",
+	author = "Vivek Sarkar",
+	pages = "298-312"}
+
+@inproceedings{DBLP:conf/pldi/Schonberg89,
+	title = "On-The-Fly Detection of Access Anomalies.",
+	author = "Edith Schonberg",
+	pages = "285-297"}
+
+@inproceedings{DBLP:conf/pldi/Venkatesh89,
+	title = "A Framework for Construction and Evaluation of High-Level
+               Specifications for Program Analysis Techniques.",
+	author = "G. A. Venkatesh",
+	pages = "1-12"}
+
+@inproceedings{DBLP:conf/pldi/VogtSK89,
+	title = "Higher-Order Attribute Grammars.",
+	author = "Harald Vogt and S. Doaitse Swierstra and Matthijs F. Kuiper",
+	pages = "131-145"}
+
+@inproceedings{DBLP:conf/pldi/WilsonM89,
+	title = "Demonic Memories for Process Histories.",
+	author = "Paul R. Wilson and Thomas G. Moher",
+	pages = "330-343"}
+
+@default year = 1988
+
+@inproceedings{DBLP:conf/pldi/AikenN88,
+	title = "Optimal Loop Parallelization.",
+	author = "Alexander Aiken and Alexandru Nicolau",
+	pages = "308-317"}
+
+@inproceedings{DBLP:conf/pldi/AllenJ88,
+	title = "Compiling C for Vectorization, Parallelization, and Inline
+               Expansion.",
+	author = "Randy Allen and Steve Johnson",
+	pages = "241-249"}
+
+@inproceedings{DBLP:conf/pldi/AndrewsHY88,
+	title = "Design and Implementation of the UW Illustrated Compiler",
+	author = "Kristy Andrews and Robert R. Henry and Wayne K. Yamamoto",
+	pages = "105-114"}
+
+@inproceedings{DBLP:conf/pldi/AppelEL88,
+	title = "Real-Time Concurrent Collection on Stock Multiprocessors",
+	author = "Andrew W. Appel and John R. Ellis and Kai Li",
+	pages = "11-20"}
+
+@inproceedings{DBLP:conf/pldi/BallanceBG88,
+	title = "Grammatical Abstraction and Incremental Syntax Analysis
+               in a Language-Based Editor.",
+	author = "Robert A. Ballance and Jacob Butcher and Susan L. Graham",
+	pages = "185-198"}
+
+@inproceedings{DBLP:conf/pldi/BenitezD88,
+	title = "A Portable Global Optimizer and Linker.",
+	author = "Manuel E. Benitez and Jack W. Davidson",
+	pages = "329-338"}
+
+@inproceedings{DBLP:conf/pldi/Callahan88,
+	title = "The Program Summary Graph and Flow-Sensitive InterproceduralData
+               Flow Analysis",
+	author = "David Callahan",
+	pages = "47-56"}
+
+@inproceedings{DBLP:conf/pldi/Chase88,
+	title = "Safety Considerations for Storage Allocation Optimizations",
+	author = "David R. Chase",
+	pages = "1-10"}
+
+@inproceedings{DBLP:conf/pldi/Chow88,
+	title = "Minimizing Register Usage Penalty at Procedure Calls",
+	author = "Fred C. Chow",
+	pages = "85-94"}
+
+@inproceedings{DBLP:conf/pldi/CooperK88,
+	title = "Interprocedural Side-Effect Analysis in Linear Time",
+	author = "Keith D. Cooper and Ken Kennedy",
+	pages = "57-66"}
+
+@inproceedings{DBLP:conf/pldi/CoutantMR88,
+	title = "DOC: A Practical Approach to Source-Level Debugging of Globally
+               Optimized Code.",
+	author = "Deborah S. Coutant and Sue Meloy and Michelle Ruscetta",
+	pages = "125-134"}
+
+@inproceedings{DBLP:conf/pldi/Debray88,
+	title = "Unfold/Fold Transformations and Loop Optimization of Logic
+               Programs",
+	author = "Saumya K. Debray",
+	pages = "297-307"}
+
+@inproceedings{DBLP:conf/pldi/FraserW88,
+	title = "Automatic Generation of Fast Optimizing Code Generators",
+	author = "Christopher W. Fraser and Alan L. Wendt",
+	pages = "79-84"}
+
+@inproceedings{DBLP:conf/pldi/HorwitzRB88,
+	title = "Interprocedural Slicing Using Dependence Graphs",
+	author = "Susan Horwitz and Thomas W. Reps and David Binkley",
+	pages = "35-46"}
+
+@inproceedings{DBLP:conf/pldi/JainT88,
+	title = "An Efficient Approach to Data Flow Analysis in a Multi Pass
+               Global Optimizer.",
+	author = "Suneel Jain and Carol L. Thompson",
+	pages = "154-163"}
+
+@inproceedings{DBLP:conf/pldi/KeutzerW88,
+	title = "Anatomy of a Hardware Compiler",
+	author = "Kurt Keutzer and Wayne Wolf",
+	pages = "95-104"}
+
+@inproceedings{DBLP:conf/pldi/Lam88,
+	title = "Software Pipelining: An Effective Scheduling Technique for
+               VLIW Machines.",
+	author = "Monica S. Lam",
+	pages = "318-328"}
+
+@inproceedings{DBLP:conf/pldi/LarusH88,
+	title = "Detecting Conflicts Between Structure Accesses",
+	author = "James R. Larus and Paul N. Hilfinger",
+	pages = "21-34"}
+
+@inproceedings{DBLP:conf/pldi/LiskovS88,
+	title = "Promises: Linguistic Support for Efficient Asynchronous
+               Procedure Calls in Distributed Systems.",
+	author = "Barbara Liskov and Liuba Shrira",
+	pages = "260-267"}
+
+@inproceedings{DBLP:conf/pldi/MillerC88,
+	title = "A Mechanism for Efficient Debugging of Parallel Programs.",
+	author = "Barton P. Miller and Jong-Deok Choi",
+	pages = "135-144"}
+
+@inproceedings{DBLP:conf/pldi/PallasU88,
+	title = "Multiprocessor Smalltalk: A Case Study of a Multiprocessor-Based
+               Programming Environment.",
+	author = "Joseph Pallas and David Ungar",
+	pages = "268-277"}
+
+@inproceedings{DBLP:conf/pldi/PfenningE88,
+	title = "Higher-Order Abstract Syntax.",
+	author = "Frank Pfenning and Conal Elliott",
+	pages = "199-208"}
+
+@inproceedings{DBLP:conf/pldi/PlebanL88,
+	title = "An Automatically Generated, Realistic Compiler for an Imperative
+               Programming Language.",
+	author = "Uwe F. Pleban and Peter Lee",
+	pages = "222-232"}
+
+@inproceedings{DBLP:conf/pldi/Reppy88,
+	title = "Synchronous Operations as First-Class Values.",
+	author = "John H. Reppy",
+	pages = "250-259"}
+
+@inproceedings{DBLP:conf/pldi/Rose88,
+	title = "Refined Types: Highly Differentiated Type Systems and Their
+               Use in the Design of Intermediate Langages",
+	author = "John R. Rose",
+	pages = "278-287"}
+
+@inproceedings{DBLP:conf/pldi/SchwarzKL88,
+	title = "An Optimizer for Ada - Design, Experiences and Results.",
+	author = "Birgit Schwarz and Walter Kirchg{\"a}assner and Rudolf Landwehr",
+	pages = "175-184"}
+
+@inproceedings{DBLP:conf/pldi/SeshadriWJWYS88,
+	title = "Semantic Analysis in a Concurrent Compiler.",
+	author = "V. Seshadri and David B. Wortman and Michael D. Junkin and S. Weber and C. P. Yu and I. Small",
+	pages = "233-240"}
+
+@inproceedings{DBLP:conf/pldi/Shivers88,
+	title = "Control-Flow Analysis in Scheme.",
+	author = "Olin Shivers",
+	pages = "164-174"}
+
+@inproceedings{DBLP:conf/pldi/Stone88,
+	title = "Debugging Concurrent Processes: A Case Study.",
+	author = "Janice M. Stone",
+	pages = "145-153"}
+
+@inproceedings{DBLP:conf/pldi/Wall88,
+	title = "Register Windows versus Register Allocation",
+	author = "David W. Wall",
+	pages = "67-78"}
+
+@inproceedings{DBLP:conf/pldi/WalzJ88,
+	title = "Incremental Evaluation for a General Class of Circular Attribute
+               Grammars.",
+	author = "Janet A. Walz and Gregory F. Johnson",
+	pages = "209-221"}
+
+@inproceedings{DBLP:conf/pldi/WeinerR88,
+	title = "A Piggy-back Compiler For Prolog",
+	author = "J. L. Weiner and S. Ramakrishnan",
+	pages = "288-296"}
+
+@inproceedings{DBLP:conf/pldi/YellinS88,
+	title = "INC: A Language for Incremental Computations",
+	author = "Daniel M. Yellin and Robert E. Strom",
+	pages = "115-124"}
+
+@default year = 1987
+
+@inproceedings{DBLP:conf/pldi/BahlkeMS87,
+	title = "A generator for language-specific debugging systems.",
+	ee = "http://doi.acm.org/10.1145/29650.29660",
+	author = "Rolf Bahlke and B. Moritz and Gregor Snelting",
+	pages = "92-101"}
+
+@inproceedings{DBLP:conf/pldi/Barklund87,
+	title = "Efficient interpretation of Prolog programs.",
+	ee = "http://doi.acm.org/10.1145/29650.29664",
+	author = "Jonas Barklund",
+	pages = "132-137"}
+
+@inproceedings{DBLP:conf/pldi/Boehm87,
+	title = "Constructive real interpretation of numerical programs.",
+	ee = "http://doi.acm.org/10.1145/29650.29673",
+	author = "Hans-Juergen Boehm",
+	pages = "214-221"}
+
+@inproceedings{DBLP:conf/pldi/ChaseH87,
+	title = "Selective interpretation as a technique for debugging computationally
+               intensive programs.",
+	ee = "http://doi.acm.org/10.1145/29650.29662",
+	author = "B. B. Chase and R. T. Hood",
+	pages = "113-124"}
+
+@inproceedings{DBLP:conf/pldi/Clark87,
+	title = "The JADE interpreter: a RISC interpreter for syntax directed
+               editing.",
+	ee = "http://doi.acm.org/10.1145/29650.29674",
+	author = "C. F. Clark",
+	pages = "222-228"}
+
+@inproceedings{DBLP:conf/pldi/CordyG87,
+	title = "Design of an interpretive environment for Turing.",
+	ee = "http://doi.acm.org/10.1145/29650.29671",
+	author = "James R. Cordy and T. C. Nicholas Graham",
+	pages = "199-204"}
+
+@inproceedings{DBLP:conf/pldi/Danvy87,
+	title = "Memory allocation and higher-order functions.",
+	ee = "http://doi.acm.org/10.1145/29650.29676",
+	author = "Olivier Danvy",
+	pages = "241-252"}
+
+@inproceedings{DBLP:conf/pldi/DavidsonG87,
+	title = "Cint: a RISC interpreter for the C programming language.",
+	ee = "http://doi.acm.org/10.1145/29650.29670",
+	author = "Jack W. Davidson and J. V. Gresh",
+	pages = "189-198"}
+
+@inproceedings{DBLP:conf/pldi/EckartL87,
+	title = "Distributed garbage collection.",
+	ee = "http://doi.acm.org/10.1145/29650.29678",
+	author = "J. Dana Eckart and Richard J. LeBlanc",
+	pages = "264-273"}
+
+@inproceedings{DBLP:conf/pldi/FaustiniW87,
+	title = "An eductive interpreter for Lucid.",
+	ee = "http://doi.acm.org/10.1145/29650.29659",
+	author = "Antony A. Faustini and William W. Wadge",
+	pages = "86-91"}
+
+@inproceedings{DBLP:conf/pldi/GelernterJL87,
+	title = "Parallelism, persistence and meta-cleanliness in the symmetric
+               Lisp interpreter.",
+	ee = "http://doi.acm.org/10.1145/29650.29679",
+	author = "David Gelernter and Suresh Jagannathan and Thomas London",
+	pages = "274-282"}
+
+@inproceedings{DBLP:conf/pldi/HarrES87,
+	title = "Interpreting ABF - a language for document construction.",
+	ee = "http://doi.acm.org/10.1145/29650.29672",
+	author = "H. Harr and Martha W. Evens and J. Sprowl",
+	pages = "205-213"}
+
+@inproceedings{DBLP:conf/pldi/HuguetLT87,
+	title = "A block-and-actions generator as an alternative to a simulator
+               for collecting architecture measurements.",
+	ee = "http://doi.acm.org/10.1145/29650.29652",
+	author = "Miquel Huguet and Tom{\'a}s Lang and Yuval Tamir",
+	pages = "14-25"}
+
+@inproceedings{DBLP:conf/pldi/Johnson87,
+	title = "GL-a denotational testbed with continuations and partial
+               continuations as first-class objects.",
+	ee = "http://doi.acm.org/10.1145/29650.29668",
+	author = "Gregory F. Johnson",
+	pages = "165-176"}
+
+@inproceedings{DBLP:conf/pldi/KarinthiW87,
+	title = "Incremental re-execution of programs.",
+	ee = "http://doi.acm.org/10.1145/29650.29654",
+	author = "R. R. Karinthi and Mark Weiser",
+	pages = "38-44"}
+
+@inproceedings{DBLP:conf/pldi/KearnsF87,
+	title = "CCAL: an interpreted language for experimentation in concurrent
+               control.",
+	ee = "http://doi.acm.org/10.1145/29650.29680",
+	author = "Phil Kearns and M. Freeman",
+	pages = "283-291"}
+
+@inproceedings{DBLP:conf/pldi/KoskimiesP87,
+	title = "TOOLS: a unifying approach to object-oriented language interpretation.",
+	ee = "http://doi.acm.org/10.1145/29650.29667",
+	author = "Kai Koskimies and Jukka Paakki",
+	pages = "153-164"}
+
+@inproceedings{DBLP:conf/pldi/Krall87,
+	title = "Implementation of a high-speed Prolog interpreter.",
+	ee = "http://doi.acm.org/10.1145/29650.29663",
+	author = "Andreas Krall",
+	pages = "125-131"}
+
+@inproceedings{DBLP:conf/pldi/LangD87,
+	title = "Incremental incrementally compacting garbage collection.",
+	ee = "http://doi.acm.org/10.1145/29650.29677",
+	author = "B. Lang and F. Dupont",
+	pages = "253-263"}
+
+@inproceedings{DBLP:conf/pldi/May87,
+	title = "Mimic: a fast system/370 simulator.",
+	ee = "http://doi.acm.org/10.1145/29650.29651",
+	author = "C. May",
+	pages = "1-13"}
+
+@inproceedings{DBLP:conf/pldi/Moss87,
+	title = "Managing stack frames in Smalltalk.",
+	ee = "http://doi.acm.org/10.1145/29650.29675",
+	author = "J. Eliot B. Moss",
+	pages = "229-240"}
+
+@inproceedings{DBLP:conf/pldi/NotkinG87,
+	title = "Enhancement through extension: the extension interpreter.",
+	ee = "http://doi.acm.org/10.1145/29650.29655",
+	author = "David Notkin and William G. Griswold",
+	pages = "45-55"}
+
+@inproceedings{DBLP:conf/pldi/OBagyG87,
+	title = "A recursive interpreter for the Icon programming language.",
+	ee = "http://doi.acm.org/10.1145/29650.29665",
+	author = "Janalee O'Bagy and Ralph E. Griswold",
+	pages = "138-149"}
+
+@inproceedings{DBLP:conf/pldi/OffuttK87,
+	title = "A Fortran 77 interpreter for mutation analysis.",
+	ee = "http://doi.acm.org/10.1145/29650.29669",
+	author = "A. Jefferson Offutt and K. N. King",
+	pages = "177-188"}
+
+@inproceedings{DBLP:conf/pldi/Pittman87,
+	title = "Two-level hybrid interpreter/native code execution for combined
+               space-time program efficiency.",
+	ee = "http://doi.acm.org/10.1145/29650.29666",
+	author = "Thomas Pittman",
+	pages = "150-152"}
+
+@inproceedings{DBLP:conf/pldi/Robison87,
+	title = "The Illinois functional programming interpreter.",
+	ee = "http://doi.acm.org/10.1145/29650.29657",
+	author = "Arch D. Robison",
+	pages = "64-73"}
+
+@inproceedings{DBLP:conf/pldi/ShebsK87,
+	title = "Automatic design and implementation of language data types.",
+	ee = "http://doi.acm.org/10.1145/29650.29653",
+	author = "S. T. Shebs and Robert R. Kessler",
+	pages = "26-37"}
+
+@inproceedings{DBLP:conf/pldi/SkedzielewskiYO87,
+	title = "DI: an interactive debugging interpreter for applicative
+               languages.",
+	ee = "http://doi.acm.org/10.1145/29650.29661",
+	author = "Stephen K. Skedzielewski and Robert Kim Yates and R. R. Oldehoeft",
+	pages = "102-112"}
+
+@inproceedings{DBLP:conf/pldi/SutorJ87,
+	title = "The type inference and coercion facilities in the scratchpad
+               II interpreter.",
+	ee = "http://doi.acm.org/10.1145/29650.29656",
+	author = "Robert S. Sutor and Richard D. Jenks",
+	pages = "56-63"}
+
+@inproceedings{DBLP:conf/pldi/Waters87,
+	title = "Efficient interpretation of synchronizable series expressions.",
+	ee = "http://doi.acm.org/10.1145/29650.29658",
+	author = "Richard C. Waters",
+	pages = "74-85"}
+
