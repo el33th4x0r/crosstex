@@ -101,6 +101,7 @@ optparser.add_option('--reverse-heading', metavar='FIELD', type='string', action
 
 optparser.add_option('--short', metavar='TYPE', type='choice', choices=[ name for name in dir(crosstexobjects) if isinstance(getattr(crosstexobjects, name), type) and issubclass(getattr(crosstexobjects, name), crosstexobjects.string) ], action='append', help="Specify any string-like object, i.e. one with name and shortname fields. Whenever possible, the short name will be used, e.g. two-letter state codes for \"state\", conference acronyms such as NSDI for \"conference\", or initials such as E. G. Sirer for \"author\".")
 optparser.add_option('--capitalize', metavar='TYPE', type='choice', choices=[ name for name in dir(crosstexobjects) if isinstance(getattr(crosstexobjects, name), type) and issubclass(getattr(crosstexobjects, name), crosstexobjects.string) ], action='append', help="Specify any string-like object, i.e. one with name and shortname fields. Strings of the specified types will appear in ALL CAPS.")
+optparser.add_option('--no-field', metavar='FIELD', action='append', help="Specify a field name, and in any objects where that field is optional it will be unassigned no matter what appears in the database.  For example, to turn off page numbers, use '--no-field pages'.")
 
 optparser.add_option('--add-in', action='store_const', const='In', dest='in_str', help="Add \"In\" for articles.")
 optparser.add_option('--add-proc', action='store_const', const='Proc. of', dest='proceedings_str', help="Add \"Proc. of\" for conference and workshop publications.")
@@ -218,6 +219,7 @@ class bibliography(dict):
 	    proceedings_str='',
 	    short=[],
 	    capitalize=[],
+	    no_field=[],
 	    sort=[(False, 'monthno'), (False, 'year'), (False, 'author'), (False, 'label')],
 	    titlecase='default',
 	)

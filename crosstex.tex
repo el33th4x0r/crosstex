@@ -718,7 +718,9 @@ be extended with the \texttt{--dir} option. Extensions (\texttt{.aux},
 \texttt{.xtx}, \texttt{.bib}) will be added if necessary to find the
 file. Each output will always appear in the same directory as the
 file processed, under the same name but with the extension changed to
-\texttt{.bbl}.
+\texttt{.bbl}. Errors in one file will not prevent processing the others,
+but \texttt{crosstex} will exit with an error code at the end if any
+warning or error messages were printed.
 
 If \texttt{crosstex} is invoked as \texttt{xtx2bib} or the
 \texttt{--xtx2bib} option is given, the output extension will be
@@ -749,6 +751,15 @@ nice and tame.
 
 A number of options can be specified to change the style of the
 bibliography to override or tweak that specified by a document.
+
+\subsection{Optional fields}
+
+Optional fields in any object can be ``turned off'' with the
+\texttt{--no-field} option.  The option can be specified multiple
+times with different fields, and if any of those fields are specified
+in the database where they are optional, the fields will be ignored and
+left blank.  As a result, for example, to avoid displaying page numbers
+is as simple as \texttt{--no-field pages}.
 
 \subsection{Abbreviation}
 

@@ -19,14 +19,22 @@ usedlabels = []
 
 # Stringify an object, possibly in the context of another one.
 def stringify(obj, context=None):
+    value = ''
     if isinstance(context, bibobject):
         if isinstance(obj, bibobject):
-	    obj = copy.deepcopy(obj)
 	    obj._resolve(context)
+	    value = str(obj)
+	    obj._resolve()
 	elif isinstance(obj, objref):
-	    obj = copy.deepcopy(obj.value())
+	    obj = obj.value()
 	    obj._resolve(context)
-    return str(obj)
+	    value = str(obj)
+	    obj._resolve()
+	else:
+	    value = str(obj)
+    else:
+	value = str(obj)
+    return value
 
 # Piece an entry together.
 def punctuate(bib, string, punctuation, tail=' ', braces=False):
@@ -128,7 +136,7 @@ class bibobject(object):
 	    inherit = []
 	    next = []
 	    for key, value, condition in conditionals:
-		if not hasattr(self, key) or not unassigned(getattr(self, key)):
+		if not hasattr(self, key) or not unassigned(getattr(self, key)) or (key in self._bib.options.no_field and self._requirements[key] != REQUIRED):
 		    continue
 		meets = 1
 		for field in condition:
