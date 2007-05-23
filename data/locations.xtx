@@ -2,6 +2,7 @@
 @country{Oz, name = "Australia"}
 @country{Austria, name = "Austria"}
 @country{Belgium, name = "Belgium"}
+@country{Brazil, name = "Brazil"}
 @country{Canada, name = "Canada"}
 @country{China, name = "China"}
 @country{Finland, name = "Finland"}
@@ -105,27 +106,31 @@
 @location{Charleston,		city="Charleston", state=SC}
 @location{Chicago,		city="Chicago", state=IL}
 @location{Cincinnati,		city="Cincinnati", state=OH}
-@location{CollegePark,	city="College Park", state=MD}
+@location{CollegePark,		city="College Park", state=MD}
 @location{Columbus,		city="Columbus", state=OH}
 @location{CopperMountain,	city="Copper Mountain", state=CO}
 @location{Dallas,		city="Dallas", state=TX}
 @location{DC,			city="Washington", state="D.C.", country=USA}
 @location{Denver,		city="Denver", state=CO}
 @location{ElPaso,		city="El Paso", state=TX}
+@location{Fairfax,		city="Fairfax", state=VA}
 @location{FortLauderdale,	city="Fort Lauderdale", state=FL}
 @location{Gathersberg,		city="Gathersberg", state=MD}
 @location{Gatlinburg,		city="Gatlinburg", state=TN}
+@location{Hawaii,		city="Hawaii", state=HI}
 @location{Honolulu,		city="Honolulu", state=HI}
 @location{Irvine,		city="Irvine", state=CA}
 @location{Ithaca,		city="Ithaca", state=NY}
+@location{Kauai,		city="Kauai", state=HI}
 @location{KiawahIsland,		city="Kiawah Island", state=SC}
 @location{LaJolla,		city="La Jolla", state=CA}
+@location{LakeTahoe,		city="Lake Tahoe", state=CA}
 @location{LasVegas,		city="Las Vegas", state=ND}
 @location{Lihue,		city="Lihue", state=HI}
 @location{LitchfieldPark,	city="Litchfield Park", state=AZ}
-@location{LongBeach,	city="Long Beach", state=CA}
+@location{LongBeach,		city="Long Beach", state=CA}
 @location{LosAngeles,		city="Los Angeles", state=CA}
-@location{Madison,	city="Madison", state=WI}
+@location{Madison,		city="Madison", state=WI}
 @location{MarinaDelRay,		city="Marina Del Ray", state=CA}
 @location{Maui,			city="Maui", state=HI}
 @location{MiamiBeach,		city="Miami Beach", state=FL}
@@ -148,6 +153,7 @@
 @location{Portland,		city="Portland", state=OR}
 @location{Princeton,		city="Princeton", state=NJ}
 @location{Providence,		city="Providence", state=RI}
+@location{Raleigh,		city="Raleigh", state=NC}
 @location{Redmond,		city="Redmond", state=WA}
 @location{RedondoBeach,		city="Redondo Beach", state=CA}
 @location{RioRico,		city="Rio Rico", state=AZ}
@@ -160,6 +166,7 @@
 @location{SantaBarbara,		city="Santa Barbara", state=CA}
 @location{SantaClara,		city="Santa Clara", state=CA}
 @location{SantaFe,		city="Santa Fe", state=NM}
+@location{Scottsdale,		city="Scottsdale", state=AZ}
 @location{Seattle,		city="Seattle", state=WA}
 @location{SF,			city="San Francisco", state=CA}
 @location{Snowbird,		city="Snowbird", state=UT}
@@ -169,14 +176,17 @@
 @location{Stowe,		city="Stowe", state=VT}
 @location{Tucson,		city="Tucson", state=AZ}
 @location{UrbanaChampaign,	city="Urbana-Champaign", state=IL}
+@location{Waikoloa,		city="Waikoloa", state=HI}
 @location{WhitePlains,		city="White Plains", state=NY}
 @location{Williamsburg,		city="Williamsburg", state=VA}
 @location{WestLafayette,	city="West Lafayette", state=IN}
 @location{YorktownHeights,	city="Yorktown Heights", state=NY}
 
 % International locations  
+@location{Adelaide,	city="Adelaide", state="South Australia", country=Oz}
 @location{Amsterdam,	city="Amsterdam", country=Netherlands}
 @location{Andros,	city="Andros", country=Greece}
+@location{Athens,	city="Athens", country=Greece}
 @location{BadNeuenahr,	city="Bad Neuenahr", country=Germany}
 @location{Banff,	city="Banff", country=Canada}
 @location{Barcelona,	city="Barcelona", country=Spain}
@@ -186,20 +196,28 @@
 @location{Brighton,	city="Brighton", country=UK}
 @location{BC,		city="British Columbia", country=Canada}
 @location{Budapest,	city="Budapest", country=Hungary}
+@location{Cairns,	city="Cairns", state="Queensland", country=Oz}
 @location{Calgary,	city="Calgary", country=Canada}
 @location{CambridgeUK,	city="Cambridge", country=UK}
+@location{Canberra,	city="Canberra", country=Oz}
 @location{Cancun,	city="Canc{\'u}n", country=Mexico}
 @location{Cannes,	city="Cannes", country=France}
 @location{Chiba,	city="Chiba", country=Japan}
 @location{Cologne,	city="Cologne", country=Germany}
 @location{Dagstuhl,	city="Dagstuhl", country=Germany}
+@location{Dunedin,	city="Dunedin", country=NewZealand}
 @location{Edinburgh,	city="Edinburgh", country=Scotland}
 @location{Edmonton,	city="Edmonton", country=Canada}
 @location{Elmau,	city="Elmau", country=Germany}
 @location{Florence,	city="Florence", country=Italy}
 @location{Geneva,	city="Geneva", country=Switzerland}
+@location{GoldCoast,	city="Gold Coast", state="Queensland", country=Oz}
+@location{Goteborg,	city={G{\"o}teborg}, country=Sweden}
+@location{Grenoble,	city="Grenoble", country=France}
 @location{Heidelberg,	city="Heidelberg", country=Germany}
 @location{Heraklion,	city="Heraklion", country=Greece}
+@location{Hiroshima,	city="Hiroshima", country=Japan}
+@location{Hobart,	city="Hobart", state="Tasmania", country=Oz}
 @location{HongKong,	city="Hong Kong", country=China}
 @location{Istanbul,	city="Istanbul", country=Turkey}
 @location{Karlsruhe,	city="Karlsruhe", country=Germany}
@@ -208,11 +226,15 @@
 @location{Leuven,	city="Leuven", country=Belgium}
 @location{Lisbon,	city="Lisbon", country=Portugal}
 @location{London,	city="London", country=UK}
+@location{Madrid,	city="Madrid", country=Spain}
 @location{Manchester,	city="Manchester", country=UK}
 @location{Marseille,	city="Marseille", country=France}
+@location{Melbourne,	city="Melbourne", state="Victoria", country=Oz}
 @location{Minaki,	city="Minaki", country=Canada}
 @location{Montreal,	city="{Montr\'eal}", country=Canada}
 @location{Munich,	city="Munich", country=Germany}
+@location{NaraCity,	city="Nara City", country=Japan}
+@location{Newcastle,	city="Newcastle", country=Oz}
 @location{Nice,		city="Nice", country=France}
 @location{Osaka,	city="Osaka", country=Japan}
 @location{Ottawa,	city="Ottawa", country=Canada}
@@ -222,6 +244,7 @@
 @location{Poznan,	city="Poznan", country=Poland}
 @location{PuertoVallarta,city="Puerto Vallarta", country=Mexico}
 @location{QuebecCity,	city="Quebec City", country=Canada}
+@location{Rio,		city="Rio de Janeiro", country=Brazil}
 @location{Rome,		city="Rome", country=Italy}
 @location{Saarbrucken,	city="{Saarbr\"ucken}", country=Germany}
 @location{SaintEmilion,	city="Saint Emilion", country=France}
@@ -238,10 +261,12 @@
 @location{TelAviv,	city="Tel Aviv", country=Israel}
 @location{Tokyo,	city="Tokyo", country=Japan}
 @location{Toronto,	city="Toronto", country=Canada}
+@location{Trento,	city="Trento", country=Italy}
 @location{Turku,	city="Turku", country=Finland}
 @location{Uppsala,	city="Uppsala", country=Sweden}
 @location{Vancouver,	city="Vancouver", country=Canada}
 @location{Venice,	city="Venice", country=Italy}
+@location{VillaGallia,	city="Villa Gallia", state="Como", country=Italy}
 @location{Vienna,	city="Vienna", country=Austria}
 @location{Warsaw,	city="Warsaw", country=Poland}
 @location{Winnipeg,	city="Winnipeg", country=Canada}

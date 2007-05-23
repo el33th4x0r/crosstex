@@ -1,0 +1,3247 @@
+@include conferences-cs
+
+@default bibsource = "DBLP, http://dblp.uni-trier.de"
+
+@default booktitle = lisa
+
+@default year = 2006
+
+@inproceedings{DBLP:conf/lisa/000206,
+	title = "Virtualization: The Good, the Bad, the Ugly.",
+	author = "Michael Baum 0002"}
+
+@inproceedings{DBLP:conf/lisa/Alperovitch06,
+	title = "Zombies and Botnets: Attacks on Messaging Security by Organized
+               Criminal Enterprises.",
+	author = "Dmitri Alperovitch"}
+
+@inproceedings{DBLP:conf/lisa/ArrasjidGD06,
+	title = "Virtualization and the Virtual Infrastructure.",
+	author = "John Arrasjid and John Gannon and Michael DiPetrillo"}
+
+@inproceedings{DBLP:conf/lisa/Begnum06,
+	title = "Managing Large Networks of Virtual Machines.",
+	ee = "http://www.usenix.org/events/lisa06/tech/begnum.html",
+	author = "Kyrre M. Begnum",
+	pages = "205-214"}
+
+@inproceedings{DBLP:conf/lisa/BurgessC06,
+	title = "Modeling Next Generation Configuration Management Tools.",
+	ee = "http://www.usenix.org/events/lisa06/tech/burgess.html",
+	author = "Mark Burgess and Alva L. Couch",
+	pages = "131-147"}
+
+@inproceedings{DBLP:conf/lisa/Byrne06,
+	title = "Open Source Software and Its Role in Space Exploration.",
+	ee = "http://www.usenix.org/events/lisa06/tech/slides/byrne.pdf",
+	author = "D. J. Byrne"}
+
+@inproceedings{DBLP:conf/lisa/CecchiniCDDFFGMPS06,
+	title = "Securing Electronic Mail on the National Research and Academic
+               Network of Italy.",
+	ee = "http://www.usenix.org/events/lisa06/tech/cecchini.html",
+	author = "Roberto Cecchini and Fulvia Costa and Alberto D'Ambrosio and Domenico Diacono and Giacomo Fazio and Antonio Forte and Matteo Genghini and Michele Michelotto and Ombretta Pinazza and Alfonso Sparano",
+	pages = "17-29"}
+
+@inproceedings{DBLP:conf/lisa/Chu06,
+	title = "LDAP.",
+	author = "Howard Chu"}
+
+@inproceedings{DBLP:conf/lisa/CrostaSK06,
+	title = "Fighting Institutional Memory Loss: The Trackle Integrated
+               Issue and Solution Tracking System.",
+	ee = "http://www.usenix.org/events/lisa06/tech/crosta.html",
+	author = "Daniel S. Crosta and Matthew J. Singleton and Benjamin A. Kuperman",
+	pages = "287-298"}
+
+@inproceedings{DBLP:conf/lisa/DamonM06,
+	title = "Is Entropy Winning? Drowning in the Data Tsunami.",
+	ee = "http://www.usenix.org/events/lisa06/tech/slides/damon.pdf",
+	author = "Lee Damon and Evan Marcus"}
+
+@inproceedings{DBLP:conf/lisa/Desai06,
+	title = "bcfg2.",
+	author = "Narayan Desai"}
+
+@inproceedings{DBLP:conf/lisa/DesaiBL06,
+	title = "Directing Change Using Bcfg2.",
+	ee = "http://www.usenix.org/events/lisa06/tech/desai.html",
+	author = "Narayan Desai and Rick Bradshaw and Cory Lueninghoener",
+	pages = "215-220"}
+
+@inproceedings{DBLP:conf/lisa/Doctorow06,
+	title = "Keynote Address: Hollywood's Secret War on Your NOC.",
+	ee = "http://www.usenix.org/events/lisa06/tech/mp3/doctorow.mp3",
+	author = "Cory Doctorow"}
+
+@inproceedings{DBLP:conf/lisa/DouitsisK06,
+	title = "Interactive Network Management Visualization with SVG and
+               AJAX.",
+	ee = "http://www.usenix.org/events/lisa06/tech/douitsis.html",
+	author = "Athanasios Douitsis and Dimitrios Kalogeras",
+	pages = "233-245"}
+
+@inproceedings{DBLP:conf/lisa/Eisler06,
+	title = "NFSv4.",
+	author = "Michael Eisler"}
+
+@inproceedings{DBLP:conf/lisa/Filderman06,
+	title = "AFS.",
+	author = "Esther Filderman"}
+
+@inproceedings{DBLP:conf/lisa/FinkDCN06,
+	title = "Bridging the Host-Network Divide: Survey, Taxonomy, and
+               Solution.",
+	ee = "http://www.usenix.org/events/lisa06/tech/fink.html",
+	author = "Glenn A. Fink and Vyas Duggirala and Ricardo Correa and Chris North",
+	pages = "247-262"}
+
+@inproceedings{DBLP:conf/lisa/Finke06,
+	title = "Unifying Unified Voice Messaging.",
+	ee = "http://www.usenix.org/events/lisa06/tech/finke.html",
+	author = "Jon Finke",
+	pages = "275-285"}
+
+@inproceedings{DBLP:conf/lisa/Finke06a,
+	title = "Identity Management.",
+	author = "Jon Finke"}
+
+@inproceedings{DBLP:conf/lisa/GanapathiGP06,
+	title = "Windows XP Kernel Crash Analysis.",
+	ee = "http://www.usenix.org/events/lisa06/tech/ganapathi.html",
+	author = "Archana Ganapathi and Viji Ganapathi and David A. Patterson",
+	pages = "149-159"}
+
+@inproceedings{DBLP:conf/lisa/Guha06,
+	title = "Power-Managed Storage: Longer Data Life and Lower Energy
+               Consumption.",
+	ee = "http://www.usenix.org/events/lisa06/tech/slides/guha.pdf",
+	author = "Aloke Guha"}
+
+@inproceedings{DBLP:conf/lisa/Haberlach06,
+	title = "QA and the System Administrator.",
+	ee = "http://www.usenix.org/events/lisa06/tech/slides/haberlach.pdf",
+	author = "Adam Haberlach"}
+
+@inproceedings{DBLP:conf/lisa/Hennessey06,
+	title = "High Availability: From Luxury to Commonplace Necessity
+               in 10 Years.",
+	ee = "http://www.usenix.org/events/lisa06/tech/slides/hennessey.pdf",
+	author = "Eric Hennessey"}
+
+@inproceedings{DBLP:conf/lisa/Hughes06,
+	title = "Spam.",
+	author = "Douglas Hughes"}
+
+@inproceedings{DBLP:conf/lisa/Hughes06a,
+	title = "SNMP.",
+	author = "Douglas Hughes"}
+
+@inproceedings{DBLP:conf/lisa/Kaminsky06,
+	title = "Black Ops 2006: Pattern Recognition.",
+	author = "Dan Kaminsky"}
+
+@inproceedings{DBLP:conf/lisa/KangSJ06,
+	title = "Privilege Messaging: An Authorization Framework over Email
+               Infrastructure.",
+	ee = "http://www.usenix.org/events/lisa06/tech/kang.html",
+	author = "Brent ByungHoon Kang and Gautam Singaraju and Sumeet Jain",
+	pages = "1-16"}
+
+@inproceedings{DBLP:conf/lisa/Kanies06,
+	title = "Puppet.",
+	author = "Luke Kanies"}
+
+@inproceedings{DBLP:conf/lisa/Klein06,
+	title = "A Forensic Analysis of a Distributed Two-Stage Web-Based
+               Spam Attack (Awarded Honorable Mention!).",
+	ee = "http://www.usenix.org/events/lisa06/tech/klein.html",
+	author = "Daniel V. Klein",
+	pages = "31-40"}
+
+@inproceedings{DBLP:conf/lisa/Klein06a,
+	title = "Perfect Data in an Imperfect World.",
+	author = "Daniel V. Klein"}
+
+@inproceedings{DBLP:conf/lisa/LamYC06,
+	title = "Secure Mobile Code Execution Service.",
+	ee = "http://www.usenix.org/events/lisa06/tech/lam.html",
+	author = "Lap-Chung Lam and Yang Yu and Tzi-cker Chiueh",
+	pages = "53-62"}
+
+@inproceedings{DBLP:conf/lisa/Limoncelli06,
+	title = "Site Reliability at Google/My First Year at Google.",
+	author = "Thomas A. Limoncelli"}
+
+@inproceedings{DBLP:conf/lisa/Limoncelli06a,
+	title = "Time Management for System Administrators.",
+	author = "Thomas A. Limoncelli"}
+
+@inproceedings{DBLP:conf/lisa/Limoncelli06b,
+	title = "Mac OS X.",
+	author = "Thomas Limoncelli"}
+
+@inproceedings{DBLP:conf/lisa/LimoncelliM06,
+	title = "How to Get Your Paper Accepted at LISA.",
+	author = "Thomas A. Limoncelli and Adam Moskowitz"}
+
+@inproceedings{DBLP:conf/lisa/Littell06,
+	title = "Spam.",
+	author = "John Littell"}
+
+@inproceedings{DBLP:conf/lisa/Loveless06,
+	title = "Corporate Security: A Hacker Perspective.",
+	ee = "http://www.usenix.org/events/lisa06/tech/slides/loveless.pdf",
+	author = "Mark Loveless"}
+
+@inproceedings{DBLP:conf/lisa/MarmorsteinK06,
+	title = "Firewall Analysis with Policy-based Host Classification.",
+	ee = "http://www.usenix.org/events/lisa06/tech/marmorstein.html",
+	author = "Robert M. Marmorstein and Phil Kearns",
+	pages = "41-51"}
+
+@inproceedings{DBLP:conf/lisa/Marvasti06,
+	title = "Everything You Know About Monitoring Is Wrong.",
+	ee = "http://www.usenix.org/events/lisa06/tech/slides/marvasti.pdf",
+	author = "Mazda A. Marvasti"}
+
+@inproceedings{DBLP:conf/lisa/McGovern06,
+	title = "Leveraging the IT Community.",
+	author = "Patrick McGovern"}
+
+@inproceedings{DBLP:conf/lisa/Moskowitz06,
+	title = "Bad Interview Questions.",
+	author = "Adam Moskowitz"}
+
+@inproceedings{DBLP:conf/lisa/Muentz06,
+	title = "Sysadmins, Network Managers, and Wiretap Law.",
+	ee = "http://www.usenix.org/events/lisa06/tech/slides/muentz.pdf",
+	author = "Alex Muentz"}
+
+@inproceedings{DBLP:conf/lisa/NguyenAT06,
+	title = "Centralized Security Policy Support for Virtual Machine.",
+	ee = "http://www.usenix.org/events/lisa06/tech/quynh.html",
+	author = "Anh-Quynh Nguyen and Ruo Ando and Yoshiyasu Takefuji",
+	pages = "79-87"}
+
+@inproceedings{DBLP:conf/lisa/OBrien06,
+	title = "The Last, Best Hope: Sysadmins and DBAs as the Last Guardians
+               of Privacy.",
+	ee = "http://www.usenix.org/events/lisa06/tech/slides/obrien.pdf",
+	author = "Danny O'Brien"}
+
+@inproceedings{DBLP:conf/lisa/Okita06,
+	title = "What Do You Mean, Identity 2.0?.",
+	author = "Cat Okita"}
+
+@inproceedings{DBLP:conf/lisa/Page06,
+	title = "Build a Linux Oracle RAC Cluster.",
+	author = "Chris Page"}
+
+@inproceedings{DBLP:conf/lisa/PavloCGKALB06,
+	title = "The NMI Build {\&} Test Laboratory: Continuous Integration
+               Framework for Distributed Computing Software.",
+	ee = "http://www.usenix.org/events/lisa06/tech/pavlo.html",
+	author = "Andrew Pavlo and Peter Couvares and Rebekah Gietzel and Anatoly Karp and Ian D. Alderman and Miron Livny and Charles Bacon",
+	pages = "263-273"}
+
+@inproceedings{DBLP:conf/lisa/Preston06,
+	title = "Seriously, Tape-Only Backup Systems Are Dead.",
+	ee = "http://www.usenix.org/events/lisa06/tech/slides/preston.pdf",
+	author = "W. Curtis Preston"}
+
+@inproceedings{DBLP:conf/lisa/Preston06a,
+	title = "Backups.",
+	author = "W. Curtis Preston"}
+
+@inproceedings{DBLP:conf/lisa/Radin06,
+	title = "UNIX and Microsoft Interoperability.",
+	author = "Joseph Radin"}
+
+@inproceedings{DBLP:conf/lisa/RamnathSYY06,
+	title = "WinResMon: A Tool for Discovering Software Dependencies,
+               Configuration, and Requirements in Microsoft Windows.",
+	ee = "http://www.usenix.org/events/lisa06/tech/ramnath.html",
+	author = "Rajiv Ramnath and Sufatrio and Roland H. C. Yap and Wu Yongzheng",
+	pages = "175-186"}
+
+@inproceedings{DBLP:conf/lisa/RiebackGCHT06,
+	title = "A Platform for RFID Security and Privacy Administration
+               (Awarded Best Paper!).",
+	ee = "http://www.usenix.org/events/lisa06/tech/rieback.html",
+	author = "Melanie R. Rieback and Georgi Gaydadjiev and Bruno Crispo and Rutger F. H. Hofman and Andrew S. Tanenbaum",
+	pages = "89-102"}
+
+@inproceedings{DBLP:conf/lisa/Seely06,
+	title = "Command and Control: System Administration at U.S. Central
+               Command.",
+	ee = "http://www.usenix.org/events/lisa06/tech/slides/seely.pdf",
+	author = "Andrew Seely"}
+
+@inproceedings{DBLP:conf/lisa/ShankarTICMC06,
+	title = "Specification-Enhanced Policies for Automated Management
+               of Changes in IT Systems.",
+	ee = "http://www.usenix.org/events/lisa06/tech/shankar.html",
+	author = "Chetan Shiva Shankar and Vanish Talwar and Subu Iyer and Yuan Chen and Dejan S. Milojicic and Roy H. Campbell",
+	pages = "103-118"}
+
+@inproceedings{DBLP:conf/lisa/SimV06,
+	title = "SUEZ: A Distributed Safe Execution Environment for System
+               Administration Trials.",
+	ee = "http://www.usenix.org/events/lisa06/tech/sim.html",
+	author = "Doo San Sim and V. N. Venkatakrishnan",
+	pages = "161-173"}
+
+@inproceedings{DBLP:conf/lisa/SlagellLL06,
+	title = "FLAIM: A Multi-level Anonymization Framework for Computer
+               and Network Logs.",
+	ee = "http://www.usenix.org/events/lisa06/tech/slagell.html",
+	author = "Adam J. Slagell and Kiran Lakkaraju and Katherine Luo",
+	pages = "63-77"}
+
+@inproceedings{DBLP:conf/lisa/Sparks06,
+	title = "VoIP.",
+	author = "Robert Sparks"}
+
+@inproceedings{DBLP:conf/lisa/TrammellG06,
+	title = "NAF: The NetSA Aggregated Flow Tool Suite.",
+	ee = "http://www.usenix.org/events/lisa06/tech/trammell.html",
+	author = "Brian Trammell and Carrie Gates",
+	pages = "221-231"}
+
+@inproceedings{DBLP:conf/lisa/Verbowski06,
+	title = "System Administration: Drowning in Management Complexity.",
+	author = "Chad Verbowski"}
+
+@inproceedings{DBLP:conf/lisa/VerbowskiLLRW06,
+	title = "LiveOps: Systems Management as a Service.",
+	ee = "http://www.usenix.org/events/lisa06/tech/verbowski.html",
+	author = "Chad Verbowski and Juhan Lee and Xiaogang Liu and Roussi Roussev and Yi-Min Wang",
+	pages = "187-203"}
+
+@inproceedings{DBLP:conf/lisa/WuC06,
+	title = "Experience Implementing an IP Address Closure.",
+	ee = "http://www.usenix.org/events/lisa06/tech/wu.html",
+	author = "Ning Wu and Alva L. Couch",
+	pages = "119-130"}
+
+@inproceedings{DBLP:conf/lisa/Zwicky06,
+	title = "Teaching Problem Solving: You Can and You Should.",
+	ee = "http://www.usenix.org/events/lisa06/tech/slides/zwicky.pdf",
+	author = "Elizabeth D. Zwicky"}
+
+@default year = 2005
+
+@inproceedings{DBLP:conf/lisa/AdamsBHPP05,
+	title = "Solaris Service Management Facility: Modern System Startup
+               and Administration.",
+	ee = "http://www.usenix.org/events/lisa05/tech/adams.html",
+	author = "Jonathan Adams and David Bustos and Stephen Hahn and David Powell and Liane Praza",
+	pages = "225-236"}
+
+@inproceedings{DBLP:conf/lisa/AndersonS05,
+	title = "Configuration Tools: Working Together.",
+	ee = "http://www.usenix.org/events/lisa05/tech/anderson.html",
+	author = "Paul Anderson and Edmund Smith",
+	pages = "31-37"}
+
+@inproceedings{DBLP:conf/lisa/ArrasjidG05,
+	title = "Virtualization.",
+	author = "John Arrasjid and John Gannon"}
+
+@inproceedings{DBLP:conf/lisa/Bankston05,
+	title = "How Sysadmins Can Protect Free Speech and Privacy on the
+               Electronic Frontier.",
+	ee = "http://www.usenix.org/events/lisa05/tech/bankston.pdf",
+	author = "Kevin Bankston"}
+
+@inproceedings{DBLP:conf/lisa/Blaze05,
+	title = "Picking Locks with Cryptology.",
+	ee = "http://www.usenix.org/events/lisa05/tech/mp3/blaze.mp3",
+	author = "Matt Blaze"}
+
+@inproceedings{DBLP:conf/lisa/BobbaGGKK05,
+	title = "Administering Access Control in Dynamic Coalitions.",
+	ee = "http://www.usenix.org/events/lisa05/tech/bobba.html",
+	author = "Rakeshbabu Bobba and Serban I. Gavrila and Virgil D. Gligor and Himanshu Khurana and Radostina K. Koleva",
+	pages = "249-261"}
+
+@inproceedings{DBLP:conf/lisa/BurgessB05,
+	title = "Voluntary Cooperation in Pervasive Computing Services.",
+	ee = "http://www.usenix.org/events/lisa05/tech/burgess.html",
+	author = "Mark Burgess and Kyrre M. Begnum",
+	pages = "143-154"}
+
+@inproceedings{DBLP:conf/lisa/CampbellL05,
+	title = "Open Network Administrator (ONA) - A Web-based Network Management
+               Tool.",
+	ee = "http://www.usenix.org/events/lisa05/tech/campbell.html",
+	author = "Bruce Campbell and Robyn Landers",
+	pages = "89-101"}
+
+@inproceedings{DBLP:conf/lisa/CantrillPP05,
+	title = "Solaris 10: System/DTrace/Zones/SMF.",
+	author = "Bryan Cantrill and Daniel Price and Liane Praza"}
+
+@inproceedings{DBLP:conf/lisa/Carter05,
+	title = "Samba.",
+	author = "Gerald Carter"}
+
+@inproceedings{DBLP:conf/lisa/Chalup05,
+	title = "Under 200: Applying IS Best Practices to Small Companies.",
+	ee = "http://www.usenix.org/events/lisa05/tech/chalup.pdf",
+	author = "Strata Rose Chalup"}
+
+@inproceedings{DBLP:conf/lisa/Chalup05a,
+	title = "Project Management.",
+	author = "Strata Rose Chalup"}
+
+@inproceedings{DBLP:conf/lisa/Chapman05,
+	title = "Incident Command for IT: What We Can Learn from the Fire
+               Department.",
+	ee = "http://www.usenix.org/events/lisa05/tech/chapman.pdf",
+	author = "Brent Chapman"}
+
+@inproceedings{DBLP:conf/lisa/Chu05,
+	title = "LDAP.",
+	author = "Howard Chu"}
+
+@inproceedings{DBLP:conf/lisa/Cottrell05,
+	title = "Internet Counter-Intelligence: Offense and Defense.",
+	ee = "http://www.usenix.org/events/lisa05/tech/mp3/cottrell.mp3",
+	author = "Lance Cottrell"}
+
+@inproceedings{DBLP:conf/lisa/CouchWS05,
+	title = "Toward a Cost Model for System Administration (Awarded Best
+               Paper!).",
+	ee = "http://www.usenix.org/events/lisa05/tech/couch.html",
+	author = "Alva L. Couch and Ning Wu and Hengky Susanto",
+	pages = "125-141"}
+
+@inproceedings{DBLP:conf/lisa/Cowie05,
+	title = "Modern Trends in UNIX and Linux Infrastructure Management.",
+	ee = "http://www.usenix.org/events/lisa05/tech/mp3/cowie.mp3",
+	author = "Andrew Cowie"}
+
+@inproceedings{DBLP:conf/lisa/Crusoe05,
+	title = "Using Your Body for Authentication: A Biometrics Guide for
+               System Administrators.",
+	ee = "http://www.usenix.org/events/lisa05/tech/mp3/crusoe.mp3",
+	author = "Michael R. Crusoe"}
+
+@inproceedings{DBLP:conf/lisa/DesaiBMBCELLNRSS05,
+	title = "A Case Study in Configuration Management Tool Deployment.",
+	ee = "http://www.usenix.org/events/lisa05/tech/desai.html",
+	author = "Narayan Desai and Rick Bradshaw and Scott Matott and Sandra Bittner and Susan Coghlan and R{\'e}my Evard and Cory Lueninghoener and Ti Leggett and John-Paul Navarro and Gene Rackow and Craig Stacey and Tisha Stacey",
+	pages = "39-46"}
+
+@inproceedings{DBLP:conf/lisa/DeverickK05,
+	title = "Towards a Deep-Packet-Filter Toolkit for Securing Legacy
+               Resources.",
+	ee = "http://www.usenix.org/events/lisa05/tech/deverick.html",
+	author = "James Deverick and Phil Kearns",
+	pages = "237-248"}
+
+@inproceedings{DBLP:conf/lisa/Engel05,
+	title = "What's the Worst That Could Happen?",
+	ee = "http://www.usenix.org/events/lisa05/tech/engel.pdf",
+	author = "Peyton Engel"}
+
+@inproceedings{DBLP:conf/lisa/EstanM05,
+	title = "Interactive Traffic Analysis and Visualization with Wisconsin
+               Netpy.",
+	ee = "http://www.usenix.org/events/lisa05/tech/estan.html",
+	author = "Cristian Estan and Garret Magin",
+	pages = "177-184"}
+
+@inproceedings{DBLP:conf/lisa/Filderman05,
+	title = "AFS.",
+	author = "Esther Filderman"}
+
+@inproceedings{DBLP:conf/lisa/Finke05,
+	title = "Manage People, Not Userids.",
+	ee = "http://www.usenix.org/events/lisa05/tech/finke.html",
+	author = "Jon Finke",
+	pages = "263-277"}
+
+@inproceedings{DBLP:conf/lisa/Garbee05,
+	title = "Computing on Amateur Satellites.",
+	ee = "http://www.usenix.org/events/lisa05/tech/mp3/garbee.mp3",
+	author = "Bdale Garbee"}
+
+@inproceedings{DBLP:conf/lisa/Golubitsky05,
+	title = "Toward an Automated Vulnerability Comparison of Open Source
+               IMAP Servers (Awarded Best Student Paper!).",
+	ee = "http://www.usenix.org/events/lisa05/tech/golubitsky.html",
+	author = "Chaos Golubitsky",
+	pages = "9-22"}
+
+@inproceedings{DBLP:conf/lisa/HaberKCMB05,
+	title = "A1: Spreadsheet-based Scripting for Developing Web Tools.",
+	ee = "http://www.usenix.org/events/lisa05/tech/haber.html",
+	author = "Eben M. Haber and Eser Kandogan and Allen Cypher and Paul P. Maglio and Rob Barrett",
+	pages = "197-208"}
+
+@inproceedings{DBLP:conf/lisa/Hubbard05,
+	title = "Mac OS X.",
+	author = "Jordan Hubbard"}
+
+@inproceedings{DBLP:conf/lisa/Hughes05,
+	title = "Spam.",
+	author = "Douglas Hughes"}
+
+@inproceedings{DBLP:conf/lisa/HughesS05,
+	title = "Towards Network Awareness.",
+	ee = "http://www.usenix.org/events/lisa05/tech/hughes.html",
+	author = "Evan Hughes and Anil Somayaji",
+	pages = "113-124"}
+
+@inproceedings{DBLP:conf/lisa/Kaminsky05,
+	title = "Network Black Ops: Extracting Unexpected Functionality from
+               Existing Networks.",
+	ee = "http://www.usenix.org/events/lisa05/tech/kaminsky.pdf",
+	author = "Dan Kaminsky"}
+
+@inproceedings{DBLP:conf/lisa/KangST05,
+	title = "RegColl: Centralized Registry Framework for Infrastructure
+               System Management.",
+	ee = "http://www.usenix.org/events/lisa05/tech/kang.html",
+	author = "Brent ByungHoon Kang and Vikram Sharma and Pratik Thanki",
+	pages = "73-82"}
+
+@inproceedings{DBLP:conf/lisa/Kim05,
+	title = "Change Management.",
+	author = "Gene Kim"}
+
+@inproceedings{DBLP:conf/lisa/KimR05,
+	title = "NetViewer: A Network Traffic Visualization and Analysis
+               Tool.",
+	ee = "http://www.usenix.org/events/lisa05/tech/kim.html",
+	author = "Seong Soo Kim and A. L. Narasimha Reddy",
+	pages = "185-196"}
+
+@inproceedings{DBLP:conf/lisa/Lam05,
+	title = "Automatic PC Desktop Management with Virtualization Technology.",
+	ee = "http://www.usenix.org/events/lisa05/tech/mp3/lam.mp3",
+	author = "Monica Lam"}
+
+@inproceedings{DBLP:conf/lisa/Laurie05,
+	title = "Apache/OpenSSL/DNSSEC.",
+	author = "Ben Laurie"}
+
+@inproceedings{DBLP:conf/lisa/Limoncelli05,
+	title = "Hostdb: The Best Damn host2DNS/DHCP Script Ever Written.",
+	ee = "http://www.usenix.org/events/lisa05/tech/limoncelli.html",
+	author = "Thomas A. Limoncelli",
+	pages = "209-223"}
+
+@inproceedings{DBLP:conf/lisa/Limoncelli05a,
+	title = "What Big Sites Can Learn from Little Sites.",
+	ee = "http://www.usenix.org/events/lisa05/tech/limoncelli.pdf",
+	author = "Thomas A. Limoncelli"}
+
+@inproceedings{DBLP:conf/lisa/Limoncelli05b,
+	title = "Time Management.",
+	author = "Thomas Limoncelli"}
+
+@inproceedings{DBLP:conf/lisa/Lu05,
+	title = "Keynote Address: Scaling Search Beyond the Public Web.",
+	ee = "http://www.usenix.org/events/lisa05/tech/mp3/lu.mp3",
+	author = "Qi Lu"}
+
+@inproceedings{DBLP:conf/lisa/Luster05,
+	title = "Weblogs, Wikis, and RSS for System Administrators.",
+	ee = "http://www.usenix.org/events/lisa05/tech/mp3/luster.mp3",
+	author = "Jonas Luster"}
+
+@inproceedings{DBLP:conf/lisa/MarmorsteinK05,
+	title = "An Open Source Solution for Testing NAT'd and Nested iptables
+               Firewalls.",
+	ee = "http://www.usenix.org/events/lisa05/tech/marmorstein.html",
+	author = "Robert M. Marmorstein and Phil Kearns",
+	pages = "103-112"}
+
+@inproceedings{DBLP:conf/lisa/Narain05,
+	title = "Network Configuration Management via Model Finding.",
+	ee = "http://www.usenix.org/events/lisa05/tech/narain.html",
+	author = "Sanjai Narain",
+	pages = "155-168"}
+
+@inproceedings{DBLP:conf/lisa/Perlman05,
+	title = "What's a PKI, Why Would I Want One, and How Should it Be
+               Designed?",
+	ee = "http://www.usenix.org/events/lisa05/tech/mp3/perlman.mp3",
+	author = "Radia J. Perlman"}
+
+@inproceedings{DBLP:conf/lisa/PotterN05,
+	title = "Reducing Downtime Due to System Maintenance and Upgrades
+               (Awarded Best Student Paper!).",
+	ee = "http://www.usenix.org/events/lisa05/tech/potter.html",
+	author = "Shaya Potter and Jason Nieh",
+	pages = "47-62"}
+
+@inproceedings{DBLP:conf/lisa/Preston05,
+	title = "Backups.",
+	author = "W. Curtis Preston"}
+
+@inproceedings{DBLP:conf/lisa/Rose05,
+	title = "Security/Cryptography.",
+	author = "Gregory G. Rose"}
+
+@inproceedings{DBLP:conf/lisa/Schultschik05,
+	title = "About the Integration of Mac OS X Devices into a Centrally
+               Managed UNIX Environment.",
+	ee = "http://www.usenix.org/events/lisa05/tech/schultschik.html",
+	author = "Anton Schultschik",
+	pages = "63-71"}
+
+@inproceedings{DBLP:conf/lisa/SelskyM05,
+	title = "GULP: A Unified Logging Architecture for Authentication
+               Data.",
+	ee = "http://www.usenix.org/events/lisa05/tech/selsky.html",
+	author = "Matt Selsky and Daniel Medina",
+	pages = "1-5"}
+
+@inproceedings{DBLP:conf/lisa/Slattery05,
+	title = "Silly Network Management Tricks.",
+	ee = "http://www.usenix.org/events/lisa05/tech/slattery.pdf",
+	author = "Terry Slattery"}
+
+@inproceedings{DBLP:conf/lisa/Sparks05,
+	title = "VoIP.",
+	author = "Robert Sparks"}
+
+@inproceedings{DBLP:conf/lisa/ThibautM05,
+	title = "Herding Cats: Managing a Mobile UNIX Platform.",
+	ee = "http://www.usenix.org/events/lisa05/tech/thibaut.html",
+	author = "Maarten Thibaut and Wout Mertens",
+	pages = "83-88"}
+
+@inproceedings{DBLP:conf/lisa/Vixie05,
+	title = "Preventing Child Neglect in DNSSECbis Using Lookaside Validation
+               (DLV).",
+	ee = "http://www.usenix.org/events/lisa05/tech/mp3/vixie.mp3",
+	author = "Paul Vixie"}
+
+@inproceedings{DBLP:conf/lisa/WangB05,
+	title = "Fast User-Mode Rootkit Scanner for the Enterprise.",
+	ee = "http://www.usenix.org/events/lisa05/tech/wang.html",
+	author = "Yi-Min Wang and Doug Beck",
+	pages = "23-30"}
+
+@inproceedings{DBLP:conf/lisa/Warfield05,
+	title = "Wireless Security.",
+	ee = "http://www.usenix.org/events/lisa05/tech/mp3/warfield.mp3",
+	author = "Michael H. Warfield"}
+
+@inproceedings{DBLP:conf/lisa/Wollman05,
+	title = "Building MIT's Stata Center: An IT Perspective.",
+	ee = "http://www.usenix.org/events/lisa05/tech/wollman/index.html",
+	author = "Garrett Wollman"}
+
+@inproceedings{DBLP:conf/lisa/Yurcik05,
+	title = "Visualizing NetFlows for Security at Line Speed: The SIFT
+               Tool Suite.",
+	ee = "http://www.usenix.org/events/lisa05/tech/yurcik.html",
+	author = "William Yurcik",
+	pages = "169-176"}
+
+@default year = 2004
+
+@inproceedings{DBLP:conf/lisa/ApvrilleGHPR04,
+	title = "DigSig: Runtime Authentication of Binaries at Kernel Level.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/apvrille.html",
+	author = "Axelle Apvrille and David Gordon and Serge E. Hallyn and Makan Pourzandi and Vincent Roy",
+	pages = "59-66"}
+
+@inproceedings{DBLP:conf/lisa/Bartosh04,
+	title = "Mac OS X.",
+	author = "Michael Bartosh"}
+
+@inproceedings{DBLP:conf/lisa/Blank-Edelman04,
+	title = "System Administration and Sex Therapy: The Gentle Art of
+               Debugging.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/talks/blank-edelman.pdf",
+	author = "David N. Blank-Edelman"}
+
+@inproceedings{DBLP:conf/lisa/BlosserJ04,
+	title = "Scalable Centralized Bayesian Spam Mitigation with Bogofilter
+               (Awarded Best Paper!).",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/blosser.html",
+	author = "Jeremy Blosser and David Josephsen",
+	pages = "1-20"}
+
+@inproceedings{DBLP:conf/lisa/BonkenburgDRSVWW04,
+	title = "LifeBoat: An Autonomic Backup and Restore Solution.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/bonkenburg.html",
+	author = "Ted Bonkenburg and Dejan Diklic and Benjamin Reed and Mark Smith and Michael Vanover and Steve Welch and Roger Williams",
+	pages = "159-170"}
+
+@inproceedings{DBLP:conf/lisa/BrettBSAKK04,
+	title = "Securing the PlanetLab Distributed Testbed: How to Manage
+               Security in an Environment with No Firewalls, with All Users
+               Having Root, and No Direct Physical Control of Any System.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/brett.html",
+	author = "Paul Brett and Mic Bowman and Jeff Sedayao and Robert Adams and Rob C. Knauerhase and Aaron Klingaman",
+	pages = "195-202"}
+
+@inproceedings{DBLP:conf/lisa/Burgess04,
+	title = "Anomaly Detection: Whatever Happened to Computer Immunology?",
+	author = "Mark Burgess"}
+
+@inproceedings{DBLP:conf/lisa/CarpenterL04,
+	title = "Lessons Learned from Howard Dean's Digital Campaign.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/talks/carpenter.pdf",
+	author = "Keri Carpenter and Thomas A. Limoncelli"}
+
+@inproceedings{DBLP:conf/lisa/Carter04,
+	title = "Samba.",
+	author = "Gerald Carter"}
+
+@inproceedings{DBLP:conf/lisa/Ciavarella04,
+	title = "Documentation.",
+	author = "Michael Ciavarella"}
+
+@inproceedings{DBLP:conf/lisa/Couch04,
+	title = "What Is This Thing Called System Configuration?",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/talks/couch.htm",
+	author = "Alva L. Couch"}
+
+@inproceedings{DBLP:conf/lisa/CrouthamelRST04,
+	title = "PatchMaker: A Physical Network Patch Manager Tool.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/crouthamel.html",
+	author = "Joseph R. Crouthamel and James M. Roberts and Christopher M. Sanchez and Christopher J. Tengi",
+	pages = "171-176"}
+
+@inproceedings{DBLP:conf/lisa/DolstraJV04,
+	title = "Nix: A Safe and Policy-Free System for Software Deployment.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/dolstra.html",
+	author = "Eelco Dolstra and Merijn de Jonge and Eelco Visser",
+	pages = "79-92"}
+
+@inproceedings{DBLP:conf/lisa/Dougherty04,
+	title = "Making a Game of Network Security.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/dougherty.html",
+	author = "Marc Dougherty",
+	pages = "187-194"}
+
+@inproceedings{DBLP:conf/lisa/EideBJS04,
+	title = "DIGIMIMIR: A Tool for Rapid Situation Analysis of Helpdesk
+               and Support Email.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/eide.html",
+	author = "Nils Einar Eide and Andreas N. Blaafadt and Baard H. Rehn Johansen and Frode Eika Sandnes",
+	pages = "21-32"}
+
+@inproceedings{DBLP:conf/lisa/Etten04,
+	title = "A System Administrator's Introduction to Bioinformatics.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/talks/vanetten.pdf",
+	author = "Bill Van Etten"}
+
+@inproceedings{DBLP:conf/lisa/Filderman04,
+	title = "AFS.",
+	author = "Esther Filderman"}
+
+@inproceedings{DBLP:conf/lisa/FildermanM04,
+	title = "Grid Computing: Just What Is It and Why Should I Care?",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/talks/filderman.pdf",
+	author = "Esther Filderman and Ken McInnis"}
+
+@inproceedings{DBLP:conf/lisa/Finke04,
+	title = "Meta Change Queue: Tracking Changes to People, Places, and
+               Things.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/finke.html",
+	author = "Jon Finke",
+	pages = "231-240"}
+
+@inproceedings{DBLP:conf/lisa/Garbee04,
+	title = "Linux.",
+	author = "Bdale Garbee"}
+
+@inproceedings{DBLP:conf/lisa/Garfinkel04,
+	title = "Used Disk Drives.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/talks/garfinkel.pdf",
+	author = "Simson L. Garfinkel"}
+
+@inproceedings{DBLP:conf/lisa/GatesCDKT04,
+	title = "More Netflow Tools for Performance and Security.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/gates.html",
+	author = "Carrie Gates and Michael Collins and Michael Duggan and Andrew Kompanek and Mark Thomas",
+	pages = "121-132"}
+
+@inproceedings{DBLP:conf/lisa/Ginsberg04,
+	title = "Keynote Address: Going Digital at CNN.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/talks/ginsberg.pdf",
+	author = "Howard Ginsberg"}
+
+@inproceedings{DBLP:conf/lisa/Goodman04,
+	title = "Filtering, Stamping, Blocking, Anti-Spoofing: How to Stop
+               the Spam.",
+	author = "Joshua Goodman"}
+
+@inproceedings{DBLP:conf/lisa/Graham-Cumming04,
+	title = "What Spammers Are Doing to Get Around Bayesian Filtering
+               {\&} What We Can Expect for the Future.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/talks/graham-cumming.pdf",
+	author = "John Graham-Cumming"}
+
+@inproceedings{DBLP:conf/lisa/Harris04,
+	title = "A New Approach to Scripting.",
+	author = "Trey Harris"}
+
+@inproceedings{DBLP:conf/lisa/Hughes04,
+	title = "Lessons Learned Reimplementing an ISP Mail Service Infrastructure
+               to Cope with Spam.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/talks/hughes.pdf",
+	author = "Douglas Hughes"}
+
+@inproceedings{DBLP:conf/lisa/HughesD04,
+	title = "RAID/HA/SAN (with a Heavy Dose of Veritas).",
+	author = "Douglas Hughes and Darren Dunham"}
+
+@inproceedings{DBLP:conf/lisa/Kim04,
+	title = "Configuration Management.",
+	author = "Gene Kim"}
+
+@inproceedings{DBLP:conf/lisa/Klein04,
+	title = "Flying Linux.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/talks/klein.pdf",
+	author = "Daniel V. Klein"}
+
+@inproceedings{DBLP:conf/lisa/LaoWMW04,
+	title = "Combining High Level Symptom Descriptions and Low Level
+               State Information for Configuration Fault Diagnosis.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/lao.html",
+	author = "Ni Lao and Ji-Rong Wen and Wei-Ying Ma and Yi-Min Wang",
+	pages = "151-158"}
+
+@inproceedings{DBLP:conf/lisa/LeFebvreS04,
+	title = "Auto-configuration by File Construction: Configuration Management
+               with newfig.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/lefebvre.html",
+	author = "William LeFebvre and David Snyder",
+	pages = "93-104"}
+
+@inproceedings{DBLP:conf/lisa/MikhailovS04,
+	title = "AIS: A Fast, Disk Space Efficient ``Adaptable Installation
+               System'' Supporting Multitudes of Diverse Software Configurations.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/mikhailov.html",
+	author = "Sergei Mikhailov and Jonathan Robert Stanton",
+	pages = "105-112"}
+
+@inproceedings{DBLP:conf/lisa/Napier04,
+	title = "Secure Automation: Achieving Least Privilege with SSH, Sudo,
+               and Suid.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/napier.html",
+	author = "Robert A. Napier",
+	pages = "203-212"}
+
+@inproceedings{DBLP:conf/lisa/Nicholson04,
+	title = "What Information Security Laws Mean For You.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/talks/nicholson.htm",
+	author = "John Nicholson"}
+
+@inproceedings{DBLP:conf/lisa/Nisbet04,
+	title = "The Security Role of Linguistic Content Analysis.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/talks/nisbet.htm",
+	author = "Jim Nisbet"}
+
+@inproceedings{DBLP:conf/lisa/Parter04,
+	title = "Professional Growth.",
+	author = "David W. Parter"}
+
+@inproceedings{DBLP:conf/lisa/PatilKSZ04,
+	title = "I$^{\mbox{3}}$FS: An In-Kernel Integrity Checker and Intrusion
+               Detection File System.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/patil.html",
+	author = "Swapnil Patil and Anand Kashyap and Gopalan Sivathanu and Erez Zadok",
+	pages = "67-78"}
+
+@inproceedings{DBLP:conf/lisa/Pawlowski04,
+	title = "NFS, Its Applications and Future.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/talks/pawlowski.htm",
+	author = "Brian Pawlowski"}
+
+@inproceedings{DBLP:conf/lisa/PhillipsF04,
+	title = "LiveJournal's Backend and memcached: Past, Present, and
+               Future.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/talks/livejournal.pdf",
+	author = "Lisa Phillips and Brad Fitzpatrick"}
+
+@inproceedings{DBLP:conf/lisa/PlutaBYT04,
+	title = "Who Moved My Data? A Backup Tracking System for Dynamic
+               Workstation Environments.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/pluta.html",
+	author = "Gregory Pluta and Larry Brumbaugh and William Yurcik and Joseph Tucek",
+	pages = "177-186"}
+
+@inproceedings{DBLP:conf/lisa/Preston04,
+	title = "Storage Security: You're Fooling Yourself.",
+	author = "W. Curtis Preston"}
+
+@inproceedings{DBLP:conf/lisa/Preston04a,
+	title = "Backups.",
+	author = "W. Curtis Preston"}
+
+@inproceedings{DBLP:conf/lisa/PriceT04,
+	title = "Solaris Zones: Operating System Support for Consolidating
+               Commercial Workloads.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/price.html",
+	author = "Daniel Price and Andrew Tucker",
+	pages = "241-254"}
+
+@inproceedings{DBLP:conf/lisa/Rouillard04,
+	title = "Real-time Log File Analysis Using the Simple Event Correlator
+               (SEC).",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/rouillard.html",
+	author = "John P. Rouillard",
+	pages = "133-150"}
+
+@inproceedings{DBLP:conf/lisa/Salus04,
+	title = "The Administrator, Then and Now.",
+	author = "Peter H. Salus"}
+
+@inproceedings{DBLP:conf/lisa/SchwartzbergC04,
+	title = "Experience in Implementing an HTTP Service Closure.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/schwartzberg.html",
+	author = "Steven Schwartzberg and Alva L. Couch",
+	pages = "213-230"}
+
+@inproceedings{DBLP:conf/lisa/Sparks04,
+	title = "VoIP and IETF Standards.",
+	author = "Robert Sparks"}
+
+@inproceedings{DBLP:conf/lisa/SufatrioYZ04,
+	title = "A Machine-Oriented Vulnerability Database for Automated
+               Vulnerability Detection and Processing.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/sufatrio.html",
+	author = "Sufatrio and Roland H. C. Yap and Liming Zhong",
+	pages = "47-58"}
+
+@inproceedings{DBLP:conf/lisa/TengiRCMS04,
+	title = "autoMAC: A Tool for Automating Network Moves, Adds, and
+               Changes.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/tengi.html",
+	author = "Christopher J. Tengi and James M. Roberts and Joseph R. Crouthamel and Chris M. Miller and Christopher M. Sanchez",
+	pages = "113-120"}
+
+@inproceedings{DBLP:conf/lisa/VerbowskiDDW04,
+	title = "Experience Talk: FDR: A Flight Data Recorder Using Black-BoxAnalysis
+               of Persistent State Changes for Managing Change and Configuration.",
+	author = "Chad Verbowski and John Dunagan and Brad Daniels and Yi-Min Wang"}
+
+@inproceedings{DBLP:conf/lisa/WangRVJWHK04,
+	title = "Gatekeeper: Monitoring Auto-Start Extensibility Points (ASEPs)
+               for Spyware Management.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa04/tech/wang.html",
+	author = "Yi-Min Wang and Roussi Roussev and Chad Verbowski and Aaron Johnson and Ming-Wei Wu and Yennun Huang and Sy-Yen Kuo",
+	pages = "33-46"}
+
+@default year = 2003
+
+@inproceedings{DBLP:conf/lisa/AbrahamsonBKMP03,
+	title = "Splat: A Network Switch/Port Configuration Management Tool.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/abrahamson.html",
+	author = "Cary Abrahamson and Michael Blodgett and Adam Kunen and Nathan Mueller and David W. Parter",
+	pages = "247-256"}
+
+@inproceedings{DBLP:conf/lisa/AndersonGP03,
+	title = "SmartFrog Meets LCFG: Autonomous Reconfiguration with Central
+               Policy Control.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/anderson.html",
+	author = "Paul Anderson and Patrick Goldsack and Jim Paterson",
+	pages = "213-222"}
+
+@inproceedings{DBLP:conf/lisa/AndersonT03,
+	title = "Automated System Administration/Infrastructure.",
+	author = "Paul Anderson and Steve Traugott"}
+
+@inproceedings{DBLP:conf/lisa/BenvenutoK03,
+	title = "EasyVPN: IPsec Remote Access Made Easy.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/benvenuto.html",
+	author = "Mark C. Benvenuto and Angelos D. Keromytis",
+	pages = "87-94"}
+
+@inproceedings{DBLP:conf/lisa/Blank-Edelman03,
+	title = "Through the Lens Geekly: How Sysadmins Are Portrayed in
+               Pop Culture.",
+	author = "David N. Blank-Edelman"}
+
+@inproceedings{DBLP:conf/lisa/Burgess03,
+	title = "Talking to the Walls (Again).",
+	author = "Mark Burgess"}
+
+@inproceedings{DBLP:conf/lisa/CabeenB03,
+	title = "CDSS: Secure Distribution of Software Installation Media
+               Images in a Heterogeneous Environment.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/cabeen.html",
+	author = "Ted Cabeen and Job Bogan",
+	pages = "173-180"}
+
+@inproceedings{DBLP:conf/lisa/Chapman03,
+	title = "MBAs for Sys Admins.",
+	author = "Brent Chapman"}
+
+@inproceedings{DBLP:conf/lisa/CouchHIK03,
+	title = "Seeking Closure in an Open World: A Behavioral Agent Approach
+               to Configuration Management.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/couch.html",
+	author = "Alva L. Couch and John Hart and Elizabeth G. Idhaw and Dominic Kallas",
+	pages = "125-148"}
+
+@inproceedings{DBLP:conf/lisa/CraigM03,
+	title = "Radmind: The Integration of Filesystem Integrity Checking
+               with Filesystem Management.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/craig.html",
+	author = "Wesley D. Craig and Patrick M. McNeal",
+	pages = "1-6"}
+
+@inproceedings{DBLP:conf/lisa/CrandellCK03,
+	title = "A Secure and Transparent Firewall Web Proxy.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/crandell.html",
+	author = "Roger Crandell and James Clifford and Alexander Kent",
+	pages = "23-30"}
+
+@inproceedings{DBLP:conf/lisa/Daniel03,
+	title = "IPsec.",
+	author = "Hugh Daniel"}
+
+@inproceedings{DBLP:conf/lisa/EllardS03,
+	title = "New NFS Tracing Tools and Techniques for System Analysis.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/ellard.html",
+	author = "Daniel Ellard and Margo I. Seltzer",
+	pages = "73-86"}
+
+@inproceedings{DBLP:conf/lisa/ElprinP03,
+	title = "An Analysis of Database-Driven Mail Servers.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/elprin.html",
+	author = "Nick Elprin and Bryan Parno",
+	pages = "15-22"}
+
+@inproceedings{DBLP:conf/lisa/Engel03,
+	title = "Coping with the Disappearance of Network Boundaries.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/engel/",
+	author = "Peyton Engel"}
+
+@inproceedings{DBLP:conf/lisa/Evard03,
+	title = "Security vs. Science: Changing the Security Culture of a
+               National Lab.",
+	author = "R{\'e}my Evard"}
+
+@inproceedings{DBLP:conf/lisa/FildermanZ03,
+	title = "AFS.",
+	author = "Esther Filderman and Garry Zacheiss"}
+
+@inproceedings{DBLP:conf/lisa/Finke03,
+	title = "Generating Configuration Files: The Director's Cut.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/finke.html",
+	author = "Jon Finke",
+	pages = "195-204"}
+
+@inproceedings{DBLP:conf/lisa/Garbee03,
+	title = "Linux.",
+	author = "Bdale Garbee"}
+
+@inproceedings{DBLP:conf/lisa/GatesR03,
+	title = "The Yearly Review, or How to Evaluate Your Sys Admin.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/gates.html",
+	author = "Carrie Gates and Jason Rouse",
+	pages = "95-104"}
+
+@inproceedings{DBLP:conf/lisa/Giridharagopal03,
+	title = "DryDock: A Document Firewall.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/giridharagopal.html",
+	author = "Deepak Giridharagopal",
+	pages = "41-50"}
+
+@inproceedings{DBLP:conf/lisa/GittlerB03,
+	title = "Designing a Configuration Monitoring and Reporting Environment.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/gittler.html",
+	author = "Xev Gittler and Ken Beer",
+	pages = "61-72"}
+
+@inproceedings{DBLP:conf/lisa/Graham-Cumming03,
+	title = "Adaptive Filtering: One Year On.",
+	author = "John Graham-Cumming"}
+
+@inproceedings{DBLP:conf/lisa/Halprin03,
+	title = "Organizational Maturity Models: Achieving Success and Happiness
+               in Modern IT Environments.",
+	author = "Geoff Halprin"}
+
+@inproceedings{DBLP:conf/lisa/Haskins03,
+	title = "Emerging Spam-Fighting Techniques.",
+	author = "Robert Haskins"}
+
+@inproceedings{DBLP:conf/lisa/Hayden03,
+	title = "High Risk Information: Safe Handling for System Administrators.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/hayden.pdf",
+	author = "Lance Hayden"}
+
+@inproceedings{DBLP:conf/lisa/HunterTJ03,
+	title = "Distributed Tarpitting: Impeding Spam Across Multiple Servers.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/hunter.html",
+	author = "Tim Hunter and Paul Terry and Alan Judge",
+	pages = "223-236"}
+
+@inproceedings{DBLP:conf/lisa/Kanies03,
+	title = "ISconf: Theory, Practice, and Beyond.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/kanies.html",
+	author = "Luke Kanies",
+	pages = "115-124"}
+
+@inproceedings{DBLP:conf/lisa/Kilmartin03,
+	title = "Inside eBay.com: The System Administrator's Perspective.",
+	author = "Paul Kilmartin"}
+
+@inproceedings{DBLP:conf/lisa/Kim03,
+	title = "Security Lessons from ``Best in Class'' Organizations.",
+	author = "Gene Kim"}
+
+@inproceedings{DBLP:conf/lisa/KingWW03,
+	title = "The Realities of Deploying Desktop Linux.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/king.html",
+	author = "Bevis King and Roger Webb and Graeme Wilford"}
+
+@inproceedings{DBLP:conf/lisa/LimoncelliM03,
+	title = "How to Get Your Papers Accepted at LISA.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/accept.pdf",
+	author = "Thomas A. Limoncelli and Adam Moskowitz"}
+
+@inproceedings{DBLP:conf/lisa/McCullagh03,
+	title = "What Washington Still Doesn't Get.",
+	author = "Declan McCullagh"}
+
+@inproceedings{DBLP:conf/lisa/MeekC03,
+	title = "Tossing Packets Over the Wall Using Transmit-Only Ethernet
+               Cables.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/meek.html",
+	author = "Jon T. Meek and Frank Colosimo"}
+
+@inproceedings{DBLP:conf/lisa/Miller03,
+	title = "Three Practical Ways to Improve Your Network.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/miller.html",
+	author = "Kevin Miller"}
+
+@inproceedings{DBLP:conf/lisa/Moore03,
+	title = "Network Telescopes: Tracking Denial-of-Service Attacks and
+               Internet Worms Around the Globe.",
+	author = "David Moore"}
+
+@inproceedings{DBLP:conf/lisa/Nicholson03,
+	title = "Outsourcing: Common Problems and Current Trends in the Outsourcing
+               Industry.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/nicholson.pdf",
+	author = "John Nicholson"}
+
+@inproceedings{DBLP:conf/lisa/Oliver03,
+	title = "Stick, Rudder, and Keyboard: How Flying My Airplane Makes
+               Me a Better Sysadmin.",
+	author = "Ross Oliver"}
+
+@inproceedings{DBLP:conf/lisa/Parter03,
+	title = "Professional Growth and Development.",
+	author = "David W. Parter"}
+
+@inproceedings{DBLP:conf/lisa/Plonka03,
+	title = "A Case Study in Internet Pathology: Flawed Routers Flood
+               University's Network.",
+	ee = "http://net.doit.wisc.edu/$\sim$plonka/lisa/lisa2003/lisa-netgear-sntp.pdf",
+	author = "David Plonka"}
+
+@inproceedings{DBLP:conf/lisa/PurcellHAOBS03,
+	title = "Peer Certification: Techniques and Tools for Reducing System
+               Admin Support Burdens While Improving Customer Service.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/purcell.html",
+	author = "Stacy Purcell and Sally Hambridge and David Armstrong and Tod Oace and Matt Baker and Jeff Sedayao",
+	pages = "105-114"}
+
+@inproceedings{DBLP:conf/lisa/QieN03,
+	title = "Using Service Grammar to Diagnose BGP Configuration Errors.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/qie.html",
+	author = "Xiaohu Qie and Sanjai Narain",
+	pages = "237-246"}
+
+@inproceedings{DBLP:conf/lisa/RobertsonKMV03,
+	title = "Run-time Detection of Heap-based Overflows.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/robertson.html",
+	author = "William K. Robertson and Christopher Kr{\"u}gel and Darren Mutz and Fredrik Valeur",
+	pages = "51-60"}
+
+@inproceedings{DBLP:conf/lisa/Rose03,
+	title = "PKI/Cryptography.",
+	author = "Gregory G. Rose"}
+
+@inproceedings{DBLP:conf/lisa/Roth03,
+	title = "Preventing Wheel Reinvention: The psgconf System Configuration
+               Framework.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/roth.html",
+	author = "Mark D. Roth",
+	pages = "205-212"}
+
+@inproceedings{DBLP:conf/lisa/SapuntzakisBCZCLR03,
+	title = "Virtual Appliances for Deploying and Maintaining Software.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/sapuntzakis.html",
+	author = "Constantine P. Sapuntzakis and David Brumley and Ramesh Chandra and Nickolai Zeldovich and Jim Chow and Monica S. Lam and Mendel Rosenblum",
+	pages = "181-194"}
+
+@inproceedings{DBLP:conf/lisa/SimonW03,
+	title = "Designing, Developing, and Implementing a Document Repository.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/simon.html",
+	author = "Joshua S. Simon and Liza Weissler",
+	pages = "31-40"}
+
+@inproceedings{DBLP:conf/lisa/Singer03,
+	title = "Security Without Firewalls.",
+	author = "Abe Singer"}
+
+@inproceedings{DBLP:conf/lisa/StangPBCEW03,
+	title = "Archipelago: A Network Security Analysis Tool.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/stang.html",
+	author = "Tuva Stang and Fahimeh Pourbayat and Mark Burgess and Geoffrey Canright and Kenth Eng{\o} and {\AA}smund Weltzien",
+	pages = "149-158"}
+
+@inproceedings{DBLP:conf/lisa/Vixie03,
+	title = "Internet Governance Reloaded.",
+	author = "Paul Vixie"}
+
+@inproceedings{DBLP:conf/lisa/WangVDCWYZ03,
+	title = "STRIDER: A Black-box, State-based Approach to Change and
+               Configuration Management and Support.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/wang.html",
+	author = "Yi-Min Wang and Chad Verbowski and John Dunagan and Yu Chen and Helen J. Wang and Chun Yuan and Zheng Zhang",
+	pages = "159-172"}
+
+@inproceedings{DBLP:conf/lisa/Zwicky03,
+	title = "Further Torture: More Testing of Backup and Archive Programs.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa03/tech/zwicky.html",
+	author = "Elizabeth D. Zwicky",
+	pages = "7-14"}
+
+@default year = 2002
+
+@inproceedings{DBLP:conf/lisa/Adams02,
+	title = "Geographically Distributed System for Catastrophic Recovery.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/adams.html",
+	author = "Kevin Adams",
+	pages = "47-64"}
+
+@inproceedings{DBLP:conf/lisa/Allen02,
+	title = "Performance Tuning Guru.",
+	author = "Jeff R. Allen"}
+
+@inproceedings{DBLP:conf/lisa/Allman02,
+	title = "So You Want to Do a Startup?",
+	author = "Eric Allman"}
+
+@inproceedings{DBLP:conf/lisa/Allman02a,
+	title = "Email/MTAs Guru.",
+	author = "Eric Allman"}
+
+@inproceedings{DBLP:conf/lisa/BeattieACWWS02,
+	title = "Timing the Application of Security Patches for Optimal Uptime.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/beattie.html",
+	author = "Steve Beattie and Seth Arnold and Crispin Cowan and Perry Wagle and Chris Wright and Adam Shostack",
+	pages = "233-242"}
+
+@inproceedings{DBLP:conf/lisa/Beverly02,
+	title = "RTG: A Scalable SNMP Statistics Architecture for Service
+               Providers.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/beverly.html",
+	author = "Robert Beverly",
+	pages = "167-174"}
+
+@inproceedings{DBLP:conf/lisa/Blank-Edelman02,
+	title = "SysAdmin, Stories, and Signing: Learning from Communication
+               Experts.",
+	author = "David N. Blank-Edelman"}
+
+@inproceedings{DBLP:conf/lisa/Bourke02,
+	title = "Load Balancers.",
+	author = "Tony Bourke"}
+
+@inproceedings{DBLP:conf/lisa/Burton-Krahn02,
+	title = "HotSwap-Transparent Server Failover for Linux.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/burton-krahn.html",
+	author = "Noel Burton-Krahn",
+	pages = "205-212"}
+
+@inproceedings{DBLP:conf/lisa/Carter02,
+	title = "SAMBA Guru.",
+	author = "Gerald Carter"}
+
+@inproceedings{DBLP:conf/lisa/Chalup02,
+	title = "Project Management Guru.",
+	author = "Strata Rose Chalup"}
+
+@inproceedings{DBLP:conf/lisa/ConsP02,
+	title = "Pan: A High-Level Configuration Language.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/cons.html",
+	author = "Lionel Cons and Piotr Poznanski",
+	pages = "83-98"}
+
+@inproceedings{DBLP:conf/lisa/DamonK02,
+	title = "The Evolving Ethics of System Administration.",
+	author = "Lee Damon and Rob Kolstad"}
+
+@inproceedings{DBLP:conf/lisa/Evans02,
+	title = "Risk-Taking vs. Management.",
+	author = "Paul Evans"}
+
+@inproceedings{DBLP:conf/lisa/FildermanZ02,
+	title = "AFS Gurus.",
+	author = "Esther Filderman and Garry Zacheiss"}
+
+@inproceedings{DBLP:conf/lisa/Finke02,
+	title = "Embracing and Extending Windows 2000.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/finkeWin2000.html",
+	author = "Jon Finke",
+	pages = "65-74"}
+
+@inproceedings{DBLP:conf/lisa/Finke02a,
+	title = "Process Monitor: Detecting Events That Didn't Happen.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/finkeProcess.html",
+	author = "Jon Finke",
+	pages = "145-154"}
+
+@inproceedings{DBLP:conf/lisa/Gilfix02,
+	title = "Holistic Quota Management: The Natural Path to a Better,
+               More Efficient Quota System.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/gilfix.html",
+	author = "Michael Gilfix",
+	pages = "21-32"}
+
+@inproceedings{DBLP:conf/lisa/Guttman02,
+	title = "Stem: The System Administration Enabler.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/guttman.html",
+	author = "Uri Guttman",
+	pages = "75-82"}
+
+@inproceedings{DBLP:conf/lisa/HartD02,
+	title = "An Analysis of RPM Validation Drift.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/hart.html",
+	author = "John Hart and Jeffrey D'Amelia",
+	pages = "155-166"}
+
+@inproceedings{DBLP:conf/lisa/Hughes02,
+	title = "System Monitoring Guru.",
+	author = "Douglas Hughes"}
+
+@inproceedings{DBLP:conf/lisa/Hurley02,
+	title = "Security on Macintosh OS X.",
+	author = "John Hurley"}
+
+@inproceedings{DBLP:conf/lisa/KellerL02,
+	title = "Defining and Monitoring Service-Level Agreements for Dynamic
+               e-Business.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/keller.html",
+	author = "Alexander Keller and Heiko Ludwig",
+	pages = "189-204"}
+
+@inproceedings{DBLP:conf/lisa/Klein02,
+	title = "The Constitutional {\&} Financial Argument Against Spam.",
+	author = "Daniel V. Klein"}
+
+@inproceedings{DBLP:conf/lisa/KleinD02,
+	title = "Perl/Scripting Gurus.",
+	author = "Daniel V. Klein and Mark-Jason Dominus"}
+
+@inproceedings{DBLP:conf/lisa/Knowles02,
+	title = "Domain Name Server Comparison: BIND 8 vs. BIND 9 vs. djbdns
+               vs. ???",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/presentations/knowles_ppt/",
+	author = "Brad Knowles"}
+
+@inproceedings{DBLP:conf/lisa/LimoncelliH02,
+	title = "How to Write a Book with Someone You Don't Know: Internet
+               Collaboration for the Truly Geeky.",
+	author = "Thomas A. Limoncelli and Christine Hogan"}
+
+@inproceedings{DBLP:conf/lisa/LoganFB02,
+	title = "Environmental Acquisition in Network Management.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/logan.html",
+	author = "Mark Logan and Matthias Felleisen and David N. Blank-Edelman",
+	pages = "175-184"}
+
+@inproceedings{DBLP:conf/lisa/Mayer02,
+	title = "Application Aware Management of Internet Data Center Software.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/mayer.html",
+	author = "Alain J. Mayer",
+	pages = "33-46"}
+
+@inproceedings{DBLP:conf/lisa/MikulaTH02,
+	title = "Spam Blocking with a Dynamically Updated Firewall Ruleset.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/mikula.html",
+	author = "Deeann M. M. Mikula and Chris Tracy and Mike Holling",
+	pages = "13-20"}
+
+@inproceedings{DBLP:conf/lisa/Nagle02,
+	title = "My Years with the NSA Red Team.",
+	author = "Tim Nagle"}
+
+@inproceedings{DBLP:conf/lisa/Patterson02,
+	title = "A Simple Way to Estimate the Cost of Downtime.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/patterson.html",
+	author = "David A. Patterson",
+	pages = "185-188"}
+
+@inproceedings{DBLP:conf/lisa/Pozar02,
+	title = "Large-Scale 802.11 Deployment.",
+	author = "Tim Pozar"}
+
+@inproceedings{DBLP:conf/lisa/Preston02,
+	title = "Making Backups Easier with Disk.",
+	author = "Curtis Preston"}
+
+@inproceedings{DBLP:conf/lisa/Preston02a,
+	title = "Backups Guru.",
+	author = "W. Curtis Preston"}
+
+@inproceedings{DBLP:conf/lisa/Proctor02,
+	title = "The Intrusion Detection Timeline.",
+	author = "Paul Proctor"}
+
+@inproceedings{DBLP:conf/lisa/Reese02,
+	title = "Keynote: Scaling the Web: An Overview of Google (A Linux
+               Cluster for Fun and Profit).",
+	ee = "http://www.usenix.org/events/lisa02/opening_session/sld022.htm",
+	author = "Jim Reese"}
+
+@inproceedings{DBLP:conf/lisa/Sah02,
+	title = "A New Architecture for Managing Enterprise Log Data.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/sah.html",
+	author = "Adam Sah",
+	pages = "121-132"}
+
+@inproceedings{DBLP:conf/lisa/Salus02,
+	title = "Internet Security: Beyond Firewalls, Passwords, and Crypto.",
+	author = "Peter H. Salus"}
+
+@inproceedings{DBLP:conf/lisa/Sassaman02,
+	title = "The Promise of Privacy.",
+	author = "Len Sassaman"}
+
+@inproceedings{DBLP:conf/lisa/Stepleton02,
+	title = "Work-Augmented Laziness with the Los Task Request System.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/stepleton.html",
+	author = "Thomas Stepleton",
+	pages = "1-12"}
+
+@inproceedings{DBLP:conf/lisa/Stoughton02,
+	title = "Consulting Guru.",
+	author = "Nick Stoughton"}
+
+@inproceedings{DBLP:conf/lisa/TakadaK02,
+	title = "MieLog: A Highly Interactive Visual Log Browser Using Information
+               Visualization and Statistical Analysis.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/takada.html",
+	author = "Tetsuji Takada and Hideki Koike",
+	pages = "133-144"}
+
+@inproceedings{DBLP:conf/lisa/TotsukaOFCKS02,
+	title = "Network-based Intrusion Detection - Modeling for a Larger
+               Picture.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/totsuka.html",
+	author = "Atsushi Totsuka and Hidenari Ohwada and Nobuhisa Fujita and Debasish Chakraborty and Glenn Mansfield Keeni and Norio Shiratori",
+	pages = "227-232"}
+
+@inproceedings{DBLP:conf/lisa/Traugott02,
+	title = "Why Order Matters: Turing Equivalence in Automated Systems
+               Administration.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/traugott.html",
+	author = "Steve Traugott",
+	pages = "99-120"}
+
+@inproceedings{DBLP:conf/lisa/Traugott02a,
+	title = "Infrastructures Guru.",
+	author = "Steve Traugott"}
+
+@inproceedings{DBLP:conf/lisa/VenkatakrishnanSKTL02,
+	title = "An Approach for Secure Software Installation.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/venkatakrishnan.html",
+	author = "V. N. Venkatakrishnan and R. Sekar and T. Kamat and S. Tsipa and Zhenkai Liang",
+	pages = "219-226"}
+
+@inproceedings{DBLP:conf/lisa/Vixie02,
+	title = "``Who ARE These People?'' Internet Governance, Peering, and
+               Legislation.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/presentations/vixie.pdf",
+	author = "Paul Vixie"}
+
+@inproceedings{DBLP:conf/lisa/Wall02,
+	title = "Perl 6.",
+	author = "Larry Wall"}
+
+@inproceedings{DBLP:conf/lisa/BergD02,
+	title = "Over-Zealous Security Administrators Are Breaking the Internet.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa02/tech/vanderberg.html",
+	author = "Richard van den Berg and Phil Dibowitz",
+	pages = "213-218"}
+
+@default year = 2001
+
+@inproceedings{DBLP:conf/lisa/Allman01,
+	title = "Email MTAs.",
+	author = "Eric Allman"}
+
+@inproceedings{DBLP:conf/lisa/AmatangeloP01,
+	title = "Solaris Bare-Metal Recovery from a Specialized CD and Your
+               Enterprise Backup Solution.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/amatangelo.html",
+	author = "Lee ``Leonardo'' Amatangelo and W. Curtis Preston",
+	pages = "157-162"}
+
+@inproceedings{DBLP:conf/lisa/Apthorpe01,
+	title = "A Probabilistic Approach to Estimating Computer System Reliability
+               (Awarded Best Theory Paper!).",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/apthorpe.html",
+	author = "Robert Apthorpe",
+	pages = "31-46"}
+
+@inproceedings{DBLP:conf/lisa/BeadnallM01,
+	title = "CfAdmin: A User Interface for cfengine.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/beadnall.html",
+	author = "Charles Beadnall and Andrew Mayhew",
+	pages = "277-281"}
+
+@inproceedings{DBLP:conf/lisa/Bear01,
+	title = "Keynote Address: Slime vs. Silicon.",
+	author = "Greg Bear"}
+
+@inproceedings{DBLP:conf/lisa/Blank-Edelman01,
+	title = "If I Could Talk to the Animals--What Sysadmins Can Learn
+               About Diagnostic Skills from Another Profession.",
+	author = "David N. Blank-Edelman"}
+
+@inproceedings{DBLP:conf/lisa/BrownleeCN01,
+	title = "DNS Root/g TLD Server Measurements.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/brownlee.html",
+	author = "Nevil Brownlee and Kimberly C. Claffy and Evi Nemeth",
+	pages = "241-256"}
+
+@inproceedings{DBLP:conf/lisa/Burnett01,
+	title = "Crypto Blunders.",
+	author = "Steve Burnett"}
+
+@inproceedings{DBLP:conf/lisa/Caraveo01,
+	title = "PHP for System Administration.",
+	author = "Shane Caraveo"}
+
+@inproceedings{DBLP:conf/lisa/Carter01,
+	title = "LDAP.",
+	author = "Gerald Carter"}
+
+@inproceedings{DBLP:conf/lisa/Claffy01,
+	title = "Internet Measurement: Myths About Internet Data.",
+	author = "Kimberly C. Claffy"}
+
+@inproceedings{DBLP:conf/lisa/Cook01,
+	title = "Whither End-to-End: Placing Bandwidth and Trust at the Edge.",
+	author = "Gordon Cook"}
+
+@inproceedings{DBLP:conf/lisa/CouchD01,
+	title = "The Maelstrom: Network Service Debugging via ``Ineffective
+               Procedures''.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/couch.html",
+	author = "Alva L. Couch and Noah Daniels",
+	pages = "63-78"}
+
+@inproceedings{DBLP:conf/lisa/Cox01,
+	title = "Hardening Windows 2000.",
+	author = "Phil Cox"}
+
+@inproceedings{DBLP:conf/lisa/DiklicVWW01,
+	title = "Remote Outsourcing Services for Multiple Branch Offices
+               and Small Businesses via the Internet.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/diklic.html",
+	author = "Dejan Diklic and Venkatesh Velayutham and Steve Welch and Roger Williams",
+	pages = "7-14"}
+
+@inproceedings{DBLP:conf/lisa/Epstein01,
+	title = "A Non-Traditional Approach to Network Security Control.",
+	author = "Mark Epstein"}
+
+@inproceedings{DBLP:conf/lisa/FildermanS01,
+	title = "Managing the Terascale: Lessons from a 750-Node Supercomputer.",
+	author = "Esther Filderman and Kevin Sullivan"}
+
+@inproceedings{DBLP:conf/lisa/FildermanSH01,
+	title = "Panel: An Overview of Terascale Computing.",
+	author = "Esther Filderman and Kevin Sullivan and Victor Hazlewood"}
+
+@inproceedings{DBLP:conf/lisa/FildermanSH01a,
+	title = "Wrap-Up and Q {\&} A.",
+	author = "Esther Filderman and Kevin Sullivan and Victor Hazlewood"}
+
+@inproceedings{DBLP:conf/lisa/FildermanZ01,
+	title = "AFS.",
+	author = "Esther Filderman and Garry Zacheiss"}
+
+@inproceedings{DBLP:conf/lisa/Flowers01,
+	title = "Inspection, Detection {\&} Deflection: Armoring the Next
+               Wave of Security Technology.",
+	author = "John S. Flowers"}
+
+@inproceedings{DBLP:conf/lisa/FomenkovCHM01,
+	title = "Macroscopic Internet Topology and Performance Measurements
+               from the DNS Root Name Servers.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/fomenkov.html",
+	author = "Marina Fomenkov and Kimberly C. Claffy and Bradley Huffaker and David Moore",
+	pages = "231-240"}
+
+@inproceedings{DBLP:conf/lisa/Frisch01,
+	title = "Beyond File Permissions: Controlling User Actions.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/frisch.pdf",
+	author = "Aeleen Frisch"}
+
+@inproceedings{DBLP:conf/lisa/Garner01,
+	title = "Pelican DHCP Automated Self-Registration System: Distributed
+               Registration and Centralized Management.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/garner.html",
+	author = "Robin Garner",
+	pages = "257-267"}
+
+@inproceedings{DBLP:conf/lisa/GotschWO01,
+	title = "Gossips: System and Service Monitor.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/groetsch.html",
+	author = "Victor G{\"o}tsch and Albert Wuersch and Tobias Oetiker",
+	pages = "121-132"}
+
+@inproceedings{DBLP:conf/lisa/Gray01,
+	title = "SUS, an Object Reference Model for Distributing UNIX Super
+               User Privileges.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/gray.html",
+	author = "Peter D. Gray",
+	pages = "15-18"}
+
+@inproceedings{DBLP:conf/lisa/Hacker01,
+	title = "TCP Performance Tuning.",
+	author = "Thomas J. Hacker"}
+
+@inproceedings{DBLP:conf/lisa/HallynK01,
+	title = "Tools to Administer Domain and Type Enforcement.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/hallyn.html",
+	author = "Serge E. Hallyn and Phil Kearns",
+	pages = "151-156"}
+
+@inproceedings{DBLP:conf/lisa/Halprin01,
+	title = "The Problem with Developers.",
+	author = "Geoff Halprin"}
+
+@inproceedings{DBLP:conf/lisa/HaugerudS01,
+	title = "Simulation of User-Driven Computer Behaviour.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/haugerud.html",
+	author = "H{\aa}rek Haugerud and Sigmund Straumsnes",
+	pages = "101-108"}
+
+@inproceedings{DBLP:conf/lisa/Hazlewood01,
+	title = "Invited Talk: San Diego Supercomputer Center's Blue Horizon.",
+	author = "Victor Hazlewood"}
+
+@inproceedings{DBLP:conf/lisa/HolgateP01,
+	title = "The Arusha Project: A Framework for Collaborative UNIX System
+               Administration.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/holgate.html",
+	author = "Matt Holgate and Will Partain",
+	pages = "187-198"}
+
+@inproceedings{DBLP:conf/lisa/Klein01,
+	title = "150/5, 000 Years of (E-)Commerce: History Repeats Itself
+               Again.",
+	author = "Daniel V. Klein"}
+
+@inproceedings{DBLP:conf/lisa/Labrie01,
+	title = "Sysadmin for Suits.",
+	author = "Bill Labrie"}
+
+@inproceedings{DBLP:conf/lisa/LancasterR01,
+	title = "Measuring Real-World Data Availability.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/lancaster.html",
+	author = "Larry Lancaster and Alan Rowe",
+	pages = "93-100"}
+
+@inproceedings{DBLP:conf/lisa/LeFebvre01,
+	title = "CNN.com: Facing a World Crisis.",
+	author = "William LeFebvre"}
+
+@inproceedings{DBLP:conf/lisa/Limoncelli01,
+	title = "Writing Papers for Usenix Refereed Track.",
+	author = "Thomas A. Limoncelli"}
+
+@inproceedings{DBLP:conf/lisa/Mayhew01,
+	title = "File Distribution Efficiencies: cfengine Versus rsync.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/mayhew.html",
+	author = "Andrew Mayhew",
+	pages = "273-276"}
+
+@inproceedings{DBLP:conf/lisa/Milner01,
+	title = "Reducing System Complexity: A Case Study in Converging Environments.",
+	author = "Ruth Milner"}
+
+@inproceedings{DBLP:conf/lisa/MooreKKLC01,
+	title = "The CoralReef Software Suite as a Tool for System and Network
+               Administrators.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/moore.html",
+	author = "David Moore and Ken Keys and Ryan Koga and Edouard Lagache and Kimberly C. Claffy",
+	pages = "133-144"}
+
+@inproceedings{DBLP:conf/lisa/Moskowitz01,
+	title = "Computer Room Design/Layout.",
+	author = "Adam Moskowitz"}
+
+@inproceedings{DBLP:conf/lisa/ORourkeK01,
+	title = "Performance Evaluation of Linux Virtual Server.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/orourke.html",
+	author = "Patrick O'Rourke and Mike Keefe",
+	pages = "79-92"}
+
+@inproceedings{DBLP:conf/lisa/Oetiker01,
+	title = "TemplateTree II: The Post-Installation Setup Tool.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/oetiker.html",
+	author = "Tobias Oetiker",
+	pages = "179-186"}
+
+@inproceedings{DBLP:conf/lisa/OkayP01,
+	title = "GEORDI: A Handheld Tool for Remote System Administration.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/okay.html",
+	author = "Stephen J. Okay and Gale E. Pedowitz",
+	pages = "219-230"}
+
+@inproceedings{DBLP:conf/lisa/Pelletier01,
+	title = "Zope.",
+	author = "Michel Pelletier"}
+
+@inproceedings{DBLP:conf/lisa/Pomeranz01,
+	title = "Are Baseline Computer Security Standards the Answer?",
+	author = "Hal Pomeranz"}
+
+@inproceedings{DBLP:conf/lisa/Poynor01,
+	title = "Automating Infrastructure Composition for Internet Services.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/poynor.html",
+	author = "Todd Poynor",
+	pages = "169-178"}
+
+@inproceedings{DBLP:conf/lisa/Prabhakar01,
+	title = "Keynote: Rebuilding the Digital Enterprise Around Internet
+               Standards.",
+	author = "Ernest Prabhakar"}
+
+@inproceedings{DBLP:conf/lisa/Preston01,
+	title = "SANs and NAS.",
+	author = "W. Curtis Preston"}
+
+@inproceedings{DBLP:conf/lisa/Preston01a,
+	title = "Backups.",
+	author = "W. Curtis Preston"}
+
+@inproceedings{DBLP:conf/lisa/ProvosH01,
+	title = "ScanSSH: Scanning the Internet for SSH Servers.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/provos.html",
+	author = "Niels Provos and Peter Honeyman",
+	pages = "25-30"}
+
+@inproceedings{DBLP:conf/lisa/RodgersS01,
+	title = "A Management System for Network-Shareable Locally Installed
+               Software: Merging RPM and the Depot Scheme Under Solaris.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/rodgers.html",
+	author = "R. P. Channing Rodgers and Ziying Sherwin",
+	pages = "267-273"}
+
+@inproceedings{DBLP:conf/lisa/Rose01,
+	title = "Where Has All the Crypto Gone? Long Time Coming: A Speculative
+               and Historical Talk.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/rose/index.htm",
+	author = "Gregory G. Rose"}
+
+@inproceedings{DBLP:conf/lisa/Rose01a,
+	title = "PKI/Cryptography.",
+	author = "Gregory G. Rose"}
+
+@inproceedings{DBLP:conf/lisa/Roth01,
+	title = "Defining the Role of Service Manager: Sanity Through Organizational
+               Evolution.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/roth.html",
+	author = "Mark D. Roth",
+	pages = "1-6"}
+
+@inproceedings{DBLP:conf/lisa/Rubin01,
+	title = "Security for E-Voting in Public Elections.",
+	author = "Aviel D. Rubin"}
+
+@inproceedings{DBLP:conf/lisa/SailerABJV01,
+	title = "IPSECvalidate: A Tool to Validate IPSEC Configurations.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/sailer.html",
+	author = "Reiner Sailer and Arup Acharya and Mandis Beigi and Raymond Jennings and Dinesh C. Verma",
+	pages = "19-24"}
+
+@inproceedings{DBLP:conf/lisa/Salus01,
+	title = "2001: A Communications Anniversary.",
+	author = "Peter H. Salus"}
+
+@inproceedings{DBLP:conf/lisa/Sandnes01,
+	title = "Scheduling Partially Ordered Events in a Randomised Framework:
+               Empirical Results and Implications for Automatic Configuration
+               Management.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/sandnes.html",
+	author = "Frode Eika Sandnes",
+	pages = "47-62"}
+
+@inproceedings{DBLP:conf/lisa/Schonwalder01,
+	title = "Specific Simple Network Management Tools.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/schoenwaelder.html",
+	author = "J{\"u}rgen Sch{\"o}nw{\"a}lder",
+	pages = "109-120"}
+
+@inproceedings{DBLP:conf/lisa/Schreuder01,
+	title = "Accessing Files on Unmounted Filesystems.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/schreuder.html",
+	author = "Willem A. Schre{\"u}der",
+	pages = "163-168"}
+
+@inproceedings{DBLP:conf/lisa/SimmonsZ01,
+	title = "Rules of Thumb of System Administration.",
+	author = "Steve Simmons and Elizabeth D. Zwicky"}
+
+@inproceedings{DBLP:conf/lisa/SpertusCJS01,
+	title = "Dynamic Sublists: Scaling Unmoderated Mailing Lists.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/spertus.html",
+	author = "Ellen Spertus and Mills College and Robin Jeffries and Kiem Sie",
+	pages = "211-218"}
+
+@inproceedings{DBLP:conf/lisa/Stolarchuk01,
+	title = "BPF Meets UVM.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/stolarchuk/index.htm",
+	author = "Michael T. Stolarchuk"}
+
+@inproceedings{DBLP:conf/lisa/SunC01,
+	title = "Global Impact Analysis of Dynamic Library Dependencies.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/sun.html",
+	author = "Yizhan Sun and Alva L. Couch",
+	pages = "145-150"}
+
+@inproceedings{DBLP:conf/lisa/Tien01,
+	title = "What Sysadmins Need to Know About the New Intellectual Property
+               Laws.",
+	author = "Lee Tien"}
+
+@inproceedings{DBLP:conf/lisa/Traugott01,
+	title = "Infrastructure Architecture.",
+	author = "Steve Traugott"}
+
+@inproceedings{DBLP:conf/lisa/Waldo01,
+	title = "JINI Networking Technology and Ad-Hoc Networks.",
+	author = "Jim Waldo"}
+
+@inproceedings{DBLP:conf/lisa/Wool01,
+	title = "How Not to Configure Your Firewall: A Field Guide to Common
+               Firewall Configurations.",
+	author = "Avishai Wool"}
+
+@inproceedings{DBLP:conf/lisa/WyerE01,
+	title = "LEXIS: An EXam Invigilation System (Awarded Best Applied
+               Paper!).",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2001/tech/wyer.html",
+	author = "Mike Wyer and Susan Eisenbach",
+	pages = "199-210"}
+
+@default year = 2000
+
+@inproceedings{DBLP:conf/lisa/AgrawalaFE00,
+	title = "Automating Dual Boot (Linux and NT) Installations.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/agrawala.html",
+	author = "Rajeev Agrawala and Rob Fulmer and Shaun Erickson",
+	pages = "245-254"}
+
+@inproceedings{DBLP:conf/lisa/Amatangelo00,
+	title = "Unleashing the Power of JumpStart: A New Technique for Disaster
+               Recovery, Cloning, or Snapshotting a Solaris System.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/amatangelo.html",
+	author = "Lee ``Leonardo'' Amatangelo",
+	pages = "219-228"}
+
+@inproceedings{DBLP:conf/lisa/Barnett00,
+	title = "NOOSE - Networked Object-Oriented Security Examiner.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/barnett.html",
+	author = "Bruce Barnett",
+	pages = "369-378"}
+
+@inproceedings{DBLP:conf/lisa/Brutlag00,
+	title = "Aberrant Behavior Detection in Time Series for Network Monitoring.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/brutlag.html",
+	author = "Jake D. Brutlag",
+	pages = "139-146"}
+
+@inproceedings{DBLP:conf/lisa/BurchC00,
+	title = "Tracing Anonymous Packets to Their Approximate Source.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/burch.html",
+	author = "Hal Burch and Bill Cheswick",
+	pages = "319-327"}
+
+@inproceedings{DBLP:conf/lisa/Cheswick00,
+	title = "The Digital House.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/invitedtalks/cheswick.pdf",
+	author = "Lorette Cheswick"}
+
+@inproceedings{DBLP:conf/lisa/Cheswick00a,
+	title = "Mapping Corporate Intranets and Internets.",
+	author = "Bill Cheswick"}
+
+@inproceedings{DBLP:conf/lisa/Chouanard00,
+	title = "YASSP! A Tool for Improving Solaris Security.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/chouanard.html",
+	author = "Jean Chouanard",
+	pages = "341-354"}
+
+@inproceedings{DBLP:conf/lisa/CowanBKPWG00,
+	title = "SubDomain: Parsimonious Server Security.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/cowan.html",
+	author = "Crispin Cowan and Steve Beattie and Greg Kroah-Hartman and Calton Pu and Perry Wagle and Virgil D. Gligor",
+	pages = "355-368"}
+
+@inproceedings{DBLP:conf/lisa/DietrichLD00,
+	title = "Analyzing Distributed Denial of Service Tools: The Shaft
+               Case.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/dietrich.html",
+	author = "Sven Dietrich and Neil Long and David Dittrich",
+	pages = "329-339"}
+
+@inproceedings{DBLP:conf/lisa/Dijker00,
+	title = "SAGE Update.",
+	author = "Barb Dijker"}
+
+@inproceedings{DBLP:conf/lisa/Felten00,
+	title = "Dr. Felton Goes to Washington: A Personal View of the Microsoft
+               Antitrust Case.",
+	author = "Edward W. Felten"}
+
+@inproceedings{DBLP:conf/lisa/Hedstrom00,
+	title = "Integrating LDAP in a Heterogeneous Environment.",
+	author = "Leif Hedstrom"}
+
+@inproceedings{DBLP:conf/lisa/Hemmerich00,
+	title = "Automating Request-based Software Distribution.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/hemmerich.html",
+	author = "Christopher Hemmerich",
+	pages = "197-205"}
+
+@inproceedings{DBLP:conf/lisa/Knowles00,
+	title = "The Design and Implementation of Highly Scalable Email Systems.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/invitedtalks/knowles.pdf",
+	author = "Brad Knowles"}
+
+@inproceedings{DBLP:conf/lisa/Levine00,
+	title = "Why the Documentation Sucks and What You Can Do About It.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/invitedtalks/levine_html/index.htm",
+	author = "Steven Levine"}
+
+@inproceedings{DBLP:conf/lisa/MillerD00,
+	title = "Relieving the Burden of System Administration Through Support
+               Automation.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/miller.html",
+	author = "Allan Miller and Alex Donnini",
+	pages = "167-180"}
+
+@inproceedings{DBLP:conf/lisa/NovikovH00,
+	title = "FTP Mirror Tracker: A Few Steps Towards URN.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/novikov.html",
+	author = "Alexei Novikov and Martin Hamilton",
+	pages = "181-186"}
+
+@inproceedings{DBLP:conf/lisa/OppenheimM00,
+	title = "Deployme: Tellme's Package Management and Deployment System.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/oppenheim.html",
+	author = "Kyle Oppenheim and Patrick McCormick",
+	pages = "187-196"}
+
+@inproceedings{DBLP:conf/lisa/Osterlund00,
+	title = "PIKT: Problem Informant/Killer Tool.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/osterlund.html",
+	author = "Robert Osterlund",
+	pages = "147-165"}
+
+@inproceedings{DBLP:conf/lisa/Preston00,
+	title = "SANs--From A To Reality.",
+	author = "W. Curtis Preston"}
+
+@inproceedings{DBLP:conf/lisa/RessmanV00,
+	title = "Use of Cfengine for Automated, Multi-Platform Software and
+               Patch Distribution.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/ressman.html",
+	author = "David Ressman and John Vald{\'e}s",
+	pages = "207-218"}
+
+@inproceedings{DBLP:conf/lisa/Rochlis00,
+	title = "How Not to Get Fleeced with Employee Stock Options.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/invitedtalks/rochlis.pdf",
+	author = "Jon Rochlis"}
+
+@inproceedings{DBLP:conf/lisa/Romig00,
+	title = "Experiences with Incident Response at The Ohio State University.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/invitedtalks/romig_html/index.htm",
+	author = "Steve Romig"}
+
+@inproceedings{DBLP:conf/lisa/Sellens00,
+	title = "Thresh--A Data-Directed SNMP Threshold Poller.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/sellens.html",
+	author = "John Sellens",
+	pages = "119-130"}
+
+@inproceedings{DBLP:conf/lisa/Shaffer00,
+	title = "A Linux Appliance Construction Setv.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/shaffer.html",
+	author = "Michael W. Shaffer"}
+
+@inproceedings{DBLP:conf/lisa/Voleynik00,
+	title = "eEMU: A Practical Tool and Language for System Monitoring
+               and Event Management.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/voleynik.html",
+	author = "Jarra Voleynik",
+	pages = "131-137"}
+
+@inproceedings{DBLP:conf/lisa/BeckH00,
+	title = "FOKSTRAUT and Samba--Dealing with Authentication and Performance
+               Issues on a Large-scale Samba Service.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/beck.html",
+	author = "Robert Beck and Steve Holstead",
+	pages = "39-42"}
+
+@inproceedings{DBLP:conf/lisa/Bernstein00,
+	title = "xps--Dynamic Process Tree Watching Under X.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/bernstein.html",
+	author = "Rocky Bernstein",
+	pages = "95-100"}
+
+@inproceedings{DBLP:conf/lisa/BingE00,
+	title = "Extending UNIX System Logging with SHARP.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/bing.html",
+	author = "Matthew Bing and Carl Erickson",
+	pages = "101-107"}
+
+@inproceedings{DBLP:conf/lisa/Burgess00,
+	title = "Theoretical System Administration.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/burgess.html",
+	author = "Mark Burgess",
+	pages = "1-13"}
+
+@inproceedings{DBLP:conf/lisa/Couch00,
+	title = "An Expectant Chat About Script Maturity.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/couch.html",
+	author = "Alva L. Couch",
+	pages = "15-28"}
+
+@inproceedings{DBLP:conf/lisa/CurtinFK00,
+	title = "Pelendur: Steward of the Sysadmin.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/curtin.html",
+	author = "Matt Curtin and Sandy Farrar and Tami King",
+	pages = "77-83"}
+
+@inproceedings{DBLP:conf/lisa/Drzyzgula00,
+	title = "Designing a Data Center Instrumentation System.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/drzyzgula.html",
+	author = "Robert Drzyzgula",
+	pages = "43-58"}
+
+@inproceedings{DBLP:conf/lisa/Finke00,
+	title = "An Improved Approach for Generating Configuration Files
+               from a Database.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/finke.html",
+	author = "Jon Finke",
+	pages = "29-38"}
+
+@inproceedings{DBLP:conf/lisa/GilfixC00,
+	title = "Peep (The Network Auralizer): Monitoring Your Network with
+               Sound.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/gilfix.html",
+	author = "Michael Gilfix and Alva L. Couch",
+	pages = "109-117"}
+
+@inproceedings{DBLP:conf/lisa/Hughes00,
+	title = "User-Centric Account Management with Heterogeneous Password
+               Changing.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/hughes.html",
+	author = "Douglas Hughes",
+	pages = "67-76"}
+
+@inproceedings{DBLP:conf/lisa/KentC00,
+	title = "Network Information Management and Distribution in a Heterogeneous
+               and Decentralized Enterprise Environment.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/kent.html",
+	author = "Alexander Kent and James Clifford"}
+
+@inproceedings{DBLP:conf/lisa/KrishnanNRS00,
+	title = "Sequencing of Configuration Operations for IP Networks.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/krishnan.html",
+	author = "P. Krishnan and Tejas Naik and Ganesan Ramu and Roshan Sequeira",
+	pages = "265-274"}
+
+@inproceedings{DBLP:conf/lisa/LarsonS00,
+	title = "Improving Availability in VERITAS Environments.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/larson.html",
+	author = "Karl Larson and Todd Stansell",
+	pages = "59-66"}
+
+@inproceedings{DBLP:conf/lisa/Meek00,
+	title = "Wide Area Network Packet Capture and Analysis.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/meek.html",
+	author = "Jon T. Meek",
+	pages = "255-264"}
+
+@inproceedings{DBLP:conf/lisa/MitchellNH00,
+	title = "ND: A Comprehensive Network Administration and Analysis
+               Tool.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/mitchell.html",
+	author = "Ellen L. Mitchell and Eric Nelson and David Hess",
+	pages = "275-283"}
+
+@inproceedings{DBLP:conf/lisa/NicklessNW00,
+	title = "Combining Cisco NetFlow Exports with Relational Database
+               Technology for Usage Statistics, Intrusion Detection, and
+               Network Forensics.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/navarro.html",
+	author = "Bill Nickless and John-Paul Navarro and Linda Winkler",
+	pages = "285-290"}
+
+@inproceedings{DBLP:conf/lisa/Plonka00,
+	title = "FlowScan: A Network Traffic Flow Reporting and Visualization
+               Tool.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/plonka.html",
+	author = "David Plonka",
+	pages = "305-317"}
+
+@inproceedings{DBLP:conf/lisa/RomigFL00,
+	title = "The OSU Flow-tools Package and CISCO NetFlow Logs.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa2000/fullmer.html",
+	author = "Steve Romig and Mark Fullmer and Ron Luman",
+	pages = "291-303"}
+
+@default year = 1999
+
+@inproceedings{DBLP:conf/lisa/AndersonP99,
+	title = "A Retrospective on Twelve Years of LISA Proceedings.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/anderson.html",
+	author = "Eric Anderson and David A. Patterson",
+	pages = "95-108"}
+
+@inproceedings{DBLP:conf/lisa/BargenT99,
+	title = "Cro-Magnon: A Patch Hunter-Gatherer.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/bargen.html",
+	author = "Jeremy Bargen and Seth Taplin",
+	pages = "87-94"}
+
+@inproceedings{DBLP:conf/lisa/Beck99,
+	title = "Dealing with Public Ethernet Jacks: Switches, Gateways,
+               and Authentication.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/beck.html",
+	author = "Robert Beck",
+	pages = "149-154"}
+
+@inproceedings{DBLP:conf/lisa/BentleyRW99,
+	title = "ssmail: Opportunistic Encryption in sendmail.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/bentley.html",
+	author = "Damian Bentley and Gregory G. Rose and Tara Whalen",
+	pages = "1-8"}
+
+@inproceedings{DBLP:conf/lisa/CordreyFSW99,
+	title = "Moving Large Filesystems On-Line, Including Exiting HSM
+               Filesystems.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/cordrey.html",
+	author = "Vincent Cordrey and Doug Freyburger and Jordan Schwartz and Liza Weissler",
+	pages = "187-196"}
+
+@inproceedings{DBLP:conf/lisa/CouchG99,
+	title = "It's Elementary, Dear Watson: Applying Logic Programming
+               To Convergent System Management Processes.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/couch.html",
+	author = "Alva L. Couch and Michael Gilfix",
+	pages = "123-138"}
+
+@inproceedings{DBLP:conf/lisa/DenkerBDMKP99,
+	title = "Moat: a Virtual Private Network Appliance and Services Platform.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/denker.html",
+	author = "John S. Denker and Steven M. Bellovin and Hugh Daniel and Nancy L. Mintz and Tom Killian and Mark Plotnick",
+	pages = "251-260"}
+
+@inproceedings{DBLP:conf/lisa/Finke99,
+	title = "ServiceTrak Meets NLOG/NMAP.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/finke.html",
+	author = "Jon Finke",
+	pages = "197-206"}
+
+@inproceedings{DBLP:conf/lisa/Goldenhar99,
+	title = "NetMapper: Hostname Resolution Based on Client Network Location.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/goldenhar.html",
+	author = "Josh Goldenhar",
+	pages = "155-164"}
+
+@inproceedings{DBLP:conf/lisa/Heiss99,
+	title = "Enterprise Rollouts with JumpStart.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/heiss.html",
+	author = "Jason Heiss",
+	pages = "267-274"}
+
+@inproceedings{DBLP:conf/lisa/HohndelH99,
+	title = "Automated Installation of Linux Systems Using YaST.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/hohndel.html",
+	author = "Dirk H. Hohndel and Fabian Herschel",
+	pages = "261-266"}
+
+@inproceedings{DBLP:conf/lisa/KimballSKD99,
+	title = "Automated Client-side Integration of Distributed Application
+               Servers.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/kimball.html",
+	author = "Conrad E. Kimball and Vincent D. Skahan, Jr. and David J. Kasik and Roger L. Droz",
+	pages = "275-282"}
+
+@inproceedings{DBLP:conf/lisa/KonstantinouYBR99,
+	title = "Managing Security in Dynamic Networks.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/konstantinou.html",
+	author = "Alexander V. Konstantinou and Yechiam Yemini and Sandeep N. Bhatt and Sivaramakrishnan Rajagopalan",
+	pages = "109-122"}
+
+@inproceedings{DBLP:conf/lisa/Labiaga99,
+	title = "Enhancements to the Autofs Automounter.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/labiaga.html",
+	author = "Ricardo Labiaga",
+	pages = "165-174"}
+
+@inproceedings{DBLP:conf/lisa/Larkins99,
+	title = "Internet Routing and DNS Voodoo in the Enterprises.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/larkins.html",
+	author = "D. Brian Larkins",
+	pages = "239-250"}
+
+@inproceedings{DBLP:conf/lisa/Limoncelli99,
+	title = "Deconstructing User Requests and the Nine Step Model.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/limoncelli.html",
+	author = "Thomas A. Limoncelli",
+	pages = "35-44"}
+
+@inproceedings{DBLP:conf/lisa/Melski99,
+	title = "Burt: The Backup and Recovery Tool.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/melski.html",
+	author = "Eric Melski",
+	pages = "207-218"}
+
+@inproceedings{DBLP:conf/lisa/PeriakaruppanN99,
+	title = "GTrace: A Graphical Traceroute Tool.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/periakaruppan.html",
+	author = "Ram Periakaruppan and Evi Nemeth",
+	pages = "69-78"}
+
+@inproceedings{DBLP:conf/lisa/Pultar99,
+	title = "Design and Implementation of a Failsafe Print System.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/pultar.html",
+	author = "Giray Pultar",
+	pages = "219-228"}
+
+@inproceedings{DBLP:conf/lisa/RingelL99,
+	title = "Adverse Termination Procedures -or- ``How To Fire A System
+               Administrator''.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/ringel.html",
+	author = "Matthew F. Ringel and Thomas A. Limoncelli",
+	pages = "45-52"}
+
+@inproceedings{DBLP:conf/lisa/Robinson99,
+	title = "The Advancement of NFS Benchmarking: SFS 2.0.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/robinson.html",
+	author = "David Robinson",
+	pages = "175-186"}
+
+@inproceedings{DBLP:conf/lisa/Roesch99,
+	title = "Snort: Lightweight Intrusion Detection for Networks.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/roesch.html",
+	author = "Martin Roesch",
+	pages = "229-238"}
+
+@inproceedings{DBLP:conf/lisa/SchreuderM99,
+	title = "rat: A Secure Archiving Program With Fast Retrieval.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/schreuder.html",
+	author = "Willem A. Schre{\"u}der and Maria Murillo",
+	pages = "79-86"}
+
+@inproceedings{DBLP:conf/lisa/SkahanK99,
+	title = "MJDLM: Majordomo based Distribution List Management.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/skahan.html",
+	author = "Vincent D. Skahan, Jr. and Robert Katz",
+	pages = "9-20"}
+
+@inproceedings{DBLP:conf/lisa/SorensonC99,
+	title = "RedAlert: A Scalable System for Application Monitoring.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/sorenson.html",
+	author = "Eric Sorenson and Strata Rose Chalup",
+	pages = "21-34"}
+
+@inproceedings{DBLP:conf/lisa/ValianW99,
+	title = "NetReg: An Automated DHCP Registration System.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/valian.html",
+	author = "Peter Valian and Todd K. Watson",
+	pages = "139-148"}
+
+@inproceedings{DBLP:conf/lisa/Willoughby99,
+	title = "Organizing the Chaos: Managing Request Tickets in a Large
+               Environment.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa99/willoughby.html",
+	author = "Steve Willoughby",
+	pages = "53-68"}
+
+@default year = 1998
+
+@inproceedings{DBLP:conf/lisa/AbbeyM98,
+	title = "Ganymede: An Extensible and Customizable Directory Management
+               Framework.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/abbey.html",
+	author = "Jonathan Abbey and Michael Mulvaney",
+	pages = "197-218"}
+
+@inproceedings{DBLP:conf/lisa/Arnold98,
+	title = "Accountworks: Users Create Accounts on SQL, Notes, NT, and
+               UNIX.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/arnold.html",
+	author = "Bob Arnold",
+	pages = "49-61"}
+
+@inproceedings{DBLP:conf/lisa/Burgess98,
+	title = "Computer Immunology.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/burgess.html",
+	author = "Mark Burgess",
+	pages = "283-298"}
+
+@inproceedings{DBLP:conf/lisa/BushnellR98,
+	title = "Anatomy of an Athena Workstation.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/bushnell.html",
+	author = "Thomas Bushnell and Karl Ramm",
+	pages = "175-180"}
+
+@inproceedings{DBLP:conf/lisa/ChaMBAMSM98,
+	title = "What to Do When the Lease Expires: A Moving Experience.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/cha.html",
+	author = "Lloyd Cha and Chris Motta and Syed Babar and Mukul Agarwal and Jack Ma and Waseem Shaikh and Istvan Marko",
+	pages = "167-174"}
+
+@inproceedings{DBLP:conf/lisa/ChaMBAMSM98a,
+	title = "The Evolution of the CMD Computing Environment: A Case Study
+               in Rapid Growth.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/cha2.html",
+	author = "Lloyd Cha and Chris Motta and Syed Babar and Mukul Agarwal and Jack Ma and Waseem Shaikh and Istvan Marko",
+	pages = "271-282"}
+
+@inproceedings{DBLP:conf/lisa/ChalupHKMS98,
+	title = "Drinking from the Fire(walls) Hose: Another Approach to
+               Very Large Mailing Lists.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/chalup.html",
+	author = "Strata Rose Chalup and Christine Hogan and Greg Kulosa and Bryan McDonald and Bryan Stansell",
+	pages = "317-326"}
+
+@inproceedings{DBLP:conf/lisa/FarmerPA98,
+	title = "TITAN.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/farmer.html",
+	author = "Daniel Farmer and Brad Powell and Matthew Archibald",
+	pages = "1-10"}
+
+@inproceedings{DBLP:conf/lisa/FithenKCP98,
+	title = "Infrastructure: A Prerequisite for Effective Security.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/full_papers/fithen/fithen.pdf",
+	author = "William L. Fithen and Steve Kalinowski and Jeff Carpenter and Jed Pickel",
+	pages = "11-26"}
+
+@inproceedings{DBLP:conf/lisa/GirardinB98,
+	title = "A Visual Approach for Monitoring Logs.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/girardin.html",
+	author = "Luc Girardin and Dominique Brodbeck",
+	pages = "299-308"}
+
+@inproceedings{DBLP:conf/lisa/GrubbC98,
+	title = "Single Sign-On and the System Administrator.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/grubb.html",
+	author = "Michael Fleming Grubb and Rob Carter",
+	pages = "63-86"}
+
+@inproceedings{DBLP:conf/lisa/LockardL98,
+	title = "Synctree for Single Point Installation, Upgrades, and OS
+               Patches.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/lockard.html",
+	author = "John Lockard and Jason Larke",
+	pages = "261-270"}
+
+@inproceedings{DBLP:conf/lisa/MeekET98,
+	title = "Wide Area Network Ecology.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/meek.html",
+	author = "Jon T. Meek and Edwin S. Eichert and Kim Takayama",
+	pages = "149-158"}
+
+@inproceedings{DBLP:conf/lisa/Oetiker98,
+	title = "MRTG: The Multi Router Traffic Grapher.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/oetiker.html",
+	author = "Tobias Oetiker",
+	pages = "141-148"}
+
+@inproceedings{DBLP:conf/lisa/Oetiker98a,
+	title = "SEPP: Software Installation and Sharing System.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/oetiker2.html",
+	author = "Tobias Oetiker",
+	pages = "253-260"}
+
+@inproceedings{DBLP:conf/lisa/Page98,
+	title = "Configuring Database Systems.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/page.html",
+	author = "Christopher R. Page",
+	pages = "97-108"}
+
+@inproceedings{DBLP:conf/lisa/Preston98,
+	title = "Using Gigabit Ethernet to Backup Six Terabytes.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/preston.html",
+	author = "W. Curtis Preston",
+	pages = "87-96"}
+
+@inproceedings{DBLP:conf/lisa/Pultar98,
+	title = "Automatically Selecting a Close Mirror Based on Network
+               Topology.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/pultar.html",
+	author = "Giray Pultar",
+	pages = "159-166"}
+
+@inproceedings{DBLP:conf/lisa/PurakayasthaM98,
+	title = "System Management With NetScript.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/purakayastha.html",
+	author = "Apratim Purakayastha and Ajay Mohindra",
+	pages = "37-48"}
+
+@inproceedings{DBLP:conf/lisa/RegueroFD98,
+	title = "Large Scale Print Spool Service.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/reguero.html",
+	author = "Ignacio Reguero and David Foster and Ivan Deloose",
+	pages = "229-242"}
+
+@inproceedings{DBLP:conf/lisa/Rhett98,
+	title = "Request v3: A Modular, Extensible Task Tracking Tool.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/rhett.html",
+	author = "Joe Rhett",
+	pages = "327-333"}
+
+@inproceedings{DBLP:conf/lisa/SilvaCFVB98,
+	title = "An NFSConfiguration Management System and its Underlying
+               Object-Oriented Model.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/silva.html",
+	author = "Fabio Q. B. da Silva and Juliana Silva da Cunha and Danielle M. Franklin and Luciana S. Varej{\~a}o and Rosalie Belian",
+	pages = "121-130"}
+
+@inproceedings{DBLP:conf/lisa/SilveiraS98,
+	title = "A Configuration Distribution System for Heterogeneous Networks.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/silveira.html",
+	author = "Gl{\^e}dson Elias da Silveira and Fabio Q. B. da Silva",
+	pages = "109-120"}
+
+@inproceedings{DBLP:conf/lisa/Staelin98,
+	title = "mkpkg: A software packaging tool.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/staelin.html",
+	author = "Carl Staelin",
+	pages = "243-252"}
+
+@inproceedings{DBLP:conf/lisa/Thorpe98,
+	title = "SSU: Extending SSH for Secure Root Administration.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/thorpe.html",
+	author = "Christopher Thorpe",
+	pages = "27-36"}
+
+@inproceedings{DBLP:conf/lisa/TraugottH98,
+	title = "Bootstrapping an Infrastructure.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/traugott.html",
+	author = "Steve Traugott and Joel Huddleston",
+	pages = "181-196"}
+
+@inproceedings{DBLP:conf/lisa/ViegaWM98,
+	title = "Mailman: The GNU Mailing List Manager.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/viega.html",
+	author = "John Viega and Barry Warsaw and Ken Manheimer",
+	pages = "309-316"}
+
+@inproceedings{DBLP:conf/lisa/Woodard98,
+	title = "Building An Enterprise Printing System.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/woodard.html",
+	author = "Ben Woodard",
+	pages = "219-228"}
+
+@inproceedings{DBLP:conf/lisa/YangL98,
+	title = "Design and Implementation of an Administration System for
+               Distributed Web Server.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa98/yang.html",
+	author = "Chu-Sing Yang and Mon-Yen Luo",
+	pages = "131-140"}
+
+@default year = 1997
+
+@inproceedings{DBLP:conf/lisa/AndersonP97,
+	title = "Extensible, Scalable Monitoring for Clusters of Computers.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/02.anderson.html",
+	author = "Eric Anderson and David A. Patterson",
+	pages = "9-16"}
+
+@inproceedings{DBLP:conf/lisa/Barber97,
+	title = "Increased Server Availability and Flexibility through Failover
+               Capability.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/13.barber.html",
+	author = "Michael R. Barber",
+	pages = "89-98"}
+
+@inproceedings{DBLP:conf/lisa/BarnettMLH97,
+	title = "A Web-Based Backup/Restore Method for Intel-based PC's.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/10.barnett.html",
+	author = "Tyler Barnett and Kyle McPeek and Larry S. Lile and Ray Hyatt, Jr.",
+	pages = "71-78"}
+
+@inproceedings{DBLP:conf/lisa/BurgessS97,
+	title = "Adaptive Locks For Frequently Scheduled Tasks With Unpredictable
+               Runtimes.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/15.burgess.html",
+	author = "Mark Burgess and Demosthenes Skipitaris",
+	pages = "113-122"}
+
+@inproceedings{DBLP:conf/lisa/Caetta97,
+	title = "Developing Interim Systems.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/07.caetta.html",
+	author = "Jennifer Caetta",
+	pages = "51-58"}
+
+@inproceedings{DBLP:conf/lisa/Christoffel97,
+	title = "Bal - A Tool to Synchronize Document Collections Between
+               Computers.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/12.christoffel.html",
+	author = "J{\"u}rgen Christoffel",
+	pages = "85-88"}
+
+@inproceedings{DBLP:conf/lisa/Couch97,
+	title = "Chaos Out of Order: A Simple, Scalable File Distribution
+               Facility For `Intentionally Heterogeneous' Networks.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/19.couch.html",
+	author = "Alva L. Couch",
+	pages = "169-178"}
+
+@inproceedings{DBLP:conf/lisa/Evard97,
+	title = "An Analysis of UNIX System Configuration.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/20.evard.html",
+	author = "R{\'e}my Evard",
+	pages = "179-194"}
+
+@inproceedings{DBLP:conf/lisa/Finke97,
+	title = "Monitoring Application Use with License Server Logs.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/03.finke.html",
+	author = "Jon Finke",
+	pages = "17-26"}
+
+@inproceedings{DBLP:conf/lisa/Finke97a,
+	title = "Automation of Site Configuration Management.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/18.finke.html",
+	author = "Jon Finke",
+	pages = "155-168"}
+
+@inproceedings{DBLP:conf/lisa/Fritchie97,
+	title = "The Cyclic News Filesystem: Getting INN To Do More With
+               Less.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/14.fritchie.html",
+	author = "Scott Lystig Fritchie",
+	pages = "99-112"}
+
+@inproceedings{DBLP:conf/lisa/Harker97,
+	title = "Selectively Rejecting SPAM Using Sendmail.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/22.harker.html",
+	author = "Robert Harker",
+	pages = "205-221"}
+
+@inproceedings{DBLP:conf/lisa/Holland97,
+	title = "A Better E-Mail Bouncer.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/23.holland.html",
+	author = "Richard J. Holland",
+	pages = "225-226"}
+
+@inproceedings{DBLP:conf/lisa/HowdenN97,
+	title = "How to Control and Manage Change in a Commercial Data Center
+               Without Losing Your Mind.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/06.howden.html",
+	author = "Sally J. Howden and Frank B. Northrup",
+	pages = "43-50"}
+
+@inproceedings{DBLP:conf/lisa/Kolstad97,
+	title = "Tuning Sendmail for Large Mailing Lists.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/21.kolstad.html",
+	author = "Rob Kolstad",
+	pages = "195-204"}
+
+@inproceedings{DBLP:conf/lisa/Limoncelli97,
+	title = "Turning the Corner: Upgrading Yourself from ``System Clerk''
+               to ``System Advocate''.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/05.limoncelli.html",
+	author = "Thomas A. Limoncelli",
+	pages = "37-42"}
+
+@inproceedings{DBLP:conf/lisa/LimoncelliRNL97,
+	title = "Creating a Network for Lucent Bell Labs Research South.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/16.limoncelli.html",
+	author = "Thomas A. Limoncelli and Tom Reingold and Ravi Narayan and Ralph Loura",
+	pages = "123-140"}
+
+@inproceedings{DBLP:conf/lisa/Pollack97,
+	title = "A Large Scale Data Warehouse Application Case Study.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/08.pollack.html",
+	author = "Dan Pollack",
+	pages = "59-64"}
+
+@inproceedings{DBLP:conf/lisa/RanumLSSLW97,
+	title = "Implementing a Generalized Tool for Network Monitoring.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/01.ranum.html",
+	author = "Marcus J. Ranum and Kent Landfield and Michael T. Stolarchuk and Mark Sienkiewicz and Andrew Lambeth and Eric Wall",
+	pages = "1-8"}
+
+@inproceedings{DBLP:conf/lisa/Rudorfer97,
+	title = "Managing PC Operating Systems with a Revision Control System.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/11.rudorfer.html",
+	author = "Gottfried Rudorfer",
+	pages = "79-84"}
+
+@inproceedings{DBLP:conf/lisa/Scott97,
+	title = "Automating 24x7 Support Response To Telephone Requests.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/04.scott.html",
+	author = "Peter Scott",
+	pages = "27-36"}
+
+@inproceedings{DBLP:conf/lisa/Spencer97,
+	title = "Shuse At Two: Multi-Host Account Administration.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/09.spencer.html",
+	author = "Henry Spencer",
+	pages = "65-70"}
+
+@inproceedings{DBLP:conf/lisa/Urner97,
+	title = "Pinpointing System Performance Issues.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa97/17.urner.html",
+	author = "Douglas L. Urner",
+	pages = "141-154"}
+
+@default year = 1996
+
+@inproceedings{DBLP:conf/lisa/X96,
+	title = "New Fangled Phone Systems Pose New Challenges for System
+               Administrators.",
+	author = "",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/snoopy.html",
+	pages = "241-250"}
+
+@inproceedings{DBLP:conf/lisa/ApisdorfCTW96,
+	title = "OC3MON: Flexible, Affordable, High Performance Staistics
+               Collection.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/kc.html",
+	author = "Joel Apisdorf and Kimberly C. Claffy and Kevin Thompson and Rick Wilder",
+	pages = "97-112"}
+
+@inproceedings{DBLP:conf/lisa/Bell96,
+	title = "A Simple Caching File System for Application Serving.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/jbell4.html",
+	author = "John D. Bell",
+	pages = "171-180"}
+
+@inproceedings{DBLP:conf/lisa/Couch96,
+	title = "Visualizing Huge Tracefiles with Xscal.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/couch2.html",
+	author = "Alva L. Couch",
+	pages = "51-58"}
+
+@inproceedings{DBLP:conf/lisa/Couch96a,
+	title = "SLINK: Simple, Effective Filesystem Maintenance Abstractions
+               for Community-Based Administration.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/couch.html",
+	author = "Alva L. Couch",
+	pages = "205-212"}
+
+@inproceedings{DBLP:conf/lisa/DefertDGMPR96,
+	title = "Managing and Distributing Application Software.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/reguero.html",
+	author = "Philippe Defert and Eusebio Fernandez Dominguez and M. Goossens and O. Le Moigne and Alain Peyrat and Ignacio Reguero",
+	pages = "213-226"}
+
+@inproceedings{DBLP:conf/lisa/Finke96,
+	title = "Institute White Pages as a System Administration Problem.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/finkej.html",
+	author = "Jon Finke",
+	pages = "233-240"}
+
+@inproceedings{DBLP:conf/lisa/Fisk96,
+	title = "Automating the Administration of Heterogeneous LANs.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/mfisk.html",
+	author = "Michael E. Fisk",
+	pages = "181-186"}
+
+@inproceedings{DBLP:conf/lisa/Fletcher96,
+	title = "An LPD for the 90s.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/mark.html",
+	author = "Mark Fletcher",
+	pages = "73-80"}
+
+@inproceedings{DBLP:conf/lisa/FurlaniO96,
+	title = "Abstract Yourself With Modules.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/pwo.html",
+	author = "John L. Furlani and Peter W. Osel",
+	pages = "193-204"}
+
+@inproceedings{DBLP:conf/lisa/Grubb96,
+	title = "How to Get There From Here: Scaling the Enterprise-Wide
+               Mail Infrastructure.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/mg.html",
+	author = "Michael Fleming Grubb",
+	pages = "131-138"}
+
+@inproceedings{DBLP:conf/lisa/HarrisG96,
+	title = "The Design and Implementation of a Network Account Management
+               System.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/arch.html",
+	author = "J. Archer Harris and Gregory Gingerich",
+	pages = "33-42"}
+
+@inproceedings{DBLP:conf/lisa/Hill96,
+	title = "Priv: Secure and Flexible Privileged Access Dissemination.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/bchill.html",
+	author = "Brian C. Hill",
+	pages = "1-8"}
+
+@inproceedings{DBLP:conf/lisa/Houle96,
+	title = "MajorCool: A Web Interface to Majordomo.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/bhoule.html",
+	author = "Bill Houle",
+	pages = "145-154"}
+
+@inproceedings{DBLP:conf/lisa/Hughes96,
+	title = "Using Visualization in System and Network Administration.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/doug.html",
+	author = "Douglas Hughes",
+	pages = "59-66"}
+
+@inproceedings{DBLP:conf/lisa/LearKCT96,
+	title = "Renumbering: Threat or Menace.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/ariana.html",
+	author = "Eliot Lear and Jennifer Katinsky and Jeff Coffin and Diane Tharp",
+	pages = "91-96"}
+
+@inproceedings{DBLP:conf/lisa/Libes96,
+	title = "How to Avoid Learning Expect -or- Automating Automating
+               Interactive Programs.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/libes.html",
+	author = "Don Libes",
+	pages = "67-72"}
+
+@inproceedings{DBLP:conf/lisa/MillerM96,
+	title = "Centralized Administration of Distributed Firewalls.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/marcus.html",
+	author = "Mark Miller and Joe Morris",
+	pages = "19-24"}
+
+@inproceedings{DBLP:conf/lisa/Pierce96,
+	title = "The Igor System Administration Tool.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/cpierce.html",
+	author = "Clinton Pierce",
+	pages = "9-18"}
+
+@inproceedings{DBLP:conf/lisa/Pomeranz96,
+	title = "Many Mail Domains, One Machine: The Forwarding Mailer.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/hal.html",
+	author = "Hal Pomeranz",
+	pages = "123-130"}
+
+@inproceedings{DBLP:conf/lisa/Rose96,
+	title = "The PGP Moose - Implementation and Experience.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/ggr.html",
+	author = "Gregory G. Rose",
+	pages = "155-160"}
+
+@inproceedings{DBLP:conf/lisa/Ruefenacht96,
+	title = "RUST: Managing Problem Reports and To-Do Lists.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/ruefenac.html",
+	author = "Craig Ruefenacht",
+	pages = "81-90"}
+
+@inproceedings{DBLP:conf/lisa/SolanaBRH96,
+	title = "Automatic and Reliable Elimination of E-mail Loops Based
+               on Statistical Analysis.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/solana.html",
+	author = "Eduardo Solana and Vito Baggiolini and Mira Ramluckun and J{\"u}rgen Harms",
+	pages = "139-144"}
+
+@inproceedings{DBLP:conf/lisa/Spencer96,
+	title = "Shuse: Multi-Host Account Administration.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/henry.html",
+	author = "Henry Spencer",
+	pages = "25-32"}
+
+@inproceedings{DBLP:conf/lisa/Swartz96,
+	title = "The Brave Little Toaster Meets Usenet.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/kls.html",
+	author = "Karl L. Swartz",
+	pages = "161-170"}
+
+@inproceedings{DBLP:conf/lisa/ThomasSOJSM96,
+	title = "UNIX Host Administration in a Hererogeneous Distributed
+               Computing Environment.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/gthomas.html",
+	author = "Gregory S. Thomas and James O. Schroeder and Merrilee E. Orcutt and Desiree C. Johnson and Jeffrey T. Simmelink and John P. Moore",
+	pages = "43-50"}
+
+@inproceedings{DBLP:conf/lisa/Tompkins96,
+	title = "A New Twist on Teaching System Administration.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/rtompkin.html",
+	author = "Raven Tompkins",
+	pages = "227-232"}
+
+@inproceedings{DBLP:conf/lisa/Trocki96,
+	title = "PC Administration Tools: Using Linux to Manage Personal
+               Computers.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/trockij.html",
+	author = "Jim Trocki",
+	pages = "187-192"}
+
+@inproceedings{DBLP:conf/lisa/YeomHK96,
+	title = "IP Multiplexing by Transparent Port-Address Translator.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa96/yeom.html",
+	author = "Heon Young Yeom and Jungsoo Ha and Ilhwan Kim",
+	pages = "113-122"}
+
+@default year = 1995
+
+@inproceedings{DBLP:conf/lisa/Allen95,
+	title = "Finding a Needle in a Virtual Haystack: Whois++ and the
+               Whois++ Client Library.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/allen.html",
+	author = "Jeff R. Allen",
+	pages = "25-34"}
+
+@inproceedings{DBLP:conf/lisa/Casella95,
+	title = "Security Administration in an Open Networking Environment.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/casella.html",
+	author = "Karen A. Casella",
+	pages = "67-74"}
+
+@inproceedings{DBLP:conf/lisa/Cooper95,
+	title = "SPM: System for Password Management.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/mcooper.html",
+	author = "Michael A. Cooper",
+	pages = "149-170"}
+
+@inproceedings{DBLP:conf/lisa/Finke95,
+	title = "SQL_2_HTML: Automatic Generation of HTML Database Schemas.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/finke.html",
+	author = "Jon Finke",
+	pages = "133-138"}
+
+@inproceedings{DBLP:conf/lisa/Futakata95,
+	title = "Patch Control Mechanism for Large Scale Software.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/futakata.html",
+	author = "Atsushi Futakata",
+	pages = "213-220"}
+
+@inproceedings{DBLP:conf/lisa/GittlerMR95,
+	title = "Morgan Stanley's Aurora System: Designing a Next Generation
+               Global Production Unix Environment.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/gittler.html",
+	author = "Xev Gittler and W. Phillip Moore and J. Rambhaskar",
+	pages = "47-58"}
+
+@inproceedings{DBLP:conf/lisa/Hogan95,
+	title = "Metrics for Management.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/hogan.html",
+	author = "Christine Hogan",
+	pages = "125-132"}
+
+@inproceedings{DBLP:conf/lisa/HoganCH95,
+	title = "Decentralising Distributed Systems Administration.",
+	author = "Christine Hogan and Aoife Cox and Tim Hunter",
+	pages = "139-148"}
+
+@inproceedings{DBLP:conf/lisa/Leon95,
+	title = "From Thinnet to 10base-T, From Sys Admin to Network Manager.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/deleon.html",
+	author = "Arnold de Leon",
+	pages = "229-240"}
+
+@inproceedings{DBLP:conf/lisa/Lipson95,
+	title = "Capital Markets Trading Floors, Current Practice.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/lipson.html",
+	author = "Sam Lipson",
+	pages = "35-46"}
+
+@inproceedings{DBLP:conf/lisa/McRobert95,
+	title = "From Twisting Country Lanes to MultiLane Ethernet SuperHighways.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/mcrobert.html",
+	author = "Stuart McRobert",
+	pages = "221-228"}
+
+@inproceedings{DBLP:conf/lisa/MosedaleFM95,
+	title = "Administering Very High Volume Internet Services.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/mosedale.html",
+	author = "Dan Mosedale and William Foss and Robert Martin McCool",
+	pages = "95-102"}
+
+@inproceedings{DBLP:conf/lisa/Mott95,
+	title = "Bringing the MBONE Home: Experiences with Internal Use of
+               Multicast-Based Conferencing Tools.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/mott.html",
+	author = "Archibald C. R. Mott",
+	pages = "103-110"}
+
+@inproceedings{DBLP:conf/lisa/OselG95,
+	title = "OpenDist: Incremental Software Distribution.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/osel.html",
+	author = "Peter W. Osel and Wilfried Gnsheimer",
+	pages = "181-194"}
+
+@inproceedings{DBLP:conf/lisa/Phillips95,
+	title = "From Something to Nothing (and back).",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/phillips.html",
+	author = "Gretchen Phillips",
+	pages = "117-124"}
+
+@inproceedings{DBLP:conf/lisa/PowellM95,
+	title = "LPRng - An Enhanced Printer Spooler System.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/papowell.html",
+	author = "Patrick Powell and Justin Mason",
+	pages = "13-24"}
+
+@inproceedings{DBLP:conf/lisa/RammG95,
+	title = "Exu: A System for Secure Delegation of Authority on an Insecure
+               Network.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/ramm.html",
+	author = "Karl Ramm and Michael Fleming Grubb",
+	pages = "89-94"}
+
+@inproceedings{DBLP:conf/lisa/RiddleDM95,
+	title = "AGUS: An Automatic Multi-Platform Account Generation System.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/riddle.html",
+	author = "Paul Riddle and Paul Danckaert and Matt Metaferia",
+	pages = "171-180"}
+
+@inproceedings{DBLP:conf/lisa/Sammons95,
+	title = "Multi-platform Interrogation and Reporting with Rscan.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/sammons.html",
+	author = "Nathaniel Sammons",
+	pages = "75-88"}
+
+@inproceedings{DBLP:conf/lisa/Schemers95,
+	title = "lbnamed: A Load Balancing Name Server in Perl.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/schemers.html",
+	author = "Roland Schemers",
+	pages = "1-12"}
+
+@inproceedings{DBLP:conf/lisa/SedayaoA95,
+	title = "LACHESIS: A Tool for Benchmarking Internet Service Providers.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/sedayao.html",
+	author = "Jeff Sedayao and Kotaro Akita",
+	pages = "111-116"}
+
+@inproceedings{DBLP:conf/lisa/Sellens95,
+	title = "filetsf: A File Transfer System Based on lpr/lpd.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/sellen.html",
+	author = "John Sellens",
+	pages = "195-212"}
+
+@inproceedings{DBLP:conf/lisa/ShaddockMH95,
+	title = "How to Upgrade 1500 Workstations on Saturday, and Still
+               Have Time to Mow the Yard on Sunday.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/shaddock.html",
+	author = "Michael E. Shaddock and Michael C. Mitchell and Helen E. Harrison",
+	pages = "59-66"}
+
+@inproceedings{DBLP:conf/lisa/Walters95,
+	title = "Tracking Hardware Configurations in a Heterogeneous Network
+               with syslogd.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa95/walters.html",
+	author = "Rex Walters",
+	pages = "241-246"}
+
+@default year = 1994
+
+@inproceedings{DBLP:conf/lisa/Abbey94,
+	title = "The Group Administration Shell and the GASH Network Computing
+               Environment.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/abbey.html",
+	author = "Jonathan Abbey"}
+
+@inproceedings{DBLP:conf/lisa/Anderson94,
+	title = "Towards a High-Level Machine Configuration System.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/anderson.html",
+	author = "Paul Anderson"}
+
+@inproceedings{DBLP:conf/lisa/ClearIC94,
+	title = "Exporting Home Directories on Demand to PCs.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/clear.html",
+	author = "David Clear and Alan Ibbetson and Peter Collinson"}
+
+@inproceedings{DBLP:conf/lisa/Eirich94,
+	title = "Beam: A Tool for Flexible Software Update.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/eirich.html",
+	author = "Thomas Eirich"}
+
+@inproceedings{DBLP:conf/lisa/Evard94,
+	title = "Tenwen: The Reengineering of a Computing Environment.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/evard.html",
+	author = "R{\'e}my Evard"}
+
+@inproceedings{DBLP:conf/lisa/Evard94a,
+	title = "Managing the Ever-Growing To Do List.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/evard2.html",
+	author = "R{\'e}my Evard"}
+
+@inproceedings{DBLP:conf/lisa/EvardL94,
+	title = "Soft: A Software Environment Abstraction Mechanism.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/leslie.html",
+	author = "R{\'e}my Evard and Robert Leslie"}
+
+@inproceedings{DBLP:conf/lisa/Finke94,
+	title = "Monitoring Usage of Workstations with a Relational Database.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/finke.html",
+	author = "Jon Finke"}
+
+@inproceedings{DBLP:conf/lisa/Finke94a,
+	title = "Automating Printing Configuration.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/finke2.html",
+	author = "Jon Finke"}
+
+@inproceedings{DBLP:conf/lisa/Geer94,
+	title = "Breaking into Banks: Security Lessons Learned from Financial
+               Services.",
+	author = "Daniel Geer"}
+
+@inproceedings{DBLP:conf/lisa/Harlander94,
+	title = "Central System Administration in a Heterogeneous Unix Environment:
+               GeNUAdmin.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/harlander.html",
+	author = "Magnus Harlander"}
+
+@inproceedings{DBLP:conf/lisa/HarrisonMS94,
+	title = "Pong: A Flexible Network Services Monitoring System.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/harrison.html",
+	author = "Helen E. Harrison and Michael C. Mitchell and Michael E. Shaddock"}
+
+@inproceedings{DBLP:conf/lisa/Hauser94,
+	title = "Speeding Up UNIX Login by Caching the Initial Environment.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/hauser.html",
+	author = "Carl H. Hauser"}
+
+@inproceedings{DBLP:conf/lisa/Hideyo94,
+	title = "OMNICONF - Make OS Upgrade and Disk Crash Recovery Easier.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/hideyo.html",
+	author = "Imazu Hideyo"}
+
+@inproceedings{DBLP:conf/lisa/Kaplan94,
+	title = "Highly Automated Low Personnel System Administration in
+               a Wall Street Environment.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/kaplan.html",
+	author = "Harry Kaplan"}
+
+@inproceedings{DBLP:conf/lisa/LeFebvre94,
+	title = "Kernel Mucking in Top.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/leFebvre.html",
+	author = "William LeFebvre"}
+
+@inproceedings{DBLP:conf/lisa/Libes94,
+	title = "Handling Passwords with Security and Reliability in Background
+               Processes.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/libes.html",
+	author = "Don Libes"}
+
+@inproceedings{DBLP:conf/lisa/Rath94,
+	title = "THE BNR Standard Login (A Login Configuration Manager).",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/rath.html",
+	author = "Christopher Rath"}
+
+@inproceedings{DBLP:conf/lisa/Riddle94,
+	title = "Automated Upgrades in a Lab Environment.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/riddle.html",
+	author = "Paul Riddle"}
+
+@inproceedings{DBLP:conf/lisa/RouillardM94,
+	title = "Config: A Mechanism for Installing and Tracking System Configurations.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/rouillard.html",
+	author = "John P. Rouillard and Richard B. Martin"}
+
+@inproceedings{DBLP:conf/lisa/RouillardM94a,
+	title = "Depot-Lite: A Mechanism for Managing Software.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/martin.html",
+	author = "John P. Rouillard and Richard B. Martin"}
+
+@inproceedings{DBLP:conf/lisa/ScharfV94,
+	title = "SENDS, a Tool for Managing Domain Naming and Electronic
+               Mail in a Large Organization.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/scharf.html",
+	author = "Jerry Scharf and Paul Vixie"}
+
+@inproceedings{DBLP:conf/lisa/Stanley94,
+	title = "The Road To UNIX: A Report from the Fourth Estate.",
+	author = "Jack Stanley"}
+
+@inproceedings{DBLP:conf/lisa/SwartzCD94,
+	title = "Adventures in the Evolution of a High-Bandwidth Network
+               for Central Servers.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/swartz.html",
+	author = "Karl L. Swartz and R. Les Cottrell and Marty Dart"}
+
+@inproceedings{DBLP:conf/lisa/Zwicky94,
+	title = "Getting More Work Out Of Work Tracking Systems.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa94/zwicky.html",
+	author = "Elizabeth D. Zwicky"}
+
+@default year = 1993
+
+@inproceedings{DBLP:conf/lisa/Archer93,
+	title = "Towards a POSIX Standard for Software Administration.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/archer.html",
+	author = "Barrie Archer"}
+
+@inproceedings{DBLP:conf/lisa/BentB93,
+	title = "System Administration as a User Interface: An Extended Metaphor.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/bent.html",
+	author = "Wilson H. Bent, Jr."}
+
+@inproceedings{DBLP:conf/lisa/Black93,
+	title = "Keynote Address: A Management View of Systems Administration.",
+	author = "John Black"}
+
+@inproceedings{DBLP:conf/lisa/Byrne93,
+	title = "Establishing and Administering a Public Access Internet
+               facility.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/byrne.html",
+	author = "Sheri Byrne"}
+
+@inproceedings{DBLP:conf/lisa/DagenaisBGLM93,
+	title = "LUDE: A Distributed Software Library.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/dagenais.html",
+	author = "Michel Dagenais and St{\'e}phane Boucher and Robert G{\'e}rin-Lajoie and Pierre Laplante and Pierre Mailhot"}
+
+@inproceedings{DBLP:conf/lisa/DeSimoneL93,
+	title = "Sysctl: A Distributed System Control Package.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/deSimone.html",
+	author = "Salvatore DeSimone and Christine Lombardi"}
+
+@inproceedings{DBLP:conf/lisa/Evard93,
+	title = "Collaborative Networked Communication: MUDs as Systems Tools.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/evard.html",
+	author = "R{\'e}my Evard"}
+
+@inproceedings{DBLP:conf/lisa/Gamble93,
+	title = "Implementing Execution Controls in Unix.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/gamble.html",
+	author = "Todd Gamble"}
+
+@inproceedings{DBLP:conf/lisa/Gregoire93,
+	title = "Delegation: Uniformity in Heterogeneous Distribued Administration.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/gregoire.html",
+	author = "Jean-Charles Gr{\'e}goire"}
+
+@inproceedings{DBLP:conf/lisa/HambridgeS93,
+	title = "Horses and Barn Doors: Evolution of Corporate Guidelines
+               for Internet Usage.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/hambridge.html",
+	author = "Sally Hambridge and Jeff Sedayao"}
+
+@inproceedings{DBLP:conf/lisa/HansenA93,
+	title = "Automated System Monitoring and Notification with Swatch.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/hansen.html",
+	author = "Stephen E. Hansen and E. Todd Atkins"}
+
+@inproceedings{DBLP:conf/lisa/HunterW93,
+	title = "Guerrilla System Administration: Scaling Small Group Systems
+               Administration To a Larger Installed Base.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/hunter.html",
+	author = "Tim Hunter and Scott Watanabe"}
+
+@inproceedings{DBLP:conf/lisa/Keves93,
+	title = "Open Systems Formal Evaluation Process.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/keves.html",
+	author = "Brian William Keves"}
+
+@inproceedings{DBLP:conf/lisa/Kubicki93,
+	title = "The System Administration Maturity Model - SAMM.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/kubicki.html",
+	author = "Carol Kubicki"}
+
+@inproceedings{DBLP:conf/lisa/LeonRT93,
+	title = "Our Users have Root!",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/deLeon.html",
+	author = "Laura de Leon and Mike Rodriquez and Brent Thompson"}
+
+@inproceedings{DBLP:conf/lisa/Lodin93,
+	title = "The Corporate Software Bank.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/lodin.html",
+	author = "Steven W. Lodin"}
+
+@inproceedings{DBLP:conf/lisa/McNutt93,
+	title = "Role-based System Administration or Who, What, Where, and
+               How.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/mcnutt.html",
+	author = "Dinah McNutt"}
+
+@inproceedings{DBLP:conf/lisa/McNuttP93,
+	title = "Where Did All The Bytes Go?",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/pearlman.html",
+	author = "Dinah McNutt and Michael Pearlman"}
+
+@inproceedings{DBLP:conf/lisa/Menter93,
+	title = "Managing the Mission Critical Environment.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/menter.html",
+	author = "E. Scott Menter"}
+
+@inproceedings{DBLP:conf/lisa/MillerSN93,
+	title = "satool - A System Administrator's Cockpit, An Implementation.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/miller.html",
+	author = "Todd C. Miller and Christopher Stirlen and Evi Nemeth"}
+
+@inproceedings{DBLP:conf/lisa/Pomeranz93,
+	title = "PLOD: Keep Track of What You're Doing.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/pomeranz.html",
+	author = "Hal Pomeranz"}
+
+@inproceedings{DBLP:conf/lisa/Satdeva93,
+	title = "Opening Remarks and Announcements.",
+	author = "Bjorn Satdeva"}
+
+@inproceedings{DBLP:conf/lisa/Satdeva93a,
+	title = "Methods for Maintaining One Source Tree in a Heterogeneous
+               Environment.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/satdeva.html",
+	author = "Bjorn Satdeva"}
+
+@inproceedings{DBLP:conf/lisa/Schaps093,
+	title = "A Practical Approach to NFS Response Time Monitoring.",
+	author = "Gary L. Schaps and Peter Bishop 0002"}
+
+@inproceedings{DBLP:conf/lisa/Schimmel93,
+	title = "A Case Study on Moves and Mergers.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/schimmel.html",
+	author = "John Schimmel"}
+
+@inproceedings{DBLP:conf/lisa/SchonwalderL93,
+	title = "How to Keep Track of Your Network Configuration.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/schonwalder.html",
+	author = "J{\"u}rgen Sch{\"o}nw{\"a}lder and Horst Langend{\"o}rfer"}
+
+@inproceedings{DBLP:conf/lisa/SilvaG93,
+	title = "The Amanda Network Backkup Manager.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/daSilva.html",
+	author = "James da Silva and {\'O}lafur Guthmundsson"}
+
+@inproceedings{DBLP:conf/lisa/Stolfa93,
+	title = "Simplifying System Administration Tasks: The UAMS Approach.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/stolfa.html",
+	author = "Roland J. Stolfa"}
+
+@inproceedings{DBLP:conf/lisa/Swartz93,
+	title = "Forecasting Disk Resource Requirements for a Usenet Server.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/swartz.html",
+	author = "Karl L. Swartz"}
+
+@inproceedings{DBLP:conf/lisa/WillsCM93,
+	title = "Customization in a UNIX Computing Environment.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/wills.html",
+	author = "Craig E. Wills and Kirstin Cadwell and William Marrs"}
+
+@inproceedings{DBLP:conf/lisa/Wong93,
+	title = "Local Disk Depot - Customizing the Software Environment.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/wong.html",
+	author = "Walter C. Wong"}
+
+@inproceedings{DBLP:conf/lisa/ZadokD93,
+	title = "HLFSD: Delivering Email to Your HOME.",
+	ee = "http://www.usenix.org/publications/library/proceedings/lisa93/zadok.html",
+	author = "Erez Zadok and Alexander Dupuy"}

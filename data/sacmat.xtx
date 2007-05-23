@@ -1,0 +1,856 @@
+@include conferences-cs
+
+@default bibsource = "DBLP, http://dblp.uni-trier.de"
+
+@default booktitle = sacmat
+
+@default year = 2006
+
+@inproceedings{DBLP:conf/sacmat/AtallahBF06,
+	title = "Key management for non-tree access hierarchies.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133062",
+	author = "Mikhail J. Atallah and Marina Blanton and Keith B. Frikken",
+	pages = "11-18"}
+
+@inproceedings{DBLP:conf/sacmat/ByunSB06,
+	title = "Systematic control and management of data integrity.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133074",
+	author = "Ji-Won Byun and Yonglak Sohn and Elisa Bertino",
+	pages = "101-110"}
+
+@inproceedings{DBLP:conf/sacmat/ChakrabortyR06,
+	title = "TrustBAC: integrating trust relationships into the RBAC
+               model for access control in open systems.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133067",
+	author = "Sudip Chakraborty and Indrajit Ray",
+	pages = "49-58"}
+
+@inproceedings{DBLP:conf/sacmat/ChenL06,
+	title = "Constraint generation for separation of duty.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133077",
+	author = "Hong Chen and Ninghui Li",
+	pages = "130-138"}
+
+@inproceedings{DBLP:conf/sacmat/CramptonLB06,
+	title = "The secondary and approximate authorization model and its
+               application to Bell-LaPadula policies.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133075",
+	author = "Jason Crampton and Wing Leung and Konstantin Beznosov",
+	pages = "111-120"}
+
+@inproceedings{DBLP:conf/sacmat/DuJ06,
+	title = "Supporting authorization query and inter-domain role mapping
+               in presence of hybrid role hierarchy.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133090",
+	author = "Siqing Du and James B. D. Joshi",
+	pages = "228-236"}
+
+@inproceedings{DBLP:conf/sacmat/JaegerSS06,
+	title = "PRIMA: policy-reduced integrity measurement architecture.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133063",
+	author = "Trent Jaeger and Reiner Sailer and Umesh Shankar",
+	pages = "19-28"}
+
+@inproceedings{DBLP:conf/sacmat/JainF06,
+	title = "Secure resource description framework: an access control
+               model.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133076",
+	author = "Amit Jain and Csilla Farkas",
+	pages = "121-129"}
+
+@inproceedings{DBLP:conf/sacmat/JinA06,
+	title = "Role-based access management for ad-hoc collaborative sharing.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133086",
+	author = "Jing Jin and Gail-Joon Ahn",
+	pages = "200-209"}
+
+@inproceedings{DBLP:conf/sacmat/JoshiB06,
+	title = "Fine-grained role-based delegation in presence of the hybrid
+               role hierarchy.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133071",
+	author = "James B. D. Joshi and Elisa Bertino",
+	pages = "81-90"}
+
+@inproceedings{DBLP:conf/sacmat/KaneB06,
+	title = "On classifying access control implementations for distributed
+               systems.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133064",
+	author = "Kevin Kane and James C. Browne",
+	pages = "29-38"}
+
+@inproceedings{DBLP:conf/sacmat/KepplerSJ06,
+	title = "Redirection policies for mission-based information sharing.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133088",
+	author = "David Keppler and Vipin Swarup and Sushil Jajodia",
+	pages = "210-218"}
+
+@inproceedings{DBLP:conf/sacmat/LeeWBW06,
+	title = "Traust: a trust negotiation-based authorization service
+               for open systems.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133066",
+	author = "Adam J. Lee and Marianne Winslett and Jim Basney and Von Welch",
+	pages = "39-48"}
+
+@inproceedings{DBLP:conf/sacmat/MazzoleniBC06,
+	title = "XACML policy integration algorithms: not to be confused
+               with XACML policy combination algorithms!",
+	ee = "http://doi.acm.org/10.1145/1133058.1133089",
+	author = "Pietro Mazzoleni and Elisa Bertino and Bruno Crispo",
+	pages = "219-227"}
+
+@inproceedings{DBLP:conf/sacmat/NodaTHMTS06,
+	title = "Integrating presence inference into trust management for
+               ubiquitous systems.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133068",
+	author = "Jun Noda and Mie Takahashi and Itaru Hosomi and Hisashi Mouri and Yoshiaki Takata and Hiroyuki Seki",
+	pages = "59-68"}
+
+@inproceedings{DBLP:conf/sacmat/PanML06,
+	title = "Semantic access control for information interoperation.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133091",
+	author = "Chi-Chun Pan and Prasenjit Mitra and Peng Liu",
+	pages = "237-246"}
+
+@inproceedings{DBLP:conf/sacmat/RavichandranY06,
+	title = "Trust management with delegation in grouped peer-to-peer
+               communities.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133070",
+	author = "Ajay Ravichandran and Jongpil Yoon",
+	pages = "71-80"}
+
+@inproceedings{DBLP:conf/sacmat/Schaad06,
+	title = "Security in enterprise resource planning systems and service-oriented
+               architectures.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133059",
+	author = "Andreas Schaad",
+	pages = "69-70"}
+
+@inproceedings{DBLP:conf/sacmat/SchaadLS06,
+	title = "A model-checking approach to analysing organisational controls
+               in a loan origination process.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133079",
+	author = "Andreas Schaad and Volkmar Lotz and Karsten Sohr",
+	pages = "139-149"}
+
+@inproceedings{DBLP:conf/sacmat/SeehusenS06,
+	title = "Information flow property preserving transformation of UML
+               interaction diagrams.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133080",
+	author = "Fredrik Seehusen and Ketil St{\o}len",
+	pages = "150-159"}
+
+@inproceedings{DBLP:conf/sacmat/Sreedhar06,
+	title = "Data-centric security: role analysis and role typestates.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133082",
+	author = "Vugranam C. Sreedhar",
+	pages = "170-179"}
+
+@inproceedings{DBLP:conf/sacmat/ThuraisinghamLBFK06,
+	title = "Access control, confidentiality and privacy for video surveillance
+               databases.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133061",
+	author = "Bhavani M. Thuraisingham and Gal Lavee and Elisa Bertino and Jianping Fan and Latifur Khan",
+	pages = "1-10"}
+
+@inproceedings{DBLP:conf/sacmat/TschantzK06,
+	title = "Towards reasonability properties for access-control policy
+               languages.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133081",
+	author = "Michael Carl Tschantz and Shriram Krishnamurthi",
+	pages = "160-169"}
+
+@inproceedings{DBLP:conf/sacmat/WangO06,
+	title = "Delegation in the role graph model.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133072",
+	author = "He Wang and Sylvia L. Osborn",
+	pages = "91-100"}
+
+@inproceedings{DBLP:conf/sacmat/WarnerA06,
+	title = "Inter-instance authorization constraints for secure workflow
+               management.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133085",
+	author = "Janice Warner and Vijayalakshmi Atluri",
+	pages = "190-199"}
+
+@inproceedings{DBLP:conf/sacmat/ZhangNCS06,
+	title = "A usage-based authorization framework for collaborative
+               computing systems.",
+	ee = "http://doi.acm.org/10.1145/1133058.1133084",
+	author = "Xinwen Zhang and Masayuki Nakae and Michael J. Covington and Ravi S. Sandhu",
+	pages = "180-189"}
+
+@default year = 2005
+
+@inproceedings{DBLP:conf/sacmat/AtluriW05,
+	title = "Supporting conditional delegation in secure workflow management
+               systems.",
+	ee = "http://doi.acm.org/10.1145/1063979.1063990",
+	author = "Vijayalakshmi Atluri and Janice Warner",
+	pages = "49-58"}
+
+@inproceedings{DBLP:conf/sacmat/BertinoCDP05,
+	title = "GEO-RBAC: a spatially aware RBAC.",
+	ee = "http://doi.acm.org/10.1145/1063979.1063985",
+	author = "Elisa Bertino and Barbara Catania and Maria Luisa Damiani and Paolo Perlasca",
+	pages = "29-37"}
+
+@inproceedings{DBLP:conf/sacmat/Beznosov05,
+	title = "Future direction of access control models, architectures,
+               and technologies.",
+	ee = "http://doi.acm.org/10.1145/1063979.1063988",
+	author = "Konstantin Beznosov",
+	pages = 48}
+
+@inproceedings{DBLP:conf/sacmat/BlantonA05,
+	title = "Provable bounds for portable and flexible privacy-preserving
+               access.",
+	ee = "http://doi.acm.org/10.1145/1063979.1063997",
+	author = "Marina Blanton and Mikhail J. Atallah",
+	pages = "95-101"}
+
+@inproceedings{DBLP:conf/sacmat/ByunBL05,
+	title = "Purpose based access control of complex data for privacy
+               protection.",
+	ee = "http://doi.acm.org/10.1145/1063979.1063998",
+	author = "Ji-Won Byun and Elisa Bertino and Ninghui Li",
+	pages = "102-110"}
+
+@inproceedings{DBLP:conf/sacmat/CarminatiF05,
+	title = "AC-XML documents: improving the performance of a web access
+               control module.",
+	ee = "http://doi.acm.org/10.1145/1063979.1063993",
+	author = "Barbara Carminati and Elena Ferrari",
+	pages = "67-76"}
+
+@inproceedings{DBLP:conf/sacmat/Crampton05,
+	title = "A reference monitor for workflow systems with constrained
+               task execution.",
+	ee = "http://doi.acm.org/10.1145/1063979.1063986",
+	author = "Jason Crampton",
+	pages = "38-47"}
+
+@inproceedings{DBLP:conf/sacmat/EtalleW05,
+	title = "Integrity constraints in trust management.",
+	ee = "http://doi.acm.org/10.1145/1063979.1063981",
+	author = "Sandro Etalle and William H. Winsborough",
+	pages = "1-10"}
+
+@inproceedings{DBLP:conf/sacmat/FerraioloGHK05,
+	title = "Composing and combining policies under the policy machine.",
+	ee = "http://doi.acm.org/10.1145/1063979.1063982",
+	author = "David F. Ferraiolo and Serban I. Gavrila and Vincent C. Hu and D. Richard Kuhn",
+	pages = "11-20"}
+
+@inproceedings{DBLP:conf/sacmat/HulseboschSBER05,
+	title = "Context sensitive access control.",
+	ee = "http://doi.acm.org/10.1145/1063979.1064000",
+	author = "R. J. Hulsebosch and Alfons H. Salden and Mortaza S. Bargh and P. W. G. Ebben and J. Reitsma",
+	pages = "111-119"}
+
+@inproceedings{DBLP:conf/sacmat/IwaiharaCAW05,
+	title = "Relevancy based access control of versioned XML documents.",
+	ee = "http://doi.acm.org/10.1145/1063979.1063995",
+	author = "Mizuho Iwaihara and Somchai Chatvichienchai and Chutiporn Anutariya and Vilas Wuwongse",
+	pages = "85-94"}
+
+@inproceedings{DBLP:conf/sacmat/KernW05,
+	title = "Rule support for role-based access control.",
+	ee = "http://doi.acm.org/10.1145/1063979.1064002",
+	author = "Axel Kern and Claudia Walhorn",
+	pages = "130-138"}
+
+@inproceedings{DBLP:conf/sacmat/KuperMR05,
+	title = "Generalized XML security views.",
+	ee = "http://doi.acm.org/10.1145/1063979.1063994",
+	author = "Gabriel M. Kuper and Fabio Massacci and Nataliya Rassadko",
+	pages = "77-84"}
+
+@inproceedings{DBLP:conf/sacmat/Matheus05,
+	title = "Declaration and enforcement of fine-grained access restrictions
+               for a service-based geospatial data infrastructure.",
+	ee = "http://doi.acm.org/10.1145/1063979.1063983",
+	author = "Andreas Matheus",
+	pages = "21-28"}
+
+@inproceedings{DBLP:conf/sacmat/RyutovZNLS05,
+	title = "Adaptive trust negotiation and access control.",
+	ee = "http://doi.acm.org/10.1145/1063979.1064004",
+	author = "Tatyana Ryutov and Li Zhou and B. Clifford Neuman and Travis Leithead and Kent E. Seamons",
+	pages = "139-146"}
+
+@inproceedings{DBLP:conf/sacmat/SandhuZ05,
+	title = "Peer-to-peer access control architecture using trusted computing
+               technology.",
+	ee = "http://doi.acm.org/10.1145/1063979.1064005",
+	author = "Ravi S. Sandhu and Xinwen Zhang",
+	pages = "147-158"}
+
+@inproceedings{DBLP:conf/sacmat/SchlegelmilchS05,
+	title = "Role mining with ORCA.",
+	ee = "http://doi.acm.org/10.1145/1063979.1064008",
+	author = "J{\"u}rgen Schlegelmilch and Ulrike Steffens",
+	pages = "168-176"}
+
+@inproceedings{DBLP:conf/sacmat/ShehabBG05,
+	title = "SERAT: SEcure role mApping technique for decentralized secure
+               interoperability.",
+	ee = "http://doi.acm.org/10.1145/1063979.1064007",
+	author = "Mohamed Shehab and Elisa Bertino and Arif Ghafoor",
+	pages = "159-167"}
+
+@inproceedings{DBLP:conf/sacmat/SongRFRGA05,
+	title = "Verifiable composition of access control and application
+               features.",
+	ee = "http://doi.acm.org/10.1145/1063979.1064001",
+	author = "Eunjee Song and Raghu Reddy and Robert B. France and Indrakshi Ray and Geri Georg and Roger Alexander",
+	pages = "120-129"}
+
+@inproceedings{DBLP:conf/sacmat/WainerK05,
+	title = "A fine-grained, controllable, user-to-user delegation method
+               in RBAC.",
+	ee = "http://doi.acm.org/10.1145/1063979.1063991",
+	author = "Jacques Wainer and Akhil Kumar",
+	pages = "59-66"}
+
+@default year = 2004
+
+@inproceedings{DBLP:conf/sacmat/AoM04,
+	title = "On the role of roles: from role-based to role-sensitive
+               access control.",
+	ee = "http://doi.acm.org/10.1145/990036.990044",
+	author = "Xuhui Ao and Naftaly H. Minsky",
+	pages = "51-60"}
+
+@inproceedings{DBLP:conf/sacmat/BertinoCJDS04,
+	title = "Security for grid-based computing systems issues and challenges.",
+	ee = "http://doi.acm.org/10.1145/990036.990056",
+	author = "Elisa Bertino and Bruno Crispo and James Joshi and Wengliang (Kevin) Du and Ravi S. Sandhu",
+	pages = 125}
+
+@inproceedings{DBLP:conf/sacmat/BhattiJBG04,
+	title = "X-GTRBAC admin: a decentralized administration model for
+               enterprise wide access control.",
+	ee = "http://doi.acm.org/10.1145/990036.990049",
+	author = "Rafae Bhatti and James Joshi and Elisa Bertino and Arif Ghafoor",
+	pages = "78-86"}
+
+@inproceedings{DBLP:conf/sacmat/BiskupW04,
+	title = "Towards a credential-based implementation of compound access
+               control policies.",
+	ee = "http://doi.acm.org/10.1145/990036.990042",
+	author = "Joachim Biskup and Sandra Wortmann",
+	pages = "31-40"}
+
+@inproceedings{DBLP:conf/sacmat/BykovaA04,
+	title = "Succinct specifications of portable document access policies.",
+	ee = "http://doi.acm.org/10.1145/990036.990043",
+	author = "Marina Bykova and Mikhail J. Atallah",
+	pages = "41-50"}
+
+@inproceedings{DBLP:conf/sacmat/DimmockBEBM04,
+	title = "Using trust and risk in role-based access control policies.",
+	ee = "http://doi.acm.org/10.1145/990036.990062",
+	author = "Nathan Dimmock and Andr{\'a}s Belokosztolszki and David M. Eyers and Jean Bacon and Ken Moody",
+	pages = "156-162"}
+
+@inproceedings{DBLP:conf/sacmat/FundulakiM04,
+	title = "Specifying access control policies for XML documents with
+               XPath.",
+	ee = "http://doi.acm.org/10.1145/990036.990046",
+	author = "Irini Fundulaki and Maarten Marx",
+	pages = "61-69"}
+
+@inproceedings{DBLP:conf/sacmat/HengartnerS04,
+	title = "Implementing access control to people location information.",
+	ee = "http://doi.acm.org/10.1145/990036.990039",
+	author = "Urs Hengartner and Peter Steenkiste",
+	pages = "11-20"}
+
+@inproceedings{DBLP:conf/sacmat/JaegerSZ04,
+	title = "Resolving constraint conflicts.",
+	ee = "http://doi.acm.org/10.1145/990036.990053",
+	author = "Trent Jaeger and Reiner Sailer and Xiaolan Zhang",
+	pages = "105-114"}
+
+@inproceedings{DBLP:conf/sacmat/KernKKR04,
+	title = "A meta model for authorisations in application security
+               systems and their integration into RBAC administration.",
+	ee = "http://doi.acm.org/10.1145/990036.990050",
+	author = "Axel Kern and Martin Kuhlmann and Rainer Kuropka and Andreas Ruthert",
+	pages = "87-96"}
+
+@inproceedings{DBLP:conf/sacmat/KochMP04,
+	title = "Administrative scope in the graph-based framework.",
+	ee = "http://doi.acm.org/10.1145/990036.990051",
+	author = "Manuel Koch and Luigi V. Mancini and Francesco Parisi-Presicce",
+	pages = "97-104"}
+
+@inproceedings{DBLP:conf/sacmat/LiT04,
+	title = "Security analysis in role-based access control.",
+	ee = "http://doi.acm.org/10.1145/990036.990058",
+	author = "Ninghui Li and Mahesh V. Tripunitara",
+	pages = "126-135"}
+
+@inproceedings{DBLP:conf/sacmat/ParkCND04,
+	title = "A composite rbac approach for large, complex organizations.",
+	ee = "http://doi.acm.org/10.1145/990036.990063",
+	author = "Joon S. Park and Keith P. Costello and Teresa M. Neven and Josh A. Diosomito",
+	pages = "163-172"}
+
+@inproceedings{DBLP:conf/sacmat/RayLFK04,
+	title = "Using uml to visualize role-based access control constraints.",
+	ee = "http://doi.acm.org/10.1145/990036.990054",
+	author = "Indrakshi Ray and Na Li and Robert B. France and Dae-Kyoo Kim",
+	pages = "115-124"}
+
+@inproceedings{DBLP:conf/sacmat/TamassiaYW04,
+	title = "Role-based cascaded delegation.",
+	ee = "http://doi.acm.org/10.1145/990036.990061",
+	author = "Roberto Tamassia and Danfeng Yao and William H. Winsborough",
+	pages = "146-155"}
+
+@inproceedings{DBLP:conf/sacmat/WangO04,
+	title = "A role-based approach to access control for XML databases.",
+	ee = "http://doi.acm.org/10.1145/990036.990047",
+	author = "Jingzhu Wang and Sylvia L. Osborn",
+	pages = "70-77"}
+
+@inproceedings{DBLP:conf/sacmat/WeddeL04,
+	title = "Role-based access control in ambient and remote space.",
+	ee = "http://doi.acm.org/10.1145/990036.990040",
+	author = "Horst Wedde and Mario Lischka",
+	pages = "21-30"}
+
+@inproceedings{DBLP:conf/sacmat/ZaninM04,
+	title = "Towards a formal model for security policies specification
+               and validation in the selinux system.",
+	ee = "http://doi.acm.org/10.1145/990036.990059",
+	author = "Giorgio Zanin and Luigi V. Mancini",
+	pages = "136-145"}
+
+@inproceedings{DBLP:conf/sacmat/ZhangPPS04,
+	title = "A logical specification for usage control.",
+	ee = "http://doi.acm.org/10.1145/990036.990038",
+	author = "Xinwen Zhang and Jaehong Park and Francesco Parisi-Presicce and Ravi S. Sandhu",
+	pages = "1-10"}
+
+@default year = 2003
+
+@inproceedings{DBLP:conf/sacmat/AbendrothJ03,
+	title = "Partial outsourcing: a new paradigm for access control.",
+	ee = "http://doi.acm.org/10.1145/775412.775429",
+	author = "Joerg Abendroth and Christian Damsgaard Jensen",
+	pages = "134-141"}
+
+@inproceedings{DBLP:conf/sacmat/AhmedT03,
+	title = "Static verification of security requirements in role based
+               CSCW systems.",
+	ee = "http://doi.acm.org/10.1145/775412.775438",
+	author = "Tanvir Ahmed and Anand R. Tripathi",
+	pages = "196-203"}
+
+@inproceedings{DBLP:conf/sacmat/Al-KahtaniS03,
+	title = "Induced role hierarchies with attribute-based RBAC.",
+	ee = "http://doi.acm.org/10.1145/775412.775430",
+	author = "Mohammad A. Al-Kahtani and Ravi S. Sandhu",
+	pages = "142-148"}
+
+@inproceedings{DBLP:conf/sacmat/BasinDL03,
+	title = "Model driven security for process-oriented systems.",
+	ee = "http://doi.acm.org/10.1145/775412.775425",
+	author = "David A. Basin and J{\"u}rgen Doser and Torsten Lodderstedt",
+	pages = "100-109"}
+
+@inproceedings{DBLP:conf/sacmat/BenferhatBC03,
+	title = "A stratification-based approach for handling conflicts in
+               access control.",
+	ee = "http://doi.acm.org/10.1145/775412.775437",
+	author = "Salem Benferhat and Rania El Baida and Fr{\'e}d{\'e}ric Cuppens",
+	pages = "189-195"}
+
+@inproceedings{DBLP:conf/sacmat/BertinoMCF03,
+	title = "An infrastructure for managing secure update operations
+               on XML data.",
+	ee = "http://doi.acm.org/10.1145/775412.775426",
+	author = "Elisa Bertino and Giovanni Mella and Gianluca Correndo and Elena Ferrari",
+	pages = "110-122"}
+
+@inproceedings{DBLP:conf/sacmat/Crampton03,
+	title = "Specifying and enforcing constraints in role-based access
+               control.",
+	ee = "http://doi.acm.org/10.1145/775412.775419",
+	author = "Jason Crampton",
+	pages = "43-50"}
+
+@inproceedings{DBLP:conf/sacmat/FerraioloCAG03,
+	title = "The role control center: features and case studies.",
+	ee = "http://doi.acm.org/10.1145/775412.775415",
+	author = "David F. Ferraiolo and Ramaswamy Chandramouli and Gail-Joon Ahn and Serban I. Gavrila",
+	pages = "12-20"}
+
+@inproceedings{DBLP:conf/sacmat/HarringtonJ03,
+	title = "Cryptographic access control in a distributed file system.",
+	ee = "http://doi.acm.org/10.1145/775412.775432",
+	author = "Anthony Harrington and Christian Damsgaard Jensen",
+	pages = "158-165"}
+
+@inproceedings{DBLP:conf/sacmat/HessS03,
+	title = "An access control model for dynamic client-side content.",
+	ee = "http://doi.acm.org/10.1145/775412.775440",
+	author = "Adam Hess and Kent E. Seamons",
+	pages = "207-216"}
+
+@inproceedings{DBLP:conf/sacmat/JoshiSGB03,
+	title = "Dependencies and separation of duty constraints in GTRBAC.",
+	ee = "http://doi.acm.org/10.1145/775412.775420",
+	author = "James Joshi and Basit Shafiq and Arif Ghafoor and Elisa Bertino",
+	pages = "51-64"}
+
+@inproceedings{DBLP:conf/sacmat/KernSM03,
+	title = "An administration concept for the enterprise role-based
+               access control model.",
+	ee = "http://doi.acm.org/10.1145/775412.775414",
+	author = "Axel Kern and Andreas Schaad and Jonathan D. Moffett",
+	pages = "3-11"}
+
+@inproceedings{DBLP:conf/sacmat/KuhlmannSS03,
+	title = "Role mining - revealing business roles for security administration
+               using data mining technology.",
+	ee = "http://doi.acm.org/10.1145/775412.775435",
+	author = "Martin Kuhlmann and Dalia Shohat and Gerhard Schimpf",
+	pages = "179-186"}
+
+@inproceedings{DBLP:conf/sacmat/LongstaffLN03,
+	title = "The tees confidentiality model: an authorisation model for
+               identities and roles.",
+	ee = "http://doi.acm.org/10.1145/775412.775428",
+	author = "Jim J. Longstaff and Mike A. Lockyer and John Nicholas",
+	pages = "125-133"}
+
+@inproceedings{DBLP:conf/sacmat/McDaniel03,
+	title = "On context in authorization policy.",
+	ee = "http://doi.acm.org/10.1145/775412.775422",
+	author = "Patrick Drew McDaniel",
+	pages = "80-89"}
+
+@inproceedings{DBLP:conf/sacmat/NaldurgC03,
+	title = "Dynamic access control: preserving safety and trust for
+               network defense operations.",
+	ee = "http://doi.acm.org/10.1145/775412.775442",
+	author = "Prasad Naldurg and Roy H. Campbell",
+	pages = "231-237"}
+
+@inproceedings{DBLP:conf/sacmat/NeumannS03,
+	title = "An approach to engineer and enforce context constraints
+               in an RBAC environment.",
+	ee = "http://doi.acm.org/10.1145/775412.775421",
+	author = "Gustaf Neumann and Mark Strembeck",
+	pages = "65-79"}
+
+@inproceedings{DBLP:conf/sacmat/OsbornHL03,
+	title = "A methodology for managing roles in legacy systems.",
+	ee = "http://doi.acm.org/10.1145/775412.775417",
+	author = "Sylvia L. Osborn and Yan Han and Jun Liu",
+	pages = "33-40"}
+
+@inproceedings{DBLP:conf/sacmat/ParkH03,
+	title = "Role-based access control for collaborative enterprise in
+               peer-to-peer computing environments.",
+	ee = "http://doi.acm.org/10.1145/775412.775424",
+	author = "Joon S. Park and Junseok Hwang",
+	pages = "93-99"}
+
+@inproceedings{DBLP:conf/sacmat/ShinACJ03,
+	title = "On modeling system-centric information for role engineering.",
+	ee = "http://doi.acm.org/10.1145/775412.775434",
+	author = "Dongwan Shin and Gail-Joon Ahn and Sangrae Cho and Seunghun Jin",
+	pages = "169-178"}
+
+@inproceedings{DBLP:conf/sacmat/TeoAZ03,
+	title = "Dynamic and risk-aware network access management.",
+	ee = "http://doi.acm.org/10.1145/775412.775441",
+	author = "Lawrence Teo and Gail-Joon Ahn and Yuliang Zheng",
+	pages = "217-230"}
+
+@inproceedings{DBLP:conf/sacmat/WeddeL03,
+	title = "Cooperative role-based administration.",
+	ee = "http://doi.acm.org/10.1145/775412.775416",
+	author = "Horst Wedde and Mario Lischka",
+	pages = "21-32"}
+
+@inproceedings{DBLP:conf/sacmat/ZhangOS03,
+	title = "PBDM: a flexible delegation model in RBAC.",
+	ee = "http://doi.acm.org/10.1145/775412.775431",
+	author = "Xinwen Zhang and Sejong Oh and Ravi S. Sandhu",
+	pages = "149-157"}
+
+@default year = 2002
+
+@inproceedings{DBLP:conf/sacmat/BertinoJMOR02,
+	title = "Making access control more usable.",
+	ee = "http://doi.acm.org/10.1145/507711.507734",
+	author = "Elisa Bertino and Trent Jaeger and Jonathan D. Moffett and Sylvia L. Osborn and Ravi Ravi",
+	pages = 141}
+
+@inproceedings{DBLP:conf/sacmat/ChadwickO02,
+	title = "The PERMIS X.509 role based privilege management infrastructure.",
+	ee = "http://doi.acm.org/10.1145/507711.507732",
+	author = "David W. Chadwick and Alexander Otenko",
+	pages = "135-140"}
+
+@inproceedings{DBLP:conf/sacmat/CohenTWS02,
+	title = "Models for coalition-based access control (CBAC).",
+	ee = "http://doi.acm.org/10.1145/507711.507727",
+	author = "Eve Cohen and Roshan K. Thomas and William H. Winsborough and Deborah Shands",
+	pages = "97-106"}
+
+@inproceedings{DBLP:conf/sacmat/Crampton02,
+	title = "Administrative scope and role hierarchy operations.",
+	ee = "http://doi.acm.org/10.1145/507711.507736",
+	author = "Jason Crampton",
+	pages = "145-154"}
+
+@inproceedings{DBLP:conf/sacmat/EnglerIJW02,
+	title = "Cool security trends.",
+	ee = "http://doi.acm.org/10.1145/507711.507720",
+	author = "Dawson R. Engler and Cynthia E. Irvine and Trent Jaeger and David Wagner",
+	pages = 53}
+
+@inproceedings{DBLP:conf/sacmat/JaegerEZ02,
+	title = "Managing access control policies using access control spaces.",
+	ee = "http://doi.acm.org/10.1145/507711.507713",
+	author = "Trent Jaeger and Antony Edwards and Xiaolan Zhang",
+	pages = "3-12"}
+
+@inproceedings{DBLP:conf/sacmat/JoshiBG02,
+	title = "Temporal hierarchies and inheritance semantics for GTRBAC.",
+	ee = "http://doi.acm.org/10.1145/507711.507724",
+	author = "James Joshi and Elisa Bertino and Arif Ghafoor",
+	pages = "74-83"}
+
+@inproceedings{DBLP:conf/sacmat/KernKSM02,
+	title = "Observations on the role life-cycle in the context of enterprise
+               security management.",
+	ee = "http://doi.acm.org/10.1145/507711.507718",
+	author = "Axel Kern and Martin Kuhlmann and Andreas Schaad and Jonathan D. Moffett",
+	pages = "43-51"}
+
+@inproceedings{DBLP:conf/sacmat/NeumannS02,
+	title = "A scenario-driven role engineering process for functional
+               RBAC roles.",
+	ee = "http://doi.acm.org/10.1145/507711.507717",
+	author = "Gustaf Neumann and Mark Strembeck",
+	pages = "33-42"}
+
+@inproceedings{DBLP:conf/sacmat/OhS02,
+	title = "A model for role administration using organization structure.",
+	ee = "http://doi.acm.org/10.1145/507711.507737",
+	author = "Sejong Oh and Ravi S. Sandhu",
+	pages = "155-162"}
+
+@inproceedings{DBLP:conf/sacmat/Osborn02,
+	title = "Information flow analysis of an RBAC system.",
+	ee = "http://doi.acm.org/10.1145/507711.507738",
+	author = "Sylvia L. Osborn",
+	pages = "163-168"}
+
+@inproceedings{DBLP:conf/sacmat/ParkS02,
+	title = "Towards usage control models: beyond traditional access
+               control.",
+	ee = "http://doi.acm.org/10.1145/507711.507722",
+	author = "Jaehong Park and Ravi S. Sandhu",
+	pages = "57-64"}
+
+@inproceedings{DBLP:conf/sacmat/PhillipsTD02,
+	title = "Information sharing and security in dynamic coalitions.",
+	ee = "http://doi.acm.org/10.1145/507711.507726",
+	author = "Charles E. Phillips and T. C. Ting and Steven A. Demurjian",
+	pages = "87-96"}
+
+@inproceedings{DBLP:conf/sacmat/RayRN02,
+	title = "A cryptographic solution to implement access control in
+               a hierarchy and more.",
+	ee = "http://doi.acm.org/10.1145/507711.507723",
+	author = "Indrakshi Ray and Indrajit Ray and Natu Narasimhamurthi",
+	pages = "65-73"}
+
+@inproceedings{DBLP:conf/sacmat/SchaadM02,
+	title = "A lightweight approach to specification and analysis of
+               role-based access control extensions.",
+	ee = "http://doi.acm.org/10.1145/507711.507714",
+	author = "Andreas Schaad and Jonathan D. Moffett",
+	pages = "13-22"}
+
+@inproceedings{DBLP:conf/sacmat/SirerW02,
+	title = "An access control language for web services.",
+	ee = "http://doi.acm.org/10.1145/507711.507715",
+	author = "Emin G{\"u}n Sirer and Ke Wang",
+	pages = "23-30"}
+
+@inproceedings{DBLP:conf/sacmat/WilikensFSM02,
+	title = "A context-related authorization and access control method
+               based on RBAC.",
+	ee = "http://doi.acm.org/10.1145/507711.507730",
+	author = "Marc Wilikens and Simone Feriti and Alberto Sanna and Marcelo Masera",
+	pages = "117-124"}
+
+@inproceedings{DBLP:conf/sacmat/ZhangAC02,
+	title = "A role-based delegation framework for healthcare information
+               systems.",
+	ee = "http://doi.acm.org/10.1145/507711.507731",
+	author = "Longhua Zhang and Gail-Joon Ahn and Bei-tseng Chu",
+	pages = "125-134"}
+
+@inproceedings{DBLP:conf/sacmat/ZhangK02,
+	title = "An authorization infrastructure for nomadic computing.",
+	ee = "http://doi.acm.org/10.1145/507711.507728",
+	author = "Kan Zhang and Tim Kindberg",
+	pages = "107-113"}
+
+@default year = 2001
+
+@inproceedings{DBLP:conf/sacmat/BertinoCF01,
+	title = "On specifying security policies for web documents with an
+               XML-based language.",
+	ee = "http://doi.acm.org/10.1145/373256.373264",
+	author = "Elisa Bertino and Silvana Castano and Elena Ferrari",
+	pages = "57-65"}
+
+@inproceedings{DBLP:conf/sacmat/BertinoCFP01,
+	title = "A logical framework for reasoning about access control models.",
+	ee = "http://doi.acm.org/10.1145/373256.373261",
+	author = "Elisa Bertino and Barbara Catania and Elena Ferrari and Paolo Perlasca",
+	pages = "41-52"}
+
+@inproceedings{DBLP:conf/sacmat/CovingtonLSDAA01,
+	title = "Securing context-aware applications using environment roles.",
+	ee = "http://doi.acm.org/10.1145/373256.373258",
+	author = "Michael J. Covington and Wende Long and Srividhya Srinivasan and Anind K. Dey and Mustaque Ahamad and Gregory D. Abowd",
+	pages = "10-20"}
+
+@inproceedings{DBLP:conf/sacmat/Ferraiolo01,
+	title = "An argument for the role-based access control model.",
+	ee = "http://doi.acm.org/10.1145/373256.378405",
+	author = "David F. Ferraiolo",
+	pages = "142-143"}
+
+@inproceedings{DBLP:conf/sacmat/FraserFMSSW01,
+	title = "Panel: which access control technique will provide the greatest
+               overall benefit-Abstract.",
+	ee = "http://doi.acm.org/10.1145/373256.373283",
+	author = "Timothy Fraser and David F. Ferraiolo and Mikel L. Matthews and Casey Schaufler and Stephen Smalley and Robert Watson",
+	pages = 141}
+
+@inproceedings{DBLP:conf/sacmat/GeorgiadisMPT01,
+	title = "Flexible team-based access control using contexts.",
+	ee = "http://doi.acm.org/10.1145/373256.373259",
+	author = "Christos K. Georgiadis and Ioannis Mavridis and George Pangalos and Roshan K. Thomas",
+	pages = "21-27"}
+
+@inproceedings{DBLP:conf/sacmat/Jaeger01,
+	title = "Managing access control complexity using metrices.",
+	ee = "http://doi.acm.org/10.1145/373256.373283",
+	author = "Trent Jaeger",
+	pages = "131-139"}
+
+@inproceedings{DBLP:conf/sacmat/KangPF01,
+	title = "Access control mechanisms for inter-organizational workflow.",
+	ee = "http://doi.acm.org/10.1145/373256.373266",
+	author = "Myong H. Kang and Joon S. Park and Judith N. Froscher",
+	pages = "66-74"}
+
+@inproceedings{DBLP:conf/sacmat/KochMP01,
+	title = "On the specification and evolution of access control policies.",
+	ee = "http://doi.acm.org/10.1145/373256.373280",
+	author = "Manuel Koch and Luigi V. Mancini and Francesco Parisi-Presicce",
+	pages = "121-130"}
+
+@inproceedings{DBLP:conf/sacmat/Matthews01,
+	title = "Position paper.",
+	ee = "http://doi.acm.org/10.1145/373256.378406",
+	author = "Mikel L. Matthews",
+	pages = 144}
+
+@inproceedings{DBLP:conf/sacmat/NittaST01,
+	title = "Security verification of programs with stack inspection.",
+	ee = "http://doi.acm.org/10.1145/373256.373260",
+	author = "Naoya Nitta and Hiroyuki Seki and Yoshiaki Takata",
+	pages = "31-40"}
+
+@inproceedings{DBLP:conf/sacmat/Perwaiz01,
+	title = "Structured management of role-permission relationships.",
+	ee = "http://doi.acm.org/10.1145/373256.373292",
+	author = "Najam Perwaiz",
+	pages = "163-169"}
+
+@inproceedings{DBLP:conf/sacmat/SandhuBJKL01,
+	title = "Panel: The next generation of acess control models (panel
+               session): do we need them and what should they be?",
+	ee = "http://doi.acm.org/10.1145/373256.373262",
+	author = "Ravi S. Sandhu and Elisa Bertino and Trent Jaeger and D. Richard Kuhn and Carl E. Landwehr",
+	pages = 53}
+
+@inproceedings{DBLP:conf/sacmat/SchaadMJ01,
+	title = "The role-based access control system of a European bank:
+               a case study and discussion.",
+	ee = "http://doi.acm.org/10.1145/373256.373257",
+	author = "Andreas Schaad and Jonathan D. Moffett and Jeremy Jacob",
+	pages = "3-9"}
+
+@inproceedings{DBLP:conf/sacmat/Schaufler01,
+	title = "They want froot loops why industry will continue to deliver
+               multi-level security.",
+	ee = "http://doi.acm.org/10.1145/373256.378407",
+	author = "Casey Schaufler",
+	pages = "145-146"}
+
+@inproceedings{DBLP:conf/sacmat/Smalley01,
+	title = "Which operating system access control technique will provide
+               the greatest overall benefit to users?.",
+	ee = "http://doi.acm.org/10.1145/373256.378409",
+	author = "Stephen Smalley",
+	pages = "147-148"}
+
+@inproceedings{DBLP:conf/sacmat/SwiftBDGHCGJ01,
+	title = "Improving the granularity of access control in Windows NT.",
+	ee = "http://doi.acm.org/10.1145/373256.373271",
+	author = "Michael M. Swift and Peter Brundrett and Cliff Van Dyke and Praerit Garg and Anne Hopkins and Shannon Chan and Mario Goertzel and Gregory Jensenworth",
+	pages = "87-96"}
+
+@inproceedings{DBLP:conf/sacmat/TidswellP01,
+	title = "A graphical definition of authorization schema in the DTAC
+               model.",
+	ee = "http://doi.acm.org/10.1145/373256.373276",
+	author = "Jonathon Tidswell and John Potter",
+	pages = "109-120"}
+
+@inproceedings{DBLP:conf/sacmat/Watson01,
+	title = "Statement for SACMAT 2001 panel.",
+	ee = "http://doi.acm.org/10.1145/373256.378411",
+	author = "Robert Watson",
+	pages = 149}
+
+@inproceedings{DBLP:conf/sacmat/WeddeL01,
+	title = "Modular authorization.",
+	ee = "http://doi.acm.org/10.1145/373256.373274",
+	author = "Horst Wedde and Mario Lischka",
+	pages = "97-105"}
+
+@inproceedings{DBLP:conf/sacmat/YaoMB01,
+	title = "A model of OASIS role-based access control and its support
+               for active security.",
+	ee = "http://doi.acm.org/10.1145/373256.373294",
+	author = "Walt Yao and Ken Moody and Jean Bacon",
+	pages = "171-181"}
+
+@inproceedings{DBLP:conf/sacmat/ZhangAC01,
+	title = "A rule-based framework for role based delegation.",
+	ee = "http://doi.acm.org/10.1145/373256.373289",
+	author = "Longhua Zhang and Gail-Joon Ahn and Bei-tseng Chu",
+	pages = "153-162"}
+
+@inproceedings{DBLP:conf/sacmat/AkkerSC01,
+	title = "The YGuard access control model: set-based access control.",
+	ee = "http://doi.acm.org/10.1145/373256.373268",
+	author = "Ty van den Akker and Quinn Snell and Mark J. Clement",
+	pages = "75-84"}

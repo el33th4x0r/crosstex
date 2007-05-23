@@ -1,0 +1,3491 @@
+@include conferences-cs
+
+@default bibsource = "DBLP, http://dblp.uni-trier.de"
+
+@default booktitle = hpdc
+
+@default year = 2004
+
+@inproceedings{DBLP:conf/hpdc/Abu-GhazalehLG04,
+	title = "Differential Serialization for Optimized SOAP Performance.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.8",
+	author = "Nayef Abu-Ghazaleh and Michael J. Lewis and Madhusudhan Govindaraju",
+	pages = "55-64"}
+
+@inproceedings{DBLP:conf/hpdc/AndradeBCM04,
+	title = "Discouraging Free Riding in a Peer-to-Peer CPU-Sharing Grid.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.9",
+	author = "Nazareno Andrade and Francisco Vilar Brasileiro and Walfredo Cirne and Miranda Mowbray",
+	pages = "129-137"}
+
+@inproceedings{DBLP:conf/hpdc/Aycock04,
+	title = "MPI Ruby with Remote Memory Access.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.24",
+	author = "Christopher C. Aycock",
+	pages = "280-281"}
+
+@inproceedings{DBLP:conf/hpdc/Boisseau04,
+	title = "UT Grid: A Comprehensive Campus Cyberinfrastructure.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.39",
+	author = "John R. Boisseau",
+	pages = "274-275"}
+
+@inproceedings{DBLP:conf/hpdc/ChenRA04,
+	title = "GATES: A Grid-Based Middleware for Processing Distributed
+               Data Streams.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.16",
+	author = "Liang Chen and Kolagatla Reddy and Gagan Agrawal",
+	pages = "192-201"}
+
+@inproceedings{DBLP:conf/hpdc/ChervenakPBKS04,
+	title = "Performance and Scalability of a Replica Location Service.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.27",
+	author = "Ann L. Chervenak and Naveen Palavalli and Shishir Bharathi and Carl Kesselman and Robert Schwartzkopf",
+	pages = "182-191"}
+
+@inproceedings{DBLP:conf/hpdc/ChungH04,
+	title = "Automated Cluster-Based Web Service Performance Tuning.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.4",
+	author = "I-Hsin Chung and Jeffrey K. Hollingsworth",
+	pages = "36-44"}
+
+@inproceedings{DBLP:conf/hpdc/DahanTRSUWB04,
+	title = "Grid Portal Toolkit 3.0 (GridPort).",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.19",
+	author = "Maytal Dahan and Mary Thomas and Eric Roberts and Akhil Seth and Tomislav Urban and David Walling and John R. Boisseau",
+	pages = "272-273"}
+
+@inproceedings{DBLP:conf/hpdc/DenisAHVKB04,
+	title = "Wide-Area Communication for Grids: An Integrated Solution
+               to Connectivity, Performance and Security Problems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.41",
+	author = "Alexandre Denis and Olivier Aumage and Rutger F. H. Hofman and Kees Verstoep and Thilo Kielmann and Henri E. Bal",
+	pages = "97-106"}
+
+@inproceedings{DBLP:conf/hpdc/DubnickiUK04,
+	title = "FPN: A Distributed Hash Table for Commercial Applications.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.14",
+	author = "Cezary Dubnicki and Cristian Ungureanu and Wojciech Kilian",
+	pages = "120-128"}
+
+@inproceedings{DBLP:conf/hpdc/FosterGGMMRSVSYABDSYLSSXABABEFGGHKKPSWWBSHAGHLPQSFvCKSPCJKLOSTGMLMBDEGMSVWZZACKPRZMJPTSCDFKMOVDMSBCDKPRKMBS04,
+	title = "The Grid2003 Production Grid: Principles and Practice.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.36",
+	author = "Ian T. Foster and Jerry Gieraltowski and Scott Gose and Natalia Maltsev and Edward N. May and Alex Rodriguez and Dinanath Sulakhe and A. Vaniachine and Jim Shank and Saul Youssef and David Adams and Rich Baker and Wensheng Deng and Jason Smith and Dantong Yu and Iosif Legrand and Suresh Singh and Conrad Steenberg and Yang Xia and M. Anzar Afaq and Eileen Berman and James Annis and L. A. T. Bauerdick and Michael Ernst and Ian Fisk and Lisa Giacchetti and Gregory E. Graham and Anne Heavey and Joseph Kaiser and Nickolai Kuropatkin and Ruth Pordes and Vijay Sekhri and John Weigand and Yujun Wu and Keith Baker and Lawrence Sorrillo and John Huth and Matthew Allen and Leigh Grundhoefer and John Hicks and Fred Luehring and Steve Peck and Rob Quick and Stephen Simms and George Fekete and Jan vandenBerg and Kihyeon Cho and Kihwan Kwon and Dongchul Son and Hyoungwoo Park and Shane Canon and Keith R. Jackson and David E. Konerding and Jason Lee and Doug Olson and Iowa Sakrejda and Brian Tierney and Mark Green and Russ Miller and James Letts and Terrence Martin and David Bury and Catalin Dumitrescu and Daniel Engh and Robert Gardner and Marco Mambelli and Yuri Smirnov and Jens-S. V{\"o}ckler and Michael Wilde and Yong Zhao and Xin Zhao and Paul Avery and Richard Cavanaugh and Bockjoo Kim and Craig Prescott and Jorge Luis Rodriguez and Andrew Zahn and Shawn McKee and Christopher T. Jordan and James E. Prewett and Timothy L. Thomas and Horst Severini and Ben Clifford and Ewa Deelman and Larry Flon and Carl Kesselman and Gaurang Mehta and Nosa Olomu and Karan Vahi and Kaushik De and Patrick McGuigan and Mark Sosebee and Dan Bradley and Peter Couvares and Alan DeSmet and Carey Kireyev and Erik Paulson and Alain Roy and Scott Koranda and Brian Moe and Bobby Brown and Paul Sheldon",
+	pages = "236-245"}
+
+@inproceedings{DBLP:conf/hpdc/GilburdSW04,
+	title = "Privacy-Preserving Data Mining on Data Grids in the Presence
+               of Malicious Participants.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.29",
+	author = "Bobi Gilburd and Assaf Schuster and Ran Wolff",
+	pages = "225-234"}
+
+@inproceedings{DBLP:conf/hpdc/GuNY04,
+	title = "SpiderNet: An Integrated Peer-to-Peer Service Composition
+               Framework.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.32",
+	author = "Xiaohui Gu and Klara Nahrstedt and Bin Yu",
+	pages = "110-119"}
+
+@inproceedings{DBLP:conf/hpdc/GullapalliDHMPS04,
+	title = "Showcasing the Features and Capabilities of NEESgrid: A
+               Grid Based System for the Earthquake Engineering Domain.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.31",
+	author = "Sridhar Gullapalli and Shirley Dyke and Paul Hubbard and Doru Marcusiu and Laura Pearlman and Charles Severance",
+	pages = "268-269"}
+
+@inproceedings{DBLP:conf/hpdc/GuptaLD04,
+	title = "Measuring and Understanding User Comfort With Resource Borrowing.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.21",
+	author = "Ashish Gupta and Bin Lin and Peter A. Dinda",
+	pages = "214-224"}
+
+@inproceedings{DBLP:conf/hpdc/HauptKACK04,
+	title = "SPURport.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.33",
+	author = "Tomasz Haupt and Anand Kalyanasundaram and Nisreen Ammari and Archana Chilukuri and Maxim Khotournenko",
+	pages = "266-267"}
+
+@inproceedings{DBLP:conf/hpdc/HongLKLP04,
+	title = "GAIS: Grid Advanced Information Service based on P2P Mechanism.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.15",
+	author = "Wontaek Hong and Minyeol Lim and Eunsung Kim and Jongsuk Lee and Hyoungwoo Park",
+	pages = "276-277"}
+
+@inproceedings{DBLP:conf/hpdc/HuangS04,
+	title = "Building Self-Configuring Services Using Service-Specific
+               Knowledge.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.6",
+	author = "An-Cheng Huang and Peter Steenkiste",
+	pages = "45-54"}
+
+@inproceedings{DBLP:conf/hpdc/IrwinGC04,
+	title = "Balancing Risk and Reward in a Market-Based Task Service.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.5",
+	author = "David E. Irwin and Laura E. Grit and Jeffrey S. Chase",
+	pages = "160-169"}
+
+@inproceedings{DBLP:conf/hpdc/KichkayloK04,
+	title = "Optimal Resource-Aware Deployment Planning for Component-Based
+               Distributed Applications.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.25",
+	author = "Tatiana Kichkaylo and Vijay Karamcheti",
+	pages = "150-159"}
+
+@inproceedings{DBLP:conf/hpdc/KramerM04,
+	title = "Utilization of a Local Grid of Mac OS X-Based Computers
+               using Xgrid.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.40",
+	author = "David A. Kramer and Matthew MacInnis",
+	pages = "264-265"}
+
+@inproceedings{DBLP:conf/hpdc/KwonHKL04,
+	title = "GRASP: A Grid Resource Allocation System based on OGSA.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.18",
+	author = "Oh-Kyoung Kwon and Jaegyoon Hahm and Sangwan Kim and Jongsuk Lee",
+	pages = "278-279"}
+
+@inproceedings{DBLP:conf/hpdc/PearlmanKGSFRFHS04,
+	title = "Distributed Hybrid Earthquake Engineering Experiments: Experiences
+               with a Ground-Shaking Grid Application.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.11",
+	author = "Laura Pearlman and Carl Kesselman and Sridhar Gullapalli and B. F. Spencer, Jr. and Joe Futrelle and Kathleen Ricker and Ian T. Foster and Paul Hubbard and Charles Severance",
+	pages = "14-23"}
+
+@inproceedings{DBLP:conf/hpdc/QiaoSD04,
+	title = "An Empirical Study of the Multiscale Predictability of Network
+               Traffic.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.3",
+	author = "Yi Qiao and Jason Skicewicz and Peter A. Dinda",
+	pages = "66-76"}
+
+@inproceedings{DBLP:conf/hpdc/RipeanuBCFM04,
+	title = "Globus and PlanetLab Resource Management Solutions Compared.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.17",
+	author = "Matei Ripeanu and Mic Bowman and Jeffrey S. Chase and Ian T. Foster and Milan Milenkovic",
+	pages = "246-255"}
+
+@inproceedings{DBLP:conf/hpdc/VijayakumarP04,
+	title = "Performance Evaluation of Rate-Based Join Window Sizing
+               for Asynchronous Data Streams.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.28",
+	author = "Nithya N. Vijayakumar and Beth Plale",
+	pages = "260-261"}
+
+@inproceedings{DBLP:conf/hpdc/WalkerM04,
+	title = "Orchestrating and Coordinating Scientific/Engineering Workflows
+               using GridShell.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.26",
+	author = "Edward Walker and Tommy Minyard",
+	pages = "270-271"}
+
+@inproceedings{DBLP:conf/hpdc/WassonBMH04,
+	title = "WS-ResourceFramework on .NET.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.42",
+	author = "Glenn S. Wasson and Norm Beekwilder and Mark M. Morgan and Marty Humphrey",
+	pages = "258-259"}
+
+@inproceedings{DBLP:conf/hpdc/WeinbergJDFH04,
+	title = "Gridflow Description, Query, and Execution at SCEC using
+               the SDSC Matrix.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.20",
+	author = "Jonathan Weinberg and Arun Jagatheesan and Allen Ding and Marcio Faerman and Yuanfang Hu",
+	pages = "262-263"}
+
+@inproceedings{DBLP:conf/hpdc/WengACKNS04,
+	title = "An Approach for Automatic Data Virtualization.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.2",
+	author = "Li Weng and Gagan Agrawal and {\"U}mit V. \c{C}ataly{\"u}rek and Tahsin M. Kur\c{c} and Sivaramakrishnan Narayanan and Joel H. Saltz",
+	pages = "24-33"}
+
+@inproceedings{DBLP:conf/hpdc/WuB04,
+	title = "Achieving Performance Consistency in Heterogeneous Clusters.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.1",
+	author = "Changxun Wu and Randal C. Burns",
+	pages = "140-149"}
+
+@inproceedings{DBLP:conf/hpdc/WuC04,
+	title = "Evaluation of Rate-Based Transport Protocols for Lambda-Grids.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.13",
+	author = "Xinran (Ryan) Wu and Andrew A. Chien",
+	pages = "87-96"}
+
+@inproceedings{DBLP:conf/hpdc/XinMS04,
+	title = "Evaluation of Distributed Recovery in Large-Scale Storage
+               Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.12",
+	author = "Qin Xin and Ethan L. Miller and Thomas J. E. Schwarz",
+	pages = "172-181"}
+
+@inproceedings{DBLP:conf/hpdc/ZangrilliL04,
+	title = "Using Passive Traces of Application Traffic in a Network
+               Monitoring System.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.38",
+	author = "Marcia Zangrilli and Bruce Lowekamp",
+	pages = "77-86"}
+
+@inproceedings{DBLP:conf/hpdc/ZhangKPCNWS04,
+	title = "Strategies for Using Additional Resources in Parallel Hash-Based
+               Join Algorithms.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.34",
+	author = "Xi Zhang and Tahsin M. Kur\c{c} and Tony Pan and {\"U}mit V. \c{C}ataly{\"u}rek and Sivaramakrishnan Narayanan and Pete Wyckoff and Joel H. Saltz",
+	pages = "4-13"}
+
+@inproceedings{DBLP:conf/hpdc/ZhaoZF04,
+	title = "Distributed File System Support for Virtual Machines in
+               Grid Computing.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.2004.10",
+	author = "Ming Zhao and Jian Zhang and Renato J. O. Figueiredo",
+	pages = "202-211"}
+
+@default year = 2003
+
+@inproceedings{DBLP:conf/hpdc/AgarwalaPKSW03,
+	title = "Resource-Aware Stream Management with the Customizable dproc
+               Distributed Monitoring Mechanisms.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650250abs.htm",
+	author = "Sandip Agarwala and Christian Poellabauer and Jiantao Kong and Karsten Schwan and Matthew Wolf",
+	pages = "250-259"}
+
+@inproceedings{DBLP:conf/hpdc/BalajiWKCPS03,
+	title = "Impact of High Performance Sockets on Data Intensive Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650024abs.htm",
+	author = "Pavan Balaji and Jiesheng Wu and Tahsin M. Kur\c{c} and {\"U}mit V. \c{C}ataly{\"u}rek and Dhabaleswar K. Panda and Joel H. Saltz",
+	pages = "24-33"}
+
+@inproceedings{DBLP:conf/hpdc/BucurE03,
+	title = "Trace-Based Simulations of Processor Co-Allocation Policies
+               in Multiclusters.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650070abs.htm",
+	author = "Anca I. D. Bucur and Dick H. J. Epema",
+	pages = "70-79"}
+
+@inproceedings{DBLP:conf/hpdc/ChaseIGMS03,
+	title = "Dynamic Virtual Clusters in a Grid Site Manager.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650090abs.htm",
+	author = "Jeffrey S. Chase and David E. Irwin and Laura E. Grit and Justin D. Moore and Sara Sprenkle",
+	pages = "90-103"}
+
+@inproceedings{DBLP:conf/hpdc/Cuenca-AcunaPMN03,
+	title = "PlanetP: Using Gossiping to Build Content Addressable Peer-to-Peer
+               Information Sharing Communities.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650236abs.htm",
+	author = "Francisco Matias Cuenca-Acuna and Christopher Peery and Richard P. Martin and Thu D. Nguyen",
+	pages = "236-249"}
+
+@inproceedings{DBLP:conf/hpdc/HwangK03,
+	title = "GridWorkflow: A Flexible Failure Handling Framework for
+               the Grid.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650126abs.htm",
+	author = "Soonwook Hwang and Carl Kesselman",
+	pages = "126-137"}
+
+@inproceedings{DBLP:conf/hpdc/IvanK03,
+	title = "Using Views for Customizing Reusable Components in Component-Based
+               Frameworks.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650194abs.htm",
+	author = "Anca-Andreea Ivan and Vijay Karamcheti",
+	pages = "194-204"}
+
+@inproceedings{DBLP:conf/hpdc/JiangX03,
+	title = "SODA: A Service-On-Demand Architecture for Application Service
+               Hosting Utility Platforms.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650174abs.htm",
+	author = "Xuxian Jiang and Dongyan Xu",
+	pages = "174-183"}
+
+@inproceedings{DBLP:conf/hpdc/KlebanC03,
+	title = "Quelling Queue Storms.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650162abs.htm",
+	author = "Stephen D. Kleban and Scott H. Clearwater",
+	pages = "162-173"}
+
+@inproceedings{DBLP:conf/hpdc/KurmannS03,
+	title = "Zero-Copy for CORBA - Efficient Communication for Distributed
+               Object Middleware.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650004abs.htm",
+	author = "Christian Kurmann and Thomas Stricker",
+	pages = "4-13"}
+
+@inproceedings{DBLP:conf/hpdc/RamanLS03,
+	title = "Policy Driven Heterogeneous Resource Co-Allocation with
+               Gangmatching.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650080abs.htm",
+	author = "Rajesh Raman and Miron Livny and Marvin H. Solomon",
+	pages = "80-89"}
+
+@inproceedings{DBLP:conf/hpdc/SankaralingamSB03,
+	title = "Distributed Pagerank for P2P Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650058abs.htm",
+	author = "Karthikeyan Sankaralingam and Simha Sethumadhavan and James C. Browne",
+	pages = "58-69"}
+
+@inproceedings{DBLP:conf/hpdc/SchmidtP03,
+	title = "Flexible Information Discovery in Decentralized Distributed
+               Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650226abs.htm",
+	author = "Cristina Schmidt and Manish Parashar",
+	pages = "226-235"}
+
+@inproceedings{DBLP:conf/hpdc/SenapathiCSSP03,
+	title = "QoS-Aware Middleware for Cluster-Based Servers to support
+               Interactive and Resource-Adaptive Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650205abs.htm",
+	author = "S. Senapathi and B. Chandrasekaran and D. Stredney and H. Shen and Dhabaleswar K. Panda",
+	pages = "205-215"}
+
+@inproceedings{DBLP:conf/hpdc/SievertC03,
+	title = "Policies for Swapping MPI Processes.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650104abs.htm",
+	author = "Otto Sievert and Henri Casanova",
+	pages = "104-113"}
+
+@inproceedings{DBLP:conf/hpdc/SpenceH03,
+	title = "XenoSearch: Distributed Resource Discovery in the XenoServer
+               Open Platform.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650216abs.htm",
+	author = "David Spence and Tim Harris",
+	pages = "216-225"}
+
+@inproceedings{DBLP:conf/hpdc/SundaresanLKPS03,
+	title = "Adaptive Polling of Grid Resource Monitors Using a Slacker
+               Coherence Model.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650260abs.htm",
+	author = "Radhakrishnan Sundaresan and Mario Lauria and Tahsin M. Kur\c{c} and Srinivasan Parthasarathy and Joel H. Saltz",
+	pages = "260-269"}
+
+@inproceedings{DBLP:conf/hpdc/TakefusaTMM03,
+	title = "Performance Analysis of Scheduling and Replication Algorithms
+               on Grid Datafarm Architecture for High-Energy Physics Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650034abs.htm",
+	author = "Atsuko Takefusa and Osamu Tatebe and Satoshi Matsuoka and Youhei Morita",
+	pages = "34-47"}
+
+@inproceedings{DBLP:conf/hpdc/TalwarBK03,
+	title = "An Environment for Enabling Interactive Grids.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650184abs.htm",
+	author = "Vanish Talwar and Sujoy Basu and Raj Kumar",
+	pages = "184-193"}
+
+@inproceedings{DBLP:conf/hpdc/ThainBAAL03,
+	title = "Pipeline and Batch Sharing in Grid Workloads.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650152abs.htm",
+	author = "Douglas Thain and John Bent and Andrea C. Arpaci-Dusseau and Remzi H. Arpaci-Dusseau and Miron Livny",
+	pages = "152-161"}
+
+@inproceedings{DBLP:conf/hpdc/ThainL03,
+	title = "The Ethernet Approach to Grid Computing.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650138abs.htm",
+	author = "Douglas Thain and Miron Livny",
+	pages = "138-151"}
+
+@inproceedings{DBLP:conf/hpdc/ThulasidasanFG03,
+	title = "Optimizing GridFTP through Dynamic Right-Sizing.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650014abs.htm",
+	author = "Sunil Thulasidasan and Wu-chun Feng and Mark K. Gardner",
+	pages = "14-23"}
+
+@inproceedings{DBLP:conf/hpdc/WelchSFBCGKMPT03,
+	title = "Security for Grid Services.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650048abs.htm",
+	author = "Von Welch and Frank Siebenlist and Ian T. Foster and John Bresnahan and Karl Czajkowski and Jarek Gawor and Carl Kesselman and Sam Meder and Laura Pearlman and Steven Tuecke",
+	pages = "48-57"}
+
+@inproceedings{DBLP:conf/hpdc/YangC03,
+	title = "RUMR: Robust Scheduling for Divisible Workloads.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650114abs.htm",
+	author = "Yang Yang and Henri Casanova",
+	pages = "114-125"}
+
+@inproceedings{DBLP:conf/hpdc/ZhangFS03,
+	title = "A Performance Study of Monitoring and Information Services
+               for Distributed Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2003/1965/00/19650270abs.htm",
+	author = "Xuehai Zhang and Jeffrey L. Freschl and Jennifer M. Schopf",
+	pages = "270-282"}
+
+@default year = 2002
+
+@inproceedings{DBLP:conf/hpdc/AllcockBBFGILP02,
+	title = "GridMapper: A Tool for Visualizing the Behavior of Large-Scale
+               Distributed Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860179abs.htm",
+	author = "William E. Allcock and Joseph Bester and John Bresnahan and Ian T. Foster and Jarek Gawor and Joseph A. Insley and Joseph M. Link and Michael E. Papka",
+	pages = "179-187"}
+
+@inproceedings{DBLP:conf/hpdc/AllenDDGKLNRRRSW02,
+	title = "The GridLab Grid Application Toolkit.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860411.pdf",
+	author = "Gabrielle Allen and Kelly Davis and Thomas Dramlitsch and Tom Goodale and Ian Kelley and Gerd Lanfermann and Jason Novotny and Thomas Radke and Kashif Rasul and Michael Russell and Edward Seidel and Oliver Wehrens",
+	pages = 411}
+
+@inproceedings{DBLP:conf/hpdc/AllenWP02,
+	title = "Adaptive Timeout Discovery Using the Network Weather Service.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860035abs.htm",
+	author = "Matthew S. Allen and Richard Wolski and James S. Plank",
+	pages = "35-41"}
+
+@inproceedings{DBLP:conf/hpdc/BalaPNAGEMMBM02,
+	title = "BioGRID - An European Grid for Molecular Biology.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860412.pdf",
+	author = "Piotr Bala and Jaroslaw Pytlinski and Miroslaw Nazaruk and Victor Alessandrini and Denis Girou and Dietmar W. Erwin and Daniel Mallmann and Jon MacLaren and John Brooke and Jan Frode Myklebust",
+	pages = 412}
+
+@inproceedings{DBLP:conf/hpdc/BaudeCHMV02,
+	title = "Interactive and Descriptor-Based Deployment of Object-Oriented
+               Grid Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860093abs.htm",
+	author = "Fran\c{c}oise Baude and Denis Caromel and Fabrice Huet and Lionel Mestre and Julien Vayssi{\`e}re",
+	pages = "93-102"}
+
+@inproceedings{DBLP:conf/hpdc/BaxterHBHS02,
+	title = "Bringing the Grid to the Biomedical Workbench.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860417.pdf",
+	author = "Robert M. Baxter and Neil P. Chue Hong and Richard A. Baldock and Bill Hill and James Sharpe",
+	pages = 417}
+
+@inproceedings{DBLP:conf/hpdc/BellCL02,
+	title = "A High-Performance Cluster Storage Server.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860311abs.htm",
+	author = "Keith Bell and Andrew A. Chien and Mario Lauria",
+	pages = "311-320"}
+
+@inproceedings{DBLP:conf/hpdc/BentVLRSAAL02,
+	title = "Flexibility, Manageability, and Performance in a Grid Storage
+               Appliance.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860003abs.htm",
+	author = "John Bent and Venkateshwaran Venkataramani and Nick LeRoy and Alain Roy and Joseph Stanley and Andrea C. Arpaci-Dusseau and Remzi H. Arpaci-Dusseau and Miron Livny",
+	pages = "3-12"}
+
+@inproceedings{DBLP:conf/hpdc/Bettencourt02,
+	title = "Distributed Model Coupling Framework.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860284abs.htm",
+	author = "Matthew T. Bettencourt",
+	pages = "284-290"}
+
+@inproceedings{DBLP:conf/hpdc/BucurE02,
+	title = "The Performance of Processor Co-Allocation in Multicluster
+               Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860414.pdf",
+	author = "Anca I. D. Bucur and Dick H. J. Epema",
+	pages = 414}
+
+@inproceedings{DBLP:conf/hpdc/BustamanteWS02,
+	title = "A Case for Proactivity in Directory Services.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860415.pdf",
+	author = "Fabi{\'a}n E. Bustamante and Patrick Widener and Karsten Schwan",
+	pages = 415}
+
+@inproceedings{DBLP:conf/hpdc/ChengGSSH02,
+	title = "Software Architecture-Based Adaptation for Grid Computing.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860389abs.htm",
+	author = "Shang-Wen Cheng and David Garlan and Bradley R. Schmerl and Peter Steenkiste and Ningning Hu",
+	pages = "389-398"}
+
+@inproceedings{DBLP:conf/hpdc/ChiuGB02,
+	title = "Investigating the Limits of SOAP Performance for Scientific
+               Computing.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860246abs.htm",
+	author = "Kenneth Chiu and Madhusudhan Govindaraju and Randall Bramley",
+	pages = "246-254"}
+
+@inproceedings{DBLP:conf/hpdc/CoreyJV02,
+	title = "Local Discovery of System Architecture - Application Parameter
+               Sensitivity: An Empirical Technique for Adaptive Grid Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860399abs.htm",
+	author = "Ivan Corey and John R. Johnson and Jeffrey S. Vetter",
+	pages = "399-"}
+
+@inproceedings{DBLP:conf/hpdc/CoxBCDEFJGGPKSSTWX02,
+	title = "Grid Services in Action: Grid Enabled Optimisation and Design
+               Search.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860413.pdf",
+	author = "Simon J. Cox and Richard P. Boardman and Liming Chen and Mihai Duta and M. Hakki Eres and Matt J. Fairman and Zhuoan Jiao and Michael Giles and Carole A. Goble and Graeme E. Pound and Andy J. Keane and Mark Scott and Nigel Shadbolt and Barry Tao and Jasmin L. Wason and Gang Xue",
+	pages = 413}
+
+@inproceedings{DBLP:conf/hpdc/DeBardelebenLPS02,
+	title = "Coven - A Framework for High Performance Problem Solving
+               Environments.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860291abs.htm",
+	author = "Nathan DeBardeleben and Walter B. Ligon, III and Sourabh Pandit and Daniel C. Stanzione, Jr.",
+	pages = "291-"}
+
+@inproceedings{DBLP:conf/hpdc/DeelmanKMMPBELWK02,
+	title = "GriPhyN and LIGO, Building a Virtual Data Grid for Gravitational
+               Wave Scientists.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860225abs.htm",
+	author = "Ewa Deelman and Carl Kesselman and Gaurang Mehta and Leila Meshkat and Laura Pearlman and Kent Blackburn and Phil Ehrens and Albert Lazzarini and Roy Williams and Scott Koranda",
+	pages = "225-"}
+
+@inproceedings{DBLP:conf/hpdc/DickensG02,
+	title = "An Evaluation of Object-Based Data Transfers on High Performance
+               Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860255abs.htm",
+	author = "Phillip M. Dickens and William Gropp",
+	pages = "255-264"}
+
+@inproceedings{DBLP:conf/hpdc/GardnerFF02,
+	title = "Dynamic Right-Sizing in FTP (drsFTP): Enhancing Grid Performance
+               in User-Space.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860042abs.htm",
+	author = "Mark K. Gardner and Wu-chun Feng and Mike Fisk",
+	pages = "42-49"}
+
+@inproceedings{DBLP:conf/hpdc/GhanemGRW02,
+	title = "Grid-Based Knowledge Discovery Services for High Throughput
+               Informatics.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860416.pdf",
+	author = "Moustafa Ghanem and Yike Guo and Anthony Rowe and Patrick Wendel",
+	pages = 416}
+
+@inproceedings{DBLP:conf/hpdc/GuN02,
+	title = "A Scalable QoS-Aware Service Aggregation Model for Peer-to-Peer
+               Computing Grids.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860073abs.htm",
+	author = "Xiaohui Gu and Klara Nahrstedt",
+	pages = "73-82"}
+
+@inproceedings{DBLP:conf/hpdc/GunterTJLS02,
+	title = "Dynamic Monitoring of High-Performance Distributed Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860163abs.htm",
+	author = "Dan Gunter and Brian Tierney and Keith R. Jackson and Jason Lee and Martin Stoufer",
+	pages = "163-170"}
+
+@inproceedings{DBLP:conf/hpdc/HeS02,
+	title = "IQ-RUDP: Coordinating Application Adaptation with Network
+               Transport.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860369abs.htm",
+	author = "Qi He and Karsten Schwan",
+	pages = "369-378"}
+
+@inproceedings{DBLP:conf/hpdc/HuangV02,
+	title = "QoS-Based Resource Discovery in Intermittently Available
+               Environments.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860050abs.htm",
+	author = "Yun Huang and Nalini Venkatasubramanian",
+	pages = "50-"}
+
+@inproceedings{DBLP:conf/hpdc/HumphreyAW02,
+	title = "Location-Transparent Naming in Grid Computing Using Legion-G.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860418.pdf",
+	author = "Marty Humphrey and Shaun Arnold and Glenn S. Wasson",
+	pages = 418}
+
+@inproceedings{DBLP:conf/hpdc/IamnitchiFN02,
+	title = "A Peer-to-Peer Approach to Resource Location in Grid Environments.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860419.pdf",
+	author = "Adriana Iamnitchi and Ian T. Foster and Daniel Nurmi",
+	pages = 419}
+
+@inproceedings{DBLP:conf/hpdc/IvanHAK02,
+	title = "Partitionable Services: A Framework for Seamlessly Adapting
+               Distributed Applications to Heterogeneous Environments.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860103abs.htm",
+	author = "Anca-Andreea Ivan and Josh Harman and Michael Allen and Vijay Karamcheti",
+	pages = "103-112"}
+
+@inproceedings{DBLP:conf/hpdc/JagatheesanMRZ02,
+	title = "Virtual Services in Data Grids.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860420.pdf",
+	author = "Arun Jagatheesan and Reagan Moore and Arcot Rajasekar and Bing Zhu",
+	pages = 420}
+
+@inproceedings{DBLP:conf/hpdc/JeannotKB02,
+	title = "Adaptive Online Data Compression.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860379abs.htm",
+	author = "Emmanuel Jeannot and Bj{\"o}rn Knutsson and Mats Bj{\"o}rkman",
+	pages = "379-388"}
+
+@inproceedings{DBLP:conf/hpdc/Johnson02,
+	title = "Design and Implementation of Secured Information Services
+               for the ASCI Grid.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860209abs.htm",
+	author = "Wilbur R. Johnson",
+	pages = "209-214"}
+
+@inproceedings{DBLP:conf/hpdc/KenyonC02,
+	title = "Architecture Requirements for Commercializing Grid Resources.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860215abs.htm",
+	author = "Chris Kenyon and Giorgos Cheliotis",
+	pages = "215-224"}
+
+@inproceedings{DBLP:conf/hpdc/KurzyniecSM02,
+	title = "On the Viability of Component Frameworks for High Performance
+               Distributed Computing: A Case Study.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860275abs.htm",
+	author = "Dawid Kurzyniec and Vaidy S. Sunderam and Mauro Migliardi",
+	pages = "275-283"}
+
+@inproceedings{DBLP:conf/hpdc/LaszewskiGPF02,
+	title = "InfoGram: A Grid Service that Supports Both Information
+               Queries and Job Execution.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860333abs.htm",
+	author = "Gregor von Laszewski and Jarek Gawor and Carlos J. Pe{\~n}a and Ian T. Foster",
+	pages = "333-342"}
+
+@inproceedings{DBLP:conf/hpdc/LiuYFA02,
+	title = "Design and Evaluation of a Resource Selection Framework
+               for Grid Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860063abs.htm",
+	author = "Chuang Liu and Lingyun Yang and Ian T. Foster and Dave Angulo",
+	pages = "63-72"}
+
+@inproceedings{DBLP:conf/hpdc/MatthewsHJL02,
+	title = "Backtracking and Re-Execution in the Automatic Debugging
+               of Parallelized Programs.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860150abs.htm",
+	author = "Gregory Matthews and Robert Hood and Stephen Johnson and P. F. Leggett",
+	pages = "150-"}
+
+@inproceedings{DBLP:conf/hpdc/McCombsS02,
+	title = "Multigrain Parallelism for Eigenvalue Computations on Networks
+               of Clusters.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860143abs.htm",
+	author = "James R. McCombs and Andreas Stathopoulos",
+	pages = "143-149"}
+
+@inproceedings{DBLP:conf/hpdc/MockYPFT02,
+	title = "A Batch Script Generator Web Service for Computational Portals.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860421.pdf",
+	author = "Stephen Mock and Choon-Han Youn and Marlon E. Pierce and Geoffrey Fox and Mary Thomas",
+	pages = 421}
+
+@inproceedings{DBLP:conf/hpdc/Plale02,
+	title = "Leveraging Run Time Knowledge about Event Rates to Improve
+               Memory Utilization in Wide Area Data Stream Filtering.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860171abs.htm",
+	author = "Beth Plale",
+	pages = "171-178"}
+
+@inproceedings{DBLP:conf/hpdc/RajasekarWM02,
+	title = "MySRB {\&} SRB: Components of a Data Grid.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860301abs.htm",
+	author = "Arcot Rajasekar and Michael Wan and Reagan Moore",
+	pages = "301-310"}
+
+@inproceedings{DBLP:conf/hpdc/RambadtW02,
+	title = "UNICORE - Globus Interoperability: Getting the Best of Both
+               Worlds.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860422.pdf",
+	author = "Michael Rambadt and Philipp Wieder",
+	pages = 422}
+
+@inproceedings{DBLP:conf/hpdc/RanganathanF02,
+	title = "Decoupling Computation and Data Scheduling in Distributed
+               Data-Intensive Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860352abs.htm",
+	author = "Kavitha Ranganathan and Ian T. Foster",
+	pages = "352-358"}
+
+@inproceedings{DBLP:conf/hpdc/RipeanuF02,
+	title = "A Decentralized, Adaptive Replica Location Mechanism.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860024abs.htm",
+	author = "Matei Ripeanu and Ian T. Foster",
+	pages = "24-"}
+
+@inproceedings{DBLP:conf/hpdc/Schulz02,
+	title = "Using Semantic Information to Guide Efficient Parallel I/O
+               on Clusters.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860135abs.htm",
+	author = "Martin Schulz",
+	pages = "135-142"}
+
+@inproceedings{DBLP:conf/hpdc/ShirasunaNMS02,
+	title = "Evaluating Web Services Based Implementations of GridRPC.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860237abs.htm",
+	author = "Satoshi Shirasuna and Hidemoto Nakada and Satoshi Matsuoka and Satoshi Sekiguchi",
+	pages = "237-245"}
+
+@inproceedings{DBLP:conf/hpdc/SnellTEC02,
+	title = "An Enterprise-Based Grid Resource Management System.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860083abs.htm",
+	author = "Quinn Snell and Kevin Tew and Joseph Ekstrom and Mark J. Clement",
+	pages = "83-"}
+
+@inproceedings{DBLP:conf/hpdc/SubramaniKSS02,
+	title = "Distributed Job Scheduling on Computational Grids Using
+               Multiple Simultaneous Requests.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860359abs.htm",
+	author = "Vijay Subramani and Rajkumar Kettimuthu and Srividya Srinivasan and P. Sadayappan",
+	pages = "359-"}
+
+@inproceedings{DBLP:conf/hpdc/SunderamK02,
+	title = "Lightweight Self-Organizing Frameworks for Metacomputing.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860113abs.htm",
+	author = "Vaidy S. Sunderam and Dawid Kurzyniec",
+	pages = "113-"}
+
+@inproceedings{DBLP:conf/hpdc/TaylorWGS02,
+	title = "Using Kernel Couplings to Predict Parallel Application Performance.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860125abs.htm",
+	author = "Valerie E. Taylor and Xingfu Wu and Jonathan Geisler and Rick L. Stevens",
+	pages = "125-134"}
+
+@inproceedings{DBLP:conf/hpdc/ThainL02,
+	title = "Error Scope on a Computational Grid: Theory and Practice.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860199abs.htm",
+	author = "Douglas Thain and Miron Livny",
+	pages = "199-208"}
+
+@inproceedings{DBLP:conf/hpdc/VadhiyarD02,
+	title = "A Metascheduler For The Grid.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860343abs.htm",
+	author = "Sathish S. Vadhiyar and Jack Dongarra",
+	pages = "343-351"}
+
+@inproceedings{DBLP:conf/hpdc/VazhkudaiS02,
+	title = "Predicting Sporadic Grid Data Transfers.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860188abs.htm",
+	author = "Sudharshan Vazhkudai and Jennifer M. Schopf",
+	pages = "188-"}
+
+@inproceedings{DBLP:conf/hpdc/WeeksHA02,
+	title = "Scalability of a Distributed Neural Information Retrieval
+               System.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860423.pdf",
+	author = "Michael Weeks and Victoria J. Hodge and Jim Austin",
+	pages = 423}
+
+@inproceedings{DBLP:conf/hpdc/WeigleF02,
+	title = "A Comparison of TCP Automatic Tuning Techniques for Distributed
+               Computing.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860265abs.htm",
+	author = "Eric Weigle and Wu-chun Feng",
+	pages = "265-"}
+
+@inproceedings{DBLP:conf/hpdc/WickremesingheCV02,
+	title = "Distributed Computing with Load-Managed Active Storage.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860013abs.htm",
+	author = "Rajiv Wickremesinghe and Jeffrey S. Chase and Jeffrey Scott Vitter",
+	pages = "13-23"}
+
+@inproceedings{DBLP:conf/hpdc/XieOR02,
+	title = "A Secure Distributed Search System.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2002/1686/00/16860321abs.htm",
+	author = "Yinglian Xie and David R. O'Hallaron and Michael K. Reiter",
+	pages = "321-"}
+
+@default year = 2001
+
+@inproceedings{DBLP:conf/hpdc/BolligerG01,
+	title = "Bandwidth Monitoring for Network-Aware Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960241abs.htm",
+	author = "J{\"u}rg Bolliger and Thomas R. Gross",
+	pages = "241-251"}
+
+@inproceedings{DBLP:conf/hpdc/BustamanteES01,
+	title = "The Active Streams Approach to Adaptive Distrubuted Systems.",
+	ee = "http://csdl.computer.org/dl/proceedings/hpdc/2001/1296/00/12960437.pdf",
+	author = "Fabi{\'a}n E. Bustamante and Greg Eisenhauer and Karsten Schwan",
+	pages = "437-438"}
+
+@inproceedings{DBLP:conf/hpdc/Cuenca-AcunaN01,
+	title = "Cooperative Caching Middleware for Cluster-Based Servers.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960303abs.htm",
+	author = "Francisco Matias Cuenca-Acuna and Thu D. Nguyen",
+	pages = "303-314"}
+
+@inproceedings{DBLP:conf/hpdc/CuiN01,
+	title = "QoS-Aware Dependency Management for Component-Based Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960127abs.htm",
+	author = "Yi Cui and Klara Nahrstedt",
+	pages = "127-"}
+
+@inproceedings{DBLP:conf/hpdc/CzajkowskiDKT01,
+	title = "Practical Resource Management for Grid-Based Visual Exploration.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960416abs.htm",
+	author = "Karl Czajkowski and Alper K. Demir and Carl Kesselman and Marcus Thi{\'e}baux",
+	pages = "416-"}
+
+@inproceedings{DBLP:conf/hpdc/CzajkowskiKFF01,
+	title = "Grid Information Services for Distributed Resource Sharing.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960181abs.htm",
+	author = "Karl Czajkowski and Carl Kesselman and Steven Fitzgerald and Ian T. Foster",
+	pages = "181-194"}
+
+@inproceedings{DBLP:conf/hpdc/Dinda01,
+	title = "Online Prediction of the Running Time of Tasks.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960383abs.htm",
+	author = "Peter A. Dinda",
+	pages = "383-382"}
+
+@inproceedings{DBLP:conf/hpdc/DindaGKLMSS01,
+	title = "The Architecture of the Remos System.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960252abs.htm",
+	author = "Peter A. Dinda and Thomas R. Gross and Roger Karrer and Bruce Lowekamp and Nancy Miller and Peter Steenkiste and Dean Sutherland",
+	pages = "252-265"}
+
+@inproceedings{DBLP:conf/hpdc/DramlitschAS01,
+	title = "Efficient Techniques for Distributed Computing.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960435abs.htm",
+	author = "Thomas Dramlitsch and Gabrielle Allen and Edward Seidel",
+	pages = "435-436"}
+
+@inproceedings{DBLP:conf/hpdc/DullmannHJSSSS01,
+	title = "Models for Replica Synchronisation and Consistency in a
+               Data Grid.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960067abs.htm",
+	author = "Dirk D{\"u}llmann and Wolfgang Hoschek and Francisco Javier Ja{\'e}n-Mart\'{\i}nez and Ben Segal and Heinz Stockinger and Kurt Stockinger and Asad Samar",
+	pages = "67-75"}
+
+@inproceedings{DBLP:conf/hpdc/FigueiredoKF01,
+	title = "The PUNCH Virtual File System: Seamless Access to Decentralized
+               Storage Services in a Computational Grid.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960334abs.htm",
+	author = "Renato J. O. Figueiredo and Nirav H. Kapadia and Jos{\'e} A. B. Fortes",
+	pages = "334-"}
+
+@inproceedings{DBLP:conf/hpdc/FollenKLTS01,
+	title = "A CORBA-Based Development Environment for Wrapping and Coupling
+               Legacy Scientific Codes.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960022abs.htm",
+	author = "Gregory J. Follen and Chan M. Kim and Isaac Lopez and Scott Townsend and Janche Sang",
+	pages = "22-"}
+
+@inproceedings{DBLP:conf/hpdc/FreyTLFT01,
+	title = "Condor-G: A Computation Management Agent for Multi-Institutional
+               Grids.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960055abs.htm",
+	author = "James Frey and Todd Tannenbaum and Miron Livny and Ian T. Foster and Steven Tuecke",
+	pages = "55-"}
+
+@inproceedings{DBLP:conf/hpdc/FrumkinW01,
+	title = "NAS Grid Benchmarks: A Tool for Grid Space Exploration.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960315abs.htm",
+	author = "Michael A. Frumkin and Rob F. Van der Wijngaart",
+	pages = "315-"}
+
+@inproceedings{DBLP:conf/hpdc/GavrilovskaSO01,
+	title = "Adaptable Mirroring in Cluster Servers.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960003abs.htm",
+	author = "Ada Gavrilovska and Karsten Schwan and Van Oleson",
+	pages = "3-13"}
+
+@inproceedings{DBLP:conf/hpdc/HumphreyT01,
+	title = "Security Implications of Typical Grid Computing Usage Scenarios.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960095abs.htm",
+	author = "Marty Humphrey and Mary R. Thompson",
+	pages = "95-103"}
+
+@inproceedings{DBLP:conf/hpdc/JardineSC01,
+	title = "Livelock Avoidance for Meta-Schedulers.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960141abs.htm",
+	author = "John Jardine and Quinn Snell and Mark J. Clement",
+	pages = "141-146"}
+
+@inproceedings{DBLP:conf/hpdc/JinYCA01,
+	title = "Network Characterization Service (NCS).",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960289abs.htm",
+	author = "Guojun Jin and George Yang and Brian R. Crowley and Deborah A. Agarwal",
+	pages = "289-"}
+
+@inproceedings{DBLP:conf/hpdc/JohnstonTJ01,
+	title = "Overview of Security Considerations for Computational and
+               Data Grids.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960439abs.htm",
+	author = "William E. Johnston and Sumit Talwar and Keith R. Jackson",
+	pages = "439-440"}
+
+@inproceedings{DBLP:conf/hpdc/KaroDFRWL01,
+	title = "Applying Grid Technologies to Bioinformatics.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960441abs.htm",
+	author = "Michael Karo and Christopher Dwan and John L. Freeman and Ernest F. Retzel and Jon B. Weissman and Miron Livny",
+	pages = "441-442"}
+
+@inproceedings{DBLP:conf/hpdc/KarrerG01,
+	title = "Location Selection for Active Services.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960195abs.htm",
+	author = "Roger Karrer and Thomas R. Gross",
+	pages = "195-"}
+
+@inproceedings{DBLP:conf/hpdc/KeaheyFM01,
+	title = "PAWS: Collective Interactions and Data Transfers.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960047abs.htm",
+	author = "Katarzyna Keahey and Patricia K. Fasel and Susan M. Mniszewski",
+	pages = "47-54"}
+
+@inproceedings{DBLP:conf/hpdc/KrintzC01,
+	title = "Reducing Delay with Dynamic Selection of Compression Formats.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960266abs.htm",
+	author = "Chandra Krintz and Brad Calder",
+	pages = "266-"}
+
+@inproceedings{DBLP:conf/hpdc/KuntrarukP01,
+	title = "Massively Parallel Distributed Feature Extraction in Textual
+               Data Mining Using HDDI(tm).",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960363abs.htm",
+	author = "Jirada Kuntraruk and William M. Pottenger",
+	pages = "363-370"}
+
+@inproceedings{DBLP:conf/hpdc/LanfermannARS01,
+	title = "Nomadic Migration: A New Tool for Dynamic Grid Computing.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960429abs.htm",
+	author = "Gerd Lanfermann and Gabrielle Allen and Thomas Radke and Edward Seidel",
+	pages = "429-430"}
+
+@inproceedings{DBLP:conf/hpdc/LeeW01,
+	title = "Dynamic Replica Management in the Service Grid.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960433abs.htm",
+	author = "Byoung-Dai Lee and Jon B. Weissman",
+	pages = "433-434"}
+
+@inproceedings{DBLP:conf/hpdc/LopezO01,
+	title = "Evaluation of a Resource Selection Mechanism for Complex
+               Network Services.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960171abs.htm",
+	author = "Julio C. L{\'o}pez and David R. O'Hallaron",
+	pages = "171-180"}
+
+@inproceedings{DBLP:conf/hpdc/LovasS01,
+	title = "A Metadebugger Prototype for the HARNESS Metacomputing Framework.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960427abs.htm",
+	author = "R{\'o}bert Lovas and Vaidy S. Sunderam",
+	pages = "427-428"}
+
+@inproceedings{DBLP:conf/hpdc/MannP01,
+	title = "Middleware Support for Global Access to Integrated Computational
+               Collaboratories.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960035abs.htm",
+	author = "Vijay Mann and Manish Parashar",
+	pages = "35-46"}
+
+@inproceedings{DBLP:conf/hpdc/NatrajanFHGWCB01,
+	title = "Studying Protein Folding on the Grid: Experiences Using
+               CHARMM on NPACI Resources under Legion.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960014abs.htm",
+	author = "Anand Natrajan and Anthony D. Fox and Marty A. Humphrey and Andrew S. Grimshaw and Nancy Wilkins-Diehr and Michael Crowley and Charles L. Brooks, III",
+	pages = "14-21"}
+
+@inproceedings{DBLP:conf/hpdc/NovotnyTW01,
+	title = "An Online Credential Repository for the Grid: MyProxy.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960104abs.htm",
+	author = "Jason Novotny and Steven Tuecke and Von Welch",
+	pages = "104-"}
+
+@inproceedings{DBLP:conf/hpdc/RomeinB01,
+	title = "Wide-Area Transposition-Driven Scheduling.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960347abs.htm",
+	author = "John W. Romein and Henri E. Bal",
+	pages = "347-355"}
+
+@inproceedings{DBLP:conf/hpdc/RoyoCKF01,
+	title = "Active Yellow Pages: A Pipelined Resource Management Architecture
+               for Wide-Area Network Computing.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960147abs.htm",
+	author = "Dolors Royo and Luis D\'{\i}az de Cerio and Nirav H. Kapadia and Jos{\'e} A. B. Fortes",
+	pages = "147-157"}
+
+@inproceedings{DBLP:conf/hpdc/RussellADFSNSL01,
+	title = "The Astrophysics Simulation Collaboratory Portal: A Science
+               Portal Enabling Community Software Development.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960207abs.htm",
+	author = "Michael Russell and Gabrielle Allen and Greg Daues and Ian T. Foster and Edward Seidel and Jason Novotny and John Shalf and Gregor von Laszewski",
+	pages = "207-215"}
+
+@inproceedings{DBLP:conf/hpdc/SanderAFR01,
+	title = "End-to-End Provision of Policy Information for Network QoS.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960115abs.htm",
+	author = "Volker Sander and William A. Adamson and Ian T. Foster and Alain J. Roy",
+	pages = "115-126"}
+
+@inproceedings{DBLP:conf/hpdc/SchuchardtMS01,
+	title = "Open Data Management Solutions for Problem Solving Environments:
+               Application of Distributed Authoring and Versioning to the
+               Extensible Computational Chemistry Environment.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960228abs.htm",
+	author = "Karen Schuchardt and James D. Myers and Eric G. Stephan",
+	pages = "228-"}
+
+@inproceedings{DBLP:conf/hpdc/SkicewiczDS01,
+	title = "Multi-Resolution Resource Behaviour Queries Using Wavelets.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960395abs.htm",
+	author = "Jason Skicewicz and Peter A. Dinda and Jennifer M. Schopf",
+	pages = "395-394"}
+
+@inproceedings{DBLP:conf/hpdc/StockingerSHAFT01,
+	title = "File and Object Replication in Data Grids.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960076abs.htm",
+	author = "Heinz Stockinger and Asad Samar and Koen Holtman and William E. Allcock and Ian T. Foster and Brian Tierney",
+	pages = "76-86"}
+
+@inproceedings{DBLP:conf/hpdc/SwanyW01,
+	title = "The Logistical Session Layer.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960443abs.htm",
+	author = "D. Martin Swany and Richard Wolski",
+	pages = "443-"}
+
+@inproceedings{DBLP:conf/hpdc/TakefusaMCB01,
+	title = "A Study of Deadline Scheduling for Client-Server Systems
+               on the Computational Grid.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960406abs.htm",
+	author = "Atsuko Takefusa and Satoshi Matsuoka and Henri Casanova and Francine Berman",
+	pages = "406-405"}
+
+@inproceedings{DBLP:conf/hpdc/TerekhovPWLLTVVWS01,
+	title = "Distributed Data Access and Resource Management in the D0
+               SAM System.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960087abs.htm",
+	author = "Igor Terekhov and Ruth Pordes and Victoria White and Lee Lueking and Lauri Loebel-Carpenter and J. Trumbo and Sinisa Veseli and Matt Vranicar and Steve White and H. Schellman",
+	pages = "87-"}
+
+@inproceedings{DBLP:conf/hpdc/ThainBSL01,
+	title = "The Kangaroo Approach to Data Movement on the Grid.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960325abs.htm",
+	author = "Douglas Thain and Jim Basney and Se-Chang Son and Miron Livny",
+	pages = "325-333"}
+
+@inproceedings{DBLP:conf/hpdc/ThomasMDMSB01,
+	title = "The GridPort Toolkit: A System for Building Grid Portals.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960216abs.htm",
+	author = "Mary Thomas and Stephen Mock and Maytal Dahan and Kurt Mueller and Don Sutton and John R. Boisseau",
+	pages = "216-227"}
+
+@inproceedings{DBLP:conf/hpdc/TierneyGLSE01,
+	title = "Enabling Network-Aware Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960281abs.htm",
+	author = "Brian Tierney and Dan Gunter and Jason Lee and Martin Stoufer and Joseph B. Evans",
+	pages = "281-288"}
+
+@inproceedings{DBLP:conf/hpdc/ToonenALFGGBK01,
+	title = "Interfacing Parallel Jobs to Process Managers.",
+	ee = "http://csdl.computer.org/dl/proceedings/hpdc/2001/1296/00/12960431.pdf",
+	author = "Brian R. Toonen and David Ashton and Ewing L. Lusk and Ian T. Foster and William Gropp and Edgar Gabriel and Ralph Butler and Nicholas T. Karonis",
+	pages = "431-432"}
+
+@inproceedings{DBLP:conf/hpdc/WeigleF01,
+	title = "A Case for TCP Vegas in High-Performance Computational Grids.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960158abs.htm",
+	author = "Eric Weigle and Wu-chun Feng",
+	pages = "158-"}
+
+@inproceedings{DBLP:conf/hpdc/WidenerES01,
+	title = "Open Metadata Formats: Efficient XML-Based Communication
+               for High Performance Computing.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960371abs.htm",
+	author = "Patrick Widener and Greg Eisenhauer and Karsten Schwan",
+	pages = "371-"}
+
+@inproceedings{DBLP:conf/hpdc/WuB01,
+	title = "Parallel Retrograde Analysis on Different Architecture.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpdc/2001/1296/00/12960356abs.htm",
+	author = "Ren Wu and Don F. Beal",
+	pages = "356-362"}
+
+@default year = 2000
+
+@inproceedings{DBLP:conf/hpdc/AdabalaKF00,
+	title = "Interfacing Wide-Area Network Computing and Cluster Management
+               Software: Condor, DQS and PBS via PUNCH.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830306abs.htm",
+	author = "Sumalatha Adabala and Nirav H. Kapadia and Jos{\'e} A. B. Fortes",
+	pages = "306-307"}
+
+@inproceedings{DBLP:conf/hpdc/AllenBGHLMRSS00,
+	title = "The Cactus Code: A Problem Solving Environment for the Grid.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830253abs.htm",
+	author = "Gabrielle Allen and Werner Benger and Tom Goodale and Hans-Christian Hege and Gerd Lanfermann and Andr{\'e} Merzky and Thomas Radke and Edward Seidel and John Shalf",
+	pages = "253-"}
+
+@inproceedings{DBLP:conf/hpdc/AndersonC00,
+	title = "Failure-Atomic File Access in an Interposed Network Storage
+               System.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830157abs.htm",
+	author = "Darrell C. Anderson and Jeffrey S. Chase",
+	pages = "157-164"}
+
+@inproceedings{DBLP:conf/hpdc/AndresenN00,
+	title = "The Modeler's Workbench: A System for Dynamically Distributed
+               Simulation and Data Collection.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830300abs.htm",
+	author = "Daniel Andresen and Robert Novotny",
+	pages = "300-301"}
+
+@inproceedings{DBLP:conf/hpdc/Anglano00,
+	title = "A Comparative Evaluation of Implicit Coscheduling Strategies
+               for Networks of Workstations.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830221abs.htm",
+	author = "Cosimo Anglano",
+	pages = "221-228"}
+
+@inproceedings{DBLP:conf/hpdc/BasneyL00,
+	title = "Managing Network Resources in Condor.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830298abs.htm",
+	author = "Jim Basney and Miron Livny",
+	pages = "298-299"}
+
+@inproceedings{DBLP:conf/hpdc/BeclaH00,
+	title = "Creating Large Scale Database Servers.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830271abs.htm",
+	author = "Jacek Becla and Andrew Hanushevsky",
+	pages = "271-278"}
+
+@inproceedings{DBLP:conf/hpdc/BeirigerJBHR00,
+	title = "Constructing the ASCI Computational Grid.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830193abs.htm",
+	author = "Judy I. Beiriger and Wilbur R. Johnson and Hugh P. Bivens and Steven L. Humphreys and Ronald Rhea",
+	pages = "193-200"}
+
+@inproceedings{DBLP:conf/hpdc/BianchiniC00,
+	title = "Evaluating Cluster-based Network Servers.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830063abs.htm",
+	author = "Ricardo Bianchini and Enrique V. Carrera",
+	pages = "63-70"}
+
+@inproceedings{DBLP:conf/hpdc/BramleyCDGGMTY00,
+	title = "A Component based Services Architecture for Building Distributed
+               Applications.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830051abs.htm",
+	author = "Randall Bramley and Kenneth Chiu and Shridhar Diwan and Dennis Gannon and Madhusudhan Govindaraju and Nirmal Mukhi and Benjamin Temko and Madhuri Yechuri",
+	pages = "51-"}
+
+@inproceedings{DBLP:conf/hpdc/BurrisGHMW00,
+	title = "Probe - A Distributed Storage Testbed.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830294abs.htm",
+	author = "Randall D. Burris and M. K. Gleicher and H. H. Holmes and D. L. Million and S. R. White",
+	pages = "294-295"}
+
+@inproceedings{DBLP:conf/hpdc/ChangK00,
+	title = "Automatic Configuration and Run-time Adaptation of Distributed
+               Applications.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830011abs.htm",
+	author = "Fangzhe Chang and Vijay Karamcheti",
+	pages = "11-20"}
+
+@inproceedings{DBLP:conf/hpdc/EisenhauerBS00,
+	title = "Event Services for High Performance Computing.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830113abs.htm",
+	author = "Greg Eisenhauer and Fabi{\'a}n E. Bustamante and Karsten Schwan",
+	pages = "113-120"}
+
+@inproceedings{DBLP:conf/hpdc/GehringS00,
+	title = "Robust Resource Management for Metacomputers.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830105abs.htm",
+	author = "J{\"o}rn Gehring and Achim Streit",
+	pages = "105-112"}
+
+@inproceedings{DBLP:conf/hpdc/GouacheP00,
+	title = "Coupling of Industrial Simulation Codes using CORBA.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830312abs.htm",
+	author = "St{\'e}phane Gouache and Thierry Priol",
+	pages = "312-314"}
+
+@inproceedings{DBLP:conf/hpdc/GouxKLY00,
+	title = "An Enabling Framework for Master-Worker Applications on
+               the Computational Grid.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830043abs.htm",
+	author = "Jean-Pierre Goux and Sanjeev Kulkarni and Jeff Linderoth and Michael Yoder",
+	pages = "43-50"}
+
+@inproceedings{DBLP:conf/hpdc/HeissRN00,
+	title = "Distributed Processor Allocation in Large PC Clusters.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830288abs.htm",
+	author = "Hans-Ulrich Heiss and C{\'e}sar A. F. De Rose and Philippe Olivier Alexandre Navaux",
+	pages = "288-289"}
+
+@inproceedings{DBLP:conf/hpdc/HinkeN00,
+	title = "Data Mining on NASA's Information Power Grid.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830292abs.htm",
+	author = "Thomas H. Hinke and Jason Novotny",
+	pages = "292-293"}
+
+@inproceedings{DBLP:conf/hpdc/HwangJH00,
+	title = "RAID-x: A New Distributed Disk Array for I/O-Centric Cluster
+               Computing.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830279abs.htm",
+	author = "Kai Hwang and Hai Jin and Roy S. C. Ho",
+	pages = "279-"}
+
+@inproceedings{DBLP:conf/hpdc/KonCMNB00,
+	title = "2K: A Distributed Operating System for Dynamic Heterogeneous
+               Environments.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830201abs.htm",
+	author = "Fabio Kon and Roy H. Campbell and M. Dennis Mickunas and Klara Nahrstedt and Francisco J. Ballesteros",
+	pages = "201-210"}
+
+@inproceedings{DBLP:conf/hpdc/KurmannMRS00,
+	title = "Speculative Defragmentation - A Technique to Improve the
+               Communication Software Efficiency for Gigabit Ethernet.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830131abs.htm",
+	author = "Christian Kurmann and Michael M{\"u}ller and Felix Rauch and Thomas Stricker",
+	pages = "131-138"}
+
+@inproceedings{DBLP:conf/hpdc/MuralidharP00,
+	title = "An Object Infrastructure for Computational Steering of Distributed
+               Simulations.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830304abs.htm",
+	author = "Rajeev Muralidhar and Manish Parashar",
+	pages = "304-305"}
+
+@inproceedings{DBLP:conf/hpdc/NishiTYKA00,
+	title = "A Local Area System Network RHinet-1: A Network for High
+               Performance Parallel Computing.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830296abs.htm",
+	author = "Hiroaki Nishi and Koji Tasho and Junji Yamamoto and Tomohiro Kudoh and Hideharu Amano",
+	pages = "296-297"}
+
+@inproceedings{DBLP:conf/hpdc/NolteH00,
+	title = "Parallel Matching and Sorting with TACO's Distributed Collections
+               - A Case Study from Molecular Biology Research.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830247abs.htm",
+	author = "J{\"o}rg Nolte and Paul Horton",
+	pages = "247-252"}
+
+@inproceedings{DBLP:conf/hpdc/PattenH00,
+	title = "Flexible High-Performance Access to Distributed Storage
+               Resources.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830175abs.htm",
+	author = "Craig J. Patten and Kenneth A. Hawick",
+	pages = "175-"}
+
+@inproceedings{DBLP:conf/hpdc/PlaleS00,
+	title = "dQUOB: Managing Large Data Flows using Dynamic Embedded
+               Queries.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830263abs.htm",
+	author = "Beth Plale and Karsten Schwan",
+	pages = "263-270"}
+
+@inproceedings{DBLP:conf/hpdc/RamanLS00,
+	title = "Resource Management through Multilateral Matchmaking.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830290abs.htm",
+	author = "Rajesh Raman and Miron Livny and Marvin H. Solomon",
+	pages = "290-291"}
+
+@inproceedings{DBLP:conf/hpdc/RenambotBGS00,
+	title = "CAVEStudy: An Infrastructure for Computational Steering
+               in Virtual Reality Environments.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830239abs.htm",
+	author = "Luc Renambot and Henri E. Bal and Desmond Germans and Hans J. W. Spoelder",
+	pages = "239-246"}
+
+@inproceedings{DBLP:conf/hpdc/SchroderH00,
+	title = "Evaluation of Task Assignment Policies for Supercomputing
+               Servers: The Case for Load Unbalancing and Fairness.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830211abs.htm",
+	author = "Bianca Schroeder and Mor Harchol-Balter",
+	pages = "211-220"}
+
+@inproceedings{DBLP:conf/hpdc/ShenC00,
+	title = "A Distributed Multi-Storage Resource Architecture and I/O
+               Performance Prediction for Scientific Computing.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830021abs.htm",
+	author = "Xiaohui Shen and Alok N. Choudhary",
+	pages = "21-"}
+
+@inproceedings{DBLP:conf/hpdc/SmithWMY00,
+	title = "An Evaluation of Alternative Designs for a Grid Information
+               Service.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830185abs.htm",
+	author = "Warren Smith and Abdul Waheed and David Meyers and Jerry C. Yan",
+	pages = "185-192"}
+
+@inproceedings{DBLP:conf/hpdc/GermainPMJ00,
+	title = "Uintah: A Massively Parallel Problem Solving Environment.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830033abs.htm",
+	author = "J. Davison de St. Germain and Steven G. Parker and John McCorquodale and Christopher R. Johnson",
+	pages = "33-42"}
+
+@inproceedings{DBLP:conf/hpdc/SumimotoTHHTI00,
+	title = "High Performance Communication using a Commodity Network
+               for Cluster Systems.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830139abs.htm",
+	author = "Shinji Sumimoto and Hiroshi Tezuka and Atsushi Hori and Hiroshi Harada and Toshiyuki Takahashi and Yutaka Ishikawa",
+	pages = "139-146"}
+
+@inproceedings{DBLP:conf/hpdc/TanakaHSNS00,
+	title = "Performance Evaluation of a Firewall-Compliant Globus-based
+               Wide-Area Cluster System.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830121abs.htm",
+	author = "Yoshio Tanaka and Motonori Hirano and Mitsuhisa Sato and Hidemoto Nakada and Satoshi Sekiguchi",
+	pages = "121-"}
+
+@inproceedings{DBLP:conf/hpdc/TerekhovW00,
+	title = "Distributed Data Access in the Sequential Access Model in
+               the D0 Experiment at Fermilab.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830310abs.htm",
+	author = "Igor Terekhov and Victoria White",
+	pages = "310-311"}
+
+@inproceedings{DBLP:conf/hpdc/ThainL00,
+	title = "Bypass: A Tool for Building Split Execution Systems.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830079abs.htm",
+	author = "Douglas Thain and Miron Livny",
+	pages = "79-86"}
+
+@inproceedings{DBLP:conf/hpdc/ThomasMB00,
+	title = "Development of Web Toolkits for Computational Science Portals:
+               The NPACI HotPage.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830308abs.htm",
+	author = "Mary Thomas and Stephen Mock and Jay Boisseau",
+	pages = "308-309"}
+
+@inproceedings{DBLP:conf/hpdc/TierneyCGHLT00,
+	title = "A Monitoring Sensor Management System for Grid Environments.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830097abs.htm",
+	author = "Brian Tierney and Brian Crowley and Dan Gunter and Mason Holding and Jason Lee and Mary Thompson",
+	pages = "97-104"}
+
+@inproceedings{DBLP:conf/hpdc/TurgeonSC00,
+	title = "Application Placement using Performance Surfaces.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830229abs.htm",
+	author = "Andr{\'e} Turgeon and Quinn Snell and Mark J. Clement",
+	pages = "229-"}
+
+@inproceedings{DBLP:conf/hpdc/WangOCF00,
+	title = "Using Idle Workstations to Implement Predictive Prefetching.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830087abs.htm",
+	author = "Jasmine Y. Q. Wang and Joon Suan Ong and Yvonne Coady and Michael J. Feeley",
+	pages = "87-"}
+
+@inproceedings{DBLP:conf/hpdc/WhiteGN00,
+	title = "Grid-based File Access: The Legion I/O Model.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830165abs.htm",
+	author = "Brian S. White and Andrew S. Grimshaw and Anh Nguyen-Tuong",
+	pages = "165-174"}
+
+@inproceedings{DBLP:conf/hpdc/WolskiGT00,
+	title = "Synchronizing Network Probes to Avoid Measurement Intrusiveness
+               with the Network Weather Service.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830147abs.htm",
+	author = "Richard Wolski and Benjamin Gaidioz and Bernard Tourancheau",
+	pages = "147-"}
+
+@inproceedings{DBLP:conf/hpdc/WuTGLLSHJ00,
+	title = "Prophesy: An Infrastructure for Analyzing and Modeling the
+               Performance of Parallel and Distributed Applications.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830302abs.htm",
+	author = "Xingfu Wu and Valerie E. Taylor and Jonathan Geisler and Xin Li and Zhiling Lan and Rick L. Stevens and Mark Hereld and Ivan R. Judson",
+	pages = "302-303"}
+
+@inproceedings{DBLP:conf/hpdc/XiaoZK00,
+	title = "Incorporating Job Migration and Network RAM to Share Cluster
+               Memory Resources.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830071abs.htm",
+	author = "Li Xiao and Xiaodong Zhang and Stefan A. Kubricht",
+	pages = "71-78"}
+
+@inproceedings{DBLP:conf/hpdc/XuNVW00,
+	title = "QoS and Contention-Aware Multi-Resource Reservation.",
+	ee = "http://computer.org/proceedings/hpdc/0783/07830003abs.htm",
+	author = "Dongyan Xu and Klara Nahrstedt and Arun Viswanathan and Duangdao Wichadakul",
+	pages = "3-10"}
+
+@default year = 1999
+
+@inproceedings{DBLP:conf/hpdc/AgbariaF99,
+	title = "Starfish: Fault-Tolerant Dynamic MPI Programs on Clusters
+               of Workstations.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870031abs.htm",
+	author = "Adnan Agbaria and Roy Friedman"}
+
+@inproceedings{DBLP:conf/hpdc/AkarsuFHKKSY99,
+	title = "Using Gateway System to Provide a Desktop Access to High
+               Performance Computational Resources.",
+	ee = "http://dx.doi.org/10.1109/HPDC.1999.805309",
+	author = "Erol Akarsu and Geoffrey Fox and Tomasz Haupt and Alexey Kalinichenko and Kang-Seok Kim and Praveen Sheethaalnath and Choon-Han Youn"}
+
+@inproceedings{DBLP:conf/hpdc/AllenGMS99,
+	title = "The Cactus Computational Toolkit and using Distributed Computing
+               to Collide Neutron Stars.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870007abs.htm",
+	author = "Gabrielle Allen and Tom Goodale and Joan Mass{\'o} and Edward Seidel"}
+
+@inproceedings{DBLP:conf/hpdc/AlmasiCP99,
+	title = "MATmarks: A Shared Memory Environment for MATLAB Programming.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870021abs.htm",
+	author = "George S. Almasi and Calin Cascaval and David A. Padua"}
+
+@inproceedings{DBLP:conf/hpdc/ArmstrongGGKKMPS99,
+	title = "Toward a Common Component Architecture for High-Performance
+               Scientific Computing.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870013abs.htm",
+	author = "Rob Armstrong and Dennis Gannon and Al Geist and Katarzyna Keahey and Scott R. Kohn and Lois C. McInnes and Steve R. Parker and Brent A. Smolinski"}
+
+@inproceedings{DBLP:conf/hpdc/BruneRV99,
+	title = "A Resource Description Environment for Distributed Computing
+               Systems.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870043abs.htm",
+	author = "Matthias Brune and Alexander Reinefeld and J{\"o}rg Varnholt"}
+
+@inproceedings{DBLP:conf/hpdc/ButlerCS99,
+	title = "A Performance Broker for CORBA.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870003abs.htm",
+	author = "Kevin Butler and Mark J. Clement and Quinn Snell"}
+
+@inproceedings{DBLP:conf/hpdc/CastanosS99,
+	title = "PARED: A Framework for the Adaptive Solution of PDEs.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870015abs.htm",
+	author = "Jos{\'e} G. Casta{\~n}os and John E. Savage"}
+
+@inproceedings{DBLP:conf/hpdc/ChoudharyKNNSTMT99,
+	title = "Data Management for Large-Scale Scientific Computations
+               in High Performance Distributed Systems.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870042abs.htm",
+	author = "Alok N. Choudhary and Mahmut T. Kandemir and Harsha S. Nagesh and Jaechun No and Xiaohui Shen and Valerie E. Taylor and Sachin More and Rajeev Thakur"}
+
+@inproceedings{DBLP:conf/hpdc/ClementSJW99,
+	title = "High Performance Phylogenetic Inference.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870018abs.htm",
+	author = "Mark J. Clement and Quinn Snell and Glenn Judd and Michael Whiting"}
+
+@inproceedings{DBLP:conf/hpdc/CoadyOF99,
+	title = "Using Embedded Network Processors to Implement Global Memory
+               Management in a Workstation Cluster.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870048abs.htm",
+	author = "Yvonne Coady and Joon Suan Ong and Michael J. Feeley"}
+
+@inproceedings{DBLP:conf/hpdc/CruzP99,
+	title = "DUNES: A Performance-Oriented System Support Environment
+               for Dependency Maintenance in Workstation Networks.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870047abs.htm",
+	author = "John Cruz and Kihong Park"}
+
+@inproceedings{DBLP:conf/hpdc/CzajkowskiFK99,
+	title = "Resource Co-Allocation in Computational Grids.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870037abs.htm",
+	author = "Karl Czajkowski and Ian T. Foster and Carl Kesselman"}
+
+@inproceedings{DBLP:conf/hpdc/DindaO99,
+	title = "An Evaluation of Linear Models for Host Load Prediction.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870010abs.htm",
+	author = "Peter A. Dinda and David R. O'Hallaron"}
+
+@inproceedings{DBLP:conf/hpdc/EickermannFPGV99,
+	title = "Distributed Applications in a German Gigabit WAN.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870028abs.htm",
+	author = "Thomas Eickermann and Wolfgang Frings and Stefan Posse and Gernot Goebbels and Roland V{\"o}lpel"}
+
+@inproceedings{DBLP:conf/hpdc/FrankeM99,
+	title = "Reducing Data Distribution Bottlenecks by Employing Data
+               Visualization Filters.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870041abs.htm",
+	author = "Ernest Franke and Michael Magee"}
+
+@inproceedings{DBLP:conf/hpdc/GopalanSMA99,
+	title = "Baglets: Adding Hierarchical Scheduling to Aglets.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870038abs.htm",
+	author = "Arvind Gopalan and Sajid Saleem and Matthias Martin and Daniel Andresen"}
+
+@inproceedings{DBLP:conf/hpdc/HooJ99,
+	title = "QoS as Middleware: Bandwidth Reservation System Design.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870023abs.htm",
+	author = "Gary Hoo and William E. Johnston"}
+
+@inproceedings{DBLP:conf/hpdc/HuST99,
+	title = "Adaptive Write Detection in Home-based Software DSMs.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870027abs.htm",
+	author = "Weiwu Hu and Weisong Shi and Zhimin Tang"}
+
+@inproceedings{DBLP:conf/hpdc/ImaiSIK99,
+	title = "CrispORB: High Performance CORBA for System Area Network.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870002abs.htm",
+	author = "Y. Imai and T. Saeki and T. Ishizaki and M. Kishimoto"}
+
+@inproceedings{DBLP:conf/hpdc/IsertKSPE99,
+	title = "Steering Data Streams in Distributed Computational Laboratories.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870016abs.htm",
+	author = "Carsten Isert and Davis King and Karsten Schwan and Beth Plale and Greg Eisenhauer"}
+
+@inproceedings{DBLP:conf/hpdc/JamesH99,
+	title = "Remote Application Scheduling on Metacomputing Systems.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870025abs.htm",
+	author = "Heath A. James and Kenneth A. Hawick"}
+
+@inproceedings{DBLP:conf/hpdc/JohnstonGN99,
+	title = "Grids as Production Computing Environments: The Engineering
+               Aspects of NASA's Information Power Grid.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870034abs.htm",
+	author = "William E. Johnston and Dennis Gannon and Bill Nitzberg"}
+
+@inproceedings{DBLP:conf/hpdc/KangGGH99,
+	title = "Techniques for Automating Distributed Real-Time Applications
+               Design.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870030abs.htm",
+	author = "Dong-In Kang and Richard Gerber and Leana Golubchik and Jeffrey K. Hollingsworth"}
+
+@inproceedings{DBLP:conf/hpdc/KapadiaFB99,
+	title = "Predictive Application-Performance Modeling in a Computational
+               Grid Environment.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870006abs.htm",
+	author = "Nirav H. Kapadia and Jos{\'e} A. B. Fortes and Carla E. Brodley"}
+
+@inproceedings{DBLP:conf/hpdc/KoussihAS99,
+	title = "Dodo: A User-level System for Exploiting Idle Memory in
+               Workstation Clusters.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870046abs.htm",
+	author = "Samir Koussih and Anurag Acharya and Sanjeev Setia"}
+
+@inproceedings{DBLP:conf/hpdc/LeighJDBG99,
+	title = "A Methodology for Supporting Collaborative Exploratory Analysis
+               of Massive Data Sets in Tele-Immersive Environments.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870008abs.htm",
+	author = "Jason Leigh and Andrew E. Johnson and Thomas A. DeFanti and Stuart Bailey and Robert L. Grossman"}
+
+@inproceedings{DBLP:conf/hpdc/LigonMS99,
+	title = "Spatially Decomposed Multigrain MOM Problems on NOWs.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870029abs.htm",
+	author = "Walter B. Ligon, III and Anthony Q. Martin and Daniel C. Stanzione, Jr."}
+
+@inproceedings{DBLP:conf/hpdc/LowekampOG99,
+	title = "Direct Queries for Discovering Network Resource Properties
+               in a Distributed Environment.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870005abs.htm",
+	author = "Bruce Lowekamp and David R. O'Hallaron and Thomas R. Gross"}
+
+@inproceedings{DBLP:conf/hpdc/Nahrstedt99,
+	title = "To Overprovision or To Share via QoS-aware Resource Management?",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870035abs.htm",
+	author = "Klara Nahrstedt"}
+
+@inproceedings{DBLP:conf/hpdc/PuA99,
+	title = "Distributed Processing for Cinematic Holographic Particle
+               Image Velocimetry.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870022abs.htm",
+	author = "Y. Pu and Daniel Andresen"}
+
+@inproceedings{DBLP:conf/hpdc/ReneP99,
+	title = "MPI Code Encapsulating using Parallel CORBA Object.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870001abs.htm",
+	author = "Christophe Ren{\'e} and Thierry Priol"}
+
+@inproceedings{DBLP:conf/hpdc/ReschGG99,
+	title = "An Approach for MPI based Metacomputing.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870017abs.htm",
+	author = "Michael M. Resch and Edgar Gabriel and Alfred Geiger"}
+
+@inproceedings{DBLP:conf/hpdc/Romberg99,
+	title = "The UNICORE Architecture Seamless Access to Distributed
+               Resources.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870044abs.htm",
+	author = "Mathilde Romberg"}
+
+@inproceedings{DBLP:conf/hpdc/RosePASSWR99,
+	title = "An Approach to Immersive Performance Visualization of Parallel
+               and Wide-Area Distributed Applications.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870040abs.htm",
+	author = "Luiz De Rose and Mario Pantano and Ruth A. Aydt and Eric Shaffer and Benjamin Schaeffer and Shannon Whitmore and Daniel A. Reed"}
+
+@inproceedings{DBLP:conf/hpdc/SchnaidtHFKJ99,
+	title = "Passive, Domain-Independent, End-to-End Message Passing
+               Performance Monitoring to Support Adaptive Applications
+               in MSHN.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870019abs.htm",
+	author = "Matthew C. Schnaidt and Debra A. Hensgen and John Falby and Taylor Kidd and David St. John"}
+
+@inproceedings{DBLP:conf/hpdc/ShiHTE99,
+	title = "Dynamic Task Migration in Home-based Software DSM Systems.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870020abs.htm",
+	author = "Weisong Shi and Weiwu Hu and Zhimin Tang and M. Rasit Eskicioglu"}
+
+@inproceedings{DBLP:conf/hpdc/SupinskiK99,
+	title = "Accurately Measuring MPI Broadcasts in a Computational Grid.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870004abs.htm",
+	author = "Bronis R. de Supinski and Nicholas T. Karonis"}
+
+@inproceedings{DBLP:conf/hpdc/TakefusaMNAN99,
+	title = "Overview of a Performance Evaluation System for Global Computing
+               Scheduling Algorithms.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870011abs.htm",
+	author = "Atsuko Takefusa and Satoshi Matsuoka and Hidemoto Nakada and Kento Aida and Umpei Nagashima"}
+
+@inproceedings{DBLP:conf/hpdc/TierneyLCHHD99,
+	title = "A Network-Aware Distributed Storage Cache for Data Intensive
+               Environments.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870033abs.htm",
+	author = "Brian Tierney and Jason Lee and Brian Crowley and Mason Holding and Jeremy Hylton and Fred L. Drake"}
+
+@inproceedings{DBLP:conf/hpdc/UengSLL99,
+	title = "Proteus: A Runtime Reconfigurable Distributed Shared Memory
+               System.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870024abs.htm",
+	author = "Jyh-Chang Ueng and Ce-Kuen Shieh and Wu-Hwa. Liu and Chi-Chang Lin"}
+
+@inproceedings{DBLP:conf/hpdc/VillacisGSWBDTGB99,
+	title = "CAT: A High Performance Distributed Component Architecture
+               Toolkit for the Grid.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870014abs.htm",
+	author = "Juan E. Villacis and Madhusudhan Govindaraju and David Stern and Andrew Whitaker and Fabian Breg and Prafulla Deuskar and Benjamin Temko and Dennis Gannon and Randall Bramley"}
+
+@inproceedings{DBLP:conf/hpdc/VogelsRB99,
+	title = "Six Misconceptions about Reliable Distributed Computing.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870036abs.htm",
+	author = "Werner Vogels and Robbert van Renesse and Kenneth P. Birman"}
+
+@inproceedings{DBLP:conf/hpdc/Weissman99,
+	title = "Fault Tolerant Computing on the Grid: What are My Options?",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870026abs.htm",
+	author = "Jon B. Weissman"}
+
+@inproceedings{DBLP:conf/hpdc/WolskiSH99,
+	title = "Predicting the CPU Availability of Time-shared Unix Systems
+               on the Computational Grid.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870012abs.htm",
+	author = "Richard Wolski and Neil T. Spring and Jim Hayes"}
+
+@inproceedings{DBLP:conf/hpdc/WoodwardA99,
+	title = "Portable Petaflop/s Programming: Applying Distributed Computing
+               Methodology to the Grid within a Single Machine Room.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870009abs.htm",
+	author = "Paul R. Woodward and Sarah E. Anderson"}
+
+@inproceedings{DBLP:conf/hpdc/ZandyML99,
+	title = "Process Hijacking.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870032abs.htm",
+	author = "Victor C. Zandy and Barton P. Miller and Miron Livny"}
+
+@inproceedings{DBLP:conf/hpdc/ZotkinK99,
+	title = "Job-Length Estimation and Performance in Backfilling Schedulers.",
+	ee = "http://computer.org/proceedings/hpdc/0287/02870039abs.htm",
+	author = "Dmitry Zotkin and Peter J. Keleher"}
+
+@default year = 1998
+
+@inproceedings{DBLP:conf/hpdc/AidaTNMN98,
+	title = "A Performance Evaluation Model for Effective Job Scheduling
+               in Global Computing Systems.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790352abs.htm",
+	author = "Kento Aida and Atsuko Takefusa and Hidemoto Nakada and Satoshi Matsuoka and Umpei Nagashima",
+	pages = "352-353"}
+
+@inproceedings{DBLP:conf/hpdc/Al-TawilM98,
+	title = "LogGP Quantified: The Case for MPI.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790366abs.htm",
+	author = "Khalid Al-Tawil and Csaba Andras Moritz",
+	pages = "366-367"}
+
+@inproceedings{DBLP:conf/hpdc/AndersenA98,
+	title = "Implementation and Utilization of a Heterogeneous Multicomputer
+               Cluster for the Study of Load Balancing Strategies.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790362abs.htm",
+	author = "Per H. Andersen and John K. Antonio",
+	pages = "362-363"}
+
+@inproceedings{DBLP:conf/hpdc/AndresenM98,
+	title = "Towards a Hierarchical Scheduling System for Distributed
+               WWW Server Clusters.",
+	ee = "http://dlib.computer.org/conferen/hpdc/8579/pdf/85790301.pdf",
+	author = "Daniel Andresen and Timothy McCune",
+	pages = "301-"}
+
+@inproceedings{DBLP:conf/hpdc/BeckmanFHM98,
+	title = "Efficient Coupling of Parallel Applications Using PAWS.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790215abs.htm",
+	author = "Peter H. Beckman and Patricia K. Fasel and William F. Humphrey and Susan M. Mniszewski",
+	pages = "215-"}
+
+@inproceedings{DBLP:conf/hpdc/BhatPR98,
+	title = "Adaptive Communication Algorithms for Distributed Heterogeneous
+               Systems.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790310abs.htm",
+	author = "Prashanth B. Bhat and Viktor K. Prasanna and Cauligi S. Raghavendra",
+	pages = "310-"}
+
+@inproceedings{DBLP:conf/hpdc/BrunettCFFJKLT98,
+	title = "Application Experiences with the Globus Toolkit.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790081abs.htm",
+	author = "Sharon Brunett and Karl Czajkowski and Steven Fitzgerald and Ian T. Foster and Andrew E. Johnson and Carl Kesselman and Jason Leigh and Steven Tuecke",
+	pages = "81-"}
+
+@inproceedings{DBLP:conf/hpdc/ChenT98,
+	title = "Mesh Partitioning for Distributed Systems.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790292abs.htm",
+	author = "Jian Chen and Valerie E. Taylor",
+	pages = "292-300"}
+
+@inproceedings{DBLP:conf/hpdc/ChenWCK98,
+	title = "Automatic Parallel I/O Performance Optimization Using Genetic
+               Algorithms.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790155abs.htm",
+	author = "Ying Chen and Marianne Winslett and Yong Cho and Szu-Wen Kuo",
+	pages = "155-162"}
+
+@inproceedings{DBLP:conf/hpdc/ChoWCK98,
+	title = "Parallel I/O Performance of Fine Grained Data Distributions.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790163abs.htm",
+	author = "Yong Cho and Marianne Winslett and Ying Chen and Szu-Wen Kuo",
+	pages = "163-"}
+
+@inproceedings{DBLP:conf/hpdc/CzechHG98,
+	title = "Flexible Protocol Stacks by In-Kernel Composition.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790344abs.htm",
+	author = "Christian B. Czech and Bertram H{\"u}tter and Michael Gwinner",
+	pages = "344-345"}
+
+@inproceedings{DBLP:conf/hpdc/DeFantiSDBRLJL98,
+	title = "Personal Tele-Immersion Devices.",
+	ee = "http://dlib.computer.org/conferen/hpdc/8579/pdf/85790198.pdf",
+	author = "Thomas A. DeFanti and Daniel J. Sandin and Greg Dawe and Maxine D. Brown and M. Rawlings and Gary Lindahl and Andrew E. Johnson and Jason Leigh",
+	pages = "198-205"}
+
+@inproceedings{DBLP:conf/hpdc/DiwanG98,
+	title = "Adaptive Utilization of Communication and Computational
+               Resources in High-Performance Distribution Systems: The
+               EMOP Approach.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790002abs.htm",
+	author = "Shridhar Diwan and Dennis Gannon",
+	pages = "2-9"}
+
+@inproceedings{DBLP:conf/hpdc/DongarraFGKPSSM98,
+	title = "HARNESS: Heterogeneous Adaptable Reconfigurable NEtworked
+               SystemS.",
+	ee = "http://dlib.computer.org/conferen/hpdc/8579/pdf/85790358.pdf",
+	author = "Jack Dongarra and Graham E. Fagg and Al Geist and James Arthur Kohl and Philip M. Papadopoulos and Stephen L. Scott and Vaidy S. Sunderam and M. Magliardi",
+	pages = "358-359"}
+
+@inproceedings{DBLP:conf/hpdc/ForslundGG98,
+	title = "TeleMed: Wide-Area, Secure, Collaborative Object Computing
+               with Java and CORBA for Healthcare.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPDC.1998.709949",
+	author = "David W. Forslund and James E. George and Eugene M. Gavrilov",
+	pages = "30-33"}
+
+@inproceedings{DBLP:conf/hpdc/FryNS98,
+	title = "Computing Twin Primes and Brun's Constant: A Distributed
+               Approach.",
+	ee = "http://dlib.computer.org/conferen/hpdc/8579/pdf/85790042.pdf",
+	author = "P. H. Fry and Jeffrey Nesheiwat and Boleslaw K. Szymanski",
+	pages = "42-"}
+
+@inproceedings{DBLP:conf/hpdc/GentileEA98,
+	title = "Lilith: A Software Framework for the Rapid Development of
+               Scalable Tools for Distributed Computing.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790360abs.htm",
+	author = "Ann C. Gentile and David A. Evensky and Robert C. Armstrong",
+	pages = "360-361"}
+
+@inproceedings{DBLP:conf/hpdc/GheorghiuRN98,
+	title = "Authorization for Metacomputing Applications.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790132abs.htm",
+	author = "G. Gheorghiu and Tatyana Ryutov and B. Clifford Neuman",
+	pages = "132-139"}
+
+@inproceedings{DBLP:conf/hpdc/GianniniC98,
+	title = "A Software Architecture for Global Address Space Communication
+               on Clusters: Put/Get on Fast Messages.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790330abs.htm",
+	author = "Louis A. Giannini and Andrew A. Chien",
+	pages = "330-"}
+
+@inproceedings{DBLP:conf/hpdc/GoddardS98,
+	title = "ToolSpace: A Next Generation Computing Environment.",
+	ee = "http://dlib.computer.org/conferen/hpdc/8579/pdf/85790356.pdf",
+	author = "T. Goddard and Vaidy S. Sunderam",
+	pages = "356-357"}
+
+@inproceedings{DBLP:conf/hpdc/HackstadtHM98,
+	title = "A Framework for Interacting with Distributed Programs and
+               Data.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790206abs.htm",
+	author = "Steven T. Hackstadt and Christopher W. Harrop and Allen D. Malony",
+	pages = "206-214"}
+
+@inproceedings{DBLP:conf/hpdc/HollingsworthK98,
+	title = "Prediction and Adaptation in Active Harmony.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790180abs.htm",
+	author = "Jeffrey K. Hollingsworth and Peter J. Keleher",
+	pages = "180-188"}
+
+@inproceedings{DBLP:conf/hpdc/HolmedahlSY98,
+	title = "Cooperative Caching of Dynamic Content on a Distributed
+               Web Server.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790243abs.htm",
+	author = "Vegard Holmedahl and Ben Smith and Tao Yang",
+	pages = "243-"}
+
+@inproceedings{DBLP:conf/hpdc/Johnston98,
+	title = "High-Speed, Wide Area, Data Intensive Computing: A Ten Year
+               Retrospective.",
+	ee = "http://dlib.computer.org/conferen/hpdc/8579/pdf/85790280.pdf",
+	author = "William E. Johnston",
+	pages = "280-291"}
+
+@inproceedings{DBLP:conf/hpdc/JuddCS98,
+	title = "The DOGMA Approach to High-Utilization Supercomputing.",
+	ee = "http://dlib.computer.org/conferen/hpdc/8579/pdf/85790064.pdf",
+	author = "Glenn Judd and Mark J. Clement and Quinn Snell",
+	pages = "64-70"}
+
+@inproceedings{DBLP:conf/hpdc/KanitkarD98,
+	title = "Two-Stage Transaction Processing in Client-Server DBMSs.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790098abs.htm",
+	author = "Vinay Kanitkar and Alex Delis",
+	pages = "98-105"}
+
+@inproceedings{DBLP:conf/hpdc/KapadiaF98,
+	title = "On the Design of a Demand-Based Network-Computing System:
+               The Purdue University Network-Computing Hub.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790071abs.htm",
+	author = "Nirav H. Kapadia and Jos{\'e} A. B. Fortes",
+	pages = "71-80"}
+
+@inproceedings{DBLP:conf/hpdc/LauriaPC98,
+	title = "Efficient Layering for High Speed Communication: Fast Messages
+               2.x.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790010abs.htm",
+	author = "Mario Lauria and Scott Pakin and Andrew A. Chien",
+	pages = "10-20"}
+
+@inproceedings{DBLP:conf/hpdc/LowekampMSGSS98,
+	title = "A Resource Query Interface for Network-Aware Applications.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790189abs.htm",
+	author = "Bruce Lowekamp and Nancy Miller and Dean Sutherland and Thomas R. Gross and Peter Steenkiste and Jaspal Subhlok",
+	pages = "189-"}
+
+@inproceedings{DBLP:conf/hpdc/McRobbieMAGPRWW98,
+	title = "Global High Performance Networking: Connecting the vNBS
+               and the Asia-Pacific Advanced Network for Research and Education
+               Applications.",
+	ee = "http://dlib.computer.org/conferen/hpdc/8579/pdf/85790252.pdf",
+	author = "Michael A. McRobbie and Donald F. McMullen and K. H. Adams and Dennis Gannon and Douglas D. Pearson and R. Allen Robel and Steven S. Wallace and James G. Williams",
+	pages = "252-259"}
+
+@inproceedings{DBLP:conf/hpdc/MillerHPJ98,
+	title = "Simulation Steering with SCIRun in a Distributed Environment.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790364abs.htm",
+	author = "Michelle Miller and Charles D. Hansen and Steven G. Parker and Christopher R. Johnson",
+	pages = "364-365"}
+
+@inproceedings{DBLP:conf/hpdc/NaikTC98,
+	title = "NETMAN: An Object-Oriented Environment for Experimenting
+               Distributed Algorithms on a Network of Workstations.",
+	ee = "http://dlib.computer.org/conferen/hpdc/8579/pdf/85790350.pdf",
+	author = "Kshirasagar Naik and Y. Tahara and Z. Cheng",
+	pages = "350-351"}
+
+@inproceedings{DBLP:conf/hpdc/Nguyen-TuongCG98,
+	title = "Extending Metasystem Functionality Using Reflection.",
+	ee = "http://dlib.computer.org/conferen/hpdc/8579/pdf/85790346.pdf",
+	author = "Anh Nguyen-Tuong and Steve J. Chapin and Andrew S. Grimshaw",
+	pages = "346-347"}
+
+@inproceedings{DBLP:conf/hpdc/NieplochaFD98,
+	title = "Distant I/O: One-Sided Access to Secondary Storage on Remote
+               Processors.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790148abs.htm",
+	author = "Jarek Nieplocha and Ian T. Foster and Holger Dachsel",
+	pages = "148-154"}
+
+@inproceedings{DBLP:conf/hpdc/OguchiSTK98,
+	title = "Optimizing Protocol Parameters to Large Scale PC Cluster
+               and Evaluation of its Effectiveness with Parallel Data Mining.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790034abs.htm",
+	author = "Masato Oguchi and Takahiko Shintani and Takayuki Tamura and Masaru Kitsuregawa",
+	pages = "34-41"}
+
+@inproceedings{DBLP:conf/hpdc/PagniaT98,
+	title = "Improving Replication Protocols through Priorities.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790342abs.htm",
+	author = "Henning Pagnia and Oliver E. Theel",
+	pages = "342-343"}
+
+@inproceedings{DBLP:conf/hpdc/ParkD98,
+	title = "The Effect of Clustering in Client-Caching Architectures.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790354abs.htm",
+	author = "Je-Ho Park and Alex Delis",
+	pages = "354-355"}
+
+@inproceedings{DBLP:conf/hpdc/QuinnMS98,
+	title = "Otter: Bridging the Gap between MATLAB and ScaLAPACK.",
+	ee = "http://dlib.computer.org/conferen/hpdc/8579/pdf/85790114.pdf",
+	author = "Michael J. Quinn and Alexey G. Malishevsky and Nagajagadeswar Seelam",
+	pages = "114-"}
+
+@inproceedings{DBLP:conf/hpdc/RamanLS98,
+	title = "Matchmaking: Distributed Resource Management for High Throughput
+               Computing.",
+	ee = "http://dlib.computer.org/conferen/hpdc/8579/pdf/85790140.pdf",
+	author = "Rajesh Raman and Miron Livny and Marvin H. Solomon",
+	pages = "140-"}
+
+@inproceedings{DBLP:conf/hpdc/RiblerVSR98,
+	title = "Autopilot: Adaptive Control of Distributed Applications.",
+	ee = "http://dlib.computer.org/conferen/hpdc/8579/pdf/85790172.pdf",
+	author = "Randy L. Ribler and Jeffrey S. Vetter and Huseyin Simitci and Daniel A. Reed",
+	pages = "172-179"}
+
+@inproceedings{DBLP:conf/hpdc/RosuS98,
+	title = "Sender Coordination in the Distributed Virtual Communication
+               Machine.",
+	ee = "http://dlib.computer.org/conferen/hpdc/8579/pdf/85790322.pdf",
+	author = "Marcel-Catalin Rosu and Karsten Schwan",
+	pages = "322-329"}
+
+@inproceedings{DBLP:conf/hpdc/RoyC98,
+	title = "Strings: A High-Performance Distributed Shared Memory for
+               Symmetrical Multiprocessor Clusters.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790090abs.htm",
+	author = "Sumit Roy and Vipin Chaudhary",
+	pages = "90-97"}
+
+@inproceedings{DBLP:conf/hpdc/RussBGJRL98,
+	title = "Hectiling: An Integration of Fine and Coarse-Grained Load-Balancing
+               Strategies.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790106abs.htm",
+	author = "Samuel H. Russ and Ioana Banicescu and Sheikh Ghafoor and Bharathi Janapareddi and Jonathan Robinson and Rong Lu",
+	pages = "106-113"}
+
+@inproceedings{DBLP:conf/hpdc/SalmonSBS98,
+	title = "Scaling of Beowulf-Class Distributed Systems.",
+	ee = "http://dlib.computer.org/conferen/hpdc/8579/pdf/85790368.pdf",
+	author = "John K. Salmon and Thomas L. Sterling and Rajesh Bordawekar and Christopher Stein",
+	pages = "368-369"}
+
+@inproceedings{DBLP:conf/hpdc/Schatz98,
+	title = "High-Performance Distributed Digital Libraries: Building
+               the Interspace on the Grid.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790224abs.htm",
+	author = "Bruce R. Schatz",
+	pages = "224-234"}
+
+@inproceedings{DBLP:conf/hpdc/StellingFKLL98,
+	title = "A Fault Detection Service for Wide Area Distributed Computations.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790268abs.htm",
+	author = "Paul Stelling and Ian T. Foster and Carl Kesselman and Craig A. Lee and Gregor von Laszewski",
+	pages = "268-"}
+
+@inproceedings{DBLP:conf/hpdc/TierneyJCHBG98,
+	title = "The NetLogger Methodology for High Performance Distributed
+               Systems Performance Analysis.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790260abs.htm",
+	author = "Brian Tierney and William E. Johnston and Brian Crowley and Gary Hoo and Chris Brooks and Dan Gunter",
+	pages = "260-267"}
+
+@inproceedings{DBLP:conf/hpdc/VahdatADBCEY98,
+	title = "WebOS: Operating System Services for Wide Area Applications.",
+	ee = "http://dlib.computer.org/conferen/hpdc/8579/pdf/85790052.pdf",
+	author = "Amin Vahdat and Thomas E. Anderson and Michael Dahlin and E. Belani and David E. Culler and P. Eastham and Chad Yoshikawa",
+	pages = "52-63"}
+
+@inproceedings{DBLP:conf/hpdc/Weissman98,
+	title = "Metascheduling: A Scheduling Model for Metacomputing Systems.",
+	ee = "http://dlib.computer.org/conferen/hpdc/8579/pdf/85790348.pdf",
+	author = "Jon B. Weissman",
+	pages = "348-349"}
+
+@inproceedings{DBLP:conf/hpdc/YoussefAM98,
+	title = "The Software Architecture of a Distributed Quality of Session
+               Control Layer.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790021abs.htm",
+	author = "Alaa Youssef and Hussein M. Abdel-Wahab and Kurt Maly",
+	pages = "21-"}
+
+@inproceedings{DBLP:conf/hpdc/Zambonelli98,
+	title = "On the Effectiveness of Distributed Checkpoint Algorithms
+               for Domino-Free Recovery.",
+	ee = "http://dlib.computer.org/conferen/hpdc/8579/pdf/85790124.pdf",
+	author = "Franco Zambonelli",
+	pages = "124-131"}
+
+@inproceedings{DBLP:conf/hpdc/ZhangSL98,
+	title = "Dynamically Instrumenting Message-Passing Programs Using
+               Virtual Clocks.",
+	ee = "http://dlib.computer.org/conferen/hpdc/8579/pdf/85790340.pdf",
+	author = "Kang Zhang and Chengzheng Sun and Kei-Chun Li",
+	pages = "340-341"}
+
+@inproceedings{DBLP:conf/hpdc/ZhuYZWIS98,
+	title = "Adaptive Load Sharing for Clustered Digital Library Servers.",
+	ee = "http://computer.org/proceedings/hpdc/8579/85790235abs.htm",
+	author = "Huican Zhu and Tao Yang and Qi Zheng and David Watson and Oscar H. Ibarra and Terence R. Smith",
+	pages = "235-242"}
+
+@default year = 1997
+
+@inproceedings{DBLP:conf/hpdc/ArmstrongWYBB97,
+	title = "Frame-Based Components for Generalized Particle Methods.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170050abs.htm",
+	author = "Robert C. Armstrong and Pete Wyckoff and C. Yam and M. Bui-Pham and N. Brown",
+	pages = "50-"}
+
+@inproceedings{DBLP:conf/hpdc/AsthanaSS97,
+	title = "Kaleido: An Environment for Composing Networked Multimedia
+               Applications.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170181abs.htm",
+	author = "Abhaya Asthana and James Sienicki and Mani B. Srivastava",
+	pages = "181-190"}
+
+@inproceedings{DBLP:conf/hpdc/BaldoniBP97,
+	title = "Flexible General Purpose Communication Primitives for Distributed
+               Systems.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170201abs.htm",
+	author = "Roberto Baldoni and Roberto Beraldi and Ravi Prakash",
+	pages = "201-"}
+
+@inproceedings{DBLP:conf/hpdc/ChalasaniR97,
+	title = "Parallel FFT on ATM-based Networks of Workstations.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170002abs.htm",
+	author = "Suresh Chalasani and Parameswaran Ramanathan",
+	pages = "2-11"}
+
+@inproceedings{DBLP:conf/hpdc/DasSJA97,
+	title = "Cellular Mobile Networks.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170254abs.htm",
+	author = "Sajal K. Das and Sanjoy K. Sen and Rajeev Jayaram and Prathima Agrawal",
+	pages = "254-263"}
+
+@inproceedings{DBLP:conf/hpdc/DincerF97,
+	title = "Design Issues in Building Web-Based Programming Environments.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170283abs.htm",
+	author = "Kivanc Dincer and Geoffrey Fox",
+	pages = "283-292"}
+
+@inproceedings{DBLP:conf/hpdc/DiszJOS97,
+	title = "The Argonne Voyager Multimedia Server.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170071abs.htm",
+	author = "Terry Disz and Ivan R. Judson and Robert Olson and Rick L. Stevens",
+	pages = "71-80"}
+
+@inproceedings{DBLP:conf/hpdc/Downey97,
+	title = "A Parallel Workload Model and its Implications for Processor
+               Allocation.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170112abs.htm",
+	author = "Allen B. Downey",
+	pages = "112-"}
+
+@inproceedings{DBLP:conf/hpdc/EvenskyGCA97,
+	title = "Lilith: Scalable Execution of User Code for Distributed
+               Computing.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170305abs.htm",
+	author = "David A. Evensky and Ann C. Gentile and L. J. Camp and Robert C. Armstrong",
+	pages = "305-"}
+
+@inproceedings{DBLP:conf/hpdc/FigueiraB97,
+	title = "Predicting Slowdown for Networked Workstations.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170092abs.htm",
+	author = "Silvia M. Figueira and Francine Berman",
+	pages = "92-101"}
+
+@inproceedings{DBLP:conf/hpdc/FitzgeraldFKLST97,
+	title = "A Directory Service for Configuring High-Performance Distributed
+               Computations.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170365abs.htm",
+	author = "Steven Fitzgerald and Ian T. Foster and Carl Kesselman and Gregor von Laszewski and Warren Smith and Steven Tuecke",
+	pages = "365-376"}
+
+@inproceedings{DBLP:conf/hpdc/FosterKKKT97,
+	title = "A Secure Communications Infrastructure for High-Performance
+               Distributed Computing.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170125abs.htm",
+	author = "Ian T. Foster and Nicholas T. Karonis and Carl Kesselman and G. Koenig and Steven Tuecke",
+	pages = "125-136"}
+
+@inproceedings{DBLP:conf/hpdc/FriedmanR97,
+	title = "Packing Messages as a Tool for Boosting the Performance
+               of Total Ordering Protocols.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170233abs.htm",
+	author = "Roy Friedman and Robbert van Renesse",
+	pages = "233-242"}
+
+@inproceedings{DBLP:conf/hpdc/HaydenR97,
+	title = "Optimizing Layered Communication Protocols.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170169abs.htm",
+	author = "Mark Hayden and Robbert van Renesse",
+	pages = "169-"}
+
+@inproceedings{DBLP:conf/hpdc/HuL97,
+	title = "Adaptive Cache Invalidation Methods in Mobile Environments.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170264abs.htm",
+	author = "Qinglong Hu and Dik Lun Lee",
+	pages = "264-273"}
+
+@inproceedings{DBLP:conf/hpdc/KeaheyG97,
+	title = "PARDIS: A Parallel Approach to CORBA.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170031abs.htm",
+	author = "Katarzyna Keahey and Dennis Gannon",
+	pages = "31-39"}
+
+@inproceedings{DBLP:conf/hpdc/KimL97,
+	title = "Utilizing Heterogeneous Networks in Distributed Parallel
+               Computing Systems.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170336abs.htm",
+	author = "JunSeong Kim and David J. Lilja",
+	pages = "336-"}
+
+@inproceedings{DBLP:conf/hpdc/Knafla97,
+	title = "Speed Up Your Database Client with Adaptable Multithreaded
+               Prefetching.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170102abs.htm",
+	author = "Nils Knafla",
+	pages = "102-111"}
+
+@inproceedings{DBLP:conf/hpdc/LeeHL97,
+	title = "Channel Allocation Methods for Data Dissemination in Mobile
+               Computing Environments.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170274abs.htm",
+	author = "Wang-Chien Lee and Qinglong Hu and Dik Lun Lee",
+	pages = "274-"}
+
+@inproceedings{DBLP:conf/hpdc/LeichtlCC97,
+	title = "Parallel Programming in Multi-Paradigm Clusters.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170326abs.htm",
+	author = "J. Leichtl and Phyllis Crandall and Mark J. Clement",
+	pages = "326-335"}
+
+@inproceedings{DBLP:conf/hpdc/Liebhart97,
+	title = "Performance Aspects of Switched SCI Systems.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170223abs.htm",
+	author = "Manfred Liebhart",
+	pages = "223-"}
+
+@inproceedings{DBLP:conf/hpdc/McMillan97,
+	title = "ASCI Applications.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170179.pdf",
+	author = "Charles McMillan",
+	pages = 179}
+
+@inproceedings{DBLP:conf/hpdc/NetzerX97,
+	title = "Replaying Distributed Programs without Message Logging.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170137abs.htm",
+	author = "Robert H. B. Netzer and Yikang Xu",
+	pages = "137-147"}
+
+@inproceedings{DBLP:conf/hpdc/NitzbergL97,
+	title = "Collective Buffering: Improving Parallel I/O Performance.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170148abs.htm",
+	author = "Bill Nitzberg and Virginia Mary Lo",
+	pages = "148-"}
+
+@inproceedings{DBLP:conf/hpdc/RosuSF97,
+	title = "Supporting Parallel Applications on Clusters of Workstations:
+               The Intelligent Network Interface Approach.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170159abs.htm",
+	author = "Marcel-Catalin Rosu and Karsten Schwan and Richard Fujimoto",
+	pages = "159-168"}
+
+@inproceedings{DBLP:conf/hpdc/SimonS97,
+	title = "Load-balanced Routing for Collaborative Multimedia Communication.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170081abs.htm",
+	author = "Robert Simon and Arun K. Sood",
+	pages = "81-"}
+
+@inproceedings{DBLP:conf/hpdc/SinghalNRNF97,
+	title = "InVerse: Designing an Interactive Universe Architecture
+               for Scalability and Extensibility.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170061abs.htm",
+	author = "Sandeep K. Singhal and Binh Q. Nguyen and Richard Redpath and Jimmy Nguyen and Michael Fraenkel",
+	pages = "61-70"}
+
+@inproceedings{DBLP:conf/hpdc/SiuS97,
+	title = "Design Patterns for Parallel Computing using a Network of
+               Processors.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170293abs.htm",
+	author = "Stephen Siu and Ajit Singh",
+	pages = "293-304"}
+
+@inproceedings{DBLP:conf/hpdc/SnellG97,
+	title = "Parallel Hierarchical Global Illumination.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170012abs.htm",
+	author = "Quinn Snell and John L. Gustafson",
+	pages = "12-19"}
+
+@inproceedings{DBLP:conf/hpdc/SteeleDKL97,
+	title = "A Bus-Efficient Low-Latency Network Interface for the PDSS
+               Multicomputer.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170213abs.htm",
+	author = "Craig S. Steele and Jeffrey T. Draper and Jeff Koller and C. LaCour",
+	pages = "213-222"}
+
+@inproceedings{DBLP:conf/hpdc/SudoSS97,
+	title = "Distributed-Thread Scheduling Methods for Reducing Page-Thrashing.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170356abs.htm",
+	author = "Yoshiaki Sudo and Shigeo Suzuki and Shigeki Shibayama",
+	pages = "356-364"}
+
+@inproceedings{DBLP:conf/hpdc/TopcuogluHFVRKKBY97,
+	title = "The Software Architecture of a Virtual Distributed Computing
+               Environment.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170040abs.htm",
+	author = "Haluk Topcuoglu and Salim Hariri and Wojtek Furmanski and Jon Valente and Ilkyeun Ra and Dongmin Kim and Yoonhee Kim and Xue Bing and Baoqing Ye",
+	pages = "40-49"}
+
+@inproceedings{DBLP:conf/hpdc/WeissmanZ97,
+	title = "Run-time Support for Scheduling Parallel Applications in
+               Heterogeneous NOWs.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170347abs.htm",
+	author = "Jon B. Weissman and Xin Zhao",
+	pages = "347-355"}
+
+@inproceedings{DBLP:conf/hpdc/WilliamsC97,
+	title = "Distributed Polyphonic Music Synthesis.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170020abs.htm",
+	author = "J. Williams and Mark J. Clement",
+	pages = "20-"}
+
+@inproceedings{DBLP:conf/hpdc/Wolski97,
+	title = "Forecasting Network Performance to Support Dynamic Scheduling
+               using the Network Weather Service.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170316abs.htm",
+	author = "Richard Wolski",
+	pages = "316-325"}
+
+@inproceedings{DBLP:conf/hpdc/WonS97,
+	title = "Distributed Service Paradigm for Remote Video Retrieval
+               Request.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170191abs.htm",
+	author = "Youjip Won and Jaideep Srivastava",
+	pages = "191-200"}
+
+@inproceedings{DBLP:conf/hpdc/YocumCGL97,
+	title = "Cut-Through Delivery in Trapeze: An Exercise in Low-Latency
+               Messaging.",
+	ee = "http://computer.org/proceedings/hpdc/8117/81170243abs.htm",
+	author = "Ken Yocum and Jeffrey S. Chase and Andrew J. Gallatin and Alvin R. Lebeck",
+	pages = "243-"}
+
+@default year = 1996
+
+@inproceedings{DBLP:conf/hpdc/AgasaveeranL96,
+	title = "Distributed Job Scheduling in SCI Local - Area Multiprocessors.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820606abs.htm",
+	author = "Saravanan Agasaveeran and Qiang Li",
+	pages = "606-615"}
+
+@inproceedings{DBLP:conf/hpdc/AgusleoS96,
+	title = "Employing Logic-Enhanced Memory for High-Performance ATM
+               Network Interfaces.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820192abs.htm",
+	author = "Henky Agusleo and Nandit Soparkar",
+	pages = "192-"}
+
+@inproceedings{DBLP:conf/hpdc/Al-TawilBN96,
+	title = "A Process Migration Subsystem for a Workstation-Based Distributed
+               System.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820511abs.htm",
+	author = "Khalid M. Al-Tawil and M. Bozyigit and S. K. Naseer",
+	pages = "511-520"}
+
+@inproceedings{DBLP:conf/hpdc/AlfanoS96,
+	title = "Controlling QoS in a Collaborative Multimedia Environment.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820340abs.htm",
+	author = "Marco Alfano and Rolf Sigle",
+	pages = "340-347"}
+
+@inproceedings{DBLP:conf/hpdc/AlmerothA96,
+	title = "Collecting and Modeling the Join/Leave Behavior of Multicast
+               Group Members in the MBone.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820209abs.htm",
+	author = "Kevin C. Almeroth and Mostafa H. Ammar",
+	pages = "209-216"}
+
+@inproceedings{DBLP:conf/hpdc/AydtCR96,
+	title = "I/O Requirements of Scientific Applications: An Evolutionary
+               View E. Smirni.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820049abs.htm",
+	author = "Ruth A. Aydt and Andrew A. Chien and Daniel A. Reed",
+	pages = "49-"}
+
+@inproceedings{DBLP:conf/hpdc/BermanW96,
+	title = "Scheduling from the Perspective of the Application.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820100abs.htm",
+	author = "Francine Berman and Richard Wolski",
+	pages = "100-111"}
+
+@inproceedings{DBLP:conf/hpdc/BotorogK96,
+	title = "Skil: An Imperative Language with Algorithmic Skeletons
+               for Efficient Distributed Programming.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820243abs.htm",
+	author = "George Horatiu Botorog and Herbert Kuchen",
+	pages = "243-252"}
+
+@inproceedings{DBLP:conf/hpdc/BourasKMOST96,
+	title = "On-Demand Hypermedia/Multimedia Service over Broadband Networks.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820224abs.htm",
+	author = "Christos Bouras and Vaggelis Kapoulas and D. Miras and Vaggelis Ouzounis and Paul G. Spirakis and A. Tatakis",
+	pages = "224-"}
+
+@inproceedings{DBLP:conf/hpdc/BraunCDGG96,
+	title = "ALFred, a Protocol Compiler for the Automated Implementation
+               of Distributed Applications.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820450abs.htm",
+	author = "Torsten Braun and Isabelle Chrisment and Christophe Diot and Fran\c{c}ois Gagnon and Laurent Gautier",
+	pages = "450-459"}
+
+@inproceedings{DBLP:conf/hpdc/CarterLA96,
+	title = "Commodity Clusters: Performance Comparison Between PC's
+               and Workstations.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820292abs.htm",
+	author = "Russell Carter and John Laroco and Robert Armstrong",
+	pages = "292-"}
+
+@inproceedings{DBLP:conf/hpdc/ChanPS96,
+	title = "Prototyping Network Architectures on a Supercomputer.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820374abs.htm",
+	author = "Mun Choon Chan and Giovanni Pacifici and Rolf Stadler",
+	pages = "374-382"}
+
+@inproceedings{DBLP:conf/hpdc/ChandyRSMRTW96,
+	title = "A World-Wide Distributed System Using Java and the Internet.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820011abs.htm",
+	author = "K. Mani Chandy and Adam Rifkin and Paolo A. G. Sivilotti and J. Mandelson and M. Richardson and W. Tanaka and L. Weisman",
+	pages = "11-18"}
+
+@inproceedings{DBLP:conf/hpdc/ChandyS96,
+	title = "Designing Directories in Distributed Systems: A Systematic
+               Framework.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820318abs.htm",
+	author = "K. Mani Chandy and Eve M. Schooler",
+	pages = "318-"}
+
+@inproceedings{DBLP:conf/hpdc/Cooperman96,
+	title = "TOP-C: A Task-Oriented Parallel C Interface.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820141abs.htm",
+	author = "Gene Cooperman",
+	pages = "141-150"}
+
+@inproceedings{DBLP:conf/hpdc/CrandallSC96,
+	title = "Performance Comparison of Desktop Multiprocessing and Workstation
+               Cluster Computing.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820272abs.htm",
+	author = "Phyllis Crandall and Eranti V. Sumithasri and Mark J. Clement",
+	pages = "272-281"}
+
+@inproceedings{DBLP:conf/hpdc/DharanikotaM96,
+	title = "QUANTA: Quality of Service Architecture for Native TCP/IP
+               over ATM Networks.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820585abs.htm",
+	author = "Sudheer Dharanikota and Kurt Maly",
+	pages = "585-594"}
+
+@inproceedings{DBLP:conf/hpdc/DincerFH96,
+	title = "High-Performance Fortran and Possible Extensions to Support
+               Conjugate Gradient Algorithms.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820069abs.htm",
+	author = "Kivanc Dincer and Geoffrey Fox and Kenneth A. Hawick",
+	pages = "69-77"}
+
+@inproceedings{DBLP:conf/hpdc/Fang96,
+	title = "Engineering Parallel Algorithms.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820033abs.htm",
+	author = "Niandong Fang",
+	pages = "33-"}
+
+@inproceedings{DBLP:conf/hpdc/FigueiraB96,
+	title = "Modeling the Effects of Contention on the Performance of
+               Heterogeneous Applications.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820392abs.htm",
+	author = "Silvia M. Figueira and Francine Berman",
+	pages = "392-"}
+
+@inproceedings{DBLP:conf/hpdc/FosterGNST96,
+	title = "Software Infrastructure for the I-WAY Performance Distributed
+               Computing Experiment.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820562abs.htm",
+	author = "Ian T. Foster and Jonathan Geisler and Bill Nickless and Warren Smith and Steven Tuecke",
+	pages = "562-"}
+
+@inproceedings{DBLP:conf/hpdc/FosterPS96,
+	title = "Tools for Distributed Collaborative Environments: A Research
+               Agenda.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820023abs.htm",
+	author = "Ian T. Foster and Michael E. Papka and Rick L. Stevens",
+	pages = "23-"}
+
+@inproceedings{DBLP:conf/hpdc/FosterT96,
+	title = "Enabling Technologies for Web-Based Ubiquitious Supercomputing.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820112abs.htm",
+	author = "Ian T. Foster and Steven Tuecke",
+	pages = "112-"}
+
+@inproceedings{DBLP:conf/hpdc/FoxF96,
+	title = "Towards Web/Java-Based High Performance Distributed Computing--an
+               Evolving Virtual Machine.",
+	ee = "http://dlib.computer.org/conferen/hpdc/7582/pdf/75820308.pdf",
+	author = "Geoffrey Fox and Wojtek Furmanski",
+	pages = "308-317"}
+
+@inproceedings{DBLP:conf/hpdc/FreehA96,
+	title = "Dynamically Controlling False Sharing in Distributed Shared
+               Memory.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820403abs.htm",
+	author = "Vincent W. Freeh and Gregory R. Andrews",
+	pages = "403-"}
+
+@inproceedings{DBLP:conf/hpdc/GrimshawW96,
+	title = "Legion - A View from 50, 000 Feet.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820089abs.htm",
+	author = "Andrew S. Grimshaw and William A. Wulf",
+	pages = "89-99"}
+
+@inproceedings{DBLP:conf/hpdc/HafidBK96,
+	title = "A Quality of Service Negotiation Procedure for Distributed
+               Multimedia Presentational Applications.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820330abs.htm",
+	author = "Abdelhakim Hafid and Gregor von Bochmann and Brigitte Kerherv{\'e}",
+	pages = "330-339"}
+
+@inproceedings{DBLP:conf/hpdc/HaoLS96,
+	title = "A Light-Weight Application Sharing Infrastructure for Graphics
+               Intensive Applications.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820127abs.htm",
+	author = "M. C. Hao and D. Lee and Joseph S. Sventek",
+	pages = "127-131"}
+
+@inproceedings{DBLP:conf/hpdc/HarrisonCGB96,
+	title = "Virtual Collaborative Simulation Environment for Integrated
+               Product and Process Development.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820019abs.htm",
+	author = "J. P. Harrison and B. Christensen and M. Gulli and J. Bianco",
+	pages = "19-22"}
+
+@inproceedings{DBLP:conf/hpdc/HuardILY96,
+	title = "Meeting QoS Guarantees by End-to-End QoS Monitoring and
+               Adaptation.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820348abs.htm",
+	author = "Jean-Fran\c{c}ois Huard and Ichiro Inoue and Aurel A. Lazar and Hideaki Yamanaka",
+	pages = "348-355"}
+
+@inproceedings{DBLP:conf/hpdc/IversonOF96,
+	title = "Run-Time Statistical Estimation of Task Execution Times
+               for Heterogeneous Distributed Computing.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820263abs.htm",
+	author = "Michael A. Iverson and F{\"u}sun {\"O}zg{\"u}ner and Gregory J. Follen",
+	pages = "263-"}
+
+@inproceedings{DBLP:conf/hpdc/KaddouraR96,
+	title = "Runtime Support for Parallelization of Data-Parallel Applications
+               on Adaptive and Nonuniform Computational Environments.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820030abs.htm",
+	author = "Maher Kaddoura and Sanjay Ranka",
+	pages = "30-39"}
+
+@inproceedings{DBLP:conf/hpdc/KimP96,
+	title = "A Source-Level Transformation Framework for RPC-Based Distributed
+               Programs.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820078abs.htm",
+	author = "Tae-Hyung Kim and James M. Purtilo",
+	pages = "78-"}
+
+@inproceedings{DBLP:conf/hpdc/Konchady96,
+	title = "Distributed Supercomputing Using ACTS.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820172abs.htm",
+	author = "Manu Konchady",
+	pages = "172-181"}
+
+@inproceedings{DBLP:conf/hpdc/KumarSSG96,
+	title = "Robust and Distributed Genetic Algorithm for Ordering Problems.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820253abs.htm",
+	author = "Anup Kumar and Alok Srivastava and Aditi Singru and R. K. Ghosh",
+	pages = "253-262"}
+
+@inproceedings{DBLP:conf/hpdc/KumaranQ96,
+	title = "Automatic Exploitation of Dual Level Parallelism on a Network
+               of Multiprocessors.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820616abs.htm",
+	author = "Santhosh Kumaran and Michael J. Quinn",
+	pages = "616-625"}
+
+@inproceedings{DBLP:conf/hpdc/LazarL96,
+	title = "Programmability and Service Creation for Multimedia Networks.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820217abs.htm",
+	author = "Aurel A. Lazar and Koon-Seng Lim",
+	pages = "217-223"}
+
+@inproceedings{DBLP:conf/hpdc/LewisG96,
+	title = "The Core Legion Object Model.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820551abs.htm",
+	author = "Michael J. Lewis and Andrew S. Grimshaw",
+	pages = "551-561"}
+
+@inproceedings{DBLP:conf/hpdc/LiA96,
+	title = "Bandwidth Control for Replicated-Stream Multicast Video
+               Distribution.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820356abs.htm",
+	author = "Xue Li and Mostafa H. Ammar",
+	pages = "356-"}
+
+@inproceedings{DBLP:conf/hpdc/LigonR96,
+	title = "Implementation and Performance of a Parallel File System
+               for High Performance Distributed Applications.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820471abs.htm",
+	author = "Walter B. Ligon, III and Robert B. Ross",
+	pages = "471-480"}
+
+@inproceedings{DBLP:conf/hpdc/LuO96,
+	title = "A Massively Parallel Fast Multipole Algorithm in Three Dimensions.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820040abs.htm",
+	author = "Eric Jui-Lin Lu and Daniel I. Okunbor",
+	pages = "40-48"}
+
+@inproceedings{DBLP:conf/hpdc/MalluhiJ96,
+	title = "Approaches for a Reliable High-Performance Distributed-Parallel
+               Storage System.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820500abs.htm",
+	author = "Qutaibah M. Malluhi and William E. Johnston",
+	pages = "500-"}
+
+@inproceedings{DBLP:conf/hpdc/NicklasASW96,
+	title = "A Parallel Solution to the Cutting Stock Problem for a Cluster
+               of Workstations.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820521abs.htm",
+	author = "Lisa D. Nicklas and Robert W. Atkins and Sanjeev Setia and Pearl Y. Wang",
+	pages = "521-530"}
+
+@inproceedings{DBLP:conf/hpdc/NieplochaH96,
+	title = "Shared Memory NUMA Programming on I-WAY.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820432abs.htm",
+	author = "Jarek Nieplocha and Robert J. Harrison",
+	pages = "432-"}
+
+@inproceedings{DBLP:conf/hpdc/NurmiBGLP96,
+	title = "Automatic Management of CPU and I/O Bottlenecks in Distributed
+               Applications on ATM Networks.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820481abs.htm",
+	author = "Marc A. Nurmi and William E. Bejcek and Rod N. Gregoire and K. C. Liu and Mark D. Pohl",
+	pages = "481-489"}
+
+@inproceedings{DBLP:conf/hpdc/OguchiO96,
+	title = "A Study of Caching Proxy Mechanisms Realized on Wide Area
+               Distributed Networks.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820443abs.htm",
+	author = "Masato Oguchi and Kinji Ono",
+	pages = "443-449"}
+
+@inproceedings{DBLP:conf/hpdc/OuibrahimB96,
+	title = "Multimedia Multiparty Services to Native ATM Desktops.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820203abs.htm",
+	author = "H. Ouibrahim and J. A. van den Broecke",
+	pages = "203-208"}
+
+@inproceedings{DBLP:conf/hpdc/PapkaS96,
+	title = "UbiWorld: An Environment Integrating Virtual Reality, Supercomputing
+               and Design.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820306abs.htm",
+	author = "Michael E. Papka and Rick L. Stevens",
+	pages = "306-307"}
+
+@inproceedings{DBLP:conf/hpdc/ParkHKHY96,
+	title = "NYNET Communication System (NCS): A Multithreaded Message
+               Passing Tool over ATM Network.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820460abs.htm",
+	author = "Sung-Yong Park and Salim Hariri and Yoonhee Kim and J. Stuart Harris and Rajesh Yadav",
+	pages = "460-"}
+
+@inproceedings{DBLP:conf/hpdc/PoppPBG96,
+	title = "Multitarget Tracking Algorithm Parallelization for Distributed-Memory
+               Computing Systems.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820412abs.htm",
+	author = "Robert L. Popp and Krishna R. Pattipati and Yaakov Bar-Shalom and Richard R. Gassner",
+	pages = "412-421"}
+
+@inproceedings{DBLP:conf/hpdc/Chan96,
+	title = "Task Partitionings for Parallel Triangular Solver on an
+               MIMD Computer.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820365abs.htm",
+	author = "Junming Qin and T. Kai Yun Chan",
+	pages = "365-373"}
+
+@inproceedings{DBLP:conf/hpdc/Ravindran96,
+	title = "Design of Multicast Packet Swithches for High - speed Multi
+               - Service Networks.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820573abs.htm",
+	author = "K. Ravindran",
+	pages = "573-584"}
+
+@inproceedings{DBLP:conf/hpdc/ReschkeSRSBM96,
+	title = "A Design Study of Alternative Network Topologies for the
+               Beowulf Parallel Workstation.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820626abs.htm",
+	author = "Chance Reschke and Thomas L. Sterling and Daniel Ridge and Daniel Savarese and Donald J. Becker and Phillip Merkey",
+	pages = "626-636"}
+
+@inproceedings{DBLP:conf/hpdc/RobinsonRFH96,
+	title = "A Task Migration Implementation of the Message-Passing Interface.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820061abs.htm",
+	author = "Jonathan Robinson and Samuel H. Russ and Brian K. Flachs and Bj{\o}rn Heckel",
+	pages = "61-68"}
+
+@inproceedings{DBLP:conf/hpdc/Sapaty96,
+	title = "Mobile Processing in Open Systems.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820182abs.htm",
+	author = "Peter Sapaty",
+	pages = "182-191"}
+
+@inproceedings{DBLP:conf/hpdc/SarkarB96,
+	title = "CNI: A High-Performance Network Interface for Workstation
+               Clusters.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820151abs.htm",
+	author = "Prasenjit Sarkar and Mary L. Bailey",
+	pages = "151-160"}
+
+@inproceedings{DBLP:conf/hpdc/SilvaSC96,
+	title = "Portable Transparent Checkpointing for Distributed Shared
+               Memory.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820422abs.htm",
+	author = "Lu\'{\i}s Moura Silva and Jo{\~a}o Gabriel Silva and Simon Chapple",
+	pages = "422-431"}
+
+@inproceedings{DBLP:conf/hpdc/SisalemSS96,
+	title = "The Network Video Terminal.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820003abs.htm",
+	author = "Dorgham Sisalem and Henning Schulzrinne and C. Sieckmeyer",
+	pages = "3-10"}
+
+@inproceedings{DBLP:conf/hpdc/SolimanE96,
+	title = "An Efficient Clustered Adaptive-Risk Technique for Distributed
+               Simulation.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820383abs.htm",
+	author = "Hussam M. Soliman and Adel Said Elmaghraby",
+	pages = "383-391"}
+
+@inproceedings{DBLP:conf/hpdc/TsoiR96,
+	title = "``Media-on-Demand'' Multimedia Electronic Mail: A Tool for
+               Collaboration on the Web.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820121abs.htm",
+	author = "K. N. Tsoi and S. M. Rahman",
+	pages = "121-126"}
+
+@inproceedings{DBLP:conf/hpdc/VandevoordeK96,
+	title = "Parallel User Interfaces for Parallel Applications.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820161abs.htm",
+	author = "Mark T. Vandevoorde and Deepak Kapur",
+	pages = "161-"}
+
+@inproceedings{DBLP:conf/hpdc/VenugopalR96,
+	title = "Impact of Delays in Parallel I/O System: An Empirical Study.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820490abs.htm",
+	author = "C. R. Venugopal and S. S. S. P. Rao",
+	pages = "490-499"}
+
+@inproceedings{DBLP:conf/hpdc/Vila-SallentS96,
+	title = "Supporting HPDC Application over ATM Networks with Cell-Based
+               Transport Mechanisms.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820595abs.htm",
+	author = "Joan Vila-Sallent and Josep Sol{\'e}-Pareta",
+	pages = "595-"}
+
+@inproceedings{DBLP:conf/hpdc/WangK96,
+	title = "A Broadband Multimedia TeleLearning System.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820132abs.htm",
+	author = "Ruiping Wang and Ahmed Karmouch",
+	pages = "132-"}
+
+@inproceedings{DBLP:conf/hpdc/WeissmanG96,
+	title = "A Federated Model for Scheduling in Wide-Area Systems.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820542abs.htm",
+	author = "Jon B. Weissman and Andrew S. Grimshaw",
+	pages = "542-550"}
+
+@inproceedings{DBLP:conf/hpdc/ZakiLP96,
+	title = "Customized Dynamic Load Balancing for a Network of Workstations.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820282abs.htm",
+	author = "Mohammed Javeed Zaki and Wei Li and Srinivasan Parthasarathy",
+	pages = "282-291"}
+
+@inproceedings{DBLP:conf/hpdc/ZhuS96,
+	title = "Migration Impact on Load Balancing - An Experience on Amoeba.",
+	ee = "http://computer.org/proceedings/hpdc/7582/75820531abs.htm",
+	author = "Weiping Zhu and Piotr Socko",
+	pages = "531-"}
+
+@default year = 1995
+
+@inproceedings{DBLP:conf/hpdc/AbramsonSGH95,
+	title = "Nimrod: A Tool for Performing Parameterised Simulations
+               Using Distributed Workstations.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880112abs.htm",
+	author = "David Abramson and Rok Sosic and Jonathan Giddy and B. Hall",
+	pages = "112-121"}
+
+@inproceedings{DBLP:conf/hpdc/BaldoniMR95,
+	title = "Efficient Causally Ordered Communications for Multimedia
+               Real-Time Applications.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880140abs.htm",
+	author = "Roberto Baldoni and Achour Most{\'e}faoui and Michel Raynal",
+	pages = "140-147"}
+
+@inproceedings{DBLP:conf/hpdc/BaratlooDK95,
+	title = "CALYPSO: A Novel Software System for Fault-Tolerant Parallel
+               Processing on Distributed Platforms.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880122abs.htm",
+	author = "Arash Baratloo and Partha Dasgupta and Zvi M. Kedem",
+	pages = "122-129"}
+
+@inproceedings{DBLP:conf/hpdc/BraunSUSYPNFEM95,
+	title = "A High Speed Implementation of Adaptive Shaping for Dynamic
+               Bandwidth Allocation.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880094abs.htm",
+	author = "Cameron Braun and V. Sirkay and H. Uriona and Srini W. Seetharam and E. Yousefi and David W. Petr and Douglas Niehaus and Victor Frost and Joseph B. Evans and Gary J. Minden",
+	pages = "94-101"}
+
+@inproceedings{DBLP:conf/hpdc/CierniakLZ95,
+	title = "Loop Scheduling for Heterogeneity.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880078abs.htm",
+	author = "Michal Cierniak and Wei Li and Mohammed Javeed Zaki",
+	pages = "78-"}
+
+@inproceedings{DBLP:conf/hpdc/CowanLB95,
+	title = "Performance Benefits of Optimistic Programming: A Measure
+               of HOPE.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880197abs.htm",
+	author = "Crispin Cowan and Hanan Lutfiyya and Michael A. Bauer",
+	pages = "197-204"}
+
+@inproceedings{DBLP:conf/hpdc/Crandall95,
+	title = "The Limited Applicability of Block Decomposition in Cluster
+               Computing.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880102abs.htm",
+	author = "Phyllis Crandall",
+	pages = "102-"}
+
+@inproceedings{DBLP:conf/hpdc/DaviesM95,
+	title = "Network-Specific Performance Enhancements for PVM.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880205abs.htm",
+	author = "Gregory Davies and Norman S. Matloff",
+	pages = "205-211"}
+
+@inproceedings{DBLP:conf/hpdc/DowdPCHC95,
+	title = "LIGHTNING: A Scalable Dynamically Reconfigurable Hierarchical
+               WDM Network for High-Performance Clustering.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880220abs.htm",
+	author = "Patrick W. Dowd and James A. Perreault and John C. Chu and D. C. Hoffmeister and D. Crouse",
+	pages = "220-229"}
+
+@inproceedings{DBLP:conf/hpdc/EwyEFM95,
+	title = "TCP/ATM Experiences in the MAGIC Testbed.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880087abs.htm",
+	author = "B. J. Ewy and Joseph B. Evans and Victor Frost and Gary J. Minden",
+	pages = "87-93"}
+
+@inproceedings{DBLP:conf/hpdc/FerrariS95,
+	title = "TPVM: Distributed Concurrent Computing with Lighweight Processes.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880211abs.htm",
+	author = "Adam Ferrari and Vaidy S. Sunderam",
+	pages = "211-"}
+
+@inproceedings{DBLP:conf/hpdc/GuillaudPM95,
+	title = "An ATM-Based Multimedia Integrated Manufacturing System
+               .",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880230abs.htm",
+	author = "Jean-Francois Guillaud and Max Roger Pokam and G{\'e}rard Michel",
+	pages = "230-237"}
+
+@inproceedings{DBLP:conf/hpdc/JacobL95,
+	title = "A Spanning Tree Based Recursive Refinement Algorithm for
+               Fast Task Mapping.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880058abs.htm",
+	author = "Joseph C. Jacob and Soo-Young Lee",
+	pages = "58-65"}
+
+@inproceedings{DBLP:conf/hpdc/KohliAS95,
+	title = "Indigo: User-Level Support for Building Distributed Shared
+               Abstractions.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880130abs.htm",
+	author = "Prince Kohli and Mustaque Ahamad and Karsten Schwan",
+	pages = "130-"}
+
+@inproceedings{DBLP:conf/hpdc/Kotz95,
+	title = "Disk-Directed I/O for an Out-of-Core Computation.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880159abs.htm",
+	author = "David Kotz",
+	pages = "159-166"}
+
+@inproceedings{DBLP:conf/hpdc/LiebeherrW95,
+	title = "A Versatile Packet Multiplexer for Quality-of-Service Networks.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880148abs.htm",
+	author = "J{\"o}rg Liebeherr and Dallas E. Wrege",
+	pages = "148-"}
+
+@inproceedings{DBLP:conf/hpdc/Menon95,
+	title = "A Performance Comparison of RAID-5 and Log-Structured Arrays.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880167abs.htm",
+	author = "Jai Menon",
+	pages = "167-"}
+
+@inproceedings{DBLP:conf/hpdc/Mirza95,
+	title = "NOWs, MMPs, and Scalable Parallel Systems.",
+	ee = "http://dlib.computer.org/conferen/hpdc/7088/pdf/70880003.pdf",
+	author = "Jamshed H. Mirza",
+	pages = 3}
+
+@inproceedings{DBLP:conf/hpdc/OguchiAS95,
+	title = "A Proposal for a DSM Architecture Suitable for a Widely
+               Distributed Environment and its Evaluation.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880032abs.htm",
+	author = "Masato Oguchi and Hitoshi Aida and Tadao Saito",
+	pages = "32-39"}
+
+@inproceedings{DBLP:conf/hpdc/RamanjuanBT95,
+	title = "Network Shared Memory: A New Approach for Clustering Workstations
+               for Parallel Processing.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880048abs.htm",
+	author = "Ranga S. Ramanujan and Jordan Bonney and Kenneth J. Thurber",
+	pages = "48-"}
+
+@inproceedings{DBLP:conf/hpdc/RankinB95,
+	title = "A Portable Distributed Implementation of the Parallel Multipole
+               Tree Algorithm.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880017abs.htm",
+	author = "William T. Rankin and John A. Board, Jr.",
+	pages = "17-22"}
+
+@inproceedings{DBLP:conf/hpdc/Richer95,
+	title = "Invited Paper: Overview of the MAGIC Project - Challenges
+               and Accomplishments.",
+	ee = "http://dlib.computer.org/conferen/hpdc/7088/pdf/70880139.pdf",
+	author = "I. Richer",
+	pages = 139}
+
+@inproceedings{DBLP:conf/hpdc/SalehiKT95,
+	title = "The Performance Impact of Scheduling for Cache Affinity
+               in Parallel Network Processing.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880066abs.htm",
+	author = "James D. Salehi and James F. Kurose and Donald F. Towsley",
+	pages = "66-77"}
+
+@inproceedings{DBLP:conf/hpdc/SilvaSCC95,
+	title = "Portable Checkpointing and Recovery.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880188abs.htm",
+	author = "Lu\'{\i}s Moura Silva and Jo{\~a}o Gabriel Silva and Simon Chapple and Lyndon Clarke",
+	pages = "188-"}
+
+@inproceedings{DBLP:conf/hpdc/Sivalingam95,
+	title = "Hybrid Media Access Protocols for a DSM System Based on
+               Optical WDM Networks.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880040abs.htm",
+	author = "Krishna M. Sivalingam",
+	pages = "40-47"}
+
+@inproceedings{DBLP:conf/hpdc/Skordos95,
+	title = "Parallel Simulation of Subsonic Fluid Dynamics on a Cluster
+               of Workstations.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880006abs.htm",
+	author = "Panayotis Skordos",
+	pages = "6-16"}
+
+@inproceedings{DBLP:conf/hpdc/SterlingSBFO95,
+	title = "Communication Overhead for Space Science Applications on
+               the Beowulf Parallel Workstation.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880023abs.htm",
+	author = "Thomas L. Sterling and Daniel Savarese and Donald J. Becker and Bruce Fryxell and Kevin Olson",
+	pages = "23-"}
+
+@inproceedings{DBLP:conf/hpdc/TachikawaT95,
+	title = "Multimedia Intra-Group Communication Protocol.",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880180abs.htm",
+	author = "Takayuki Tachikawa and Makoto Takizawa",
+	pages = "180-"}
+
+@inproceedings{DBLP:conf/hpdc/Woodward95,
+	title = "Distributed Computing on Clusters of Share' d-Memory Multiprocessors
+               to Simulate Unsteady Turbulent Flows.",
+	ee = "http://dlib.computer.org/conferen/hpdc/7088/pdf/70880004.pdf",
+	author = "Paul R. Woodward",
+	pages = 4}
+
+@inproceedings{DBLP:conf/hpdc/YadavRH95,
+	title = "A Multithreaded Message Passing Environment for ATM LAN/WAN
+               .",
+	ee = "http://computer.org/proceedings/hpdc/7088/70880238abs.htm",
+	author = "Rajesh Yadav and Rajashekar Reddy and Salim Hariri",
+	pages = "238-245"}
+
+@default year = 1994
+
+@inproceedings{DBLP:conf/hpdc/AgrawalCLS94,
+	title = "Investigating Weak Memories Using Maya.",
+	author = "Divyakant Agrawal and Manhoi Choy and Hong Va Leong and Ambuj K. Singh",
+	pages = "123-130"}
+
+@inproceedings{DBLP:conf/hpdc/ArmstrongM94,
+	title = "The Use of Frameworks for Scientific Computation in a Parallel
+               Distributed Environment.",
+	author = "Rob Armstrong and Jane Macfarlane",
+	pages = "15-25"}
+
+@inproceedings{DBLP:conf/hpdc/AsthanaCK94,
+	title = "An Experimental Active-Memory-Based Network Environment.",
+	author = "Abhaya Asthana and Mark Cravatts and Paul Krzyzanowski",
+	pages = "139-146"}
+
+@inproceedings{DBLP:conf/hpdc/BeckerW94,
+	title = "Exploiting Inter-Task Dependencies for Dynamic Load Balancing.",
+	author = "Wolfgang Becker and Gerlinde Waldmann",
+	pages = "157-165"}
+
+@inproceedings{DBLP:conf/hpdc/Benslimane94,
+	title = "Deciding Boundedness for Systems of Two Communicating Finite
+               State Machines.",
+	author = "Abderrahim Benslimane",
+	pages = "262-269"}
+
+@inproceedings{DBLP:conf/hpdc/BlumofeP94,
+	title = "Scheduling Large-Scale Parallel Computations on Networks
+               of Workstations.",
+	author = "Robert D. Blumofe and David S. Park",
+	pages = "96-105"}
+
+@inproceedings{DBLP:conf/hpdc/BornsteinS94,
+	title = "Data Reshuffling in Support of Fast I/O for Distributed-Memory
+               Machines.",
+	author = "Claudson F. Bornstein and Peter Steenkiste",
+	pages = "227-235"}
+
+@inproceedings{DBLP:conf/hpdc/BorstCS94,
+	title = "WAVE Processing of Networks and Distributed Simulation.",
+	author = "P. M. Borst and Malcolm Corbin and Peter Sapaty",
+	pages = "61-69"}
+
+@inproceedings{DBLP:conf/hpdc/BurrellMP94,
+	title = "Performance Analysis of a New Implementation Efficient Capacity
+               Allocation Protocol for Multimedia Traffic in ATM Networks.",
+	author = "Anthony Burrell and Dimitrios Makrakis and Panayota Papantoni-Kazakos",
+	pages = "51-60"}
+
+@inproceedings{DBLP:conf/hpdc/CataniaGPV94,
+	title = "PMT: A Tool to Monitor Performances in Distributed Systems.",
+	author = "Vincenzo Catania and O. Granato and Antonio Puliafito and Lorenzo Vita",
+	pages = "279-286"}
+
+@inproceedings{DBLP:conf/hpdc/CataniaPRV94,
+	title = "Performance Evaluation of a Partial Dynamic Declustering
+               Disk Array System.",
+	author = "Vincenzo Catania and Antonio Puliafito and Salvatore Riccobene and Lorenzo Vita",
+	pages = "244-252"}
+
+@inproceedings{DBLP:conf/hpdc/ChangFFGHNRSW94,
+	title = "High-Performance TCP/IP and UDP/IP Networking in DEC OSF/1
+               for Alpha AXP.",
+	author = "Chran-Ham Chang and Richard Flower and John Forecast and Heather Gray and William R. Hawe and Ashok P. Nadkarni and K. K. Ramakrishnan and Uttam N. Shikarpur and Kathleen M. Wilde",
+	pages = "35-42"}
+
+@inproceedings{DBLP:conf/hpdc/ChiuC94,
+	title = "Process-Replication Technique for Fault Tolerance and Performance
+               Improvement in Distributed Computing Systems.",
+	author = "Jane-Ferng Chiu and Ge-Ming Chiu",
+	pages = "236-243"}
+
+@inproceedings{DBLP:conf/hpdc/CrandallQ94,
+	title = "A Decomposition Advisory System for Heterogeneous Data-Parallel
+               Processing.",
+	author = "Phyllis Crandall and Michael J. Quinn",
+	pages = "114-121"}
+
+@inproceedings{DBLP:conf/hpdc/Dongarra94,
+	title = "Constructing Numerical Software Libraries for HPCC Environments.",
+	author = "Jack Dongarra",
+	pages = 4}
+
+@inproceedings{DBLP:conf/hpdc/EisenhauerSGM94,
+	title = "Falcon - Toward Interactive Parallel Programs: The On-line
+               Steering of a Molecular Dynamics Application.",
+	author = "Greg Eisenhauer and Karsten Schwan and Weiming Gu and Niru Mallavarupu",
+	pages = "26-33"}
+
+@inproceedings{DBLP:conf/hpdc/HeddayaP94,
+	title = "Mapping Parallel Interactive Algorithms onto Workstation
+               Networks.",
+	author = "Abdelsalam Heddaya and Kihong Park",
+	pages = "211-218"}
+
+@inproceedings{DBLP:conf/hpdc/HuangM94,
+	title = "Design and Implementation of Global Reduction Operations
+               Across ATM Networks.",
+	author = "Chengchang Huang and Philip K. McKinley",
+	pages = "43-50"}
+
+@inproceedings{DBLP:conf/hpdc/HuiCYHA94,
+	title = "Solving Partial Differential Equations on a Network of Workstations.",
+	author = "Chi-Chung Hui and Gary Ka-Keung Chan and Michelle Man-Sheung Yuen and Mounir Hamdi and Ishfaq Ahmad",
+	pages = "194-201"}
+
+@inproceedings{DBLP:conf/hpdc/KremienK94,
+	title = "Providing High Performance Distributed Computing Through
+               Scalable Computation Servers.",
+	author = "Orly Kremien and Jeff Kramer",
+	pages = "70-77"}
+
+@inproceedings{DBLP:conf/hpdc/LeangsuksunPS94,
+	title = "A Task Graph Centroid.",
+	author = "Chokchai Leangsuksun and Jerry L. Potter and Stephen L. Scott",
+	pages = "219-225"}
+
+@inproceedings{DBLP:conf/hpdc/LiHW94,
+	title = "Program Analysis and Transformations for Fast Data Sharing.",
+	author = "Ai Li and Gudjon Hermannsson and Larry D. Wittie",
+	pages = "131-138"}
+
+@inproceedings{DBLP:conf/hpdc/MechosoFS94,
+	title = "Running a Climate Model in a Heterogeneous, Distributed
+               Computer Environment.",
+	author = "Carlos R. Mechoso and John D. Farrara and Joseph A. Spahr",
+	pages = "79-84"}
+
+@inproceedings{DBLP:conf/hpdc/MoralesA94,
+	title = "Design of a Header Processor for the PSi Implementation
+               of the Logical Link Control Protocol in LANs.",
+	author = "Fernando A. Morales and Hosame Abu-Amara",
+	pages = "270-277"}
+
+@inproceedings{DBLP:conf/hpdc/NguyenZZ94,
+	title = "Distributed Computation of Electromagnetic Scattering Problems
+               Using Finite-Difference Time-Domain Decompositions.",
+	author = "Sandy Nguyen and Brian J. Zook and Xiaodong Zhang",
+	pages = "85-89"}
+
+@inproceedings{DBLP:conf/hpdc/PramanickP94,
+	title = "Distributed Solutions to the Delay Fault Test Quality Evaluation
+               Problem.",
+	author = "Ira Pramanick and Ankan K. Pramanick",
+	pages = "177-185"}
+
+@inproceedings{DBLP:conf/hpdc/PuthukattukaranCS94,
+	title = "Design and Implementation of Parallel Algorithms for Gene-Finding.",
+	author = "James Puthukattukaran and Suresh Chalasani and Periannan Senapathy",
+	pages = "186-193"}
+
+@inproceedings{DBLP:conf/hpdc/RammeK94,
+	title = "Scheduling a Metacomputer by an Implicit Voting System.",
+	author = "Friedhelm Ramme and Kurt Kremer",
+	pages = "106-113"}
+
+@inproceedings{DBLP:conf/hpdc/RousselleTHF94,
+	title = "The Virtual Computing Environment.",
+	author = "Philip Rousselle and Paul Tymann and Salim Hariri and Geoffrey Fox",
+	pages = "7-14"}
+
+@inproceedings{DBLP:conf/hpdc/Sakai94,
+	title = "Overview of RWC Massively Parallel Computer Project.",
+	author = "Shuichi Sakai",
+	pages = 5}
+
+@inproceedings{DBLP:conf/hpdc/SaletoreJP94,
+	title = "Parallel Computations on the CHARM Heterogeneous Workstation
+               Cluster.",
+	author = "Vikram A. Saletore and J. Jacob and M. Padala",
+	pages = "203-210"}
+
+@inproceedings{DBLP:conf/hpdc/SiegellS94,
+	title = "Automatic Generation of Parallel Programs with Dynamic Load
+               Balancing.",
+	author = "Bruce S. Siegell and Peter Steenkiste",
+	pages = "166-175"}
+
+@inproceedings{DBLP:conf/hpdc/SrbljicVB94,
+	title = "Performance Prediction for Different Consistency Schemes
+               in Distributed Shared Memory Systems.",
+	author = "Sinisa Srbljic and Zvonko G. Vranesic and Leo Budin",
+	pages = "295-302"}
+
+@inproceedings{DBLP:conf/hpdc/Stevens94,
+	title = "Multimedia Supercomputing: The Use of Supercomputers to
+               Drive High-Performance Multimedia Systems and Virtual Environments.",
+	author = "Rick Stevens",
+	pages = 3}
+
+@inproceedings{DBLP:conf/hpdc/TakamuraT94,
+	title = "Large-Scale Group Communication Protocol on High-Speed Channel.",
+	author = "Masaoki Takamura and Makoto Takizawa",
+	pages = "254-261"}
+
+@inproceedings{DBLP:conf/hpdc/WeissmanG94,
+	title = "Network Partitioning of Data Parallel Computations.",
+	author = "Jon B. Weissman and Andrew S. Grimshaw",
+	pages = "149-156"}
+
+@inproceedings{DBLP:conf/hpdc/WornerGHZ94,
+	title = "Reducing Variations in Parallel Efficiency for Unstructured
+               Grid Computations.",
+	author = "Bernhard W{\"o}rner and Uwe Geuder and Monika H{\"a}rdtner and Roland Zink",
+	pages = "287-294"}
+
+@default year = 1993
+
+@inproceedings{DBLP:conf/hpdc/AgrawalAV93,
+	title = "Test Pattern Generation for Sequential Circuits on a Network
+               of Workstations.",
+	author = "Prathima Agrawal and Vishwani D. Agrawal and Joan Villoldo",
+	pages = "114-120"}
+
+@inproceedings{DBLP:conf/hpdc/AmerCCD93,
+	title = "Partial Order Transport Service for Multimedia Applications:
+               Reliable Service.",
+	author = "Paul D. Amer and Thomas J. Connolly and Christophe Chassot and Michel Diaz",
+	pages = "272-280"}
+
+@inproceedings{DBLP:conf/hpdc/BanerjiKTGC93,
+	title = "High-Performance Distributed Shared Memory Substrate for
+               Workstation Clusters.",
+	author = "Arindam Banerji and Dinesh C. Kulkarni and John M. Tracey and Paul M. Greenawalt and David L. Cohn",
+	pages = "344-351"}
+
+@inproceedings{DBLP:conf/hpdc/BiswasRTK93,
+	title = "Performance Analysis of Distributed File Systems with Non-Volatile
+               Caches.",
+	author = "Prabuddha Biswas and K. K. Ramakrishnan and Donald F. Towsley and C. M. Krishna",
+	pages = "252-262"}
+
+@inproceedings{DBLP:conf/hpdc/BraunS93,
+	title = "Implementation of a Parallel Transport Subsystem on a Multiprocessor
+               Architecture.",
+	author = "Torsten Braun and Claudia Schmidt",
+	pages = "76-83"}
+
+@inproceedings{DBLP:conf/hpdc/ButlerLL93,
+	title = "P4-Linda: A Portable Implementation of Linda.",
+	author = "Ralph Butler and Alan L. Leveton and Ewing L. Lusk",
+	pages = "50-58"}
+
+@inproceedings{DBLP:conf/hpdc/ChenFFFRWY93,
+	title = "A Low-Latency Programming Interface and a Prototype Switch
+               for Scalable High-Performance Distributed Computing.",
+	author = "Taitin Chen and Jim Feeney and Geoffrey Fox and Gideon Frieder and Sanjay Ranka and Bill Wilhelm and Fang-Kuo Yu",
+	pages = "160-168"}
+
+@inproceedings{DBLP:conf/hpdc/Coddington93,
+	title = "An Analysis of Distributed Computing Software and Hardware
+               for Applications in Computational Physics.",
+	author = "Paul D. Coddington",
+	pages = "179-186"}
+
+@inproceedings{DBLP:conf/hpdc/ColombetDM93,
+	title = "Star Modeling on IBM RS6000 Networks Using PVM.",
+	author = "Laurent Colombet and Laurent Desbat and Fran\c{c}ois M{\'e}nard",
+	pages = "121-128"}
+
+@inproceedings{DBLP:conf/hpdc/CrandallQ93,
+	title = "Block Data Decomposition for Data-Parallel Programming on
+               a Heterogeneous Workstation Network.",
+	author = "Phyllis Crandall and Michael J. Quinn",
+	pages = "42-49"}
+
+@inproceedings{DBLP:conf/hpdc/CrutcherLFZ93,
+	title = "Management of Broadband Networks Using a 3D Virtual World.",
+	author = "Laurence A. Crutcher and Aurel A. Lazar and Steven Feiner and Michelle X. Zhou",
+	pages = "306-315"}
+
+@inproceedings{DBLP:conf/hpdc/DobosiewiczG93,
+	title = "DSMA: A Fair Capacity-1 Protocol for Gigabit Ring Networks.",
+	author = "Wlodzimierz Dobosiewicz and Pawel Gburzynski",
+	pages = "92-100"}
+
+@inproceedings{DBLP:conf/hpdc/DowdBAP93,
+	title = "Design and Analysis of a Hierarchical Scalable Photonic
+               Architecture.",
+	author = "Patrick W. Dowd and Kalyani Bogineni and Khaled A. Aly and James A. Perreault",
+	pages = "289-296"}
+
+@inproceedings{DBLP:conf/hpdc/FletcherO93,
+	title = "Parallel and Distributed Systems for Constructive Neural
+               Network Learning.",
+	author = "J. Fletcher and Zoran Obradovic",
+	pages = "174-178"}
+
+@inproceedings{DBLP:conf/hpdc/HaririPYPF93,
+	title = "A Message Passing Interface for Parallel and Distributed
+               Computing.",
+	author = "Salim Hariri and Jong Park and Fang-Kuo Yu and Manish Parashar and Geoffrey Fox",
+	pages = "84-91"}
+
+@inproceedings{DBLP:conf/hpdc/HomerS93,
+	title = "Supporting Heterogeneity and Distribution in the Numerical
+               Propulsion System.",
+	author = "Patrick T. Homer and Richard D. Schlichting",
+	pages = "187-195"}
+
+@inproceedings{DBLP:conf/hpdc/HouP93,
+	title = "Trading Disk Capacity for Performance.",
+	author = "Robert Y. Hou and Yale N. Patt",
+	pages = "263-270"}
+
+@inproceedings{DBLP:conf/hpdc/JoshiHV93,
+	title = "A Methodology for Evaluating Load Balancing Algorithms.",
+	author = "Bharat S. Joshi and Seyed H. Hosseini and K. Vairavan",
+	pages = "216-223"}
+
+@inproceedings{DBLP:conf/hpdc/KarpovichJSG93,
+	title = "A Parallel Object-Oriented Framework for Stencil Algorithms.",
+	author = "John F. Karpovich and Matthew Judd and W. Timothy Strayer and Andrew S. Grimshaw",
+	pages = "34-41"}
+
+@inproceedings{DBLP:conf/hpdc/Kung93,
+	title = "New Flow Control Methods for High-Speed Networks.",
+	author = "H. T. Kung",
+	pages = 4}
+
+@inproceedings{DBLP:conf/hpdc/LeeRN93,
+	title = "A Fully Distributed Parallel Ray Tracing Scheme on the Delta
+               Touchstone Machine.",
+	author = "Tong-Yee Lee and C. S. Raghavendra and John B. Nicholas",
+	pages = "129-134"}
+
+@inproceedings{DBLP:conf/hpdc/LilienkampWS93,
+	title = "Accessing Remote Special Files in a Distributed Computing
+               Envinronment.",
+	author = "Joel Lilienkamp and Bruce J. Walker and Rich Silva",
+	pages = "244-251"}
+
+@inproceedings{DBLP:conf/hpdc/MaR93,
+	title = "MULTIPAR: An Output Queue ATM Modular Switch with Multiple
+               Phases and Replicated Planes.",
+	author = "Jian Ma and Kauko Rahko",
+	pages = "152-159"}
+
+@inproceedings{DBLP:conf/hpdc/MankeNW93,
+	title = "Parallel Computing for Helicopter Rotor Design.",
+	author = "Joseph W. Manke and K. Neves and Thomas M. Wicks",
+	pages = "21-29"}
+
+@inproceedings{DBLP:conf/hpdc/MindenEPF93,
+	title = "An ATM WAN/LAN Gateway Architecture.",
+	author = "Gary J. Minden and Joseph B. Evans and David W. Petr and Victor Frost",
+	pages = "136-143"}
+
+@inproceedings{DBLP:conf/hpdc/MukherjeeS93,
+	title = "Improving Performance by Use of Adaptive Objects: Experimentation
+               with a Configurable Multiprocessor Thread Package.",
+	author = "Bodhisattwa Mukherjee and Karsten Schwan",
+	pages = "59-66"}
+
+@inproceedings{DBLP:conf/hpdc/MullinTDS93,
+	title = "Formal Method for Scheduling, Routing and Communication
+               Protocol.",
+	author = "Lenore M. R. Mullin and Scott Thibault and Daria R. Dooling and Erik A. Sandberg",
+	pages = "234-242"}
+
+@inproceedings{DBLP:conf/hpdc/NakamuraT93,
+	title = "Starvation-Prevented Priority-Based Total Ordering Broadcast
+               Protocol on High-Speed Single Channel Network.",
+	author = "Akihito Nakamura and Makoto Takizawa",
+	pages = "281-288"}
+
+@inproceedings{DBLP:conf/hpdc/NeumannR93,
+	title = "Resource Management for Distributed Parallel Systems.",
+	author = "B. Clifford Neuman and Santosh Rao",
+	pages = "316-323"}
+
+@inproceedings{DBLP:conf/hpdc/Pramanick93,
+	title = "Distributed Computing Solutions to the All-Pairs Shortest
+               Path Problem.",
+	author = "Ira Pramanick",
+	pages = "196-203"}
+
+@inproceedings{DBLP:conf/hpdc/RichardsGSBF93,
+	title = "DARTS - A Dynamically Adaptable Transport Service Suitable
+               for High Speed Networks.",
+	author = "Antony Richards and Tamara Ginige and Aruna Seneviratne and Teresa Buczkowska and Michael Fry",
+	pages = "68-75"}
+
+@inproceedings{DBLP:conf/hpdc/SharmaA93,
+	title = "Hierarchical Distributed System Network Design with Cost-Performance
+               Tradeoffs.",
+	author = "Nita Sharma and Dharma P. Agrawal",
+	pages = "336-343"}
+
+@inproceedings{DBLP:conf/hpdc/SiegelDFPMNRT93,
+	title = "Panel - The Virtual Heterogeneous Supercomputer: Can It
+               Be Built?",
+	author = "Howard Jay Siegel and Henry G. Dietz and Richard F. Freund and Chani Pangali and Richard C. Metzger and Kenneth W. Neves and C. V. Ramamoorthy and Andrew S. Tanenbaum",
+	pages = "30-31"}
+
+@inproceedings{DBLP:conf/hpdc/Skjellum93,
+	title = "Scalable Libraries in a Heterogeneous Environment.",
+	author = "Anthony Skjellum",
+	pages = "13-20"}
+
+@inproceedings{DBLP:conf/hpdc/SrbljicB93,
+	title = "Analytical Performance Evaluation of Data Replication Based
+               Shared Memory Model.",
+	author = "Sinisa Srbljic and Leo Budin",
+	pages = "326-335"}
+
+@inproceedings{DBLP:conf/hpdc/SunderamFGGHKQS93,
+	title = "Panel - Software Tools for High-Performance Distributed
+               Computing.",
+	author = "Vaidy S. Sunderam and Geoffrey Fox and Al Geist and William Gropp and Bob Harrison and Adam Kolawa and Michael J. Quinn and Anthony Skjellum",
+	pages = "170-171"}
+
+@inproceedings{DBLP:conf/hpdc/TanenbaumBK93,
+	title = "Programming a Distributed System Using Shared Objects.",
+	author = "Andrew S. Tanenbaum and Henri E. Bal and M. Frans Kaashoek",
+	pages = "5-12"}
+
+@inproceedings{DBLP:conf/hpdc/TripathiKNTKBDN93,
+	title = "Reliable Management of Distributed Computations in Nexus.",
+	author = "Anand R. Tripathi and Surya P. Koneru and Clifton Nock and Renu Tewari and Neeran M. Karnik and Vijay Bandi and Khaled Day and Terence Noonan",
+	pages = "298-305"}
+
+@inproceedings{DBLP:conf/hpdc/TungK93,
+	title = "Distributed Control Methods.",
+	author = "Brian Tung and Leonard Kleinrock",
+	pages = "206-215"}
+
+@inproceedings{DBLP:conf/hpdc/VarmaSB93,
+	title = "Performance Evaluation of a High-Speed Switching System
+               Based on the Fibre Channel Standard.",
+	author = "Anujan Varma and Vikram Sahai and Robert Bryant",
+	pages = "144-151"}
+
+@inproceedings{DBLP:conf/hpdc/WehnerABDEMFMMS93,
+	title = "Toward a High Performance Distributed Memory Climate Model.",
+	author = "M. F. Wehner and J. J. Ambrosiano and J. C. Brown and William P. Dannevik and Peter G. Eltgroth and Arthur A. Mirin and John D. Farrara and Chung-Chun Ma and Carlos R. Mechoso and Joseph A. Spahr",
+	pages = "102-113"}
+
+@inproceedings{DBLP:conf/hpdc/WongF93,
+	title = "Distributed Computing Systems and Checkpointing.",
+	author = "Kenneth F. Wong and Mark A. Franklin",
+	pages = "224-233"}
+
+@default year = 1992
+
+@inproceedings{DBLP:conf/hpdc/AhmadGF92,
+	title = "Allocation of Computations with Dynamic Structures on Hypercube
+               Based Distributed Systems.",
+	author = "Ishfaq Ahmad and Arif Ghafoor and Geoffrey Fox",
+	pages = "228-237"}
+
+@inproceedings{DBLP:conf/hpdc/BakerHW92,
+	title = "A Distributed Scheduling Simulation.",
+	author = "David Baker and Russell F. Haddleton and Kevin G. Wika",
+	pages = "270-279"}
+
+@inproceedings{DBLP:conf/hpdc/BeckerD92,
+	title = "Particle Simulation on Heterogeneous Distributed Supercomputers.",
+	author = "Jeffrey C. Becker and Leonardo Dagum",
+	pages = "133-140"}
+
+@inproceedings{DBLP:conf/hpdc/Berra92,
+	title = "Tutorial II: Multimedia Information Systems.",
+	author = "P. Bruce Berra",
+	pages = 283}
+
+@inproceedings{DBLP:conf/hpdc/BerraCGL92,
+	title = "Issues in Networking and Data Management of Distributed
+               Multimedia Systems.",
+	author = "P. Bruce Berra and C. Y. Roger Chen and Arif Ghafoor and Thomas D. C. Little",
+	pages = "4-15"}
+
+@inproceedings{DBLP:conf/hpdc/BetelloRSR92,
+	title = "Lattice Boltzmann Method on a Cluster of IBM RISC System/6000
+               Workstations.",
+	author = "G. Betello and Giorgio Richelli and Sauro Succi and F. Ruello",
+	pages = "242-247"}
+
+@inproceedings{DBLP:conf/hpdc/BilgicS92,
+	title = "High Performance PDU Processing for Application Layer.",
+	author = "Murat Bilgic and Beh\c{c}et Sarikaya",
+	pages = "161-170"}
+
+@inproceedings{DBLP:conf/hpdc/BogineniD92,
+	title = "Performance Comparison of Reservation and Preallocation
+               Protocols for Star-Coupled WDM Photonic Networks.",
+	author = "Kalyani Bogineni and Patrick W. Dowd",
+	pages = "94-103"}
+
+@inproceedings{DBLP:conf/hpdc/CheungR92,
+	title = "High Performance Computing on a Cluster of Workstations.",
+	author = "Alex L. Cheung and Anthony P. Reeves",
+	pages = "152-160"}
+
+@inproceedings{DBLP:conf/hpdc/ClaytonDMW92,
+	title = "Determining Update Latency Bounds in Galactica Net.",
+	author = "S. Clayton and R. James Duckworth and W. Michalson and A. Wilson",
+	pages = "104-111"}
+
+@inproceedings{DBLP:conf/hpdc/FaigleFHNPS92,
+	title = "MOVIE Model for Open Systems Based High Performance Distributed
+               Computing.",
+	author = "Chris Faigle and Wojtek Furmanski and Tom Haupt and Janusz Niemiec and Marek Podgorny and Diglio A. Simoni",
+	pages = "37-56"}
+
+@inproceedings{DBLP:conf/hpdc/GrimshawWP92,
+	title = "No Pain and Gain - Experiences with Mentat on a Biological
+               Application.",
+	author = "Andrew S. Grimshaw and Emily A. West and William R. Pearson",
+	pages = "57-66"}
+
+@inproceedings{DBLP:conf/hpdc/GuhaA92,
+	title = "A Scalable Packet Switch for Distributed Computing.",
+	author = "Aloke Guha and Mukul Agrawal",
+	pages = "85-93"}
+
+@inproceedings{DBLP:conf/hpdc/MechosoMFSMDWEM92,
+	title = "Distributing a Climate Model across Gigabit Networks.",
+	author = "Carlos R. Mechoso and Chung-Chun Ma and John D. Farrara and Joseph A. Spahr and Reagan W. Moore and William P. Dannevik and M. F. Wehner and Peter G. Eltgroth and Arthur A. Mirin",
+	pages = "16-25"}
+
+@inproceedings{DBLP:conf/hpdc/MehraW92,
+	title = "Physical-Level Synthetic Workload Generation for Load-Balancing
+               Experiments.",
+	author = "Pankaj Mehra and Benjamin W. Wah",
+	pages = "208-217"}
+
+@inproceedings{DBLP:conf/hpdc/MinnichP92,
+	title = "A Radiative Heat Transfer Simulation on a SPARCStation Farm.",
+	author = "Ronald Minnich and Daniel V. Pryor",
+	pages = "124-132"}
+
+@inproceedings{DBLP:conf/hpdc/NedeljkovicQ92,
+	title = "Data-Parallel Programming on a Network of Heterogeneous
+               Workstations.",
+	author = "Nenad Nedeljkovic and Michael J. Quinn",
+	pages = "28-36"}
+
+@inproceedings{DBLP:conf/hpdc/NgM92,
+	title = "Maintaining Good Performance In Disk Arrays During Failure
+               via Uniform Parity Group Distribution.",
+	author = "Spencer W. Ng and Richard L. Mattson",
+	pages = "260-269"}
+
+@inproceedings{DBLP:conf/hpdc/Oberbrunner92,
+	title = "Parallel Networking and Visualization on the Connection
+               Machine CM-5.",
+	author = "Gary Oberbrunner",
+	pages = "78-84"}
+
+@inproceedings{DBLP:conf/hpdc/ParasharHMF92,
+	title = "A Requirement Analysis for High Performance Distributed
+               Computing over LANs.",
+	author = "Manish Parashar and Salim Hariri and A. Gaber Mohamed and Geoffrey Fox",
+	pages = "142-151"}
+
+@inproceedings{DBLP:conf/hpdc/PuFSWY92,
+	title = "Performance Comparison of Active-Sender and Active-Receiver
+               Policies for Distributed Caching.",
+	author = "Calton Pu and Danilo Florissi and Patricia Soares and Kun-Lung Wu and Philip S. Yu",
+	pages = "218-227"}
+
+@inproceedings{DBLP:conf/hpdc/SchmidtBS92,
+	title = "ADAPTIVE: A Flexible and Adaptive Transport System Architecture
+               to Support Lightweight Protocols for Multimedia Applications
+               on High-Speed Networks.",
+	author = "Douglas C. Schmidt and Donald F. Box and Tatsuya Suda",
+	pages = "174-186"}
+
+@inproceedings{DBLP:conf/hpdc/ShinjoK92,
+	title = "Harmonizing a Distributed Operating System with Parallel
+               and Distributed Applications.",
+	author = "Yasushi Shinjo and Yasushi Kiyoki",
+	pages = "114-123"}
+
+@inproceedings{DBLP:conf/hpdc/SinghAW92,
+	title = "Computing Radiosity Solution on a High Performance Workstation
+               LAN.",
+	author = "Gautam B. Singh and Santosh G. Abraham and Franklin H. Westervelt",
+	pages = "248-257"}
+
+@inproceedings{DBLP:conf/hpdc/Sunderam92,
+	title = "Tutorial I: Paradigms and Tools for Heterogeneous Network
+               Computing.",
+	author = "Vaidy S. Sunderam",
+	pages = 282}
+
+@inproceedings{DBLP:conf/hpdc/VarshneyD92,
+	title = "On Flow Control in Multimedia Networks.",
+	author = "Pramod K. Varshney and Surajit Dey",
+	pages = "197-205"}
+
+@inproceedings{DBLP:conf/hpdc/Willebeek-LeMairSP92,
+	title = "FDDI Support for Multimedia Traffic.",
+	author = "Marc Willebeek-LeMair and Frank Schaffa and Baiju V. Patel",
+	pages = "187-196"}
+
+@inproceedings{DBLP:conf/hpdc/WilsonGC92,
+	title = "Experiences in High Performance Computing with Pleiades
+               and ESP.",
+	author = "Linda F. Wilson and Mario J. Gonzalez and Michael W. Cruess",
+	pages = "67-76"}
+
+@inproceedings{DBLP:conf/hpdc/Wittie92,
+	title = "Tutorial III: Distributed Shared Memory Systems.",
+	author = "Larry D. Wittie",
+	pages = 284}

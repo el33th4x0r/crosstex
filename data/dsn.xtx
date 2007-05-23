@@ -1,0 +1,2948 @@
+@include conferences-cs
+
+@default bibsource = "DBLP, http://dblp.uni-trier.de"
+
+@default booktitle = dsn
+
+@default year = 2006
+
+@inproceedings{DBLP:conf/dsn/AgbariaBK06,
+	title = "Workshop on Applied Software Reliability (WASR).",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.77",
+	author = "Adnan Agbaria and Claudio Basile and Zbigniew Kalbarczyk",
+	pages = 591}
+
+@inproceedings{DBLP:conf/dsn/AguileraDFT06,
+	title = "Consensus with Byzantine Failures and Little System Synchrony.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.22",
+	author = "Marcos Kawazoe Aguilera and Carole Delporte-Gallet and Hugues Fauconnier and Sam Toueg",
+	pages = "147-155"}
+
+@inproceedings{DBLP:conf/dsn/AmirDKLDNOZ06,
+	title = "Scaling Byzantine Fault-Tolerant Replication toWide Area
+               Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.63",
+	author = "Yair Amir and Claudiu Danilov and Jonathan Kirsch and John Lane and Danny Dolev and Cristina Nita-Rotaru and Josh Olsen and David Zage",
+	pages = "105-114"}
+
+@inproceedings{DBLP:conf/dsn/AndresRGG06,
+	title = "Run-Time Reconfiguration for Emulating Transient Faults
+               in VLSI Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.62",
+	author = "David de Andr{\'e}s and Juan Carlos Ruiz and Daniel Gil and Pedro J. Gil",
+	pages = "291-300"}
+
+@inproceedings{DBLP:conf/dsn/AvritzerBGTW06,
+	title = "Performance Assurance via Software Rejuvenation: Monitoring,
+               Statistics and Algorithms.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.58",
+	author = "Alberto Avritzer and Andre B. Bondi and Michael Grottke and Kishor S. Trivedi and Elaine J. Weyuker",
+	pages = "435-444"}
+
+@inproceedings{DBLP:conf/dsn/Bagchi06,
+	title = "Fast Abstracts.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.36",
+	author = "Saurabh Bagchi",
+	pages = 595}
+
+@inproceedings{DBLP:conf/dsn/BairavasundaramAA06,
+	title = "Dependability Analysis of Virtual Memory Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.26",
+	author = "Lakshmi N. Bairavasundaram and Andrea C. Arpaci-Dusseau and Remzi H. Arpaci-Dusseau",
+	pages = "355-364"}
+
+@inproceedings{DBLP:conf/dsn/BasileGKI06,
+	title = "An Approach for Detecting and Distinguishing Errors versus
+               Attacks in Sensor Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.11",
+	author = "Claudio Basile and Meeta Gupta and Zbigniew Kalbarczyk and Ravi K. Iyer",
+	pages = "473-484"}
+
+@inproceedings{DBLP:conf/dsn/CachinT06,
+	title = "Optimal Resilience for Erasure-Coded Byzantine Distributed
+               Storage.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.56",
+	author = "Christian Cachin and Stefano Tessaro",
+	pages = "115-124"}
+
+@inproceedings{DBLP:conf/dsn/Chandy06,
+	title = "Storage Allocation in Unreliable Peer-to-Peer Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.67",
+	author = "John A. Chandy",
+	pages = "227-236"}
+
+@inproceedings{DBLP:conf/dsn/ChangRA06,
+	title = "Automatic Instruction-Level Software-Only Recovery.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.15",
+	author = "Jonathan Chang and George A. Reis and David I. August",
+	pages = "83-92"}
+
+@inproceedings{DBLP:conf/dsn/ChenKK06,
+	title = "Memory-Conscious Reliable Execution on Embedded Chip Multiprocessors.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.51",
+	author = "Guangyu Chen and Mahmut T. Kandemir and Ibrahim Kolcu",
+	pages = "13-22"}
+
+@inproceedings{DBLP:conf/dsn/CherkasovaR06,
+	title = "R-Opus: A Composite Framework for Application Performability
+               and QoS in Shared Resource Pools.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.59",
+	author = "Ludmila Cherkasova and Jerome A. Rolia",
+	pages = "526-535"}
+
+@inproceedings{DBLP:conf/dsn/CinqueCR06,
+	title = "Collecting and Analyzing Failure Data of Bluetooth Personal
+               Area Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.20",
+	author = "Marcello Cinque and Domenico Cotroneo and Stefano Russo",
+	pages = "313-322"}
+
+@inproceedings{DBLP:conf/dsn/CookeMJ06,
+	title = "Hotspots: The Root Causes of Non-Uniformity in Self-Propagating
+               Malware.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.39",
+	author = "Evan Cooke and Zhuoqing Morley Mao and Farnam Jahanian",
+	pages = "179-188"}
+
+@inproceedings{DBLP:conf/dsn/CukierBPT06,
+	title = "A Statistical Analysis of Attack Data to Separate Attacks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.9",
+	author = "Michel Cukier and Robin Berthier and Susmit Panjwani and Stephanie Tan",
+	pages = "383-392"}
+
+@inproceedings{DBLP:conf/dsn/CukierR06,
+	title = "Workshop on Empirical Evaluation of Dependability and Security
+               (WEEDS).",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.79",
+	author = "Michel Cukier and Ioana Rus",
+	pages = 593}
+
+@inproceedings{DBLP:conf/dsn/DhurjatiA06,
+	title = "Efficiently Detecting All Dangling Pointer Uses in Production
+               Servers.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.31",
+	author = "Dinakar Dhurjati and Vikram S. Adve",
+	pages = "269-280"}
+
+@inproceedings{DBLP:conf/dsn/DobreS06,
+	title = "One-step Consensus with Zero-Degradation.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.55",
+	author = "Dan Dobre and Neeraj Suri",
+	pages = "137-146"}
+
+@inproceedings{DBLP:conf/dsn/EkwallS06,
+	title = "Solving Atomic Broadcast with Indirect Consensus.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.65",
+	author = "Richard Ekwall and Andr{\'e} Schiper",
+	pages = "156-165"}
+
+@inproceedings{DBLP:conf/dsn/FanCPL06,
+	title = "Cost-Effective Configuration of Content Resiliency Services
+               Under Correlated Failures.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.23",
+	author = "Jinliang Fan and Tianying Chang and Dimitrios E. Pendarakis and Zhen Liu",
+	pages = "536-548"}
+
+@inproceedings{DBLP:conf/dsn/FernandezJR06,
+	title = "Eventual Leader Election with Weak Assumptions on Initial
+               Knowledge, Communication Reliability, and Synchrony.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.34",
+	author = "Antonio Fern{\'a}ndez and Ernesto Jim{\'e}nez and Michel Raynal",
+	pages = "166-178"}
+
+@inproceedings{DBLP:conf/dsn/Fetzer06,
+	title = "Student Forum.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.68",
+	author = "Christof Fetzer",
+	pages = 594}
+
+@inproceedings{DBLP:conf/dsn/GaonkarKMS06,
+	title = "Designing dependable storage solutions for shared application
+               environments.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.27",
+	author = "Shravan Gaonkar and Kimberly Keeton and Arif Merchant and William H. Sanders",
+	pages = "371-382"}
+
+@inproceedings{DBLP:conf/dsn/Goseva-PopstojanovaLWS06,
+	title = "A Contribution Towards Solving the Web Workload Puzzle.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.2",
+	author = "Katerina Goseva-Popstojanova and Fengbin Li and Xuan Wang and Amit Sangle",
+	pages = "505-516"}
+
+@inproceedings{DBLP:conf/dsn/Goyal06,
+	title = "Delivering Dependability: A Moving Target.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.25",
+	author = "Ambuj Goyal"}
+
+@inproceedings{DBLP:conf/dsn/GuerraouiLPQ06,
+	title = "High Throughput Total Order Broadcast for Cluster Environments.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.37",
+	author = "Rachid Guerraoui and Ron R. Levy and Bastian Pochon and Vivien Qu{\'e}ma",
+	pages = "549-557"}
+
+@inproceedings{DBLP:conf/dsn/GuerraouiLV06,
+	title = "Lucky Read/Write Access to Robust Atomic Storage.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.50",
+	author = "Rachid Guerraoui and Ron R. Levy and Marko Vukolic",
+	pages = "125-136"}
+
+@inproceedings{DBLP:conf/dsn/GuoJCY06,
+	title = "Tracking Probabilistic Correlation of Monitoring Data for
+               Fault Detection in Complex Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.70",
+	author = "Zhen Guo and Guofei Jiang and Haifeng Chen and Kenji Yoshihira",
+	pages = "259-268"}
+
+@inproceedings{DBLP:conf/dsn/Hafner06,
+	title = "HoVer Erasure Codes For Disk Arrays.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.40",
+	author = "James Lee Hafner",
+	pages = "217-226"}
+
+@inproceedings{DBLP:conf/dsn/HuWZ06,
+	title = "In-Register Duplication: Exploiting Narrow-Width Value for
+               Improving Register File Reliability.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.43",
+	author = "Jie Hu and Shuai Wang and Sotirios G. Ziavras",
+	pages = "281-290"}
+
+@inproceedings{DBLP:conf/dsn/HuangCL06,
+	title = "Mitigating Active Attacks Towards Client Networks Using
+               the Bitmap Filter.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.54",
+	author = "Chun-Ying Huang and Kuan-Ta Chen and Chin-Laung Lei",
+	pages = "403-412"}
+
+@inproceedings{DBLP:conf/dsn/IhdeS06,
+	title = "Barbarians in the Gate: An Experimental Validation of NIC-based
+               Distributed Firewall Performance and Flood Tolerance.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.17",
+	author = "Michael Ihde and William H. Sanders",
+	pages = "209-216"}
+
+@inproceedings{DBLP:conf/dsn/InayatE06,
+	title = "A Performance Study on the Signal-On-Fail Approach to Imposing
+               Total Order in the Streets of Byzantium.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.7",
+	author = "Qurat-ul-Ain Inayat and Paul Devadoss Ezhilchelvan",
+	pages = "578-590"}
+
+@inproceedings{DBLP:conf/dsn/JoshiSHS06,
+	title = "Automatic Recovery Using Bounded Partially Observable Markov
+               Decision Processes.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.16",
+	author = "Kaustubh R. Joshi and William H. Sanders and Matti A. Hiltunen and Richard D. Schlichting",
+	pages = "445-456"}
+
+@inproceedings{DBLP:conf/dsn/KongBR06,
+	title = "A General Framework for Scalability and Performance Analysis
+               of DHT Routing Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.4",
+	author = "Joseph S. Kong and Jesse S. A. Bridgewater and Vwani P. Roychowdhury",
+	pages = "343-354"}
+
+@inproceedings{DBLP:conf/dsn/KottkeS06,
+	title = "A Reconfigurable Generic Dual-Core Architecture.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.8",
+	author = "Thomas Kottke and Andreas Steininger",
+	pages = "45-54"}
+
+@inproceedings{DBLP:conf/dsn/KowshikRS06,
+	title = "Static Analysis to Enforce Safe Value Flow in Embedded Control
+               Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.66",
+	author = "Sumant Kowshik and Grigore Rosu and Lui Sha",
+	pages = "23-34"}
+
+@inproceedings{DBLP:conf/dsn/LamLC06,
+	title = "Accurate and Automated System Call Policy-Based Intrusion
+               Prevention.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.10",
+	author = "Lap-Chung Lam and Wei Li and Tzi-cker Chiueh",
+	pages = "413-424"}
+
+@inproceedings{DBLP:conf/dsn/LamSB06,
+	title = "A Component-Level Path Composition Approach for Efficient
+               Transient Analysis of Large CTMCs.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.1",
+	author = "Vinh Vi Lam and William H. Sanders and Peter Buchholz",
+	pages = "485-494"}
+
+@inproceedings{DBLP:conf/dsn/LeeWK06,
+	title = "Secure Split Assignment Trajectory Sampling: A Malicious
+               Router Detection System.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.64",
+	author = "Sihyung Lee and Tina Wong and Hyong S. Kim",
+	pages = "333-342"}
+
+@inproceedings{DBLP:conf/dsn/LemosGR06,
+	title = "Workshop on Architecting Dependable Systems (WADS).",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.78",
+	author = "Rog{\'e}rio de Lemos and Cristina Gacek and Alexander Romanovsky",
+	pages = 592}
+
+@inproceedings{DBLP:conf/dsn/LiangZSJS06,
+	title = "BlueGene/L Failure Analysis and Prediction Models.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.18",
+	author = "Yinglung Liang and Yanyong Zhang and Anand Sivasubramaniam and Morris Jette and Ramendra K. Sahoo",
+	pages = "425-434"}
+
+@inproceedings{DBLP:conf/dsn/MeixnerS06,
+	title = "Dynamic Verification of Memory Consistency in Cache-Coherent
+               Multithreaded Computer Architectures.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.29",
+	author = "Albert Meixner and Daniel J. Sorin",
+	pages = "73-82"}
+
+@inproceedings{DBLP:conf/dsn/MeyerC06,
+	title = "Assessing the Attack Threat due to IRC Channels.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.12",
+	author = "Robert Meyer and Michel Cukier",
+	pages = "467-472"}
+
+@inproceedings{DBLP:conf/dsn/MonizNCV06,
+	title = "Randomized Intrusion-Tolerant Asynchronous Services.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.60",
+	author = "Henrique Moniz and Nuno Ferreira Neves and Miguel Correia and Paulo Ver\'{\i}ssimo",
+	pages = "568-577"}
+
+@inproceedings{DBLP:conf/dsn/NevesACVN06,
+	title = "Using Attack Injection to Discover New Vulnerabilities.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.72",
+	author = "Nuno Ferreira Neves and Joao Antunes and Miguel Correia and Paulo Ver\'{\i}ssimo and Rui Neves",
+	pages = "457-466"}
+
+@inproceedings{DBLP:conf/dsn/PalmerM06,
+	title = "Empirical and Analytical Evaluation of Systems with Multiple
+               Unreliable Servers.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.32",
+	author = "Jennie Palmer and Isi Mitrani",
+	pages = "517-525"}
+
+@inproceedings{DBLP:conf/dsn/ParkNKVD06,
+	title = "Exploring Fault-Tolerant Network-on-Chip Architectures.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.35",
+	author = "Dongkook Park and Chrysostomos Nicopoulos and Jongman Kim and Narayanan Vijaykrishnan and Chita R. Das",
+	pages = "93-104"}
+
+@inproceedings{DBLP:conf/dsn/RaoHG06,
+	title = "Reliability for Networked Storage Nodes.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.61",
+	author = "K. K. Rao and James Lee Hafner and Richard A. Golding",
+	pages = "237-248"}
+
+@inproceedings{DBLP:conf/dsn/RayK06,
+	title = "Efficient High Hamming Distance CRCs for Embedded Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.30",
+	author = "Justin Ray and Philip Koopman",
+	pages = "3-12"}
+
+@inproceedings{DBLP:conf/dsn/ReederM06,
+	title = "User Interface Defect Detection by Hesitation Analysis.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.71",
+	author = "Robert W. Reeder and Roy A. Maxion",
+	pages = "61-72"}
+
+@inproceedings{DBLP:conf/dsn/SahooKM06,
+	title = "Improving BGP Convergence Delay for Large-Scale Failures.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.41",
+	author = "Amit Sahoo and Krishna Kant and Prasant Mohapatra",
+	pages = "323-332"}
+
+@inproceedings{DBLP:conf/dsn/SarangiGT06,
+	title = "CADRE: Cycle-Accurate Deterministic Replay for Hardware
+               Debugging.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.19",
+	author = "Smruti R. Sarangi and Brian Greskamp and Josep Torrellas",
+	pages = "301-312"}
+
+@inproceedings{DBLP:conf/dsn/SchroederG06,
+	title = "A large-scale study of failures in high-performance computing
+               systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.5",
+	author = "Bianca Schroeder and Garth A. Gibson",
+	pages = "249-258"}
+
+@inproceedings{DBLP:conf/dsn/SekarXRZ06,
+	title = "A Multi-Resolution Approach forWorm Detection and Containment.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.6",
+	author = "Vyas Sekar and Yinglian Xie and Michael K. Reiter and Hui Zhang",
+	pages = "189-198"}
+
+@inproceedings{DBLP:conf/dsn/SengarWWJ06,
+	title = "VoIP Intrusion Detection Through Interacting Protocol State
+               Machines.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.73",
+	author = "Hemant Sengar and Duminda Wijesekera and Haining Wang and Sushil Jajodia",
+	pages = "393-402"}
+
+@inproceedings{DBLP:conf/dsn/SharpK06,
+	title = "A Dependable System Architecture for Safety-Critical Respiratory-Gated
+               Radiation Therapy.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.3",
+	author = "Gregory C. Sharp and Nagarajan Kandasamy",
+	pages = "55-60"}
+
+@inproceedings{DBLP:conf/dsn/SteinerK06,
+	title = "The Startup Problem in Fault-Tolerant Time-Triggered Communication.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.69",
+	author = "Wilfried Steiner and Hermann Kopetz",
+	pages = "35-44"}
+
+@inproceedings{DBLP:conf/dsn/TanJS06,
+	title = "Improving the Fault Resilience of Overlay Multicast for
+               Media Streaming.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.42",
+	author = "Guang Tan and Stephen A. Jarvis and Daniel P. Spooner",
+	pages = "558-567"}
+
+@inproceedings{DBLP:conf/dsn/TangCTS06,
+	title = "Assessment of the Effect of Memory Page Retirement on System
+               RAS Against Hardware Faults.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.13",
+	author = "Dong Tang and Peter Carruthers and Zuheir Totari and Michael W. Shapiro",
+	pages = "365-370"}
+
+@inproceedings{DBLP:conf/dsn/ZhangMSRR06,
+	title = "Evaluating the Performability of Systems with Background
+               Jobs.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.33",
+	author = "Qi Zhang and Ningfang Mi and Evgenia Smirni and Alma Riska and Erik Riedel",
+	pages = "495-504"}
+
+@inproceedings{DBLP:conf/dsn/ZouC06,
+	title = "Honeypot-Aware Advanced Botnet Construction and Maintenance.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2006.38",
+	author = "Cliff Changchun Zou and Ryan Cunningham",
+	pages = "199-208"}
+
+@default year = 2005
+
+@inproceedings{DBLP:conf/dsn/AguileraJX05,
+	title = "Using Erasure Codes Efficiently for Storage in a Distributed
+               System.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.96",
+	author = "Marcos Kawazoe Aguilera and Ramaprabhu Janakiraman and Lihao Xu",
+	pages = "336-345"}
+
+@inproceedings{DBLP:conf/dsn/AidemarkFK05,
+	title = "A Framework for Node-Level Fault Tolerance in Distributed
+               Real-Time Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.7",
+	author = "Joakim Aidemark and Peter Folkesson and Johan Karlsson",
+	pages = "656-665"}
+
+@inproceedings{DBLP:conf/dsn/BasileKI05,
+	title = "Neutralization of Errors and Attacks in Wireless Ad Hoc
+               Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.68",
+	author = "Claudio Basile and Zbigniew Kalbarczyk and Ravishankar K. Iyer",
+	pages = "518-527"}
+
+@inproceedings{DBLP:conf/dsn/Benlarbi05,
+	title = "Workshop on Assurance of Networking Systems Dependability
+               Service Level Agreements - Workshop Abstract.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.100",
+	author = "Sa\"{\i}da Benlarbi",
+	pages = 830}
+
+@inproceedings{DBLP:conf/dsn/BernardiBRRVV05,
+	title = "On-Line Detection of Control-Flow Errors in SoCs by Means
+               of an Infrastructure IP Core.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.74",
+	author = "Paolo Bernardi and Leticia Maria Veiras Bolzani and Maurizio Rebaudengo and Matteo Sonza Reorda and Fabian Vargas and Massimo Violante",
+	pages = "50-58"}
+
+@inproceedings{DBLP:conf/dsn/BernickBVGJKS05,
+	title = "NonStop Advanced Architecture.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.70",
+	author = "David Bernick and Bill Bruckert and Paul Del Vigna and David Garcia and Robert Jardine and Jim Klecka and Jim Smullen",
+	pages = "12-21"}
+
+@inproceedings{DBLP:conf/dsn/Bohm05,
+	title = "H-RAFT - Heuristic Reachability Analysis for Fault Tolerance
+               Protocols Modelled in SDL.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.53",
+	author = "Sabine M. B{\"o}hm",
+	pages = "466-475"}
+
+@inproceedings{DBLP:conf/dsn/BohnenkampGGK05,
+	title = "Are You Still There? - A Lightweight Algorithm to Monitor
+               Node Presence in Self-Configuring Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.20",
+	author = "Henrik C. Bohnenkamp and Johan Gorter and Jarno Guidi and Joost-Pieter Katoen",
+	pages = "704-709"}
+
+@inproceedings{DBLP:conf/dsn/BoykinR05,
+	title = "Reversible Fault-Tolerant Logic.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.83",
+	author = "P. Oscar Boykin and Vwani P. Roychowdhury",
+	pages = "444-453"}
+
+@inproceedings{DBLP:conf/dsn/CandeaO05,
+	title = "Workshop on Hot Topics in System Depend - Workshop Abstract.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.99",
+	author = "George Candea and David L. Oppenheimer",
+	pages = "826-827"}
+
+@inproceedings{DBLP:conf/dsn/ChenKK05,
+	title = "A Data-Centric Approach to Checksum Reuse for Array-Intensive
+               Applications.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.5",
+	author = "Guilin Chen and Mahmut T. Kandemir and Mustafa Karak{\"o}y",
+	pages = "316-325"}
+
+@inproceedings{DBLP:conf/dsn/ChenXNKI05,
+	title = "Defeating Memory Corruption Attacks via Pointer Taintedness
+               Detection.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.36",
+	author = "Shuo Chen and Jun Xu and Nithin Nakka and Zbigniew Kalbarczyk and Ravishankar K. Iyer",
+	pages = "378-387"}
+
+@inproceedings{DBLP:conf/dsn/ChinchaniINU05,
+	title = "Towards a Theory of Insider Threat Assessment.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.94",
+	author = "Ramkumar Chinchani and Anusha Iyer and Hung Q. Ngo and Shambhu J. Upadhyaya",
+	pages = "108-117"}
+
+@inproceedings{DBLP:conf/dsn/ClothKKP05,
+	title = "Model Checking Markov Reward Models with Impulse Rewards.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.64",
+	author = "Lucia Cloth and Joost-Pieter Katoen and Maneesh Khattri and Reza Pulungan",
+	pages = "722-731"}
+
+@inproceedings{DBLP:conf/dsn/CollinsP05,
+	title = "Assessing the Performance of Erasure Codes in the Wide-Area.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.21",
+	author = "Rebecca L. Collins and James S. Plank",
+	pages = "182-187"}
+
+@inproceedings{DBLP:conf/dsn/Constantinescu05,
+	title = "Neutron SER Characterization of Microprocessors.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.69",
+	author = "Cristian Constantinescu",
+	pages = "754-759"}
+
+@inproceedings{DBLP:conf/dsn/ConstantinescuKMMPB05,
+	title = "Dependability Benchmarking of Computing Systems - Panel
+               Statement.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.76",
+	author = "Cristian Constantinescu and Karama Kanoun and Henrique Madeira and Brendan Murphy and Ira Pramanick and Aaron B. Brown",
+	pages = 400}
+
+@inproceedings{DBLP:conf/dsn/DefagoUHK05,
+	title = "Definition and Specification of Accrual Failure Detectors.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.37",
+	author = "Xavier D{\'e}fago and P{\'e}ter Urb{\'a}n and Naohiro Hayashibara and Takuya Katayama",
+	pages = "206-215"}
+
+@inproceedings{DBLP:conf/dsn/DerisaviKS05,
+	title = "Lumping Matrix Diagram Representations of Markov Models.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.59",
+	author = "Salem Derisavi and Peter Kemper and William H. Sanders",
+	pages = "742-751"}
+
+@inproceedings{DBLP:conf/dsn/DrabkinFS05,
+	title = "Efficient Byzantine Broadcast in Wireless Ad-Hoc Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.42",
+	author = "Vadim Drabkin and Roy Friedman and Marc Segal",
+	pages = "160-169"}
+
+@inproceedings{DBLP:conf/dsn/DuttaGL05,
+	title = "How Fast Can Eventual Synchrony Lead to Consensus?.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.54",
+	author = "Partha Dutta and Rachid Guerraoui and Leslie Lamport",
+	pages = "22-27"}
+
+@inproceedings{DBLP:conf/dsn/ElRakabawyLV05,
+	title = "Improving TCP Performance for Multihop Wireless Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.56",
+	author = "Sherif M. ElRakabawy and Christoph Lindemann and Mary K. Vernon",
+	pages = "684-693"}
+
+@inproceedings{DBLP:conf/dsn/FalaiB05,
+	title = "Experimental Evaluation of the QoS of Failure Detectors
+               on Wide Area Network.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.47",
+	author = "Lorenzo Falai and Andrea Bondavalli",
+	pages = "624-633"}
+
+@inproceedings{DBLP:conf/dsn/FangSSS05,
+	title = "On Partial Protection in Groomed Optical WDM Mesh Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.73",
+	author = "Jing Fang and Mahesh Sivakumar and Arun K. Somani and Krishna M. Sivalingam",
+	pages = "228-237"}
+
+@inproceedings{DBLP:conf/dsn/FarchiKKKV05,
+	title = "Effective Testing and Debugging Techniques for a Group Communication
+               System.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.41",
+	author = "Eitan Farchi and Gabriel Kliot and Yoel Krasny and Alex Krits and Roman Vitenberg",
+	pages = "80-85"}
+
+@inproceedings{DBLP:conf/dsn/FooWMBS05,
+	title = "ADEPTS: Adaptive Intrusion Response Using Attack Graphs
+               in an E-Commerce Environment.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.17",
+	author = "Bingrui Foo and Yu-Sung Wu and Yu-Chun Mao and Saurabh Bagchi and Eugene H. Spafford",
+	pages = "508-517"}
+
+@inproceedings{DBLP:conf/dsn/GanapathiP05,
+	title = "Crash Data Collection: A Windows Case Study.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.32",
+	author = "Archana Ganapathi and David A. Patterson",
+	pages = "280-285"}
+
+@inproceedings{DBLP:conf/dsn/GorenderMR05,
+	title = "A Hybrid and Adaptive Model for Fault-Tolerant Distributed
+               Computing.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.8",
+	author = "S{\'e}rgio Gorender and Raimundo A. Mac{\^e}do and Michel Raynal",
+	pages = "412-421"}
+
+@inproceedings{DBLP:conf/dsn/GoudaL05,
+	title = "A Model of Stateful Firewalls and Its Properties.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.9",
+	author = "Mohamed G. Gouda and Alex X. Liu",
+	pages = "128-137"}
+
+@inproceedings{DBLP:conf/dsn/GribaudoCGGMS05,
+	title = "A Spatial Fluid-Based Framework to Analyze Large-Scale Wireless
+               Sensor Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.13",
+	author = "Marco Gribaudo and Carla-Fabiana Chiasserini and Rossano Gaeta and Michele Garetto and Daniele Manini and Matteo Sereno",
+	pages = "694-703"}
+
+@inproceedings{DBLP:conf/dsn/GrottkeT05,
+	title = "On a Method for Mending Time to Failure Distributions.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.72",
+	author = "Michael Grottke and Kishor S. Trivedi",
+	pages = "560-569"}
+
+@inproceedings{DBLP:conf/dsn/GuoC05,
+	title = "Scalable and Robust WLAN Connectivity Using Access Point
+               Array.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.85",
+	author = "Fanglu Guo and Tzi-cker Chiueh",
+	pages = "288-297"}
+
+@inproceedings{DBLP:conf/dsn/HallDPD05,
+	title = "Ringing out Fault Tolerance. A New Ring Network for Superior
+               Low-Cost Dependability.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.84",
+	author = "Brendan Hall and Kevin Driscoll and Michael Paulitsch and Samar Dajani-Brown",
+	pages = "298-307"}
+
+@inproceedings{DBLP:conf/dsn/HansenKCGL05,
+	title = "Resilient Routing Layers for Recovery in Packet Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.81",
+	author = "Audun Fosselie Hansen and Amund Kvalbein and Tarik Cicic and Stein Gjessing and Olav Lysne",
+	pages = "238-247"}
+
+@inproceedings{DBLP:conf/dsn/Hoshiba05,
+	title = "Observation of Local and Distant Earthquakes and Tsunami
+               Warning System.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.71",
+	author = "Mitsuyuki Hoshiba"}
+
+@inproceedings{DBLP:conf/dsn/JanakiramanSST05,
+	title = "Cruz: Application-Transparent Distributed Checkpoint-Restart
+               on Standard Operating Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.33",
+	author = "G. John Janakiraman and Jose Renato Santos and Dinesh Subhraveti and Yoshio Turner",
+	pages = "260-269"}
+
+@inproceedings{DBLP:conf/dsn/JohanssonS05,
+	title = "Error Propagation Profiling of Operating Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.45",
+	author = "Andr{\'e}as Johansson and Neeraj Suri",
+	pages = "86-95"}
+
+@inproceedings{DBLP:conf/dsn/KatayamaIK05,
+	title = "Workshop on Dependable Software - Tools and Methods - Workshop
+               Abstract.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.101",
+	author = "Takuya Katayama and Yutaka Ishikawa and Yoshiki Kinoshita",
+	pages = 824}
+
+@inproceedings{DBLP:conf/dsn/KemperMT05,
+	title = "Combining Response Surface Methodology with Numerical Models
+               for Optimization of Class-Based Queueing Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.28",
+	author = "Peter Kemper and Dennis M{\"u}ller and Axel Th{\"u}mmler",
+	pages = "550-559"}
+
+@inproceedings{DBLP:conf/dsn/KhalilBS05,
+	title = "LITEWORP: A Lightweight Countermeasure for the Wormhole
+               Attack in Multihop Wireless Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.58",
+	author = "Issa Khalil and Saurabh Bagchi and Ness B. Shroff",
+	pages = "612-621"}
+
+@inproceedings{DBLP:conf/dsn/KoG05,
+	title = "Perturbation-Resistant and Overlay-Independent Resource
+               Discovery.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.79",
+	author = "Steven Y. Ko and Indranil Gupta",
+	pages = "248-257"}
+
+@inproceedings{DBLP:conf/dsn/KowshikBGS05,
+	title = "Co-Design Based Approach to Improve Robustness in Networked
+               Control Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.26",
+	author = "Sumant Kowshik and Girish Baliga and Scott Graham and Lui Sha",
+	pages = "454-463"}
+
+@inproceedings{DBLP:conf/dsn/KrasniewskiVRBH05,
+	title = "TIBFIT: Trust Index Based Fault Tolerance for Arbitrary
+               Data Faults in Sensor Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.92",
+	author = "Mark D. Krasniewski and Padma Varadharajan and Bryan Rabeler and Saurabh Bagchi and Y. Charlie Hu",
+	pages = "672-681"}
+
+@inproceedings{DBLP:conf/dsn/KrishnamohanM05,
+	title = "Combining Error Masking and Error Detection Plus Recovery
+               to Combat Soft Errors in Static CMOS Circuits.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.27",
+	author = "Srivathsan Krishnamohan and Nihar R. Mahapatra",
+	pages = "40-49"}
+
+@inproceedings{DBLP:conf/dsn/LamC05,
+	title = "Checking Array Bound Violation Using Segmentation Hardware.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.25",
+	author = "Lap-Chung Lam and Tzi-cker Chiueh",
+	pages = "388-397"}
+
+@inproceedings{DBLP:conf/dsn/LatronicoK05,
+	title = "Design Time Reliability Analysis of Distributed Fault Tolerance
+               Algorithms.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.38",
+	author = "Elizabeth Latronico and Philip Koopman",
+	pages = "486-495"}
+
+@inproceedings{DBLP:conf/dsn/LiABR05,
+	title = "SoftArch: An Architecture Level Tool for Modeling and Analyzing
+               Soft Errors.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.88",
+	author = "Xiaodong Li and Sarita V. Adve and Pradip Bose and Jude A. Rivers",
+	pages = "496-505"}
+
+@inproceedings{DBLP:conf/dsn/LiangZSSMG05,
+	title = "Filtering Failure Logs for a BlueGene/L Prototype.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.50",
+	author = "Yinglung Liang and Yanyong Zhang and Anand Sivasubramaniam and Ramendra K. Sahoo and Jos{\'e} E. Moreira and Manish Gupta",
+	pages = "476-485"}
+
+@inproceedings{DBLP:conf/dsn/LuoC05,
+	title = "Optimizing the Pulsing Denial-of-Service Attacks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.75",
+	author = "Xiapu Luo and Rocky K. C. Chang",
+	pages = "582-591"}
+
+@inproceedings{DBLP:conf/dsn/MartinA05,
+	title = "Fast Byzantine Consensus.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.48",
+	author = "Jean-Philippe Martin and Lorenzo Alvisi",
+	pages = "402-411"}
+
+@inproceedings{DBLP:conf/dsn/MarwahMF05,
+	title = "A System Demonstration of ST-TCP.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.14",
+	author = "Manish Marwah and Shivakant Mishra and Christof Fetzer",
+	pages = "308-313"}
+
+@inproceedings{DBLP:conf/dsn/MemikCMI05,
+	title = "Engineering Over-Clocking: Reliability-Performance Trade-Offs
+               for High-Performance Register Files.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.43",
+	author = "Gokhan Memik and Masud H. Chowdhury and Arindam Mallik and Yehea I. Ismail",
+	pages = "770-779"}
+
+@inproceedings{DBLP:conf/dsn/MizrakCMS05,
+	title = "Fatih: Detecting and Isolating Malicious Routers.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.49",
+	author = "Alper Tugay Mizrak and Yu-Chung Cheng and Keith Marzullo and Stefan Savage",
+	pages = "538-547"}
+
+@inproceedings{DBLP:conf/dsn/Murray05,
+	title = "A Distributed State Monitoring Service for Adaptive Application
+               Management.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.6",
+	author = "Paul Murray",
+	pages = "200-205"}
+
+@inproceedings{DBLP:conf/dsn/OlinerRSMG05,
+	title = "Probabilistic QoS Guarantees for Supercomputing Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.80",
+	author = "Adam J. Oliner and Larry Rudolph and Ramendra K. Sahoo and Jos{\'e} E. Moreira and Manish Gupta",
+	pages = "634-643"}
+
+@inproceedings{DBLP:conf/dsn/PanjwaniTJC05,
+	title = "An Experimental Evaluation to Determine if Port Scans are
+               Precursors to an Attack.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.18",
+	author = "Susmit Panjwani and Stephanie Tan and Keith M. Jarrin and Michel Cukier",
+	pages = "602-611"}
+
+@inproceedings{DBLP:conf/dsn/PaulitschMHDLK05,
+	title = "Coverage and the Use of Cyclic Redundancy Codes in Ultra-Dependable
+               Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.31",
+	author = "Michael Paulitsch and Jennifer Morris and Brendan Hall and Kevin Driscoll and Elizabeth Latronico and Philip Koopman",
+	pages = "346-355"}
+
+@inproceedings{DBLP:conf/dsn/PlankBCT05,
+	title = "Small Parity-Check Erasure Codes - Exploration and Observations.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.86",
+	author = "James S. Plank and Adam L. Buchsbaum and Rebecca L. Collins and Michael G. Thomason",
+	pages = "326-335"}
+
+@inproceedings{DBLP:conf/dsn/PrabhakaranAA05,
+	title = "Model-Based Failure Analysis of Journaling File Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.65",
+	author = "Vijayan Prabhakaran and Andrea C. Arpaci-Dusseau and Remzi H. Arpaci-Dusseau",
+	pages = "802-811"}
+
+@inproceedings{DBLP:conf/dsn/QureshiMP05,
+	title = "Microarchitecture-Based Introspection: A Technique for Transient-Fault
+               Tolerance in Microprocessors.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.62",
+	author = "Moinuddin K. Qureshi and Onur Mutlu and Yale N. Patt",
+	pages = "434-443"}
+
+@inproceedings{DBLP:conf/dsn/RajagopalanHJS05,
+	title = "Authenticated System Calls.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.23",
+	author = "Mohan Rajagopalan and Matti A. Hiltunen and Trevor Jim and Richard D. Schlichting",
+	pages = "358-367"}
+
+@inproceedings{DBLP:conf/dsn/ReederM05,
+	title = "User Interface Dependability through Goal-Error Prevention.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.95",
+	author = "Robert W. Reeder and Roy A. Maxion",
+	pages = "60-69"}
+
+@inproceedings{DBLP:conf/dsn/SaggeseVKI05,
+	title = "Microprocessor Sensitivity to Failures: Control vs Execution
+               and Combinational vs Sequential Logic.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.63",
+	author = "Giacinto Paolo Saggese and Anoop Vetteth and Zbigniew Kalbarczyk and Ravishankar K. Iyer",
+	pages = "760-769"}
+
+@inproceedings{DBLP:conf/dsn/SampaioB05,
+	title = "Adaptive Indulgent Consensus.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.16",
+	author = "L\'{\i}via M. R. Sampaio and Francisco Vilar Brasileiro",
+	pages = "422-431"}
+
+@inproceedings{DBLP:conf/dsn/SellkeSB05,
+	title = "Modeling and Automated Containment of Worms.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.66",
+	author = "Sarah Sellke and Ness B. Shroff and Saurabh Bagchi",
+	pages = "528-537"}
+
+@inproceedings{DBLP:conf/dsn/SousaNV05,
+	title = "How Resilient are Distributed f Fault/Intrusion-Tolerant
+               Systems?",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.55",
+	author = "Paulo Sousa and Nuno Ferreira Neves and Paulo Ver\'{\i}ssimo",
+	pages = "98-107"}
+
+@inproceedings{DBLP:conf/dsn/SousaPSCROM05,
+	title = "Testing the Dependability and Performance of Group Communication
+               Based Database Replication Protocols.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.90",
+	author = "A. Sousa and J. Pereira and L. Soares and Afr{\^a}nio Correia, Jr. and L. Rocha and Rui Oliveira and F. Moura",
+	pages = "792-801"}
+
+@inproceedings{DBLP:conf/dsn/StrunkKA05,
+	title = "Assured Reconfiguration of Fail-Stop Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.22",
+	author = "Elisabeth A. Strunk and John C. Knight and M. Anthony Aiello",
+	pages = "2-11"}
+
+@inproceedings{DBLP:conf/dsn/SuzukiOAFI05,
+	title = "Analysis of Probabilistic Trapezoid Protocol for Data Replication.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.19",
+	author = "Tabito Suzuki and Mamoru Ohara and Masayuki Arai and Satoshi Fukumoto and Kazuhiko Iwasaki",
+	pages = "782-791"}
+
+@inproceedings{DBLP:conf/dsn/TaianiFK05,
+	title = "A Multi-Level Meta-Object Protocol for Fault-Tolerance in
+               Complex Architectures.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.10",
+	author = "Fran\c{c}ois Ta\"{\i}ani and Jean-Charles Fabre and Marc-Olivier Killijian",
+	pages = "270-279"}
+
+@inproceedings{DBLP:conf/dsn/TaiTSC05,
+	title = "A Performability-Oriented Software Rejuvenation Framework
+               for Distributed Applications.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.12",
+	author = "Ann T. Tai and Kam S. Tso and William H. Sanders and Savio N. Chau",
+	pages = "570-579"}
+
+@inproceedings{DBLP:conf/dsn/TanM05,
+	title = "The Effects of Algorithmic Diversity on Anomaly Detector
+               Performance.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.91",
+	author = "Kymie M. C. Tan and Roy A. Maxion",
+	pages = "216-225"}
+
+@inproceedings{DBLP:conf/dsn/TangCW05,
+	title = "GoCast: Gossip-Enhanced Overlay Multicast for Fast and Dependable
+               Group Communication.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.52",
+	author = "Chunqiang Tang and Rong N. Chang and Christopher Ward",
+	pages = "140-149"}
+
+@inproceedings{DBLP:conf/dsn/ThummlerBT05,
+	title = "A Novel Approach for Fitting Probability Distributions to
+               Real Trace Data with the EM Algorithm.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.11",
+	author = "Axel Th{\"u}mmler and Peter Buchholz and Mikl{\'o}s Telek",
+	pages = "712-721"}
+
+@inproceedings{DBLP:conf/dsn/VieiraM05,
+	title = "Towards a Security Benchmark for Database Management Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.93",
+	author = "Marco Vieira and Henrique Madeira",
+	pages = "592-601"}
+
+@inproceedings{DBLP:conf/dsn/VinterHNFK05,
+	title = "Experimental Dependability Evaluation of a Fail-Bounded
+               Jet Engine Control System for Unmanned Aerial Vehicles.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.46",
+	author = "Jonny Vinter and Olof Hannius and Torbj{\"o}rn Norlander and Peter Folkesson and Johan Karlsson",
+	pages = "666-671"}
+
+@inproceedings{DBLP:conf/dsn/WangBVRV05,
+	title = "Detecting Stealth Software with Strider GhostBuster.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.39",
+	author = "Yi-Min Wang and Doug Beck and Binh Vo and Roussi Roussev and Chad Verbowski",
+	pages = "368-377"}
+
+@inproceedings{DBLP:conf/dsn/WangP05,
+	title = "ReStore: Symptom Based Soft Error Detection in Microprocessors.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.82",
+	author = "Nicholas J. Wang and Sanjay J. Patel",
+	pages = "30-39"}
+
+@inproceedings{DBLP:conf/dsn/WangPKIVVW05,
+	title = "Modeling Coordinated Checkpointing for Large-Scale Supercomputers.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.67",
+	author = "Long Wang and Karthik Pattabiraman and Zbigniew Kalbarczyk and Ravishankar K. Iyer and Lawrence G. Votta and Christopher A. Vick and Alan Wood",
+	pages = "812-821"}
+
+@inproceedings{DBLP:conf/dsn/WongJA05,
+	title = "Internet Routing Anomaly Detection and Visualization.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.57",
+	author = "Tina Wong and Van Jacobson and Cengiz Alaettinoglu",
+	pages = "172-181"}
+
+@inproceedings{DBLP:conf/dsn/WuS05,
+	title = "SMRP: Fast Restoration of Multicast Sessions from Persistent
+               Failures.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.87",
+	author = "Jian Wu and Kang G. Shin",
+	pages = "150-159"}
+
+@inproceedings{DBLP:conf/dsn/YerramallaCMF05,
+	title = "Stability Monitoring and Analysis of Learning in an Adaptive
+               System.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.89",
+	author = "Sampath Yerramalla and Bojan Cukic and Martin Mladenovski and Edgar Fuller",
+	pages = "70-79"}
+
+@inproceedings{DBLP:conf/dsn/ZhangCGSF05,
+	title = "Ensembles of Models for Automated Diagnosis of System Performance
+               Problems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.44",
+	author = "Steve Zhang and Ira Cohen and Mois{\'e}s Goldszmidt and Julie Symons and Armando Fox",
+	pages = "644-653"}
+
+@inproceedings{DBLP:conf/dsn/ZhangG05,
+	title = "Finding Critical Traffic Matrices.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.51",
+	author = "Yin Zhang and Zihui Ge",
+	pages = "188-197"}
+
+@inproceedings{DBLP:conf/dsn/ZhangPK05,
+	title = "A Wavefront Parallelisation of CTMC Solution Using MTBDDs.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.15",
+	author = "Yi Zhang and David Parker and Marta Z. Kwiatkowska",
+	pages = "732-741"}
+
+@inproceedings{DBLP:conf/dsn/ZhangS05,
+	title = "Constructing Multi-Layered Boundary to Defend Against Intrusive
+               Anomalies: An Autonomic Detection Coordinator.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/DSN.2005.30",
+	author = "Zonghua Zhang and Hong Shen",
+	pages = "118-127"}
+
+@default year = 2004
+
+@inproceedings{DBLP:conf/dsn/AcquavivaABBBL04,
+	title = "Assessing the Impact of Dynamic Power Management on the
+               Functionality and the Performance of Battery-Powered Appliances.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520731abs.htm",
+	author = "Andrea Acquaviva and Alessandro Aldini and Marco Bernardo and Alessandro Bogliolo and Edoardo Bont{\`a} and Emanuele Lattanzi",
+	pages = "731-"}
+
+@inproceedings{DBLP:conf/dsn/AlbinetAF04,
+	title = "Characterization of the Impact of Faulty Drivers on the
+               Robustness of the Linux Kernel.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520867abs.htm",
+	author = "Arnaud Albinet and Jean Arlat and Jean-Charles Fabre",
+	pages = "867-876"}
+
+@inproceedings{DBLP:conf/dsn/AssayadGK04,
+	title = "A Bi-Criteria Scheduling Heuristic for Distributed Embedded
+               Systems under Reliability and Real-Time Constraints.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520347abs.htm",
+	author = "Ismail Assayad and Alain Girault and Hamoudi Kalla",
+	pages = "347-356"}
+
+@inproceedings{DBLP:conf/dsn/BadishiKS04,
+	title = "Exposing and Eliminating Vulnerabilities to Denial of Service
+               Attacks in Secure Gossip-Based Multicast.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520223abs.htm",
+	author = "Gal Badishi and Idit Keidar and Amir Sasson",
+	pages = "223-232"}
+
+@inproceedings{DBLP:conf/dsn/BaehniEG04,
+	title = "Data-Aware Multicast.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520233abs.htm",
+	author = "S{\'e}bastien Baehni and Patrick Th. Eugster and Rachid Guerraoui",
+	pages = "233-242"}
+
+@inproceedings{DBLP:conf/dsn/BagchiBSV04,
+	title = "DIWANS: Workshop on Dependability Issues in Wireless Ad
+               Hoc Networks and Sensor Networks.",
+	author = "Saurabh Bagchi and Douglas M. Blough and Paolo Santi and Nitin H. Vaidya",
+	pages = 900}
+
+@inproceedings{DBLP:conf/dsn/BaierCHKS04,
+	title = "Model Checking Action- and State-Labelled Markov Chains.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520701abs.htm",
+	author = "Christel Baier and Lucia Cloth and Boudewijn R. Haverkort and Matthias Kuntz and Markus Siegle",
+	pages = "701-710"}
+
+@inproceedings{DBLP:conf/dsn/BennaniBCFKMT04,
+	title = "Implementing Simple Replication Protocols using CORBA Portable
+               Interceptors and Java Serialization.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520549abs.htm",
+	author = "Taha Bennani and Laurent Blain and Ludovic Courtes and Jean-Charles Fabre and Marc-Olivier Killijian and Eric Marsden and Fran\c{c}ois Ta\"{\i}ani",
+	pages = "549-554"}
+
+@inproceedings{DBLP:conf/dsn/BoltonL04,
+	title = "Analyses of the Reverse Path Forwarding Routing Algorithm.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520485abs.htm",
+	author = "Christie Bolton and Gavin Lowe",
+	pages = "485-494"}
+
+@inproceedings{DBLP:conf/dsn/BowerSOS04,
+	title = "Tolerating Hard Faults in Microprocessor Array Structures.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520051abs.htm",
+	author = "Fred A. Bower and Paul G. Shealy and Sule Ozev and Daniel J. Sorin",
+	pages = "51-60"}
+
+@inproceedings{DBLP:conf/dsn/BoykinRMV04,
+	title = "Fault Tolerant Computation on Ensemble Quantum Computers.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520157abs.htm",
+	author = "P. Oscar Boykin and Vwani P. Roychowdhury and Tal Mor and Farrokh Vatan",
+	pages = "157-166"}
+
+@inproceedings{DBLP:conf/dsn/BreveglieriK04,
+	title = "Workshop on Fault Diagnosis and Tolerance in Cryptography.",
+	author = "Luca Breveglieri and Israel Koren",
+	pages = 902}
+
+@inproceedings{DBLP:conf/dsn/BrownCKLP04,
+	title = "Experience with Evaluating Human-Assisted Recovery Processes.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520405abs.htm",
+	author = "Aaron B. Brown and Leonard Chung and William Kakes and Calvin Ling and David A. Patterson",
+	pages = "405-410"}
+
+@inproceedings{DBLP:conf/dsn/CachinS04,
+	title = "Secure Distributed DNS.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520423abs.htm",
+	author = "Christian Cachin and Asad Samar",
+	pages = "423-432"}
+
+@inproceedings{DBLP:conf/dsn/CastroCR04,
+	title = "Performance and Dependability of Structured Peer-to-Peer
+               Overlays.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520009abs.htm",
+	author = "Miguel Castro and Manuel Costa and Antony I. T. Rowstron",
+	pages = "9-18"}
+
+@inproceedings{DBLP:conf/dsn/CherkasovaTS04,
+	title = "An SLA-Oriented Capacity Planning Tool for Streaming Media
+               Services.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520743abs.htm",
+	author = "Ludmila Cherkasova and Wenting Tang and Sharad Singhal",
+	pages = "743-752"}
+
+@inproceedings{DBLP:conf/dsn/CookRS04,
+	title = "Component Middleware to Support Non-repudiable Service Interactions.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520605abs.htm",
+	author = "Nick Cook and Paul Robinson and Santosh K. Shrivastava",
+	pages = "605-"}
+
+@inproceedings{DBLP:conf/dsn/DengHM04,
+	title = "Intrusion Tolerance and Anti-Traffic Analysis Strategies
+               For Wireless Sensor Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520637abs.htm",
+	author = "Jing Deng and Richard Han and Shivakant Mishra",
+	pages = "637-"}
+
+@inproceedings{DBLP:conf/dsn/Donatelli04,
+	title = "Student Forum.",
+	author = "Susanna Donatelli",
+	pages = 904}
+
+@inproceedings{DBLP:conf/dsn/DowneyC04,
+	title = "Evaluating the Impact of Limited Resource on the Performance
+               of Flooding in Wireless Sensor Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520785abs.htm",
+	author = "Patrick Downey and Rachel Cardell-Oliver",
+	pages = "785-794"}
+
+@inproceedings{DBLP:conf/dsn/DuarteSC04,
+	title = "Delivering Packets During The Routing Convergence Latency
+               Interval Through Highly Connected Detours.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520495abs.htm",
+	author = "Elias Proc{\'o}pio Duarte, Jr. and Rog{\'e}rio Santini and Jaime Cohen",
+	pages = "495-"}
+
+@inproceedings{DBLP:conf/dsn/DuraesM04,
+	title = "Generic Faultloads Based on Software Faults for Dependability
+               Benchmarking.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520285abs.htm",
+	author = "Jo{\~a}o Dur{\~a}es and Henrique Madeira",
+	pages = "285-294"}
+
+@inproceedings{DBLP:conf/dsn/FrolundMSSV04,
+	title = "A Decentralized Algorithm for Erasure-Coded Virtual Disks.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520125abs.htm",
+	author = "Svend Fr{\o}lund and Arif Merchant and Yasushi Saito and Susan Spence and Alistair C. Veitch",
+	pages = "125-134"}
+
+@inproceedings{DBLP:conf/dsn/GanapathiWLW04,
+	title = "Why PCs Are Fragile and What We Can Do About It: A Study
+               of Windows Registry Problems.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520561abs.htm",
+	author = "Archana Ganapathi and Yi-Min Wang and Ni Lao and Ji-Rong Wen",
+	pages = "561-566"}
+
+@inproceedings{DBLP:conf/dsn/GarbinatoPS04,
+	title = "An Adaptive Algorithm for Efficient Message Diffusion in
+               Unreliable Environments.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520507abs.htm",
+	author = "Beno\^{\i}t Garbinato and Fernando Pedone and Rodrigo Schmidt",
+	pages = "507-516"}
+
+@inproceedings{DBLP:conf/dsn/GashiPS04,
+	title = "Fault Diversity among Off-The-Shelf SQL Database Servers.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520389abs.htm",
+	author = "Ilir Gashi and Peter T. Popov and Lorenzo Strigini",
+	pages = "389-398"}
+
+@inproceedings{DBLP:conf/dsn/Giandomenico04,
+	title = "Fast Abstracts.",
+	author = "Felicita Di Giandomenico",
+	pages = 905}
+
+@inproceedings{DBLP:conf/dsn/GoodsonWGR04,
+	title = "Efficient Byzantine-Tolerant Erasure-Coded Storage.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520135abs.htm",
+	author = "Garth R. Goodson and Jay J. Wylie and Gregory R. Ganger and Michael K. Reiter",
+	pages = "135-144"}
+
+@inproceedings{DBLP:conf/dsn/GribaudoS04,
+	title = "An Efficient Algorithm for the Transient Analysis of a Class
+               of Deterministic Stochastic Petri Nets.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520835abs.htm",
+	author = "Marco Gribaudo and Matteo Sereno",
+	pages = "835-844"}
+
+@inproceedings{DBLP:conf/dsn/GuKI04,
+	title = "Error Sensitivity of the Linux Kernel Executing on PowerPC
+               G4 and Pentium 4 Processors.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520887abs.htm",
+	author = "Weining Gu and Zbigniew Kalbarczyk and Ravishankar K. Iyer",
+	pages = "887-"}
+
+@inproceedings{DBLP:conf/dsn/GuoMC04,
+	title = "Does Your Result Checker Really Check?",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520399abs.htm",
+	author = "Lan Guo and Supratik Mukhopadhyay and Bojan Cukic",
+	pages = "399-404"}
+
+@inproceedings{DBLP:conf/dsn/HanJ04,
+	title = "Impact of Path Diversity on Multi-homed and Overlay Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520029abs.htm",
+	author = "Junghee Han and Farnam Jahanian",
+	pages = "29-"}
+
+@inproceedings{DBLP:conf/dsn/HarrisonS04,
+	title = "Workshop on Interdisciplinary Approaches to Achieving and
+               Analysing System Dependability.",
+	author = "Michael D. Harrison and Lorenzo Strigini",
+	pages = 899}
+
+@inproceedings{DBLP:conf/dsn/HeHS04,
+	title = "Customizing Dependability Attributes for Mobile Service
+               Platforms.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520617abs.htm",
+	author = "Jun He and Matti A. Hiltunen and Richard D. Schlichting",
+	pages = "617-626"}
+
+@inproceedings{DBLP:conf/dsn/Hernandez-OralloC04,
+	title = "In Advance Activation of Backup Channels for Real-Time Transmission.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520555abs.htm",
+	author = "Enrique Hern{\'a}ndez-Orallo and Joan Vila i Carb{\'o}",
+	pages = "555-560"}
+
+@inproceedings{DBLP:conf/dsn/HorvathRT04,
+	title = "Analysis of Second-Order Markov Reward Models.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520845abs.htm",
+	author = "G{\'a}bor Horv{\'a}th and S{\'a}ndor R{\'a}cz and Mikl{\'o}s Telek",
+	pages = "845-"}
+
+@inproceedings{DBLP:conf/dsn/HowellGPS04,
+	title = "Workshop on Assurance Cases: Best Practices, Possible Obstacles,
+               and Future Opportunities.",
+	author = "Charles Howell and Sofia Guerra and Shari Lawrence Pfleeger and Victoria Stavridou-Coleman",
+	pages = 903}
+
+@inproceedings{DBLP:conf/dsn/HuangM04,
+	title = "Support for Mobility and Fault Tolerance in Mykil.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520537abs.htm",
+	author = "Jyh-How Huang and Shivakant Mishra",
+	pages = "537-"}
+
+@inproceedings{DBLP:conf/dsn/HuangYHTLK04,
+	title = "Verifying Web Applications Using Bounded Model Checking.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520199abs.htm",
+	author = "Yao-Wen Huang and Fang Yu and Christian Hang and Chung-Hung Tsai and D. T. Lee and Sy-Yen Kuo",
+	pages = "199-208"}
+
+@inproceedings{DBLP:conf/dsn/IzumiSM04,
+	title = "Timed Uniform Consensus Resilient to Crash and Timing Faults.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520243abs.htm",
+	author = "Taisuke Izumi and Akinori Saitoh and Toshimitsu Masuzawa",
+	pages = "243-252"}
+
+@inproceedings{DBLP:conf/dsn/JanakiramanST04,
+	title = "Automated System Design for Availability.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520411abs.htm",
+	author = "G. John Janakiraman and Jose Renato Santos and Yoshio Turner",
+	pages = "411-"}
+
+@inproceedings{DBLP:conf/dsn/KalakechKCA04,
+	title = "Benchmarking The Dependability of Windows NT4, 2000 and
+               XP.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520681abs.htm",
+	author = "Ali Kalakech and Karama Kanoun and Yves Crouzet and Jean Arlat",
+	pages = "681-686"}
+
+@inproceedings{DBLP:conf/dsn/KargahiM04,
+	title = "A Method for Performance Analysis of Earliest-Deadline-First
+               Scheduling Policy.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520826abs.htm",
+	author = "Mehdi Kargahi and Ali Movaghar-Rahimabadi",
+	pages = "826-834"}
+
+@inproceedings{DBLP:conf/dsn/KarpovskyKT04,
+	title = "Robust Protection against Fault-Injection Attacks on Smart
+               Cards Implementing the Advanced Encryption Standard.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520093abs.htm",
+	author = "Mark G. Karpovsky and Konrad J. Kulikowski and Alexander Taubin",
+	pages = "93-101"}
+
+@inproceedings{DBLP:conf/dsn/KatsarosL04,
+	title = "Optimal Object State Transfer - Recovery Policies for Fault
+               Tolerant Distributed Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520762abs.htm",
+	author = "Panagiotis Katsaros and Constantine Lazos",
+	pages = "762-771"}
+
+@inproceedings{DBLP:conf/dsn/KeetonM04,
+	title = "A Framework for Evaluating Storage System Dependability.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520877abs.htm",
+	author = "Kimberly Keeton and Arif Merchant",
+	pages = "877-886"}
+
+@inproceedings{DBLP:conf/dsn/KhannaBW04,
+	title = "Fault Tolerant Energy Aware Data Dissemination Protocol
+               in Sensor Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520795abs.htm",
+	author = "Gunjan Khanna and Saurabh Bagchi and Yu-Sung Wu",
+	pages = "795-804"}
+
+@inproceedings{DBLP:conf/dsn/KillourhyMT04,
+	title = "A Defense-Centric Taxonomy Based on Attack Manifestations.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520102abs.htm",
+	author = "Kevin S. Killourhy and Roy A. Maxion and Kymie M. C. Tan",
+	pages = "102-"}
+
+@inproceedings{DBLP:conf/dsn/KleinOsowskiKRRL04,
+	title = "The Recursive NanoBox Processor Grid: A Reliable System
+               Architecture for Unreliable Nanotechnology Devices.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520167abs.htm",
+	author = "A. J. KleinOsowski and Kevin KleinOsowski and Vijay Rangarajan and Priyadarshini Ranganath and David J. Lilja",
+	pages = "167-176"}
+
+@inproceedings{DBLP:conf/dsn/KonwarKS04,
+	title = "The Join Problem in Dynamic Network Algorithms.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520315abs.htm",
+	author = "Kishori M. Konwar and Dariusz R. Kowalski and Alexander A. Shvartsman",
+	pages = "315-324"}
+
+@inproceedings{DBLP:conf/dsn/KoopmanC04,
+	title = "Cyclic Redundancy Code (CRC) Polynomial Selection For Embedded
+               Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520145abs.htm",
+	author = "Philip Koopman and Tridib Chakravarty",
+	pages = "145-"}
+
+@inproceedings{DBLP:conf/dsn/KotlaD04,
+	title = "High Throughput Byzantine Fault Tolerance.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520575abs.htm",
+	author = "Ramakrishna Kotla and Michael Dahlin",
+	pages = "575-584"}
+
+@inproceedings{DBLP:conf/dsn/KulkarniE04,
+	title = "Automated Synthesis of Multitolerance.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520209abs.htm",
+	author = "Sandeep S. Kulkarni and Ali Ebnenasir",
+	pages = "209-"}
+
+@inproceedings{DBLP:conf/dsn/KumarVLD04,
+	title = "A Markov Reward Model for Reliable Synchronous Dataflow
+               System Design.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520817abs.htm",
+	author = "Vinu Vijay Kumar and Rashi Verma and John Lach and Joanne Bechta Dugan",
+	pages = "817-825"}
+
+@inproceedings{DBLP:conf/dsn/LaFriedaM04,
+	title = "Fault Detection and Isolation Techniques for Quasi Delay-Insensitive
+               Circuits.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520041abs.htm",
+	author = "Christopher LaFrieda and Rajit Manohar",
+	pages = "41-50"}
+
+@inproceedings{DBLP:conf/dsn/LakshmananMAV04,
+	title = "Collective Endorsement and the Dissemination Problem in
+               Malicious Environments.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520527abs.htm",
+	author = "Subramanian Lakshmanan and Deepak J. Manohar and Mustaque Ahamad and H. Venkateswaran",
+	pages = "527-536"}
+
+@inproceedings{DBLP:conf/dsn/Lamport04,
+	title = "Recent Discoveries from Paxos.",
+	author = "Leslie Lamport",
+	pages = 3}
+
+@inproceedings{DBLP:conf/dsn/LamportM04,
+	title = "Cheap Paxos.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520307abs.htm",
+	author = "Leslie Lamport and Mike Massa",
+	pages = "307-314"}
+
+@inproceedings{DBLP:conf/dsn/LatronicoMK04,
+	title = "Quantifying the Reliability of Proven SPIDER Group Membership
+               Service Guarantees.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520275abs.htm",
+	author = "Elizabeth Latronico and Paul S. Miner and Philip Koopman",
+	pages = "275-284"}
+
+@inproceedings{DBLP:conf/dsn/LemosGR04,
+	title = "Twin Workshops on Architecting Dependable Systems (WADS
+               2004).",
+	author = "Rog{\'e}rio de Lemos and Cristina Gacek and Alexander B. Romanovsky",
+	pages = 901}
+
+@inproceedings{DBLP:conf/dsn/LiuG04,
+	title = "Diverse Firewall Design.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520595abs.htm",
+	author = "Alex X. Liu and Mohamed G. Gouda",
+	pages = "595-604"}
+
+@inproceedings{DBLP:conf/dsn/LivadasK04,
+	title = "Caching-Enhanced Scalable Reliable Multicast.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520253abs.htm",
+	author = "Carolos Livadas and Idit Keidar",
+	pages = "253-"}
+
+@inproceedings{DBLP:conf/dsn/MartinA04,
+	title = "A Framework for Dynamic Byzantine Storage.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520325abs.htm",
+	author = "Jean-Philippe Martin and Lorenzo Alvisi",
+	pages = "325-334"}
+
+@inproceedings{DBLP:conf/dsn/MartinsSCV04,
+	title = "Dependable Adaptive Real-Time Applications in Wormhole-based
+               Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520567abs.htm",
+	author = "Pedro Martins and Paulo Jorge Paiva de Sousa and Antonio Casimiro and Paulo Ver\'{\i}ssimo",
+	pages = "567-"}
+
+@inproceedings{DBLP:conf/dsn/MassinkKL04,
+	title = "Model Checking Dependability Attributes of Wireless Group
+               Communication.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520711abs.htm",
+	author = "Mieke Massink and Joost-Pieter Katoen and Diego Latella",
+	pages = "711-720"}
+
+@inproceedings{DBLP:conf/dsn/MontresorJB04,
+	title = "Robust Aggregation Protocols for Large-Scale Overlay Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520019abs.htm",
+	author = "Alberto Montresor and M{\'a}rk Jelasity and {\"O}zalp Babaoglu",
+	pages = "19-28"}
+
+@inproceedings{DBLP:conf/dsn/MorrisKK04,
+	title = "Fault Tolerance Tradeoffs in Moving from Decentralized to
+               Centralized Embedded Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520377abs.htm",
+	author = "Jennifer Morris and Daniel Kroening and Philip Koopman",
+	pages = "377-"}
+
+@inproceedings{DBLP:conf/dsn/NakkaKIX04,
+	title = "An Architectural Framework for Providing Reliability and
+               Security Support.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520585abs.htm",
+	author = "Nithin Nakka and Zbigniew Kalbarczyk and Ravishankar K. Iyer and Jun Xu",
+	pages = "585-594"}
+
+@inproceedings{DBLP:conf/dsn/NunesJ04,
+	title = "QoS of Timeout-Based Self-Tuned Failure Detectors: The Effects
+               of the Communication Delay Predictor and the Safety Margin.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520753abs.htm",
+	author = "Raul Ceretta Nunes and Ingrid Jansch-P{\^o}rto",
+	pages = "753-761"}
+
+@inproceedings{DBLP:conf/dsn/OrtmeierR04,
+	title = "Safety Optimization: A Combination of Fault Tree Analysis
+               and Optimization Techniques.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520651abs.htm",
+	author = "Frank Ortmeier and Wolfgang Reif",
+	pages = "651-658"}
+
+@inproceedings{DBLP:conf/dsn/OzakiDOK04,
+	title = "Min-Max Checkpoint Placement under Incomplete Failure Information.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520721abs.htm",
+	author = "Tatsuya Ozaki and Tadashi Dohi and Hiroyuki Okamura and Naoto Kaio",
+	pages = "721-730"}
+
+@inproceedings{DBLP:conf/dsn/PertetN04,
+	title = "Proactive Recovery in Distributed CORBA Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520357abs.htm",
+	author = "Soila M. Pertet and Priya Narasimhan",
+	pages = "357-366"}
+
+@inproceedings{DBLP:conf/dsn/PlankT04,
+	title = "A Practical Analysis of Low-Density Parity-Check Erasure
+               Codes for Wide-Area Storage Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520115abs.htm",
+	author = "James S. Plank and Michael G. Thomason",
+	pages = "115-124"}
+
+@inproceedings{DBLP:conf/dsn/PopovL04,
+	title = "The Effect of Testing on Reliability of Fault-Tolerant Software.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520265abs.htm",
+	author = "Peter T. Popov and Bev Littlewood",
+	pages = "265-274"}
+
+@inproceedings{DBLP:conf/dsn/RaiteriIFV04,
+	title = "Repairable Fault Tree for the Automatic Evaluation of Repair
+               Policies.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520659abs.htm",
+	author = "Daniele Codetta Raiteri and Mauro Iacono and Giuliana Franceschinis and Valeria Vittorini",
+	pages = "659-668"}
+
+@inproceedings{DBLP:conf/dsn/Ramasubramanian04,
+	title = "On Failure Dependent Protection in Optical Grooming Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520475abs.htm",
+	author = "Srinivasan Ramasubramanian",
+	pages = "475-484"}
+
+@inproceedings{DBLP:conf/dsn/RenBG04,
+	title = "Dependable Initialization of Large-Scale Distributed Software.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520335abs.htm",
+	author = "Jennifer Ren and Rick Buskens and Oscar J. Gonzalez",
+	pages = "335-"}
+
+@inproceedings{DBLP:conf/dsn/RowanhillVK04,
+	title = "Efficient Hierarchic Management For Reconfiguration of Networked
+               Information Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520517abs.htm",
+	author = "Jonathan C. Rowanhill and Philip E. Varner and John C. Knight",
+	pages = "517-526"}
+
+@inproceedings{DBLP:conf/dsn/Ruiz-GarciaYGL04,
+	title = "On Benchmarking the Dependability of Automotive Engine Control
+               Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520857abs.htm",
+	author = "Juan-Carlos Ruiz-Garcia and Pedro Yuste and Pedro J. Gil and Lenin Lemus",
+	pages = "857-866"}
+
+@inproceedings{DBLP:conf/dsn/SahooSSZ04,
+	title = "Failure Data Analysis of a Large-Scale Heterogeneous Server
+               Environment.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520772abs.htm",
+	author = "Ramendra K. Sahoo and Anand Sivasubramaniam and Mark S. Squillante and Yanyong Zhang",
+	pages = "772-"}
+
+@inproceedings{DBLP:conf/dsn/SheltonK04,
+	title = "Improving System Dependability with Functional Alternatives.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520295abs.htm",
+	author = "Charles P. Shelton and Philip Koopman",
+	pages = "295-"}
+
+@inproceedings{DBLP:conf/dsn/SmirnovC04,
+	title = "A Portable Implementation Framework for Intrusion-Resilient
+               Database Management Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520443abs.htm",
+	author = "Alexey Smirnov and Tzi-cker Chiueh",
+	pages = "443-452"}
+
+@inproceedings{DBLP:conf/dsn/SrinivasanABR04,
+	title = "The Impact of Technology Scaling on Lifetime Reliability.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520177abs.htm",
+	author = "Jayanth Srinivasan and Sarita V. Adve and Pradip Bose and Jude A. Rivers",
+	pages = "177-"}
+
+@inproceedings{DBLP:conf/dsn/SteinerRSP04,
+	title = "Model Checking a Fault-Tolerant Startup Algorithm: From
+               Design Exploration To Exhaustive Fault Simulation.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520189abs.htm",
+	author = "Wilfried Steiner and John M. Rushby and Maria Sorea and Holger Pfeifer",
+	pages = "189-198"}
+
+@inproceedings{DBLP:conf/dsn/StroudWWR04,
+	title = "A Qualitative Analysis of the Intrusion-Tolerance Capabilities
+               of the MAFTIA Architecture.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520453abs.htm",
+	author = "Robert J. Stroud and Ian S. Welch and John P. Warne and Peter Y. A. Ryan",
+	pages = "453-"}
+
+@inproceedings{DBLP:conf/dsn/StrunkK04,
+	title = "Assured Reconfiguration of Embedded Real-Time Software.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520367abs.htm",
+	author = "Elisabeth A. Strunk and John C. Knight",
+	pages = "367-376"}
+
+@inproceedings{DBLP:conf/dsn/TaiTS04,
+	title = "Cluster-Based Failure Detection Service for Large-Scale
+               Ad Hoc Wireless Network Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520805abs.htm",
+	author = "Ann T. Tai and Kam S. Tso and William H. Sanders",
+	pages = "805-"}
+
+@inproceedings{DBLP:conf/dsn/TangKDT04,
+	title = "Availability Measurement and Modeling for An Application
+               Server.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520669abs.htm",
+	author = "Dong Tang and Dileep Kumar and Sreeram Duvur and {\O}ystein Torbj{\o}rnsen",
+	pages = "669-"}
+
+@inproceedings{DBLP:conf/dsn/TangT04,
+	title = "Hierarchical Computation of Interval Availability and Related
+               Metrics.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520693abs.htm",
+	author = "Dong Tang and Kishor S. Trivedi",
+	pages = "693-"}
+
+@inproceedings{DBLP:conf/dsn/VenkatasubramanianH04,
+	title = "Discovering 1-FT Routes in Mobile Ad Hoc Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520627abs.htm",
+	author = "Rajesh Venkatasubramanian and John P. Hayes",
+	pages = "627-636"}
+
+@inproceedings{DBLP:conf/dsn/WangKIVC04,
+	title = "Checkpointing of Control Structures in Main Memory Database
+               Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520687abs.htm",
+	author = "Long Wang and Zbigniew Kalbarczyk and Ravishankar K. Iyer and H. Vora and T. Chahande",
+	pages = "687-692"}
+
+@inproceedings{DBLP:conf/dsn/WangMPZ04,
+	title = "FRTR: A Scalable Mechanism for Global Routing Table Consistency.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520465abs.htm",
+	author = "Lan Wang and Daniel Massey and Keyur Patel and Lixia Zhang",
+	pages = "465-474"}
+
+@inproceedings{DBLP:conf/dsn/WangQRP04,
+	title = "Characterizing the Effects of Transient Faults on a High-Performance
+               Processor Pipeline.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520061abs.htm",
+	author = "Nicholas J. Wang and Justin Quek and Todd M. Rafacz and Sanjay J. Patel",
+	pages = "61-"}
+
+@inproceedings{DBLP:conf/dsn/WongWSBG04,
+	title = "Dynamic Quarantine of Internet Worms.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520073abs.htm",
+	author = "Cynthia Wong and Chenxi Wang and Dawn Xiaodong Song and Stan Bielski and Gregory R. Ganger",
+	pages = "73-82"}
+
+@inproceedings{DBLP:conf/dsn/WuBGST04,
+	title = "SCIDIVE: A Stateful and Cross Protocol Intrusion Detection
+               Architecture for Voice-over-IP Environments.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520433abs.htm",
+	author = "Yu-Sung Wu and Saurabh Bagchi and Sachin Garg and Navjot Singh and Timothy K. Tsai",
+	pages = "433-442"}
+
+@inproceedings{DBLP:conf/dsn/YangLYLZ04,
+	title = "HOURS: Achieving DoS Resilience in an Open Service Hierarchy.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2004/2052/00/20520083abs.htm",
+	author = "Hao Yang and Haiyun Luo and Yi Yang and Songwu Lu and Lixia Zhang",
+	pages = "83-92"}
+
+@default year = 2003
+
+@inproceedings{DBLP:conf/dsn/ZhangGKS03,
+	title = "ICR: In-Cache Replication for Enhancing Data Cache Reliability.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520291abs.htm",
+	author = "Wei Zhang 0002 and Sudhanva Gurumurthi and Mahmut T. Kandemir and Anand Sivasubramaniam",
+	pages = "291-"}
+
+@inproceedings{DBLP:conf/dsn/AdemajSBT03,
+	title = "Evaluation of Fault Handling of the Time-Triggered Architecture
+               with Bus and Star Topology.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520123abs.htm",
+	author = "Astrit Ademaj and H{\aa}kan Sivencrona and G{\"u}nther Bauer and Jan Torin",
+	pages = "123-"}
+
+@inproceedings{DBLP:conf/dsn/AidemarkVFK03,
+	title = "GOOFI: Generic Object-Oriented Fault Injection Tool.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520668.pdf",
+	author = "Joakim Aidemark and Jonny Vinter and Peter Folkesson and Johan Karlsson",
+	pages = 668}
+
+@inproceedings{DBLP:conf/dsn/AmirCMST03,
+	title = "N-Way Fail-Over Infrastructure for Reliable Servers and
+               Routers.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520403abs.htm",
+	author = "Yair Amir and Ryan Caudy and Ashima Munjal and Theo Schlossnagle and Ciprian Tutu",
+	pages = "403-"}
+
+@inproceedings{DBLP:conf/dsn/AmirD03,
+	title = "Reliable Communication in Overlay Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520511abs.htm",
+	author = "Yair Amir and Claudiu Danilov",
+	pages = "511-520"}
+
+@inproceedings{DBLP:conf/dsn/AroraZ03,
+	title = "LSRP: Local Stabilization in Shortest Path Routing.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520139abs.htm",
+	author = "Anish Arora and Hongwei Zhang",
+	pages = "139-148"}
+
+@inproceedings{DBLP:conf/dsn/BackesC03,
+	title = "Reliable Broadcast in a Computational Hybrid Model with
+               Byzantine Faults, Crashes, and Recoveries.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520037abs.htm",
+	author = "Michael Backes and Christian Cachin",
+	pages = "37-46"}
+
+@inproceedings{DBLP:conf/dsn/BaoST03,
+	title = "Adaptive Software Rejuvenation: Degradation Model and Rejuvenation
+               Scheme.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520241abs.htm",
+	author = "Yujuan Bao and Xiaobai Sun and Kishor S. Trivedi",
+	pages = "241-248"}
+
+@inproceedings{DBLP:conf/dsn/BasileKI03,
+	title = "A Preemptive Deterministic Scheduling Algorithm for Multithreaded
+               Replicas.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520149abs.htm",
+	author = "Claudio Basile and Zbigniew Kalbarczyk and Ravishankar K. Iyer",
+	pages = "149-158"}
+
+@inproceedings{DBLP:conf/dsn/BertierMS03,
+	title = "Performance Analysis of a Hierarchical Failure Detector.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520635abs.htm",
+	author = "Marin Bertier and Olivier Marin and Pierre Sens",
+	pages = "635-644"}
+
+@inproceedings{DBLP:conf/dsn/BholaZA03,
+	title = "Scalably Supporting Durable Subscriptions in a Publish/Subscribe
+               System.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520057abs.htm",
+	author = "Sumeer Bhola and Yuanyuan Zhao and Joshua S. Auerbach",
+	pages = "57-"}
+
+@inproceedings{DBLP:conf/dsn/Binns03,
+	title = "Real-Time Estimation of Event-Driven Traffic Latency Distributions
+               when Layered on Static Schedules.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520573abs.htm",
+	author = "Pam Binns",
+	pages = "573-582"}
+
+@inproceedings{DBLP:conf/dsn/BloomfieldL03,
+	title = "Multi-Legged Arguments: The Impact of Diversity upon Confidence
+               in Dependability Arguments.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520025abs.htm",
+	author = "Robin E. Bloomfield and Bev Littlewood",
+	pages = "25-"}
+
+@inproceedings{DBLP:conf/dsn/BohnenkampCDDHKKLS03,
+	title = "On Integrating the M{\"O}BIUS and MODEST Modeling Tools.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520671.pdf",
+	author = "Henrik C. Bohnenkamp and Tod Courtney and David Daly and Salem Derisavi and Holger Hermanns and Joost-Pieter Katoen and Ric Klaren and Vinh Vi Lam and William H. Sanders",
+	pages = 671}
+
+@inproceedings{DBLP:conf/dsn/BohnenkampSHV03,
+	title = "Cost-Optimization of the IPv4 Zeroconf Protocol.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520531abs.htm",
+	author = "Henrik C. Bohnenkamp and Peter van der Stok and Holger Hermanns and Frits W. Vaandrager",
+	pages = "531-540"}
+
+@inproceedings{DBLP:conf/dsn/BuchackerCHKST03,
+	title = "Reproducible Dependability Benchmarking Experiments Based
+               on Unambiguous Benchmark Setup Descriptions.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520469abs.htm",
+	author = "Kerstin Buchacker and Mario Dal Cin and Hans-J{\"o}rg H{\"o}xer and Roland Karch and Volkmar Sieh and Oliver Tsch{\"a}che",
+	pages = "469-478"}
+
+@inproceedings{DBLP:conf/dsn/BuchackerCHSTW03,
+	title = "Hardware Fault Injection with UMLinux.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520670.pdf",
+	author = "Kerstin Buchacker and Mario Dal Cin and Hans-J{\"o}rg H{\"o}xer and Volkmar Sieh and Oliver Tsch{\"a}che and Martin Waitz",
+	pages = 670}
+
+@inproceedings{DBLP:conf/dsn/Carrasco03,
+	title = "Validation of Approximate Dependability Models of a RAID
+               Architecture with Orthogonal Organization.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520699abs.htm",
+	author = "Juan A. Carrasco",
+	pages = "699-708"}
+
+@inproceedings{DBLP:conf/dsn/ChenGKT03,
+	title = "Dependability Enhancement for IEEE 802.11 Wireless LAN with
+               Redundancy Techniques.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520521abs.htm",
+	author = "Dongyan Chen and Sachin Garg and Chandra M. R. Kintala and Kishor S. Trivedi",
+	pages = "521-"}
+
+@inproceedings{DBLP:conf/dsn/ChenKXI03,
+	title = "A Data-Driven Finite State Machine Model for Analyzing Security
+               Vulnerabilities.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520605abs.htm",
+	author = "Shuo Chen and Zbigniew Kalbarczyk and Jun Xu and Ravishankar K. Iyer",
+	pages = "605-614"}
+
+@inproceedings{DBLP:conf/dsn/ChessaM03,
+	title = "Dependable and Secure Data Storage and Retrieval in Mobile,
+               Wireless Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520207abs.htm",
+	author = "Stefano Chessa and Piero Maestrini",
+	pages = "207-216"}
+
+@inproceedings{DBLP:conf/dsn/ClarkeFG03,
+	title = "Model Checking for Dependable Software-Intensive Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520764.pdf",
+	author = "Edmund M. Clarke and Masahiro Fujita and David P. Gluch",
+	pages = 764}
+
+@inproceedings{DBLP:conf/dsn/DasW03,
+	title = "Dependable LQNS: A Performability Modeling Tool for Layered
+               Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520672.pdf",
+	author = "Olivia Das and C. Murray Woodside",
+	pages = 672}
+
+@inproceedings{DBLP:conf/dsn/DeconinckFBDS03,
+	title = "Integrating Recovery Strategies into a Primary Substation
+               Automation System.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520080abs.htm",
+	author = "Geert Deconinck and Vincenzo De Florio and Ronnie Belmans and Giovanna Dondossola and Judit Szanto",
+	pages = "80-85"}
+
+@inproceedings{DBLP:conf/dsn/DorseyS03,
+	title = "The Design of Wearable Systems: A Shift in Development Effort.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520273abs.htm",
+	author = "John G. Dorsey and Daniel P. Siewiorek",
+	pages = "273-280"}
+
+@inproceedings{DBLP:conf/dsn/DuraesM03,
+	title = "Definition of Software Fault Emulation Operators: A Field
+               Data Study.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520105abs.htm",
+	author = "Jo{\~a}o Dur{\~a}es and Henrique Madeira",
+	pages = "105-114"}
+
+@inproceedings{DBLP:conf/dsn/EjlaliMZAS03,
+	title = "A Hybrid Fault Injection Approach Based on Simulation and
+               Emulation Co-operation.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520479abs.htm",
+	author = "Ali Reza Ejlali and Seyed Ghassem Miremadi and Hamid R. Zarandi and Ghazanfar Asadi and Siavash Bayat Sarmadi",
+	pages = "479-"}
+
+@inproceedings{DBLP:conf/dsn/EngelhardGG03,
+	title = "ParEs - A Parameter-Estimation-Tool.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520583abs.htm",
+	author = "Felix Engelhard and Stefan Greiner and Reinhard German",
+	pages = "583-"}
+
+@inproceedings{DBLP:conf/dsn/Fancong03,
+	title = "Deadlock Resolution via Exceptions for Dependable Java Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520731abs.htm",
+	author = "Zeng Fancong",
+	pages = "731-740"}
+
+@inproceedings{DBLP:conf/dsn/FetzerHF03,
+	title = "Automatic Detection and Masking of Non-Atomic Exception
+               Handling.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520445abs.htm",
+	author = "Christof Fetzer and Karin H{\"o}gstedt and Pascal Felber",
+	pages = "445-"}
+
+@inproceedings{DBLP:conf/dsn/FetzerX03,
+	title = "HEALERS: A Toolkit for Enhancing the Robustness and Security
+               of Existing Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520317abs.htm",
+	author = "Christof Fetzer and Zhen Xiao",
+	pages = "317-322"}
+
+@inproceedings{DBLP:conf/dsn/FuMNNRW03,
+	title = "Compiler-Directed Program-Fault Coverage for Highly Available
+               Java Internet Services.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520595abs.htm",
+	author = "Chen Fu and Richard P. Martin and Kiran Nagaraja and Thu D. Nguyen and Barbara G. Ryder and David Wonnacott",
+	pages = "595-604"}
+
+@inproceedings{DBLP:conf/dsn/GartnerKB03,
+	title = "PoDSy 2003: Principles of Dependable Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520763.pdf",
+	author = "Felix C. G{\"a}rtner and Klaus Kursawe and Levente Butty{\'a}n",
+	pages = 763}
+
+@inproceedings{DBLP:conf/dsn/GilbertLS03,
+	title = "RAMBO II: Rapidly Reconfigurable Atomic Memory for Dynamic
+               Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520259abs.htm",
+	author = "Seth Gilbert and Nancy A. Lynch and Alexander A. Shvartsman",
+	pages = "259-"}
+
+@inproceedings{DBLP:conf/dsn/GiraultKSS03,
+	title = "An Algorithm for Automatically Obtaining Distributed and
+               Fault-Tolerant Static Schedules.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520159abs.htm",
+	author = "Alain Girault and Hamoudi Kalla and Mihaela Sighireanu and Yves Sorel",
+	pages = "159-"}
+
+@inproceedings{DBLP:conf/dsn/GuKIY03,
+	title = "Characterization of Linux Kernel Behavior under Errors.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520459abs.htm",
+	author = "Weining Gu and Zbigniew Kalbarczyk and Ravishankar K. Iyer and Zhen-Yu Yang",
+	pages = "459-468"}
+
+@inproceedings{DBLP:conf/dsn/HermannsKMS03,
+	title = "ETMCC: Model Checking Performability Properties of Markov
+               Chains.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520673.pdf",
+	author = "Holger Hermanns and Joost-Pieter Katoen and Joachim Meyer-Kayser and Markus Siegle",
+	pages = "673-"}
+
+@inproceedings{DBLP:conf/dsn/HuangH03,
+	title = "Self-Stabilization Workshop.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520766.pdf",
+	author = "Shing-Tsaan Huang and Ted Herman",
+	pages = 766}
+
+@inproceedings{DBLP:conf/dsn/KaanicheKM03,
+	title = "A User-Perceived Availability Evaluation of a Web Based
+               Travel Agency.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520709abs.htm",
+	author = "Mohamed Ka{\^a}niche and Karama Kanoun and Magnos Martinello",
+	pages = "709-"}
+
+@inproceedings{DBLP:conf/dsn/KochHMM03,
+	title = "Transparent TCP Connection Failover.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520383abs.htm",
+	author = "Ruppert R. Koch and Sanjay Hortikar and Louise E. Moser and P. M. Melliar-Smith",
+	pages = "383-392"}
+
+@inproceedings{DBLP:conf/dsn/KochHSNNW03,
+	title = "The Anacapa System.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520323abs.htm",
+	author = "Ruppert R. Koch and Sanjay Hortikar and Sivaguru Sankaridurg and Paul Ngan and Michael O. Neary and Dirk Wagner",
+	pages = "323-"}
+
+@inproceedings{DBLP:conf/dsn/KuballH03,
+	title = "Decision-Support for Certification by Calculating the Evidential
+               Volume of a Product.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520015abs.htm",
+	author = "Silke Kuball and Gordon Hughes",
+	pages = "15-24"}
+
+@inproceedings{DBLP:conf/dsn/KyasanurV03,
+	title = "Detection and Handling of MAC Layer Misbehavior in Wireless
+               Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520173abs.htm",
+	author = "Pradeep Kyasanur and Nitin H. Vaidya",
+	pages = "173-182"}
+
+@inproceedings{DBLP:conf/dsn/LakamrajuKK03,
+	title = "Low Overhead Fault Tolerant Networking in Myrinet.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520193abs.htm",
+	author = "Vijay Lakamraju and Israel Koren and C. Mani Krishna",
+	pages = "193-"}
+
+@inproceedings{DBLP:conf/dsn/MadeiraCV03,
+	title = "The OLAP and Data Warehousing Approaches for Analysis and
+               Sharing of Results from Dependability Evaluation Experiments.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520086abs.htm",
+	author = "Henrique Madeira and Jo{\~a}o Costa and Marco Vieira",
+	pages = "86-"}
+
+@inproceedings{DBLP:conf/dsn/MarwahMF03,
+	title = "TCP Server Fault Tolerance Using Connection Migration to
+               a Backup Server.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520373abs.htm",
+	author = "Manish Marwah and Shivakant Mishra and Christof Fetzer",
+	pages = "373-382"}
+
+@inproceedings{DBLP:conf/dsn/Maxion03,
+	title = "Masquerade Detection Using Enriched Command Lines.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520005abs.htm",
+	author = "Roy A. Maxion",
+	pages = "5-14"}
+
+@inproceedings{DBLP:conf/dsn/MostefaouiMPR03,
+	title = "Evaluating the Condition-Based Approach to Solve Consensus.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520541abs.htm",
+	author = "Achour Most{\'e}faoui and Eric Mourgaya and Philippe Raipin Parv{\'e}dy and Michel Raynal",
+	pages = "541-550"}
+
+@inproceedings{DBLP:conf/dsn/MostefaouiMR03,
+	title = "Asynchronous Implementation of Failure Detectors.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520351abs.htm",
+	author = "Achour Most{\'e}faoui and Eric Mourgaya and Michel Raynal",
+	pages = "351-360"}
+
+@inproceedings{DBLP:conf/dsn/Movaghar03,
+	title = "On Dynamic Assignment of Impatient Customers to Parallel
+               Queues.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520751abs.htm",
+	author = "Ali Movaghar",
+	pages = "751-"}
+
+@inproceedings{DBLP:conf/dsn/MpoelengES03,
+	title = "From Crash Tolerance to Authenticated Byzantine Tolerance:
+               A Structured Approach, the Cost and Benefits.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520227abs.htm",
+	author = "Dimane Mpoeleng and Paul D. Ezhilchelvan and Neil A. Speirs",
+	pages = "227-"}
+
+@inproceedings{DBLP:conf/dsn/MunteanuSRC03,
+	title = "A Combinatorial Method for the Evaluation of Yield of Fault-Tolerant
+               Systems-on-Chip.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520563abs.htm",
+	author = "Doru P. Munteanu and V\'{\i}ctor Su{\~n}{\'e} and Rosa Rodr\'{\i}guez-Monta{\~n}{\'e}s and Juan A. Carrasco",
+	pages = "563-572"}
+
+@inproceedings{DBLP:conf/dsn/NairKKK03,
+	title = "Pre-Processing Input Data to Augment Fault Tolerance in
+               Space Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520491abs.htm",
+	author = "Jayakrishnan Nair and Zahava Koren and Israel Koren and C. Mani Krishna",
+	pages = "491-500"}
+
+@inproceedings{DBLP:conf/dsn/NapperAV03,
+	title = "A Fault-Tolerant Java Virtual Machine.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520425abs.htm",
+	author = "Jeff Napper and Lorenzo Alvisi and Harrick M. Vin",
+	pages = "425-434"}
+
+@inproceedings{DBLP:conf/dsn/NguyenO03,
+	title = "Dependability Assessment of Safety-Critical System Software
+               by Static Analysis Methods.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520075abs.htm",
+	author = "Thuy Nguyen and Alain Ourghanlian",
+	pages = "75-79"}
+
+@inproceedings{DBLP:conf/dsn/MoraesM03,
+	title = "Jaca - A Software Fault Injection Tool.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520667.pdf",
+	author = "Regina L{\'u}cia de Oliveira Moraes and Eliane Martins",
+	pages = 667}
+
+@inproceedings{DBLP:conf/dsn/PeiWMWZ03,
+	title = "A Study of Packet Delivery Performance during Routing Convergence.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520183abs.htm",
+	author = "Dan Pei and Lan Wang and Daniel Massey and Shyhtsun Felix Wu and Lixia Zhang",
+	pages = "183-192"}
+
+@inproceedings{DBLP:conf/dsn/PughA03,
+	title = "Pragmatic Fault Tolerance for Railway Control and Safety
+               Protection of the Channel Tunnel.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520069abs.htm",
+	author = "Simon Pugh and Eric Aliot",
+	pages = "69-74"}
+
+@inproceedings{DBLP:conf/dsn/RodriguezFA03,
+	title = "Building SWIFI Tools from Temporal Logic Specifications.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520095abs.htm",
+	author = "Manuel Rodr\'{\i}guez and Jean-Charles Fabre and Jean Arlat",
+	pages = "95-104"}
+
+@inproceedings{DBLP:conf/dsn/RodriguesHPGK03,
+	title = "Adaptive Gossip-Based Broadcast.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520047abs.htm",
+	author = "Lu\'{\i}s Rodrigues and Sidath B. Handurukande and Jos{\'e} Orlando Pereira and Rachid Guerraoui and Anne-Marie Kermarrec",
+	pages = "47-56"}
+
+@inproceedings{DBLP:conf/dsn/RoychowdhuryKKL03,
+	title = "A Voltage Scheduling Heuristic for Real-Time Task Graphs.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520741abs.htm",
+	author = "Diganta Roychowdhury and Israel Koren and C. Mani Krishna and Yann-Hang Lee",
+	pages = "741-750"}
+
+@inproceedings{DBLP:conf/dsn/RufinoVA03,
+	title = "Node Failure Detection and Membership in CANELy.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520331abs.htm",
+	author = "Jos{\'e} Rufino and Paulo Ver\'{\i}ssimo and Guilherme Arroz",
+	pages = "331-340"}
+
+@inproceedings{DBLP:conf/dsn/SampaioBCF03,
+	title = "How Bad Are Wrong Suspicions? Towards Adaptive Distributed
+               Protocols.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520551abs.htm",
+	author = "L\'{\i}via M. R. Sampaio and Francisco Vilar Brasileiro and Walfredo Cirne and Jorge C. A. de Figueiredo",
+	pages = "551-"}
+
+@inproceedings{DBLP:conf/dsn/SharmaCLGC03,
+	title = "Duplex: A Reusable Fault Tolerance Extension Framework for
+               Network Access Devices.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520501abs.htm",
+	author = "Srikant Sharma and Jiawu Chen and Wei Li and Kartik Gopalan and Tzi-cker Chiueh",
+	pages = "501-510"}
+
+@inproceedings{DBLP:conf/dsn/ShereshevskyCCGL03,
+	title = "Software Aging and Multifractality of Memory Resources.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520721abs.htm",
+	author = "Mark Shereshevsky and Jonathan Crowell and Bojan Cukic and Vijai Gandikota and Yan Liu",
+	pages = "721-730"}
+
+@inproceedings{DBLP:conf/dsn/ShiH03,
+	title = "A Methodology for Dependability and Performability Analysis
+               in SAM.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520679abs.htm",
+	author = "Tianjun Shi and Xudong He",
+	pages = "679-688"}
+
+@inproceedings{DBLP:conf/dsn/SinghCS03,
+	title = "Probabilistic Validation of an Intrusion-Tolerant Replication
+               System.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520615abs.htm",
+	author = "Sankalp Singh and Michel Cukier and William H. Sanders",
+	pages = "615-624"}
+
+@inproceedings{DBLP:conf/dsn/SorinHW03,
+	title = "Dynamic Verification of End-to-End Multiprocessor Invariants.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520281abs.htm",
+	author = "Daniel J. Sorin and Mark D. Hill and David A. Wood",
+	pages = "281-290"}
+
+@inproceedings{DBLP:conf/dsn/SpainhowerM03,
+	title = "First Workshop on the Design of Self-Managing Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520765.pdf",
+	author = "Lisa Spainhower and Aad P. A. van Moorsel",
+	pages = 765}
+
+@inproceedings{DBLP:conf/dsn/StriginiPA03,
+	title = "Human-Machine Diversity in the Use of Computerised Advisory
+               Systems: A Case Study.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520249abs.htm",
+	author = "Lorenzo Strigini and Andrey Povyakalo and Eugenio Alberdi",
+	pages = "249-258"}
+
+@inproceedings{DBLP:conf/dsn/TaianiFK03,
+	title = "Towards Implementing Multi-Layer Reflection for Fault-Tolerance.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520435abs.htm",
+	author = "Fran\c{c}ois Ta\"{\i}ani and Jean-Charles Fabre and Marc-Olivier Killijian",
+	pages = "435-444"}
+
+@inproceedings{DBLP:conf/dsn/TaiTACS03,
+	title = "Opportunity-Adaptive QoS Enhancement in Satellite Constellations:
+               A Case Study.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520655abs.htm",
+	author = "Ann T. Tai and Kam S. Tso and Leon Alkalai and Savio N. Chau and William H. Sanders",
+	pages = "655-"}
+
+@inproceedings{DBLP:conf/dsn/ThesingSHRLWF03,
+	title = "An Abstract Interpretation-Based Timing Validation of Hard
+               Real-Time Avionics Software.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520625abs.htm",
+	author = "Stephan Thesing and Jean Souyris and Reinhold Heckmann and Famantanantsoa Randimbivololona and Marc Langenbach and Reinhard Wilhelm and Christian Ferdinand",
+	pages = "625-"}
+
+@inproceedings{DBLP:conf/dsn/UrbanSS03,
+	title = "Comparison of Failure Detectors and Group Membership: Performance
+               Study of Two Atomic Broadcast Algorithms.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520645abs.htm",
+	author = "P{\'e}ter Urb{\'a}n and Ilya Shnayderman and Andr{\'e} Schiper",
+	pages = "645-654"}
+
+@inproceedings{DBLP:conf/dsn/VieiraM03,
+	title = "Benchmarking the Dependability of Different OLTP Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520305abs.htm",
+	author = "Marco Vieira and Henrique Madeira",
+	pages = "305-310"}
+
+@inproceedings{DBLP:conf/dsn/VinterJFK03,
+	title = "On the Design of Robust Integrators for Fail-Bounded Control
+               Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520415abs.htm",
+	author = "Jonny Vinter and Andr{\'e}as Johansson and Peter Folkesson and Johan Karlsson",
+	pages = "415-424"}
+
+@inproceedings{DBLP:conf/dsn/WangK03,
+	title = "Communication Strategies for Heartbeat-Style Failure Detectors
+               in Wireless Ad Hoc Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520361abs.htm",
+	author = "Szu-Chi Wang and Sy-Yen Kuo",
+	pages = "361-"}
+
+@inproceedings{DBLP:conf/dsn/WangVS03,
+	title = "Persistent-State Checkpoint Comparison for Troubleshooting
+               Configuration Failures.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520311abs.htm",
+	author = "Yi-Min Wang and Chad Verbowski and Daniel R. Simon",
+	pages = "311-316"}
+
+@inproceedings{DBLP:conf/dsn/Xing03,
+	title = "Reliability Analysis of Fault-Tolerant Systems with Common-Cause
+               Failures.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520689abs.htm",
+	author = "Liudong Xing",
+	pages = "689-698"}
+
+@inproceedings{DBLP:conf/dsn/YusteALSG03,
+	title = "INERTE: Integrated NExus-Based Real-Time Fault Injection
+               Tool for Embedded Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520669.pdf",
+	author = "Pedro Yuste and David de Andr{\'e}s and Lenin Lemus and Juan Jos{\'e} Serrano and Pedro J. Gil",
+	pages = 669}
+
+@inproceedings{DBLP:conf/dsn/ZagorodnovMAB03,
+	title = "Engineering Fault-Tolerant TCP/IP Servers Using FT-TCP.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520393abs.htm",
+	author = "Dmitrii Zagorodnov and Keith Marzullo and Lorenzo Alvisi and Thomas C. Bressoud",
+	pages = "393-402"}
+
+@inproceedings{DBLP:conf/dsn/ZhaoMM03,
+	title = "Design and Implementation of a Consistent Time Service for
+               Fault-Tolerant Distributed Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520341abs.htm",
+	author = "Wenbing Zhao and Louise E. Moser and P. M. Melliar-Smith",
+	pages = "341-350"}
+
+@inproceedings{DBLP:conf/dsn/ZhuC03,
+	title = "Design, Implementation, and Evaluation of Repairable File
+               Service.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520217abs.htm",
+	author = "Ningning Zhu and Tzi-cker Chiueh",
+	pages = "217-226"}
+
+@inproceedings{DBLP:conf/dsn/ZhuMP03,
+	title = "Robustness Benchmarking for Hardware Maintenance Events.",
+	ee = "http://csdl.computer.org/comp/proceedings/dsn/2003/1952/00/19520115abs.htm",
+	author = "Ji Zhu and James Mauro and Ira Pramanick",
+	pages = "115-122"}
+
+@default year = 2001
+
+@inproceedings{DBLP:conf/dsn/AidemarkVFK01,
+	title = "GOOFI: Generic Object-Oriented Fault Injection Tool.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010083abs.htm",
+	author = "Joakim Aidemark and Jonny Vinter and Peter Folkesson and Johan Karlsson",
+	pages = "83-88"}
+
+@inproceedings{DBLP:conf/dsn/AroraDK01,
+	title = "Graybox Stabilization.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010389abs.htm",
+	author = "Anish Arora and Murat Demirbas and Sandeep S. Kulkarni",
+	pages = "389-400"}
+
+@inproceedings{DBLP:conf/dsn/BagchiLWKILV01,
+	title = "A Framework for Database Audit and Control Flow Checking
+               for a Wireless Telephone Network Controller.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010225abs.htm",
+	author = "Saurabh Bagchi and Y. Liu and Keith Whisnant and Zbigniew Kalbarczyk and Ravishankar K. Iyer and Y. Levendel and Lawrence G. Votta",
+	pages = "225-234"}
+
+@inproceedings{DBLP:conf/dsn/BakkenZJK01,
+	title = "Middleware Support for Voting and Data Fusion.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010453abs.htm",
+	author = "David E. Bakken and Zhiyuan Zhan and Christopher C. Jones and David A. Karr",
+	pages = "453-462"}
+
+@inproceedings{DBLP:conf/dsn/Bentley01,
+	title = "alidating the Intel{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}{\`e}",
+	ee = "http://computer.org/proceedings/dsn/1101/11010493abs.htm",
+	author = "Bob Bentley",
+	pages = "493-500"}
+
+@inproceedings{DBLP:conf/dsn/BernardiD01,
+	title = "Performance Validation of Fault-Tolerance Software: A Compositional
+               Approach.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010379abs.htm",
+	author = "Simona Bernardi and Susanna Donatelli",
+	pages = "379-388"}
+
+@inproceedings{DBLP:conf/dsn/Bose01,
+	title = "Ensuring Dependable Processor Performance: An Experience
+               Report on Pre-Silicon Performance Validation.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010481abs.htm",
+	author = "Pradip Bose",
+	pages = "481-486"}
+
+@inproceedings{DBLP:conf/dsn/BressoudCK01,
+	title = "The Design and Use of Persistent Memory on the DNCP Hardware
+               Fault-Tolerant Platform.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010487abs.htm",
+	author = "Thomas C. Bressoud and Tom Clark and Ti Kan",
+	pages = "487-492"}
+
+@inproceedings{DBLP:conf/dsn/Cachin01,
+	title = "Distributing Trust on the Internet .",
+	ee = "http://computer.org/proceedings/dsn/1101/11010183abs.htm",
+	author = "Christian Cachin",
+	pages = "183-192"}
+
+@inproceedings{DBLP:conf/dsn/CaoCC01,
+	title = "Run-Time Fault Detection in Monitor Based Concurrent Programming.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010357abs.htm",
+	author = "Jiannong Cao and Nick K. C. Cheung and Alvin T. S. Chan",
+	pages = "357-368"}
+
+@inproceedings{DBLP:conf/dsn/CastroL01,
+	title = "Byzantine Fault Tolerance Can Be Fast.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010513abs.htm",
+	author = "Miguel Castro and Barbara Liskov",
+	pages = "513-518"}
+
+@inproceedings{DBLP:conf/dsn/ChevochotP01,
+	title = "Experimental Evaluation of the Fail-Silent Behavior of a
+               Distributed Real-Time Run-Time Support Built from COTS Components.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010304abs.htm",
+	author = "Pascal Chevochot and Isabelle Puaut",
+	pages = "304-313"}
+
+@inproceedings{DBLP:conf/dsn/CunhaMRS01,
+	title = "A Study of Failure Models in Feedback Control Systems.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010314abs.htm",
+	author = "Jo{\~a}o Carlos Cunha and Ricardo Maia and M{\'a}rio Zenha Rela and Jo{\~a}o Gabriel Silva",
+	pages = "314-326"}
+
+@inproceedings{DBLP:conf/dsn/DeValeK01,
+	title = "Performance Evaluation of Exception Handling in I/O Libraries.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010519abs.htm",
+	author = "John DeVale and Philip Koopman",
+	pages = 519}
+
+@inproceedings{DBLP:conf/dsn/DutertreSS01,
+	title = "Intrusion-Tolerant Group Management in Enclaves.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010203abs.htm",
+	author = "Bruno Dutertre and Hassen Sa\"{\i}di and Victoria Stavridou",
+	pages = "203-214"}
+
+@inproceedings{DBLP:conf/dsn/EugsterGHKK01,
+	title = "Lightweight Probabilistic Broadcast.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010443abs.htm",
+	author = "Patrick Th. Eugster and Rachid Guerraoui and Sidath B. Handurukande and Petr Kouznetsov and Anne-Marie Kermarrec",
+	pages = "443-452"}
+
+@inproceedings{DBLP:conf/dsn/GunnelsGKQ01,
+	title = "Fault-Tolerant High-Performance Matrix Multiplication: Theory
+               and Practice.",
+	ee = "http://computer.org/proceedings/dsn/1101/110100047abs.htm",
+	author = "John A. Gunnels and Robert A. van de Geijn and Daniel S. Katz and Enrique S. Quintana-Ort\'{\i}",
+	pages = "47-56"}
+
+@inproceedings{DBLP:conf/dsn/GuptaRB01,
+	title = "Scalable Fault-Tolerant Aggregation in Large Process Groups.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010433abs.htm",
+	author = "Indranil Gupta and Robbert van Renesse and Kenneth P. Birman",
+	pages = "433-442"}
+
+@inproceedings{DBLP:conf/dsn/HillerJS01,
+	title = "An Approach for Analysing the Propagation of Data Errors
+               in Software.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010161abs.htm",
+	author = "Martin Hiller and Arshad Jhumka and Neeraj Suri",
+	pages = "161-172"}
+
+@inproceedings{DBLP:conf/dsn/HiltunenSU01,
+	title = "Enhancing Survivability of Security Services Using Redundanc.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010173abs.htm",
+	author = "Matti A. Hiltunen and Richard D. Schlichting and Carlos A. Ugarte",
+	pages = "173-182"}
+
+@inproceedings{DBLP:conf/dsn/JohannessenGAET01,
+	title = "Hazard Analysis in Object Oriented Design of Dependable
+               Systems.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010507abs.htm",
+	author = "Per Johannessen and Christian Grante and Anders Alminger and Ulrik Eklund and Jan Torin",
+	pages = "507-512"}
+
+@inproceedings{DBLP:conf/dsn/KemmeBB01,
+	title = "Online Reconfiguration in Replicated Databases Based on
+               Group Communication.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010117abs.htm",
+	author = "Bettina Kemme and Alberto Bartoli and {\"O}zalp Babaoglu",
+	pages = "117-130"}
+
+@inproceedings{DBLP:conf/dsn/KimQKS01,
+	title = "Design and Evaluation of Routing Schemes for Dependable
+               Real-Time Connections.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010285abs.htm",
+	author = "Songkuk Kim and Daji Qiao and Sharath Kodase and Kang G. Shin",
+	pages = "285-294"}
+
+@inproceedings{DBLP:conf/dsn/KimS01,
+	title = "Performance Evaluation of Dependable Real-Time Communication
+               with Elastic QoS.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010295abs.htm",
+	author = "Jong Kim and Kang G. Shin",
+	pages = "295-303"}
+
+@inproceedings{DBLP:conf/dsn/KobayashiTK01,
+	title = "Applicability of Non-Specification-Based Approaches to Logic
+               Testing for Software.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010337abs.htm",
+	author = "Noritaka Kobayashi and Tatsuhiro Tsuchiya and Tohru Kikuno",
+	pages = "337-346"}
+
+@inproceedings{DBLP:conf/dsn/KrishnamurthySC01,
+	title = "A Dynamic Replica Selection Algorithm for Tolerating Timing
+               Faults.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010107abs.htm",
+	author = "Sudha Krishnamurthy and William H. Sanders and Michel Cukier",
+	pages = "107-116"}
+
+@inproceedings{DBLP:conf/dsn/LakshmananAV01,
+	title = "A Secure and Highly Available Distributed Store for Meeting
+               Diverse Data Storage Needs.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010251abs.htm",
+	author = "Subramanian Lakshmanan and Mustaque Ahamad and H. Venkateswaran",
+	pages = "251-260"}
+
+@inproceedings{DBLP:conf/dsn/LiggesmeyerM01,
+	title = "Quantifying the Reliability of Embedded Systems by Automated
+               Analysis.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010089abs.htm",
+	author = "Peter Liggesmeyer and Oliver M{\"a}ckel",
+	pages = "89-96"}
+
+@inproceedings{DBLP:conf/dsn/LinKH01,
+	title = "A Checkpointing Tool for Palm Operating System.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010071abs.htm",
+	author = "Chi-Yi Lin and Sy-Yen Kuo and Yennun Huang",
+	pages = "71-76"}
+
+@inproceedings{DBLP:conf/dsn/LyuKKL01,
+	title = "A Procedure-Based Dynamic Software Update.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010271abs.htm",
+	author = "Janghoon Lyu and Youngjin Kim and Yongsub Kim and Inhwan Lee",
+	pages = "271-284"}
+
+@inproceedings{DBLP:conf/dsn/MartinsTY01,
+	title = "Constructing Self-Testable Software Components.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010151abs.htm",
+	author = "Eliane Martins and Cristina Maria Toyota and Rosileny Lie Yanagawa",
+	pages = "151-160"}
+
+@inproceedings{DBLP:conf/dsn/MitraSM01,
+	title = "Techniques for Estimation of Design Diversity for Combinational
+               Logic Circuits.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010025abs.htm",
+	author = "Subhasish Mitra and Nirmal R. Saxena and Edward J. McCluskey",
+	pages = "25-36"}
+
+@inproceedings{DBLP:conf/dsn/Morganti01,
+	title = "Dependability of Mobile Networks and Services: Can We Rely
+               on Them?.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010013abs.htm",
+	author = "Michele Morganti",
+	pages = 13}
+
+@inproceedings{DBLP:conf/dsn/NarasimhanMM01,
+	title = "State Synchronization and Recovery for Strongly Consistent
+               Replicated CORBA Objects.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010261abs.htm",
+	author = "Priya Narasimhan and Louise E. Moser and P. M. Melliar-Smith",
+	pages = "261-270"}
+
+@inproceedings{DBLP:conf/dsn/NickelS01,
+	title = "REESE: A Method of Soft Error Detection in Microprocessors.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010401abs.htm",
+	author = "Joel B. Nickel and Arun K. Somani",
+	pages = "401-410"}
+
+@inproceedings{DBLP:conf/dsn/PanKSHGJ01,
+	title = "Robustness Testing and Hardening of CORBA ORB Implementations.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010141abs.htm",
+	author = "Jiantao Pan and Philip Koopman and Daniel P. Siewiorek and Yennun Huang and Robert Gruber and Mimi Ling Jiang",
+	pages = "141-150"}
+
+@inproceedings{DBLP:conf/dsn/PapadopoulosM01,
+	title = "Model-Based Synthesis of Fault Trees from Matlab-Simulink
+               Models.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010077abs.htm",
+	author = "Yiannis Papadopoulos and Matthias Maruhn",
+	pages = "77-82"}
+
+@inproceedings{DBLP:conf/dsn/PleischS01,
+	title = "FATOMAS-A Fault-Tolerant Mobile Agent System Based on the
+               Agent-Dependent Approach.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010215abs.htm",
+	author = "Stefan Pleisch and Andr{\'e} Schiper",
+	pages = "215-224"}
+
+@inproceedings{DBLP:conf/dsn/PopovS01,
+	title = "The Reliability of Diverse Systems: A Contribution Using
+               Modelling of the Fault Creation Process.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010005abs.htm",
+	author = "Peter T. Popov and Lorenzo Strigini",
+	pages = "5-14"}
+
+@inproceedings{DBLP:conf/dsn/Redinbo01,
+	title = "Concurrent Error Detection in Fast Unitary Transform Algorithms.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010037abs.htm",
+	author = "G. Robert Redinbo",
+	pages = "37-46"}
+
+@inproceedings{DBLP:conf/dsn/RennelsH01,
+	title = "Recovery in Fault-Tolerant Distributed Microcontrollers.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010475abs.htm",
+	author = "David A. Rennels and Riki Hwang",
+	pages = "475-480"}
+
+@inproceedings{DBLP:conf/dsn/ReveillereM01,
+	title = "Improving Driver Robustness: An Evaluation of the Devil
+               Approach.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010131abs.htm",
+	author = "Laurent R{\'e}veill{\`e}re and Gilles Muller",
+	pages = "131-140"}
+
+@inproceedings{DBLP:conf/dsn/RuizTF01,
+	title = "A Strategy for Testing MetaObject Protocols in Reflective
+               Architectures.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010327abs.htm",
+	author = "Juan-Carlos Ruiz-Garcia and Pascale Th{\'e}venod-Fosse and Jean-Charles Fabre",
+	pages = "327-336"}
+
+@inproceedings{DBLP:conf/dsn/Sanders01,
+	title = "Business Meeting: IEEE Technical Committee on Fault Tolerance.",
+	author = "William H. Sanders"}
+
+@inproceedings{DBLP:conf/dsn/Schmid01,
+	title = "How to Model Link Failures: A Perception-Based Fault Model.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010057abs.htm",
+	author = "Ulrich Schmid",
+	pages = 57}
+
+@inproceedings{DBLP:conf/dsn/SomeKKCAB01,
+	title = "Software-Implemented Fault Injection Methodology for Design
+               and Validation of System Fault Tolerance.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010501abs.htm",
+	author = "Raphael R. Some and Won S. Kim and Garen Khanoyan and Leslie Callum and Anil Agrawal and John J. Beahan",
+	pages = "501-506"}
+
+@inproceedings{DBLP:conf/dsn/TaiTACS01,
+	title = "Synergistic Coordination between Software and Hardware Fault
+               Tolerance Techniques.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010369abs.htm",
+	author = "Ann T. Tai and Kam S. Tso and Leon Alkalai and Savio N. Chau and William H. Sanders",
+	pages = "369-378"}
+
+@inproceedings{DBLP:conf/dsn/TataranniPGB01,
+	title = "Analysis of the Effects of Outages on the Quality of Service
+               of GPRS Network Systems.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010235abs.htm",
+	author = "F. Tataranni and Stefano Porcarelli and Felicita Di Giandomenico and Andrea Bondavalli",
+	pages = "235-250"}
+
+@inproceedings{DBLP:conf/dsn/VinterAFK01,
+	title = "Reducing Critical Failures for Control Algorithms Using
+               Executable Assertions and Best Effort Recover.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010347abs.htm",
+	author = "Jonny Vinter and Joakim Aidemark and Peter Folkesson and Johan Karlsson",
+	pages = "347-356"}
+
+@inproceedings{DBLP:conf/dsn/WangBR01,
+	title = "The SIMBA User Alert Service Architecture for Dependable
+               Alert Delivery.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010463abs.htm",
+	author = "Yi-Min Wang and Paramvir Bahl and Wilf Russell",
+	pages = "463-474"}
+
+@inproceedings{DBLP:conf/dsn/WangBAGH01,
+	title = "Avoiding Priority Inversion on the Processing of Requests
+               by Active Replicated Servers.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010097abs.htm",
+	author = "Yun Wang and Francisco Vilar Brasileiro and Emmanuelle Anceaume and Fab\'{\i}ola Greve and Michel Hurfin",
+	pages = "97-106"}
+
+@inproceedings{DBLP:conf/dsn/WangHKD01,
+	title = "Protection of Software-Based Survivability Mechanisms.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010193abs.htm",
+	author = "Chenxi Wang and Jonathan Hill and John C. Knight and Jack W. Davidson",
+	pages = "193-202"}
+
+@inproceedings{DBLP:conf/dsn/WeaverA01,
+	title = "A Fault Tolerant Approach to Microprocessor Design.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010411abs.htm",
+	author = "Chris Weaver and Todd M. Austin",
+	pages = "411-420"}
+
+@inproceedings{DBLP:conf/dsn/Weyuker01,
+	title = "Difficulties Measuring Software Risk in an Industrial Environment.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010015abs.htm",
+	author = "Elaine J. Weyuker",
+	pages = "15-24"}
+
+@inproceedings{DBLP:conf/dsn/XuCKI01,
+	title = "An Experimental Study of Security Vulnerabilities Caused
+               by Errors.",
+	ee = "http://computer.org/proceedings/dsn/1101/11010421abs.htm",
+	author = "Jun Xu and Shuo Chen and Zbigniew Kalbarczyk and Ravishankar K. Iyer",
+	pages = "421-432"}
+
+@default year = 2000
+
+@inproceedings{DBLP:conf/dsn/AgbariaP00,
+	title = "Design, Implementation, and Performance of Checkpointing
+               in NetSolve.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070049abs.htm",
+	author = "Adnan Agbaria and James S. Plank",
+	pages = "49-"}
+
+@inproceedings{DBLP:conf/dsn/AlvisiPMRW00,
+	title = "Dynamic Byzantine Quorum Systems.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070283abs.htm",
+	author = "Lorenzo Alvisi and Evelyn Tumlin Pierce and Dahlia Malkhi and Michael K. Reiter and Rebecca N. Wright",
+	pages = "283-"}
+
+@inproceedings{DBLP:conf/dsn/AmirDS00,
+	title = "A Low Latency, Loss Tolerant Architecture and Protocol for
+               Wide Area Group Communication.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070327abs.htm",
+	author = "Yair Amir and Claudiu Danilov and Jonathan Robert Stanton",
+	pages = "327-336"}
+
+@inproceedings{DBLP:conf/dsn/AmzaCZ00,
+	title = "Data Replication Strategies for Fault Tolerance and Availability
+               on Commodity Clusters.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070abs.htm",
+	author = "Cristiana Amza and Alan L. Cox and Willy Zwaenepoel",
+	pages = "459-"}
+
+@inproceedings{DBLP:conf/dsn/AraiYI00,
+	title = "Method to Recover Internet Packet Losses Using (n, n - 1,
+               m) Convolutional Codes.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070382abs.htm",
+	author = "Masayuki Arai and Anna Yamaguchi and Kazuhiko Iwasaki",
+	pages = "382-"}
+
+@inproceedings{DBLP:conf/dsn/Avizienis00,
+	title = "A Fault Tolerance Infrastructure for Dependable Computing
+               with High-Performance COTS Components.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070492abs.htm",
+	author = "Algirdas Avizienis",
+	pages = "492-500"}
+
+@inproceedings{DBLP:conf/dsn/BaldoniHR00,
+	title = "From Crash Fault-Tolerance to Arbitrary-Fault Tolerance:
+               Towards a Modular Approach.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070273abs.htm",
+	author = "Roberto Baldoni and Jean-Michel H{\'e}lary and Michel Raynal",
+	pages = "273-282"}
+
+@inproceedings{DBLP:conf/dsn/BauerK00,
+	title = "Transparent Redundancy in the Time-Triggered Architecture.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070005abs.htm",
+	author = "G{\"u}nther Bauer and Hermann Kopetz",
+	pages = "5-13"}
+
+@inproceedings{DBLP:conf/dsn/BensoCPT00,
+	title = "A C/C++ Source-to-Source Compiler for Dependable Applications.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070071abs.htm",
+	author = "Alfredo Benso and Silvia Chiusano and Paolo Prinetto and Luca Tagliaferri",
+	pages = "71-"}
+
+@inproceedings{DBLP:conf/dsn/BondavalliMCFPS00,
+	title = "DEEM: A Tool for the Dependability Modeling and Evaluation
+               of Multiple Phased Systems.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070231abs.htm",
+	author = "Andrea Bondavalli and Ivan Mura and Silvano Chiaradonna and Roberto Filippini and S. Poli and F. Sandrini",
+	pages = "231-236"}
+
+@inproceedings{DBLP:conf/dsn/BoullieB00,
+	title = "A New Rolling Stock Architecture Using Safety Computers
+               and Networks.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070157abs.htm",
+	author = "Jean-Baptiste Boulli{\'e} and Michel Brun",
+	pages = "157-162"}
+
+@inproceedings{DBLP:conf/dsn/BowenSL00,
+	title = "Towards Continuous Availability of Internet Services through
+               Availability Domains.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070559abs.htm",
+	author = "Nicholas S. Bowen and Daniel C. Sturman and Tina Ting Liu",
+	pages = "559-566"}
+
+@inproceedings{DBLP:conf/dsn/CarusoCMS00,
+	title = "Diagnosis of Regular Structures.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070213abs.htm",
+	author = "Antonio Caruso and Stefano Chessa and Piero Maestrini and Paolo Santi",
+	pages = "213-"}
+
+@inproceedings{DBLP:conf/dsn/ChandraC00,
+	title = "Whither Generic Recovery from Application Faults? A Fault
+               Study using Open-Source Software.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070097abs.htm",
+	author = "Subhachandra Chandra and Peter M. Chen",
+	pages = "97-106"}
+
+@inproceedings{DBLP:conf/dsn/ChandraLCS00,
+	title = "Loki: A State-Driven Fault Injector for Distributed Systems.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070237abs.htm",
+	author = "Ramesh Chandra and Ryan M. Lefever and Michel Cukier and William H. Sanders",
+	pages = "237-242"}
+
+@inproceedings{DBLP:conf/dsn/Charron-BostGS00,
+	title = "Synchronous System and Perfect Failure Detector: Solvability
+               and Efficiency Issue.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070523abs.htm",
+	author = "Bernadette Charron-Bost and Rachid Guerraoui and Andr{\'e} Schiper",
+	pages = "523-532"}
+
+@inproceedings{DBLP:conf/dsn/ChenCDFKSSUW00,
+	title = "Demonstration of the Remote Exploration and Experimentation
+               (REE) Fault-Tolerant Parallel-Processing Supercomputer for
+               Spacecraft Onboard Scientific Data Processing.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070367abs.htm",
+	author = "Fannie Chen and Loring Craymer and Jeff Deifik and Alvin J. Fogel and Daniel S. Katz and Alfred G. Silliman, Jr. and Raphael R. Some and Sean A. Upchurch and Keith Whisnant",
+	pages = "367-"}
+
+@inproceedings{DBLP:conf/dsn/ChenHMSTW00,
+	title = "Reliability-Availability-Serviceability Characteristics
+               of a Compressed-Memory System.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070163abs.htm",
+	author = "Jim Chen and David Har and Ken Mak and Charles O. Schulz and R. Brett Tremaine and Michael E. Wazlowski",
+	pages = "163-168"}
+
+@inproceedings{DBLP:conf/dsn/ChenTA00,
+	title = "On the Quality of Service of Failure Detectors.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070191abs.htm",
+	author = "Wei Chen and Sam Toueg and Marcos Kawazoe Aguilera",
+	pages = "191-"}
+
+@inproceedings{DBLP:conf/dsn/ChengCW00,
+	title = "Enabling Automated Analysis through the Formalization of
+               Object-Oriented Modeling Diagrams.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070305abs.htm",
+	author = "Betty H. C. Cheng and Laura A. Campbell and Enoch Y. Wang",
+	pages = "305-"}
+
+@inproceedings{DBLP:conf/dsn/CheungL00,
+	title = "A Formal-Specification Based Approach for Protecting the
+               Domain Name System.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070641abs.htm",
+	author = "Steven Cheung and Karl N. Levitt",
+	pages = "641-"}
+
+@inproceedings{DBLP:conf/dsn/ContiniSW00,
+	title = "Sensitivity Analysis for System Design Improvement.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070243abs.htm",
+	author = "Sergio Contini and Stefan Scheer and Marc Wilikens",
+	pages = "243-"}
+
+@inproceedings{DBLP:conf/dsn/CostaRM00,
+	title = "Joint Evaluation of Performance and Robustness of a COTS
+               DBMS through Fault-Injection.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070251abs.htm",
+	author = "Diamantino Costa and Tiago Rilho and Henrique Madeira",
+	pages = "251-260"}
+
+@inproceedings{DBLP:conf/dsn/DuM00,
+	title = "Testing for Software Vulnerability Using Environment Perturbation.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070603abs.htm",
+	author = "Wenliang Du and Aditya P. Mathur",
+	pages = "603-612"}
+
+@inproceedings{DBLP:conf/dsn/FrolundG00,
+	title = "Implementing e-Transactions with Asynchronous Replication.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070449abs.htm",
+	author = "Svend Fr{\o}lund and Rachid Guerraoui",
+	pages = "449-458"}
+
+@inproceedings{DBLP:conf/dsn/GnesiLLAAM00,
+	title = "An Automatic SPIN Validation of a Safety Critical Railway
+               Control System.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070119abs.htm",
+	author = "Stefania Gnesi and Diego Latella and Gabriele Lenzini and C. Abbaneo and Arturo M. Amendola and P. Marmo",
+	pages = "119-124"}
+
+@inproceedings{DBLP:conf/dsn/HaiV00,
+	title = "Dynamic-Distributed Differentiated Service for Multimedia
+               Applications.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070586abs.htm",
+	author = "Dam Q. Hai and Son T. Vuong",
+	pages = "586-"}
+
+@inproceedings{DBLP:conf/dsn/HashimotoTK00,
+	title = "Fault-Secure Scheduling of Arbitrary Task Graphs to Multiprocessor
+               Systems.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070203abs.htm",
+	author = "Koji Hashimoto and Tatsuhiro Tsuchiya and Tohru Kikuno",
+	pages = "203-212"}
+
+@inproceedings{DBLP:conf/dsn/HazelhurstAS00,
+	title = "Algorithms for Improving the Dependability of Firewall and
+               Filter Rule Lists.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070576abs.htm",
+	author = "Scott Hazelhurst and Adi Attar and Raymond Sinnappan",
+	pages = "576-585"}
+
+@inproceedings{DBLP:conf/dsn/HeA00,
+	title = "Assessment of the Applicability of COTS Microprocessors
+               in High-Confidence Computing Systems: A Case Study.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070081abs.htm",
+	author = "Yutao He and Algirdas Avizienis",
+	pages = "81-86"}
+
+@inproceedings{DBLP:conf/dsn/HechtAZH00,
+	title = "OFTT: A Fault Tolerance Middleware Toolkit for Process Monitoring
+               and Control Windows NT Applications.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070225abs.htm",
+	author = "Myron Hecht and Xuegao An and Bing Zhang and Yutao He",
+	pages = "225-230"}
+
+@inproceedings{DBLP:conf/dsn/Hiller00,
+	title = "Executable Assertions for Detecting Data Errors in Embedded
+               Control Systems.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070024abs.htm",
+	author = "Martin Hiller",
+	pages = "24-"}
+
+@inproceedings{DBLP:conf/dsn/JhaWLL00,
+	title = "Survivability Analysis of Network Specifications.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070613abs.htm",
+	author = "Sanjay K. Jha and Jeannette M. Wing and Richard C. Linger and Thomas A. Longstaff",
+	pages = "613-622"}
+
+@inproceedings{DBLP:conf/dsn/JohnsonJGVW00,
+	title = "Experiences with Group Communication Middleware.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070037abs.htm",
+	author = "Scott Johnson and Farnam Jahanian and Sunondo Ghosh and Brian Van Voorst and Nicholas Weininger",
+	pages = "37-42"}
+
+@inproceedings{DBLP:conf/dsn/KaracaliTV00,
+	title = "Deadlock Detection of EFSMs Using Simultaneous Reachability
+               Analysis.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070315abs.htm",
+	author = "Bengi Kara\c{c}ali and Kuo-Chung Tai and Mladen A. Vouk",
+	pages = "315-"}
+
+@inproceedings{DBLP:conf/dsn/KatayamaM00,
+	title = "One-Shot Reed-Solomon Decoding for High-Performance Dependable
+               Systems.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070390abs.htm",
+	author = "Yasunao Katayama and Sumio Morioka",
+	pages = "390-"}
+
+@inproceedings{DBLP:conf/dsn/KochMM00,
+	title = "A Reliable Many-to-Many Multicast Protocol for Group Communication
+               over ATM Networks.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070337abs.htm",
+	author = "Ruppert R. Koch and Louise E. Moser and P. M. Melliar-Smith",
+	pages = "337-346"}
+
+@inproceedings{DBLP:conf/dsn/LakamrajuKK00,
+	title = "Synthesis of Interconnection Networks: A Novel Approach.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070501abs.htm",
+	author = "Vijay Lakamraju and Zahava Koren and C. Mani Krishna",
+	pages = "501-"}
+
+@inproceedings{DBLP:conf/dsn/LawallM00,
+	title = "Efficient Incremental Checkpointing of Java Programs.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070061abs.htm",
+	author = "Julia L. Lawall and Gilles Muller",
+	pages = "61-70"}
+
+@inproceedings{DBLP:conf/dsn/LeeKYZM00,
+	title = "Resource Scheduling in Dependable Integrated Modular Avionics.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070014abs.htm",
+	author = "Yann-Hang Lee and Daeyoung Kim and Mohamed F. Younis and Jeffrey X. Zhou and James McElroy",
+	pages = "14-23"}
+
+@inproceedings{DBLP:conf/dsn/LiH00,
+	title = "A Tool Suite for Diagnosis and Testing of Software Design
+               Specifications.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070295abs.htm",
+	author = "J. Jenny Li and Joseph Robert Horgan",
+	pages = "295-304"}
+
+@inproceedings{DBLP:conf/dsn/LinAWL00,
+	title = "Issues in Interoperability and Performance Verification
+               in a Multi-ORB Telecommunications Environment.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070567abs.htm",
+	author = "Cheng J. Lin and Alberto Avritzer and Elaine J. Weyuker and Sai-Lai Lo",
+	pages = "567-575"}
+
+@inproceedings{DBLP:conf/dsn/LiuNJ00,
+	title = "Avoiding Loss of Fairness Owing to Process Crashes in Fair
+               Data Exchange Protocols.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070631abs.htm",
+	author = "Peng Liu and Peng Ning and Sushil Jajodia",
+	pages = "631-640"}
+
+@inproceedings{DBLP:conf/dsn/MadeiraCV00,
+	title = "On the Emulation of Software Faults by Software Fault Injection.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070417abs.htm",
+	author = "Henrique Madeira and Diamantino Costa and Marco Vieira",
+	pages = "417-426"}
+
+@inproceedings{DBLP:conf/dsn/MartinsR00,
+	title = "A Fault Injection Approach Based on Reflective Programming.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070407abs.htm",
+	author = "Eliane Martins and Amanda C. A. Rosa",
+	pages = "407-416"}
+
+@inproceedings{DBLP:conf/dsn/MaxionT00,
+	title = "Benchmarking Anomaly-Based Detection Systems.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070623abs.htm",
+	author = "Roy A. Maxion and Kymie M. C. Tan",
+	pages = "623-630"}
+
+@inproceedings{DBLP:conf/dsn/MendelsonS00,
+	title = "Designing High-Performance {\&} Reliable Superscalar Architectures:
+               The out of Order Reliable Superscalar (O3RS) Approach.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070473abs.htm",
+	author = "Avi Mendelson and Neeraj Suri",
+	pages = "473-481"}
+
+@inproceedings{DBLP:conf/dsn/Meyer00,
+	title = "Performability of Algorithms for Connection Admission Control.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070181abs.htm",
+	author = "John F. Meyer",
+	pages = "181-190"}
+
+@inproceedings{DBLP:conf/dsn/MohindraPT00,
+	title = "Exploiting Non-Determinism for Reliability of Mobile Agent
+               Systems.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070144abs.htm",
+	author = "Ajay Mohindra and Apratim Purakayastha and Prasannaa Thati",
+	pages = "144-156"}
+
+@inproceedings{DBLP:conf/dsn/MorganS00,
+	title = "Implementing Flexible Object Group Invocation in Networked
+               Systems.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070439abs.htm",
+	author = "Graham Morgan and Santosh K. Shrivastava",
+	pages = "439-448"}
+
+@inproceedings{DBLP:conf/dsn/MostefaouiRT00,
+	title = "The Best of Both Worlds: A Hybrid Approach to Solve Consensus.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070513abs.htm",
+	author = "Achour Most{\'e}faoui and Michel Raynal and Frederic Tronel",
+	pages = "513-522"}
+
+@inproceedings{DBLP:conf/dsn/PomeranzR00,
+	title = "Test-Point Insertion to Enhance Test Compaction for Scan
+               Designs.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070375abs.htm",
+	author = "Irith Pomeranz and Sudhakar M. Reddy",
+	pages = "375-381"}
+
+@inproceedings{DBLP:conf/dsn/PragerVFWL00,
+	title = "A Fault Tolerant Signal Processing Computer.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070169abs.htm",
+	author = "Kenneth Prager and Michael Vahey and William Farwell and James Whitney and Jon Lieb",
+	pages = "169-"}
+
+@inproceedings{DBLP:conf/dsn/RashidSR00,
+	title = "Fault Tolerance through Re-Execution in Multiscalar Architecture.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070482abs.htm",
+	author = "Faisal Rashid and Kewal K. Saluja and Parameswaran Ramanathan",
+	pages = "482-491"}
+
+@inproceedings{DBLP:conf/dsn/ReddyMM00,
+	title = "Reconfiguration Based Failure Restoration in Wavelength-Routed
+               WDM Networks.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070543abs.htm",
+	author = "G. Sai Kiran Reddy and C. Siva Ram Murthy and G. Manimaran",
+	pages = "543-"}
+
+@inproceedings{DBLP:conf/dsn/SheltonKD00,
+	title = "Robustness Testing of the Microsoft Win32 API.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070261abs.htm",
+	author = "Charles P. Shelton and Philip Koopman and Kobey Devale",
+	pages = "261-"}
+
+@inproceedings{DBLP:conf/dsn/SilvaBS00,
+	title = "Fault-Tolerant Execution of Mobile Agents.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070135abs.htm",
+	author = "Lu\'{\i}s Moura Silva and Victor Batista and Jo{\~a}o Gabriel Silva",
+	pages = "135-143"}
+
+@inproceedings{DBLP:conf/dsn/SongHKFGK00,
+	title = "Fault-Tolerant Ethernet for IP-Based Process Control: A
+               Demonstration.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070361abs.htm",
+	author = "S. Song and Jiandong Huang and P. Kappler and R. Freimark and J. Gustin and T. Kozlik",
+	pages = "361-366"}
+
+@inproceedings{DBLP:conf/dsn/SunS00,
+	title = "A Gossip-Based Reliable Multicast for Large-Scale High-Throughput
+               Applications.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070347abs.htm",
+	author = "Qixiang Sun and Daniel C. Sturman",
+	pages = "347-"}
+
+@inproceedings{DBLP:conf/dsn/TsaiS00,
+	title = "Reliability Testing of Applications on Windows NT.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070427abs.htm",
+	author = "Timothy K. Tsai and Navjot Singh",
+	pages = "427-"}
+
+@inproceedings{DBLP:conf/dsn/TurmonGK00,
+	title = "Software-Implemented Fault Detection for High-Performance
+               Space Applications.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070107abs.htm",
+	author = "Michael J. Turmon and Robert Granat and Daniel S. Katz",
+	pages = "107-"}
+
+@inproceedings{DBLP:conf/dsn/VerissimoCF00,
+	title = "he Timely Computing Base: Timely Actions in the Presence
+               of Uncertain Timeliness.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070533abs.htm",
+	author = "Paulo Ver\'{\i}ssimo and Antonio Casimiro and Christof Fetzer",
+	pages = "533-542"}
+
+@inproceedings{DBLP:conf/dsn/WalterSM00,
+	title = "Evaluating COTS Standards for Design of Dependable Systems.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070087abs.htm",
+	author = "Chris J. Walter and Neeraj Suri and T. Monaghan",
+	pages = "87-"}
+
+@inproceedings{DBLP:conf/dsn/WangRAJX00,
+	title = "Towards Dependable Home Networking: An Experience Report.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070043abs.htm",
+	author = "Yi-Min Wang and Wilf Russell and Anish Arora and Rajesh Jagannathan and Jun Xu",
+	pages = "43-48"}
+
+@inproceedings{DBLP:conf/dsn/YinHA00,
+	title = "Sensitivity Analysis on Dependencies in Dynamic Availability
+               Models for Large Systems.",
+	ee = "http://computer.org/proceedings/dsn/0707/07070125abs.htm",
+	author = "Meng-Lai Yin and Craig L. Hyde and Rafael R. Arellano",
+	pages = "125-"}

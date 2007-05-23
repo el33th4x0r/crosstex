@@ -1,0 +1,2096 @@
+@include conferences-cs
+
+@default bibsource = "DBLP, http://dblp.uni-trier.de"
+
+@default booktitle = hpca
+
+@default year = 2005
+
+@inproceedings{DBLP:conf/hpca/AhnED05,
+	title = "Scatter-Add in Data Parallel Architectures.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.30",
+	author = "Jung Ho Ahn and Mattan Erez and William J. Dally",
+	pages = "132-142"}
+
+@inproceedings{DBLP:conf/hpca/AnanianAKLL05,
+	title = "Unbounded Transactional Memory.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.41",
+	author = "C. Scott Ananian and Krste Asanovic and Bradley C. Kuszmaul and Charles E. Leiserson and Sean Lie",
+	pages = "316-327"}
+
+@inproceedings{DBLP:conf/hpca/BalasubramonianMRV05,
+	title = "Microarchitectural Wire Management for Performance and Power
+               in Partitioned Architectures.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.21",
+	author = "Rajeev Balasubramonian and Naveen Muralimanohar and Karthik Ramani and Venkatanand Venkatachalapathy",
+	pages = "28-39"}
+
+@inproceedings{DBLP:conf/hpca/ChandraGKS05,
+	title = "Predicting Inter-Thread Cache Contention on a Chip Multi-Processor
+               Architecture.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.27",
+	author = "Dhruba Chandra and Fei Guo and Seongbeom Kim and Yan Solihin",
+	pages = "340-351"}
+
+@inproceedings{DBLP:conf/hpca/ChaparroMGG05,
+	title = "Distributing the Frontend for Temperature Reduction.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.12",
+	author = "Pedro Chaparro and Grigorios Magklis and Jos{\'e} Gonz{\'a}lez and Antonio Gonz{\'a}lez",
+	pages = "61-70"}
+
+@inproceedings{DBLP:conf/hpca/ChenPWHP05,
+	title = "Exploring the Design Space of Power-Aware Opto-Electronic
+               Networked Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.15",
+	author = "Xuning Chen and Li-Shiuan Peh and Gu-Yeon Wei and Yue-Kai Huang and Paul R. Prucnal",
+	pages = "120-131"}
+
+@inproceedings{DBLP:conf/hpca/CorlissLR05,
+	title = "Low-Overhead Interactive Debugging via Dynamic Instrumentation
+               with DISE.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.18",
+	author = "Marc L. Corliss and E. Christopher Lewis and Amir Roth",
+	pages = "303-314"}
+
+@inproceedings{DBLP:conf/hpca/DuatoJFNGF05,
+	title = "A New Scalable and Cost-Effective Congestion Management
+               Strategy for Lossless Multistage Interconnection Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.1",
+	author = "Jos{\'e} Duato and Ian Johnson and Jose Flich and Finbar Naven and Pedro Javier Garc\'{\i}a and Teresa Nachiondo Frin{\'o}s",
+	pages = "108-119"}
+
+@inproceedings{DBLP:conf/hpca/HallnorR05,
+	title = "A Unified Compressed Memory Hierarchy.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.4",
+	author = "Erik G. Hallnor and Steven K. Reinhardt",
+	pages = "201-212"}
+
+@inproceedings{DBLP:conf/hpca/HasanJVB05,
+	title = "Heat Stroke: Power-Density-Based Denial of Service in SMT.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.16",
+	author = "Jahangir Hasan and Ankit Jalote and T. N. Vijaykumar and Carla E. Brodley",
+	pages = "166-177"}
+
+@inproceedings{DBLP:conf/hpca/Hofstee05,
+	title = "Power Efficient Processor Architecture and The Cell Processor.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.26",
+	author = "H. Peter Hofstee",
+	pages = "258-262"}
+
+@inproceedings{DBLP:conf/hpca/HwuP05,
+	title = "The Future of Computer Architecture Research: An Industrial
+               Perspective.",
+	author = "Wen-mei W. Hwu and Sanjay J. Patel",
+	pages = 264}
+
+@inproceedings{DBLP:conf/hpca/JacobsonBHBZEEGLST05,
+	title = "Stretching the Limits of Clock-Gating Efficiency in Server-Class
+               Processors.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.33",
+	author = "Hans M. Jacobson and Pradip Bose and Zhigang Hu and Alper Buyuktosunoglu and Victor V. Zyuban and Rick Eickemeyer and Lee Eisen and John Griswell and Doug Logan and Balaram Sinharoy and Joel M. Tendler",
+	pages = "238-242"}
+
+@inproceedings{DBLP:conf/hpca/JaleelJ05,
+	title = "Using Virtual Load/Store Queues (VLSQs) to Reduce the Negative
+               Effects of Reordered Memory Instructions.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.42",
+	author = "Aamer Jaleel and Bruce L. Jacob",
+	pages = "191-200"}
+
+@inproceedings{DBLP:conf/hpca/JonesOAG05,
+	title = "Software Directed Issue Queue Power Reduction.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.32",
+	author = "Timothy M. Jones and Michael F. P. O'Boyle and Jaume Abella and Antonio Gonz{\'a}lez",
+	pages = "144-153"}
+
+@inproceedings{DBLP:conf/hpca/KirmanKCM05,
+	title = "Checkpointed Early Load Retirement.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.9",
+	author = "Nevin Kirman and Meyrem Kirman and Mainak Chaudhuri and Jos{\'e} F. Mart\'{\i}nez",
+	pages = "16-27"}
+
+@inproceedings{DBLP:conf/hpca/KondoN05,
+	title = "A Small, Fast and Low-Power Register File by Bit-Partitioning.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.3",
+	author = "Masaaki Kondo and Hiroshi Nakamura",
+	pages = "40-49"}
+
+@inproceedings{DBLP:conf/hpca/LauSC05,
+	title = "Transition Phase Classification and Prediction.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.39",
+	author = "Jeremy Lau and Stefan Schoenmackers and Brad Calder",
+	pages = "278-289"}
+
+@inproceedings{DBLP:conf/hpca/LiBHS05,
+	title = "Performance, Energy, and Thermal Considerations for SMT
+               and CMP Architectures.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.25",
+	author = "Yingmin Li and David Brooks and Zhigang Hu and Kevin Skadron",
+	pages = "71-82"}
+
+@inproceedings{DBLP:conf/hpca/MartyBHHMW05,
+	title = "Improving Multiple-CMP Systems Using Token Coherence.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.17",
+	author = "Michael R. Marty and Jesse D. Bingham and Mark D. Hill and Alan J. Hu and Milo M. K. Martin and David A. Wood",
+	pages = "328-339"}
+
+@inproceedings{DBLP:conf/hpca/MengSK05,
+	title = "On the Limits of Leakage Power Reduction in Caches.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.23",
+	author = "Yan Meng and Timothy Sherwood and Ryan Kastner",
+	pages = "154-165"}
+
+@inproceedings{DBLP:conf/hpca/MukherjeeER05,
+	title = "The Soft Error Problem: An Architectural Perspective.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.37",
+	author = "Shubhendu S. Mukherjee and Joel S. Emer and Steven K. Reinhardt",
+	pages = "243-247"}
+
+@inproceedings{DBLP:conf/hpca/QinLZ05,
+	title = "SafeMem: Exploiting ECC-Memory for Detecting Memory Leaks
+               and Memory Corruption During Production Runs.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.29",
+	author = "Feng Qin and Shan Lu and Yuanyuan Zhou",
+	pages = "291-302"}
+
+@inproceedings{DBLP:conf/hpca/RanganathanJ05,
+	title = "Enterprise IT Trends and Implications for Architecture Research.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.14",
+	author = "Parthasarathy Ranganathan and Norman P. Jouppi",
+	pages = "253-256"}
+
+@inproceedings{DBLP:conf/hpca/SpracklenA05,
+	title = "Chip Multithreading: Opportunities and Challenges.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.10",
+	author = "Lawrence Spracklen and Santosh G. Abraham",
+	pages = "248-252"}
+
+@inproceedings{DBLP:conf/hpca/SpracklenCA05,
+	title = "Effective Instruction Prefetching in Chip Multiprocessors
+               for Modern Commercial Applications.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.13",
+	author = "Lawrence Spracklen and Yuan Chou and Santosh G. Abraham",
+	pages = "225-236"}
+
+@inproceedings{DBLP:conf/hpca/SundaresanM05,
+	title = "Accurate Energy Dissipation and Thermal Modeling for Nanometer-Scale
+               Buses.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.5",
+	author = "Krishnan Sundaresan and Nihar R. Mahapatra",
+	pages = "51-60"}
+
+@inproceedings{DBLP:conf/hpca/TuckT05,
+	title = "Multithreaded Value Prediction.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.22",
+	author = "Nathan Tuck and Dean M. Tullsen",
+	pages = "5-15"}
+
+@inproceedings{DBLP:conf/hpca/VenkatesanAR05,
+	title = "Tapping ZettaRAM$^{\mbox{TM}}$ for Low-Power Memory Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.35",
+	author = "Ravi K. Venkatesan and Ahmed S. Al-Zawawi and Eric Rotenberg",
+	pages = "83-94"}
+
+@inproceedings{DBLP:conf/hpca/Weber05,
+	title = "Trends in High-Performance Processors.",
+	author = "Fred Weber",
+	pages = 3}
+
+@inproceedings{DBLP:conf/hpca/WillmannKRP05,
+	title = "An Efficient Programmable 10 Gigabit Ethernet Network Interface
+               Card.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.6",
+	author = "Paul Willmann and Hyong-youb Kim and Scott Rixner and Vijay S. Pai",
+	pages = "96-107"}
+
+@inproceedings{DBLP:conf/hpca/WuJMC05,
+	title = "Voltage and Frequency Control With Adaptive Reaction Time
+               in Multiple-Clock-Domain Processors.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.43",
+	author = "Qiang Wu and Philo Juang and Margaret Martonosi and Douglas W. Clark",
+	pages = "178-189"}
+
+@inproceedings{DBLP:conf/hpca/YiKSLH05,
+	title = "Characterizing and Comparing Prevailing Simulation Techniques.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.8",
+	author = "Joshua J. Yi and Sreekumar V. Kodakara and Resit Sendag and David J. Lilja and Douglas M. Hawkins",
+	pages = "266-277"}
+
+@inproceedings{DBLP:conf/hpca/ZhangGYZG05,
+	title = "SENSS: Security Enhancement to Symmetric Shared Memory Multiprocessors.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.31",
+	author = "Youtao Zhang and Lan Gao and Jun Yang and Xiangyu Zhang and Rajiv Gupta",
+	pages = "352-362"}
+
+@inproceedings{DBLP:conf/hpca/ZhuZ05,
+	title = "A Performance Comparison of DRAM Memory System Optimizations
+               for SMT Processors.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/HPCA.2005.2",
+	author = "Zhichun Zhu and Zhao Zhang",
+	pages = "213-224"}
+
+@default year = 2004
+
+@inproceedings{DBLP:conf/hpca/AamodtCHWS04,
+	title = "Hardware Support for Prescient Instruction Prefetch.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530084abs.htm",
+	author = "Tor M. Aamodt and Paul Chow and Per Hammarlund and Hong Wang and John Paul Shen",
+	pages = "84-95"}
+
+@inproceedings{DBLP:conf/hpca/AbellaG04,
+	title = "Low-Complexity Distributed Issue Queue.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530073abs.htm",
+	author = "Jaume Abella and Antonio Gonz{\'a}lez",
+	pages = "73-83"}
+
+@inproceedings{DBLP:conf/hpca/AkkarySKPR04,
+	title = "Perceptron-Based Branch Confidence Estimation.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530265abs.htm",
+	author = "Haitham Akkary and Srikanth T. Srinivasan and Rajendar Koltur and Yogesh Patil and Wael Refaai",
+	pages = "265-275"}
+
+@inproceedings{DBLP:conf/hpca/CarreraB04,
+	title = "Improving Disk Throughput in Data-Intensive Servers.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530130abs.htm",
+	author = "Enrique V. Carrera and Ricardo Bianchini",
+	pages = "130-141"}
+
+@inproceedings{DBLP:conf/hpca/ChenYFM04,
+	title = "Accurate and Complexity-Effective Spatial Pattern Prediction.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530276abs.htm",
+	author = "Chi F. Chen and Se-Hyun Yang and Babak Falsafi and Andreas Moshovos",
+	pages = "276-287"}
+
+@inproceedings{DBLP:conf/hpca/CristalOLV04,
+	title = "Out-of-Order Commit Processors.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530048abs.htm",
+	author = "Adri{\'a}n Cristal and Daniel Ortega and Josep Llosa and Mateo Valero",
+	pages = "48-59"}
+
+@inproceedings{DBLP:conf/hpca/EhrhartP04,
+	title = "Reducing the Scheduling Critical Cycle Using Wakeup Prediction.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530222abs.htm",
+	author = "Todd E. Ehrhart and Sanjay J. Patel",
+	pages = "222-231"}
+
+@inproceedings{DBLP:conf/hpca/FalconRV04,
+	title = "A Low-Complexity, High-Performance Fetch Unit for Simultaneous
+               Multithreading Processors.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530244abs.htm",
+	author = "Ayose Falc{\'o}n and Alex Ram\'{\i}rez and Mateo Valero",
+	pages = "244-253"}
+
+@inproceedings{DBLP:conf/hpca/FernandezE04,
+	title = "Link-Time Path-Sensitive Memory Redundancy Elimination.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530300abs.htm",
+	author = "Manel Fern{\'a}ndez and Roger Espasa",
+	pages = "300-310"}
+
+@inproceedings{DBLP:conf/hpca/GandhiAS04,
+	title = "Reducing Branch Misprediction Penalty via Selective Branch
+               Recovery.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530254abs.htm",
+	author = "Amit Gandhi and Haitham Akkary and Srikanth T. Srinivasan",
+	pages = "254-264"}
+
+@inproceedings{DBLP:conf/hpca/GniadyHL04,
+	title = "Program Counter Based Techniques for Dynamic Power Management.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530024abs.htm",
+	author = "Chris Gniady and Y. Charlie Hu and Yung-Hsiang Lu",
+	pages = "24-35"}
+
+@inproceedings{DBLP:conf/hpca/HuVI04,
+	title = "Exploring Wakeup-Free Instruction Scheduling.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530232abs.htm",
+	author = "Jie S. Hu and Narayanan Vijaykrishnan and Mary Jane Irwin",
+	pages = "232-243"}
+
+@inproceedings{DBLP:conf/hpca/JayasenaEAD04,
+	title = "Stream Register Files with Indexed Access.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530060abs.htm",
+	author = "Nuwan Jayasena and Mattan Erez and Jung Ho Ahn and William J. Dally",
+	pages = "60-72"}
+
+@inproceedings{DBLP:conf/hpca/JosephHM04,
+	title = "Wavelet Analysis for Microprocessor Design: Experiences
+               with Wavelet-Based dI/dt Characterization.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530036abs.htm",
+	author = "Russ Joseph and Zhigang Hu and Margaret Martonosi",
+	pages = "36-47"}
+
+@inproceedings{DBLP:conf/hpca/KalogeropulosRRST04,
+	title = "Processor Aware Anticipatory Prefetching in Loops.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530106abs.htm",
+	author = "Spiros Kalogeropulos and Mahadevan Rajagopalan and Vikram Rao and Yonghong Song and Partha Tirumalai",
+	pages = "106-117"}
+
+@inproceedings{DBLP:conf/hpca/KharbutliISL04,
+	title = "Using Prime Numbers for Cache Indexing to Eliminate Conflict
+               Misses.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530288abs.htm",
+	author = "Mazen Kharbutli and Keith Irwin and Yan Solihin and Jaejin Lee",
+	pages = "288-299"}
+
+@inproceedings{DBLP:conf/hpca/KimL04,
+	title = "Understanding Scheduling Replay Schemes.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530198abs.htm",
+	author = "Ilhyun Kim and Mikko H. Lipasti",
+	pages = "198-209"}
+
+@inproceedings{DBLP:conf/hpca/LiMH04,
+	title = "The Thrifty Barrier: Energy-Aware Synchronization in Shared-Memory
+               Multiprocessors.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530014abs.htm",
+	author = "Jian Li and Jos{\'e} F. Mart\'{\i}nez and Michael C. Huang",
+	pages = "14-23"}
+
+@inproceedings{DBLP:conf/hpca/LiuSK04,
+	title = "Organizing the Last Line of Defense before Hitting the Memory
+               Wall for CMP.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530176abs.htm",
+	author = "Chun Liu and Anand Sivasubramaniam and Mahmut T. Kandemir",
+	pages = "176-185"}
+
+@inproceedings{DBLP:conf/hpca/MakineniI04,
+	title = "Architectural Characterization of TCP/IP Packet Processing
+               on the Pentium M Microprocessor.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530152abs.htm",
+	author = "Srihari Makineni and Ravi R. Iyer",
+	pages = "152-163"}
+
+@inproceedings{DBLP:conf/hpca/Michaud04,
+	title = "Exploiting the Cache Capacity of a Single-Chip Multi-Core
+               Processor with Execution Migration.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530186abs.htm",
+	author = "Pierre Michaud",
+	pages = "186-197"}
+
+@inproceedings{DBLP:conf/hpca/NarayanasamyHSC04,
+	title = "Creating Converged Trace Schedules Using String Matching.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530210abs.htm",
+	author = "Satish Narayanasamy and Yuanfang Hu and Suleyman Sair and Brad Calder",
+	pages = "210-221"}
+
+@inproceedings{DBLP:conf/hpca/NesbitS04,
+	title = "Data Cache Prefetching Using a Global History Buffer.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530096abs.htm",
+	author = "Kyle J. Nesbit and James E. Smith",
+	pages = "96-105"}
+
+@inproceedings{DBLP:conf/hpca/PengPL04,
+	title = "Signature Buffer: Bridging Performance Gap between Registers
+               and Caches.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530164abs.htm",
+	author = "Lu Peng and Jih-Kwon Peir and Konrad Lai",
+	pages = "164-175"}
+
+@inproceedings{DBLP:conf/hpca/WenWPK04,
+	title = "Exploiting Prediction to Reduce Power on Buses.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530002abs.htm",
+	author = "Victor Wen and Mark Whitney and Yatish Patel and John Kubiatowicz",
+	pages = "2-13"}
+
+@inproceedings{DBLP:conf/hpca/ZhangSFGZN04,
+	title = "Synthesizing Representative I/O Workloads for TPC-H.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530142abs.htm",
+	author = "Jianyong Zhang and Anand Sivasubramaniam and Hubertus Franke and Natarajan Gautam and Yanyong Zhang and Shailabh Nagar",
+	pages = "142-151"}
+
+@inproceedings{DBLP:conf/hpca/ZhuDDLZC04,
+	title = "Reducing Energy Consumption of Disk Storage Using Power-Aware
+               Cache Management.",
+	ee = "http://csdl.computer.org/comp/proceedings/hpca/2004/2053/00/20530118abs.htm",
+	author = "Qingbo Zhu and Francis M. David and Christo F. Devaraj and Zhenmin Li and Yuanyuan Zhou and Pei Cao",
+	pages = "118-129"}
+
+@default year = 2003
+
+@inproceedings{DBLP:conf/hpca/AlameldeenW03,
+	title = "Variability in Architectural Simulations of Multi-Threaded
+               Workloads.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710007abs.htm",
+	author = "Alaa R. Alameldeen and David A. Wood",
+	pages = "7-18"}
+
+@inproceedings{DBLP:conf/hpca/AragonGG03,
+	title = "Power-Aware Control Speculation through Selective Throttling.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710103abs.htm",
+	author = "Juan L. Arag{\'o}n and Jos{\'e} Gonz{\'a}lez and Antonio Gonz{\'a}lez",
+	pages = "103-112"}
+
+@inproceedings{DBLP:conf/hpca/Bhandarkar03,
+	title = "Billion Transistor Chips in Mainstream Enterprise Platforms
+               of the Future.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710003.pdf",
+	author = "Dileep Bhandarkar",
+	pages = "3-"}
+
+@inproceedings{DBLP:conf/hpca/ChenDA03,
+	title = "Dynamic Data Dependence Tracking and its Application to
+               Branch Prediction.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710065abs.htm",
+	author = "Lei Chen and Steve Dropsho and David H. Albonesi",
+	pages = "65-"}
+
+@inproceedings{DBLP:conf/hpca/ChristodoulopoulouAB03,
+	title = "Dynamic Data Replication: An Approach to Providing Fault-Tolerant
+               Shared Memory Clusters.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710203abs.htm",
+	author = "Rosalia Christodoulopoulou and Reza Azimi and Angelos Bilas",
+	pages = "203-"}
+
+@inproceedings{DBLP:conf/hpca/El-MoursyA03,
+	title = "Front-End Policies for Improved Issue Efficiency in SMT
+               Processors.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710031abs.htm",
+	author = "Ali El-Moursy and David H. Albonesi",
+	pages = "31-"}
+
+@inproceedings{DBLP:conf/hpca/GarzaranPLVRT03,
+	title = "Tradeoffs in Buffering Memory State for Thread-Level Speculation
+               in Multiprocessors.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710191abs.htm",
+	author = "Mar\'{\i}a Jes{\'u}s Garzar{\'a}n and Milos Prvulovic and Jos{\'e} Mar\'{\i}a Llaber\'{\i}a and V\'{\i}ctor Vi{\~n}als and Lawrence Rauchwerger and Josep Torrellas",
+	pages = "191-202"}
+
+@inproceedings{DBLP:conf/hpca/GassendSCDD03,
+	title = "Caches and Hash Trees for Efficient Memory Integrity.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710295abs.htm",
+	author = "Blaise Gassend and G. Edward Suh and Dwaine E. Clarke and Marten van Dijk and Srinivas Devadas",
+	pages = "295-306"}
+
+@inproceedings{DBLP:conf/hpca/HaoH03,
+	title = "Active I/O Switches in System Area Networks.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710365abs.htm",
+	author = "Ming Hao and Mark Heinrich",
+	pages = "365-376"}
+
+@inproceedings{DBLP:conf/hpca/HoP03,
+	title = "A Methodology for Designing Efficient On-Chip Interconnects
+               on Well-Behaved Communication Patterns.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710377abs.htm",
+	author = "Wai Hong Ho and Timothy Mark Pinkston",
+	pages = "377-"}
+
+@inproceedings{DBLP:conf/hpca/HuMK03,
+	title = "TCP: Tag Correlating Prefetchers.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710317abs.htm",
+	author = "Zhigang Hu and Margaret Martonosi and Stefanos Kaxiras",
+	pages = "317-326"}
+
+@inproceedings{DBLP:conf/hpca/IbrahimBR03,
+	title = "Slipstream Execution Mode for CMP-Based Multiprocessors.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710179abs.htm",
+	author = "Khaled Z. Ibrahim and Gregory T. Byrd and Eric Rotenberg",
+	pages = "179-190"}
+
+@inproceedings{DBLP:conf/hpca/JeongD03,
+	title = "Cost-Sensitive Cache Replacement Algorithms.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710327abs.htm",
+	author = "Jaeheon Jeong and Michel Dubois",
+	pages = "327-"}
+
+@inproceedings{DBLP:conf/hpca/Jimenez03,
+	title = "Reconsidering Complex Branch Predictors.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710043abs.htm",
+	author = "Daniel A. Jim{\'e}nez",
+	pages = "43-52"}
+
+@inproceedings{DBLP:conf/hpca/JosephBM03,
+	title = "Control Techniques to Eliminate Voltage Emergencies in High
+               Performance Processors.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710079abs.htm",
+	author = "Russ Joseph and David Brooks and Margaret Martonosi",
+	pages = "79-90"}
+
+@inproceedings{DBLP:conf/hpca/KarlssonMHW03,
+	title = "Memory System Behavior of Java-Based Middleware.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710217abs.htm",
+	author = "Martin Karlsson and Kevin E. Moore and Erik Hagersten and David A. Wood",
+	pages = "217-228"}
+
+@inproceedings{DBLP:conf/hpca/KhailanyDRKOT03,
+	title = "Exploring the VLSI Scalability of Stream Processors.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710153abs.htm",
+	author = "Brucek Khailany and William J. Dally and Scott Rixner and Ujval J. Kapasi and John D. Owens and Brian Towles",
+	pages = "153-164"}
+
+@inproceedings{DBLP:conf/hpca/KimYDYD03,
+	title = "Performance Enhancement Techniques for InfiniBand? Architecture.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710253abs.htm",
+	author = "Eun Jung Kim and Ki Hwan Yum and Chita R. Das and Mazin S. Yousif and Jos{\'e} Duato",
+	pages = "253-"}
+
+@inproceedings{DBLP:conf/hpca/Kogge03,
+	title = "The State of State.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710266.pdf",
+	author = "Peter M. Kogge",
+	pages = "266-"}
+
+@inproceedings{DBLP:conf/hpca/Kronstadt03,
+	title = "Beyond Performance: Some (Other) Challenges for Systems
+               Design.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710125.pdf",
+	author = "Eric Kronstadt",
+	pages = "125-"}
+
+@inproceedings{DBLP:conf/hpca/LiBCVR03,
+	title = "Deterministic Clock Gating for Microprocessor Power Reduction.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710113abs.htm",
+	author = "Hai Li and Swarup Bhunia and Yiran Chen and T. N. Vijaykumar and Kaushik Roy",
+	pages = "113-"}
+
+@inproceedings{DBLP:conf/hpca/MemikRM03,
+	title = "Just Say No: Benefits of Early Cache Miss Determinatio.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710307abs.htm",
+	author = "Gokhan Memik and Glenn Reinman and William H. Mangione-Smith",
+	pages = "307-316"}
+
+@inproceedings{DBLP:conf/hpca/MutluSWP03,
+	title = "Runahead Execution: An Alternative to Very Large Instruction
+               Windows for Out-of-Order Processors.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710129abs.htm",
+	author = "Onur Mutlu and Jared Stark and Chris Wilkerson and Yale N. Patt",
+	pages = "129-140"}
+
+@inproceedings{DBLP:conf/hpca/NagarajaKBMN03,
+	title = "Evaluating the Impact of Communication Architecture on the
+               Performability of Cluster-Based Services.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710229abs.htm",
+	author = "Kiran Nagaraja and Neeraj Krishnan and Ricardo Bianchini and Richard P. Martin and Thu D. Nguyen",
+	pages = "229-240"}
+
+@inproceedings{DBLP:conf/hpca/NarayanasamySSCV03,
+	title = "Catching Accurate Profiles in Hardwar.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710269abs.htm",
+	author = "Satish Narayanasamy and Timothy Sherwood and Suleyman Sair and Brad Calder and George Varghese",
+	pages = "269-280"}
+
+@inproceedings{DBLP:conf/hpca/RadovicH03,
+	title = "Hierarchical Backoff Locks for Nonuniform Communication
+               Architectures.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710241abs.htm",
+	author = "Zoran Radovic and Erik Hagersten",
+	pages = "241-252"}
+
+@inproceedings{DBLP:conf/hpca/RedstoneEL03,
+	title = "Mini-Threads: Increasing TLP on Small-Scale SMT Processors.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710019abs.htm",
+	author = "Joshua Redstone and Susan J. Eggers and Henry M. Levy",
+	pages = "19-30"}
+
+@inproceedings{DBLP:conf/hpca/SakamotoKIAUMK03,
+	title = "Microarchitecture and Performance Analysis of a SPARC-V9
+               Microprocessor for Enterprise Server Systems.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710141abs.htm",
+	author = "Mariko Sakamoto and Akira Katsuno and Aiichiro Inoue and Takeo Asakawa and Haruhiko Ueno and Kuniki Morita and Yasunori Kimura",
+	pages = "141-152"}
+
+@inproceedings{DBLP:conf/hpca/ShangPJ03,
+	title = "Dynamic Voltage Scaling with Links for Power Optimization
+               of Interconnection Networks.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710091abs.htm",
+	author = "Li Shang and Li-Shiuan Peh and Niraj K. Jha",
+	pages = "91-102"}
+
+@inproceedings{DBLP:conf/hpca/SimonCF03,
+	title = "Incorporating Predicate Information into Branch Predictors.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710053abs.htm",
+	author = "Beth Simon and Brad Calder and Jeanne Ferrante",
+	pages = "53-64"}
+
+@inproceedings{DBLP:conf/hpca/SlechtaCFFMQSPL03,
+	title = "Dynamic Optimization of Micro-Operations.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710165abs.htm",
+	author = "Brian Slechta and David Crowe and Brian Fahs and Michael Fertig and Gregory A. Muthler and Justin Quek and Francesco Spadini and Sanjay J. Patel and Steven Lumetta",
+	pages = "165-"}
+
+@inproceedings{DBLP:conf/hpca/TaylorLAA03,
+	title = "Scalar Operand Networks: On-Chip Interconnect for ILP in
+               Partitioned Architecture.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710341abs.htm",
+	author = "Michael Bedford Taylor and Walter Lee and Saman P. Amarasinghe and Anant Agarwal",
+	pages = "341-353"}
+
+@inproceedings{DBLP:conf/hpca/TerechkoTGEC03,
+	title = "Inter-Cluster Communication Models for Clustered VLIW Processors.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710354abs.htm",
+	author = "Andrei Terechko and Erwan Le Thenaff and Manish Garg and Jos T. J. van Eijndhoven and Henk Corporaal",
+	pages = "354-364"}
+
+@inproceedings{DBLP:conf/hpca/YiLH03,
+	title = "A Statistically Rigorous Approach for Improving Simulation
+               Methodology.",
+	ee = "http://computer.org/proceedings/hpca/1871/18710281abs.htm",
+	author = "Joshua J. Yi and David J. Lilja and Douglas M. Hawkins",
+	pages = "281-"}
+
+@default year = 2001
+
+@inproceedings{DBLP:conf/hpca/AbaliFSPS01,
+	title = "Performance of Hardware Compressed Main Memory.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190073abs.htm",
+	author = "B{\"u}lent Abali and Hubertus Franke and Xiaowei Shen and Dan E. Poff and T. Basil Smith",
+	pages = "73-"}
+
+@inproceedings{DBLP:conf/hpca/AcacioGGD01,
+	title = "A New Scalable Directory Architecture for Large-Scale Multiprocessors.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190097abs.htm",
+	author = "Manuel E. Acacio and Jos{\'e} Gonz{\'a}lez and Jos{\'e} M. Garc\'{\i}a and Jos{\'e} Duato",
+	pages = "97-106"}
+
+@inproceedings{DBLP:conf/hpca/AnnavaramPD01,
+	title = "Call Graph Prefetching for Database Applications.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190281abs.htm",
+	author = "Murali Annavaram and Jignesh M. Patel and Edward S. Davidson",
+	pages = "281-"}
+
+@inproceedings{DBLP:conf/hpca/BrooksM01,
+	title = "Dynamic Thermal Management for High-Performance Microprocessors.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190171abs.htm",
+	author = "David Brooks and Margaret Martonosi",
+	pages = "171-"}
+
+@inproceedings{DBLP:conf/hpca/CainRML01,
+	title = "An Architectural Evaluation of Java TPC-W.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190229abs.htm",
+	author = "Harold W. Cain and Ravi Rajwar and Morris Marden and Mikko H. Lipasti",
+	pages = "229-240"}
+
+@inproceedings{DBLP:conf/hpca/CorbalEV01,
+	title = "DLP + TLP Processors for the Next Generation of Media Workloads.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190219abs.htm",
+	author = "Jes{\'u}s Corbal and Roger Espasa and Mateo Valero",
+	pages = "219-228"}
+
+@inproceedings{DBLP:conf/hpca/DelaluzKVSI01,
+	title = "DRAM Energy Management Using Software and Hardware Directed
+               Power Mode Control.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190159abs.htm",
+	author = "Victor Delaluz and Mahmut T. Kandemir and Narayanan Vijaykrishnan and Anand Sivasubramaniam and Mary Jane Irwin",
+	pages = "159-170"}
+
+@inproceedings{DBLP:conf/hpca/FangZCHM01,
+	title = "Reevaluating Online Superpage Promotion with Hardware Support.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190063abs.htm",
+	author = "Zhen Fang and Lixin Zhang and John B. Carter and Wilson C. Hsieh and Sally A. McKee",
+	pages = "63-72"}
+
+@inproceedings{DBLP:conf/hpca/GoemanVB01,
+	title = "Differential FCM: Increasing Value Prediction Accuracy by
+               Improving Table Usage Efficiency.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190207abs.htm",
+	author = "Bart Goeman and Hans Vandierendonck and Koenraad De Bosschere",
+	pages = "207-"}
+
+@inproceedings{DBLP:conf/hpca/HeathKPN01,
+	title = "Quantifying the Impact of Architectural Scaling on Communication.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190267abs.htm",
+	author = "Taliver Heath and Samian Kaur and Richard P. Martin and Thu D. Nguyen",
+	pages = "267-"}
+
+@inproceedings{DBLP:conf/hpca/JimenezL01,
+	title = "Dynamic Branch Prediction with Perceptrons.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190197abs.htm",
+	author = "Daniel A. Jim{\'e}nez and Calvin Lin",
+	pages = "197-206"}
+
+@inproceedings{DBLP:conf/hpca/KailasEA01,
+	title = "CARS: A New Code Generation Framework for Clustered ILP
+               Processors.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190133abs.htm",
+	author = "Krishnan Kailas and Kemal Ebcioglu and Ashok K. Agrawala",
+	pages = "133-"}
+
+@inproceedings{DBLP:conf/hpca/LeeSNT01,
+	title = "Stack Value File: Custom Microarchitecture for the Stack.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190005abs.htm",
+	author = "Hsien-Hsin S. Lee and Mikhail Smelyanskiy and Chris J. Newburn and Gary S. Tyson",
+	pages = "5-14"}
+
+@inproceedings{DBLP:conf/hpca/LeeST01,
+	title = "Automatically Mapping Code on an Intelligent Memory Architecture.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190121abs.htm",
+	author = "Jaejin Lee and Yan Solihin and Josep Torrellas",
+	pages = "121-"}
+
+@inproceedings{DBLP:conf/hpca/LinRB01,
+	title = "Reducing DRAM Latencies with an Integrated Memory Hierarchy
+               Design.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190301abs.htm",
+	author = "Wi-Fen Lin and Steven K. Reinhardt and Doug Burger",
+	pages = "301-312"}
+
+@inproceedings{DBLP:conf/hpca/MichaudS01,
+	title = "Data-Flow Prescheduling for Large Instruction Windows in
+               Out-of-Order Processors.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190027abs.htm",
+	author = "Pierre Michaud and Andr{\'e} Seznec",
+	pages = "27-36"}
+
+@inproceedings{DBLP:conf/hpca/MoshovosMFC01,
+	title = "JETTY: Filtering Snoops for Reduced Energy Consumption in
+               SMP Servers.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190085abs.htm",
+	author = "Andreas Moshovos and Gokhan Memik and Babak Falsafi and Alok N. Choudhary",
+	pages = "85-96"}
+
+@inproceedings{DBLP:conf/hpca/PehD01,
+	title = "A Delay Model and Speculative Architecture for Pipelined
+               Routers.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190255abs.htm",
+	author = "Li-Shiuan Peh and William J. Dally",
+	pages = "255-266"}
+
+@inproceedings{DBLP:conf/hpca/QiuD01,
+	title = "Towards Virtually-Addressed Memory Hierarchies.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190051abs.htm",
+	author = "Xiaogang Qiu and Michel Dubois",
+	pages = "51-62"}
+
+@inproceedings{DBLP:conf/hpca/RothS01,
+	title = "Speculative Data-Driven Multithreading.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190037abs.htm",
+	author = "Amir Roth and Gurindar S. Sohi",
+	pages = "37-"}
+
+@inproceedings{DBLP:conf/hpca/SrinivasanDTCP01,
+	title = "Branch History Guided Instruction Prefetching.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190291abs.htm",
+	author = "Viji Srinivasan and Edward S. Davidson and Gary S. Tyson and Mark J. Charney and Thomas R. Puzak",
+	pages = "291-300"}
+
+@inproceedings{DBLP:conf/hpca/ThottethodiRM01,
+	title = "Self-Tuned Congestion Control for Multiprocessor Networks.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190107abs.htm",
+	author = "Mithuna Thottethodi and Alvin R. Lebeck and Shubhendu S. Mukherjee",
+	pages = "107-"}
+
+@inproceedings{DBLP:conf/hpca/TuneLTC01,
+	title = "Dynamic Prediction of Critical Path Instructions.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190185abs.htm",
+	author = "Eric Tune and Dongning Liang and Dean M. Tullsen and Brad Calder",
+	pages = "185-196"}
+
+@inproceedings{DBLP:conf/hpca/WangWKRS01,
+	title = "Register Renaming and Scheduling for Dynamic Execution of
+               Predicated Code.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190015abs.htm",
+	author = "Perry H. Wang and Hong Wang and Ralph-Michael Kling and Kalpana Ramakrishnan and John Paul Shen",
+	pages = "15-26"}
+
+@inproceedings{DBLP:conf/hpca/YangPFRV01,
+	title = "An Integrated Circuit/Architecture Approach to Reducing
+               Leakage in Deep-Submicron High-Performance I-Caches.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190147abs.htm",
+	author = "Se-Hyun Yang and Michael D. Powell and Babak Falsafi and Kaushik Roy and T. N. Vijaykumar",
+	pages = "147-158"}
+
+@inproceedings{DBLP:conf/hpca/ZillesS01,
+	title = "A Programmable Co-Processor for Profiling.",
+	ee = "http://computer.org/proceedings/hpca/1019/10190241abs.htm",
+	author = "Craig B. Zilles and Gurindar S. Sohi",
+	pages = "241-"}
+
+@default year = 2000
+
+@inproceedings{DBLP:conf/hpca/BarrosoGNV00,
+	title = "Impact of Chip-Level Integration on Performance of OLTP
+               Workloads.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500003abs.htm",
+	author = "Luiz Andr{\'e} Barroso and Kourosh Gharachorloo and Andreas Nowatzyk and Ben Verghese",
+	pages = "3-14"}
+
+@inproceedings{DBLP:conf/hpca/BehrPS00,
+	title = "PowerMANNA: A Parallel Architecture Based on the PowerPC
+               MPC620.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500277abs.htm",
+	author = "Peter M. Behr and S. Pletner and Angela C. Sodan",
+	pages = "277-286"}
+
+@inproceedings{DBLP:conf/hpca/BoschSSRH00,
+	title = "Performance Analysis and Visualization of Parallel Systems
+               Using SimOS and Rivet: A Case Study.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500360abs.htm",
+	author = "Robert Bosch and Chris Stolte and Gordon Stoll and Mendel Rosenblum and Pat Hanrahan",
+	pages = "360-"}
+
+@inproceedings{DBLP:conf/hpca/BurnsG00,
+	title = "Quantifying the SMT Layout Overhead-Does SMT Pull Its Weight?",
+	ee = "http://computer.org/proceedings/hpca/0550/05500109abs.htm",
+	author = "James Burns and Jean-Luc Gaudiot",
+	pages = "109-120"}
+
+@inproceedings{DBLP:conf/hpca/CanalPG00,
+	title = "Dynamic Cluster Assignment Mechanisms.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500133abs.htm",
+	author = "Ramon Canal and Joan-Manuel Parcerisa and Antonio Gonz{\'a}lez",
+	pages = "133-"}
+
+@inproceedings{DBLP:conf/hpca/CappelloRE00,
+	title = "Investigating the Performance of Two Programming Models
+               for Clusters of SMP PCs.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500349abs.htm",
+	author = "Franck Cappello and Olivier Richard and Daniel Etiemble",
+	pages = "349-359"}
+
+@inproceedings{DBLP:conf/hpca/CasadoBQSD00,
+	title = "Performance Evaluation of Dynamic Reconfiguration in High-Speed
+               Local Area Networks.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500085abs.htm",
+	author = "Rafael Casado and Aurelio Berm{\'u}dez and Francisco J. Quiles and Jos{\'e} L. S{\'a}nchez and Jos{\'e} Duato",
+	pages = "85-96"}
+
+@inproceedings{DBLP:conf/hpca/ChatterjeeS00,
+	title = "Cache-Efficient Matrix Transposition.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500195abs.htm",
+	author = "Siddhartha Chatterjee and Sandeep Sen",
+	pages = "195-205"}
+
+@inproceedings{DBLP:conf/hpca/ChiuehP00,
+	title = "Cache Memory Design for Network Processors.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500409abs.htm",
+	author = "Tzi-cker Chiueh and Prashant Pradhan",
+	pages = "409-"}
+
+@inproceedings{DBLP:conf/hpca/FigueiredoF00,
+	title = "Impact of Heterogeneity on DSM Performance.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500026abs.htm",
+	author = "Renato J. O. Figueiredo and Jos{\'e} A. B. Fortes",
+	pages = "26-"}
+
+@inproceedings{DBLP:conf/hpca/HaungsSF00,
+	title = "Branch Transition Rate: A New Metric for Improved Branch
+               Classification Analysis.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500241abs.htm",
+	author = "Michael Haungs and Phil Sallee and Matthew K. Farrens",
+	pages = "241-250"}
+
+@inproceedings{DBLP:conf/hpca/HosomiKNH00,
+	title = "A DSM Architecture for a Parallel Computer Cenju-4.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500287abs.htm",
+	author = "Takeo Hosomi and Yasushi Kanoh and Masaaki Nakamura and Tetsuya Hirose",
+	pages = "287-"}
+
+@inproceedings{DBLP:conf/hpca/JimenezLF00,
+	title = "On the Performance of Hand vs. Automatically Optimized Numerical
+               Codes.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500183abs.htm",
+	author = "Marta Jim{\'e}nez and Jos{\'e} M. Llaber\'{\i}a and Agustin Fern{\'a}ndez",
+	pages = "183-194"}
+
+@inproceedings{DBLP:conf/hpca/JourdanRAEYR00,
+	title = "eXtended Block Cache.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500061abs.htm",
+	author = "St{\'e}phan Jourdan and Lihu Rappoport and Yoav Almog and Mattan Erez and Adi Yoaz and Ronny Ronen",
+	pages = "61-"}
+
+@inproceedings{DBLP:conf/hpca/KarlssonDS00,
+	title = "A Prefetching Technique for Irregular Accesses to Linked
+               Data Structures.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500206abs.htm",
+	author = "Magnus Karlsson and Fredrik Dahlgren and Per Stenstr{\"o}m",
+	pages = "206-217"}
+
+@inproceedings{DBLP:conf/hpca/KaxirasY00,
+	title = "Coherence Communication Prediction in Shared-Memory Multiprocessors.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500156abs.htm",
+	author = "Stefanos Kaxiras and Cliff Young",
+	pages = "156-167"}
+
+@inproceedings{DBLP:conf/hpca/LeeWY00,
+	title = "Decoupled Value Prediction on Trace Processors.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500231abs.htm",
+	author = "Sang Jeong Lee and Yuan Wang and Pen-Chung Yew",
+	pages = "231-240"}
+
+@inproceedings{DBLP:conf/hpca/LefurgyPM00,
+	title = "Reducing Code Size with Run-Time Decompression.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500218abs.htm",
+	author = "Charles Lefurgy and Eva Piccininni and Trevor N. Mudge",
+	pages = "218-"}
+
+@inproceedings{DBLP:conf/hpca/MathewMCD00,
+	title = "Design of a Parallel Vector Access Unit for SDRAM Memory
+               Systems.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500039abs.htm",
+	author = "Binu K. Mathew and Sally A. McKee and John B. Carter and Al Davis",
+	pages = "39-48"}
+
+@inproceedings{DBLP:conf/hpca/MoshovosS00,
+	title = "Memory Dependence Speculation Tradeoffs in Centralized,
+               Continuous-Window Superscalar Processors.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500301abs.htm",
+	author = "Andreas Moshovos and Gurindar S. Sohi",
+	pages = "301-312"}
+
+@inproceedings{DBLP:conf/hpca/MowryR00,
+	title = "Software-Controlled Multithreading Using Informing Memory
+               Operations.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500121abs.htm",
+	author = "Todd C. Mowry and Sherwyn R. Ramkissoon",
+	pages = "121-132"}
+
+@inproceedings{DBLP:conf/hpca/NandaNMJ00,
+	title = "High-Throughput Coherence Controllers.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500145abs.htm",
+	author = "Ashwini K. Nanda and Anthony-Trung Nguyen and Maged M. Michael and Douglas Joseph",
+	pages = "145-155"}
+
+@inproceedings{DBLP:conf/hpca/NeefsVB00,
+	title = "A Technique for High Bandwidth and Deterministic Low Latency
+               Load/Store Accesses to Multiple Cache Banks.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500313abs.htm",
+	author = "Henk Neefs and Hans Vandierendonck and Koenraad De Bosschere",
+	pages = "313-324"}
+
+@inproceedings{DBLP:conf/hpca/PatilE00,
+	title = "Combining Static and Dynamic Branch Prediction to Reduce
+               Destructive Aliasing.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500251abs.htm",
+	author = "Harish Patil and Joel S. Emer",
+	pages = "251-"}
+
+@inproceedings{DBLP:conf/hpca/PehD00,
+	title = "Flit-Reservation Flow Control.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500073abs.htm",
+	author = "Li-Shiuan Peh and William J. Dally",
+	pages = "73-84"}
+
+@inproceedings{DBLP:conf/hpca/RadhakrishnanVJS00,
+	title = "Architectural Issues in Java Runtime Systems.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500387abs.htm",
+	author = "Ramesh Radhakrishnan and Narayanan Vijaykrishnan and Lizy Kurian John and Anand Sivasubramaniam",
+	pages = "387-398"}
+
+@inproceedings{DBLP:conf/hpca/RajwarKG00,
+	title = "Improving the Throughput of Synchronization by Insertion
+               of Delays.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500168abs.htm",
+	author = "Ravi Rajwar and Alain K{\"a}gi and James R. Goodman",
+	pages = "168-"}
+
+@inproceedings{DBLP:conf/hpca/RamirezLV00,
+	title = "Trace Cache Redundancy: Red {\&} Blue Traces.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500325abs.htm",
+	author = "Alex Ram\'{\i}rez and Josep-Lluis Larriba-Pey and Mateo Valero",
+	pages = "325-"}
+
+@inproceedings{DBLP:conf/hpca/RixnerDKMKO00,
+	title = "Register Organization for Media Processing.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500375abs.htm",
+	author = "Scott Rixner and William J. Dally and Brucek Khailany and Peter R. Mattson and Ujval J. Kapasi and John D. Owens",
+	pages = "375-386"}
+
+@inproceedings{DBLP:conf/hpca/StetsDKRS00,
+	title = "The Effect of Network Total Order, Broadcast, and Remote-Write
+               Capability on Network-Based Shared Memory Computing.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500265abs.htm",
+	author = "Robert Stets and Sandhya Dwarkadas and Leonidas I. Kontothanassis and Umit Rencuzogullari and Michael L. Scott",
+	pages = "265-276"}
+
+@inproceedings{DBLP:conf/hpca/TorrellasYN00,
+	title = "Toward a Cost-Effective DSM Organization That Exploits Processor-Memory
+               Integration.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500015abs.htm",
+	author = "Josep Torrellas and Liuxi Yang and Anthony-Trung Nguyen",
+	pages = "15-25"}
+
+@inproceedings{DBLP:conf/hpca/UysalAS00,
+	title = "Evaluation of Active Disks for Decision Support Databases.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500337abs.htm",
+	author = "Mustafa Uysal and Anurag Acharya and Joel H. Saltz",
+	pages = "337-348"}
+
+@inproceedings{DBLP:conf/hpca/VartanianBD00,
+	title = "The Best Distribution for a Parallel OpenGL 3D Engine with
+               Texture Caches.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500399abs.htm",
+	author = "Alexis Vartanian and Jean-Luc B{\'e}chennec and Nathalie Drach-Temam",
+	pages = "399-408"}
+
+@inproceedings{DBLP:conf/hpca/WongB00,
+	title = "Modified LRU Policies for Improving Second-Level Cache Behavior.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500049abs.htm",
+	author = "Wayne A. Wong and Jean-Loup Baer",
+	pages = "49-60"}
+
+@inproceedings{DBLP:conf/hpca/YumVDS00,
+	title = "Investigating QoS Support for Traffic Mixes with the MediaWorm
+               Router.",
+	ee = "http://computer.org/proceedings/hpca/0550/05500097abs.htm",
+	author = "Ki Hwan Yum and Aniruddha S. Vaidya and Chita R. Das and Anand Sivasubramaniam",
+	pages = "97-"}
+
+@default year = 1999
+
+@inproceedings{DBLP:conf/hpca/BilasJZS99,
+	title = "Limits to the Performance of Software Shared Memory: A Layered
+               Approach.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040193abs.htm",
+	author = "Angelos Bilas and Dongming Jiang and Yuanyuan Zhou and Jaswinder Pal Singh",
+	pages = "193-"}
+
+@inproceedings{DBLP:conf/hpca/BrooksM99,
+	title = "Dynamically Exploiting Narrow Width Operands to Improve
+               Processor Power and Performance.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040013abs.htm",
+	author = "David Brooks and Margaret Martonosi",
+	pages = "13-22"}
+
+@inproceedings{DBLP:conf/hpca/CarterHSSZBDKKPST99,
+	title = "Impulse: Building a Smarter Memory Controller.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040070abs.htm",
+	author = "John B. Carter and Wilson C. Hsieh and Leigh Stoller and Mark R. Swanson and Lixin Zhang and Erik Brunvand and Al Davis and Chen-Chi Kuo and Ravindra Kuramkote and Michael Parker and Lambert Schaelicke and Terry Tateyama",
+	pages = "70-79"}
+
+@inproceedings{DBLP:conf/hpca/ClappNT99,
+	title = "Second Workshop on Computer Architecture Evaluation Using
+               Commercial Workloads.",
+	ee = "http://dlib.computer.org/conferen/hpca/0004/pdf/00040322.pdf",
+	author = "Russell M. Clapp and Ashwini K. Nanda and Josep Torrellas",
+	pages = 322}
+
+@inproceedings{DBLP:conf/hpca/CondonHPS99,
+	title = "Using Lamport Clocks to Reason about Relaxed Memory Models.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040270abs.htm",
+	author = "Anne Condon and Mark D. Hill and Manoj Plakal and Daniel J. Sorin",
+	pages = "270-278"}
+
+@inproceedings{DBLP:conf/hpca/CoxLHZ99,
+	title = "A Performance Comparison of Homeless and Home-Based Lazy
+               Release Consistency Protocols in Software Shared Memory.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040279abs.htm",
+	author = "Alan L. Cox and Eyal de Lara and Y. Charlie Hu and Willy Zwaenepoel",
+	pages = "279-283"}
+
+@inproceedings{DBLP:conf/hpca/DuatoYCLQ99,
+	title = "MMR: A High-Performance Multimedia Router - Architecture
+               and Design Trade-Offs.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040300abs.htm",
+	author = "Jos{\'e} Duato and Sudhakar Yalamanchili and Blanca Caminero and Damon S. Love and Francisco J. Quiles",
+	pages = "300-309"}
+
+@inproceedings{DBLP:conf/hpca/DurbhakulaPA99,
+	title = "Improving the Accuracy vs. Speed Tradeoff for Simulating
+               Shared-Memory Multiprocessors with ILP Processors.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040023abs.htm",
+	author = "Murthy Durbhakula and Vijay S. Pai and Sarita V. Adve",
+	pages = "23-32"}
+
+@inproceedings{DBLP:conf/hpca/DwarkadasGKSSS99,
+	title = "Comparative Evaluation of Fine- and Coarse-Grain Approaches
+               for Software Distributed Shared Memory.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040260abs.htm",
+	author = "Sandhya Dwarkadas and Kourosh Gharachorloo and Leonidas I. Kontothanassis and Daniel J. Scales and Michael L. Scott and Robert Stets",
+	pages = "260-269"}
+
+@inproceedings{DBLP:conf/hpca/FalsafiW99,
+	title = "Parallel Dispatch Queue: A Queue-Based Programming Abstraction
+               to Parallelize Fine-Grain Communication Protocols.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040182abs.htm",
+	author = "Babak Falsafi and David A. Wood",
+	pages = "182-192"}
+
+@inproceedings{DBLP:conf/hpca/FernandesLT99,
+	title = "Distributed Modulo Scheduling.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040130abs.htm",
+	author = "Marcio Merino Fernandes and Josep Llosa and Nigel P. Topham",
+	pages = "130-134"}
+
+@inproceedings{DBLP:conf/hpca/GatlinC99,
+	title = "Memory Hierarchy Considerations for Fast Transpose and Bit-Reversals.",
+	ee = "http://dlib.computer.org/conferen/hpca/0004/pdf/00040033.pdf",
+	author = "Kang Su Gatlin and Larry Carter",
+	pages = "33-"}
+
+@inproceedings{DBLP:conf/hpca/HagerstenK99,
+	title = "WildFire: A Scalable Path for SMPs.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040172abs.htm",
+	author = "Erik Hagersten and Michael Koster",
+	pages = "172-181"}
+
+@inproceedings{DBLP:conf/hpca/HilyS99,
+	title = "Out-of-Order Execution may not be Cost-Effective on Processors
+               Featuring Simultaneous Multithreading.",
+	ee = "http://dlib.computer.org/conferen/hpca/0004/pdf/00040064.pdf",
+	author = "S{\'e}bastien Hily and Andr{\'e} Seznec",
+	pages = "64-"}
+
+@inproceedings{DBLP:conf/hpca/HongMSKAW99,
+	title = "Access Order and Effective Bandwidth for Streams on a Direct
+               Rambus Memory.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040080abs.htm",
+	author = "Sung I. Hong and Sally A. McKee and Maximo H. Salinas and Robert H. Klenke and James H. Aylor and William A. Wulf",
+	pages = "80-89"}
+
+@inproceedings{DBLP:conf/hpca/HuYN99,
+	title = "RAPID-Cache - A Reliable and Inexpensive Write Cache for
+               Disk I/O Systems.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040204abs.htm",
+	author = "Yiming Hu and Qing Yang and Tycho Nightingale",
+	pages = "204-213"}
+
+@inproceedings{DBLP:conf/hpca/HuangL99,
+	title = "Exploiting Basic Block Value Locality with Block Reuse.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040106abs.htm",
+	author = "Jian Huang and David J. Lilja",
+	pages = "106-114"}
+
+@inproceedings{DBLP:conf/hpca/InoueKM99,
+	title = "Dynamically Variable Line-Size Cache Exploiting High On-Chip
+               Memory Bandwidth of Merged DRAM/Logic LSIs.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040218abs.htm",
+	author = "Koji Inoue and Koji Kai and Kazuaki Murakami",
+	pages = "218-222"}
+
+@inproceedings{DBLP:conf/hpca/IyerB99,
+	title = "Switch Cache: A Framework for Improving the Remote Memory
+               Access Latency of CC-NUMA Multiprocessors.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040152abs.htm",
+	author = "Ravi R. Iyer and Laxmi N. Bhuyan",
+	pages = "152-160"}
+
+@inproceedings{DBLP:conf/hpca/JacobsonS99,
+	title = "Instruction Pre-Processing in Trace Processors.",
+	ee = "http://dlib.computer.org/conferen/hpca/0004/pdf/00040125.pdf",
+	author = "Quinn Jacobson and James E. Smith",
+	pages = "125-129"}
+
+@inproceedings{DBLP:conf/hpca/KaeliJ99,
+	title = "Fifth Annual Workshop on Computer Education.",
+	ee = "http://dlib.computer.org/conferen/hpca/0004/pdf/00040320.pdf",
+	author = "David R. Kaeli and Bruce Jacobs",
+	pages = 320}
+
+@inproceedings{DBLP:conf/hpca/KaxirasG99,
+	title = "Improving CC-NUMA Performance Using Instruction-Based Prediction.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040161abs.htm",
+	author = "Stefanos Kaxiras and James R. Goodman",
+	pages = "161-"}
+
+@inproceedings{DBLP:conf/hpca/KergommeauxDG99,
+	title = "Parallel Computing for Irregular Applications.",
+	ee = "http://dlib.computer.org/conferen/hpca/0004/pdf/00040321.pdf",
+	author = "Jacques Chassin de Kergommeaux and Yves Denneulin and Thierry Gautier",
+	pages = 321}
+
+@inproceedings{DBLP:conf/hpca/KuoCK99,
+	title = "MP-LOCKs: Replacing H/W Synchronization Primitives with
+               Message Passing.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040284abs.htm",
+	author = "Chen-Chi Kuo and John B. Carter and Ravindra Kuramkote",
+	pages = "284-"}
+
+@inproceedings{DBLP:conf/hpca/MartinezLD99,
+	title = "Impact of Buffer Size on the Efficiency of Deadlock Detection.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040315abs.htm",
+	author = "Juan Miguel Mart\'{\i}nez and Pedro L{\'o}pez and Jos{\'e} Duato",
+	pages = "315-"}
+
+@inproceedings{DBLP:conf/hpca/MichaelN99,
+	title = "Design and Performance of Directory Caches for Scalable
+               Shared Memory Multiprocessors.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040142abs.htm",
+	author = "Maged M. Michael and Ashwini K. Nanda",
+	pages = "142-151"}
+
+@inproceedings{DBLP:conf/hpca/NakraGS99,
+	title = "Global Context-Based Value Prediction.",
+	ee = "http://dlib.computer.org/conferen/hpca/0004/pdf/00040004.pdf",
+	author = "Tarun Nakra and Rajiv Gupta and Mary Lou Soffa",
+	pages = "4-12"}
+
+@inproceedings{DBLP:conf/hpca/ParcerisaG99,
+	title = "The Synergy of Multithreading and Access/Execute Decoupling.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040059abs.htm",
+	author = "Joan-Manuel Parcerisa and Antonio Gonz{\'a}lez",
+	pages = "59-63"}
+
+@inproceedings{DBLP:conf/hpca/PirvuBN99,
+	title = "The Impact of Link Arbitration on Switch Performance.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040228abs.htm",
+	author = "Marius Pirvu and Laxmi N. Bhuyan and Nan Ni",
+	pages = "228-235"}
+
+@inproceedings{DBLP:conf/hpca/PlaatBH99,
+	title = "Sensitivity of Parallel Applications to Large Differences
+               in Bandwidth and Latency in Two-Layer Interconnects.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040244abs.htm",
+	author = "Aske Plaat and Henri E. Bal and Rutger F. H. Hofman",
+	pages = "244-"}
+
+@inproceedings{DBLP:conf/hpca/RheeL99,
+	title = "A Scalable Cache Coherent Scheme Exploiting Wormhole Routing
+               Networks.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040223abs.htm",
+	author = "Yunseok Rhee and Joonwon Lee",
+	pages = "223-"}
+
+@inproceedings{DBLP:conf/hpca/RotenbergJS99,
+	title = "A Study of Control Independence in Superscalar Processors.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040115abs.htm",
+	author = "Eric Rotenberg and Quinn Jacobson and James E. Smith",
+	pages = "115-124"}
+
+@inproceedings{DBLP:conf/hpca/SchwarzSB99,
+	title = "Permutation Development Data Layout (PDDL).",
+	ee = "http://dlib.computer.org/conferen/hpca/0004/pdf/00040214.pdf",
+	author = "Thomas J. E. Schwarz and Jesse Steinberg and Walter A. Burkhard",
+	pages = "214-217"}
+
+@inproceedings{DBLP:conf/hpca/SivasubramaniamL99,
+	title = "Third Workshop on Communication, Architecture, and Applications
+               for Network-Based Parallel Computing (CANPC '99).",
+	ee = "http://dlib.computer.org/conferen/hpca/0004/pdf/00040320.pdf",
+	author = "Anand Sivasubramaniam and Mario Lauria",
+	pages = 320}
+
+@inproceedings{DBLP:conf/hpca/SohnPKKY99,
+	title = "Communication Studies of Single-Threaded and Multithreaded
+               Distributed-Memory Multiprocessors.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040310abs.htm",
+	author = "Andrew Sohn and Yunheung Paek and Jui-Yuan Ku and Yuetsu Kodama and Yoshinori Yamaguchi",
+	pages = "310-314"}
+
+@inproceedings{DBLP:conf/hpca/TanakaMH99,
+	title = "Lightweight Hardware Distributed Shared Memory Supported
+               by Generalized Combining.",
+	ee = "http://dlib.computer.org/conferen/hpca/0004/pdf/00040090.pdf",
+	author = "Kiyofumi Tanaka and Takashi Matsumoto and Kei Hiraki",
+	pages = "90-"}
+
+@inproceedings{DBLP:conf/hpca/TullsenG99,
+	title = "Multithreaded Execution Architecture and Compilation.",
+	ee = "http://dlib.computer.org/conferen/hpca/0004/pdf/00040321.pdf",
+	author = "Dean M. Tullsen and Guang R. Gao",
+	pages = 321}
+
+@inproceedings{DBLP:conf/hpca/TullsenLEL99,
+	title = "Supporting Fine-Grained Synchronization on a Simultaneous
+               Multithreading Processor.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040054abs.htm",
+	author = "Dean M. Tullsen and Jack L. Lo and Susan J. Eggers and Henry M. Levy",
+	pages = "54-58"}
+
+@inproceedings{DBLP:conf/hpca/VaidyaSD99,
+	title = "LAPSES: A Recipe for High Performance Adaptive Router Design.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040236abs.htm",
+	author = "Aniruddha S. Vaidya and Anand Sivasubramaniam and Chita R. Das",
+	pages = "236-243"}
+
+@inproceedings{DBLP:conf/hpca/WallaceTC99,
+	title = "Instruction Recycling on a Multiple-Path Processor.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040044abs.htm",
+	author = "Steven Wallace and Dean M. Tullsen and Brad Calder",
+	pages = "44-53"}
+
+@inproceedings{DBLP:conf/hpca/YangW99,
+	title = "Efficient All-to-All Broadcast in All-Port Mesh and Torus
+               Networks.",
+	ee = "http://computer.org/proceedings/hpca/0004/00040290abs.htm",
+	author = "Yuanyuan Yang and Jianchao Wang",
+	pages = "290-299"}
+
+@inproceedings{DBLP:conf/hpca/ZhangRT99,
+	title = "Hardware for Speculative Parallelization of Partially-Parallel
+               Loops in DSM Multiprocessors.",
+	ee = "http://dlib.computer.org/conferen/hpca/0004/pdf/00040135.pdf",
+	author = "Ye Zhang and Lawrence Rauchwerger and Josep Torrellas",
+	pages = "135-"}
+
+@default year = 1998
+
+@inproceedings{DBLP:conf/hpca/AbramsonLPR98,
+	title = "FPGA Based Custom Computing Machines for Irregular Problems.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230324.pdf",
+	author = "David Abramson and Paul Logothetis and Adam Postula and Marcus Randall",
+	pages = "324-333"}
+
+@inproceedings{DBLP:conf/hpca/Arpaci-DusseauACHP98,
+	title = "The Architectural Costs of Streaming I/O: A Comparison of
+               Workstations, Clusters, and SMPs.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230090.pdf",
+	author = "Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau and David E. Culler and Joseph M. Hellerstein and David A. Patterson",
+	pages = "90-101"}
+
+@inproceedings{DBLP:conf/hpca/BasuT98,
+	title = "Enhancing Memory Use in Simple Coma: Multiplexed Simple
+               Coma.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230152.pdf",
+	author = "Sujoy Basu and Josep Torrellas",
+	pages = "152-161"}
+
+@inproceedings{DBLP:conf/hpca/Chen98,
+	title = "Supporting Highly-Speculative Execution via Adaptive Branch
+               Trees.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230185.pdf",
+	author = "Tien-Fu Chen",
+	pages = "185-194"}
+
+@inproceedings{DBLP:conf/hpca/ChongBDKA98,
+	title = "The Sensitivity of Communication Mechanisms to Bandwidth
+               and Latency.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230037.pdf",
+	author = "Frederic T. Chong and Rajeev Barua and Fredrik Dahlgren and John Kubiatowicz and Anant Agarwal",
+	pages = "37-46"}
+
+@inproceedings{DBLP:conf/hpca/EkanadhamLPS98,
+	title = "PRISM: An Integrated Architecture for Scalable Shared Memory.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230138.pdf",
+	author = "Kattamuri Ekanadham and Beng-Hong Lim and Pratap Pattnaik and Marc Snir",
+	pages = "140-151"}
+
+@inproceedings{DBLP:conf/hpca/GhoshC98,
+	title = "Communication Across Fault-Containment Firewalls on the
+               SGI Origin.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230277.pdf",
+	author = "Kaushik Ghosh and Allan J. Christie",
+	pages = "277-287"}
+
+@inproceedings{DBLP:conf/hpca/GonzalezGV98,
+	title = "Virtual-Physical Registers.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230175.pdf",
+	author = "Antonio Gonz{\'a}lez and Jos{\'e} Gonz{\'a}lez and Mateo Valero",
+	pages = "175-184"}
+
+@inproceedings{DBLP:conf/hpca/GopalVSS98,
+	title = "Speculative Versioning Cache.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230195.pdf",
+	author = "Sridhar Gopal and T. N. Vijaykumar and James E. Smith and Gurindar S. Sohi",
+	pages = "195-205"}
+
+@inproceedings{DBLP:conf/hpca/HavankiBC98,
+	title = "Treegion Scheduling for Wide Issue Processors.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230266.pdf",
+	author = "William A. Havanki and Sanjeev Banerjia and Thomas M. Conte",
+	pages = "266-276"}
+
+@inproceedings{DBLP:conf/hpca/JimenezLF98,
+	title = "Performance Evaluation of Tiling for the Register Level.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230254.pdf",
+	author = "Marta Jim{\'e}nez and Jos{\'e} M. Llaber\'{\i}a and Agustin Fern{\'a}ndez",
+	pages = "254-265"}
+
+@inproceedings{DBLP:conf/hpca/KalamatianosK98,
+	title = "Temporal-Based Procedure Reordering for Improved Instruction
+               Cache Performance.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230244.pdf",
+	author = "John Kalamatianos and David R. Kaeli",
+	pages = "244-253"}
+
+@inproceedings{DBLP:conf/hpca/KatevenisSS98,
+	title = "Credit-Flow-Controlled ATM for MP Interconnection: The ATLAS
+               I Single-Chip ATM Switch.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230047.pdf",
+	author = "Manolis Katevenis and Dimitrios N. Serpanos and Emmanuel Spyridakis",
+	pages = "47-56"}
+
+@inproceedings{DBLP:conf/hpca/LangendoenHB98,
+	title = "Challenging Applications on Fast Networks.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230068.pdf",
+	author = "Koen Langendoen and Rutger F. H. Hofman and Henri E. Bal",
+	pages = "68-79"}
+
+@inproceedings{DBLP:conf/hpca/LopezMD98,
+	title = "A Very Efficient Distributed Deadlock Detection Mechanism
+               for Wormhole Networks.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230057.pdf",
+	author = "Pedro L{\'o}pez and Juan Miguel Mart\'{\i}nez and Jos{\'e} Duato",
+	pages = "57-"}
+
+@inproceedings{DBLP:conf/hpca/MackenzieKFLLAK98,
+	title = "Exploiting Two-Case Delivery for Fast Protected Messaging.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230231.pdf",
+	author = "Kenneth Mackenzie and John Kubiatowicz and Matthew Frank and Walter Lee and Victor Lee and Anant Agarwal and M. Frans Kaashoek",
+	pages = "231-242"}
+
+@inproceedings{DBLP:conf/hpca/MillerJL98,
+	title = "Non-Stalling CounterFlow Architecture.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230334.pdf",
+	author = "Michael F. Miller and Kenneth J. Janik and Shih-Lien Lu",
+	pages = "334-341"}
+
+@inproceedings{DBLP:conf/hpca/MogaD98,
+	title = "The Effectiveness of SRAM Network Caches in Clustered DSMs.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230103.pdf",
+	author = "Adrian Moga and Michel Dubois",
+	pages = "103-112"}
+
+@inproceedings{DBLP:conf/hpca/MonneratB98,
+	title = "Efficiently Adapting to Sharing Patterns in Software DSMs.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230289.pdf",
+	author = "Luiz Rodolpho Monnerat and Ricardo Bianchini",
+	pages = "289-299"}
+
+@inproceedings{DBLP:conf/hpca/MowyCL98,
+	title = "Comparative Evaluation of Latency Tolerance Techniques for
+               Software Distributed Shared Memory.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230300.pdf",
+	author = "Todd C. Mowy and Charles Q. C. Chan and Adley K. W. Lo",
+	pages = "300-311"}
+
+@inproceedings{DBLP:conf/hpca/MukherjeeH98,
+	title = "The Impact of Data Transfer and Buffering Alternatives on
+               Network Interface Design.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230207.pdf",
+	author = "Shubhendu S. Mukherjee and Mark D. Hill",
+	pages = "207-218"}
+
+@inproceedings{DBLP:conf/hpca/HallaronSG98,
+	title = "Architectural Implications of a Family of Irregular Applications.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230080.pdf",
+	author = "David R. O'Hallaron and Jonathan Richard Shewchuk and Thomas R. Gross",
+	pages = "80-89"}
+
+@inproceedings{DBLP:conf/hpca/SamantaBIS98,
+	title = "Home-Based SVM Protocols for SMP Clusters: Design and Performance.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230113.pdf",
+	author = "Rudrajit Samanta and Angelos Bilas and Liviu Iftode and Jaswinder Pal Singh",
+	pages = "113-124"}
+
+@inproceedings{DBLP:conf/hpca/ScalesGA98,
+	title = "Fine-Grain Software Distributed Shared Memory on SMP Clusters.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230125.pdf",
+	author = "Daniel J. Scales and Kourosh Gharachorloo and Anshu Aggarwal",
+	pages = "125-136"}
+
+@inproceedings{DBLP:conf/hpca/SchoinasH98,
+	title = "Address Translation Mechanisms In Network Interfaces.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230219.pdf",
+	author = "Ioannis Schoinas and Mark D. Hill",
+	pages = "219-230"}
+
+@inproceedings{DBLP:conf/hpca/SpeightB98,
+	title = "Using Multicast and Multithreading to Reduce Communication
+               in Software DSM Systems.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230312.pdf",
+	author = "Evan Speight and John K. Bennett",
+	pages = "312-"}
+
+@inproceedings{DBLP:conf/hpca/SteffanM98,
+	title = "The Potential for Using Thread-Level Data Speculation to
+               Facilitate Automatic Parallelization.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230002.pdf",
+	author = "J. Gregory Steffan and Todd C. Mowry",
+	pages = "2-13"}
+
+@inproceedings{DBLP:conf/hpca/TsaiJNY98,
+	title = "Performance Study of a Concurrent Multithreaded Processor.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230024.pdf",
+	author = "Jenn-Yuan Tsai and Zhenzhen Jiang and Eric Ness and Pen-Chung Yew",
+	pages = "24-35"}
+
+@inproceedings{DBLP:conf/hpca/TubellaG98,
+	title = "Control Speculation in Multithreaded Processors through
+               Dynamic Loop Detection.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230014.pdf",
+	author = "Jordi Tubella and Antonio Gonz{\'a}lez",
+	pages = "14-23"}
+
+@inproceedings{DBLP:conf/hpca/VengroffG98,
+	title = "Partial Sampling with Reverse State Reconstruction: A New
+               Technique for Branch Predictor Performance Estimation.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230342.pdf",
+	author = "Darren Erik Vengroff and Guang R. Gao",
+	pages = "342-351"}
+
+@inproceedings{DBLP:conf/hpca/ZhangRT98,
+	title = "Hardware for Speculative Run-Time Parallelization in Distributed
+               Shared-Memory Multiprocessors.",
+	ee = "http://dlib.computer.org/conferen/hpca/8323/pdf/83230162.pdf",
+	author = "Ye Zhang and Lawrence Rauchwerger and Josep Torrellas",
+	pages = "162-173"}
+
+@default year = 1997
+
+@inproceedings{DBLP:conf/hpca/Abdel-ShafiHAA97,
+	title = "An Evaluation of Fine-Grain Producer-Initiated Communication
+               in Cache-Coherent Multiprocessors.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640204abs.htm",
+	author = "Hazim Abdel-Shafi and Jonathan Hall and Sarita V. Adve and Vikram S. Adve",
+	pages = "204-"}
+
+@inproceedings{DBLP:conf/hpca/AmzaCDZ97,
+	title = "Software DSM Protocols that Adapt between Single Writer
+               and Multiple Writer.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640261abs.htm",
+	author = "Cristiana Amza and Alan L. Cox and Sandhya Dwarkadas and Willy Zwaenepoel",
+	pages = "261-271"}
+
+@inproceedings{DBLP:conf/hpca/AugustCGH97,
+	title = "Architectural Support for Compiler-Synthesized Dynamic Branch
+               Prediction Strategies: Rationale and Initial Results.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640084abs.htm",
+	author = "David I. August and Daniel A. Connors and John C. Gyllenhaal and Wen-mei W. Hwu",
+	pages = "84-93"}
+
+@inproceedings{DBLP:conf/hpca/BhandarkarD97,
+	title = "Performance Characterization of the Pentium(r) Pro Processor.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640288abs.htm",
+	author = "Dileep Bhandarkar and Jason Ding",
+	pages = "288-299"}
+
+@inproceedings{DBLP:conf/hpca/ChodnekarSVSD97,
+	title = "Towards a Communication Characterization Methodology for
+               Parallel Applications.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640310abs.htm",
+	author = "Sucheta Chodnekar and Viji Srinivasan and Aniruddha S. Vaidya and Anand Sivasubramaniam and Chita R. Das",
+	pages = "310-"}
+
+@inproceedings{DBLP:conf/hpca/DahlgrenL97,
+	title = "Reducing the Replacement Overhead in Bus-Based COMA Multiprocessors.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640014abs.htm",
+	author = "Fredrik Dahlgren and Anders Landin",
+	pages = "14-23"}
+
+@inproceedings{DBLP:conf/hpca/DaoYD97,
+	title = "Architectural Support for Reducing Communication Overhead
+               in Multiprocessor Interconnection Networks.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640343abs.htm",
+	author = "Binh Vien Dao and Sudhakar Yalamanchili and Jos{\'e} Duato",
+	pages = "343-352"}
+
+@inproceedings{DBLP:conf/hpca/EspasaV97,
+	title = "Multithreaded Vector Architectures.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640237abs.htm",
+	author = "Roger Espasa and Mateo Valero",
+	pages = "237-"}
+
+@inproceedings{DBLP:conf/hpca/FalsafiW97,
+	title = "Scheduling Communication on a SMP Node Parallel Machine.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640128abs.htm",
+	author = "Babak Falsafi and David A. Wood",
+	pages = "128-"}
+
+@inproceedings{DBLP:conf/hpca/HwangWW97,
+	title = "Evaluating MPI Collective Communication on the SP2, T3D,
+               and Paragon Multicomputers.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640106abs.htm",
+	author = "Kai Hwang and Choming Wang and Cho-Li Wang",
+	pages = "106-115"}
+
+@inproceedings{DBLP:conf/hpca/JacobM97,
+	title = "Software-Managed Address Translation.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640156abs.htm",
+	author = "Bruce L. Jacob and Trevor N. Mudge",
+	pages = "156-167"}
+
+@inproceedings{DBLP:conf/hpca/JacobsonBSS97,
+	title = "Control Flow Speculation in Multiscalar Processors.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640218abs.htm",
+	author = "Quinn Jacobson and Steve Bennett and Nikhil Sharma and James E. Smith",
+	pages = "218-229"}
+
+@inproceedings{DBLP:conf/hpca/JanikLM97,
+	title = "Advances of the Counterflow Pipeline Microarchitecture.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640230abs.htm",
+	author = "Kenneth J. Janik and Shih-Lien Lu and Michael F. Miller",
+	pages = "230-236"}
+
+@inproceedings{DBLP:conf/hpca/KesavanBP97,
+	title = "Multicast on Irregular Switch-Based Networks with Wormhole
+               Routing.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640048abs.htm",
+	author = "Ram Kesavan and Kiran Bondalapati and Dhabaleswar K. Panda",
+	pages = "48-57"}
+
+@inproceedings{DBLP:conf/hpca/LimHPS97,
+	title = "Message Proxies for Efficient, Protected Communication on
+               SMP Clusters.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640116abs.htm",
+	author = "Beng-Hong Lim and Philip Heidelberger and Pratap Pattnaik and Marc Snir",
+	pages = "116-127"}
+
+@inproceedings{DBLP:conf/hpca/MarkatosK97,
+	title = "User-Level DMA without Operating System Kernel Modification.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640322abs.htm",
+	author = "Evangelos P. Markatos and Manolis Katevenis",
+	pages = "322-331"}
+
+@inproceedings{DBLP:conf/hpca/NoonburgS97,
+	title = "A Framework for Statistical Modeling of Superscalar Processor
+               Performance.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640298abs.htm",
+	author = "Derek B. Noonburg and John Paul Shen",
+	pages = "298-309"}
+
+@inproceedings{DBLP:conf/hpca/PaiRA97,
+	title = "The Impact of Instruction-Level Parallelism on Multiprocessor
+               Performance and Simulation Methodology.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640072abs.htm",
+	author = "Vijay S. Pai and Parthasarathy Ranganathan and Sarita V. Adve",
+	pages = "72-83"}
+
+@inproceedings{DBLP:conf/hpca/QinB97,
+	title = "On the Use and Performance of Explicit Communication Primitives
+               in Cache-Coherent Multiprocessor Systems.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640182abs.htm",
+	author = "Xiaohan Qin and Jean-Loup Baer",
+	pages = "182-193"}
+
+@inproceedings{DBLP:conf/hpca/RavindranS97,
+	title = "A Performance Comparison of Hierarchical Ring- and Mesh-Connected
+               Multiprocessor Networks.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640058abs.htm",
+	author = "Govindan Ravindran and Michael Stumm",
+	pages = "58-"}
+
+@inproceedings{DBLP:conf/hpca/Sivasubramaniam97,
+	title = "Reducing the Communication Overhead of Dynamic Applications
+               on Shared Memory Multiprocessors.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640194abs.htm",
+	author = "Anand Sivasubramaniam",
+	pages = "194-203"}
+
+@inproceedings{DBLP:conf/hpca/SkadronC97,
+	title = "Design Issues and Tradeoffs for Write Buffers.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640144abs.htm",
+	author = "Kevin Skadron and Douglas W. Clark",
+	pages = "144-155"}
+
+@inproceedings{DBLP:conf/hpca/StrickerG97,
+	title = "Global Address Space, Non-Uniform Bandwidth: A Memory System
+               Performance Characterization of Parallel Systems.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640168abs.htm",
+	author = "Thomas Stricker and Thomas R. Gross",
+	pages = "168-"}
+
+@inproceedings{DBLP:conf/hpca/TrancosoLZT97,
+	title = "The Memory Performance of DSS Commercial Workloads in Shared-Memory
+               Multiprocessors.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640250abs.htm",
+	author = "Pedro Trancoso and Josep-Lluis Larriba-Pey and Zheng Zhang and Josep Torrellas",
+	pages = "250-260"}
+
+@inproceedings{DBLP:conf/hpca/WallaceB97,
+	title = "Multiple Branch and Block Prediction.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640094abs.htm",
+	author = "Steven Wallace and Nader Bagherzadeh",
+	pages = "94-"}
+
+@inproceedings{DBLP:conf/hpca/WelshBE97,
+	title = "ATM and Fast Ethernet Network Interfaces for User-Level
+               Communication.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640332abs.htm",
+	author = "Matt Welsh and Anindya Basu and Thorsten von Eicken",
+	pages = "332-342"}
+
+@inproceedings{DBLP:conf/hpca/WolfeFDF97,
+	title = "Datapath Design for a VLIW Video Signal Processor.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640024abs.htm",
+	author = "Andrew Wolfe and Jason Fritts and Santanu Dutta and Edil S. Tavares Fernandes",
+	pages = "24-"}
+
+@inproceedings{DBLP:conf/hpca/YangT97,
+	title = "Speeding up the Memory Hierarchy in Flat COMA Multiprocessors.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640004abs.htm",
+	author = "Liuxi Yang and Josep Torrellas",
+	pages = "4-13"}
+
+@inproceedings{DBLP:conf/hpca/YuanMG97,
+	title = "Distributed Path Reservation Algorithms for Multiplexed
+               All-Optical Interconnection Networks.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640038abs.htm",
+	author = "Xin Yuan and Rami G. Melhem and Rajiv Gupta",
+	pages = "38-47"}
+
+@inproceedings{DBLP:conf/hpca/ZhangT97,
+	title = "Reducing Remote Conflict Misses: NUMA with Remote Cache
+               versus COMA.",
+	ee = "http://computer.org/proceedings/hpca/7764/77640272abs.htm",
+	author = "Zheng Zhang and Josep Torrellas",
+	pages = "272-"}
+
+@default year = 1996
+
+@inproceedings{DBLP:conf/hpca/AdveCDRZ96,
+	title = "A Comparison of Entry Consistency and Lazy Release Consistency
+               Implementations.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370026abs.htm",
+	author = "Sarita V. Adve and Alan L. Cox and Sandhya Dwarkadas and Ramakrishnan Rajamony and Willy Zwaenepoel",
+	pages = "26-37"}
+
+@inproceedings{DBLP:conf/hpca/AlexanderK96,
+	title = "Distributed Prefetch-buffer/Cache Design for High-Performance
+               Memory Systems.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370254abs.htm",
+	author = "Thomas Alexander and Gershon Kedem",
+	pages = "254-263"}
+
+@inproceedings{DBLP:conf/hpca/AndersonK96,
+	title = "Two Adaptive Hybrid Cache Coherency Protocols.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370303abs.htm",
+	author = "Craig Anderson and Anna R. Karlin",
+	pages = "303-313"}
+
+@inproceedings{DBLP:conf/hpca/BlumrichDFL96,
+	title = "Protected, User-Level DMA for the SHRIMP Network Interface.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370154abs.htm",
+	author = "Matthias A. Blumrich and Cezary Dubnicki and Edward W. Felten and Kai Li",
+	pages = "154-165"}
+
+@inproceedings{DBLP:conf/hpca/CalderGE96,
+	title = "Predictive Sequential Associative Cache.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370244abs.htm",
+	author = "Brad Calder and Dirk Grunwald and Joel S. Emer",
+	pages = "244-253"}
+
+@inproceedings{DBLP:conf/hpca/ChalasaniB96,
+	title = "Fault-Tolerance with Multimodule Routers.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370201abs.htm",
+	author = "Suresh Chalasani and Rajendra V. Boppana",
+	pages = "201-210"}
+
+@inproceedings{DBLP:conf/hpca/ChenL96,
+	title = "Shuffle-Ring: Overcoming the Increasing Degree of Hypercube.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370130abs.htm",
+	author = "Guihai Chen and Francis C. M. Lau",
+	pages = "130-138"}
+
+@inproceedings{DBLP:conf/hpca/CvetanovicB96,
+	title = "Performance Characterization of the Alpha 21164 Microprocessor
+               Using TP and SPEC Workloads.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370270abs.htm",
+	author = "Zarka Cvetanovic and Dileep Bhandarkar",
+	pages = "270-280"}
+
+@inproceedings{DBLP:conf/hpca/ElGindySSSS96,
+	title = "RMB - A Reconfigurable Multiple Bus Network.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370108abs.htm",
+	author = "Hossam A. ElGindy and Arun K. Somani and Heiko Schr{\"o}der and Hartmut Schmeck and Andrew Spray",
+	pages = "108-117"}
+
+@inproceedings{DBLP:conf/hpca/EspasaV96,
+	title = "Decoupled Vector Architectures.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370281abs.htm",
+	author = "Roger Espasa and Mateo Valero",
+	pages = "281-290"}
+
+@inproceedings{DBLP:conf/hpca/FarkasJC96,
+	title = "Register File Design Considerations in Dynamically Scheduled
+               Processors.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370040abs.htm",
+	author = "Keith I. Farkas and Norman P. Jouppi and Paul Chow",
+	pages = "40-51"}
+
+@inproceedings{DBLP:conf/hpca/GovindarajanAG96,
+	title = "Co-Scheduling Hardware and Software Pipelines.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370052abs.htm",
+	author = "Ramaswamy Govindarajan and Erik R. Altman and Guang R. Gao",
+	pages = "52-61"}
+
+@inproceedings{DBLP:conf/hpca/GulatiB96,
+	title = "Performance Study of a Multithreaded Superscalar Microprocessor.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370291abs.htm",
+	author = "Manu Gulati and Nader Bagherzadeh",
+	pages = "291-301"}
+
+@inproceedings{DBLP:conf/hpca/IftodeDFL96,
+	title = "Improving Release-Consistent Shared Virtual Memory Using
+               Automatic Update.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370014abs.htm",
+	author = "Liviu Iftode and Cezary Dubnicki and Edward W. Felten and Kai Li",
+	pages = "14-25"}
+
+@inproceedings{DBLP:conf/hpca/IyengarTB96,
+	title = "Representative Traces for Processor Models with Infinite
+               Cache.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370062abs.htm",
+	author = "Vijay S. Iyengar and Louise Trevillyan and Pradip Bose",
+	pages = "62-72"}
+
+@inproceedings{DBLP:conf/hpca/KarlssonS96,
+	title = "Performance Evaluation of a Cluster-Based Multiprocessor
+               Built from ATM Switches and Bus-Based Multiprocessor Servers.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370004abs.htm",
+	author = "Magnus Karlsson and Per Stenstr{\"o}m",
+	pages = "4-13"}
+
+@inproceedings{DBLP:conf/hpca/KontothanassisS96,
+	title = "Using Memory-Mapped Network Interfaces to Improve the Performance
+               of Distributed Shared Memory.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370166abs.htm",
+	author = "Leonidas I. Kontothanassis and Michael L. Scott",
+	pages = "166-177"}
+
+@inproceedings{DBLP:conf/hpca/LandinD96,
+	title = "Bus-Based COMA - Reducing Traffic in Shared-Bus Multiprocessors.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370095abs.htm",
+	author = "Anders Landin and Fredrik Dahlgren",
+	pages = "95-105"}
+
+@inproceedings{DBLP:conf/hpca/Libeskind-HadasWH96,
+	title = "Fault-Tolerant Multicast Routing in the Mesh with No Virtual
+               Channels.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370180abs.htm",
+	author = "Ran Libeskind-Hadas and Kevin Watkins and Thomas Hehre",
+	pages = "180-190"}
+
+@inproceedings{DBLP:conf/hpca/MarkatosK96,
+	title = "Telegraphos: High-Performance Networking for Parallel Processing
+               on Workstation Clusters.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370144abs.htm",
+	author = "Evangelos P. Markatos and Manolis Katevenis",
+	pages = "144-153"}
+
+@inproceedings{DBLP:conf/hpca/MullerSW96,
+	title = "Multitasking and Multithreading on a Multiprocessor with
+               Virtual Shared Memory.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370212abs.htm",
+	author = "Henk L. Muller and Paul W. A. Stallard and David H. D. Warren",
+	pages = "212-221"}
+
+@inproceedings{DBLP:conf/hpca/NayfehOS96,
+	title = "The Impact of Shared-Cache Clustering in Small-Scale Shared-Memory
+               Multiprocessors.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370074abs.htm",
+	author = "Basem A. Nayfeh and Kunle Olukotun and Jaswinder Pal Singh",
+	pages = "74-84"}
+
+@inproceedings{DBLP:conf/hpca/ParkA96,
+	title = "A Topology-Independent Generic Methodology for Deadlock-Free
+               Wormhole Routing.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370191abs.htm",
+	author = "Hyunmin Park and Dharma P. Agrawal",
+	pages = "191-200"}
+
+@inproceedings{DBLP:conf/hpca/QiaoM96,
+	title = "On the Multiplexing Degree Required to Embed Permutations
+               in a Class of Networks with Direct Interconnects.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370118abs.htm",
+	author = "Chunming Qiao and Yousong Mei",
+	pages = "118-129"}
+
+@inproceedings{DBLP:conf/hpca/RaynaudZT96,
+	title = "Distance-Adaptive Update Protocols for Scalable Shared-Memory
+               Multiprocessors.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370323abs.htm",
+	author = "Alain Raynaud and Zheng Zhang and Josep Torrellas",
+	pages = "323-334"}
+
+@inproceedings{DBLP:conf/hpca/ReisnerW96,
+	title = "A Cache Coherency Protocol for Optically Connected Parallel
+               Computer Systems.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370222abs.htm",
+	author = "John A. Reisner and Tom S. Wailes",
+	pages = "222-231"}
+
+@inproceedings{DBLP:conf/hpca/TakahashiTKS96,
+	title = "A Shared-Bus Control Mechanism and a Cache Coherence Protocol
+               for a High-Performance On-Chip Multiprocessor.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370314abs.htm",
+	author = "Masafumi Takahashi and Hiroyuki Takano and Emi Kaneko and Seigo Suzuki",
+	pages = "314-322"}
+
+@inproceedings{DBLP:conf/hpca/XiaT96,
+	title = "Improving the Data Cache Performance of Multiprocessor Operating
+               Systems.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370085abs.htm",
+	author = "Chun Xia and Josep Torrellas",
+	pages = "85-94"}
+
+@inproceedings{DBLP:conf/hpca/YangSD96,
+	title = "Parallel Intersecting Compressed Bit Vectors in a High Speed
+               Query Server for Processing Postal Addresses.",
+	ee = "http://computer.org/proceedings/hpca/7237/72370232abs.htm",
+	author = "Wen-jann Yang and Ramalingam Sridhar and Victor Demjanenko",
+	pages = "232-241"}
+
+@default year = 1995
+
+@inproceedings{DBLP:conf/hpca/AndersonB95,
+	title = "Two Techniques for Improving Performance on Bus-Based Multiprocessors.",
+	author = "Craig Anderson and Jean-Loup Baer",
+	pages = "264-275"}
+
+@inproceedings{DBLP:conf/hpca/BouraD95,
+	title = "Modeling Virtual Channel Flow Control in Hypercubes.",
+	author = "Younes M. Boura and Chita R. Das",
+	pages = "166-175"}
+
+@inproceedings{DBLP:conf/hpca/CappelloG95,
+	title = "Toward High Communication Performance through Compiled Communications
+               on a Circuit Switched Interconnection Network.",
+	author = "Franck Cappello and C{\'e}cile Germain",
+	pages = "44-53"}
+
+@inproceedings{DBLP:conf/hpca/CitronR95,
+	title = "Creating a Wider Bus Using Caching Techniques.",
+	author = "Daniel Citron and Larry Rudolph",
+	pages = "90-99"}
+
+@inproceedings{DBLP:conf/hpca/CunninghamA95,
+	title = "Fault-Tolerant Adaptive Routing for Two-Dimensional Meshes.",
+	author = "Chris M. Cunningham and Dimiter R. Avresky",
+	pages = "122-131"}
+
+@inproceedings{DBLP:conf/hpca/DahlgrenS95,
+	title = "Effectiveness of Hardware-Based Stride and Sequential Prefetching
+               in Shared-Memory Multiprocessors.",
+	author = "Fredrik Dahlgren and Per Stenstr{\"o}m",
+	pages = "68-77"}
+
+@inproceedings{DBLP:conf/hpca/FarkasJC95,
+	title = "How Useful Are Non-Blocking Loads, Stream Buffers and Speculative
+               Execution in Multiple Issue Processors?",
+	author = "Keith I. Farkas and Norman P. Jouppi and Paul Chow",
+	pages = "78-89"}
+
+@inproceedings{DBLP:conf/hpca/FiskeD95,
+	title = "Thread Prioritization: A Thread Scheduling Mechanism for
+               Multiple-Context Parallel Processors.",
+	author = "Stuart Fiske and William J. Dally",
+	pages = "210-221"}
+
+@inproceedings{DBLP:conf/hpca/GargS95,
+	title = "Architectural Support for Inter-Stream Communication in
+               a MSIMD System.",
+	author = "Vivek Garg and David E. Schimmel",
+	pages = "348-357"}
+
+@inproceedings{DBLP:conf/hpca/GovindarajanNL95,
+	title = "Design and Performance Evaluation of a Multithreaded Architecture.",
+	author = "Ramaswamy Govindarajan and Shashank S. Nemawarkar and Phillip LeNir",
+	pages = "298-307"}
+
+@inproceedings{DBLP:conf/hpca/HurSFOK95,
+	title = "Massively Parallel Array Processor for Logic, Fault, and
+               Design Error Simulation.",
+	author = "Youngmin Hur and Stephen A. Szygenda and E. Scott Fehr and Granville E. Ott and Sungho Kang",
+	pages = "340-347"}
+
+@inproceedings{DBLP:conf/hpca/JohnRHC95,
+	title = "Program Balance and Its Impact on High Performance RISC
+               Architectures.",
+	author = "Lizy Kurian John and Vinod Reddy and Paul T. Hulina and Lee D. Coraor",
+	pages = "370-379"}
+
+@inproceedings{DBLP:conf/hpca/KawanoKTA95,
+	title = "Fine-Grain Multi-Thread Processor Architecture for Massively
+               Parallel Processing.",
+	author = "Tetsuo Kawano and Shigeru Kusakabe and Rin-ichiro Taniguchi and Makoto Amamiya",
+	pages = "308-317"}
+
+@inproceedings{DBLP:conf/hpca/KimMJAJK95,
+	title = "U-Cache: A Cost-Effective Solution to the Synonym Problem.",
+	author = "Jesung Kim and Sang Lyul Min and Sanghoon Jeon and ByoungChul Ahn and Deog-Kyoon Jeong and Chong-Sang Kim",
+	pages = "243-252"}
+
+@inproceedings{DBLP:conf/hpca/KontothanassisS95,
+	title = "Software Cache Coherence for Large Scale Multiprocessors.",
+	author = "Leonidas I. Kontothanassis and Michael L. Scott",
+	pages = "286-295"}
+
+@inproceedings{DBLP:conf/hpca/Lee95,
+	title = "Memory Access Reordering in Vector Processors.",
+	author = "De-Lei Lee",
+	pages = "380-389"}
+
+@inproceedings{DBLP:conf/hpca/LiC95,
+	title = "The Effects of STEF in Finely Parallel Multithreaded Processors.",
+	author = "Yamin Li and Wanming Chu",
+	pages = "318-325"}
+
+@inproceedings{DBLP:conf/hpca/Libeskind-HadasB95,
+	title = "Origin-Based Fault-Tolerant routing in the Mesh.",
+	author = "Ran Libeskind-Hadas and Eli Brandt",
+	pages = "102-111"}
+
+@inproceedings{DBLP:conf/hpca/LlosaVA95,
+	title = "Non-Consistent Dual Register Files to Reduce Register Pressure.",
+	author = "Josep Llosa and Mateo Valero and Eduard Ayguad{\'e}",
+	pages = "22-31"}
+
+@inproceedings{DBLP:conf/hpca/McKeeW95,
+	title = "Access Ordering and Memory-Conscious Cache Utilization.",
+	author = "Sally A. McKee and William A. Wulf",
+	pages = "253-262"}
+
+@inproceedings{DBLP:conf/hpca/MichaelS95,
+	title = "Implementation of Atomic Primitives on Distributed Shared
+               Memory Multiprocessors.",
+	author = "Maged M. Michael and Michael L. Scott",
+	pages = "222-231"}
+
+@inproceedings{DBLP:conf/hpca/NuthD95,
+	title = "The Named-State Register File: Implementation and Performance.",
+	author = "Peter R. Nuth and William J. Dally",
+	pages = "4-13"}
+
+@inproceedings{DBLP:conf/hpca/Panda95,
+	title = "Fast Barrier Synchronization in Wormhole k-ary n-cube Networks
+               with Multidestination Worms.",
+	author = "Dhabaleswar K. Panda",
+	pages = "200-209"}
+
+@inproceedings{DBLP:conf/hpca/QiaoM95,
+	title = "Reducing Communication Latency with Path Multiplexing in
+               Optically Interconnected Multiprocessor Systems.",
+	author = "Chunming Qiao and Rami G. Melhem",
+	pages = "34-43"}
+
+@inproceedings{DBLP:conf/hpca/SastryR95,
+	title = "A VLSI Architecture for Computer the Tree-to-Tree Distance.",
+	author = "Raghu Sastry and N. Ranganathan",
+	pages = "330-339"}
+
+@inproceedings{DBLP:conf/hpca/SaulsburyWCL95,
+	title = "An Argument for Simple COMA.",
+	author = "Ashley Saulsbury and Tim Wilkinson and John B. Carter and Anders Landin",
+	pages = "276-285"}
+
+@inproceedings{DBLP:conf/hpca/Seznec95,
+	title = "DASC Cache.",
+	author = "Andr{\'e} Seznec",
+	pages = "134-143"}
+
+@inproceedings{DBLP:conf/hpca/SivasubramaniamSRV95,
+	title = "Abstracting Network Characteristics and Locality Properties
+               of Parallel Systems.",
+	author = "Anand Sivasubramaniam and Aman Singla and Umakishore Ramachandran and H. Venkateswaran",
+	pages = "54-63"}
+
+@inproceedings{DBLP:conf/hpca/SterlingSMG95,
+	title = "An Initial Evaluation of the Convex SPP-1000 for Earth and
+               Space Science Application.",
+	author = "Thomas L. Sterling and Daniel Savarese and Phillip Merkey and Jeffrey P. Gardner",
+	pages = "176-185"}
+
+@inproceedings{DBLP:conf/hpca/TemamD95,
+	title = "Software Assistance for Data Caches.",
+	author = "Olivier Temam and Nathalie Drach",
+	pages = "154-163"}
+
+@inproceedings{DBLP:conf/hpca/TheobaldHG95,
+	title = "A Design Frame for Hybrid Access Caches.",
+	author = "Kevin B. Theobald and Herbert H. J. Hum and Guang R. Gao",
+	pages = "144-153"}
+
+@inproceedings{DBLP:conf/hpca/TorrellasXD95,
+	title = "Optimizing Instruction Cache Performance for Operating System
+               Intensive Workloads.",
+	author = "Josep Torrellas and Chun Xia and Russell L. Daigle",
+	pages = "360-369"}
+
+@inproceedings{DBLP:conf/hpca/TreiberM95,
+	title = "Simulation Study of Cached RAID5 Designs.",
+	author = "Kent Treiber and Jai Menon",
+	pages = "186-197"}
+
+@inproceedings{DBLP:conf/hpca/UpadhyayVM95,
+	title = "Efficient and Balanced Adaptive Routing in Two-Dimensional
+               Meshes.",
+	author = "Jatin Upadhyay and Vara Varavithya and Prasant Mohapatra",
+	pages = "112-121"}
+
+@inproceedings{DBLP:conf/hpca/Weiss95,
+	title = "Implementing Register Interlocks in Parallel-Pipeline Multiple
+               Instruction Queue, Superscalar Processors.",
+	author = "Shlomo Weiss",
+	pages = "14-21"}
+
+@inproceedings{DBLP:conf/hpca/WesterholzHPH95,
+	title = "Improving Performance by Cache Driven Memory Management.",
+	author = "Karl Westerholz and Stephen Honal and Josef Planl and Christian Hafer",
+	pages = "234-242"}

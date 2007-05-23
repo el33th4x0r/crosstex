@@ -1,0 +1,999 @@
+@include conferences-cs
+
+@default bibsource = "DBLP, http://dblp.uni-trier.de"
+
+@default booktitle = pdis
+
+@default year = 1996
+
+@inproceedings{DBLP:conf/pdis/AlmeidaBCO96,
+	title = "Characterizing Reference Locality in the WWW.",
+	ee = "db/conf/pdis/AlmeidaBCO96.html",
+	author = "Virgilio Almeida and Azer Bestavros and Mark Crovella and Adriana de Oliveira",
+	pages = "92-103"}
+
+@inproceedings{DBLP:conf/pdis/AmsalegFTU96,
+	title = "Scrambling Query Plans to Cope With Unexpected Delays.",
+	ee = "db/conf/pdis/AmsalegFTU96.html",
+	author = "Laurent Amsaleg and Michael J. Franklin and Anthony Tomasic and Tolga Urhan",
+	pages = "208-219"}
+
+@inproceedings{DBLP:conf/pdis/BohannonPRSSS96,
+	title = "Distributed Multi-Level Recovery in Main-Memory Databases.",
+	ee = "db/conf/pdis/BohannonPRSSS96.html",
+	author = "Philip Bohannon and James Parker and Rajeev Rastogi and S. Seshadri and Abraham Silberschatz and S. Sudarshan",
+	pages = "44-55"}
+
+@inproceedings{DBLP:conf/pdis/CelisZ96,
+	title = "The Query Execution Engine in Tandem's new ServerWare SQL
+               Product.",
+	ee = "db/conf/pdis/CelisZ96.html",
+	author = "Pedro Celis and Hansj{\"o}rg Zeller",
+	pages = "289-291"}
+
+@inproceedings{DBLP:conf/pdis/ChenW96,
+	title = "Repairman Models for Replicated Data Management: A Case
+               Study.",
+	ee = "db/conf/pdis/ChenW96.html",
+	author = "Ing-Ray Chen and Ding-Chau Wang",
+	pages = "184-195"}
+
+@inproceedings{DBLP:conf/pdis/Cheng96,
+	title = "Parallel and Distributed Real-Time Systems (Abstract).",
+	ee = "db/conf/pdis/Cheng96.html",
+	author = "Albert Mo Kim Cheng",
+	pages = 3}
+
+@inproceedings{DBLP:conf/pdis/CheungHNFF96,
+	title = "A Fast Distributed Algorithm for Mining Association Rules.",
+	ee = "db/conf/pdis/CheungHNFF96.html",
+	author = "David Wai-Lok Cheung and Jiawei Han and Vincent T. Y. Ng and Ada Wai-Chee Fu and Yongjian Fu",
+	pages = "31-42"}
+
+@inproceedings{DBLP:conf/pdis/Garcia-MolinaGS96,
+	title = "dSCAM: Finding Document Copies Across Multiple Databases.",
+	ee = "db/conf/pdis/Garcia-MolinaGS96.html",
+	author = "Hector Garcia-Molina and Luis Gravano and Narayanan Shivakumar",
+	pages = "68-79"}
+
+@inproceedings{DBLP:conf/pdis/GukalOR96,
+	title = "Transient Versioning for Consistency and Concurrency in
+               Client-Server Systems.",
+	ee = "db/conf/pdis/GukalOR96.html",
+	author = "Sreenivas Gukal and Edward Omiecinski and Umakishore Ramachandran",
+	pages = "274-285"}
+
+@inproceedings{DBLP:conf/pdis/HyunS96,
+	title = "Parallel Query Processing Strategies for Object-oriented
+               Temporal Databases.",
+	ee = "db/conf/pdis/HyunS96.html",
+	author = "Soon J. Hyun and Stanley Y. W. Su",
+	pages = "232-245"}
+
+@inproceedings{DBLP:conf/pdis/KaufmannS96,
+	title = "Extending TP-Monitors for Intra-Transaction Parallelism.",
+	ee = "db/conf/pdis/KaufmannS96.html",
+	author = "Helmut Kaufmann and Hans-J{\"o}rg Schek",
+	pages = "250-261"}
+
+@inproceedings{DBLP:conf/pdis/LeeCY96,
+	title = "A New Storage and Retrieval Method to Support Editing Operations
+               in a Multi-Disk-based Video Server.",
+	ee = "db/conf/pdis/LeeCY96.html",
+	author = "Chien-I Lee and Ye-In Chang and Wei-Pang Yang",
+	pages = "132-141"}
+
+@inproceedings{DBLP:conf/pdis/LitwinN96,
+	title = "k-RP*S: A Scalable Distributed Data Structure for High-Performance
+               Multi-Attribute Access.",
+	ee = "db/conf/pdis/LitwinN96.html",
+	author = "Witold Litwin and Marie-Anne Neimat",
+	pages = "120-131"}
+
+@inproceedings{DBLP:conf/pdis/Lomet96,
+	title = "Replicated Indexes for Distributed Data.",
+	ee = "db/conf/pdis/Lomet96.html",
+	author = "David B. Lomet",
+	pages = "108-119"}
+
+@inproceedings{DBLP:conf/pdis/MendelzonMM96,
+	title = "Querying the World Wide Web.",
+	ee = "db/conf/pdis/MendelzonMM96.html",
+	author = "Alberto O. Mendelzon and George A. Mihaila and Tova Milo",
+	pages = "80-91"}
+
+@inproceedings{DBLP:conf/pdis/PapakonstantinouGH96,
+	title = "Capabilities-Based Query Rewriting in Mediator Systems.",
+	ee = "db/conf/pdis/PapakonstantinouGH96.html",
+	author = "Yannis Papakonstantinou and Ashish Gupta and Laura M. Haas",
+	pages = "170-181"}
+
+@inproceedings{DBLP:conf/pdis/QuassGMW96,
+	title = "Making Views Self-Maintainable for Data Warehousing.",
+	ee = "db/conf/pdis/QuassGMW96.html",
+	author = "Dallan Quass and Ashish Gupta and Inderpal Singh Mumick and Jennifer Widom",
+	pages = "158-169"}
+
+@inproceedings{DBLP:conf/pdis/RiegelM96,
+	title = "Performance of Recovery Time Improvement Algorithms for
+               Software RAIDs.",
+	ee = "db/conf/pdis/RiegelM96.html",
+	author = "Jeff Riegel and Jai Menon",
+	pages = "56-65"}
+
+@inproceedings{DBLP:conf/pdis/ShintaniK96,
+	title = "Hash Based Parallel Algorithms for Mining Association Rules.",
+	ee = "db/conf/pdis/ShintaniK96.html",
+	author = "Takahiko Shintani and Masaru Kitsuregawa",
+	pages = "19-30"}
+
+@inproceedings{DBLP:conf/pdis/ShiroshitaTY96,
+	title = "Reliable Data Distribution Middleware for Large-scale Massive
+               Data Replication.",
+	ee = "db/conf/pdis/ShiroshitaTY96.html",
+	author = "Teruji Shiroshita and Osamu Takahashi and Masahide Yamashita",
+	pages = "196-205"}
+
+@inproceedings{DBLP:conf/pdis/Stellwagen96,
+	title = "Data Warehousing and Parallel Data Systems (Abstract).",
+	ee = "db/conf/pdis/Stellwagen96.html",
+	author = "Rick Stellwagen",
+	pages = 2}
+
+@inproceedings{DBLP:conf/pdis/Sundaresan96,
+	title = "Data Warehousing Features in Informix OnLine XPS (Abstract).",
+	ee = "db/conf/pdis/Sundaresan96.html",
+	author = "Prakash Sundaresan",
+	pages = 288}
+
+@inproceedings{DBLP:conf/pdis/YenC96,
+	title = "An Efficient Approach to Discovering Knowledge from Large
+               Databases.",
+	ee = "db/conf/pdis/YenC96.html",
+	author = "Show-Jane Yen and Arbee L. P. Chen",
+	pages = "8-18"}
+
+@inproceedings{DBLP:conf/pdis/ZhouPL96,
+	title = "Adaptable, Efficient, and Modular Coordination of Distributed
+               Extended Transactions.",
+	ee = "db/conf/pdis/ZhouPL96.html",
+	author = "Tong Zhou and Calton Pu and Ling Liu",
+	pages = "262-273"}
+
+@inproceedings{DBLP:conf/pdis/ZhuL96,
+	title = "Developing Regression Cost Models for Multidatabase Systems.",
+	ee = "db/conf/pdis/ZhuL96.html",
+	author = "Qiang Zhu and Per-{\AA}ke Larson",
+	pages = "220-231"}
+
+@inproceedings{DBLP:conf/pdis/ZhugeGW96,
+	title = "The Strobe Algorithms for Multi-Source Warehouse Consistency.",
+	ee = "db/conf/pdis/ZhugeGW96.html",
+	author = "Yue Zhuge and Hector Garcia-Molina and Janet L. Wiener",
+	pages = "146-157"}
+
+@default year = 1994
+
+@inproceedings{DBLP:conf/pdis/AcharyaB94,
+	title = "Checkpointing Distributed Applications on Mobile Computers.",
+	ee = "db/conf/pdis/AcharyaB94.html",
+	author = "Arup Acharya and B. R. Badrinath",
+	pages = "73-80"}
+
+@inproceedings{DBLP:conf/pdis/Baker94,
+	title = "Do Current Distributed Computing Standards and Products
+               Meet the Needs of Distributed Data Management? (Panel Position
+               Paper).",
+	ee = "db/conf/pdis/Baker94.html",
+	author = "Se{\'a}n Baker",
+	pages = 37}
+
+@inproceedings{DBLP:conf/pdis/Baru94,
+	title = "Parallel Database Systems: The First Generation Products
+               (Abstract).",
+	ee = "db/conf/pdis/Baru94.html",
+	author = "Chaitanya K. Baru",
+	pages = 2}
+
+@inproceedings{DBLP:conf/pdis/BinaMJW94,
+	title = "Secure Access to Data Over the Internet.",
+	ee = "db/conf/pdis/BinaMJW94.html",
+	author = "Eric J. Bina and Robert Martin McCool and Vicki Ellen Jones and Marianne Winslett",
+	pages = "99-102"}
+
+@inproceedings{DBLP:conf/pdis/CastellanosKSG94,
+	title = "Interdatabase Existence Dependencies: A Metaclass Approach.",
+	ee = "db/conf/pdis/CastellanosKSG94.html",
+	author = "Mal{\'u} Castellanos and Thomas Kudrass and F{\`e}lix Saltor and Manuel Garc\'{\i}a-Solaco",
+	pages = "213-216"}
+
+@inproceedings{DBLP:conf/pdis/ChoiIKL94,
+	title = "An Efficient Parallel Join Algorithm Based On Hypercube-Partitioning.",
+	ee = "db/conf/pdis/ChoiIKL94.html",
+	author = "Hwan-Ik Choi and Byoung Mo Im and Myoung-Ho Kim and Yoon-Joon Lee",
+	pages = "50-57"}
+
+@inproceedings{DBLP:conf/pdis/ColbyMW94,
+	title = "Query Processing for Decision Support: The SQLmpp Solution.",
+	ee = "db/conf/pdis/ColbyMW94.html",
+	author = "Latha S. Colby and Nancy L. Martin and Robert M. Wehrmeister",
+	pages = "121-130"}
+
+@inproceedings{DBLP:conf/pdis/DeWittNSV94,
+	title = "ParSets for Parallelizing OODBMS Traversals: Implementation
+               and Performance.",
+	ee = "db/conf/pdis/DeWittNSV94.html",
+	author = "David J. DeWitt and Jeffrey F. Naughton and John C. Shafer and Shivakumar Venkataraman",
+	pages = "111-120"}
+
+@inproceedings{DBLP:conf/pdis/Deutsch94,
+	title = "The Evolution of Customer Middleware Requirements.",
+	ee = "db/conf/pdis/Deutsch94.html",
+	author = "Jon M. Deutsch",
+	pages = "262-263"}
+
+@inproceedings{DBLP:conf/pdis/DewanHMS94,
+	title = "Predictive Dynamic Load Balancing of Parallel Hash-Joins
+               Over Heterogeneous Processors in the Presence of Data Skew.",
+	ee = "db/conf/pdis/DewanHMS94.html",
+	author = "Hasanat M. Dewan and Mauricio A. Hern{\'a}ndez and Kui W. Mok and Salvatore J. Stolfo",
+	pages = "40-49"}
+
+@inproceedings{DBLP:conf/pdis/Gesmann94,
+	title = "Performance Evaluation of the Remote Cooperation System
+               in PRIMA.",
+	ee = "db/conf/pdis/Gesmann94.html",
+	author = "Michael Gesmann",
+	pages = "257-260"}
+
+@inproceedings{DBLP:conf/pdis/GravanoGT94,
+	title = "Precision and Recall of GlOSS Estimators for Database Discovery.",
+	ee = "db/conf/pdis/GravanoGT94.html",
+	author = "Luis Gravano and Hector Garcia-Molina and Anthony Tomasic",
+	pages = "103-106"}
+
+@inproceedings{DBLP:conf/pdis/GuptaL94,
+	title = "DataJoiner: A Practical Approach to Multi-Database Access.",
+	ee = "db/conf/pdis/GuptaL94.html",
+	author = "Piyush Gupta and Eileen Tien Lin",
+	pages = 264}
+
+@inproceedings{DBLP:conf/pdis/Holden94,
+	title = "Digital's DB Integrator: A Commercial Multi-Database Management
+               System.",
+	ee = "db/conf/pdis/Holden94.html",
+	author = "Russ Holden",
+	pages = "267-268"}
+
+@inproceedings{DBLP:conf/pdis/HuangSW94,
+	title = "Divergence Caching in Client Server Architectures.",
+	ee = "db/conf/pdis/HuangSW94.html",
+	author = "Yixiu Huang and Robert H. Sloan and Ouri Wolfson",
+	pages = "131-139"}
+
+@inproceedings{DBLP:conf/pdis/Imielinski94,
+	title = "Data Management in Mobile Computing (Abstract).",
+	ee = "db/conf/pdis/Imielinski94.html",
+	author = "Tomasz Imielinski",
+	pages = 3}
+
+@inproceedings{DBLP:conf/pdis/KellerB94,
+	title = "A Predicate-based Caching Scheme for Client-Server Database
+               Architectures.",
+	ee = "db/conf/pdis/KellerB94.html",
+	author = "Arthur M. Keller and Julie Basu",
+	pages = "229-238"}
+
+@inproceedings{DBLP:conf/pdis/KrishnaVP94,
+	title = "Location Management in Distributed Mobile Environments.",
+	ee = "db/conf/pdis/KrishnaVP94.html",
+	author = "P. Krishna and Nitin H. Vaidya and Dhiraj K. Pradhan",
+	pages = "81-88"}
+
+@inproceedings{DBLP:conf/pdis/LinnH94,
+	title = "A Proposed Globally Distributed Federated Database: A Practical
+               Performance Evaluation.",
+	ee = "db/conf/pdis/LinnH94.html",
+	author = "Craig Linn and Bruce R. Howarth",
+	pages = "203-212"}
+
+@inproceedings{DBLP:conf/pdis/Lomet94,
+	title = "Private Locking and Distributed Cache Management.",
+	ee = "db/conf/pdis/Lomet94.html",
+	author = "David B. Lomet",
+	pages = "151-159"}
+
+@inproceedings{DBLP:conf/pdis/MaheshwariL94,
+	title = "Fault-Tolerant Distributed Garbage Collection in a Client-Server
+               Object-Oriented Database.",
+	ee = "db/conf/pdis/MaheshwariL94.html",
+	author = "Umesh Maheshwari and Barbara Liskov",
+	pages = "239-248"}
+
+@inproceedings{DBLP:conf/pdis/MogiK94,
+	title = "Dynamic Parity Stripe Reorganizations for RAID5 Disk Arrays.",
+	ee = "db/conf/pdis/MogiK94.html",
+	author = "Kazuhiko Mogi and Masaru Kitsuregawa",
+	pages = "17-26"}
+
+@inproceedings{DBLP:conf/pdis/NeimatS94,
+	title = "Achieving Transaction Scaleup on Unix.",
+	ee = "db/conf/pdis/NeimatS94.html",
+	author = "Marie-Anne Neimat and Donovan A. Schneider",
+	pages = "249-252"}
+
+@inproceedings{DBLP:conf/pdis/OrjiS94,
+	title = "Write Twice Disk Buffering.",
+	ee = "db/conf/pdis/OrjiS94.html",
+	author = "Cyril U. Orji and Jon A. Solworth",
+	pages = "27-34"}
+
+@inproceedings{DBLP:conf/pdis/PattersonG94,
+	title = "Exposing I/O Concurrency with Informed Prefetching.",
+	ee = "db/conf/pdis/PattersonG94.html",
+	author = "R. Hugo Patterson and Garth A. Gibson",
+	pages = "7-16"}
+
+@inproceedings{DBLP:conf/pdis/PurimetlaSSRT94,
+	title = "Priority Assignment in Real-Time Active Databases.",
+	ee = "db/conf/pdis/PurimetlaSSRT94.html",
+	author = "Bhaskar Purimetla and Rajendran M. Sivasankaran and John A. Stankovic and Krithi Ramamritham and Donald F. Towsley",
+	pages = "176-184"}
+
+@inproceedings{DBLP:conf/pdis/RadekeS94,
+	title = "Framework for Object Migration in Federated Database Systems.",
+	ee = "db/conf/pdis/RadekeS94.html",
+	author = "Elke Radeke and Marc H. Scholl",
+	pages = "187-194"}
+
+@inproceedings{DBLP:conf/pdis/Riche94,
+	title = "Managing Network Resources for Efficient, Reliable Information
+               Systems.",
+	ee = "db/conf/pdis/Riche94.html",
+	author = "Naphtali Rishe",
+	pages = "223-226"}
+
+@inproceedings{DBLP:conf/pdis/Salzberg94,
+	title = "Timestamping After Commit.",
+	ee = "db/conf/pdis/Salzberg94.html",
+	author = "Betty Salzberg",
+	pages = "160-167"}
+
+@inproceedings{DBLP:conf/pdis/SchusterJKB94,
+	title = "A Client/Server Architecture for Distributed Workflow Management
+               Systems.",
+	ee = "db/conf/pdis/SchusterJKB94.html",
+	author = "Hans Schuster and Stefan Jablonski and Thomas Kirsche and Christoph Bussler",
+	pages = "253-256"}
+
+@inproceedings{DBLP:conf/pdis/Schwartz94,
+	title = "Charting the Web: Pro-Active Information Gathering Techniques
+               (Panel).",
+	ee = "db/conf/pdis/Schwartz94.html",
+	author = "Michael F. Schwartz",
+	pages = 271}
+
+@inproceedings{DBLP:conf/pdis/Smith94,
+	title = "PDIS and The Information Highway.",
+	ee = "db/conf/pdis/Smith94.html",
+	author = "Jonathan M. Smith",
+	pages = "220-222"}
+
+@inproceedings{DBLP:conf/pdis/Stonebraker94,
+	title = "Legacy Systems - the Achilles Heel of Downsizing (Panel).",
+	ee = "db/conf/pdis/Stonebraker94.html",
+	author = "Michael Stonebraker",
+	pages = 108}
+
+@inproceedings{DBLP:conf/pdis/StonebrakerDKLPSS94,
+	title = "An Economic Paradigm for Query Processing and Data Migration
+               in Mariposa.",
+	ee = "db/conf/pdis/StonebrakerDKLPSS94.html",
+	author = "Michael Stonebraker and Robert Devine and Marcel Kornacker and Witold Litwin and Avi Pfeffer and Adam Sah and Carl Staelin",
+	pages = "58-67"}
+
+@inproceedings{DBLP:conf/pdis/Templeton94,
+	title = "InterViso: A Data Integration Server.",
+	ee = "db/conf/pdis/Templeton94.html",
+	author = "Marjorie Templeton",
+	pages = "265-266"}
+
+@inproceedings{DBLP:conf/pdis/TerryDPSTW94,
+	title = "Session Guarantees for Weakly Consistent Replicated Data.",
+	ee = "db/conf/pdis/TerryDPSTW94.html",
+	author = "Douglas B. Terry and Alan J. Demers and Karin Petersen and Mike Spreitzer and Marvin Theimer and Brent B. Welch",
+	pages = "140-149"}
+
+@inproceedings{DBLP:conf/pdis/Thomas94,
+	title = "Do Current Distributed Computing Standards and Products
+               Meet the Needs of Distributed Data Management? (Panel).",
+	ee = "db/conf/pdis/Thomas94.html",
+	author = "Gomer Thomas",
+	pages = 36}
+
+@inproceedings{DBLP:conf/pdis/Thomasian94,
+	title = "Fractional Data Allocation Method for Distributed Databases.",
+	ee = "db/conf/pdis/Thomasian94.html",
+	author = "Alexander Thomasian",
+	pages = "168-175"}
+
+@inproceedings{DBLP:conf/pdis/TreschS94,
+	title = "A Classification of Multi-Database Languages.",
+	ee = "db/conf/pdis/TreschS94.html",
+	author = "Markus Tresch and Marc H. Scholl",
+	pages = "195-202"}
+
+@inproceedings{DBLP:conf/pdis/TulshibagwalePMTP94,
+	title = "The RISAM Storage Manager for Parallel Architectures.",
+	ee = "db/conf/pdis/TulshibagwalePMTP94.html",
+	author = "Atul Tulshibagwale and Sujal Parikh and Sameer Mahajan and Tushar Tambay and K. C. Pravin",
+	pages = "69-70"}
+
+@inproceedings{DBLP:conf/pdis/YanG94,
+	title = "Distributed Selective Dissemination of Information.",
+	ee = "db/conf/pdis/YanG94.html",
+	author = "Tak W. Yan and Hector Garcia-Molina",
+	pages = "89-98"}
+
+@default year = 1993
+
+@inproceedings{DBLP:conf/pdis/BanatreHMPR93,
+	title = "An Experience in the Design of a Reliable Object Based System
+               (Synopsis).",
+	ee = "db/conf/pdis/BanatreHMPR93.html",
+	author = "Michel Ban{\^a}tre and Pack Heng and Gilles Muller and Nadine Peyrouze and Bruno Rochat",
+	pages = "187-190"}
+
+@inproceedings{DBLP:conf/pdis/BergstenCL93,
+	title = "DBS3: A Parallel Data Base System for Shared Store (Synopsis).",
+	ee = "db/conf/pdis/BergstenCL93.html",
+	author = "Bj{\"o}rn Bergsten and Michel Couprie and M. Lopez",
+	pages = "260-262"}
+
+@inproceedings{DBLP:conf/pdis/BultzingsloewenKS93,
+	title = "PANDA: A Testbed for Investigating Strategies for Parallel
+               Query Execution (Synopsis).",
+	ee = "db/conf/pdis/BultzingsloewenKS93.html",
+	author = "G{\"u}nter von B{\"u}ltzingsloewen and Ralf Kramer and Michael Schryro",
+	pages = "103-105"}
+
+@inproceedings{DBLP:conf/pdis/ChambersC93,
+	title = "Parallel Features of NonStop SQL.",
+	ee = "db/conf/pdis/ChambersC93.html",
+	author = "Liz Chambers and Dave Cracknell",
+	pages = "69-70"}
+
+@inproceedings{DBLP:conf/pdis/Clay93,
+	title = "Informix Parallel Data Query (PDQ).",
+	ee = "db/conf/pdis/Clay93.html",
+	author = "David Clay",
+	pages = "71-72"}
+
+@inproceedings{DBLP:conf/pdis/Colton93,
+	title = "Replicated Data in a Distributed Environment.",
+	ee = "db/conf/pdis/Colton93.html",
+	author = "Malcolm Colton",
+	pages = "227-228"}
+
+@inproceedings{DBLP:conf/pdis/DeWittLM93,
+	title = "Pointer-Based Join Techniques for Object-Oriented Databases.",
+	ee = "db/conf/pdis/DeWittLM93.html",
+	author = "David J. DeWitt and Daniel F. Lieuwen and Manish Mehta",
+	pages = "172-181"}
+
+@inproceedings{DBLP:conf/pdis/DeWittNB93,
+	title = "Nested Loops Revisited.",
+	ee = "db/conf/pdis/DeWittNB93.html",
+	author = "David J. DeWitt and Jeffrey F. Naughton and Joseph Burger",
+	pages = "230-242"}
+
+@inproceedings{DBLP:conf/pdis/FaloutsosB93,
+	title = "Declustering Using Fractals.",
+	ee = "db/conf/pdis/FaloutsosB93.html",
+	author = "Christos Faloutsos and Pravin Bhagwat",
+	pages = "18-25"}
+
+@inproceedings{DBLP:conf/pdis/Felt93,
+	title = "Distributed Transaction Processing in the TUXEDO System.",
+	ee = "db/conf/pdis/Felt93.html",
+	author = "Edward P. Felt",
+	pages = "266-267"}
+
+@inproceedings{DBLP:conf/pdis/FergusonGND93,
+	title = "Goal Oriented, Adaptive Transaction Routing for High Performance
+               Transaction Processing Systems.",
+	ee = "db/conf/pdis/FergusonGND93.html",
+	author = "Donald F. Ferguson and Leonidas Georgiadis and Christos Nikolaou and K. Davies",
+	pages = "138-147"}
+
+@inproceedings{DBLP:conf/pdis/GhandeharizadehCKL93,
+	title = "Omega: A Parallel Object-based System (Synopsis).",
+	ee = "db/conf/pdis/GhandeharizadehCKL93.html",
+	author = "Shahram Ghandeharizadeh and Vera Choi and Clifford Ker and Kai-Ming Lin",
+	pages = "182-186"}
+
+@inproceedings{DBLP:conf/pdis/Gibson93,
+	title = "Performance and Reliability in Disk Arrays - Tutorial.",
+	ee = "db/conf/pdis/Gibson93.html",
+	author = "Garth A. Gibson",
+	pages = 4}
+
+@inproceedings{DBLP:conf/pdis/Hawthorn93,
+	title = "People Who Need Large Parallel Databases.",
+	author = "Paula B. Hawthorn",
+	pages = 192}
+
+@inproceedings{DBLP:conf/pdis/Himes93,
+	title = "Database Interoperability and Portability through Standards.",
+	ee = "db/conf/pdis/Himes93.html",
+	author = "David A. Himes",
+	pages = "225-226"}
+
+@inproceedings{DBLP:conf/pdis/HouK93,
+	title = "Implementation and Evaluation of Relational Algebra Operations
+               on the Connection Machine (Synopsis).",
+	ee = "db/conf/pdis/HouK93.html",
+	author = "Wen-Chi Hou and Jerry Kindred",
+	pages = "251-254"}
+
+@inproceedings{DBLP:conf/pdis/HuaLY93,
+	title = "Including the Load Balancing Issue in the Optimization of
+               Multi-way Join Queries for Shared-Nothing Database Computers.",
+	ee = "db/conf/pdis/HuaLY93.html",
+	author = "Kien A. Hua and Yu-lung Lo and Honesty C. Young",
+	pages = "74-83"}
+
+@inproceedings{DBLP:conf/pdis/Kotz93,
+	title = "Multiprocessor File System Interfaces.",
+	ee = "db/conf/pdis/Kotz93.html",
+	author = "David Kotz",
+	pages = "194-201"}
+
+@inproceedings{DBLP:conf/pdis/KumarS93,
+	title = "Log-Based Directory Resolution in the Coda File System.",
+	ee = "db/conf/pdis/KumarS93.html",
+	author = "Puneet Kumar and Mahadev Satyanarayanan",
+	pages = "202-213"}
+
+@inproceedings{DBLP:conf/pdis/Linder93,
+	title = "Oracle Parallel RDBMS on Massively Parallel Systems.",
+	ee = "db/conf/pdis/Linder93.html",
+	author = "Benjamin Linder",
+	pages = "67-68"}
+
+@inproceedings{DBLP:conf/pdis/Lomet93,
+	title = "Using Timestamping to Optimize Two Phase Commit.",
+	ee = "db/conf/pdis/Lomet93.html",
+	author = "David B. Lomet",
+	pages = "48-55"}
+
+@inproceedings{DBLP:conf/pdis/McLeod93,
+	title = "Database System Interoperation - Tutorial.",
+	ee = "db/conf/pdis/McLeod93.html",
+	author = "Dennis McLeod",
+	pages = 2}
+
+@inproceedings{DBLP:conf/pdis/MerchantY93,
+	title = "Performance Analysis of a Dual Striping Strategy for Replicated
+               Disk Arrays.",
+	ee = "db/conf/pdis/MerchantY93.html",
+	author = "Arif Merchant and Philip S. Yu",
+	pages = "148-157"}
+
+@inproceedings{DBLP:conf/pdis/MuthurajCVN93,
+	title = "A Formal Approach to the Vertical Partitioning Problem in
+               Distributed Database Design.",
+	ee = "db/conf/pdis/MuthurajCVN93.html",
+	author = "Jaykumar Muthuraj and Sharma Chakravarthy and Ravi Varadarajan and Shamkant B. Navathe",
+	pages = "26-34"}
+
+@inproceedings{DBLP:conf/pdis/Nodine93,
+	title = "Supporting Long-Running Tasks on an Evolving Multidatabase
+               Using InterActions and Events.",
+	ee = "db/conf/pdis/Nodine93.html",
+	author = "Marian H. Nodine",
+	pages = "125-132"}
+
+@inproceedings{DBLP:conf/pdis/Patterson93,
+	title = "Massive Parallelism and Massive Storage: Trends and Predictions
+               for 1995 to 2000.",
+	ee = "db/conf/pdis/Patterson93.html",
+	author = "David A. Patterson",
+	pages = 6}
+
+@inproceedings{DBLP:conf/pdis/RabinovichL93,
+	title = "An Efficient and Highly Available Read-One Write-All Protocol
+               for Replicated Data Management.",
+	ee = "db/conf/pdis/RabinovichL93.html",
+	author = "Michael Rabinovich and Edward D. Lazowska",
+	pages = "56-65"}
+
+@inproceedings{DBLP:conf/pdis/Reiner93,
+	title = "The Kendall Square Query Decomposer.",
+	ee = "db/conf/pdis/Reiner93.html",
+	author = "David S. Reiner",
+	pages = "36-37"}
+
+@inproceedings{DBLP:conf/pdis/SchneiderC93,
+	title = "Managing Query Execution for an Advanced Database Programming
+               Language.",
+	ee = "db/conf/pdis/SchneiderC93.html",
+	author = "Donovan A. Schneider and Tim Connors",
+	pages = "163-171"}
+
+@inproceedings{DBLP:conf/pdis/Selinger93,
+	title = "Hard Real Problems in Heterogeneous Distributed Systems
+               (Panel).",
+	author = "Patricia G. Selinger",
+	pages = 108}
+
+@inproceedings{DBLP:conf/pdis/Sherman93,
+	title = "Distributed Transaction Processing with Encina.",
+	ee = "db/conf/pdis/Sherman93.html",
+	author = "Marek Sherman",
+	pages = "268-269"}
+
+@inproceedings{DBLP:conf/pdis/SitaramDY93,
+	title = "Issues in the Design of Multi-Server File Systems to Cope
+               with Load Skew.",
+	ee = "db/conf/pdis/SitaramDY93.html",
+	author = "Dinkar Sitaram and Asit Dan and Philip S. Yu",
+	pages = "214-223"}
+
+@inproceedings{DBLP:conf/pdis/Smerik93,
+	title = "TOP END: Distributed Transaction Processing for Open Systems.",
+	ee = "db/conf/pdis/Smerik93.html",
+	author = "Randy Smerik",
+	pages = "270-271"}
+
+@inproceedings{DBLP:conf/pdis/Soley93,
+	title = "A Common Architecture for Integrating Distributed Applications.",
+	ee = "db/conf/pdis/Soley93.html",
+	author = "Richard Mark Soley",
+	pages = "110-115"}
+
+@inproceedings{DBLP:conf/pdis/SrivastavaE93,
+	title = "Optimizing Multi-Join Queries in Parallel Relational Databases.",
+	ee = "db/conf/pdis/SrivastavaE93.html",
+	author = "Jaideep Srivastava and Gary Elsesser",
+	pages = "84-92"}
+
+@inproceedings{DBLP:conf/pdis/TomasicG93,
+	title = "Performance of Inverted Indices in Distributed Text Document
+               Retrieval Systems.",
+	ee = "db/conf/pdis/TomasicG93.html",
+	author = "Anthony Tomasic and Hector Garcia-Molina",
+	pages = "8-17"}
+
+@inproceedings{DBLP:conf/pdis/Trehan93,
+	title = "ACMS: Digital's Open, Distributed TP Monitor.",
+	ee = "db/conf/pdis/Trehan93.html",
+	author = "Vijay Trehan",
+	pages = "264-265"}
+
+@inproceedings{DBLP:conf/pdis/Triantafillou93,
+	title = "Recovering in Large Distributed Systems with Replicated
+               Data.",
+	ee = "db/conf/pdis/Triantafillou93.html",
+	author = "Peter Triantafillou",
+	pages = "39-47"}
+
+@inproceedings{DBLP:conf/pdis/WeikumHMZ93,
+	title = "The COMFORT Project (Synopsis).",
+	ee = "db/conf/pdis/WeikumHMZ93.html",
+	author = "Gerhard Weikum and Christof Hasse and Axel M{\"o}nkeberg and Michael Rys and Peter Zabback",
+	pages = "158-161"}
+
+@inproceedings{DBLP:conf/pdis/WoelkCHST93,
+	title = "Using Carnot for Enterprise Information Integration (Synopsis).",
+	ee = "db/conf/pdis/WoelkCHST93.html",
+	author = "Darrell Woelk and Philip Cannata and Michael N. Huhns and Wei-Min Shen and Christine Tomlinson",
+	pages = "133-136"}
+
+@inproceedings{DBLP:conf/pdis/WolfsonZBKM93,
+	title = "A Methodology for Evaluating Parallel Graph Algorithms and
+               Its Application to Single Source Reachability.",
+	ee = "db/conf/pdis/WolfsonZBKM93.html",
+	author = "Ouri Wolfson and Weining Zhang and Harish Butani and Akira Kawaguchi and Kui W. Mok",
+	pages = "243-250"}
+
+@inproceedings{DBLP:conf/pdis/Young-MyersR93,
+	title = "Transitive Closure: An Experimental Case Study of Three
+               Multithreaded Database Algorithms on a Shared Memory Multiprocessor
+               (Synopsis).",
+	ee = "db/conf/pdis/Young-MyersR93.html",
+	author = "H{\'e}l{\`e}ne Young-Myers and Louiqa Raschid",
+	pages = "255-259"}
+
+@inproceedings{DBLP:conf/pdis/ZhangE93,
+	title = "On Global Transaction Scheduling Criteria in Multidatabase
+               Systems.",
+	ee = "db/conf/pdis/ZhangE93.html",
+	author = "Aidong Zhang and Ahmed K. Elmagarmid",
+	pages = "117-124"}
+
+@inproceedings{DBLP:conf/pdis/ZianeZB93,
+	title = "Parallel Query Processing in DBS3.",
+	ee = "db/conf/pdis/ZianeZB93.html",
+	author = "Mikal Ziane and Mohamed Za\"{\i}t and Pascale Borla-Salamet",
+	pages = "93-102"}
+
+@default year = 1991
+
+@inproceedings{DBLP:conf/pdis/AalbersbergS91,
+	title = "High-Quality and High-Performance Full-Text Document Retrieval:
+               The Parallel InfoGuide System.",
+	ee = "db/conf/pdis/AalbersbergS91.html",
+	author = "IJsbrand Jan Aalbersberg and Frans Sijstermans",
+	pages = "142-150"}
+
+@inproceedings{DBLP:conf/pdis/BergstenCV91,
+	title = "Prototyping DBS3, a Shared-Memory Parallel Database System.",
+	ee = "db/conf/pdis/BergstenCV91.html",
+	author = "Bj{\"o}rn Bergsten and Michel Couprie and Patrick Valduriez",
+	pages = "226-234"}
+
+@inproceedings{DBLP:conf/pdis/Bestavros91,
+	title = "IDA-based Redundant Arrays of Inexpensive Disks.",
+	ee = "db/conf/pdis/Bestavros91.html",
+	author = "Azer Bestavros",
+	pages = "2-9"}
+
+@inproceedings{DBLP:conf/pdis/Borla-SalametCD91,
+	title = "Compiling Control into Database Queries for Parallel Execution
+               Management.",
+	ee = "db/conf/pdis/Borla-SalametCD91.html",
+	author = "Pascale Borla-Salamet and Carla Chachaty and Beno\^{\i}t Dageville",
+	pages = "271-279"}
+
+@inproceedings{DBLP:conf/pdis/BowenCGHHLMR91,
+	title = "Achieving Throughput and Functionality in a Common Architecture:
+               The Datacycle Experiment.",
+	ee = "db/conf/pdis/BowenCGHHLMR91.html",
+	author = "Thomas F. Bowen and Munir Cochinwala and Gita Gopal and Gary E. Herman and Takako M. Hickey and K. C. Lee and William H. Mansfield and John Raitz",
+	pages = 178}
+
+@inproceedings{DBLP:conf/pdis/ChenYW91,
+	title = "Optimal All-to-All Broadcasting Schemes in Distributed Systems.",
+	ee = "db/conf/pdis/ChenYW91.html",
+	author = "Ming-Syan Chen and Philip S. Yu and Kun-Lung Wu",
+	pages = "253-260"}
+
+@inproceedings{DBLP:conf/pdis/ChengH91,
+	title = "On The Performance of Object-Based Buffering.",
+	ee = "db/conf/pdis/ChengH91.html",
+	author = "Jia-bing R. Cheng and Ali R. Hurson",
+	pages = "30-37"}
+
+@inproceedings{DBLP:conf/pdis/ChoyS91,
+	title = "A Distributed Catalog for Heterogeneous Distributed Database
+               Resources.",
+	ee = "db/conf/pdis/ChoyS91.html",
+	author = "David M. Choy and Patricia G. Selinger",
+	pages = "236-244"}
+
+@inproceedings{DBLP:conf/pdis/ConnorsHKNSW91,
+	title = "The Papyrus Integrated Data Server.",
+	ee = "db/conf/pdis/ConnorsHKNSW91.html",
+	author = "Tim Connors and Waqar Hasan and Curtis P. Kolovson and Marie-Anne Neimat and Donovan A. Schneider and W. Kevin Wilkinson",
+	pages = 139}
+
+@inproceedings{DBLP:conf/pdis/DasguptaB91,
+	title = "An Efficient Data Organization for Parallel Algorithmic
+               Design of Cartographic Database",
+	ee = "db/conf/pdis/DasguptaB91.html",
+	author = "R. Dasgupta and S. Bhattacharya",
+	pages = 179}
+
+@inproceedings{DBLP:conf/pdis/DeMaraM91,
+	title = "Marker-Passing on a Parallel Knowledge Processing Testbed.",
+	ee = "db/conf/pdis/DeMaraM91.html",
+	author = "Ronald F. DeMara and Dan I. Moldovan",
+	pages = 180}
+
+@inproceedings{DBLP:conf/pdis/DeWittNS91,
+	title = "Parallel Sorting on a Shared-Nothing Architecture using
+               Probabilistic Splitting.",
+	ee = "db/conf/pdis/DeWittNS91.html",
+	author = "David J. DeWitt and Jeffrey F. Naughton and Donovan A. Schneider",
+	pages = "280-291"}
+
+@inproceedings{DBLP:conf/pdis/Garcia-MolinaBDGG91,
+	title = "Are Disk Arrays Useful for Database Systems? (Panel).",
+	author = "Hector Garcia-Molina and Jim Brady and David J. DeWitt and Garth A. Gibson and David Gordon",
+	pages = 118}
+
+@inproceedings{DBLP:conf/pdis/Gerald-Yamasaki91,
+	title = "Cooperative Visualization of Comutational Fluid Dynamics.",
+	ee = "db/conf/pdis/Gerald-Yamasaki91.html",
+	author = "Michael J. Gerald-Yamasaki",
+	pages = 169}
+
+@inproceedings{DBLP:conf/pdis/GrimshawL91,
+	title = "ELFS: Object-Oriented Extensible File Systems.",
+	ee = "db/conf/pdis/GrimshawL91.html",
+	author = "Andrew S. Grimshaw and Edmond C. Loyot, Jr.",
+	pages = 177}
+
+@inproceedings{DBLP:conf/pdis/HillyerR91,
+	title = "Aspects of the BBFS Broadband Filesystem.",
+	ee = "db/conf/pdis/HillyerR91.html",
+	author = "Bruce Hillyer and Bethany S. Robinson",
+	pages = 138}
+
+@inproceedings{DBLP:conf/pdis/HiraiwaMM91,
+	title = "I-CEM: An Intelligent Communication System for Collaborative
+               Work.",
+	ee = "db/conf/pdis/HiraiwaMM91.html",
+	author = "S.-I. Hiraiwa and Norihiko Matsuura and Yutaka Matsushita",
+	pages = 170}
+
+@inproceedings{DBLP:conf/pdis/HiranoSIT91,
+	title = "Load Balancing Algorithms for Parallel Database Processing
+               on Shared Memory Multiprocessors.",
+	ee = "db/conf/pdis/HiranoSIT91.html",
+	author = "Yasuhiro Hirano and Tetsuji Satoh and Ushio Inoue and K. Teranaka",
+	pages = "210-217"}
+
+@inproceedings{DBLP:conf/pdis/HongS91,
+	title = "Optimization of Parallel Query Execution Plans in XPRS.",
+	ee = "db/conf/pdis/HongS91.html",
+	author = "Wei Hong and Michael Stonebraker",
+	pages = "218-225"}
+
+@inproceedings{DBLP:conf/pdis/HoutsmaCC91,
+	title = "Parallel Hierarchical Evaluation of Tranitive Closure Queries.",
+	ee = "db/conf/pdis/HoutsmaCC91.html",
+	author = "Maurice A. W. Houtsma and Filippo Cacace and Stefano Ceri",
+	pages = "130-137"}
+
+@inproceedings{DBLP:conf/pdis/HsiaoD91,
+	title = "A Performance Study of Three High Availability Data Replication
+               Strategies.",
+	ee = "db/conf/pdis/HsiaoD91.html",
+	author = "Hui-I Hsiao and David J. DeWitt",
+	pages = "18-28"}
+
+@inproceedings{DBLP:conf/pdis/HuaH91,
+	title = "Parallel Transitive Closure Computations Using Topological
+               Sort.",
+	ee = "db/conf/pdis/HuaH91.html",
+	author = "Kien A. Hua and Sridhar Hannenhalli",
+	pages = "122-129"}
+
+@inproceedings{DBLP:conf/pdis/HuaLP91,
+	title = "Interconnecting Shared-Everything Systems for Efficient
+               Parallel Query Processing.",
+	ee = "db/conf/pdis/HuaLP91.html",
+	author = "Kien A. Hua and Chiang Lee and Jih-Kwon Peir",
+	pages = "262-270"}
+
+@inproceedings{DBLP:conf/pdis/KellerR91,
+	title = "Adaptive Parallel Hash Join in Main-Memory Databases.",
+	ee = "db/conf/pdis/KellerR91.html",
+	author = "Arthur M. Keller and Shaibal Roy",
+	pages = "58-67"}
+
+@inproceedings{DBLP:conf/pdis/KotzE91,
+	title = "Practical Prefetching Techniques for Parallel File Systems.",
+	ee = "db/conf/pdis/KotzE91.html",
+	author = "David Kotz and Carla Schlatter Ellis",
+	pages = "182-189"}
+
+@inproceedings{DBLP:conf/pdis/LadinMW91,
+	title = "A General Tool for Replicating Distributed Services.",
+	ee = "db/conf/pdis/LadinMW91.html",
+	author = "Rivka Ladin and Murray S. Mazer and Alec Wolman",
+	pages = 172}
+
+@inproceedings{DBLP:conf/pdis/LeffYW91,
+	title = "Policies for Efficient Resource Utilization in a Remote
+               Caching Architecture.",
+	ee = "db/conf/pdis/LeffYW91.html",
+	author = "Avraham Leff and Philip S. Yu and Joel L. Wolf",
+	pages = "198-207"}
+
+@inproceedings{DBLP:conf/pdis/Lin91,
+	title = "CAT: An Execution Model for Concurrent Full Text Search.",
+	ee = "db/conf/pdis/Lin91.html",
+	author = "Zheng Lin",
+	pages = "151-158"}
+
+@inproceedings{DBLP:conf/pdis/Marshall91,
+	title = "A Hardware and Software Architectural Model for the Representation
+               and Manipulation of Integrated Genetic Databases.",
+	ee = "db/conf/pdis/Marshall91.html",
+	author = "R. G. Marshall",
+	pages = 176}
+
+@inproceedings{DBLP:conf/pdis/MatsliachS91,
+	title = "An Efficient Method for Distributing Search Structures.",
+	ee = "db/conf/pdis/MatsliachS91.html",
+	author = "Gabriel Matsliach and Oded Shmueli",
+	pages = "159-166"}
+
+@inproceedings{DBLP:conf/pdis/MehrotraRKS91,
+	title = "Non-Serializable Executions in Heterogeneous Distributed
+               Database Systems.",
+	ee = "db/conf/pdis/MehrotraRKS91.html",
+	author = "Sharad Mehrotra and Rajeev Rastogi and Henry F. Korth and Abraham Silberschatz",
+	pages = "245-252"}
+
+@inproceedings{DBLP:conf/pdis/Seib91,
+	title = "Parallelizing Datalog: Function Symbols make a Difference.",
+	ee = "db/conf/pdis/Seib91.html",
+	author = "J{\"u}rgen Seib",
+	pages = "90-97"}
+
+@inproceedings{DBLP:conf/pdis/ShaoBH91,
+	title = "Combining Rule Decomposition and Data Partitioning in Parallel
+               Datalog Program Processing.",
+	ee = "db/conf/pdis/ShaoBH91.html",
+	author = "J. Shao and David A. Bell and M. Elizabeth C. Hull",
+	pages = "106-115"}
+
+@inproceedings{DBLP:conf/pdis/ShinjoK91,
+	title = "ReSC: A Distributed Operating System for Parallel and Distributed
+               Applications.",
+	ee = "db/conf/pdis/ShinjoK91.html",
+	author = "Yasushi Shinjo and Yasushi Kiyoki",
+	pages = 171}
+
+@inproceedings{DBLP:conf/pdis/Silberberg91,
+	title = "Populating Databases from Multiple Sources: The Hubble Space
+               Telescope Paradigm.",
+	ee = "db/conf/pdis/Silberberg91.html",
+	author = "David Silberberg",
+	pages = 168}
+
+@inproceedings{DBLP:conf/pdis/SolworthO91,
+	title = "Distorted Mirrors.",
+	ee = "db/conf/pdis/SolworthO91.html",
+	author = "Jon A. Solworth and Cyril U. Orji",
+	pages = "10-17"}
+
+@inproceedings{DBLP:conf/pdis/SteenJ91,
+	title = "Designing Highly Parallel Applications Using Database Programming
+               Concepts.",
+	ee = "db/conf/pdis/SteenJ91.html",
+	author = "Maarten van Steen and Edwin D. de Jong",
+	pages = "38-45"}
+
+@inproceedings{DBLP:conf/pdis/SuCL91,
+	title = "Multiple Wavefront Algorithms for Pattern-based Processing
+               of Object-Oriented Databases.",
+	ee = "db/conf/pdis/SuCL91.html",
+	author = "Stanley Y. W. Su and Yaw-Huei Chen and Herman Lam",
+	pages = "46-55"}
+
+@inproceedings{DBLP:conf/pdis/TaitD91,
+	title = "Service Interface and Replica Management Algorithm for Mobile
+               File System Clients",
+	ee = "db/conf/pdis/TaitD91.html",
+	author = "Carl D. Tait and Dan Duchamp",
+	pages = "190-197"}
+
+@inproceedings{DBLP:conf/pdis/WilschutA91,
+	title = "Dataflow Query Execution in a Parallel Main-Memory Environment.",
+	ee = "db/conf/pdis/WilschutA91.html",
+	author = "Annita N. Wilschut and Peter M. G. Apers",
+	pages = "68-77"}
+
+@inproceedings{DBLP:conf/pdis/WolfDYT91,
+	title = "Comparative Performance of Parallel Join Algorithms.",
+	ee = "db/conf/pdis/WolfDYT91.html",
+	author = "Joel L. Wolf and Daniel M. Dias and Philip S. Yu and John Turek",
+	pages = "78-88"}
+
+@inproceedings{DBLP:conf/pdis/YeminiW91,
+	title = "Netmate: Management of Complex Distributed Networked Systems.",
+	ee = "db/conf/pdis/YeminiW91.html",
+	author = "Yechiam Yemini and Ouri Wolfson",
+	pages = 173}
+
+@inproceedings{DBLP:conf/pdis/ZhangWC91,
+	title = "Data partition: A Practical Parallel Evaluation of Datalog
+               Programs.",
+	ee = "db/conf/pdis/ZhangWC91.html",
+	author = "Weining Zhang and Ke Wang and Siu-Cheung Chau",
+	pages = "98-105"}

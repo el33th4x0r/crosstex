@@ -1,0 +1,1162 @@
+@include conferences-cs
+
+@default bibsource = "DBLP, http://dblp.uni-trier.de"
+
+@default booktitle = icnp
+
+@default year = 1999
+
+@inproceedings{DBLP:conf/icnp/BakirasL99,
+	title = "Smoothing and Prefetching Video from Distributed Servers.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120311abs.htm",
+	author = "Spiridon Bakiras and Victor O. K. Li",
+	pages = "311-318"}
+
+@inproceedings{DBLP:conf/icnp/BarrackS99,
+	title = "A Distributed Scheduling Algorithm for Quality of Service
+               Support in Multiaccess Networks.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120245abs.htm",
+	author = "Craig Barrack and Kai-Yeung Siu",
+	pages = "245-253"}
+
+@inproceedings{DBLP:conf/icnp/CalvertGSW99,
+	title = "Concast: Design and Implementation of a New Network Service.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120335abs.htm",
+	author = "Kenneth L. Calvert and Jim Griffioen and Amit Sehgal and Su Wen",
+	pages = "335-344"}
+
+@inproceedings{DBLP:conf/icnp/CheungM99,
+	title = "Dynamic Memory Model Based Framework for Optimization of
+               IP Address Lookup Algorithms.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120011abs.htm",
+	author = "Gene Cheung and Steven McCanne",
+	pages = "11-20"}
+
+@inproceedings{DBLP:conf/icnp/ChoiL99,
+	title = "A Behavioral Model of Web Traffic.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120327abs.htm",
+	author = "Hyoung-Kee Choi and John O. Limb",
+	pages = "327-334"}
+
+@inproceedings{DBLP:conf/icnp/Cobb99,
+	title = "An In-Depth Look at Flow Aggregation for Efficient Quality
+               of Service.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120127abs.htm",
+	author = "Jorge Arturo Cobb",
+	pages = "127-134"}
+
+@inproceedings{DBLP:conf/icnp/DamodaranS99,
+	title = "Scheduling in Wireless Networks with Multiple Transmission
+               Channels.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120262abs.htm",
+	author = "Satish Damodaran and Krishna M. Sivalingam",
+	pages = "262-"}
+
+@inproceedings{DBLP:conf/icnp/FeiAZ99,
+	title = "Optimal Allocation of Clients to Replicated Multicast Servers.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120069abs.htm",
+	author = "Zongming Fei and Mostafa H. Ammar and Ellen W. Zegura",
+	pages = "69-"}
+
+@inproceedings{DBLP:conf/icnp/Garcia-Luna-AcevesS99,
+	title = "Source-Tree Routing in Wireless Networks.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120273abs.htm",
+	author = "J. J. Garcia-Luna-Aceves and Marcelo Spohn",
+	pages = "273-282"}
+
+@inproceedings{DBLP:conf/icnp/GokhaleT99,
+	title = "Effect of Unreliable Nodes on QoS Routing.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120173abs.htm",
+	author = "Swapna S. Gokhale and Satish K. Tripathi",
+	pages = "173-181"}
+
+@inproceedings{DBLP:conf/icnp/GomezCM99,
+	title = "The Havana Framework for Supporting Application and Channel
+               Dependent QOS in Wireless Networks.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120235abs.htm",
+	author = "Javier Gomez and Andrew T. Campbell and Hiroyuki Morikawa",
+	pages = "235-244"}
+
+@inproceedings{DBLP:conf/icnp/GriffinSW99,
+	title = "Policy Disputes in Path-Vector Protocols.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120021abs.htm",
+	author = "Timothy Griffin and F. Bruce Shepherd and Gordon T. Wilfong",
+	pages = "21-30"}
+
+@inproceedings{DBLP:conf/icnp/GunterB99,
+	title = "Evaluation of Bandwidth Broker Signaling.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120145abs.htm",
+	author = "Manuel G{\"u}nter and Torsten Braun",
+	pages = "145-"}
+
+@inproceedings{DBLP:conf/icnp/HuZK99,
+	title = "Analysis of Receiver Adaptation for Layered Video Transmission
+               over Heterogeneous Networks: A Microscopic Perspective.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120319abs.htm",
+	author = "Po-Chin Hu and Zhi-Li Zhang and Mostafa Kaveh",
+	pages = "319-326"}
+
+@inproceedings{DBLP:conf/icnp/KeshavP99,
+	title = "Centralized Multicast.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120059abs.htm",
+	author = "Srinivasan Keshav and Sanjoy Paul",
+	pages = "59-68"}
+
+@inproceedings{DBLP:conf/icnp/KimK99,
+	title = "Fluid Analysis of Delay Performance for QoS Support in Wireless
+               Networks.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120254abs.htm",
+	author = "Jeong Geun Kim and Marwan Krunz",
+	pages = "254-261"}
+
+@inproceedings{DBLP:conf/icnp/KimTIR99,
+	title = "Minimum Rate Guarantee Without Per-Flow Information.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120155abs.htm",
+	author = "Yuseok Kim and Wei Kang Tsai and Mahadevan Iyer and Jordi Ros",
+	pages = "155-162"}
+
+@inproceedings{DBLP:conf/icnp/KungW99,
+	title = "TCP Trunking: Design, Implementation and Performance.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120222abs.htm",
+	author = "H. T. Kung and Shie Yuan Wang",
+	pages = "222-"}
+
+@inproceedings{DBLP:conf/icnp/LangendorferK99,
+	title = "Automated Protocol Implementations Based on Activity Threads.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120003abs.htm",
+	author = "Peter Langend{\"o}rfer and Hartmut K{\"o}nig",
+	pages = "3-10"}
+
+@inproceedings{DBLP:conf/icnp/LiC99,
+	title = "Evaluating the Utility of FEC with Reliable Multicast.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120097abs.htm",
+	author = "Dan Li and David R. Cheriton",
+	pages = "97-105"}
+
+@inproceedings{DBLP:conf/icnp/LiaoY99,
+	title = "Receiver-Initiated Group Membership Protocol (RGMP): A New
+               Group Management Protocol for IP Multicasting.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120051abs.htm",
+	author = "Wanjiun Liao and De-Nian Yang",
+	pages = "51-58"}
+
+@inproceedings{DBLP:conf/icnp/LinZH99,
+	title = "How to Make Assured Service More Assured.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120182abs.htm",
+	author = "Wei Lin and Rong Zheng and Jennifer C. Hou",
+	pages = "182-"}
+
+@inproceedings{DBLP:conf/icnp/MasseyF99,
+	title = "Fault Detection in Routing Protocols.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120031abs.htm",
+	author = "Daniel Massey and Bill Fenner",
+	pages = "31-"}
+
+@inproceedings{DBLP:conf/icnp/NikolaidisH99,
+	title = "A Logical Ring Reliable Multicast Protocol for Mobile Nodes.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120106abs.htm",
+	author = "Ioanis Nikolaidis and Janelle J. Harms",
+	pages = "106-"}
+
+@inproceedings{DBLP:conf/icnp/ParsaG99,
+	title = "Improving TCP Congestion Control over Internets with Heterogeneous
+               Transmission Media.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120213abs.htm",
+	author = "Christina Parsa and J. J. Garcia-Luna-Aceves",
+	pages = "213-221"}
+
+@inproceedings{DBLP:conf/icnp/PopescuS99,
+	title = "Empirical TCP Profiles and Application.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120195abs.htm",
+	author = "Catalin T. Popescu and A. Udaya Shankar",
+	pages = "195-202"}
+
+@inproceedings{DBLP:conf/icnp/QiaoJGZW99,
+	title = "WDM Multicasting in IP over WDM Networks.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120089abs.htm",
+	author = "Chunming Qiao and Myoungki Jeong and Amit Guha and Xijun Zhang and John Wei",
+	pages = "89-96"}
+
+@inproceedings{DBLP:conf/icnp/QiuZK99,
+	title = "On Individual and Aggregate TCP Performance.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120203abs.htm",
+	author = "Lili Qiu and Yin Zhang and Srinivasan Keshav",
+	pages = "203-212"}
+
+@inproceedings{DBLP:conf/icnp/RamjeePTVW99,
+	title = "HAWAII: A Domain-based Approach for Supporting Mobility
+               in Wide-Area Wireless Networks.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120283abs.htm",
+	author = "Ramachandran Ramjee and Thomas F. La Porta and Sandra R. Thuel and Kannan Varadhan and Shie Yuan Wang",
+	pages = "283-292"}
+
+@inproceedings{DBLP:conf/icnp/RangarajanA99,
+	title = "ERUF: Early Regulation of Unresponsive Best-Effort Traffic.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120117abs.htm",
+	author = "Anand Rangarajan and Anurag Acharya",
+	pages = "117-126"}
+
+@inproceedings{DBLP:conf/icnp/RatnamMR99,
+	title = "Analysis of Caching-Based Location Management in Personal
+               Communication Networks.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120293abs.htm",
+	author = "Karunaharan Ratnam and Ibrahim Matta and Sampath Rangarajan",
+	pages = "293-300"}
+
+@inproceedings{DBLP:conf/icnp/RatnasamyM99,
+	title = "Scaling End-to-End Multicast Transports with a Topologically-Sensitive
+               Group Formation Protocol.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120079abs.htm",
+	author = "Sylvia Ratnasamy and Steven McCanne",
+	pages = "79-88"}
+
+@inproceedings{DBLP:conf/icnp/TamuraTT99,
+	title = "NBQ: Neighbor-State Based Queuing for Adaptive Bandwidth
+               Sharing.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120135abs.htm",
+	author = "Yosuke Tamura and Yoshito Tobe and Hideyuki Tokuda",
+	pages = "135-144"}
+
+@inproceedings{DBLP:conf/icnp/TsaoussidisBV99,
+	title = "Wave and Wait Protocol (WWP): An Energy-Saving Transport
+               Protocol for Mobile IP-Devices.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120301abs.htm",
+	author = "Vassilios Tsaoussidis and Hussein G. Badr and Rohit Verma",
+	pages = "301-"}
+
+@inproceedings{DBLP:conf/icnp/WangTZ99,
+	title = "A New Proposal for RSVP Refreshes.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120163abs.htm",
+	author = "Lan Wang and Andreas Terzis and Lixia Zhang",
+	pages = "163-172"}
+
+@inproceedings{DBLP:conf/icnp/YamaguchiYHT99,
+	title = "Receiver-Cooperative Bandwidth Management for Layered Multicast.",
+	ee = "http://computer.org/proceedings/icnp/0412/04120043abs.htm",
+	author = "Hirozumi Yamaguchi and Keiichi Yasumoto and Teruo Higashino and Kenichi Taniguchi",
+	pages = "43-50"}
+
+@default year = 1998
+
+@inproceedings{DBLP:conf/icnp/AdiseshuPY98,
+	title = "A State Management Protocol for IntServ, DiffServ and Label
+               Switching.",
+	ee = "http://computer.org/proceedings/icnp/8988/89880272abs.htm",
+	author = "Hari Adiseshu and Guru M. Parulkar and Raj Yavatkar",
+	pages = "272-281"}
+
+@inproceedings{DBLP:conf/icnp/ApostolopoulosT98,
+	title = "On Reducing the Processing Cost of On-Demand QoS Path Computation.",
+	ee = "http://computer.org/proceedings/icnp/8988/89880080abs.htm",
+	author = "George Apostolopoulos and Satish K. Tripathi",
+	pages = "80-89"}
+
+@inproceedings{DBLP:conf/icnp/BestavrosCLM98,
+	title = "Distributed Packet Rewriting and its Application to Scalable
+               Server Architectures.",
+	ee = "http://computer.org/proceedings/icnp/8988/89880290abs.htm",
+	author = "Azer Bestavros and Mark Crovella and Jun Liu and David Martin",
+	pages = "290-297"}
+
+@inproceedings{DBLP:conf/icnp/BhattacharjeeCZ98,
+	title = "Reasoning About Active Network Protocols.",
+	ee = "http://dlib.computer.org/conferen/icnp/8988/pdf/89880031.pdf",
+	author = "Samrat Bhattacharjee and Kenneth L. Calvert and Ellen W. Zegura",
+	pages = "31-"}
+
+@inproceedings{DBLP:conf/icnp/CasettiLNA98,
+	title = "Multicasting at the Host Interface Level in Wormhole Networks.",
+	ee = "http://computer.org/proceedings/icnp/8988/89880246abs.htm",
+	author = "Claudio Casetti and Emilio Leonardi and Fabio Neri and Cosimo Anglano",
+	pages = "246-253"}
+
+@inproceedings{DBLP:conf/icnp/ChandraFKNSTZ98,
+	title = "Darwin: Customizable Resource Management for Value-Added
+               Network Services.",
+	ee = "http://computer.org/proceedings/icnp/8988/89880177abs.htm",
+	author = "Prashant R. Chandra and Allan Fisher and Corey Kosak and T. Ng and Peter Steenkiste and Eiichi Takahashi and Hui Zhang",
+	pages = "177-188"}
+
+@inproceedings{DBLP:conf/icnp/ChenP98,
+	title = "A Distributed Protocol for Multi-Class QoS Provision in
+               Noncooperative Many-Switch Systems.",
+	ee = "http://dlib.computer.org/conferen/icnp/8988/pdf/89880098.pdf",
+	author = "Shaogang Chen and Kihong Park",
+	pages = "98-107"}
+
+@inproceedings{DBLP:conf/icnp/ChiangG98,
+	title = "On-Demand Multicast in Mobile Wireless Networks.",
+	ee = "http://computer.org/proceedings/icnp/8988/89880262abs.htm",
+	author = "Ching-Chuan Chiang and Mario Gerla",
+	pages = "262-"}
+
+@inproceedings{DBLP:conf/icnp/Cobb98,
+	title = "Preserving Quality of Service Guarantees in Spite of Flow
+               Aggregation.",
+	ee = "http://computer.org/proceedings/icnp/8988/89880090abs.htm",
+	author = "Jorge Arturo Cobb",
+	pages = "90-97"}
+
+@inproceedings{DBLP:conf/icnp/DeLuciaO98,
+	title = "Congestion Control Performance of a Reliable Multicast Protocol.",
+	ee = "http://computer.org/proceedings/icnp/8988/89880168abs.htm",
+	author = "Dante DeLucia and Katia Obraczka",
+	pages = "168-176"}
+
+@inproceedings{DBLP:conf/icnp/EckhardtS98,
+	title = "Improving Wireless LAN Performance via Adaptive Local Error
+               Control.",
+	ee = "http://computer.org/proceedings/icnp/8988/89880327abs.htm",
+	author = "David A. Eckhardt and Peter Steenkiste",
+	pages = "327-338"}
+
+@inproceedings{DBLP:conf/icnp/FengKSS98,
+	title = "Adaptive Packet Marking for Providing Differentiated Services
+               in the Internet.",
+	ee = "http://dlib.computer.org/conferen/icnp/8988/pdf/89880108.pdf",
+	author = "Wu-chang Feng and Dilip D. Kandlur and Debanjan Saha and Kang G. Shin",
+	pages = "108-"}
+
+@inproceedings{DBLP:conf/icnp/FulpR98,
+	title = "Distributed Network Flow Control based on Dynamic Competitive
+               Markets.",
+	ee = "http://computer.org/proceedings/icnp/8988/89880119abs.htm",
+	author = "Errin W. Fulp and Douglas S. Reeves",
+	pages = "119-128"}
+
+@inproceedings{DBLP:conf/icnp/Garcia-Luna-AcevesS98,
+	title = "Scalable Link-State Internet Routing.",
+	ee = "http://computer.org/proceedings/icnp/8988/89880052abs.htm",
+	author = "J. J. Garcia-Luna-Aceves and Marcelo Spohn",
+	pages = "52-61"}
+
+@inproceedings{DBLP:conf/icnp/GolestaniB98,
+	title = "A Class of End-to-End Congestion Control Algorithms for
+               the Internet.",
+	ee = "http://dlib.computer.org/conferen/icnp/8988/pdf/89880137.pdf",
+	author = "S. Jamaloddin Golestani and S. Bhattacharyya",
+	pages = "137-150"}
+
+@inproceedings{DBLP:conf/icnp/GoudaS98,
+	title = "Maximizable Routing Metrics.",
+	ee = "http://dlib.computer.org/conferen/icnp/8988/pdf/89880071.pdf",
+	author = "Mohamed G. Gouda and Marco Schneider",
+	pages = "71-"}
+
+@inproceedings{DBLP:conf/icnp/HeLM98,
+	title = "Performance of Voice/Data Integration for Two MAC Protocols
+               in DS-CDMA Wireless Networks.",
+	ee = "http://dlib.computer.org/conferen/icnp/8988/pdf/89880319.pdf",
+	author = "J. He and M. Liu and M. Muller",
+	pages = "319-326"}
+
+@inproceedings{DBLP:conf/icnp/KamS98,
+	title = "Linear Complexity Algorithms for Bandwidth Reservations
+               and Delay Guarantees in Input-Queued Switches with No Speedup.",
+	ee = "http://computer.org/proceedings/icnp/8988/89880002abs.htm",
+	author = "Anthony C. Kam and Kai-Yeung Siu",
+	pages = "2-11"}
+
+@inproceedings{DBLP:conf/icnp/LiC98,
+	title = "OTERS: (On-Tree Efficient Recovery using Subcasting): A
+               Reliable Multicast Protocol.",
+	ee = "http://dlib.computer.org/conferen/icnp/8988/pdf/89880237.pdf",
+	author = "Dan Li and David R. Cheriton",
+	pages = "237-245"}
+
+@inproceedings{DBLP:conf/icnp/LombardoMPS98,
+	title = "Flow Theory: An Enhancement.",
+	ee = "http://dlib.computer.org/conferen/icnp/8988/pdf/89880129.pdf",
+	author = "Alfio Lombardo and Giacomo Morabito and Sergio Palazzo and Giovanni Schembra",
+	pages = "129-136"}
+
+@inproceedings{DBLP:conf/icnp/Maxemchuk98,
+	title = "Applying MSTDM to Packet Voice and Data in Cellular Radio
+               Systems.",
+	ee = "http://computer.org/proceedings/icnp/8988/89880309abs.htm",
+	author = "Nicholas F. Maxemchuk",
+	pages = "309-318"}
+
+@inproceedings{DBLP:conf/icnp/ParkM98,
+	title = "A Proof Technique for Liveness Properties of Multifunction
+               Composite Protocols.",
+	ee = "http://dlib.computer.org/conferen/icnp/8988/pdf/89880219.pdf",
+	author = "J. Park and R. Miller",
+	pages = "219-226"}
+
+@inproceedings{DBLP:conf/icnp/QuVWNWJGS98,
+	title = "Statistical Anomaly Detection for Link-State Routing Protocols.",
+	ee = "http://dlib.computer.org/conferen/icnp/8988/pdf/89880062.pdf",
+	author = "D. Qu and Brain Vetter and Feiyi Wang and R. Narayan and Shyhtsun Felix Wu and Y. Frank Jou and Fengmin Gong and C. Sargor",
+	pages = "62-70"}
+
+@inproceedings{DBLP:conf/icnp/RileyAC98,
+	title = "Receiver-based Multicast Scoping: A New Cost-Conscious Join/Leave
+               Paradigm.",
+	ee = "http://computer.org/proceedings/icnp/8988/89880254abs.htm",
+	author = "George F. Riley and Mostafa H. Ammar and Lenitra M. Clay",
+	pages = "254-261"}
+
+@inproceedings{DBLP:conf/icnp/SakateYYHT98,
+	title = "Resource Management for Quality of Service Guarantees in
+               Multi-Party Multimedia Application.",
+	ee = "http://computer.org/proceedings/icnp/8988/89880189abs.htm",
+	author = "Hiroharu Sakate and Hirozumi Yamaguchi and Keiichi Yasumoto and Teruo Higashino and Kenichi Taniguchi",
+	pages = "189-"}
+
+@inproceedings{DBLP:conf/icnp/SantosMM98,
+	title = "A Lossless, Minimal Latency Protocol for Gigabit ATM Networks.",
+	ee = "http://computer.org/proceedings/icnp/8988/89880151abs.htm",
+	author = "Michael D. Santos and P. M. Melliar-Smith and Louise E. Moser",
+	pages = "151-"}
+
+@inproceedings{DBLP:conf/icnp/SchulzrinneR98,
+	title = "Signaling for Internet Telephony.",
+	ee = "http://computer.org/proceedings/icnp/8988/89880298abs.htm",
+	author = "Henning Schulzrinne and Jonathan D. Rosenberg",
+	pages = "298-"}
+
+@inproceedings{DBLP:conf/icnp/ShaikhRS98,
+	title = "Evaluating the Overheads of Source-Directed Quality-of-Service
+               Routing.",
+	ee = "http://dlib.computer.org/conferen/icnp/8988/pdf/89880042.pdf",
+	author = "Anees Shaikh and Jennifer Rexford and Kang G. Shin",
+	pages = "42-51"}
+
+@inproceedings{DBLP:conf/icnp/SinghBM98,
+	title = "Composition of Service Specifications.",
+	ee = "http://computer.org/proceedings/icnp/8988/89880210abs.htm",
+	author = "Gurdip Singh and I. Buricea and Zhenyu Mao",
+	pages = "210-218"}
+
+@inproceedings{DBLP:conf/icnp/SmithR98,
+	title = "Formal Verification of Safety and Performance Properties
+               of TCP Selective Acknowledgment.",
+	ee = "http://dlib.computer.org/conferen/icnp/8988/pdf/89880227.pdf",
+	author = "M. Smith and K. Ramakrishnan",
+	pages = "227-"}
+
+@inproceedings{DBLP:conf/icnp/VandaloreFJGG98,
+	title = "A Definition of General Weighted Fairness and its Support
+               in Explicit Rate Switch Algorithms.",
+	ee = "http://dlib.computer.org/conferen/icnp/8988/pdf/89880022.pdf",
+	author = "Bobby Vandalore and Sonia Fahmy and Raj Jain and Rohit Goyal and Mukul Goyal",
+	pages = "22-30"}
+
+@inproceedings{DBLP:conf/icnp/VaradarajanC98,
+	title = "EtheReal: A Host-Transparent Real-Time Fast Ethernet Switch.",
+	ee = "http://dlib.computer.org/conferen/icnp/8988/pdf/89880012.pdf",
+	author = "Srinidhi Varadarajan and Tzi-cker Chiueh",
+	pages = "12-21"}
+
+@inproceedings{DBLP:conf/icnp/WongL98,
+	title = "Digital Signatures for Flows and Multicasts.",
+	ee = "http://computer.org/proceedings/icnp/8988/89880198abs.htm",
+	author = "Chung Kei Wong and Simon S. Lam",
+	pages = "198-209"}
+
+@inproceedings{DBLP:conf/icnp/XuS98,
+	title = "Certificate Path Generation Protocol (CPGP) for Authenticated
+               Signaling in ATM Networks.",
+	ee = "http://dlib.computer.org/conferen/icnp/8988/pdf/89880282.pdf",
+	author = "Jun Xu and Mukesh Singhal",
+	pages = "282-289"}
+
+@inproceedings{DBLP:conf/icnp/YeHH98,
+	title = "QGMA: A New MAC Protocol for Supporting QoS in Wireless
+               Local Area Networks.",
+	ee = "http://computer.org/proceedings/icnp/8988/89880339abs.htm",
+	author = "Yi Ye and Chao-Ju Hou and Ching-Chih Han",
+	pages = "339-348"}
+
+@inproceedings{DBLP:conf/icnp/YoussefAM98,
+	title = "Controlling Quality of Session in Adaptive Multimedia Multicast
+               Systems.",
+	ee = "http://dlib.computer.org/conferen/icnp/8988/pdf/89880160.pdf",
+	author = "Alaa Youssef and Hussein M. Abdel-Wahab and Kurt Maly",
+	pages = "160-167"}
+
+@default year = 1997
+
+@inproceedings{DBLP:conf/icnp/Al-ShaerAM97,
+	title = "Application-Layer Group Communication Server for Extending
+               Reliable Multicast Protocols Services.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643728",
+	author = "Ehab S. Al-Shaer and Hussein M. Abdel-Wahab and Kurt Maly",
+	pages = "267-"}
+
+@inproceedings{DBLP:conf/icnp/BennettSZ97,
+	title = "High speed, scalable, and accurate implementation of packet
+               fair queueing algorithms in ATM networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643677",
+	author = "Jon C. R. Bennett and Donpaul C. Stephens and Hui Zhang",
+	pages = "7-14"}
+
+@inproceedings{DBLP:conf/icnp/BestavrosM97,
+	title = "Load Profiling for Efficient Route Selection in Multi-Class
+               Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643713",
+	author = "Azer Bestavros and Ibrahim Matta",
+	pages = "183-190"}
+
+@inproceedings{DBLP:conf/icnp/BhattacharjeeCZ97,
+	title = "Active networking and the end-to-end argument.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643717",
+	author = "Samrat Bhattacharjee and Kenneth L. Calvert and Ellen W. Zegura",
+	pages = "220-228"}
+
+@inproceedings{DBLP:conf/icnp/CaoZ97,
+	title = "ABR service for applications with non-linear bandwidth utility
+               functions.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643679",
+	author = "Zhiruo Cao and Ellen W. Zegura",
+	pages = "15-23"}
+
+@inproceedings{DBLP:conf/icnp/CobbG97,
+	title = "Balanced Routing.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643730",
+	author = "Jorge Arturo Cobb and Mohamed G. Gouda",
+	pages = "277-284"}
+
+@inproceedings{DBLP:conf/icnp/FulpR97,
+	title = "On-line Dynamic Bandwidth Allocation.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643704",
+	author = "Errin W. Fulp and Douglas S. Reeves",
+	pages = "134-141"}
+
+@inproceedings{DBLP:conf/icnp/FunatoYT97,
+	title = "TCP-R: TCP mobility support for continuous operation.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643720",
+	author = "Daichi Funato and Kinuko Yasuda and Hideyuki Tokuda",
+	pages = "229-"}
+
+@inproceedings{DBLP:conf/icnp/GustafssonK97,
+	title = "Traffic Dispersion and Its Impact on ATM Protocol Functions.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643737",
+	author = "Eva Gustafsson and Gunnar Karlsson",
+	pages = "301-"}
+
+@inproceedings{DBLP:conf/icnp/HuangM97,
+	title = "Group leader election under link-state routing.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643696",
+	author = "Yih Huang and Philip K. McKinley",
+	pages = "95-104"}
+
+@inproceedings{DBLP:conf/icnp/KulkarniA97,
+	title = "Once-and-for all management protocol (OFMP).",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643695",
+	author = "Sandeep S. Kulkarni and Anish Arora",
+	pages = "87-94"}
+
+@inproceedings{DBLP:conf/icnp/LeeNSSJ97,
+	title = "Passive testing and applications to network management.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643699",
+	author = "David Lee and Arun N. Netravali and Krishan K. Sabnani and Binay Sugla and Ajita John",
+	pages = "113-"}
+
+@inproceedings{DBLP:conf/icnp/LevineG97,
+	title = "Improving Internet multicast with routing labels.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643723",
+	author = "Brian Neil Levine and J. J. Garcia-Luna-Aceves",
+	pages = "241-250"}
+
+@inproceedings{DBLP:conf/icnp/MaS97,
+	title = "On path selection for traffic with bandwidth guarantees.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643714",
+	author = "Qingming Ma and Peter Steenkiste",
+	pages = "191-"}
+
+@inproceedings{DBLP:conf/icnp/MaxemchukPL97,
+	title = "A cooperative packet recovery protocol for multicast video.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643726",
+	author = "Nicholas F. Maxemchuk and K. Padmanabhan and S. Lo",
+	pages = "259-266"}
+
+@inproceedings{DBLP:conf/icnp/Moh97,
+	title = "On multicasting ABR protocols for wireless ATM networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643680",
+	author = "W. Melody Moh",
+	pages = "24-31"}
+
+@inproceedings{DBLP:conf/icnp/Morris97,
+	title = "TCP behavior with many flows.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643715",
+	author = "Robert Morris",
+	pages = "205-211"}
+
+@inproceedings{DBLP:conf/icnp/NarvaezS97,
+	title = "Optimal Feedback Control for ABR Service in ATM.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643688",
+	author = "Paolo Narv{\'a}ez and Kai-Yeung Siu",
+	pages = "32-"}
+
+@inproceedings{DBLP:conf/icnp/ParkM97,
+	title = "A Compositional Approach for Designing Multifunction Time-Dependent
+               Protocols.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643697",
+	author = "Jun-Cheol Park and Raymond E. Miller",
+	pages = "105-112"}
+
+@inproceedings{DBLP:conf/icnp/PornavalaiCS97,
+	title = "QoS based routing algorithm in integrated services packet
+               networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643711",
+	author = "Chotipat Pornavalai and Goutam Chakraborty and Norio Shiratori",
+	pages = "167-174"}
+
+@inproceedings{DBLP:conf/icnp/ReissleinR97,
+	title = "A Join--the--Shortest--Queue Prefetching Protocol for VBR
+               Video on Demand.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643693",
+	author = "Martin Reisslein and Keith W. Ross",
+	pages = "63-72"}
+
+@inproceedings{DBLP:conf/icnp/SakrT97,
+	title = "Carrier-sense protocols for packet-switched smart antenna
+               basestations.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643691",
+	author = "Charbel Sakr and Terence D. Todd",
+	pages = "45-52"}
+
+@inproceedings{DBLP:conf/icnp/TouchF97,
+	title = "Dynamic host routing for production use of developmental
+               networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643732",
+	author = "Joseph D. Touch and Theodore Faber",
+	pages = "285-292"}
+
+@inproceedings{DBLP:conf/icnp/VenkatramaniC97,
+	title = "Design and implementation of a real-time switch for segmented
+               Ethernets.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643709",
+	author = "Chitra Venkatramani and Tzi-cker Chiueh",
+	pages = "152-"}
+
+@inproceedings{DBLP:conf/icnp/VetterWW97,
+	title = "An experimental study of insider attacks for OSPF routing
+               protocol.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643735",
+	author = "Brain Vetter and Feiyi Wang and Shyhtsun Felix Wu",
+	pages = "293-300"}
+
+@inproceedings{DBLP:conf/icnp/WaltonG97,
+	title = "Practical Multicasting on a Nonbroadcast Subnetwork.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643725",
+	author = "Simon Walton and Mario Gerla",
+	pages = "251-258"}
+
+@inproceedings{DBLP:conf/icnp/WooPS97,
+	title = "User Agents and Flexible Messages: A New Approach to Wireless
+               Two-Way Messaging.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643692",
+	author = "Thomas Y. C. Woo and Thomas F. La Porta and Krishan K. Sabnani",
+	pages = "53-62"}
+
+@inproceedings{DBLP:conf/icnp/WuSR97,
+	title = "Improved virtual queueing and dynamic EPD techniques for
+               TCP over ATM.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643716",
+	author = "Yuan Wu and Kai-Yeung Siu and Wenge Ren",
+	pages = "212-219"}
+
+@inproceedings{DBLP:conf/icnp/XieL97,
+	title = "Admission Control and Loss Management for an Application-Level
+               Statistical Service.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643707",
+	author = "Geoffrey G. Xie and Simon S. Lam",
+	pages = "142-151"}
+
+@inproceedings{DBLP:conf/icnp/YauL97,
+	title = "Migrating Sockets for networking with quality of service
+               guarantees.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643694",
+	author = "David K. Y. Yau and Simon S. Lam",
+	pages = "73-"}
+
+@inproceedings{DBLP:conf/icnp/ZhaoT97,
+	title = "Routing guaranteed quality of service connections in integrated
+               services packet networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1997.643712",
+	author = "Wei Zhao and Satish K. Tripathi",
+	pages = "175-182"}
+
+@default year = 1996
+
+@inproceedings{DBLP:conf/icnp/BuscheO96,
+	title = "Setup-Trail-Avoidance Routing Algorithm.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564928",
+	author = "Matthew T. Busche and Christopher J. Olszewski",
+	pages = "140-"}
+
+@inproceedings{DBLP:conf/icnp/ChenMM96,
+	title = "Flow Control Techniques for Multicasting in Gigabit Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564918",
+	author = "Xiaomin Chen and Louise E. Moser and P. M. Melliar-Smith",
+	pages = "102-"}
+
+@inproceedings{DBLP:conf/icnp/ChiuG96,
+	title = "Full Utilization, Fairness and Bounded Access Delay on High
+               Speed Bus Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564930",
+	author = "Angela L. Chiu and Robert G. Gallager",
+	pages = "154-161"}
+
+@inproceedings{DBLP:conf/icnp/CobbGE96,
+	title = "Time-Shift Scheduling: Fair Scheduling of Flows in High
+               Speed Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564877",
+	author = "Jorge Arturo Cobb and Mohamed G. Gouda and Amal El-Nahas",
+	pages = "6-13"}
+
+@inproceedings{DBLP:conf/icnp/CregutGH96,
+	title = "A Protocol for Supporting the ABT/DT Capability.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564945",
+	author = "Pierre Cr{\'e}gut and Fabrice Guillemin and Barbara Heyd",
+	pages = "218-225"}
+
+@inproceedings{DBLP:conf/icnp/DongL96,
+	title = "An Efficient Protocol for Call Setup and Path Migration
+               in IEEE 802.6 Based Personal Communication Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564950",
+	author = "Xuefeng Dong and Ten-Hwang Lai",
+	pages = "252-"}
+
+@inproceedings{DBLP:conf/icnp/EkizKBP96,
+	title = "Performance Analysis of a CAN / CAN Bridge.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564937",
+	author = "Hsmail Ekiz and A. Kutlu and M. D. Baba and E. T. Powner",
+	pages = "181-"}
+
+@inproceedings{DBLP:conf/icnp/GerlaKKPWLN96,
+	title = "Quality of Service Support in High Speed, Wormhole Routing
+               Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564898",
+	author = "Mario Gerla and B. Kannan and Bruce Kwan and Prasasth Palnati and Simon Walton and Emilio Leonardi and Fabio Neri",
+	pages = "40-47"}
+
+@inproceedings{DBLP:conf/icnp/HasegewaHKS96,
+	title = "A Video Retrieval Protocol with Video Data Prefetch and
+               Packet Retransmission Considering Play-out Dead Line.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564893",
+	author = "Teruyuki Hasegawa and Toru Hasegawa and Toshihiko Kato and Kenji Suzuki",
+	pages = "32-39"}
+
+@inproceedings{DBLP:conf/icnp/HigakiT96,
+	title = "Group communication protocol for flexible distributed systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564901",
+	author = "Hiroaki Higaki and Makoto Takizawa",
+	pages = "48-55"}
+
+@inproceedings{DBLP:conf/icnp/HuK96,
+	title = "A Simple Host Deflection Scheme for High-Speed LANs Using
+               Wormhole Routing.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564921",
+	author = "Po-Chi Hu and Leonard Kleinrock",
+	pages = "124-131"}
+
+@inproceedings{DBLP:conf/icnp/KrupczakCA96,
+	title = "Protocol Portability through Module Encapsulation.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564902",
+	author = "Bobby Krupczak and Kenneth L. Calvert and Mostafa H. Ammar",
+	pages = "56-"}
+
+@inproceedings{DBLP:conf/icnp/Lam96,
+	title = "An efficient distributed channel allocation algorithm based
+               on dynamic channel boundaries.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564947",
+	author = "Chi-Chung Lam",
+	pages = "236-243"}
+
+@inproceedings{DBLP:conf/icnp/LeeRMS96,
+	title = "Protocol Specification Using Parameterized Communicating
+               Extended Finite Stte Machines - A Case Study of The ATM
+               ABR Rate Control Scheme.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564943",
+	author = "David Lee and K. K. Ramakrishnan and W. Melody Moh and A. Udaya Shankar",
+	pages = "208-217"}
+
+@inproceedings{DBLP:conf/icnp/LeeY96,
+	title = "Optimization problems from feature testing of communication
+               protocols.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564905",
+	author = "David Lee and Mihalis Yannakakis",
+	pages = "66-75"}
+
+@inproceedings{DBLP:conf/icnp/LevineG96,
+	title = "A Comparison of Known Classes of Reliable Multicast Protocols.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564920",
+	author = "Brian Neil Levine and J. J. Garcia-Luna-Aceves",
+	pages = "112-"}
+
+@inproceedings{DBLP:conf/icnp/LiuM96,
+	title = "Partial-Order Validation for Multi-Process Protocols Modeled
+               as Communicating Finite State Machines.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564909",
+	author = "Hong Liu and Raymond E. Miller",
+	pages = "76-83"}
+
+@inproceedings{DBLP:conf/icnp/LoboS96,
+	title = "A cooperative congestion management scheme for switched
+               high-speed networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564939",
+	author = "Andrea F. Lobo and Adarshpal S. Sethi",
+	pages = "190-198"}
+
+@inproceedings{DBLP:conf/icnp/MattaS96,
+	title = "Dynamic Routing of Real-Time Virtual Circuits.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564925",
+	author = "Ibrahim Matta and A. Udaya Shankar",
+	pages = "132-139"}
+
+@inproceedings{DBLP:conf/icnp/MohH96,
+	title = "Evaluation of ABR Congestion Control Protocols for ATM LAN
+               and WAN.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564941",
+	author = "W. Melody Moh and Madhavi Hegde",
+	pages = "199-"}
+
+@inproceedings{DBLP:conf/icnp/NaganoHKK96,
+	title = "Timed Reachability Analysis Method for EFSM-based Communication
+               Protocols and Its Experimental Evaluation.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564914",
+	author = "Shin'ichi Nagano and Yoshinori Hatakeyama and Yoshiaki Kakuda and Tohru Kikuno",
+	pages = "92-"}
+
+@inproceedings{DBLP:conf/icnp/NoubirCN96,
+	title = "Fault tolerant multiple observers using error control codes.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564913",
+	author = "Guevara Noubir and Berthe Y. Choueiry and Henri J. Nussbaumer",
+	pages = "84-91"}
+
+@inproceedings{DBLP:conf/icnp/ParkKC96,
+	title = "On the relationship between file sizes, transport protocols,
+               and self-similar network traffic.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564935",
+	author = "Kihong Park and Gitae Kim and Mark Crovella",
+	pages = "171-180"}
+
+@inproceedings{DBLP:conf/icnp/ParkYC96,
+	title = "Novel algorithms for multicast communication in self-routing
+               MIN-based ATM switches.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564952",
+	author = "Jaehyung Park and Hyunsoo Yoon and Jung Wan Cho",
+	pages = "260-"}
+
+@inproceedings{DBLP:conf/icnp/PhilpL96,
+	title = "End-to-End Scheduling in Real-Time Packet-Switched Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564891",
+	author = "Ian R. Philp and Jane W.-S. Liu",
+	pages = "23-"}
+
+@inproceedings{DBLP:conf/icnp/RavindranSW96,
+	title = "Architectural Concepts in Implementation of End-system Protocols
+               for High Performance Communications.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564932",
+	author = "K. Ravindran and G. Singh and C. Murray Woodside",
+	pages = "162-170"}
+
+@inproceedings{DBLP:conf/icnp/Sisalem96,
+	title = "Congestion Control in TCP: Performance of Binary Congestion
+               Notification Enhanced TCP Compared to Reno and Tahoe TCP.",
+	ee = "http://csdl.computer.org/dl/proceedings/icnp/1996/7453/00/74530268.pdf",
+	author = "Dorgham Sisalem",
+	pages = "268-"}
+
+@inproceedings{DBLP:conf/icnp/WuC96,
+	title = "The token-bank leaky bucket mechanism for group connections
+               in ATM networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564946",
+	author = "Sheng-Lin Wu and Wen-Shyen E. Chen",
+	pages = "226-"}
+
+@inproceedings{DBLP:conf/icnp/XieL96,
+	title = "An Efficient Adaptive Search Algorithm for Scheduling Real-Time
+               Traffic.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564885",
+	author = "Geoffrey G. Xie and Simon S. Lam",
+	pages = "14-22"}
+
+@inproceedings{DBLP:conf/icnp/YangL96,
+	title = "A traffic oriented pre-arbitrated slot reuse scheme in DQDB
+               networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1996.564948",
+	author = "Yibin Yang and Ming T. Liu",
+	pages = "244-251"}
+
+@default year = 1995
+
+@inproceedings{DBLP:conf/icnp/AgarwalMMB95,
+	title = "A reliable ordered delivery protocol for interconnected
+               local area networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524853",
+	author = "Deborah A. Agarwal and Louise E. Moser and P. M. Melliar-Smith and Ravi K. Budhia",
+	pages = "365-"}
+
+@inproceedings{DBLP:conf/icnp/AroraP95,
+	title = "A timing-based schema for stabilizing information exchange.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524848",
+	author = "Anish Arora and D. M. Poduska",
+	pages = "324-331"}
+
+@inproceedings{DBLP:conf/icnp/BistaTS95,
+	title = "Extension of protocol synthesis to structured entities.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524820",
+	author = "Bhed Bahadur Bista and Atsushi Togashi and Norio Shiratori",
+	pages = "66-73"}
+
+@inproceedings{DBLP:conf/icnp/BonaventureDKD95,
+	title = "TCP/IP and the European ATM pilot.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524842",
+	author = "Olivier Bonaventure and Andr{\'e} A. S. Danthine and Espen Klovning and Olivier Danthine",
+	pages = "270-277"}
+
+@inproceedings{DBLP:conf/icnp/CataniaFPP95,
+	title = "A fuzzy decision maker for source traffic control in high
+               speed networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524828",
+	author = "Vincenzo Catania and Giuseppe Ficili and Sergio Palazzo and Daniela Panno",
+	pages = "136-143"}
+
+@inproceedings{DBLP:conf/icnp/ChaudhryRC95,
+	title = "On guaranteed bandwidth channels.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524818",
+	author = "Shailender Chaudhry and Mohammed Raziuddin and Alok N. Choudhary",
+	pages = "47-"}
+
+@inproceedings{DBLP:conf/icnp/EunKKYM95,
+	title = "Nonpreemptive scheduling algorithms for multimedia communication
+               in local area networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524852",
+	author = "Seong Bae Eun and Jongwan Kim and Byeong Man Kim and Hyunsoo Yoon and Seungryul R. Maeng",
+	pages = "356-364"}
+
+@inproceedings{DBLP:conf/icnp/GaoGBDH95,
+	title = "Validation of distributed algorithms and protocols.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524825",
+	author = "Qiang Gao and Roland Groz and Gregor von Bochmann and Joumana Dargham and E. Houssain Htite",
+	pages = "110-117"}
+
+@inproceedings{DBLP:conf/icnp/GoudaP95,
+	title = "A wireless link protocol: design by refinement.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524834",
+	author = "Mohamed G. Gouda and Sanjoy Paul",
+	pages = "192-200"}
+
+@inproceedings{DBLP:conf/icnp/HongAKM95,
+	title = "Service and connection management architecture for distributed
+               multimedia applications.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524845",
+	author = "Choong Seon Hong and Hirofumi Abe and Dai Kashiwa and Yutaka Matsushita",
+	pages = "296-304"}
+
+@inproceedings{DBLP:conf/icnp/HuangL95,
+	title = "Multimedia synchronization for live presentation using the
+               N-buffer approach.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524839",
+	author = "Chung-Ming Huang and Ruey-Yang Lee",
+	pages = "244-251"}
+
+@inproceedings{DBLP:conf/icnp/IshidaKK95,
+	title = "A routing protocol for finding two node-disjoint paths in
+               computer networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524850",
+	author = "Kenji Ishida and Yoshiaki Kakuda and Tohru Kikuno",
+	pages = "340-"}
+
+@inproceedings{DBLP:conf/icnp/JainHC95,
+	title = "Protocol architectures for delivering application specific
+               quality of service.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524847",
+	author = "P. K. Jain and Norman C. Hutchinson and Samuel T. Chanson",
+	pages = "313-"}
+
+@inproceedings{DBLP:conf/icnp/KhoumsiB95,
+	title = "Protocol synthesis using basic Lotos and global variables.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524827",
+	author = "Ahmed Khoumsi and Gregor von Bochmann",
+	pages = "126-"}
+
+@inproceedings{DBLP:conf/icnp/KimKKYC95,
+	title = "Performance analysis of an ATM switch with multiple paths.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524824",
+	author = "Byungho Kim and Boseob Kwon and Jinchun Kim and Hyunsoo Yoon and Jung Wan Cho",
+	pages = "100-"}
+
+@inproceedings{DBLP:conf/icnp/KimN95,
+	title = "Internetworking between OSI and TCP/IP network managements
+               with security features.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524843",
+	author = "Taeyeon Kim and Bongnam Noh",
+	pages = "278-285"}
+
+@inproceedings{DBLP:conf/icnp/LiW95,
+	title = "Design and implementation of a multicast-buffer ATM switch.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524822",
+	author = "Jin Li and Chuan-lin Wu",
+	pages = "84-91"}
+
+@inproceedings{DBLP:conf/icnp/LinC95,
+	title = "ATM admission models of stochastic high level Petri nets
+               based on hierarchical modeling.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524829",
+	author = "Chuang Lin and Samuel T. Chanson",
+	pages = "144-151"}
+
+@inproceedings{DBLP:conf/icnp/LinG95,
+	title = "Multimedia transport in multihop dynamic packet radio networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524836",
+	author = "Chunhung Richard Lin and Mario Gerla",
+	pages = "209-"}
+
+@inproceedings{DBLP:conf/icnp/LiuM95,
+	title = "Generalized fair reachability analysis for cyclic protocols
+               with nondeterministic and internal transitions.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524813",
+	author = "Hong Liu and Raymond E. Miller",
+	pages = "6-13"}
+
+@inproceedings{DBLP:conf/icnp/McPhetersNM95,
+	title = "The interaction between the V protocol and the Q.293I protocol
+               for the interactive video network.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524833",
+	author = "Michael J. McPheters and Hung T. Nguyen and Mowaffak T. Midani",
+	pages = "180-"}
+
+@inproceedings{DBLP:conf/icnp/MillinerD95,
+	title = "Networking abstractions and protocols under variable length
+               messages.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524844",
+	author = "Stephen Milliner and Alex Delis",
+	pages = "286-"}
+
+@inproceedings{DBLP:conf/icnp/MiyakeKS95,
+	title = "Implementation method of high speed protocol as transport
+               library.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524832",
+	author = "Yutaka Miyake and Toshihiko Kato and Kenji Suzuki",
+	pages = "172-179"}
+
+@inproceedings{DBLP:conf/icnp/MoserSSS95,
+	title = "A Framework for Flexible Networking.",
+	ee = "http://csdl.computer.org/comp/proceedings/icnp/1995/7216/00/72160226abs.htm",
+	author = "M. Moser and Sigeki Sugiura and Kenji Sugawara and Norio Shiratori",
+	pages = "226-233"}
+
+@inproceedings{DBLP:conf/icnp/NakataHT95,
+	title = "Protocol synthesis from timed and structured specifications.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524821",
+	author = "Akio Nakata and Teruo Higashino and Kenichi Taniguchi",
+	pages = "74-"}
+
+@inproceedings{DBLP:conf/icnp/NoubirVN95,
+	title = "A robust transport protocol for run-time fault detection.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524831",
+	author = "Guevara Noubir and K. Vijayananda and Henri J. Nussbaumer",
+	pages = "164-171"}
+
+@inproceedings{DBLP:conf/icnp/OkadaLS95,
+	title = "A society of cooperative agents on the information network:
+               towards intelligent information gathering.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524837",
+	author = "Roberto Okada and Eun-Seok Lee and Norio Shiratori",
+	pages = "218-225"}
+
+@inproceedings{DBLP:conf/icnp/PaoC95,
+	title = "Design of ATM switch using hypercube with distributed shared
+               input buffers and dedicated output buffers.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524823",
+	author = "Derek C. W. Pao and W. N. Chau",
+	pages = "92-99"}
+
+@inproceedings{DBLP:conf/icnp/ParkC95,
+	title = "A call model for multimedia multiuser communication platform.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524846",
+	author = "Seungchul Park and Yanghee Choi",
+	pages = "305-312"}
+
+@inproceedings{DBLP:conf/icnp/PornavalaiCS95,
+	title = "A neural network approach to multicast routing in real-time
+               communication networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524849",
+	author = "Chotipat Pornavalai and Goutam Chakraborty and Norio Shiratori",
+	pages = "332-339"}
+
+@inproceedings{DBLP:conf/icnp/RahaKZ95,
+	title = "Using traffic regulation to meet end-to-end deadlines in
+               ATM LANs.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524830",
+	author = "Amitava Raha and Sanjay Kamat and Wei Zhao",
+	pages = "152-"}
+
+@inproceedings{DBLP:conf/icnp/RyooAS95,
+	title = "Simulation study of a run-time bandwidth assignment technique
+               for delay sensitive traffic in high-speed network.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524817",
+	author = "Intae Ryoo and Hitoshi Aida and Hitoshi Saito",
+	pages = "40-46"}
+
+@inproceedings{DBLP:conf/icnp/TachikawaT95,
+	title = "Distributed protocol for selective intra-group communication.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524838",
+	author = "Takayuki Tachikawa and Makoto Takizawa",
+	pages = "234-243"}
+
+@inproceedings{DBLP:conf/icnp/TannoKTN95,
+	title = "Buffer insertion/self-token (BIST) protocol for multimedia
+               LANs.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524851",
+	author = "Koichi Tanno and Akio Koyama and T. Taketa and Shoichi Noguchi",
+	pages = "350-355"}
+
+@inproceedings{DBLP:conf/icnp/TaoBD95,
+	title = "Verification and diagnosis of testing equivalence and reduction
+               relation.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524814",
+	author = "Zhongping Tao and Gregor von Bochmann and Rachida Dssouli",
+	pages = "14-21"}
+
+@inproceedings{DBLP:conf/icnp/VuongCI95,
+	title = "Petri net models for describing multimedia synchronization
+               requirements.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524841",
+	author = "Son T. Vuong and Kendra Cooper and Mabo Robert Ito",
+	pages = "260-"}
+
+@inproceedings{DBLP:conf/icnp/WuKL95,
+	title = "A synchronization and compensation protocol for multimedia
+               communication systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524840",
+	author = "Chao-Hui Wu and Liang-Seng Koh and Ming T. Liu",
+	pages = "252-259"}
+
+@inproceedings{DBLP:conf/icnp/YamamotoLS95,
+	title = "Similarity for reuse of specifications in communication
+               software development.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524815",
+	author = "Ushio Yamamoto and Eun-Seok Lee and Norio Shiratori",
+	pages = "22-"}
+
+@inproceedings{DBLP:conf/icnp/YangLL95,
+	title = "Mobile real-time communications in FDDI networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524835",
+	author = "Yibin Yang and Ten-Hwang Lai and Ming-Tsan Liu",
+	pages = "201-208"}
+
+@inproceedings{DBLP:conf/icnp/YasumotoHMT95,
+	title = "Protocol visualization using LOTOS multi-rendezvous mechanism.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524826",
+	author = "Keiichi Yasumoto and Teruo Higashino and Toshio Matsuura and Kenichi Taniguchi",
+	pages = "118-125"}
+
+@inproceedings{DBLP:conf/icnp/ZeroualY95,
+	title = "A protocol synthesis algorithm: a relational approach.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524819",
+	author = "Kacem Zeroual and M. El Yassini",
+	pages = "58-65"}
+
+@inproceedings{DBLP:conf/icnp/ZhouC95,
+	title = "A dynamic bandwidth allocation scheme for multimedia data
+               over ATM networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ICNP.1995.524816",
+	author = "Han Zhou and C. H. Chang",
+	pages = "32-39"}

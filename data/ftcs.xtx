@@ -1,0 +1,2785 @@
+@include conferences-cs
+
+@default bibsource = "DBLP, http://dblp.uni-trier.de"
+
+@default booktitle = ftcs
+
+@default year = 1999
+
+@inproceedings{DBLP:conf/ftcs/AlvisiERHM99,
+	title = "An Analysis of Communication Induced Checkpointing.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130242abs.htm",
+	author = "Lorenzo Alvisi and E. N. Elnozahy and Sriram Rao and Syed Amir Husain and Asanka De Mel",
+	pages = "242-249"}
+
+@inproceedings{DBLP:conf/ftcs/Ayeb99,
+	title = "Fault Identification Algorithmic: A New Formal Approach.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130138abs.htm",
+	author = "B{\'e}chir el Ayeb",
+	pages = "138-145"}
+
+@inproceedings{DBLP:conf/ftcs/ChungLHLW99,
+	title = "Winckp: A Transparent Checkpointing and Rollback Recovery
+               Tool for Windows NT Applications.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130220abs.htm",
+	author = "P. Emerald Chung and Woei-Jyh Lee and Yennun Huang and Deron Liang and Chung-Yih Wang",
+	pages = "220-223"}
+
+@inproceedings{DBLP:conf/ftcs/DacierS99,
+	title = "Special Seminar: Intrusion Detection.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130238abs.htm",
+	author = "Marc Dacier and O. Sami Saydjari",
+	pages = 238}
+
+@inproceedings{DBLP:conf/ftcs/DieterL99,
+	title = "A User-Level Checkpointing Library for POSIX Threads Programs.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130224abs.htm",
+	author = "William R. Dieter and James E. Lumpp, Jr.",
+	pages = "224-227"}
+
+@inproceedings{DBLP:conf/ftcs/FengML99,
+	title = "Two-Step Algorithms for Maximal Diagnosis of Wiring Interconnects.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130130abs.htm",
+	author = "Wenyi Feng and Fred J. Meyer and Fabrizio Lombardi",
+	pages = "130-137"}
+
+@inproceedings{DBLP:conf/ftcs/GargHKTY99,
+	title = "Performance and Reliability Evaluation of Passive Replication
+               Schemes in Application Level Fault Tolerance.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130329abs.htm",
+	author = "Sachin Garg and Yennun Huang and Chandra M. R. Kintala and Kishor S. Trivedi and Shalini Yajnik",
+	pages = "322-329"}
+
+@inproceedings{DBLP:conf/ftcs/GhoshSH99,
+	title = "Wrapping Windows NT Software for Robustness.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130344abs.htm",
+	author = "Anup K. Ghosh and Matthew Schmid and Frank Hill",
+	pages = "344-347"}
+
+@inproceedings{DBLP:conf/ftcs/GuedartMSBB99,
+	title = "Functional and Faulty Behavior Analysis: Some Experiments
+               and Lessons Learnt.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130348abs.htm",
+	author = "Yannick Le Gu{\'e}dart and Luc Marneffe and Fran\c{c}ois Scheerens and Jean-Paul Blanquart and Thierry Boyer",
+	pages = "348-351"}
+
+@inproceedings{DBLP:conf/ftcs/HamzaogluP99,
+	title = "Reducing Test Application Time for Full Scan Embedded Cores.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130267abs.htm",
+	author = "Ilker Hamzaoglu and Janak H. Patel",
+	pages = "260-267"}
+
+@inproceedings{DBLP:conf/ftcs/HengsterB99,
+	title = "Synthesis of Circuits Derived from Decision Diagrams - Combining
+               Small Delay and Testability.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130268abs.htm",
+	author = "Harry Hengster and Bernd Becker",
+	pages = "268-275"}
+
+@inproceedings{DBLP:conf/ftcs/HickeyR99,
+	title = "An Execution Service for a Partitionable Low Bandwidth Network.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130174abs.htm",
+	author = "Takako M. Hickey and Robbert van Renesse",
+	pages = "174-181"}
+
+@inproceedings{DBLP:conf/ftcs/HollidayAA99,
+	title = "The Performance of Database Replication with Group Multicast.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130158abs.htm",
+	author = "JoAnne Holliday and Divyakant Agrawal and Amr El Abbadi",
+	pages = "158-165"}
+
+@inproceedings{DBLP:conf/ftcs/IyerABPLS99,
+	title = "COTS Hardware and Software in High-Availability Systems
+               (Panel).",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130120abs.htm",
+	author = "Ravishankar K. Iyer and Algirdas Avizienis and D. Barron and David Powell and Haim Levendel and J. Samson",
+	pages = 120}
+
+@inproceedings{DBLP:conf/ftcs/KoopmanD99,
+	title = "Comparing the Robustness of POSIX Operating Systems.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130030abs.htm",
+	author = "Philip Koopman and John DeVale",
+	pages = "30-37"}
+
+@inproceedings{DBLP:conf/ftcs/KrishnamurthiS99,
+	title = "Effect of Failures on Optimal Location Management Algorithms.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130110abs.htm",
+	author = "Govind Krishnamurthi and Arun K. Somani",
+	pages = "110-117"}
+
+@inproceedings{DBLP:conf/ftcs/LabovitzAJ99,
+	title = "Experimental Study of Internet Stability and Backbone Failures.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130278abs.htm",
+	author = "Craig Labovitz and Abha Ahuja and Farnam Jahanian",
+	pages = "278-285"}
+
+@inproceedings{DBLP:conf/ftcs/LindemannRT99,
+	title = "The DSPNexpress 2.000 Performance and Dependability Modeling
+               Environment.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130228abs.htm",
+	author = "Christoph Lindemann and Andreas Reuys and Axel Th{\"u}mmler",
+	pages = "228-231"}
+
+@inproceedings{DBLP:conf/ftcs/MahapatraD99,
+	title = "Efficient Network-Flow Based Techniques for Dynamic Fault
+               Reconfiguration in FPGAs.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130122abs.htm",
+	author = "Nihar R. Mahapatra and Shantanu Dutt",
+	pages = "122-129"}
+
+@inproceedings{DBLP:conf/ftcs/MaruthiSA99,
+	title = "Interference Robust TCP.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130102abs.htm",
+	author = "Bhaskar Maruthi and Arun K. Somani and Murat Azizoglu",
+	pages = "102-109"}
+
+@inproceedings{DBLP:conf/ftcs/MishraB99,
+	title = "An Algorithm Based Error Detection Scheme for the Multigrid
+               Algorithm.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130012abs.htm",
+	author = "Amitabh Mishra and Prithviraj Banerjee",
+	pages = "12-19"}
+
+@inproceedings{DBLP:conf/ftcs/MishraFX99,
+	title = "Design, Implementation and Performance Evaluation of a CORBA
+               Group Communication Service.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130166abs.htm",
+	author = "Shivakant Mishra and Lan Fei and Guming Xing",
+	pages = "166-173"}
+
+@inproceedings{DBLP:conf/ftcs/MohanM99,
+	title = "Routing and Wavelength Assignment for Establishing Dependable
+               Connections in WDM Networks.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130094abs.htm",
+	author = "G. Mohan and C. Siva Ram Murthy",
+	pages = "94-101"}
+
+@inproceedings{DBLP:conf/ftcs/MoserMN99,
+	title = "A Fault Tolerance Framework for CORBA.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130150abs.htm",
+	author = "Louise E. Moser and P. M. Melliar-Smith and Priya Narasimhan",
+	pages = "150-157"}
+
+@inproceedings{DBLP:conf/ftcs/NgC99,
+	title = "The Systematic Improvement of Fault Tolerance in the Rio
+               File Cache.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130076abs.htm",
+	author = "Wee Teck Ng and Peter M. Chen",
+	pages = "76-83"}
+
+@inproceedings{DBLP:conf/ftcs/PerezFMM99,
+	title = "Incremental Messages: Micro-Kernel Services for Flexible
+               and Efficient Management of Replicated Data.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130056abs.htm",
+	author = "Carlos P{\'e}rez and Germ{\'a}n Fabregat and Rafael J. Mart\'{\i}nez and G. Mart\'{\i}n",
+	pages = "56-63"}
+
+@inproceedings{DBLP:conf/ftcs/PlankT99,
+	title = "The Average Availability of Parallel Checkpointing Systems
+               and Its Importance in Selecting Runtime Parameters.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130250abs.htm",
+	author = "James S. Plank and Michael G. Thomason",
+	pages = "250-257"}
+
+@inproceedings{DBLP:conf/ftcs/PrataS99,
+	title = "Algorithm Based Fault Tolerance versus Result-Checking for
+               Matrix Computations.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130004abs.htm",
+	author = "Paula Prata and Jo{\~a}o Gabriel Silva",
+	pages = "4-11"}
+
+@inproceedings{DBLP:conf/ftcs/RaoAV99,
+	title = "Egida: An Extensible Toolkit for Low-Overhead Fault-Tolerance.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130048abs.htm",
+	author = "Sriram Rao and Lorenzo Alvisi and Harrick M. Vin",
+	pages = "48-55"}
+
+@inproceedings{DBLP:conf/ftcs/RedinboM99,
+	title = "Fault Tolerance, Channel Coding and Arithmetic Source Coding
+               Combined.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130200abs.htm",
+	author = "G. Robert Redinbo and Ranjit Manomohan",
+	pages = "200-207"}
+
+@inproceedings{DBLP:conf/ftcs/Rotenberg99,
+	title = "AR-SMT: A Microarchitectural Approach to Fault Tolerance
+               in Microprocessors.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130084abs.htm",
+	author = "Eric Rotenberg",
+	pages = "84-91"}
+
+@inproceedings{DBLP:conf/ftcs/RufinoVA99,
+	title = "A Columbus' Egg Idea for CAN Media Redundancy.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130286abs.htm",
+	author = "Jos{\'e} Rufino and Paulo Ver\'{\i}ssimo and Guilherme Arroz",
+	pages = "286-293"}
+
+@inproceedings{DBLP:conf/ftcs/SabaratnamTH99,
+	title = "Evaluating the Effectiveness of Fault Tolerance in Replicated
+               Database Management Systems.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130306abs.htm",
+	author = "Maitrayi Sabaratnam and {\O}ystein Torbj{\o}rnsen and Svein-Olaf Hvasshovd",
+	pages = "306-313"}
+
+@inproceedings{DBLP:conf/ftcs/SallesRFA99,
+	title = "MetaKernels and Fault Containment Wrappers.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130022abs.htm",
+	author = "Fr{\'e}d{\'e}ric Salles and Manuel Rodr\'{\i}guez and Jean-Charles Fabre and Jean Arlat",
+	pages = "22-29"}
+
+@inproceedings{DBLP:conf/ftcs/SimeuPR99,
+	title = "Automatic Design of Optimal Concurrent Fault Detector for
+               Linear Analog Systems.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130184abs.htm",
+	author = "Emmanuel Simeu and Arno W. Peters and Iyad Rayane",
+	pages = "184-191"}
+
+@inproceedings{DBLP:conf/ftcs/SinhaS99,
+	title = "Identification of Test Cases Using a Formal Approach.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130314abs.htm",
+	author = "Purnendu Sinha and Neeraj Suri",
+	pages = "314-321"}
+
+@inproceedings{DBLP:conf/ftcs/SteiningerS99,
+	title = "On the Necessity of On-Line-BIST in Safety-Critical Applications
+               - A Case Study.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130215abs.htm",
+	author = "Andreas Steininger and Christoph Scherrer",
+	pages = "208-215"}
+
+@inproceedings{DBLP:conf/ftcs/SullivanDC99,
+	title = "The Galileo Fault Tree Analysis Tool.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130235abs.htm",
+	author = "Kevin J. Sullivan and Joanne Bechta Dugan and David Coppit",
+	pages = "232-235"}
+
+@inproceedings{DBLP:conf/ftcs/SunadaGF99,
+	title = "Multiprocessor Architecture Using an Audit Trail for Fault
+               Tolerance.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130040abs.htm",
+	author = "Dwight Sunada and David Glasco and Michael J. Flynn",
+	pages = "40-47"}
+
+@inproceedings{DBLP:conf/ftcs/TalliniB99,
+	title = "Some Transmission Time Analysis for the Parallel Asynchronous
+               Communication Scheme.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130192abs.htm",
+	author = "Luca G. Tallini and Bella Bose",
+	pages = "192-199"}
+
+@inproceedings{DBLP:conf/ftcs/XuRRSZCH99,
+	title = "Rigorous Development of a Safety-Critical System Based on
+               Coordinated Atomic Actions.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130068abs.htm",
+	author = "Jie Xu and Brian Randell and Alexander B. Romanovsky and Robert J. Stroud and Avelino F. Zorzo and Ercument Canver and Friedrich W. von Henke",
+	pages = "68-75"}
+
+@inproceedings{DBLP:conf/ftcs/YaoSF99,
+	title = "Message Logging in Mobile Computing.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130294abs.htm",
+	author = "Bin Yao and Kuo-Feng Ssu and W. Kent Fuchs",
+	pages = "294-301"}
+
+@inproceedings{DBLP:conf/ftcs/YinJAH99,
+	title = "Real Time Estimation for Usage-Dependent Reliability on
+               a Dual-Backbone Network Subsystem.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130340abs.htm",
+	author = "Meng-Lai Yin and Lawrence E. James and Rafael R. Arellano and Raymond V. Hettwer",
+	pages = "340-343"}
+
+@inproceedings{DBLP:conf/ftcs/ZangST99,
+	title = "Dependability Analysis of Distributed Computer Systems with
+               Imperfect Coverage.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130330abs.htm",
+	author = "Xinyu Zang and Hairong Sun and Kishor S. Trivedi",
+	pages = "330-337"}
+
+@inproceedings{DBLP:conf/ftcs/ZarrinehU99,
+	title = "Programmable Memory BIST and a New Synthesis Framework.",
+	ee = "http://computer.org/proceedings/ftcs/0213/02130352abs.htm",
+	author = "Kamran Zarrineh and Shambhu J. Upadhyaya",
+	pages = "352-355"}
+
+@default year = 1998
+
+@inproceedings{DBLP:conf/ftcs/Allain-MorinP98,
+	title = "Dependability Assessment of a Computerized Nuclear Protection
+               System.",
+	author = "Genevi{\`e}ve Allain-Morin and Olivier Pourret",
+	pages = "464-468"}
+
+@inproceedings{DBLP:conf/ftcs/AlmohammadB98,
+	title = "Fault-Tolerant Communication Algorithms in Toroidal Networks.",
+	author = "Bader Almohammad and Bella Bose",
+	pages = "186-194"}
+
+@inproceedings{DBLP:conf/ftcs/BartlettLLR98,
+	title = "Cyber Threats (Panel).",
+	author = "Wendy Bartlett and Peter B. Ladkin and Derek Long and Brian Randell",
+	pages = "104-106"}
+
+@inproceedings{DBLP:conf/ftcs/BeardenB98,
+	title = "A Fault-Tolerant Algorithm for Decentralized On-line Quorum
+               Adaptation.",
+	author = "Mark Bearden and Ronald P. Bianchini, Jr.",
+	pages = "262-271"}
+
+@inproceedings{DBLP:conf/ftcs/BouePC98,
+	title = "MEFISTO-L: A VHDL-Based Fault Injection Tool for the Experimental
+               Assessment of Fault Tolerance.",
+	author = "J{\'e}rome Bou{\'e} and Philippe P{\'e}tillon and Yves Crouzet",
+	pages = "168-173"}
+
+@inproceedings{DBLP:conf/ftcs/Bressoud98,
+	title = "TFT: A Software System for Application-Transparent Fault
+               Tolerance.",
+	author = "Thomas C. Bressoud",
+	pages = "128-137"}
+
+@inproceedings{DBLP:conf/ftcs/ChandraC98,
+	title = "How Fail-Stop are Faulty Programs?",
+	author = "Subhachandra Chandra and Peter M. Chen",
+	pages = "240-249"}
+
+@inproceedings{DBLP:conf/ftcs/Chen98,
+	title = "Modelling Software Operational Reliability via Input Domain-Based
+               Reliability Growth Model.",
+	author = "Yinong Chen",
+	pages = "314-323"}
+
+@inproceedings{DBLP:conf/ftcs/ChillaregeHMPV98,
+	title = "Vision for High-Availability of the Global Infrastructure
+               (Panel).",
+	author = "Ram Chillarege and Robert W. Horst and Clifford Meltzer and Angelo Pruscino and Dalibor F. Vrsalovic",
+	pages = "2-4"}
+
+@inproceedings{DBLP:conf/ftcs/Constantinescu98,
+	title = "Validation of the Fault/Error Handling Mechanisms of the
+               Teraflops Supercomputer.",
+	author = "Cristian Constantinescu",
+	pages = "382-389"}
+
+@inproceedings{DBLP:conf/ftcs/CristianF98,
+	title = "The Timed Asynchronous Distributed System Model.",
+	author = "Flaviu Cristian and Christof Fetzer",
+	pages = "140-149"}
+
+@inproceedings{DBLP:conf/ftcs/DeconinckBCFL98,
+	title = "Stable Memory in Substation Automation: A Case Study.",
+	author = "Geert Deconinck and Oliver Botti and Flavio Cassinari and Vincenzo De Florio and Rudy Lauwereins",
+	pages = "452-457"}
+
+@inproceedings{DBLP:conf/ftcs/Elnozahy98,
+	title = "How Safe is Probabilistic Checkpointing?",
+	author = "E. N. Elnozahy",
+	pages = "358-363"}
+
+@inproceedings{DBLP:conf/ftcs/EskesenHIKH98,
+	title = "Software Exploitation of a Fault-Tolerant Computer with
+               a Large Memory.",
+	author = "Frank Eskesen and Michel Hack and Arun Iyengar and Richard P. King and Nagui Halim",
+	pages = "336-345"}
+
+@inproceedings{DBLP:conf/ftcs/FichnaGGR98,
+	title = "Fault-Tolerance of Spaceborne Semiconductor Mass Memories.",
+	author = "T. Fichna and M. G{\"a}rtner and Fritz Gliem and F. Rombeck",
+	pages = "408-413"}
+
+@inproceedings{DBLP:conf/ftcs/FolkessonSK98,
+	title = "A Comparison of Simulation Based and Scan Chain Implemented
+               Fault Injection.",
+	author = "Peter Folkesson and Sven Svensson and Johan Karlsson",
+	pages = "284-293"}
+
+@inproceedings{DBLP:conf/ftcs/GalvesG98,
+	title = "Rare Events in Stochastic Dynamical Systems and Failures
+               in Ultra-Reliable Reactive Programs.",
+	author = "A. Galves and Marie-Claude Gaudel",
+	pages = "324-333"}
+
+@inproceedings{DBLP:conf/ftcs/GrosspietschAMKR98,
+	title = "From Dependable Computing Systems to Computing for Integrated
+               Dependable Systems? (Panel).",
+	author = "Karl-Erwin Gro{\ss}pietsch and Jacob A. Abraham and Johannes Maier and Hans-Dieter Kochs and Michel Renovell",
+	pages = "296-301"}
+
+@inproceedings{DBLP:conf/ftcs/Hartonas-GarmhausenCCCG98,
+	title = "Verification of a Safety-Critical Railway Interlocking System
+               with Real-Time Constraints.",
+	author = "Vicky Hartonas-Garmhausen and S{\'e}rgio Vale Aguiar Campos and Alessandro Cimatti and Edmund M. Clarke and Fausto Giunchiglia",
+	pages = "458-463"}
+
+@inproceedings{DBLP:conf/ftcs/HeinerT98,
+	title = "Time-Triggered Architecture for Safety-Related Distributed
+               Real-Time Systems in Transportation Systems.",
+	author = "G{\"u}nter Heiner and Thomas Thurner",
+	pages = "402-407"}
+
+@inproceedings{DBLP:conf/ftcs/HelaryMR98,
+	title = "Communication-Induced Determination of Consistent Snapshots.",
+	author = "Jean-Michel H{\'e}lary and Achour Most{\'e}faoui and Michel Raynal",
+	pages = "208-217"}
+
+@inproceedings{DBLP:conf/ftcs/KaanicheRKIK98,
+	title = "A Hierarchical Approach for Dependability Analysis of a
+               Commercial Cache-Based RAID Storage Architecture.",
+	author = "Mohamed Ka{\^a}niche and Luigi Romano and Zbigniew Kalbarczyk and Ravishankar K. Iyer and R. Karcich",
+	pages = "6-15"}
+
+@inproceedings{DBLP:conf/ftcs/KanekawaMISMY98,
+	title = "Fault Detection and Recovery Coverage Improvement by Clock
+               Synchronized Duplicated Systems with Optimal Time Diversity.",
+	author = "Nobuyasu Kanekawa and Takayuki Meguro and Kyosuke Isono and Yosuke Shima and Naoto Miyazaki and Shinichiro Yamaguchi",
+	pages = "196-200"}
+
+@inproceedings{DBLP:conf/ftcs/KimWS98,
+	title = "Reliability Modeling of Hard Real-Time Systems.",
+	author = "Hagbae Kim and Allan L. White and Kang G. Shin",
+	pages = "304-313"}
+
+@inproceedings{DBLP:conf/ftcs/KroppKS98,
+	title = "Automated Robustness Testing of Off-the-Shelf Software Components.",
+	author = "Nathan P. Kropp and Philip J. Koopman, Jr. and Daniel P. Siewiorek",
+	pages = "230-239"}
+
+@inproceedings{DBLP:conf/ftcs/Laranjeira98,
+	title = "NCAPS: Application High Availability in UNIX Computer Clusters.",
+	author = "Luiz A. Laranjeira",
+	pages = "441-450"}
+
+@inproceedings{DBLP:conf/ftcs/LiggesmeyerR98,
+	title = "Improving System Reliability with Automatic Fault Tree Generation.",
+	author = "Peter Liggesmeyer and Martin Rothfelder",
+	pages = "90-99"}
+
+@inproceedings{DBLP:conf/ftcs/MaxionO98,
+	title = "Improving Software Robustness with Dependability Cases.",
+	author = "Roy A. Maxion and Robert T. Olszewski",
+	pages = "346-355"}
+
+@inproceedings{DBLP:conf/ftcs/MurakamiBRLL98,
+	title = "Design, Implementation, and Evaluation of Highly Available
+               Distributed Call Processing Systems.",
+	author = "Kazutaki Murakami and Richard W. Buskens and Ramachandran Ramjee and Yow-Jian Lin and Thomas F. La Porta",
+	pages = "118-127"}
+
+@inproceedings{DBLP:conf/ftcs/NevesF98,
+	title = "RENEW: A Tool for Fast and Efficient Implementation of Checkpoint
+               Protocols.",
+	author = "Nuno Neves and W. Kent Fuchs",
+	pages = "58-67"}
+
+@inproceedings{DBLP:conf/ftcs/PlankE98,
+	title = "Experimental Assessment of Workstation Failures and Their
+               Impact on Checkpointing Systems.",
+	author = "James S. Plank and Wael R. Elwasif",
+	pages = "48-57"}
+
+@inproceedings{DBLP:conf/ftcs/PomeranzR98,
+	title = "A Generalized Test Generation Procedure for Path Delay Faults.",
+	author = "Irith Pomeranz and Sudhakar M. Reddy",
+	pages = "274-283"}
+
+@inproceedings{DBLP:conf/ftcs/PopovS98,
+	title = "Conceptual Models for the Reliability of Diverse Systems
+               - New Results.",
+	author = "Peter T. Popov and Lorenzo Strigini",
+	pages = "80-89"}
+
+@inproceedings{DBLP:conf/ftcs/RoquesCB98,
+	title = "Fault-Tolerant Computer for the Automated Transfer Vehicle.",
+	author = "R. Roques and A. Corr{\'e}g{\'e} and C. Bol{\'e}at",
+	pages = "414-419"}
+
+@inproceedings{DBLP:conf/ftcs/RufinoVAAR98,
+	title = "Fault-Tolerant Broadcasts in CAN.",
+	author = "Jos{\'e} Rufino and Paulo Ver\'{\i}ssimo and Guilherme Arroz and Carlos Almeida and Lu\'{\i}s Rodrigues",
+	pages = "150-159"}
+
+@inproceedings{DBLP:conf/ftcs/SamsonMF98,
+	title = "A Technique for Automated Validation of Fault Tolerant Designs
+               Using Laser Fault Injection (LFI).",
+	author = "John R. Samson, Jr. and Wilfrido A. Moreno and Fernando J. Falquez",
+	pages = "162-167"}
+
+@inproceedings{DBLP:conf/ftcs/SilvaPRM98,
+	title = "Practical Issues in the Use of ABFT and a New Failure Model.",
+	author = "Jo{\~a}o Gabriel Silva and Paula Prata and M{\'a}rio Zenha Rela and Henrique Madeira",
+	pages = "26-35"}
+
+@inproceedings{DBLP:conf/ftcs/SilvaS98,
+	title = "Avoiding Checkpoint Contamination in Parallel Systems.",
+	author = "Lu\'{\i}s Moura Silva and Jo{\~a}o Gabriel Silva",
+	pages = "364-369"}
+
+@inproceedings{DBLP:conf/ftcs/SinghaiLR98,
+	title = "The SunSCALR Framework for Internet Servers.",
+	author = "Ashish Singhai and Swee Boon Lim and Sanjay R. Radia",
+	pages = "108-117"}
+
+@inproceedings{DBLP:conf/ftcs/SpainhowerG98,
+	title = "G4: A Fault-Tolerant CMOS Mainframe.",
+	author = "Lisa Spainhower and Thomas A. Gregg",
+	pages = "432-440"}
+
+@inproceedings{DBLP:conf/ftcs/SsuF98,
+	title = "PREACHES - Portable Recovery and Checkpointing in Heterogeneous
+               Systems.",
+	author = "Kuo-Feng Ssu and W. Kent Fuchs",
+	pages = "38-47"}
+
+@inproceedings{DBLP:conf/ftcs/SuriS98,
+	title = "On the Use of Formal Techniques for Validation.",
+	author = "Neeraj Suri and Purnendu Sinha",
+	pages = "390-399"}
+
+@inproceedings{DBLP:conf/ftcs/Temple98,
+	title = "Avoiding the Babbling-Idiot Failure in a Time-Triggered
+               Communication System.",
+	author = "Christopher Temple",
+	pages = "218-227"}
+
+@inproceedings{DBLP:conf/ftcs/TheelP98,
+	title = "Optimal Replica Control Protocols Exhibit Symmetric Operation
+               Availabilities.",
+	author = "Oliver E. Theel and Henning Pagnia",
+	pages = "252-261"}
+
+@inproceedings{DBLP:conf/ftcs/TotelBDP98,
+	title = "Supporting Multiple Levels of Criticality.",
+	author = "Eric Totel and Jean-Paul Blanquart and Yves Deswarte and David Powell",
+	pages = "70-79"}
+
+@inproceedings{DBLP:conf/ftcs/Tsai98,
+	title = "Fault Tolerance Via N-Modular Software Redundancy.",
+	author = "Timothy K. Tsai",
+	pages = "201-206"}
+
+@inproceedings{DBLP:conf/ftcs/UrbanKP98,
+	title = "A Survivable Avionics System for Space Applications.",
+	author = "Gerd Urban and Hans-Joachim Kolinowitz and Jan Peleska",
+	pages = "372-381"}
+
+@inproceedings{DBLP:conf/ftcs/VaziriLW98,
+	title = "Proving Correctness of a Controller Algorithm for the RAID
+               Level 5 System.",
+	author = "Mandana Vaziri and Nancy A. Lynch and Jeannette M. Wing",
+	pages = "16-25"}
+
+@inproceedings{DBLP:conf/ftcs/VogelsDBGMSVBG98,
+	title = "The Design and Architecture of the Microsoft Cluster Service
+               - A Practical Approach to High-Availability and Scalability.",
+	author = "Werner Vogels and Dan Dumitriu and Kenneth P. Birman and Rod Gamache and Mike Massa and Rob Short and John Vert and Joe Barrera and Jim Gray",
+	pages = "422-431"}
+
+@inproceedings{DBLP:conf/ftcs/YounisZA98,
+	title = "Strong Partitioning Protocol for a Multiprocessor VME System.",
+	author = "Mohamed F. Younis and Jeffrey X. Zhou and Mohamed Aboutabl",
+	pages = "176-185"}
+
+@default year = 1997
+
+@inproceedings{DBLP:conf/ftcs/AmendolaIMP00,
+	title = "Experimental Evaluation of Computer-Based Railway Control
+               Systems.",
+	author = "Arturo M. Amendola and Leonardo Impagliazzo and P. Marmo and Fabio Poli",
+	pages = "380-384"}
+
+@inproceedings{DBLP:conf/ftcs/Anceaume97,
+	title = "A Lightweight Solution to Uniform Atomic Broadcast for Asynchronous
+               Systems.",
+	author = "Emmanuelle Anceaume",
+	pages = "292-301"}
+
+@inproceedings{DBLP:conf/ftcs/BaldoniHMR97,
+	title = "A Communication-Induced Checkpointing Protocol that Ensures
+               Rollback-Dependency Trackability.",
+	author = "Roberto Baldoni and Jean-Michel H{\'e}lary and Achour Most{\'e}faoui and Michel Raynal",
+	pages = "68-77"}
+
+@inproceedings{DBLP:conf/ftcs/BloughT97,
+	title = "Fault-Injection-Based Testing of Fault-Tolerant Algorithms
+               in Message-Passing Parallel Computers.",
+	author = "Douglas M. Blough and Tatsuhiro Torii",
+	pages = "258-267"}
+
+@inproceedings{DBLP:conf/ftcs/BondavalliCGG00,
+	title = "Discriminating Fault Rate and Persistency to Improve Fault
+               Treatment.",
+	author = "Andrea Bondavalli and Silvano Chiaradonna and Felicita Di Giandomenico and Fabrizio Grandoni 0002",
+	pages = "354-362"}
+
+@inproceedings{DBLP:conf/ftcs/ChenKLST97,
+	title = "Renegotiable Quality of Service - A New Scheme for Fault
+               Tolerance in Wireless Networks.",
+	author = "Tsu-Wei Chen and Paul Krzyzanowski and Michael R. Lyu and Cormac J. Sreenan and John A. Trotter",
+	pages = "21-30"}
+
+@inproceedings{DBLP:conf/ftcs/CleggM00,
+	title = "Predicting Physical Processes in the Presence of Faulty
+               Sensor Readings.",
+	author = "Matthew Clegg and Keith Marzullo",
+	pages = "373-378"}
+
+@inproceedings{DBLP:conf/ftcs/DaveJ97,
+	title = "COFTA: Hardware-Software Co-Synthesis of Heterogeneous Distributed
+               Embedded System Architectures for Low Overhead Fault Tolerance.",
+	author = "Bharat P. Dave and Niraj K. Jha",
+	pages = "339-348"}
+
+@inproceedings{DBLP:conf/ftcs/Draber00,
+	title = "Reliability-Oriented Design of a Distributed Control System
+               for High-Voltage Switchgear Stations.",
+	author = "Silke Draber",
+	pages = "385-389"}
+
+@inproceedings{DBLP:conf/ftcs/FetzerC97,
+	title = "Fail-Awareness: An Approach to Construct Fail-Safe Applications.",
+	author = "Christof Fetzer and Flaviu Cristian",
+	pages = "282-291"}
+
+@inproceedings{DBLP:conf/ftcs/Gaisler97,
+	title = "Evaluation of a 32-bit Microprocessor with Built-in Concurrent
+               Error-Detection.",
+	author = "Jiri Gaisler",
+	pages = "42-46"}
+
+@inproceedings{DBLP:conf/ftcs/HamiltonO97,
+	title = "Microarchitectural Synthesis of ICs with Embedded Concurrent
+               Fault Isolation.",
+	author = "Samuel Norman Hamilton and Alex Orailoglu",
+	pages = "329-338"}
+
+@inproceedings{DBLP:conf/ftcs/HanS97,
+	title = "Experimental Evaluation of Failure-Detection Schemes in
+               Real-time Communication Networks.",
+	author = "Seungjae Han and Kang G. Shin",
+	pages = "122-131"}
+
+@inproceedings{DBLP:conf/ftcs/HashimotoTK97,
+	title = "A New Approach to Realizing Fault-Tolerant Multiprocessor
+               Scheduling by Exploiting Implicit Redundancy.",
+	author = "Koji Hashimoto and Tatsuhiro Tsuchiya and Tohru Kikuno",
+	pages = "174-183"}
+
+@inproceedings{DBLP:conf/ftcs/HouP97,
+	title = "Using Non-Volatile Storage to Improve the Reliability of
+               RAID5 Disk Arrays.",
+	author = "Robert Y. Hou and Yale N. Patt",
+	pages = "206-215"}
+
+@inproceedings{DBLP:conf/ftcs/Hughes-Fenchel97,
+	title = "A Flexible Clustered Approach to High Availability.",
+	author = "Gary Hughes-Fenchel",
+	pages = "314-318"}
+
+@inproceedings{DBLP:conf/ftcs/JeongSTW97,
+	title = "An Approach to Fault-Tolerant Parallel Processing on Intermittently
+               Idle, Heterogeneous Workstations.",
+	author = "Karpjoo Jeong and Dennis Shasha and Surendranath Talla and Peter Wyckof",
+	pages = "11-20"}
+
+@inproceedings{DBLP:conf/ftcs/LynchS97,
+	title = "Robust Emulation of Shared Memory Using Dynamic Quorum-Acknowledged
+               Broadcasts.",
+	author = "Nancy A. Lynch and Alexander A. Shvartsman",
+	pages = "272-281"}
+
+@inproceedings{DBLP:conf/ftcs/MasubuchiHSHK97,
+	title = "Fault Recovery Mechanism for Multiprocessor Servers.",
+	author = "Yoshio Masubuchi and Satoshi Hoshina and Tomofumi Shimada and Hideaki Hirayama and Nobuhiro Kato",
+	pages = "184-193"}
+
+@inproceedings{DBLP:conf/ftcs/MaxionS97,
+	title = "MetriStation: A Tool for User-Interface Fault Detection.",
+	author = "Roy A. Maxion and Philip A. Syme",
+	pages = "89-98"}
+
+@inproceedings{DBLP:conf/ftcs/MeyerCHL97,
+	title = "Using Virtual Links for Reliable Information Retrieval Across
+               Point-to-Point Networks.",
+	author = "Fred J. Meyer and Xiao-Tao Chen and Wei-Kang Huang and Fabrizio Lombardi",
+	pages = "216-225"}
+
+@inproceedings{DBLP:conf/ftcs/Morinaga00,
+	title = "A General Model for Reliability Maximization Problem Under
+               Given Redundancy.",
+	author = "Satoshi Morinaga",
+	pages = "363-372"}
+
+@inproceedings{DBLP:conf/ftcs/NamKHL97,
+	title = "Probabilistic Checkpointing.",
+	author = "Hyo-Chang Nam and Jong Kim and Sung Je Hong and Sunggu Lee",
+	pages = "48-57"}
+
+@inproceedings{DBLP:conf/ftcs/NettMT97,
+	title = "Managing Dependencies - A Key Problem in Fault-Tolerant
+               Distributed Algorithms.",
+	author = "Edgar Nett and Michael Mock and Peter Theisohn",
+	pages = "2-10"}
+
+@inproceedings{DBLP:conf/ftcs/PiantoniS97,
+	title = "Implementing the Swiss Exchange Trading System.",
+	author = "Rico Piantoni and Constantin Stanescu",
+	pages = "309-313"}
+
+@inproceedings{DBLP:conf/ftcs/PomeranzR97,
+	title = "ACTIV-LOCSTEP: A Test Generation Procedure Based on Logic
+               Simulation and Fault Activation.",
+	author = "Irith Pomeranz and Sudhakar M. Reddy",
+	pages = "144-151"}
+
+@inproceedings{DBLP:conf/ftcs/RamamurthyUI97,
+	title = "An Object-Oriented Testbed for the Evaluation of Checkpointing
+               and Recovery Systems.",
+	author = "Bina Ramamurthy and Shambhu J. Upadhyaya and Ravishankar K. Iyer",
+	pages = "194-203"}
+
+@inproceedings{DBLP:conf/ftcs/Ramanathan97,
+	title = "Fault-Tolerance in Real-time Control Applications Using
+               {\it m, k)}-Firm Guarantee.",
+	author = "Parameswaran Ramanathan",
+	pages = "132-141"}
+
+@inproceedings{DBLP:conf/ftcs/RamkumarS97,
+	title = "Portable Checkpointing for Heterogenous Architectures.",
+	author = "Balkrishna Ramkumar and Volker Strumpen",
+	pages = "58-67"}
+
+@inproceedings{DBLP:conf/ftcs/SaundHP97,
+	title = "Partial Scan beyond Cycle Cutting.",
+	author = "Gurjeet S. Saund and Michael S. Hsiao and Janak H. Patel",
+	pages = "320-328"}
+
+@inproceedings{DBLP:conf/ftcs/ShehadyS97,
+	title = "A Methodology to Automate User Interface Testing Using Variable
+               Finite State Machines.",
+	author = "Richard K. Shehady and Daniel P. Siewiorek",
+	pages = "80-88"}
+
+@inproceedings{DBLP:conf/ftcs/ShiW97,
+	title = "Optimal Structural Diagnosis of Wiring Networks.",
+	author = "Weiping Shi and Douglas B. West",
+	pages = "162-171"}
+
+@inproceedings{DBLP:conf/ftcs/SiehTB97,
+	title = "VERIFY: Evaluation of Reliability Using VHDL-Models with
+               Embedded Fault Descriptions.",
+	author = "Volkmar Sieh and Oliver Tsch{\"a}che and Frank Balbach",
+	pages = "32-36"}
+
+@inproceedings{DBLP:conf/ftcs/SilvaS97,
+	title = "Robust Search Algorithms for Test Pattern Generation.",
+	author = "Jo{\~a}o P. Marques Silva and Karem A. Sakallah",
+	pages = "152-161"}
+
+@inproceedings{DBLP:conf/ftcs/Sims00,
+	title = "Redundancy Management Software Services for Seawolf Ship
+               Control System.",
+	author = "J. Terry Sims",
+	pages = "390-394"}
+
+@inproceedings{DBLP:conf/ftcs/SteiningerS97,
+	title = "On Finding an Optimal Combination of Error Detection Mechanisms
+               Based on Results of Fault Injection Experiments.",
+	author = "Andreas Steininger and Christoph Scherrer",
+	pages = "238-247"}
+
+@inproceedings{DBLP:conf/ftcs/StottHRI97,
+	title = "Dependability Analysis of a Commercial High-Speed Network.",
+	author = "David T. Stott and Mei-Chen Hsueh and Greg Ries and Ravishankar K. Iyer",
+	pages = "248-257"}
+
+@inproceedings{DBLP:conf/ftcs/TaiHTZ97,
+	title = "Toward Accessibility Enhancement of Dependability Modeling
+               Techniques and Tools.",
+	author = "Ann T. Tai and Herbert Hecht and Kishor S. Trivedi and Bing Zhang",
+	pages = "37-41"}
+
+@inproceedings{DBLP:conf/ftcs/TalliniB97,
+	title = "On the Design of Constant Weight Codes for VLSI Systems.",
+	author = "Luca G. Tallini and Bella Bose",
+	pages = "226-235"}
+
+@inproceedings{DBLP:conf/ftcs/Thevenod-FosseW97,
+	title = "Towards a Statistical Approach to Testing Object-Oriented
+               Programs.",
+	author = "Pascale Th{\'e}venod-Fosse and H{\'e}l{\`e}ne Waeselynck",
+	pages = "99-108"}
+
+@inproceedings{DBLP:conf/ftcs/VerissimoRM97,
+	title = "How Hard is Hard Real-time Communication on Field-Buses?.",
+	author = "Paulo Ver\'{\i}ssimo and Jos{\'e} Rufino and Li Ming",
+	pages = "112-121"}
+
+@inproceedings{DBLP:conf/ftcs/WangCHE97,
+	title = "Integrating Checkpointing with Transaction Processing.",
+	author = "Yi-Min Wang and Pi-Yu Chung and Yennun Huang and E. N. Elnozahy",
+	pages = "304-308"}
+
+@default year = 1996
+
+@inproceedings{DBLP:conf/ftcs/AcevedoBERS96,
+	title = "Highly Available Directory Services in DCE.",
+	author = "B. Acevedo and L. Bahler and E. N. Elnozahy and V. Ratan and M. E. Segal",
+	pages = "387-391"}
+
+@inproceedings{DBLP:conf/ftcs/AkellaVR96,
+	title = "Limitations of VLSI Implementation of Delay-Insensitive
+               Codes.",
+	author = "Venkatesh Akella and Nitin H. Vaidya and G. Robert Redinbo",
+	pages = "208-217"}
+
+@inproceedings{DBLP:conf/ftcs/AmirW96,
+	title = "Evaluating Quorum Systems over the Internet.",
+	author = "Yair Amir and Avishai Wool",
+	pages = "26-35"}
+
+@inproceedings{DBLP:conf/ftcs/ArlatKADHP96,
+	title = "Dependability of Railway Control Systems.",
+	author = "Jean Arlat and Nobuyasu Kanekawa and Arturo M. Amendola and Jean-Luis Dufour and Yuji Hirao and Joseph A. Profeta, III",
+	pages = "150-155"}
+
+@inproceedings{DBLP:conf/ftcs/AyacheCHRSG96,
+	title = "Formal Methods for the Validation of Fault Tolerance in
+               Autonomous Spacecraft.",
+	author = "S. Ayache and Eric Conquet and Philippe Humbert and Carlos Rodriguez and Joseph Sifakis and R. Gerlich",
+	pages = "353-357"}
+
+@inproceedings{DBLP:conf/ftcs/BaeB96,
+	title = "Spare Processor Allocation for Fault Tolerance in Torus-Based
+               Multicomputers.",
+	author = "Myung M. Bae and Bella Bose",
+	pages = "282-291"}
+
+@inproceedings{DBLP:conf/ftcs/BaoI96,
+	title = "Reliable Broadcasting in Product Networks with Byzantine
+               Faults.",
+	author = "Feng Bao and Yoshihide Igarashi",
+	pages = "262-271"}
+
+@inproceedings{DBLP:conf/ftcs/BoppanaHF96,
+	title = "Fault Diagnosis Using State Information.",
+	author = "Vamsi Boppana and Ismed Hartanto and W. Kent Fuchs",
+	pages = "96-103"}
+
+@inproceedings{DBLP:conf/ftcs/BuckleyS96,
+	title = "A Comparative Analysis of Event Tupling Schemes.",
+	author = "Michael F. Buckley and Daniel P. Siewiorek",
+	pages = "294-303"}
+
+@inproceedings{DBLP:conf/ftcs/Chen96,
+	title = "Symbol Error Correctin Codes for Memory Applications.",
+	author = "C. L. Chen",
+	pages = "200-207"}
+
+@inproceedings{DBLP:conf/ftcs/ChiuehD96,
+	title = "Evaluation of Checkpoint Mechanisms for Massively Parallel
+               Machines.",
+	author = "Tzi-cker Chiueh and Peitao Deng",
+	pages = "370-379"}
+
+@inproceedings{DBLP:conf/ftcs/ChristmanssonC96,
+	title = "Generation of Error Set that Emulates Software Faults Based
+               on Field Data.",
+	author = "J{\"o}rgen Christmansson and Ram Chillarege",
+	pages = "304-313"}
+
+@inproceedings{DBLP:conf/ftcs/ChungBHIKL96,
+	title = "Availability of Commercial Parallel Systems.",
+	author = "Jen-Yao Chung and Nicholas S. Bowen and Mei-Chen Hsueh and Ravishankar K. Iyer and Mitsuhiro Kishimoto and Luiz A. Laranjeira",
+	pages = "2-4"}
+
+@inproceedings{DBLP:conf/ftcs/Cristian96,
+	title = "Group, Majority, and Strict Agreement in Timed Asynchronous
+               Distributed Systems.",
+	author = "Flaviu Cristian",
+	pages = "178-187"}
+
+@inproceedings{DBLP:conf/ftcs/DawsonJMT96,
+	title = "Testing of Fault-Tolerant and Real-Time Distributed Systems
+               via Protocol Fault Injektion.",
+	author = "Scott Dawson and Farnam Jahanian and Todd Mitton and Teck-Lee Tung",
+	pages = "404-414"}
+
+@inproceedings{DBLP:conf/ftcs/Dega96,
+	title = "The Redundancy Mechanisms of the Ariane 5 Operational Control
+               Center.",
+	author = "Jean-Luis Dega",
+	pages = "382-386"}
+
+@inproceedings{DBLP:conf/ftcs/EchtleM96,
+	title = "A Multiple Bus Broadcast Protocol Resilient to Non-Cooperative
+               Byzantine Faults.",
+	author = "Klaus Echtle and Asif Masum",
+	pages = "158-167"}
+
+@inproceedings{DBLP:conf/ftcs/GuerraouiS96,
+	title = "Consensus Service: A Modular Approach for Building Agreement
+               Protocols in Distributed Systems.",
+	author = "Rachid Guerraoui and Andr{\'e} Schiper",
+	pages = "168-177"}
+
+@inproceedings{DBLP:conf/ftcs/ItazakiIK96,
+	title = "A Fault Simulation Method for Crosstalk Faults in Synchronous
+               Sequential Circuits.",
+	author = "Noriyoshi Itazaki and Yasutaka Idomoto and Kozo Kinoshita",
+	pages = "38-43"}
+
+@inproceedings{DBLP:conf/ftcs/Johansson96,
+	title = "Two Error-Detecting and Correcting Circuits for Space Applications.",
+	author = "Rolf Johansson",
+	pages = "436-439"}
+
+@inproceedings{DBLP:conf/ftcs/KanekawaNSS96,
+	title = "Self-Checking and Fail-Safe LSIs by Intra-Chip Redundancy.",
+	author = "Nobuyasu Kanekawa and Makoto Nohmi and Yoshimichi Satoh and Hiroshi Satoh",
+	pages = "426-430"}
+
+@inproceedings{DBLP:conf/ftcs/KanounBMP96,
+	title = "Modeling the Dependability of CAUTRA, a Subset of the French
+               Air Traffic Control System.",
+	author = "Karama Kanoun and Marie Borrel and Thierry Morteveille and Alain Peytavin",
+	pages = "106-115"}
+
+@inproceedings{DBLP:conf/ftcs/KawamuraMK96,
+	title = "Technologies for Designing Dependable A/D Converters.",
+	author = "Kyoya Kawamura and Takashi Matsubara and Yoshiaki Koga",
+	pages = "431-435"}
+
+@inproceedings{DBLP:conf/ftcs/LakshminarayanaRJ96,
+	title = "Behavioral Synthesis of Fault Secure Controller?Datapaths
+               using Aliasing Probability Analysis.",
+	author = "Ganesh Lakshminarayana and Anand Raghunathan and Niraj K. Jha",
+	pages = "336-345"}
+
+@inproceedings{DBLP:conf/ftcs/LeePI96,
+	title = "Efficient Service of Rediscovered Software Problems.",
+	author = "Inhwan Lee and Gilbert Pitt and Ravishankar K. Iyer",
+	pages = "348-352"}
+
+@inproceedings{DBLP:conf/ftcs/LiuJ96,
+	title = "Verification of Fault Tolerance and Real Time.",
+	author = "Zhiming Liu and Mathai Joseph",
+	pages = "220-229"}
+
+@inproceedings{DBLP:conf/ftcs/MahapatraD96,
+	title = "Hardware-Efficient and Highly-Reconfigurable 4- and 2-Track:
+               Fault-Tolerant Designs for Mesh-Connected Multicomputers.",
+	author = "Nihar R. Mahapatra and Shantanu Dutt",
+	pages = "272-281"}
+
+@inproceedings{DBLP:conf/ftcs/MaxionS96,
+	title = "Mitigating Operator-Induced Unavailability by Matching Imprecise
+               Queries.",
+	author = "Roy A. Maxion and Philip A. Syme",
+	pages = "240-249"}
+
+@inproceedings{DBLP:conf/ftcs/NachmanSUR96,
+	title = "Random Pattern Testing for Sequential Circuits Revisited.",
+	author = "Lama Nachman and Kewal K. Saluja and Shambhu J. Upadhyaya and Robert Reuse",
+	pages = "44-52"}
+
+@inproceedings{DBLP:conf/ftcs/NoubirC96,
+	title = "Algebraic Techniques for the Optimization of Control Flow
+               Checking.",
+	author = "Guevara Noubir and Berthe Y. Choueiry",
+	pages = "128-137"}
+
+@inproceedings{DBLP:conf/ftcs/PeyrouzeM96,
+	title = "FT-NFS: An Efficient Fault-Tolerant NFS Server Designed
+               for Off-the-Shelf Workstations.",
+	author = "Nadine Peyrouze and Gilles Muller",
+	pages = "64-73"}
+
+@inproceedings{DBLP:conf/ftcs/PomeranzR96,
+	title = "Dynamic Test Compaction for Synchronous Sequential Circuits
+               using Static Compaction Techniques.",
+	author = "Irith Pomeranz and Sudhakar M. Reddy",
+	pages = "53-61"}
+
+@inproceedings{DBLP:conf/ftcs/PradhanKV96,
+	title = "Recoverable Mobile Environment: Design and Trade-Off Analysis.",
+	author = "Dhiraj K. Pradhan and P. Krishna and Nitin H. Vaidya",
+	pages = "16-25"}
+
+@inproceedings{DBLP:conf/ftcs/QureshiS96,
+	title = "A New Methodology for Calculating Distributions of Reward
+               Accumulated During a Finite Interval.",
+	author = "Muhammad A. Qureshi and William H. Sanders",
+	pages = "116-125"}
+
+@inproceedings{DBLP:conf/ftcs/RabejacBQ96,
+	title = "Executable Assertions and Timed Traces for On-Line Software
+               Error Detection.",
+	author = "Christophe Rab{\'e}jac and Jean-Paul Blanquart and Jean-Pierre Queille",
+	pages = "138-147"}
+
+@inproceedings{DBLP:conf/ftcs/RelaMS96,
+	title = "Experimental Evaluation of the Fail-Silent Behaviour in
+               Programs with Consistency Checks.",
+	author = "M{\'a}rio Zenha Rela and Henrique Madeira and Jo{\~a}o Gabriel Silva",
+	pages = "394-403"}
+
+@inproceedings{DBLP:conf/ftcs/RitthongpitakKF96,
+	title = "Optimal Two-Level Unequal Error Control Codes for Computer
+               Systems.",
+	author = "Tepparit Ritthongpitak and Masato Kitakami and Eiji Fujiwara",
+	pages = "190-199"}
+
+@inproceedings{DBLP:conf/ftcs/Roy-ChowdhuryB96,
+	title = "Compiler-Assisted Generation of Error-Detecting Parallel
+               Programs.",
+	author = "Amber Roy-Chowdhury and Prithviraj Banerjee",
+	pages = "360-369"}
+
+@inproceedings{DBLP:conf/ftcs/Rushby96,
+	title = "Reconfiguration and Transient Recovery in State Machine
+               Architectures.",
+	author = "John M. Rushby",
+	pages = "6-15"}
+
+@inproceedings{DBLP:conf/ftcs/SilvaCMCM96,
+	title = "Experimental Assessment of Parallel Systems.",
+	author = "Jo{\~a}o Gabriel Silva and Joao Carreira and Henrique Madeira and Diamantino Costa and Francisco Moreira",
+	pages = "415-424"}
+
+@inproceedings{DBLP:conf/ftcs/SlyeE96,
+	title = "Supporting Nondeterministic Execution in Fault-Tolerant
+               Systems.",
+	author = "J. Hamilton Slye and E. N. Elnozahy",
+	pages = "250-259"}
+
+@inproceedings{DBLP:conf/ftcs/Sumimoto96,
+	title = "Design and Evaluation of Fault-Tolerant Shared File System
+               for Cluster Systems.",
+	author = "Shinji Sumimoto",
+	pages = "74-83"}
+
+@inproceedings{DBLP:conf/ftcs/TanPB96,
+	title = "A Framework for Conformance Testing of Systems Communicating
+               through Rendezvous.",
+	author = "Q. M. Tan and Alexandre Petrenko and Gregor von Bochmann",
+	pages = "230-238"}
+
+@inproceedings{DBLP:conf/ftcs/TsaiIJ96,
+	title = "An Approach towards Benchmarking of Fault-Tolerant Commercial
+               Systems.",
+	author = "Timothy K. Tsai and Ravishankar K. Iyer and Doug Jewitt",
+	pages = "314-323"}
+
+@inproceedings{DBLP:conf/ftcs/WakitaTI96,
+	title = "The Design of Totally Self-Checking Checkers for Classes
+               of Hadamard Codes.",
+	author = "Naoki Wakita and Ken-ich Takagi and Yoshihiro Iwadare",
+	pages = "326-335"}
+
+@inproceedings{DBLP:conf/ftcs/YanagidaTT96,
+	title = "Multiple Fault Diagnosis in Sequential Circuits Using Sensitizing
+               Sequence Pairs.",
+	author = "Nobuhiro Yanagida and Hiroshi Takahashi and Yuzo Takamatsu",
+	pages = "86-95"}
+
+@default year = 1995
+
+@inproceedings{DBLP:conf/ftcs/BakerHSW95,
+	title = "A Flexible ServerNet-based Fault-Tolerant Architecture.",
+	author = "William E. Baker and Robert W. Horst and David P. Sonnier and William J. Watson",
+	pages = "2-11"}
+
+@inproceedings{DBLP:conf/ftcs/BalakrishnanT95,
+	title = "Componentwise Decomposition for an Efficient Reliability
+               Computation of Systems with Repairable Components.",
+	author = "Meera Balakrishnan and Kishor S. Trivedi",
+	pages = "259-268"}
+
+@inproceedings{DBLP:conf/ftcs/BassMBCF95,
+	title = "Dependability Modelling in a Prototype Development Framework.",
+	author = "Julian M. Bass and Sylvain Metge and Adrian Browne and Peter R. Croll and Peter J. Fleming",
+	pages = "131-136"}
+
+@inproceedings{DBLP:conf/ftcs/BloughKO95,
+	title = "Optimal Recovery Point Insertion for High-Level Synthesis
+               of Recoverable Microarchitectures.",
+	author = "Douglas M. Blough and Fadi J. Kurdahi and Seong Yong Ohm",
+	pages = "50-59"}
+
+@inproceedings{DBLP:conf/ftcs/BrightS95,
+	title = "On-line Error Monitoring for Several Data Structures.",
+	author = "Jonathan D. Bright and Gregory F. Sullivan",
+	pages = "392-401"}
+
+@inproceedings{DBLP:conf/ftcs/BrightSM95,
+	title = "Checking the Integrity of Trees.",
+	author = "Jonathan D. Bright and Gregory F. Sullivan and Gerald M. Masson",
+	pages = "402-411"}
+
+@inproceedings{DBLP:conf/ftcs/BuckleyS95,
+	title = "VAX/VMS Event Monitoring and Analysis.",
+	author = "Michael F. Buckley and Daniel P. Siewiorek",
+	pages = "414-423"}
+
+@inproceedings{DBLP:conf/ftcs/BuhrmanGH95,
+	title = "Optimal Resiliency against Mobile Faults.",
+	author = "Harry Buhrman and Juan A. Garay and Jaap-Henk Hoepman",
+	pages = "83-88"}
+
+@inproceedings{DBLP:conf/ftcs/BuskensB95,
+	title = "Self-Stabilizing Mutual Exclusion in the Presence of Faulty
+               Nodes.",
+	author = "Richard W. Buskens and Ronald P. Bianchini, Jr.",
+	pages = "144-153"}
+
+@inproceedings{DBLP:conf/ftcs/CamposS95,
+	title = "Availability and Performance Evaluation of Database Systems
+               under Periodic Checkpoints.",
+	author = "Reinaldo Vallejos Campos and Edmundo de Souza e Silva",
+	pages = "269-277"}
+
+@inproceedings{DBLP:conf/ftcs/ChillaregeBR95,
+	title = "Measurement of Failure Rate in Widely Distributed Software.",
+	author = "Ram Chillarege and Shriram Biyani and Jeanette Rosenthal",
+	pages = "424-433"}
+
+@inproceedings{DBLP:conf/ftcs/DahlgrenL95,
+	title = "A Switch-level Algorithm for Simulation of Transients in
+               Combinational Logic.",
+	author = "Peter Dahlgren and Peter Lid{\'e}n",
+	pages = "207-216"}
+
+@inproceedings{DBLP:conf/ftcs/DiepS95,
+	title = "Systematic Validation of Pipeline Interlock for Superscalar
+               Microarchitectures.",
+	author = "Trung A. Diep and John Paul Shen",
+	pages = "100-109"}
+
+@inproceedings{DBLP:conf/ftcs/DingmanMS95,
+	title = "Measuring Robustness of a Fault Tolerant Aerospace System.",
+	author = "Christopher P. Dingman and Joe Marshall and Daniel P. Siewiorek",
+	pages = "522-527"}
+
+@inproceedings{DBLP:conf/ftcs/DoyleD95,
+	title = "Dependability Assessment using Binary Decision Diagrams
+               (BDDs).",
+	author = "Stacy A. Doyle and Joanne Bechta Dugan",
+	pages = "249-258"}
+
+@inproceedings{DBLP:conf/ftcs/DuttM95,
+	title = "Node Covering, Error Correcting Codes and Multiprocessors
+               with Very High Average Fault Tolerance.",
+	author = "Shantanu Dutt and Nihar R. Mahapatra",
+	pages = "320-329"}
+
+@inproceedings{DBLP:conf/ftcs/FabreNPSW95,
+	title = "Implementing Fault Tolerant Applications using Reflective
+               Object-Oriented Programming.",
+	author = "Jean-Charles Fabre and Vincent Nicomette and Tanguy P{\'e}rennou and Robert J. Stroud and Zhixue Wu",
+	pages = "489-498"}
+
+@inproceedings{DBLP:conf/ftcs/FengHL95,
+	title = "A New Diagnosis Approach for Short Faults in Interconnects.",
+	author = "Chao Feng and Wei-Kang Huang and Fabrizio Lombardi",
+	pages = "331-339"}
+
+@inproceedings{DBLP:conf/ftcs/FujiwaraK95,
+	title = "A Class of Optimal Fixed-Byte Error Protection Codes for
+               Computer Systems.",
+	author = "Eiji Fujiwara and Masato Kitakami",
+	pages = "310-319"}
+
+@inproceedings{DBLP:conf/ftcs/GuthoffS95,
+	title = "Combining Software-Implemented and Simulation-Based Fault
+               Injection into a Single Fault Injection Method.",
+	author = "Jens G{\"u}thoff and Volkmar Sieh",
+	pages = "196-206"}
+
+@inproceedings{DBLP:conf/ftcs/HuangKKF95,
+	title = "Software Rejuvenation: Analysis, Module and Applications.",
+	author = "Yennun Huang and Chandra M. R. Kintala and Nick Kolettis and N. Dudley Fulton",
+	pages = "381-390"}
+
+@inproceedings{DBLP:conf/ftcs/HuangW95,
+	title = "Why Optimistic Message Logging Has Not Been Used In Telecommunications
+               Systems.",
+	author = "Yennun Huang and Yi-Min Wang",
+	pages = "459-463"}
+
+@inproceedings{DBLP:conf/ftcs/IharaBVEL95,
+	title = "Dependability of Medical Computing.",
+	author = "Hirokazu Ihara and Ekkehard Blanz and Daniel J. Valentino and Lynn Elliott and Thomas L. Lincoln",
+	pages = 541}
+
+@inproceedings{DBLP:conf/ftcs/IyerLHPSS95,
+	title = "Dependability of Commercial Systems.",
+	author = "Ravishankar K. Iyer and Daniel Lenoski and Joe Hingston and Angelo Pruscino and Jim Shaffer and Eric Scott",
+	pages = "537-540"}
+
+@inproceedings{DBLP:conf/ftcs/JiangCS95,
+	title = "Synthesizing Finite State Machines for Minimum Length Synchronizing
+               Sequence Using Partial Scan.",
+	author = "Ning Jiang and Richard M. Chou and Kewal K. Saluja",
+	pages = "41-49"}
+
+@inproceedings{DBLP:conf/ftcs/KantzK95,
+	title = "The ELEKTRA Railway Signalling-System: Field Experience
+               with an Actively Replicated System with Diversity.",
+	author = "Heinz Kantz and Christian Koza",
+	pages = "453-458"}
+
+@inproceedings{DBLP:conf/ftcs/KermarrecCGMP95,
+	title = "A Recoverable Distributed Shared Memory Integrating Coherence
+               and Recoverability.",
+	author = "Anne-Marie Kermarrec and Gilbert Cabillic and Alain Gefflaut and Christine Morin and Isabelle Puaut",
+	pages = "289-298"}
+
+@inproceedings{DBLP:conf/ftcs/KimLL95,
+	title = "Process Allocation for Load Distribution in Fault-Tolerant
+               Multicomputers.",
+	author = "Jong Kim and Heejo Lee and Sunggu Lee",
+	pages = "174-183"}
+
+@inproceedings{DBLP:conf/ftcs/KriegerBO95,
+	title = "OBDD-based Optimization of Input Probabilities for Weighted
+               Random Pattern Generation.",
+	author = "Rolf Krieger and Bernd Becker and Can {\"O}kmen",
+	pages = "120-129"}
+
+@inproceedings{DBLP:conf/ftcs/Krol95,
+	title = "Interactive Consistency Algorithms based on Voting and Error-correcting
+               Codes.",
+	author = "Thijs Krol",
+	pages = "89-98"}
+
+@inproceedings{DBLP:conf/ftcs/LittlewoodW95,
+	title = "Stopping Rules for the Operational Testing of Safety-Critical
+               Software.",
+	author = "Bev Littlewood and David Wright",
+	pages = "444-451"}
+
+@inproceedings{DBLP:conf/ftcs/LyuYKD95,
+	title = "ARMOR: Analyzer for Reducing Module Operational Risk.",
+	author = "Michael R. Lyu and Jinsong S. Yu and Elaine Keramidas and Siddhartha R. Dalal",
+	pages = "137-142"}
+
+@inproceedings{DBLP:conf/ftcs/Maxiond95,
+	title = "Depenability at the User Interface.",
+	author = "Roy A. Maxion and Aimee L. deChambeau",
+	pages = "528-535"}
+
+@inproceedings{DBLP:conf/ftcs/MoserMA95,
+	title = "The Totem System.",
+	author = "Louise E. Moser and P. M. Melliar-Smith and Deborah A. Agarwal",
+	pages = "61-66"}
+
+@inproceedings{DBLP:conf/ftcs/OhlssonR95,
+	title = "Implicit Signature Checking.",
+	author = "Joakim Ohlsson and Marcus Rim{\'e}n",
+	pages = "218-227"}
+
+@inproceedings{DBLP:conf/ftcs/OlsonSJ95,
+	title = "Fault-Tolerant Clock Synchronization for Distributed Systems
+               Using Continuous Synchronization Messages.",
+	author = "Alan Olson and Kang G. Shin and Bruno J. Jambor",
+	pages = "154-163"}
+
+@inproceedings{DBLP:conf/ftcs/PeercyB95,
+	title = "Software Schemes of Reconfiguration and Recovery in Distributed
+               Memory Multicomputers Using the Actor Model.",
+	author = "Michael Peercy and Prithviraj Banerjee",
+	pages = "479-488"}
+
+@inproceedings{DBLP:conf/ftcs/PiestrakN95,
+	title = "Towards Totally Self-Checking Delay-Insensitive Systems.",
+	author = "Stanislaw J. Piestrak and Takashi Nanya",
+	pages = "228-237"}
+
+@inproceedings{DBLP:conf/ftcs/PlankKD95,
+	title = "Algorithm-Based Diskless Checkpointing for Fault Tolerant
+               Matrix Operations.",
+	author = "James S. Plank and Youngbae Kim and Jack Dongarra",
+	pages = "351-360"}
+
+@inproceedings{DBLP:conf/ftcs/Poledna95,
+	title = "Fault Tolerance in Safety Critical Automotive Applications:
+               Cost of Agreement as a Limiting Factor.",
+	author = "Stefan Poledna",
+	pages = "73-82"}
+
+@inproceedings{DBLP:conf/ftcs/PomeranzR95,
+	title = "LOCSTEP: A Logic Simulation Based Test Generation Procedure.",
+	author = "Irith Pomeranz and Sudhakar M. Reddy",
+	pages = "110-119"}
+
+@inproceedings{DBLP:conf/ftcs/RangarajanRD95,
+	title = "A Fault-Tolerant Protocol for Location Directory Maintenance
+               in Mobile Networks.",
+	author = "Sampath Rangarajan and Karunaharan Ratnam and Anton T. Dahbura",
+	pages = "164-173"}
+
+@inproceedings{DBLP:conf/ftcs/Riter95,
+	title = "Modeling and Testing a Critical Fault-Tolerant Multi-Process
+               System.",
+	author = "Ronald Riter",
+	pages = "516-521"}
+
+@inproceedings{DBLP:conf/ftcs/RussinovichS95,
+	title = "Fault-Tolerance for Off-The-Shelf Applications and Hardware.",
+	author = "Mark Russinovich and Zary Segall",
+	pages = "67-71"}
+
+@inproceedings{DBLP:conf/ftcs/SavvaN95,
+	title = "Gracefully Degrading Systems Using the Bulk-Synchronous
+               Parallel Model with Randomised Shared Memory.",
+	author = "Andreas Savva and Takashi Nanya",
+	pages = "299-308"}
+
+@inproceedings{DBLP:conf/ftcs/SaxenaCSOTLCDPLC95,
+	title = "Error Detection and Handling in a Superscalar, Speculative
+               Out-of-Order Execution Processor System.",
+	author = "Nirmal R. Saxena and Chien Chen and Ravi Swami and Hideki Osone and Shalesh Thusoo and David Lyon and David Chang and Anand Dharmaraj and Niteen Patkar and Yizhi Lu and Ben Chia",
+	pages = "464-471"}
+
+@inproceedings{DBLP:conf/ftcs/SmithJT95,
+	title = "Completely Asynchronous Optimistic Recovery with Minimal
+               Rollbacks.",
+	author = "Sean W. Smith and David B. Johnson and J. D. Tygar",
+	pages = "361-370"}
+
+@inproceedings{DBLP:conf/ftcs/SteiningerS95,
+	title = "A Model for the Analysis of the Fault Injection Process.",
+	author = "Andreas Steininger and H. Schweinzer",
+	pages = "186-195"}
+
+@inproceedings{DBLP:conf/ftcs/SuriJF95,
+	title = "Reduced Overhead Logging for Rollback Recovery in Distributed
+               Shared Memory.",
+	author = "Gaurav Suri and Bob Janssens and W. Kent Fuchs",
+	pages = "279-288"}
+
+@inproceedings{DBLP:conf/ftcs/TangH95,
+	title = "Evaluation of Software Dependability Based on Stability
+               Test Data.",
+	author = "Dong Tang and Myron Hecht",
+	pages = "434-443"}
+
+@inproceedings{DBLP:conf/ftcs/ThadikaranCP95,
+	title = "Fault Simulation of{\it $_{\mbox{DDQ}}$} Tests for Bridging
+               Faults in Sequential Circuits.",
+	author = "Paul J. Thadikaran and Sreejit Chakravarty and Janak H. Patel",
+	pages = "340-349"}
+
+@inproceedings{DBLP:conf/ftcs/TurumellaKBMTNSC95,
+	title = "Design Verification of a Super-Scalar RISC Processor.",
+	author = "Babu Turumella and Aiman Kabakibo and Manjunath Bogadi and Karakunakara Menon and Shaleah Thusoo and Long Nguyen and Nirmal R. Saxena and Michael Chow",
+	pages = "472-477"}
+
+@inproceedings{DBLP:conf/ftcs/VardanegaDCMMA95,
+	title = "On the Development of Fault-Tolerant On-Board Control Software
+               and its Evaluation by Fault Injection.",
+	author = "Tullio Vardanega and P. David and J.-F. Chane and W. Mader and R. Messaros and Jean Arlat",
+	pages = "510-515"}
+
+@inproceedings{DBLP:conf/ftcs/VinSR95,
+	title = "Efficient Failure Recovery in Multi-Disk Multimedia Servers.",
+	author = "Harrick M. Vin and Prashant J. Shenoy and Sriram Rao",
+	pages = "12-21"}
+
+@inproceedings{DBLP:conf/ftcs/WangHVCK95,
+	title = "Checkpointing and Its Applications.",
+	author = "Yi-Min Wang and Yennun Huang and Kiem-Phong Vo and Pi-Yu Chung and Chandra M. R. Kintala",
+	pages = "22-31"}
+
+@inproceedings{DBLP:conf/ftcs/WatanabeS95,
+	title = "Design Fault Tolerance in Operating Systems Based on a Standarization
+               Project.",
+	author = "Aki Watanabe and Ken Sakamura",
+	pages = "372-380"}
+
+@inproceedings{DBLP:conf/ftcs/XuRRRSW95,
+	title = "Fault Tolerance in Concurrent Object-Oriented Software Through
+               Coordinated Error Recovery.",
+	author = "Jie Xu and Brian Randell and Alexander B. Romanovsky and Cec\'{\i}lia M. F. Rubira and Robert J. Stroud and Zhixue Wu",
+	pages = "499-508"}
+
+@inproceedings{DBLP:conf/ftcs/YotsuyanagiKK95,
+	title = "Synthesis for Testability by Sequential Redundancy Removal
+               Using Retiming.",
+	author = "Hiroyuki Yotsuyanagi and Seiji Kajihara and Kozo Kinoshita",
+	pages = "33-40"}
+
+@inproceedings{DBLP:conf/ftcs/ZhouWM95,
+	title = "Feasibility and Effectiveness of the Algorithm for Overhead
+               Reduction in Analog Checkers.",
+	author = "Yingquan Zhou and Mike W. T. Wong and Yinghua Min",
+	pages = "238-247"}
+
+@default year = 1994
+
+@inproceedings{DBLP:conf/ftcs/AbbottHHKMMSSTYW94,
+	title = "Durable Memory RS/6000 System Design.",
+	author = "M. Abbott and David Har and Lorraine Herger and M. Kauffmann and Ken Mak and J. Murdock and Charles O. Schulz and T. Basil Smith and R. Brett Tremaine and D. Yeh and L. Wong",
+	pages = "414-423"}
+
+@inproceedings{DBLP:conf/ftcs/AgerwalaFTY94,
+	title = "Do Commercial MPPs Need Fault Tolerance? (Panel).",
+	author = "Tilak Agerwala and W. Donald Frazer and Bernard Traversat and Dennis Young",
+	pages = 232}
+
+@inproceedings{DBLP:conf/ftcs/AmadioIMM94,
+	title = "Implementation of High Availability Mechanisms in the Air
+               Traffic Control SIR-S System.",
+	author = "E. Amadio and P. Iaboni and M. La Manna and P. Mariano",
+	pages = "134-136"}
+
+@inproceedings{DBLP:conf/ftcs/AmatoL94,
+	title = "Checking Linked Data Structures.",
+	author = "Nancy M. Amato and Michael C. Loui",
+	pages = "164-173"}
+
+@inproceedings{DBLP:conf/ftcs/AzaguryDGMS94,
+	title = "Highly Available Cluster: A Case Study.",
+	author = "Alain Azagury and Danny Dolev and Gera Goft and John M. Marberg and Julian Satran",
+	pages = "404-413"}
+
+@inproceedings{DBLP:conf/ftcs/BaldelliM94,
+	title = "Diagnosos of Processor Arrays.",
+	author = "Laura Baldelli and Piero Maestrini",
+	pages = "48-54"}
+
+@inproceedings{DBLP:conf/ftcs/BitnerJAAF94,
+	title = "Efficient Algorithmic Circuit Verification Using Indexed
+               BDDs.",
+	author = "James R. Bitner and Jawahar Jain and Magdy S. Abadir and Jacob A. Abraham and Donald S. Fussell",
+	pages = "266-275"}
+
+@inproceedings{DBLP:conf/ftcs/BlumGHLNS94,
+	title = "Modeling and Analysis of System Dependability Using the
+               System Availability Estimator.",
+	author = "Alvin M. Blum and Ambuj Goyal and Philip Heidelberger and Stephen S. Lavenberg and Marvin K. Nakayama and Perwez Shahabuddin",
+	pages = "137-141"}
+
+@inproceedings{DBLP:conf/ftcs/Bose94,
+	title = "Architectural Timing Verification and Test for Super Scalar
+               Processors.",
+	author = "Pradip Bose",
+	pages = "256-265"}
+
+@inproceedings{DBLP:conf/ftcs/BowenR94,
+	title = "A Study of Throughput Degradation Following Single Node
+               Failure in a Data Sharing System.",
+	author = "Nicholas S. Bowen and Amber Roy-Chowdhury",
+	pages = "310-319"}
+
+@inproceedings{DBLP:conf/ftcs/BrightS94,
+	title = "Checking Mergeable Priority Queues.",
+	author = "Jonathan D. Bright and Gregory F. Sullivan",
+	pages = "144-153"}
+
+@inproceedings{DBLP:conf/ftcs/ChenB94,
+	title = "Dynamic State and Objective Learning for Sequential Circuit
+               Automatic Test Generation Using Decomposition Equivalence.",
+	author = "Xinghao Chen and Michael L. Bushnell",
+	pages = "446-455"}
+
+@inproceedings{DBLP:conf/ftcs/ChenS94,
+	title = "A Cache Protocol for Error Detection and Recovery in Fault-Tolerant
+               Computing Systems.",
+	author = "Chung-Ho Chen and Arun K. Somani",
+	pages = "278-287"}
+
+@inproceedings{DBLP:conf/ftcs/ChiuMMR94,
+	title = "Training Techniques to Obtain Fault-Tolerant Neural Networks.",
+	author = "Ching-Tai Chiu and Kishan Mehrotra and Chilukuri K. Mohan and Sanjay Ranka",
+	pages = "360-369"}
+
+@inproceedings{DBLP:conf/ftcs/ChiuW94,
+	title = "Fault-Tolerant Routing Strategy in Hypercube Systems.",
+	author = "Ge-Ming Chiu and Shui-Pao Wu",
+	pages = "382-391"}
+
+@inproceedings{DBLP:conf/ftcs/ChouGMS94,
+	title = "Challenges of Building a Dependable National Information
+               Infrastructure (Panel).",
+	author = "Timothy C. K. Chou and Jack Goldberg and David E. Morgan and Louis Scerbo",
+	pages = "2-3"}
+
+@inproceedings{DBLP:conf/ftcs/CummingsA94,
+	title = "Checkpoint/Rollback in a Distributed System Using Coarse-Grained
+               Dataflow.",
+	author = "David Cummings and Leon Alkalaj",
+	pages = "424-433"}
+
+@inproceedings{DBLP:conf/ftcs/Dunning94,
+	title = "A SEC-BED-DED Code with Byte Plus Bit Error Detection.",
+	author = "Larry A. Dunning",
+	pages = "208-211"}
+
+@inproceedings{DBLP:conf/ftcs/ElnozahyZ94,
+	title = "On the Use and Implementation of Message Logging.",
+	author = "E. N. Elnozahy and Willy Zwaenepoel",
+	pages = "298-307"}
+
+@inproceedings{DBLP:conf/ftcs/FukayaHM94,
+	title = "Automatic Verifying Approach for Product Specification using
+               FTA.",
+	author = "Tetsuji Fukaya and Masayuki Hirayama and Yukihiro Mihara",
+	pages = "131-133"}
+
+@inproceedings{DBLP:conf/ftcs/Gaisler94,
+	title = "Concurrent Error-Detection and Modular Fault-tolerance in
+               a 32-bit Processing Core for Embedded Space Flight Applications.",
+	author = "Jiri Gaisler",
+	pages = "128-130"}
+
+@inproceedings{DBLP:conf/ftcs/GoldbergKSW94,
+	title = "Towards Effective Integration of Fault Tolerance and Real
+               Time (Panel).",
+	author = "Jack Goldberg and Hermann Kopetz and Binay Sugla and Chris J. Walter",
+	pages = 230}
+
+@inproceedings{DBLP:conf/ftcs/HamdaouiR94,
+	title = "A Service Policy for Real-Time Customers with ({\it , k,
+               })-Firm Deadlines.",
+	author = "Moncef Hamdaoui and Parameswaran Ramanathan",
+	pages = "196-205"}
+
+@inproceedings{DBLP:conf/ftcs/HouS94,
+	title = "Replication and Allocation of Task Modules in Distributed
+               Real-Time Systems.",
+	author = "Chao-Ju Hou and Kang G. Shin",
+	pages = "26-35"}
+
+@inproceedings{DBLP:conf/ftcs/JennAROK94,
+	title = "Fault Injection into VHDL Models: The MEFISTO Tool.",
+	author = "Eric Jenn and Jean Arlat and Marcus Rim{\'e}n and Joakim Ohlsson and Johan Karlsson",
+	pages = "66-75"}
+
+@inproceedings{DBLP:conf/ftcs/KuH94,
+	title = "Connectivity and Fault Tolerance of Multiple-Bus Systems.",
+	author = "Hung-Kuei Ku and John P. Hayes",
+	pages = "372-381"}
+
+@inproceedings{DBLP:conf/ftcs/LeeIM94,
+	title = "Identifying Software Problems Using Symptoms.",
+	author = "Inhwan Lee and Ravishankar K. Iyer and Abhay Metha",
+	pages = "320-329"}
+
+@inproceedings{DBLP:conf/ftcs/LidenDJK94,
+	title = "On Latching Probability of Particle Induced Transients in
+               Combinational Networks.",
+	author = "Peter Lid{\'e}n and Peter Dahlgren and Rolf Johansson and Johan Karlsson",
+	pages = "340-349"}
+
+@inproceedings{DBLP:conf/ftcs/LiuAA94,
+	title = "The Performance of Two-phase Commit Protocols in the Presence
+               of Site Failures.",
+	author = "M. L. Liu and Divyakant Agrawal and Amr El Abbadi",
+	pages = "234-243"}
+
+@inproceedings{DBLP:conf/ftcs/MadeiraS94,
+	title = "Experimental Evaluation of the Fail-Silent Behaviour in
+               Computers Without Error Masking.",
+	author = "Henrique Madeira and Jo{\~a}o Gabriel Silva",
+	pages = "350-359"}
+
+@inproceedings{DBLP:conf/ftcs/MansS94,
+	title = "Optimal Fault-Tolerant Leader Election in Chordal Rings.",
+	author = "Bernard Mans and Nicola Santoro",
+	pages = "392-401"}
+
+@inproceedings{DBLP:conf/ftcs/MosseMG94,
+	title = "Analysis of a Fault-Tolerant Multiprocessor Scheduling Algorithm.",
+	author = "Daniel Moss{\'e} and Rami G. Melhem and Sunondo Ghosh",
+	pages = "16-25"}
+
+@inproceedings{DBLP:conf/ftcs/MujumdarJS94,
+	title = "Behavioral Synthesis of Testable Designs.",
+	author = "Ashutosh Mujumdar and Rajiv Jain and Kewal K. Saluja",
+	pages = "436-445"}
+
+@inproceedings{DBLP:conf/ftcs/PlankL94,
+	title = "Faster Checkpointing with {\it }+1 Parity.",
+	author = "James S. Plank and Kai Li",
+	pages = "288-297"}
+
+@inproceedings{DBLP:conf/ftcs/PradhanV94,
+	title = "Roll-Forward and Rollback Recovery: Performance-Reliability
+               Trade-Off.",
+	author = "Dhiraj K. Pradhan and Nitin H. Vaidya",
+	pages = "186-195"}
+
+@inproceedings{DBLP:conf/ftcs/ReddyPJ94,
+	title = "On Codeword Testing of Two-Rail and Parity TSC Checkers.",
+	author = "Sudhakar M. Reddy and Irith Pomeranz and Rahul Jain",
+	pages = "116-125"}
+
+@inproceedings{DBLP:conf/ftcs/RennelsK94,
+	title = "Concurrent Error Detection in Self-Timed VLSI.",
+	author = "David A. Rennels and Hyeongil Kim",
+	pages = "96-105"}
+
+@inproceedings{DBLP:conf/ftcs/RiesCI94,
+	title = "Device-Level Transient Fault Modeling.",
+	author = "Gregory L. Ries and Gwan S. Choi and Ravishankar K. Iyer",
+	pages = "86-94"}
+
+@inproceedings{DBLP:conf/ftcs/RimenOT94,
+	title = "On Microprocessor Error Behaviour Modeling.",
+	author = "Marcus Rim{\'e}n and Joakim Ohlsson and Jan Torin",
+	pages = "76-85"}
+
+@inproceedings{DBLP:conf/ftcs/Roy-ChowdhuryB94,
+	title = "Algorithm-Based Fault Location and Recovery for Matrix Computations.",
+	author = "Amber Roy-Chowdhury and Prithviraj Banerjee",
+	pages = "38-47"}
+
+@inproceedings{DBLP:conf/ftcs/SarnaikS94,
+	title = "Effects of Resource Utilization Monitoring in Fault Recovery.",
+	author = "Tushar R. Sarnaik and Arun K. Somani",
+	pages = "6-15"}
+
+@inproceedings{DBLP:conf/ftcs/SparmannR94,
+	title = "On the Effectiveness of Residue Code Checking for Parallel
+               Two's Complement Multipliers.",
+	author = "Uwe Sparmann and Sudhakar M. Reddy",
+	pages = "219-228"}
+
+@inproceedings{DBLP:conf/ftcs/SuzukiKS94,
+	title = "Implementing Fault Tolerance with an Attribute and Functional
+               Based Model.",
+	author = "Masato Suzuki and Takuya Katayama and Richard D. Schlichting",
+	pages = "244-253"}
+
+@inproceedings{DBLP:conf/ftcs/Tai94,
+	title = "Performability-Driven Adaptive Fault Tolerance.",
+	author = "Ann T. Tai",
+	pages = "176-185"}
+
+@inproceedings{DBLP:conf/ftcs/TalliniMB94,
+	title = "Balanced Codes for Noise Reduction in VLSI Systems.",
+	author = "Luca G. Tallini and L. Merani and Bella Bose",
+	pages = "212-218"}
+
+@inproceedings{DBLP:conf/ftcs/UppaluriPR94,
+	title = "Test Pattern Generation for Path Delay Faults in Synchronous
+               Sequential Circuits Using Multiple Fast Clocks and Multiple
+               Observations Times.",
+	author = "Prasanti Uppaluri and Irith Pomeranz and Sudhakar M. Reddy",
+	pages = "456-465"}
+
+@inproceedings{DBLP:conf/ftcs/VargasN94,
+	title = "SEU-Tolerant SRAM Design Based on Current Monitoring.",
+	author = "F. L. Vargas and Michael Nicolaidis",
+	pages = "106-115"}
+
+@inproceedings{DBLP:conf/ftcs/WangBA94,
+	title = "Analysis and Experimental Evaluation of Comparison-Based
+               System-Level Diagnosis for Multiprocessor Systems.",
+	author = "Hongying Wang and Douglas M. Blough and Leon Alkalaj",
+	pages = "55-64"}
+
+@inproceedings{DBLP:conf/ftcs/WangTSP94,
+	title = "The Impact of Fault Expansion on the Interval Estimate for
+               Fault Detection Coverage.",
+	author = "Wei Wang and Kishor S. Trivedi and Babubhai V. Shah and Joseph A. Profeta, III",
+	pages = "330-337"}
+
+@inproceedings{DBLP:conf/ftcs/YenB94,
+	title = "Systematic Incorporation of Efficient Fault Tolerance in
+               Systems of Cooperating Parallel Programs.",
+	author = "I-Ling Yen and Farokh B. Bastani",
+	pages = "154-163"}
+
+@default year = 1993
+
+@inproceedings{DBLP:conf/ftcs/AlvisiHM93,
+	title = "Nonblocking and Orphan-Free Message Logging Protocols.",
+	author = "Lorenzo Alvisi and Bruce Hoppe and Keith Marzullo",
+	pages = "145-154"}
+
+@inproceedings{DBLP:conf/ftcs/BalakrishnanR93,
+	title = "Characterizing a Lumping Heuristic for a Markov Network
+               Reliability Model.",
+	author = "Meera Balakrishnan and Andrew L. Reibman",
+	pages = "56-65"}
+
+@inproceedings{DBLP:conf/ftcs/Baum-Waidner93,
+	title = "Byzantine Agreement with a Minimum Number of Messages Both
+               in the Faultless and Worst Case.",
+	author = "Birgit Baum-Waidner",
+	pages = "554-563"}
+
+@inproceedings{DBLP:conf/ftcs/BeoumesKALAMBS93,
+	title = "SURF-2: A Program for Dependability Evaluation of Complex
+               Hardware and Software Systems.",
+	author = "C. B{\'e}oumes and Karama Kanoun and Martine Aguera and Jean-Claude Laprie and Jean Arlat and Sylvain Metge and S. Bachmann and Jorge Moreira de Souza and C. Bourdeau and David Powell and J.-E. Doucet and P. Spiesser",
+	pages = "668-673"}
+
+@inproceedings{DBLP:conf/ftcs/BermanG93,
+	title = "Randomized Distributed Agreement Revisited.",
+	author = "Piotr Berman and Juan A. Garay",
+	pages = "412-419"}
+
+@inproceedings{DBLP:conf/ftcs/BhideDHSP93,
+	title = "A Case for Fault-Tolerant Memory for Transaction Processing.",
+	author = "Anupam Bhide and Daniel M. Dias and Nagui Halim and T. Basil Smith and Francis N. Parr",
+	pages = "451-460"}
+
+@inproceedings{DBLP:conf/ftcs/Bishop93,
+	title = "The Variation of Software Survival Time for Different Operational
+               Input Profiles.",
+	author = "Peter G. Bishop",
+	pages = "98-107"}
+
+@inproceedings{DBLP:conf/ftcs/BlantonH93,
+	title = "Efficient Testing of Tree Circuits.",
+	author = "Ronald D. Blanton and John P. Hayes",
+	pages = "176-185"}
+
+@inproceedings{DBLP:conf/ftcs/Bouissou93,
+	title = "The FIGARO Dependability Evaluation Workbench in Use: Case
+               Studies for Fault-Tolerant Computer Systems.",
+	author = "Marc Bouissou",
+	pages = "680-685"}
+
+@inproceedings{DBLP:conf/ftcs/BriereT93,
+	title = "AIRBUS A320/A330/A340 Electrical Flight Controls: A Family
+               of Fault-Tolerant Systems.",
+	author = "Dominique Bri{\`e}re and Pascal Traverse",
+	pages = "616-623"}
+
+@inproceedings{DBLP:conf/ftcs/BruckCH93,
+	title = "Wildcard Dimensions, Coding Theory and Fault-Tolerant Meshes
+               and Hybercubes.",
+	author = "Jehoshua Bruck and Robert Cypher and Ching-Tien Ho",
+	pages = "260-267"}
+
+@inproceedings{DBLP:conf/ftcs/BurkhardM93,
+	title = "Disk Array Storage System Reliability.",
+	author = "Walter A. Burkhard and Jai Menon",
+	pages = "432-441"}
+
+@inproceedings{DBLP:conf/ftcs/BuskensJ93,
+	title = "Distributed On-Line Diagnosis in the Presence of Arbitrary
+               Faults.",
+	author = "Richard W. Buskens and Ronald P. Bianchini, Jr.",
+	pages = "470-479"}
+
+@inproceedings{DBLP:conf/ftcs/CauR93,
+	title = "Specifying Fault Tolerance within Stark's Formalism.",
+	author = "Antonio Cau and Willem P. de Roever",
+	pages = "392-401"}
+
+@inproceedings{DBLP:conf/ftcs/ChaRCPI93,
+	title = "A Fast and Accurate Gate-Level Transient Fault Simulation
+               Environment.",
+	author = "Hungse Cha and Elizabeth M. Rudnick and Gwan S. Choi and Janak H. Patel and Ravishankar K. Iyer",
+	pages = "310-319"}
+
+@inproceedings{DBLP:conf/ftcs/ChakrabartyH93,
+	title = "Balance Testing of Logic Circuits.",
+	author = "Krishnendu Chakrabarty and John P. Hayes",
+	pages = "350-359"}
+
+@inproceedings{DBLP:conf/ftcs/ChangS93,
+	title = "Concurrent Error Detection/Correction in the HAL MMU Chip.",
+	author = "David Chih-Wei Chang and Nirmal R. Saxena",
+	pages = "630-635"}
+
+@inproceedings{DBLP:conf/ftcs/ChenAKK93,
+	title = "Comparison of Hybrid Modular Redundant Multiprocessor Systems
+               with respect to Performabilitites.",
+	author = "Chang Chen and Hiroyuki Asada and Yoshiaki Kakuda and Tohru Kikuno",
+	pages = "66-75"}
+
+@inproceedings{DBLP:conf/ftcs/ChoiI93,
+	title = "Wear-Out Simulation Environment for VLSI Designs.",
+	author = "Gwan S. Choi and Ravishankar K. Iyer",
+	pages = "320-329"}
+
+@inproceedings{DBLP:conf/ftcs/DavidG93,
+	title = "Development of a Fault Tolerant Computer System for the
+               HERMES Space Shuttle.",
+	author = "Philippe David and Claude Guidal",
+	pages = "641-646"}
+
+@inproceedings{DBLP:conf/ftcs/DolevKM93,
+	title = "Early Delivery Totally Ordered Multicast in Asynchronous
+               Environments.",
+	author = "Danny Dolev and Shlomo Kramer and Dalia Malki",
+	pages = "544-553"}
+
+@inproceedings{DBLP:conf/ftcs/EychenneBJK93,
+	title = "The Use of Object Groups to Implement Dependability in a
+               Process Control Supervision System.",
+	author = "Yves Eychenne and Michel Simatic and Christophe Baradel and Laurent Junot and Bruno Kohen",
+	pages = "660-665"}
+
+@inproceedings{DBLP:conf/ftcs/FujiwaraK93,
+	title = "A Class of Error Locating Codes for Byte-Organized Memory
+               Systems.",
+	author = "Eiji Fujiwara and Masato Kitakami",
+	pages = "110-119"}
+
+@inproceedings{DBLP:conf/ftcs/GeistT93,
+	title = "An Analytic Treatment of the Reliability and Performance
+               of Mirrored Disk Subsystems.",
+	author = "Robert Geist and Kishor S. Trivedi",
+	pages = "442-450"}
+
+@inproceedings{DBLP:conf/ftcs/ClassN93,
+	title = "Fault-Tolerant Wormhole Routing in Meshes.",
+	author = "Christopher J. Glass and Lionel M. Ni",
+	pages = "240-249"}
+
+@inproceedings{DBLP:conf/ftcs/GoswamiI93,
+	title = "Simulation of Software Behaviour Under Hardware Faults.",
+	author = "Kumar K. Goswami and Ravishankar K. Iyer",
+	pages = "218-227"}
+
+@inproceedings{DBLP:conf/ftcs/GuptaJ93,
+	title = "Increasing System Availability through On-Line Software
+               Version Change.",
+	author = "Deepak Gupta and Pankaj Jalote",
+	pages = "30-35"}
+
+@inproceedings{DBLP:conf/ftcs/HachigaAH93,
+	title = "The Design Concepts and Operational Results of Fault-tolerant
+               Computer Systems for the Shinkansen Train Control.",
+	author = "Akira Hachiga and Katsuji Akita and Yutaka Hasegawa",
+	pages = "78-87"}
+
+@inproceedings{DBLP:conf/ftcs/HennebertG93,
+	title = "SACEM: A Fault Tolerant System for Train Speed Control.",
+	author = "Claude Hennebert and G{\'e}rard D. Guiho",
+	pages = "624-628"}
+
+@inproceedings{DBLP:conf/ftcs/HollandGS93,
+	title = "Fast, On-Line Failure Recovery in Redundant Disk Arrays.",
+	author = "Mark Holland and Garth A. Gibson and Daniel P. Siewiorek",
+	pages = "422-431"}
+
+@inproceedings{DBLP:conf/ftcs/HorstJL93,
+	title = "The Risk of Data Corruption in Microprocessor-based Systems.",
+	author = "Robert W. Horst and Doug Jewett and Daniel Lenoski",
+	pages = "576-585"}
+
+@inproceedings{DBLP:conf/ftcs/HuangK93,
+	title = "Software Implemented Fault Tolerance Technologies and Experience.",
+	author = "Yennun Huang and Chandra M. R. Kintala",
+	pages = "2-9"}
+
+@inproceedings{DBLP:conf/ftcs/JanssensF93,
+	title = "Relaxing Consistency in Recoverable Distributed Shared Memory.",
+	author = "Bob Janssens and W. Kent Fuchs",
+	pages = "155-163"}
+
+@inproceedings{DBLP:conf/ftcs/KanounKLM93,
+	title = "SoRel: A Tool for Reliability Growth Analysis and Prediction
+               From Statistical Failure Data.",
+	author = "Karama Kanoun and Mohamed Ka{\^a}niche and Jean-Claude Laprie and Sylvain Metge",
+	pages = "654-659"}
+
+@inproceedings{DBLP:conf/ftcs/KantawalaT93,
+	title = "Designing Concurrent Checking Sorting Networks.",
+	author = "Kamal Kantawala and D. L. Tao",
+	pages = "250-259"}
+
+@inproceedings{DBLP:conf/ftcs/KarriO93,
+	title = "Optimal Self-Recovering Microarchitecture Synthesis.",
+	author = "Ramesh Karri and Alex Orailoglu",
+	pages = "512-521"}
+
+@inproceedings{DBLP:conf/ftcs/Koch93,
+	title = "An Efficient Replication Protocol Exploiting Logical Tree
+               Structures.",
+	author = "Henning Koch",
+	pages = "382-391"}
+
+@inproceedings{DBLP:conf/ftcs/KopetzG93,
+	title = "TTP - A Time-Triggered Protocol for Fault-Tolerant Real-Time
+               Systems.",
+	author = "Hermann Kopetz and G{\"u}nter Gr{\"u}nsteidl",
+	pages = "524-533"}
+
+@inproceedings{DBLP:conf/ftcs/KriegerBS93,
+	title = "A BDD - based Algorithm for Computation of Exact Fault Detection
+               Probabilities.",
+	author = "Rolf Krieger and Bernd Becker and R. Sinkovic",
+	pages = "186-195"}
+
+@inproceedings{DBLP:conf/ftcs/LaprieLMR93,
+	title = "Limits in Dependability (Panel).",
+	author = "Jean-Claude Laprie and G{\'e}rard Le Lann and Michele Morganti and John M. Rushby",
+	pages = "608-613"}
+
+@inproceedings{DBLP:conf/ftcs/LeeI93,
+	title = "Faults, Symptoms, and Software Fault Tolerance in the Tandem
+               GUARDIAN90 Operating System.",
+	author = "Inhwan Lee and Ravishankar K. Iyer",
+	pages = "20-29"}
+
+@inproceedings{DBLP:conf/ftcs/LeeYS93,
+	title = "Adaptive Voting for Faulty (VFF) Node Scheme for Distributed
+               Self-Diagnosis.",
+	author = "Jae Young Lee and Hee Yong Youn and Adit D. Singh",
+	pages = "480-489"}
+
+@inproceedings{DBLP:conf/ftcs/LeveugleRSMP93,
+	title = "A Synthesis Tool for Fault-Tolerant Finite State Machines.",
+	author = "R{\'e}gis Leveugle and R. Rochet and Gabriele Saucier and L. Martinez and C. Pitot",
+	pages = "502-511"}
+
+@inproceedings{DBLP:conf/ftcs/LincolnR93,
+	title = "A Formally Verified Algorithm for Interactive Consistency
+               Under a Hybrid Fault Model.",
+	author = "Patrick Lincoln and John M. Rushby",
+	pages = "402-411"}
+
+@inproceedings{DBLP:conf/ftcs/LyuNF93,
+	title = "A Systematic and Comprehensive Tool for Software Reliability
+               Modeling and Measurement.",
+	author = "Michael R. Lyu and Allen P. Nikora and William H. Farr",
+	pages = "648-653"}
+
+@inproceedings{DBLP:conf/ftcs/MatsubaraK93,
+	title = "A Proposal for Error-Tolerating Codes.",
+	author = "Takashi Matsubara and Yoshiaki Koga",
+	pages = "130-136"}
+
+@inproceedings{DBLP:conf/ftcs/MaxionO93,
+	title = "Detection and Discrimination of Injected Network Faults.",
+	author = "Roy A. Maxion and Robert T. Olszewski",
+	pages = "198-207"}
+
+@inproceedings{DBLP:conf/ftcs/NicolaSHG93,
+	title = "Fast Simulation of Steady-State Availability in Non-Markovian
+               Highly Dependable Systems.",
+	author = "Victor F. Nicola and Perwez Shahabuddin and Philip Heidelberger and Peter W. Glynn",
+	pages = "38-47"}
+
+@inproceedings{DBLP:conf/ftcs/Nicolaidis93,
+	title = "Efficient Implementations of Self-Checking Adders and ALUs.",
+	author = "Michael Nicolaidis",
+	pages = "586-595"}
+
+@inproceedings{DBLP:conf/ftcs/OhY93,
+	title = "On Concurrent Error Detection, Location, and Correction
+               of FFT Networks.",
+	author = "Choong Gun Oh and Hee Yong Youn",
+	pages = "596-605"}
+
+@inproceedings{DBLP:conf/ftcs/Pelc93,
+	title = "Efficient Distributed Diagnosis in the Presence of Random
+               Faults.",
+	author = "Andrzej Pelc",
+	pages = "462-469"}
+
+@inproceedings{DBLP:conf/ftcs/PomeranzR93,
+	title = "EXOP (Extended Operation): A New Logical Fault Model for
+               Digital Circuits.",
+	author = "Irith Pomeranz and Sudhakar M. Reddy",
+	pages = "166-175"}
+
+@inproceedings{DBLP:conf/ftcs/PomeranzR93a,
+	title = "Design and Synthesis for Testability of Synchronous Sequential
+               Circuits Based on Strong-Connectivity.",
+	author = "Irith Pomeranz and Sudhakar M. Reddy",
+	pages = "492-501"}
+
+@inproceedings{DBLP:conf/ftcs/PomeranzRP93,
+	title = "Theory and Practice of Sequential Machine Testing and Testability.",
+	author = "Irith Pomeranz and Sudhakar M. Reddy and Janak H. Patel",
+	pages = "330-337"}
+
+@inproceedings{DBLP:conf/ftcs/PowellMAC93,
+	title = "Estimators for Fault Tolerance Coverage Evaluation.",
+	author = "David Powell and Eliane Martins and Jean Arlat and Yves Crouzet",
+	pages = "228-237"}
+
+@inproceedings{DBLP:conf/ftcs/Redinbo93,
+	title = "Optimum Detector/Corrector for Fault-Tolerant Linear Processing.",
+	author = "G. Robert Redinbo",
+	pages = "299-308"}
+
+@inproceedings{DBLP:conf/ftcs/RosenbergS93,
+	title = "Software Fault Injection and its Application in Distributed
+               Systems.",
+	author = "Harold A. Rosenberg and Kang G. Shin",
+	pages = "208-217"}
+
+@inproceedings{DBLP:conf/ftcs/Roy-ChowdhuryB93,
+	title = "Tolerance Determination for Algorithm-Based Checks Using
+               Simplified Error Analysis Techniques.",
+	author = "Amber Roy-Chowdhury and Prithviraj Banerjee",
+	pages = "290-298"}
+
+@inproceedings{DBLP:conf/ftcs/RubinoS93,
+	title = "Interval Availability Distribution Computation.",
+	author = "Gerardo Rubino and Bruno Sericola",
+	pages = "48-55"}
+
+@inproceedings{DBLP:conf/ftcs/RussinovichSS93,
+	title = "Application Transparent Fault Management in Fault Tolerant
+               Match.",
+	author = "Mark Russinovich and Zary Segall and Daniel P. Siewiorek",
+	pages = "10-19"}
+
+@inproceedings{DBLP:conf/ftcs/SandersO93,
+	title = "Dependability Evaluation Using U{\it tra}SAN.",
+	author = "William H. Sanders and W. Douglas Obal II",
+	pages = "674-679"}
+
+@inproceedings{DBLP:conf/ftcs/SaxenaTS93,
+	title = "Algorithmic Synthesis of High Level Tests for Data Path
+               Designs.",
+	author = "Nirmal R. Saxena and Ravi Tangirala and Ajay Srivastava",
+	pages = "360-369"}
+
+@inproceedings{DBLP:conf/ftcs/SchiperR93,
+	title = "Virtually-Synchronous Communication Based on a Weak Failure
+               Suspector.",
+	author = "Andr{\'e} Schiper and Aleta Ricciardi",
+	pages = "534-543"}
+
+@inproceedings{DBLP:conf/ftcs/Shambroom93,
+	title = "Use of Protocol Validation and Verification Techniques in
+               the Design of a Fault-Tolerant Computer Architecture.",
+	author = "W. David Shambroom",
+	pages = "636-640"}
+
+@inproceedings{DBLP:conf/ftcs/ShamsunderRR93,
+	title = "Exploiting Data Flow Information in Algorithm-Based Fault
+               Tolerance.",
+	author = "Ragini Shamsunder and Daniel J. Rosenkrantz and S. S. Ravi",
+	pages = "280-289"}
+
+@inproceedings{DBLP:conf/ftcs/SiewiorekHSS93,
+	title = "Development of a Benchmark to Measure System Robustness.",
+	author = "Daniel P. Siewiorek and John J. Hudak and Byung-Hoon Suh and Zary Segall",
+	pages = "88-97"}
+
+@inproceedings{DBLP:conf/ftcs/TohmaK93,
+	title = "Design of Neural Networks to Tolerate the Mixture of Two
+               Types of Faults.",
+	author = "Yoshihiro Tohma and Yoichi Koyanagi",
+	pages = "268-277"}
+
+@inproceedings{DBLP:conf/ftcs/Vaidya93,
+	title = "Unidirectional Error Control Codes.",
+	author = "Nitin H. Vaidya",
+	pages = "120-129"}
+
+@inproceedings{DBLP:conf/ftcs/VishakantaiahA93,
+	title = "Impact of Behavioral Learning on the Compilation of Sequential
+               Circuit Tests.",
+	author = "Praveen Vishakantaiah and Jacob A. Abraham",
+	pages = "370-379"}
+
+@inproceedings{DBLP:conf/ftcs/WangHF93,
+	title = "Progressive Retry for Software Error Recovery in Distributed
+               Systems.",
+	author = "Yi-Min Wang and Yennun Huang and W. Kent Fuchs",
+	pages = "138-144"}
+
+@inproceedings{DBLP:conf/ftcs/WilkenK93,
+	title = "Efficient Memory Access Checking.",
+	author = "Kent D. Wilken and Timothy Kong",
+	pages = "566-575"}
+
+@inproceedings{DBLP:conf/ftcs/ZorianI93,
+	title = "Programmable Space Compaction for BIST.",
+	author = "Yervant Zorian and Andr{\'e} Ivanov",
+	pages = "340-349"}
+
+@default year = 1992
+
+@inproceedings{DBLP:conf/ftcs/Al-BassamRB92,
+	title = "Improved Construction Methods for Error Correcting Constant
+               Weight Codes.",
+	author = "Sulaiman Al-Bassam and Gowri Ramanathan and Bella Bose",
+	pages = "510-517"}
+
+@inproceedings{DBLP:conf/ftcs/AlamM92,
+	title = "Routing in Modular Fault Tolerant Multiprocessor Systems.",
+	author = "M. Sultan Alam and Rami G. Melhem",
+	pages = "185-193"}
+
+@inproceedings{DBLP:conf/ftcs/AlewineCLFH92,
+	title = "Branch Recovery with Compiler-Assisted Multiple Instruction
+               Retry.",
+	author = "Neal J. Alewine and Shyh-Kwei Chen and Chung-Chi Jim Li and W. Kent Fuchs and Wen-mei W. Hwu",
+	pages = "66-73"}
+
+@inproceedings{DBLP:conf/ftcs/AmirDKM92,
+	title = "Transis: A Communication Subsystem for High Availability.",
+	author = "Yair Amir and Danny Dolev and Shlomo Kramer and Dalia Malki",
+	pages = "76-84"}
+
+@inproceedings{DBLP:conf/ftcs/AroraG92,
+	title = "Closure and Convergence: A Formulation of Fault-Tolerant
+               Computing.",
+	author = "Anish Arora and Mohamed G. Gouda",
+	pages = "396-403"}
+
+@inproceedings{DBLP:conf/ftcs/AssaadD92,
+	title = "More Robust Tests in Algorithm-Based Fault-Tolerant Matrix
+               Multiplication.",
+	author = "Fikri T. Assaad and Shantanu Dutt",
+	pages = "430-439"}
+
+@inproceedings{DBLP:conf/ftcs/AvreskyALC92,
+	title = "Fault Injection for the Formal Testing of Fault Tolerance.",
+	author = "Dimiter R. Avresky and Jean Arlat and Jean-Claude Laprie and Yves Crouzet",
+	pages = "345-354"}
+
+@inproceedings{DBLP:conf/ftcs/BlaumB92,
+	title = "Unordered Error-Correcting Codes and their Applications.",
+	author = "Mario Blaum and Jehoshua Bruck",
+	pages = "468-493"}
+
+@inproceedings{DBLP:conf/ftcs/Bou-GhazaleM92,
+	title = "Testing with Correlated Test Vectors.",
+	author = "Silvio Bou-Ghazale and Peter N. Marinos",
+	pages = "254-262"}
+
+@inproceedings{DBLP:conf/ftcs/BruckCH92,
+	title = "Efficient Fault-Tolerant Mesh and Hypercube Architectures.",
+	author = "Jehoshua Bruck and Robert Cypher and Ching-Tien Ho",
+	pages = "162-169"}
+
+@inproceedings{DBLP:conf/ftcs/BulkaD92,
+	title = "Design and Analysis of Multibus Systems Using Projective
+               Geometry.",
+	author = "Dov Bulka and Joanne Bechta Dugan",
+	pages = "122-129"}
+
+@inproceedings{DBLP:conf/ftcs/CherequePRRV92,
+	title = "Active Replication in Delta-4.",
+	author = "Marc Ch{\'e}r{\`e}que and David Powell and Philippe Reynier and Jean-Luc Richier and Jacques Voiron",
+	pages = "28-37"}
+
+@inproceedings{DBLP:conf/ftcs/Colwell92,
+	title = "Latent Design Faults in the Development of Multiflow's TRACE/200.",
+	author = "Robert P. Colwell",
+	pages = "468-474"}
+
+@inproceedings{DBLP:conf/ftcs/ElnozahyZ92,
+	title = "Replicated Distributed Process in Manetho.",
+	author = "E. N. Elnozahy and Willy Zwaenepoel",
+	pages = "18-27"}
+
+@inproceedings{DBLP:conf/ftcs/Eschermann92,
+	title = "On Combining Off-Line BIST and On-Line Control Flow Checking.",
+	author = "Bernhard Eschermann",
+	pages = "298-305"}
+
+@inproceedings{DBLP:conf/ftcs/FujinoF92,
+	title = "An Efficient Test Generation Algorithm Based on Search State
+               Dominance.",
+	author = "Takayuli Fujino and Hideo Fujiwara",
+	pages = "246-253"}
+
+@inproceedings{DBLP:conf/ftcs/FujiwaraH92,
+	title = "Single {\it }-Bit Byte Error Correcting and Double Bit
+               Error Detecting Codes for High-Speed Memory Systems.",
+	author = "Eiji Fujiwara and Mitsuru Hamada",
+	pages = "494-501"}
+
+@inproceedings{DBLP:conf/ftcs/HansenS92,
+	title = "Models for Time Coalescence in Event Logs.",
+	author = "Jeffery P. Hansen and Daniel P. Siewiorek",
+	pages = "221-227"}
+
+@inproceedings{DBLP:conf/ftcs/HuangAL92,
+	title = "Wafer Testing with Pairwise Comparisons.",
+	author = "Kaiyuan Huang and Vinod K. Agarwal and Laurence E. LaForge",
+	pages = "374-383"}
+
+@inproceedings{DBLP:conf/ftcs/Jalote92,
+	title = "Dynamic Reconfiguration of CSP Programs for Fault Tolerance.",
+	author = "Pankaj Jalote",
+	pages = "50-56"}
+
+@inproceedings{DBLP:conf/ftcs/JhaPRM92,
+	title = "Synthesis of Multi-Level Combinational Circuits for Complete
+               Robust Path Delay Fault Testability.",
+	author = "Niraj K. Jha and Irith Pomeranz and Sudhakar M. Reddy and Robert J. Miller",
+	pages = "280-287"}
+
+@inproceedings{DBLP:conf/ftcs/JunejaS92,
+	title = "Fast Simulation of Markovian Reliability/Availability Models
+               with General Repair Policies.",
+	author = "Sandeep Juneja and Perwez Shahabuddin",
+	pages = "150-159"}
+
+@inproceedings{DBLP:conf/ftcs/KajiharaSK92,
+	title = "Removal of Redundancy in Logic Circuits under Classification
+               of Undetectable Faults.",
+	author = "Seiji Kajihara and Haruko Shiba and Kozo Kinoshita",
+	pages = "263-270"}
+
+@inproceedings{DBLP:conf/ftcs/KanawatiKA92,
+	title = "FERRARI: A Tool for The Validation of System Dependability
+               Properties.",
+	author = "Ghani A. Kanawati and Nasser A. Kanawati and Jacob A. Abraham",
+	pages = "336-344"}
+
+@inproceedings{DBLP:conf/ftcs/KarpovskyCL92,
+	title = "Multiple Signature Analysis: A Framework for Built-In Self-Diagnostic.",
+	author = "Mark G. Karpovsky and Saeed M. Chaudhry and Lev B. Levitin",
+	pages = "112-119"}
+
+@inproceedings{DBLP:conf/ftcs/KarriO92,
+	title = "Scheduling with Rollback Constraints in High-Level Synthesis
+               of Self-Recovering ASICs.",
+	author = "Ramesh Karri and Alex Orailoglu",
+	pages = "519-526"}
+
+@inproceedings{DBLP:conf/ftcs/KoyanagiT92,
+	title = "Fault Tolerant Neural Networks in Optimization Problems.",
+	author = "Yoichi Koyanagi and Yoshihiro Tohma",
+	pages = "412-418"}
+
+@inproceedings{DBLP:conf/ftcs/LatifiZB92,
+	title = "Optimal Ring Embedding in Hypercubes with Faulty Links.",
+	author = "Shahram Latifi and Si-Qing Zheng and Nader Bagherzadeh",
+	pages = "178-184"}
+
+@inproceedings{DBLP:conf/ftcs/LoDN92,
+	title = "Design of Static CMOS Self-Checking Circuits using Built-In
+               Current Sensing.",
+	author = "Jien-Chung Lo and James C. Daly and Michael Nicolaidis",
+	pages = "104-111"}
+
+@inproceedings{DBLP:conf/ftcs/LongFA92,
+	title = "Compiler-Assisted Static Checkpoint Insertion.",
+	author = "Junsheng Long and W. Kent Fuchs and Jacob A. Abraham",
+	pages = "58-65"}
+
+@inproceedings{DBLP:conf/ftcs/MerchantY92,
+	title = "Design and Modeling of Clustered RAID.",
+	author = "Arif Merchant and Philip S. Yu",
+	pages = "140-149"}
+
+@inproceedings{DBLP:conf/ftcs/MerendaM92,
+	title = "Recovery/Serviceability System Test Improvements for the
+               IBM ES/9000 520 Based Models.",
+	author = "Ann C. Merenda and Ed Merenda",
+	pages = "463-467"}
+
+@inproceedings{DBLP:conf/ftcs/MiremadiKGT92,
+	title = "Two Software Techniques for On-line Error Detection.",
+	author = "Ghassem Miremadi and Johan Karlsson and Ulf Gunneflo and Jan Torin",
+	pages = "328-335"}
+
+@inproceedings{DBLP:conf/ftcs/MujumdarSJ92,
+	title = "Incorporating Testability Considerations in High-Level Systhesis.",
+	author = "Ashutosh Mujumdar and Kewal K. Saluja and Rajiv Jain",
+	pages = "272-279"}
+
+@inproceedings{DBLP:conf/ftcs/NanyaHO92,
+	title = "Design of Fully Exercised SFS/SCD Logic Networks.",
+	author = "Takashi Nanya and Shin'ichi Hatakenaka and Ryuichi Onoo",
+	pages = "96-103"}
+
+@inproceedings{DBLP:conf/ftcs/NicolaHS92,
+	title = "Uniformization and Exponential Transformation: Techniques
+               for Fast Simulation of Highly Dependable Non-Markovian Systems.",
+	author = "Victor F. Nicola and Philip Heidelberger and Perwez Shahabuddin",
+	pages = "130-139"}
+
+@inproceedings{DBLP:conf/ftcs/OhlssonRG92,
+	title = "A Study of the Effects of Transient Fault Injection into
+               a 32-bit RISC with Built-in Watchdog.",
+	author = "Joakim Ohlsson and Marcus Rim{\'e}n and Ulf Gunneflo",
+	pages = "316-325"}
+
+@inproceedings{DBLP:conf/ftcs/Parhami92,
+	title = "Optimal Algorithms for Exact, Inexact, and Approval Voting.",
+	author = "Behrooz Parhami",
+	pages = "404-411"}
+
+@inproceedings{DBLP:conf/ftcs/PeercyB92,
+	title = "Design and Analysis of Software Reconfiguration Strategies
+               for Hypercube Multicomputers under Multiple Faults.",
+	author = "Michael Peercy and Prithviraj Banerjee",
+	pages = "448-455"}
+
+@inproceedings{DBLP:conf/ftcs/Peng92,
+	title = "Performance Bounds in List Scheduling of Redundant Tasks
+               on Multi-Processors.",
+	author = "Dar-Tzen Peng",
+	pages = "196-203"}
+
+@inproceedings{DBLP:conf/ftcs/PomeranzR92,
+	title = "A Divide-And-Conquer Approach to Test Generation for Large
+               Synchronous Sequential Circuits.",
+	author = "Irith Pomeranz and Sudhakar M. Reddy",
+	pages = "230-237"}
+
+@inproceedings{DBLP:conf/ftcs/Powell92,
+	title = "Failure Mode Assumptions and Assumption Coverage.",
+	author = "David Powell",
+	pages = "386-395"}
+
+@inproceedings{DBLP:conf/ftcs/RaghavendraYT92,
+	title = "Free Dimensions - An Effective Approach to Achieving Fault
+               Tolerance in Hypercubes.",
+	author = "C. S. Raghavendra and Pei-Ji Yang and Sing-Ban Tien",
+	pages = "170-177"}
+
+@inproceedings{DBLP:conf/ftcs/RaoFK92,
+	title = "Efficient Multiple Unidirectional Byte Error-Detecting Codes
+               for Computer Memory Systems.",
+	author = "T. R. N. Rao and Gui Liang Feng and Mahadev S. Kolluru",
+	pages = "502-509"}
+
+@inproceedings{DBLP:conf/ftcs/Redinbo92,
+	title = "Protecting Processing Elements in Communication Satellites.",
+	author = "G. Robert Redinbo",
+	pages = "8-17"}
+
+@inproceedings{DBLP:conf/ftcs/Reibman92,
+	title = "Outage Times in Fault-Tolerant Systems.",
+	author = "Andrew L. Reibman",
+	pages = "458-462"}
+
+@inproceedings{DBLP:conf/ftcs/RobinsonS92,
+	title = "Direct Methods for Synthesis of Self-Monitoring State Machines.",
+	author = "Scott H. Robinson and John Paul Shen",
+	pages = "306-315"}
+
+@inproceedings{DBLP:conf/ftcs/SinghK92,
+	title = "Chip Test Optimization Using Defect Clustering Information.",
+	author = "Adit D. Singh and C. Mani Krishna",
+	pages = "366-373"}
+
+@inproceedings{DBLP:conf/ftcs/SpainhowerICB92,
+	title = "Design for Fault-Tolerance in System ES/9000 Model 900.",
+	author = "Lisa Spainhower and Jack Isenberg and Ram Chillarege and Joseph Berding",
+	pages = "38-47"}
+
+@inproceedings{DBLP:conf/ftcs/SrinivasJA92,
+	title = "Finite State Machine Testing Based on Growth and Dissappearance
+               Faults.",
+	author = "Mandyam-Komar Srinivas and James Jacob and Vishwani D. Agrawal",
+	pages = "238-245"}
+
+@inproceedings{DBLP:conf/ftcs/Stapper92,
+	title = "A New Statistical Approach for Fault-Tolerant VLSI Systems.",
+	author = "Charles H. Stapper",
+	pages = "356-365"}
+
+@inproceedings{DBLP:conf/ftcs/SullivanC92,
+	title = "A Comparison of Software Defects in Database Management
+               Systems and Operating Systems.",
+	author = "Mark Sullivan and Ram Chillarege",
+	pages = "475-484"}
+
+@inproceedings{DBLP:conf/ftcs/SungR92,
+	title = "Protecting Practical FFT Implementations that Share Common
+               Processing Elements.",
+	author = "Jamlung Sung and G. Robert Redinbo",
+	pages = "420-429"}
+
+@inproceedings{DBLP:conf/ftcs/SuriHW92,
+	title = "Reliability Modeling of Large Fault-Tolerant Systems.",
+	author = "Neeraj Suri and M. M. Hugue and Chris J. Walter",
+	pages = "212-220"}
+
+@inproceedings{DBLP:conf/ftcs/TridandapaniS92,
+	title = "Efficient Utilization of Spare Capacity for Fault Detection
+               and Location in Multiprocessor Systems.",
+	author = "Srinivasan Tridandapani and Arun K. Somani",
+	pages = "440-447"}
+
+@inproceedings{DBLP:conf/ftcs/VerissimoR92,
+	title = "A {\it osteriori} Agreement for Fault-Tolerant Clock Synchronization
+               on Broadcast Networks.",
+	author = "Paulo Ver\'{\i}ssimo and Lu\'{\i}s Rodrigues",
+	pages = "527-536"}
+
+@inproceedings{DBLP:conf/ftcs/WangF92,
+	title = "Scheduling Message Processing for Reducing Rollback Propagation.",
+	author = "Yi-Min Wang and W. Kent Fuchs",
+	pages = "204-211"}
+
+@inproceedings{DBLP:conf/ftcs/Yakovlev92,
+	title = "A Structural Technique For Fault-Protection in Asynchronous
+               Interfaces.",
+	author = "Alexandre Yakovlev",
+	pages = "288-295"}
+
+@inproceedings{DBLP:conf/ftcs/ZhengS92,
+	title = "Fault-Tolerant Real-Time Communication in Distributed Computing
+               Systems.",
+	author = "Qin Zheng and Kang G. Shin",
+	pages = "86-93"}
+
+@default year = 1991
+
+@inproceedings{DBLP:conf/ftcs/Al-BassamBV91,
+	title = "Burst and Unidirectional Error Detecting Codes.",
+	author = "Sulaiman Al-Bassam and Bella Bose and Ramarathnam Venkatesan",
+	pages = "378-384"}
+
+@inproceedings{DBLP:conf/ftcs/AupperleM91,
+	title = "State Space Generation for Degradable Multiprocessor Systems.",
+	author = "B. E. Aupperle and John F. Meyer",
+	pages = "308-317"}
+
+@inproceedings{DBLP:conf/ftcs/BagchiH91,
+	title = "An Optimal Algorithm for Distributed System Level Diagnosis.",
+	author = "Anindo Bagchi and S. Louis Hakimi",
+	pages = "214-221"}
+
+@inproceedings{DBLP:conf/ftcs/Bakken91,
+	title = "Tolerating Failures in the Bag-of-Tasks Programming Paradigm.",
+	author = "David E. Bakken and Richard D. Schlichting",
+	pages = "248-255"}
+
+@inproceedings{DBLP:conf/ftcs/BanatreMRS91,
+	title = "Design Decisions for the FTM : A General Purpose Fault Tolerant
+               Machine.",
+	author = "Michel Ban{\^a}tre and Gilles Muller and Bruno Rochat and P. Sanchez",
+	pages = "71-78"}
+
+@inproceedings{DBLP:conf/ftcs/BianchiniB91,
+	title = "An Adaptive Distributed System-Level Diagnosis Algorithm
+               and Its Implementation.",
+	author = "Ronald P. Bianchini, Jr. and Richard W. Buskens",
+	pages = "222-229"}
+
+@inproceedings{DBLP:conf/ftcs/Bissett91,
+	title = "Designing Error Detection and Recovery for a Fault-Tolerant
+               Computer System.",
+	author = "T. Bissett",
+	pages = 115}
+
+@inproceedings{DBLP:conf/ftcs/Blough91,
+	title = "On the Reconfiguration of Memory Arrays Containing Clustered
+               Faults.",
+	author = "Douglas M. Blough",
+	pages = "444-451"}
+
+@inproceedings{DBLP:conf/ftcs/BowenP91,
+	title = "Program Fault Tolerance Based on Memory Access Behavior.",
+	author = "Nicholas S. Bowen and Dhiraj K. Pradhan",
+	pages = "426-435"}
+
+@inproceedings{DBLP:conf/ftcs/ChangS91,
+	title = "Load Sharing in Hypercube Multicomputers in the Presence
+               of Node Failures.",
+	author = "Yi-Chieh Chang and Kang G. Shin",
+	pages = "188-195"}
+
+@inproceedings{DBLP:conf/ftcs/Chatterjeed91,
+	title = "Concurrent Error Detection and Fault-Tolerance in Linear
+               Digital State Variable Systems.",
+	author = "Abhijit Chatterjee and Manuel A. d'Abreu",
+	pages = "136-143"}
+
+@inproceedings{DBLP:conf/ftcs/ChenFKT91,
+	title = "Reconfiguration Algorithm for Fault-Tolerant Arrays with
+               Minimum Number of Dangerous Processors.",
+	author = "C. Chen and An Feng and Tohru Kikuno and Koji Torii",
+	pages = "452-461"}
+
+@inproceedings{DBLP:conf/ftcs/ChenG91,
+	title = "Fault-Tolerant Memory Design in the IBM Application System/400.",
+	author = "C. L. Chen and L. E. Grosbach",
+	pages = "393-400"}
+
+@inproceedings{DBLP:conf/ftcs/CherkasskyRL91,
+	title = "Fault-Tolerant Communications Processing.",
+	author = "Vladimir Cherkassky and Reza Rooholamini and Hossein Lari-Najafi",
+	pages = "344-351"}
+
+@inproceedings{DBLP:conf/ftcs/ChillaregeHSS91,
+	title = "Challenges in Designing Fault-Tolerant Systems.",
+	author = "Ram Chillarege and Robert W. Horst and Daniel P. Siewiorek and R. S. Swarz",
+	pages = 114}
+
+@inproceedings{DBLP:conf/ftcs/ChlebusDP91,
+	title = "Optimal Broadcasting in Faulty Hypercubes.",
+	author = "Bogdan S. Chlebus and Krzysztof Diks and Andrzej Pelc",
+	pages = "266-273"}
+
+@inproceedings{DBLP:conf/ftcs/DilennoYB91,
+	title = "Fault-Tolerance Testing in the Advanced Automation System.",
+	author = "T. R. Dilenno and D. A. Yaskin and James H. Barton",
+	pages = "18-25"}
+
+@inproceedings{DBLP:conf/ftcs/DuttH91,
+	title = "Some Practical Issues in the Design of Fault-Tolerant Multiprocessors.",
+	author = "Shantanu Dutt and John P. Hayes",
+	pages = "292-299"}
+
+@inproceedings{DBLP:conf/ftcs/EchtleC91,
+	title = "Evaluation of Deterministic Fault Injection for Fault-Tolerant
+               Protocol Testing.",
+	author = "Klaus Echtle and Yinong Chen",
+	pages = "418-425"}
+
+@inproceedings{DBLP:conf/ftcs/FranklinS91,
+	title = "Pattern Sensitive Fault Testing of RAMs with Bullt-in ECC.",
+	author = "Manoj Franklin and Kewal K. Saluja",
+	pages = "385-392"}
+
+@inproceedings{DBLP:conf/ftcs/Grassi91,
+	title = "Cost Effectiveness Analysis of Different Fault Tolerance
+               Strategies for Hypercube Systems.",
+	author = "Vincenzo Grassi",
+	pages = "196-203"}
+
+@inproceedings{DBLP:conf/ftcs/GuRR91,
+	title = "Construction and Analysis of Fault-Secure Multiprocessor
+               Schedules.",
+	author = "Dechang Gu and Daniel J. Rosenkrantz and S. S. Ravi",
+	pages = "120-127"}
+
+@inproceedings{DBLP:conf/ftcs/HechtAHK91,
+	title = "A Distributed Fault Tolerant Architecture for Nuclear Reactor
+               and Other Critical Process Control Applications.",
+	author = "Myron Hecht and J. Agron and Herbert Hecht and K. H. Kim",
+	pages = "462-469"}
+
+@inproceedings{DBLP:conf/ftcs/IacoponiM91,
+	title = "Distributed Reconfiguration and Recovery in the Advanced
+               Architecture On-Board Processor.",
+	author = "M. J. Iacoponi and S. F. McDonald",
+	pages = "436-443"}
+
+@inproceedings{DBLP:conf/ftcs/Isenberg91,
+	title = "Evolving Systems for Continuous Availability.",
+	author = "Jack Isenberg",
+	pages = 116}
+
+@inproceedings{DBLP:conf/ftcs/IslamA91,
+	title = "Performability Analysis of Distributed Real-Time Systems
+               with Repetitive Task Invocation.",
+	author = "S. M. Rezaul Islam and Hany H. Ammar",
+	pages = "352-359"}
+
+@inproceedings{DBLP:conf/ftcs/JagannathanA91,
+	title = "Fault Tolerance in Parallel Implementations of Functional
+               Languages.",
+	author = "R. Jagannathan and Edward A. Ashcroft",
+	pages = "256-265"}
+
+@inproceedings{DBLP:conf/ftcs/Jewett91,
+	title = "Integrity S2: A Fault-Tolerant Unix Platform.",
+	author = "Doug Jewett",
+	pages = 70}
+
+@inproceedings{DBLP:conf/ftcs/KimGDR91,
+	title = "Approaches to Design of Temporary Blackout Handling Capabilities
+               and an Evaluation with a Real-Time Tightly Coupled Network
+               Testbed.",
+	author = "K. H. Kim and W. J. Guan and Andreas Damm and J. A. Rohr",
+	pages = "470-477"}
+
+@inproceedings{DBLP:conf/ftcs/LeeIT91,
+	title = "Error/Failure Analysis Using Event Logs from Fault Tolerant
+               Systems.",
+	author = "Inhwan Lee and Ravishankar K. Iyer and Dong Tang",
+	pages = "10-17"}
+
+@inproceedings{DBLP:conf/ftcs/LeeP91,
+	title = "An Architectural Level Test Generator for a Hierarchical
+               Design Environment.",
+	author = "Jaushin Lee and Janak H. Patel",
+	pages = "44-51"}
+
+@inproceedings{DBLP:conf/ftcs/LeeS91,
+	title = "Functional Test Generation for Pipelined Computer Implementations.",
+	author = "Daniel C. Lee and Daniel P. Siewiorek",
+	pages = "60-69"}
+
+@inproceedings{DBLP:conf/ftcs/Lenoski91,
+	title = "Practical Problems in the Design of Fault-Tolerant Hardware.",
+	author = "Daniel Lenoski",
+	pages = 116}
+
+@inproceedings{DBLP:conf/ftcs/MichelLS91,
+	title = "A New Approach to Control Flow Checking Without Program
+               Modification.",
+	author = "T. Michel and R{\'e}gis Leveugle and Gabriele Saucier",
+	pages = "334-343"}
+
+@inproceedings{DBLP:conf/ftcs/MillmanM91,
+	title = "Bridging, Transition, and Stuck-Open Faults in Self-Testing
+               CMOS Checkers.",
+	author = "Steven D. Millman and Edward J. McCluskey",
+	pages = "154-161"}
+
+@inproceedings{DBLP:conf/ftcs/PetersonTU91,
+	title = "An Evaluation of Fault-Tolerant Hypercube Architectures
+               for Onboard Computing.",
+	author = "John C. Peterson and Jesus O. Tuazon and E. T. Upchurch",
+	pages = "204-213"}
+
+@inproceedings{DBLP:conf/ftcs/Pitts91,
+	title = "The RM Recovery Services.",
+	author = "David V. Pitts",
+	pages = "360-367"}
+
+@inproceedings{DBLP:conf/ftcs/PomeranzR91,
+	title = "Test Generation for Synchronous Sequential Circuits Using
+               Multiple Observation Times.",
+	author = "Irith Pomeranz and Sudhakar M. Reddy",
+	pages = "52-59"}
+
+@inproceedings{DBLP:conf/ftcs/Rahm91,
+	title = "Recovery Concepts for Data Sharing Systems.",
+	author = "Erhard Rahm",
+	pages = "368-377"}
+
+@inproceedings{DBLP:conf/ftcs/RainaM91,
+	title = "Signature Analysis with Modified Linear Feedback Shift Registers
+               (M-LFSRs).",
+	author = "R. Raina and Peter N. Marinos",
+	pages = "88-95"}
+
+@inproceedings{DBLP:conf/ftcs/RamathanS91,
+	title = "A Multiple Copy Approach for Delivering Messages Under Deadline
+               Constraints.",
+	author = "P. Ramathan and Kang G. Shin",
+	pages = "300-307"}
+
+@inproceedings{DBLP:conf/ftcs/RangarajanF91,
+	title = "Probabilistic Diagnosis Algorithms Tailored to System Topology.",
+	author = "Sampath Rangarajan and Donald S. Fussell",
+	pages = "230-239"}
+
+@inproceedings{DBLP:conf/ftcs/ReddyB91,
+	title = "Gracefully Degradable Disk Arrays.",
+	author = "A. L. Narasimha Reddy and Prithviraj Banerjee",
+	pages = "401-409"}
+
+@inproceedings{DBLP:conf/ftcs/RennelsK91,
+	title = "VLSI Implementation of a Self-Checking Self-Exercising Memory
+               System.",
+	author = "David A. Rennels and Hyeongil Kim",
+	pages = "170-177"}
+
+@inproceedings{DBLP:conf/ftcs/SaeedLA91,
+	title = "The Role of Formal Methods in the Requirements Analysis
+               of Safety-Critical Systems: A Train Set Example.",
+	author = "Amer Saeed and Rog{\'e}rio de Lemos and Tom Anderson",
+	pages = "478-487"}
+
+@inproceedings{DBLP:conf/ftcs/SaxenaFM91,
+	title = "Bounds on Signature Analysis Aliasing for Random Testing.",
+	author = "Nirmal R. Saxena and Piero Franco and Edward J. McCluskey",
+	pages = "104-113"}
+
+@inproceedings{DBLP:conf/ftcs/SchuetteS91,
+	title = "Exploiting Instruction-Level Resource Parallelism for Transparent,
+               Integrated Control-Flow Monitoring.",
+	author = "Michael A. Schuette and John Paul Shen",
+	pages = "318-325"}
+
+@inproceedings{DBLP:conf/ftcs/SmithMD91,
+	title = "The IBM S/390 Sysplex Timer.",
+	author = "T. Basil Smith and W. A. Moorman and T. Dang",
+	pages = "144-153"}
+
+@inproceedings{DBLP:conf/ftcs/StanionB91,
+	title = "TSUNAMI: A Path Oriented Scheme for Algebraic Test Generation.",
+	author = "Ted Stanion and Debashis Bhattacharya",
+	pages = "36-43"}
+
+@inproceedings{DBLP:conf/ftcs/Steinfeld91,
+	title = "Design Process for High-Availability Systems.",
+	author = "D. Steinfeld",
+	pages = 117}
+
+@inproceedings{DBLP:conf/ftcs/Stiffler91,
+	title = "On Establishing Fault Tolerance Objectives.",
+	author = "J. J. Stiffler",
+	pages = 117}
+
+@inproceedings{DBLP:conf/ftcs/StroleW91,
+	title = "Signature Analysis and Test Scheduling for Self-Testable
+               Circuits.",
+	author = "Albrecht P. Stroele and Hans-Joachim Wunderlich",
+	pages = "96-103"}
+
+@inproceedings{DBLP:conf/ftcs/SullivanC91,
+	title = "Software Defects and their Impact on System Availability:
+               A Study of Field Failures in Operating Systems.",
+	author = "Mark Sullivan and Ram Chillarege",
+	pages = "2-9"}
+
+@inproceedings{DBLP:conf/ftcs/SullivanM91,
+	title = "Certitication Trails for Data Structures.",
+	author = "Gregory F. Sullivan and Gerald M. Masson",
+	pages = "240-247"}
+
+@inproceedings{DBLP:conf/ftcs/SunG91,
+	title = "A Multiple-Fault Tolerant Sorting Network.",
+	author = "Jianli Sun and Jan Gecsei",
+	pages = "274-281"}
+
+@inproceedings{DBLP:conf/ftcs/TakanoYSK91,
+	title = "Fault Tolerance Experiments of the ``Hiten'' Onboard Space
+               Computer.",
+	author = "T. Takano and T. Yamada and K. Shutoh and Nobuyasu Kanekawa",
+	pages = "26-35"}
+
+@inproceedings{DBLP:conf/ftcs/TamirLLT91,
+	title = "The UCLA Mirror Processor: A Building Block for Self-Checking
+               Self-Repring Computing Nodes.",
+	author = "Yuval Tamir and M. Liang and T. Lai and Marc Tremblay",
+	pages = "178-187"}
+
+@inproceedings{DBLP:conf/ftcs/Thevenod-FosseWC91,
+	title = "An Experimental Study on Software Structural Testing: Deterministic
+               versus Random Input Generation.",
+	author = "Pascale Th{\'e}venod-Fosse and H{\'e}l{\`e}ne Waeselynck and Yves Crouzet",
+	pages = "410-417"}
+
+@inproceedings{DBLP:conf/ftcs/TsunoyamaN91,
+	title = "A Fault-Tolerant FFT Processor.",
+	author = "M. Tsunoyama and S. Naito",
+	pages = "128-135"}
+
+@inproceedings{DBLP:conf/ftcs/TzengC91,
+	title = "Fault-Tolerant Gamma Interconnection Networks.",
+	author = "Nian-Feng Tzeng and Po-Jen Chuang",
+	pages = "282-291"}
+
+@inproceedings{DBLP:conf/ftcs/VaidyaP91,
+	title = "System Level Diagnosis: Combining Detection and Location.",
+	author = "Nitin H. Vaidya and Dhiraj K. Pradhan",
+	pages = "488-495"}
+
+@inproceedings{DBLP:conf/ftcs/VerreaultAK91,
+	title = "Multiple Fault Analysis Using a Fault Dropping Technique.",
+	author = "Alain Verreault and El Mostapha Aboulhamid and Youn{\`e}s Karkouri",
+	pages = "162-169"}
+
+@inproceedings{DBLP:conf/ftcs/VinnakotaJ91,
+	title = "Design of Multiprocessor Systems for Concurrent Error Detection
+               and Fault Diagnosis.",
+	author = "Bapiraju Vinnakota and Niraj K. Jha",
+	pages = "504-511"}
+
+@inproceedings{DBLP:conf/ftcs/WebberB91,
+	title = "The Stratus Architecture.",
+	author = "S. Webber and J. Beirne",
+	pages = "79-87"}
+
+@inproceedings{DBLP:conf/ftcs/Wilken91,
+	title = "Optimal Signature Placement for Process-Error Detection
+               Using Signature Monitoring.",
+	author = "Kent D. Wilken",
+	pages = "326-333"}
+
+@inproceedings{DBLP:conf/ftcs/Xu91,
+	title = "The t/(n-1)-Diagnosability and Its Applications to Fault
+               Tolerance.",
+	author = "J. Xu",
+	pages = "496-503"}

@@ -1,0 +1,2591 @@
+@include conferences-cs
+
+@default bibsource = "DBLP, http://dblp.uni-trier.de"
+
+@default booktitle = acsac
+
+@default year = 2005
+
+@inproceedings{DBLP:conf/acsac/AmmannPSR05,
+	title = "A Host-Based Approach to Network Attack Chaining Analysis.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.6",
+	author = "Paul Ammann and Joseph Pamula and Julie Street and Ronald W. Ritchey",
+	pages = "72-84"}
+
+@inproceedings{DBLP:conf/acsac/AnderssonCMSZ05,
+	title = "A Framework for Detecting Network-based Code Injection Attacks
+               Targeting Windows and UNIX.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.5",
+	author = "Stig Andersson and Andrew Clark and George M. Mohay and Bradley Schatz and Jacob Zimmermann",
+	pages = "49-58"}
+
+@inproceedings{DBLP:conf/acsac/Bell05,
+	title = "Looking Back at the Bell-La Padula Model.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.37",
+	author = "David Elliott Bell",
+	pages = "337-351"}
+
+@inproceedings{DBLP:conf/acsac/BertinoKTV05,
+	title = "Intrusion Detection in RBAC-administered Databases.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.33",
+	author = "Elisa Bertino and Ashish Kamra and Evimaria Terzi and Athena Vakali",
+	pages = "170-182"}
+
+@inproceedings{DBLP:conf/acsac/BlackCG05,
+	title = "Lessons Learned: A Security Analysis of the Internet Chess
+               Club.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.36",
+	author = "John Black and Martin Cochran and Martin Ryan Gardner",
+	pages = "245-253"}
+
+@inproceedings{DBLP:conf/acsac/BruschiCLM05,
+	title = "Replay Attack in TCG Specification and Solution.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.47",
+	author = "Danilo Bruschi and Lorenzo Cavallaro and Andrea Lanzi and Mattia Monga",
+	pages = "127-137"}
+
+@inproceedings{DBLP:conf/acsac/ChandramouliR05,
+	title = "An Integrity Verification Scheme for DNS Zone file based
+               on Security Impact Analysis.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.9",
+	author = "Ramaswamy Chandramouli and Scott Rose",
+	pages = "312-321"}
+
+@inproceedings{DBLP:conf/acsac/ChongPARW05,
+	title = "Survivability Architecture of a Mission Critical System:
+               The DPASA Example.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.54",
+	author = "Jennifer Chong and Partha Pratim Pal and Michael Atigethchi and Paul Rubel and Franklin Webber",
+	pages = "495-504"}
+
+@inproceedings{DBLP:conf/acsac/Collier05,
+	title = "How to Develop a Career in Information Assurance and How
+               to Advance in this Field.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.31",
+	author = "Marla Collier",
+	pages = 333}
+
+@inproceedings{DBLP:conf/acsac/CuiKT05,
+	title = "Design and Implementation of an Extrusion-based Break-In
+               Detector for Personal Computers.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.19",
+	author = "Weidong Cui and Randy H. Katz and Wai-tian Tan",
+	pages = "361-370"}
+
+@inproceedings{DBLP:conf/acsac/DebbabiSTZ05,
+	title = "Java for Mobile Devices: A Security Study.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.34",
+	author = "Mourad Debbabi and Mohamed Saleh and Chamseddine Talhi and Sami Zhioua",
+	pages = "235-244"}
+
+@inproceedings{DBLP:conf/acsac/FeskeH05,
+	title = "A Nitpicker's guide to a minimal-complexity secure GUI.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.7",
+	author = "Norman Feske and Christian Helmuth",
+	pages = "85-94"}
+
+@inproceedings{DBLP:conf/acsac/FoleySLSKMTOSFBB05,
+	title = "Highlights from the 2005 New Security Paradigms Workshop.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.29",
+	author = "Simon N. Foley and Abe Singer and Michael E. Locasto and Stelios Sidiroglou and Angelos D. Keromytis and John McDermott and Julie Thorpe and Paul C. van Oorschot and Anil Somayaji and Richard Ford and Mark Bush and Alex Boulatov",
+	pages = "393-396"}
+
+@inproceedings{DBLP:conf/acsac/GiffinCK05,
+	title = "Strengthening Software Self-Checksumming via Self-Modifying
+               Code.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.53",
+	author = "Jonathon T. Giffin and Mihai Christodorescu and Louis Kruger",
+	pages = "23-32"}
+
+@inproceedings{DBLP:conf/acsac/GuoYC05,
+	title = "Automated and Safe Vulnerability Assessment.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.11",
+	author = "Fanglu Guo and Yang Yu and Tzi-cker Chiueh",
+	pages = "150-159"}
+
+@inproceedings{DBLP:conf/acsac/HaldarCF05,
+	title = "Dynamic Taint Propagation for Java.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.21",
+	author = "Vivek Haldar and Deepak Chandra and Michael Franz",
+	pages = "303-311"}
+
+@inproceedings{DBLP:conf/acsac/JeyaramanT05,
+	title = "Have the cake and eat it too - Infusing usability into text-password
+               based authentication systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.28",
+	author = "Sundararaman Jeyaraman and Umut Topkara",
+	pages = "473-482"}
+
+@inproceedings{DBLP:conf/acsac/JonesBR05,
+	title = "Layering Public Key Distribution Over Secure DNS using Authenticated
+               Delegation.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.35",
+	author = "John P. Jones and Daniel F. Berger and Chinya V. Ravishankar",
+	pages = "409-418"}
+
+@inproceedings{DBLP:conf/acsac/Jurjens05,
+	title = "Code Security Analysis of a Biometric Authentication System
+               Using Automated Theorem Provers.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.15",
+	author = "Jan J{\"u}rjens",
+	pages = "138-149"}
+
+@inproceedings{DBLP:conf/acsac/KalamD05,
+	title = "Privacy Requirements Implemented with a JavaCard.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.44",
+	author = "Anas Abou El Kalam and Yves Deswarte",
+	pages = "527-536"}
+
+@inproceedings{DBLP:conf/acsac/KangMC05,
+	title = "The Pump: A Decade of Covert Fun.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.56",
+	author = "Myong H. Kang and Ira S. Moskowitz and Stanley Chincheck",
+	pages = "352-360"}
+
+@inproceedings{DBLP:conf/acsac/Karger05,
+	title = "Multi-Level Security Requirements for Hypervisors.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.41",
+	author = "Paul A. Karger",
+	pages = "267-275"}
+
+@inproceedings{DBLP:conf/acsac/KayacykZH05,
+	title = "Evolving Successful Stack Overflow Attacks for Vulnerability
+               Testing.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.23",
+	author = "H. Gunes Kayacyk and A. Nur Zincir-Heywood and Malcolm I. Heywood",
+	pages = "225-234"}
+
+@inproceedings{DBLP:conf/acsac/KcK05,
+	title = "e-NeXSh: Achieving an Effectively Non-Executable Stack and
+               Heap via System-Call Policing.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.22",
+	author = "Gaurav S. Kc and Angelos D. Keromytis",
+	pages = "286-302"}
+
+@inproceedings{DBLP:conf/acsac/KumarSJZ05,
+	title = "Using Continuous Biometric Verification to Protect Interactive
+               Login Sessions.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.61",
+	author = "Sandeep Kumar and Terence Sim and Rajkumar Janakiraman and Sheng Zhang",
+	pages = "441-450"}
+
+@inproceedings{DBLP:conf/acsac/LeitaMD05,
+	title = "ScriptGen: an automated script generation tool for honeyd.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.49",
+	author = "Corrado Leita and Ken Mermoud and Marc Dacier",
+	pages = "203-214"}
+
+@inproceedings{DBLP:conf/acsac/LiK05,
+	title = "mSSL: Extending SSL to Support Data Sharing Among Collaborative
+               Clients.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.40",
+	author = "Jun Li and Xun Kang",
+	pages = "397-408"}
+
+@inproceedings{DBLP:conf/acsac/LiS05,
+	title = "Securing Email Archives through User Modeling.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.50",
+	author = "Yiru Li and Anil Somayaji",
+	pages = "547-556"}
+
+@inproceedings{DBLP:conf/acsac/LiangS05,
+	title = "Automatic Generation of Buffer Overflow Attack Signatures:
+               An Approach Based on Program Behavior Models.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.12",
+	author = "Zhenkai Liang and R. Sekar",
+	pages = "215-224"}
+
+@inproceedings{DBLP:conf/acsac/LootahEM05,
+	title = "TARP: Ticket-based Address Resolution Protocol.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.55",
+	author = "Wesam Lootah and William Enck and Patrick McDaniel",
+	pages = "106-116"}
+
+@inproceedings{DBLP:conf/acsac/NoelJ05,
+	title = "Understanding Complex Network Attack Graphs through Clustered
+               Adjacency Matrices.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.58",
+	author = "Steven Noel and Sushil Jajodia",
+	pages = "160-169"}
+
+@inproceedings{DBLP:conf/acsac/RubelIHP05,
+	title = "Generating Policies for Defense in Depth.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.26",
+	author = "Paul Rubel and Michael Ihde and Steven Harp and Charles Payne",
+	pages = "505-514"}
+
+@inproceedings{DBLP:conf/acsac/SailerJVCPBGD05,
+	title = "Building a MAC-Based Security Architecture for the Xen Open-Source
+               Hypervisor.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.13",
+	author = "Reiner Sailer and Trent Jaeger and Enriquillo Valdez and Ram{\'o}n C{\'a}ceres and Ronald Perez and Stefan Berger and John Linwood Griffin and Leendert van Doorn",
+	pages = "276-285"}
+
+@inproceedings{DBLP:conf/acsac/SchwarzCWLTMW05,
+	title = "Model Checking An Entire Linux Distribution for Security
+               Violations.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.39",
+	author = "Benjamin Schwarz and Hao Chen and David Wagner and Jeremy Lin and Wei Tu and Geoff Morrison and Jacob West",
+	pages = "13-22"}
+
+@inproceedings{DBLP:conf/acsac/SinclairS05,
+	title = "PorKI: Making User PKI Safe on Machines of Heterogeneous
+               Trustworthiness.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.43",
+	author = "Sara Sinclair and Sean W. Smith",
+	pages = "419-430"}
+
+@inproceedings{DBLP:conf/acsac/Snow05,
+	title = "We Need Assurance!",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.63",
+	author = "Brian D. Snow",
+	pages = "3-10"}
+
+@inproceedings{DBLP:conf/acsac/SommerP05,
+	title = "Exploiting Independent State For Network Intrusion Detection.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.24",
+	author = "Robin Sommer and Vern Paxson",
+	pages = "59-71"}
+
+@inproceedings{DBLP:conf/acsac/SuoZO05,
+	title = "Graphical Passwords: A Survey.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.27",
+	author = "Xiaoyuan Suo and Ying Zhu and G. Scott Owen",
+	pages = "463-472"}
+
+@inproceedings{DBLP:conf/acsac/VasudevanY05,
+	title = "Stealth Breakpoints.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.52",
+	author = "Amit Vasudevan and Ramesh Yerraballi",
+	pages = "381-392"}
+
+@inproceedings{DBLP:conf/acsac/VerhannemanPWJ05,
+	title = "Uniform Application-level Access Control Enforcement of
+               Organizationwide Policies.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.59",
+	author = "Tine Verhanneman and Frank Piessens and Bart De Win and Wouter Joosen",
+	pages = "431-440"}
+
+@inproceedings{DBLP:conf/acsac/WaddleW05,
+	title = "Fault Attacks on Dual-Rail Encoded Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.25",
+	author = "Jason Waddle and David Wagner",
+	pages = "483-494"}
+
+@inproceedings{DBLP:conf/acsac/WangD05,
+	title = "Building Evidence Graphs for Network Forensics Analysis.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.14",
+	author = "Wei Wang and Thomas E. Daniels",
+	pages = "254-266"}
+
+@inproceedings{DBLP:conf/acsac/Wheeler05,
+	title = "Countering Trusting Trust through Diverse Double-Compiling.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.17",
+	author = "David Wheeler",
+	pages = "33-48"}
+
+@inproceedings{DBLP:conf/acsac/WhyteOK05,
+	title = "Detecting Intra-enterprise Scanning Worms based on Address
+               Resolution.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.20",
+	author = "David Whyte and Paul C. van Oorschot and Evangelos Kranakis",
+	pages = "371-380"}
+
+@inproceedings{DBLP:conf/acsac/XuN05,
+	title = "Privacy-Preserving Alert Correlation: A Concept Hierarchy
+               Based Approach.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.45",
+	author = "Dingbang Xu and Peng Ning",
+	pages = "537-546"}
+
+@inproceedings{DBLP:conf/acsac/YongzhengY05,
+	title = "A User-level Framework for Auditing and Monitoring.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.8",
+	author = "Wu Yongzheng and Roland H. C. Yap",
+	pages = "95-105"}
+
+@inproceedings{DBLP:conf/acsac/YuZL05,
+	title = "Defensive Execution of Transactional Processes against Attacks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.18",
+	author = "Meng Yu and Wanyu Zang and Peng Liu",
+	pages = "515-526"}
+
+@inproceedings{DBLP:conf/acsac/ZaffarKG05,
+	title = "Paranoid: A Global Secure File Access Control System.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.42",
+	author = "Fareed Zaffar and Gershon Kedem and Ashish Gehani",
+	pages = "322-332"}
+
+@inproceedings{DBLP:conf/acsac/ZhouCB05,
+	title = "Verify Results of Network Intrusion Alerts Using Lightweight
+               Protocol Analysis.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.62",
+	author = "Jingmin Zhou and Adam J. Carlson and Matt Bishop",
+	pages = "117-126"}
+
+@inproceedings{DBLP:conf/acsac/Zurko05,
+	title = "User-Centered Security: Stepping Up to the Grand Challenge.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.60",
+	author = "Mary Ellen Zurko",
+	pages = "187-202"}
+
+@inproceedings{DBLP:conf/acsac/deGraafAJ05,
+	title = "Improved Port Knocking with Strong Authentication.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2005.32",
+	author = "Rennie deGraaf and John Aycock and Michael J. Jacobson, Jr.",
+	pages = "451-462"}
+
+@default year = 2004
+
+@inproceedings{DBLP:conf/acsac/Abrams04,
+	title = "The Relationship of System {\&} Product Specifications
+               and Evaluations.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.40",
+	author = "Marshall D. Abrams",
+	pages = "112-113"}
+
+@inproceedings{DBLP:conf/acsac/Al-KahtaniS04,
+	title = "Mohammad A. Al-Kahtani, Ravi Sandhu.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.32",
+	author = "Mohammad A. Al-Kahtani and Ravi S. Sandhu",
+	pages = "405-415"}
+
+@inproceedings{DBLP:conf/acsac/BarkaS04,
+	title = "Role-Based Delegation Model/ Hierarchical Roles (RBDM1).",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.31",
+	author = "Ezedin Barka and Ravi S. Sandhu",
+	pages = "396-404"}
+
+@inproceedings{DBLP:conf/acsac/BarseJ04,
+	title = "Extracting Attack Manifestations to Determine Log Data Requirements
+               for Intrusion Detection.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.20",
+	author = "Emilie Lundin Barse and Erland Jonsson",
+	pages = "158-167"}
+
+@inproceedings{DBLP:conf/acsac/Bellovin04,
+	title = "A Look Back at ``Security Problems in the TCP/IP Protocol
+               Suite''.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.3",
+	author = "Steven M. Bellovin",
+	pages = "229-249"}
+
+@inproceedings{DBLP:conf/acsac/BrackneyGOM04,
+	title = "The Cyber Enemy Within ... Countering the Threat from Malicious
+               Insiders.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.39",
+	author = "Dick Brackney and Terrance Goan and Allen Ott and Lockheed Martin",
+	pages = "346-347"}
+
+@inproceedings{DBLP:conf/acsac/BrennanRFZ04,
+	title = "Visualizing Enterprise-Wide Security (VIEWS).",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.49",
+	author = "J. J. Brennan and Mindy Rudell and Donald B. Faatz and Carson Zimmerman",
+	pages = "71-79"}
+
+@inproceedings{DBLP:conf/acsac/ChinchaniMCU04,
+	title = "RACOON: Rapidly Generating User Command Data For Anomaly
+               Detection From Customizable Templates.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.28",
+	author = "Ramkumar Chinchani and Aarthie Muthukrishnan and Madhusudhanan Chandrasekaran and Shambhu J. Upadhyaya",
+	pages = "189-204"}
+
+@inproceedings{DBLP:conf/acsac/ChiuehP04,
+	title = "Design, Implementation, and Evaluation of A Repairable Database
+               Management System.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.15",
+	author = "Tzi-cker Chiueh and Dhruv Pilania",
+	pages = "179-188"}
+
+@inproceedings{DBLP:conf/acsac/GuSQDLR04,
+	title = "Worm Detection, Early Warning and Response Based on Local
+               Victim Information.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.51",
+	author = "Guofei Gu and Monirul I. Sharif and Xinzhou Qin and David Dagon and Wenke Lee and George F. Riley",
+	pages = "136-145"}
+
+@inproceedings{DBLP:conf/acsac/GuptaD04,
+	title = "Using Predators to Combat Worms and Viruses: A Simulation-Based
+               Study.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.47",
+	author = "Ajay Gupta and Daniel C. DuVarney",
+	pages = "116-125"}
+
+@inproceedings{DBLP:conf/acsac/HsuC04,
+	title = "CTCP: A Transparent Centralized TCP/IP Architecture for
+               Network Security.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.14",
+	author = "Fu-Hau Hsu and Tzi-cker Chiueh",
+	pages = "335-344"}
+
+@inproceedings{DBLP:conf/acsac/KeohLS04,
+	title = "PEACE: A Policy-Based Establishment of Ad-hoc Communities.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.26",
+	author = "Sye Loong Keoh and Emil Lupu and Morris Sloman",
+	pages = "386-395"}
+
+@inproceedings{DBLP:conf/acsac/KojimaMNY04,
+	title = "Cozilet: Transparent Encapsulation to Prevent Abuse of Trusted
+               Applets.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.13",
+	author = "Hisashi Kojima and Ikuya Morikawa and Yuko Nakayama and Yuji Yamaoka",
+	pages = "146-155"}
+
+@inproceedings{DBLP:conf/acsac/KrugelRV04,
+	title = "Detecting Kernel-Level Rootkits Through Binary Analysis.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.19",
+	author = "Christopher Kr{\"u}gel and William K. Robertson and Giovanni Vigna",
+	pages = "91-100"}
+
+@inproceedings{DBLP:conf/acsac/LiD04,
+	title = "Visualizing and Identifying Intrusion Context from System
+               Calls Trace.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.48",
+	author = "Zhuowei Li and Amitabha Das",
+	pages = "61-70"}
+
+@inproceedings{DBLP:conf/acsac/LiMT04,
+	title = "Securing Java RMI-Based Distributed Applications.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.34",
+	author = "Ninghui Li and John C. Mitchell and Derrick Tong",
+	pages = "262-271"}
+
+@inproceedings{DBLP:conf/acsac/Lipner04,
+	title = "The Trustworthy Computing Security Development Lifecycle.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.41",
+	author = "Steven B. Lipner",
+	pages = "2-13"}
+
+@inproceedings{DBLP:conf/acsac/MarceauF04,
+	title = "Themes and Highlights of the New Security Paradigms Workshop
+               2004.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.42",
+	author = "Carla Marceau and Simon N. Foley",
+	pages = "382-383"}
+
+@inproceedings{DBLP:conf/acsac/MarchesiniSWSB04,
+	title = "Open-Source Applications of TCPA Hardware.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.25",
+	author = "John Marchesini and Sean W. Smith and Omen Wild and Joshua Stabiner and Alex Barsamian",
+	pages = "294-303"}
+
+@inproceedings{DBLP:conf/acsac/NoelRJ04,
+	title = "Correlating Intrusion Events and Building Attack Scenarios
+               Through Attack Graph Distances.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.11",
+	author = "Steven Noel and Eric Robertson and Sushil Jajodia",
+	pages = "350-359"}
+
+@inproceedings{DBLP:conf/acsac/OpreaBDS04,
+	title = "Securing a Remote Terminal Application with a Mobile Trusted
+               Device.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.33",
+	author = "Alina Oprea and Dirk Balfanz and Glenn Durfee and Diana K. Smetters",
+	pages = "438-447"}
+
+@inproceedings{DBLP:conf/acsac/PaulE04,
+	title = ".NET Security: Lessons Learned and Missed from Java.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.1",
+	author = "Nathanael Paul and David Evans",
+	pages = "272-281"}
+
+@inproceedings{DBLP:conf/acsac/PerumallaS04,
+	title = "High-Fidelity Modeling of Computer Network Worms.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.21",
+	author = "Kalyan S. Perumalla and Srikanth Sundaragopalan",
+	pages = "126-135"}
+
+@inproceedings{DBLP:conf/acsac/PramanikSU04,
+	title = "Security Policies to Mitigate Insider Threat in the Document
+               Control Domain.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.35",
+	author = "Suranjan Pramanik and Vidyaraman Sankaranarayanan and Shambhu J. Upadhyaya",
+	pages = "304-313"}
+
+@inproceedings{DBLP:conf/acsac/PurohitNC04,
+	title = "Tracing the Root of ``Rootable'' Processes.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.45",
+	author = "Amit Purohit and Vishnu Navda and Tzi-cker Chiueh",
+	pages = "284-303"}
+
+@inproceedings{DBLP:conf/acsac/QinL04,
+	title = "Attack Plan Recognition and Prediction Using Causal Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.7",
+	author = "Xinzhou Qin and Wenke Lee",
+	pages = "370-379"}
+
+@inproceedings{DBLP:conf/acsac/RinardCDRL04,
+	title = "A Dynamic Technique for Eliminating Buffer Overflow Vulnerabilities
+               (and Other Memory Errors).",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.2",
+	author = "Martin C. Rinard and Cristian Cadar and Daniel Dumitran and Daniel M. Roy and Tudor Leu",
+	pages = "82-90"}
+
+@inproceedings{DBLP:conf/acsac/Rowe04,
+	title = "Designing Good Deceptions in Defense of Information Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.16",
+	author = "Neil C. Rowe",
+	pages = "418-427"}
+
+@inproceedings{DBLP:conf/acsac/RubinJM04,
+	title = "Automatic Generation and Analysis of NIDS Attacks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.9",
+	author = "Shai Rubin and Somesh Jha and Barton P. Miller",
+	pages = "28-38"}
+
+@inproceedings{DBLP:conf/acsac/Schaefer04,
+	title = "If A1 is the Answer, What was the Question? An Edgy Na?f's
+               Retrospective on Promulgating the Trusted Computer Systems
+               Evaluation Criteria.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.22",
+	author = "Marvin Schaefer",
+	pages = "204-228"}
+
+@inproceedings{DBLP:conf/acsac/ShanmugasundaramKM04,
+	title = "Nabs: A System for Detecting Resource Abuses via Characterization
+               of Flow Content Type.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.24",
+	author = "Kulesh Shanmugasundaram and Mehdi Kharrazi and Nasir D. Memon",
+	pages = "316-325"}
+
+@inproceedings{DBLP:conf/acsac/SrivatsaL04,
+	title = "Vulnerabilities and Security Threats in Structured Overlay
+               Networks: A Quantitative Analysis.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.50",
+	author = "Mudhakar Srivatsa and Ling Liu",
+	pages = "252-261"}
+
+@inproceedings{DBLP:conf/acsac/SungXCM04,
+	title = "Static Analyzer of Vicious Executables (SAVE).",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.37",
+	author = "Andrew H. Sung and Jianyun Xu and Patrick Chavez and Srinivas Mukkamala",
+	pages = "326-334"}
+
+@inproceedings{DBLP:conf/acsac/ThorpeO04,
+	title = "Towards Secure Design Choices for Implementing Graphical
+               Passwords.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.44",
+	author = "Julie Thorpe and Paul C. van Oorschot",
+	pages = "50-60"}
+
+@inproceedings{DBLP:conf/acsac/TombiniDMD04,
+	title = "A Serial Combination of Anomaly and Misuse IDSes Applied
+               to HTTP Traffic.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.4",
+	author = "Elvis Tombini and Herv{\'e} Debar and Ludovic M{\'e} and Mireille Ducass{\'e}",
+	pages = "428-437"}
+
+@inproceedings{DBLP:conf/acsac/VignaGSBK04,
+	title = "An Intrusion Detection Tool for AODV-Based Ad hoc Wireless
+               Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.6",
+	author = "Giovanni Vigna and Sumit Gwalani and Kavitha Srinivasan and Elizabeth M. Belding-Royer and Richard A. Kemmerer",
+	pages = "16-27"}
+
+@inproceedings{DBLP:conf/acsac/XuDC04,
+	title = "Detecting Exploit Code Execution in Loadable Kernel Modules.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.18",
+	author = "Haizhi Xu and Wenliang Du and Steve J. Chapin",
+	pages = "101-110"}
+
+@inproceedings{DBLP:conf/acsac/XuN04,
+	title = "Alert Correlation through Triggering Events and Common Resources.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.5",
+	author = "Dingbang Xu and Peng Ning",
+	pages = "360-369"}
+
+@inproceedings{DBLP:conf/acsac/ZhaiNIR04,
+	title = "Reasoning About Complementary Intrusion Evidence.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.29",
+	author = "Yan Zhai and Peng Ning and Purush Iyer and Douglas S. Reeves",
+	pages = "39-48"}
+
+@inproceedings{DBLP:conf/acsac/ZhouV04,
+	title = "Detecting Attacks That Exploit Application-Logic Errors
+               Through Application-Level Auditing.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/CSAC.2004.17",
+	author = "Jingyu Zhou and Giovanni Vigna",
+	pages = "168-178"}
+
+@default year = 2003
+
+@inproceedings{DBLP:conf/acsac/AbadTSYZR03,
+	title = "Log Correlation for Intrusion Detection: A Proof of Concept.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410255abs.htm",
+	author = "Cristina Abad and Jed Taylor and Cigdem Sengul and William Yurcik and Yuanyuan Zhou and Kenneth E. Rowe",
+	pages = "255-265"}
+
+@inproceedings{DBLP:conf/acsac/AnsperBFW03,
+	title = "Scalable and Efficient PKI for Inter-Organizational Communication.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410308abs.htm",
+	author = "Arne Ansper and Ahto Buldas and Margus Freudenthal and Jan Willemson",
+	pages = "308-318"}
+
+@inproceedings{DBLP:conf/acsac/Balfanz03,
+	title = "Usable Access Control for the World Wide Web.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410406abs.htm",
+	author = "Dirk Balfanz",
+	pages = "406-415"}
+
+@inproceedings{DBLP:conf/acsac/BarseKJ03,
+	title = "Synthesizing Test Data for Fraud Detection Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410384abs.htm",
+	author = "Emilie Lundin Barse and H{\aa}kan Kvarnstr{\"o}m and Erland Jonsson",
+	pages = "384-395"}
+
+@inproceedings{DBLP:conf/acsac/BruschiFGR03,
+	title = "How to unwittingly sign non-repudiable documents with Java
+               applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410192abs.htm",
+	author = "Danilo Bruschi and D. Fabris and V. Glave and Emilia Rosti",
+	pages = "192-196"}
+
+@inproceedings{DBLP:conf/acsac/BruschiOR03,
+	title = "S-ARP: a Secure Address Resolution Protocol.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410066abs.htm",
+	author = "Danilo Bruschi and A. Ornaghi and Emilia Rosti",
+	pages = "66-75"}
+
+@inproceedings{DBLP:conf/acsac/BryantEGRSWWY03,
+	title = "Poly2 Paradigm: A Secure Network Service Architecture.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410342abs.htm",
+	author = "Eric Bryant and James P. Early and Rajeev Gopalakrishna and Gregory Roth and Eugene H. Spafford and Keith Watson and Paul Williams and Scott Yost",
+	pages = "342-351"}
+
+@inproceedings{DBLP:conf/acsac/CareyMC03,
+	title = "Attack Signature Matching and Discovery in Systems Employing
+               Heterogeneous IDS.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410245abs.htm",
+	author = "Nathan Carey and George M. Mohay and Andrew Clark",
+	pages = "245-254"}
+
+@inproceedings{DBLP:conf/acsac/CarmanCDSW03,
+	title = "Forum Session: Security for Wireless Sensor Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410106.pdf",
+	author = "David Carman and Daniel Coffin and Bruno Dutertre and Vipin Swarup and Ronald J. Watro",
+	pages = "106-109"}
+
+@inproceedings{DBLP:conf/acsac/Chandramouli03,
+	title = "A Policy Validation Framework for Enterprise Authorization
+               Specification.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410319abs.htm",
+	author = "Ramaswamy Chandramouli",
+	pages = "319-329"}
+
+@inproceedings{DBLP:conf/acsac/ChenL03,
+	title = "An IP Traceback Technique against Denial-of-Service Attacks.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410096abs.htm",
+	author = "Zhaole Chen and Moon-Chuen Lee",
+	pages = "96-105"}
+
+@inproceedings{DBLP:conf/acsac/CliffordFBB03,
+	title = "Miracle Cures and Toner Cartridges: Finding Solutions to
+               the Spam Problem.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410428.pdf",
+	author = "Michael Clifford and Daniel Faigin and Matt Bishop and Tasneem Brutch",
+	pages = "428-429"}
+
+@inproceedings{DBLP:conf/acsac/CoullBSB03,
+	title = "Intrusion Detection: A Bioinformatics Approach.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410024abs.htm",
+	author = "Scott E. Coull and Joel W. Branch and Boleslaw K. Szymanski and Eric Breimer",
+	pages = "24-33"}
+
+@inproceedings{DBLP:conf/acsac/CuppensM03,
+	title = "Modelling Contexts in the Or-BAC Model.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410416abs.htm",
+	author = "Fr{\'e}d{\'e}ric Cuppens and Alexandre Mi{\`e}ge",
+	pages = "416-427"}
+
+@inproceedings{DBLP:conf/acsac/EarlyBR03,
+	title = "Behavioral Authentication of Server Flows.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410046abs.htm",
+	author = "James P. Early and Carla E. Brodley and Catherine Rosenberg",
+	pages = "46-55"}
+
+@inproceedings{DBLP:conf/acsac/Gross03,
+	title = "Security Analysis of the SAML Single Sign-on Browser/Artifact
+               Profile.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410298abs.htm",
+	author = "Thomas Gro{\ss}",
+	pages = "298-307"}
+
+@inproceedings{DBLP:conf/acsac/Iachello03,
+	title = "Protecting Personal Data: Can IT Security Management Standards
+               Help?",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410266abs.htm",
+	author = "Giovanni Iachello",
+	pages = "266-275"}
+
+@inproceedings{DBLP:conf/acsac/KruegelMRV03,
+	title = "Bayesian Event Classification for Intrusion Detection.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410014abs.htm",
+	author = "Christopher Kr{\"u}gel and Darren Mutz and William K. Robertson and Fredrik Valeur",
+	pages = "14-23"}
+
+@inproceedings{DBLP:conf/acsac/LiangVS03,
+	title = "Isolated Program Execution: An Application Transparent Approach
+               for Executing Untrusted Programs.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410182abs.htm",
+	author = "Zhenkai Liang and V. N. Venkatakrishnan and R. Sekar",
+	pages = "182-191"}
+
+@inproceedings{DBLP:conf/acsac/LimKS03,
+	title = "Modeling of Multiple Agent based Cryptographic Key Recovery
+               Protocol.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410119abs.htm",
+	author = "Shinyoung Lim and Sangseung Kang and Joochan Sohn",
+	pages = "119-128"}
+
+@inproceedings{DBLP:conf/acsac/MohanLI03,
+	title = "An Editor for Adaptive XML-Based Policy Management of IPsec.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410276abs.htm",
+	author = "Raj Mohan and Timothy E. Levin and Cynthia E. Irvine",
+	pages = "276-285"}
+
+@inproceedings{DBLP:conf/acsac/MutzVK03,
+	title = "An Experience Developing an IDS Stimulator for the Black-Box
+               Testing of Network Intrusion Detection Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410374abs.htm",
+	author = "Darren Mutz and Giovanni Vigna and Richard A. Kemmerer",
+	pages = "374-383"}
+
+@inproceedings{DBLP:conf/acsac/NeumannF03,
+	title = "PSOS Revisited.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410208abs.htm",
+	author = "Peter G. Neumann and Richard J. Feiertag",
+	pages = "208-216"}
+
+@inproceedings{DBLP:conf/acsac/NoelJOJ03,
+	title = "Efficient Minimum-Cost Network Hardening Via Exploit Dependency
+               Graphs.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410086abs.htm",
+	author = "Steven Noel and Sushil Jajodia and Brian O'Berry and Michael Jacobs",
+	pages = "86-95"}
+
+@inproceedings{DBLP:conf/acsac/PeineS03,
+	title = "A Multi-View Tool for Checking the Security Semantics of
+               Router Configurations.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410056abs.htm",
+	author = "Holger Peine and Reinhard Schwarz",
+	pages = "56-65"}
+
+@inproceedings{DBLP:conf/acsac/SaydjariM03,
+	title = "Themes and Highlights of the New Security Paradigms Workshop
+               2003.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410330.pdf",
+	author = "O. Sami Saydjari and Carla Marceau",
+	pages = "330-333"}
+
+@inproceedings{DBLP:conf/acsac/ShanmugasundaramM03,
+	title = "Automatic Reassembly of Document Fragments via Context Based
+               Statistical Models.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410152abs.htm",
+	author = "Kulesh Shanmugasundaram and Nasir D. Memon",
+	pages = "152-159"}
+
+@inproceedings{DBLP:conf/acsac/ShaoZHS03,
+	title = "Defending Embedded Systems Against Buffer Overflow via Hardware/Software.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410352abs.htm",
+	author = "Zili Shao and Qingfeng Zhuge and Yi He and Edwin Hsing-Mean Sha",
+	pages = "352-363"}
+
+@inproceedings{DBLP:conf/acsac/Spafford03,
+	title = "A Failure to Learn from the Past.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410217abs.htm",
+	author = "Eugene H. Spafford",
+	pages = "217-233"}
+
+@inproceedings{DBLP:conf/acsac/Spitzner03,
+	title = "Honeypots: Catching the Insider Threat.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410170abs.htm",
+	author = "Lance Spitzner",
+	pages = "170-181"}
+
+@inproceedings{DBLP:conf/acsac/StallardL03,
+	title = "Automated Analysis for Digital Forensic Science: Semantic
+               Integrity Checking.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410160abs.htm",
+	author = "Tye Stallard and Karl N. Levitt",
+	pages = "160-169"}
+
+@inproceedings{DBLP:conf/acsac/Viega03,
+	title = "Practical Random Number Generation in Software.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410129abs.htm",
+	author = "John Viega",
+	pages = "129-141"}
+
+@inproceedings{DBLP:conf/acsac/VignaRKK03,
+	title = "A Stateful Intrusion Detection System for World-Wide Web
+               Servers.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410034abs.htm",
+	author = "Giovanni Vigna and William K. Robertson and Vishal Kher and Richard A. Kemmerer",
+	pages = "34-45"}
+
+@inproceedings{DBLP:conf/acsac/WangHL03,
+	title = "An Intrusion-Tolerant Password Authentication System.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410110abs.htm",
+	author = "Xunhua Wang and Mohammad Hossain Heydari and Hua Lin",
+	pages = "110-118"}
+
+@inproceedings{DBLP:conf/acsac/Weissman03,
+	title = "MLS-PCA: A High Assurance Security Architecture for Future
+               Avionics.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410002abs.htm",
+	author = "Clark Weissman",
+	pages = "2-13"}
+
+@inproceedings{DBLP:conf/acsac/WidenerSB03,
+	title = "Differential Data Protection for Dynamic Distributed Application.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410396abs.htm",
+	author = "Patrick Widener and Karsten Schwan and Fabi{\'a}n E. Bustamante",
+	pages = "396-405"}
+
+@inproceedings{DBLP:conf/acsac/Williamson03,
+	title = "Design, Implementation and Test of an Email Virus Throttle.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410076abs.htm",
+	author = "Matthew M. Williamson",
+	pages = "76-85"}
+
+@inproceedings{DBLP:conf/acsac/Wolthusen03,
+	title = "Goalkeeper: Close-In Interface Protection.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410334abs.htm",
+	author = "Stephen D. Wolthusen",
+	pages = "334-341"}
+
+@inproceedings{DBLP:conf/acsac/WuBT03,
+	title = "Making Secure TCP Connections Resistant to Server Failures.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410197abs.htm",
+	author = "Hailin Wu and Andrew Burt and Ramki Thurimella",
+	pages = "197-207"}
+
+@inproceedings{DBLP:conf/acsac/WuFMB03,
+	title = "Collaborative Intrusion Detection System (CIDS): A Framework
+               for Accurate and Efficient IDS.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410234abs.htm",
+	author = "Yu-Sung Wu and Bingrui Foo and Yongguo Mei and Saurabh Bagchi",
+	pages = "234-244"}
+
+@inproceedings{DBLP:conf/acsac/Yan03,
+	title = "Security Design in Online Games.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410286abs.htm",
+	author = "Jeff Jianxin Yan",
+	pages = "286-297"}
+
+@inproceedings{DBLP:conf/acsac/YuLZ03,
+	title = "Multi-Version Attack Recovery for Workflow System.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410142abs.htm",
+	author = "Meng Yu and Peng Liu and Wanyu Zang",
+	pages = "142-151"}
+
+@inproceedings{DBLP:conf/acsac/ZimmermanMB03,
+	title = "Experimenting with a Policy-Based HIDS Based on an Information
+               Flow Control Model.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2003/2041/00/20410364abs.htm",
+	author = "Jacob Zimmermann and Ludovic M{\'e} and Christophe Bidan",
+	pages = "364-373"}
+
+@default year = 2002
+
+@inproceedings{DBLP:conf/acsac/AdelsteinSK02,
+	title = "Malicious Code Detection for Open Firmware.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280403abs.htm",
+	author = "Frank Adelstein and Matthew Stillerman and Dexter Kozen",
+	pages = "403-412"}
+
+@inproceedings{DBLP:conf/acsac/Al-KahtaniS02,
+	title = "A Model for Attribute-Based User-Role Assignment.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280353abs.htm",
+	author = "Mohammad A. Al-Kahtani and Ravi S. Sandhu",
+	pages = "353-364"}
+
+@inproceedings{DBLP:conf/acsac/AuraRA02,
+	title = "Security of Internet Location Management.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280078abs.htm",
+	author = "Tuomas Aura and Michael Roe and Jari Arkko",
+	pages = "78-90"}
+
+@inproceedings{DBLP:conf/acsac/BarbieriBR02,
+	title = "Voice over IPsec: Analysis and Solutions.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280261abs.htm",
+	author = "Roberto Barbieri and Danilo Bruschi and Emilia Rosti",
+	pages = "261-270"}
+
+@inproceedings{DBLP:conf/acsac/BuchholzDEGGKNSS02,
+	title = "Digging For Worms, Fishing For Answers.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280219abs.htm",
+	author = "Florian P. Buchholz and Thomas E. Daniels and James P. Early and Rajeev Gopalakrishna and R. Patrick Gorman and Benjamin A. Kuperman and Sofie Nystrom and Addam Schroll and Andrew Smith",
+	pages = "219-228"}
+
+@inproceedings{DBLP:conf/acsac/Clifford02,
+	title = "Networking in The Solar Trust Model: Determining Optimal
+               Trust Paths in a Decentralized Trust Network.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280271abs.htm",
+	author = "Michael Clifford",
+	pages = "271-281"}
+
+@inproceedings{DBLP:conf/acsac/CorneyVAM02,
+	title = "Gender-Preferential Text Mining of E-mail Discourse.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280282abs.htm",
+	author = "Malcolm Corney and Olivier Y. de Vel and Alison Anderson and George M. Mohay",
+	pages = "282-292"}
+
+@inproceedings{DBLP:conf/acsac/CovingtonFZA02,
+	title = "A Context-Aware Security Architecture for Emerging Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280249abs.htm",
+	author = "Michael J. Covington and Prahlad Fogla and Zhiyuan Zhan and Mustaque Ahamad",
+	pages = "249-260"}
+
+@inproceedings{DBLP:conf/acsac/DouceurABBY02,
+	title = "A Secure Directory Service based on Exclusive Encryption.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280172abs.htm",
+	author = "John R. Douceur and Atul Adya and Josh Benaloh and William J. Bolosky and Gideon Yuval",
+	pages = "172-184"}
+
+@inproceedings{DBLP:conf/acsac/GassendCDD02,
+	title = "Controlled Physical Random Functions.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280149abs.htm",
+	author = "Blaise Gassend and Dwaine E. Clarke and Marten van Dijk and Srinivas Devadas",
+	pages = "149-160"}
+
+@inproceedings{DBLP:conf/acsac/GeerH02,
+	title = "Penetration Testing: A Duet.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280185abs.htm",
+	author = "Daniel Geer and John Harthorne",
+	pages = "185-198"}
+
+@inproceedings{DBLP:conf/acsac/HaggertySM02,
+	title = "Beyond the Perimeter: the Need for Early Detection of Denial
+               of Service Attacks.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280413abs.htm",
+	author = "John Haggerty and Qi Shi and Madjid Merabti",
+	pages = "413-422"}
+
+@inproceedings{DBLP:conf/acsac/HybertsonRCK02,
+	title = "Enterprise Engineering And Security: Enterprise Frameworks
+               and Architectures, and IA Patterns.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280293.pdf",
+	author = "Duane Hybertson and A. Reedy and S. Chapin and M. Kirwan, Jr.",
+	pages = "293-296"}
+
+@inproceedings{DBLP:conf/acsac/Johnson02,
+	title = "Wireless Security: Vulnerabilities and Countermeasures.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280091.pdf",
+	author = "Dale M. Johnson",
+	pages = "91-95"}
+
+@inproceedings{DBLP:conf/acsac/KargerS02,
+	title = "Thirty Years Later: Lessons from the Multics Security Evaluation.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280119abs.htm",
+	author = "Paul A. Karger and Roger R. Schell",
+	pages = "119-148"}
+
+@inproceedings{DBLP:conf/acsac/Kemmerer02,
+	title = "A Practical Approach to Identifying Storage and Timing Channels:
+               Twenty Years Later.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280109abs.htm",
+	author = "Richard A. Kemmerer",
+	pages = "109-118"}
+
+@inproceedings{DBLP:conf/acsac/Kern02,
+	title = "Advanced Features for Enterprise-Wide Role-Based Access
+               Control.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280333abs.htm",
+	author = "Axel Kern",
+	pages = "333-342"}
+
+@inproceedings{DBLP:conf/acsac/Langweg02,
+	title = "With Gaming Technology towards Secure User Interfaces.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280044abs.htm",
+	author = "Hanno Langweg",
+	pages = "44-50"}
+
+@inproceedings{DBLP:conf/acsac/LeeRKL02,
+	title = "Detecting and Defending against Web-Server Fingerprinting.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280321abs.htm",
+	author = "Dustin Lee and Jeff Rowe and Calvin Ko and Karl N. Levitt",
+	pages = "321-332"}
+
+@inproceedings{DBLP:conf/acsac/LeitoldHP02,
+	title = "Security Architecture of the Austrian Citizen Card Concept.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280391abs.htm",
+	author = "Herbert Leitold and Arno Hollosi and Reinhard Posch",
+	pages = "391-402"}
+
+@inproceedings{DBLP:conf/acsac/Levitt02,
+	title = "Intrusion Detection: Current Capabilities and Future Directions.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280365abs.htm",
+	author = "Karl N. Levitt",
+	pages = "365-370"}
+
+@inproceedings{DBLP:conf/acsac/Liu02,
+	title = "Architectures for Intrusion Tolerant Database Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280311abs.htm",
+	author = "Peng Liu",
+	pages = "311-320"}
+
+@inproceedings{DBLP:conf/acsac/Marshall02,
+	title = "A Financial Institution's Legacy Mainframe Access Control
+               System in Light of the Proposed NIST RBAC Standard.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280382abs.htm",
+	author = "Andrew D. Marshall",
+	pages = "382-390"}
+
+@inproceedings{DBLP:conf/acsac/PopescuST02,
+	title = "A Security Architecture for Object-Based Distributed Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280161abs.htm",
+	author = "Bogdan C. Popescu and Maarten van Steen and Andrew S. Tanenbaum",
+	pages = "161-171"}
+
+@inproceedings{DBLP:conf/acsac/ProbstEW02,
+	title = "Reusable Components for Developing Security-Aware Application.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280239abs.htm",
+	author = "Stefan Probst and Wolfgang E{\ss}mayr and Edgar Weippl",
+	pages = "239-248"}
+
+@inproceedings{DBLP:conf/acsac/RitcheyON02,
+	title = "Representing TCP/IP Connectivity For Topological Analysis
+               of Network Security.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280025abs.htm",
+	author = "Ronald W. Ritchey and Brian O'Berry and Steven Noel",
+	pages = "25-34"}
+
+@inproceedings{DBLP:conf/acsac/SampemaneNC02,
+	title = "Access Control for Active Spaces.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280343abs.htm",
+	author = "Geetanjali Sampemane and Prasad Naldurg and Roy H. Campbell",
+	pages = "343-352"}
+
+@inproceedings{DBLP:conf/acsac/Saydjari02,
+	title = "LOCK : An Historical Perspective.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280096abs.htm",
+	author = "O. Sami Saydjari",
+	pages = "96-108"}
+
+@inproceedings{DBLP:conf/acsac/SchaadM02,
+	title = "A Framework for Organisational Control Principles.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280229abs.htm",
+	author = "Andreas Schaad and Jonathan D. Moffett",
+	pages = "229-238"}
+
+@inproceedings{DBLP:conf/acsac/SchmidHG02,
+	title = "Protecting Data from Malicious Software.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280199abs.htm",
+	author = "Matthew Schmid and Frank Hill and Anup K. Ghosh",
+	pages = "199-208"}
+
+@inproceedings{DBLP:conf/acsac/ScottD02,
+	title = "Safe Virtual Execution Using Software Dynamic Translation.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280209abs.htm",
+	author = "Kevin Scott and Jack W. Davidson",
+	pages = "209-218"}
+
+@inproceedings{DBLP:conf/acsac/SerbanS02,
+	title = "Themes and Highlights of the New Security Paradigms Workshop
+               2002.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280297abs.htm",
+	author = "Cristina Serban and O. Sami Saydjari",
+	pages = "297-300"}
+
+@inproceedings{DBLP:conf/acsac/TothK02,
+	title = "Evaluating the Impact of Automated Intrusion Response Mechanisms.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280301abs.htm",
+	author = "Thomas Toth and Christopher Kr{\"u}gel",
+	pages = "301-310"}
+
+@inproceedings{DBLP:conf/acsac/Ungureanu02,
+	title = "Regulating E-Commerce through Certified Contracts.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280035abs.htm",
+	author = "Victoria Ungureanu",
+	pages = "35-43"}
+
+@inproceedings{DBLP:conf/acsac/VignaVZK02,
+	title = "Composable Tools For Network Discovery and Security Analysis.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280014abs.htm",
+	author = "Giovanni Vigna and Fredrik Valeur and Jingyu Zhou and Richard A. Kemmerer",
+	pages = "14-24"}
+
+@inproceedings{DBLP:conf/acsac/Waldvogel02,
+	title = "GOSSIB vs. IP Traceback Rumors.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280005abs.htm",
+	author = "Marcel Waldvogel",
+	pages = "5-13"}
+
+@inproceedings{DBLP:conf/acsac/WeberSSG02,
+	title = "A Toolkit for Detecting and Analyzing Malicious Software.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280423abs.htm",
+	author = "Michael Weber and Matthew Schmid and Michael Schatz and David Geyer",
+	pages = 423}
+
+@inproceedings{DBLP:conf/acsac/Williamson02,
+	title = "Throttling Viruses: Restricting propagation to defeat malicious
+               mobile code.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280061abs.htm",
+	author = "Matthew M. Williamson",
+	pages = "61-68"}
+
+@inproceedings{DBLP:conf/acsac/XuLS02,
+	title = "Protecting Web Usage of Credit Cards Using One-Time Pad
+               Cookie Encryption.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280051abs.htm",
+	author = "Donghua Xu and Chenghuai Lu and Andr{\'e} L. M. dos Santos",
+	pages = "51-60"}
+
+@inproceedings{DBLP:conf/acsac/YuM02,
+	title = "Enforcing Resource Bound Safety for Mobile SNMP Agents.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280069abs.htm",
+	author = "Weijiang Yu and Aloysius K. Mok",
+	pages = "69-77"}
+
+@inproceedings{DBLP:conf/acsac/ZurkoKSB02,
+	title = "Did You Ever Have To Make Up Your Mind? What Notes Users
+               Do When Faced With A Security Decision.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2002/1828/00/18280371abs.htm",
+	author = "Mary Ellen Zurko and Charlie Kaufman and Katherine Spanbauer and Chuck Bassett",
+	pages = "371-381"}
+
+@default year = 2001
+
+@inproceedings{DBLP:conf/acsac/Anderson01,
+	title = "Why Information Security is Hard-An Economic Perspective.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050358abs.htm",
+	author = "Ross J. Anderson",
+	pages = "358-365"}
+
+@inproceedings{DBLP:conf/acsac/AshleyHV01,
+	title = "Wired versus Wireless Security: The Internet, WAP and iMode
+               for E-Commerce.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050296abs.htm",
+	author = "Paul Ashley and Heather M. Hinton and Mark Vandenwauver",
+	pages = "296-308"}
+
+@inproceedings{DBLP:conf/acsac/BishopGW01,
+	title = "How Useful is Software Fault Injection for Evaluating the
+               Security of COTS Products?",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050339abs.htm",
+	author = "Matt Bishop and Anup K. Ghosh and James A. Whittaker",
+	pages = "339-342"}
+
+@inproceedings{DBLP:conf/acsac/Blobel01,
+	title = "Trustworthiness in Distributed Electronic Healthcare Records-Basis
+               for Shared Care.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050433abs.htm",
+	author = "Bernd Blobel",
+	pages = "433-441"}
+
+@inproceedings{DBLP:conf/acsac/BonattiDVS01,
+	title = "A Component-Based Architecture for Secure Data Publication.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050309abs.htm",
+	author = "Piero A. Bonatti and Ernesto Damiani and Sabrina De Capitani di Vimercati and Pierangela Samarati",
+	pages = "309-318"}
+
+@inproceedings{DBLP:conf/acsac/BuchheimEFMPBW01,
+	title = "Implementing the Intrusion Detection Exchange Protocol.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050032abs.htm",
+	author = "Tim Buchheim and Michael Erlinger and Ben Feinstein and Greg Matthews and Roy Pollock and Joseph Betser and Andy Walther",
+	pages = "32-44"}
+
+@inproceedings{DBLP:conf/acsac/CaronniS01,
+	title = "Enabling Hierarchical and Bulk-Distribution for Watermarked
+               Content.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050277abs.htm",
+	author = "Germano Caronni and Christoph L. Schuba",
+	pages = "277-285"}
+
+@inproceedings{DBLP:conf/acsac/Chandramouli01,
+	title = "A Framework for Multiple Authorization Types in a Healthcare
+               Application System.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050137abs.htm",
+	author = "Ramaswamy Chandramouli",
+	pages = "137-148"}
+
+@inproceedings{DBLP:conf/acsac/Cuppens01,
+	title = "Managing Alerts in a Multi-Intrusion Detection Environmen.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050022abs.htm",
+	author = "Fr{\'e}d{\'e}ric Cuppens",
+	pages = "22-31"}
+
+@inproceedings{DBLP:conf/acsac/DobsonR01,
+	title = "Building Reliable Secure Computing Systems out of Unreliable
+               Insecure Components.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050162abs.htm",
+	author = "John E. Dobson and Brian Randell",
+	pages = "162-173"}
+
+@inproceedings{DBLP:conf/acsac/DuA01,
+	title = "Privacy-Preserving Cooperative Statistical Analysis.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050102abs.htm",
+	author = "Wenliang Du and Mikhail J. Atallah",
+	pages = "102-112"}
+
+@inproceedings{DBLP:conf/acsac/EntrichelBWL01,
+	title = "Computing Without Wires (Or Even a Net): The Pitfalls, Potentials,
+               and Practicality of Wireless Networking.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050463.pdf",
+	author = "Anna Entrichel and James Bergman and Jason Willis and Herb Little",
+	pages = "463-464"}
+
+@inproceedings{DBLP:conf/acsac/EpsteinS01,
+	title = "Engineering of Role/Permission Assignments.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050127abs.htm",
+	author = "Pete Epstein and Ravi S. Sandhu",
+	pages = "127-136"}
+
+@inproceedings{DBLP:conf/acsac/FeinsteinMSW01,
+	title = "Experiences Implementing a Common Format for IDS Alerts.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050113.pdf",
+	author = "Ben Feinstein and Greg Matthews and Stuart Staniford and Andy Walther",
+	pages = "113-116"}
+
+@inproceedings{DBLP:conf/acsac/GrestySM01,
+	title = "Requirements for a General Framework for Response to Distributed
+               Denial-of-Service.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050422abs.htm",
+	author = "D. W. Gresty and Qi Shi and Madjid Merabti",
+	pages = "422-432"}
+
+@inproceedings{DBLP:conf/acsac/GulaKKP01,
+	title = "Security Vendor CTOs: Perspectives, Opinions, and Lessons
+               Learned.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050343.pdf",
+	author = "Ron Gula and Gene Kim and Chris Klaus and Paul Proctor",
+	pages = "343-346"}
+
+@inproceedings{DBLP:conf/acsac/Hayes01,
+	title = "Restricting Access with Certificate Attributes in Multiple
+               Root Environments-A Recipe for Certificate Masquerading.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050386abs.htm",
+	author = "James M. Hayes",
+	pages = "386-390"}
+
+@inproceedings{DBLP:conf/acsac/Herrmann01,
+	title = "Information Flow Analysis of Component-Structured Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050045abs.htm",
+	author = "Peter Herrmann",
+	pages = "45-54"}
+
+@inproceedings{DBLP:conf/acsac/HuangRW01,
+	title = "A JCA-Based Implementation Framework for Threshold Cryptography.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050085abs.htm",
+	author = "Yih Huang and David Rine and Xunhua Wang",
+	pages = "85-91"}
+
+@inproceedings{DBLP:conf/acsac/Jansen01,
+	title = "Determining Privileges of Mobile Agents.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050149abs.htm",
+	author = "Wayne A. Jansen",
+	pages = "149-160"}
+
+@inproceedings{DBLP:conf/acsac/JiangSM01,
+	title = "Securing Web Servers against Insider Attack .",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050265abs.htm",
+	author = "Shan Jiang and Sean Smith and Kazuhiro Minami",
+	pages = "265-276"}
+
+@inproceedings{DBLP:conf/acsac/JonesL01,
+	title = "Temporal Signatures for Intrusion Detection.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050252abs.htm",
+	author = "Anita Jones and Song Li",
+	pages = "252-264"}
+
+@inproceedings{DBLP:conf/acsac/JonesL01a,
+	title = "Application Intrusion Detection using Language Library Calls.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050442abs.htm",
+	author = "Anita K. Jones and Yu Lin",
+	pages = "442-449"}
+
+@inproceedings{DBLP:conf/acsac/Julisch01,
+	title = "Mining Alarm Clusters to Improve Alarm Handling Efficiency.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050012abs.htm",
+	author = "Klaus Julisch",
+	pages = "12-21"}
+
+@inproceedings{DBLP:conf/acsac/Karjoth01,
+	title = "The Authorization Service of Tivoli Policy Director.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050319abs.htm",
+	author = "G{\"u}nter Karjoth",
+	pages = "319-328"}
+
+@inproceedings{DBLP:conf/acsac/LandwehrHM01,
+	title = "A Security Model for Military Message Systems: Retrospective.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050174abs.htm",
+	author = "Carl E. Landwehr and Constance L. Heitmeyer and John D. McLean",
+	pages = "174-190"}
+
+@inproceedings{DBLP:conf/acsac/LangGS01,
+	title = "Verifiable Identifiers in Middleware Security.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050450abs.htm",
+	author = "Ulrich Lang and Dieter Gollmann and Rudolf Schreiner",
+	pages = "450-462"}
+
+@inproceedings{DBLP:conf/acsac/LeviK01,
+	title = "CONSEPP: CONvenient and Secure Electronic Payment Protocol
+               Based on X9.59.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050286abs.htm",
+	author = "Albert Levi and \c{C}etin Kaya Ko\c{c}",
+	pages = "286-295"}
+
+@inproceedings{DBLP:conf/acsac/LindqvistP01,
+	title = "eXpert-BSM: A Host-Based Intrusion Detection Solution for
+               Sun Solaris.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050abs.htm",
+	author = "Ulf Lindqvist and Phillip A. Porras",
+	pages = "240-251"}
+
+@inproceedings{DBLP:conf/acsac/Liu01,
+	title = "DAIS: A Real-Time Data Attack Isolation System for Commercial
+               Database Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050219abs.htm",
+	author = "Peng Liu",
+	pages = "219-229"}
+
+@inproceedings{DBLP:conf/acsac/MankinsKBZF01,
+	title = "Mitigating Distributed Denial of Service Attacks with Dynamic
+               Resource Pricing.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050411abs.htm",
+	author = "David Mankins and Rajesh Krishnan and Ceilyn Boyd and John Zao and Michael Frentz",
+	pages = "411-421"}
+
+@inproceedings{DBLP:conf/acsac/McDermott01,
+	title = "Abuse-Case-Based Assurance Arguments.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050366abs.htm",
+	author = "John P. McDermott",
+	pages = "366-376"}
+
+@inproceedings{DBLP:conf/acsac/McHugh01,
+	title = "An Information Flow Tool for Gypsy.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050191abs.htm",
+	author = "John McHugh",
+	pages = "191-204"}
+
+@inproceedings{DBLP:conf/acsac/Monteith01,
+	title = "Genoa TIE, Advanced Boundary Controller Experiment.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050074abs.htm",
+	author = "Eric Monteith",
+	pages = "74-84"}
+
+@inproceedings{DBLP:conf/acsac/Mraz01,
+	title = "Secure Blue: An Architecture for a Scalable, Reliable, High
+               Volume SSL Internet Server.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050391abs.htm",
+	author = "Ronald Mraz",
+	pages = "391-400"}
+
+@inproceedings{DBLP:conf/acsac/MunsonW01,
+	title = "Watcher: The Missing Piece of the Security Puzzle.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050230abs.htm",
+	author = "John C. Munson and Scott Wimer",
+	pages = "230-239"}
+
+@inproceedings{DBLP:conf/acsac/PayneM01,
+	title = "Architecture and Applications for a Distributed Embedded
+               Firewall.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050329abs.htm",
+	author = "Charles Payne and Tom Markham",
+	pages = "329-338"}
+
+@inproceedings{DBLP:conf/acsac/RazmovS01,
+	title = "Practical Automated Filter Generation to Explicitly Enforce
+               Implicit Input Assumptions.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050347abs.htm",
+	author = "Valentin Razmov and Daniel R. Simon",
+	pages = "347-357"}
+
+@inproceedings{DBLP:conf/acsac/Schaad01,
+	title = "Detecting Conflicts in a Role-Based Delegation Model.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050117abs.htm",
+	author = "Andreas Schaad",
+	pages = "117-126"}
+
+@inproceedings{DBLP:conf/acsac/Schell01,
+	title = "Information Security: Science, Pseudoscience, and Flying
+               Pigs.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050205abs.htm",
+	author = "Roger R. Schell",
+	pages = "205-218"}
+
+@inproceedings{DBLP:conf/acsac/Thomsen01,
+	title = "Introduction to Classic Papers.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050161.pdf",
+	author = "Dan Thomsen",
+	pages = 161}
+
+@inproceedings{DBLP:conf/acsac/Ungureanu01,
+	title = "A Regulated Approach to Certificate Management.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050377abs.htm",
+	author = "Victoria Ungureanu",
+	pages = "377-385"}
+
+@inproceedings{DBLP:conf/acsac/WanY01,
+	title = "IntruDetector: A Software Platform for Testing Network Intrusion
+               Detection Algorithms.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050003abs.htm",
+	author = "Tao Wan and Xue Dong Yang",
+	pages = "3-11"}
+
+@inproceedings{DBLP:conf/acsac/Weiler01,
+	title = "Secure Anonymous Group Infrastructure for Common and Future
+               Internet Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050401abs.htm",
+	author = "Nathalie Weiler",
+	pages = "401-410"}
+
+@inproceedings{DBLP:conf/acsac/WheelerCLX01,
+	title = "Java Security Extensions for a Java Server in a Hostile
+               Environment.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050064abs.htm",
+	author = "David M. Wheeler and Adam Conyers and Jane Luo and Alex Xiong",
+	pages = "64-73"}
+
+@inproceedings{DBLP:conf/acsac/Wolthusen01,
+	title = "Security Policy Enforcement at the File System Level in
+               the Windows NT Operating System Family.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050055abs.htm",
+	author = "Stephen D. Wolthusen",
+	pages = "55-63"}
+
+@inproceedings{DBLP:conf/acsac/WongFC01,
+	title = "The Performance Measurement of Cryptographic Primitives
+               on Palm Devices.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2001/1405/00/14050092abs.htm",
+	author = "Duncan S. Wong and Hector Ho Fuentes and Agnes Hui Chan",
+	pages = "92-101"}
+
+@default year = 2000
+
+@inproceedings{DBLP:conf/acsac/Al-MuhtadiAMC00,
+	title = "Secure Smart Homes using Jini and UIUC SESAME.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590077abs.htm",
+	author = "Jalal Al-Muhtadi and Manish Anand and M. Dennis Mickunas and Roy H. Campbell",
+	pages = "77-"}
+
+@inproceedings{DBLP:conf/acsac/AydosYK00,
+	title = "An High-Speed ECC-based Wireless Authentication Protocol
+               on an ARM Microprocessor.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590401abs.htm",
+	author = "Murat Aydos and T. Yanik and \c{C}etin Kaya Ko\c{c}",
+	pages = "401-410"}
+
+@inproceedings{DBLP:conf/acsac/Bao00,
+	title = "Introducing Decryption Authority into PKI.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590288abs.htm",
+	author = "Feng Bao",
+	pages = "288-"}
+
+@inproceedings{DBLP:conf/acsac/BarkaS00,
+	title = "Framework for Role-based Delegation Models.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590168abs.htm",
+	author = "Ezedin Barka and Ravi S. Sandhu",
+	pages = "168-"}
+
+@inproceedings{DBLP:conf/acsac/BieberRS00,
+	title = "Security Architecture for Federated Cooperative Information
+               Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590208abs.htm",
+	author = "Pierre Bieber and D. Raujol and Pierre Siron",
+	pages = "208-216"}
+
+@inproceedings{DBLP:conf/acsac/BrownL00,
+	title = "Security Against Compelled Disclosure.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590002abs.htm",
+	author = "Ian Brown and B. Laurie",
+	pages = "2-10"}
+
+@inproceedings{DBLP:conf/acsac/BruschiCR00,
+	title = "Less Harm, Less Worry or How to Improve Network Security
+               by Bounding System Offensiveness.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590188abs.htm",
+	author = "Danilo Bruschi and Lorenzo Cavallaro and Emilia Rosti",
+	pages = "188-195"}
+
+@inproceedings{DBLP:conf/acsac/CaroniKSS00,
+	title = "Virtual Enterprise Networks: The Next Generation of Secure
+               Enterprise Networking.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSAC.2000.898856",
+	author = "Germano Caronni and S. Kumar and Christoph L. Schuba and G. Scott",
+	pages = "42-51"}
+
+@inproceedings{DBLP:conf/acsac/ClarkMV00,
+	title = "Secure Compartmented Data Access over an Untrusted Network
+               using a COTS-based Architecture.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590217abs.htm",
+	author = "P. C. Clark and M. C. Meissner and K. O. Vance",
+	pages = "217-223"}
+
+@inproceedings{DBLP:conf/acsac/CorradiMSLS00,
+	title = "A Flexible Access Control Service for Java Mobile Code.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590356abs.htm",
+	author = "Antonio Corradi and Rebecca Montanari and Cesare Stefanelli and Emil Lupu and Morris Sloman",
+	pages = "356-365"}
+
+@inproceedings{DBLP:conf/acsac/DanielsS00,
+	title = "A Network Audit System for Host-based Intrusion Detection
+               (NASHID) in Linux.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590178abs.htm",
+	author = "Thomas E. Daniels and Eugene H. Spafford",
+	pages = "178-187"}
+
+@inproceedings{DBLP:conf/acsac/DoshiFJM00,
+	title = "Using Attribute Certificates with Mobile Policies in Electronic
+               Commerce Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590298abs.htm",
+	author = "Vinti Doshi and Amgad Fayad and Sushil Jajodia and Roswitha MacLean",
+	pages = "298-307"}
+
+@inproceedings{DBLP:conf/acsac/EpsteinTM00,
+	title = "Using Operating System Wrappers to Increase the Resiliency
+               to Commercial Firewalls.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590236abs.htm",
+	author = "Jeremy Epstein and L. Thomas and Eric Monteith",
+	pages = "236-245"}
+
+@inproceedings{DBLP:conf/acsac/FaldellaP00,
+	title = "A Novel Approach to On-Line Status Authentication of Public-Key
+               Certificates.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590270abs.htm",
+	author = "Eugenio Faldella and Marco Prandini",
+	pages = "270-277"}
+
+@inproceedings{DBLP:conf/acsac/FreudenthalHW00,
+	title = "Personal Security Environment on Palm PDA.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590366abs.htm",
+	author = "Margus Freudenthal and S. Heiberg and Jan Willemson",
+	pages = "366-372"}
+
+@inproceedings{DBLP:conf/acsac/GaliassoBHSFH00,
+	title = "Policy Mediation for Multi-Enterprise Environments.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590100abs.htm",
+	author = "Pablo Galiasso and Oliver Bremer and John Hale and Sujeet Shenoi and David F. Ferraiolo and Vincent C. Hu",
+	pages = "100-106"}
+
+@inproceedings{DBLP:conf/acsac/Grossschadl00,
+	title = "The Chinese Remainder Theorem and its Application in a High-Speed
+               RSA Crypto Chip.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590384abs.htm",
+	author = "Johann Gro{\ss}sch{\"a}dl",
+	pages = "384-393"}
+
+@inproceedings{DBLP:conf/acsac/Gutmann00,
+	title = "A Reliable, Scalable General-Purpose Certificate Store.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590278abs.htm",
+	author = "Peter Gutmann",
+	pages = "278-287"}
+
+@inproceedings{DBLP:conf/acsac/HalePBCS00,
+	title = "Extending Java for Package based Access Control.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590067abs.htm",
+	author = "John Hale and Mauricio Papa and Oliver Bremer and Rodrigo Chandia and Sujeet Shenoi",
+	pages = "67-76"}
+
+@inproceedings{DBLP:conf/acsac/Hayes00,
+	title = "Policy-based Authentication and Authorization: Secure Access
+               to the Network Infrastructure.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590328abs.htm",
+	author = "Jeff Hayes",
+	pages = "328-333"}
+
+@inproceedings{DBLP:conf/acsac/JangK00,
+	title = "A Self-Extension Monitoring for Security Management.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590196abs.htm",
+	author = "Heejin Jang and Sangwook Kim",
+	pages = "196-"}
+
+@inproceedings{DBLP:conf/acsac/JendrickeM00,
+	title = "Usability Meets Security -The Identity-Manager as Your Personal
+               Security Assistant for the Internet.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590344abs.htm",
+	author = "Uwe Jendricke and Daniela Gerd tom Markotten",
+	pages = "344-"}
+
+@inproceedings{DBLP:conf/acsac/JohnsonB00,
+	title = "Layering Boundary Protections: An Experiment in Information
+               Assurance.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590060abs.htm",
+	author = "D. Johnson and L. Benzinger",
+	pages = "60-66"}
+
+@inproceedings{DBLP:conf/acsac/Knorr00,
+	title = "Dynamic Access Control through Petri Net Workflows.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590159abs.htm",
+	author = "Konstantin Knorr",
+	pages = "159-167"}
+
+@inproceedings{DBLP:conf/acsac/MichaelG00,
+	title = "Two State-based Approaches to Program-based Anomaly Detection.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590021abs.htm",
+	author = "Christoph C. Michael and Anup K. Ghosh",
+	pages = "21-"}
+
+@inproceedings{DBLP:conf/acsac/PalsbergKKMSZ00,
+	title = "Experience with Software Watermarking.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590308abs.htm",
+	author = "Jens Palsberg and S. Krishnaswamy and Minseok Kwon and Di Ma and Qiuyun Shao and Y. Zhang",
+	pages = "308-316"}
+
+@inproceedings{DBLP:conf/acsac/ParkS00,
+	title = "Binding Identities and Attributes using Digitally Signed
+               Certificates.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590120abs.htm",
+	author = "Joon S. Park and Ravi S. Sandhu",
+	pages = "120-127"}
+
+@inproceedings{DBLP:conf/acsac/ParkSS00,
+	title = "Security Architectures for Controlled Digital Information
+               Dissemination.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590224abs.htm",
+	author = "Jaehong Park and Ravi S. Sandhu and J. Schifalacqua",
+	pages = "224-"}
+
+@inproceedings{DBLP:conf/acsac/PetkacB00,
+	title = "Security Agility in Response to Intrusion Detection.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590011abs.htm",
+	author = "M. Petkac and Lee Badger",
+	pages = "11-20"}
+
+@inproceedings{DBLP:conf/acsac/PrasadPABLD00,
+	title = "Scalable Policy Driven and General Purpose Public Key Infrastructure
+               (PKI).",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590138abs.htm",
+	author = "V. Prasad and S. Potakamuri and M. Ahern and I. Balabine and M. Lerner and P. Dutta",
+	pages = "138-"}
+
+@inproceedings{DBLP:conf/acsac/RannenbergI00,
+	title = "Protection Profiles for Remailer Mixes -Do the New Evaluation
+               Criteria Help?",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590107abs.htm",
+	author = "Kai Rannenberg and Giovanni Iachello",
+	pages = "107-"}
+
+@inproceedings{DBLP:conf/acsac/SailerK00,
+	title = "History-based Distributed Filtering - A Tagging Approach
+               to Network-Level Access Control.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590373abs.htm",
+	author = "Reiner Sailer and M. Kabatnik",
+	pages = "373-"}
+
+@inproceedings{DBLP:conf/acsac/SantosK00,
+	title = "Implementing Security Policies using the Safe Areas of Computation
+               Approach.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590090abs.htm",
+	author = "Andr{\'e} L. M. dos Santos and Richard A. Kemmerer",
+	pages = "90-99"}
+
+@inproceedings{DBLP:conf/acsac/SchneiderF00,
+	title = "Efficient Commerce Protocols based on One-Time Pads.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590317abs.htm",
+	author = "Michael A. Schneider and Edward W. Felten",
+	pages = "317-"}
+
+@inproceedings{DBLP:conf/acsac/SpyropoulouLI00,
+	title = "Calculating Costs for Quality of Security Service.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590334abs.htm",
+	author = "E. Spyropoulou and Timothy E. Levin and Cynthia E. Irvine",
+	pages = "334-343"}
+
+@inproceedings{DBLP:conf/acsac/Strother00,
+	title = "Denial of Service Protection - The Nozzle.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590032abs.htm",
+	author = "E. Strother",
+	pages = "32-41"}
+
+@inproceedings{DBLP:conf/acsac/UngureanuVM00,
+	title = "A Policy-based Access Control Mechanism for the Corporate
+               Web.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590150abs.htm",
+	author = "Victoria Ungureanu and F. Vesuna and Naftaly H. Minsky",
+	pages = "150-158"}
+
+@inproceedings{DBLP:conf/acsac/ViegaBKM00,
+	title = "ITS4: A Static Vulnerability Scanner for C and C++ Code.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590257abs.htm",
+	author = "John Viega and J. T. Bloch and Y. Kohno and Gary McGraw",
+	pages = "257-"}
+
+@inproceedings{DBLP:conf/acsac/HuangRWD00,
+	title = "Enabling Secure On-Line DNS Dynamic Update.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590052abs.htm",
+	author = "Xunhua Wang and Yih Huang and Yvo Desmedt and David Rine",
+	pages = "52-"}
+
+@inproceedings{DBLP:conf/acsac/WangKE00,
+	title = "On Computer Viral Infection and the Effect of Immunization.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590246abs.htm",
+	author = "Chenxi Wang and John C. Knight and Matthew C. Elder",
+	pages = "246-256"}
+
+@inproceedings{DBLP:conf/acsac/WohlmacherP00,
+	title = "Applications in Health Care using Public-Key Certificates
+               and Attribute Certificates.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590128abs.htm",
+	author = "Petra Wohlmacher and Peter Pharow",
+	pages = "128-137"}
+
+@inproceedings{DBLP:conf/acsac/ZhaoVM00,
+	title = "Fair On-line Gambling.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/2000/0859/00/08590394abs.htm",
+	author = "Weiliang Zhao and Vijay Varadharajan and Yi Mu",
+	pages = "394-400"}
+
+@default year = 1999
+
+@inproceedings{DBLP:conf/acsac/Anderson99,
+	title = "How to Cheat at the Lottery (or, Massively Parallel Requirements
+               Engineering).",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460001abs.htm",
+	author = "Ross J. Anderson",
+	pages = "1-"}
+
+@inproceedings{DBLP:conf/acsac/AronaBR99,
+	title = "Adding Availability to Log Services of Untrusted Machines.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460199abs.htm",
+	author = "Arianna Arona and Danilo Bruschi and Emilia Rosti",
+	pages = "199-"}
+
+@inproceedings{DBLP:conf/acsac/Benecke99,
+	title = "A Parallel Packet Screen for High Speed Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460067abs.htm",
+	author = "Carsten Benecke",
+	pages = "67-74"}
+
+@inproceedings{DBLP:conf/acsac/BeznosovDBBB99,
+	title = "A Resource Access Decision Service for CORBA-Based Distributed
+               Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460310abs.htm",
+	author = "Konstantin Beznosov and Yi Deng and Bob Blakley and C. Burt and John F. Barkley",
+	pages = "310-319"}
+
+@inproceedings{DBLP:conf/acsac/Brackin99,
+	title = "Using Checkable Types in Automatic Protocol Analysis.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460099abs.htm",
+	author = "Stephen H. Brackin",
+	pages = "99-108"}
+
+@inproceedings{DBLP:conf/acsac/Brainard99,
+	title = "SecurSight: An Architecture for Secure Information Access.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460349abs.htm",
+	author = "John G. Brainard",
+	pages = "349-"}
+
+@inproceedings{DBLP:conf/acsac/BurnhamIRSV99,
+	title = "Information Security Education for the Next Millennium:
+               Building the Next Generation of Practitioners (Forum).",
+	ee = "http://dlib.computer.org/conferen/acsac/0346/pdf/03460265.pdf",
+	author = "Blaine Burnham and Cynthia E. Irvine and Charles Reynolds and Ravi S. Sandhu and Rayford B. Vaughn",
+	pages = "265-"}
+
+@inproceedings{DBLP:conf/acsac/CharneyPRT99,
+	title = "Legal and Technical Responses to Protecting the U. S. Critical
+               Infrastructures (Panel).",
+	ee = "http://dlib.computer.org/conferen/acsac/0346/pdf/03460299.pdf",
+	author = "Scott Charney and Ellie Padgett and Mark Rasch and John Thomas",
+	pages = "299-"}
+
+@inproceedings{DBLP:conf/acsac/Cooper99,
+	title = "A Model of Certificate Revocation.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460256abs.htm",
+	author = "David A. Cooper",
+	pages = "256-"}
+
+@inproceedings{DBLP:conf/acsac/DuGM99,
+	title = "Security Relevancy Analysis on the Registry of Windows NT
+               4.0.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460331abs.htm",
+	author = "Wenliang Du and Praerit Garg and Aditya P. Mathur",
+	pages = "331-340"}
+
+@inproceedings{DBLP:conf/acsac/Epstein99,
+	title = "Architecture and Concepts of the ARGuE Guard.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460045abs.htm",
+	author = "Jeremy Epstein",
+	pages = "45-54"}
+
+@inproceedings{DBLP:conf/acsac/ErfaniC99,
+	title = "Generic Support for PKIX Certificate Management in CDSA.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460269abs.htm",
+	author = "Shabnam Erfani and C. Sekar Chandersekaran",
+	pages = "269-275"}
+
+@inproceedings{DBLP:conf/acsac/FayadJM99,
+	title = "Application-Level Isolation Using Data Inconsistency Detection.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460119abs.htm",
+	author = "Amgad Fayad and Sushil Jajodia and Catherine D. McCollum",
+	pages = "119-"}
+
+@inproceedings{DBLP:conf/acsac/HaleGPS99,
+	title = "Security Policy Coordination for Heterogeneous Information
+               Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460219abs.htm",
+	author = "John Hale and Pablo Galiasso and Mauricio Papa and Sujeet Shenoi",
+	pages = "219-228"}
+
+@inproceedings{DBLP:conf/acsac/Hinrichs99,
+	title = "Policy-Based Management: Bridging the Gap.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460209abs.htm",
+	author = "Susan Hinrichs",
+	pages = "209-218"}
+
+@inproceedings{DBLP:conf/acsac/HintonCDB99,
+	title = "SAM: Security Adaptation Manager .",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460361abs.htm",
+	author = "Heather M. Hinton and Crispin Cowan and Lois M. L. Delcambre and Shawn Bowers",
+	pages = "361-370"}
+
+@inproceedings{DBLP:conf/acsac/Iglio99,
+	title = "TrustedBox: A Kernel-Level Integrity Checker.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460189abs.htm",
+	author = "Pietro Iglio",
+	pages = "189-198"}
+
+@inproceedings{DBLP:conf/acsac/IrvineL99,
+	title = "Toward a Taxonomy and Costing Method for Security Services.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460183abs.htm",
+	author = "Cynthia E. Irvine and Timothy E. Levin",
+	pages = "183-188"}
+
+@inproceedings{DBLP:conf/acsac/KangEF99,
+	title = "Tools to Support Secure Enterprise Computing.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460143abs.htm",
+	author = "Myong H. Kang and Brian J. Eppinger and Judith N. Froscher",
+	pages = "143-"}
+
+@inproceedings{DBLP:conf/acsac/KarroW99,
+	title = "Towards a Practical, Secure, and Very Large Scale Online
+               Election.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460161abs.htm",
+	author = "Jared Karro and Jie Wang",
+	pages = "161-169"}
+
+@inproceedings{DBLP:conf/acsac/KirbyAH99,
+	title = "SCR: A Practical Approach to Building a High Assurance COMSEC
+               System.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460109abs.htm",
+	author = "James Kirby and Myla Archer and Constance L. Heitmeyer",
+	pages = "109-118"}
+
+@inproceedings{DBLP:conf/acsac/LaiGKNS99,
+	title = "User Authentication and Authorization in the Java(tm) Platform.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460285abs.htm",
+	author = "Charlie Lai and Li Gong and Larry Koved and Anthony J. Nadalin and Roland Schemers",
+	pages = "285-290"}
+
+@inproceedings{DBLP:conf/acsac/LaurentBDLPAM99,
+	title = "Secure Communications in ATM Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460084abs.htm",
+	author = "Maryline Laurent and Ahmed Bouabdallah and Christophe Delahaye and Herbert Leitold and Reinhard Posch and Enrique Areizaga and Ju{\`a}n Manuel Mateos",
+	pages = "84-"}
+
+@inproceedings{DBLP:conf/acsac/LongBF99,
+	title = "A Prototype Secure Workflow Server.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460129abs.htm",
+	author = "Douglas L. Long and Julie Baker and Francis Fung",
+	pages = "129-133"}
+
+@inproceedings{DBLP:conf/acsac/MatyasR99,
+	title = "An Effective Defense Against First Party Attacks in Public-Key
+               Algorithms.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460155abs.htm",
+	author = "Stephen M. Matyas and Allen Roginsky",
+	pages = "155-160"}
+
+@inproceedings{DBLP:conf/acsac/McDermottF99,
+	title = "Using Abuse Case Models for Security Requirements Analysis.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460055abs.htm",
+	author = "John P. McDermott and Chris Fox",
+	pages = "55-"}
+
+@inproceedings{DBLP:conf/acsac/Neely99,
+	title = "Security Architecture Development and Results for a Distributed
+               Modeling and Simulation System .",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460341abs.htm",
+	author = "Richard B. Neely",
+	pages = "341-348"}
+
+@inproceedings{DBLP:conf/acsac/NewmanHSBSW99,
+	title = "Design of LAN-Lock, A System for Securing Wireless Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460170abs.htm",
+	author = "Richard E. Newman and Mark V. Hoyt and Tim Swanson and Phillipe Broccard and Mark Sanders and Joe Winner",
+	pages = "170-"}
+
+@inproceedings{DBLP:conf/acsac/NuansriSD99,
+	title = "A Process State-Transition Analysis and Its Application
+               to Intrusion Detection.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460378abs.htm",
+	author = "Nittida Nuansri and Samar Singh and Tharam S. Dillon",
+	pages = "378-388"}
+
+@inproceedings{DBLP:conf/acsac/Oestreicher99,
+	title = "Transactions in Java Card.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460291abs.htm",
+	author = "Marcus Oestreicher",
+	pages = "291-"}
+
+@inproceedings{DBLP:conf/acsac/OppligerGT99,
+	title = "A Distributed Certificate Management System (DCMS) Supporting
+               Group-Based Access Controls.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460241abs.htm",
+	author = "Rolf Oppliger and Andreas Greulich and Peter Trachsel",
+	pages = "241-248"}
+
+@inproceedings{DBLP:conf/acsac/PaulLG99,
+	title = "An Asynchronous Distributed Access Control Architecture
+               for IP over ATM Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460075abs.htm",
+	author = "Olivier Paul and Maryline Laurent and Sylvain Gombault",
+	pages = "75-83"}
+
+@inproceedings{DBLP:conf/acsac/PayneTBO99,
+	title = "Napoleon: A Recipe for Workflow.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460134abs.htm",
+	author = "C. Payne and D. J. Thomsen and J. Bogle and Richard C. O'Brien",
+	pages = "134-142"}
+
+@inproceedings{DBLP:conf/acsac/Prandini99,
+	title = "Efficient Certificate Status Handling Within PKIs: An Application
+               to Public Administration Services.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460276abs.htm",
+	author = "Marco Prandini",
+	pages = "276-"}
+
+@inproceedings{DBLP:conf/acsac/RohmHP99,
+	title = "A Language for Modeling Secure Business Transactions.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460022abs.htm",
+	author = "Alexander W. R{\"o}hm and Gaby Herrmann and G{\"u}nther Pernul",
+	pages = "22-"}
+
+@inproceedings{DBLP:conf/acsac/Russell99,
+	title = "Fast Checking of Individual Certificate Revocation on Small
+               Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460249abs.htm",
+	author = "Selwyn Russell",
+	pages = "249-255"}
+
+@inproceedings{DBLP:conf/acsac/SandhuM99,
+	title = "The ARBAC99 Model for Administration of Roles.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460229abs.htm",
+	author = "Ravi S. Sandhu and Qamar Munawer",
+	pages = "229-"}
+
+@inproceedings{DBLP:conf/acsac/SantosK99,
+	title = "Safe Areas of Computation for Secure Computing with Insecure
+               Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460035abs.htm",
+	author = "Andr{\'e} L. M. dos Santos and Richard A. Kemmerer",
+	pages = "35-44"}
+
+@inproceedings{DBLP:conf/acsac/SinclairPM99,
+	title = "An Application of Machine Learning to Network Intrusion
+               Detection.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460371abs.htm",
+	author = "Chris Sinclair and Lyn Pierce and Sara Matzner",
+	pages = "371-377"}
+
+@inproceedings{DBLP:conf/acsac/TripunitaraD99,
+	title = "A Middleware Approach to Asynchronous and Backward Compatible
+               Detection and Prevention of ARP Cache Poisoning.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460303abs.htm",
+	author = "Mahesh V. Tripunitara and Partha Dutta",
+	pages = "303-309"}
+
+@inproceedings{DBLP:conf/acsac/VogtPG99,
+	title = "Modular Fair Exchange Protocols for Electronic Commerce.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460003abs.htm",
+	author = "Holger Vogt and Henning Pagnia and Felix C. G{\"a}rtner",
+	pages = "3-11"}
+
+@inproceedings{DBLP:conf/acsac/WichertIC99,
+	title = "Non-repudiation Evidence Generation for CORBA using XML.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460320abs.htm",
+	author = "Michael Wichert and David B. Ingham and Steve J. Caughey",
+	pages = "320-"}
+
+@inproceedings{DBLP:conf/acsac/WilkinsonHW99,
+	title = "Trustworthy Access Control with Untrustworthy Web Servers.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1999/0346/00/03460012abs.htm",
+	author = "Tim Wilkinson and Dave Hearn and Simon R. Wiseman",
+	pages = "12-21"}
+
+@default year = 1998
+
+@inproceedings{DBLP:conf/acsac/AhmedV98,
+	title = "Maintaining Security in Firm Real-Time Database Systems.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890083.pdf",
+	author = "Quazi N. Ahmed and Susan V. Vrbsky",
+	pages = "83-90"}
+
+@inproceedings{DBLP:conf/acsac/AmorosoK98,
+	title = "Selection Criteria for Intrusion Detection Systems.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890280.pdf",
+	author = "Edward Amoroso and R. Kwapniewski",
+	pages = "280-"}
+
+@inproceedings{DBLP:conf/acsac/Bahie-EldinO98,
+	title = "Complexity Measure of Encryption Keys Used for Securing
+               Computer Networks.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890250.pdf",
+	author = "M. A. Bahie-Eldin and A. A. Omar",
+	pages = "250-"}
+
+@inproceedings{DBLP:conf/acsac/BalasubramaniyanGISZ98,
+	title = "An Architecture for Intrusion Detection Using Autonomous
+               Agents.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890013.pdf",
+	author = "J. S. Balasubramaniyan and J. O. Garcia-Fernandez and D. Isacoff and Eugene H. Spafford and Diego Zamboni",
+	pages = "13-24"}
+
+@inproceedings{DBLP:conf/acsac/BrutchB98,
+	title = "Mutual Authentication, Confidentiality, and Key Management
+               (MACKMAN) System for Mobile Computing and Wireless Communication.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890308.pdf",
+	author = "T. G. Brutch and P. C. Brutch",
+	pages = "308-"}
+
+@inproceedings{DBLP:conf/acsac/BuschkesKR98,
+	title = "How to Increase Security in Mobile Networks by Anomaly Detection.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890003.pdf",
+	author = "Roland B{\"u}schkes and Dogan Kesdogan and Peter Reichl",
+	pages = "3-12"}
+
+@inproceedings{DBLP:conf/acsac/CliffordLB98,
+	title = "The Solar Trust Model: Authentication Without Limitation.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890300.pdf",
+	author = "Michael Clifford and C. Lavine and Matt Bishop",
+	pages = "300-307"}
+
+@inproceedings{DBLP:conf/acsac/DebbabiLM98,
+	title = "An Environment for the Specification and Analysis of Cryptoprotocols.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890321.pdf",
+	author = "Mourad Debbabi and Y. Legar{\'e} and Mohamed Mejri",
+	pages = "321-332"}
+
+@inproceedings{DBLP:conf/acsac/Endler98,
+	title = "Intrusion Detection Applying Machine Learning to Solaris
+               Audit Data.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890268.pdf",
+	author = "D. Endler",
+	pages = "268-279"}
+
+@inproceedings{DBLP:conf/acsac/FerreiraD98,
+	title = "A Scheme for Analyzing Electronic Payment Systems.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890137.pdf",
+	author = "Lucas C. Ferreira and Ricardo Dahab",
+	pages = "137-146"}
+
+@inproceedings{DBLP:conf/acsac/GoshWC98,
+	title = "Detecting Anomalous and Unknown Intrusions Against Programs.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890259.pdf",
+	author = "Anup K. Gosh and James Wanken and Frank Charron",
+	pages = "259-267"}
+
+@inproceedings{DBLP:conf/acsac/HasslerT98,
+	title = "Controlling Applets' Behavior in a Browser.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890120.pdf",
+	author = "Vesna Hassler and O. Then",
+	pages = "120-"}
+
+@inproceedings{DBLP:conf/acsac/HylandS98,
+	title = "Concentric Supervision of Security Applications: A New Security
+               Management Paradigm.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890059.pdf",
+	author = "P. C. Hyland and Ravi S. Sandhu",
+	pages = "59-"}
+
+@inproceedings{DBLP:conf/acsac/IglioFG98,
+	title = "Rule-Based Filtering for Java Applets.",
+	ee = "http://computer.org/proceedings/acsac/8789/87890112abs.htm",
+	author = "Pietro Iglio and Fausto Fraticelli and Luigi Giuri",
+	pages = "112-119"}
+
+@inproceedings{DBLP:conf/acsac/JajodiaLM98,
+	title = "Application-Level Isolation to Cope with Malicious Database
+               Users.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890073.pdf",
+	author = "Sushil Jajodia and Peng Liu and Catherine D. McCollum",
+	pages = "73-82"}
+
+@inproceedings{DBLP:conf/acsac/JelenW98,
+	title = "A Practical Approach to Measuring Assurance.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890333.pdf",
+	author = "G. F. Jelen and J. R. Williams",
+	pages = "333-"}
+
+@inproceedings{DBLP:conf/acsac/KangFE98,
+	title = "Towards an Infrastructure for MLS Distributed Computing.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890091.pdf",
+	author = "Myong H. Kang and Judith N. Froscher and Brian J. Eppinger",
+	pages = "91-100"}
+
+@inproceedings{DBLP:conf/acsac/KarroW98,
+	title = "Protecting Web Servers from Security Holes in Server-Side
+               Includes.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890103.pdf",
+	author = "Jared Karro and Jie Wang",
+	pages = "103-111"}
+
+@inproceedings{DBLP:conf/acsac/Kudo98,
+	title = "Electronic Submission Protocol Based on Temporal Accountability.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890353.pdf",
+	author = "Michiharu Kudo",
+	pages = "353-364"}
+
+@inproceedings{DBLP:conf/acsac/LeitoldPP98,
+	title = "A Hardware-Independent Encryption Model for ATM Devices.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890205.pdf",
+	author = "Herbert Leitold and Udo Payer and Reinhard Posch",
+	pages = "205-211"}
+
+@inproceedings{DBLP:conf/acsac/MuV98,
+	title = "Anonymous Secure E-Voting Over a Network.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890293.pdf",
+	author = "Yi Mu and Vijay Varadharajan",
+	pages = "293-299"}
+
+@inproceedings{DBLP:conf/acsac/PomeroyW98,
+	title = "Private Desktops and Shared Store.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890190.pdf",
+	author = "Bryony Pomeroy and Simon R. Wiseman",
+	pages = "190-"}
+
+@inproceedings{DBLP:conf/acsac/RohmPH98,
+	title = "Modeling Secure and Fair Electronic Commerce.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890155.pdf",
+	author = "Alexander W. R{\"o}hm and G{\"u}nther Pernul and Gaby Herrmann",
+	pages = "155-"}
+
+@inproceedings{DBLP:conf/acsac/Sailer98,
+	title = "Security Services in an Open Service Environment.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890223.pdf",
+	author = "Reiner Sailer",
+	pages = "223-"}
+
+@inproceedings{DBLP:conf/acsac/SandhuM98,
+	title = "The RRA97 Model for Role-Based Administration of Role Hierarchies.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890039.pdf",
+	author = "Ravi S. Sandhu and Qamar Munawer",
+	pages = "39-49"}
+
+@inproceedings{DBLP:conf/acsac/Schier98,
+	title = "Multifunctional Smart Cards for Electronic Commerce-Application
+               of the Role and Task-Based Security Model.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890147.pdf",
+	author = "Kathrin Schier",
+	pages = "147-154"}
+
+@inproceedings{DBLP:conf/acsac/SchneierR98,
+	title = "A Certified E-Mail Protocol.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890347.pdf",
+	author = "Bruce Schneier and James Riordan",
+	pages = "347-352"}
+
+@inproceedings{DBLP:conf/acsac/ShankaranV98,
+	title = "Secure Signaling and Access Control for ATM Networks.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890212.pdf",
+	author = "Rajan Shankaran and Vijay Varadharajan",
+	pages = "212-222"}
+
+@inproceedings{DBLP:conf/acsac/SmithB98,
+	title = "Wachet auf! Computer Security and the Millenium.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890129.pdf",
+	author = "F. C. Smith and D. J. Bailey",
+	pages = "129-"}
+
+@inproceedings{DBLP:conf/acsac/ThomsenOB98,
+	title = "Role-Based Access Control Framework for Network Enterprises.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890050.pdf",
+	author = "D. J. Thomsen and D. O'Brien and J. Bogle",
+	pages = "50-58"}
+
+@inproceedings{DBLP:conf/acsac/TsengJ98,
+	title = "ID-Based Cryptographic Schemes Using a Non-Interactive Public-Key
+               Distribution System.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890237.pdf",
+	author = "Yuh-Min Tseng and Jinn-ke Jan",
+	pages = "237-243"}
+
+@inproceedings{DBLP:conf/acsac/VaradharajanCP98,
+	title = "Authorization in Enterprise-Wide Distributed System: A Practical
+               Design and Application.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890178.pdf",
+	author = "Vijay Varadharajan and C. Crall and Joe Pato",
+	pages = "178-189"}
+
+@inproceedings{DBLP:conf/acsac/VignaK98,
+	title = "NetSTAT: A Network-Based Intrusion Detection Approach.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890025.pdf",
+	author = "Giovanni Vigna and Richard A. Kemmerer",
+	pages = "25-"}
+
+@inproceedings{DBLP:conf/acsac/WrightSI98,
+	title = "Security Architecture for a Virtual Heterogeneous Machine.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890167.pdf",
+	author = "Roger Wright and David J. Shifflett and Cynthia E. Irvine",
+	pages = "167-177"}
+
+@inproceedings{DBLP:conf/acsac/ZhangDM98,
+	title = "Two Improved Algorithms and Hardware Implementations for
+               Key Distribution Using Extended Programmable Cellular Automata.",
+	ee = "http://csdl2.computer.org/dl/proceedings/acsac/1998/8789/00/87890244.pdf",
+	author = "Chang N. Zhang and Ming Y. Deng and Ralph Mason",
+	pages = "244-249"}
+
+@default year = 1997
+
+@inproceedings{DBLP:conf/acsac/AskwithMSW97,
+	title = "Achieving User Privacy in Mobile Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740108abs.htm",
+	author = "Bob Askwith and Madjid Merabti and Qi Shi and K. Whiteley",
+	pages = "108-"}
+
+@inproceedings{DBLP:conf/acsac/BakerBB97,
+	title = "PCASSO: Applying and Extending State-of-the-Art Security
+               in the Healthcare Domain.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740251abs.htm",
+	author = "D. B. Baker and R. M. Barnhart and T. T. Buss",
+	pages = "251-"}
+
+@inproceedings{DBLP:conf/acsac/CantW97,
+	title = "Simple Assured Bastion Hosts.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740024abs.htm",
+	author = "C. Cant and Simon R. Wiseman",
+	pages = "24-33"}
+
+@inproceedings{DBLP:conf/acsac/Cheung97,
+	title = "An Efficient Message Authentication Scheme for Link State
+               Routing.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740090abs.htm",
+	author = "S. Cheung",
+	pages = "90-98"}
+
+@inproceedings{DBLP:conf/acsac/HammelrathH97,
+	title = "The Secure Distribution of Digital Contents.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740016abs.htm",
+	author = "Eberhard von Faber and R. Hammelrath and F.-P. Heider",
+	pages = "16-"}
+
+@inproceedings{DBLP:conf/acsac/Foley97,
+	title = "Supporting Secure Canonical Upgrade Policies in Multilevel
+               Secure Object Stores.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740069abs.htm",
+	author = "Simon N. Foley",
+	pages = "69-80"}
+
+@inproceedings{DBLP:conf/acsac/FreemanDN97,
+	title = "Risk Assessment for Large Heterogeneous Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740044abs.htm",
+	author = "J. W. Freeman and T. C. Darr and Richard B. Neely",
+	pages = "44-53"}
+
+@inproceedings{DBLP:conf/acsac/GreveHS97,
+	title = "Using Type Enforcement to Assure a Configurable Guard.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740146abs.htm",
+	author = "P. Greve and J. Hoffman and R. E. Smith",
+	pages = "146-"}
+
+@inproceedings{DBLP:conf/acsac/HallS97,
+	title = "Remote Electronic Gambling.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740232abs.htm",
+	author = "Chris Hall and Bruce Schneier",
+	pages = "232-238"}
+
+@inproceedings{DBLP:conf/acsac/HimdiS97,
+	title = "Lattice Based Models for Controlled Sharing of Confidential
+               Information in the Saudi Hajj System.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740164abs.htm",
+	author = "T. F. Himdi and Ravi S. Sandhu",
+	pages = "164-174"}
+
+@inproceedings{DBLP:conf/acsac/Hoffman97,
+	title = "Implementing RBAC on a Type Enforced System.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740158abs.htm",
+	author = "J. Hoffman",
+	pages = "158-163"}
+
+@inproceedings{DBLP:conf/acsac/KangM97,
+	title = "An Architecture for Multilevel Secure Interoperability.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740194abs.htm",
+	author = "Myong H. Kang and Judith N. Froscher and Ira S. Moskowitz",
+	pages = "194-204"}
+
+@inproceedings{DBLP:conf/acsac/Landwehr97,
+	title = "Protecting Unattended Computers Without Software.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740274abs.htm",
+	author = "Carl E. Landwehr",
+	pages = "274-"}
+
+@inproceedings{DBLP:conf/acsac/LeeL97,
+	title = "On the Key Recovery of the Key Escrow System.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740216abs.htm",
+	author = "Yung-Cheng Lee and Chi-Sung Laih",
+	pages = "216-220"}
+
+@inproceedings{DBLP:conf/acsac/LewisW97,
+	title = "Securing an Object Relational Database.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740059abs.htm",
+	author = "S. Lewis and Simon R. Wiseman",
+	pages = "59-68"}
+
+@inproceedings{DBLP:conf/acsac/LowmanM97,
+	title = "Applying the DOD Goal Security Architecture as a Methodology
+               for the Development of System and Enterprise Security Architecture.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740183abs.htm",
+	author = "T. Lowman and D. Mosier",
+	pages = "183-193"}
+
+@inproceedings{DBLP:conf/acsac/McDermottGO97,
+	title = "Doc, Wyatt, and Virgil: Prototyping Storage Jamming Defenses.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740265abs.htm",
+	author = "John P. McDermott and R. Gelinas and S. Ornstein",
+	pages = "265-"}
+
+@inproceedings{DBLP:conf/acsac/MitchemLB97,
+	title = "Using Kernel Hypervisors to Secure Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740175abs.htm",
+	author = "T. Mitchem and R. Lu and R. O'Brian",
+	pages = "175-"}
+
+@inproceedings{DBLP:conf/acsac/MohayZ97,
+	title = "Kernel and Shell-Based Applications Integrity Assurance.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740034abs.htm",
+	author = "George M. Mohay and J. Zellers",
+	pages = "34-43"}
+
+@inproceedings{DBLP:conf/acsac/NguyenMV97,
+	title = "Micro-Digital Money for Electronic Commerce.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740002abs.htm",
+	author = "Khanh Quoc Nguyen and Yi Mu and Vijay Varadharajan",
+	pages = "2-8"}
+
+@inproceedings{DBLP:conf/acsac/NguyenMV97a,
+	title = "Secure and Efficient Digital Coins.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740009abs.htm",
+	author = "Khanh Quoc Nguyen and Yi Mu and Vijay Varadharajan",
+	pages = "9-15"}
+
+@inproceedings{DBLP:conf/acsac/Niemeyer97,
+	title = "Using Web Technologies in Two MLS Environments: A Security
+               Analysis.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740205abs.htm",
+	author = "R. E. Niemeyer",
+	pages = "205-"}
+
+@inproceedings{DBLP:conf/acsac/OostendorpBVMPSS97,
+	title = "Domain and Type Enforcement Firewalls.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740122abs.htm",
+	author = "K. A. Oostendorp and Lee Badger and C. D. Vance and W. G. Morrison and M. Petkac and David L. Sherman and Daniel F. Sterne",
+	pages = "122-132"}
+
+@inproceedings{DBLP:conf/acsac/SchneierH97,
+	title = "An Improved E-Mail Security Protocol.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740227abs.htm",
+	author = "Bruce Schneier and Chris Hall",
+	pages = "227-"}
+
+@inproceedings{DBLP:conf/acsac/SchubaS97,
+	title = "A Reference Model for Firewall Technology.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740133abs.htm",
+	author = "Christoph L. Schuba and Eugene H. Spafford",
+	pages = "133-"}
+
+@inproceedings{DBLP:conf/acsac/Smith97,
+	title = "Ethical Responsibilities and Legal Liabilities of Network
+               Security Professionals.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740239abs.htm",
+	author = "F. C. Smith",
+	pages = "239-250"}
+
+@inproceedings{DBLP:conf/acsac/TanC97,
+	title = "Detection and Classification of TCP/IP Network Services.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740099abs.htm",
+	author = "Kymie M. C. Tan and Blair R. Collie",
+	pages = "99-107"}
+
+@inproceedings{DBLP:conf/acsac/ThompsonD97,
+	title = "Incremental Assurance for Multilevel Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740081abs.htm",
+	author = "Dan Thompson and M. Denz",
+	pages = "81-"}
+
+@inproceedings{DBLP:conf/acsac/WangH97,
+	title = "Threshold and Generalized DSS Signatures without a Trusted
+               Party.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1997/8274/00/82740221abs.htm",
+	author = "Chih-Hung Wang and Tzonelih Hwang",
+	pages = "221-226"}
+
+@default year = 1996
+
+@inproceedings{DBLP:conf/acsac/AlthenEN96,
+	title = "Innovative Secure Payments On The Internet Using The German
+               Electronic Purse.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060088abs.htm",
+	author = "Brigitte Althen and Gerd Enste and Brigitte Nebelung",
+	pages = "88-94"}
+
+@inproceedings{DBLP:conf/acsac/AndersonNGMYY96,
+	title = "Starlight: Interactive Link.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060055abs.htm",
+	author = "Mark S. Anderson and Christopher James North and John Edmund Griffin and Robert Brunyee Milner and John Yesberg and Kenneth Kwok-Hei Yiu",
+	pages = "55-64"}
+
+@inproceedings{DBLP:conf/acsac/Bieber96,
+	title = "Formal Techniques for an ITSEC-E4 Secure Gateway.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060236abs.htm",
+	author = "Pierre Bieber",
+	pages = "236-246"}
+
+@inproceedings{DBLP:conf/acsac/BurnsK96,
+	title = "A Comparison of Multilevel Structured Query Language (SQL)
+               Implementations.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060192abs.htm",
+	author = "Rae K. Burns and Yi-Fang Koh",
+	pages = "192-202"}
+
+@inproceedings{DBLP:conf/acsac/Connolly96,
+	title = "Operation chain link: the deployment of a firewall at Hanscom
+               Air Force Base.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060170abs.htm",
+	author = "Julie L. Connolly",
+	pages = "170-177"}
+
+@inproceedings{DBLP:conf/acsac/Davidson96,
+	title = "Asymmetric Isolation.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060044abs.htm",
+	author = "John A. Davidson",
+	pages = "44-54"}
+
+@inproceedings{DBLP:conf/acsac/EpsteinW96,
+	title = "Using Fortezza For Transparent File Encryption.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060140abs.htm",
+	author = "Jeremy Epstein and Tim Williams",
+	pages = "140-147"}
+
+@inproceedings{DBLP:conf/acsac/EsmailiBSP96,
+	title = "Case-Based Reasoning for Intrusion Detection.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060214abs.htm",
+	author = "Mansour Esmaili and Bala Balachandran and Reihaneh Safavi-Naini and Josef Pieprzyk",
+	pages = "214-223"}
+
+@inproceedings{DBLP:conf/acsac/GiuriI96,
+	title = "A Role-Based Secure Database Design Tool.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060203abs.htm",
+	author = "Luigi Giuri and Pietro Iglio",
+	pages = "203-213"}
+
+@inproceedings{DBLP:conf/acsac/HitchensV96,
+	title = "esign Choices For Symmetric Key Based Inter-Domain Authentication
+               Protocols In Distributed Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060105abs.htm",
+	author = "Michael Hitchens and Vijay Varadharajan",
+	pages = "105-116"}
+
+@inproceedings{DBLP:conf/acsac/Holzbach96,
+	title = "Security Measures For The Austrian ``Paychip'' Electronic
+               Purse Application.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060069abs.htm",
+	author = "Manfred Holzbach",
+	pages = "69-77"}
+
+@inproceedings{DBLP:conf/acsac/HosyS96,
+	title = "Common Criteria Activities and Alternative Assurance.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060065.pdf",
+	author = "Herve Hosy and Mary Schanken",
+	pages = "65-66"}
+
+@inproceedings{DBLP:conf/acsac/KangMMP96,
+	title = "A Case Study Of Two Nrl Pump Prototypes.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060032abs.htm",
+	author = "Myong H. Kang and Ira S. Moskowitz and Bruce E. Montrose and James J. Parsonese",
+	pages = "32-43"}
+
+@inproceedings{DBLP:conf/acsac/KaoC96,
+	title = "An Extended Capability Architecture To Enforce Dynamic Access
+               Control Policies.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060148abs.htm",
+	author = "I-Lung Kao and Randy Chow",
+	pages = "148-157"}
+
+@inproceedings{DBLP:conf/acsac/Kayden96,
+	title = "Using a Proxy X Server to Facilitate COTS Application Integration.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060185abs.htm",
+	author = "Eric M. Kayden",
+	pages = "185-191"}
+
+@inproceedings{DBLP:conf/acsac/KelseySH96,
+	title = "An Authenticated Camera.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060024abs.htm",
+	author = "John Kelsey and Bruce Schneier and Chris Hall",
+	pages = "24-31"}
+
+@inproceedings{DBLP:conf/acsac/KemmererT96,
+	title = "A Modular Covert Channel Analysis Methodology for Trusted
+               DG/UX/sup TM/.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060224abs.htm",
+	author = "Richard A. Kemmerer and Tad Taylor",
+	pages = "224-235"}
+
+@inproceedings{DBLP:conf/acsac/LichotaHB96,
+	title = "Verifying The Correctness Of Cryptographic Protocols Using
+               ``Convince''.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060117abs.htm",
+	author = "Randall W. Lichota and Grace L. Hammonds and Stephen H. Brackin",
+	pages = "117-128"}
+
+@inproceedings{DBLP:conf/acsac/LuntKM96,
+	title = "Security and the National Telecommunications Infrastructure.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060138.pdf",
+	author = "Teresa F. Lunt and John Kimmins and Bob McKosky",
+	pages = "138-139"}
+
+@inproceedings{DBLP:conf/acsac/NashK96,
+	title = "Implementing Security Policy in a Large Defense Procurement.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060015abs.htm",
+	author = "M. Nash and R. J. Kennett",
+	pages = "15-23"}
+
+@inproceedings{DBLP:conf/acsac/ReedSG96,
+	title = "Proxies For Anonymous Routing.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060095abs.htm",
+	author = "Michael G. Reed and Paul F. Syverson and David M. Goldschlag",
+	pages = "95-104"}
+
+@inproceedings{DBLP:conf/acsac/Sachs96,
+	title = "Major Questions in Applying the SSE-CMM.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060247.pdf",
+	author = "Joel E. Sachs",
+	pages = "247-248"}
+
+@inproceedings{DBLP:conf/acsac/Schanken96,
+	title = "SSE-CMM Pilot Results.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060067.pdf",
+	author = "Mary Schanken",
+	pages = "67-68"}
+
+@inproceedings{DBLP:conf/acsac/SebesB96,
+	title = "SIGMA: Security For Distributed Object Interoperability
+               Between Trusted And Untrusted Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060158abs.htm",
+	author = "E. John Sebes and Terry C. Vickers Benzel",
+	pages = "158-169"}
+
+@inproceedings{DBLP:conf/acsac/Smith96,
+	title = "Mandatory Protection for Internet Server Software.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060178abs.htm",
+	author = "Richard E. Smith",
+	pages = "178-184"}
+
+@inproceedings{DBLP:conf/acsac/Sterbenz96,
+	title = "An Evaluation of the Java Security Model.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060002abs.htm",
+	author = "Andreas Sterbenz",
+	pages = "2-14"}
+
+@inproceedings{DBLP:conf/acsac/VaradharajanM96,
+	title = "On The Design Of Secure Electronic Payment Schemes For Internet.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060078abs.htm",
+	author = "Vijay Varadharajan and Yi Mu",
+	pages = "78-87"}
+
+@inproceedings{DBLP:conf/acsac/ZhangS96,
+	title = "Security Issues in an EDI Environment.",
+	ee = "http://csdl.computer.org/comp/proceedings/acsac/1996/7606/00/76060129abs.htm",
+	author = "Ning Zhang and Qi Shi",
+	pages = "129-137"}

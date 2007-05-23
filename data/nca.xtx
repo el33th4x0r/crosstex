@@ -1,0 +1,1281 @@
+@include conferences-cs
+
+@default bibsource = "DBLP, http://dblp.uni-trier.de"
+
+@default booktitle = nca
+
+@default year = 2005
+
+@inproceedings{DBLP:conf/nca/ArdagnaTZ05,
+	title = "SLA Based Profit Optimization in Multi-tier Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.48",
+	author = "Danilo Ardagna and Marco Trubian and Li Zhang",
+	pages = "263-266"}
+
+@inproceedings{DBLP:conf/nca/AtighetchiRPCS05,
+	title = "Networking Aspects in the DPASA Survivability Architecture:
+               An Experience Report.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.35",
+	author = "Michael Atighetchi and Paul Rubel and Partha Pratim Pal and Jennifer Chong and Lyle Sudin",
+	pages = "219-222"}
+
+@inproceedings{DBLP:conf/nca/BalakrishnanPB05,
+	title = "Slingshot: Time-Critical Multicast for Clustered Applications.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.49",
+	author = "Mahesh Balakrishnan and Stefan Pleisch and Ken Birman",
+	pages = "205-214"}
+
+@inproceedings{DBLP:conf/nca/BaldoniQVJP05,
+	title = "Dynamic Quorums for DHT-based P2P Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.17",
+	author = "Roberto Baldoni and Leonardo Querzoni and Antonino Virgillito and Ricardo Jim{\'e}nez-Peris and Marta Pati{\~n}o-Mart\'{\i}nez",
+	pages = "91-100"}
+
+@inproceedings{DBLP:conf/nca/BoulkenafedHMBC05,
+	title = "Providing Hard Real-Time Guarantees in Context-Aware Applications:
+               Challenges and Requirements.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.42",
+	author = "Malika Boulkenafed and Barbara Hughes and Ren{\'e} Meier and Gregory Biegel and Vinny Cahill",
+	pages = "119-127"}
+
+@inproceedings{DBLP:conf/nca/BunzliMN05,
+	title = "Protocol Composition Frameworks A Header-Driven Model.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.41",
+	author = "Daniel C. B{\"u}nzli and Sergio Mena and Uwe Nestmann",
+	pages = "243-246"}
+
+@inproceedings{DBLP:conf/nca/CarvalhoAR05,
+	title = "Scalable QoS-Based Event Routing in Publish-Subscribe Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.45",
+	author = "Nuno Carvalho and Filipe Ara{\'u}jo and Lu\'{\i}s Rodrigues",
+	pages = "101-108"}
+
+@inproceedings{DBLP:conf/nca/CharpentierPQ05,
+	title = "Cooperative Mobile Agents to Gather Global Information.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.13",
+	author = "Michel Charpentier and G{\'e}rard Padiou and Philippe Qu{\'e}innec",
+	pages = "271-274"}
+
+@inproceedings{DBLP:conf/nca/CheKM05,
+	title = "Fundamental Network Processor Performance Bounds.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.24",
+	author = "Hao Che and Chethan Kumar and Basavaraj Menasinahal",
+	pages = "179-185"}
+
+@inproceedings{DBLP:conf/nca/ChenY05,
+	title = "Supporting Rate-based Control in DiffServ Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.51",
+	author = "Chin-Ling Chen and Jia-Chun Yu",
+	pages = "67-72"}
+
+@inproceedings{DBLP:conf/nca/CiorbaADPT05,
+	title = "Reducing the Communication Cost via Chain Pattern Scheduling.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.43",
+	author = "Florina M. Ciorba and Theodore Andronikos and Ioannis Drositis and George K. Papakonstantinou and Panayotis Tsanakas",
+	pages = "186-196"}
+
+@inproceedings{DBLP:conf/nca/DemirG05,
+	title = "Improving Transaction Server Performance under Heavy Loads
+               with Differentiated Service and Active Network Interfaces.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.26",
+	author = "Onur Demir and Kanad Ghose",
+	pages = "251-254"}
+
+@inproceedings{DBLP:conf/nca/Elmer05,
+	title = "Opening Address.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.38",
+	author = "T. Elmer",
+	pages = 1}
+
+@inproceedings{DBLP:conf/nca/EugsterGH05,
+	title = "Location-based Publish/Subscribe.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.29",
+	author = "Patrick Th. Eugster and Beno\^{\i}t Garbinato and Adrian Holzer",
+	pages = "279-282"}
+
+@inproceedings{DBLP:conf/nca/FragkiadakisP05,
+	title = "Performance Evaluation of a PC-based Active Router and Analysis
+               of an Active Secure FTP Application.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.39",
+	author = "Alexandros G. Fragkiadakis and David J. Parish",
+	pages = "283-286"}
+
+@inproceedings{DBLP:conf/nca/FrechetteA05,
+	title = "Method for Task Migration in Grid Environments.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.31",
+	author = "Stephen Frechette and Dimiter R. Avresky",
+	pages = "49-58"}
+
+@inproceedings{DBLP:conf/nca/GandhiTLA05,
+	title = "Controlling the Coverage of Grid Information Dissemination
+               Protocols.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.12",
+	author = "Bhavin Gandhi and Sameer Tilak and Michael J. Lewis and Nael B. Abu-Ghazaleh",
+	pages = "267-270"}
+
+@inproceedings{DBLP:conf/nca/GaubatzS05,
+	title = "Leveraging the Multiprocessing Capabilities of Modern Network
+               Processors for Cryptographic Acceleration.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.28",
+	author = "Gunnar Gaubatz and Berk Sunar",
+	pages = "235-238"}
+
+@inproceedings{DBLP:conf/nca/GeorgiouMS05,
+	title = "Developing a Consistent Domain-Oriented Distributed Object
+               Service.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.16",
+	author = "Chryssis Georgiou and Peter M. Musial and Alexander A. Shvartsman",
+	pages = "149-158"}
+
+@inproceedings{DBLP:conf/nca/Ghosh05,
+	title = "Challenges in Mobile Networking and Information Assurance.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.11",
+	author = "A. Ghosh",
+	pages = 9}
+
+@inproceedings{DBLP:conf/nca/HuangSLM05,
+	title = "Smart Tunnel Union for NAT Traversal.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.50",
+	author = "Tzu-Chi Huang and Ce-Kuen Shieh and Wen-Huang Lai and Yu-Ben Miao",
+	pages = "227-231"}
+
+@inproceedings{DBLP:conf/nca/JanicIWZM05,
+	title = "Hopcount in Application Layer Multicast Schemes.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.25",
+	author = "Milena Janic and Novi Ineke and Cempaka Wangi and Xiaoming Zhou and Piet Van Mieghem",
+	pages = "197-204"}
+
+@inproceedings{DBLP:conf/nca/Katsinis05,
+	title = "Block Migration in Broadcast-based Multiprocessor Architectures.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.9",
+	author = "Constantine Katsinis",
+	pages = "231-234"}
+
+@inproceedings{DBLP:conf/nca/KhazanY05,
+	title = "A Wide Area Network Simulation of Single-Round Group Membership
+               Algorithms.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.5",
+	author = "Roger Khazan and Sophia Yuditskaya",
+	pages = "159-170"}
+
+@inproceedings{DBLP:conf/nca/KostoulasPGBD05,
+	title = "Decentralized Schemes for Size Estimation in Large and Dynamic
+               Groups.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.15",
+	author = "Dionysios Kostoulas and Dimitrios Psaltoulis and Indranil Gupta and Ken Birman and Al Demers",
+	pages = "41-48"}
+
+@inproceedings{DBLP:conf/nca/KumarGSS05,
+	title = "C-CORE: Using Communication Cores for High Performance Network
+               Services.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.10",
+	author = "Sanjay Kumar and Ada Gavrilovska and Karsten Schwan and Srikanth Sundaragopalan",
+	pages = "171-178"}
+
+@inproceedings{DBLP:conf/nca/KupsysE05,
+	title = "Architectural Issues of JMS Compliant Group Communication.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.7",
+	author = "Arnas Kupsys and Richard Ekwall",
+	pages = "139-148"}
+
+@inproceedings{DBLP:conf/nca/LabordeBB05,
+	title = "A formal framework (Expression + Analysis) for network security.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.2",
+	author = "Romain Laborde and Fran\c{c}ois Barr{\`e}re and Abdelmalek Benzekri",
+	pages = "223-227"}
+
+@inproceedings{DBLP:conf/nca/Laprie05,
+	title = "Resilience for the Scalability of Dependability.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.44",
+	author = "Jean-Claude Laprie",
+	pages = "5-6"}
+
+@inproceedings{DBLP:conf/nca/LodiPRT05,
+	title = "Experimental Evaluation of a QoS-aware Application Server.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.19",
+	author = "Giorgia Lodi and Fabio Panzieri and Davide Rossi and Elisa Turrini",
+	pages = "259-262"}
+
+@inproceedings{DBLP:conf/nca/MelchorD05,
+	title = "pMIX: Untraceability for Small Hiding Groups.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.40",
+	author = "Carlos Aguilar Melchor and Yves Deswarte",
+	pages = "29-40"}
+
+@inproceedings{DBLP:conf/nca/PaulKR05,
+	title = "LAWN: A Protocol for Remote Authentication overWireless
+               Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.27",
+	author = "Arnab Paul and Rajnish Kumar and Umakishore Ramachandran",
+	pages = "21-28"}
+
+@inproceedings{DBLP:conf/nca/SchielyRF05,
+	title = "Self-organization in Cooperative Content Distribution Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.46",
+	author = "Marc Schiely and Lars Renfer and Pascal Felber",
+	pages = "109-118"}
+
+@inproceedings{DBLP:conf/nca/SearsYG05,
+	title = "An Adaptive Reputation-based Trust Framework for Peer-to-Peer
+               Applications.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.6",
+	author = "William Sears and Zhen Yu and Yong Guan",
+	pages = "13-20"}
+
+@inproceedings{DBLP:conf/nca/ShankarC05,
+	title = "A Policy-based Management Framework for Pervasive Systems
+               using Axiomatized Rule-Actions.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.3",
+	author = "Chetan Shiva Shankar and Roy H. Campbell",
+	pages = "255-258"}
+
+@inproceedings{DBLP:conf/nca/SingS05,
+	title = "TCP New Vegas: Improving the Performance of TCP Vegas Over
+               High Latency Links.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.52",
+	author = "Joel Sing and Ben Soh",
+	pages = "73-82"}
+
+@inproceedings{DBLP:conf/nca/SuzakiIYTG05,
+	title = "SFS-KNOPPIX.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.47",
+	author = "Kuniyasu Suzaki and Kengo Iijima and Toshiki Yagi and Hideyuki Tan and Kazuhiro Goto",
+	pages = "247-250"}
+
+@inproceedings{DBLP:conf/nca/TasneemLAS05,
+	title = "Using Residual Times to Meet Deadlines in M/G/C Queues.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.53",
+	author = "Sarah Tasneem and Lester Lipsky and Reda A. Ammar and Howard A. Sholl",
+	pages = "128-138"}
+
+@inproceedings{DBLP:conf/nca/Taylor05,
+	title = "New Generation Scalable and Dependable Servers.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.36",
+	author = "Robert W. Taylor",
+	pages = 8}
+
+@inproceedings{DBLP:conf/nca/WanY05,
+	title = "Coverage by Randomly Deployed Wireless Sensor Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.14",
+	author = "Peng-Jun Wan and Chih-Wei Yi",
+	pages = "275-278"}
+
+@inproceedings{DBLP:conf/nca/WangM05,
+	title = "A Probabilistic Approach for Achieving Fair Bandwidth Allocations
+               in CSFQ.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.4",
+	author = "Peng Wang and David L. Mills",
+	pages = "59-66"}
+
+@inproceedings{DBLP:conf/nca/WepiweS05,
+	title = "A Concentric Multi-ring Overlay for Highly Reliable P2P
+               Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.1",
+	author = "Giscard Wepiw{\'e} and Plamen L. Simeonov",
+	pages = "83-90"}
+
+@inproceedings{DBLP:conf/nca/Zhao05,
+	title = "Effectiveness of Traffic Camouflaging over Computer Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.18",
+	author = "Wei Zhao",
+	pages = 7}
+
+@inproceedings{DBLP:conf/nca/ZhouLWC05,
+	title = "Multicast in Fat-Tree-Based InfiniBand Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.32",
+	author = "Jiazheng Zhou and Xuan-Yi Lin and Chun-Hsien Wu and Yeh-Ching Chung",
+	pages = "239-242"}
+
+@inproceedings{DBLP:conf/nca/ZhuFB05,
+	title = "On the Effectiveness of Continuous-Time Mixes under Flow-Correlation
+               Based Anonymity Attacks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2005.37",
+	author = "Ye Zhu and Xinwen Fu and Riccardo Bettati",
+	pages = "215-218"}
+
+@default year = 2004
+
+@inproceedings{DBLP:conf/nca/AgahDBA04,
+	title = "Intrusion Detection in Sensor Networks: A Non-Cooperative
+               Game Approach.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420343abs.htm",
+	author = "Afrand Agah and Sajal K. Das and Kalyan Basu and Mehran Asadi",
+	pages = "343-346"}
+
+@inproceedings{DBLP:conf/nca/AntoniosL04,
+	title = "On the Relationship Between Packet Size and Router Performance
+               for Heavy-Tailed Traffic.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420235abs.htm",
+	author = "Imad Antonios and Lester Lipsky",
+	pages = "235-242"}
+
+@inproceedings{DBLP:conf/nca/AraujoR04,
+	title = "GeoPeer: A Location-Aware Peer-to-Peer System.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420039abs.htm",
+	author = "Filipe Ara{\'u}jo and Lu\'{\i}s Rodrigues",
+	pages = "39-46"}
+
+@inproceedings{DBLP:conf/nca/ArgyroudisVTO04,
+	title = "Performance Analysis of Cryptographic Protocols on Handheld
+               Devices.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420169abs.htm",
+	author = "Patroklos G. Argyroudis and Raja Verma and Hitesh Tewari and Donal O'Mahony",
+	pages = "169-174"}
+
+@inproceedings{DBLP:conf/nca/BirrerB04,
+	title = "Resilient Peer-to-Peer Multicast from the Ground Up.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420351abs.htm",
+	author = "Stefan Birrer and Fabi{\'a}n E. Bustamante",
+	pages = "351-355"}
+
+@inproceedings{DBLP:conf/nca/BohioM04,
+	title = "Self-Healing in Group Key Distribution Using Subset Difference
+               Method.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420405abs.htm",
+	author = "Muhammad J. Bohio and Ali Miri",
+	pages = "405-408"}
+
+@inproceedings{DBLP:conf/nca/BottazziCM04,
+	title = "Context-Awareness for Impromptu Collaboration in MANETs.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420339abs.htm",
+	author = "Dario Bottazzi and Antonio Corradi and Rebecca Montanari",
+	pages = "339-342"}
+
+@inproceedings{DBLP:conf/nca/BourasS04,
+	title = "An Adaptive Admission Control Algorithm for Bandwidth Brokers.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420243abs.htm",
+	author = "Christos Bouras and Kostas Stamos",
+	pages = "243-250"}
+
+@inproceedings{DBLP:conf/nca/ChenM04,
+	title = "A Fair Synchronization Protocol with Cheat Proofing for
+               Decentralized Online Multiplayer Games.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420372abs.htm",
+	author = "Bei Di Chen and Muthucumaru Maheswaran",
+	pages = "372-375"}
+
+@inproceedings{DBLP:conf/nca/ChoiBHGY04,
+	title = "Volunteer Availability based Fault Tolerant Scheduling Mechanism
+               in Desktop Grid Computing Environment.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420366abs.htm",
+	author = "SungJin Choi and MaengSoon Baik and Chong-Sun Hwang and Joon-Min Gil and Heon-Chang Yu",
+	pages = "366-371"}
+
+@inproceedings{DBLP:conf/nca/CholviFJR04,
+	title = "A Methodological Construction of an Efficient Sequential
+               Consistency Protocol.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420141abs.htm",
+	author = "Vicent Cholvi and Antonio Fern{\'a}ndez and Ernesto Jim{\'e}nez and Michel Raynal",
+	pages = "141-148"}
+
+@inproceedings{DBLP:conf/nca/ChronopoulosBVK04,
+	title = "Implementation of Distributed Key Generation Algorithms
+               using Secure Sockets.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420393abs.htm",
+	author = "Anthony T. Chronopoulos and F. Balbi and D. Veljkovic and N. Kolani",
+	pages = "393-398"}
+
+@inproceedings{DBLP:conf/nca/CollinsP04,
+	title = "Downloading Replicated, Wide-Area Files - A Framework and
+               Empirical Evaluation.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420089abs.htm",
+	author = "Rebecca L. Collins and James S. Plank",
+	pages = "89-96"}
+
+@inproceedings{DBLP:conf/nca/CorradiMT04,
+	title = "Context-Based Access Control Management in Ubiquitous Environments.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420253abs.htm",
+	author = "Antonio Corradi and Rebecca Montanari and Daniela Tibaldi",
+	pages = "253-260"}
+
+@inproceedings{DBLP:conf/nca/DeswarteP04,
+	title = "Intrusion Tolerance for Internet Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420035abs.htm",
+	author = "Yves Deswarte and David Powell",
+	pages = "35-36"}
+
+@inproceedings{DBLP:conf/nca/DolevK04,
+	title = "HyperTree for Self-Stabilizing Peer-to-Peer Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420025abs.htm",
+	author = "Shlomi Dolev and Ronen I. Kat",
+	pages = "25-32"}
+
+@inproceedings{DBLP:conf/nca/EkwallMPS04,
+	title = "Towards Flexible Finite-State-Machine-Based Protocol Composition.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420281abs.htm",
+	author = "Richard Ekwall and Sergio Mena and Stefan Pleisch and Andr{\'e} Schiper",
+	pages = "281-286"}
+
+@inproceedings{DBLP:conf/nca/Foag04,
+	title = "Speculative Network Processor for Quality-of-Service-Aware
+               Protocol Processing.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420207abs.htm",
+	author = "J{\"u}rgen Foag",
+	pages = "207-214"}
+
+@inproceedings{DBLP:conf/nca/FortinoMR04,
+	title = "A Multi-Policy, Cooperative Playback Control Protocol.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420297abs.htm",
+	author = "Giancarlo Fortino and Carlo Mastroianni and Wilma Russo",
+	pages = "297-302"}
+
+@inproceedings{DBLP:conf/nca/GanekHSMH04,
+	title = "The Response to IT Complexity: Autonomic Computing.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420151abs.htm",
+	author = "Alan G. Ganek and Cristiane P. Hilkner and John W. Sweitzer and Brent Miller and Joseph L. Hellerstein",
+	pages = "151-157"}
+
+@inproceedings{DBLP:conf/nca/GrizzardKOCD04,
+	title = "Towards an Approach for Automatically Repairing Compromised
+               Network Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420389abs.htm",
+	author = "Julian B. Grizzard and Sven Krasser and Henry L. Owen and Gregory J. Conti and Eric R. Dodson",
+	pages = "389-392"}
+
+@inproceedings{DBLP:conf/nca/IyengarTLA04,
+	title = "Non-Uniform Information Dissemination for Dynamic Grid Resource
+               Discovery.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420097abs.htm",
+	author = "Vishal Iyengar and Sameer Tilak and Michael J. Lewis and Nael B. Abu-Ghazaleh",
+	pages = "97-106"}
+
+@inproceedings{DBLP:conf/nca/Jacques-SilvaDGW04,
+	title = "FIONA: A Fault Injector for Dependability Evaluation of
+               Java-Based Network Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420303abs.htm",
+	author = "Gabriela Jacques-Silva and Roberto Jung Drebes and J{\'u}lio Gerchman and Taisy Silva Weber",
+	pages = "303-308"}
+
+@inproceedings{DBLP:conf/nca/KamenopoulosOT04,
+	title = "Distance Measurement in Volunteer Computing Networks: A
+               Completely Decentralized Approach.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420399abs.htm",
+	author = "Dimitris Kamenopoulos and Iosif A. Osman and Panayotis Tsanakas",
+	pages = "399-404"}
+
+@inproceedings{DBLP:conf/nca/KawaiKY04,
+	title = "A Fast Polling I/O Implementation with Real-time Signals.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420317abs.htm",
+	author = "Eiji Kawai and Youki Kadobayashi and Suguru Yamaguchi",
+	pages = "317-322"}
+
+@inproceedings{DBLP:conf/nca/Krause04,
+	title = "Are Processors Free? Impact on RDMA and Protocol Off-Load
+               Technologies.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420203.pdf",
+	author = "Michael Krause",
+	pages = "203-"}
+
+@inproceedings{DBLP:conf/nca/KupsysPSW04,
+	title = "Towards JMS Compliant Group Communication - A Semantic Mapping.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420131abs.htm",
+	author = "Arnas Kupsys and Stefan Pleisch and Andr{\'e} Schiper and Matthias Wiesmann",
+	pages = "131-140"}
+
+@inproceedings{DBLP:conf/nca/LehmanL04,
+	title = "PCoord: Network Position Estimation Using Peer-to-Peer Measurements.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420015abs.htm",
+	author = "Li-wei Lehman and Steven Lerman",
+	pages = "15-24"}
+
+@inproceedings{DBLP:conf/nca/LvC04,
+	title = "WonGoo: A Pure Peer-to-Peer Full Text Information Retrieval
+               System Based On Semantic Overlay Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420047abs.htm",
+	author = "Jianming Lv and Xueqi Cheng",
+	pages = "47-54"}
+
+@inproceedings{DBLP:conf/nca/MaachBM04,
+	title = "Shared Protection for Time Slotted Optical Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420333abs.htm",
+	author = "Abdelilah Maach and Gregor von Bochmann and Hussein T. Mouftah",
+	pages = "333-336"}
+
+@inproceedings{DBLP:conf/nca/MaheswaranMAM04,
+	title = "Towards a Quality of Service Aware Public Computing Utility.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420376abs.htm",
+	author = "Muthucumaru Maheswaran and Balasubramaneyam Maniymaran and Shah Asaduzzaman and Arindam Mitra",
+	pages = "376-379"}
+
+@inproceedings{DBLP:conf/nca/ManoK04,
+	title = "The Nepi Network Programming System: A Programming Environment
+               for Distributed Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420287abs.htm",
+	author = "Ken Mano and Yoshinobu Kawabe",
+	pages = "287-292"}
+
+@inproceedings{DBLP:conf/nca/MelamedK04,
+	title = "Araneola: A Scalable Reliable Multicast System for Dynamic
+               Environments.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420005abs.htm",
+	author = "Roie Melamed and Idit Keidar",
+	pages = "5-14"}
+
+@inproceedings{DBLP:conf/nca/Mneimneh04,
+	title = "An Iterative Switching Algorithm With (Possibly) One Iteration.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420223abs.htm",
+	author = "Saad Mneimneh",
+	pages = "223-231"}
+
+@inproceedings{DBLP:conf/nca/NaqviR04,
+	title = "VIPSEC: Virtualized and Pluggable Security Services Infrastructure
+               for Adaptive Grid Computing.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420362abs.htm",
+	author = "Syed Naqvi and Michel Riguidel",
+	pages = "362-365"}
+
+@inproceedings{DBLP:conf/nca/OlaruT04,
+	title = "Request Distribution-Aware Caching in Cluster-Based Web
+               Servers.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420311abs.htm",
+	author = "Vlad Olaru and Walter F. Tichy",
+	pages = "311-316"}
+
+@inproceedings{DBLP:conf/nca/OmariHV04,
+	title = "Traveling Token for Dynamic Load Balancing.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420329abs.htm",
+	author = "Tariq Omari and Seyed H. Hosseini and K. Vairavan",
+	pages = "329-332"}
+
+@inproceedings{DBLP:conf/nca/OsendorferTTM04,
+	title = "ViSMI: Software Distributed Shared Memory for InfiniBand
+               Clusters.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420185abs.htm",
+	author = "Christian Osendorfer and Jie Tao and Carsten Trinitis and Martin Mairandres",
+	pages = "185-191"}
+
+@inproceedings{DBLP:conf/nca/QianAZ04,
+	title = "Myrinet Networks: A Performance Study.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420323abs.htm",
+	author = "Ying Qian and Ahmad Afsahi and Reza Zamani",
+	pages = "323-328"}
+
+@inproceedings{DBLP:conf/nca/QinH04,
+	title = "Frequent Episode Rules for Internet Anomaly Detection.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420161abs.htm",
+	author = "Min Qin and Kai Hwang",
+	pages = "161-168"}
+
+@inproceedings{DBLP:conf/nca/RomanoQC04,
+	title = "A Protocol for Improved User Perceived QoS in Web Transactional
+               Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420069abs.htm",
+	author = "Paolo Romano and Francesco Quaglia and Bruno Ciciani",
+	pages = "69-76"}
+
+@inproceedings{DBLP:conf/nca/RuffoSSP04,
+	title = "WALTy: A User Behavior Tailored Tool for Evaluating Web
+               Application Performance.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420077abs.htm",
+	author = "Giancarlo Ruffo and Rossano Schifanella and Matteo Sereno and Roberto Politi",
+	pages = "77-86"}
+
+@inproceedings{DBLP:conf/nca/Schiper04,
+	title = "Group Communication: Where Are We Today and Future Challenges.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420109abs.htm",
+	author = "Andr{\'e} Schiper",
+	pages = "109-117"}
+
+@inproceedings{DBLP:conf/nca/Segal04,
+	title = "Exploring the Network/Software Boundary: A Telecommunications
+               Perspective.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420057.pdf",
+	author = "Mark E. Segal",
+	pages = "57-"}
+
+@inproceedings{DBLP:conf/nca/ShenT04,
+	title = "Location-Triggered Routing Protocol in Mobile Ad Hoc Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420261abs.htm",
+	author = "Zhengming Shen and Johnson Thomas",
+	pages = "261-268"}
+
+@inproceedings{DBLP:conf/nca/SokolowskiG04,
+	title = "Performance of the NAS Parallel Benchmarks on Grid Enabled
+               Clusters.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420356abs.htm",
+	author = "Philip J. Sokolowski and Daniel Grosu",
+	pages = "356-361"}
+
+@inproceedings{DBLP:conf/nca/SukhtankarHR04,
+	title = "A Novel Switch Architecture for High-Performance Computing
+               and Signal Processing Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420215abs.htm",
+	author = "Satyen Sukhtankar and Diana Hecht and Warren Rosen",
+	pages = "215-222"}
+
+@inproceedings{DBLP:conf/nca/SwintPKLYCMW04,
+	title = "Infopipes: The ISL/ISG Implementation Evaluation.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420293abs.htm",
+	author = "Galen S. Swint and Calton Pu and Younggyun Koh and Ling Liu and Wenchang Yan and Charles Consel and Koichi Moriyama and Jonathan Walpole",
+	pages = "293-296"}
+
+@inproceedings{DBLP:conf/nca/TauberLT04,
+	title = "Compiling IOA without Global Synchronization.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420121abs.htm",
+	author = "Joshua A. Tauber and Nancy A. Lynch and Michael J. Tsai",
+	pages = "121-130"}
+
+@inproceedings{DBLP:conf/nca/Torrellas04,
+	title = "A Framework for Multi-Agent System Engineering using Ontology
+               Domain Modelling for Security Architecture Risk Assessment
+               in E-Commerce Security Services.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420409abs.htm",
+	author = "Gustavo A. Santana Torrellas",
+	pages = "409-412"}
+
+@inproceedings{DBLP:conf/nca/UngureanuMK04,
+	title = "The LC Assignment Policy for Cluster-Based Servers.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420177abs.htm",
+	author = "Victoria Ungureanu and Benjamin Melamed and Michael Katehakis",
+	pages = "177-184"}
+
+@inproceedings{DBLP:conf/nca/WilliamsS04,
+	title = "Optimal Parameter Selection for Efficient Memory Integrity
+               Verification Using Merkle Hash Trees.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420383abs.htm",
+	author = "Dan Williams and Emin G{\"u}n Sirer",
+	pages = "383-388"}
+
+@inproceedings{DBLP:conf/nca/WuK04,
+	title = "Objective-Greedy Algorithms for Long-Term Web Prefetching.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420061abs.htm",
+	author = "Bin Wu and Ajay D. Kshemkalyani",
+	pages = "61-68"}
+
+@inproceedings{DBLP:conf/nca/XunKB04,
+	title = "Using a Task-Specific QoS for Controlling Sensing Requests
+               and Scheduling.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420269abs.htm",
+	author = "Yong Xun and Mieczyslaw M. Kokar and Kenneth Baclawski",
+	pages = "269-276"}
+
+@inproceedings{DBLP:conf/nca/ZhuWDK04,
+	title = "Dynamic Key Messaging for Cluster Computing.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2004/2242/00/22420192abs.htm",
+	author = "Ming Zhu and Yang Wang and Meng Ding and Constantine Katsinis",
+	pages = "192-199"}
+
+@default year = 2003
+
+@inproceedings{DBLP:conf/nca/AndreoliniCN03,
+	title = "Kernel-based Web switches providing content-aware routing.",
+	ee = "http://computer.org/proceedings/nca/1938/19380025abs.htm",
+	author = "Mauro Andreolini and Michele Colajanni and Marcello Nuccio",
+	pages = "25-32"}
+
+@inproceedings{DBLP:conf/nca/AntoniosL03,
+	title = "A Performance Model and Analysis of Heterogeneous Traffic
+               with Heavy Tails.",
+	ee = "http://computer.org/proceedings/nca/1938/19380367abs.htm",
+	author = "Imad Antonios and Lester Lipsky",
+	pages = "367-373"}
+
+@inproceedings{DBLP:conf/nca/AtighetchiPWJ03,
+	title = "Adaptive Use of Network-Centric Mechanisms in Cyber-Defense.",
+	ee = "http://computer.org/proceedings/nca/1938/19380179abs.htm",
+	author = "Michael Atighetchi and Partha Pratim Pal and Franklin Webber and Christopher C. Jones",
+	pages = "179-"}
+
+@inproceedings{DBLP:conf/nca/BachmeirT03,
+	title = "Scalable Diverse Protected Multicast as a Programmable Service
+               Leveraging IP-Multicast.",
+	ee = "http://computer.org/proceedings/nca/1938/19380097abs.htm",
+	author = "Christian Bachmeir and Peter Tabery",
+	pages = "97-104"}
+
+@inproceedings{DBLP:conf/nca/BaggioS03,
+	title = "Transparent Distributed Redirection of HTTP Requests.",
+	ee = "http://computer.org/proceedings/nca/1938/19380017abs.htm",
+	author = "Aline Baggio and Maarten van Steen",
+	pages = "17-24"}
+
+@inproceedings{DBLP:conf/nca/BohmB03,
+	title = "Policy Based Architecture for the UMTS Multimedia Domain.",
+	ee = "http://computer.org/proceedings/nca/1938/19380275abs.htm",
+	author = "Wolfgang B{\"o}hm and Peter Braun",
+	pages = "275-288"}
+
+@inproceedings{DBLP:conf/nca/BoulkenafedI03,
+	title = "AdHocFS: Sharing Files in WLANs.",
+	ee = "http://computer.org/proceedings/nca/1938/19380156abs.htm",
+	author = "Malika Boulkenafed and Val{\'e}rie Issarny",
+	pages = "156-"}
+
+@inproceedings{DBLP:conf/nca/BourasS03,
+	title = "Performance analysis for a DiffServ-enabled network: The
+               case of Relative Service.",
+	ee = "http://computer.org/proceedings/nca/1938/19380381abs.htm",
+	author = "Christos Bouras and Afrodite Sevasti",
+	pages = "381-388"}
+
+@inproceedings{DBLP:conf/nca/BrennanCS03,
+	title = "Split-Layer Video Multicast Protocol: A New Receiver-Based
+               Rate-Adaptation Protocol.",
+	ee = "http://computer.org/proceedings/nca/1938/19380105abs.htm",
+	author = "Simon C. Brennan and Naveen K. Chilamkurti and Ben Soh",
+	pages = "105-112"}
+
+@inproceedings{DBLP:conf/nca/CassadayDCG03,
+	title = "High Speed System Area Networks (InfiniBand) - Challenges
+               and solutions.",
+	ee = "http://computer.org/proceedings/nca/1938/19380219.pdf",
+	author = "D. Cassaday and K. Dierling and I. Colloff and D. Garcia",
+	pages = "219-"}
+
+@inproceedings{DBLP:conf/nca/ChandF03,
+	title = "Scalable Protocol for Content-Based Routing in Overlay Networks.",
+	ee = "http://computer.org/proceedings/nca/1938/19380123abs.htm",
+	author = "Rapha{\"e}l Chand and Pascal Felber",
+	pages = "123-130"}
+
+@inproceedings{DBLP:conf/nca/ChesterfieldS03,
+	title = "An Extensible RTCP Control Framework for Large Multimedia
+               Distributions.",
+	ee = "http://computer.org/proceedings/nca/1938/19380351abs.htm",
+	author = "Julian Chesterfield and Eve M. Schooler",
+	pages = "351-358"}
+
+@inproceedings{DBLP:conf/nca/ChoiPGJPKL03,
+	title = "Fault Tolerant Memory Design for HW/SW Co-Reliability in
+               Massively Parallel Computing Systems.",
+	ee = "http://computer.org/proceedings/nca/1938/19380341abs.htm",
+	author = "Minsu Choi and N.-J. Park and K. M. George and B. Jin and Nohpill Park and Yong-Bin Kim and Fabrizio Lombardi",
+	pages = "341-"}
+
+@inproceedings{DBLP:conf/nca/ChungC03,
+	title = "Analysis of Active Queue Management.",
+	ee = "http://computer.org/proceedings/nca/1938/19380359abs.htm",
+	author = "Jae Chung and Mark Claypool",
+	pages = "359-366"}
+
+@inproceedings{DBLP:conf/nca/FortinoMR03,
+	title = "Performance Analysis of an Application-level Cooperative
+               Control Protocol.",
+	ee = "http://computer.org/proceedings/nca/1938/19380305abs.htm",
+	author = "Giancarlo Fortino and Carlo Mastroianni and Wilma Russo",
+	pages = "305-"}
+
+@inproceedings{DBLP:conf/nca/Foster03,
+	title = "Building an Open Grid.",
+	ee = "http://dlib.computer.org/conferen/nca/1938/pdf/19380191.pdf",
+	author = "Ian T. Foster",
+	pages = "191-"}
+
+@inproceedings{DBLP:conf/nca/FriederGC03,
+	title = "On Scalable Information Retrieval Systems.",
+	ee = "http://computer.org/proceedings/nca/1938/19380241abs.htm",
+	author = "Ophir Frieder and David A. Grossman and Abdur Chowdhury",
+	pages = "241-256"}
+
+@inproceedings{DBLP:conf/nca/GarciaDS03,
+	title = "LSOM: A Link State Protocol Over Mac Addresses for Metropolitan
+               Backbones Using Optical Ethernet Switches.",
+	ee = "http://computer.org/proceedings/nca/1938/19380315abs.htm",
+	author = "Rom{\'a}n Garc\'{\i}a and Jos{\'e} Duato and Federico Silla",
+	pages = "315-321"}
+
+@inproceedings{DBLP:conf/nca/GrosuC03,
+	title = "A Truthful Mechanism for Fair Load Balancing in Distributed
+               Systems.",
+	ee = "http://computer.org/proceedings/nca/1938/19380289abs.htm",
+	author = "Daniel Grosu and Anthony T. Chronopoulos",
+	pages = "289-296"}
+
+@inproceedings{DBLP:conf/nca/GuimaraesR03,
+	title = "A Genetic Algorithm for Multicast Mapping in Publish-Subscribe
+               Systems.",
+	ee = "http://computer.org/proceedings/nca/1938/19380067abs.htm",
+	author = "M{\'a}rio Guimar{\~a}es and Lu\'{\i}s Rodrigues",
+	pages = "67-74"}
+
+@inproceedings{DBLP:conf/nca/JiangB03,
+	title = "Optimal Content Placement for En-Route Web Caching.",
+	ee = "http://computer.org/proceedings/nca/1938/19380009abs.htm",
+	author = "Anxiao Jiang and Jehoshua Bruck",
+	pages = "9-16"}
+
+@inproceedings{DBLP:conf/nca/JiangW03,
+	title = "A Limited-Global Information Model for Dynamic Fault-Tolerant
+               Routing in Cube-Based Multicomputers.",
+	ee = "http://computer.org/proceedings/nca/1938/19380333abs.htm",
+	author = "Zhen Jiang and Jie Wu",
+	pages = "333-340"}
+
+@inproceedings{DBLP:conf/nca/KatsinisH03,
+	title = "SOME-Bus-NOW: A Network of Workstations with Broadcast.",
+	ee = "http://computer.org/proceedings/nca/1938/19380113abs.htm",
+	author = "Constantine Katsinis and Diana Hecht",
+	pages = "113-"}
+
+@inproceedings{DBLP:conf/nca/KimMT03,
+	title = "Admission Control in Peer Groups.",
+	ee = "http://computer.org/proceedings/nca/1938/19380131abs.htm",
+	author = "Yongdae Kim and Daniele Mazzocchi and Gene Tsudik",
+	pages = "131-139"}
+
+@inproceedings{DBLP:conf/nca/LancellottiCC03,
+	title = "Distributed Cooperation Schemes for Document Lookup in Multiple
+               Cache Servers.",
+	ee = "http://computer.org/proceedings/nca/1938/19380043abs.htm",
+	author = "Riccardo Lancellotti and Bruno Ciciani and Michele Colajanni",
+	pages = "43-50"}
+
+@inproceedings{DBLP:conf/nca/Landwehr03,
+	title = "NSF Activities in Cyber Trust.",
+	ee = "http://computer.org/proceedings/nca/1938/19380085.pdf",
+	author = "Carl E. Landwehr",
+	pages = "85-"}
+
+@inproceedings{DBLP:conf/nca/LeeW03,
+	title = "Adaptive Resource Selection for Grid-Enabled Network Services.",
+	ee = "http://computer.org/proceedings/nca/1938/19380075abs.htm",
+	author = "Byoung-Dai Lee and Jon B. Weissman",
+	pages = "75-"}
+
+@inproceedings{DBLP:conf/nca/LiM03,
+	title = "The Implication of Short-Range Dependency on Delay Variation
+               Measurement.",
+	ee = "http://computer.org/proceedings/nca/1938/19380374abs.htm",
+	author = "Qiong Li and David L. Mills",
+	pages = "374-380"}
+
+@inproceedings{DBLP:conf/nca/McKinnonDDHLBS03,
+	title = "A Configurable Middleware Framework with Multiple Quality
+               of Service Properties for Small Embedded Systems.",
+	ee = "http://computer.org/proceedings/nca/1938/19380197abs.htm",
+	author = "A. David McKinnon and Kevin E. Dorow and Tarana R. Damania and Olav Haugan and Wesley E. Lawrence and David E. Bakken and John C. Shovic",
+	pages = "197-204"}
+
+@inproceedings{DBLP:conf/nca/Mehra03,
+	title = "The Quest for the Perfect Server for Network Computing Applications.",
+	ee = "http://computer.org/proceedings/nca/1938/19380215.pdf",
+	author = "Pankaj Mehra",
+	pages = "215-"}
+
+@inproceedings{DBLP:conf/nca/MirkovicPR03,
+	title = "Source-End DDoS Defense.",
+	ee = "http://computer.org/proceedings/nca/1938/19380171abs.htm",
+	author = "Jelena Mirkovic and Gregory Prier and Peter L. Reiher",
+	pages = "171-178"}
+
+@inproceedings{DBLP:conf/nca/QinY03,
+	title = "Blocking Probability in WDM Multicast Switching Networks
+               with Limited Wavelength Conversion.",
+	ee = "http://computer.org/proceedings/nca/1938/19380322abs.htm",
+	author = "Xiangdong Qin and Yuanyuan Yang",
+	pages = "322-"}
+
+@inproceedings{DBLP:conf/nca/RawatK03,
+	title = "SWIFT: Scheduling in Web Servers for Fast Response Time.",
+	ee = "http://computer.org/proceedings/nca/1938/19380051abs.htm",
+	author = "Mayank Rawat and Ajay D. Kshemkalyani",
+	pages = "51-58"}
+
+@inproceedings{DBLP:conf/nca/SalasinM03,
+	title = "Leveraging Grid Technology in Network-centric Environments.",
+	ee = "http://dlib.computer.org/conferen/nca/1938/pdf/19380003.pdf",
+	author = "John Salasin and Assad Moini",
+	pages = "3-"}
+
+@inproceedings{DBLP:conf/nca/SayalSV03,
+	title = "Content Replication in Web++.",
+	ee = "http://computer.org/proceedings/nca/1938/19380033abs.htm",
+	author = "Mehmet Sayal and Peter Scheuermann and Radek Vingralek",
+	pages = "33-"}
+
+@inproceedings{DBLP:conf/nca/Strayer03,
+	title = "Privacy Issues in an Insecure World.",
+	ee = "http://computer.org/proceedings/nca/1938/19380167.pdf",
+	author = "W. Timothy Strayer",
+	pages = "167-"}
+
+@inproceedings{DBLP:conf/nca/TangLP03,
+	title = "Trigger Grouping: A Scalable Approach to Large Scale Information
+               Monitoring.",
+	ee = "http://computer.org/proceedings/nca/1938/19380148abs.htm",
+	author = "Wei Tang and Ling Liu and Calton Pu",
+	pages = "148-155"}
+
+@inproceedings{DBLP:conf/nca/TriantafillouA03,
+	title = "Web Proxy Cache Replacement: Do's, Don'ts, and Expectations.",
+	ee = "http://computer.org/proceedings/nca/1938/19380059abs.htm",
+	author = "Peter Triantafillou and Ioannis Aekaterinidis",
+	pages = "59-66"}
+
+@inproceedings{DBLP:conf/nca/TuduceG03,
+	title = "Organizing a Distributed Application in a Mobile Ad Hoc
+               Network.",
+	ee = "http://computer.org/proceedings/nca/1938/19380231abs.htm",
+	author = "Cristian Tuduce and Thomas R. Gross",
+	pages = "231-"}
+
+@inproceedings{DBLP:conf/nca/UchidaHN03,
+	title = "Scheduling Correlated Broadcast Data Considering Access
+               Frequencies with Temporal Variations.",
+	ee = "http://computer.org/proceedings/nca/1938/19380089abs.htm",
+	author = "Wataru Uchida and Takahiro Hara and Shojiro Nishio",
+	pages = "89-96"}
+
+@inproceedings{DBLP:conf/nca/UyarZFS03,
+	title = "Performance Study of Reliable Server Pooling.",
+	ee = "http://computer.org/proceedings/nca/1938/19380205abs.htm",
+	author = "M. {\"U}mit Uyar and Jianliang Zheng and Mariusz A. Fecko and Sunil Samtani",
+	pages = "205-"}
+
+@inproceedings{DBLP:conf/nca/VidalD03,
+	title = "Reducing the Reservation Establisment Time in IP Tunnels
+               by Using Staged Refresh Timers.",
+	ee = "http://computer.org/proceedings/nca/1938/19380389abs.htm",
+	author = "Paulo Cesar S. Vidal and Otto Carlos Muniz Bandeira Duarte",
+	pages = "389-"}
+
+@inproceedings{DBLP:conf/nca/WangG03,
+	title = "G-REMiT: An Algorithm for Building Energy Efficient Multicast
+               Trees in Wireless Ad Hoc Networks.",
+	ee = "http://computer.org/proceedings/nca/1938/19380265abs.htm",
+	author = "Bin Wang and Sandeep K. S. Gupta",
+	pages = "265-"}
+
+@inproceedings{DBLP:conf/nca/WangXBZ03,
+	title = "A Study of Providing Statistical QoS in a Differentiated
+               Sevices Network.",
+	ee = "http://computer.org/proceedings/nca/1938/19380297abs.htm",
+	author = "Shengquan Wang and Dong Xuan and Riccardo Bettati and Wei Zhao",
+	pages = "297-304"}
+
+@inproceedings{DBLP:conf/nca/WiesmannDS03,
+	title = "Group Communication based on Standard Interfaces.",
+	ee = "http://computer.org/proceedings/nca/1938/19380140abs.htm",
+	author = "Matthias Wiesmann and Xavier D{\'e}fago and Andr{\'e} Schiper",
+	pages = "140-147"}
+
+@inproceedings{DBLP:conf/nca/WuBBD03,
+	title = "Network Assisted IP Mobility Support in Wireless LANs.",
+	ee = "http://computer.org/proceedings/nca/1938/19380257abs.htm",
+	author = "Wei Wu and Nilanjan Banerjee and Kalyan Basu and Sajal K. Das",
+	pages = "257-264"}
+
+@inproceedings{DBLP:conf/nca/XiaoLWD03,
+	title = "Fault-oriented Software Robustness Assessment for Multicast
+               Protocols.",
+	ee = "http://computer.org/proceedings/nca/1938/19380223abs.htm",
+	author = "Shu Xiao and Sheng Li and Xiangrong Wang and Lijun Deng",
+	pages = "223-230"}
+
+@default year = 2001
+
+@inproceedings{DBLP:conf/nca/AdamsKRHANS01,
+	title = "Simulation Experiments of a High-Performance RapidIO-based
+               Processing Architecture.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962550",
+	author = "Jonathan Adams and Constantine Katsinis and Warren Rosen and Diana Hecht and Vaughn Adams and Harsha Narravula and Satyen Sukhtankar",
+	pages = "336-339"}
+
+@inproceedings{DBLP:conf/nca/Al-HashimiPPL01,
+	title = "Dependability under Malicious Agreement in N-modular Redundancy-on-Demand
+               Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962518",
+	author = "Mohammad A. Al-Hashimi and Huay-min H. Pu and Nohpill Park and Fabrizio Lombardi",
+	pages = "80-93"}
+
+@inproceedings{DBLP:conf/nca/AmaroL01,
+	title = "Performance Analysis of a Wireless MAN.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962555",
+	author = "Jos{\'e} Carlos Amaro and Rui Pedro Lopes",
+	pages = "358-363"}
+
+@inproceedings{DBLP:conf/nca/AvreskySNZM01,
+	title = "Optimal Utilization of Equivalent Paths in Computer Networks
+               with Static Routing.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962525",
+	author = "Dimiter R. Avresky and Vladimir Shurbanov and Natcho H. Natchev and F. Zuccarino and Pankaj Mehra",
+	pages = "133-144"}
+
+@inproceedings{DBLP:conf/nca/BakkaliK01,
+	title = "A Predicate Calculus Logic for the PKI Trust Model Analysis.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962557",
+	author = "Hanane El Bakkali and Bahia Idrissi Kaitouni",
+	pages = "368-371"}
+
+@inproceedings{DBLP:conf/nca/BakkerST01,
+	title = "A Law-Abiding Peer-to-Peer Network for Free-Software Distribution.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962516",
+	author = "Arno Bakker and Maarten van Steen and Andrew S. Tanenbaum",
+	pages = "60-67"}
+
+@inproceedings{DBLP:conf/nca/BhuyanW01,
+	title = "Execution-Driven Simulation of IP Router Architectures.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962526",
+	author = "Laxmi N. Bhuyan and Hu-Jun Wang",
+	pages = "145-157"}
+
+@inproceedings{DBLP:conf/nca/Birman01,
+	title = "Scalability Challenges and Solutions for Emerging Networks.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2001/1432/00/14320002.pdf",
+	author = "Kenneth P. Birman",
+	pages = 2}
+
+@inproceedings{DBLP:conf/nca/BozgaGM01,
+	title = "Automated Validation of Distributed Software Using the IF
+               Environment.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962542",
+	author = "Marius Bozga and Susanne Graf and Laurent Mounier",
+	pages = "268-275"}
+
+@inproceedings{DBLP:conf/nca/BrasileiroGTHN01,
+	title = "Eva: An Event-Based Framework for Developing Specialized
+               Communication Protocols.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962523",
+	author = "Francisco Vilar Brasileiro and Fab\'{\i}ola Greve and Frederic Tronel and Michel Hurfin and Jean-Pierre Le Narzul",
+	pages = "108-121"}
+
+@inproceedings{DBLP:conf/nca/CasadoBQD01,
+	title = "Influence of Network Size and Load on the Performance of
+               Reconfiguration Protocols.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962515",
+	author = "Rafael Casado and Aurelio Berm{\'u}dez and Francisco J. Quiles and Jos{\'e} Duato",
+	pages = "46-59"}
+
+@inproceedings{DBLP:conf/nca/ChimmaneeW01,
+	title = "Application Routing Load Balancing (ARLB) to Support QoS
+               for VoIP Application over a VPNs Environment.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962519",
+	author = "Sanon Chimmanee and Komwut Wipusitwarakun",
+	pages = "94-99"}
+
+@inproceedings{DBLP:conf/nca/ChronopoulosGBW01,
+	title = "Static Load Balancing for CFD Simulations on a Network of
+               Workstations.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962556",
+	author = "Anthony T. Chronopoulos and Daniel Grosu and Manuel Benche and Andrew M. Wissink",
+	pages = "364-367"}
+
+@inproceedings{DBLP:conf/nca/CzerwinskiJ01,
+	title = "Using Simple Remote Evaluation to Enable Efficient Application
+               Protocols in Mobile Environments.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962529",
+	author = "Steven E. Czerwinski and Anthony D. Joseph",
+	pages = "162-173"}
+
+@inproceedings{DBLP:conf/nca/Dongarra01,
+	title = "NetSolve and Its Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2001/1432/00/14320021.pdf",
+	author = "Jack Dongarra",
+	pages = 21}
+
+@inproceedings{DBLP:conf/nca/Duato01,
+	title = "On the Design of High-Speed Switch Fabrics.",
+	ee = "http://csdl2.computer.org/dl/proceedings/nca/2001/1432/00/14320158.pdf",
+	author = "Jos{\'e} Duato",
+	pages = 158}
+
+@inproceedings{DBLP:conf/nca/Follett01,
+	title = "Distributed Storage Networking Architectures: Fibre Channel,
+               iSCSI, Ethernet, InfiniBand, Hyper Transport, Rapid IO {\&}
+               3GIO Collide in the Data Center.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2001/1432/00/14320159.pdf",
+	author = "David R. Follett",
+	pages = 159}
+
+@inproceedings{DBLP:conf/nca/GonneGP01,
+	title = "Monitoring of Mobile Agents in Large Cluster Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962551",
+	author = "Marco G{\"o}nne and Claus Grewe and Holger Pals",
+	pages = "340-343"}
+
+@inproceedings{DBLP:conf/nca/Holliday01,
+	title = "Replicated Database Recovery Using Multicast Communication.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962522",
+	author = "JoAnne Holliday",
+	pages = "104-107"}
+
+@inproceedings{DBLP:conf/nca/Horst01,
+	title = "IP Storage and the CPU Consumption Myth.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962532",
+	author = "Robert W. Horst",
+	pages = "194-200"}
+
+@inproceedings{DBLP:conf/nca/HwangG01,
+	title = "Micro-Firewalls for Dynamic Network Security with Distributed
+               Intrusion Detection.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962517",
+	author = "Kai Hwang and Muralidaran Gangadharan",
+	pages = "68-79"}
+
+@inproceedings{DBLP:conf/nca/JebaliM01,
+	title = "Replica Divergence Control Protocol in Weakly Connected
+               Environment.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962537",
+	author = "Ahmed Jebali and Mesaac Makpangou",
+	pages = "230-233"}
+
+@inproceedings{DBLP:conf/nca/KhanG01,
+	title = "Network Aware Video Transcoding for Symbiotic Rate Adaptation
+               on Interactive Transport.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962533",
+	author = "Javed I. Khan and Qiong Gu",
+	pages = "201-213"}
+
+@inproceedings{DBLP:conf/nca/KimYD01,
+	title = "Calculation of Deadline Missing Probability in a QoS Capable
+               Cluster Interconnect.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962514",
+	author = "Eun Jung Kim and Ki Hwan Yum and Chita R. Das",
+	pages = "36-45"}
+
+@inproceedings{DBLP:conf/nca/Leighton01,
+	title = "The Challenges of Delivering Content on the Internet.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2001/1432/00/14320214.pdf",
+	author = "Frank Thomson Leighton",
+	pages = 214}
+
+@inproceedings{DBLP:conf/nca/LesleyF01,
+	title = "Reconfigurable Algorithms in View Synchrony.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962541",
+	author = "Nicole Lesley and Alan David Fekete",
+	pages = "256-267"}
+
+@inproceedings{DBLP:conf/nca/Levendel01,
+	title = "There Is More to Service Carrier-Grade Quality Than Quality
+               of Service (QoS).",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962545",
+	author = "Isaac Levendel",
+	pages = "290-297"}
+
+@inproceedings{DBLP:conf/nca/Li01,
+	title = "Box-to-Box Disk Mirroring Using Ethernet.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962552",
+	author = "Qiang Li",
+	pages = "344-349"}
+
+@inproceedings{DBLP:conf/nca/LipskyJGS01,
+	title = "Comparison of the Analytic N-Burst Model with Other Approximations
+               to Telecommunications Traffic.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962524",
+	author = "Lester Lipsky and Manfred R. Jobmann and Michael Greiner and Hans-Peter Schwefel",
+	pages = "122-132"}
+
+@inproceedings{DBLP:conf/nca/Lundell01,
+	title = "A Fault-Tolerant Approach to Network Security.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2001/1432/00/14320227.pdf",
+	author = "Jonathan Lundell",
+	pages = 227}
+
+@inproceedings{DBLP:conf/nca/MalewiczRS01,
+	title = "Local Scheduling for Distributed Cooperation.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962540",
+	author = "Grzegorz Malewicz and Alexander Russell and Alexander A. Shvartsman",
+	pages = "244-255"}
+
+@inproceedings{DBLP:conf/nca/ManolakosGF01,
+	title = "Component-Based Peer-to-Peer Distributed Processing in Heterogeneous
+               Networks Using JAVA PORTS.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962538",
+	author = "Elias S. Manolakos and Demetris G. Galatopoullos and Andrew P. Funk",
+	pages = "234-237"}
+
+@inproceedings{DBLP:conf/nca/Mehra01,
+	title = "Trends in System Area Networking.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962510",
+	author = "Pankaj Mehra",
+	pages = "3-8"}
+
+@inproceedings{DBLP:conf/nca/MelloPT01,
+	title = "A Java Cluster Management Service.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962539",
+	author = "Rodrigo Fernandes de Mello and Maria Stela V. Paiva and Lu\'{\i}s Carlos Trevelin",
+	pages = "238-243"}
+
+@inproceedings{DBLP:conf/nca/MoleroSSD01,
+	title = "On the Scalability of Topologies for Storage Area Networks
+               in Building Environments.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962549",
+	author = "Xavier Molero and Federico Silla and Vicente Santonja and Jos{\'e} Duato",
+	pages = "332-335"}
+
+@inproceedings{DBLP:conf/nca/OrgiyanF01,
+	title = "Tapping TCP Streams.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962544",
+	author = "Maxim Orgiyan and Christof Fetzer",
+	pages = "278-289"}
+
+@inproceedings{DBLP:conf/nca/PereiraORK01,
+	title = "Probabilistic Semantically Reliable Multicast.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962521",
+	author = "Jos{\'e} Orlando Pereira and Rui Carlos Oliveira and Lu\'{\i}s Rodrigues and Anne-Marie Kermarrec",
+	pages = "100-103"}
+
+@inproceedings{DBLP:conf/nca/PetriniCFH01,
+	title = "Hardware- and Software-Based Collective Communication on
+               the Quadrics Network.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962513",
+	author = "Fabrizio Petrini and Salvador Coll and Eitan Frachtenberg and Adolfy Hoisie",
+	pages = "24-35"}
+
+@inproceedings{DBLP:conf/nca/PlankAW01,
+	title = "The Effect of Timeout Prediction and Selection on Wide Area
+               Collective Operations.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962548",
+	author = "James S. Plank and Matthew S. Allen and Richard Wolski",
+	pages = "320-331"}
+
+@inproceedings{DBLP:conf/nca/Quynh01,
+	title = "The Influence of Proportional Jitter and Delay on End to
+               End Delay in Differentiated Service Network.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962554",
+	author = "Thu Ngo Quynh",
+	pages = "354-357"}
+
+@inproceedings{DBLP:conf/nca/Roy01,
+	title = "Real Time Resource Management and Adaptive Parallel Programming
+               for a Cluster of Computers: A Comparison of Different Approaches
+               in a Computationally Intensive Environment.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962535",
+	author = "Nilay K. Roy",
+	pages = "216-226"}
+
+@inproceedings{DBLP:conf/nca/SantoroCQC01,
+	title = "Two-Tier Cooperation: A Scalable Protocol for Web Cache
+               Sharing.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962531",
+	author = "Andrea Santoro and Bruno Ciciani and Francesco Quaglia and Michele Colajanni",
+	pages = "186-193"}
+
+@inproceedings{DBLP:conf/nca/Schwefel01,
+	title = "Mobile Internet - Research Toy or Product Vision.",
+	ee = "http://csdl.computer.org/comp/proceedings/nca/2001/1432/00/14320276.pdf",
+	author = "Hans-Peter Schwefel",
+	pages = 276}
+
+@inproceedings{DBLP:conf/nca/SousaOMP01,
+	title = "Partial Replication in the Database State Machine.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962546",
+	author = "Ant{\'o}nio Lu\'{\i}s Pinto Ferreira de Sousa and Rui Carlos Oliveira and Francisco Moura and Fernando Pedone",
+	pages = "298-309"}
+
+@inproceedings{DBLP:conf/nca/SwanyW01,
+	title = "Data Logistics in Network Computing: The Logistical Session
+               Layer.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962530",
+	author = "D. Martin Swany and Richard Wolski",
+	pages = "174-185"}
+
+@inproceedings{DBLP:conf/nca/TengM01,
+	title = "Limited Scope Probing: A Distributed Approach for QoS-Based
+               Routing.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962553",
+	author = "Kia Seong Teng and Muthucumaru Maheswaran",
+	pages = "350-353"}
+
+@inproceedings{DBLP:conf/nca/Waldo01,
+	title = "Constructing Ad Hoc Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962511",
+	author = "Jim Waldo",
+	pages = "9-20"}
+
+@inproceedings{DBLP:conf/nca/WeerasingheAL01,
+	title = "An Analytic Performance Model of Parallel Systems that Perform
+               N Tasks Using P Processors That Can Fail.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/NCA.2001.962547",
+	author = "Gehan Weerasinghe and Imad Antonios and Lester Lipsky",
+	pages = "310-319"}

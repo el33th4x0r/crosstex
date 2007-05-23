@@ -1,0 +1,235 @@
+@include conferences-cs
+
+@default bibsource = "DBLP, http://dblp.uni-trier.de"
+
+@default booktitle = dsl
+
+@default year = 1999
+
+@inproceedings{DBLP:conf/dsl/BonacheaFRS99,
+	title = "Hancock: a language for processing very large-scale data.",
+	ee = "http://doi.acm.org/10.1145/331960.331981",
+	author = "Dan Bonachea and Kathleen Fisher and Anne Rogers and Frederick Smith",
+	pages = "163-176"}
+
+@inproceedings{DBLP:conf/dsl/FernandezST99,
+	title = "Declarative specification of data-intensive Web sites.",
+	ee = "http://doi.acm.org/10.1145/331960.331979",
+	author = "Mary F. Fernandez and Dan Suciu and Igor Tatarinov",
+	pages = "135-148"}
+
+@inproceedings{DBLP:conf/dsl/GuyerL99,
+	title = "An annotation language for optimizing software libraries.",
+	ee = "http://doi.acm.org/10.1145/331960.331970",
+	author = "Samuel Z. Guyer and Calvin Lin",
+	pages = "39-52"}
+
+@inproceedings{DBLP:conf/dsl/JenningsB99,
+	title = "Verischemelog: Verilog embedded in Scheme.",
+	ee = "http://doi.acm.org/10.1145/331960.331978",
+	author = "James Jennings and Eric Beuscher",
+	pages = "123-134"}
+
+@inproceedings{DBLP:conf/dsl/LeijenM99,
+	title = "Domain specific embedded compilers.",
+	ee = "http://doi.acm.org/10.1145/331960.331977",
+	author = "Daan Leijen and Erik Meijer",
+	pages = "109-122"}
+
+@inproceedings{DBLP:conf/dsl/LiM99,
+	title = "A collaboration specification language.",
+	ee = "http://doi.acm.org/10.1145/331960.331980",
+	author = "Du Li and Richard R. Muntz",
+	pages = "149-162"}
+
+@inproceedings{DBLP:conf/dsl/MenonP99,
+	title = "A case for source-level transformations in MATLAB.",
+	ee = "http://doi.acm.org/10.1145/331960.331972",
+	author = "Vijay Menon and Keshav Pingali",
+	pages = "53-65"}
+
+@inproceedings{DBLP:conf/dsl/NakataniAOP99,
+	title = "Jargons for domain engineering.",
+	ee = "http://doi.acm.org/10.1145/331960.331966",
+	author = "Lloyd H. Nakatani and Mark A. Ardis and Robert G. Olsen and Paul M. Pontrelli",
+	pages = "15-24"}
+
+@inproceedings{DBLP:conf/dsl/Parson99,
+	title = "Using Java reflection to automate extension language parsing.",
+	ee = "http://doi.acm.org/10.1145/331960.331974",
+	author = "Dale Parson",
+	pages = "67-80"}
+
+@inproceedings{DBLP:conf/dsl/PetersonH99,
+	title = "Monadic robotics.",
+	ee = "http://doi.acm.org/10.1145/331960.331976",
+	author = "John Peterson and Gregory D. Hager",
+	pages = "95-108"}
+
+@inproceedings{DBLP:conf/dsl/ReichweinRB99,
+	title = "Slicing spreadsheets: an integrated methodology for spreadsheet
+               testing and debugging.",
+	ee = "http://doi.acm.org/10.1145/331960.331968",
+	author = "James Reichwein and Gregg Rothermel and Margaret M. Burnett",
+	pages = "25-38"}
+
+@inproceedings{DBLP:conf/dsl/SheardBP99,
+	title = "DSL implementation using staging and monads.",
+	ee = "http://doi.acm.org/10.1145/331960.331975",
+	author = "Tim Sheard and Zine-El-Abidine Benaissa and Emir Pasalic",
+	pages = "81-94"}
+
+@inproceedings{DBLP:conf/dsl/SirerB99,
+	title = "Using production grammars in software testing.",
+	ee = "http://doi.acm.org/10.1145/331960.331965",
+	author = "Emin G{\"u}n Sirer and Brian N. Bershad",
+	pages = "1-13"}
+
+@default year = 1997
+
+@inproceedings{DBLP:conf/dsl/AntoniottiG97,
+	title = "SHIFT and SMART-AHS: A Language for Hybrid System Engineering
+               Modeling and Simulation.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/antoniotti.html",
+	author = "Marco Antoniotti and Aleks G{\"o}ll{\"u}",
+	pages = "171-182"}
+
+@inproceedings{DBLP:conf/dsl/AtkinsBBBCMR97,
+	title = "Experience with a Domain Specific Language for Form-based
+               Services.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/atkins.html",
+	author = "David Atkins and Thomas Ball and Michael Benedikt and Glenn Bruns and Kenneth C. Cox and Peter Mataga and Kenneth Rehor",
+	pages = "37-50"}
+
+@inproceedings{DBLP:conf/dsl/BertrandA97,
+	title = "BDL: A Language to Control the Behavior of Concurrent Objects.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/bertrand.html",
+	author = "Fr{\'e}d{\'e}ric Bertrand and Michel Augeraud",
+	pages = "133-144"}
+
+@inproceedings{DBLP:conf/dsl/CardelliD97,
+	title = "Service Combinators for Web Computing.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/cardelli.html",
+	author = "Luca Cardelli and Rowan Davies",
+	pages = "1-10"}
+
+@inproceedings{DBLP:conf/dsl/ChandraLDRWA97,
+	title = "Experience with a Language for Writing Coherence Protocols.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/chandra.html",
+	author = "Satish Chandra and James R. Larus and Michael Dahlin and Brad Richards and Randolph Y. Wang and Thomas E. Anderson",
+	pages = "51-66"}
+
+@inproceedings{DBLP:conf/dsl/Crew97,
+	title = "ASTLOG: A Language for Examining Abstract Syntax Trees.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/crew.html",
+	author = "Roger F. Crew"}
+
+@inproceedings{DBLP:conf/dsl/DineshT97,
+	title = "A Slicing-Based Approach for Locating Type Errors.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/dinesh.html",
+	author = "T. B. Dinesh and Frank Tip"}
+
+@inproceedings{DBLP:conf/dsl/Elliott97,
+	title = "Modeling Interactive 3D and Multimedia Animation with an
+               Embedded Language.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/elliott.html",
+	author = "Conal Elliott",
+	pages = "285-296"}
+
+@inproceedings{DBLP:conf/dsl/Engler97,
+	title = "Incorporating Application Semantics and Control into Compilation.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/engler.html",
+	author = "Dawson R. Engler"}
+
+@inproceedings{DBLP:conf/dsl/FaithNP97,
+	title = "KHEPERA: A System for Rapid Implementation of Domain Specific
+               Languages.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/faith.html",
+	author = "Rickard E. Faith and Lars S. Nyland and Jan Prins"}
+
+@inproceedings{DBLP:conf/dsl/Fuchs97,
+	title = "Domain Specific Languages for ad hoc Distributed Applications.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/fuchs.html",
+	author = "Matthew Fuchs",
+	pages = "27-36"}
+
+@inproceedings{DBLP:conf/dsl/Hudak97,
+	title = "Keynote Address - The Promise of Domain-Specific Languages.",
+	author = "Paul Hudak"}
+
+@inproceedings{DBLP:conf/dsl/KaminH97,
+	title = "A Special-Purpose Language for Picture-Drawing.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/kamin.html",
+	author = "Samuel N. Kamin and David Hyatt",
+	pages = "297-312"}
+
+@inproceedings{DBLP:conf/dsl/KlarlundS97,
+	title = "A Domain-Specific Language for Regular Sets of Strings and
+               Trees.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/klarlund.html",
+	author = "Nils Klarlund and Michael I. Schwartzbach"}
+
+@inproceedings{DBLP:conf/dsl/MedvidovicR97,
+	title = "Domains of Concern in Software Architectures and Architecture
+               Description Languages.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/medvidovic.html",
+	author = "Nenad Medvidovic and David S. Rosenblum",
+	pages = "199-212"}
+
+@inproceedings{DBLP:conf/dsl/MoreauQ97,
+	title = "Design and Semantics of Quantum: A Language to Control Resource
+               Consumption in Distributed Computing.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/moreau.html",
+	author = "Luc Moreau and Christian Queinnec"}
+
+@inproceedings{DBLP:conf/dsl/Ramming97,
+	title = "Opening Remarks.",
+	author = "J. Christopher Ramming"}
+
+@inproceedings{DBLP:conf/dsl/Shao97,
+	title = "Typed Common Intermediate Format.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/shao.html",
+	author = "Zhong Shao",
+	pages = "89-102"}
+
+@inproceedings{DBLP:conf/dsl/SmaragdakisB97,
+	title = "DiSTiL: A Transformation Library for Data Structures.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/smaragdakis.html",
+	author = "Yannis Smaragdakis and Don S. Batory"}
+
+@inproceedings{DBLP:conf/dsl/SpinellisG97,
+	title = "Lightweight Languages as Software Engineering Tools.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/spinellis.html",
+	author = "Diomidis Spinellis and V. Guruprasad",
+	pages = "67-76"}
+
+@inproceedings{DBLP:conf/dsl/StevensonF97,
+	title = "Programming Language Support for Digitized Images or, The
+               Monsters in the Closet.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/stevenson.html",
+	author = "Daniel E. Stevenson and Margaret M. Fleck",
+	pages = "271-284"}
+
+@inproceedings{DBLP:conf/dsl/StichnothG97,
+	title = "Code Composition as an Implementation Language for Compilers.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/stichnoth.html",
+	author = "James M. Stichnoth and Thomas R. Gross",
+	pages = "119-132"}
+
+@inproceedings{DBLP:conf/dsl/ThibaultMC97,
+	title = "A Domain Specific Language for Video Device Drivers: From
+               Design to Implementation.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/thibault.html",
+	author = "Scott Thibault and Renaud Marlet and Charles Consel",
+	pages = "11-26"}
+
+@inproceedings{DBLP:conf/dsl/WangAKS97,
+	title = "The Zephyr Abstract Syntax Description Language.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/wang.html",
+	author = "Daniel C. Wang and Andrew W. Appel and Jeffrey L. Korn and Christopher S. Serra",
+	pages = "213-228"}
+
+@inproceedings{DBLP:conf/dsl/WansbroughH97,
+	title = "A Modular Monadic Action Semantics.",
+	ee = "http://www.usenix.org/publications/library/proceedings/dsl97/wansbrough.html",
+	author = "Keith Wansbrough and John Hamer"}

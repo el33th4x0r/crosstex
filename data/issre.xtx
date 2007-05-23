@@ -1,0 +1,1756 @@
+@include conferences-cs
+
+@default bibsource = "DBLP, http://dblp.uni-trier.de"
+
+@default booktitle = issre
+
+@default year = 2006
+
+@inproceedings{DBLP:conf/issre/AcharyaXX06,
+	title = "Mining Interface Specifications for Generating Checkable
+               Robustness Properties.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.29",
+	author = "Mithun Acharya and Tao Xie and Jun Xu",
+	pages = "311-320"}
+
+@inproceedings{DBLP:conf/issre/AggarwalJ06,
+	title = "Monitoring the Security Health of Software Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.32",
+	author = "Ashish Aggarwal and Pankaj Jalote",
+	pages = "146-158"}
+
+@inproceedings{DBLP:conf/issre/AlhazmiM06,
+	title = "Measuring and Enhancing Prediction Capabilities of Vulnerability
+               Discovery Models for Apache and IIS HTTP Servers.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.26",
+	author = "Omar H. Alhazmi and Yashwant K. Malaiya",
+	pages = "343-352"}
+
+@inproceedings{DBLP:conf/issre/AranhaBL06,
+	title = "Model Simulation for Test Execution Capacity Estimation.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.30",
+	author = "Eduardo Aranha and Paulo Borba and Jos{\'e} Lima",
+	pages = "231-236"}
+
+@inproceedings{DBLP:conf/issre/BartlowC06,
+	title = "Evaluating the Reliability of Credential Hardening through
+               Keystroke Dynamics.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.25",
+	author = "Nick Bartlow and Bojan Cukic",
+	pages = "117-126"}
+
+@inproceedings{DBLP:conf/issre/BaekkenA06,
+	title = "A Candidate Fault Model for AspectJ Pointcuts.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.6",
+	author = "Jon S. B{\ae}kken and Roger T. Alexander",
+	pages = "169-178"}
+
+@inproceedings{DBLP:conf/issre/BracchiCC06,
+	title = "Modeling the Performance of Border Inspections with Electronic
+               Travel Documents.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.31",
+	author = "Paola Bracchi and Bojan Cukic and Vittorio Cortellessa",
+	pages = "237-246"}
+
+@inproceedings{DBLP:conf/issre/BreechTP06,
+	title = "An Attack Simulator for Systematically Testing Program-based
+               Security Mechanisms.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.12",
+	author = "Ben Breech and Mike Tegtmeyer and Lori L. Pollock",
+	pages = "136-145"}
+
+@inproceedings{DBLP:conf/issre/BrottierFSBT06,
+	title = "Metamodel-based Test Generation for Model Transformations:
+               an Algorithm and a Tool.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.27",
+	author = "Erwan Brottier and Franck Fleurey and Jim Steel and Benoit Baudry and Yves Le Traon",
+	pages = "85-94"}
+
+@inproceedings{DBLP:conf/issre/CapozuccaGPRZ06,
+	title = "CAA-DRIP: a framework for implementing Coordinated Atomic
+               Actions.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.18",
+	author = "Alfredo Capozucca and Nicolas Guelfi and Patrizio Pelliccione and Alexander Romanovsky and Avelino F. Zorzo",
+	pages = "385-394"}
+
+@inproceedings{DBLP:conf/issre/ChillaregeS06,
+	title = "``Tail-Splitting'' to Predict Failing Software Modules - with
+               a Case Study on an Operating Systems Product.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.1",
+	author = "Ram Chillarege and P. Santhanam",
+	pages = "191-196"}
+
+@inproceedings{DBLP:conf/issre/CuiLW06,
+	title = "A Novel SOAP Attachment-Oriented Security Model.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.7",
+	author = "Xiaoling Cui and Lei Li and Jun Wei",
+	pages = "127-135"}
+
+@inproceedings{DBLP:conf/issre/DiepCE06,
+	title = "Probe Distribution Techniques to Profile Events in Deployed
+               Software.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.36",
+	author = "Madeline Diep and Myra Cohen and Sebastian G. Elbaum",
+	pages = "331-342"}
+
+@inproceedings{DBLP:conf/issre/Dinh-TrongGF06,
+	title = "A Systematic Approach to Generate Inputs to Test UML Design
+               Models.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.10",
+	author = "Trung T. Dinh-Trong and Sudipto Ghosh and Robert B. France",
+	pages = "95-104"}
+
+@inproceedings{DBLP:conf/issre/FletcherC06,
+	title = "Softgoal Traceability Patterns.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.42",
+	author = "Jesse Fletcher and Jane Cleland-Huang",
+	pages = "363-374"}
+
+@inproceedings{DBLP:conf/issre/GokhaleM06,
+	title = "Queuing Models for Field Defect Resolution Process.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.38",
+	author = "Swapna S. Gokhale and Robert E. Mullen",
+	pages = "353-362"}
+
+@inproceedings{DBLP:conf/issre/Goseva-PopstojanovaHW06,
+	title = "Adequacy, Accuracy, Scalability, and Uncertainty of Architecture-based
+               Software Reliability: Lessons Learned from Large Empirical
+               Case Studies.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.11",
+	author = "Katerina Goseva-Popstojanova and Margaret Hamill and Xuan Wang",
+	pages = "197-203"}
+
+@inproceedings{DBLP:conf/issre/FisherRCB06,
+	title = "Scaling a Dataflow Testing Methodology to the MultiparadigmWorld
+               of Commercial Spreadsheets.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.40",
+	author = "Marc Fisher II and Gregg Rothermel and Tyler Creelan and Margaret M. Burnett",
+	pages = "13-22"}
+
+@inproceedings{DBLP:conf/issre/Kessler06,
+	title = "A Perspective on Software Consumability.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.8",
+	author = "Carl Kessler",
+	pages = 5}
+
+@inproceedings{DBLP:conf/issre/KudrjavetsNB06,
+	title = "Assessing the Relationship between Software Assertions and
+               Faults: An Empirical Investigation.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.14",
+	author = "Gunnar Kudrjavets and Nachiappan Nagappan and Thomas Ball",
+	pages = "204-212"}
+
+@inproceedings{DBLP:conf/issre/LeiCKGH06,
+	title = "A State Exploration-Based Approach to Testing Java Monitors.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.9",
+	author = "Yu Lei and Richard H. Carver and David Chenho Kung and Vidur Gupta and Monica Hernandez",
+	pages = "256-265"}
+
+@inproceedings{DBLP:conf/issre/LutzPB06,
+	title = "Tool-Supported Verification of Contingency Software Design
+               in Evolving, Autonomous Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.48",
+	author = "Robyn R. Lutz and Ann Patterson-Hine and Anupa Bajwa",
+	pages = "213-220"}
+
+@inproceedings{DBLP:conf/issre/MasriNP06,
+	title = "Memoized Forward Computation of Dynamic Slices.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.53",
+	author = "Wes Masri and Nagi Nahas and Andy Podgurski",
+	pages = "23-32"}
+
+@inproceedings{DBLP:conf/issre/McGraw06,
+	title = "Software Security: Building Security In.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.43",
+	author = "Gary McGraw",
+	pages = 6}
+
+@inproceedings{DBLP:conf/issre/McMasterM06,
+	title = "Call Stack Coverage for GUI Test-Suite Reduction.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.19",
+	author = "Scott McMaster and Atif M. Memon",
+	pages = "33-44"}
+
+@inproceedings{DBLP:conf/issre/MortensenGB06,
+	title = "Testing During Refactoring: Adding Aspects to Legacy Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.46",
+	author = "Michael Mortensen and Sudipto Ghosh and James M. Bieman",
+	pages = "221-230"}
+
+@inproceedings{DBLP:conf/issre/NagappanBM06,
+	title = "Using Historical In-Process and Product Metrics for Early
+               Estimation of Software Failures.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.50",
+	author = "Nachiappan Nagappan and Thomas Ball and Brendan Murphy",
+	pages = "62-74"}
+
+@inproceedings{DBLP:conf/issre/OkamuraD06,
+	title = "Building Phase-Type Software Reliability Models.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.17",
+	author = "Hiroyuki Okamura and Tadashi Dohi",
+	pages = "289-298"}
+
+@inproceedings{DBLP:conf/issre/OkamuraFD06,
+	title = "On the Effect of Fault Removal in Software Testing - Bayesian
+               Reliability Estimation Approach.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.33",
+	author = "Hiroyuki Okamura and Hitoshi Furumura and Tadashi Dohi",
+	pages = "247-255"}
+
+@inproceedings{DBLP:conf/issre/OwenDC06,
+	title = "Effectively Combining Software Verification Strategies:
+               Understanding Different Assumptions.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.24",
+	author = "David Owen and Dejan Desovski and Bojan Cukic",
+	pages = "321-330"}
+
+@inproceedings{DBLP:conf/issre/Ramamoorth06,
+	title = "Disaster Hardening for Software Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.23",
+	author = "C. V. Ramamoorthy",
+	pages = "3-4"}
+
+@inproceedings{DBLP:conf/issre/SampathSGP06,
+	title = "Web Application Testing with Customized Test Requirements
+               - An Experimental Comparison Study.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.51",
+	author = "Sreedevi Sampath and Sara Sprenkle and Emily Gibson and Lori L. Pollock",
+	pages = "266-278"}
+
+@inproceedings{DBLP:conf/issre/SeljimiP06,
+	title = "Using CLP to Automatically Generate Test Sequences for Synchronous
+               Programs with Numeric Inputs and Outputs.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.49",
+	author = "Besnik Seljimi and Ioannis Parissis",
+	pages = "105-116"}
+
+@inproceedings{DBLP:conf/issre/SharmaJ06,
+	title = "Stabilization Time - A Quality Metric for Software Products.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.44",
+	author = "Vibhu Saujanya Sharma and Pankaj Jalote",
+	pages = "45-51"}
+
+@inproceedings{DBLP:conf/issre/SharmaT06,
+	title = "Reliability and Performance of Component Based Software
+               Systems with Restarts, Retries, Reboots and Repairs.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.39",
+	author = "Vibhu Saujanya Sharma and Kishor S. Trivedi",
+	pages = "299-310"}
+
+@inproceedings{DBLP:conf/issre/SherriffW06,
+	title = "DevCOP: A Software Certificate Management System for Eclipse.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.22",
+	author = "Mark Sherriff and Laurie Williams",
+	pages = "375-384"}
+
+@inproceedings{DBLP:conf/issre/ShibataRD06,
+	title = "Metrics-Based Software Reliability Models Using Non-homogeneous
+               Poisson Processes.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.28",
+	author = "Kazuya Shibata and Koichiro Rinsaka and Tadashi Dohi",
+	pages = "52-61"}
+
+@inproceedings{DBLP:conf/issre/XieM06,
+	title = "Studying the Characteristics of a ``Good'' GUI Test Suite.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.45",
+	author = "Qing Xie and Atif M. Memon",
+	pages = "159-168"}
+
+@inproceedings{DBLP:conf/issre/XieZMN06,
+	title = "Detecting Redundant Unit Tests for AspectJ Programs.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.21",
+	author = "Tao Xie and Jianjun Zhao and Darko Marinov and David Notkin",
+	pages = "179-190"}
+
+@inproceedings{DBLP:conf/issre/YanLYSZ06,
+	title = "BPEL4WS Unit Testing: Test Case Generation Using a Concurrent
+               Path Analysis Approach.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.16",
+	author = "Jun Yan and Zhongjie Li and Yuan Yuan and Wei Sun and Jian Zhang",
+	pages = "75-84"}
+
+@inproceedings{DBLP:conf/issre/ZuoLW06,
+	title = "Combining Replication with Transaction Processing for Enhanced
+               Reliability in J2EE.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2006.20",
+	author = "Lin Zuo and Shaohua Liu and Jun Wei",
+	pages = "279-288"}
+
+@default year = 2005
+
+@inproceedings{DBLP:conf/issre/AlhazmiM05,
+	title = "Modeling the Vulnerability Discovery Process.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.30",
+	author = "Omar H. Alhazmi and Yashwant K. Malaiya",
+	pages = "129-138"}
+
+@inproceedings{DBLP:conf/issre/Beiroumi05,
+	title = "High Available Mobile Infrastructure Applications.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.21",
+	author = "Mohammad Zib Beiroumi",
+	pages = "181-190"}
+
+@inproceedings{DBLP:conf/issre/BriandLL05,
+	title = "Improving Statechart Testing Criteria Using Data Flow Information.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.24",
+	author = "Lionel C. Briand and Yvan Labiche and Q. Lin",
+	pages = "95-104"}
+
+@inproceedings{DBLP:conf/issre/CaiLV05,
+	title = "An Experimental Evaluation on Reliability Features of N-Version
+               Programming.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.7",
+	author = "Xia Cai and Michael R. Lyu and Mladen A. Vouk",
+	pages = "161-170"}
+
+@inproceedings{DBLP:conf/issre/CostaVPS05,
+	title = "Modeling Software Reliability Growth with Genetic Programming.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.29",
+	author = "Eduardo Oliveira Costa and Silvia Regina Vergilio and Aurora Trinidad Ramirez Pozo and Gustavo A. de Souza",
+	pages = "171-180"}
+
+@inproceedings{DBLP:conf/issre/ElbaumCGR05,
+	title = "Helping End-Users ``Engineer'' Dependable Web Applications.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.20",
+	author = "Sebastian G. Elbaum and Kalyan-Ram Chilakamarri and Bhuvana Gopal and Gregg Rothermel",
+	pages = "31-40"}
+
+@inproceedings{DBLP:conf/issre/Garzia05,
+	title = "Software Development SRE Needs.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.38",
+	author = "Mario R. Garzia",
+	pages = 6}
+
+@inproceedings{DBLP:conf/issre/Goseva-PopstojanovaHP05,
+	title = "Large Empirical Case Study of Architecture-Based Software
+               Reliability.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.25",
+	author = "Katerina Goseva-Popstojanova and Margaret Hamill and Ranganath Perugupalli",
+	pages = "43-52"}
+
+@inproceedings{DBLP:conf/issre/HuangLLBS05,
+	title = "Study of the Impact of Hardware Fault on Software Reliability.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.39",
+	author = "Bing Huang and Xiaojun Li and Ming Li and Joseph B. Bernstein and Carol Smidts",
+	pages = "63-72"}
+
+@inproceedings{DBLP:conf/issre/HuoP05,
+	title = "Covering Transitions of Concurrent Systems through Queues.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.15",
+	author = "Jiale Huo and Alexandre Petrenko",
+	pages = "335-345"}
+
+@inproceedings{DBLP:conf/issre/KanounCKRR05,
+	title = "Benchmarking the Dependability of Windows and Linux Using
+               PostMark Workloads.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.13",
+	author = "Karama Kanoun and Yves Crouzet and Ali Kalakech and Ana-Elena Rugina and Philippe Rumeau",
+	pages = "11-20"}
+
+@inproceedings{DBLP:conf/issre/KorelHCAGZ05,
+	title = "Data Dependence Based Testability Transformation in Automated
+               Test Generation.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.16",
+	author = "Bogdan Korel and Mark Harman and S. Chung and P. Apirukvorapinit and R. Gupta and Q. Zhang",
+	pages = "245-254"}
+
+@inproceedings{DBLP:conf/issre/LakehalP05,
+	title = "Lustructu: A Tool for the Automatic Coverage Assessment
+               of Lustre Programs.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.26",
+	author = "Abdesselam Lakehal and Ioannis Parissis",
+	pages = "301-310"}
+
+@inproceedings{DBLP:conf/issre/LeiA05,
+	title = "Minimization of Randomized Unit Test Cases.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.28",
+	author = "Yong Lei and James H. Andrews",
+	pages = "267-276"}
+
+@inproceedings{DBLP:conf/issre/LeiC05,
+	title = "A New Algorithm for Reachability Testing of Concurrent Programs.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.5",
+	author = "Yu Lei and Richard H. Carver",
+	pages = "346-355"}
+
+@inproceedings{DBLP:conf/issre/LeonPD05,
+	title = "Visualizing Similarity between Program Executions.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.45",
+	author = "David Leon and Andy Podgurski and William Dickinson",
+	pages = "311-321"}
+
+@inproceedings{DBLP:conf/issre/Li05,
+	title = "Prioritize Code for Testing to Improve Code Coverage of
+               Complex Software.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.33",
+	author = "J. Jenny Li",
+	pages = "75-84"}
+
+@inproceedings{DBLP:conf/issre/LiHS05,
+	title = "Forecasting Field Defect Rates Using a Combined Time-Based
+               and Metrics-Based Approach: A Case Study of OpenBSD.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.19",
+	author = "Paul Luo Li and James D. Herbsleb and Mary Shaw",
+	pages = "193-202"}
+
+@inproceedings{DBLP:conf/issre/LiuDL05,
+	title = "Safety Analysis of Software Product Lines Using State-Based
+               Modeling.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.36",
+	author = "Jing Liu and Josh Dehlinger and Robyn R. Lutz",
+	pages = "21-30"}
+
+@inproceedings{DBLP:conf/issre/MadaniOPBN05,
+	title = "Synchronous Testing of Multimodal Systems: An Operational
+               Profile-Based Approach.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.40",
+	author = "Laya Madani and Catherine Oriat and Ioannis Parissis and Jullien Bouchet and Laurence Nigay",
+	pages = "325-334"}
+
+@inproceedings{DBLP:conf/issre/MaityN05,
+	title = "Improved Test Generation Algorithms for Pair-Wise Testing.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.23",
+	author = "Soumen Maity and Amiya Nayak",
+	pages = "235-244"}
+
+@inproceedings{DBLP:conf/issre/MenaBKSI05,
+	title = "Assessing the Crash-Failure Assumption of Group Communication
+               Protocols.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.9",
+	author = "Sergio Mena and Claudio Basile and Zbigniew Kalbarczyk and Andr{\'e} Schiper and Ravi K. Iyer",
+	pages = "107-116"}
+
+@inproceedings{DBLP:conf/issre/MullenG05,
+	title = "Software Defect Rediscoveries: A Discrete Lognormal Model.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.37",
+	author = "Robert E. Mullen and Swapna S. Gokhale",
+	pages = "203-212"}
+
+@inproceedings{DBLP:conf/issre/Musa05,
+	title = "Teaching SRE to Software Practitioners.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.43",
+	author = "John D. Musa",
+	pages = 4}
+
+@inproceedings{DBLP:conf/issre/MusaW05,
+	title = "How Should Software Reliability Engineering Be Taught?",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.22",
+	author = "John D. Musa and Laurie A. Williams",
+	pages = 3}
+
+@inproceedings{DBLP:conf/issre/NagappanWOVA05,
+	title = "Providing Test Quality Feedback Using Static Source Code
+               and Automatic Test Suite Metrics.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.35",
+	author = "Nachiappan Nagappan and Laurie A. Williams and Jason Osborne and Mladen A. Vouk and Pekka Abrahamsson",
+	pages = "85-94"}
+
+@inproceedings{DBLP:conf/issre/Nikora05,
+	title = "Classifying Requirements: Towards a More Rigorous Analysis
+               of Natural-Language Specifications.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.14",
+	author = "Allen P. Nikora",
+	pages = "291-300"}
+
+@inproceedings{DBLP:conf/issre/OkamuraKD05,
+	title = "Markovian Modeling and Analysis of Internet Worm Propagation.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.27",
+	author = "Hiroyuki Okamura and Hisashi Kobayashi and Tadashi Dohi",
+	pages = "149-158"}
+
+@inproceedings{DBLP:conf/issre/PopicDAC05,
+	title = "Error Propagation in the Reliability Analysis of Component
+               Based Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.18",
+	author = "Petar Popic and Dejan Desovski and Walid Abdelmoez and Bojan Cukic",
+	pages = "53-62"}
+
+@inproceedings{DBLP:conf/issre/Smidts05,
+	title = "Teaching SRE in a Diverse Graduate Student Context.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.42",
+	author = "Carol Smidts",
+	pages = 7}
+
+@inproceedings{DBLP:conf/issre/SnipesH05,
+	title = "Designing an SRE Program for Commercial Software Organizations.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.17",
+	author = "Will Snipes and John P. Hudepohl",
+	pages = 8}
+
+@inproceedings{DBLP:conf/issre/TamiziWC05,
+	title = "Automated Checking for Windows Host Vulnerabilities.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.11",
+	author = "Matin Tamizi and Matt Weinstein and Michel Cukier",
+	pages = "139-148"}
+
+@inproceedings{DBLP:conf/issre/Williams05,
+	title = "Teaching an Active-Participation University Course in Software
+               Reliability and Testing.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.41",
+	author = "Laurie A. Williams",
+	pages = 5}
+
+@inproceedings{DBLP:conf/issre/XieN05,
+	title = "Automatically Identifying Special and Common Unit Tests
+               for Object-Oriented Programs.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.12",
+	author = "Tao Xie and David Notkin",
+	pages = "277-287"}
+
+@inproceedings{DBLP:conf/issre/XingGL05,
+	title = "A Novel Method for Early Software Quality Prediction Based
+               on Support Vector Machine.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.6",
+	author = "Fei Xing and Ping Guo and Michael R. Lyu",
+	pages = "213-222"}
+
+@inproceedings{DBLP:conf/issre/XuOL05,
+	title = "Testing Web Services by XML Perturbation.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.44",
+	author = "Wuzhi Xu and Jeff Offutt and Juan Luo",
+	pages = "257-266"}
+
+@inproceedings{DBLP:conf/issre/ZhengRWS05,
+	title = "An Initial Study of a Lightweight Process for Change Identification
+               and Regression Test Selection When Source Code Is Not Available.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.8",
+	author = "Jiang Zheng and Brian Robinson and Laurie A. Williams and Karen Smiley",
+	pages = "225-234"}
+
+@inproceedings{DBLP:conf/issre/ZhouL05,
+	title = "PORT: A Price-Oriented Reliable Transport Protocol for Wireless
+               Sensor Networks.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2005.32",
+	author = "Yangfan Zhou and Michael R. Lyu",
+	pages = "117-126"}
+
+@default year = 2004
+
+@inproceedings{DBLP:conf/issre/AlyokhinERP04,
+	title = "Coverage Metrics for Continuous Function Charts.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.15",
+	author = "Vadim Alyokhin and Benedikte Elbel and Martin Rothfelder and Alexander Pretschner",
+	pages = "257-268"}
+
+@inproceedings{DBLP:conf/issre/BracchiCC04,
+	title = "Performability Modeling of Mobile Software Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.27",
+	author = "Paola Bracchi and Bojan Cukic and Vittorio Cortellessa",
+	pages = "77-88"}
+
+@inproceedings{DBLP:conf/issre/CaiL04,
+	title = "An Empirical Study on Reliability Modeling for Diverse Software
+               Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.6",
+	author = "Xia Cai and Michael R. Lyu",
+	pages = "125-136"}
+
+@inproceedings{DBLP:conf/issre/CangussuKMD04,
+	title = "Software Release Control using Defect Based Quality Estimation.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.36",
+	author = "Jo{\~a}o W. Cangussu and Richard M. Karcich and Aditya P. Mathur and Raymond A. DeCarlo",
+	pages = "440-450"}
+
+@inproceedings{DBLP:conf/issre/ChilakamarriE04,
+	title = "Reducing Coverage Collection Overhead With Disposable Instrumentation.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.32",
+	author = "Kalyan-Ram Chilakamarri and Sebastian G. Elbaum",
+	pages = "233-244"}
+
+@inproceedings{DBLP:conf/issre/DavidssonZNWV04,
+	title = "GERT: An Empirical Reliability Estimation and Testing Feedback
+               Tool.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.21",
+	author = "Martin Davidsson and Jiang Zheng and Nachiappan Nagappan and Laurie A. Williams and Mladen A. Vouk",
+	pages = "269-280"}
+
+@inproceedings{DBLP:conf/issre/DeniseGG04,
+	title = "A Generic Method for Statistical Testing.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.2",
+	author = "Alain Denise and Marie-Claude Gaudel and Sandrine-Dominique Gouraud",
+	pages = "25-34"}
+
+@inproceedings{DBLP:conf/issre/DesovskiGLJC04,
+	title = "Validation and Reliability Estimation of a Fingerprint Image
+               Registration Software.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.46",
+	author = "Dejan Desovski and Vijai Gandikota and Yan Liu and Yue Jiang and Bojan Cukic",
+	pages = "306-313"}
+
+@inproceedings{DBLP:conf/issre/DoRK04,
+	title = "Empirical Studies of Test Case Prioritization in a JUnit
+               Testing Environment.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.18",
+	author = "Hyunsook Do and Gregg Rothermel and Alex Kinneer",
+	pages = "113-124"}
+
+@inproceedings{DBLP:conf/issre/EllimsBI04,
+	title = "Unit Testing in Practice.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.44",
+	author = "Michael Ellims and James Bridges and Darrel C. Ince",
+	pages = "3-13"}
+
+@inproceedings{DBLP:conf/issre/FarrCW04,
+	title = "Updates to the Schneidewind Software Reliability Model in
+               SMERFS.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.45",
+	author = "William H. Farr and John R. Crigler and Dolores R. Wallace",
+	pages = "379-390"}
+
+@inproceedings{DBLP:conf/issre/Feather04,
+	title = "Towards a Unified Approach to the Representation of, and
+               Reasoning with, Probabilistic Risk Information about Software
+               and Its System Interface.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.42",
+	author = "Martin S. Feather",
+	pages = "391-402"}
+
+@inproceedings{DBLP:conf/issre/FrancisLMP04,
+	title = "Tree-Based Methods for Classifying Software Failures.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.43",
+	author = "Patrick Francis and David Leon and Melinda Minch and Andy Podgurski",
+	pages = "451-462"}
+
+@inproceedings{DBLP:conf/issre/GittensLB04,
+	title = "An Extended Operational Profile Model.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.8",
+	author = "Mechelle Gittens and Hanan Lutfi Lutfiyya and Michael A. Bauer",
+	pages = "314-325"}
+
+@inproceedings{DBLP:conf/issre/GokhaleM04,
+	title = "From Test Count to Code Coverage using the Lognormal Failure
+               Rate.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.20",
+	author = "Swapna S. Gokhale and Robert E. Mullen",
+	pages = "295-305"}
+
+@inproceedings{DBLP:conf/issre/Goseva-PopstojanovaMS04,
+	title = "Empirical Study of Session-Based Workload and Reliability
+               for Web Servers.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.19",
+	author = "Katerina Goseva-Popstojanova and Sunil Mazimdar and Ajay Deep Singh",
+	pages = "403-414"}
+
+@inproceedings{DBLP:conf/issre/GuenMT04,
+	title = "Reliability Estimation for Statistical Usage Testing using
+               Markov Chains.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.33",
+	author = "H{\'e}l{\`e}ne le Guen and Raymond A. Marie and Thomas Thelin",
+	pages = "54-65"}
+
+@inproceedings{DBLP:conf/issre/GuoMCS04,
+	title = "Robust Prediction of Fault-Proneness by Random Forests.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.35",
+	author = "Lan Guo and Yan Ma and Bojan Cukic and Harshinder Singh",
+	pages = "417-428"}
+
+@inproceedings{DBLP:conf/issre/HuangTLK04,
+	title = "Non-Detrimental Web Application Security Scanning.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.25",
+	author = "Yao-Wen Huang and Chung-Hung Tsai and D. T. Lee and Sy-Yen Kuo",
+	pages = "219-230"}
+
+@inproceedings{DBLP:conf/issre/JaloteM04,
+	title = "Reliability Growth in Software Products.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.34",
+	author = "Pankaj Jalote and Brendan Murphy",
+	pages = "47-53"}
+
+@inproceedings{DBLP:conf/issre/KamalakarGV04,
+	title = "Middleware Transparent Development of Dependable CORBA Applications.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.22",
+	author = "Brahmila Kamalakar and Sudipto Ghosh and Peter Vile",
+	pages = "352-363"}
+
+@inproceedings{DBLP:conf/issre/KosmatovLPU04,
+	title = "Boundary Coverage Criteria for Test Generation from Formal
+               Models.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.12",
+	author = "Nikolai Kosmatov and Bruno Legeard and Fabien Peureux and Mark Utting",
+	pages = "139-150"}
+
+@inproceedings{DBLP:conf/issre/KuballM04,
+	title = "Test-Adequacy and Statistical Testing: Combining Different
+               Properties of a Test-Set.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.40",
+	author = "Silke Kuball and John H. R. May",
+	pages = "161-172"}
+
+@inproceedings{DBLP:conf/issre/LiWDNGCS04,
+	title = "Validation of a Methodology for Assessing Software Reliability.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.47",
+	author = "Ming Li and Y. Wei and Dejan Desovski and Hamed Nejad and Sushmita Ghose and Bojan Cukic and Carol Smidts",
+	pages = "66-76"}
+
+@inproceedings{DBLP:conf/issre/LiuMT04,
+	title = "Survivability Analysis of Telephone Access Network.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.38",
+	author = "Yun Liu and Veena B. Mendiratta and Kishor S. Trivedi",
+	pages = "367-378"}
+
+@inproceedings{DBLP:conf/issre/LussierW04,
+	title = "Deriving Test Sets from Partial Proofs.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.16",
+	author = "Guillaume Lussier and H{\'e}l{\`e}ne Waeselynck",
+	pages = "14-24"}
+
+@inproceedings{DBLP:conf/issre/Mankefors-ChristierninB04,
+	title = "Multiple Profile Evaluation Using a Single Test Suite in
+               Random Testing.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.24",
+	author = "Stefan Mankefors-Christiernin and Andreas Boklund",
+	pages = "283-294"}
+
+@inproceedings{DBLP:conf/issre/MasriPL04,
+	title = "Detecting and Debugging Insecure Information Flows.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.17",
+	author = "Wes Masri and Andy Podgurski and David Leon",
+	pages = "198-209"}
+
+@inproceedings{DBLP:conf/issre/NagappanWPSV04,
+	title = "Preliminary Results On Using Static Analysis Tools For Software
+               Inspection.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.30",
+	author = "Nachiappan Nagappan and Laurie A. Williams and John P. Hudepohl and Will Snipes and Mladen A. Vouk",
+	pages = "429-439"}
+
+@inproceedings{DBLP:conf/issre/OffuttWDH04,
+	title = "Bypass Testing of Web Applications.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.13",
+	author = "Jeff Offutt and Ye Wu and Xiaochen Du and Hong Huang",
+	pages = "187-197"}
+
+@inproceedings{DBLP:conf/issre/Paradkar04,
+	title = "Plannable Test Selection Criteria for FSMs Extracted From
+               Operational Specifications.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.28",
+	author = "Amit M. Paradkar",
+	pages = "173-184"}
+
+@inproceedings{DBLP:conf/issre/RunesonJS04,
+	title = "Are Found Defects an Indicator of Software Correctness?
+               An Investigation in a Controlled Case Study.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.9",
+	author = "Per Runeson and M{\aa}ns Holmstedt J{\"o}nsson and Fredrik Scheja",
+	pages = "91-100"}
+
+@inproceedings{DBLP:conf/issre/RutarAF04,
+	title = "A Comparison of Bug Finding Tools for Java.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.1",
+	author = "Nick Rutar and Christian B. Almazan and Jeffrey S. Foster",
+	pages = "245-256"}
+
+@inproceedings{DBLP:conf/issre/SteelL04,
+	title = "Model-Based Test Driven Development of the Tefkat Model-Transformation
+               Engine.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.23",
+	author = "Jim Steel and Michael Lawley",
+	pages = "151-160"}
+
+@inproceedings{DBLP:conf/issre/WangXP04,
+	title = "An Effective Method to Detect Software Memory Leakage Leveraged
+               from Neuroscience Principles Governing Human Memory Behavior.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.5",
+	author = "Xiangrong Wang and Jun Xu and Christopher H. Pham",
+	pages = "329-339"}
+
+@inproceedings{DBLP:conf/issre/Weber04,
+	title = "Statistical Software Testing with Parallel Modeling: A Case
+               Study.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.37",
+	author = "Robert J. Weber",
+	pages = "35-44"}
+
+@inproceedings{DBLP:conf/issre/YangE04,
+	title = "Automatically Inferring Temporal Properties for Program
+               Evolution .",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.11",
+	author = "Jinlin Yang and David Evans",
+	pages = "340-351"}
+
+@inproceedings{DBLP:conf/issre/Zhang04,
+	title = "An Approach to Facilitate Reliability Testing of Web Services
+               Components.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.4",
+	author = "Jia Zhang",
+	pages = "210-218"}
+
+@inproceedings{DBLP:conf/issre/MeulenBR04,
+	title = "An Exploration of Software Faults and Failure Behaviour
+               in a Large Population of Programs.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ISSRE.2004.7",
+	author = "Meine van der Meulen and Peter G. Bishop and Miguel A. Revilla",
+	pages = "101-112"}
+
+@default year = 2003
+
+@inproceedings{DBLP:conf/issre/AmasakiTMK03,
+	title = "A Bayesian Belief Network for Assessing the Likelihood of
+               Fault Content.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070215abs.htm",
+	author = "Sousuke Amasaki and Yasunari Takagi and Osamu Mizuno and Tohru Kikuno",
+	pages = "215-226"}
+
+@inproceedings{DBLP:conf/issre/AmmannOH03,
+	title = "Coverage Criteria for Logical Expressions.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070099abs.htm",
+	author = "Paul Ammann and A. Jefferson Offutt and Hong Huang",
+	pages = "99-107"}
+
+@inproceedings{DBLP:conf/issre/BagchiM03,
+	title = "Open Source Software - A Recipe for Vulnerable Software,
+               or The Only Way to Keep the Bugs and the Bad Guys Out?",
+	author = "Saurabh Bagchi and Henrique Madeira",
+	pages = "347-352"}
+
+@inproceedings{DBLP:conf/issre/BishopB03,
+	title = "Using a Log-normal Failure Rate Distribution for Worst Case
+               Bound Reliability Prediction.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070237abs.htm",
+	author = "Peter G. Bishop and Robin E. Bloomfield",
+	pages = "237-245"}
+
+@inproceedings{DBLP:conf/issre/BriandLW03,
+	title = "A Comprehensive and Systematic Methodology for Client-Server
+               Class Integration Testing.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070014abs.htm",
+	author = "Lionel C. Briand and Yvan Labiche and Yihong Wang",
+	pages = "14-25"}
+
+@inproceedings{DBLP:conf/issre/BrunelleMA03,
+	title = "Investigating Java Type Analyses for the Receiver-Classes
+               Testing Criterion.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070419abs.htm",
+	author = "Pierre-Luc Brunelle and Ettore Merlo and Giuliano Antoniol",
+	pages = "419-429"}
+
+@inproceedings{DBLP:conf/issre/CohenCL03,
+	title = "Augmenting Simulated Annealing to Build Interaction Test
+               Suites.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070394abs.htm",
+	author = "Myra B. Cohen and Charles J. Colbourn and Alan C. H. Ling",
+	pages = "394-405"}
+
+@inproceedings{DBLP:conf/issre/CoppitPS03,
+	title = "Shared Semantic Domains for Computational Reliability Engineering.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070169abs.htms",
+	author = "David Coppit and Robert R. Painter and Kevin J. Sullivan",
+	pages = "169-180"}
+
+@inproceedings{DBLP:conf/issre/DemskyR03,
+	title = "Static Specification Analysis for Termination of Specification-Based
+               Data Structure Repair.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070071abs.htm",
+	author = "Brian Demsky and Martin C. Rinard",
+	pages = "71-84"}
+
+@inproceedings{DBLP:conf/issre/ElbaumKA03,
+	title = "Anomalies as Precursors of Field Failures.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070108abs.htm",
+	author = "Sebastian G. Elbaum and Satya Kanduri and Anneliese Amschler Andrews",
+	pages = "108-118"}
+
+@inproceedings{DBLP:conf/issre/GhoshFBKAP03,
+	title = "Test Adequacy Assessment for UML Design Model Testing.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070332abs.htm",
+	author = "Sudipto Ghosh and Robert B. France and Conrad Braganza and Nilesh Kawane and Anneliese Amschler Andrews and Orest Pilskalns",
+	pages = "332-346"}
+
+@inproceedings{DBLP:conf/issre/Goseva-PopstojanovaK03,
+	title = "Assessing Uncertainty in Reliability of Component-Based
+               Software Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070307abs.htm",
+	author = "Katerina Goseva-Popstojanova and Sunil Kamavaram",
+	pages = "307-320"}
+
+@inproceedings{DBLP:conf/issre/Gotlieb03,
+	title = "Exploiting Symmetries to Test Programs.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070365abs.htm",
+	author = "Arnaud Gotlieb",
+	pages = "365-374"}
+
+@inproceedings{DBLP:conf/issre/Hayes03,
+	title = "Building a Requirement Fault Taxonomy: Experiences from
+               a NASA Verification and Validation Research Project.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070049abs.htm",
+	author = "Jane Huffman Hayes",
+	pages = "49-59"}
+
+@inproceedings{DBLP:conf/issre/JaloteV03,
+	title = "Optimal Resource Allocation for the Quality Control Process.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070026abs.htm",
+	author = "Pankaj Jalote and Bijendra Vishal",
+	pages = "26-33"}
+
+@inproceedings{DBLP:conf/issre/JinL03,
+	title = "Forensic Analysis for Tamper Resistant Software.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070133abs.htm",
+	author = "Hongxia Jin and Jeffery Lotspiech",
+	pages = "133-142"}
+
+@inproceedings{DBLP:conf/issre/JochenMP03,
+	title = "A Framework for Tamper Detection Marking of Mobile Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070143abs.htm",
+	author = "Mike Jochen and Lisa M. Marvel and Lori L. Pollock",
+	pages = "143-153"}
+
+@inproceedings{DBLP:conf/issre/KimBYC03,
+	title = "High-Assurance Synthesis of Security Services from Basic
+               Microservices.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070154abs.htm",
+	author = "Sung Kim and Farokh B. Bastani and I-Ling Yen and Ing-Ray Chen",
+	pages = "154-168"}
+
+@inproceedings{DBLP:conf/issre/LawR03,
+	title = "Incremental Dynamic Impact Analysis for Evolving Software
+               Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070430abs.htm",
+	author = "James Law and Gregg Rothermel",
+	pages = "430-441"}
+
+@inproceedings{DBLP:conf/issre/LeonP03,
+	title = "A Comparison of Coverage-Based and Distribution-Based Techniques
+               for Filtering and Prioritizing Test Cases.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070442abs.htm",
+	author = "David Leon and Andy Podgurski",
+	pages = "442-456"}
+
+@inproceedings{DBLP:conf/issre/LevyC03,
+	title = "Early Warning of Failures through Alarm Analysis - A Case
+               Study in Telecom Voice Mail Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070271abs.htm",
+	author = "Dorron Levy and Ram Chillarege",
+	pages = "271-280"}
+
+@inproceedings{DBLP:conf/issre/LiLGS03,
+	title = "Integrating Software into PRA.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070457abs.htm",
+	author = "Bin Li and Ming Li and Susmita Ghose and Carol Smidts",
+	pages = "457-467"}
+
+@inproceedings{DBLP:conf/issre/LyuHSC03,
+	title = "An Empirical Study on Testing and Fault Tolerance for Software
+               Reliability Engineering.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070119abs.htm",
+	author = "Michael R. Lyu and Zubin Huang and Sam K. S. Sze and Xia Cai",
+	pages = "119-132"}
+
+@inproceedings{DBLP:conf/issre/MaYBC03,
+	title = "Composition Analysis of QoS Properties for Adaptive Integration
+               of Embedded Software Components.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070383abs.htm",
+	author = "Hui Ma and I-Ling Yen and Farokh B. Bastani and Kendra Cooper",
+	pages = "383-393"}
+
+@inproceedings{DBLP:conf/issre/MalloyCL03,
+	title = "A Parameterized Cost Model to Order Classes for Class-based
+               Testing of C++ Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070353abs.htm",
+	author = "Brian A. Malloy and Peter J. Clarke and Errol L. Lloyd",
+	pages = "353-364"}
+
+@inproceedings{DBLP:conf/issre/MankeforsTB03,
+	title = "New Quality Estimations in Random Testing.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070468abs.htm",
+	author = "Stefan Mankefors and Richard Torkar and Andreas Boklund",
+	pages = "468-478"}
+
+@inproceedings{DBLP:conf/issre/MarinBS03,
+	title = "DARX - A Framework For The Fault-Tolerant Support Of Agent
+               Software.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070406abs.htm",
+	author = "Olivier Marin and Marin Bertier and Pierre Sens",
+	pages = "406-418"}
+
+@inproceedings{DBLP:conf/issre/MooreM03,
+	title = "Non-Intrusive Debug Technique for Embedded Programming.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070375abs.htm",
+	author = "Linda J. Moore and Angelica R. Moya",
+	pages = "375-382"}
+
+@inproceedings{DBLP:conf/issre/NebutFTJ03,
+	title = "Requirements by Contracts allow Automated System Testing.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070085abs.htm",
+	author = "Cl{\'e}mentine Nebut and Franck Fleurey and Yves Le Traon and Jean-Marc J{\'e}z{\'e}quel",
+	pages = "85-98"}
+
+@inproceedings{DBLP:conf/issre/OkamuraWD03,
+	title = "An Iterative Scheme for Maximum Likelihood Estimation in
+               Software Reliability Modeling.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070246abs.htm",
+	author = "Hiroyuki Okamura and Yasuhiro Watanabe and Tadashi Dohi",
+	pages = "246-256"}
+
+@inproceedings{DBLP:conf/issre/ParissisV03,
+	title = "Thoroughness of Specification-Based Testing of Synchronous
+               Programs.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070191abs.htm",
+	author = "Ioannis Parissis and J{\'e}r{\^o}me Vassy",
+	pages = "191-202"}
+
+@inproceedings{DBLP:conf/issre/RunesonA03,
+	title = "Detection or Isolation of Defects? An Experimental Comparison
+               of Unit Testing and Code Inspection.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070003abs.htm",
+	author = "Per Runeson and Anneliese Amschler Andrews",
+	pages = "3-13"}
+
+@inproceedings{DBLP:conf/issre/SaffE03,
+	title = "Reducing wasted development time via continuous testing.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070281abs.htm",
+	author = "David Saff and Michael D. Ernst",
+	pages = "281-292"}
+
+@inproceedings{DBLP:conf/issre/Schneidewind03,
+	title = "Fault Correction Profiles.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070257abs.htm",
+	author = "Norman F. Schneidewind",
+	pages = "257-270"}
+
+@inproceedings{DBLP:conf/issre/SinhaSM03,
+	title = "Enhanced Testing of Domain Specific Applications by Automatic
+               Extraction of Axioms from Functional Specifications.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070181abs.htm",
+	author = "Avik Sinha and Carol Smidts and Andrew Moran",
+	pages = "181-190"}
+
+@inproceedings{DBLP:conf/issre/StokerD03,
+	title = "When Does It Pay to Make Software More Reliable?.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070321abs.htm",
+	author = "Ed Stoker and Joanne Bechta Dugan",
+	pages = "321-331"}
+
+@inproceedings{DBLP:conf/issre/SuzukiDKT03,
+	title = "Maximizing Interval Reliability in Operational Software
+               System with Rejuvenation.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070479abs.htm",
+	author = "Hiroyuki Suzuki and Tadashi Dohi and Naoto Kaio and Kishor S. Trivedi",
+	pages = "479-490"}
+
+@inproceedings{DBLP:conf/issre/TorkarMHJ03,
+	title = "An Exploratory Study of Component Reliability Using Unit
+               Testing.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070227abs.htm",
+	author = "Richard Torkar and Stefan Mankefors and Krister Hansson and Andreas Jonsson",
+	pages = "227-236"}
+
+@inproceedings{DBLP:conf/issre/WangT03,
+	title = "User-Oriented Reliability Modeling for a Web System.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070293abs.htm",
+	author = "Wen-Li Wang and Mei-Huei Tang",
+	pages = "293-306"}
+
+@inproceedings{DBLP:conf/issre/WilliamsMV03,
+	title = "Test-Driven Development as a Defect-Reduction Practice.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070034abs.htm",
+	author = "Laurie A. Williams and E. Michael Maximilien and Mladen A. Vouk",
+	pages = "34-48"}
+
+@inproceedings{DBLP:conf/issre/YacoubLSB03,
+	title = "Automating the Analysis of Voting Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070203abs.htm",
+	author = "Sherif M. Yacoub and Xiaofan Lin and Steven J. Simske and John Burns",
+	pages = "203-214"}
+
+@inproceedings{DBLP:conf/issre/ZhaoLM03,
+	title = "A New Software Testing Approach Based on Domain Analysis
+               of Specifications and Programs.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2003/2007/00/20070060abs.htm",
+	author = "Ruilian Zhao and Michael R. Lyu and Yinghua Min",
+	pages = "60-70"}
+
+@default year = 2002
+
+@inproceedings{DBLP:conf/issre/AlexanderBGJ02,
+	title = "Mutation of Java Objects.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630341abs.htm",
+	author = "Roger T. Alexander and James M. Bieman and Sudipto Ghosh and Bixia Ji",
+	pages = "341-351"}
+
+@inproceedings{DBLP:conf/issre/AlexanderOB02,
+	title = "Fault Detection Capabilities of Coupling-based OO Testing.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630207abs.htm",
+	author = "Roger T. Alexander and Jeff Offutt and James M. Bieman",
+	pages = "207-220"}
+
+@inproceedings{DBLP:conf/issre/AntoniolBPL02,
+	title = "A Case Study Using the Round-Trip Strategy for State-Based
+               Class Testing.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630269abs.htm",
+	author = "Giuliano Antoniol and Lionel C. Briand and Massimiliano Di Penta and Yvan Labiche",
+	pages = "269-279"}
+
+@inproceedings{DBLP:conf/issre/BastaniKYC02,
+	title = "Reliability Assessment of Framework-Based Distributed Embedded
+               Software Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630367abs.htm",
+	author = "Farokh B. Bastani and Sung Kim and I-Ling Yen and Ing-Ray Chen",
+	pages = "367-376"}
+
+@inproceedings{DBLP:conf/issre/BaudryFJT02,
+	title = "Genes and Bacteria for Automatic Test Cases Optimization
+               in the .NET Environment.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630195abs.htm",
+	author = "Benoit Baudry and Franck Fleurey and Jean-Marc J{\'e}z{\'e}quel and Yves Le Traon",
+	pages = "195-206"}
+
+@inproceedings{DBLP:conf/issre/BishopB02,
+	title = "Worst Case Reliability Prediction Based on a Prior Estimate
+               of Residual Defects.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630295abs.htm",
+	author = "Peter G. Bishop and Robin E. Bloomfield",
+	pages = "295-303"}
+
+@inproceedings{DBLP:conf/issre/CangussuMD02,
+	title = "Effect of Disturbances on the Convergence of Failure Intensity.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630377abs.htm",
+	author = "Jo{\~a}o W. Cangussu and Aditya P. Mathur and Raymond A. DeCarlo",
+	pages = "377-387"}
+
+@inproceedings{DBLP:conf/issre/ChandraC02,
+	title = "The Impact of Recovery Mechanisms on the Likelihood of Saving
+               Corrupted State.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630091abs.htm",
+	author = "Subhachandra Chandra and Peter M. Chen",
+	pages = "91-101"}
+
+@inproceedings{DBLP:conf/issre/DuraesM02,
+	title = "Emulation of Software Faults by Educated Mutations at Machine-Code
+               Level.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630329abs.htm",
+	author = "Jo{\~a}o Dur{\~a}es and Henrique Madeira",
+	pages = "329-340"}
+
+@inproceedings{DBLP:conf/issre/FetzerX02,
+	title = "A Flexible Generator Architecture for Improving Software
+               Dependability.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630102abs.htm",
+	author = "Christof Fetzer and Zhen Xiao",
+	pages = "102-116"}
+
+@inproceedings{DBLP:conf/issre/GokhaleT02,
+	title = "Reliability Prediction and Sensitivity Analysis Based on
+               Software Architecture.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630064abs.htm",
+	author = "Swapna S. Gokhale and Kishor S. Trivedi",
+	pages = "64-78"}
+
+@inproceedings{DBLP:conf/issre/Grottke02,
+	title = "A Vector Markov Model for Structural Coverage Growth and
+               the Number of Failure Occurrences.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630304abs.htm",
+	author = "Michael Grottke",
+	pages = "304-315"}
+
+@inproceedings{DBLP:conf/issre/HuangLKL02,
+	title = "Optimal Allocation of Testing Resources for Modular Software
+               Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630129abs.htm",
+	author = "Chin-Yu Huang and Jung-Hua Lo and Sy-Yen Kuo and Michael R. Lyu",
+	pages = "129-138"}
+
+@inproceedings{DBLP:conf/issre/FisherJRB02,
+	title = "Test Reuse in the Spreadsheet Paradigm.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630257abs.htm",
+	author = "Marc Fisher II and Dalai Jin and Gregg Rothermel and Margaret M. Burnett",
+	pages = "257-268"}
+
+@inproceedings{DBLP:conf/issre/KanduriE02,
+	title = "An Empirical Study of Tracing Techniques from a Failure
+               Analysis Perspective.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630280abs.htm",
+	author = "Satya Kanduri and Sebastian G. Elbaum",
+	pages = "280-294"}
+
+@inproceedings{DBLP:conf/issre/Khoshgoftaar02,
+	title = "Improving Usefulness of Software Quality Classification
+               Models Based on Boolean Discriminant Functions.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630221abs.htm",
+	author = "Taghi M. Khoshgoftaar",
+	pages = "221-230"}
+
+@inproceedings{DBLP:conf/issre/KlemmS02,
+	title = "Automatic Failure Detection, Logging, and Recovery for High-Availability
+               Java Servers.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630079abs.htm",
+	author = "Reinhard Klemm and Navjot Singh",
+	pages = "79-90"}
+
+@inproceedings{DBLP:conf/issre/LeiT02,
+	title = "Blocking-based Simultaneous Reachability Analysis of Asynchronous
+               Message-passing Programs.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630316abs.htm",
+	author = "Yu Lei and Kuo-Chung Tai",
+	pages = "316-328"}
+
+@inproceedings{DBLP:conf/issre/LestiennesG02,
+	title = "Testing Processes from Formal Specifications with Inputs,
+               Outputs and Data Types.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630003abs.htm",
+	author = "Gr{\'e}gory Lestiennes and Marie-Claude Gaudel",
+	pages = "3-14"}
+
+@inproceedings{DBLP:conf/issre/LiuTMHL02,
+	title = "Modeling and Analysis of Software Rejuvenation in Cable
+               Modem Termination Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630159abs.htm",
+	author = "Yun Liu and Kishor S. Trivedi and Yue Ma and James J. Han and Haim Levendel",
+	pages = "159-170"}
+
+@inproceedings{DBLP:conf/issre/LuL02,
+	title = "Fault Contribution Trees for Product Families.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630231abs.htm",
+	author = "Dingding Lu and Robyn R. Lutz",
+	pages = "231-242"}
+
+@inproceedings{DBLP:conf/issre/LussierW02,
+	title = "Informal Proof Analysis Towards Testing Enhancement.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630027abs.htm",
+	author = "Guillaume Lussier and H{\'e}l{\`e}ne Waeselynck",
+	pages = "27-40"}
+
+@inproceedings{DBLP:conf/issre/MaKO02,
+	title = "Inter-Class Mutation Operators for Java.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630352abs.htm",
+	author = "Yu-Seung Ma and Yong Rae Kwon and Jeff Offutt",
+	pages = "352-366"}
+
+@inproceedings{DBLP:conf/issre/MenziesOC02,
+	title = "Saturation Effects in Testing of Formal Models.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630015abs.htm",
+	author = "Tim Menzies and David Owen and Bojan Cukic",
+	pages = "15-26"}
+
+@inproceedings{DBLP:conf/issre/MichaelBS02,
+	title = "Metrics for Measuring the Effectiveness of Software-Testing
+               Tools.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630117abs.htm",
+	author = "James B. Michael and Bernard J. Bossuyt and Byron B. Snyder",
+	pages = "117-128"}
+
+@inproceedings{DBLP:conf/issre/MizunoSTK02,
+	title = "On Estimating Testing Effort Needed to Assure Field Quality
+               in Software Development.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630139abs.htm",
+	author = "Osamu Mizuno and Eijiro Shigematsu and Yasunari Takagi and Tohru Kikuno",
+	pages = "139-148"}
+
+@inproceedings{DBLP:conf/issre/MunsonN02,
+	title = "Toward A Quantifiable Definition of Software Faults.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630388abs.htm",
+	author = "John C. Munson and Allen P. Nikora",
+	pages = "388-396"}
+
+@inproceedings{DBLP:conf/issre/NetisopakulWMH02,
+	title = "Data Coverage Testing of Programs for Container Classes.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630183abs.htm",
+	author = "Ponrudee Netisopakul and Lee J. White and John Morris and Daniel Hoffman",
+	pages = "183-194"}
+
+@inproceedings{DBLP:conf/issre/OkamuraMD02,
+	title = "Dependability Analysis of a Client/Server Software System
+               with Rejuvenation.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630171abs.htm",
+	author = "Hiroyuki Okamura and Satoshi Miyahara and Tadashi Dohi",
+	pages = "171-182"}
+
+@inproceedings{DBLP:conf/issre/PaiD02,
+	title = "Automatic Synthesis of Dynamic Fault Trees from UML System
+               Models.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630243abs.htm",
+	author = "Ganesh J. Pai and Joanne Bechta Dugan",
+	pages = "243-256"}
+
+@inproceedings{DBLP:conf/issre/SayreP02,
+	title = "A Reliability Estimator for Model Based Software Testing.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630053abs.htm",
+	author = "Kirk Sayre and Jesse H. Poore",
+	pages = "53-63"}
+
+@inproceedings{DBLP:conf/issre/WangC02,
+	title = "Heterogeneous Software Reliability Modeling.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630041abs.htm",
+	author = "Wen-Li Wang and Mei-Hwa Chen",
+	pages = "41-52"}
+
+@inproceedings{DBLP:conf/issre/YuSMS02,
+	title = "A Framework for Live Software Upgrade.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2002/1763/00/17630149abs.htm",
+	author = "Lizhou Yu and Gholamali C. Shoja and Hausi A. M{\"u}ller and Anand Srinivasan",
+	pages = "149-158"}
+
+@default year = 2001
+
+@inproceedings{DBLP:conf/issre/Aizenbud-Reshef01,
+	title = "Coverage Analysis for Message Flows.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060276abs.htm",
+	author = "Neta Aizenbud-Reshef",
+	pages = "276-286"}
+
+@inproceedings{DBLP:conf/issre/BassinBS01,
+	title = "Evaluating the Software Test Strategy for the 2000 Sydney
+               Olympics.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060264abs.htm",
+	author = "Kathryn Bassin and Shrinram Biyani and Padmanabhan Santhanam",
+	pages = "264-275"}
+
+@inproceedings{DBLP:conf/issre/BastaniYSLR01,
+	title = "Reliability of Systems of Independently Developable End-User
+               Assessable Logical (IDEAL) Programs.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060314abs.htm",
+	author = "Farokh B. Bastani and I-Ling Yen and Sung Kim and John Linn and Kashi Rao",
+	pages = "314-323"}
+
+@inproceedings{DBLP:conf/issre/BaudrySJ01,
+	title = "Towards a 'Safe' Use of Design Patterns to Improve OO Software
+               Testability.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060324abs.htm",
+	author = "Benoit Baudry and Yves Le Suny{\'e} and Jean-Marc J{\'e}z{\'e}quel",
+	pages = "324-331"}
+
+@inproceedings{DBLP:conf/issre/Belli01,
+	title = "Finite-State Testing and Analysis of Graphical User Interfaces.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060034abs.htm",
+	author = "Fevzi Belli",
+	pages = "34-43"}
+
+@inproceedings{DBLP:conf/issre/BriandLW01,
+	title = "Revisiting Strategies for Ordering Class Integration Testing
+               in the Presence of Dependency Cycles.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060287abs.htm",
+	author = "Lionel C. Briand and Yvan Labiche and Yihong Wang",
+	pages = "287-297"}
+
+@inproceedings{DBLP:conf/issre/CangussuMD01,
+	title = "Feedback Control of the Software Test Process Through Measurements
+               of Software Reliability.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060232abs.htm",
+	author = "Jo{\~a}o W. Cangussu and Aditya P. Mathur and Raymond A. DeCarlo",
+	pages = "232-241"}
+
+@inproceedings{DBLP:conf/issre/ChangK01,
+	title = "Modeling and Analysis of Using Memory Management Unit to
+               Improve Software Reliability.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060096abs.htm",
+	author = "Shih-Jeh Chang and Prudence T. Zacarias Kapauan",
+	pages = "96-102"}
+
+@inproceedings{DBLP:conf/issre/ChenMH01,
+	title = "Estimation of Software Diversity by Fault Simulation and
+               Failure Searching.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060122abs.htm",
+	author = "Luping Chen and John H. R. May and Gordon Hughes",
+	pages = "122-131"}
+
+@inproceedings{DBLP:conf/issre/CheungCX01,
+	title = "Toward Generic Timing Tests for Distributed Multimedia Software
+               Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060210abs.htm",
+	author = "Shing-Chi Cheung and Samuel T. Chanson and Zhendong Xu",
+	pages = "210-221"}
+
+@inproceedings{DBLP:conf/issre/ChevalleyT01,
+	title = "An Empirical Evaluation of Statistical Testing Designed
+               from UML State Diagrams: The Flight Guidance System Case
+               Study.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060254abs.htm",
+	author = "Philippe Chevalley and Pascale Th{\'e}venod-Fosse",
+	pages = "254-263"}
+
+@inproceedings{DBLP:conf/issre/ChoiYGM01,
+	title = "An Auto-Generating Tool for the MPEG-2 Formatted Test Data:
+               ATEP.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060192abs.htm",
+	author = "Byoungju Choi and Sunhwa Yeum and Tae-Hee Gwak and Byoungkyu Min",
+	pages = "192-199"}
+
+@inproceedings{DBLP:conf/issre/CzajkowskDW01,
+	title = "Automated and Portable Native Code Isolation.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060298abs.htm",
+	author = "Grzegorz Czajkowski and Laurent Dayn{\`e}s and Mario Wolczko",
+	pages = "298-307"}
+
+@inproceedings{DBLP:conf/issre/DohiWOT01,
+	title = "Analysis of Hypergeometric Distribution Software Reliability
+               Model.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060166abs.htm",
+	author = "Tadashi Dohi and Nobuyuki Wakana and Shunji Osaki and Kishor S. Trivedi",
+	pages = "166-175"}
+
+@inproceedings{DBLP:conf/issre/DonovanDMUKYS01,
+	title = "Incorporating Software Reliability Engineering into the
+               Test Process for an Extensive GUI-Based Network Management
+               System.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060044abs.htm",
+	author = "Deirdre Donovan and Chryssa Dislis and Ray Murphy and Stephen Unger and Christina Kenneally and Janet Young and Liz Sheehan",
+	pages = "44-53"}
+
+@inproceedings{DBLP:conf/issre/Goseva-PopstojanovaMT01,
+	title = "Many architecture-based software reliability modelsComparison
+               of Architecture-Based Software Reliability Models.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060022abs.htm",
+	author = "Katerina Goseva-Popstojanova and Aditya P. Mathur and Kishor S. Trivedi",
+	pages = "22-33"}
+
+@inproceedings{DBLP:conf/issre/IbrahimAY01,
+	title = "A Fault Model for Fault Injection Analysis of Dynamic UML
+               Dynamic Specifications.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060074abs.htm",
+	author = "Alaa Ibrahim and Hany H. Ammar and Sherif M. Yacoub",
+	pages = "74-83"}
+
+@inproceedings{DBLP:conf/issre/JeskeZP01,
+	title = "Accounting for Realities When Estimating the Field Failure
+               Rate of Software.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060332abs.htm",
+	author = "Daniel R. Jeske and Xuemei Zhang and Loan Pham",
+	pages = "332-339"}
+
+@inproceedings{DBLP:conf/issre/JinO01,
+	title = "Deriving Tests From Software Architectures.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060308abs.htm",
+	author = "Zhenyi Jin and Jeff Offutt",
+	pages = "308-313"}
+
+@inproceedings{DBLP:conf/issre/JinS01,
+	title = "An Approach to Higher Reliability Using Software Components.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060002abs.htm",
+	author = "Hongxia Jin and Peter Santhanam",
+	pages = "2-11"}
+
+@inproceedings{DBLP:conf/issre/JonesR01,
+	title = "A Simulation Based Trainer for Software Reliability Modeling.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060160abs.htm",
+	author = "Edward L. Jones and Aubrey J. Rembert",
+	pages = "160-165"}
+
+@inproceedings{DBLP:conf/issre/KhoshgoftaarGS01,
+	title = "An Application of Zero-Inflated Poisson Regression for Software
+               Fault Prediction .",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060066abs.htm",
+	author = "Taghi M. Khoshgoftaar and Kehan Gao and Robert M. Szabo",
+	pages = "66-73"}
+
+@inproceedings{DBLP:conf/issre/KnightE01,
+	title = "Fault Tolerant Distributed Information Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060132abs.htm",
+	author = "John C. Knight and Matthew C. Elder",
+	pages = "132-137"}
+
+@inproceedings{DBLP:conf/issre/KnightHT01,
+	title = "Tool Support for Production Use of Formal Techniques.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060242abs.htm",
+	author = "John C. Knight and Kimberly S. Hanks and Sean R. Travis",
+	pages = "242-253"}
+
+@inproceedings{DBLP:conf/issre/LeeO01,
+	title = "Generating Test Cases for XML-Based Web Component Interactions
+               Using Mutation Analysis.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060200abs.htm",
+	author = "Suet Chun Lee and Jeff Offutt",
+	pages = "200-209"}
+
+@inproceedings{DBLP:conf/issre/OffuttAWXH01,
+	title = "A Fault Model for Subtype Inheritance and Polymorphism.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060084abs.htm",
+	author = "Jeff Offutt and Roger T. Alexander and Ye Wu and Quansheng Xiao and Chuck Hutchinson",
+	pages = "84-95"}
+
+@inproceedings{DBLP:conf/issre/PasquiniRSS01,
+	title = "Quantitative Evaluation and Operative Usage of Interactive
+               Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060356abs.htm",
+	author = "Alberto Pasquini and Antonio Rizzo and Luca Save and Mark-Alexander Sujan",
+	pages = "356-361"}
+
+@inproceedings{DBLP:conf/issre/PeterssonWRH01,
+	title = "Defect Content Estimation for Two Reviewers.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060340abs.htm",
+	author = "H{\aa}kan Petersson and Claes Wohlin and Per Runeson and Martin H{\"o}st",
+	pages = "340-345"}
+
+@inproceedings{DBLP:conf/issre/SatohY01,
+	title = "Discrete Equations and Software Reliability Growth Models.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060176abs.htm",
+	author = "Daisuke Satoh and Shigeru Yamada",
+	pages = "176-184"}
+
+@inproceedings{DBLP:conf/issre/Schneidewind01,
+	title = "Modelling the Fault Correction Process.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060185abs.htm",
+	author = "Norman F. Schneidewind",
+	pages = "185-191"}
+
+@inproceedings{DBLP:conf/issre/SimacheK01,
+	title = "Measurement-Based Availability of Unix Systems in a Distributed
+               Environment.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060346abs.htm",
+	author = "Cristina Simache and Mohamed Ka{\^a}niche",
+	pages = "346-355"}
+
+@inproceedings{DBLP:conf/issre/SinghCCGB01,
+	title = "A Bayesian Approach to Reliability Prediction and Assessment
+               of Component Based Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060012abs.htm",
+	author = "Harshinder Singh and Vittorio Cortellessa and Bojan Cukic and Erdogan Gunel and Vijayanand Bharadwaj",
+	pages = "12-21"}
+
+@inproceedings{DBLP:conf/issre/TaiTSAC01,
+	title = "Low-Cost Flexible Software Fault Tolerance for Distributed
+               Computing.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060148abs.htm",
+	author = "Ann T. Tai and Kam S. Tso and William H. Sanders and Leon Alkalai and Savio N. Chau",
+	pages = "148-159"}
+
+@inproceedings{DBLP:conf/issre/WeiCZWLF01,
+	title = "Modeling and Verifying Strong Cache Consistency for Mobile
+               Data Access .",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060103abs.htm",
+	author = "Jun Wei and Shing-Chi Cheung and Huan Zhou and Xu Wang and Jing Li and Yulin Feng",
+	pages = "103-111"}
+
+@inproceedings{DBLP:conf/issre/WhiteAA01,
+	title = "User-Based Testing of GUI Sequences and Their Interactions.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060054abs.htm",
+	author = "Lee J. White and Husain Almezen and Nasser Alzeidi",
+	pages = "54-65"}
+
+@inproceedings{DBLP:conf/issre/YaoF01,
+	title = "Recovery Proxy for Wireless Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060112abs.htm",
+	author = "Bin Yao and W. Kent Fuchs",
+	pages = "112-121"}
+
+@inproceedings{DBLP:conf/issre/ZhaoMM01,
+	title = "Increasing the Reliability of Three-Tier Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060138abs.htm",
+	author = "Wenbing Zhao and Louise E. Moser and P. M. Melliar-Smith",
+	pages = "138-147"}
+
+@inproceedings{DBLP:conf/issre/ZhouT01,
+	title = "Efficient Deadlock Analysis of Clients/Server Systems with
+               Two-Way Communication.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2001/1306/00/13060222abs.htm",
+	author = "Jun Zhou and Kou-chung Tai",
+	pages = "222-231"}
+
+@default year = 2000
+
+@inproceedings{DBLP:conf/issre/AlemanA00,
+	title = "Can Intuition Become Rigorous? Foundations for UML Model
+               Verification Tools.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070344abs.htm",
+	author = "Jos{\'e} Luis Fern{\'a}ndez Alem{\'a}n and Jos{\'e} Ambrosio Toval {\'A}lvarez",
+	pages = "344-355"}
+
+@inproceedings{DBLP:conf/issre/AlexanderO00,
+	title = "Criteria for Testing Polymorphic Relationships.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070015abs.htm",
+	author = "Roger T. Alexander and A. Jefferson Offutt",
+	pages = "15-23"}
+
+@inproceedings{DBLP:conf/issre/BaudryHJT00,
+	title = "Building Trust into OO Components Using a Genetic Analogy.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070004abs.htm",
+	author = "Benoit Baudry and Vu Le Hanh and Jean-Marc J{\'e}z{\'e}quel and Yves Le Traon",
+	pages = "4-14"}
+
+@inproceedings{DBLP:conf/issre/BenlarbiEGR00,
+	title = "Thresholds for Object-Oriented Measures.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070024abs.htm",
+	author = "Sa\"{\i}da Benlarbi and Khaled El Emam and Nishith Goel and Shesh N. Rai",
+	pages = "24-39"}
+
+@inproceedings{DBLP:conf/issre/BoydCEGHR00,
+	title = "Contributing to the Bottom Line: Optimizing Reliability-Cost-Schedule
+               Tradeoff and Architecture Scalability through Test Technology.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070136abs.htm",
+	author = "D. Boyd and D. Cura and Willa K. Ehrlich and R. Gotberg and Rema Hariharan and Paul Reeser",
+	pages = "136-147"}
+
+@inproceedings{DBLP:conf/issre/Brand00,
+	title = "A Software Falsifier.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070174abs.htm",
+	author = "Daniel Brand",
+	pages = "174-185"}
+
+@inproceedings{DBLP:conf/issre/BriandFV00,
+	title = "Assessing the Cost-Effectiveness of Inspections by Combining
+               Project Data and Expert Opinion.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070124abs.htm",
+	author = "Lionel C. Briand and Bernd G. Freimut and Ferdinand Vollei",
+	pages = "124-135"}
+
+@inproceedings{DBLP:conf/issre/CoppitSD00,
+	title = "Formal Semantics for Computational Engineering: A Case Study
+               on Dynamic Fault Trees.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070270abs.htm",
+	author = "David Coppit and Kevin J. Sullivan and Joanne Bechta Dugan",
+	pages = "270-282"}
+
+@inproceedings{DBLP:conf/issre/DohiOT00,
+	title = "Heuristic Self-Organization Algorithms for Software Reliability
+               Assessment and Their Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070040abs.htm",
+	author = "Tadashi Dohi and Shunji Osaki and Kishor S. Trivedi",
+	pages = "40-51"}
+
+@inproceedings{DBLP:conf/issre/ElbaumM00,
+	title = "Software Black Box: An Alternative Mechanism for Failure
+               Analysis.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070365abs.htm",
+	author = "Sebastian G. Elbaum and John C. Munson",
+	pages = "365-376"}
+
+@inproceedings{DBLP:conf/issre/HuangKLL00,
+	title = "Quantitative Software Reliability Modeling from Testing
+               to Operation.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070072abs.htm",
+	author = "Chin-Yu Huang and Sy-Yen Kuo and Jung-Hua Lo and Michael R. Lyu",
+	pages = "72-83"}
+
+@inproceedings{DBLP:conf/issre/JeskeQ00,
+	title = "Estimating the Failure Rate of Evolving Software Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070052abs.htm",
+	author = "Daniel R. Jeske and M. Akber Qureshi",
+	pages = "52-61"}
+
+@inproceedings{DBLP:conf/issre/KappesKK00,
+	title = "Formal Limits on Determining Reliabilities of Component-Based
+               Software Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070356abs.htm",
+	author = "Martin Kappes and Chandra M. R. Kintala and Reinhard Klemm",
+	pages = "356-364"}
+
+@inproceedings{DBLP:conf/issre/KhoshgoftaarSA00,
+	title = "Improving Tree-Based Models of Software Quality with Principal
+               Components Analysis.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070198abs.htm",
+	author = "Taghi M. Khoshgoftaar and Ruqun Shan and Edward B. Allen",
+	pages = "198-209"}
+
+@inproceedings{DBLP:conf/issre/KhoshgoftaarTA00,
+	title = "Modeling Fault-Prone Modules of Subsystems.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070259abs.htm",
+	author = "Taghi M. Khoshgoftaar and Vishal Thaker and Edward B. Allen",
+	pages = "259-269"}
+
+@inproceedings{DBLP:conf/issre/LiSB00,
+	title = "Ranking Software Engineering Measures Related to Reliability
+               Using Expert Opinion.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070246abs.htm",
+	author = "Ming Li and Carol Smidts and R. W. Brill",
+	pages = "246-258"}
+
+@inproceedings{DBLP:conf/issre/LiuKHH00,
+	title = "Structural Testing of Web Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070084abs.htm",
+	author = "Chien-Hung Liu and David Chenho Kung and Pei Hsia and Chih-Tung Hsu",
+	pages = "84-96"}
+
+@inproceedings{DBLP:conf/issre/MalaiyaD00,
+	title = "Module Size Distribution and Defect Density.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070062abs.htm",
+	author = "Yashwant K. Malaiya and Jason Denton",
+	pages = "62-71"}
+
+@inproceedings{DBLP:conf/issre/MayrhauserSDH00,
+	title = "Planner Based Error Recovery Testing.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070186abs.htm",
+	author = "Anneliese von Mayrhauser and Michael Scheetz and Eric Dahlman and Adele E. Howe",
+	pages = "186-197"}
+
+@inproceedings{DBLP:conf/issre/MenziesCSP00,
+	title = "Testing Nondeterminate Systems.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070222abs.htm",
+	author = "Tim Menzies and Bojan Cukic and Harshinder Singh and John Powell",
+	pages = "222-233"}
+
+@inproceedings{DBLP:conf/issre/Musa00,
+	title = "Everything You Wanted to Know About Software Reliability
+               Engineering but Didn't Know Who to Ask.",
+	author = "John D. Musa"}
+
+@inproceedings{DBLP:conf/issre/Neufelder00,
+	title = "How to Measure the Impact of Specific Development Practices
+               on Fielded Defect Density.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070148abs.htm",
+	author = "Ann Marie Neufelder",
+	pages = "148-161"}
+
+@inproceedings{DBLP:conf/issre/NissankeD00,
+	title = "Risk Bands - A Novel Feature of Safecharts.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070293abs.htm",
+	author = "Nimal Nissanke and Hamdan Dammag",
+	pages = "293-303"}
+
+@inproceedings{DBLP:conf/issre/Paradkar00,
+	title = "SALT - An Integrated Environment to Automate Generation
+               of Function Tests for APIs.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070304abs.htm",
+	author = "Amit M. Paradkar",
+	pages = "304-316"}
+
+@inproceedings{DBLP:conf/issre/PopovicKS00,
+	title = "Software Reliability and Maintenance Concept Used for Automatic
+               Call Distributor MEDIO ACD.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070336abs.htm",
+	author = "Miroslav Popovic and Vladimir Kovacevic and M. Skrbic",
+	pages = "336-343"}
+
+@inproceedings{DBLP:conf/issre/Prowse00,
+	title = "Discard the Bathtub Model for the Shower Model.",
+	author = "Mike Prowse"}
+
+@inproceedings{DBLP:conf/issre/Schneidewind00,
+	title = "On the Repeatability of Metric Models and Metrics across
+               Software Builds.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070234abs.htm",
+	author = "Norman F. Schneidewind",
+	pages = "234-245"}
+
+@inproceedings{DBLP:conf/issre/SzeL00,
+	title = "ATACOBOL: A COBOL Test Coverage Analysis Tool and Its Applications.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070327abs.htm",
+	author = "Sam K. S. Sze and Michael R. Lyu",
+	pages = "327-335"}
+
+@inproceedings{DBLP:conf/issre/TaylorC00,
+	title = "Evaluation of Regressive Methods for Automated Generation
+               of Test Trajectories.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070097abs.htm",
+	author = "Brian J. Taylor and Bojan Cukic",
+	pages = "97-109"}
+
+@inproceedings{DBLP:conf/issre/TraonOR00,
+	title = "Analyzing Testability on Data Flow Designs.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070162abs.htm",
+	author = "Yves Le Traon and Farid Ouabdesselam and Chantal Robach",
+	pages = "162-173"}
+
+@inproceedings{DBLP:conf/issre/WesslenRR00,
+	title = "Assessing the Sensitivity to Usage Profile Changes in Test
+               Planning.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070317abs.htm",
+	author = "Anders Wessl{\'e}n and Per Runeson and Bj{\"o}rn Regnell",
+	pages = "317-326"}
+
+@inproceedings{DBLP:conf/issre/WhiteA00,
+	title = "Generating Test Cases for GUI Responsibilities Using Complete
+               Interaction Sequences.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070110abs.htm",
+	author = "Lee J. White and Husain Almezen",
+	pages = "110-123"}
+
+@inproceedings{DBLP:conf/issre/WijayarathnaM00,
+	title = "Extending Fault Trees with an AND-THEN Gate.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070283abs.htm",
+	author = "Pathirage Gamini Wijayarathna and Mamoru Maekawa",
+	pages = "283-292"}
+
+@inproceedings{DBLP:conf/issre/YacoubAR00,
+	title = "A Methodology for Architectural-Level Risk Assessment Using
+               Dynamic Metrics.",
+	ee = "http://csdl.computer.org/comp/proceedings/issre/2000/0807/00/08070210abs.htm",
+	author = "Sherif M. Yacoub and Hany H. Ammar and Tom Robinson",
+	pages = "210-221"}

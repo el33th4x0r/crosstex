@@ -1,0 +1,1694 @@
+@include conferences-cs
+
+@default bibsource = "DBLP, http://dblp.uni-trier.de"
+
+@default booktitle = acsc
+
+@default year = 2006
+
+@inproceedings{DBLP:conf/acsc/Allison06,
+	title = "A programming paradigm for machine learning, with a case
+               study of Bayesian networks.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151712",
+	author = "Lloyd Allison",
+	pages = "103-111"}
+
+@inproceedings{DBLP:conf/acsc/ArwinT06,
+	title = "Plagiarism detection across programming languages.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151730",
+	author = "Christian Arwin and Seyed M. M. Tahaghoghi",
+	pages = "277-286"}
+
+@inproceedings{DBLP:conf/acsc/BittnerH06,
+	title = "Pruning subscriptions in distributed publish/subscribe systems.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151722",
+	author = "Sven Bittner and Annika Hinze",
+	pages = "197-206"}
+
+@inproceedings{DBLP:conf/acsc/Choi06,
+	title = "On compensating the Mel-frequency cepstral coefficients
+               for noisy speech recognition.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151705",
+	author = "Eric H. C. Choi",
+	pages = "49-54"}
+
+@inproceedings{DBLP:conf/acsc/ChongFFH06,
+	title = "On pedagogically sound examples in public-key cryptography.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151707",
+	author = "Suan Khai Chong and Graham Farr and Laura Frost and Simon Hawley",
+	pages = "63-68"}
+
+@inproceedings{DBLP:conf/acsc/ChowPRP06,
+	title = "Human visual perception of region warping distortions.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151724",
+	author = "Yang-Wai Chow and Ronald Pose and Matthew Regan and James Phillips",
+	pages = "217-226"}
+
+@inproceedings{DBLP:conf/acsc/CikaraMS06,
+	title = "Modelling layer 2 and layer 3 device bandwidths using B-node
+               theory.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151715",
+	author = "S. Cikara and Stanislaw P. Maj and David T. Shaw",
+	pages = "127-136"}
+
+@inproceedings{DBLP:conf/acsc/CookC06,
+	title = "Constructing real-time collaborative software engineering
+               tools using CAISE, an architecture for supporting tool development.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151729",
+	author = "Carl Cook and Neville Churcher",
+	pages = "267-276"}
+
+@inproceedings{DBLP:conf/acsc/DasguptaG06,
+	title = "CASO: a framework for dealing with objectives in a constraint-based
+               extension to AgentSpeak(L).",
+	ee = "http://doi.acm.org/10.1145/1151699.1151714",
+	author = "Aniruddha Dasgupta and Aditya K. Ghose",
+	pages = "121-126"}
+
+@inproceedings{DBLP:conf/acsc/EvertsPK06,
+	title = "Using formal concept analysis with an incremental knowledge
+               acquisition system for web document management.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151727",
+	author = "Timothy J. Everts and Sung Sik Park and Byeong Ho Kang",
+	pages = "247-256"}
+
+@inproceedings{DBLP:conf/acsc/FaulconbridgePR06,
+	title = "Unsupervised band removal leading to improved classification
+               accuracy of hyperspectral images.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151704",
+	author = "R. Ian Faulconbridge and Mark R. Pickering and Michael J. Ryan",
+	pages = "43-48"}
+
+@inproceedings{DBLP:conf/acsc/FidgeM06,
+	title = "Tracing secure information flow through mode changes.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151733",
+	author = "Colin J. Fidge and Tim McComb",
+	pages = "303-310"}
+
+@inproceedings{DBLP:conf/acsc/HinzeB06,
+	title = "The challenge of creating cooperating mobile services: experiences
+               and lessons learned.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151723",
+	author = "Annika Hinze and George Buchanan",
+	pages = "207-215"}
+
+@inproceedings{DBLP:conf/acsc/HinzeMM06,
+	title = "Interaction design for a mobile context-aware system using
+               discrete event modelling.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151728",
+	author = "Annika Hinze and Petra Malik and Robi Malik",
+	pages = "257-266"}
+
+@inproceedings{DBLP:conf/acsc/HinzeMS06,
+	title = "Approximative filtering of XML documents in a publish/subscribe
+               system.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151720",
+	author = "Annika Hinze and Yann Michel and Torsten Schlieder",
+	pages = "177-185"}
+
+@inproceedings{DBLP:conf/acsc/HsiehT06,
+	title = "Supporting software reuse by the individual programmer.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151702",
+	author = "Min-Sheng Hsieh and Ewan Tempero",
+	pages = "25-33"}
+
+@inproceedings{DBLP:conf/acsc/HuangJS06,
+	title = "Programming with heterogeneous structures: manipulating
+               XML data using bondi.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151731",
+	author = "F. Y. Huang and C. B. Jay and David B. Skillicorn",
+	pages = "287-295"}
+
+@inproceedings{DBLP:conf/acsc/Izu06,
+	title = "Throughput fairness in k-ary n-cube networks.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151716",
+	author = "Cruz Izu",
+	pages = "137-145"}
+
+@inproceedings{DBLP:conf/acsc/JohnsonW06,
+	title = "Biomedical computing and visualization.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151700",
+	author = "Chris R. Johnson and David M. Weinstein",
+	pages = "3-10"}
+
+@inproceedings{DBLP:conf/acsc/JosangHP06,
+	title = "Trust network analysis with subjective logic.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151710",
+	author = "Audun J{\o}sang and Ross Hayward and Simon Pope",
+	pages = "85-94"}
+
+@inproceedings{DBLP:conf/acsc/LiuO06,
+	title = "Towards security labelling.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151708",
+	author = "Chuchang Liu and Mehmet A. Orgun",
+	pages = "69-76"}
+
+@inproceedings{DBLP:conf/acsc/LuB06,
+	title = "A JMX toolkit for merging network management systems.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151717",
+	author = "Feng Lu and Kris Bubendorfer",
+	pages = "147-156"}
+
+@inproceedings{DBLP:conf/acsc/MajumdarT06,
+	title = "Manufacturing opaque predicates in distributed systems for
+               code obfuscation.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151721",
+	author = "Anirban Majumdar and Clark D. Thomborson",
+	pages = "187-196"}
+
+@inproceedings{DBLP:conf/acsc/MeltonT06,
+	title = "Identifying refactoring opportunities by identifying dependency
+               cycles.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151703",
+	author = "Hayden Melton and Ewan D. Tempero",
+	pages = "35-41"}
+
+@inproceedings{DBLP:conf/acsc/MurdacaJ06,
+	title = "A relational account of objects.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151732",
+	author = "Clara Murdaca and C. Barry Jay",
+	pages = "297-302"}
+
+@inproceedings{DBLP:conf/acsc/OfoghiYG06,
+	title = "A semantic approach to boost passage retrieval effectiveness
+               for question answering.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151711",
+	author = "Bahadorreza Ofoghi and John Yearwood and Ranadhir Ghosh",
+	pages = "95-101"}
+
+@inproceedings{DBLP:conf/acsc/PenevW06,
+	title = "Shallow NLP techniques for internet search.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151719",
+	author = "Alex Penev and Raymond Wong",
+	pages = "167-176"}
+
+@inproceedings{DBLP:conf/acsc/ReeveR06,
+	title = "Logic and refinement for charts.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151701",
+	author = "Greg Reeve and Steve Reeves",
+	pages = "13-23"}
+
+@inproceedings{DBLP:conf/acsc/SchulzNS06,
+	title = "A framework for visual data mining of structures.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151718",
+	author = "Hans-J{\"o}rg Schulz and Thomas Nocke and Heidrun Schumann",
+	pages = "157-166"}
+
+@inproceedings{DBLP:conf/acsc/TjondronegoroCP06,
+	title = "Extensible detection and indexing of highlight events in
+               broadcasted sports video.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151726",
+	author = "Dian Tjondronegoro and Yi-Ping Phoebe Chen and Binh Pham",
+	pages = "237-246"}
+
+@inproceedings{DBLP:conf/acsc/TokoroYM06,
+	title = "Improvements of TLAESA nearest neighbour search algorithm
+               and extension to approximation search.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151709",
+	author = "Ken Tokoro and Kazuaki Yamaguchi and Sumio Masuda",
+	pages = "77-83"}
+
+@inproceedings{DBLP:conf/acsc/VallanceC06,
+	title = "Rendering multi-perspective images with trilinear projection.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151725",
+	author = "Scott Vallance and Paul R. Calder",
+	pages = "227-235"}
+
+@inproceedings{DBLP:conf/acsc/VasudevanY06,
+	title = "SPiKE: engineering malware analysis tools using unobtrusive
+               binary-instrumentation.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151734",
+	author = "Amit Vasudevan and Ramesh Yerraballi",
+	pages = "311-320"}
+
+@inproceedings{DBLP:conf/acsc/VilkomirPMM06,
+	title = "Segregated failures model for availability evaluation of
+               fault-tolerant systems.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151706",
+	author = "Sergiy A. Vilkomir and David Lorge Parnas and Veena B. Mendiratta and Eamonn Murphy",
+	pages = "55-61"}
+
+@inproceedings{DBLP:conf/acsc/WangLADW06,
+	title = "A framework for role-based group deligation in distributed
+               environments.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151735",
+	author = "Hua Wang and Jiuyong Li and Ron Addie and Stijn Dekeyser and Richard Watson",
+	pages = "321-328"}
+
+@inproceedings{DBLP:conf/acsc/ZhengZHLS06,
+	title = "Rule sets based bilevel decision model.",
+	ee = "http://doi.acm.org/10.1145/1151699.1151713",
+	author = "Z. Zheng and G. Zhang and Q. He and J. Lu and Z. Shi",
+	pages = "113-120"}
+
+@default year = 2005
+
+@inproceedings{DBLP:conf/acsc/AsianWT05,
+	title = "Stemming Indonesian.",
+	ee = "http://crpit.com/confpapers/CRPITV38Asian.pdf",
+	author = "Jelita Asian and Hugh E. Williams and Seyed M. M. Tahaghoghi",
+	pages = "307-314"}
+
+@inproceedings{DBLP:conf/acsc/BeisyDZ05,
+	title = "Large k-Separated Matchings of Random Regular Graphs.",
+	ee = "http://crpit.com/confpapers/CRPITV38Beis.pdf",
+	author = "Mihalis Beis and William Duckworth and Michele Zito",
+	pages = "175-182"}
+
+@inproceedings{DBLP:conf/acsc/BerrettaMM05,
+	title = "Integer Programming Models and Algorithms for Molecular
+               Classification of Cancer from Microarray Data.",
+	ee = "http://crpit.com/confpapers/CRPITV38Berretta.pdf",
+	author = "Regina Berretta and Alexandre Mendes and Pablo Moscato",
+	pages = "361-370"}
+
+@inproceedings{DBLP:conf/acsc/BubendorferH05,
+	title = "Auction Based Resource Negotiation in NOMAD.",
+	ee = "http://crpit.com/confpapers/CRPITV38Bubendorfer.pdf",
+	author = "Kris Bubendorfer and John H. Hine",
+	pages = "297-306"}
+
+@inproceedings{DBLP:conf/acsc/CaoC05,
+	title = "A Simulation Framework for Knowledge Acquisition Evaluation.",
+	ee = "http://crpit.com/confpapers/CRPITV38Cao.pdf",
+	author = "Tri M. Cao and Paul Compton",
+	pages = "353-360"}
+
+@inproceedings{DBLP:conf/acsc/ChengT05,
+	title = "Real-time Monocular Tracking of View Frustum for Large Screen
+               Human-Computer Interaction.",
+	ee = "http://crpit.com/confpapers/CRPITV38Cheng.pdf",
+	author = "Kelvin Cheng and Masahiro Takatsuka",
+	pages = "125-134"}
+
+@inproceedings{DBLP:conf/acsc/ChowPR05,
+	title = "Large Object Segmentation with Region Priority Rendering.",
+	ee = "http://crpit.com/confpapers/CRPITV38Chow.pdf",
+	author = "Yang-Wai Chow and Ronald Pose and Matthew Regan",
+	pages = "19-28"}
+
+@inproceedings{DBLP:conf/acsc/CookC05,
+	title = "Modelling and Measuring Collaborative Software Engineering.",
+	ee = "http://crpit.com/confpapers/CRPITV38Cook.pdf",
+	author = "Carl Cook and Neville Churcher",
+	pages = "267-276"}
+
+@inproceedings{DBLP:conf/acsc/CooneyDR05,
+	title = "A Programming Language for Web Service Development.",
+	ee = "http://crpit.com/confpapers/CRPITV38Cooney.pdf",
+	author = "Dominic Cooney and Marlon Dumas and Paul Roe",
+	pages = "143-150"}
+
+@inproceedings{DBLP:conf/acsc/Dekker05,
+	title = "Simulating Network Robustness for Critical Infrastructure
+               Networks.",
+	ee = "http://crpit.com/confpapers/CRPITV38Dekker.pdf",
+	author = "Anthony H. Dekker",
+	pages = "59-68"}
+
+@inproceedings{DBLP:conf/acsc/EismanR05,
+	title = "Approximate Recognition of Non-regular Languages by Finite
+               Automata.",
+	ee = "http://crpit.com/confpapers/CRPITV38Eisman.pdf",
+	author = "Gerry Eisman and Bala Ravikumar",
+	pages = "219-228"}
+
+@inproceedings{DBLP:conf/acsc/GilmourD05,
+	title = "A Two-Pronged Attack on the Dragon of Intractability.",
+	ee = "http://crpit.com/confpapers/CRPITV38Gilmour.pdf",
+	author = "Stephen Gilmour and Mark Dras",
+	pages = "183-192"}
+
+@inproceedings{DBLP:conf/acsc/GlynnHM05,
+	title = "Integration of generic program analysis tools into a software
+               development environment.",
+	ee = "http://crpit.com/confpapers/CRPITV38Glynn.pdf",
+	author = "Erica Glynn and Ian J. Hayes and Anthony MacDonald",
+	pages = "249-258"}
+
+@inproceedings{DBLP:conf/acsc/Hemer05,
+	title = "A Formal Approach to Component Adaptation and Composition.",
+	ee = "http://crpit.com/confpapers/CRPITV38Hemer.pdf",
+	author = "David Hemer",
+	pages = "259-266"}
+
+@inproceedings{DBLP:conf/acsc/HuangEL05,
+	title = "A Framework of Filtering, Clustering and Dynamic Layout
+               Graphs for Visualization.",
+	ee = "http://crpit.com/confpapers/CRPITV38Huang.pdf",
+	author = "Xiaodi Huang and Peter Eades and Wei Lai",
+	pages = "87-96"}
+
+@inproceedings{DBLP:conf/acsc/HuangHH05,
+	title = "A File Discovery Control Scheme for P2P File Sharing Applications
+               in Wireless Mobile Environments.",
+	ee = "http://crpit.com/confpapers/CRPITV38Huang2.pdf",
+	author = "Chung-Ming Huang and Tz-Heng Hsu and Ming-Fa Hsu",
+	pages = "39-48"}
+
+@inproceedings{DBLP:conf/acsc/HunterRS05,
+	title = "Agent-Based Distributed Software Verification.",
+	ee = "http://crpit.com/confpapers/CRPITV38Hunter.pdf",
+	author = "Chris Hunter and Peter Robinson and Paul A. Strooper",
+	pages = "159-164"}
+
+@inproceedings{DBLP:conf/acsc/Koehler05,
+	title = "A Contraction Algorithm for finding Minimal Feedback Sets.",
+	ee = "http://crpit.com/confpapers/CRPITV38Koehler.pdf",
+	author = "Henning Koehler",
+	pages = "165-174"}
+
+@inproceedings{DBLP:conf/acsc/LeungL05,
+	title = "Unsupervised Anomaly Detection in Network Intrusion Detection
+               Using Clusters.",
+	ee = "http://crpit.com/confpapers/CRPITV38Leung.pdf",
+	author = "Kingsly Leung and Christopher Leckie",
+	pages = "333-342"}
+
+@inproceedings{DBLP:conf/acsc/LiV05,
+	title = "Cloth Animation with Adaptively Refined Meshes.",
+	ee = "http://crpit.com/confpapers/CRPITV38Li.pdf",
+	author = "Ling Li and Vasily Volkov",
+	pages = "107-114"}
+
+@inproceedings{DBLP:conf/acsc/LinWD05,
+	title = "A Novel Fuzzy Logic Controller (FLC) for Shortening the
+               TCP Channel Roundtrip Time by Eliminating User Buffer Overflow
+               Adaptively.",
+	ee = "http://crpit.com/confpapers/CRPITV38Lin.pdf",
+	author = "Wilfred W. K. Lin and Allan K. Y. Wong and Tharam S. Dillon",
+	pages = "29-38"}
+
+@inproceedings{DBLP:conf/acsc/LiuMO05,
+	title = "Combining Logics for Modelling Security Policies.",
+	ee = "http://crpit.com/confpapers/CRPITV38Liu.pdf",
+	author = "Chuchang Liu and Patrick McLean and Maris A. Ozols",
+	pages = "323-332"}
+
+@inproceedings{DBLP:conf/acsc/Luerssen05,
+	title = "Graph Grammar Encoding and Evolution of Automata Networks.",
+	ee = "http://crpit.com/confpapers/CRPITV38Luerssen.pdf",
+	author = "Martin H. Luerssen",
+	pages = "229-238"}
+
+@inproceedings{DBLP:conf/acsc/MajKF05,
+	title = "A Pedagogical Evaluation of New State Model Diagrams for
+               Teaching Internetwork Technologies.",
+	ee = "http://crpit.com/confpapers/CRPITV38Maj.pdf",
+	author = "Stanislaw P. Maj and G. Kohli and T. Fetherston",
+	pages = "135-142"}
+
+@inproceedings{DBLP:conf/acsc/MarriottMHT05,
+	title = "Layout of Bayesian Networks.",
+	ee = "http://crpit.com/confpapers/CRPITV38Marriott.pdf",
+	author = "Kim Marriott and Peter Moulder and Lucas R. Hope and Charles Twardy",
+	pages = "97-106"}
+
+@inproceedings{DBLP:conf/acsc/McAullayWCJ05,
+	title = "A Delivery Framework for Health Data Mining and Analytics.",
+	ee = "http://crpit.com/confpapers/CRPITV38McAullay.pdf",
+	author = "Damien McAullay and Graham J. Williams and Jie Chen and Huidong Jin",
+	pages = "381-390"}
+
+@inproceedings{DBLP:conf/acsc/MoscatoMMB05,
+	title = "The Electronic Primaries: Predicting the U.S. Presidency
+               Using Feature Selection with Safe Data Reduction.",
+	ee = "http://crpit.com/confpapers/CRPITV38Moscato.pdf",
+	author = "Pablo Moscato and Luke Mathieson and Alexandre Mendes and Regina Berretta",
+	pages = "371-380"}
+
+@inproceedings{DBLP:conf/acsc/NeverovR05,
+	title = "Towards a Fully-reflective Meta-programming Language.",
+	ee = "http://crpit.com/confpapers/CRPITV38Neverov.pdf",
+	author = "Gregory Neverov and Paul Roe",
+	pages = "151-158"}
+
+@inproceedings{DBLP:conf/acsc/NguyenX05,
+	title = "Interprocedural Side-Effect Analysis and Optimisation in
+               the Presence of Dynamic Class Loading.",
+	ee = "http://crpit.com/confpapers/CRPITV38Nguyen.pdf",
+	author = "Phung Hua Nguyen and Jingling Xue",
+	pages = "9-18"}
+
+@inproceedings{DBLP:conf/acsc/PirzadaMD05,
+	title = "Dependable Dynamic Source Routing without a Trusted Third
+               Party.",
+	ee = "http://crpit.com/confpapers/CRPITV38Pirzada.pdf",
+	author = "Asad Amir Pirzada and Chris McDonald and Amitava Datta",
+	pages = "79-86"}
+
+@inproceedings{DBLP:conf/acsc/RyanG05,
+	title = "The Effect of Context and Application Type on Mobile Usability:
+               An Empirical Study.",
+	ee = "http://crpit.com/confpapers/CRPITV38Ryan.pdf",
+	author = "Caspar Ryan and Atish Gonsalves",
+	pages = "115-124"}
+
+@inproceedings{DBLP:conf/acsc/ShannebP05,
+	title = "Flexible Exclusion Control for Composite Objects.",
+	ee = "http://crpit.com/confpapers/CRPITV38Shanneb.pdf",
+	author = "Abdelsalam Shanneb and John Potter",
+	pages = "277-286"}
+
+@inproceedings{DBLP:conf/acsc/TahaghoghiWTV05,
+	title = "Video Cut Detection using Frame Windows.",
+	ee = "http://crpit.com/confpapers/CRPITV38Tahaghoghi.pdf",
+	author = "Seyed M. M. Tahaghoghi and Hugh E. Williams and James A. Thom and Timo Volkmer",
+	pages = "193-200"}
+
+@inproceedings{DBLP:conf/acsc/TjondronegoroCP05,
+	title = "A Statistical-driven Approach for Automatic Classification
+               of Events in AFL Video Highlights.",
+	ee = "http://crpit.com/confpapers/CRPITV38Tjondronegoro.pdf",
+	author = "Dian Tjondronegoro and Yi-Ping Phoebe Chen and Binh Pham",
+	pages = "209-218"}
+
+@inproceedings{DBLP:conf/acsc/Ullman05,
+	title = "Gradiance On-Line Accelerated Learning.",
+	ee = "http://crpit.com/confpapers/CRPITV38Ullman.pdf",
+	author = "Jeffrey D. Ullman",
+	pages = "3-6"}
+
+@inproceedings{DBLP:conf/acsc/VasudevanYC05,
+	title = "A High Performance Kernel-Less Operating System Architecture.",
+	ee = "http://crpit.com/confpapers/CRPITV38Vasudevan.pdf",
+	author = "Amit Vasudevan and Ramesh Yerraballi and Ashish Chawla",
+	pages = "287-296"}
+
+@inproceedings{DBLP:conf/acsc/WangSZC05,
+	title = "Authorization Algorithms for the Mobility of User-Role Relationship.",
+	ee = "http://crpit.com/confpapers/CRPITV38Wang2.pdf",
+	author = "Hua Wang and Lili Sun and Yanchun Zhang and Jinli Cao",
+	pages = "69-78"}
+
+@inproceedings{DBLP:conf/acsc/WangWHHW05,
+	title = "Fractal Image Compression on a Pseudo Spiral Architecture.",
+	ee = "http://crpit.com/confpapers/CRPITV38Wang.pdf",
+	author = "Huaqing Wang and Meiqing Wang and Tom Hintz and Xiangjian He and Qiang Wu",
+	pages = "201-208"}
+
+@inproceedings{DBLP:conf/acsc/WhileF05,
+	title = "Optimising Parallel Pattern-matching by Source-level Program
+               Transformation.",
+	ee = "http://crpit.com/confpapers/CRPITV38While.pdf",
+	author = "R. Lyndon While and Tony Field",
+	pages = "239-248"}
+
+@inproceedings{DBLP:conf/acsc/WishartRI05,
+	title = "SuperstringRep: Reputation-enhanced Service Discovery.",
+	ee = "http://crpit.com/confpapers/CRPITV38Wishart.pdf",
+	author = "Ryan Wishart and Ricky Robinson and Jadwiga Indulska",
+	pages = "49-58"}
+
+@inproceedings{DBLP:conf/acsc/WuT05,
+	title = "The Geodesic Self-Organizing Map and Its Error Analysis.",
+	ee = "http://crpit.com/confpapers/CRPITV38Wu.pdf",
+	author = "Yingxin Wu and Masahiro Takatsuka",
+	pages = "343-352"}
+
+@inproceedings{DBLP:conf/acsc/YangP05,
+	title = "Measuring Semantic Similarity in the Taxonomy of WordNet.",
+	ee = "http://crpit.com/confpapers/CRPITV38Yang.pdf",
+	author = "Dongqiang Yang and David M. W. Powers",
+	pages = "315-322"}
+
+@default year = 2004
+
+@inproceedings{DBLP:conf/acsc/Allert04,
+	title = "The Effectiveness of Innovative Approaches to CS1: Comparing
+               Opinion to Outcome.",
+	ee = "http://crpit.com/confpapers/CRPITV26Allert.pdf",
+	author = "James D. Allert",
+	pages = "151-157"}
+
+@inproceedings{DBLP:conf/acsc/AmmerlaanW04,
+	title = "Adaptive Cooperative Fuzzy Logic Controller.",
+	ee = "http://crpit.com/confpapers/CRPITV26Ammerlaan.pdf",
+	author = "Justin Ammerlaan and David Wright",
+	pages = "255-263"}
+
+@inproceedings{DBLP:conf/acsc/Baeza-Yates04,
+	title = "Web Mining in Search Engines.",
+	ee = "http://crpit.com/confpapers/CRPITV26BaezaYates.pdf",
+	author = "Ricardo A. Baeza-Yates",
+	pages = "3-4"}
+
+@inproceedings{DBLP:conf/acsc/BellW04,
+	title = "Forward Chaining for Robot and Agent Navigation using Potential
+               Fields.",
+	ee = "http://crpit.com/confpapers/CRPITV26Bell.pdf",
+	author = "Graeme Bell and Michael Weir",
+	pages = "265-274"}
+
+@inproceedings{DBLP:conf/acsc/BillingtonH04,
+	title = "Closed Form Expressions for the State Space of TCP's Data
+               Transfer Service Operating over Unbounded Channels.",
+	ee = "http://crpit.com/confpapers/CRPITV26Billington.pdf",
+	author = "Jonathan Billington and Bing Han",
+	pages = "31-39"}
+
+@inproceedings{DBLP:conf/acsc/Brodie-TzrrellDFM04,
+	title = "Garbage Collection for Storage-Oriented Clusters.",
+	ee = "http://crpit.com/confpapers/CRPITV26BrodieTyrrell.ps",
+	author = "William Brodie-Tyrrell and Henry Detmold and Katrina E. Falkner and David S. Munro",
+	pages = "99-108"}
+
+@inproceedings{DBLP:conf/acsc/CiavarellaM04,
+	title = "Lossless Image Compression Using Pixel Reordering.",
+	ee = "http://crpit.com/confpapers/CRPITV26Ciavarella.pdf",
+	author = "Michael Ciavarella and Alistair Moffat",
+	pages = "125-132"}
+
+@inproceedings{DBLP:conf/acsc/CooperKKR04,
+	title = "Java Implementation Verification Using Reverse Engineering.",
+	ee = "http://crpit.com/confpapers/CRPITV26Cooper.pdf",
+	author = "David Cooper and Benjamin Khoo and Brian R. von Konsky and Mike Robey",
+	pages = "203-211"}
+
+@inproceedings{DBLP:conf/acsc/DekkerC04,
+	title = "Network Robustness and Graph Topology.",
+	ee = "http://crpit.com/confpapers/CRPITV26Dekker.pdf",
+	author = "Anthony H. Dekker and Bernard D. Colbert",
+	pages = "359-368"}
+
+@inproceedings{DBLP:conf/acsc/DitzeAL04,
+	title = "Improving Resource Utilization for MPEG-4 Decoding in Embedded
+               End-Devices.",
+	ee = "http://crpit.com/confpapers/CRPITV26Ditze.pdf",
+	author = "Michael Ditze and Peter Altenbernd and Chris Loeser",
+	pages = "133-142"}
+
+@inproceedings{DBLP:conf/acsc/ElGindyF04,
+	title = "On Improving the Memory Access Patterns During The Execution
+               of Strassen's Matrix Multiplication Algorithm.",
+	ee = "http://crpit.com/confpapers/CRPITV26ElGindy.pdf",
+	author = "Hossam A. ElGindy and George Ferizis",
+	pages = "109-115"}
+
+@inproceedings{DBLP:conf/acsc/Flake04,
+	title = "Towards the Completion of the Formal Semantics of OCL 2.0.",
+	ee = "http://crpit.com/confpapers/CRPITV26Flake.pdf",
+	author = "Stephan Flake",
+	pages = "73-82"}
+
+@inproceedings{DBLP:conf/acsc/FriedrichS04,
+	title = "Flexible Layering in Hierarchical Drawings with Nodes of
+               Arbitrary Size.",
+	ee = "http://crpit.com/confpapers/CRPITV26Friedrich.pdf",
+	author = "Carsten Friedrich and Falk Schreiber",
+	pages = "369-376"}
+
+@inproceedings{DBLP:conf/acsc/FuleR04,
+	title = "Detecting Privacy and Ethical Sensitivity in Data Mining
+               Results.",
+	ee = "http://crpit.com/confpapers/CRPITV26Fule.pdf",
+	author = "Peter Fule and John F. Roddick",
+	pages = "159-166"}
+
+@inproceedings{DBLP:conf/acsc/GarciaWC04,
+	title = "Access-Ordered Indexes.",
+	ee = "http://crpit.com/confpapers/CRPITV26Garcia.ps",
+	author = "Steven Garcia and Hugh E. Williams and Adam Cannane",
+	pages = "7-14"}
+
+@inproceedings{DBLP:conf/acsc/HagenGS04,
+	title = "Code Improvements for Model Elimination Based Reasoning
+               Systems.",
+	ee = "http://crpit.com/confpapers/CRPITV26Hagen.pdf",
+	author = "Richard A. Hagen and Scott D. Goodwin and Abdul Sattar",
+	pages = "233-240"}
+
+@inproceedings{DBLP:conf/acsc/HineD04,
+	title = "Securing Distributed Computing Against the Hostile Host.",
+	ee = "http://crpit.com/confpapers/CRPITV26Hine.ps",
+	author = "John H. Hine and Paul Dagger",
+	pages = "279-286"}
+
+@inproceedings{DBLP:conf/acsc/HoffmannD04,
+	title = "Frequency Space Representation of Transitions of Quadruped
+               Robot Gaits.",
+	ee = "http://crpit.com/confpapers/CRPITV26Hoffmann.pdf",
+	author = "Jan Hoffmann and Uwe D{\"u}ffert",
+	pages = "275-278"}
+
+@inproceedings{DBLP:conf/acsc/HoggCNS04,
+	title = "An Evaluation of Web Services in the Design of a B2B Application.",
+	ee = "http://crpit.com/confpapers/CRPITV26Hogg.pdf",
+	author = "K. Hogg and P. Chilcott and M. Nolan and B. Srinivasan",
+	pages = "331-340"}
+
+@inproceedings{DBLP:conf/acsc/HolfordCR04,
+	title = "Using Self-Defending Objects to Develop Security Aware Applications
+               in Java.",
+	ee = "http://crpit.com/confpapers/CRPITV26Holford.ps",
+	author = "John W. Holford and William J. Caelli and Anthony W. Rhodes",
+	pages = "341-349"}
+
+@inproceedings{DBLP:conf/acsc/JangWD04,
+	title = "On Evolving Fixed Pattern Strategies for Iterated Prisoner's
+               Dilemma.",
+	ee = "http://crpit.com/confpapers/CRPITV26Jang.pdf",
+	author = "Daniel Jang and Peter A. Whigham and Grant Dick",
+	pages = "241-247"}
+
+@inproceedings{DBLP:conf/acsc/JansamakS04,
+	title = "Formalization of UML Statechart Models Using Concurrent
+               Regular Expressions.",
+	ee = "http://crpit.com/confpapers/CRPITV26Jansamak.pdf",
+	author = "S. Jansamak and A. Surarerks",
+	pages = "83-88"}
+
+@inproceedings{DBLP:conf/acsc/LarkinS04,
+	title = "Self-Replicating Expressions in the Lambda Calculus.",
+	ee = "http://crpit.com/confpapers/CRPITV26Larkin.ps",
+	author = "James Larkin and Phil Stocks",
+	pages = "167-173"}
+
+@inproceedings{DBLP:conf/acsc/LesterZW04,
+	title = "In-Place versus Re-Build versus Re-Merge: Index Maintenance
+               Strategies for Text Retrieval Systems.",
+	ee = "http://crpit.com/confpapers/CRPITV26Lester.ps",
+	author = "Nicholas Lester and Justin Zobel and Hugh E. Williams",
+	pages = "15-22"}
+
+@inproceedings{DBLP:conf/acsc/LewisP04,
+	title = "Sensor Fusion Weighting Measures in Audio-Visual Speech
+               Recognition.",
+	ee = "http://crpit.com/confpapers/CRPITV26Lewis.ps",
+	author = "Trent W. Lewis and David M. W. Powers",
+	pages = "305-314"}
+
+@inproceedings{DBLP:conf/acsc/LiR04,
+	title = "Improved Video Mosaic Construction by Selecting a Suitable
+               Subset of Video Images.",
+	ee = "http://crpit.com/confpapers/CRPITV26Li.pdf",
+	author = "J. S. Jimmy Li and Sharmil Randhawa",
+	pages = "143-149"}
+
+@inproceedings{DBLP:conf/acsc/LiuCFR04,
+	title = "Visually Sealed and Digitally Signed Documents.",
+	ee = "http://crpit.com/confpapers/CRPITV26Liu.pdf",
+	author = "Vicky Liu and William J. Caelli and Ernest Foo and Selwyn Russell",
+	pages = "287-294"}
+
+@inproceedings{DBLP:conf/acsc/LuB04,
+	title = "A RMI Protocol for Aglets.",
+	ee = "http://crpit.com/confpapers/CRPITV26Lu.pdf",
+	author = "Feng Lu and Kris Bubendorfer",
+	pages = "249-253"}
+
+@inproceedings{DBLP:conf/acsc/MathiesonDPG04,
+	title = "An Open Meteorological Alerting System: Issues and Solutions.",
+	ee = "http://crpit.com/confpapers/CRPITV26Mathieson.pdf",
+	author = "Ian D. Mathieson and Sandy Dance and Lin Padgham and Malcolm Gorman",
+	pages = "351-358"}
+
+@inproceedings{DBLP:conf/acsc/MenonL04,
+	title = "Towards a Semantic Basis for Rosetta.",
+	ee = "http://crpit.com/confpapers/CRPITV26Menon.ps",
+	author = "Catherine Menon and Charles Lakos",
+	pages = "175-184"}
+
+@inproceedings{DBLP:conf/acsc/MickanMK04,
+	title = "Using Generative Programming to Visualise Hypercode in Complex
+               and Dynamic Systems.",
+	ee = "http://crpit.com/confpapers/CRPITV26Mickan.pdf",
+	author = "Kath Mickan and Ronald Morrison and Graham N. C. Kirby",
+	pages = "377-386"}
+
+@inproceedings{DBLP:conf/acsc/MitriUC04,
+	title = "Automatic Music Classification Problems.",
+	ee = "http://crpit.com/confpapers/CRPITV26Mitri.pdf",
+	author = "George Mitri and Alexandra L. Uitdenbogerd and Vic Ciesielski",
+	pages = "315-322"}
+
+@inproceedings{DBLP:conf/acsc/MurrayCS04,
+	title = "An Approach to Specifying Software Frameworks.",
+	ee = "http://crpit.com/confpapers/CRPITV26Murray.pdf",
+	author = "Leesa Murray and David A. Carrington and Paul A. Strooper",
+	pages = "185-192"}
+
+@inproceedings{DBLP:conf/acsc/NguyenX04,
+	title = "Strength Reduction for Loop-Invariant Types.",
+	ee = "http://crpit.com/confpapers/CRPITV26Nguyen.pdf",
+	author = "Phung Hua Nguyen and Jingling Xue",
+	pages = "213-222"}
+
+@inproceedings{DBLP:conf/acsc/ParnisL04,
+	title = "Exploiting FPGA Concurrency to Enhance JVM Performance.",
+	ee = "http://crpit.com/confpapers/CRPITV26Parnis.pdf",
+	author = "James Parnis and Gareth Lee",
+	pages = "223-232"}
+
+@inproceedings{DBLP:conf/acsc/PirzadaM04,
+	title = "Kerberos Assisted Authentication in Mobile Ad-hoc Networks.",
+	ee = "http://crpit.com/confpapers/CRPITV26Pirzada2.pdf",
+	author = "Asad Amir Pirzada and Chris McDonald",
+	pages = "41-46"}
+
+@inproceedings{DBLP:conf/acsc/PirzadaM04a,
+	title = "Establishing Trust In Pure Ad-hoc Networks.",
+	ee = "http://crpit.com/confpapers/CRPITV26Pirzada1.pdf",
+	author = "Asad Amir Pirzada and Chris McDonald",
+	pages = "47-54"}
+
+@inproceedings{DBLP:conf/acsc/Powell04,
+	title = "Automatic Derivation of Loop Termination Conditions to Support
+               Verification.",
+	ee = "http://crpit.com/confpapers/CRPITV26Powell.pdf",
+	author = "Daniel Powell",
+	pages = "89-97"}
+
+@inproceedings{DBLP:conf/acsc/Smith04,
+	title = "A Framework for Modelling and Analysing Mobile Systems.",
+	ee = "http://crpit.com/confpapers/CRPITV26Smith.ps",
+	author = "Graeme Smith",
+	pages = "193-202"}
+
+@inproceedings{DBLP:conf/acsc/Song04,
+	title = "Reducing Register Pressure Through LAER Algorithm.",
+	ee = "http://crpit.com/confpapers/CRPITV26Song.pdf",
+	author = "Gao Song",
+	pages = "55-64"}
+
+@inproceedings{DBLP:conf/acsc/TsangHCCT04,
+	title = "Tuning the Collision Test for Power.",
+	ee = "http://crpit.com/confpapers/CRPITV26Tsang.pdf",
+	author = "Wai Wan Tsang and Lucas Chi Kwong Hui and K. P. Chow and C. F. Chong and Sam C. W. Tso",
+	pages = "23-30"}
+
+@inproceedings{DBLP:conf/acsc/WangSZC04,
+	title = "Anonymous Access Scheme for Electronic Services.",
+	ee = "http://crpit.com/confpapers/CRPITV26Wang.pdf",
+	author = "Hua Wang and Lili Sun and Yanchun Zhang and Jinli Cao",
+	pages = "295-304"}
+
+@inproceedings{DBLP:conf/acsc/WilliamsE04,
+	title = "Verification of the Futurebus+ Cache Coherence protocol:
+               A case study in model checking.",
+	ee = "http://crpit.com/confpapers/CRPITV26Williams.ps",
+	author = "Kylie Williams and Robert Esser",
+	pages = "65-71"}
+
+@inproceedings{DBLP:conf/acsc/XieAZW04,
+	title = "Learning Models for English Speech Recognition.",
+	ee = "http://crpit.com/confpapers/CRPITV26Xie.pdf",
+	author = "Huayang Xie and Peter Andreae and Mengjie Zhang and Paul Warren",
+	pages = "323-329"}
+
+@inproceedings{DBLP:conf/acsc/YuHCP04,
+	title = "Homeless and Home-based Lazy Release Consistency Protocols
+               on Distributed Shared Memory.",
+	ee = "http://crpit.com/confpapers/CRPITV26Yu.pdf",
+	author = "Byung-Hyun Yu and Zhiyi Huang and Stephen Cranefield and Martin K. Purvis",
+	pages = "117-123"}
+
+@default year = 2003
+
+@inproceedings{DBLP:conf/acsc/Allison03,
+	title = "Types and Classes of Machine Learning and Data Mining.",
+	ee = "http://crpit.com/confpapers/CRPITV16Allison.pdf",
+	author = "Lloyd Allison",
+	pages = "207-215"}
+
+@inproceedings{DBLP:conf/acsc/BillingtonH03,
+	title = "On Defining the Service Provided by TCP.",
+	ee = "http://crpit.com/confpapers/CRPITV16Billington.pdf",
+	author = "Jonathan Billington and Bing Han",
+	pages = "129-138"}
+
+@inproceedings{DBLP:conf/acsc/Buttfield03,
+	title = "A New Approach to Rapid Image Morphing for Lip Motion Synthesis.",
+	ee = "http://crpit.com/confpapers/CRPITV16Buttfield.pdf",
+	author = "Anna Buttfield",
+	pages = "79-86"}
+
+@inproceedings{DBLP:conf/acsc/CarterGSY03,
+	title = "Mutation Analysis to Verify Feature Matrices for Isolating
+               Errors in Simulation Models.",
+	ee = "http://crpit.com/confpapers/CRPITV16Carter.pdf",
+	author = "Simon Carter and Malcolm Graham and Paul A. Strooper and Zhiguo Yuan",
+	pages = "29-34"}
+
+@inproceedings{DBLP:conf/acsc/ChanR03,
+	title = "Context-Sensitive Mobile Database Summarisation.",
+	ee = "http://crpit.com/confpapers/CRPITV16Chan.pdf",
+	author = "Darin Chan and John F. Roddick",
+	pages = "139-149"}
+
+@inproceedings{DBLP:conf/acsc/ChouZ03,
+	title = "Efficiently Computing the Top N Averages in Iceberg Cubes.",
+	ee = "http://crpit.com/confpapers/CRPITV16Chou.pdf",
+	author = "Pauline Lienhua Chou and Xiuzhen Zhang",
+	pages = "101-109"}
+
+@inproceedings{DBLP:conf/acsc/ChungM03,
+	title = "Towards Customisable Tuple Field Matching in VLOS.",
+	ee = "http://crpit.com/confpapers/CRPITV16Chung.pdf",
+	author = "Voon-Li Chung and Chris McDonald",
+	pages = "317-323"}
+
+@inproceedings{DBLP:conf/acsc/CoddingtonLWW03,
+	title = "Extensible Job Managers for Grid Computing.",
+	ee = "http://crpit.com/confpapers/CRPITV16Coddington.pdf",
+	author = "Paul D. Coddington and Lici Lu and Darren Webb and Andrew L. Wendelborn",
+	pages = "151-159"}
+
+@inproceedings{DBLP:conf/acsc/CrispPR03,
+	title = "Fast Segmentation of Large Images.",
+	ee = "http://crpit.com/confpapers/CRPITV16Crisp.pdf",
+	author = "David J. Crisp and Peter Perry and Nicholas J. Redding",
+	pages = "87-93"}
+
+@inproceedings{DBLP:conf/acsc/DaleGP03,
+	title = "Using Natural Language Generation for Navigational Assistance.",
+	ee = "http://crpit.com/confpapers/CRPITV16Dale.pdf",
+	author = "Robert Dale and Sabine Geldof and Jean-Philippe Prost",
+	pages = "35-44"}
+
+@inproceedings{DBLP:conf/acsc/Dermoudy03,
+	title = "A Novel Approach to Parenting in Functional Program Evaluation.",
+	ee = "http://crpit.com/confpapers/CRPITV16Dermoudy.pdf",
+	author = "Julian R. Dermoudy",
+	pages = "217-226"}
+
+@inproceedings{DBLP:conf/acsc/Dunn03,
+	title = "Environment-Independent Performance Analyses of Cryptographic
+               Algorithms.",
+	ee = "http://crpit.com/confpapers/CRPITV16Dunn.pdf",
+	author = "Adam Dunn",
+	pages = "265-274"}
+
+@inproceedings{DBLP:conf/acsc/FreemanK03,
+	title = "Hardware Acceleration of JPEG2000 Image Compression for
+               Low-Power Embedded Applications.",
+	ee = "http://crpit.com/confpapers/CRPITV16Freeman.pdf",
+	author = "Darren Freeman and Greg Knowles",
+	pages = "325-331"}
+
+@inproceedings{DBLP:conf/acsc/HagenS03,
+	title = "Improving Search in a Hypothetical Reasoning System.",
+	ee = "http://crpit.com/confpapers/CRPITV16Hagen.pdf",
+	author = "Richard A. Hagen and Abdul Sattar",
+	pages = "45-53"}
+
+@inproceedings{DBLP:conf/acsc/Hexel03,
+	title = "FITS - A Fault Injection Architecture for Time-Triggered
+               Systems.",
+	ee = "http://crpit.com/confpapers/CRPITV16Hexel.pdf",
+	author = "Ren{\'e} Hexel",
+	pages = "333-338"}
+
+@inproceedings{DBLP:conf/acsc/HoadZ03,
+	title = "Video Similarity Detection for Digital Rights Management.",
+	ee = "http://crpit.com/confpapers/CRPITV16Hoad.pdf",
+	author = "Timothy C. Hoad and Justin Zobel",
+	pages = "237-245"}
+
+@inproceedings{DBLP:conf/acsc/HuangL03,
+	title = "Force-Transfer: A New Approach to Removing Overlapping Nodes
+               in Graph Layout.",
+	ee = "http://crpit.com/confpapers/CRPITV16Huang.pdf",
+	author = "Xiaodi Huang and Wei Lai",
+	pages = "349-358"}
+
+@inproceedings{DBLP:conf/acsc/HurstMM03,
+	title = "Cobweb: A Constraint-Based WEB Browser.",
+	ee = "http://crpit.com/confpapers/CRPITV16Hurst.pdf",
+	author = "Nathan Hurst and Kim Marriott and Peter Moulder",
+	pages = "247-254"}
+
+@inproceedings{DBLP:conf/acsc/JinEL03,
+	title = "Lightweight Consistency Analysis of Dataflow Process Networks.",
+	ee = "http://crpit.com/confpapers/CRPITV16Jin.pdf",
+	author = "Yan Jin and Robert Esser and Charles Lakos",
+	pages = "291-300"}
+
+@inproceedings{DBLP:conf/acsc/KhaledNB03,
+	title = "InspectJ: Program Monitoring for Visualisation Using AspectJ.",
+	ee = "http://crpit.com/confpapers/CRPITV16Khaled.pdf",
+	author = "Rilla Khaled and James Noble and Robert Biddle",
+	pages = "359-368"}
+
+@inproceedings{DBLP:conf/acsc/LeckieR03,
+	title = "Policies for Sharing Distributed Probabilistic Beliefs.",
+	ee = "http://crpit.com/confpapers/CRPITV16Leckie.pdf",
+	author = "Christopher Leckie and Kotagiri Ramamohanarao",
+	pages = "285-290"}
+
+@inproceedings{DBLP:conf/acsc/Mayo03,
+	title = "Symbol Grounding and its Implications for Artificial Intelligence.",
+	ee = "http://crpit.com/confpapers/CRPITV16Mayo.pdf",
+	author = "Michael J. Mayo",
+	pages = "55-60"}
+
+@inproceedings{DBLP:conf/acsc/Naish03,
+	title = "Approximating the Success Set of Logic Programs Using Constrained
+               Regular Types.",
+	ee = "http://crpit.com/confpapers/CRPITV16Naish.pdf",
+	author = "Lee Naish",
+	pages = "61-67"}
+
+@inproceedings{DBLP:conf/acsc/NascimentoE03,
+	title = "User Hints for Map Labelling.",
+	ee = "http://crpit.com/confpapers/CRPITV16doNascimento.pdf",
+	author = "Hugo A. D. do Nascimento and Peter Eades",
+	pages = "339-347"}
+
+@inproceedings{DBLP:conf/acsc/NorcrossMMD03,
+	title = "Implementing a Family of Distributed Garbage Collectors.",
+	ee = "http://crpit.com/confpapers/CRPITV16Norcross.pdf",
+	author = "Stuart Norcross and Ronald Morrison and David S. Munro and Henry Detmold",
+	pages = "161-170"}
+
+@inproceedings{DBLP:conf/acsc/PendragonW03,
+	title = "Path-Planning by Tessellation of Obstacles.",
+	ee = "http://crpit.com/confpapers/CRPITV16Pendragon.pdf",
+	author = "Tane Pendragon and R. Lyndon While",
+	pages = "3-9"}
+
+@inproceedings{DBLP:conf/acsc/PopeN03,
+	title = "A Program Transformation for Debugging Haskell 98.",
+	ee = "http://crpit.com/confpapers/CRPITV16Pope.pdf",
+	author = "Bernard Pope and Lee Naish",
+	pages = "227-236"}
+
+@inproceedings{DBLP:conf/acsc/RoddickHV03,
+	title = "A Unifying Semantic Distance Model for Determining the Similarity
+               of Attribute Values.",
+	ee = "http://crpit.com/confpapers/CRPITV16Roddick.pdf",
+	author = "John F. Roddick and Kathleen Hornsby and Denise de Vries",
+	pages = "111-118"}
+
+@inproceedings{DBLP:conf/acsc/RuiB03,
+	title = "Refactoring Use Case Models: The Metamodel.",
+	ee = "http://crpit.com/confpapers/CRPITV16Rui.pdf",
+	author = "Kexing Rui and Gregory Butler",
+	pages = "301-308"}
+
+@inproceedings{DBLP:conf/acsc/ShanksWC03,
+	title = "Indexing for Fast Categorisation.",
+	ee = "http://crpit.com/confpapers/CRPITV16Shanks.pdf",
+	author = "Vaughan R. Shanks and Hugh E. Williams and Adam Cannane",
+	pages = "119-127"}
+
+@inproceedings{DBLP:conf/acsc/SinhaZ03,
+	title = "Efficient Trie-Based Sorting of Large Sets of Strings.",
+	ee = "http://crpit.com/confpapers/CRPITV16Sinha.pdf",
+	author = "Ranjan Sinha and Justin Zobel",
+	pages = "11-18"}
+
+@inproceedings{DBLP:conf/acsc/TaoC03,
+	title = "A Useful Bound for Region Merging Algorithms in a Bayesian
+               Model.",
+	ee = "http://crpit.com/confpapers/CRPITV16Tao.pdf",
+	author = "Trevor C. Tao and David J. Crisp",
+	pages = "95-100"}
+
+@inproceedings{DBLP:conf/acsc/TruongBR03,
+	title = "A Web Based Environment for Learning to Program.",
+	ee = "http://crpit.com/confpapers/CRPITV16Truong.pdf",
+	author = "Nghi Truong and Peter Bancroft and Paul Roe",
+	pages = "255-264"}
+
+@inproceedings{DBLP:conf/acsc/TupakulaV03,
+	title = "A Practical Method to Counteract Denial of Service Attacks.",
+	ee = "http://crpit.com/confpapers/CRPITV16Tupakula.pdf",
+	author = "Udaya Kiran Tupakula and Vijay Varadharajan",
+	pages = "275-284"}
+
+@inproceedings{DBLP:conf/acsc/VaughanGC03,
+	title = "Communication Performance Issues for Two Cluster Computers.",
+	ee = "http://crpit.com/confpapers/CRPITV16Vaughan.pdf",
+	author = "Francis Vaughan and Duncan A. Grove and Paul D. Coddington",
+	pages = "171-180"}
+
+@inproceedings{DBLP:conf/acsc/WangCZ03,
+	title = "A Flexible Payment Scheme and its Permission-Role Assignment.",
+	ee = "http://crpit.com/confpapers/CRPITV16HWang.pdf",
+	author = "Hua Wang and Jinli Cao and Yanchun Zhang",
+	pages = "189-198"}
+
+@inproceedings{DBLP:conf/acsc/WangMAB03,
+	title = "A Comparative Study for Domain Ontology Guided Feature Extraction.",
+	ee = "http://crpit.com/confpapers/CRPITV16BWang.pdf",
+	author = "Bill B. Wang and Robert I. McKay and Hussein A. Abbass and Michael Barlow",
+	pages = "69-78"}
+
+@inproceedings{DBLP:conf/acsc/WinterR03,
+	title = "Modelling Large Railway Interlockings and Model Checking
+               Small Ones.",
+	ee = "http://crpit.com/confpapers/CRPITV16Winter.pdf",
+	author = "Kirsten Winter and Neil J. Robinson",
+	pages = "309-316"}
+
+@inproceedings{DBLP:conf/acsc/XueOZ03,
+	title = "A Multi-versioning Algorithm for Intention Preservation
+               in Distributed Real-time Group Editors.",
+	ee = "http://crpit.com/confpapers/CRPITV16Xue.pdf",
+	author = "Liyin Xue and Mehmet A. Orgun and Kang Zhang",
+	pages = "19-28"}
+
+@inproceedings{DBLP:conf/acsc/ZhangLQ03,
+	title = "Comparing Industry Benchmarks for J2EE Application Server
+               : IBM's Trade2 vs Sun's ECperf.",
+	ee = "http://crpit.com/confpapers/CRPITV16Zhang.pdf",
+	author = "Yan Zhang and Anna Liu and Wei Qu",
+	pages = "199-206"}
+
+@inproceedings{DBLP:conf/acsc/ZhaoZLYL03,
+	title = "Self-Adaptive Clock Synchronization Based on Clock Precision
+               Difference.",
+	ee = "http://crpit.com/confpapers/CRPITV16Zhao.pdf",
+	author = "Ying Zhao and Wanlei Zhou and Elicia Lanham and Shui Yu and Mingjun Lan",
+	pages = "181-187"}
+
+@default year = 2002
+
+@inproceedings{DBLP:conf/acsc/BiddleNT02,
+	title = "Essential Use Cases and Responsibility in Object-Oriented
+               Development.",
+	ee = "http://crpit.com/confpapers/CRPITV4Biddle.pdf",
+	author = "Robert Biddle and James Noble and Ewan D. Tempero",
+	pages = "7-16"}
+
+@inproceedings{DBLP:conf/acsc/Cerecke02,
+	title = "Repairing Syntax Errors in LR-based Parsers.",
+	ee = "http://crpit.com/confpapers/CRPITV4Cerecke.pdf",
+	author = "C. Cerecke",
+	pages = "17-22"}
+
+@inproceedings{DBLP:conf/acsc/ClarkeCS02,
+	title = "Implemention Aspects of a SPARC V9 Complete Machine Simulator.",
+	ee = "http://crpit.com/confpapers/CRPITV4Clarke.pdf",
+	author = "Bill Clarke and Adam Czezowski and Peter E. Strazdins",
+	pages = "23-32"}
+
+@inproceedings{DBLP:conf/acsc/ColvinHHS02,
+	title = "Translating Refined Logic Programs to Mercury.",
+	ee = "http://crpit.com/confpapers/CRPITV4Colvin.pdf",
+	author = "Robert Colvin and Ian J. Hayes and David Hemer and Paul A. Strooper",
+	pages = "33-40"}
+
+@inproceedings{DBLP:conf/acsc/CrampO02,
+	title = "Employing Hierarchical Federation Communities in the Virtual
+               Ship Architecture.",
+	ee = "http://crpit.com/confpapers/CRPITV4Cramp.pdf",
+	author = "A. Cramp and Michael J. Oudshoorn",
+	pages = "41-49"}
+
+@inproceedings{DBLP:conf/acsc/Croft02,
+	title = "The Future of Web Search.",
+	author = "B. Croft"}
+
+@inproceedings{DBLP:conf/acsc/Evered02,
+	title = "Bracket Capabilities for Distributed Systems Security.",
+	ee = "http://crpit.com/confpapers/CRPITV4Evered.pdf",
+	author = "Mark Evered",
+	pages = "51-58"}
+
+@inproceedings{DBLP:conf/acsc/FinkelZMS02,
+	title = "Signature Extraction for Overlap Detection in Documents.",
+	ee = "http://crpit.com/confpapers/CRPITV4Finkel.pdf",
+	author = "Raphael A. Finkel and Arkady B. Zaslavsky and Kriszti{\'a}n Monostori and Heinz W. Schmidt",
+	pages = "59-64"}
+
+@inproceedings{DBLP:conf/acsc/FuadO02,
+	title = "AdJava - Automatic Distribution of Java Applications.",
+	ee = "http://crpit.com/confpapers/CRPITV4Fuad.pdf",
+	author = "Mohammad M. Fuad and Michael J. Oudshoorn",
+	pages = "65-75"}
+
+@inproceedings{DBLP:conf/acsc/George02,
+	title = "Learning and the Reflective Journal in Computer Science.",
+	ee = "http://crpit.com/confpapers/CRPITV4George.pdf",
+	author = "S. E. George",
+	pages = "77-86"}
+
+@inproceedings{DBLP:conf/acsc/HeinzZ02,
+	title = "Performance of Data Structures for Small Sets of Strings.",
+	ee = "http://crpit.com/confpapers/CRPITV4Heinz.pdf",
+	author = "Steffen Heinz and Justin Zobel",
+	pages = "87-94"}
+
+@inproceedings{DBLP:conf/acsc/HemerL02,
+	title = "Supporting Component-Based Reuse in CARE.",
+	ee = "http://crpit.com/confpapers/CRPITV4Hemer.pdf",
+	author = "David Hemer and Peter A. Lindsay",
+	pages = "95-104"}
+
+@inproceedings{DBLP:conf/acsc/Hingston02,
+	title = "Using Finite State Automata for Sequence Mining.",
+	ee = "http://crpit.com/confpapers/CRPITV4Hingston1.pdf",
+	author = "Philip Hingston",
+	pages = "105-110"}
+
+@inproceedings{DBLP:conf/acsc/HingstonW02,
+	title = "A Dynamic Communication Algorithm for Digital Halftoning.",
+	ee = "http://crpit.com/confpapers/CRPITV4Hingston2.pdf",
+	author = "Philip Hingston and R. Lyndon While",
+	pages = "111-118"}
+
+@inproceedings{DBLP:conf/acsc/HutchensS02,
+	title = "Bandwidth Reservation Strategies for Mobility Support of
+               Wireless Connections with QoS Guarantees.",
+	ee = "http://crpit.com/confpapers/CRPITV4Hutchens.pdf",
+	author = "R. Hutchens and S. Singh",
+	pages = "119-128"}
+
+@inproceedings{DBLP:conf/acsc/IsalMN02,
+	title = "Enhanced Word-Based Block-Sorting Text Compression.",
+	ee = "http://crpit.com/confpapers/CRPITV4Isal.pdf",
+	author = "R. Yugo Kartono Isal and Alistair Moffat and A. C. H. Ngai",
+	pages = "129-137"}
+
+@inproceedings{DBLP:conf/acsc/LeeZ02,
+	title = "On Modelling Real-Time Mobile Processes.",
+	ee = "http://crpit.com/confpapers/CRPITV4Lee.pdf",
+	author = "J. Y. Lee and John J. Zic",
+	pages = "139-147"}
+
+@inproceedings{DBLP:conf/acsc/LewisP02,
+	title = "Audio-Visual Speech Recognition Using Red Exclusion and
+               Neural Networks.",
+	ee = "http://crpit.com/confpapers/CRPITV4Lewis.pdf",
+	author = "Trent W. Lewis and David M. W. Powers",
+	pages = "149-156"}
+
+@inproceedings{DBLP:conf/acsc/MonostoriZS02,
+	title = "Suffix Vector: Space- and Time-Efficient Alternative to
+               Suffix Trees.",
+	ee = "http://crpit.com/confpapers/CRPITV4Monostori.pdf",
+	author = "Kriszti{\'a}n Monostori and Arkady B. Zaslavsky and Heinz W. Schmidt",
+	pages = "157-165"}
+
+@inproceedings{DBLP:conf/acsc/MorrisLLPB02,
+	title = "Determining Component Reliability Using a Testing Index.",
+	ee = "http://crpit.com/confpapers/CRPITV4Morris.pdf",
+	author = "John Morris and Chiou Peng Lam and Gareth Lee and Kris Parker and Gary A. Bundell",
+	pages = "167-176"}
+
+@inproceedings{DBLP:conf/acsc/NagraTC02,
+	title = "A Functional Taxonomy for Software Watermarking.",
+	ee = "http://crpit.com/confpapers/CRPITV4Nagra.ps",
+	author = "Jasvir Nagra and Clark D. Thomborson and Christian S. Collberg",
+	pages = "177-186"}
+
+@inproceedings{DBLP:conf/acsc/NobleBT02,
+	title = "Metaphor and Metonymy in Object-Oriented Design Patterns.",
+	ee = "http://crpit.com/confpapers/CRPITV4Noble.pdf",
+	author = "James Noble and Robert Biddle and Ewan D. Tempero",
+	pages = "187-195"}
+
+@inproceedings{DBLP:conf/acsc/RahwanKP02,
+	title = "Intelligent Agents for Automated One-to-Many e-Commerce
+               Negotiation.",
+	ee = "http://crpit.com/confpapers/CRPITV4Rahwan.pdf",
+	author = "Iyad Rahwan and Ryszard Kowalczyk and H. H. Pham",
+	pages = "197-203"}
+
+@inproceedings{DBLP:conf/acsc/RanaWPH02,
+	title = "Applying Conflict Management Strategies in BDI Agents for
+               Resource Management in Computational Grids.",
+	ee = "http://crpit.com/confpapers/CRPITV4Rana.pdf",
+	author = "Omer F. Rana and Michael Winikoff and Lin Padgham and James Harland",
+	pages = "205-214"}
+
+@inproceedings{DBLP:conf/acsc/RandolphML02,
+	title = "A Generalised Spreadsheet Verification Methodology.",
+	ee = "http://crpit.com/confpapers/CRPITV4Randolph.pdf",
+	author = "Nick Randolph and John Morris and Gareth Lee",
+	pages = "215-222"}
+
+@inproceedings{DBLP:conf/acsc/RoddickN02,
+	title = "Application Rates to Undergraduate Programs in Information
+               Technology in Australian Universities.",
+	ee = "http://crpit.com/confpapers/CRPITV4Roddick.pdf",
+	author = "John F. Roddick and A. L. Nieuwenhuis",
+	pages = "223-231"}
+
+@inproceedings{DBLP:conf/acsc/ShinK02,
+	title = "Optimizing Web Content Delivery Using Web Server Accelerator.",
+	ee = "http://crpit.com/confpapers/CRPITV4Shin.pdf",
+	author = "D. Shin and K. Koh",
+	pages = "233-239"}
+
+@inproceedings{DBLP:conf/acsc/SkabarC02,
+	title = "Neural Networks and Financial Trading and the Efficient
+               Markets Hypothesis.",
+	ee = "http://crpit.com/confpapers/CRPITV4Skabar.pdf",
+	author = "Andrew Skabar and Ian Cloete",
+	pages = "241-249"}
+
+@inproceedings{DBLP:conf/acsc/Smith02,
+	title = "Specifying Mode Requirements of Embedded Systems.",
+	ee = "http://crpit.com/confpapers/CRPITV4Smith.pdf",
+	author = "G. Smith",
+	pages = "251-257"}
+
+@inproceedings{DBLP:conf/acsc/ThangarajahPH02,
+	title = "Representation and Reasoning for Goals in BDI Agents.",
+	ee = "http://crpit.com/confpapers/CRPITV4Thangarajah.pdf",
+	author = "John Thangarajah and Lin Padgham and James Harland",
+	pages = "259-265"}
+
+@inproceedings{DBLP:conf/acsc/TurpinS02,
+	title = "An Approach to Phrase Selection for Offline Data Compression.",
+	ee = "http://crpit.com/confpapers/CRPITV4Turpin.pdf",
+	author = "Andrew Turpin and William F. Smyth",
+	pages = "267-273"}
+
+@inproceedings{DBLP:conf/acsc/UitdenbogerdZ02,
+	title = "Music Ranking Techniques Evaluated.",
+	ee = "http://crpit.com/confpapers/CRPITV4Uitdenbogerd.pdf",
+	author = "Alexandra L. Uitdenbogerd and Justin Zobel",
+	pages = "275-283"}
+
+@inproceedings{DBLP:conf/acsc/WangCZ02,
+	title = "Ticket-Based Service Access Scheme for Mobile Users.",
+	ee = "http://crpit.com/confpapers/CRPITV4Wang.pdf",
+	author = "Hua Wang and Jinli Cao and Yanchuan Zhang",
+	pages = "285-292"}
+
+@inproceedings{DBLP:conf/acsc/WhileM02,
+	title = "An Implementation of Parallel Pattern-Matching via Concurrent
+               Haskell.",
+	ee = "http://crpit.com/confpapers/CRPITV4While.pdf",
+	author = "L. While and G. Mildenhall",
+	pages = "293-303"}
+
+@inproceedings{DBLP:conf/acsc/Winter02,
+	title = "Model Checking Railway Interlocking Systems.",
+	ee = "http://crpit.com/confpapers/CRPITV4Winter.pdf",
+	author = "K. Winter",
+	pages = "303-310"}
+
+@inproceedings{DBLP:conf/acsc/WittT02,
+	title = "Reducing Cognitive Overhead on the World Wide Web.",
+	ee = "http://crpit.com/confpapers/CRPITV4Witt.pdf",
+	author = "R. J. Witt and S. P. Tyerman",
+	pages = "311-320"}
+
+@inproceedings{DBLP:conf/acsc/WooWACGW02,
+	title = "Alias Analysis for Exceptions in Java.",
+	ee = "http://crpit.com/confpapers/CRPITV4Woo.pdf",
+	author = "Jehak Woo and Jongwook Woo and Isabelle Attali and Denis Caromel and Jean-Luc Gaudiot and Andrew L. Wendelborn",
+	pages = "321-329"}
+
+@inproceedings{DBLP:conf/acsc/ZhengS02,
+	title = "Improving SAT Using 2SAT.",
+	ee = "http://crpit.com/confpapers/CRPITV4Zheng.pdf",
+	author = "Lei Zheng and Peter J. Stuckey",
+	pages = "331-340"}
+
+@default year = 2001
+
+@inproceedings{DBLP:conf/acsc/BahleWZ01,
+	title = "Optimised Phrase Querying and Browsing of Large Text Databases.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906618",
+	author = "Dirk Bahle and Hugh E. Williams and Justin Zobel",
+	pages = "11-19"}
+
+@inproceedings{DBLP:conf/acsc/BlackburnMHMMZ01,
+	title = "Starting with Termination: A Methodology for Building Distributed
+               Garbage Collection Algorithms.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906619",
+	author = "Stephen M. Blackburn and J. Eliot B. Moss and Richard L. Hudson and Ronald Morrison and David S. Munro and John N. Zigman",
+	pages = "20-28"}
+
+@inproceedings{DBLP:conf/acsc/BlackwellKR01,
+	title = "Petri Net Script: A Visual Language for Describing Action,
+               Behaviour and Plot.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906620",
+	author = "Leon Blackwell and Brian R. von Konsky and Mike Robey",
+	pages = "29-37"}
+
+@inproceedings{DBLP:conf/acsc/Brown01,
+	title = "Incremental Garbage Collection in Massive Object Stores.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906621",
+	author = "Fred Brown",
+	pages = "38-46"}
+
+@inproceedings{DBLP:conf/acsc/CeglarC01,
+	title = "A New Approach to Collaborative Frameworks using Shared
+               Objects.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906617",
+	author = "Aaron Ceglar and Paul R. Calder",
+	pages = "3-10"}
+
+@inproceedings{DBLP:conf/acsc/Cole01,
+	title = "Automated Layout of Concept Lattices Using Layered Diagrams
+               and Additive Diagrams.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906622",
+	author = "Richard Cole",
+	pages = "47-53"}
+
+@inproceedings{DBLP:conf/acsc/DunstanH01,
+	title = "A Cluster-based Geophysical Template Matching System.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906623",
+	author = "Neil Dunstan and Stephen Hodgson",
+	pages = "54-59"}
+
+@inproceedings{DBLP:conf/acsc/GaoE01,
+	title = "Polymorphic CSP Type Checking.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906637",
+	author = "Ping Gao and Robert Esser",
+	pages = "156-162"}
+
+@inproceedings{DBLP:conf/acsc/Han01,
+	title = "TRAM: A Tool for Requirements and Architecture Management.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906624",
+	author = "Jun Han",
+	pages = "60-68"}
+
+@inproceedings{DBLP:conf/acsc/Hingston01,
+	title = "Inference of Regular Languages using Model Simplicity.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906625",
+	author = "Philip Hingston",
+	pages = "69-76"}
+
+@inproceedings{DBLP:conf/acsc/HuangP01,
+	title = "Large Scale Experiments on Correction of Confused Words.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906626",
+	author = "Jin Hu Huang and David Powers",
+	pages = "77-82"}
+
+@inproceedings{DBLP:conf/acsc/HunterS01,
+	title = "Systematically Deriving Partial Oracles for Testing Concurrent
+               Programs.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906627",
+	author = "Chris Hunter and Paul A. Strooper",
+	pages = "83-91"}
+
+@inproceedings{DBLP:conf/acsc/IsalM01,
+	title = "Word-Based Block-Sorting Text Compression.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906628",
+	author = "R. Yugo Kartono Isal and Alistair Moffat",
+	pages = "92-99"}
+
+@inproceedings{DBLP:conf/acsc/JiangLV01,
+	title = "An Inference Implementation Based on Extended Weighted Finite
+               Automata.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906629",
+	author = "Zhuhan Jiang and Bruce E. Litow and Olivier Y. de Vel",
+	pages = "100-108"}
+
+@inproceedings{DBLP:conf/acsc/LauHB01,
+	title = "Nonmonotonic Reasoning or Adaptive Information Filtering.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906630",
+	author = "Raymond Lau and Arthur H. M. ter Hofstede and Peter Bruza",
+	pages = "109-116"}
+
+@inproceedings{DBLP:conf/acsc/LiddellM01,
+	title = "Length-Restricted Coding Using Modified Probability Distributions.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906631",
+	author = "Mike Liddell and Alistair Moffat",
+	pages = "117-124"}
+
+@inproceedings{DBLP:conf/acsc/MendesM01,
+	title = "Comparing Effort Prediction Models for Web Design and Authoring
+               Using Boxplots.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906632",
+	author = "Emilia Mendes and Nile Mosley",
+	pages = "125-133"}
+
+@inproceedings{DBLP:conf/acsc/Merceron01,
+	title = "Proving ``no Cliques'' in a Protocol.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906634",
+	author = "Agathe Merceron",
+	pages = "134-139"}
+
+@inproceedings{DBLP:conf/acsc/MonostoriZS01,
+	title = "Efficiency of Data Structures for Detecting Overlaps in
+               Digital Documents.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906635",
+	author = "Kriszti{\'a}n Monostori and Arkady B. Zaslavsky and Heinz W. Schmidt",
+	pages = "140-147"}
+
+@inproceedings{DBLP:conf/acsc/OwenLGL01,
+	title = "The Design and Implementation of a Progressive On-demand
+               Image Dissemination System for Very Large Images.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906636",
+	author = "Michael J. Owen and Edward H. S. Lo and Mark W. Grigg and Andrew K. Lui",
+	pages = "148-155"}
+
+@inproceedings{DBLP:conf/acsc/RichmondN01,
+	title = "Reflections on Remote Reflection.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906638",
+	author = "Michael Richmond and James Noble",
+	pages = "163-170"}
+
+@inproceedings{DBLP:conf/acsc/Roberts01,
+	title = "The Derivation of Functional Equivalents of Imperative Programs.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906639",
+	author = "Graham H. B. Roberts",
+	pages = "171-176"}
+
+@inproceedings{DBLP:conf/acsc/StephensonL01,
+	title = "Making the DDA Run: Two-Dimensional Ray Traversal Using
+               Runs and Runs of Runs.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906640",
+	author = "Peter Stephenson and Bruce E. Litow",
+	pages = "177-183"}
+
+@inproceedings{DBLP:conf/acsc/TangEH01,
+	title = "Knowledge-based Genetic Algorithm for Layer Assignment.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906641",
+	author = "Maolin Tang and Kamran Eshraghian and Daryoush Habibi",
+	pages = "184-190"}
+
+@inproceedings{DBLP:conf/acsc/WangZ01,
+	title = "Untraceable Off-line Electronic Cash Flow in E-Commerce.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906642",
+	author = "Hua Wang and Yanchuan Zhang",
+	pages = "191-198"}
+
+@inproceedings{DBLP:conf/acsc/Weippl01,
+	title = "An Approach to Secure Distribution of Web-Based Training
+               Courses.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906643",
+	author = "Edgar Weippl",
+	pages = "199-205"}
+
+@inproceedings{DBLP:conf/acsc/WooGACW01,
+	title = "Alias Analysis On Type Inference For Class Hierarchy In
+               Java.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906644",
+	author = "Jongwook Woo and Jean-Luc Gaudiot and Isabelle Attali and Denis Caromel and Andrew L. Wendelborn",
+	pages = "206-214"}
+
+@inproceedings{DBLP:conf/acsc/ZhangV01,
+	title = "A Logic for Modeling the Dynamics of Beliefs in Cryptographic
+               Protocols.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906645",
+	author = "Yan Zhang and Vijay Varadharajan",
+	pages = "215-222"}
+
+@inproceedings{DBLP:conf/acsc/ZhuI01,
+	title = "Fast Handover in Clustered Wireless ATM.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2001.906646",
+	author = "Weiping Zhu and Jadwiga Indulska",
+	pages = "223-229"}
+
+@default year = 2000
+
+@inproceedings{DBLP:conf/acsc/Bell00,
+	title = "A Low-Cost High-Impact Computer Science Show for Family
+               Audiences.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824374",
+	author = "Tim Bell",
+	pages = "10-16"}
+
+@inproceedings{DBLP:conf/acsc/Brown00,
+	title = "Exposing Memory Mapped I/O Using NFS.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824375",
+	author = "Fred Brown",
+	pages = "17-23"}
+
+@inproceedings{DBLP:conf/acsc/Bryant00,
+	title = "Object-Oriented Natural Language Requirements Specification.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824376",
+	author = "Barrett R. Bryant",
+	pages = "24-30"}
+
+@inproceedings{DBLP:conf/acsc/Cole00,
+	title = "Automated Layout of Concept Lattices Using Force Directed
+               Placement and Genetic Algorithms.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824378",
+	author = "Richard Cole",
+	pages = "31-42"}
+
+@inproceedings{DBLP:conf/acsc/ColvinHS00,
+	title = "Refining Logic Programs Using Types.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824379",
+	author = "Robert Colvin and Ian J. Hayes and Paul A. Strooper",
+	pages = "43-50"}
+
+@inproceedings{DBLP:conf/acsc/CurranW00,
+	title = "Formalization of Transformation-Based Learning.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824380",
+	author = "James R. Curran and Raymond K. Wong",
+	pages = "51-57"}
+
+@inproceedings{DBLP:conf/acsc/EveredMKS00,
+	title = "Software Engineering Despite Object-Orientation.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824382",
+	author = "Mark Evered and Gisela Menger and James Leslie Keedy and Axel Schmolitzky",
+	pages = "66-73"}
+
+@inproceedings{DBLP:conf/acsc/GooldR00,
+	title = "Indicators of Performance in First-year Computing.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824383",
+	author = "Annegret Goold and Russell Rimmer",
+	pages = "74-80"}
+
+@inproceedings{DBLP:conf/acsc/Gough00,
+	title = "Parameter Passing for the Java Virtual Machine.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824384",
+	author = "K. John Gough",
+	pages = "81-87"}
+
+@inproceedings{DBLP:conf/acsc/GrubaS00,
+	title = "Transforming Communication Skills Instruction: The Conference
+               Approach.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824385",
+	author = "Paul Gruba and Harald S{\o}ndergaard",
+	pages = "88-94"}
+
+@inproceedings{DBLP:conf/acsc/Grundy00,
+	title = "Storage and Retrieval of Software Components Using Aspects.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824386",
+	author = "John C. Grundy",
+	pages = "95-103"}
+
+@inproceedings{DBLP:conf/acsc/Gunther00,
+	title = "Facilitating Learning in Advanced Computer Architecture
+               through Appropriate Simulation.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824388",
+	author = "Bernard K. Gunther",
+	pages = "104-112"}
+
+@inproceedings{DBLP:conf/acsc/HeH00,
+	title = "Refining Edge Detection within Spiral Architecture.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824389",
+	author = "Xiangjian He and Tom Hintz",
+	pages = "113-119"}
+
+@inproceedings{DBLP:conf/acsc/HildebrandtH00,
+	title = "RAPTOR: Rapid Analysis, Processing and Transformation from
+               Online Repositories.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824390",
+	author = "John Hildebrandt and Robert Hollamby",
+	pages = "120-127"}
+
+@inproceedings{DBLP:conf/acsc/JefferyHS00,
+	title = "Type Classes in Mercury.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824391",
+	author = "David Jeffery and Fergus Henderson and Zoltan Somogyi",
+	pages = "128-135"}
+
+@inproceedings{DBLP:conf/acsc/KretserM00,
+	title = "Needles and Haystacks: A Search Engine for Personal Information
+               Collections.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824381",
+	author = "Owen de Kretser and Alistair Moffat",
+	pages = "58-65"}
+
+@inproceedings{DBLP:conf/acsc/LedererPJ00,
+	title = "Teaching a Capstone Subject in Computing Science -- A Variety
+               Engineering Approach.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824392",
+	author = "Brian Lederer and Valentina Plekhanova and C. Barry Jay",
+	pages = "136-142"}
+
+@inproceedings{DBLP:conf/acsc/LewB00,
+	title = "A Model of Persistent Software Composition.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824394",
+	author = "Kevin C. F. Lew and Alfred L. Brown",
+	pages = "143-149"}
+
+@inproceedings{DBLP:conf/acsc/LiuOHC00,
+	title = "Towards Certificate Verification in a Certificate Management
+               System.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824396",
+	author = "Chuchang Liu and Maris A. Ozols and Marie Henderson and Anthony Cant",
+	pages = "150-157"}
+
+@inproceedings{DBLP:conf/acsc/MeyerD00,
+	title = "Building Hybrid Knowledge Representations from Text.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824397",
+	author = "Josef Meyer and Robert Dale",
+	pages = "158-165"}
+
+@inproceedings{DBLP:conf/acsc/Naish00,
+	title = "A Three-Valued Declarative Debugging Scheme.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824398",
+	author = "Lee Naish",
+	pages = "166-173"}
+
+@inproceedings{DBLP:conf/acsc/Naish00a,
+	title = "A Three-Valued Semantic for Horn Clause Programs.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824399",
+	author = "Lee Naish",
+	pages = "174-180"}
+
+@inproceedings{DBLP:conf/acsc/NesbittGO00,
+	title = "Investigating the Application of Virtual Environment Technology
+               for Use in the Petroleum Exploration Industry.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824400",
+	author = "Keith V. Nesbitt and Randall J. Gallimore and Bernard J. Orenstein",
+	pages = "181-188"}
+
+@inproceedings{DBLP:conf/acsc/PotterN00,
+	title = "Conglomeration -- Realizing Alias Protection.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824402",
+	author = "John Potter and James Noble",
+	pages = "189-195"}
+
+@inproceedings{DBLP:conf/acsc/Purchase00,
+	title = "Peer Assessment: Encouraging Reflection on Interface Design.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824403",
+	author = "Helen C. Purchase",
+	pages = "196-203"}
+
+@inproceedings{DBLP:conf/acsc/RockB00,
+	title = "An Implementation of Propositional Plausible Logic.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824404",
+	author = "Andrew Rock and David Billington",
+	pages = "204-210"}
+
+@inproceedings{DBLP:conf/acsc/SafadiG00,
+	title = "Semantic Modeling for Video Content-Based Retrieval Systems.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824373",
+	author = "Lilac A. E. Al Safadi and Janusz R. Getta",
+	pages = "2-9"}
+
+@inproceedings{DBLP:conf/acsc/Serbedzija00,
+	title = "Developing Middleware for Web-Aware Systems: Lessons Learned.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824405",
+	author = "Nikola B. Serbedzija",
+	pages = "211-219"}
+
+@inproceedings{DBLP:conf/acsc/SkabarBPM00,
+	title = "Inductive Concept Learning in the Absence of Labeled Counter-Examples.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824407",
+	author = "Andrew Skabar and Kousick Biswas and Binh Pham and Anthony J. Maeder",
+	pages = "220-226"}
+
+@inproceedings{DBLP:conf/acsc/Smith00,
+	title = "Stepwise Development from Ideal Specifications.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824408",
+	author = "Graeme Smith",
+	pages = "227-233"}
+
+@inproceedings{DBLP:conf/acsc/ZhangZ00,
+	title = "Result Fusion in Multi-Agent Systems Based on OWA Operator.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824409",
+	author = "Zili Zhang and Chengqi Zhang",
+	pages = "234-240"}
+
+@inproceedings{DBLP:conf/acsc/ZobelWK00,
+	title = "Trends in Retrieval System Performance.",
+	ee = "http://doi.ieeecomputersociety.org/10.1109/ACSC.2000.824410",
+	author = "Justin Zobel and Hugh E. Williams and Sam Kimberley",
+	pages = "241-248"}
