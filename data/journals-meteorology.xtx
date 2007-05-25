@@ -1,0 +1,581 @@
+@journal{meteor_forschungsergeb,
+	name=""Meteor" Forschungsergebnisse",
+	shortname=""Meteor" Forschungsergeb.",
+}
+
+@journal{amer_sci,
+	name="American Scientist",
+	shortname="Amer. Sci.",
+}
+
+@journal{ann_meteor,
+	name="Annalen der Meteorologie",
+	shortname="Ann. Meteor.",
+}
+
+@journal{ann_geophys,
+	name="Annales de Geophysique",
+	shortname="Ann. Geophys.",
+}
+
+@journal{ann_phys,
+	name="Annales de Physique",
+	shortname="Ann. Phys.",
+}
+
+@journal{annu_rev_fluid_mech,
+	name="Annual Review of Fluid Mechanics",
+	shortname="Annu. Rev. Fluid Mech.",
+}
+
+@journal{appl_opt,
+	name="Applied Optics",
+	shortname="Appl. Opt.",
+}
+
+@journal{arch_meteor_geophys_bioklimatol,
+	name="Archiv für Meteorologie, Geophysik und Bioklimatologie",
+	shortname="Arch. Meteor. Geophys. Bioklimatol.",
+}
+
+@journal{atmosocean,
+	name="Atmosphere: Atmosphere—Ocean",
+	shortname="Atmos.—Ocean",
+}
+
+@journal{atmos_environ,
+	name="Atmospheric Environment",
+	shortname="Atmos. Environ.",
+}
+
+@journal{atmos_res,
+	name="Atmospheric Research",
+	shortname="Atmos. Res.",
+}
+
+@journal{atmsphera,
+	name="Atmósphera",
+}
+
+@journal{aust_j_agric_res,
+	name="Australian Journal of Agricultural Research",
+	shortname="Aust. J. Agric. Res.",
+}
+
+@journal{aust_meteor_mag,
+	name="Australian Meteorological Magazine",
+	shortname="Aust. Meteor. Mag.",
+}
+
+@journal{beitr_phys_atmos,
+	name="Beitraege zur Physik der Atmosphaere",
+	shortname="Beitr. Phys. Atmos.",
+}
+
+@journal{boundlayer_meteor,
+	name="Boundary-Layer Meteorology",
+	shortname="Bound.-Layer Meteor.",
+}
+
+@journal{bull_amer_meteor_soc,
+	name="Bulletin of the American Meteorological Society",
+	shortname="Bull. Amer. Meteor. Soc.",
+}
+
+@journal{chem_eng_sci,
+	name="Chemical Engineering Science",
+	shortname="Chem. Eng. Sci.",
+}
+
+@journal{climate_dyn,
+	name="Climate Dynamics",
+	shortname="Climate Dyn.",
+}
+
+@journal{climatic_change,
+	name="Climatic Change",
+}
+
+@journal{climatol_bull,
+	name="Climatological Bulletin",
+	shortname="Climatol. Bull.",
+}
+
+@journal{commun_pure_appl_math,
+	name="Communications on Pure and Applied Mathematics",
+	shortname="Commun. Pure Appl. Math.",
+}
+
+@journal{cont_shelf_res,
+	name="Continental Shelf Research",
+	shortname="Cont. Shelf Res.",
+}
+
+@journal{contrib_atmos_phys,
+	name="Contributions to Atmospheric Physics",
+	shortname="Contrib. Atmos. Phys.",
+}
+
+@journal{deepsea_res,
+	name="Deep-Sea Research",
+	shortname="Deep-Sea Res.",
+}
+
+@journal{dtsch_hydrogr_z,
+	name="Deutsche Hydrographische Zeitschrift",
+	shortname="Dtsch. Hydrogr. Z.",
+}
+
+@journal{dyn_atmos_oceans,
+	name="Dynamics of Atmospheres and Oceans",
+	shortname="Dyn. Atmos. Oceans",
+}
+
+@journal{environ_res,
+	name="Environmental Research",
+	shortname="Environ. Res.",
+}
+
+@journal{environ_sci_technol,
+	name="Environmental Science and Technology",
+	shortname="Environ. Sci. Technol.",
+}
+
+@journal{eos_trans_amer_geophys_union,
+	name="Eos, Transactions, American Geophysical Union (EOS)",
+	shortname="Eos, Trans. Amer. Geophys. Union",
+}
+
+@journal{estuarine_coastal_mar_sci,
+	name="Estuarine and Coastal Marine Science",
+	shortname="Estuarine Coastal Mar. Sci.",
+}
+
+@journal{europhys_lett,
+	name="Europhysics Letters",
+	shortname="Europhys. Lett.",
+}
+
+@journal{geofis_int,
+	name="Geofisica Internationale",
+	shortname="Geofis. Int.",
+}
+
+@journal{geofys_publ,
+	name="Geofysiske Publikasjoner",
+	shortname="Geofys. Publ.",
+}
+
+@journal{geol_geofiz,
+	name="Geologiya i Geofizika",
+	shortname="Geol. Geofiz.",
+}
+
+@journal{geophys_fluid_dyn,
+	name="Geophysical Fluid Dynamics",
+	shortname="Geophys. Fluid Dyn.",
+}
+
+@journal{geophys_mag,
+	name="Geophysical Magazine",
+	shortname="Geophys. Mag.",
+}
+
+@journal{geophys_res_lett,
+	name="Geophysical Research Letters",
+	shortname="Geophys. Res. Lett.",
+}
+
+@journal{geophys_astrophys_fluid_dyn,
+	name="Geophysical and Astrophysical Fluid Dynamics",
+	shortname="Geophys. Astrophys. Fluid Dyn.",
+}
+
+@journal{geophysics,
+	name="Geophysics",
+}
+
+@journal{ieee_trans_antennas_propag,
+	name="IEEE Transactions on Antennas and Propagation",
+	shortname="IEEE Trans. Antennas Propag.",
+}
+
+@journal{ieee_trans_geosci_remote_sens,
+	name="IEEE Transactions on Geoscience and Remote Sensing",
+	shortname="IEEE Trans. Geosci. Remote Sens.",
+}
+
+@journal{infrared_phys,
+	name="Infrared Physics",
+	shortname="Infrared Phys.",
+}
+
+@journal{int_j_air_water_pollut,
+	name="International Journal of Air and Water Pollution",
+	shortname="Int. J. Air Water Pollut.",
+}
+
+@journal{int_j_remote_sens,
+	name="International Journal of Remote Sensing",
+	shortname="Int. J. Remote Sens.",
+}
+
+@journal{izv_acad_sci_ussr_atmos_oceanic_phys,
+	name="Izvestiya, Academy of Sciences, USSR, Atmospheric",
+	shortname="Izv. Acad. Sci. USSR, Atmos. Oceanic Phys.",
+}
+
+@journal{j_rech_atmos,
+	name="Journal de Recherches Atmospheriques",
+	shortname="J. Rech. Atmos.",
+}
+
+@journal{j_aerosol_sci,
+	name="Journal of Aerosol Science",
+	shortname="J. Aerosol Sci.",
+}
+
+@journal{j_appl_meteor,
+	name="Journal of Applied Meteorology",
+	shortname="J. Appl. Meteor.",
+}
+
+@journal{j_appl_phys,
+	name="Journal of Applied Physics",
+	shortname="J. Appl. Phys.",
+}
+
+@journal{j_atmos_oceanic_technol,
+	name="Journal of Atmospheric and Oceanic Technology",
+	shortname="J. Atmos. Oceanic Technol.",
+}
+
+@journal{j_atmos_terr_phys,
+	name="Journal of Atmospheric and Terrestrial Physics",
+	shortname="J. Atmos. Terr. Phys.",
+}
+
+@journal{j_climate,
+	name="Journal of Climate",
+	shortname="J. Climate",
+}
+
+@journal{j_climate_meteor,
+	name="Journal of Climate Meteorology",
+	shortname="J. Climate Meteor.",
+}
+
+@journal{j_climate_appl_meteor,
+	name="Journal of Climate and Applied Meteorology",
+	shortname="J. Climate Appl. Meteor.",
+}
+
+@journal{j_climatol,
+	name="Journal of Climatology",
+	shortname="J. Climatol.",
+}
+
+@journal{j_comput_phys,
+	name="Journal of Computational Physics",
+	shortname="J. Comput. Phys.",
+}
+
+@journal{j_fluid_mech,
+	name="Journal of Fluid Mechanics",
+	shortname="J. Fluid Mech.",
+}
+
+@journal{j_geophys_res,
+	name="Journal of Geophysical Research",
+	shortname="J. Geophys. Res.",
+}
+
+@journal{j_glaciol,
+	name="Journal of Glaciology",
+	shortname="J. Glaciol.",
+}
+
+@journal{j_hydrol,
+	name="Journal of Hydrology",
+	shortname="J. Hydrol.",
+}
+
+@journal{j_mar_res,
+	name="Journal of Marine Research",
+	shortname="J. Mar. Res.",
+}
+
+@journal{j_mar_syst,
+	name="Journal of Marine Systems",
+	shortname="J. Mar. Syst.",
+}
+
+@journal{j_meteor_res_japan,
+	name="Journal of Meteorological Research, Japan",
+	shortname="J. Meteor. Res. Japan",
+}
+
+@journal{j_meteor,
+	name="Journal of Meteorology",
+	shortname="J. Meteor.",
+}
+
+@journal{j_phys_chem,
+	name="Journal of Physical Chemistry",
+	shortname="J. Phys. Chem.",
+}
+
+@journal{j_phys_oceanogr,
+	name="Journal of Physical Oceanography",
+	shortname="J. Phys. Oceanogr.",
+}
+
+@journal{j_sci_instrum,
+	name="Journal of Scientific Instruments",
+	shortname="J. Sci. Instrum.",
+}
+
+@journal{j_aeronaut_sci,
+	name="Journal of the Aeronautical Sciences",
+	shortname="J. Aeronaut. Sci.",
+}
+
+@journal{j_atmos_sci,
+	name="Journal of the Atmospheric Sciences",
+	shortname="J. Atmos. Sci.",
+}
+
+@journal{j_mar_technol_soc,
+	name="Journal of the Marine Technology Society",
+	shortname="J. Mar. Technol. Soc.",
+}
+
+@journal{j_meteor_soc_japan,
+	name="Journal of the Meteorological Society of Japan",
+	shortname="J. Meteor. Soc. Japan",
+}
+
+@journal{j_oceanogr_soc_japan,
+	name="Journal of the Oceanographical Society of Japan",
+	shortname="J. Oceanogr. Soc. Japan",
+}
+
+@journal{mar_wea_log,
+	name="Mariners Weather Log",
+	shortname="Mar. Wea. Log",
+}
+
+@journal{meteor_mag,
+	name="Meteorological Magazine",
+	shortname="Meteor. Mag.",
+}
+
+@journal{meteor_monogr,
+	name="Meteorological Monographs",
+	shortname="Meteor. Monogr.",
+}
+
+@journal{meteor_rundsch,
+	name="Meteorologische Rundschau",
+	shortname="Meteor. Rundsch.",
+}
+
+@journal{meteor_z,
+	name="Meteorologische Zeitschrift",
+	shortname="Meteor. Z.",
+}
+
+@journal{meteor_gidrol,
+	name="Meteorologiya i Gidrologiya",
+	shortname="Meteor. Gidrol.",
+}
+
+@journal{meteor_atmos_phys,
+	name="Meteorology and Atmospheric Physics",
+	shortname="Meteor. Atmos. Phys.",
+}
+
+@journal{mon_wea_rev,
+	name="Monthly Weather Review",
+	shortname="Mon. Wea. Rev.",
+}
+
+@journal{natl_wea_dig,
+	name="National Weather Digest",
+	shortname="Natl. Wea. Dig.",
+}
+
+@journal{nature,
+	name="Nature",
+}
+
+@journal{n_z_j_mar_freshwater_res,
+	name="New Zealand Journal of Marine and Freshwater Research",
+	shortname="N. Z. J. Mar. Freshwater Res.",
+}
+
+@journal{nuovo_cimento,
+	name="Nuovo Cimento",
+}
+
+@journal{oceanogr_meteor,
+	name="Oceanography and Meteorology",
+	shortname="Oceanogr. Meteor.",
+}
+
+@journal{pap_meteor_geophys,
+	name="Papers in Meteorology and Geophysics",
+	shortname="Pap. Meteor. Geophys.",
+}
+
+@journal{pap_phys_oceanogr_meteor,
+	name="Papers in Physical Oceanography and Meteorology",
+	shortname="Pap. Phys. Oceanogr. Meteor.",
+}
+
+@journal{philos_trans_roy_soc_london,
+	name="Philosophical Transactions of the Royal Society of London",
+	shortname="Philos. Trans. Roy. Soc. London",
+}
+
+@journal{phys_rev,
+	name="Physical Review",
+	shortname="Phys. Rev.",
+}
+
+@journal{phys_rev_lett,
+	name="Physical Review Letters",
+	shortname="Phys. Rev. Lett.",
+}
+
+@journal{phys_chem_earth_b,
+	name="Physics and Chemistry of the Earth B",
+	shortname="Phys. Chem Earth B",
+}
+
+@journal{phys_fluids,
+	name="Physics of Fluids",
+	shortname="Phys. Fluids",
+}
+
+@journal{phys_z,
+	name="Physikalische Zeitschrift",
+	shortname="Phys. Z.",
+}
+
+@journal{proc_roy_soc_london,
+	name="Proceedings of the Royal Society of London",
+	shortname="Proc. Roy. Soc. London",
+}
+
+@journal{pure_appl_geophys,
+	name="Pure and Applied Geophysics",
+	shortname="Pure Appl. Geophys.",
+}
+
+@journal{quart_j_roy_meteor_soc,
+	name="Quarterly Journal of the Royal Meteorological Society",
+	shortname="Quart. J. Roy. Meteor. Soc.",
+}
+
+@journal{radio_sci,
+	name="Radio Science",
+	shortname="Radio Sci.",
+}
+
+@journal{remote_sens_environ,
+	name="Remote Sensing of the Environment",
+	shortname="Remote Sens. Environ.",
+}
+
+@journal{rev_sci_instrum,
+	name="Review of Scientific Instruments",
+	shortname="Rev. Sci. Instrum.",
+}
+
+@journal{rev_geophys,
+	name="Reviews of Geophysics",
+	shortname="Rev. Geophys.",
+}
+
+@journal{rev_geophys_space_phys,
+	name="Reviews of Geophysics and Space Physics",
+	shortname="Rev. Geophys. Space Phys.",
+}
+
+@journal{rev_meteor,
+	name="Revista Meteorologica",
+	shortname="Rev. Meteor.",
+}
+
+@journal{rev_geofis,
+	name="Revista de Geofisica",
+	shortname="Rev. Geofis.",
+}
+
+@journal{science,
+	name="Science",
+}
+
+@journal{sci_amer,
+	name="Scientific American",
+	shortname="Sci. Amer.",
+}
+
+@journal{space_sci_rev,
+	name="Space Science Review",
+	shortname="Space Sci. Rev.",
+}
+
+@journal{stud_appl_math,
+	name="Studies in Applied Mathematics",
+	shortname="Stud. Appl. Math.",
+}
+
+@journal{tellus,
+	name="Tellus",
+}
+
+@journal{theor_appl_climatol,
+	name="Theoretical and Applied Climatology",
+	shortname="Theor. Appl. Climatol.",
+}
+
+@journal{tr_geofiz_inst_akad_nauk_sssr,
+	name="Trudy Geofizicheskogo Instituta, Akademiya Nauk SSSR",
+	shortname="Tr. Geofiz. Inst., Akad. Nauk SSSR",
+}
+
+@journal{tr_gl_geofiz_obs,
+	name="Trudy Glavnoi Geofizicheskoi Observatorii",
+	shortname="Tr. Gl. Geofiz. Obs.",
+}
+
+@journal{water_resour_res,
+	name="Water Resources Research",
+	shortname="Water Resour. Res.",
+}
+
+@journal{weather,
+	name="Weather",
+}
+
+@journal{wea_forecasting,
+	name="Weather and Forecasting",
+	shortname="Wea. Forecasting",
+}
+
+@journal{weatherwise,
+	name="Weatherwise",
+}
+
+@journal{wmo_bull,
+	name="World Meteorological Organization Bulletin",
+	shortname="WMO Bull.",
+}
+
+@journal{z_meteor,
+	name="Zeitschrift für Meteorologie",
+	shortname="Z. Meteor.",
+}
+

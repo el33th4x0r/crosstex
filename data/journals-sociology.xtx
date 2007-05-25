@@ -1,0 +1,467 @@
+@journal{acta_sociol,
+	name="Acta Sociologica",
+	shortname="Acta Sociol.",
+}
+
+@journal{agric_human_values,
+	name="Agriculture And Human Values",
+	shortname="Agric. Human Values",
+}
+
+@journal{am_j_econ_sociol,
+	name="American Journal Of Economics And Sociology",
+	shortname="Am. J. Econ. Sociol.",
+}
+
+@journal{am_j_sociol,
+	name="American Journal Of Sociology",
+	shortname="Am J Sociol",
+}
+
+@journal{am_sociol_rev,
+	name="American Sociological Review",
+	shortname="Am Sociol Rev",
+}
+
+@journal{ann_touris_res,
+	name="Annals Of Tourism Research",
+	shortname="Ann. Touris. Res.",
+}
+
+@journal{annu_rev_sociol,
+	name="Annual Review Of Sociology",
+	shortname="Annu. Rev. Sociol.",
+}
+
+@journal{arch_eur_sociol,
+	name="Archives Europeennes De Sociologie",
+	shortname="Arch. Eur. Sociol.",
+}
+
+@journal{armed_forces_soc,
+	name="Armed Forces & Society",
+	shortname="Armed Forces Soc.",
+}
+
+@journal{berliner_j_soz,
+	name="Berliner Journal für Soziologie",
+	shortname="Berliner J. Soz.",
+}
+
+@journal{br_j_sociol,
+	name="British Journal Of Sociology",
+	shortname="Br. J. Sociol.",
+}
+
+@journal{br_j_sociol_educ,
+	name="British Journal Of Sociology Of Education",
+	shortname="Br. J. Sociol. Educ.",
+}
+
+@journal{can_j_sociolcahiers_can_sociol,
+	name="Canadian Journal Of Sociology-Cahiers Canadiens De Sociologie",
+	shortname="Can. J. Sociol.-Cahiers Can. Sociol.",
+}
+
+@journal{can_rev_sociol_anthropolrev_can_sociol_anthrol,
+	name="Canadian Review Of Sociology And Anthropology-Revue Canadienne De Sociologie Et D Anthropologie",
+	shortname="Can. Rev. Sociol. Anthropol.-Rev. Can. Sociol. Anthrol.",
+}
+
+@journal{chin_sociol_anthropol,
+	name="Chinese Sociology And Anthropology",
+	shortname="Chin. Sociol. Anthropol.",
+}
+
+@journal{comp_stud_soc_hist,
+	name="Comparative Studies In Society And History",
+	shortname="Comp. Stud. Soc. Hist.",
+}
+
+@journal{contemp_sociolj_rev,
+	name="Contemporary Sociology-A Journal Of Reviews",
+	shortname="Contemp. Sociol.-J. Rev.",
+}
+
+@journal{contrib_india_sociol,
+	name="Contributions To Indian Sociology",
+	shortname="Contrib. India. Sociol.",
+}
+
+@journal{deviant_behav,
+	name="Deviant Behavior",
+	shortname="Deviant Behav.",
+}
+
+@journal{niscl_soc,
+	name="Discourse & Society",
+	shortname="niscl. Soc.",
+}
+
+@journal{drus_istraz,
+	name="Drustvena Istrazivanja",
+	shortname="Drus. Istraz.",
+}
+
+@journal{econ_soc,
+	name="Economy And Society",
+	shortname="Econ. Soc.",
+}
+
+@journal{ethn_racial_stud,
+	name="Ethnic And Racial Studies",
+	shortname="Ethn. Racial Stud.",
+}
+
+@journal{eur_soc,
+	name="European Societies",
+	shortname="Eur. Soc.",
+}
+
+@journal{eur_sociol_rev,
+	name="European Sociological Review",
+	shortname="Eur. Sociol. Rev.",
+}
+
+@journal{gend_soc,
+	name="Gender & Society",
+	shortname="Gend. Soc.",
+}
+
+@journal{glob_netw,
+	name="Global Networks-A Journal Of Transnational Affairs",
+	shortname="Glob. Netw.",
+}
+
+@journal{hum_ecol,
+	name="Human Ecology",
+	shortname="Hum. Ecol.",
+}
+
+@journal{hum_stud,
+	name="Human Studies",
+	shortname="Hum. Stud.",
+}
+
+@journal{int_j_intercult_relat,
+	name="International Journal Of Intercultural Relations",
+	shortname="Int. J. Intercult. Relat.",
+}
+
+@journal{int_j_sociol_law,
+	name="International Journal Of The Sociology Of Law",
+	shortname="Int. J. Sociol. Law",
+}
+
+@journal{int_sociol,
+	name="International Sociology",
+	shortname="Int. Sociol.",
+}
+
+@journal{j_sci_stud_relig,
+	name="Journal For The Scientific Study Of Religion",
+	shortname="J. Sci. Stud. Relig.",
+}
+
+@journal{j_contemp_ethnogr,
+	name="Journal Of Contemporary Ethnography",
+	shortname="J. Contemp. Ethnogr.",
+}
+
+@journal{j_hist_sociol,
+	name="Journal Of Historical Sociology",
+	shortname="J. Hist. Sociol.",
+}
+
+@journal{j_law_soc,
+	name="Journal Of Law And Society",
+	shortname="J. Law Soc.",
+}
+
+@journal{j_leis_res,
+	name="Journal Of Leisure Research",
+	shortname="J. Leis. Res.",
+}
+
+@journal{j_marriage_fam,
+	name="Journal Of Marriage And The Family",
+	shortname="J. Marriage Fam.",
+}
+
+@journal{j_math_sociol,
+	name="Journal Of Mathematical Sociology",
+	shortname="J. Math. Sociol.",
+}
+
+@journal{j_polit_mil_soc,
+	name="Journal Of Political & Military Sociology",
+	shortname="J. Polit. Mil. Soc.",
+}
+
+@journal{j_sociol,
+	name="Journal Of Sociology",
+	shortname="J. Sociol.",
+}
+
+@journal{j_sport_soc_issues,
+	name="Journal Of Sport & Social Issues",
+	shortname="J. Sport Soc. Issues",
+}
+
+@journal{j_hist_sex,
+	name="Journal Of The History Of Sexuality",
+	shortname="J. Hist. Sex.",
+}
+
+@journal{koln_z_soziol_sozialpsych,
+	name="Kölner Zeitschrift für Soziologie und Sozialpsychologie",
+	shortname="Koln. Z. Soziol. Sozialpsych.",
+}
+
+@journal{lang_soc,
+	name="Language In Society",
+	shortname="Lang. Soc.",
+}
+
+@journal{law_soc_rev,
+	name="Law & Society Review",
+	shortname="Law Soc. Rev.",
+}
+
+@journal{leis_sci,
+	name="Leisure Sciences",
+	shortname="Leis. Sci.",
+}
+
+@journal{media_cult_soc,
+	name="Media Culture & Society",
+	shortname="Media Cult. Soc.",
+}
+
+@journal{polit_soc,
+	name="Politics & Society",
+	shortname="Polit. Soc.",
+}
+
+@journal{popul_dev_rev,
+	name="Population And Development Review",
+	shortname="Popul. Dev. Rev.",
+}
+
+@journal{race_cl,
+	name="Race & Class",
+	shortname="Race Cl.",
+}
+
+@journal{ration_soc,
+	name="Rationality And Society",
+	shortname="Ration. Soc.",
+}
+
+@journal{rev_relig_res,
+	name="Review Of Religious Research",
+	shortname="Rev. Relig. Res.",
+}
+
+@journal{rev_fr_sociol,
+	name="Revue Francaise De Sociologie",
+	shortname="Rev. Fr. Sociol.",
+}
+
+@journal{rural_sociol,
+	name="Rural Sociology",
+	shortname="Rural Sociol.",
+}
+
+@journal{soc_compass,
+	name="Social Compass",
+	shortname="Soc. Compass",
+}
+
+@journal{soc_forces,
+	name="Social Forces",
+	shortname="Soc. Forces",
+}
+
+@journal{soc_indic_res,
+	name="Social Indicators Research",
+	shortname="Soc. Indic. Res.",
+}
+
+@journal{soc_networks,
+	name="Social Networks",
+	shortname="Soc. Networks",
+}
+
+@journal{soc_probl,
+	name="Social Problems",
+	shortname="Soc. Probl.",
+}
+
+@journal{society,
+	name="Society",
+}
+
+@journal{soc_anim,
+	name="Society & Animals",
+	shortname="Soc. Anim.",
+}
+
+@journal{soc_nat_resour,
+	name="Society & Natural Resources",
+	shortname="Soc. Nat. Resour.",
+}
+
+@journal{sociologia,
+	name="Sociologia",
+}
+
+@journal{sociol_rural,
+	name="Sociologia Ruralis",
+	shortname="Sociol. Rural",
+}
+
+@journal{sociol_forum,
+	name="Sociological Forum",
+	shortname="Sociol. Forum",
+}
+
+@journal{sociol_inq,
+	name="Sociological Inquiry",
+	shortname="Sociol. Inq.",
+}
+
+@journal{sociol_methodol,
+	name="Sociological Methodology",
+	shortname="Sociol Methodol",
+}
+
+@journal{sociol_methods_res,
+	name="Sociological Methods & Research",
+	shortname="Sociol. Methods. Res.",
+}
+
+@journal{sociol_perspect,
+	name="Sociological Perspectives",
+	shortname="Sociol. Perspect.",
+}
+
+@journal{sociol_q,
+	name="Sociological Quarterly",
+	shortname="Sociol. Q.",
+}
+
+@journal{sociol_res_online,
+	name="Sociological Research Online",
+	shortname="Sociol. Res. Online",
+}
+
+@journal{sociol_rev,
+	name="Sociological Review",
+	shortname="Sociol. Rev.",
+}
+
+@journal{sociol_spectr,
+	name="Sociological Spectrum",
+	shortname="Sociol. Spectr.",
+}
+
+@journal{sociol_theor,
+	name="Sociological Theory",
+	shortname="Sociol. Theor.",
+}
+
+@journal{sociol_theor_methods,
+	name="Sociological Theory And Methods",
+	shortname="Sociol. Theor. Methods",
+}
+
+@journal{sociol_cas,
+	name="Sociologicky Casopis-Czech Sociological Review",
+	shortname="Sociol. Cas.",
+}
+
+@journal{sociol_trav,
+	name="Sociologie Du Travail",
+	shortname="Sociol. Trav.",
+}
+
+@journal{sociol_forsk,
+	name="Sociologisk Forskning",
+	shortname="Sociol. Forsk.",
+}
+
+@journal{sociol_educ,
+	name="Sociology Of Education",
+	shortname="Sociol. Educ.",
+}
+
+@journal{sociol_health_ill,
+	name="Sociology Of Health & Illness",
+	shortname="Sociol. Health Ill.",
+}
+
+@journal{sociol_relig,
+	name="Sociology Of Religion",
+	shortname="Sociol. Relig.",
+}
+
+@journal{sociol_sport_j,
+	name="Sociology Of Sport Journal",
+	shortname="Sociol. Sport J.",
+}
+
+@journal{sociolj_brit_sociol_assoc,
+	name="Sociology-The Journal Of The British Sociological Association",
+	shortname="Sociol.-J. Brit. Sociol. Assoc.",
+}
+
+@journal{sotsiologicheskie_issled,
+	name="Sotsiologicheskie Issledovaniya",
+	shortname="Sotsiologicheskie Issled.",
+}
+
+@journal{sozial_weltzeit_sozialwiss_forsch_praxis,
+	name="Soziale Welt-Zeitschrift für sozialwissenschaftliche Forschung Und Praxis",
+	shortname="Sozial Welt-Zeit. Sozialwiss. Forsch. Praxis",
+}
+
+@journal{stud_symb_interact,
+	name="Studies In Symbolic Interaction",
+	shortname="Stud Symb Interact",
+}
+
+@journal{symb_interact,
+	name="Symbolic Interaction",
+	shortname="Symb. Interact.",
+}
+
+@journal{teaching_sociology,
+	name="Teaching Sociology",
+}
+
+@journal{theory_soc,
+	name="Theory And Society",
+	shortname="Theory Soc.",
+}
+
+@journal{work_occup,
+	name="Work And Occupations",
+	shortname="Work Occup.",
+}
+
+@journal{work_employ_soc,
+	name="Work Employment And Society",
+	shortname="Work Employ. Soc.",
+}
+
+@journal{youth_soc,
+	name="Youth & Society",
+	shortname="Youth Soc.",
+}
+
+@journal{z_soziol,
+	name="Zeitschrift für Soziologie",
+	shortname="Z. Soziol.",
+}
+

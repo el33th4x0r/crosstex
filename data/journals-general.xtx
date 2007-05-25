@@ -1,0 +1,7532 @@
+@journal{acc_chem_res,
+	name="Accounts of Chemical Research",
+	shortname="Acc. Chem. Res.",
+}
+
+@journal{acs_symp_ser,
+	name="ACS Symposium Series",
+	shortname="ACS Symp. Ser.",
+}
+
+@journal{acta_biochim_pol,
+	name="Acta Biochimica Polonica",
+	shortname="Acta Biochim. Pol.",
+}
+
+@journal{acta_chim_slov,
+	name="Acta Chimica Slovenica",
+	shortname="Acta Chim. Slov.",
+}
+
+@journal{acta_crystallogr_sect_a_found_crystallogr,
+	name="Acta Crystallographica, Section A: Foundations of Crystallography",
+	shortname="Acta Crystallogr., Sect. A: Found. Crystallogr.",
+}
+
+@journal{acta_crystallogr_sect_b_struct_sci,
+	name="Acta Crystallographica, Section B: Structural Science",
+	shortname="Acta Crystallogr., Sect. B: Struct. Sci.",
+}
+
+@journal{acta_crystallogr_sect_c_cryst_struct_commun,
+	name="Acta Crystallographica, Section C: Crystal Structure Communications",
+	shortname="Acta Crystallogr., Sect. C: Cryst. Struct. Commun.",
+}
+
+@journal{acta_crystallogr_sect_d_biol_crystallogr,
+	name="Acta Crystallographica, Section D: Biological Crystallography",
+	shortname="Acta Crystallogr., Sect. D: Biol. Crystallogr.",
+}
+
+@journal{acta_crystallogr_sect_e_struct_rep_online,
+	name="Acta Crystallographica, Section E: Structure Reports Online",
+	shortname="Acta Crystallogr., Sect. E: Struct. Rep. Online",
+}
+
+@journal{acta_crystallogr_sect_f_struct_biol_cryst_commun,
+	name="Acta Crystallographica, Section F: Structural Biology and Crystallization Communications",
+	shortname="Acta Crystallogr., Sect. F: Struct. Biol. Cryst. Commun.",
+}
+
+@journal{acta_hydrochim_hydrobiol,
+	name="Acta Hydrochimica et Hydrobiologica",
+	shortname="Acta Hydrochim. Hydrobiol.",
+}
+
+@journal{acta_mater,
+	name="Acta Materialia",
+	shortname="Acta Mater.",
+}
+
+@journal{acta_pharm_zagreb_croatia,
+	name="Acta Pharmaceutica (Zagreb, Croatia)",
+	shortname="Acta Pharm. (Zagreb, Croatia)",
+}
+
+@journal{acta_pharmacol_sin,
+	name="Acta Pharmacologica Sinica",
+	shortname="Acta Pharmacol. Sin.",
+}
+
+@journal{acta_phys_pol_a,
+	name="Acta Physica Polonica, A",
+	shortname="Acta Phys. Pol., A",
+}
+
+@journal{acta_phys_pol_b,
+	name="Acta Physica Polonica, B",
+	shortname="Acta Phys. Pol., B",
+}
+
+@journal{acta_physiol_scand,
+	name="Acta Physiologica Scandinavica",
+	shortname="Acta Physiol. Scand.",
+}
+
+@journal{adsorption,
+	name="Adsorption",
+}
+
+@journal{adsorpt_sci_technol,
+	name="Adsorption Science & Technology",
+	shortname="Adsorpt. Sci. Technol.",
+}
+
+@journal{adv_drug_delivery_rev,
+	name="Advanced Drug Delivery Reviews",
+	shortname="Adv. Drug Delivery Rev.",
+}
+
+@journal{adv_funct_mater,
+	name="Advanced Functional Materials",
+	shortname="Adv. Funct. Mater.",
+}
+
+@journal{adv_mater_weinheim_ger,
+	name="Advanced Materials (Weinheim, Germany)",
+	shortname="Adv. Mater. (Weinheim, Ger.)",
+}
+
+@journal{adv_synth_catal,
+	name="Advanced Synthesis & Catalysis",
+	shortname="Adv. Synth. Catal.",
+}
+
+@journal{adv_appl_ceram,
+	name="Advances in Applied Ceramics",
+	shortname="Adv. Appl. Ceram.",
+}
+
+@journal{adv_at_mol_opt_phys,
+	name="Advances in Atomic, Molecular, and Optical Physics",
+	shortname="Adv. At., Mol., Opt. Phys.",
+}
+
+@journal{adv_chem_phys,
+	name="Advances in Chemical Physics",
+	shortname="Adv. Chem. Phys.",
+}
+
+@journal{adv_chromatogr_n_y_ny_u_s,
+	name="Advances in Chromatography (New York, NY, United States)",
+	shortname="Adv. Chromatogr. (N. Y., NY, U. S.)",
+}
+
+@journal{adv_colloid_interface_sci,
+	name="Advances in Colloid and Interface Science",
+	shortname="Adv. Colloid Interface Sci.",
+}
+
+@journal{adv_electrochem_sci_eng,
+	name="Advances in Electrochemical Science and Engineering",
+	shortname="Adv. Electrochem. Sci. Eng.",
+}
+
+@journal{adv_inorg_chem,
+	name="Advances in Inorganic Chemistry",
+	shortname="Adv. Inorg. Chem.",
+}
+
+@journal{adv_polym_sci,
+	name="Advances in Polymer Science",
+	shortname="Adv. Polym. Sci.",
+}
+
+@journal{adv_polym_technol,
+	name="Advances in Polymer Technology",
+	shortname="Adv. Polym. Technol.",
+}
+
+@journal{adv_quantum_chem,
+	name="Advances in Quantum Chemistry",
+	shortname="Adv. Quantum Chem.",
+}
+
+@journal{adv_xray_anal,
+	name="Advances in X-Ray Analysis",
+	shortname="Adv. X-Ray Anal.",
+}
+
+@journal{aerosol_sci_technol,
+	name="Aerosol Science and Technology",
+	shortname="Aerosol Sci. Technol.",
+}
+
+@journal{afinidad,
+	name="Afinidad",
+}
+
+@journal{aging_cell,
+	name="Aging Cell",
+}
+
+@journal{aiche_j,
+	name="AIChE Journal",
+	shortname="AIChE J.",
+}
+
+@journal{am_ceram_soc_bull,
+	name="American Ceramic Society Bulletin",
+	shortname="Am. Ceram. Soc. Bull.",
+}
+
+@journal{am_j_clin_nutr,
+	name="American Journal of Clinical Nutrition",
+	shortname="Am. J. Clin. Nutr.",
+}
+
+@journal{am_j_hum_genet,
+	name="American Journal of Human Genetics",
+	shortname="Am. J. Hum. Genet.",
+}
+
+@journal{am_j_physiol,
+	name="American Journal of Physiology",
+	shortname="Am. J. Physiol.",
+}
+
+@journal{am_j_respir_cell_mol_biol,
+	name="American Journal of Respiratory Cell and Molecular Biology",
+	shortname="Am. J. Respir. Cell Mol. Biol.",
+}
+
+@journal{am_mineral,
+	name="American Mineralogist",
+	shortname="Am. Mineral.",
+}
+
+@journal{amino_acids,
+	name="Amino Acids",
+}
+
+@journal{analyst_cambridge_u_k,
+	name="Analyst (Cambridge, United Kingdom)",
+	shortname="Analyst (Cambridge, U. K.)",
+}
+
+@journal{anal_chim_acta,
+	name="Analytica Chimica Acta",
+	shortname="Anal. Chim. Acta",
+}
+
+@journal{anal_bioanal_chem,
+	name="Analytical and Bioanalytical Chemistry",
+	shortname="Anal. Bioanal. Chem.",
+}
+
+@journal{anal_biochem,
+	name="Analytical Biochemistry",
+	shortname="Anal. Biochem.",
+}
+
+@journal{anal_chem,
+	name="Analytical Chemistry",
+	shortname="Anal. Chem.",
+}
+
+@journal{anal_lett,
+	name="Analytical Letters",
+	shortname="Anal. Lett.",
+}
+
+@journal{anal_sci,
+	name="Analytical Sciences",
+	shortname="Anal. Sci.",
+}
+
+@journal{angew_chem_int_ed,
+	name="Angewandte Chemie, International Edition",
+	shortname="Angew. Chem., Int. Ed.",
+}
+
+@journal{anim_welfare,
+	name="Animal Welfare",
+	shortname="Anim. Welfare",
+}
+
+@journal{anim_welfare_inf_cent_bull,
+	name="Animal Welfare Information Center Bulletin",
+	shortname="Anim. Welfare Inf. Cent. Bull.",
+}
+
+@journal{ann_chim_cachan_fr,
+	name="Annales de Chimie (Cachan, France)",
+	shortname="Ann. Chim. (Cachan, Fr.)",
+}
+
+@journal{ann_pharm_fr,
+	name="Annales Pharmaceutiques Francaises",
+	shortname="Ann. Pharm. Fr.",
+}
+
+@journal{ann_chim_rome_italy,
+	name="Annali di Chimica (Rome, Italy)",
+	shortname="Ann. Chim. (Rome, Italy)",
+}
+
+@journal{ann_nucl_energy,
+	name="Annals of Nuclear Energy",
+	shortname="Ann. Nucl. Energy",
+}
+
+@journal{ann_nutr_metab,
+	name="Annals of Nutrition & Metabolism",
+	shortname="Ann. Nutr. Metab.",
+}
+
+@journal{ann_phys_san_diego_ca_u_s,
+	name="Annals of Physics (San Diego, CA, United States)",
+	shortname="Ann. Phys. (San Diego, CA, U. S.)",
+}
+
+@journal{annexins,
+	name="Annexins",
+}
+
+@journal{annu_rep_med_chem,
+	name="Annual Reports in Medicinal Chemistry",
+	shortname="Annu. Rep. Med. Chem.",
+}
+
+@journal{annu_rep_nmr_spectrosc,
+	name="Annual Reports on NMR Spectroscopy",
+	shortname="Annu. Rep. NMR Spectrosc.",
+}
+
+@journal{annu_rep_prog_chem_sect_a_inorg_chem,
+	name="Annual Reports on the Progress of Chemistry, Section A: Inorganic Chemistry",
+	shortname="Annu. Rep. Prog. Chem., Sect. A: Inorg. Chem.",
+}
+
+@journal{annu_rep_prog_chem_sect_b_org_chem,
+	name="Annual Reports on the Progress of Chemistry, Section B: Organic Chemistry",
+	shortname="Annu. Rep. Prog. Chem., Sect. B: Org. Chem.",
+}
+
+@journal{annu_rep_prog_chem_sect_c_phys_chem,
+	name="Annual Reports on the Progress of Chemistry, Section C: Physical Chemistry",
+	shortname="Annu. Rep. Prog. Chem., Sect. C: Phys. Chem.",
+}
+
+@journal{annu_rev_biochem,
+	name="Annual Review of Biochemistry",
+	shortname="Annu. Rev. Biochem.",
+}
+
+@journal{annu_rev_biomed_eng,
+	name="Annual Review of Biomedical Engineering",
+	shortname="Annu. Rev. Biomed. Eng.",
+}
+
+@journal{annu_rev_biophys_biomol_struct,
+	name="Annual Review of Biophysics and Biomolecular Structure",
+	shortname="Annu. Rev. Biophys. Biomol. Struct.",
+}
+
+@journal{annu_rev_cell_dev_biol,
+	name="Annual Review of Cell and Developmental Biology",
+	shortname="Annu. Rev. Cell Dev. Biol.",
+}
+
+@journal{annu_rev_earth_planet_sci,
+	name="Annual Review of Earth and Planetary Sciences",
+	shortname="Annu. Rev. Earth Planet. Sci.",
+}
+
+@journal{annu_rev_entomol,
+	name="Annual Review of Entomology",
+	shortname="Annu. Rev. Entomol.",
+}
+
+@journal{annu_rev_genet,
+	name="Annual Review of Genetics",
+	shortname="Annu. Rev. Genet.",
+}
+
+@journal{annu_rev_genomics_hum_genet,
+	name="Annual Review of Genomics and Human Genetics",
+	shortname="Annu. Rev. Genomics Hum. Genet.",
+}
+
+@journal{annu_rev_immunol,
+	name="Annual Review of Immunology",
+	shortname="Annu. Rev. Immunol.",
+}
+
+@journal{annu_rev_mater_res,
+	name="Annual Review of Materials Research",
+	shortname="Annu. Rev. Mater. Res.",
+}
+
+@journal{annu_rev_med,
+	name="Annual Review of Medicine",
+	shortname="Annu. Rev. Med.",
+}
+
+@journal{annu_rev_microbiol,
+	name="Annual Review of Microbiology",
+	shortname="Annu. Rev. Microbiol.",
+}
+
+@journal{annu_rev_neurosci,
+	name="Annual Review of Neuroscience",
+	shortname="Annu. Rev. Neurosci.",
+}
+
+@journal{annu_rev_nucl_part_sci,
+	name="Annual Review of Nuclear and Particle Science",
+	shortname="Annu. Rev. Nucl. Part. Sci.",
+}
+
+@journal{annu_rev_nutr,
+	name="Annual Review of Nutrition",
+	shortname="Annu. Rev. Nutr.",
+}
+
+@journal{annu_rev_pharmacol_toxicol,
+	name="Annual Review of Pharmacology and Toxicology",
+	shortname="Annu. Rev. Pharmacol. Toxicol.",
+}
+
+@journal{annu_rev_phys_chem,
+	name="Annual Review of Physical Chemistry",
+	shortname="Annu. Rev. Phys. Chem.",
+}
+
+@journal{annu_rev_physiol,
+	name="Annual Review of Physiology",
+	shortname="Annu. Rev. Physiol.",
+}
+
+@journal{annu_rev_phytopathol,
+	name="Annual Review of Phytopathology",
+	shortname="Annu. Rev. Phytopathol.",
+}
+
+@journal{annu_rev_plant_biol,
+	name="Annual Review of Plant Biology",
+	shortname="Annu. Rev. Plant Biol.",
+}
+
+@journal{anticancer_drugs,
+	name="Anti-Cancer Drugs",
+}
+
+@journal{antibiot_khimioter,
+	name="Antibiotiki i Khimioterapiya",
+	shortname="Antibiot. Khimioter.",
+}
+
+@journal{antimicrob_agents_chemother,
+	name="Antimicrobial Agents and Chemotherapy",
+	shortname="Antimicrob. Agents Chemother.",
+}
+
+@journal{antioxid_redox_signaling,
+	name="Antioxidants & Redox Signaling",
+	shortname="Antioxid. Redox Signaling",
+}
+
+@journal{antiviral_chem_chemother,
+	name="Antiviral Chemistry & Chemotherapy",
+	shortname="Antiviral Chem. Chemother.",
+}
+
+@journal{antiviral_res,
+	name="Antiviral Research",
+	shortname="Antiviral Res.",
+}
+
+@journal{appl_environ_microbiol,
+	name="Applied and Environmental Microbiology",
+	shortname="Appl. Environ. Microbiol.",
+}
+
+@journal{appl_biochem_biotechnol,
+	name="Applied Biochemistry and Biotechnology",
+	shortname="Appl. Biochem. Biotechnol.",
+}
+
+@journal{appl_biochem_microbiol,
+	name="Applied Biochemistry and Microbiology",
+	shortname="Appl. Biochem. Microbiol.",
+}
+
+@journal{appl_catal_a,
+	name="Applied Catalysis, A: General",
+	shortname="Appl. Catal., A",
+}
+
+@journal{appl_catal_b,
+	name="Applied Catalysis, B: Environmental",
+	shortname="Appl. Catal., B",
+}
+
+@journal{appl_clay_sci,
+	name="Applied Clay Science",
+	shortname="Appl. Clay Sci.",
+}
+
+@journal{appl_geochem,
+	name="Applied Geochemistry",
+	shortname="Appl. Geochem.",
+}
+
+@journal{appl_microbiol_biotechnol,
+	name="Applied Microbiology and Biotechnology",
+	shortname="Appl. Microbiol. Biotechnol.",
+}
+
+@journal{appl_organomet_chem,
+	name="Applied Organometallic Chemistry",
+	shortname="Appl. Organomet. Chem.",
+}
+
+@journal{appl_phys_a_mater_sci_process,
+	name="Applied Physics A: Materials Science & Processing",
+	shortname="Appl. Phys. A: Mater. Sci. Process.",
+}
+
+@journal{appl_phys_b_lasers_opt,
+	name="Applied Physics B: Lasers and Optics",
+	shortname="Appl. Phys. B: Lasers Opt.",
+}
+
+@journal{appl_phys_lett,
+	name="Applied Physics Letters",
+	shortname="Appl. Phys. Lett.",
+}
+
+@journal{appl_radiat_isot,
+	name="Applied Radiation and Isotopes",
+	shortname="Appl. Radiat. Isot.",
+}
+
+@journal{appl_spectrosc,
+	name="Applied Spectroscopy",
+	shortname="Appl. Spectrosc.",
+}
+
+@journal{appl_surf_sci,
+	name="Applied Surface Science",
+	shortname="Appl. Surf. Sci.",
+}
+
+@journal{aquat_toxicol,
+	name="Aquatic Toxicology",
+	shortname="Aquat. Toxicol.",
+}
+
+@journal{archaea,
+	name="Archaea",
+}
+
+@journal{arch_pharm_weinheim_ger,
+	name="Archiv der Pharmazie (Weinheim, Germany)",
+	shortname="Arch. Pharm. (Weinheim, Ger.)",
+}
+
+@journal{arch_biochem_biophys,
+	name="Archives of Biochemistry and Biophysics",
+	shortname="Arch. Biochem. Biophys.",
+}
+
+@journal{arch_environ_contam_toxicol,
+	name="Archives of Environmental Contamination and Toxicology",
+	shortname="Arch. Environ. Contam. Toxicol.",
+}
+
+@journal{arch_insect_biochem_physiol,
+	name="Archives of Insect Biochemistry and Physiology",
+	shortname="Arch. Insect Biochem. Physiol.",
+}
+
+@journal{arch_microbiol,
+	name="Archives of Microbiology",
+	shortname="Arch. Microbiol.",
+}
+
+@journal{arch_pharmacal_res,
+	name="Archives of Pharmacal Research",
+	shortname="Arch. Pharmacal Res.",
+}
+
+@journal{arch_physiol_biochem,
+	name="Archives of Physiology and Biochemistry",
+	shortname="Arch. Physiol. Biochem.",
+}
+
+@journal{arch_toxicol,
+	name="Archives of Toxicology",
+	shortname="Arch. Toxicol.",
+}
+
+@journal{arch_virol,
+	name="Archives of Virology",
+	shortname="Arch. Virol.",
+}
+
+@journal{arch_combust,
+	name="Archivum Combustionis",
+	shortname="Arch. Combust.",
+}
+
+@journal{arkivoc_gainesville_fl_u_s,
+	name="ARKIVOC (Gainesville, FL, United States)",
+	shortname="ARKIVOC (Gainesville, FL, U. S.)",
+}
+
+@journal{arterioscler_thromb_vasc_biol,
+	name="Arteriosclerosis, Thrombosis, and Vascular Biology",
+	shortname="Arterioscler., Thromb., Vasc. Biol.",
+}
+
+@journal{arzneim_forsch,
+	name="Arzneimittel Forschung",
+	shortname="Arzneim. Forsch.",
+}
+
+@journal{asian_j_chem,
+	name="Asian Journal of Chemistry",
+	shortname="Asian J. Chem.",
+}
+
+@journal{assay_drug_dev_technol,
+	name="Assay and Drug Development Technologies",
+	shortname="Assay Drug Dev. Technol.",
+}
+
+@journal{atherosclerosis_amsterdam_neth,
+	name="Atherosclerosis (Amsterdam, Netherlands)",
+	shortname="Atherosclerosis (Amsterdam, Neth.)",
+}
+
+@journal{atla_altern_lab_anim,
+	name="ATLA, Alternatives to Laboratory Animals",
+	shortname="ATLA, Altern. Lab. Anim.",
+}
+
+@journal{atmos_chem_phys,
+	name="Atmospheric Chemistry and Physics",
+	shortname="Atmos. Chem. Phys.",
+}
+
+@journal{atmos_environ,
+	name="Atmospheric Environment",
+	shortname="Atmos. Environ.",
+}
+
+@journal{at_energy_n_y_ny_u_s,
+	name="Atomic Energy (New York, NY, United States)",
+	shortname="At. Energy (N. Y., NY, U. S.)",
+}
+
+@journal{at_spectrosc,
+	name="Atomic Spectroscopy",
+	shortname="At. Spectrosc.",
+}
+
+@journal{aust_j_chem,
+	name="Australian Journal of Chemistry",
+	shortname="Aust. J. Chem.",
+}
+
+@journal{auton_autacoid_pharmacol,
+	name="Autonomic & Autacoid Pharmacology",
+	shortname="Auton. Autacoid Pharmacol.",
+}
+
+@journal{azerb_khim_zh,
+	name="Azerbaidzhanskii Khimicheskii Zhurnal",
+	shortname="Azerb. Khim. Zh.",
+}
+
+@journal{basic_clin_pharmacol_toxicol,
+	name="Basic & Clinical Pharmacology & Toxicology",
+	shortname="Basic Clin. Pharmacol. Toxicol.",
+}
+
+@journal{beilstein_j_org_chem,
+	name="Beilstein Journal of Organic Chemistry",
+	shortname="Beilstein J. Org. Chem.",
+}
+
+@journal{biocatal_biotransform,
+	name="Biocatalysis and Biotransformation",
+	shortname="Biocatal. Biotransform.",
+}
+
+@journal{biochem_biophys_res_commun,
+	name="Biochemical and Biophysical Research Communications",
+	shortname="Biochem. Biophys. Res. Commun.",
+}
+
+@journal{biochem_genet,
+	name="Biochemical Genetics",
+	shortname="Biochem. Genet.",
+}
+
+@journal{biochem_j,
+	name="Biochemical Journal",
+	shortname="Biochem. J.",
+}
+
+@journal{biochem_pharmacol,
+	name="Biochemical Pharmacology",
+	shortname="Biochem. Pharmacol.",
+}
+
+@journal{biochem_soc_trans,
+	name="Biochemical Society Transactions",
+	shortname="Biochem. Soc. Trans.",
+}
+
+@journal{biochem_syst_ecol,
+	name="Biochemical Systematics and Ecology",
+	shortname="Biochem. Syst. Ecol.",
+}
+
+@journal{biochemistry,
+	name="Biochemistry",
+}
+
+@journal{biochemistry_moscow,
+	name="Biochemistry (Moscow)",
+}
+
+@journal{biochem_cell_biol,
+	name="Biochemistry and Cell Biology",
+	shortname="Biochem. Cell Biol.",
+}
+
+@journal{biochem_mol_biol_educ,
+	name="Biochemistry and Molecular Biology Education",
+	shortname="Biochem. Mol. Biol. Educ.",
+}
+
+@journal{biochim_biophys_acta,
+	name="Biochimica et Biophysica Acta",
+	shortname="Biochim. Biophys. Acta",
+}
+
+@journal{biochim_biophys_acta_bioenerg,
+	name="Biochimica et Biophysica Acta, Bioenergetics",
+	shortname="Biochim. Biophys. Acta, Bioenerg.",
+}
+
+@journal{biochim_biophys_acta_biomembr,
+	name="Biochimica et Biophysica Acta, Biomembranes",
+	shortname="Biochim. Biophys. Acta, Biomembr.",
+}
+
+@journal{biochim_biophys_acta_biophys_incl_photosynth,
+	name="Biochimica et Biophysica Acta, Biophysics Including Photosynthesis",
+	shortname="Biochim. Biophys. Acta, Biophys. Incl. Photosynth.",
+}
+
+@journal{biochim_biophys_acta_enzymol,
+	name="Biochimica et Biophysica Acta, Enzymology",
+	shortname="Biochim. Biophys. Acta, Enzymol.",
+}
+
+@journal{biochim_biophys_acta_enzymol_biol_oxid,
+	name="Biochimica et Biophysica Acta, Enzymology and Biological Oxidation",
+	shortname="Biochim. Biophys. Acta, Enzymol. Biol. Oxid.",
+}
+
+@journal{biochim_biophys_acta_gene_struct_expression,
+	name="Biochimica et Biophysica Acta, Gene Structure and Expression",
+	shortname="Biochim. Biophys. Acta, Gene Struct. Expression",
+}
+
+@journal{biochim_biophys_acta_gen_subj,
+	name="Biochimica et Biophysica Acta, General Subjects",
+	shortname="Biochim. Biophys. Acta, Gen. Subj.",
+}
+
+@journal{biochim_biophys_acta_lipids_lipid_metab,
+	name="Biochimica et Biophysica Acta, Lipids and Lipid Metabolism",
+	shortname="Biochim. Biophys. Acta, Lipids Lipid Metab.",
+}
+
+@journal{biochim_biophys_acta_mol_cell_biol_lipids,
+	name="Biochimica et Biophysica Acta, Molecular and Cell Biology of Lipids",
+	shortname="Biochim. Biophys. Acta, Mol. Cell Biol. Lipids",
+}
+
+@journal{biochim_biophys_acta_mol_basis_dis,
+	name="Biochimica et Biophysica Acta, Molecular Basis of Disease",
+	shortname="Biochim. Biophys. Acta, Mol. Basis Dis.",
+}
+
+@journal{biochim_biophys_acta_mol_cell_res,
+	name="Biochimica et Biophysica Acta, Molecular Cell Research",
+	shortname="Biochim. Biophys. Acta, Mol. Cell Res.",
+}
+
+@journal{biochim_biophys_acta_mucoproteins_mucopolysaccharides,
+	name="Biochimica et Biophysica Acta, Mucoproteins and Mucopolysaccharides",
+	shortname="Biochim. Biophys. Acta, Mucoproteins Mucopolysaccharides",
+}
+
+@journal{biochim_biophys_acta_protein_struct,
+	name="Biochimica et Biophysica Acta, Protein Structure",
+	shortname="Biochim. Biophys. Acta, Protein Struct.",
+}
+
+@journal{biochim_biophys_acta_protein_struct_mol_enzymol,
+	name="Biochimica et Biophysica Acta, Protein Structure and Molecular Enzymology",
+	shortname="Biochim. Biophys. Acta, Protein Struct. Mol. Enzymol.",
+}
+
+@journal{biochim_biophys_acta_proteins_proteomics,
+	name="Biochimica et Biophysica Acta, Proteins and Proteomics",
+	shortname="Biochim. Biophys. Acta, Proteins Proteomics",
+}
+
+@journal{biochim_biophys_acta_rev_bioenerg,
+	name="Biochimica et Biophysica Acta, Reviews on Bioenergetics",
+	shortname="Biochim. Biophys. Acta, Rev. Bioenerg.",
+}
+
+@journal{biochim_biophys_acta_rev_biomembr,
+	name="Biochimica et Biophysica Acta, Reviews on Biomembranes",
+	shortname="Biochim. Biophys. Acta, Rev. Biomembr.",
+}
+
+@journal{biochim_biophys_acta_rev_cancer,
+	name="Biochimica et Biophysica Acta, Reviews on Cancer",
+	shortname="Biochim. Biophys. Acta, Rev. Cancer",
+}
+
+@journal{biochim_biophys_acta_spec_sect_biophys_subj,
+	name="Biochimica et Biophysica Acta, Specialized Section on Biophysical Subjects",
+	shortname="Biochim. Biophys. Acta, Spec. Sect. Biophys. Subj.",
+}
+
+@journal{biochim_biophys_acta_spec_sect_enzymol_subj,
+	name="Biochimica et Biophysica Acta, Specialized Section on Enzymological Subjects",
+	shortname="Biochim. Biophys. Acta, Spec. Sect. Enzymol. Subj.",
+}
+
+@journal{biochim_biophys_acta_spec_sect_lipids_relat_subj,
+	name="Biochimica et Biophysica Acta, Specialized Section on Lipids and Related Subjects",
+	shortname="Biochim. Biophys. Acta, Spec. Sect. Lipids Relat. Subj.",
+}
+
+@journal{biochim_biophys_acta_spec_sect_mucoproteins,
+	name="Mucopolysaccharides Biochimica et Biophysica Acta, Specialized Section on Mucoproteins and Mucopolysaccharides",
+	shortname="Biochim. Biophys. Acta, Spec. Sect. Mucoproteins",
+}
+
+@journal{biochim_biophys_acta_spec_sect_nucleic_acids_relat,
+	name="Subj. Biochimica et Biophysica Acta, Specialized Section on Nucleic Acids and Related Subjects",
+	shortname="Biochim. Biophys. Acta, Spec. Sect. Nucleic Acids Relat.",
+}
+
+@journal{biochimie,
+	name="Biochimie",
+}
+
+@journal{bioconjugate_chem,
+	name="Bioconjugate Chemistry",
+	shortname="Bioconjugate Chem.",
+}
+
+@journal{bioelectrochemistry,
+	name="Bioelectrochemistry",
+}
+
+@journal{biofactors,
+	name="BioFactors",
+}
+
+@journal{biofizika,
+	name="Biofizika",
+}
+
+@journal{biog_amines,
+	name="Biogenic Amines",
+	shortname="Biog. Amines",
+}
+
+@journal{bioinformatics,
+	name="Bioinformatics",
+}
+
+@journal{bioinorg_chem_appl,
+	name="Bioinorganic Chemistry and Applications",
+	shortname="Bioinorg. Chem. Appl.",
+}
+
+@journal{biol_pharm_bull,
+	name="Biological & Pharmaceutical Bulletin",
+	shortname="Biol. Pharm. Bull.",
+}
+
+@journal{biol_chem,
+	name="Biological Chemistry",
+	shortname="Biol. Chem.",
+}
+
+@journal{biol_trace_elem_res,
+	name="Biological Trace Element Research",
+	shortname="Biol. Trace Elem. Res.",
+}
+
+@journal{biol_membr,
+	name="Biologicheskie Membrany",
+	shortname="Biol. Membr.",
+}
+
+@journal{biol_reprod,
+	name="Biology of Reproduction",
+	shortname="Biol. Reprod.",
+}
+
+@journal{biomacromolecules,
+	name="Biomacromolecules",
+}
+
+@journal{biomarkers,
+	name="Biomarkers",
+}
+
+@journal{biomaterials,
+	name="Biomaterials",
+}
+
+@journal{biomed_chromatogr,
+	name="Biomedical Chromatography",
+	shortname="Biomed. Chromatogr.",
+}
+
+@journal{biomed_res,
+	name="Biomedical Research",
+	shortname="Biomed. Res.",
+}
+
+@journal{biomed_khim,
+	name="Biomeditsinskaya Khimiya",
+	shortname="Biomed. Khim.",
+}
+
+@journal{biometals,
+	name="BioMetals",
+}
+
+@journal{biomol_eng,
+	name="Biomolecular Engineering",
+	shortname="Biomol. Eng.",
+}
+
+@journal{bioorg_med_chem,
+	name="Bioorganic & Medicinal Chemistry",
+	shortname="Bioorg. Med. Chem.",
+}
+
+@journal{bioorg_med_chem_lett,
+	name="Bioorganic & Medicinal Chemistry Letters",
+	shortname="Bioorg. Med. Chem. Lett.",
+}
+
+@journal{bioorg_chem,
+	name="Bioorganic Chemistry",
+	shortname="Bioorg. Chem.",
+}
+
+@journal{biopharm_drug_dispos,
+	name="Biopharmaceutics & Drug Disposition",
+	shortname="Biopharm. Drug Dispos.",
+}
+
+@journal{biophys_chem,
+	name="Biophysical Chemistry",
+	shortname="Biophys. Chem.",
+}
+
+@journal{biophys_j,
+	name="Biophysical Journal",
+	shortname="Biophys. J.",
+}
+
+@journal{biopolymers,
+	name="Biopolymers",
+}
+
+@journal{bioprocess_biosyst_eng,
+	name="Bioprocess and Biosystems Engineering",
+	shortname="Bioprocess Biosyst. Eng.",
+}
+
+@journal{bioresour_technol,
+	name="Bioresource Technology",
+	shortname="Bioresour. Technol.",
+}
+
+@journal{biosci_rep,
+	name="Bioscience Reports",
+	shortname="Biosci. Rep.",
+}
+
+@journal{biosci_biotechnol_biochem,
+	name="Bioscience, Biotechnology, and Biochemistry",
+	shortname="Biosci., Biotechnol., Biochem.",
+}
+
+@journal{biosens_bioelectron,
+	name="Biosensors & Bioelectronics",
+	shortname="Biosens. Bioelectron.",
+}
+
+@journal{biotechniques,
+	name="BioTechniques",
+}
+
+@journal{biotechnol_appl_biochem,
+	name="Biotechnology and Applied Biochemistry",
+	shortname="Biotechnol. Appl. Biochem.",
+}
+
+@journal{biotechnol_bioeng,
+	name="Biotechnology and Bioengineering",
+	shortname="Biotechnol. Bioeng.",
+}
+
+@journal{biotechnol_bioprocess_eng,
+	name="Biotechnology and Bioprocess Engineering",
+	shortname="Biotechnol. Bioprocess Eng.",
+}
+
+@journal{biotechnol_lett,
+	name="Biotechnology Letters",
+	shortname="Biotechnol. Lett.",
+}
+
+@journal{biotechnol_prog,
+	name="Biotechnology Progress",
+	shortname="Biotechnol. Prog.",
+}
+
+@journal{birth_defects_res_part_a,
+	name="Birth Defects Research, Part A: Clinical and Molecular Teratology",
+	shortname="Birth Defects Res., Part A",
+}
+
+@journal{birth_defects_res_part_b,
+	name="Birth Defects Research, Part B: Developmental and Reproductive Toxicology",
+	shortname="Birth Defects Res., Part B",
+}
+
+@journal{birth_defects_res_part_c,
+	name="Birth Defects Research, Part C: Embryo Today--Reviews",
+	shortname="Birth Defects Res., Part C",
+}
+
+@journal{bitamin,
+	name="Bitamin",
+}
+
+@journal{blood,
+	name="Blood",
+}
+
+@journal{bopuxue_zazhi,
+	name="Bopuxue Zazhi",
+}
+
+@journal{brain_res,
+	name="Brain Research",
+	shortname="Brain Res.",
+}
+
+@journal{br_j_nutr,
+	name="British Journal of Nutrition",
+	shortname="Br. J. Nutr.",
+}
+
+@journal{br_j_pharmacol,
+	name="British Journal of Pharmacology",
+	shortname="Br. J. Pharmacol.",
+}
+
+@journal{bulg_chem_commun,
+	name="Bulgarian Chemical Communications",
+	shortname="Bulg. Chem. Commun.",
+}
+
+@journal{bull_electrochem,
+	name="Bulletin of Electrochemistry",
+	shortname="Bull. Electrochem.",
+}
+
+@journal{bull_environ_contam_toxicol,
+	name="Bulletin of Environmental Contamination and Toxicology",
+	shortname="Bull. Environ. Contam. Toxicol.",
+}
+
+@journal{bull_mater_sci,
+	name="Bulletin of Materials Science",
+	shortname="Bull. Mater. Sci.",
+}
+
+@journal{bull_chem_soc_jpn,
+	name="Bulletin of the Chemical Society of Japan",
+	shortname="Bull. Chem. Soc. Jpn.",
+}
+
+@journal{bull_korean_chem_soc,
+	name="Bulletin of the Korean Chemical Society",
+	shortname="Bull. Korean Chem. Soc.",
+}
+
+@journal{bunseki_kagaku,
+	name="Bunseki Kagaku",
+}
+
+@journal{cailiao_rechuli_xuebao,
+	name="Cailiao Rechuli Xuebao",
+}
+
+@journal{calcif_tissue_int,
+	name="Calcified Tissue International",
+	shortname="Calcif. Tissue Int.",
+}
+
+@journal{calphad_comput_coupling_phase_diagrams_thermochem,
+	name="CALPHAD: Computer Coupling of Phase Diagrams and Thermochemistry",
+	shortname="CALPHAD: Comput. Coupling Phase Diagrams Thermochem.",
+}
+
+@journal{can_j_anal_sci_spectrosc,
+	name="Canadian Journal of Analytical Sciences and Spectroscopy",
+	shortname="Can. J. Anal. Sci. Spectrosc.",
+}
+
+@journal{can_j_chem_eng,
+	name="Canadian Journal of Chemical Engineering",
+	shortname="Can. J. Chem. Eng.",
+}
+
+@journal{can_j_chem,
+	name="Canadian Journal of Chemistry",
+	shortname="Can. J. Chem.",
+}
+
+@journal{can_j_microbiol,
+	name="Canadian Journal of Microbiology",
+	shortname="Can. J. Microbiol.",
+}
+
+@journal{can_j_phys,
+	name="Canadian Journal of Physics",
+	shortname="Can. J. Phys.",
+}
+
+@journal{can_j_physiol_pharmacol,
+	name="Canadian Journal of Physiology and Pharmacology",
+	shortname="Can. J. Physiol. Pharmacol.",
+}
+
+@journal{can_metall_q,
+	name="Canadian Metallurgical Quarterly",
+	shortname="Can. Metall. Q.",
+}
+
+@journal{can_mineral,
+	name="Canadian Mineralogist",
+	shortname="Can. Mineral.",
+}
+
+@journal{cancer_cell,
+	name="Cancer Cell",
+}
+
+@journal{cancer_gene_ther,
+	name="Cancer Gene Therapy",
+	shortname="Cancer Gene Ther.",
+}
+
+@journal{cancer_genomics_proteomics,
+	name="Cancer Genomics & Proteomics",
+	shortname="Cancer Genomics Proteomics",
+}
+
+@journal{cancer_lett_amsterdam_neth,
+	name="Cancer Letters (Amsterdam, Netherlands)",
+	shortname="Cancer Lett. (Amsterdam, Neth.)",
+}
+
+@journal{cancer_res,
+	name="Cancer Research",
+	shortname="Cancer Res.",
+}
+
+@journal{cancer_sci,
+	name="Cancer Science",
+	shortname="Cancer Sci.",
+}
+
+@journal{carbohydr_polym,
+	name="Carbohydrate Polymers",
+	shortname="Carbohydr. Polym.",
+}
+
+@journal{carbohydr_res,
+	name="Carbohydrate Research",
+	shortname="Carbohydr. Res.",
+}
+
+@journal{carbon,
+	name="Carbon",
+}
+
+@journal{carcinogenesis,
+	name="Carcinogenesis",
+}
+
+@journal{cardiovasc_res,
+	name="Cardiovascular Research",
+	shortname="Cardiovasc. Res.",
+}
+
+@journal{catal_commun,
+	name="Catalysis Communications",
+	shortname="Catal. Commun.",
+}
+
+@journal{catal_lett,
+	name="Catalysis Letters",
+	shortname="Catal. Lett.",
+}
+
+@journal{catal_rev__sci_eng,
+	name="Catalysis Reviews - Science and Engineering",
+	shortname="Catal. Rev. - Sci. Eng.",
+}
+
+@journal{catal_today,
+	name="Catalysis Today",
+	shortname="Catal. Today",
+}
+
+@journal{cell_cambridge_ma_u_s,
+	name="Cell (Cambridge, MA, United States)",
+	shortname="Cell (Cambridge, MA, U. S.)",
+}
+
+@journal{cell_biochem_biophys,
+	name="Cell Biochemistry and Biophysics",
+	shortname="Cell Biochem. Biophys.",
+}
+
+@journal{cell_biochem_funct,
+	name="Cell Biochemistry and Function",
+	shortname="Cell Biochem. Funct.",
+}
+
+@journal{cell_calcium,
+	name="Cell Calcium",
+}
+
+@journal{cell_cycle,
+	name="Cell Cycle",
+}
+
+@journal{cell_metab,
+	name="Cell Metabolism",
+	shortname="Cell Metab.",
+}
+
+@journal{cell_mol_biol_paris_fr_online,
+	name="Cellular and Molecular Biology (Paris, France, Online)",
+	shortname="Cell. Mol. Biol. (Paris, Fr., Online)",
+}
+
+@journal{cell_mol_biol_sarreguemines_fr_print,
+	name="Cellular and Molecular Biology (Sarreguemines, France, Print)",
+	shortname="Cell. Mol. Biol. (Sarreguemines, Fr., Print)",
+}
+
+@journal{cell_mol_life_sci,
+	name="Cellular and Molecular Life Sciences",
+	shortname="Cell. Mol. Life Sci.",
+}
+
+@journal{cell_immunol,
+	name="Cellular Immunology",
+	shortname="Cell. Immunol.",
+}
+
+@journal{cell_microbiol,
+	name="Cellular Microbiology",
+	shortname="Cell. Microbiol.",
+}
+
+@journal{cell_physiol_biochem,
+	name="Cellular Physiology and Biochemistry",
+	shortname="Cell. Physiol. Biochem.",
+}
+
+@journal{cell_polym,
+	name="Cellular Polymers",
+	shortname="Cell. Polym.",
+}
+
+@journal{cellul_chem_technol,
+	name="Cellulose Chemistry and Technology",
+	shortname="Cellul. Chem. Technol.",
+}
+
+@journal{cem_concr_compos,
+	name="Cement & Concrete Composites",
+	shortname="Cem. Concr. Compos.",
+}
+
+@journal{cem_concr_res,
+	name="Cement and Concrete Research",
+	shortname="Cem. Concr. Res.",
+}
+
+@journal{ceram_int,
+	name="Ceramics International",
+	shortname="Ceram. Int.",
+}
+
+@journal{ceramsilik,
+	name="Ceramics-Silikaty",
+	shortname="Ceram.-Silik.",
+}
+
+@journal{cereal_chem,
+	name="Cereal Chemistry",
+	shortname="Cereal Chem.",
+}
+
+@journal{ceska_slov_farm,
+	name="Ceska a Slovenska Farmacie",
+	shortname="Ceska Slov. Farm.",
+}
+
+@journal{chembiochem,
+	name="ChemBioChem",
+}
+
+@journal{chem_anal_warsaw_pol,
+	name="Chemia Analityczna (Warsaw, Poland)",
+	shortname="Chem. Anal. (Warsaw, Pol.)",
+}
+
+@journal{chem_pharm_bull,
+	name="Chemical & Pharmaceutical Bulletin",
+	shortname="Chem. Pharm. Bull.",
+}
+
+@journal{chem_biochem_eng_q,
+	name="Chemical and Biochemical Engineering Quarterly",
+	shortname="Chem. Biochem. Eng. Q.",
+}
+
+@journal{chem_commun_cambridge_u_k,
+	name="Chemical Communications (Cambridge, United Kingdom)",
+	shortname="Chem. Commun. (Cambridge, U. K.)",
+}
+
+@journal{chem_eng_technol,
+	name="Chemical Engineering & Technology",
+	shortname="Chem. Eng. Technol.",
+}
+
+@journal{chem_eng_process,
+	name="Chemical Engineering and Processing",
+	shortname="Chem. Eng. Process.",
+}
+
+@journal{chem_eng_commun,
+	name="Chemical Engineering Communications",
+	shortname="Chem. Eng. Commun.",
+}
+
+@journal{chem_eng_j_amsterdam_neth,
+	name="Chemical Engineering Journal (Amsterdam, Netherlands)",
+	shortname="Chem. Eng. J. (Amsterdam, Neth.)",
+}
+
+@journal{chem_eng_prog,
+	name="Chemical Engineering Progress",
+	shortname="Chem. Eng. Prog.",
+}
+
+@journal{chem_eng_res_des,
+	name="Chemical Engineering Research and Design",
+	shortname="Chem. Eng. Res. Des.",
+}
+
+@journal{chem_eng_sci,
+	name="Chemical Engineering Science",
+	shortname="Chem. Eng. Sci.",
+}
+
+@journal{chem_geol,
+	name="Chemical Geology",
+	shortname="Chem. Geol.",
+}
+
+@journal{chem_pap,
+	name="Chemical Papers",
+	shortname="Chem. Pap.",
+}
+
+@journal{chem_phys,
+	name="Chemical Physics",
+	shortname="Chem. Phys.",
+}
+
+@journal{chem_phys_lett,
+	name="Chemical Physics Letters",
+	shortname="Chem. Phys. Lett.",
+}
+
+@journal{chem_rec,
+	name="Chemical Record",
+	shortname="Chem. Rec.",
+}
+
+@journal{chem_res_chin_univ,
+	name="Chemical Research in Chinese Universities",
+	shortname="Chem. Res. Chin. Univ.",
+}
+
+@journal{chem_res_toxicol,
+	name="Chemical Research in Toxicology",
+	shortname="Chem. Res. Toxicol.",
+}
+
+@journal{chem_rev_washington_dc_u_s,
+	name="Chemical Reviews (Washington, DC, United States)",
+	shortname="Chem. Rev. (Washington, DC, U. S.)",
+}
+
+@journal{chem_soc_rev,
+	name="Chemical Society Reviews",
+	shortname="Chem. Soc. Rev.",
+}
+
+@journal{chem_speciation_bioavailability,
+	name="Chemical Speciation and Bioavailability",
+	shortname="Chem. Speciation Bioavailability",
+}
+
+@journal{chem_vap_deposition,
+	name="Chemical Vapor Deposition",
+	shortname="Chem. Vap. Deposition",
+}
+
+@journal{chem_listy,
+	name="Chemicke Listy",
+	shortname="Chem. Listy",
+}
+
+@journal{chembiol_interact,
+	name="Chemico-Biological Interactions",
+	shortname="Chem.-Biol. Interact.",
+}
+
+@journal{chem_erde,
+	name="Chemie der Erde",
+	shortname="Chem. Erde",
+}
+
+@journal{chem_ing_tech,
+	name="Chemie Ingenieur Technik",
+	shortname="Chem. Ing. Tech.",
+}
+
+@journal{chemija,
+	name="Chemija",
+}
+
+@journal{chem_biodiversity,
+	name="Chemistry & Biodiversity",
+	shortname="Chem. Biodiversity",
+}
+
+@journal{chem_biol_cambridge_ma_u_s,
+	name="Chemistry & Biology (Cambridge, MA, United States)",
+	shortname="Chem. Biol. (Cambridge, MA, U. S.)",
+}
+
+@journal{chem_ind_london_u_k,
+	name="Chemistry & Industry (London, United Kingdom)",
+	shortname="Chem. Ind. (London, U. K.)",
+}
+
+@journal{chem_phys_lipids,
+	name="Chemistry and Physics of Lipids",
+	shortname="Chem. Phys. Lipids",
+}
+
+@journal{chem_technol_fuels_oils,
+	name="Chemistry and Technology of Fuels and Oils",
+	shortname="Chem. Technol. Fuels Oils",
+}
+
+@journal{chem_lett,
+	name="Chemistry Letters",
+	shortname="Chem. Lett.",
+}
+
+@journal{chem_heterocycl_compd_n_y_ny_u_s,
+	name="Chemistry of Heterocyclic Compounds (New York, NY, United States)",
+	shortname="Chem. Heterocycl. Compd. (N. Y., NY, U. S.)",
+}
+
+@journal{chem_mater,
+	name="Chemistry of Materials",
+	shortname="Chem. Mater.",
+}
+
+@journal{chem_nat_compd,
+	name="Chemistry of Natural Compounds",
+	shortname="Chem. Nat. Compd.",
+}
+
+@journal{chemeur_j,
+	name="Chemistry--A European Journal",
+	shortname="Chem.--Eur. J.",
+}
+
+@journal{chemom_intell_lab_syst,
+	name="Chemometrics and Intelligent Laboratory Systems",
+	shortname="Chemom. Intell. Lab. Syst.",
+}
+
+@journal{chemosphere,
+	name="Chemosphere",
+}
+
+@journal{chemotherapy_basel_switz,
+	name="Chemotherapy (Basel, Switzerland)",
+	shortname="Chemotherapy (Basel, Switz.)",
+}
+
+@journal{chemphyschem,
+	name="ChemPhysChem",
+}
+
+@journal{chemtracts,
+	name="Chemtracts",
+}
+
+@journal{chimia,
+	name="Chimia",
+}
+
+@journal{chim_ind_milan_italy,
+	name="Chimica e l'Industria (Milan, Italy)",
+	shortname="Chim. Ind. (Milan, Italy)",
+}
+
+@journal{chin_chem_lett,
+	name="Chinese Chemical Letters",
+	shortname="Chin. Chem. Lett.",
+}
+
+@journal{chin_j_chem_eng,
+	name="Chinese Journal of Chemical Engineering",
+	shortname="Chin. J. Chem. Eng.",
+}
+
+@journal{chin_j_chem,
+	name="Chinese Journal of Chemistry",
+	shortname="Chin. J. Chem.",
+}
+
+@journal{chin_j_geochem,
+	name="Chinese Journal of Geochemistry",
+	shortname="Chin. J. Geochem.",
+}
+
+@journal{chin_j_polym_sci,
+	name="Chinese Journal of Polymer Science",
+	shortname="Chin. J. Polym. Sci.",
+}
+
+@journal{chirality,
+	name="Chirality",
+}
+
+@journal{chromatographia,
+	name="Chromatographia",
+}
+
+@journal{chromosome_res,
+	name="Chromosome Research",
+	shortname="Chromosome Res.",
+}
+
+@journal{circ_res,
+	name="Circulation Research",
+	shortname="Circ. Res.",
+}
+
+@journal{clay_miner,
+	name="Clay Minerals",
+	shortname="Clay Miner.",
+}
+
+@journal{clays_clay_miner,
+	name="Clays and Clay Minerals",
+	shortname="Clays Clay Miner.",
+}
+
+@journal{clin_chim_acta,
+	name="Clinica Chimica Acta",
+	shortname="Clin. Chim. Acta",
+}
+
+@journal{clin_diagn_lab_immunol,
+	name="Clinical and Diagnostic Laboratory Immunology",
+	shortname="Clin. Diagn. Lab. Immunol.",
+}
+
+@journal{clin_exp_pharmacol_physiol,
+	name="Clinical and Experimental Pharmacology and Physiology",
+	shortname="Clin. Exp. Pharmacol. Physiol.",
+}
+
+@journal{clin_chem_washington_dc_u_s,
+	name="Clinical Chemistry (Washington, DC, United States)",
+	shortname="Clin. Chem. (Washington, DC, U. S.)",
+}
+
+@journal{clin_chem_lab_med,
+	name="Clinical Chemistry and Laboratory Medicine",
+	shortname="Clin. Chem. Lab. Med.",
+}
+
+@journal{clin_immunol_san_diego_ca_u_s,
+	name="Clinical Immunology (San Diego, CA, United States)",
+	shortname="Clin. Immunol. (San Diego, CA, U. S.)",
+}
+
+@journal{clin_proteomics,
+	name="Clinical Proteomics",
+	shortname="Clin. Proteomics",
+}
+
+@journal{cloning_stem_cells,
+	name="Cloning and Stem Cells",
+	shortname="Cloning Stem Cells",
+}
+
+@journal{coal_prep_philadelphia_pa_u_s,
+	name="Coal Preparation (Philadelphia, PA, United States)",
+	shortname="Coal Prep. (Philadelphia, PA, U. S.)",
+}
+
+@journal{collect_czech_chem_commun,
+	name="Collection of Czechoslovak Chemical Communications",
+	shortname="Collect. Czech. Chem. Commun.",
+}
+
+@journal{colloid_polym_sci,
+	name="Colloid and Polymer Science",
+	shortname="Colloid Polym. Sci.",
+}
+
+@journal{colloid_j,
+	name="Colloid Journal",
+	shortname="Colloid J.",
+}
+
+@journal{colloids_surf_a,
+	name="Colloids and Surfaces, A: Physicochemical and Engineering Aspects",
+	shortname="Colloids Surf., A",
+}
+
+@journal{colloids_surf_b,
+	name="Colloids and Surfaces, B: Biointerfaces",
+	shortname="Colloids Surf., B",
+}
+
+@journal{color_technol,
+	name="Coloration Technology",
+	shortname="Color. Technol.",
+}
+
+@journal{comb_chem_high_throughput_screening,
+	name="Combinatorial Chemistry and High Throughput Screening",
+	shortname="Comb. Chem. High Throughput Screening",
+}
+
+@journal{combust_flame,
+	name="Combustion and Flame",
+	shortname="Combust. Flame",
+}
+
+@journal{combust_sci_technol,
+	name="Combustion Science and Technology",
+	shortname="Combust. Sci. Technol.",
+}
+
+@journal{comments_inorg_chem,
+	name="Comments on Inorganic Chemistry",
+	shortname="Comments Inorg. Chem.",
+}
+
+@journal{commun_soil_sci_plant_anal,
+	name="Communications in Soil Science and Plant Analysis",
+	shortname="Commun. Soil Sci. Plant Anal.",
+}
+
+@journal{comp_funct_genomics,
+	name="Comparative and Functional Genomics",
+	shortname="Comp. Funct. Genomics",
+}
+
+@journal{comp_biochem_physiol_part_a_mol_integr_physiol,
+	name="Comparative Biochemistry and Physiology, Part A: Molecular & Integrative Physiology",
+	shortname="Comp. Biochem. Physiol., Part A: Mol. Integr. Physiol.",
+}
+
+@journal{comp_biochem_physiol_part_b_biochem_mol_biol,
+	name="Comparative Biochemistry and Physiology, Part B: Biochemistry & Molecular Biology",
+	shortname="Comp. Biochem. Physiol., Part B: Biochem. Mol. Biol.",
+}
+
+@journal{comp_biochem_physiol_part_c_toxicol_pharmacol,
+	name="Comparative Biochemistry and Physiology, Part C: Toxicology & Pharmacology",
+	shortname="Comp. Biochem. Physiol., Part C: Toxicol. Pharmacol.",
+}
+
+@journal{comp_med,
+	name="Comparative Medicine",
+	shortname="Comp. Med.",
+}
+
+@journal{c_r_chim,
+	name="Comptes Rendus Chimie",
+	shortname="C. R. Chim.",
+}
+
+@journal{c_r_phys,
+	name="Comptes Rendus Physique",
+	shortname="C. R. Phys.",
+}
+
+@journal{comput_biol_chem,
+	name="Computational Biology and Chemistry",
+	shortname="Comput. Biol. Chem.",
+}
+
+@journal{comput_phys_commun,
+	name="Computer Physics Communications",
+	shortname="Comput. Phys. Commun.",
+}
+
+@journal{comput_chem_eng,
+	name="Computers & Chemical Engineering",
+	shortname="Comput. Chem. Eng.",
+}
+
+@journal{comun_jorn_com_esp_deterg,
+	name="Comunicaciones presentadas a las Jornadas del Comite Espanol de la Detergencia",
+	shortname="Comun. Jorn. Com. Esp. Deterg.",
+}
+
+@journal{contemp_top_lab_anim_sci,
+	name="Contemporary Topics in Laboratory Animal Science",
+	shortname="Contemp. Top. Lab. Anim. Sci.",
+}
+
+@journal{contrib_mineral_petrol,
+	name="Contributions to Mineralogy and Petrology",
+	shortname="Contrib. Mineral. Petrol.",
+}
+
+@journal{coord_chem_rev,
+	name="Coordination Chemistry Reviews",
+	shortname="Coord. Chem. Rev.",
+}
+
+@journal{corrosion_houston_tx_u_s,
+	name="Corrosion (Houston, TX, United States)",
+	shortname="Corrosion (Houston, TX, U. S.)",
+}
+
+@journal{corros_eng_sci_technol,
+	name="Corrosion Engineering, Science and Technology",
+	shortname="Corros. Eng., Sci. Technol.",
+}
+
+@journal{corros_rev,
+	name="Corrosion Reviews",
+	shortname="Corros. Rev.",
+}
+
+@journal{corros_sci,
+	name="Corrosion Science",
+	shortname="Corros. Sci.",
+}
+
+@journal{crit_rev_anal_chem,
+	name="Critical Reviews in Analytical Chemistry",
+	shortname="Crit. Rev. Anal. Chem.",
+}
+
+@journal{crit_rev_solid_state_mater_sci,
+	name="Critical Reviews in Solid State and Materials Sciences",
+	shortname="Crit. Rev. Solid State Mater. Sci.",
+}
+
+@journal{croat_chem_acta,
+	name="Croatica Chemica Acta",
+	shortname="Croat. Chem. Acta",
+}
+
+@journal{cryogenics,
+	name="Cryogenics",
+}
+
+@journal{cryst_growth_des,
+	name="Crystal Growth & Design",
+	shortname="Cryst. Growth Des.",
+}
+
+@journal{cryst_res_technol,
+	name="Crystal Research and Technology",
+	shortname="Cryst. Res. Technol.",
+}
+
+@journal{crystallogr_rep,
+	name="Crystallography Reports",
+	shortname="Crystallogr. Rep.",
+}
+
+@journal{crystengcomm,
+	name="CrystEngComm",
+}
+
+@journal{cuihua_xuebao,
+	name="Cuihua Xuebao",
+}
+
+@journal{curr_alzheimer_res,
+	name="Current Alzheimer Research",
+	shortname="Curr. Alzheimer Res.",
+}
+
+@journal{curr_anal_chem,
+	name="Current Analytical Chemistry",
+	shortname="Curr. Anal. Chem.",
+}
+
+@journal{curr_biol,
+	name="Current Biology",
+	shortname="Curr. Biol.",
+}
+
+@journal{curr_cancer_drug_targets,
+	name="Current Cancer Drug Targets",
+	shortname="Curr. Cancer Drug Targets",
+}
+
+@journal{curr_computaided_drug_des,
+	name="Current Computer-Aided Drug Design",
+	shortname="Curr. Comput.-Aided Drug Des.",
+}
+
+@journal{curr_drug_delivery,
+	name="Current Drug Delivery",
+	shortname="Curr. Drug Delivery",
+}
+
+@journal{curr_drug_discovery_technol,
+	name="Current Drug Discovery Technologies",
+	shortname="Curr. Drug Discovery Technol.",
+}
+
+@journal{curr_drug_metab,
+	name="Current Drug Metabolism",
+	shortname="Curr. Drug Metab.",
+}
+
+@journal{curr_drug_targets,
+	name="Current Drug Targets",
+	shortname="Curr. Drug Targets",
+}
+
+@journal{curr_drug_targets_cardiovasc__haematol_disord,
+	name="Current Drug Targets: Cardiovascular & Haematological Disorders",
+	shortname="Curr. Drug Targets: Cardiovasc. & Haematol. Disord.",
+}
+
+@journal{curr_drug_targets_cns_neurol_disord,
+	name="Current Drug Targets: CNS & Neurological Disorders",
+	shortname="Curr. Drug Targets: CNS Neurol. Disord.",
+}
+
+@journal{curr_drug_targets_immune_endocr_metab_disord,
+	name="Current Drug Targets: Immune, Endocrine and Metabolic Disorders",
+	shortname="Curr. Drug Targets: Immune, Endocr. Metab. Disord.",
+}
+
+@journal{curr_drug_targets_infect_disord,
+	name="Current Drug Targets: Infectious Disorders",
+	shortname="Curr. Drug Targets: Infect. Disord.",
+}
+
+@journal{curr_drug_targets_inflammation_allergy,
+	name="Current Drug Targets: Inflammation & Allergy",
+	shortname="Curr. Drug Targets: Inflammation Allergy",
+}
+
+@journal{curr_enzyme_inhib,
+	name="Current Enzyme Inhibition",
+	shortname="Curr. Enzyme Inhib.",
+}
+
+@journal{curr_gene_ther,
+	name="Current Gene Therapy",
+	shortname="Curr. Gene Ther.",
+}
+
+@journal{curr_genet,
+	name="Current Genetics",
+	shortname="Curr. Genet.",
+}
+
+@journal{curr_genomics,
+	name="Current Genomics",
+	shortname="Curr. Genomics",
+}
+
+@journal{curr_hiv_res,
+	name="Current HIV Research",
+	shortname="Curr. HIV Res.",
+}
+
+@journal{curr_immunol_rev,
+	name="Current Immunology Reviews",
+	shortname="Curr. Immunol. Rev.",
+}
+
+@journal{curr_med_chem,
+	name="Current Medicinal Chemistry",
+	shortname="Curr. Med. Chem.",
+}
+
+@journal{curr_med_chem_anticancer_agents,
+	name="Current Medicinal Chemistry: Anti-Cancer Agents",
+	shortname="Curr. Med. Chem.: Anti-Cancer Agents",
+}
+
+@journal{curr_med_chem_antiinfect_agents,
+	name="Current Medicinal Chemistry: Anti-Infective Agents",
+	shortname="Curr. Med. Chem.: Anti-Infect. Agents",
+}
+
+@journal{curr_med_chem_antiinflammatory_antiallergy_agents,
+	name="Current Medicinal Chemistry: Anti-Inflammatory & Anti-Allergy Agents",
+	shortname="Curr. Med. Chem.: Anti-Inflammatory Anti-Allergy Agents",
+}
+
+@journal{curr_med_chem_cardiovasc_hematol_agents,
+	name="Current Medicinal Chemistry: Cardiovascular & Hematological Agents",
+	shortname="Curr. Med. Chem.: Cardiovasc. Hematol. Agents",
+}
+
+@journal{curr_med_chem_cent_nerv_syst_agents,
+	name="Current Medicinal Chemistry: Central Nervous System Agents",
+	shortname="Curr. Med. Chem.: Cent. Nerv. Syst. Agents",
+}
+
+@journal{curr_med_chem_immunol_endocr_metab_agents,
+	name="Current Medicinal Chemistry: Immunology, Endocrine & Metabolic Agents",
+	shortname="Curr. Med. Chem.: Immunol., Endocr. Metab. Agents",
+}
+
+@journal{curr_microbiol,
+	name="Current Microbiology",
+	shortname="Curr. Microbiol.",
+}
+
+@journal{curr_mol_med,
+	name="Current Molecular Medicine",
+	shortname="Curr. Mol. Med.",
+}
+
+@journal{curr_neuropharmacol,
+	name="Current Neuropharmacology",
+	shortname="Curr. Neuropharmacol.",
+}
+
+@journal{curr_opin_biotechnol,
+	name="Current Opinion in Biotechnology",
+	shortname="Curr. Opin. Biotechnol.",
+}
+
+@journal{curr_opin_cell_biol,
+	name="Current Opinion in Cell Biology",
+	shortname="Curr. Opin. Cell Biol.",
+}
+
+@journal{curr_opin_chem_biol,
+	name="Current Opinion in Chemical Biology",
+	shortname="Curr. Opin. Chem. Biol.",
+}
+
+@journal{curr_opin_colloid_interface_sci,
+	name="Current Opinion in Colloid & Interface Science",
+	shortname="Curr. Opin. Colloid Interface Sci.",
+}
+
+@journal{curr_opin_drug_discovery_dev,
+	name="Current Opinion in Drug Discovery & Development",
+	shortname="Curr. Opin. Drug Discovery Dev.",
+}
+
+@journal{curr_opin_genet_dev,
+	name="Current Opinion in Genetics & Development",
+	shortname="Curr. Opin. Genet. Dev.",
+}
+
+@journal{curr_opin_immunol,
+	name="Current Opinion in Immunology",
+	shortname="Curr. Opin. Immunol.",
+}
+
+@journal{curr_opin_lipidol,
+	name="Current Opinion in Lipidology",
+	shortname="Curr. Opin. Lipidol.",
+}
+
+@journal{curr_opin_neurobiol,
+	name="Current Opinion in Neurobiology",
+	shortname="Curr. Opin. Neurobiol.",
+}
+
+@journal{curr_opin_pharmacol,
+	name="Current Opinion in Pharmacology",
+	shortname="Curr. Opin. Pharmacol.",
+}
+
+@journal{curr_opin_struct_biol,
+	name="Current Opinion in Structural Biology",
+	shortname="Curr. Opin. Struct. Biol.",
+}
+
+@journal{curr_org_chem,
+	name="Current Organic Chemistry",
+	shortname="Curr. Org. Chem.",
+}
+
+@journal{curr_org_synth,
+	name="Current Organic Synthesis",
+	shortname="Curr. Org. Synth.",
+}
+
+@journal{curr_pharm_anal,
+	name="Current Pharmaceutical Analysis",
+	shortname="Curr. Pharm. Anal.",
+}
+
+@journal{curr_pharm_biotechnol,
+	name="Current Pharmaceutical Biotechnology",
+	shortname="Curr. Pharm. Biotechnol.",
+}
+
+@journal{curr_pharm_des,
+	name="Current Pharmaceutical Design",
+	shortname="Curr. Pharm. Des.",
+}
+
+@journal{curr_pharmacogenomics,
+	name="Current Pharmacogenomics",
+	shortname="Curr. Pharmacogenomics",
+}
+
+@journal{curr_protein_pept_sci,
+	name="Current Protein and Peptide Science",
+	shortname="Curr. Protein Pept. Sci.",
+}
+
+@journal{curr_proteomics,
+	name="Current Proteomics",
+	shortname="Curr. Proteomics",
+}
+
+@journal{curr_sep,
+	name="Current Separations",
+	shortname="Curr. Sep.",
+}
+
+@journal{curr_top_med_chem_sharjah_united_arab_emirates,
+	name="Current Topics in Medicinal Chemistry (Sharjah, United Arab Emirates)",
+	shortname="Curr. Top. Med. Chem. (Sharjah, United Arab Emirates)",
+}
+
+@journal{curr_vasc_pharmacol,
+	name="Current Vascular Pharmacology",
+	shortname="Curr. Vasc. Pharmacol.",
+}
+
+@journal{cytokine_growth_factor_rev,
+	name="Cytokine & Growth Factor Reviews",
+	shortname="Cytokine Growth Factor Rev.",
+}
+
+@journal{cytokine,
+	name="Cytokine+",
+}
+
+@journal{dalton_trans,
+	name="Dalton Transactions",
+	shortname="Dalton Trans.",
+}
+
+@journal{desalination,
+	name="Desalination",
+}
+
+@journal{des_monomers_polym,
+	name="Designed Monomers and Polymers",
+	shortname="Des. Monomers Polym.",
+}
+
+@journal{development_cambridge_u_k,
+	name="Development (Cambridge, United Kingdom)",
+	shortname="Development (Cambridge, U. K.)",
+}
+
+@journal{dev_biol_san_diego_ca_u_s,
+	name="Developmental Biology (San Diego, CA, United States)",
+	shortname="Dev. Biol. (San Diego, CA, U. S.)",
+}
+
+@journal{dev_brain_res,
+	name="Developmental Brain Research",
+	shortname="Dev. Brain Res.",
+}
+
+@journal{dev_cell,
+	name="Developmental Cell",
+	shortname="Dev. Cell",
+}
+
+@journal{dev_neurosci_basel_switz,
+	name="Developmental Neuroscience (Basel, Switzerland)",
+	shortname="Dev. Neurosci. (Basel, Switz.)",
+}
+
+@journal{dev_biol_basel_switz,
+	name="Developments in Biologicals (Basel, Switzerland)",
+	shortname="Dev. Biol. (Basel, Switz.)",
+}
+
+@journal{diabetes,
+	name="Diabetes",
+}
+
+@journal{diamond_relat_mater,
+	name="Diamond and Related Materials",
+	shortname="Diamond Relat. Mater.",
+}
+
+@journal{dianhuaxue,
+	name="Dianhuaxue",
+}
+
+@journal{differentiation_malden_ma_u_s,
+	name="Differentiation (Malden, MA, United States)",
+	shortname="Differentiation (Malden, MA, U. S.)",
+}
+
+@journal{diffus_defect_data_pt_a,
+	name="Diffusion and Defect Data--Solid State Data, Pt. A: Defect and Diffusion Forum",
+	shortname="Diffus. Defect Data, Pt. A",
+}
+
+@journal{diffus_defect_data_pt_b,
+	name="Diffusion and Defect Data--Solid State Data, Pt. B: Solid State Phenomena",
+	shortname="Diffus. Defect Data, Pt. B",
+}
+
+@journal{diqiu_huaxue,
+	name="Diqiu Huaxue",
+}
+
+@journal{dna_cell_biol,
+	name="DNA and Cell Biology",
+	shortname="DNA Cell Biol.",
+}
+
+@journal{dna_repair,
+	name="DNA Repair",
+}
+
+@journal{dna_res,
+	name="DNA Research",
+	shortname="DNA Res.",
+}
+
+@journal{dna_sequence,
+	name="DNA Sequence",
+}
+
+@journal{dokl_biochem_biophys,
+	name="Doklady Biochemistry and Biophysics",
+	shortname="Dokl. Biochem. Biophys.",
+}
+
+@journal{dokl_chem,
+	name="Doklady Chemistry",
+	shortname="Dokl. Chem.",
+}
+
+@journal{dokl_earth_sci,
+	name="Doklady Earth Sciences",
+	shortname="Dokl. Earth Sci.",
+}
+
+@journal{dokl_phys_chem,
+	name="Doklady Physical Chemistry",
+	shortname="Dokl. Phys. Chem.",
+}
+
+@journal{dokl_phys,
+	name="Doklady Physics",
+	shortname="Dokl. Phys.",
+}
+
+@journal{dopov_nats_akad_nauk_ukr,
+	name="Dopovidi Natsional'noi Akademii Nauk Ukraini",
+	shortname="Dopov. Nats. Akad. Nauk Ukr.",
+}
+
+@journal{drug_chem_toxicol_1977,
+	name="Drug and Chemical Toxicology (1977)",
+	shortname="Drug Chem. Toxicol. (1977)",
+}
+
+@journal{drug_delivery,
+	name="Drug Delivery",
+}
+
+@journal{drug_dev_ind_pharm,
+	name="Drug Development and Industrial Pharmacy",
+	shortname="Drug Dev. Ind. Pharm.",
+}
+
+@journal{drug_dev_res,
+	name="Drug Development Research",
+	shortname="Drug Dev. Res.",
+}
+
+@journal{drug_metab_dispos,
+	name="Drug Metabolism and Disposition",
+	shortname="Drug Metab. Dispos.",
+}
+
+@journal{drug_metab_drug_interact,
+	name="Drug Metabolism and Drug Interactions",
+	shortname="Drug Metab. Drug Interact.",
+}
+
+@journal{drug_metab_pharmacokinet,
+	name="Drug Metabolism and Pharmacokinetics",
+	shortname="Drug Metab. Pharmacokinet.",
+}
+
+@journal{dyes_pigm,
+	name="Dyes and Pigments",
+	shortname="Dyes Pigm.",
+}
+
+@journal{earth_planet_sci_lett,
+	name="Earth and Planetary Science Letters",
+	shortname="Earth Planet. Sci. Lett.",
+}
+
+@journal{econ_geol,
+	name="Economic Geology",
+	shortname="Econ. Geol.",
+}
+
+@journal{ecotoxicol_environ_saf,
+	name="Ecotoxicology and Environmental Safety",
+	shortname="Ecotoxicol. Environ. Saf.",
+}
+
+@journal{ekotekhnol_resursosberezhenie,
+	name="Ekotekhnologii i Resursosberezhenie",
+	shortname="Ekotekhnol. Resursosberezhenie",
+}
+
+@journal{eksp_klin_farmakol,
+	name="Eksperimental'naya i Klinicheskaya Farmakologiya",
+	shortname="Eksp. Klin. Farmakol.",
+}
+
+@journal{electroanalysis,
+	name="Electroanalysis",
+}
+
+@journal{electrochem_solidstate_lett,
+	name="Electrochemical and Solid-State Letters",
+	shortname="Electrochem. Solid-State Lett.",
+}
+
+@journal{electrochem_soc_interface,
+	name="Electrochemical Society Interface",
+	shortname="Electrochem. Soc. Interface",
+}
+
+@journal{electrochemistry_tokyo_jpn,
+	name="Electrochemistry (Tokyo, Japan)",
+	shortname="Electrochemistry (Tokyo, Jpn.)",
+}
+
+@journal{electrochem_commun,
+	name="Electrochemistry Communications",
+	shortname="Electrochem. Commun.",
+}
+
+@journal{electrochim_acta,
+	name="Electrochimica Acta",
+	shortname="Electrochim. Acta",
+}
+
+@journal{electrophoresis,
+	name="Electrophoresis",
+}
+
+@journal{embo_j,
+	name="EMBO Journal",
+	shortname="EMBO J.",
+}
+
+@journal{embo_rep,
+	name="EMBO Reports",
+	shortname="EMBO Rep.",
+}
+
+@journal{endocrine,
+	name="Endocrine",
+}
+
+@journal{endocrinology,
+	name="Endocrinology",
+}
+
+@journal{energy_fuels,
+	name="Energy & Fuels",
+	shortname="Energy Fuels",
+}
+
+@journal{eng_life_sci,
+	name="Engineering in Life Sciences",
+	shortname="Eng. Life Sci.",
+}
+
+@journal{environ_prot_eng,
+	name="Environment Protection Engineering",
+	shortname="Environ. Prot. Eng.",
+}
+
+@journal{environ_mol_mutagen,
+	name="Environmental and Molecular Mutagenesis",
+	shortname="Environ. Mol. Mutagen.",
+}
+
+@journal{environ_chem,
+	name="Environmental Chemistry",
+	shortname="Environ. Chem.",
+}
+
+@journal{environ_chem_lett,
+	name="Environmental Chemistry Letters",
+	shortname="Environ. Chem. Lett.",
+}
+
+@journal{environ_eng_sci,
+	name="Environmental Engineering Science",
+	shortname="Environ. Eng. Sci.",
+}
+
+@journal{environ_geochem_health,
+	name="Environmental Geochemistry and Health",
+	shortname="Environ. Geochem. Health",
+}
+
+@journal{environ_pollut_amsterdam_neth,
+	name="Environmental Pollution (Amsterdam, Netherlands)",
+	shortname="Environ. Pollut. (Amsterdam, Neth.)",
+}
+
+@journal{environ_prog,
+	name="Environmental Progress",
+	shortname="Environ. Prog.",
+}
+
+@journal{environ_res,
+	name="Environmental Research",
+	shortname="Environ. Res.",
+}
+
+@journal{environ_sci_technol,
+	name="Environmental Science and Technology",
+	shortname="Environ. Sci. Technol.",
+}
+
+@journal{environ_technol,
+	name="Environmental Technology",
+	shortname="Environ. Technol.",
+}
+
+@journal{environ_toxicol,
+	name="Environmental Toxicology",
+	shortname="Environ. Toxicol.",
+}
+
+@journal{environ_toxicol_chem,
+	name="Environmental Toxicology and Chemistry",
+	shortname="Environ. Toxicol. Chem.",
+}
+
+@journal{environ_toxicol_pharmacol,
+	name="Environmental Toxicology and Pharmacology",
+	shortname="Environ. Toxicol. Pharmacol.",
+}
+
+@journal{enzyme_microb_technol,
+	name="Enzyme and Microbial Technology",
+	shortname="Enzyme Microb. Technol.",
+}
+
+@journal{erdoel_erdgas_kohle,
+	name="Erdoel, Erdgas, Kohle",
+}
+
+@journal{eukaryotic_cell,
+	name="Eukaryotic Cell",
+}
+
+@journal{eur_cytokine_network,
+	name="European Cytokine Network",
+	shortname="Eur. Cytokine Network",
+}
+
+@journal{eur_food_res_technol,
+	name="European Food Research and Technology",
+	shortname="Eur. Food Res. Technol.",
+}
+
+@journal{eur_j_cell_biol,
+	name="European Journal of Cell Biology",
+	shortname="Eur. J. Cell Biol.",
+}
+
+@journal{eur_j_drug_metab_pharmacokinet,
+	name="European Journal of Drug Metabolism and Pharmacokinetics",
+	shortname="Eur. J. Drug Metab. Pharmacokinet.",
+}
+
+@journal{eur_j_endocrinol,
+	name="European Journal of Endocrinology",
+	shortname="Eur. J. Endocrinol.",
+}
+
+@journal{eur_j_immunol,
+	name="European Journal of Immunology",
+	shortname="Eur. J. Immunol.",
+}
+
+@journal{eur_j_inorg_chem,
+	name="European Journal of Inorganic Chemistry",
+	shortname="Eur. J. Inorg. Chem.",
+}
+
+@journal{eur_j_lipid_sci_technol,
+	name="European Journal of Lipid Science and Technology",
+	shortname="Eur. J. Lipid Sci. Technol.",
+}
+
+@journal{eur_j_mass_spectrom,
+	name="European Journal of Mass Spectrometry",
+	shortname="Eur. J. Mass Spectrom.",
+}
+
+@journal{eur_j_med_chem,
+	name="European Journal of Medicinal Chemistry",
+	shortname="Eur. J. Med. Chem.",
+}
+
+@journal{eur_j_mineral,
+	name="European Journal of Mineralogy",
+	shortname="Eur. J. Mineral.",
+}
+
+@journal{eur_j_org_chem,
+	name="European Journal of Organic Chemistry",
+	shortname="Eur. J. Org. Chem.",
+}
+
+@journal{eur_j_pharm_sci,
+	name="European Journal of Pharmaceutical Sciences",
+	shortname="Eur. J. Pharm. Sci.",
+}
+
+@journal{eur_j_pharmacol,
+	name="European Journal of Pharmacology",
+	shortname="Eur. J. Pharmacol.",
+}
+
+@journal{eur_neuropsychopharmacol,
+	name="European Neuropsychopharmacology",
+	shortname="Eur. Neuropsychopharmacol.",
+}
+
+@journal{eur_phys_j_a,
+	name="European Physical Journal A: Hadrons and Nuclei",
+	shortname="Eur. Phys. J. A",
+}
+
+@journal{eur_phys_j_b,
+	name="European Physical Journal B: Condensed Matter Physics",
+	shortname="Eur. Phys. J. B",
+}
+
+@journal{eur_phys_j_c,
+	name="European Physical Journal C: Particles and Fields",
+	shortname="Eur. Phys. J. C",
+}
+
+@journal{eur_phys_j_d,
+	name="European Physical Journal D: Atomic, Molecular and Optical Physics",
+	shortname="Eur. Phys. J. D",
+}
+
+@journal{eur_phys_j_e,
+	name="European Physical Journal E: Soft Matter",
+	shortname="Eur. Phys. J. E",
+}
+
+@journal{eur_polym_j,
+	name="European Polymer Journal",
+	shortname="Eur. Polym. J.",
+}
+
+@journal{europhys_lett,
+	name="Europhysics Letters",
+	shortname="Europhys. Lett.",
+}
+
+@journal{exp_clin_endocrinol_diabetes,
+	name="Experimental and Clinical Endocrinology & Diabetes",
+	shortname="Exp. Clin. Endocrinol. Diabetes",
+}
+
+@journal{exp_mol_med,
+	name="Experimental and Molecular Medicine",
+	shortname="Exp. Mol. Med.",
+}
+
+@journal{exp_mol_pathol,
+	name="Experimental and Molecular Pathology",
+	shortname="Exp. Mol. Pathol.",
+}
+
+@journal{exp_anim,
+	name="Experimental Animals",
+	shortname="Exp. Anim.",
+}
+
+@journal{exp_biol_med_maywood_nj_u_s,
+	name="Experimental Biology and Medicine (Maywood, NJ, United States)",
+	shortname="Exp. Biol. Med. (Maywood, NJ, U. S.)",
+}
+
+@journal{exp_cell_res,
+	name="Experimental Cell Research",
+	shortname="Exp. Cell Res.",
+}
+
+@journal{exp_eye_res,
+	name="Experimental Eye Research",
+	shortname="Exp. Eye Res.",
+}
+
+@journal{expert_opin_invest_drugs,
+	name="Expert Opinion on Investigational Drugs",
+	shortname="Expert Opin. Invest. Drugs",
+}
+
+@journal{expert_opin_ther_pat,
+	name="Expert Opinion on Therapeutic Patents",
+	shortname="Expert Opin. Ther. Pat.",
+}
+
+@journal{faraday_discuss,
+	name="Faraday Discussions",
+	shortname="Faraday Discuss.",
+}
+
+@journal{farmaco,
+	name="Farmaco",
+}
+
+@journal{faseb_j,
+	name="FASEB Journal",
+	shortname="FASEB J.",
+}
+
+@journal{febs_j,
+	name="FEBS Journal",
+	shortname="FEBS J.",
+}
+
+@journal{febs_lett,
+	name="FEBS Letters",
+	shortname="FEBS Lett.",
+}
+
+@journal{fems_immunol_med_microbiol,
+	name="FEMS Immunology and Medical Microbiology",
+	shortname="FEMS Immunol. Med. Microbiol.",
+}
+
+@journal{fems_microbiol_ecol,
+	name="FEMS Microbiology Ecology",
+	shortname="FEMS Microbiol. Ecol.",
+}
+
+@journal{fems_microbiol_lett,
+	name="FEMS Microbiology Letters",
+	shortname="FEMS Microbiol. Lett.",
+}
+
+@journal{fems_microbiol_rev,
+	name="FEMS Microbiology Reviews",
+	shortname="FEMS Microbiol. Rev.",
+}
+
+@journal{fems_yeast_res,
+	name="FEMS Yeast Research",
+	shortname="FEMS Yeast Res.",
+}
+
+@journal{fenxi_huaxue,
+	name="Fenxi Huaxue",
+}
+
+@journal{fenzi_cuihua,
+	name="Fenzi Cuihua",
+}
+
+@journal{ferroelectrics,
+	name="Ferroelectrics",
+}
+
+@journal{ferroelectr_lett_sect,
+	name="Ferroelectrics, Letters Section",
+	shortname="Ferroelectr., Lett. Sect.",
+}
+
+@journal{fibre_chem,
+	name="Fibre Chemistry",
+	shortname="Fibre Chem.",
+}
+
+@journal{fire_mater,
+	name="Fire and Materials",
+	shortname="Fire Mater.",
+}
+
+@journal{fish_physiol_biochem,
+	name="Fish Physiology and Biochemistry",
+	shortname="Fish Physiol. Biochem.",
+}
+
+@journal{fish_sci_carlton_aust,
+	name="Fisheries Science (Carlton, Australia)",
+	shortname="Fish. Sci. (Carlton, Aust.)",
+}
+
+@journal{fiz_goreniya_vzryva,
+	name="Fizika Goreniya i Vzryva",
+	shortname="Fiz. Goreniya Vzryva",
+}
+
+@journal{fiz_khim_obrab_mater,
+	name="Fizika i Khimiya Obrabotki Materialov",
+	shortname="Fiz. Khim. Obrab. Mater.",
+}
+
+@journal{fiz_met_metalloved,
+	name="Fizika Metallov i Metallovedenie",
+	shortname="Fiz. Met. Metalloved.",
+}
+
+@journal{fluid_phase_equilib,
+	name="Fluid Phase Equilibria",
+	shortname="Fluid Phase Equilib.",
+}
+
+@journal{folia_microbiol_prague_czech_repub,
+	name="Folia Microbiologica (Prague, Czech Republic)",
+	shortname="Folia Microbiol. (Prague, Czech Repub.)",
+}
+
+@journal{food_addit_contam,
+	name="Food Additives & Contaminants",
+	shortname="Food Addit. Contam.",
+}
+
+@journal{food_chem_toxicol,
+	name="Food and Chemical Toxicology",
+	shortname="Food Chem. Toxicol.",
+}
+
+@journal{food_chem,
+	name="Food Chemistry",
+	shortname="Food Chem.",
+}
+
+@journal{food_hydrocolloids,
+	name="Food Hydrocolloids",
+}
+
+@journal{free_radical_biol_med,
+	name="Free Radical Biology & Medicine",
+	shortname="Free Radical Biol. Med.",
+}
+
+@journal{free_radical_res,
+	name="Free Radical Research",
+	shortname="Free Radical Res.",
+}
+
+@journal{fresenius_environ_bull,
+	name="Fresenius Environmental Bulletin",
+	shortname="Fresenius Environ. Bull.",
+}
+
+@journal{fuel,
+	name="Fuel",
+}
+
+@journal{fuel_cells_weinheim_ger,
+	name="Fuel Cells (Weinheim, Germany)",
+	shortname="Fuel Cells (Weinheim, Ger.)",
+}
+
+@journal{fuel_process_technol,
+	name="Fuel Processing Technology",
+	shortname="Fuel Process. Technol.",
+}
+
+@journal{fullerenes_nanotubes_carbon_nanostruct,
+	name="Fullerenes, Nanotubes, and Carbon Nanostructures",
+	shortname="Fullerenes, Nanotubes, Carbon Nanostruct.",
+}
+
+@journal{funct_integr_genomics,
+	name="Functional & Integrative Genomics",
+	shortname="Funct. Integr. Genomics",
+}
+
+@journal{fundam_clin_pharmacol,
+	name="Fundamental & Clinical Pharmacology",
+	shortname="Fundam. Clin. Pharmacol.",
+}
+
+@journal{funtai_oyobi_funmatsu_yakin,
+	name="Funtai oyobi Funmatsu Yakin",
+}
+
+@journal{fusion_eng_des,
+	name="Fusion Engineering and Design",
+	shortname="Fusion Eng. Des.",
+}
+
+@journal{fusion_sci_technol,
+	name="Fusion Science and Technology",
+	shortname="Fusion Sci. Technol.",
+}
+
+@journal{ganguang_kexue_yu_guang_huaxue,
+	name="Ganguang Kexue Yu Guang Huaxue",
+}
+
+@journal{gaodeng_xuexiao_huaxue_xuebao,
+	name="Gaodeng Xuexiao Huaxue Xuebao",
+}
+
+@journal{gaofenzi_cailiao_kexue_yu_gongcheng,
+	name="Gaofenzi Cailiao Kexue Yu Gongcheng",
+}
+
+@journal{gaofenzi_xuebao,
+	name="Gaofenzi Xuebao",
+}
+
+@journal{gaoneng_wuli_yu_hewuli,
+	name="Gaoneng Wuli Yu Hewuli",
+}
+
+@journal{gaoxiao_huaxue_gongcheng_xuebao,
+	name="Gaoxiao Huaxue Gongcheng Xuebao",
+}
+
+@journal{gene,
+	name="Gene",
+}
+
+@journal{gene_expression_patterns,
+	name="Gene Expression Patterns",
+}
+
+@journal{gene_ther,
+	name="Gene Therapy",
+	shortname="Gene Ther.",
+}
+
+@journal{gene_ther_regul,
+	name="Gene Therapy and Regulation",
+	shortname="Gene Ther. Regul.",
+}
+
+@journal{gen_comp_endocrinol,
+	name="General and Comparative Endocrinology",
+	shortname="Gen. Comp. Endocrinol.",
+}
+
+@journal{genes_dev,
+	name="Genes & Development",
+	shortname="Genes Dev.",
+}
+
+@journal{genes_cells,
+	name="Genes to Cells",
+	shortname="Genes Cells",
+}
+
+@journal{genes_chromosomes_cancer,
+	name="Genes, Chromosomes & Cancer",
+	shortname="Genes, Chromosomes Cancer",
+}
+
+@journal{genome_res,
+	name="Genome Research",
+	shortname="Genome Res.",
+}
+
+@journal{genomics,
+	name="Genomics",
+}
+
+@journal{geochem_j,
+	name="Geochemical Journal",
+	shortname="Geochem. J.",
+}
+
+@journal{geochim_cosmochim_acta,
+	name="Geochimica et Cosmochimica Acta",
+	shortname="Geochim. Cosmochim. Acta",
+}
+
+@journal{geokhimiya,
+	name="Geokhimiya",
+}
+
+@journal{glass_phys_chem,
+	name="Glass Physics and Chemistry",
+	shortname="Glass Phys. Chem.",
+}
+
+@journal{glass_sci_technol_offenbach_ger,
+	name="Glass Science and Technology (Offenbach, Germany)",
+	shortname="Glass Sci. Technol. (Offenbach, Ger.)",
+}
+
+@journal{glass_technol,
+	name="Glass Technology",
+	shortname="Glass Technol.",
+}
+
+@journal{glassresearcher,
+	name="GlassResearcher",
+}
+
+@journal{global_biogeochem_cycles,
+	name="Global Biogeochemical Cycles",
+	shortname="Global Biogeochem. Cycles",
+}
+
+@journal{glycobiology,
+	name="Glycobiology",
+}
+
+@journal{glycoconjugate_j,
+	name="Glycoconjugate Journal",
+	shortname="Glycoconjugate J.",
+}
+
+@journal{gongneng_gaofenzi_xuebao,
+	name="Gongneng Gaofenzi Xuebao",
+}
+
+@journal{ground_water,
+	name="Ground Water",
+}
+
+@journal{growth_factors,
+	name="Growth Factors",
+}
+
+@journal{guangpuxue_yu_guangpu_fenxi,
+	name="Guangpuxue Yu Guangpu Fenxi",
+}
+
+@journal{guijinshu,
+	name="Guijinshu",
+}
+
+@journal{guisuanyan_xuebao,
+	name="Guisuanyan Xuebao",
+}
+
+@journal{guocheng_gongcheng_xuebao,
+	name="Guocheng Gongcheng Xuebao",
+}
+
+@journal{health_phys,
+	name="Health Physics",
+	shortname="Health Phys.",
+}
+
+@journal{heat_transfer_eng,
+	name="Heat Transfer Engineering",
+	shortname="Heat Transfer Eng.",
+}
+
+@journal{hecheng_xiangjiao_gongye,
+	name="Hecheng Xiangjiao Gongye",
+}
+
+@journal{helv_chim_acta,
+	name="Helvetica Chimica Acta",
+	shortname="Helv. Chim. Acta",
+}
+
+@journal{hemoglobin,
+	name="Hemoglobin",
+}
+
+@journal{heteroat_chem,
+	name="Heteroatom Chemistry",
+	shortname="Heteroat. Chem.",
+}
+
+@journal{heterocycles,
+	name="Heterocycles",
+}
+
+@journal{heterocycl_commun,
+	name="Heterocyclic Communications",
+	shortname="Heterocycl. Commun.",
+}
+
+@journal{high_energy_chem,
+	name="High Energy Chemistry",
+	shortname="High Energy Chem.",
+}
+
+@journal{high_perform_polym,
+	name="High Performance Polymers",
+	shortname="High Perform. Polym.",
+}
+
+@journal{high_temp,
+	name="High Temperature",
+	shortname="High Temp.",
+}
+
+@journal{high_temp_mater_processes_london_u_k,
+	name="High Temperature Materials and Processes (London, United Kingdom)",
+	shortname="High Temp. Mater. Processes (London, U. K.)",
+}
+
+@journal{high_temp__high_pressures,
+	name="High Temperatures - High Pressures",
+	shortname="High Temp. - High Pressures",
+}
+
+@journal{histochem_cell_biol,
+	name="Histochemistry and Cell Biology",
+	shortname="Histochem. Cell Biol.",
+}
+
+@journal{holzforschung,
+	name="Holzforschung",
+}
+
+@journal{horm_metab_res,
+	name="Hormone and Metabolic Research",
+	shortname="Horm. Metab. Res.",
+}
+
+@journal{horm_res,
+	name="Hormone Research",
+	shortname="Horm. Res.",
+}
+
+@journal{huadong_ligong_daxue_xuebao_ziran_kexueban,
+	name="Huadong Ligong Daxue Xuebao, Ziran Kexueban",
+}
+
+@journal{huagong_xuebao_chin_ed,
+	name="Huagong Xuebao (Chinese Edition)",
+	shortname="Huagong Xuebao (Chin. Ed.)",
+}
+
+@journal{huanjing_huaxue,
+	name="Huanjing Huaxue",
+}
+
+@journal{huanjing_kexue_xuebao,
+	name="Huanjing Kexue Xuebao",
+}
+
+@journal{huaxue,
+	name="Huaxue",
+}
+
+@journal{huaxue_fanying_gongcheng_yu_gongyi,
+	name="Huaxue Fanying Gongcheng Yu Gongyi",
+}
+
+@journal{huaxue_shiji,
+	name="Huaxue Shiji",
+}
+
+@journal{huaxue_tongbao,
+	name="Huaxue Tongbao",
+}
+
+@journal{huaxue_wuli_xuebao,
+	name="Huaxue Wuli Xuebao",
+}
+
+@journal{huaxue_xuebao,
+	name="Huaxue Xuebao",
+}
+
+@journal{hum_gene_ther,
+	name="Human Gene Therapy",
+	shortname="Hum. Gene Ther.",
+}
+
+@journal{hum_mol_genet,
+	name="Human Molecular Genetics",
+	shortname="Hum. Mol. Genet.",
+}
+
+@journal{hung_j_ind_chem,
+	name="Hungarian Journal of Industrial Chemistry",
+	shortname="Hung. J. Ind. Chem.",
+}
+
+@journal{hwahak_konghak,
+	name="Hwahak Konghak",
+}
+
+@journal{hydrometallurgy,
+	name="Hydrometallurgy",
+}
+
+@journal{hyperfine_interact,
+	name="Hyperfine Interactions",
+	shortname="Hyperfine Interact.",
+}
+
+@journal{hypertension,
+	name="Hypertension",
+}
+
+@journal{ieee_j_quantum_electron,
+	name="IEEE Journal of Quantum Electronics",
+	shortname="IEEE J. Quantum Electron.",
+}
+
+@journal{ieee_j_sel_top_quantum_electron,
+	name="IEEE Journal of Selected Topics in Quantum Electronics",
+	shortname="IEEE J. Sel. Top. Quantum Electron.",
+}
+
+@journal{ilar_j,
+	name="ILAR Journal",
+	shortname="ILAR J.",
+}
+
+@journal{immunity,
+	name="Immunity",
+}
+
+@journal{immunobiology,
+	name="Immunobiology",
+}
+
+@journal{immunology,
+	name="Immunology",
+}
+
+@journal{immunol_lett,
+	name="Immunology Letters",
+	shortname="Immunol. Lett.",
+}
+
+@journal{indian_chem_eng,
+	name="Indian Chemical Engineer",
+	shortname="Indian Chem. Eng.",
+}
+
+@journal{indian_j_biochem_biophys,
+	name="Indian Journal of Biochemistry & Biophysics",
+	shortname="Indian J. Biochem. Biophys.",
+}
+
+@journal{indian_j_chem_technol,
+	name="Indian Journal of Chemical Technology",
+	shortname="Indian J. Chem. Technol.",
+}
+
+@journal{indian_j_chem_sect_a_inorg_bioinorg_phys_theor,
+	name="Anal. Chem. Indian Journal of Chemistry, Section A: Inorganic, Bio-inorganic, Physical, Theoretical & Analytical Chemistry",
+	shortname="Indian J. Chem., Sect. A: Inorg., Bio-inorg., Phys., Theor.",
+}
+
+@journal{indian_j_chem_sect_b_org_chem_incl_med_chem,
+	name="Indian Journal of Chemistry, Section B: Organic Chemistry Including Medicinal Chemistry",
+	shortname="Indian J. Chem., Sect. B: Org. Chem. Incl. Med. Chem.",
+}
+
+@journal{indian_j_fibre_text_res,
+	name="Indian Journal of Fibre & Textile Research",
+	shortname="Indian J. Fibre Text. Res.",
+}
+
+@journal{indian_j_heterocycl_chem,
+	name="Indian Journal of Heterocyclic Chemistry",
+	shortname="Indian J. Heterocycl. Chem.",
+}
+
+@journal{indian_j_phys,
+	name="Indian Journal of Physics",
+	shortname="Indian J. Phys.",
+}
+
+@journal{indian_j_pure_appl_phys,
+	name="Indian Journal of Pure and Applied Physics",
+	shortname="Indian J. Pure Appl. Phys.",
+}
+
+@journal{ind_eng_chem_res,
+	name="Industrial & Engineering Chemistry Research",
+	shortname="Ind. Eng. Chem. Res.",
+}
+
+@journal{infect_immun,
+	name="Infection and Immunity",
+	shortname="Infect. Immun.",
+}
+
+@journal{inflammation_res,
+	name="Inflammation Research",
+	shortname="Inflammation Res.",
+}
+
+@journal{inhalation_toxicol,
+	name="Inhalation Toxicology",
+	shortname="Inhalation Toxicol.",
+}
+
+@journal{inorg_chem,
+	name="Inorganic Chemistry",
+	shortname="Inorg. Chem.",
+}
+
+@journal{inorg_chem_commun,
+	name="Inorganic Chemistry Communications",
+	shortname="Inorg. Chem. Commun.",
+}
+
+@journal{inorg_mater,
+	name="Inorganic Materials",
+	shortname="Inorg. Mater.",
+}
+
+@journal{inorg_react_mech_philadelphia_pa_u_s,
+	name="Inorganic Reaction Mechanisms (Philadelphia, PA, United States)",
+	shortname="Inorg. React. Mech. (Philadelphia, PA, U. S.)",
+}
+
+@journal{inorg_chim_acta,
+	name="Inorganica Chimica Acta",
+	shortname="Inorg. Chim. Acta",
+}
+
+@journal{insect_biochem_mol_biol,
+	name="Insect Biochemistry and Molecular Biology",
+	shortname="Insect Biochem. Mol. Biol.",
+}
+
+@journal{insect_mol_biol,
+	name="Insect Molecular Biology",
+	shortname="Insect Mol. Biol.",
+}
+
+@journal{instrum_sci_technol,
+	name="Instrumentation Science & Technology",
+	shortname="Instrum. Sci. Technol.",
+}
+
+@journal{intermetallics,
+	name="Intermetallics",
+}
+
+@journal{int_data_ser_sel_data_mixtures_ser_a,
+	name="International DATA Series, Selected Data on Mixtures, Series A: Thermodynamic Properties of Non-Reacting Binary Systems of Organic Substances",
+	shortname="Int. DATA Ser., Sel. Data Mixtures, Ser. A",
+}
+
+@journal{int_immunol,
+	name="International Immunology",
+	shortname="Int. Immunol.",
+}
+
+@journal{int_immunopharmacol,
+	name="International Immunopharmacology",
+	shortname="Int. Immunopharmacol.",
+}
+
+@journal{int_j_vitam_nutr_res,
+	name="International Journal for Vitamin and Nutrition Research",
+	shortname="Int. J. Vitam. Nutr. Res.",
+}
+
+@journal{int_j_adhes_adhes,
+	name="International Journal of Adhesion and Adhesives",
+	shortname="Int. J. Adhes. Adhes.",
+}
+
+@journal{int_j_antimicrob_agents,
+	name="International Journal of Antimicrobial Agents",
+	shortname="Int. J. Antimicrob. Agents",
+}
+
+@journal{int_j_appl_ceram_technol,
+	name="International Journal of Applied Ceramic Technology",
+	shortname="Int. J. Appl. Ceram. Technol.",
+}
+
+@journal{int_j_biochem_cell_biol,
+	name="International Journal of Biochemistry & Cell Biology",
+	shortname="Int. J. Biochem. Cell Biol.",
+}
+
+@journal{int_j_biol_macromol,
+	name="International Journal of Biological Macromolecules",
+	shortname="Int. J. Biol. Macromol.",
+}
+
+@journal{int_j_cancer,
+	name="International Journal of Cancer",
+	shortname="Int. J. Cancer",
+}
+
+@journal{int_j_chem_kinet,
+	name="International Journal of Chemical Kinetics",
+	shortname="Int. J. Chem. Kinet.",
+}
+
+@journal{int_j_chem,
+	name="International Journal of Chemistry",
+	shortname="Int. J. Chem.",
+}
+
+@journal{int_j_coal_geol,
+	name="International Journal of Coal Geology",
+	shortname="Int. J. Coal Geol.",
+}
+
+@journal{int_j_environ_pollut,
+	name="International Journal of Environment and Pollution",
+	shortname="Int. J. Environ. Pollut.",
+}
+
+@journal{int_j_environ_anal_chem,
+	name="International Journal of Environmental Analytical Chemistry",
+	shortname="Int. J. Environ. Anal. Chem.",
+}
+
+@journal{int_j_food_sci_technol,
+	name="International Journal of Food Science and Technology",
+	shortname="Int. J. Food Sci. Technol.",
+}
+
+@journal{int_j_hydrogen_energy,
+	name="International Journal of Hydrogen Energy",
+	shortname="Int. J. Hydrogen Energy",
+}
+
+@journal{int_j_immunogenet,
+	name="International Journal of Immunogenetics",
+	shortname="Int. J. Immunogenet.",
+}
+
+@journal{int_j_mass_spectrom,
+	name="International Journal of Mass Spectrometry",
+	shortname="Int. J. Mass Spectrom.",
+}
+
+@journal{int_j_miner_process,
+	name="International Journal of Mineral Processing",
+	shortname="Int. J. Miner. Process.",
+}
+
+@journal{int_j_multiphase_flow,
+	name="International Journal of Multiphase Flow",
+	shortname="Int. J. Multiphase Flow",
+}
+
+@journal{int_j_nanosci,
+	name="International Journal of Nanoscience",
+	shortname="Int. J. Nanosci.",
+}
+
+@journal{int_j_nonequilib_process,
+	name="International Journal of Non-Equilibrium Processing",
+	shortname="Int. J. Non-Equilib. Process.",
+}
+
+@journal{int_j_pept_res_ther,
+	name="International Journal of Peptide Research and Therapeutics",
+	shortname="Int. J. Pept. Res. Ther.",
+}
+
+@journal{int_j_pharm,
+	name="International Journal of Pharmaceutics",
+	shortname="Int. J. Pharm.",
+}
+
+@journal{int_j_pixe,
+	name="International Journal of PIXE",
+	shortname="Int. J. PIXE",
+}
+
+@journal{int_j_polym_anal_charact,
+	name="International Journal of Polymer Analysis and Characterization",
+	shortname="Int. J. Polym. Anal. Charact.",
+}
+
+@journal{int_j_polym_mater,
+	name="International Journal of Polymeric Materials",
+	shortname="Int. J. Polym. Mater.",
+}
+
+@journal{int_j_powder_metall_princeton_n_j,
+	name="International Journal of Powder Metallurgy (Princeton, New Jersey)",
+	shortname="Int. J. Powder Metall. (Princeton, N. J.)",
+}
+
+@journal{int_j_quantum_chem,
+	name="International Journal of Quantum Chemistry",
+	shortname="Int. J. Quantum Chem.",
+}
+
+@journal{int_j_radiat_biol,
+	name="International Journal of Radiation Biology",
+	shortname="Int. J. Radiat. Biol.",
+}
+
+@journal{int_j_refract_met_hard_mater,
+	name="International Journal of Refractory Metals & Hard Materials",
+	shortname="Int. J. Refract. Met. Hard Mater.",
+}
+
+@journal{int_j_thermophys,
+	name="International Journal of Thermophysics",
+	shortname="Int. J. Thermophys.",
+}
+
+@journal{int_mater_rev,
+	name="International Materials Reviews",
+	shortname="Int. Mater. Rev.",
+}
+
+@journal{int_polym_process,
+	name="International Polymer Processing",
+	shortname="Int. Polym. Process.",
+}
+
+@journal{int_rev_phys_chem,
+	name="International Reviews in Physical Chemistry",
+	shortname="Int. Rev. Phys. Chem.",
+}
+
+@journal{ionics,
+	name="Ionics",
+}
+
+@journal{ironmaking_steelmaking,
+	name="Ironmaking and Steelmaking",
+	shortname="Ironmaking Steelmaking",
+}
+
+@journal{isij_int,
+	name="ISIJ International",
+	shortname="ISIJ Int.",
+}
+
+@journal{isot_environ_health_stud,
+	name="Isotopes in Environmental and Health Studies",
+	shortname="Isot. Environ. Health Stud.",
+}
+
+@journal{isr_j_chem,
+	name="Israel Journal of Chemistry",
+	shortname="Isr. J. Chem.",
+}
+
+@journal{ital_j_biochem,
+	name="Italian Journal of Biochemistry",
+	shortname="Ital. J. Biochem.",
+}
+
+@journal{iubmb_life,
+	name="IUBMB Life",
+}
+
+@journal{izv_nats_akad_nauk_resp_kaz_ser_khim,
+	name="Izvestiya Natsional'noi Akademii Nauk Respubliki Kazakhstan, Seriya Khimicheskaya",
+	shortname="Izv. Nats. Akad. Nauk Resp. Kaz., Ser. Khim.",
+}
+
+@journal{izv_ross_akad_nauk_ser_fiz,
+	name="Izvestiya Rossiiskoi Akademii Nauk, Seriya Fizicheskaya",
+	shortname="Izv. Ross. Akad. Nauk, Ser. Fiz.",
+}
+
+@journal{izv_vyssh_uchebn_zaved_khim_khim_tekhnol,
+	name="Izvestiya Vysshikh Uchebnykh Zavedenii, Khimiya i Khimicheskaya Tekhnologiya",
+	shortname="Izv. Vyssh. Uchebn. Zaved., Khim. Khim. Tekhnol.",
+}
+
+@journal{izv_vyssh_uchebn_zaved_tsvetn_metall,
+	name="Izvestiya Vysshikh Uchebnykh Zavedenii, Tsvetnaya Metallurgiya",
+	shortname="Izv. Vyssh. Uchebn. Zaved., Tsvetn. Metall.",
+}
+
+@journal{jama_j_am_med_assoc,
+	name="JAMA, the Journal of the American Medical Association",
+	shortname="JAMA, J. Am. Med. Assoc.",
+}
+
+@journal{jpn_j_appl_phys_part_1,
+	name="Japanese Journal of Applied Physics, Part 1: Regular Papers, Brief Communications & Review Papers",
+	shortname="Jpn. J. Appl. Phys., Part 1",
+}
+
+@journal{jpn_j_appl_phys_part_2,
+	name="Japanese Journal of Applied Physics, Part 2: Letters & Express Letters",
+	shortname="Jpn. J. Appl. Phys., Part 2",
+}
+
+@journal{jbic_j_biol_inorg_chem,
+	name="JBIC, Journal of Biological Inorganic Chemistry",
+	shortname="JBIC, J. Biol. Inorg. Chem.",
+}
+
+@journal{jct_res,
+	name="JCT Research",
+	shortname="JCT Res.",
+}
+
+@journal{jetp_lett,
+	name="JETP Letters",
+	shortname="JETP Lett.",
+}
+
+@journal{jiegou_huaxue,
+	name="Jiegou Huaxue",
+}
+
+@journal{jinshu_xuebao,
+	name="Jinshu Xuebao",
+}
+
+@journal{jisuanji_yu_yingyong_huaxue,
+	name="Jisuanji Yu Yingyong Huaxue",
+}
+
+@journal{j__am_water_works_assoc,
+	name="Journal - American Water Works Association",
+	shortname="J. - Am. Water Works Assoc.",
+}
+
+@journal{j_pharm_belg,
+	name="Journal de Pharmacie de Belgique",
+	shortname="J. Pharm. Belg.",
+}
+
+@journal{j_adhes,
+	name="Journal of Adhesion",
+	shortname="J. Adhes.",
+}
+
+@journal{j_adhes_sci_technol,
+	name="Journal of Adhesion Science and Technology",
+	shortname="J. Adhes. Sci. Technol.",
+}
+
+@journal{j_adv_chem_phys,
+	name="Journal of Advances in Chemical Physics",
+	shortname="J. Adv. Chem. Phys.",
+}
+
+@journal{j_aerosol_sci,
+	name="Journal of Aerosol Science",
+	shortname="J. Aerosol Sci.",
+}
+
+@journal{j_agric_food_chem,
+	name="Journal of Agricultural and Food Chemistry",
+	shortname="J. Agric. Food Chem.",
+}
+
+@journal{j_alloys_compd,
+	name="Journal of Alloys and Compounds",
+	shortname="J. Alloys Compd.",
+}
+
+@journal{j_anal_appl_pyrolysis,
+	name="Journal of Analytical and Applied Pyrolysis",
+	shortname="J. Anal. Appl. Pyrolysis",
+}
+
+@journal{j_anal_at_spectrom,
+	name="Journal of Analytical Atomic Spectrometry",
+	shortname="J. Anal. At. Spectrom.",
+}
+
+@journal{j_anal_chem,
+	name="Journal of Analytical Chemistry",
+	shortname="J. Anal. Chem.",
+}
+
+@journal{j_anal_toxicol,
+	name="Journal of Analytical Toxicology",
+	shortname="J. Anal. Toxicol.",
+}
+
+@journal{j_anim_sci_savoy_il_u_s,
+	name="Journal of Animal Science (Savoy, IL, United States)",
+	shortname="J. Anim. Sci. (Savoy, IL, U. S.)",
+}
+
+@journal{j_antibiot,
+	name="Journal of Antibiotics",
+	shortname="J. Antibiot.",
+}
+
+@journal{j_antimicrob_chemother,
+	name="Journal of Antimicrobial Chemotherapy",
+	shortname="J. Antimicrob. Chemother.",
+}
+
+@journal{j_aoac_int,
+	name="Journal of AOAC International",
+	shortname="J. AOAC Int.",
+}
+
+@journal{j_appl_anim_welfare_sci,
+	name="Journal of Applied Animal Welfare Science",
+	shortname="J. Appl. Anim. Welfare Sci.",
+}
+
+@journal{j_appl_crystallogr,
+	name="Journal of Applied Crystallography",
+	shortname="J. Appl. Crystallogr.",
+}
+
+@journal{j_appl_electrochem,
+	name="Journal of Applied Electrochemistry",
+	shortname="J. Appl. Electrochem.",
+}
+
+@journal{j_appl_phys,
+	name="Journal of Applied Physics",
+	shortname="J. Appl. Phys.",
+}
+
+@journal{j_appl_polym_sci,
+	name="Journal of Applied Polymer Science",
+	shortname="J. Appl. Polym. Sci.",
+}
+
+@journal{j_appl_spectrosc,
+	name="Journal of Applied Spectroscopy",
+	shortname="J. Appl. Spectrosc.",
+}
+
+@journal{j_appl_toxicol,
+	name="Journal of Applied Toxicology",
+	shortname="J. Appl. Toxicol.",
+}
+
+@journal{j_atmos_chem,
+	name="Journal of Atmospheric Chemistry",
+	shortname="J. Atmos. Chem.",
+}
+
+@journal{j_autom_methods_manage_chem,
+	name="Journal of Automated Methods & Management in Chemistry",
+	shortname="J. Autom. Methods Manage. Chem.",
+}
+
+@journal{j_bacteriol,
+	name="Journal of Bacteriology",
+	shortname="J. Bacteriol.",
+}
+
+@journal{j_biochem_biophys_methods,
+	name="Journal of Biochemical and Biophysical Methods",
+	shortname="J. Biochem. Biophys. Methods",
+}
+
+@journal{j_biochem_mol_toxicol,
+	name="Journal of Biochemical and Molecular Toxicology",
+	shortname="J. Biochem. Mol. Toxicol.",
+}
+
+@journal{j_biochem_tokyo_jpn,
+	name="Journal of Biochemistry (Tokyo, Japan)",
+	shortname="J. Biochem. (Tokyo, Jpn.)",
+}
+
+@journal{j_biochem_mol_biol,
+	name="Journal of Biochemistry and Molecular Biology",
+	shortname="J. Biochem. Mol. Biol.",
+}
+
+@journal{j_bioenerg_biomembr,
+	name="Journal of Bioenergetics and Biomembranes",
+	shortname="J. Bioenerg. Biomembr.",
+}
+
+@journal{j_biol_chem,
+	name="Journal of Biological Chemistry",
+	shortname="J. Biol. Chem.",
+}
+
+@journal{j_biomater_sci_polym_ed,
+	name="Journal of Biomaterials Science, Polymer Edition",
+	shortname="J. Biomater. Sci., Polym. Ed.",
+}
+
+@journal{j_biomed_mater_res_part_a,
+	name="Journal of Biomedical Materials Research, Part A",
+	shortname="J. Biomed. Mater. Res., Part A",
+}
+
+@journal{j_biomed_mater_res_part_b,
+	name="Journal of Biomedical Materials Research, Part B: Applied Biomaterials",
+	shortname="J. Biomed. Mater. Res., Part B",
+}
+
+@journal{j_biomed_nanotechnol,
+	name="Journal of Biomedical Nanotechnology",
+	shortname="J. Biomed. Nanotechnol.",
+}
+
+@journal{j_biomol_nmr,
+	name="Journal of Biomolecular NMR",
+	shortname="J. Biomol. NMR",
+}
+
+@journal{j_biomol_struct_dyn,
+	name="Journal of Biomolecular Structure & Dynamics",
+	shortname="J. Biomol. Struct. Dyn.",
+}
+
+@journal{j_biosci_bioeng,
+	name="Journal of Bioscience and Bioengineering",
+	shortname="J. Biosci. Bioeng.",
+}
+
+@journal{j_biotechnol,
+	name="Journal of Biotechnology",
+	shortname="J. Biotechnol.",
+}
+
+@journal{j_capillary_electrophor_microchip_technol,
+	name="Journal of Capillary Electrophoresis and Microchip Technology",
+	shortname="J. Capillary Electrophor. Microchip Technol.",
+}
+
+@journal{j_carbohydr_chem,
+	name="Journal of Carbohydrate Chemistry",
+	shortname="J. Carbohydr. Chem.",
+}
+
+@journal{j_cardiovasc_pharmacol,
+	name="Journal of Cardiovascular Pharmacology",
+	shortname="J. Cardiovasc. Pharmacol.",
+}
+
+@journal{j_catal,
+	name="Journal of Catalysis",
+	shortname="J. Catal.",
+}
+
+@journal{j_cell_biol,
+	name="Journal of Cell Biology",
+	shortname="J. Cell Biol.",
+}
+
+@journal{j_cell_sci,
+	name="Journal of Cell Science",
+	shortname="J. Cell Sci.",
+}
+
+@journal{j_cell_biochem,
+	name="Journal of Cellular Biochemistry",
+	shortname="J. Cell. Biochem.",
+}
+
+@journal{j_cell_physiol,
+	name="Journal of Cellular Physiology",
+	shortname="J. Cell. Physiol.",
+}
+
+@journal{j_chem_eng_data,
+	name="Journal of Chemical and Engineering Data",
+	shortname="J. Chem. Eng. Data",
+}
+
+@journal{j_chem_crystallogr,
+	name="Journal of Chemical Crystallography",
+	shortname="J. Chem. Crystallogr.",
+}
+
+@journal{j_chem_ecol,
+	name="Journal of Chemical Ecology",
+	shortname="J. Chem. Ecol.",
+}
+
+@journal{j_chem_educ,
+	name="Journal of Chemical Education",
+	shortname="J. Chem. Educ.",
+}
+
+@journal{j_chem_eng_jpn,
+	name="Journal of Chemical Engineering of Japan",
+	shortname="J. Chem. Eng. Jpn.",
+}
+
+@journal{j_chem_inf_model,
+	name="Journal of Chemical Information and Modeling",
+	shortname="J. Chem. Inf. Model.",
+}
+
+@journal{j_chem_phys,
+	name="Journal of Chemical Physics",
+	shortname="J. Chem. Phys.",
+}
+
+@journal{j_chem_res,
+	name="Journal of Chemical Research",
+	shortname="J. Chem. Res.",
+}
+
+@journal{j_chem_sci_bangalore_india,
+	name="Journal of Chemical Sciences (Bangalore, India)",
+	shortname="J. Chem. Sci. (Bangalore, India)",
+}
+
+@journal{j_chem_technol_biotechnol,
+	name="Journal of Chemical Technology and Biotechnology",
+	shortname="J. Chem. Technol. Biotechnol.",
+}
+
+@journal{j_chem_theory_comput,
+	name="Journal of Chemical Theory and Computation",
+	shortname="J. Chem. Theory Comput.",
+}
+
+@journal{j_chem_thermodyn,
+	name="Journal of Chemical Thermodynamics",
+	shortname="J. Chem. Thermodyn.",
+}
+
+@journal{j_chemom,
+	name="Journal of Chemometrics",
+	shortname="J. Chemom.",
+}
+
+@journal{j_chromatogr_sci,
+	name="Journal of Chromatographic Science",
+	shortname="J. Chromatogr. Sci.",
+}
+
+@journal{j_chromatogr_a,
+	name="Journal of Chromatography, A",
+	shortname="J. Chromatogr., A",
+}
+
+@journal{j_chromatogr_b_anal_technol_biomed_life_sci,
+	name="Journal of Chromatography, B: Analytical Technologies in the Biomedical and Life Sciences",
+	shortname="J. Chromatogr., B: Anal. Technol. Biomed. Life Sci.",
+}
+
+@journal{j_clin_endocrinol_metab,
+	name="Journal of Clinical Endocrinology and Metabolism",
+	shortname="J. Clin. Endocrinol. Metab.",
+}
+
+@journal{j_clin_invest,
+	name="Journal of Clinical Investigation",
+	shortname="J. Clin. Invest.",
+}
+
+@journal{j_cluster_sci,
+	name="Journal of Cluster Science",
+	shortname="J. Cluster Sci.",
+}
+
+@journal{j_colloid_interface_sci,
+	name="Journal of Colloid and Interface Science",
+	shortname="J. Colloid Interface Sci.",
+}
+
+@journal{j_comb_chem,
+	name="Journal of Combinatorial Chemistry",
+	shortname="J. Comb. Chem.",
+}
+
+@journal{j_comput_theor_nanosci,
+	name="Journal of Computational and Theoretical Nanoscience",
+	shortname="J. Comput. Theor. Nanosci.",
+}
+
+@journal{j_comput_biol,
+	name="Journal of Computational Biology",
+	shortname="J. Comput. Biol.",
+}
+
+@journal{j_comput_chem,
+	name="Journal of Computational Chemistry",
+	shortname="J. Comput. Chem.",
+}
+
+@journal{j_comput_chem_jpn,
+	name="Journal of Computer Chemistry, Japan",
+	shortname="J. Comput. Chem., Jpn.",
+}
+
+@journal{j_computaided_mol_des,
+	name="Journal of Computer-Aided Molecular Design",
+	shortname="J. Comput.-Aided Mol. Des.",
+}
+
+@journal{j_contam_hydrol,
+	name="Journal of Contaminant Hydrology",
+	shortname="J. Contam. Hydrol.",
+}
+
+@journal{j_controlled_release,
+	name="Journal of Controlled Release",
+	shortname="J. Controlled Release",
+}
+
+@journal{j_coord_chem,
+	name="Journal of Coordination Chemistry",
+	shortname="J. Coord. Chem.",
+}
+
+@journal{j_cryst_growth,
+	name="Journal of Crystal Growth",
+	shortname="J. Cryst. Growth",
+}
+
+@journal{j_dairy_res,
+	name="Journal of Dairy Research",
+	shortname="J. Dairy Res.",
+}
+
+@journal{j_dairy_sci,
+	name="Journal of Dairy Science",
+	shortname="J. Dairy Sci.",
+}
+
+@journal{j_dispersion_sci_technol,
+	name="Journal of Dispersion Science and Technology",
+	shortname="J. Dispersion Sci. Technol.",
+}
+
+@journal{j_drug_targeting,
+	name="Journal of Drug Targeting",
+	shortname="J. Drug Targeting",
+}
+
+@journal{j_electroanal_chem,
+	name="Journal of Electroanalytical Chemistry",
+	shortname="J. Electroanal. Chem.",
+}
+
+@journal{j_electron_spectrosc_relat_phenom,
+	name="Journal of Electron Spectroscopy and Related Phenomena",
+	shortname="J. Electron Spectrosc. Relat. Phenom.",
+}
+
+@journal{j_electron_mater,
+	name="Journal of Electronic Materials",
+	shortname="J. Electron. Mater.",
+}
+
+@journal{j_endocrinol,
+	name="Journal of Endocrinology",
+	shortname="J. Endocrinol.",
+}
+
+@journal{j_endotoxin_res,
+	name="Journal of Endotoxin Research",
+	shortname="J. Endotoxin Res.",
+}
+
+@journal{j_energ_mater,
+	name="Journal of Energetic Materials",
+	shortname="J. Energ. Mater.",
+}
+
+@journal{j_environ_eng_reston_va_u_s,
+	name="Journal of Environmental Engineering (Reston, VA, United States)",
+	shortname="J. Environ. Eng. (Reston, VA, U. S.)",
+}
+
+@journal{j_environ_monit,
+	name="Journal of Environmental Monitoring",
+	shortname="J. Environ. Monit.",
+}
+
+@journal{j_environ_qual,
+	name="Journal of Environmental Quality",
+	shortname="J. Environ. Qual.",
+}
+
+@journal{j_environ_radioact,
+	name="Journal of Environmental Radioactivity",
+	shortname="J. Environ. Radioact.",
+}
+
+@journal{j_environ_sci_eng,
+	name="Journal of Environmental Science & Engineering",
+	shortname="J. Environ. Sci. Eng.",
+}
+
+@journal{j_environ_sci_health_part_a_toxichazard_subst,
+	name="Environ. Eng. Journal of Environmental Science and Health, Part A: Toxic/Hazardous Substances & Environmental Engineering",
+	shortname="J. Environ. Sci. Health, Part A: Toxic/Hazard. Subst.",
+}
+
+@journal{j_environ_sci_health_part_b,
+	name="Journal of Environmental Science and Health, Part B: Pesticides, Food Contaminants, and Agricultural Wastes",
+	shortname="J. Environ. Sci. Health, Part B",
+}
+
+@journal{j_enzyme_inhib_med_chem,
+	name="Journal of Enzyme Inhibition and Medicinal Chemistry",
+	shortname="J. Enzyme Inhib. Med. Chem.",
+}
+
+@journal{j_exp_theor_phys,
+	name="Journal of Experimental and Theoretical Physics",
+	shortname="J. Exp. Theor. Phys.",
+}
+
+@journal{j_exp_anim_sci,
+	name="Journal of Experimental Animal Science",
+	shortname="J. Exp. Anim. Sci.",
+}
+
+@journal{j_exp_bot,
+	name="Journal of Experimental Botany",
+	shortname="J. Exp. Bot.",
+}
+
+@journal{j_exp_med,
+	name="Journal of Experimental Medicine",
+	shortname="J. Exp. Med.",
+}
+
+@journal{j_fluorine_chem,
+	name="Journal of Fluorine Chemistry",
+	shortname="J. Fluorine Chem.",
+}
+
+@journal{j_food_sci,
+	name="Journal of Food Science",
+	shortname="J. Food Sci.",
+}
+
+@journal{j_fusion_energy,
+	name="Journal of Fusion Energy",
+	shortname="J. Fusion Energy",
+}
+
+@journal{j_gen_appl_microbiol,
+	name="Journal of General and Applied Microbiology",
+	shortname="J. Gen. Appl. Microbiol.",
+}
+
+@journal{j_gen_virol,
+	name="Journal of General Virology",
+	shortname="J. Gen. Virol.",
+}
+
+@journal{j_genome_sci_technol,
+	name="Journal of Genome Science and Technology",
+	shortname="J. Genome Sci. Technol.",
+}
+
+@journal{j_geochem_explor,
+	name="Journal of Geochemical Exploration",
+	shortname="J. Geochem. Explor.",
+}
+
+@journal{j_hazard_mater,
+	name="Journal of Hazardous Materials",
+	shortname="J. Hazard. Mater.",
+}
+
+@journal{j_heterocycl_chem,
+	name="Journal of Heterocyclic Chemistry",
+	shortname="J. Heterocycl. Chem.",
+}
+
+@journal{j_histochem_cytochem,
+	name="Journal of Histochemistry and Cytochemistry",
+	shortname="J. Histochem. Cytochem.",
+}
+
+@journal{j_hypertens,
+	name="Journal of Hypertension",
+	shortname="J. Hypertens.",
+}
+
+@journal{j_imaging_sci_technol,
+	name="Journal of Imaging Science and Technology",
+	shortname="J. Imaging Sci. Technol.",
+}
+
+@journal{j_immunoassay_immunochem,
+	name="Journal of Immunoassay & Immunochemistry",
+	shortname="J. Immunoassay Immunochem.",
+}
+
+@journal{j_immunol_methods,
+	name="Journal of Immunological Methods",
+	shortname="J. Immunol. Methods",
+}
+
+@journal{j_immunol,
+	name="Journal of Immunology",
+	shortname="J. Immunol.",
+}
+
+@journal{j_inclusion_phenom_macrocyclic_chem,
+	name="Journal of Inclusion Phenomena and Macrocyclic Chemistry",
+	shortname="J. Inclusion Phenom. Macrocyclic Chem.",
+}
+
+@journal{j_ind_eng_chem_seoul_repub_korea,
+	name="Journal of Industrial and Engineering Chemistry (Seoul, Republic of Korea)",
+	shortname="J. Ind. Eng. Chem. (Seoul, Repub. Korea)",
+}
+
+@journal{j_ind_microbiol_biotechnol,
+	name="Journal of Industrial Microbiology & Biotechnology",
+	shortname="J. Ind. Microbiol. Biotechnol.",
+}
+
+@journal{j_inorg_organomet_polym_mater,
+	name="Journal of Inorganic and Organometallic Polymers and Materials",
+	shortname="J. Inorg. Organomet. Polym. Mater.",
+}
+
+@journal{j_inorg_biochem,
+	name="Journal of Inorganic Biochemistry",
+	shortname="J. Inorg. Biochem.",
+}
+
+@journal{j_insect_physiol,
+	name="Journal of Insect Physiology",
+	shortname="J. Insect Physiol.",
+}
+
+@journal{j_interferon_cytokine_res,
+	name="Journal of Interferon & Cytokine Research",
+	shortname="J. Interferon Cytokine Res.",
+}
+
+@journal{j_invest_dermatol,
+	name="Journal of Investigative Dermatology",
+	shortname="J. Invest. Dermatol.",
+}
+
+@journal{j_labelled_compd_radiopharm,
+	name="Journal of Labelled Compounds & Radiopharmaceuticals",
+	shortname="J. Labelled Compd. Radiopharm.",
+}
+
+@journal{j_leukocyte_biol,
+	name="Journal of Leukocyte Biology",
+	shortname="J. Leukocyte Biol.",
+}
+
+@journal{j_lipid_res,
+	name="Journal of Lipid Research",
+	shortname="J. Lipid Res.",
+}
+
+@journal{j_liq_chromatogr_relat_technol,
+	name="Journal of Liquid Chromatography & Related Technologies",
+	shortname="J. Liq. Chromatogr. Relat. Technol.",
+}
+
+@journal{j_low_temp_phys,
+	name="Journal of Low Temperature Physics",
+	shortname="J. Low Temp. Phys.",
+}
+
+@journal{j_lumin,
+	name="Journal of Luminescence",
+	shortname="J. Lumin.",
+}
+
+@journal{j_macromol_sci_part_a_pure_appl_chem,
+	name="Journal of Macromolecular Science, Part A: Pure and Applied Chemistry",
+	shortname="J. Macromol. Sci., Part A: Pure Appl. Chem.",
+}
+
+@journal{j_macromol_sci_part_b_phys,
+	name="Journal of Macromolecular Science, Part B: Physics",
+	shortname="J. Macromol. Sci., Part B: Phys.",
+}
+
+@journal{j_macromol_sci_polym_rev,
+	name="Journal of Macromolecular Science, Polymer Reviews",
+	shortname="J. Macromol. Sci., Polym. Rev.",
+}
+
+@journal{j_magn_reson,
+	name="Journal of Magnetic Resonance",
+	shortname="J. Magn. Reson.",
+}
+
+@journal{j_magn_magn_mater,
+	name="Journal of Magnetism and Magnetic Materials",
+	shortname="J. Magn. Magn. Mater.",
+}
+
+@journal{j_mass_spectrom,
+	name="Journal of Mass Spectrometry",
+	shortname="J. Mass Spectrom.",
+}
+
+@journal{j_mater_chem,
+	name="Journal of Materials Chemistry",
+	shortname="J. Mater. Chem.",
+}
+
+@journal{j_mater_eng_perform,
+	name="Journal of Materials Engineering and Performance",
+	shortname="J. Mater. Eng. Perform.",
+}
+
+@journal{j_mater_res,
+	name="Journal of Materials Research",
+	shortname="J. Mater. Res.",
+}
+
+@journal{j_mater_sci,
+	name="Journal of Materials Science",
+	shortname="J. Mater. Sci.",
+}
+
+@journal{j_mater_sci_mater_electron,
+	name="Journal of Materials Science: Materials in Electronics",
+	shortname="J. Mater. Sci.: Mater. Electron.",
+}
+
+@journal{j_mater_sci_mater_med,
+	name="Journal of Materials Science: Materials in Medicine",
+	shortname="J. Mater. Sci.: Mater. Med.",
+}
+
+@journal{j_math_chem,
+	name="Journal of Mathematical Chemistry",
+	shortname="J. Math. Chem.",
+}
+
+@journal{j_med_chem,
+	name="Journal of Medicinal Chemistry",
+	shortname="J. Med. Chem.",
+}
+
+@journal{j_membr_biol,
+	name="Journal of Membrane Biology",
+	shortname="J. Membr. Biol.",
+}
+
+@journal{j_membr_sci,
+	name="Journal of Membrane Science",
+	shortname="J. Membr. Sci.",
+}
+
+@journal{j_microencapsulation,
+	name="Journal of Microencapsulation",
+	shortname="J. Microencapsulation",
+}
+
+@journal{j_mol_cell_cardiol,
+	name="Journal of Molecular and Cellular Cardiology",
+	shortname="J. Mol. Cell. Cardiol.",
+}
+
+@journal{j_mol_biol,
+	name="Journal of Molecular Biology",
+	shortname="J. Mol. Biol.",
+}
+
+@journal{j_mol_catal_a_chem,
+	name="Journal of Molecular Catalysis A: Chemical",
+	shortname="J. Mol. Catal. A: Chem.",
+}
+
+@journal{j_mol_catal_b_enzym,
+	name="Journal of Molecular Catalysis B: Enzymatic",
+	shortname="J. Mol. Catal. B: Enzym.",
+}
+
+@journal{j_mol_endocrinol,
+	name="Journal of Molecular Endocrinology",
+	shortname="J. Mol. Endocrinol.",
+}
+
+@journal{j_mol_evol,
+	name="Journal of Molecular Evolution",
+	shortname="J. Mol. Evol.",
+}
+
+@journal{j_mol_graphics_modell,
+	name="Journal of Molecular Graphics & Modelling",
+	shortname="J. Mol. Graphics Modell.",
+}
+
+@journal{j_mol_liq,
+	name="Journal of Molecular Liquids",
+	shortname="J. Mol. Liq.",
+}
+
+@journal{j_mol_microbiol_biotechnol,
+	name="Journal of Molecular Microbiology and Biotechnology",
+	shortname="J. Mol. Microbiol. Biotechnol.",
+}
+
+@journal{j_mol_neurosci,
+	name="Journal of Molecular Neuroscience",
+	shortname="J. Mol. Neurosci.",
+}
+
+@journal{j_mol_recognit,
+	name="Journal of Molecular Recognition",
+	shortname="J. Mol. Recognit.",
+}
+
+@journal{j_mol_spectrosc,
+	name="Journal of Molecular Spectroscopy",
+	shortname="J. Mol. Spectrosc.",
+}
+
+@journal{j_mol_struct,
+	name="Journal of Molecular Structure",
+	shortname="J. Mol. Struct.",
+}
+
+@journal{j_nanosci_nanotechnol,
+	name="Journal of Nanoscience and Nanotechnology",
+	shortname="J. Nanosci. Nanotechnol.",
+}
+
+@journal{j_nat_gas_chem,
+	name="Journal of Natural Gas Chemistry",
+	shortname="J. Nat. Gas Chem.",
+}
+
+@journal{j_nat_prod,
+	name="Journal of Natural Products",
+	shortname="J. Nat. Prod.",
+}
+
+@journal{j_near_infrared_spectrosc,
+	name="Journal of Near Infrared Spectroscopy",
+	shortname="J. Near Infrared Spectrosc.",
+}
+
+@journal{j_neurochem,
+	name="Journal of Neurochemistry",
+	shortname="J. Neurochem.",
+}
+
+@journal{j_neuroendocrinol,
+	name="Journal of Neuroendocrinology",
+	shortname="J. Neuroendocrinol.",
+}
+
+@journal{j_neuroimmunol,
+	name="Journal of Neuroimmunology",
+	shortname="J. Neuroimmunol.",
+}
+
+@journal{j_neurosci,
+	name="Journal of Neuroscience",
+	shortname="J. Neurosci.",
+}
+
+@journal{j_neurosci_res,
+	name="Journal of Neuroscience Research",
+	shortname="J. Neurosci. Res.",
+}
+
+@journal{j_noncryst_solids,
+	name="Journal of Non-Crystalline Solids",
+	shortname="J. Non-Cryst. Solids",
+}
+
+@journal{j_nonnewtonian_fluid_mech,
+	name="Journal of Non-Newtonian Fluid Mechanics",
+	shortname="J. Non-Newtonian Fluid Mech.",
+}
+
+@journal{j_nucl_mater,
+	name="Journal of Nuclear Materials",
+	shortname="J. Nucl. Mater.",
+}
+
+@journal{j_nucl_sci_technol_tokyo_jpn,
+	name="Journal of Nuclear Science and Technology (Tokyo, Japan)",
+	shortname="J. Nucl. Sci. Technol. (Tokyo, Jpn.)",
+}
+
+@journal{j_nutr,
+	name="Journal of Nutrition",
+	shortname="J. Nutr.",
+}
+
+@journal{j_nutr_biochem,
+	name="Journal of Nutritional Biochemistry",
+	shortname="J. Nutr. Biochem.",
+}
+
+@journal{j_nutr_sci_vitaminol,
+	name="Journal of Nutritional Science and Vitaminology",
+	shortname="J. Nutr. Sci. Vitaminol.",
+}
+
+@journal{j_ocul_pharmacol_ther,
+	name="Journal of Ocular Pharmacology and Therapeutics",
+	shortname="J. Ocul. Pharmacol. Ther.",
+}
+
+@journal{j_oleo_sci,
+	name="Journal of Oleo Science",
+	shortname="J. Oleo Sci.",
+}
+
+@journal{j_org_chem,
+	name="Journal of Organic Chemistry",
+	shortname="J. Org. Chem.",
+}
+
+@journal{j_organomet_chem,
+	name="Journal of Organometallic Chemistry",
+	shortname="J. Organomet. Chem.",
+}
+
+@journal{j_pept_res,
+	name="Journal of Peptide Research",
+	shortname="J. Pept. Res.",
+}
+
+@journal{j_pept_sci,
+	name="Journal of Peptide Science",
+	shortname="J. Pept. Sci.",
+}
+
+@journal{j_pet_sci_eng,
+	name="Journal of Petroleum Science & Engineering",
+	shortname="J. Pet. Sci. Eng.",
+}
+
+@journal{j_petrol,
+	name="Journal of Petrology",
+	shortname="J. Petrol.",
+}
+
+@journal{j_pharm_biomed_anal,
+	name="Journal of Pharmaceutical and Biomedical Analysis",
+	shortname="J. Pharm. Biomed. Anal.",
+}
+
+@journal{j_pharm_sci,
+	name="Journal of Pharmaceutical Sciences",
+	shortname="J. Pharm. Sci.",
+}
+
+@journal{j_pharmacol_toxicol_methods,
+	name="Journal of Pharmacological and Toxicological Methods",
+	shortname="J. Pharmacol. Toxicol. Methods",
+}
+
+@journal{j_pharmacol_sci_tokyo_jpn,
+	name="Journal of Pharmacological Sciences (Tokyo, Japan)",
+	shortname="J. Pharmacol. Sci. (Tokyo, Jpn.)",
+}
+
+@journal{j_pharmacol_exp_ther,
+	name="Journal of Pharmacology and Experimental Therapeutics",
+	shortname="J. Pharmacol. Exp. Ther.",
+}
+
+@journal{j_pharm_pharmacol,
+	name="Journal of Pharmacy and Pharmacology",
+	shortname="J. Pharm. Pharmacol.",
+}
+
+@journal{j_phase_equilib_diffus,
+	name="Journal of Phase Equilibria and Diffusion",
+	shortname="J. Phase Equilib. Diffus.",
+}
+
+@journal{j_photochem_photobiol_a,
+	name="Journal of Photochemistry and Photobiology, A: Chemistry",
+	shortname="J. Photochem. Photobiol., A",
+}
+
+@journal{j_photochem_photobiol_b,
+	name="Journal of Photochemistry and Photobiology, B: Biology",
+	shortname="J. Photochem. Photobiol., B",
+}
+
+@journal{j_photochem_photobiol_c,
+	name="Journal of Photochemistry and Photobiology, C: Photochemistry Reviews",
+	shortname="J. Photochem. Photobiol., C",
+}
+
+@journal{j_photopolym_sci_technol,
+	name="Journal of Photopolymer Science and Technology",
+	shortname="J. Photopolym. Sci. Technol.",
+}
+
+@journal{j_phys_chem_ref_data,
+	name="Journal of Physical and Chemical Reference Data",
+	shortname="J. Phys. Chem. Ref. Data",
+}
+
+@journal{j_phys_chem_a,
+	name="Journal of Physical Chemistry A",
+	shortname="J. Phys. Chem. A",
+}
+
+@journal{j_phys_chem_b,
+	name="Journal of Physical Chemistry B",
+	shortname="J. Phys. Chem. B",
+}
+
+@journal{j_phys_org_chem,
+	name="Journal of Physical Organic Chemistry",
+	shortname="J. Phys. Org. Chem.",
+}
+
+@journal{j_phys_chem_solids,
+	name="Journal of Physics and Chemistry of Solids",
+	shortname="J. Phys. Chem. Solids",
+}
+
+@journal{j_phys_b_at_mol_opt_phys,
+	name="Journal of Physics B: Atomic, Molecular and Optical Physics",
+	shortname="J. Phys. B: At., Mol. Opt. Phys.",
+}
+
+@journal{j_phys_d_appl_phys,
+	name="Journal of Physics D: Applied Physics",
+	shortname="J. Phys. D: Appl. Phys.",
+}
+
+@journal{j_phys_g_nucl_part_phys,
+	name="Journal of Physics G: Nuclear and Particle Physics",
+	shortname="J. Phys. G: Nucl. Part. Phys.",
+}
+
+@journal{j_phys_condens_matter,
+	name="Journal of Physics: Condensed Matter",
+	shortname="J. Phys.: Condens. Matter",
+}
+
+@journal{j_physiol_oxford_u_k,
+	name="Journal of Physiology (Oxford, United Kingdom)",
+	shortname="J. Physiol. (Oxford, U. K.)",
+}
+
+@journal{j_pineal_res,
+	name="Journal of Pineal Research",
+	shortname="J. Pineal Res.",
+}
+
+@journal{j_planar_chromatogrmod_tlc,
+	name="Journal of Planar Chromatography--Modern TLC",
+	shortname="J. Planar Chromatogr.--Mod. TLC",
+}
+
+@journal{j_plant_growth_regul,
+	name="Journal of Plant Growth Regulation",
+	shortname="J. Plant Growth Regul.",
+}
+
+@journal{j_plant_nutr,
+	name="Journal of Plant Nutrition",
+	shortname="J. Plant Nutr.",
+}
+
+@journal{j_plant_nutr_soil_sci,
+	name="Journal of Plant Nutrition and Soil Science",
+	shortname="J. Plant Nutr. Soil Sci.",
+}
+
+@journal{j_plant_physiol,
+	name="Journal of Plant Physiology",
+	shortname="J. Plant Physiol.",
+}
+
+@journal{j_polym_mater,
+	name="Journal of Polymer Materials",
+	shortname="J. Polym. Mater.",
+}
+
+@journal{j_polym_res,
+	name="Journal of Polymer Research",
+	shortname="J. Polym. Res.",
+}
+
+@journal{j_polym_sci_part_a_polym_chem,
+	name="Journal of Polymer Science, Part A: Polymer Chemistry",
+	shortname="J. Polym. Sci., Part A: Polym. Chem.",
+}
+
+@journal{j_polym_sci_part_b_polym_phys,
+	name="Journal of Polymer Science, Part B: Polymer Physics",
+	shortname="J. Polym. Sci., Part B: Polym. Phys.",
+}
+
+@journal{j_polym_environ,
+	name="Journal of Polymers and the Environment",
+	shortname="J. Polym. Environ.",
+}
+
+@journal{j_porphyrins_phthalocyanines,
+	name="Journal of Porphyrins and Phthalocyanines",
+	shortname="J. Porphyrins Phthalocyanines",
+}
+
+@journal{j_power_sources,
+	name="Journal of Power Sources",
+	shortname="J. Power Sources",
+}
+
+@journal{j_process_control,
+	name="Journal of Process Control",
+	shortname="J. Process Control",
+}
+
+@journal{j_proteome_res,
+	name="Journal of Proteome Research",
+	shortname="J. Proteome Res.",
+}
+
+@journal{j_pulp_pap_sci,
+	name="Journal of Pulp and Paper Science",
+	shortname="J. Pulp Pap. Sci.",
+}
+
+@journal{j_quant_spectrosc_radiat_transfer,
+	name="Journal of Quantitative Spectroscopy & Radiative Transfer",
+	shortname="J. Quant. Spectrosc. Radiat. Transfer",
+}
+
+@journal{j_radioanal_nucl_chem,
+	name="Journal of Radioanalytical and Nuclear Chemistry",
+	shortname="J. Radioanal. Nucl. Chem.",
+}
+
+@journal{j_raman_spectrosc,
+	name="Journal of Raman Spectroscopy",
+	shortname="J. Raman Spectrosc.",
+}
+
+@journal{j_recept_signal_transduction,
+	name="Journal of Receptors and Signal Transduction",
+	shortname="J. Recept. Signal Transduction",
+}
+
+@journal{j_reinf_plast_compos,
+	name="Journal of Reinforced Plastics and Composites",
+	shortname="J. Reinf. Plast. Compos.",
+}
+
+@journal{j_rheol_n_y_ny_u_s,
+	name="Journal of Rheology (New York, NY, United States)",
+	shortname="J. Rheol. (N. Y., NY, U. S.)",
+}
+
+@journal{j_sep_sci,
+	name="Journal of Separation Science",
+	shortname="J. Sep. Sci.",
+}
+
+@journal{j_solgel_sci_technol,
+	name="Journal of Sol-Gel Science and Technology",
+	shortname="J. Sol-Gel Sci. Technol.",
+}
+
+@journal{j_solid_state_chem,
+	name="Journal of Solid State Chemistry",
+	shortname="J. Solid State Chem.",
+}
+
+@journal{j_solid_state_electrochem,
+	name="Journal of Solid State Electrochemistry",
+	shortname="J. Solid State Electrochem.",
+}
+
+@journal{j_solution_chem,
+	name="Journal of Solution Chemistry",
+	shortname="J. Solution Chem.",
+}
+
+@journal{j_steroid_biochem_mol_biol,
+	name="Journal of Steroid Biochemistry and Molecular Biology",
+	shortname="J. Steroid Biochem. Mol. Biol.",
+}
+
+@journal{j_struct_funct_genomics,
+	name="Journal of Structural and Functional Genomics",
+	shortname="J. Struct. Funct. Genomics",
+}
+
+@journal{j_struct_chem,
+	name="Journal of Structural Chemistry",
+	shortname="J. Struct. Chem.",
+}
+
+@journal{j_sulfur_chem,
+	name="Journal of Sulfur Chemistry",
+	shortname="J. Sulfur Chem.",
+}
+
+@journal{j_supercond,
+	name="Journal of Superconductivity",
+	shortname="J. Supercond.",
+}
+
+@journal{j_supercrit_fluids,
+	name="Journal of Supercritical Fluids",
+	shortname="J. Supercrit. Fluids",
+}
+
+@journal{j_surfactants_deterg,
+	name="Journal of Surfactants and Detergents",
+	shortname="J. Surfactants Deterg.",
+}
+
+@journal{j_am_ceram_soc,
+	name="Journal of the American Ceramic Society",
+	shortname="J. Am. Ceram. Soc.",
+}
+
+@journal{j_am_chem_soc,
+	name="Journal of the American Chemical Society",
+	shortname="J. Am. Chem. Soc.",
+}
+
+@journal{j_am_oil_chem_soc,
+	name="Journal of the American Oil Chemists' Society",
+	shortname="J. Am. Oil Chem. Soc.",
+}
+
+@journal{j_am_soc_mass_spectrom,
+	name="Journal of the American Society for Mass Spectrometry",
+	shortname="J. Am. Soc. Mass Spectrom.",
+}
+
+@journal{j_am_soc_brew_chem,
+	name="Journal of the American Society of Brewing Chemists",
+	shortname="J. Am. Soc. Brew. Chem.",
+}
+
+@journal{j_argent_chem_soc,
+	name="Journal of the Argentine Chemical Society",
+	shortname="J. Argent. Chem. Soc.",
+}
+
+@journal{j_braz_chem_soc,
+	name="Journal of the Brazilian Chemical Society",
+	shortname="J. Braz. Chem. Soc.",
+}
+
+@journal{j_ceram_soc_jpn,
+	name="Journal of the Ceramic Society of Japan",
+	shortname="J. Ceram. Soc. Jpn.",
+}
+
+@journal{j_chem_soc_pak,
+	name="Journal of the Chemical Society of Pakistan",
+	shortname="J. Chem. Soc. Pak.",
+}
+
+@journal{j_chil_chem_soc,
+	name="Journal of the Chilean Chemical Society",
+	shortname="J. Chil. Chem. Soc.",
+}
+
+@journal{j_chin_chem_soc_taipei_taiwan,
+	name="Journal of the Chinese Chemical Society (Taipei, Taiwan)",
+	shortname="J. Chin. Chem. Soc. (Taipei, Taiwan)",
+}
+
+@journal{j_chin_inst_chem_eng,
+	name="Journal of the Chinese Institute of Chemical Engineers",
+	shortname="J. Chin. Inst. Chem. Eng.",
+}
+
+@journal{j_electrochem_soc,
+	name="Journal of the Electrochemical Society",
+	shortname="J. Electrochem. Soc.",
+}
+
+@journal{j_electrochem_soc_india,
+	name="Journal of the Electrochemical Society of India",
+	shortname="J. Electrochem. Soc. India",
+}
+
+@journal{j_energy_inst,
+	name="Journal of the Energy Institute",
+	shortname="J. Energy Inst.",
+}
+
+@journal{j_eur_ceram_soc,
+	name="Journal of the European Ceramic Society",
+	shortname="J. Eur. Ceram. Soc.",
+}
+
+@journal{j_indian_chem_soc,
+	name="Journal of the Indian Chemical Society",
+	shortname="J. Indian Chem. Soc.",
+}
+
+@journal{j_inst_chem_india,
+	name="Journal of the Institution of Chemists (India)",
+	shortname="J. Inst. Chem. (India)",
+}
+
+@journal{j_jpn_pet_inst,
+	name="Journal of the Japan Petroleum Institute",
+	shortname="J. Jpn. Pet. Inst.",
+}
+
+@journal{j_korean_ceram_soc,
+	name="Journal of the Korean Ceramic Society",
+	shortname="J. Korean Ceram. Soc.",
+}
+
+@journal{j_korean_chem_soc,
+	name="Journal of the Korean Chemical Society",
+	shortname="J. Korean Chem. Soc.",
+}
+
+@journal{j_opt_soc_am_b,
+	name="Journal of the Optical Society of America B: Optical Physics",
+	shortname="J. Opt. Soc. Am. B",
+}
+
+@journal{j_phys_soc_jpn,
+	name="Journal of the Physical Society of Japan",
+	shortname="J. Phys. Soc. Jpn.",
+}
+
+@journal{j_sci_food_agric,
+	name="Journal of the Science of Food and Agriculture",
+	shortname="J. Sci. Food Agric.",
+}
+
+@journal{j_serb_chem_soc,
+	name="Journal of the Serbian Chemical Society",
+	shortname="J. Serb. Chem. Soc.",
+}
+
+@journal{j_soc_inorg_mater_jpn,
+	name="Journal of the Society of Inorganic Materials, Japan",
+	shortname="J. Soc. Inorg. Mater., Jpn.",
+}
+
+@journal{j_theor_comput_chem,
+	name="Journal of Theoretical & Computational Chemistry",
+	shortname="J. Theor. Comput. Chem.",
+}
+
+@journal{j_therm_anal_calorim,
+	name="Journal of Thermal Analysis and Calorimetry",
+	shortname="J. Therm. Anal. Calorim.",
+}
+
+@journal{j_thermophys_heat_transfer,
+	name="Journal of Thermophysics and Heat Transfer",
+	shortname="J. Thermophys. Heat Transfer",
+}
+
+@journal{j_toxicol_environ_health_part_a,
+	name="Journal of Toxicology and Environmental Health, Part A",
+	shortname="J. Toxicol. Environ. Health, Part A",
+}
+
+@journal{j_toxicol_environ_health_part_b,
+	name="Journal of Toxicology and Environmental Health, Part B: Critical Reviews",
+	shortname="J. Toxicol. Environ. Health, Part B",
+}
+
+@journal{j_vac_sci_technol_a,
+	name="Journal of Vacuum Science & Technology, A: Vacuum, Surfaces, and Films",
+	shortname="J. Vac. Sci. Technol., A",
+}
+
+@journal{j_vac_sci_technol_b_microelectron_nanometer,
+	name="Struct.--Process., Meas., Phenom. Journal of Vacuum Science & Technology, B: Microelectronics and Nanometer Structures--Processing, Measurement, and Phenomena",
+	shortname="J. Vac. Sci. Technol., B: Microelectron. Nanometer",
+}
+
+@journal{j_vinyl_addit_technol,
+	name="Journal of Vinyl & Additive Technology",
+	shortname="J. Vinyl Addit. Technol.",
+}
+
+@journal{j_virol_methods,
+	name="Journal of Virological Methods",
+	shortname="J. Virol. Methods",
+}
+
+@journal{j_virol,
+	name="Journal of Virology",
+	shortname="J. Virol.",
+}
+
+@journal{j_volcanol_geotherm_res,
+	name="Journal of Volcanology and Geothermal Research",
+	shortname="J. Volcanol. Geotherm. Res.",
+}
+
+@journal{j_wood_chem_technol,
+	name="Journal of Wood Chemistry and Technology",
+	shortname="J. Wood Chem. Technol.",
+}
+
+@journal{kagaku_kogaku,
+	name="Kagaku Kogaku",
+}
+
+@journal{kagaku_kogaku_ronbunshu,
+	name="Kagaku Kogaku Ronbunshu",
+}
+
+@journal{kem_ind,
+	name="Kemija u Industriji",
+	shortname="Kem. Ind.",
+}
+
+@journal{kgk_kautsch_gummi_kunstst,
+	name="KGK, Kautschuk Gummi Kunststoffe",
+	shortname="KGK, Kautsch. Gummi Kunstst.",
+}
+
+@journal{khim_promst_st_petersburg_russ_fed,
+	name="Khimicheskaya Promyshlennost (St. Petersburg, Russian Federation)",
+	shortname="Khim. Prom-st. (St. Petersburg, Russ. Fed.)",
+}
+
+@journal{khim_promst_segodnya,
+	name="Khimicheskaya Promyshlennost Segodnya",
+	shortname="Khim. Prom-st. Segodnya",
+}
+
+@journal{khim_tekhnol_vody,
+	name="Khimiya i Tekhnologiya Vody",
+	shortname="Khim. Tekhnol. Vody",
+}
+
+@journal{khim_tverd_topl_moscow_russ_fed,
+	name="Khimiya Tverdogo Topliva (Moscow, Russian Federation)",
+	shortname="Khim. Tverd. Topl. (Moscow, Russ. Fed.)",
+}
+
+@journal{khim_interesakh_ustoich_razvit,
+	name="Khimiya v Interesakh Ustoichivogo Razvitiya",
+	shortname="Khim. Interesakh Ustoich. Razvit.",
+}
+
+@journal{kinet_catal,
+	name="Kinetics and Catalysis",
+	shortname="Kinet. Catal.",
+}
+
+@journal{kobunshi_ronbunshu,
+	name="Kobunshi Ronbunshu",
+}
+
+@journal{koks_khim,
+	name="Koks i Khimiya",
+	shortname="Koks Khim.",
+}
+
+@journal{korean_j_chem_eng,
+	name="Korean Journal of Chemical Engineering",
+	shortname="Korean J. Chem. Eng.",
+}
+
+@journal{lab_chip,
+	name="Lab on a Chip",
+	shortname="Lab Chip",
+}
+
+@journal{lab_anim,
+	name="Laboratory Animals",
+	shortname="Lab. Anim.",
+}
+
+@journal{langmuir,
+	name="Langmuir",
+}
+
+@journal{laser_part_beams,
+	name="Laser and Particle Beams",
+	shortname="Laser Part. Beams",
+}
+
+@journal{latv_kim_z,
+	name="Latvijas Kimijas Zurnals",
+	shortname="Latv. Kim. Z.",
+}
+
+@journal{lcgc_north_am,
+	name="LCGC North America",
+	shortname="LCGC North Am.",
+}
+
+@journal{lett_drug_des_discovery,
+	name="Letters in Drug Design & Discovery",
+	shortname="Lett. Drug Des. Discovery",
+}
+
+@journal{lett_org_chem,
+	name="Letters in Organic Chemistry",
+	shortname="Lett. Org. Chem.",
+}
+
+@journal{life_sci,
+	name="Life Sciences",
+	shortname="Life Sci.",
+}
+
+@journal{linchan_huaxue_yu_gongye,
+	name="Linchan Huaxue Yu Gongye",
+}
+
+@journal{lipids,
+	name="Lipids",
+}
+
+@journal{liq_cryst,
+	name="Liquid Crystals",
+	shortname="Liq. Cryst.",
+}
+
+@journal{lithos,
+	name="Lithos",
+}
+
+@journal{lwtfood_sci_technol,
+	name="LWT--Food Science and Technology",
+	shortname="LWT--Food Sci. Technol.",
+}
+
+@journal{macromol_biosci,
+	name="Macromolecular Bioscience",
+	shortname="Macromol. Biosci.",
+}
+
+@journal{macromol_chem_phys,
+	name="Macromolecular Chemistry and Physics",
+	shortname="Macromol. Chem. Phys.",
+}
+
+@journal{macromol_mater_eng,
+	name="Macromolecular Materials and Engineering",
+	shortname="Macromol. Mater. Eng.",
+}
+
+@journal{macromol_rapid_commun,
+	name="Macromolecular Rapid Communications",
+	shortname="Macromol. Rapid Commun.",
+}
+
+@journal{macromol_res,
+	name="Macromolecular Research",
+	shortname="Macromol. Res.",
+}
+
+@journal{macromol_symp,
+	name="Macromolecular Symposia",
+	shortname="Macromol. Symp.",
+}
+
+@journal{macromol_theory_simul,
+	name="Macromolecular Theory and Simulations",
+	shortname="Macromol. Theory Simul.",
+}
+
+@journal{macromolecules,
+	name="Macromolecules",
+}
+
+@journal{magnesium_res,
+	name="Magnesium Research",
+	shortname="Magnesium Res.",
+}
+
+@journal{magn_reson_chem,
+	name="Magnetic Resonance in Chemistry",
+	shortname="Magn. Reson. Chem.",
+}
+
+@journal{magy_kem_foly_kem_kozl,
+	name="Magyar Kemiai Folyoirat, Kemiai Kozlemenyek",
+	shortname="Magy. Kem. Foly., Kem. Kozl.",
+}
+
+@journal{main_group_met_chem,
+	name="Main Group Metal Chemistry",
+	shortname="Main Group Met. Chem.",
+}
+
+@journal{mar_biotechnol,
+	name="Marine Biotechnology",
+	shortname="Mar. Biotechnol.",
+}
+
+@journal{mar_chem,
+	name="Marine Chemistry",
+	shortname="Mar. Chem.",
+}
+
+@journal{mar_environ_res,
+	name="Marine Environmental Research",
+	shortname="Mar. Environ. Res.",
+}
+
+@journal{mar_pollut_bull,
+	name="Marine Pollution Bulletin",
+	shortname="Mar. Pollut. Bull.",
+}
+
+@journal{mater_corros,
+	name="Materials and Corrosion",
+	shortname="Mater. Corros.",
+}
+
+@journal{mater_manuf_processes,
+	name="Materials and Manufacturing Processes",
+	shortname="Mater. Manuf. Processes",
+}
+
+@journal{mater_charact,
+	name="Materials Characterization",
+	shortname="Mater. Charact.",
+}
+
+@journal{mater_chem_phys,
+	name="Materials Chemistry and Physics",
+	shortname="Mater. Chem. Phys.",
+}
+
+@journal{mater_forum,
+	name="Materials Forum",
+	shortname="Mater. Forum",
+}
+
+@journal{mater_lett,
+	name="Materials Letters",
+	shortname="Mater. Lett.",
+}
+
+@journal{mater_res_bull,
+	name="Materials Research Bulletin",
+	shortname="Mater. Res. Bull.",
+}
+
+@journal{mater_res_innovations,
+	name="Materials Research Innovations",
+	shortname="Mater. Res. Innovations",
+}
+
+@journal{mater_res_soc_symp_proc,
+	name="Materials Research Society Symposium Proceedings",
+	shortname="Mater. Res. Soc. Symp. Proc.",
+}
+
+@journal{mater_sci_eng_a,
+	name="Materials Science & Engineering, A: Structural Materials: Properties, Microstructure and Processing",
+	shortname="Mater. Sci. Eng., A",
+}
+
+@journal{mater_sci_eng_b,
+	name="Materials Science & Engineering, B: Solid-State Materials for Advanced Technology",
+	shortname="Mater. Sci. Eng., B",
+}
+
+@journal{mater_sci_eng_c,
+	name="Materials Science & Engineering, C: Biomimetic and Supramolecular Systems",
+	shortname="Mater. Sci. Eng., C",
+}
+
+@journal{mater_sci_technol,
+	name="Materials Science and Technology",
+	shortname="Mater. Sci. Technol.",
+}
+
+@journal{mater_sci_semicond_process,
+	name="Materials Science in Semiconductor Processing",
+	shortname="Mater. Sci. Semicond. Process.",
+}
+
+@journal{mater_trans,
+	name="Materials Transactions",
+	shortname="Mater. Trans.",
+}
+
+@journal{matrix_biol,
+	name="Matrix Biology",
+	shortname="Matrix Biol.",
+}
+
+@journal{meas_sci_technol,
+	name="Measurement Science and Technology",
+	shortname="Meas. Sci. Technol.",
+}
+
+@journal{mech_dev,
+	name="Mechanisms of Development",
+	shortname="Mech. Dev.",
+}
+
+@journal{med_chem,
+	name="Medicinal Chemistry",
+	shortname="Med. Chem.",
+}
+
+@journal{med_chem_res,
+	name="Medicinal Chemistry Research",
+	shortname="Med. Chem. Res.",
+}
+
+@journal{mendeleev_commun,
+	name="Mendeleev Communications",
+	shortname="Mendeleev Commun.",
+}
+
+@journal{metab_eng,
+	name="Metabolic Engineering",
+	shortname="Metab. Eng.",
+}
+
+@journal{metab_clin_exp,
+	name="Metabolism, Clinical and Experimental",
+	shortname="Metab., Clin. Exp.",
+}
+
+@journal{met_sci_heat_treat,
+	name="Metal Science and Heat Treatment",
+	shortname="Met. Sci. Heat Treat.",
+}
+
+@journal{metallofiz_noveishie_tekhnol,
+	name="Metallofizika i Noveishie Tekhnologii",
+	shortname="Metallofiz. Noveishie Tekhnol.",
+}
+
+@journal{metall_mater_trans_a,
+	name="Metallurgical and Materials Transactions A: Physical Metallurgy and Materials Science",
+	shortname="Metall. Mater. Trans. A",
+}
+
+@journal{metall_mater_trans_b,
+	name="Metallurgical and Materials Transactions B: Process Metallurgy and Materials Processing Science",
+	shortname="Metall. Mater. Trans. B",
+}
+
+@journal{metally,
+	name="Metally",
+}
+
+@journal{meteorit_planet_sci,
+	name="Meteoritics & Planetary Science",
+	shortname="Meteorit. Planet. Sci.",
+}
+
+@journal{methods_san_diego_ca_u_s,
+	name="Methods (San Diego, CA, United States)",
+	shortname="Methods (San Diego, CA, U. S.)",
+}
+
+@journal{microbiology_n_y_ny_u_s,
+	name="Microbiology (New York, NY, United States)",
+	shortname="Microbiology (N. Y., NY, U. S.)",
+}
+
+@journal{microbiology_reading_u_k,
+	name="Microbiology (Reading, United Kingdom)",
+	shortname="Microbiology (Reading, U. K.)",
+}
+
+@journal{microbiol_immunol,
+	name="Microbiology and Immunology",
+	shortname="Microbiol. Immunol.",
+}
+
+@journal{microchem_j,
+	name="Microchemical Journal",
+	shortname="Microchem. J.",
+}
+
+@journal{microchim_acta,
+	name="Microchimica Acta",
+	shortname="Microchim. Acta",
+}
+
+@journal{microelectron_eng,
+	name="Microelectronic Engineering",
+	shortname="Microelectron. Eng.",
+}
+
+@journal{microporous_mesoporous_mater,
+	name="Microporous and Mesoporous Materials",
+	shortname="Microporous Mesoporous Mater.",
+}
+
+@journal{microsc_microanal,
+	name="Microscopy and Microanalysis",
+	shortname="Microsc. Microanal.",
+}
+
+@journal{milchwissenschaft,
+	name="Milchwissenschaft",
+}
+
+@journal{miner_deposita,
+	name="Mineralium Deposita",
+	shortname="Miner. Deposita",
+}
+
+@journal{mineral_mag,
+	name="Mineralogical Magazine",
+	shortname="Mineral. Mag.",
+}
+
+@journal{mineral_petrol,
+	name="Mineralogy and Petrology",
+	shortname="Mineral. Petrol.",
+}
+
+@journal{miner_metall_process,
+	name="Minerals & Metallurgical Processing",
+	shortname="Miner. Metall. Process.",
+}
+
+@journal{miner_eng,
+	name="Minerals Engineering",
+	shortname="Miner. Eng.",
+}
+
+@journal{minirev_med_chem,
+	name="Mini-Reviews in Medicinal Chemistry",
+	shortname="Mini-Rev. Med. Chem.",
+}
+
+@journal{minirev_org_chem,
+	name="Mini-Reviews in Organic Chemistry",
+	shortname="Mini-Rev. Org. Chem.",
+}
+
+@journal{mitochondrion,
+	name="Mitochondrion",
+}
+
+@journal{mod_phys_lett_b,
+	name="Modern Physics Letters B",
+	shortname="Mod. Phys. Lett. B",
+}
+
+@journal{mol_biochem_parasitol,
+	name="Molecular and Biochemical Parasitology",
+	shortname="Mol. Biochem. Parasitol.",
+}
+
+@journal{mol_cell_biochem,
+	name="Molecular and Cellular Biochemistry",
+	shortname="Mol. Cell. Biochem.",
+}
+
+@journal{mol_cell_biol,
+	name="Molecular and Cellular Biology",
+	shortname="Mol. Cell. Biol.",
+}
+
+@journal{mol_cell_endocrinol,
+	name="Molecular and Cellular Endocrinology",
+	shortname="Mol. Cell. Endocrinol.",
+}
+
+@journal{mol_cell_neurosci,
+	name="Molecular and Cellular Neuroscience",
+	shortname="Mol. Cell. Neurosci.",
+}
+
+@journal{mol_cell_probes,
+	name="Molecular and Cellular Probes",
+	shortname="Mol. Cell. Probes",
+}
+
+@journal{mol_cell_proteomics,
+	name="Molecular and Cellular Proteomics",
+	shortname="Mol. Cell. Proteomics",
+}
+
+@journal{mol_biol_n_y_ny_u_s_engl_ed,
+	name="Molecular Biology (New York, NY, United States, English Edition)",
+	shortname="Mol. Biol. (N. Y., NY, U. S., Engl. Ed.)",
+}
+
+@journal{mol_biol_evol,
+	name="Molecular Biology and Evolution",
+	shortname="Mol. Biol. Evol.",
+}
+
+@journal{mol_biol_cell,
+	name="Molecular Biology of the Cell",
+	shortname="Mol. Biol. Cell",
+}
+
+@journal{mol_biol_rep,
+	name="Molecular Biology Reports",
+	shortname="Mol. Biol. Rep.",
+}
+
+@journal{mol_biosyst,
+	name="Molecular BioSystems",
+	shortname="Mol. BioSyst.",
+}
+
+@journal{mol_biotechnol,
+	name="Molecular Biotechnology",
+	shortname="Mol. Biotechnol.",
+}
+
+@journal{mol_brain_res,
+	name="Molecular Brain Research",
+	shortname="Mol. Brain Res.",
+}
+
+@journal{mol_cancer_res,
+	name="Molecular Cancer Research",
+	shortname="Mol. Cancer Res.",
+}
+
+@journal{mol_cancer_ther,
+	name="Molecular Cancer Therapeutics",
+	shortname="Mol. Cancer Ther.",
+}
+
+@journal{mol_carcinog,
+	name="Molecular Carcinogenesis",
+	shortname="Mol. Carcinog.",
+}
+
+@journal{mol_cell,
+	name="Molecular Cell",
+	shortname="Mol. Cell",
+}
+
+@journal{mol_cryst_liq_cryst,
+	name="Molecular Crystals and Liquid Crystals",
+	shortname="Mol. Cryst. Liq. Cryst.",
+}
+
+@journal{mol_diversity,
+	name="Molecular Diversity",
+	shortname="Mol. Diversity",
+}
+
+@journal{mol_endocrinol,
+	name="Molecular Endocrinology",
+	shortname="Mol. Endocrinol.",
+}
+
+@journal{mol_genet_genomics,
+	name="Molecular Genetics and Genomics",
+	shortname="Mol. Genet. Genomics",
+}
+
+@journal{mol_genet_metab,
+	name="Molecular Genetics and Metabolism",
+	shortname="Mol. Genet. Metab.",
+}
+
+@journal{mol_immunol,
+	name="Molecular Immunology",
+	shortname="Mol. Immunol.",
+}
+
+@journal{mol_membr_biol,
+	name="Molecular Membrane Biology",
+	shortname="Mol. Membr. Biol.",
+}
+
+@journal{mol_microbiol,
+	name="Molecular Microbiology",
+	shortname="Mol. Microbiol.",
+}
+
+@journal{mol_neurobiol,
+	name="Molecular Neurobiology",
+	shortname="Mol. Neurobiol.",
+}
+
+@journal{mol_pharm,
+	name="Molecular Pharmaceutics",
+	shortname="Mol. Pharm.",
+}
+
+@journal{mol_pharmacol,
+	name="Molecular Pharmacology",
+	shortname="Mol. Pharmacol.",
+}
+
+@journal{mol_phys,
+	name="Molecular Physics",
+	shortname="Mol. Phys.",
+}
+
+@journal{mol_plantmicrobe_interact,
+	name="Molecular Plant-Microbe Interactions",
+	shortname="Mol. Plant-Microbe Interact.",
+}
+
+@journal{mol_reprod_dev,
+	name="Molecular Reproduction and Development",
+	shortname="Mol. Reprod. Dev.",
+}
+
+@journal{mol_simul,
+	name="Molecular Simulation",
+	shortname="Mol. Simul.",
+}
+
+@journal{mol_ther,
+	name="Molecular Therapy",
+	shortname="Mol. Ther.",
+}
+
+@journal{molecules,
+	name="Molecules",
+}
+
+@journal{mol_cells,
+	name="Molecules and Cells",
+	shortname="Mol. Cells",
+}
+
+@journal{monatsh_chem,
+	name="Monatshefte fuer Chemie",
+	shortname="Monatsh. Chem.",
+}
+
+@journal{mutagenesis,
+	name="Mutagenesis",
+}
+
+@journal{mutat_res,
+	name="Mutation Research",
+	shortname="Mutat. Res.",
+}
+
+@journal{nano_lett,
+	name="Nano Letters",
+	shortname="Nano Lett.",
+}
+
+@journal{nanobiotechnology,
+	name="NanoBiotechnology",
+}
+
+@journal{nanomedicine,
+	name="Nanomedicine",
+}
+
+@journal{nat_prod_rep,
+	name="Natural Product Reports",
+	shortname="Nat. Prod. Rep.",
+}
+
+@journal{nat_prod_res,
+	name="Natural Product Research",
+	shortname="Nat. Prod. Res.",
+}
+
+@journal{nat_prod_sci,
+	name="Natural Product Sciences",
+	shortname="Nat. Prod. Sci.",
+}
+
+@journal{nature_london_u_k,
+	name="Nature (London, United Kingdom)",
+	shortname="Nature (London, U. K.)",
+}
+
+@journal{nat_biotechnol,
+	name="Nature Biotechnology",
+	shortname="Nat. Biotechnol.",
+}
+
+@journal{nat_cell_biol,
+	name="Nature Cell Biology",
+	shortname="Nat. Cell Biol.",
+}
+
+@journal{nat_chem_biol,
+	name="Nature Chemical Biology",
+	shortname="Nat. Chem. Biol.",
+}
+
+@journal{nat_genet,
+	name="Nature Genetics",
+	shortname="Nat. Genet.",
+}
+
+@journal{nat_immunol,
+	name="Nature Immunology",
+	shortname="Nat. Immunol.",
+}
+
+@journal{nat_mater,
+	name="Nature Materials",
+	shortname="Nat. Mater.",
+}
+
+@journal{nat_med_n_y_ny_u_s,
+	name="Nature Medicine (New York, NY, United States)",
+	shortname="Nat. Med. (N. Y., NY, U. S.)",
+}
+
+@journal{nat_methods,
+	name="Nature Methods",
+	shortname="Nat. Methods",
+}
+
+@journal{nat_neurosci,
+	name="Nature Neuroscience",
+	shortname="Nat. Neurosci.",
+}
+
+@journal{nat_rev_cancer,
+	name="Nature Reviews Cancer",
+	shortname="Nat. Rev. Cancer",
+}
+
+@journal{nat_rev_drug_discovery,
+	name="Nature Reviews Drug Discovery",
+	shortname="Nat. Rev. Drug Discovery",
+}
+
+@journal{nat_rev_genet,
+	name="Nature Reviews Genetics",
+	shortname="Nat. Rev. Genet.",
+}
+
+@journal{nat_rev_immunol,
+	name="Nature Reviews Immunology",
+	shortname="Nat. Rev. Immunol.",
+}
+
+@journal{nat_rev_microbiol,
+	name="Nature Reviews Microbiology",
+	shortname="Nat. Rev. Microbiol.",
+}
+
+@journal{nat_rev_mol_cell_biol,
+	name="Nature Reviews Molecular Cell Biology",
+	shortname="Nat. Rev. Mol. Cell Biol.",
+}
+
+@journal{nat_rev_neurosci,
+	name="Nature Reviews Neuroscience",
+	shortname="Nat. Rev. Neurosci.",
+}
+
+@journal{nat_struct_mol_biol,
+	name="Nature Structural & Molecular Biology",
+	shortname="Nat. Struct. Mol. Biol.",
+}
+
+@journal{naturwissenschaften,
+	name="Naturwissenschaften",
+}
+
+@journal{naunynschmiedebergs_arch_pharmacol,
+	name="Naunyn-Schmiedeberg's Archives of Pharmacology",
+	shortname="Naunyn-Schmiedeberg's Arch. Pharmacol.",
+}
+
+@journal{neftekhimiya,
+	name="Neftekhimiya",
+}
+
+@journal{neues_jahrb_mineral_abh,
+	name="Neues Jahrbuch fuer Mineralogie, Abhandlungen",
+	shortname="Neues Jahrb. Mineral., Abh.",
+}
+
+@journal{neurochem_res,
+	name="Neurochemical Research",
+	shortname="Neurochem. Res.",
+}
+
+@journal{neurochem_int,
+	name="Neurochemistry International",
+	shortname="Neurochem. Int.",
+}
+
+@journal{neuroendocrinology,
+	name="Neuroendocrinology",
+}
+
+@journal{neuroimmunomodulation,
+	name="NeuroImmunoModulation",
+}
+
+@journal{neuromol_med,
+	name="NeuroMolecular Medicine",
+	shortname="NeuroMol. Med.",
+}
+
+@journal{neuron,
+	name="Neuron",
+}
+
+@journal{neuropeptides_amsterdam_neth,
+	name="Neuropeptides (Amsterdam, Netherlands)",
+	shortname="Neuropeptides (Amsterdam, Neth.)",
+}
+
+@journal{neuropharmacology,
+	name="Neuropharmacology",
+}
+
+@journal{neuroscience_oxford_u_k,
+	name="Neuroscience (Oxford, United Kingdom)",
+	shortname="Neuroscience (Oxford, U. K.)",
+}
+
+@journal{neurosci_lett,
+	name="Neuroscience Letters",
+	shortname="Neurosci. Lett.",
+}
+
+@journal{neurosignals,
+	name="Neurosignals",
+}
+
+@journal{neurotoxicol_teratol,
+	name="Neurotoxicology and Teratology",
+	shortname="Neurotoxicol. Teratol.",
+}
+
+@journal{new_diamond_front_carbon_technol,
+	name="New Diamond and Frontier Carbon Technology",
+	shortname="New Diamond Front. Carbon Technol.",
+}
+
+@journal{n_engl_j_med,
+	name="New England Journal of Medicine",
+	shortname="N. Engl. J. Med.",
+}
+
+@journal{new_j_chem,
+	name="New Journal of Chemistry",
+	shortname="New J. Chem.",
+}
+
+@journal{nihon_reoroji_gakkaishi,
+	name="Nihon Reoroji Gakkaishi",
+}
+
+@journal{nippon_kinzoku_gakkaishi,
+	name="Nippon Kinzoku Gakkaishi",
+}
+
+@journal{nitric_oxide,
+	name="Nitric Oxide",
+}
+
+@journal{nord_pulp_pap_res_j,
+	name="Nordic Pulp & Paper Research Journal",
+	shortname="Nord. Pulp Pap. Res. J.",
+}
+
+@journal{nucl_eng_des,
+	name="Nuclear Engineering and Design",
+	shortname="Nucl. Eng. Des.",
+}
+
+@journal{nucl_fusion,
+	name="Nuclear Fusion",
+	shortname="Nucl. Fusion",
+}
+
+@journal{nucl_instrum_methods_phys_res_sect_a,
+	name="Nuclear Instruments & Methods in Physics Research, Section A: Accelerators, Spectrometers, Detectors, and Associated Equipment",
+	shortname="Nucl. Instrum. Methods Phys. Res., Sect. A",
+}
+
+@journal{nucl_instrum_methods_phys_res_sect_b,
+	name="Nuclear Instruments & Methods in Physics Research, Section B: Beam Interactions with Materials and Atoms",
+	shortname="Nucl. Instrum. Methods Phys. Res., Sect. B",
+}
+
+@journal{nucl_med_biol,
+	name="Nuclear Medicine and Biology",
+	shortname="Nucl. Med. Biol.",
+}
+
+@journal{nucl_phys_a,
+	name="Nuclear Physics A",
+	shortname="Nucl. Phys. A",
+}
+
+@journal{nucl_phys_b,
+	name="Nuclear Physics B",
+	shortname="Nucl. Phys. B",
+}
+
+@journal{nucl_phys_b_proc_suppl,
+	name="Nuclear Physics B, Proceedings Supplements",
+	shortname="Nucl. Phys. B, Proc. Suppl.",
+}
+
+@journal{nucl_sci_eng,
+	name="Nuclear Science and Engineering",
+	shortname="Nucl. Sci. Eng.",
+}
+
+@journal{nucl_technol,
+	name="Nuclear Technology",
+	shortname="Nucl. Technol.",
+}
+
+@journal{nucleic_acids_res,
+	name="Nucleic Acids Research",
+	shortname="Nucleic Acids Res.",
+}
+
+@journal{nucleic_acids_res_suppl,
+	name="Nucleic Acids Research Supplement",
+	shortname="Nucleic Acids Res. Suppl.",
+}
+
+@journal{nucleosides_nucleotides_nucleic_acids,
+	name="Nucleosides, Nucleotides & Nucleic Acids",
+	shortname="Nucleosides, Nucleotides Nucleic Acids",
+}
+
+@journal{nukleonika,
+	name="Nukleonika",
+}
+
+@journal{nutr_res_n_y_ny_u_s,
+	name="Nutrition Research (New York, NY, United States)",
+	shortname="Nutr. Res. (N. Y., NY, U. S.)",
+}
+
+@journal{ozb_kim_j,
+	name="O'zbekiston Kimyo Jurnali",
+	shortname="O'zb. Kim. J.",
+}
+
+@journal{oil_gas_hamburg_ger,
+	name="Oil, Gas (Hamburg, Germany)",
+	shortname="Oil, Gas (Hamburg, Ger.)",
+}
+
+@journal{oligonucleotides,
+	name="Oligonucleotides",
+}
+
+@journal{omics,
+	name="OMICS",
+}
+
+@journal{oncogene,
+	name="Oncogene",
+}
+
+@journal{opt_spectrosc,
+	name="Optics and Spectroscopy",
+	shortname="Opt. Spectrosc.",
+}
+
+@journal{opt_commun,
+	name="Optics Communications",
+	shortname="Opt. Commun.",
+}
+
+@journal{org_biomol_chem,
+	name="Organic & Biomolecular Chemistry",
+	shortname="Org. Biomol. Chem.",
+}
+
+@journal{org_geochem,
+	name="Organic Geochemistry",
+	shortname="Org. Geochem.",
+}
+
+@journal{org_lett,
+	name="Organic Letters",
+	shortname="Org. Lett.",
+}
+
+@journal{org_prep_proced_int,
+	name="Organic Preparations and Procedures International",
+	shortname="Org. Prep. Proced. Int.",
+}
+
+@journal{org_process_res_dev,
+	name="Organic Process Research & Development",
+	shortname="Org. Process Res. Dev.",
+}
+
+@journal{org_synth,
+	name="Organic Syntheses",
+	shortname="Org. Synth.",
+}
+
+@journal{organometallics,
+	name="Organometallics",
+}
+
+@journal{orient_j_chem,
+	name="Oriental Journal of Chemistry",
+	shortname="Orient. J. Chem.",
+}
+
+@journal{oxid_commun,
+	name="Oxidation Communications",
+	shortname="Oxid. Commun.",
+}
+
+@journal{oxid_met,
+	name="Oxidation of Metals",
+	shortname="Oxid. Met.",
+}
+
+@journal{oyo_yakuri,
+	name="Oyo Yakuri",
+}
+
+@journal{ozone_sci_eng,
+	name="Ozone: Science & Engineering",
+	shortname="Ozone: Sci. Eng.",
+}
+
+@journal{part_sci_technol,
+	name="Particulate Science and Technology",
+	shortname="Part. Sci. Technol.",
+}
+
+@journal{peptides_n_y_ny_u_s,
+	name="Peptides (New York, NY, United States)",
+	shortname="Peptides (N. Y., NY, U. S.)",
+}
+
+@journal{pest_manage_sci,
+	name="Pest Management Science",
+	shortname="Pest Manage. Sci.",
+}
+
+@journal{pestic_biochem_physiol,
+	name="Pesticide Biochemistry and Physiology",
+	shortname="Pestic. Biochem. Physiol.",
+}
+
+@journal{pet_sci_technol,
+	name="Petroleum Science and Technology",
+	shortname="Pet. Sci. Technol.",
+}
+
+@journal{pfluegers_arch,
+	name="Pfluegers Archiv",
+	shortname="Pfluegers Arch.",
+}
+
+@journal{pharm_chem_j,
+	name="Pharmaceutical Chemistry Journal",
+	shortname="Pharm. Chem. J.",
+}
+
+@journal{pharm_dev_technol,
+	name="Pharmaceutical Development and Technology",
+	shortname="Pharm. Dev. Technol.",
+}
+
+@journal{pharm_res,
+	name="Pharmaceutical Research",
+	shortname="Pharm. Res.",
+}
+
+@journal{pharmacogenet_genomics,
+	name="Pharmacogenetics and Genomics",
+	shortname="Pharmacogenet. Genomics",
+}
+
+@journal{pharmacogenomics_j,
+	name="Pharmacogenomics Journal",
+	shortname="Pharmacogenomics J.",
+}
+
+@journal{pharmacology,
+	name="Pharmacology",
+}
+
+@journal{pharmacol_ther,
+	name="Pharmacology & Therapeutics",
+	shortname="Pharmacol. Ther.",
+}
+
+@journal{pharmacol_biochem_behav,
+	name="Pharmacology, Biochemistry and Behavior",
+	shortname="Pharmacol., Biochem. Behav.",
+}
+
+@journal{pharmazie,
+	name="Pharmazie",
+}
+
+@journal{phase_transitions,
+	name="Phase Transitions",
+}
+
+@journal{philos_mag,
+	name="Philosophical Magazine",
+	shortname="Philos. Mag.",
+}
+
+@journal{philos_mag_lett,
+	name="Philosophical Magazine Letters",
+	shortname="Philos. Mag. Lett.",
+}
+
+@journal{phosphorus_sulfur_silicon_relat_elem,
+	name="Phosphorus, Sulfur and Silicon and the Related Elements",
+	shortname="Phosphorus, Sulfur Silicon Relat. Elem.",
+}
+
+@journal{photochem_photobiol_sci,
+	name="Photochemical & Photobiological Sciences",
+	shortname="Photochem. Photobiol. Sci.",
+}
+
+@journal{photochem_photobiol,
+	name="Photochemistry and Photobiology",
+	shortname="Photochem. Photobiol.",
+}
+
+@journal{photosynth_res,
+	name="Photosynthesis Research",
+	shortname="Photosynth. Res.",
+}
+
+@journal{physica_b_amsterdam_neth,
+	name="Physica B: Condensed Matter (Amsterdam, Netherlands)",
+	shortname="Physica B (Amsterdam, Neth.)",
+}
+
+@journal{physica_c_amsterdam_neth,
+	name="Physica C: Superconductivity and Its Applications (Amsterdam, Netherlands)",
+	shortname="Physica C (Amsterdam, Neth.)",
+}
+
+@journal{phys_scr,
+	name="Physica Scripta",
+	shortname="Phys. Scr.",
+}
+
+@journal{phys_scr_t,
+	name="Physica Scripta, T",
+	shortname="Phys. Scr., T",
+}
+
+@journal{phys_status_solidi_a,
+	name="Physica Status Solidi A: Applications and Materials Science",
+	shortname="Phys. Status Solidi A",
+}
+
+@journal{phys_status_solidi_b,
+	name="Physica Status Solidi B: Basic Solid State Physics",
+	shortname="Phys. Status Solidi B",
+}
+
+@journal{phys_status_solidi_c,
+	name="Physica Status Solidi C: Conferences and Critical Reviews",
+	shortname="Phys. Status Solidi C",
+}
+
+@journal{phys_chem_chem_phys,
+	name="Physical Chemistry Chemical Physics",
+	shortname="Phys. Chem. Chem. Phys.",
+}
+
+@journal{phys_rev_a_at_mol_opt_phys,
+	name="Physical Review A: Atomic, Molecular, and Optical Physics",
+	shortname="Phys. Rev. A: At., Mol., Opt. Phys.",
+}
+
+@journal{phys_rev_b_condens_matter_mater_phys,
+	name="Physical Review B: Condensed Matter and Materials Physics",
+	shortname="Phys. Rev. B: Condens. Matter Mater. Phys.",
+}
+
+@journal{phys_rev_c_nucl_phys,
+	name="Physical Review C: Nuclear Physics",
+	shortname="Phys. Rev. C: Nucl. Phys.",
+}
+
+@journal{phys_rev_d_part_fields,
+	name="Physical Review D: Particles and Fields",
+	shortname="Phys. Rev. D: Part. Fields",
+}
+
+@journal{phys_rev_e_stat_nonlinear_soft_matter_phys,
+	name="Physical Review E: Statistical, Nonlinear, and Soft Matter Physics",
+	shortname="Phys. Rev. E: Stat., Nonlinear, Soft Matter Phys.",
+}
+
+@journal{phys_rev_lett,
+	name="Physical Review Letters",
+	shortname="Phys. Rev. Lett.",
+}
+
+@journal{phys_chem_glasses,
+	name="Physics and Chemistry of Glasses",
+	shortname="Phys. Chem. Glasses",
+}
+
+@journal{phys_chem_liq,
+	name="Physics and Chemistry of Liquids",
+	shortname="Phys. Chem. Liq.",
+}
+
+@journal{phys_chem_miner,
+	name="Physics and Chemistry of Minerals",
+	shortname="Phys. Chem. Miner.",
+}
+
+@journal{phys_lett_a,
+	name="Physics Letters A",
+	shortname="Phys. Lett. A",
+}
+
+@journal{phys_lett_b,
+	name="Physics Letters B",
+	shortname="Phys. Lett. B",
+}
+
+@journal{phys_at_nucl,
+	name="Physics of Atomic Nuclei",
+	shortname="Phys. At. Nucl.",
+}
+
+@journal{phys_fluids,
+	name="Physics of Fluids",
+	shortname="Phys. Fluids",
+}
+
+@journal{phys_plasmas,
+	name="Physics of Plasmas",
+	shortname="Phys. Plasmas",
+}
+
+@journal{phys_solid_state,
+	name="Physics of the Solid State",
+	shortname="Phys. Solid State",
+}
+
+@journal{physiol_plant,
+	name="Physiologia Plantarum",
+	shortname="Physiol. Plant.",
+}
+
+@journal{physiol_behav,
+	name="Physiology & Behavior",
+	shortname="Physiol. Behav.",
+}
+
+@journal{phytochem_anal,
+	name="Phytochemical Analysis",
+	shortname="Phytochem. Anal.",
+}
+
+@journal{phytochemistry_elsevier,
+	name="Phytochemistry (Elsevier)",
+}
+
+@journal{phytochem_rev,
+	name="Phytochemistry Reviews",
+	shortname="Phytochem. Rev.",
+}
+
+@journal{plant_cell_physiol,
+	name="Plant and Cell Physiology",
+	shortname="Plant Cell Physiol.",
+}
+
+@journal{plant_soil,
+	name="Plant and Soil",
+	shortname="Plant Soil",
+}
+
+@journal{plant_cell,
+	name="Plant Cell",
+}
+
+@journal{plant_cell_rep,
+	name="Plant Cell Reports",
+	shortname="Plant Cell Rep.",
+}
+
+@journal{plant_growth_regul,
+	name="Plant Growth Regulation",
+	shortname="Plant Growth Regul.",
+}
+
+@journal{plant_j,
+	name="Plant Journal",
+	shortname="Plant J.",
+}
+
+@journal{plant_mol_biol,
+	name="Plant Molecular Biology",
+	shortname="Plant Mol. Biol.",
+}
+
+@journal{plant_physiol,
+	name="Plant Physiology",
+	shortname="Plant Physiol.",
+}
+
+@journal{plant_physiol_biochem_amsterdam_neth,
+	name="Plant Physiology and Biochemistry (Amsterdam, Netherlands)",
+	shortname="Plant Physiol. Biochem. (Amsterdam, Neth.)",
+}
+
+@journal{plant_sci_amsterdam_neth,
+	name="Plant Science (Amsterdam, Netherlands)",
+	shortname="Plant Sci. (Amsterdam, Neth.)",
+}
+
+@journal{planta,
+	name="Planta",
+}
+
+@journal{planta_med,
+	name="Planta Medica",
+	shortname="Planta Med.",
+}
+
+@journal{plasma_chem_plasma_process,
+	name="Plasma Chemistry and Plasma Processing",
+	shortname="Plasma Chem. Plasma Process.",
+}
+
+@journal{plasma_processes_polym,
+	name="Plasma Processes and Polymers",
+	shortname="Plasma Processes Polym.",
+}
+
+@journal{plasmid,
+	name="Plasmid",
+}
+
+@journal{plast_massy,
+	name="Plasticheskie Massy",
+	shortname="Plast. Massy",
+}
+
+@journal{plast_rubber_compos,
+	name="Plastics, Rubber and Composites",
+	shortname="Plast., Rubber Compos.",
+}
+
+@journal{platelets,
+	name="Platelets",
+}
+
+@journal{plos_biol,
+	name="PLoS Biology",
+	shortname="PLoS Biol.",
+}
+
+@journal{plos_comput_biol,
+	name="PLoS Computational Biology",
+	shortname="PLoS Comput. Biol.",
+}
+
+@journal{plos_genet,
+	name="PLoS Genetics",
+	shortname="PLoS Genet.",
+}
+
+@journal{pmse_prepr,
+	name="PMSE Preprints",
+	shortname="PMSE Prepr.",
+}
+
+@journal{pol_j_chem,
+	name="Polish Journal of Chemistry",
+	shortname="Pol. J. Chem.",
+}
+
+@journal{polycyclic_aromat_compd,
+	name="Polycyclic Aromatic Compounds",
+	shortname="Polycyclic Aromat. Compd.",
+}
+
+@journal{polyhedron,
+	name="Polyhedron",
+}
+
+@journal{polymer,
+	name="Polymer",
+}
+
+@journal{polymer_korea,
+	name="Polymer (Korea)",
+}
+
+@journal{polym_bull_heidelberg_ger,
+	name="Polymer Bulletin (Heidelberg, Germany)",
+	shortname="Polym. Bull. (Heidelberg, Ger.)",
+}
+
+@journal{polym_compos,
+	name="Polymer Composites",
+	shortname="Polym. Compos.",
+}
+
+@journal{polym_degrad_stab,
+	name="Polymer Degradation and Stability",
+	shortname="Polym. Degrad. Stab.",
+}
+
+@journal{polym_eng_sci,
+	name="Polymer Engineering and Science",
+	shortname="Polym. Eng. Sci.",
+}
+
+@journal{polym_int,
+	name="Polymer International",
+	shortname="Polym. Int.",
+}
+
+@journal{polym_j_tokyo_jpn,
+	name="Polymer Journal (Tokyo, Japan)",
+	shortname="Polym. J. (Tokyo, Jpn.)",
+}
+
+@journal{polym_prepr_am_chem_soc_div_polym_chem,
+	name="Polymer Preprints (American Chemical Society, Division of Polymer Chemistry)",
+	shortname="Polym. Prepr. (Am. Chem. Soc., Div. Polym. Chem.)",
+}
+
+@journal{polym_test,
+	name="Polymer Testing",
+	shortname="Polym. Test.",
+}
+
+@journal{polymplast_technol_eng,
+	name="Polymer-Plastics Technology and Engineering",
+	shortname="Polym.-Plast. Technol. Eng.",
+}
+
+@journal{polym_polym_compos,
+	name="Polymers & Polymer Composites",
+	shortname="Polym. Polym. Compos.",
+}
+
+@journal{polym_adv_technol,
+	name="Polymers for Advanced Technologies",
+	shortname="Polym. Adv. Technol.",
+}
+
+@journal{poverkhnost,
+	name="Poverkhnost",
+}
+
+@journal{powder_diffr,
+	name="Powder Diffraction",
+	shortname="Powder Diffr.",
+}
+
+@journal{powder_metall,
+	name="Powder Metallurgy",
+	shortname="Powder Metall.",
+}
+
+@journal{powder_metall_met_ceram,
+	name="Powder Metallurgy and Metal Ceramics",
+	shortname="Powder Metall. Met. Ceram.",
+}
+
+@journal{powder_technol,
+	name="Powder Technology",
+	shortname="Powder Technol.",
+}
+
+@journal{pract_spectrosc,
+	name="Practical Spectroscopy",
+	shortname="Pract. Spectrosc.",
+}
+
+@journal{precambrian_res,
+	name="Precambrian Research",
+	shortname="Precambrian Res.",
+}
+
+@journal{prep_biochem_biotechnol,
+	name="Preparative Biochemistry & Biotechnology",
+	shortname="Prep. Biochem. Biotechnol.",
+}
+
+@journal{prepr__am_chem_soc_div_pet_chem,
+	name="Preprints - American Chemical Society, Division of Petroleum Chemistry",
+	shortname="Prepr. - Am. Chem. Soc., Div. Pet. Chem.",
+}
+
+@journal{prepr_ext_abstr_acs_natl_meet_am_chem_soc_div,
+	name="Environ. Chem. Preprints of Extended Abstracts presented at the ACS National Meeting, American Chemical Society, Division of Environmental Chemistry",
+	shortname="Prepr. Ext. Abstr. ACS Natl. Meet., Am. Chem. Soc., Div.",
+}
+
+@journal{prepr_symp__am_chem_soc_div_fuel_chem,
+	name="Preprints of Symposia - American Chemical Society, Division of Fuel Chemistry",
+	shortname="Prepr. Symp. - Am. Chem. Soc., Div. Fuel Chem.",
+}
+
+@journal{proc__electrochem_soc,
+	name="Proceedings - Electrochemical Society",
+	shortname="Proc. - Electrochem. Soc.",
+}
+
+@journal{proc_est_acad_sci_chem,
+	name="Proceedings of the Estonian Academy of Sciences, Chemistry",
+	shortname="Proc. Est. Acad. Sci., Chem.",
+}
+
+@journal{proc_natl_acad_sci_u_s_a,
+	name="Proceedings of the National Academy of Sciences of the United States of America",
+	shortname="Proc. Natl. Acad. Sci. U. S. A.",
+}
+
+@journal{process_biochem_oxford_u_k,
+	name="Process Biochemistry (Oxford, United Kingdom)",
+	shortname="Process Biochem. (Oxford, U. K.)",
+}
+
+@journal{process_saf_environ_prot,
+	name="Process Safety and Environmental Protection",
+	shortname="Process Saf. Environ. Prot.",
+}
+
+@journal{prog_colloid_polym_sci,
+	name="Progress in Colloid & Polymer Science",
+	shortname="Prog. Colloid Polym. Sci.",
+}
+
+@journal{prog_cryst_growth_charact_mater,
+	name="Progress in Crystal Growth and Characterization of Materials",
+	shortname="Prog. Cryst. Growth Charact. Mater.",
+}
+
+@journal{prog_inorg_chem,
+	name="Progress in Inorganic Chemistry",
+	shortname="Prog. Inorg. Chem.",
+}
+
+@journal{prog_nucl_magn_reson_spectrosc,
+	name="Progress in Nuclear Magnetic Resonance Spectroscopy",
+	shortname="Prog. Nucl. Magn. Reson. Spectrosc.",
+}
+
+@journal{prog_org_coat,
+	name="Progress in Organic Coatings",
+	shortname="Prog. Org. Coat.",
+}
+
+@journal{prog_polym_sci,
+	name="Progress in Polymer Science",
+	shortname="Prog. Polym. Sci.",
+}
+
+@journal{prog_react_kinet_mech,
+	name="Progress in Reaction Kinetics and Mechanism",
+	shortname="Prog. React. Kinet. Mech.",
+}
+
+@journal{prog_solid_state_chem,
+	name="Progress in Solid State Chemistry",
+	shortname="Prog. Solid State Chem.",
+}
+
+@journal{prog_surf_sci,
+	name="Progress in Surface Science",
+	shortname="Prog. Surf. Sci.",
+}
+
+@journal{propellants_explos_pyrotech,
+	name="Propellants, Explosives, Pyrotechnics",
+	shortname="Propellants, Explos., Pyrotech.",
+}
+
+@journal{prostaglandins_other_lipid_mediators,
+	name="Prostaglandins & Other Lipid Mediators",
+	shortname="Prostaglandins Other Lipid Mediators",
+}
+
+@journal{prostaglandins_leukotrienes_essent_fatty_acids,
+	name="Prostaglandins, Leukotrienes and Essential Fatty Acids",
+	shortname="Prostaglandins, Leukotrienes Essent. Fatty Acids",
+}
+
+@journal{prot_met,
+	name="Protection of Metals",
+	shortname="Prot. Met.",
+}
+
+@journal{protein_pept_lett,
+	name="Protein and Peptide Letters",
+	shortname="Protein Pept. Lett.",
+}
+
+@journal{protein_eng_des_sel,
+	name="Protein Engineering, Design & Selection",
+	shortname="Protein Eng., Des. Sel.",
+}
+
+@journal{protein_expression_purif,
+	name="Protein Expression and Purification",
+	shortname="Protein Expression Purif.",
+}
+
+@journal{protein_j,
+	name="Protein Journal",
+	shortname="Protein J.",
+}
+
+@journal{protein_sci,
+	name="Protein Science",
+	shortname="Protein Sci.",
+}
+
+@journal{proteins_struct_funct_bioinf,
+	name="Proteins: Structure, Function, and Bioinformatics",
+	shortname="Proteins: Struct., Funct., Bioinf.",
+}
+
+@journal{proteomics,
+	name="Proteomics",
+}
+
+@journal{przem_chem,
+	name="Przemysl Chemiczny",
+	shortname="Przem. Chem.",
+}
+
+@journal{psychopharmacology_berlin_ger,
+	name="Psychopharmacology (Berlin, Germany)",
+	shortname="Psychopharmacology (Berlin, Ger.)",
+}
+
+@journal{pteridines,
+	name="Pteridines",
+}
+
+@journal{pulm_pharmacol_ther,
+	name="Pulmonary Pharmacology & Therapeutics",
+	shortname="Pulm. Pharmacol. Ther.",
+}
+
+@journal{pure_appl_chem,
+	name="Pure and Applied Chemistry",
+	shortname="Pure Appl. Chem.",
+}
+
+@journal{purinergic_signalling,
+	name="Purinergic Signalling",
+}
+
+@journal{qsar_comb_sci,
+	name="QSAR & Combinatorial Science",
+	shortname="QSAR Comb. Sci.",
+}
+
+@journal{quantum_electron,
+	name="Quantum Electronics",
+	shortname="Quantum Electron.",
+}
+
+@journal{quim_nova,
+	name="Quimica Nova",
+	shortname="Quim. Nova",
+}
+
+@journal{radiat_eff_defects_solids,
+	name="Radiation Effects and Defects in Solids",
+	shortname="Radiat. Eff. Defects Solids",
+}
+
+@journal{radiat_meas,
+	name="Radiation Measurements",
+	shortname="Radiat. Meas.",
+}
+
+@journal{radiat_phys_chem,
+	name="Radiation Physics and Chemistry",
+	shortname="Radiat. Phys. Chem.",
+}
+
+@journal{radiat_res,
+	name="Radiation Research",
+	shortname="Radiat. Res.",
+}
+
+@journal{radiochemistry_n_y_ny_u_s,
+	name="Radiochemistry (New York, NY, United States)",
+	shortname="Radiochemistry (N. Y., NY, U. S.)",
+}
+
+@journal{radiochim_acta,
+	name="Radiochimica Acta",
+	shortname="Radiochim. Acta",
+}
+
+@journal{radioprotection,
+	name="Radioprotection",
+}
+
+@journal{ranliao_huaxue_xuebao,
+	name="Ranliao Huaxue Xuebao",
+}
+
+@journal{rapid_commun_mass_spectrom,
+	name="Rapid Communications in Mass Spectrometry",
+	shortname="Rapid Commun. Mass Spectrom.",
+}
+
+@journal{rare_met_beijing_china,
+	name="Rare Metals (Beijing, China)",
+	shortname="Rare Met. (Beijing, China)",
+}
+
+@journal{rasplavy,
+	name="Rasplavy",
+}
+
+@journal{react_kinet_catal_lett,
+	name="Reaction Kinetics and Catalysis Letters",
+	shortname="React. Kinet. Catal. Lett.",
+}
+
+@journal{react_funct_polym,
+	name="Reactive & Functional Polymers",
+	shortname="React. Funct. Polym.",
+}
+
+@journal{regul_pept,
+	name="Regulatory Peptides",
+	shortname="Regul. Pept.",
+}
+
+@journal{rengong_jingti_xuebao,
+	name="Rengong Jingti Xuebao",
+}
+
+@journal{reproduction_bristol_u_k,
+	name="Reproduction (Bristol, United Kingdom)",
+	shortname="Reproduction (Bristol, U. K.)",
+}
+
+@journal{reprod_toxicol,
+	name="Reproductive Toxicology",
+	shortname="Reprod. Toxicol.",
+}
+
+@journal{res_commun_biochem_cell_mol_biol,
+	name="Research Communications in Biochemistry and Cell & Molecular Biology",
+	shortname="Res. Commun. Biochem. Cell Mol. Biol.",
+}
+
+@journal{res_commun_mol_pathol_pharmacol,
+	name="Research Communications in Molecular Pathology and Pharmacology",
+	shortname="Res. Commun. Mol. Pathol. Pharmacol.",
+}
+
+@journal{res_commun_pharmacol_toxicol,
+	name="Research Communications in Pharmacology and Toxicology",
+	shortname="Res. Commun. Pharmacol. Toxicol.",
+}
+
+@journal{res_chem_intermed,
+	name="Research on Chemical Intermediates",
+	shortname="Res. Chem. Intermed.",
+}
+
+@journal{rev_sci_instrum,
+	name="Review of Scientific Instruments",
+	shortname="Rev. Sci. Instrum.",
+}
+
+@journal{rev_anal_chem,
+	name="Reviews in Analytical Chemistry",
+	shortname="Rev. Anal. Chem.",
+}
+
+@journal{rev_inorg_chem,
+	name="Reviews in Inorganic Chemistry",
+	shortname="Rev. Inorg. Chem.",
+}
+
+@journal{rev_chim_bucharest_rom,
+	name="Revista de Chimie (Bucharest, Romania)",
+	shortname="Rev. Chim. (Bucharest, Rom.)",
+}
+
+@journal{rev_soc_quim_peru,
+	name="Revista de la Sociedad Quimica del Peru",
+	shortname="Rev. Soc. Quim. Peru",
+}
+
+@journal{rev_mex_ing_quim,
+	name="Revista Mexicana de Ingenieria Quimica",
+	shortname="Rev. Mex. Ing. Quim.",
+}
+
+@journal{rev_rom_mater,
+	name="Revista Romana de Materiale",
+	shortname="Rev. Rom. Mater.",
+}
+
+@journal{rev_roum_chim,
+	name="Revue Roumaine de Chimie",
+	shortname="Rev. Roum. Chim.",
+}
+
+@journal{rheol_acta,
+	name="Rheologica Acta",
+	shortname="Rheol. Acta",
+}
+
+@journal{rna,
+	name="RNA",
+}
+
+@journal{rna_biol,
+	name="RNA Biology",
+	shortname="RNA Biol.",
+}
+
+@journal{rom_j_phys,
+	name="Romanian Journal of Physics",
+	shortname="Rom. J. Phys.",
+}
+
+@journal{ross_khim_zh,
+	name="Rossiiskii Khimicheskii Zhurnal",
+	shortname="Ross. Khim. Zh.",
+}
+
+@journal{rubber_chem_technol,
+	name="Rubber Chemistry and Technology",
+	shortname="Rubber Chem. Technol.",
+}
+
+@journal{russ_chem_bull,
+	name="Russian Chemical Bulletin",
+	shortname="Russ. Chem. Bull.",
+}
+
+@journal{russ_chem_rev,
+	name="Russian Chemical Reviews",
+	shortname="Russ. Chem. Rev.",
+}
+
+@journal{russ_j_appl_chem,
+	name="Russian Journal of Applied Chemistry",
+	shortname="Russ. J. Appl. Chem.",
+}
+
+@journal{russ_j_bioorg_chem,
+	name="Russian Journal of Bioorganic Chemistry",
+	shortname="Russ. J. Bioorg. Chem.",
+}
+
+@journal{russ_j_coord_chem,
+	name="Russian Journal of Coordination Chemistry",
+	shortname="Russ. J. Coord. Chem.",
+}
+
+@journal{russ_j_electrochem,
+	name="Russian Journal of Electrochemistry",
+	shortname="Russ. J. Electrochem.",
+}
+
+@journal{russ_j_gen_chem,
+	name="Russian Journal of General Chemistry",
+	shortname="Russ. J. Gen. Chem.",
+}
+
+@journal{russ_j_genet,
+	name="Russian Journal of Genetics",
+	shortname="Russ. J. Genet.",
+}
+
+@journal{russ_j_org_chem,
+	name="Russian Journal of Organic Chemistry",
+	shortname="Russ. J. Org. Chem.",
+}
+
+@journal{russ_j_phys_chem,
+	name="Russian Journal of Physical Chemistry",
+	shortname="Russ. J. Phys. Chem.",
+}
+
+@journal{russ_j_plant_physiol,
+	name="Russian Journal of Plant Physiology",
+	shortname="Russ. J. Plant Physiol.",
+}
+
+@journal{sar_qsar_environ_res,
+	name="SAR and QSAR in Environmental Research",
+	shortname="SAR QSAR Environ. Res.",
+}
+
+@journal{scand_j_lab_anim_sci,
+	name="Scandinavian Journal of Laboratory Animal Science",
+	shortname="Scand. J. Lab. Anim. Sci.",
+}
+
+@journal{scand_j_metall,
+	name="Scandinavian Journal of Metallurgy",
+	shortname="Scand. J. Metall.",
+}
+
+@journal{science_washington_dc_u_s,
+	name="Science (Washington, DC, United States)",
+	shortname="Science (Washington, DC, U. S.)",
+}
+
+@journal{sci_china_ser_b_chem,
+	name="Science in China, Series B: Chemistry",
+	shortname="Sci. China, Ser. B: Chem.",
+}
+
+@journal{sci_total_environ,
+	name="Science of the Total Environment",
+	shortname="Sci. Total Environ.",
+}
+
+@journal{scr_mater,
+	name="Scripta Materialia",
+	shortname="Scr. Mater.",
+}
+
+@journal{seibutsu_kogaku_kaishi,
+	name="Seibutsu Kogaku Kaishi",
+}
+
+@journal{semicond_sci_technol,
+	name="Semiconductor Science and Technology",
+	shortname="Semicond. Sci. Technol.",
+}
+
+@journal{semiconductors,
+	name="Semiconductors",
+}
+
+@journal{sens_actuators_a,
+	name="Sensors and Actuators, A: Physical",
+	shortname="Sens. Actuators, A",
+}
+
+@journal{sens_actuators_b,
+	name="Sensors and Actuators, B: Chemical",
+	shortname="Sens. Actuators, B",
+}
+
+@journal{sep_purif_technol,
+	name="Separation and Purification Technology",
+	shortname="Sep. Purif. Technol.",
+}
+
+@journal{sep_sci_technol,
+	name="Separation Science and Technology",
+	shortname="Sep. Sci. Technol.",
+}
+
+@journal{sepu,
+	name="Sepu",
+}
+
+@journal{shiyou_huagong,
+	name="Shiyou Huagong",
+}
+
+@journal{shiyou_xuebao_shiyou_jiagong,
+	name="Shiyou Xuebao, Shiyou Jiagong",
+}
+
+@journal{shuichuli_jishu,
+	name="Shuichuli Jishu",
+}
+
+@journal{signal_transduction,
+	name="Signal Transduction",
+}
+
+@journal{silicon_chem,
+	name="Silicon Chemistry",
+	shortname="Silicon Chem.",
+}
+
+@journal{small,
+	name="Small",
+}
+
+@journal{soft_matter,
+	name="Soft Matter",
+}
+
+@journal{soil_biol_biochem,
+	name="Soil Biology & Biochemistry",
+	shortname="Soil Biol. Biochem.",
+}
+
+@journal{soil_sci,
+	name="Soil Science",
+	shortname="Soil Sci.",
+}
+
+@journal{soil_sci_soc_am_j,
+	name="Soil Science Society of America Journal",
+	shortname="Soil Sci. Soc. Am. J.",
+}
+
+@journal{sol_energy_mater_sol_cells,
+	name="Solar Energy Materials & Solar Cells",
+	shortname="Sol. Energy Mater. Sol. Cells",
+}
+
+@journal{solid_state_commun,
+	name="Solid State Communications",
+	shortname="Solid State Commun.",
+}
+
+@journal{solid_state_ionics,
+	name="Solid State Ionics",
+}
+
+@journal{solid_state_nucl_magn_reson,
+	name="Solid State Nuclear Magnetic Resonance",
+	shortname="Solid State Nucl. Magn. Reson.",
+}
+
+@journal{solid_state_sci,
+	name="Solid State Sciences",
+	shortname="Solid State Sci.",
+}
+
+@journal{solidstate_electron,
+	name="Solid-State Electronics",
+	shortname="Solid-State Electron.",
+}
+
+@journal{solvent_extr_ion_exch,
+	name="Solvent Extraction and Ion Exchange",
+	shortname="Solvent Extr. Ion Exch.",
+}
+
+@journal{solvent_extr_res_dev_jpn,
+	name="Solvent Extraction Research and Development, Japan",
+	shortname="Solvent Extr. Res. Dev., Jpn.",
+}
+
+@journal{somatic_cell_mol_genet,
+	name="Somatic Cell and Molecular Genetics",
+	shortname="Somatic Cell Mol. Genet.",
+}
+
+@journal{s_afr_j_chem,
+	name="South African Journal of Chemistry",
+	shortname="S. Afr. J. Chem.",
+}
+
+@journal{spe_prod_facil,
+	name="SPE Production & Facilities",
+	shortname="SPE Prod. Facil.",
+}
+
+@journal{spe_reservoir_eval_eng,
+	name="SPE Reservoir Evaluation & Engineering",
+	shortname="SPE Reservoir Eval. Eng.",
+}
+
+@journal{spectrochim_acta_part_a,
+	name="Spectrochimica Acta, Part A: Molecular and Biomolecular Spectroscopy",
+	shortname="Spectrochim. Acta, Part A",
+}
+
+@journal{spectrochim_acta_part_b,
+	name="Spectrochimica Acta, Part B: Atomic Spectroscopy",
+	shortname="Spectrochim. Acta, Part B",
+}
+
+@journal{spectroscopy_amsterdam_neth,
+	name="Spectroscopy (Amsterdam, Netherlands)",
+	shortname="Spectroscopy (Amsterdam, Neth.)",
+}
+
+@journal{spectrosc_lett,
+	name="Spectroscopy Letters",
+	shortname="Spectrosc. Lett.",
+}
+
+@journal{stal_sci_tech_anim_lab,
+	name="STAL, Sciences et Techniques de l'Animal de Laboratoire",
+	shortname="STAL, Sci. Tech. Anim. Lab.",
+}
+
+@journal{starchstaerke,
+	name="Starch/Staerke",
+}
+
+@journal{steel_res_int,
+	name="Steel Research International",
+	shortname="Steel Res. Int.",
+}
+
+@journal{steroids,
+	name="Steroids",
+}
+
+@journal{struct_chem,
+	name="Structural Chemistry",
+	shortname="Struct. Chem.",
+}
+
+@journal{structure_cambridge_ma_u_s,
+	name="Structure (Cambridge, MA, United States)",
+	shortname="Structure (Cambridge, MA, U. S.)",
+}
+
+@journal{supercond_sci_technol,
+	name="Superconductor Science and Technology",
+	shortname="Supercond. Sci. Technol.",
+}
+
+@journal{superlattices_microstruct,
+	name="Superlattices and Microstructures",
+	shortname="Superlattices Microstruct.",
+}
+
+@journal{supramol_chem,
+	name="Supramolecular Chemistry",
+	shortname="Supramol. Chem.",
+}
+
+@journal{surf_coat_technol,
+	name="Surface and Coatings Technology",
+	shortname="Surf. Coat. Technol.",
+}
+
+@journal{surf_interface_anal,
+	name="Surface and Interface Analysis",
+	shortname="Surf. Interface Anal.",
+}
+
+@journal{surf_eng,
+	name="Surface Engineering",
+	shortname="Surf. Eng.",
+}
+
+@journal{surf_rev_lett,
+	name="Surface Review and Letters",
+	shortname="Surf. Rev. Lett.",
+}
+
+@journal{surf_sci,
+	name="Surface Science",
+	shortname="Surf. Sci.",
+}
+
+@journal{surf_sci_rep,
+	name="Surface Science Reports",
+	shortname="Surf. Sci. Rep.",
+}
+
+@journal{synapse_n_y_ny_u_s,
+	name="Synapse (New York, NY, United States)",
+	shortname="Synapse (N. Y., NY, U. S.)",
+}
+
+@journal{synlett,
+	name="Synlett",
+}
+
+@journal{synthesis,
+	name="Synthesis",
+}
+
+@journal{synth_react_inorg_metorg_nanomet_chem,
+	name="Synthesis and Reactivity in Inorganic, Metal-Organic, and Nano-Metal Chemistry",
+	shortname="Synth. React. Inorg., Met.-Org., Nano-Met. Chem.",
+}
+
+@journal{synth_commun,
+	name="Synthetic Communications",
+	shortname="Synth. Commun.",
+}
+
+@journal{synth_lubr,
+	name="Synthetic Lubrication",
+	shortname="Synth. Lubr.",
+}
+
+@journal{synth_met,
+	name="Synthetic Metals",
+	shortname="Synth. Met.",
+}
+
+@journal{taehan_kumsok_chaeryo_hakhoechi,
+	name="Taehan Kumsok, Chaeryo Hakhoechi",
+}
+
+@journal{talanta,
+	name="Talanta",
+}
+
+@journal{tappi_j,
+	name="Tappi Journal",
+	shortname="Tappi J.",
+}
+
+@journal{tech_phys,
+	name="Technical Physics",
+	shortname="Tech. Phys.",
+}
+
+@journal{tech_phys_lett,
+	name="Technical Physics Letters",
+	shortname="Tech. Phys. Lett.",
+}
+
+@journal{tenside_surfactants_deterg,
+	name="Tenside, Surfactants, Detergents",
+	shortname="Tenside, Surfactants, Deterg.",
+}
+
+@journal{tetrahedron,
+	name="Tetrahedron",
+}
+
+@journal{tetrahedron_lett,
+	name="Tetrahedron Letters",
+	shortname="Tetrahedron Lett.",
+}
+
+@journal{tetrahedron_asymmetry,
+	name="Tetrahedron: Asymmetry",
+}
+
+@journal{tetsu_to_hagane,
+	name="Tetsu to Hagane",
+}
+
+@journal{text_res_j,
+	name="Textile Research Journal",
+	shortname="Text. Res. J.",
+}
+
+@journal{theochem,
+	name="THEOCHEM",
+}
+
+@journal{theor_exp_chem,
+	name="Theoretical and Experimental Chemistry",
+	shortname="Theor. Exp. Chem.",
+}
+
+@journal{theor_chem_acc,
+	name="Theoretical Chemistry Accounts",
+	shortname="Theor. Chem. Acc.",
+}
+
+@journal{theor_found_chem_eng,
+	name="Theoretical Foundations of Chemical Engineering",
+	shortname="Theor. Found. Chem. Eng.",
+}
+
+@journal{thermochim_acta,
+	name="Thermochimica Acta",
+	shortname="Thermochim. Acta",
+}
+
+@journal{thin_solid_films,
+	name="Thin Solid Films",
+}
+
+@journal{thromb_haemostasis,
+	name="Thrombosis and Haemostasis",
+	shortname="Thromb. Haemostasis",
+}
+
+@journal{thromb_res,
+	name="Thrombosis Research",
+	shortname="Thromb. Res.",
+}
+
+@journal{top_catal,
+	name="Topics in Catalysis",
+	shortname="Top. Catal.",
+}
+
+@journal{toxicol_environ_chem,
+	name="Toxicological and Environmental Chemistry",
+	shortname="Toxicol. Environ. Chem.",
+}
+
+@journal{toxicol_sci,
+	name="Toxicological Sciences",
+	shortname="Toxicol. Sci.",
+}
+
+@journal{toxicology,
+	name="Toxicology",
+}
+
+@journal{toxicol_appl_pharmacol,
+	name="Toxicology and Applied Pharmacology",
+	shortname="Toxicol. Appl. Pharmacol.",
+}
+
+@journal{toxicol_in_vitro,
+	name="Toxicology in Vitro",
+	shortname="Toxicol. in Vitro",
+}
+
+@journal{toxicol_lett,
+	name="Toxicology Letters",
+	shortname="Toxicol. Lett.",
+}
+
+@journal{toxicol_mech_methods,
+	name="Toxicology Mechanisms and Methods",
+	shortname="Toxicol. Mech. Methods",
+}
+
+@journal{toxicon,
+	name="Toxicon",
+}
+
+@journal{trac_trends_anal_chem,
+	name="TrAC, Trends in Analytical Chemistry",
+	shortname="TrAC, Trends Anal. Chem.",
+}
+
+@journal{traffic_oxford_u_k,
+	name="Traffic (Oxford, United Kingdom)",
+	shortname="Traffic (Oxford, U. K.)",
+}
+
+@journal{trans_indian_ceram_soc,
+	name="Transactions of the Indian Ceramic Society",
+	shortname="Trans. Indian Ceram. Soc.",
+}
+
+@journal{trans_inst_met_finish,
+	name="Transactions of the Institute of Metal Finishing",
+	shortname="Trans. Inst. Met. Finish.",
+}
+
+@journal{trans_saest,
+	name="Transactions of the SAEST",
+	shortname="Trans. SAEST",
+}
+
+@journal{transgenic_res,
+	name="Transgenic Research",
+	shortname="Transgenic Res.",
+}
+
+@journal{transition_met_chem_dordrecht_neth,
+	name="Transition Metal Chemistry (Dordrecht, Netherlands)",
+	shortname="Transition Met. Chem. (Dordrecht, Neth.)",
+}
+
+@journal{trends_biochem_sci,
+	name="Trends in Biochemical Sciences",
+	shortname="Trends Biochem. Sci.",
+}
+
+@journal{trends_biotechnol,
+	name="Trends in Biotechnology",
+	shortname="Trends Biotechnol.",
+}
+
+@journal{trends_endocrinol_metab,
+	name="Trends in Endocrinology and Metabolism",
+	shortname="Trends Endocrinol. Metab.",
+}
+
+@journal{trends_food_sci_technol,
+	name="Trends in Food Science & Technology",
+	shortname="Trends Food Sci. Technol.",
+}
+
+@journal{trends_genet,
+	name="Trends in Genetics",
+	shortname="Trends Genet.",
+}
+
+@journal{trends_immunol,
+	name="Trends in Immunology",
+	shortname="Trends Immunol.",
+}
+
+@journal{trends_microbiol,
+	name="Trends in Microbiology",
+	shortname="Trends Microbiol.",
+}
+
+@journal{trends_neurosci,
+	name="Trends in Neurosciences",
+	shortname="Trends Neurosci.",
+}
+
+@journal{trends_pharmacol_sci,
+	name="Trends in Pharmacological Sciences",
+	shortname="Trends Pharmacol. Sci.",
+}
+
+@journal{trends_plant_sci,
+	name="Trends in Plant Science",
+	shortname="Trends Plant Sci.",
+}
+
+@journal{tribol_trans,
+	name="Tribology Transactions",
+	shortname="Tribol. Trans.",
+}
+
+@journal{turk_j_chem,
+	name="Turkish Journal of Chemistry",
+	shortname="Turk. J. Chem.",
+}
+
+@journal{ukr_biokhim_zh,
+	name="Ukrains'kii Biokhimichnii Zhurnal",
+	shortname="Ukr. Biokhim. Zh.",
+}
+
+@journal{ukr_fiz_zh,
+	name="Ukrains'kii Fizichnii Zhurnal",
+	shortname="Ukr. Fiz. Zh.",
+}
+
+@journal{ukr_khim_zh_russ_ed,
+	name="Ukrainskii Khimicheskii Zhurnal (Russian Edition)",
+	shortname="Ukr. Khim. Zh. (Russ. Ed.)",
+}
+
+@journal{ultramicroscopy,
+	name="Ultramicroscopy",
+}
+
+@journal{ultrason_sonochem,
+	name="Ultrasonics Sonochemistry",
+	shortname="Ultrason. Sonochem.",
+}
+
+@journal{vacuum,
+	name="Vacuum",
+}
+
+@journal{vasc_pharmacol,
+	name="Vascular Pharmacology",
+	shortname="Vasc. Pharmacol.",
+}
+
+@journal{vestn_mosk_univ_ser_2_khim,
+	name="Vestnik Moskovskogo Universiteta, Seriya 2: Khimiya",
+	shortname="Vestn. Mosk. Univ., Ser. 2: Khim.",
+}
+
+@journal{vestn_speterb_univ_ser_4_fiz_khim,
+	name="Vestnik Sankt-Peterburgskogo Universiteta, Seriya 4: Fizika, Khimiya",
+	shortname="Vestn. S.-Peterb. Univ., Ser. 4: Fiz., Khim.",
+}
+
+@journal{vestsi_nats_akad_navuk_belarusi_ser_khim_navuk,
+	name="Vestsi Natsyyanal'nai Akademii Navuk Belarusi, Seryya Khimichnykh Navuk",
+	shortname="Vestsi Nats. Akad. Navuk Belarusi, Ser. Khim. Navuk",
+}
+
+@journal{vib_spectrosc,
+	name="Vibrational Spectroscopy",
+	shortname="Vib. Spectrosc.",
+}
+
+@journal{viral_immunol,
+	name="Viral Immunology",
+	shortname="Viral Immunol.",
+}
+
+@journal{virology,
+	name="Virology",
+}
+
+@journal{virus_genes,
+	name="Virus Genes",
+}
+
+@journal{virus_res,
+	name="Virus Research",
+	shortname="Virus Res.",
+}
+
+@journal{vysokomol_soedin_ser_a_ser_b,
+	name="Vysokomolekulyarnye Soedineniya, Seriya A i Seriya B",
+	shortname="Vysokomol. Soedin., Ser. A Ser. B",
+}
+
+@journal{water_environ_res,
+	name="Water Environment Research",
+	shortname="Water Environ. Res.",
+}
+
+@journal{water_qual_res_j_can,
+	name="Water Quality Research Journal of Canada",
+	shortname="Water Qual. Res. J. Can.",
+}
+
+@journal{water_res,
+	name="Water Research",
+	shortname="Water Res.",
+}
+
+@journal{water_resour,
+	name="Water Resources",
+	shortname="Water Resour.",
+}
+
+@journal{water_air_soil_pollut,
+	name="Water, Air, & Soil Pollution",
+	shortname="Water, Air, Soil Pollut.",
+}
+
+@journal{wear,
+	name="Wear",
+}
+
+@journal{weed_sci,
+	name="Weed Science",
+	shortname="Weed Sci.",
+}
+
+@journal{wood_fiber_sci,
+	name="Wood and Fiber Science",
+	shortname="Wood Fiber Sci.",
+}
+
+@journal{wood_sci_technol,
+	name="Wood Science and Technology",
+	shortname="Wood Sci. Technol.",
+}
+
+@journal{wuji_huaxue_xuebao,
+	name="Wuji Huaxue Xuebao",
+}
+
+@journal{wuli_huaxue_xuebao,
+	name="Wuli Huaxue Xuebao",
+}
+
+@journal{wuli_xuebao,
+	name="Wuli Xuebao",
+}
+
+@journal{xray_spectrom,
+	name="X-Ray Spectrometry",
+	shortname="X-Ray Spectrom.",
+}
+
+@journal{xray_struct_anal_online,
+	name="X-Ray Structure Analysis Online",
+	shortname="X-Ray Struct. Anal. Online",
+}
+
+@journal{xenobiotica,
+	name="Xenobiotica",
+}
+
+@journal{yakhak_hoechi,
+	name="Yakhak Hoechi",
+}
+
+@journal{yakugaku_zasshi,
+	name="Yakugaku Zasshi",
+}
+
+@journal{yeast,
+	name="Yeast",
+}
+
+@journal{yingyong_huaxue,
+	name="Yingyong Huaxue",
+}
+
+@journal{yosetsu_gakkai_ronbunshu,
+	name="Yosetsu Gakkai Ronbunshu",
+}
+
+@journal{youji_huaxue,
+	name="Youji Huaxue",
+}
+
+@journal{yuki_gosei_kagaku_kyokaishi,
+	name="Yuki Gosei Kagaku Kyokaishi",
+}
+
+@journal{z_anorg_allg_chem,
+	name="Zeitschrift fuer Anorganische und Allgemeine Chemie",
+	shortname="Z. Anorg. Allg. Chem.",
+}
+
+@journal{z_kristallogr,
+	name="Zeitschrift fuer Kristallographie",
+	shortname="Z. Kristallogr.",
+}
+
+@journal{z_kristallogr__new_cryst_struct,
+	name="Zeitschrift fuer Kristallographie - New Crystal Structures",
+	shortname="Z. Kristallogr. - New Cryst. Struct.",
+}
+
+@journal{z_metallkd,
+	name="Zeitschrift fuer Metallkunde",
+	shortname="Z. Metallkd.",
+}
+
+@journal{z_naturforsch_a_phys_sci,
+	name="Zeitschrift fuer Naturforschung, A: Physical Sciences",
+	shortname="Z. Naturforsch., A: Phys. Sci.",
+}
+
+@journal{z_naturforsch_b_chem_sci,
+	name="Zeitschrift fuer Naturforschung, B: Chemical Sciences",
+	shortname="Z. Naturforsch., B: Chem. Sci.",
+}
+
+@journal{z_naturforsch_c_j_biosci,
+	name="Zeitschrift fuer Naturforschung, C: Journal of Biosciences",
+	shortname="Z. Naturforsch., C: J. Biosci.",
+}
+
+@journal{z_phys_chem_muenchen_ger,
+	name="Zeitschrift fuer Physikalische Chemie (Muenchen, Germany)",
+	shortname="Z. Phys. Chem. (Muenchen, Ger.)",
+}
+
+@journal{zhipu_xuebao,
+	name="Zhipu Xuebao",
+}
+
+@journal{zhongguo_shengwu_huaxue_yu_fenzi_shengwu_xuebao,
+	name="Zhongguo Shengwu Huaxue Yu Fenzi Shengwu Xuebao",
+}
+
+@journal{zh_neorg_khim,
+	name="Zhurnal Neorganicheskoi Khimii",
+	shortname="Zh. Neorg. Khim.",
+}
+
+@journal{zh_org_farm_khim,
+	name="Zhurnal Organichnoi ta Farmatsevtichnoi Khimii",
+	shortname="Zh. Org. Farm. Khim.",
+}
+
