@@ -681,20 +681,20 @@ class misc(bibobject):
 	    valuepublication = self._fullpublication()
 	    if self._options.title_head:
 		if valuetitle != '':
-		    value = punctuate(self._bib, value, "\n\\newblock")
+		    value = punctuate(self._bib, value, '', "\n\\newblock")
 		    value += "\\textbf{%s}" % valuetitle
 		if valueauthor != '':
-		    value = punctuate(self._bib, value, "\n\\newblock")
+		    value = punctuate(self._bib, value, '', "\n\\newblock")
 		    value += valueauthor
 	    else:
 		if valueauthor != '':
-		    value = punctuate(self._bib, value, "\n\\newblock")
+		    value = punctuate(self._bib, value, '', "\n\\newblock")
 		    value += valueauthor
 		if valuetitle != '':
-		    value = punctuate(self._bib, value, "\n\\newblock")
+		    value = punctuate(self._bib, value, '', "\n\\newblock")
 		    value += valuetitle
 	    if valuepublication != '':
-		value = punctuate(self._bib, value, "\n\\newblock")
+		value = punctuate(self._bib, value, '', "\n\\newblock")
 		value += valuepublication
 
             abstractlink = False
@@ -710,7 +710,7 @@ class misc(bibobject):
 			if myfield == 'abstract':
 			    abstractlink = True
 	    if links != '':
-		value = punctuate(self._bib, value, "\n\\newblock")
+		value = punctuate(self._bib, value, '', "\n\\newblock")
 		value += links
 
             if not unassigned(self.abstract) and self._options.abstract and not abstractlink:
@@ -721,11 +721,11 @@ class misc(bibobject):
                 value += "\\begin{quote}\\begin{small}\\textsc{Keywords:} %s\\end{small}\\end{quote}" % stringify(self.keywords, self)
 
 	    if not unassigned(self.url) and self._name != 'url':
-		value = punctuate(self._bib, value, "\n\\newblock")
+		value = punctuate(self._bib, value, '', "\n\\newblock")
 		value += punctuate(self._bib, stringify(self.url, self), '.')
 
 	    if not unassigned(self.note):
-		value = punctuate(self._bib, value, "\n\\newblock")
+		value = punctuate(self._bib, value, '', "\n\\newblock")
 		value += punctuate(self._bib, stringify(self.note, self), '.')
 
             label = self._label()
