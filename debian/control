@@ -1,0 +1,16 @@
+Source: crosstex
+Section: tex
+Priority: optional
+Maintainer: Robert Burgess <burgess@systems.cs.cornell.edu>
+Build-Depends: debhelper (>= 5), python, texlib-base-bin | tetex-bin
+Standards-Version: 3.7.2
+
+Package: crosstex
+Architecture: any
+Depends: python (>= 2.2)
+Description: modern object-oriented bibliography management tool
+ CrossTeX is a modern, object-oriented bibliography management tool,
+ designed to replace BibTex. It comprises a new bibliographic database
+ format that is much less prone to error compared to other alternatives
+ like BibTex, and a new tool for creating the citations that appear at
+ the end of scholarly texts that is very flexible.

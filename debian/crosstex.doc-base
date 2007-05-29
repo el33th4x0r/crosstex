@@ -1,0 +1,11 @@
+Document: crosstex
+Title: The CrossTeX Tutorial
+Author: Robert Burgess and Emin Gun Sirer
+Abstract: This manual describes what crosstex is and how it can be used to
+ manage bibliographic databases and generate references sections.
+Section: Apps/Text
+
+Format: PDF
+Files: /usr/share/doc/crosstex/crosstex.pdf.gz
+
+  

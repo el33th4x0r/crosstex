@@ -6,14 +6,19 @@ ROOT=
 PREFIX=/usr/local
 LIBDIR=/lib/crosstex
 BINDIR=/bin
+MANDIR=/share/man
 PLY=${PREFIX}${LIBDIR}
 
 all:
 	@echo nothing to make, try make install
 
 install:
-	mkdir -p $(ROOT)$(PREFIX)$(BINDIR) $(ROOT)$(PREFIX)$(LIBDIR)
-	install -m 0644 *.py data/*.xtx $(ROOT)$(PREFIX)$(LIBDIR)
+	mkdir -p $(ROOT)$(PREFIX)$(BINDIR) $(ROOT)$(PREFIX)$(LIBDIR) $(ROOT)$(PREFIX)$(MANDIR)/man1
+	install -m 0644 crosstexobjects.py data/*.xtx $(ROOT)$(PREFIX)$(LIBDIR)
+	install -m 0644 crosstex.1 $(ROOT)$(PREFIX)$(MANDIR)/man1
+	ln -sf crosstex.1 $(ROOT)$(PREFIX)$(MANDIR)/man1/xtx2bib.1
+	ln -sf crosstex.1 $(ROOT)$(PREFIX)$(MANDIR)/man1/xtx2html.1
+	ln -sf crosstex.1 $(ROOT)$(PREFIX)$(MANDIR)/man1/bib2xtx.1
 	echo '/^version = /c\' >crosstex.sed
 	echo "version = '${VERSION}'" >>crosstex.sed
 	echo '/^xtxlib = /c\' >>crosstex.sed
@@ -32,10 +37,11 @@ crosstex.pdf: crosstex.tex
 .PHONY: pdf
 pdf: crosstex.pdf
 
-${PACKAGE}.tar.gz: Makefile COPYING crosstex crosstex.spec crosstex.tex crosstex.pdf
+${PACKAGE}.tar.gz: Makefile COPYING crosstex crosstex.spec crosstex.tex crosstex.pdf crosstex.1 debian
 	rm -rf ${PACKAGE}
-	mkdir ${PACKAGE} ${PACKAGE}/tests ${PACKAGE}/data
-	cp Makefile COPYING crosstex *.py crosstex.tex crosstex.pdf ${PACKAGE}
+	mkdir ${PACKAGE} ${PACKAGE}/tests ${PACKAGE}/data ${PACKAGE}/debian
+	cp Makefile COPYING crosstex *.py crosstex.tex crosstex.pdf crosstex.1 ${PACKAGE}
+	cp debian/* ${PACKAGE}/debian
 	cp tests/*.xtx ${PACKAGE}/tests
 	cp data/*.xtx ${PACKAGE}/data
 	sed -e "1i %define name crosstex" \
@@ -47,7 +53,6 @@ ${PACKAGE}.tar.gz: Makefile COPYING crosstex crosstex.spec crosstex.tex crosstex
 	    -e "1i %define ply ${PLY}" \
 	    crosstex.spec >${PACKAGE}/crosstex.spec
 	tar czf ${PACKAGE}.tar.gz ${PACKAGE}
-	rm -rf ${PACKAGE}
 
 .PHONY: dist
 dist: ${PACKAGE}.tar.gz
@@ -59,6 +64,12 @@ rpm: dist
 	find ${PACKAGE}-rpm -name \*.rpm -exec mv {} . \;
 	rm -r ${PACKAGE}-rpm
 
+.PHONY: deb
+deb: dist
+	cp ${PACKAGE}.tar.gz crosstex_${VERSION}.orig.tar.gz
+	(cd ${PACKAGE} && dpkg-buildpackage -rfakeroot)
+
 clean:
 	rm -rf *~ *.pyc *.aux *.bbl *.dvi *.log *.tar.gz *.rpm *.html \
-	       *.out *.toc *.pdf *.haux *.htoc *-rpm *.bak crosstex.sed
+	       *.out *.toc *.pdf *.haux *.htoc *-rpm *.bak ${PACKAGE} \
+	       crosstex_${VERSION}* crosstex.sed

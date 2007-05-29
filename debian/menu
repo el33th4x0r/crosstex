@@ -1,0 +1,2 @@
+?package(crosstex):needs="text" section="Apps/Text"\
+  title="CrossTeX" command="/usr/bin/crosstex"

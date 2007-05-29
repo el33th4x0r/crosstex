@@ -1,0 +1,75 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.\" First parameter, NAME, should be all caps
+.\" Second parameter, SECTION, should be 1-8, maybe w/ subsection
+.\" other parameters are allowed: see man(7), man(1)
+.TH CROSSTEX 1 "May 29, 2007"
+.\" Please adjust this date whenever revising the manpage.
+.\"
+.\" Some roff macros, for reference:
+.\" .nh        disable hyphenation
+.\" .hy        enable hyphenation
+.\" .ad l      left justify
+.\" .ad b      justify to both left and right margins
+.\" .nf        disable filling
+.\" .fi        enable filling
+.\" .br        insert line break
+.\" .sp <n>    insert n+1 empty lines
+.\" for manpage-specific macros, see man(7)
+.SH NAME
+crosstex \- modern bibliography management tool
+.SH SYNOPSIS
+.B crosstex
+.RI [ options ] " files" ...
+.br
+.B bib2xtx
+.RI [ options ] " files" ...
+.br
+.B xtx2html
+.RI [ options ] " files" ...
+.br
+.B xtx2bib
+.RI [ options ] " files" ...
+.SH DESCRIPTION
+This manual page documents briefly the
+.B crosstex
+command and its cousins,
+.BR bib2xtx ,
+.BR xtx2html ,
+and
+.BR xtx2bib .
+.PP
+CrossTeX
+is a modern object-oriented bibliography management tool, designed to replace
+BibTeX.
+It comprises a new bibliographic database format that is much less prone to
+error compared to other alternatives like
+BibTeX ,
+and a new tool for creating the citations that appear at the end of scholarly
+texts that is very flexible.
+.PP
+In addition to the ability to process bibliographic databases as an assistant
+to
+.BR latex ,
+using the same invocation idiom as
+.BR bibtex ,
+.B crosstex
+may be invoked under the following aliases:
+.TP
+.B xtx2html
+Convert a database to HTML, for example for inclusion of a personal publication
+database in a home page.
+.TP
+.B xtx2bib
+Back-convert a CrossTeX database to use only BibTeX constructs in case
+processing with BibTeX is required by a publisher.
+.TP
+.B bib2xtx
+Optimize an old-style BibTeX database to take advantage of advanced CrossTeX
+features such as @default statements; useful for converting large old databases
+in an automatic pass.
+.SH SEE ALSO
+The programs are documented fully by
+.IR "The CrossTeX Tutorial" .
+.SH AUTHOR
+CrossTeX was written by Emin Gun Sirer <egs@systems.cs.cornell.edu> and
+Robert Burgess <burgess@systems.cs.cornell.edu>.
