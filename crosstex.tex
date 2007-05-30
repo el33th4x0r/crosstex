@@ -945,6 +945,13 @@ If both \texttt{--link~Abstract} and \texttt{--abstract} are specified,
 link or as a block, based on whether it appears to be a complete text
 or a link to the real abstract.
 
+When converting to HTML, it may occasionally be desirable to make use of
+the dynamic nature of web sites and cause abstracts and keywords to appear
+as tooltip-like popups attached to each entry rather than taking up space
+on their own.  The \texttt{--popups} option will cause the appropriate
+style manipulations (but does nothing without \texttt{--xtx2html} and
+at least one of \texttt{--abstract} or \texttt{--keywords}).
+
 \subsection{Putting the title first}
 
 Ordinarily, each entry begins with the author or editor first, then the
