@@ -109,6 +109,8 @@ optparser.add_option('--add-proceedings', action='store_const', const='Proceedin
 optparser.add_option('--abstract', action='store_true', help="In the bibliography, include paper abstracts if available.")
 optparser.add_option('--no-abstract', action='store_false', dest='abstract')
 optparser.add_option('--keywords', action='store_true', help="In the bibliography, include paper keywords if available.")
+optparser.add_option('--popups', action='store_true', help="If abstracts or keywords are to appear for an entry when generating HTML, instead hide these extra blocks and reveal them as popups when the mouse hovers over the entry.")
+optparser.add_option('--no-popups', action='store_false')
 optparser.add_option('--no-keywords', action='store_false', dest='keywords')
 optparser.add_option('--titlecase', type='choice', choices=['lower', 'upper', 'as-is', 'default'], help="In the bibliography, force titles into lower-, upper-, or title-case.  Default: Leave titles unchanged.")
 optparser.add_option('--title-head', action='store_true', help="In the bibliography, put the title bold and first.")
@@ -921,6 +923,11 @@ for infilename in args:
     if bib.options.convert == 'html':
 	outfile.write("\\documentclass{report}\n")
 	outfile.write("\\usepackage{hyperref}\n")
+	if bib.options.popups:
+	    outfile.write("\\newstyle{.dd-list}{position:relative}\n")
+	    outfile.write("\\newstyle{.dd-list .extras}{visibility:hidden;position:absolute;top:100\%;left:4em;margin-top:-1em;padding:1em;border:1px solid \#aaaaaa;background:\#ffffff;z-index:1}\n")
+	    outfile.write("\\newstyle{.dd-list .extras *}{margin-left:0;padding-left:0}\n")
+	    outfile.write("\\newstyle{.dd-list:hover .extras}{visibility:visible}\n")
 	outfile.write("\\begin{document}\n")
     if bib.options.convert == 'html' or bib.options.convert == 'bbl':
 	for i in bib.preambles:

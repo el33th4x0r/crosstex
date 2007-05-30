@@ -681,20 +681,20 @@ class misc(bibobject):
 	    valuepublication = self._fullpublication()
 	    if self._options.title_head:
 		if valuetitle != '':
-		    value = punctuate(self._bib, value, '', "\n\\newblock")
+		    value = punctuate(self._bib, value, '', "\n\\newblock ")
 		    value += "\\textbf{%s}" % valuetitle
 		if valueauthor != '':
-		    value = punctuate(self._bib, value, '', "\n\\newblock")
+		    value = punctuate(self._bib, value, '', "\n\\newblock ")
 		    value += valueauthor
 	    else:
 		if valueauthor != '':
-		    value = punctuate(self._bib, value, '', "\n\\newblock")
+		    value = punctuate(self._bib, value, '', "\n\\newblock ")
 		    value += valueauthor
 		if valuetitle != '':
-		    value = punctuate(self._bib, value, '', "\n\\newblock")
+		    value = punctuate(self._bib, value, '', "\n\\newblock ")
 		    value += valuetitle
 	    if valuepublication != '':
-		value = punctuate(self._bib, value, '', "\n\\newblock")
+		value = punctuate(self._bib, value, '', "\n\\newblock ")
 		value += valuepublication
 
             abstractlink = False
@@ -710,23 +710,30 @@ class misc(bibobject):
 			if myfield == 'abstract':
 			    abstractlink = True
 	    if links != '':
-		value = punctuate(self._bib, value, '', "\n\\newblock")
+		value = punctuate(self._bib, value, '', "\n\\newblock ")
 		value += links
 
-            if not unassigned(self.abstract) and self._options.abstract and not abstractlink:
-		value = punctuate(self._bib, value, "\n")
-                value += "\\begin{quotation}\\noindent\\begin{small}%s\\end{small}\\end{quotation}" % stringify(self.abstract, self)
-            if not unassigned(self.keywords) and self._options.keywords:
-		value = punctuate(self._bib, value, "\n")
-                value += "\\begin{quote}\\begin{small}\\textsc{Keywords:} %s\\end{small}\\end{quote}" % stringify(self.keywords, self)
-
 	    if not unassigned(self.url) and self._name != 'url':
-		value = punctuate(self._bib, value, '', "\n\\newblock")
+		value = punctuate(self._bib, value, '', "\n\\newblock ")
 		value += punctuate(self._bib, stringify(self.url, self), '.')
 
 	    if not unassigned(self.note):
-		value = punctuate(self._bib, value, '', "\n\\newblock")
+		value = punctuate(self._bib, value, '', "\n\\newblock ")
 		value += punctuate(self._bib, stringify(self.note, self), '.')
+
+	    extras = ''
+            if not unassigned(self.abstract) and self._options.abstract and not abstractlink:
+		extras = punctuate(self._bib, extras, "\n")
+                extras += "\\begin{quotation}\\noindent\\begin{small}%s\\end{small}\\end{quotation}" % stringify(self.abstract, self)
+            if not unassigned(self.keywords) and self._options.keywords:
+		extras = punctuate(self._bib, extras, "\n")
+                extras += "\\begin{quote}\\begin{small}\\textsc{Keywords:} %s\\end{small}\\end{quote}" % stringify(self.keywords, self)
+
+	    if extras:
+		if self._options.convert == 'html':
+		    extras = "\\@open{DIV}{\\@getprint{CLASS=\"extras\"}}%s\\@close{DIV}" % extras
+		value = punctuate(self._bib, value, '', "\n")
+		value += extras
 
             label = self._label()
             if label != '':
@@ -735,6 +742,7 @@ class misc(bibobject):
                 value = "\\bibitem%s{}\n%s\n\n" % (label, str.strip(value))
 	    else:
                 value = "\\bibitem%s{%s}\n%s\n\n" % (label, self._citekey, str.strip(value))
+
         return value
 
 class article(misc):
