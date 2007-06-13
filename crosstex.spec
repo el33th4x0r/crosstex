@@ -26,7 +26,7 @@ the end of scholarly texts that is very flexible.
 %setup -q
 
 %install
-make ROOT=$RPM_BUILD_ROOT VERSION=%{version} RELEASE=%{release} PREFIX=%{prefix} BINDIR=%{bindir} LIBDIR=%{libdir} PLY=%{ply} install
+make ROOT=$RPM_BUILD_ROOT VERSION=%{version} RELEASE=%{release} PREFIX=%{prefix} BINDIR=%{bindir} LIBDIR=%{libdir} PLY=%{ply} MANDIR=%{mandir} install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -38,6 +38,10 @@ rm -rf $RPM_BUILD_ROOT
 %{prefix}%{bindir}/xtx2html
 %{prefix}%{bindir}/bib2xtx
 %{prefix}%{libdir}
+%{prefix}%{mandir}/man1/crosstex.1
+%{prefix}%{mandir}/man1/xtx2bib.1
+%{prefix}%{mandir}/man1/xtx2html.1
+%{prefix}%{mandir}/man1/bib2xtx.1
 
 %changelog
 * Wed Nov 15 2006 Emin Gun Sirer <egs@systems.cs.cornell.edu> - 
