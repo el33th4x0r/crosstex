@@ -709,17 +709,15 @@ achieving the precise formatting desired.
 
 \subsection{Invoking \XTX{}}
 
-In its simplest invocation, \texttt{crosstex} takes one or more file
-names, e.g. \texttt{crosstex \textrm{\textit{file1 file2 ...}}}. Each
-file is processed separately. Files are found in a search path containing
-the directory containing the file being processed and a central system
-directory (e.g. \texttt{/usr/local/crosstex/lib}); this search path can
-be extended with the \texttt{--dir} option. Extensions (\texttt{.aux},
-\texttt{.xtx}, \texttt{.bib}) will be added if necessary to find the
-file. Each output will always appear in the same directory as the
-file processed, under the same name but with the extension changed to
-\texttt{.bbl}. Errors in one file will not prevent processing the others,
-but \texttt{crosstex} will exit with an error code at the end if any
+In its simplest invocation, \texttt{crosstex} takes a file name,
+e.g. \texttt{crosstex \textrm{\textit{file1}}}. Any included files are found in a
+search path containing the directory with the file being processed and a
+central system directory (e.g. \texttt{/usr/local/crosstex/lib}); this
+search path can be extended with the \texttt{--dir} option. Extensions
+(\texttt{.aux}, \texttt{.xtx}, \texttt{.bib}) will be added if necessary
+to find the file. Each output will always appear in the same directory as
+the file processed, under the same name but with the extension changed
+to \texttt{.bbl}. \texttt{crosstex} will exit with an error code if any
 warning or error messages were printed.
 
 If \texttt{crosstex} is invoked as \texttt{xtx2bib} or the
@@ -732,7 +730,7 @@ If \texttt{crosstex} is invoked as \texttt{bib2xtx} or the
 \texttt{.xtx}, and the bibliographic information will be output using
 \XTX{}'s advanced features where possible.  Currently, it is possible
 to use the \texttt{--heading} and \texttt{--reverse-heading} as usual
-to specify any number of fields to pull out with \texttt{@default}
+to specify any hierarchy of fields to pull out with \texttt{@default}
 statements.  This feature can be very convenient for converting old
 \BibTeX{} databases to \XTX{}, but might lose some information if used
 on an already optimized \XTX{} database.
@@ -940,10 +938,10 @@ The \texttt{--keywords} option invokes similar behavior for keyword
 lists.  To explicitly set the defaults, \texttt{--no-abstract} and
 \texttt{--no-keywords} disable these extra blocks.
 
-If both \texttt{--link~Abstract} and \texttt{--abstract} are specified,
-\XTX{} tries to be intelligent: The abstract will either appear as a
-link or as a block, based on whether it appears to be a complete text
-or a link to the real abstract.
+%If both \texttt{--link~Abstract} and \texttt{--abstract} are specified,
+%\XTX{} tries to be intelligent: The abstract will either appear as a
+%link or as a block, based on whether it appears to be a complete text
+%or a link to the real abstract.
 
 When converting to HTML, it may occasionally be desirable to make use of
 the dynamic nature of web sites and cause abstracts and keywords to appear
@@ -989,37 +987,14 @@ include labels, use \texttt{--no-blank-labels}.
 
 \subsection{Styles}
 
-Styles, such as \texttt{plain}, \texttt{abbrv}, etc., are simply
-collections of arguments to \XTX{} that produce the appropriate
-appearance, and \XTX{} is designed to make it easy to change or add
-styles.  The style \texttt{html} sets a bunch of link fields and other
-stylistic choices appropriate for the web, and the basic \BibTeX{}
-styles are also implemented by default:
-
-\begin{description} \item[\texttt{abbrv}] is equivalent to
-  \texttt{--no-break-lines --no-blank-labels --no-title-head --no-abstract
-  --no-keywords --short author --cite-by initials}
-\item[\texttt{alpha}] is equivalent to
-  \texttt{--no-break-lines --no-blank-labels --no-title-head --no-abstract
-  --no-keywords --cite-by initials}
-\item[\texttt{full}] is equivalent to
-  \texttt{--no-break-lines --no-blank-labels --no-title-head --no-abstract
-  --no-keywords --cite-by fullname --add-proceedings --add-in}
-\item[\texttt{unsrt}] is equivalent to
-  \texttt{--no-break-lines --no-blank-labels --no-title-head --no-abstract
-  --no-keywords --cite-by number --no-sort}
-\item[\texttt{plain}] is equivalent to
-  \texttt{--no-break-lines --no-blank-labels --no-title-head --no-abstract
-  --no-keywords --cite-by number}
-\item[\texttt{html}] is equivalent to
-  \texttt{-l Abstract -l URL -l PS -l PDF -l HTML -l DVI -l TeX -l
-  Bib -l FTP -l HTTP -l RTF --break-lines --blank-labels --title-head
-  --abstract --keywords}
-\end{description}
-
-Styles allow complex requirements to be conveniently bundled, either
-in the \verb"\bibliographystyle" command or on the command line with
-\texttt{--style~}\textit{name}.
+Whole styles can be conveniently changed with the \texttt{--style}
+option, which overrides the style specified by the document with the
+specified style.  When processing databases directly, the style defaults
+to \texttt{plain}; this option can force the database to be formatted
+with any style desired.  \XTX{} styles are implemented as small, simple
+Python files in \XTX{}'s path, and any style that happens to be installed
+at the site can be used with this option or the \verb"\bibliographystyle"
+command in the document.
 
 \subsection{Inside the \texttt{.tex} file}
 
@@ -1083,43 +1058,80 @@ control title capitalization can be dumped with \texttt{--dump~titlephrase}.
 
 \section{Extending \XTX{}\label{sec:extending}}
 
-\XTX{} is designed to be easy to extend with very trivial knowledge
-of Python. Before continuing, it is very important to have a look at
-the standard object types and fields in Appendix~\ref{sec:standard},
-which are already supported by \XTX{}. New objects or fields are defined
-by editing the file \texttt{crosstexobjects.py}, which is typically
-installed in \texttt{/usr/local/crosstex/lib}.
+\XTX{} is designed to be easy to extend with very trivial knowledge of
+Python. Before continuing, it is very important to have a look at the
+standard object types and fields in Appendix~\ref{sec:standard}, which are
+already supported by \XTX{}. New objects or fields are defined by editing
+the standard objects module \texttt{crosstex.objects}, which is typically
+installed as \texttt{/usr/local/crosstex/lib/crosstex/objects.py}
+or similar.
 
 To create a new field for a particular object type, find its definition
 (e.g., the section defining the \texttt{string} object begins
 \texttt{class string}). Most objects already define some fields;
-simply copy that syntax for your own field.
-
-Fields are defined as optional or required by assigning them the
-values \texttt{OPTIONAL} and \texttt{REQUIRED}, respectively.  To make
-an optional field required or a required field optional, simply assign
-it the new value in the class where you want the change.
-
-To create an entirely new class \textit{foo} which is identical to
-a current one named \textit{bar}, add the following to the end of
-\texttt{crosstexobjects.py}.
+simply copy that syntax for your own field.  To create an entirely new class \textit{foo} which is identical to
+a current one named \textit{bar}, add the following to the end of the list of objects:
 
 \begin{small}\begin{verbatim}
 class foo(bar):
-    pass
+    pass # 'pass' is only necessary if no fields are defined.
 \end{verbatim}\end{small}
 
-If \textit{foo} should have different required or optional fields form
-\textit{bar}, define them as noted above. (The \texttt{pass} is only
-necessary if the body of the \texttt{class} definition is empty, e.g. it
-does not set the values of any fields.)
+Fields are defined as optional or required by assigning them the values
+\texttt{OPTIONAL} and \texttt{REQUIRED}, respectively.  To make an
+optional field required or a required field optional, simply assign
+it the new value in the class where you want the change.  To allow a
+field to inherit its value from another field in the same object if
+left blank, assign a string containing the name of the other field.
+A list containing \texttt{OPTIONAL}, \texttt{REQUIRED}, and one or more
+string field names will be processed and define several sibling fields
+and the given requirement level.  For example, given:
 
-If you are more advanced at Python programming and want to change
-the behavior of objects, simply look at the ones that exist. The
-string value of an object is obtained, appropriately enough, from its
-\texttt{\_\_str\_\_} method, should you want to change the appearance of
-any objects. Similarly, every object has access to an \texttt{\_options}
-member containing the options set on the command line.
+\begin{small}\begin{verbatim}
+class foo(bar):
+    baz = REQUIRED
+    blah = OPTIONAL
+    quux = [REQUIRED, 'baz', 'blah']
+\end{verbatim}\end{small}
+
+This defines a new kind of object named \textit{foo}, which behaves
+the same as \textit{bar}; additionally, the `baz' field is required,
+the `blah' field is optional, and the `quux' field is required but if
+unspecified will try to take its value from `baz' or `blah' in that order.
+
+Styles are defined in small Python modules in the \texttt{style}
+directory in the same place you found \texttt{objects.py}.  There you
+will find the default styles, \texttt{plain.py}, \texttt{full.py}, etc.
+Styles are built up from small filter functions mainly defined in
+\texttt{crosstex.objects}.  Each field is filtered through four phases:
+Production, in which an initial value is generated from the object
+itself; List filtering, if the value is a list (otherwise irrelevant);
+List formatting, to turn a list into a string for the final step; and
+Filtering, in which the string is run through zero or more filters to
+come up with a final value.  Look at the examples to see the syntax
+for hooking filters to each of the four stages in given contexts and
+for given types.  Take as a simple starter the following statements:
+
+\begin{small}\begin{verbatim}
+misc._addproducer(emptyproducer, 'label')
+conference._addfilter(proceedingsfilter, 'value')
+misc._addfilter(emphfilter, 'fullpublication', 'booktitle')
+\end{verbatim}\end{small}
+
+The first states that the label attribute of any object derived from
+\texttt{misc} can be produced by \texttt{emptyproducer} if it returns
+anything other than \texttt{None}.  (\texttt{emptyproducer} is defined
+in \texttt{crosstex.objects}.)  The second statement causes the value of
+\texttt{conference} objects (and objects derived from \texttt{conference})
+to be filtered through a filter that, in this case, prepends `Proceedings
+of the' to the value.  The last statement filters the `booktitle' field
+of \texttt{misc}-derived objects, but only when included as part of the
+`fullpublication' field (which happens to be a virtual field defined
+solely by attaching producers to it).  It is important to note that
+filters and producers are applied starting from the most recent, so
+later producers will take precedence and later filters will be nested
+inside earlier filters.  The standard styles are well-commented and
+should provide a good start.
 
 Happy hacking!
 
