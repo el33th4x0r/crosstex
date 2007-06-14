@@ -673,7 +673,7 @@ def authortitlepublicationproducer(obj, context):
     if linksvalue:
         objvalue = _punctuate(objvalue, "\n\\newblock") + str(linksvalue)
     if extrasvalue:
-        objvalue = _punctuate(objvalue, "\n\\newblock") + str(extrasvalue)
+        objvalue = _punctuate(objvalue, "\n", tail='') + str(extrasvalue)
     if objvalue:
         label = obj._format(*(context + ('label',)))
         if label:
@@ -697,7 +697,7 @@ def titleauthorpublicationproducer(obj, context):
     if linksvalue:
         objvalue = _punctuate(objvalue, "\n\\newblock") + str(linksvalue)
     if extrasvalue:
-        objvalue = _punctuate(objvalue, "\n\\newblock") + str(extrasvalue)
+        objvalue = _punctuate(objvalue, "\n", tail='') + str(extrasvalue)
     if objvalue:
         label = obj._format(*(context + ('label',)))
         if label:
@@ -968,7 +968,9 @@ def emptyfilter(obj, objvalue, context):
     return ''
 
 def extrashtmlfilter(obj, objvalue, context):
-    return "\\@open{DIV}{\\@getprint{CLASS=\"extras\"}}" + objvalue + "\\@close{DIV}"
+    if objvalue:
+        objvalue = "\\@open{DIV}{\\@getprint{CLASS=\"extras\"}}" + objvalue + "\\@close{DIV}"
+    return objvalue
 
 def makeuniquefilter():
     used = []
