@@ -3,10 +3,11 @@ Section: tex
 Priority: optional
 Maintainer: Robert Burgess <burgess@systems.cs.cornell.edu>
 Build-Depends: debhelper (>= 5), python, texlib-base-bin | tetex-bin
+Depends: python-ply
 Standards-Version: 3.7.2
 
 Package: crosstex
-Architecture: any
+Architecture: all
 Depends: python (>= 2.2)
 Description: modern object-oriented bibliography management tool
  CrossTeX is a modern, object-oriented bibliography management tool,

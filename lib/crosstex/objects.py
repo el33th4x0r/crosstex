@@ -808,7 +808,7 @@ def fullpublicationproducer(obj, context):
         if numbervalue:
             value = _punctuate(value, ',')
             numbertypevalue = obj._format(*(context + ('numbertype',)))
-            if numbertype:
+            if numbertypevalue:
                 value = _punctuate(value + str(numbertypevalue))
             value += str(numbervalue)
         pagesvalue = obj._format(*(context + ('pages',)))
