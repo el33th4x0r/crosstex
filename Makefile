@@ -13,9 +13,11 @@ all:
 	@echo nothing to make, try make install
 
 install:
-	mkdir -p $(ROOT)$(PREFIX)$(BINDIR) $(ROOT)$(PREFIX)$(LIBDIR) $(ROOT)$(PREFIX)$(MANDIR)/man1
-	cp -a lib/* data/*.xtx $(ROOT)$(PREFIX)$(LIBDIR)
-	cp crosstex.1 $(ROOT)$(PREFIX)$(MANDIR)/man1
+	mkdir -p $(ROOT)$(PREFIX)$(BINDIR) $(ROOT)$(PREFIX)$(LIBDIR)/crosstex/style $(ROOT)$(PREFIX)$(MANDIR)/man1
+	install -m 0644 lib/crosstex/*.py $(ROOT)$(PREFIX)$(LIBDIR)/crosstex
+	install -m 0644 lib/crosstex/style/*.py $(ROOT)$(PREFIX)$(LIBDIR)/crosstex/style
+	install -m 0644 data/*.xtx $(ROOT)$(PREFIX)$(LIBDIR)
+	install -m 0644 crosstex.1 $(ROOT)$(PREFIX)$(MANDIR)/man1
 	ln -sf crosstex.1 $(ROOT)$(PREFIX)$(MANDIR)/man1/xtx2bib.1
 	ln -sf crosstex.1 $(ROOT)$(PREFIX)$(MANDIR)/man1/xtx2html.1
 	ln -sf crosstex.1 $(ROOT)$(PREFIX)$(MANDIR)/man1/bib2xtx.1
@@ -38,10 +40,15 @@ crosstex.pdf: crosstex.tex
 .PHONY: pdf
 pdf: crosstex.pdf
 
-${PACKAGE}.tar.gz: COPYING Makefile crosstex crosstex.1 crosstex.pdf crosstex.spec crosstex.tex data debian lib tests
+${PACKAGE}.tar.gz: COPYING Makefile crosstex crosstex.1 crosstex.pdf crosstex.spec crosstex.tex
 	rm -rf ${PACKAGE}
-	mkdir ${PACKAGE}
-	cp -a COPYING Makefile crosstex crosstex.1 crosstex.pdf crosstex.tex data debian lib tests ${PACKAGE}
+	mkdir -p ${PACKAGE}/data ${PACKAGE}/debian ${PACKAGE}/lib/crosstex/style ${PACKAGE}/tests
+	install -m 0644 COPYING Makefile crosstex crosstex.1 crosstex.pdf crosstex.tex ${PACKAGE}
+	install -m 0644 data/*.xtx ${PACKAGE}/data
+	install -m 0644 lib/crosstex/*.py ${PACKAGE}/lib/crosstex
+	install -m 0644 lib/crosstex/style/*.py ${PACKAGE}/lib/crosstex/style
+	install -m 0644 tests/*.tex tests/*.xtx ${PACKAGE}/tests
+	install debian/* ${PACKAGE}/debian
 	sed -e "1i %define name crosstex" \
 	    -e "1i %define version ${VERSION}" \
 	    -e "1i %define release ${RELEASE}" \
@@ -52,7 +59,6 @@ ${PACKAGE}.tar.gz: COPYING Makefile crosstex crosstex.1 crosstex.pdf crosstex.sp
 	    -e "1i %define ply ${PLY}" \
 	    crosstex.spec >${PACKAGE}/crosstex.spec
 	tar czf ${PACKAGE}.tar.gz ${PACKAGE}
-	rm -rf ${PACKAGE}
 
 .PHONY: dist
 dist: ${PACKAGE}.tar.gz
@@ -68,8 +74,8 @@ rpm: dist
 deb: dist
 	cp ${PACKAGE}.tar.gz crosstex_${VERSION}.orig.tar.gz
 	(cd ${PACKAGE} && dpkg-buildpackage -rfakeroot)
-	rm -rf crosstex_${VERSION}*
 
 clean:
 	rm -rf *~ *.pyc *.aux *.bbl *.dvi *.log *.tar.gz *.rpm *.html \
-	       *.out *.toc *.pdf *.haux *.htoc *-rpm *.bak
+	       *.out *.toc *.pdf *.haux *.htoc *-rpm *.bak ${PACKAGE} \
+	       crosstex_${VERSION}*
