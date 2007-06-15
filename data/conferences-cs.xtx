@@ -540,7 +540,6 @@
 @conference{ftc,	shortname = "FTC",	longname = "International Symposium on Fault-Tolerant Computing"}
 @conference{globecon,	name = "IEEE Global Telecommunications Conference"}
 @conference{globint,	name = "IEEE Global Internet Symposium"}
-@conference{hawaiisystems,	name = "Annual Hawaii International Conference on System Sciences"}
 @conference{ibmwatson,	name = "Watson Conference on the Interaction between Architecture, Circuits, and Compilers"}
 @conference{icdsp,	name = "IFIP/ACM International Conference on Distributed Systems Platforms"}
 @conference{icpids,	shortname = "ICPIDS",	longname = "IEEE International Conference in Parallel and Distributed Information Systems"}
@@ -666,6 +665,10 @@
         [year=2007] address=Waikoloa, month=jan,
         [year=2006] isbn="0-7695-2507-5", address=Kauai, month=jan,
         [year=2005] isbn="0-7695-2268-8", address=Hawaii, month=jan,
+        [year=2004] address=Hawaii, month=jan,
+        [year=2003] address=Hawaii, month=jan,
+        [year=2002] address=Hawaii, month=jan,
+        [year=2001] address=Hawaii, month=jan,
 }              
 
 @conference{hpca,
