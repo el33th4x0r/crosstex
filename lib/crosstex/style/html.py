@@ -11,7 +11,7 @@ misc._addfilter(emphfilter, 'fullpublication', 'booktitle')
 misc._addfilter(emphfilter, 'fullpublication', 'journal')
 
 # Preface conference names with 'Proceedings of the'.
-conference._addfilter(proceedingsfilter, 'value')
+inproceedings._addfilter(proceedingsfilter, 'fullpublication', 'booktitle')
 
 # Use long labels.
 misc._addproducer(makegetterproducer('fullnamelabel'), 'label')

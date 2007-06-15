@@ -209,20 +209,21 @@ class entry(formatter):
                 inherit = []
                 next = []
                 for field, value, condition in conditionals:
-                    if not hasattr(type(self), field) or field in self._fields:
+                    if self._produce((field,)) != None:
                         continue
                     for condfield in condition:
-                        if condfield not in self._fields:
+                        condfieldvalue = self._produce((condfield,))
+                        if condfieldvalue == None:
                             next.append( (field, value, condition) )
                             break
-                        elif condition[condfield] != self._fields[condfield]:
+                        elif condition[condfield] != condfieldvalue:
                             break
                     else:
                         self._fields[field] = value
                         if isinstance(value, entry):
                             for inheritfield, inheritvalue, inheritcondition in value._conditionals[0]:
                                 for condfield in inheritcondition.keys() + [inheritfield]:
-                                    if not hasattr(type(self), field):
+                                    if not hasattr(type(self), condfield):
                                         break
                                 else:
                                     inherit.append( (inheritfield, inheritvalue, inheritcondition) )
@@ -231,7 +232,7 @@ class entry(formatter):
                                     if isinstance(element, entry):
                                         for inheritfield, inheritvalue, inheritcondition in element._conditionals[0]:
                                             for condfield in inheritcondition.keys() + [inheritfield]:
-                                                if not hasattr(type(self), field):
+                                                if not hasattr(type(self), condfield):
                                                     break
                                             else:
                                                 inherit.append( (inheritfield, inheritvalue, inheritcondition) )
@@ -485,6 +486,7 @@ class url(misc):
     url = REQUIRED
     accessmonth = OPTIONAL
     accessyear = OPTIONAL
+    accessday = OPTIONAL
 
 class newspaperarticle(article):
     author = OPTIONAL
@@ -837,12 +839,15 @@ def fullpublicationproducer(obj, context):
 
 def accessedproducer(obj, context):
     urlvalue = str(obj._format(*(context + ('url',))))
+    dayvalue = obj._format(*(context + ('accessday',)))
     yearvalue = obj._format(*(context + ('accessyear',)))
     monthvalue = obj._format(*(context + ('accessmonth',)))
     if yearvalue or monthvalue:
         urlvalue = _punctuate(urlvalue, ',') + "Accessed"
     if monthvalue:
         urlvalue = _punctuate(urlvalue) + monthvalue
+        if dayvalue:
+            urlvalue = _punctuate(urlvalue) + dayvalue
         if yearvalue:
             urlvalue = _punctuate(urlvalue, ',') + yearvalue
     elif yearvalue:
@@ -988,25 +993,37 @@ def twodigitfilter(obj, objvalue, context):
     return objvalue[-2:]
 
 def infilter(obj, objvalue, context):
-    return "In " + objvalue
+    if objvalue:
+        objvalue = "In " + objvalue
+    return objvalue
 
 def procfilter(obj, objvalue, context):
-    return "Proc. of " + objvalue
-
-def emphfilter(obj, objvalue, context):
-    return "\\emph{" + objvalue + "}"
-
-def boldfilter(obj, objvalue, context):
-    return "\\textbf{" + objvalue + "}"
+    if objvalue:
+        objvalue = "Proc. of " + objvalue
+    return objvalue
 
 def proceedingsfilter(obj, objvalue, context):
-    return "Proceedings of the " + objvalue
+    if objvalue:
+        objvalue = "Proceedings of the " + objvalue
+    return objvalue
+
+def emphfilter(obj, objvalue, context):
+    if objvalue:
+        objvalue = "\\emph{" + objvalue + "}"
+    return objvalue
+
+def boldfilter(obj, objvalue, context):
+    if objvalue:
+        objvalue = "\\textbf{" + objvalue + "}"
+    return objvalue
 
 def edfilter(obj, objvalue, context):
-    return _punctuate(objvalue, ',', 'ed.')
+    return _punctuate(objvalue, ',', ' ed.')
 
 def bracesfilter(obj, objvalue, context):
-    return "{" + str.strip(objvalue) + "}"
+    if objvalue:
+        objvalue = "{" + str.strip(objvalue) + "}"
+    return objvalue
 
 def dotfilter(obj, objvalue, context):
     return _punctuate(objvalue, '.')
