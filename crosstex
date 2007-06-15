@@ -39,6 +39,7 @@ import re
 import optparse
 import string
 import tempfile
+import imp
 
 import crosstex.objects
 
@@ -910,11 +911,20 @@ if bib.options.abstract or bib.options.keywords:
 if bib.options.title_head:
     bib.objects['misc']._addfilter(crosstex.objects.boldfilter, 'fulltitle')
 try:
-    stylemodule = __import__('crosstex.style.' + bib.options.style)
-    stylemodule = getattr(stylemodule.style, bib.options.style)
+    mod = None
+    try:
+        mod = imp.find_module(bib.options.style, [outfilename[:outfilename.rfind('/')]])
+        stylemodule = imp.load_module(bib.options.style, *mod)
+    finally:
+        if mod and mod[0]:
+            mod[0].close()
 except ImportError, details:
-    bib.error("crosstex: unable to load style %s" % bib.options.style)
-    sys.exit(bib.errors)
+    try:
+        stylemodule = __import__('crosstex.style.' + bib.options.style)
+        stylemodule = getattr(stylemodule.style, bib.options.style)
+    except ImportError, details:
+        bib.error("crosstex: unable to load style %s" % bib.options.style)
+        sys.exit(bib.errors)
 if bib.options.cite_by == 'number':
     bib.objects['misc']._addproducer(crosstex.objects.emptyproducer, 'label')
 elif bib.options.cite_by == 'initials':
