@@ -109,8 +109,6 @@ class formatter(object):
         return objvalue
 
     def _filter(self, objvalue, context):
-        if objvalue == None:
-            return objvalue
         if isinstance(objvalue, entry) and isinstance(self, entry):
             objvalue = copy.deepcopy(objvalue)
             for field, value, condition in self._conditionals[0]:
@@ -118,6 +116,10 @@ class formatter(object):
                     objvalue._addfield(field, value, condition)
                 except ValueError:
                     pass
+        if isinstance(objvalue, formatter):
+            objvalue = objvalue._format('value')
+        if objvalue == None:
+            return objvalue
         objvalue = str(objvalue)
         for trycontext in range(len(context))[::-1]:
             if context[trycontext:] in self._filters:
@@ -146,10 +148,7 @@ class formatter(object):
         return objvalue
 
     def __str__(self):
-        value = self._format('value')
-        if value == None:
-            raise ValueError, "no value for formatter of type %s" % type(self).__name__
-        return str(value)
+        return str(self._format('value') or '')
 
 class entrylist(formatter, list):
 
@@ -167,6 +166,7 @@ class entry(formatter):
 
         self._conditionals = []
         self._fields = None
+        self._assigned = {}
         self._citekey = None
 
         super(entry, self).__init__(*kargs, **kwargs)
@@ -199,49 +199,85 @@ class entry(formatter):
 
     def _resolve(self):
         self._fields = {}
+        self._assigned = {}
         next = []
         for layer in self._conditionals:
-            next.extend(layer)
+            next.extend([(self, field, value, condition) for field, value, condition in layer])
             changed = True
             while changed:
                 changed = False
                 conditionals = next
                 inherit = []
                 next = []
-                for field, value, condition in conditionals:
-                    if self._produce((field,)) != None:
-                        continue
+                for obj, field, value, condition in conditionals:
                     for condfield in condition:
-                        condfieldvalue = self._produce((condfield,))
-                        if condfieldvalue == None:
-                            next.append( (field, value, condition) )
+                        if not hasattr(self.__class__, condfield):
                             break
-                        elif condition[condfield] != condfieldvalue:
+                        elif condfield not in self._fields or self._fields[condfield] != condition[condfield]:
+                            next.append( (obj, field, value, condition) )
                             break
                     else:
-                        self._fields[field] = value
+                        changed = self._setfield(field, value, obj)
+                        if not changed:
+                            continue
+                        inheritance = []
                         if isinstance(value, entry):
-                            for inheritfield, inheritvalue, inheritcondition in value._conditionals[0]:
-                                for condfield in inheritcondition.keys() + [inheritfield]:
-                                    if not hasattr(type(self), condfield):
-                                        break
-                                else:
-                                    inherit.append( (inheritfield, inheritvalue, inheritcondition) )
+                            inheritance = [value]
                         elif isinstance(value, list):
                             for element in value:
-                                    if isinstance(element, entry):
-                                        for inheritfield, inheritvalue, inheritcondition in element._conditionals[0]:
-                                            for condfield in inheritcondition.keys() + [inheritfield]:
-                                                if not hasattr(type(self), condfield):
-                                                    break
-                                            else:
-                                                inherit.append( (inheritfield, inheritvalue, inheritcondition) )
-                        changed = True
+                                if isinstance(element, entry):
+                                    inheritance.append(element)
+                        for value in inheritance:
+                            for inheritfield, inheritvalue, inheritcondition in value._conditionals[0]:
+                                if not hasattr(self.__class__, inheritfield) or inheritfield in self._fields:
+                                    continue
+                                for condfield in inheritcondition.keys():
+                                    if not hasattr(self.__class__, condfield):
+                                        break
+                                else:
+                                    inherit.append( (value, inheritfield, inheritvalue, inheritcondition) )
                 next.extend(inherit)
 
+    def _setfield(self, field, value, obj):
+        changed = False
+        inheritfields = [x for x in dir(self.__class__) if not x.startswith('_')]
+        for i in range(len(inheritfields)):
+            if inheritfields[i] == field:
+                del inheritfields[i]
+                inheritfields.insert(0, field)
+                break
+        else:
+            raise ValueError, "attempted to set non-existant field %s" % field
+        for inheritfield in inheritfields:
+            fields = [inheritfield]
+            checkvalue = getattr(self.__class__, inheritfield)
+            if isinstance(checkvalue, list):
+                for element in checkvalue[::-1]:
+                    if not isinstance(element, requirement):
+                        fields.append(element)
+            elif not isinstance(checkvalue, requirement):
+                fields.append(checkvalue)
+            assign = False
+            for checkfield in fields:
+                if checkfield == field:
+                    assign = True
+                if checkfield in self._fields and (self._assigned[checkfield] != obj or (not assign and checkfield != field)):
+                    break
+            else:
+                if assign:
+                    if inheritfield == field:
+                        changed = True
+                        self._fields[inheritfield] = value
+                        self._assigned[inheritfield] = obj
+                    else:
+                        changed = self._setfield(inheritfield, value, obj) or changed
+        return changed
+
     def _check(self):
+        if self._fields == None:
+            self._resolve()
         for field in self._required:
-            if self._produce((field,)) == None:
+            if field not in self._fields:
                 raise ValueError, "field %s, required by %s, is missing" % (field, self._name)
 
 
@@ -271,6 +307,9 @@ class country(string):
     pass
 
 class location(string):
+    name = [REQUIRED, 'shortname', 'longname', 'city', 'state', 'country']
+    shortname = [OPTIONAL, 'name', 'longname']
+    longname = [OPTIONAL, 'name', 'shortname']
     city = OPTIONAL
     state = OPTIONAL
     country = OPTIONAL
@@ -524,7 +563,7 @@ def _names(name, short=False, plain=False):
     names = []
     nesting = 0
     if isinstance(name, formatter):
-        name = name._format('value')
+        name = name._format('value') or ''
     for i in range(0, len(name)):
         charc = name[i]
         if nesting == 0 and lastchar != '\\' and lastchar != ' ' and charc == " ":
@@ -964,7 +1003,7 @@ def fullnameslistformatter(obj, objvalue, context):
         (fnames1, mnames1, lnames1, snames1) = _names(objvalue[0])
         (fnames2, mnames1, lnames2, snames2) = _names(objvalue[1])
         value = ' '.join(lnames1) + " \& " + ' '.join(lnames2)
-    else:
+    elif objvalue:
         (fnames1, mnames1, lnames1, snames1) = _names(objvalue[0])
         value = ' '.join(lnames1)
         if len(objvalue) > 2:
@@ -1138,10 +1177,9 @@ def makeaccessorproducer(field):
     def accessorproducer(obj, context):
         if obj._fields == None:
             obj._resolve()
-        try:
-            return obj._fields[field]
-        except KeyError:
+        if context[-1] not in obj._fields:
             return None
+        return obj._fields[context[-1]]
     return accessorproducer
 
 for objtype in globals().values():
@@ -1154,13 +1192,9 @@ for objtype in globals().values():
                     if isinstance(element, requirement):
                         if element is REQUIRED and field not in objtype._required:
                             objtype._required.append(field)
-                    else:
-                        objtype._addproducer(makeaccessorproducer(str(element)), field)
             elif isinstance(value, requirement):
                 if value is REQUIRED and field not in objtype._required:
                     objtype._required.append(field)
-            else:
-                objtype._addproducer(makeaccessorproducer(str(value)), field)
             objtype._addproducer(makeaccessorproducer(field), field)
 
 def listproducer(obj, context):

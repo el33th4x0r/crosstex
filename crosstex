@@ -671,7 +671,6 @@ def p_field(t):
                         t.lexer.bib.warning("%s:%d: %s" % (t.lexer.file, t.lineno(3), detail))
                     except Exception, detail:
                         t.lexer.bib.error("%s:%d: %s" % (t.lexer.file, t.lineno(3), detail))
-                        raise
         else:
             values.append(t[3])
         t[0] = {t[1]: values}
@@ -950,10 +949,12 @@ for objtype in bib.options.dump:
             sys.stderr.write("crosstex: no such object type %s.\n" % objtype)
         continue
     objs = [ "%s\t%s\n" % (key, bib[key]) for key in bib.primarykeys if isinstance(bib[key], bib.objects[objtype]) ]
-    if len(objs) != 0:
+    if objs:
         sys.stderr.write("%s\n" % (objtype.upper() + ':'))
         for i in objs:
             sys.stderr.write(i)
+    else:
+        sys.stderr.write("crosstex: no %s objects defined.\n" % objtype)
 if 'titlephrase' in bib.options.dump:
     sys.stderr.write("TITLE PHRASES:\n")
     for phrase in bib.titlephrases.values():
