@@ -678,7 +678,7 @@ def authortitlepublicationproducer(obj, context):
         label = obj._format(*(context + ('label',)))
         if label:
             label = '[%s]' % label
-        objvalue = "\\bibitem%s{%s}\n%s\n\n" % (label, obj._citekey, str.strip(objvalue))
+        objvalue = "\\bibitem%s{%s}\n%s\n" % (label, obj._citekey, str.strip(objvalue))
     return objvalue
 
 def titleauthorpublicationproducer(obj, context):
@@ -702,7 +702,7 @@ def titleauthorpublicationproducer(obj, context):
         label = obj._format(*(context + ('label',)))
         if label:
             label = '[%s]' % label
-        objvalue = "\\bibitem%s{%s}\n%s\n\n" % (label, obj._citekey, str.strip(objvalue))
+        objvalue = "\\bibitem%s{%s}\n%s\n" % (label, obj._citekey, str.strip(objvalue))
     return objvalue
 
 def makelinksproducer(fields):
@@ -724,9 +724,11 @@ def extrasproducer(obj, context):
     abstractvalue = obj._format(*(context + ('abstract',)))
     keywordsvalue = obj._format(*(context + ('keywords',)))
     if abstractvalue:
-        extras = _punctuate(extras, "\n") + "\\begin{quotation}\\noindent\\begin{small}%s\\end{small}\\end{quotation}" % abstractvalue
+        extras = _punctuate(extras, "\n", tail='') + "\\noindent\\begin{small}%s\\end{small}" % abstractvalue
     if keywordsvalue:
-        extras = _punctuate(extras, "\n") + "\\begin{quotation}\\noindent\\begin{small}\\textsc{Keywords:} %s\\end{small}\\end{quotation}" % keywordsvalue
+        extras = _punctuate(extras, "\n\n", tail='') + "\\noindent\\begin{small}\\textsc{Keywords:} %s\\end{small}" % keywordsvalue
+    if extras:
+        extras = "\\begin{quotation}" + extras + "\\end{quotation}"
     return extras
 
 def authoryearproducer(obj, context):
@@ -966,11 +968,6 @@ def fullnameslistformatter(obj, objvalue, context):
 
 def emptyfilter(obj, objvalue, context):
     return ''
-
-def extrashtmlfilter(obj, objvalue, context):
-    if objvalue:
-        objvalue = "\\@open{DIV}{\\@getprint{CLASS=\"extras\"}}" + objvalue + "\\@close{DIV}"
-    return objvalue
 
 def makeuniquefilter():
     used = []

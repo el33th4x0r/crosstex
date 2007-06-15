@@ -18,7 +18,6 @@ misc._addproducer(makegetterproducer('fullnamelabel'), 'label')
 
 # Show extras and wrap in some HTML magic to allow popups.
 misc._addproducer(extrasproducer, 'extras')
-misc._addfilter(extrashtmlfilter, 'extras')
 
 # Title first and bold.
 misc._addfilter(boldfilter, 'fulltitle')

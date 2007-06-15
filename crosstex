@@ -804,8 +804,7 @@ def writecategories(categories, bib, outfile):
                 for entryfield, entryvalue, entrycondition in bib[key]._conditionals[0]:
                     if entryfield == field:
                         bib[key]._conditionals[-1].append((entryfield, entryvalue, entrycondition))
-            value = str(bib[key])
-            outfile.write(value)
+            outfile.write(str(bib[key]))
     elif isinstance(categories, dict):
         headings = categories.keys()
         headings.sort()
@@ -960,11 +959,12 @@ if bib.options.convert == 'bib' or bib.options.convert == 'xtx':
 if bib.options.convert == 'html':
     outfile.write("\\documentclass{report}\n")
     outfile.write("\\usepackage{hyperref}\n")
+    outfile.write("\\newstyle{.dt-list}{margin-top:1em}\n")
     if bib.options.popups:
         outfile.write("\\newstyle{.dd-list}{position:relative}\n")
-        outfile.write("\\newstyle{.dd-list .extras}{visibility:hidden;position:absolute;top:100\%;left:4em;margin-top:-1em;padding:1em;border:1px solid \#aaaaaa;background:\#ffffff;z-index:1}\n")
-        outfile.write("\\newstyle{.dd-list .extras *}{margin-left:0;padding-left:0}\n")
-        outfile.write("\\newstyle{.dd-list:hover .extras}{visibility:visible}\n")
+        outfile.write("\\newstyle{.dd-list .quotation}{visibility:hidden;position:absolute;top:100\%;left:4em;margin-top:-1em;padding:1em;border:1px solid \#aaaaaa;background:\#ffffff;z-index:1}\n")
+        outfile.write("\\newstyle{.dd-list .quotation *}{margin-left:0;padding-left:0}\n")
+        outfile.write("\\newstyle{.dd-list:hover .quotation}{visibility:visible}\n")
     outfile.write("\\begin{document}\n")
 if bib.options.convert == 'html' or bib.options.convert == 'bbl':
     for i in bib.preambles:
