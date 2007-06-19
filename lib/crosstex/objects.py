@@ -238,39 +238,31 @@ class entry(formatter):
                                     inherit.append( (value, inheritfield, inheritvalue, inheritcondition) )
                 next.extend(inherit)
 
-    def _setfield(self, field, value, obj):
+    def _setfield(self, field, value, obj, fromfields=[]):
         changed = False
-        inheritfields = [x for x in dir(self.__class__) if not x.startswith('_')]
-        for i in range(len(inheritfields)):
-            if inheritfields[i] == field:
-                del inheritfields[i]
-                inheritfields.insert(0, field)
-                break
-        else:
-            raise ValueError, "attempted to set non-existant field %s" % field
-        for inheritfield in inheritfields:
+        if field in self._assigned and self._assigned[field][0] != obj:
+            return changed
+        fromfields = fromfields + [field]
+        self._fields[field] = value
+        self._assigned[field] = (obj, fromfields[(len(fromfields) > 1) and -2 or -1])
+        changed = True
+        for inheritfield in [x for x in dir(self.__class__) if not x.startswith('_') and x not in fromfields]:
             fields = [inheritfield]
             checkvalue = getattr(self.__class__, inheritfield)
             if isinstance(checkvalue, list):
-                for element in checkvalue[::-1]:
+                for element in checkvalue:
                     if not isinstance(element, requirement):
                         fields.append(element)
             elif not isinstance(checkvalue, requirement):
                 fields.append(checkvalue)
-            assign = False
+            if inheritfield in self._assigned and self._assigned[inheritfield][0] != obj:
+                continue
             for checkfield in fields:
                 if checkfield == field:
-                    assign = True
-                if checkfield in self._fields and (self._assigned[checkfield] != obj or (not assign and checkfield != field)):
+                    changed = self._setfield(inheritfield, value, obj, fromfields) or changed
                     break
-            else:
-                if assign:
-                    if inheritfield == field:
-                        changed = True
-                        self._fields[inheritfield] = value
-                        self._assigned[inheritfield] = obj
-                    else:
-                        changed = self._setfield(inheritfield, value, obj) or changed
+                if inheritfield in self._assigned and checkfield == self._assigned[inheritfield][1]:
+                    break
         return changed
 
     def _check(self):
