@@ -2,7 +2,7 @@ Source: crosstex
 Section: tex
 Priority: optional
 Maintainer: Robert Burgess <burgess@systems.cs.cornell.edu>
-Build-Depends: debhelper (>= 5), python, texlib-base-bin | tetex-bin
+Build-Depends: debhelper (>= 5), python, texlive-base-bin | tetex-bin
 Standards-Version: 3.7.2
 
 Package: crosstex

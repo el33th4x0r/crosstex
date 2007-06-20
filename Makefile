@@ -4,7 +4,7 @@ PACKAGE=crosstex-${VERSION}
 
 ROOT=
 PREFIX=/usr/local
-LIBDIR=/lib/crosstex
+LIBDIR=/share/crosstex
 BINDIR=/bin
 MANDIR=/share/man
 PLY=${PREFIX}${LIBDIR}
