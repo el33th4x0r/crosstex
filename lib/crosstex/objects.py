@@ -375,7 +375,7 @@ class article(misc):
 
 class book(misc):
     author = REQUIRED
-    editor = REQUIRED
+    editor = OPTIONAL
     title = REQUIRED
     publisher = REQUIRED
     year = REQUIRED
