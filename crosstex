@@ -751,7 +751,7 @@ def parseaux(instream, bib):
         line = instream.readline()
         if not line:
             break
-        if line[0:9] == "\\citation":
+        if line.startswith("\\citation"):
             citeline = line[10:].strip().rstrip("}")
             for cite in citeline.split(","):
                 if cite.find(" ") >= 0:
@@ -762,10 +762,12 @@ def parseaux(instream, bib):
                         bib.error("empty citation, check for spurious commas in \\cite{} commands")
                     else:
                         options.extend(['--cite', cite])
-        elif line[0:9] == "\\bibstyle":
+        elif line.startswith("\\bibstyle"):
             options.extend(['--style'] + line[10:].rstrip().rstrip("}").split(' '))
-        elif line[0:8] == "\\bibdata":
+        elif line.startswith("\\bibdata"):
             datafiles.extend(line[9:].rstrip().rstrip("}").split(','))
+        elif line.startswith("\\@input"):
+            datafiles.extend(line[8:].rstrip().rstrip("}").split(','))
     bib.setoptions(options)
     for datafile in datafiles:
         try:
@@ -790,8 +792,8 @@ def maxstr(citations, bib):
         citekey = bib[key].label.replace("{\\etalchar{+}}", "X")
         if len(citekey) > len(maxstr):
             maxstr = citekey
-    if maxstr == '' and citations:
-        maxstr = '0' * int(math.ceil(math.log(len(citations), 10)))
+    if maxstr == '':
+        maxstr = '0' * int(math.ceil(math.log(len(citations) + 1, 10)))
     return maxstr
 
 # Display a hierarchal bibliography in categories

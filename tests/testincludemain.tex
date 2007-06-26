@@ -1,0 +1,22 @@
+\documentclass{article}
+
+
+\title{Bug}
+
+\begin{document}
+
+
+\maketitle
+
+% \include has a problem, crosstex does not produce correct bibliography
+\include{testinclude}
+
+% \input works fine.
+%\input{testinclude}
+
+{
+%\raggedright
+\bibliography{usenix}
+}
+
+\end{document}
