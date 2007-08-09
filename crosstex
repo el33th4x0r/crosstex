@@ -246,10 +246,10 @@ class bibliography(dict):
                                     raise Exception("non-unique constraint citation")
                                 match = objkey
                                 if self[objkey]._citekey == None:
-                                    self[objkey]._citekey = objkey
+                                    self[objkey]._citekey = key
                                     self._citations.append(objkey)
-                                if objkey != self[objkey]._citekey:
-                                    self.error("crosstex: multiply cited object <%s> must be cited under the same key or alias in all citations (attempted to cite it as %s)" % (self[objkey]._citekey, objkey))
+                                if key != self[objkey]._citekey:
+                                    self.error("crosstex: multiply cited object <%s> must be cited under the same key or alias in all citations (attempted to cite it as %s)" % (self[objkey]._citekey, key))
                         except Exception, e:
                             if str(e) == "non-unique constraint citation":
                                 break
