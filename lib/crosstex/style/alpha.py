@@ -4,9 +4,14 @@ from crosstex.style.basic import *
 string._addproducer(makegetterproducer('shortname'), 'value')
 string._addproducer(makegetterproducer('longname'), 'value')
 
-# Use alphabetic labels.
-misc._addproducer(makegetterproducer('initialslabel'), 'label')
+# Use numeric labels.
+publication._addproducer(emptyproducer, 'label')
 
-# Emphasize book and journal titles.
-misc._addfilter(emphfilter, 'fullpublication', 'booktitle')
-misc._addfilter(emphfilter, 'fullpublication', 'journal')
+# Italicize book and journal titles.
+publication._addfilter(emphfilter, 'fullpublication', 'booktitle')
+publication._addfilter(emphfilter, 'fullpublication', 'journal')
+book._addfilter(emphfilter, 'fulltitle')
+journal._addfilter(emphfilter, 'fulltitle')
+
+# Use alphabetic labels.
+publication._addproducer(makegetterproducer('initialslabel'), 'label')

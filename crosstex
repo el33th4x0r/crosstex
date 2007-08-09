@@ -158,7 +158,7 @@ class bibliography(dict):
             short=[],
             capitalize=[],
             no_field=[],
-            sort=[(False, 'monthno'), (False, 'year'), (False, 'author'), (False, 'label')],
+            sort=[(False, 'title'), (False, 'monthno'), (False, 'year'), (False, 'author')],
             titlecase='default',
             style='plain',
         )
@@ -571,7 +571,7 @@ def p_stmt_titlesmall(t):
     t.lexer.bib.addtitlesmall(t[2])
 
 def p_stmt_string(t):
-    'stmt : ATSTRING OPENBRACE fields CLOSEBRACE'
+    'stmt : ATSTRING OPENBRACE stringdefs CLOSEBRACE'
     for key in t[3]:
         try:
             t.lexer.bib.addobject('string', [key], [({}, {'name': t[3][key]})], t.lexer.defaults, t.lexer.file, t.lineno(3))._check()
@@ -639,6 +639,20 @@ def p_conditionals_multiple(t):
 def p_conditional(t):
     'conditional : LBRACK fields RBRACK fields'
     t[0] = (t[2], t[4])
+
+def p_stringdefs_singleton(t):
+    'stringdefs : stringdef'
+    t[0] = t[1]
+
+def p_stringdefs(t):
+    'stringdefs : stringdef COMMA stringdefs'
+    t[0] = t[1]
+    for key in t[3]:
+        t[0][key] = t[3][key]
+              
+def p_stringdef(t):
+    'stringdef : NAME EQUALS value'
+    t[0] = {t[1]: t[3]}
 
 def p_fields_empty(t):
     'fields :'
@@ -868,7 +882,7 @@ except Exception, details:
     sys.exit(bib.errors)
 
 # Apply all the style filters so that we can continue.
-if bib.options.style == 'unsrt':
+if bib.options.style in ['unsrt', 'ieeetr']:
     bib.setoptions(['--no-sort'])
 if bib.options.style == 'html':
     bib.setoptions(['--blank-labels', '--break-lines'])
@@ -880,37 +894,37 @@ for objtype in bib.options.capitalize:
     except KeyError:
         bib.error("crosstex: no such object type %s" % objtype)
 for field in bib.options.no_field:
-    bib.objects['misc']._addfilter(crosstex.objects.killfilter, field)
+    bib.objects['publication']._addfilter(crosstex.objects.killfilter, field)
 if bib.options.add_in:
-    bib.objects['misc']._addfilter(crosstex.objects.infilter, 'fullpublication', 'booktitle')
-    bib.objects['misc']._addfilter(crosstex.objects.infilter, 'fullpublication', 'journal')
+    bib.objects['publication']._addfilter(crosstex.objects.infilter, 'fullpublication', 'booktitle')
+    bib.objects['publication']._addfilter(crosstex.objects.infilter, 'fullpublication', 'journal')
 if bib.options.add_proc:
     bib.objects['conference']._addfilter(crosstex.objects.procfilter, 'value')
 if bib.options.add_proceedings:
     bib.objects['conference']._addfilter(crosstex.objects.proceedingsfilter, 'value')
-if bib.titlephrases:
-    bib.objects['misc']._addfilter(crosstex.objects.maketitlephrasefilter(bib.titlephrases), 'title')
-if bib.titlesmall:
-    bib.objects['misc']._addfilter(crosstex.objects.makelowerphrasefilter(bib.titlesmall), 'title')
+if bib.titlephrases and bib.options.titlecase != 'upper':
+    bib.objects['publication']._addfilter(crosstex.objects.maketitlephrasefilter(bib.titlephrases), 'title')
+if bib.titlesmall and bib.options.titlecase != 'upper':
+    bib.objects['publication']._addfilter(crosstex.objects.makelowerphrasefilter(bib.titlesmall), 'title')
 if bib.options.titlecase == 'lower':
-    bib.objects['misc']._addfilter(crosstex.objects.lowertitlecasefilter, 'title')
+    bib.objects['publication']._addfilter(crosstex.objects.lowertitlecasefilter, 'title')
 elif bib.options.titlecase == 'upper':
-    bib.objects['misc']._addfilter(crosstex.objects.uppercasefilter, 'title')
+    bib.objects['publication']._addfilter(crosstex.objects.uppercasefilter, 'title')
 elif bib.options.titlecase == 'default':
-    bib.objects['misc']._addfilter(crosstex.objects.titlecasefilter, 'title')
+    bib.objects['publication']._addfilter(crosstex.objects.titlecasefilter, 'title')
 if bib.options.last_first:
-    bib.objects['misc']._addlistfilter(crosstex.objects.lastfirstlistfilter, 'author')
-    bib.objects['misc']._addlistfilter(crosstex.objects.lastfirstlistfilter, 'editor')
+    bib.objects['publication']._addlistfilter(crosstex.objects.lastfirstlistfilter, 'author')
+    bib.objects['publication']._addlistfilter(crosstex.objects.lastfirstlistfilter, 'editor')
 if bib.options.link:
-    bib.objects['misc']._addproducer(crosstex.objects.makelinksproducer(bib.options.link), 'links')
+    bib.objects['publication']._addproducer(crosstex.objects.makelinksproducer(bib.options.link), 'links')
 if bib.options.abstract or bib.options.keywords:
-    bib.objects['misc']._addproducer(crosstex.objects.extrasproducer, 'extras')
+    bib.objects['publication']._addproducer(crosstex.objects.extrasproducer, 'extras')
     if not bib.options.abstract:
-        bib.objects['misc']._addfilter(crosstex.objects.killfilter, 'extras', 'abstract')
+        bib.objects['publication']._addfilter(crosstex.objects.killfilter, 'extras', 'abstract')
     if not bib.options.keywords:
-        bib.objects['misc']._addfilter(crosstex.objects.killfilter, 'extras', 'keywords')
+        bib.objects['publication']._addfilter(crosstex.objects.killfilter, 'extras', 'keywords')
 if bib.options.title_head:
-    bib.objects['misc']._addfilter(crosstex.objects.boldfilter, 'fulltitle')
+    bib.objects['publication']._addfilter(crosstex.objects.boldfilter, 'fulltitle')
 try:
     mod = None
     try:
@@ -927,13 +941,13 @@ except ImportError, details:
         bib.error("crosstex: unable to load style %s" % bib.options.style)
         sys.exit(bib.errors)
 if bib.options.cite_by == 'number':
-    bib.objects['misc']._addproducer(crosstex.objects.emptyproducer, 'label')
+    bib.objects['publication']._addproducer(crosstex.objects.emptyproducer, 'label')
 elif bib.options.cite_by == 'initials':
-    bib.objects['misc']._addproducer(crosstex.objects.makegetterproducer('initialslabel'), 'label')
+    bib.objects['publication']._addproducer(crosstex.objects.makegetterproducer('initialslabel'), 'label')
 elif bib.options.cite_by == 'fullname':
-    bib.objects['misc']._addproducer(crosstex.objects.makegetterproducer('fullnamelabel'), 'label')
+    bib.objects['publication']._addproducer(crosstex.objects.makegetterproducer('fullnamelabel'), 'label')
 if bib.options.title_head:
-    bib.objects['misc']._addproducer(crosstex.objects.titleauthorpublicationproducer, 'value')
+    bib.objects['publication']._addproducer(makebibitemproducer('fulltitle', 'fullauthor', 'fullpublication', 'links', 'extras'), 'value')
 for objtype in bib.options.short:
     try:
         bib.objects[objtype]._addproducer(crosstex.objects.makegetterproducer('shortname'), 'value')

@@ -5,13 +5,15 @@ string._addproducer(makegetterproducer('shortname'), 'value')
 string._addproducer(makegetterproducer('longname'), 'value')
 
 # Use 'In' and emphasize book and journal titles.
-misc._addfilter(infilter, 'fullpublication', 'booktitle')
-misc._addfilter(infilter, 'fullpublication', 'journal')
-misc._addfilter(emphfilter, 'fullpublication', 'booktitle')
-misc._addfilter(emphfilter, 'fullpublication', 'journal')
+publication._addfilter(infilter, 'fullpublication', 'booktitle')
+publication._addfilter(infilter, 'fullpublication', 'journal')
+publication._addfilter(emphfilter, 'fullpublication', 'booktitle')
+publication._addfilter(emphfilter, 'fullpublication', 'journal')
+book._addfilter(emphfilter, 'fulltitle')
+journal._addfilter(emphfilter, 'fulltitle')
 
 # Preface conference names with 'Proceedings of the'.
-inproceedings._addfilter(proceedingsfilter, 'fullpublication', booktitle')
+inproceedings._addfilter(proceedingsfilter, 'fullpublication', 'booktitle')
 
 # Use long labels.
-misc._addproducer(makegetterproducer('fullnamelabel'), 'label')
+publication._addproducer(makegetterproducer('fullnamelabel'), 'label')

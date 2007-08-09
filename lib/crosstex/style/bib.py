@@ -5,18 +5,18 @@ string._addproducer(makegetterproducer('shortname'), 'value')
 string._addproducer(makegetterproducer('longname'), 'value')
 
 # Standard producers for top-level objects.
-misc._addproducer(bibtexproducer, 'value')
+publication._addproducer(bibtexproducer, 'value')
 location._addproducer(citystatecountryproducer, 'value')
 entrylist._addlistformatter(andlistformatter, 'value')
 
 # Use empty labels (irrelevant, but labels determine what is 'citeable' and thus produced.
-misc._addproducer(emptyproducer, 'label')
+publication._addproducer(emptyproducer, 'label')
 
 # Preface conference tracks and workshops with the name of the conference.
 conferencetrack._addfilter(conferencetrackfilter, 'value')
 
 # Specialized publication information.
-misc._addproducer(makegetterproducer('howpublished'), 'publication')
+publication._addproducer(makegetterproducer('howpublished'), 'publication')
 url._addproducer(accessedproducer, 'publication')
 thesis._addproducer(thesistypeproducer, 'publication')
 

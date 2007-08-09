@@ -312,7 +312,7 @@ class month(string):
 class journal(string):
     pass
 
-class misc(entry):
+class publication(entry):
     abstract = OPTIONAL
     address = OPTIONAL
     affiliation = OPTIONAL
@@ -367,23 +367,26 @@ class misc(entry):
     volume = OPTIONAL
     year = OPTIONAL
 
-class article(misc):
+class misc(publication):
+    pass
+
+class article(publication):
     author = REQUIRED
     title = REQUIRED
     journal = REQUIRED
     year = REQUIRED
 
-class book(misc):
+class book(publication):
     author = REQUIRED
     editor = OPTIONAL
     title = REQUIRED
     publisher = REQUIRED
     year = REQUIRED
 
-class booklet(misc):
+class booklet(publication):
     title = REQUIRED
 
-class inbook(misc):
+class inbook(publication):
     author = REQUIRED
     editor = REQUIRED
     title = REQUIRED
@@ -392,23 +395,23 @@ class inbook(misc):
     publisher = REQUIRED
     year = REQUIRED
 
-class incollection(misc):
+class incollection(publication):
     author = REQUIRED
     title = REQUIRED
     booktitle = REQUIRED
     publisher = REQUIRED
     year = REQUIRED
 
-class inproceedings(misc):
+class inproceedings(publication):
     author = REQUIRED
     title = REQUIRED
     booktitle = REQUIRED
     year = REQUIRED
 
-class manual(misc):
+class manual(publication):
     title = REQUIRED
 
-class thesis(misc):
+class thesis(publication):
     author = REQUIRED
     title = REQUIRED
     school = REQUIRED
@@ -420,27 +423,27 @@ class mastersthesis(thesis):
 class phdthesis(thesis):
     pass
 
-class proceedings(misc):
+class proceedings(publication):
     title = REQUIRED
     year = REQUIRED
 
 class collection(proceedings):
     pass
 
-class patent(misc):
+class patent(publication):
     author = REQUIRED
     title = REQUIRED
     number = REQUIRED
     month = REQUIRED
     year = REQUIRED
 
-class techreport(misc):
+class techreport(publication):
     author = REQUIRED
     title = REQUIRED
     institution = REQUIRED
     year = REQUIRED
 
-class unpublished(misc):
+class unpublished(publication):
     author = REQUIRED
     title = REQUIRED
     note = REQUIRED
@@ -506,14 +509,14 @@ class conferencetrack(conference):
 class workshop(conferencetrack):
     pass
 
-class rfc(misc):
+class rfc(publication):
     author = REQUIRED
     title = REQUIRED
     number = REQUIRED
     month = REQUIRED
     year = REQUIRED
 
-class url(misc):
+class url(publication):
     url = REQUIRED
     accessmonth = OPTIONAL
     accessyear = OPTIONAL
@@ -533,7 +536,7 @@ class newspaper(journal):
 _wordre = re.compile('(-+|\s+|\\\w+|\\\W+|\$[^\$]*\$|[{}])', re.IGNORECASE)
 _spacere = re.compile(r'^\s*$')
 _specialre = re.compile(r'^(\\.*|\$[^\$]*\$)$')
-_punctuationre = re.compile('.*([:!.?]|-{2,})$')
+_punctuationre = re.compile('([:!.?]|-{2,})[\'}\n]*$')
 _linkre = re.compile("[a-zA-Z][-+.a-zA-Z0-9]*://([:/?#[\]@!$&'()*+,;=a-zA-Z0-9_\-.~]|%[0-9a-fA-F][0-9a-fA-F]|\\-|\s)*")
 _linksub = re.compile("\\-\s")
 
@@ -545,8 +548,8 @@ def _punctuate(string, punctuation='', tail=' '):
         string = str.strip(str(string))
     if string == '':
         return string
-    if not _punctuationre.match(string):
-        string += punctuation
+    if not _punctuationre.search(string):
+        string = re.sub(r'([\'}]*)$', punctuation + '\\1', string)
     return string + tail
 
 def _names(name, short=False, plain=False):
@@ -604,40 +607,59 @@ def _names(name, short=False, plain=False):
         fnamesabbr = []
         for n in fnames:
             abbr = ''
-            first = 0
-            while first < len(n):
-                if n[first] not in "{}\\":
-                    if abbr != "":
-                        abbr += "~"
-                    abbr += n[first] + "."
-                    break
-                elif n[first] == "\\":
-                    abbr += 2
-                else:
-                    abbr += 1
-            fnamesabbr.append(abbr)
-        return (fnamesabbr, mnames, lnames, snames)
+            initial = 0
+            sep = ''
+            while initial < len(n):
+                if n[initial] == "\\":
+                    initial += 1
+                elif n[initial] in "{}":
+                    pass
+                elif n[initial] == "~":
+                    abbr += n[initial]
+                elif n[initial] in "-.":
+                    sep = n[initial]
+                elif sep != None:
+                    if sep != ".":
+                        abbr += sep
+                    abbr += n[initial] + "."
+                    sep = None
+                initial += 1
+            if abbr:
+                fnamesabbr.append(abbr)
+        return (['~'.join(fnamesabbr)], mnames, lnames, snames)
     else:
         return (fnames, mnames, lnames, snames)
 
 def _last_initials(name, size):
     (fnames, mnames, lnames, snames) = _names(name)
-    namestr = ""
-    for lname in mnames + lnames:
-        if len(namestr) >= len(mnames) + size:
+    mnamestr = ""
+    for mname in mnames:
+        first = 0
+        while first < len(mname):
+            if mname[first] not in "{}\\":
+                mnamestr += mname[first]
+                break
+            elif mname[first] == "\\":
+                first += 2
+            else:
+                first += 1
+    lnamestr = ""
+    for lname in lnames:
+        if len(lnamestr) >= size:
             break
         first = 0
         while first < len(lname):
             if lname[first] not in "{}\\":
-                namestr += lname[first]
-                if len(namestr) >= size:
+                lnamestr += lname[first]
+                if mnamestr != "" or len(lnamestr) >= size:
                     break
-                first += 1
+                else:
+                    first += 1
             elif lname[first] == "\\":
                 first += 2
             else:
                 first += 1
-    return namestr
+    return mnamestr + lnamestr
 
 def _fieldval(field, value):
     if isinstance(value, entry):
@@ -659,6 +681,16 @@ def makegetterproducer(field):
         except AttributeError:
             return None
     return getterproducer
+
+def makejoinproducer(punctuation, space, final, finalspace, *fields):
+    def joinproducer(obj, context):
+        value = ''
+        for field in fields:
+            fieldvalue = obj._format(*(context + (field,)))
+            if fieldvalue:
+                value = _punctuate(value, punctuation, space) + fieldvalue
+        return _punctuate(value, final, finalspace)
+    return joinproducer
 
 def bibtexproducer(obj, context):
     value = "@%s{%s" % (obj._name, obj._primarykey)
@@ -689,54 +721,6 @@ def crosstexproducer(obj, context):
         value += _fieldval(field, fieldvalue)
     value += "}\n\n"
     return value
-
-def authortitlepublicationproducer(obj, context):
-    authorvalue = obj._format(*(context + ('fullauthor',)))
-    titlevalue = obj._format(*(context + ('fulltitle',)))
-    publicationvalue = obj._format(*(context + ('fullpublication',)))
-    linksvalue = obj._format(*(context + ('links',)))
-    extrasvalue = obj._format(*(context + ('extras',)))
-    objvalue = ''
-    if authorvalue:
-        objvalue = _punctuate(objvalue, "\n\\newblock") + str(authorvalue)
-    if titlevalue:
-        objvalue = _punctuate(objvalue, "\n\\newblock") + str(titlevalue)
-    if publicationvalue:
-        objvalue = _punctuate(objvalue, "\n\\newblock") + str(publicationvalue)
-    if linksvalue:
-        objvalue = _punctuate(objvalue, "\n\\newblock") + str(linksvalue)
-    if extrasvalue:
-        objvalue = _punctuate(objvalue, "\n", tail='') + str(extrasvalue)
-    if objvalue:
-        label = obj._format(*(context + ('label',)))
-        if label:
-            label = '[%s]' % label
-        objvalue = "\\bibitem%s{%s}\n%s\n" % (label, obj._citekey, str.strip(objvalue))
-    return objvalue
-
-def titleauthorpublicationproducer(obj, context):
-    authorvalue = obj._format(*(context + ('fullauthor',)))
-    titlevalue = obj._format(*(context + ('fulltitle',)))
-    publicationvalue = obj._format(*(context + ('fullpublication',)))
-    linksvalue = obj._format(*(context + ('links',)))
-    extrasvalue = obj._format(*(context + ('extras',)))
-    objvalue = ''
-    if titlevalue:
-        objvalue = _punctuate(objvalue, "\n\\newblock") + str(titlevalue)
-    if authorvalue:
-        objvalue = _punctuate(objvalue, "\n\\newblock") + str(authorvalue)
-    if publicationvalue:
-        objvalue = _punctuate(objvalue, "\n\\newblock") + str(publicationvalue)
-    if linksvalue:
-        objvalue = _punctuate(objvalue, "\n\\newblock") + str(linksvalue)
-    if extrasvalue:
-        objvalue = _punctuate(objvalue, "\n", tail='') + str(extrasvalue)
-    if objvalue:
-        label = obj._format(*(context + ('label',)))
-        if label:
-            label = '[%s]' % label
-        objvalue = "\\bibitem%s{%s}\n%s\n" % (label, obj._citekey, str.strip(objvalue))
-    return objvalue
 
 def makelinksproducer(fields):
     def linksproducer(obj, context):
@@ -859,6 +843,9 @@ def fullpublicationproducer(obj, context):
     addressvalue = obj._format(*(context + ('address',)))
     if addressvalue:
         value = _punctuate(value, ',') + str(addressvalue)
+    notevalue = obj._format(*(context + ('note',)))
+    if notevalue:
+        value = _punctuate(value, ',') + str(notevalue)
     yearvalue = obj._format(*(context + ('year',)))
     if yearvalue:
         value = _punctuate(value, ',')
@@ -993,14 +980,43 @@ def fullnameslistformatter(obj, objvalue, context):
     value = ''
     if len(objvalue) == 2:
         (fnames1, mnames1, lnames1, snames1) = _names(objvalue[0])
-        (fnames2, mnames1, lnames2, snames2) = _names(objvalue[1])
-        value = ' '.join(lnames1) + " \& " + ' '.join(lnames2)
+        (fnames2, mnames2, lnames2, snames2) = _names(objvalue[1])
+        value = ' '.join(mnames1 + lnames1) + " \& " + ' '.join(mnames2 + lnames2)
     elif objvalue:
         (fnames1, mnames1, lnames1, snames1) = _names(objvalue[0])
-        value = ' '.join(lnames1)
+        value = ' '.join(mnames1 + lnames1)
         if len(objvalue) > 2:
             value += " et al."
     return value
+
+def makebracketfilter(left, right):
+    def bracketfilter(obj, objvalue, context):
+        if objvalue:
+            return "%s%s%s" % (left, objvalue.strip(), right)
+        return objvalue
+    return bracketfilter
+
+def makesuffixfilter(suffix):
+    def suffixfilter(obj, objvalue, context):
+        if objvalue:
+            return "%s%s" % (objvalue.strip(), suffix)
+        return objvalue
+    return suffixfilter
+
+def makeprefixfilter(prefix):
+    def prefixfilter(obj, objvalue, context):
+        if objvalue:
+            return "%s%s" % (prefix, objvalue.strip())
+        return objvalue
+    return prefixfilter
+
+def bibitemfilter(obj, objvalue, context):
+    if objvalue:
+        label = obj._format(*(context + ('label',)))
+        if label:
+            label = '[%s]' % label
+        return "\\bibitem%s{%s}\n%s\n\n" % (label, obj._citekey, objvalue.strip())
+    return objvalue
 
 def emptyfilter(obj, objvalue, context):
     return ''
@@ -1023,41 +1039,14 @@ def makeuniquefilter():
 def twodigitfilter(obj, objvalue, context):
     return objvalue[-2:]
 
-def infilter(obj, objvalue, context):
-    if objvalue:
-        objvalue = "In " + objvalue
-    return objvalue
-
-def procfilter(obj, objvalue, context):
-    if objvalue:
-        objvalue = "Proc. of " + objvalue
-    return objvalue
-
-def proceedingsfilter(obj, objvalue, context):
-    if objvalue:
-        objvalue = "Proceedings of the " + objvalue
-    return objvalue
-
-def emphfilter(obj, objvalue, context):
-    if objvalue:
-        objvalue = "\\emph{" + objvalue + "}"
-    return objvalue
-
-def boldfilter(obj, objvalue, context):
-    if objvalue:
-        objvalue = "\\textbf{" + objvalue + "}"
-    return objvalue
-
-def edfilter(obj, objvalue, context):
-    return _punctuate(objvalue, ',', ' ed.')
-
-def bracesfilter(obj, objvalue, context):
-    if objvalue:
-        objvalue = "{" + str.strip(objvalue) + "}"
-    return objvalue
-
-def dotfilter(obj, objvalue, context):
-    return _punctuate(objvalue, '.')
+infilter = makeprefixfilter("In ")
+procfilter = makeprefixfilter("Proc. of ")
+proceedingsfilter = makeprefixfilter("Proceedings of the ")
+emphfilter = makebracketfilter("\\emph{", "}")
+boldfilter = makebracketfilter("\\textbf{", "}")
+edfilter = makesuffixfilter(", ed.")
+bracesfilter = makebracketfilter("{", "}")
+quotefilter = makebracketfilter("``", "''")
 
 def conferencetrackfilter(obj, objvalue, context):
     return _punctuate(obj._format(*(context + ('conference',))), ',') + objvalue
@@ -1102,7 +1091,7 @@ def lowertitlecasefilter(obj, objvalue, context):
                     word = word.title()
                 else:
                     word = word.lower()
-            needscaps = _punctuationre.match(word)
+            needscaps = _punctuationre.search(word)
         newtitle += word
     return newtitle
 
@@ -1116,7 +1105,7 @@ def uppercasefilter(obj, objvalue, context):
             nestingdepth += 1
         elif word == '}':
             nestingdepth -= 1
-        elif not _spacere.match(word) and word != '-' and not _specialre.match(word) and nestingdepth == 0:
+        elif nestingdepth == 0:
             word = word.upper()
         newtitle += word
     return newtitle
@@ -1155,7 +1144,7 @@ def makelowerphrasefilter(lowerphrases):
             elif not _spacere.match(word) and word != '-' and nestingdepth == 0:
                 if not _specialre.match(word) and not needscaps and word.lower() in lowerphrases:
                     word = word.lower()
-                needscaps = _punctuationre.match(word)
+                needscaps = _punctuationre.search(word)
             newtitle += word
         return newtitle
     return lowerphrasefilter
@@ -1197,3 +1186,4 @@ def listproducer(obj, context):
 
 entrylist._addproducer(listproducer, 'value')
 entry._addlistfilter(alllastfirstlistfilter, 'sort', 'author')
+entry._addfilter(titlecasefilter, 'sort', 'author')
