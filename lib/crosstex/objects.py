@@ -192,10 +192,7 @@ class entry(formatter):
             self._cached = {}
             while len(self._conditionals) <= layer:
                 self._conditionals.append([])
-            if extend:
-                self._conditionals[layer].insert(0, (field, value, condition) )
-            else:
-                self._conditionals[layer].append( (field, value, condition) )
+            self._conditionals[layer].append( (field, value, condition) )
 
     def _resolve(self):
         self._fields = {}

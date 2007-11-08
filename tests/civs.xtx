@@ -6,6 +6,11 @@
 
 @extend{mypopl = popl}
 
+@extend{sas,
+  longname = "Static Analysis Symposium",
+  [year=2006] month=aug, address=Seoul,
+}
+
 @INPROCEEDINGS{Myers99,
   author = {Andrew C. Myers},
   title = {JFlow: Practical Mostly-Static Information Flow Control},
@@ -31,4 +36,12 @@
   booktitle = mypopl,
   year = 2010,
   pages = {1--10},
+}
+
+@INPROCEEDINGS{flows,
+  author = "Aslan Askarov and Daniel Hedin and Andrei Sabelfeld",
+  title = "Cryptographically-Masked Flows",
+  booktitle = sas,
+  pages = "353--369",
+  year = 2006,
 }
