@@ -793,7 +793,7 @@ def fullpublicationproducer(obj, context):
             value += ", volume %s" % volumevalue
             seriesvalue = obj._format(*(context + ('series',)))
             if seriesvalue :
-                value += " of \em{%s}" % seriesvalue
+                value += " of \\emph{%s}" % seriesvalue
         chaptervalue = obj._format(*(context + ('chapter',)))
         if chaptervalue:
             value += ", chapter %s" % chaptervalue
