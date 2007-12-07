@@ -61,7 +61,7 @@ def optsort(option, opt, value, parser, reversed=False):
 
 optparser.add_option('-d', '--dir', type='string', action='append', help="Add a directory in which to find data files, searched from last specified to first. Default: %default")
 optparser.add_option('--quiet', action='store_const', const=0, dest='check', help="Do not sanity check the input.")
-optparser.add_option('--strict', action='store_const', const=2, dest='check', help="Apply stricter checks.")
+optparser.add_option('--strict', action='store_const', const=2, dest='check', help="Apply stricter checks and check all entries.")
 optparser.add_option('--dump', metavar='TYPE', type='string', action='append', help="After parsing the bibliography, dump a list of all objects of the type specified, or, with \"file\", print a list of files processed.")
 
 optparser.add_option('--cite', type='string', action='append', help="Cite a key exactly as with the \\cite LaTeX command.")
@@ -574,7 +574,7 @@ def p_stmt_string(t):
     'stmt : ATSTRING OPENBRACE stringdefs CLOSEBRACE'
     for key in t[3]:
         try:
-            t.lexer.bib.addobject('string', [key], [({}, {'name': t[3][key]})], t.lexer.defaults, t.lexer.file, t.lineno(3))._check()
+            t.lexer.bib.addobject('string', [key], [({}, {'name': t[3][key]})], t.lexer.defaults, t.lexer.file, t.lineno(3))._resolve()
         except Warning, detail:
             t.lexer.bib.warning("%s:%d: %s" % (t.lexer.file, t.lineno(3), detail))
         except Exception, detail:
@@ -588,7 +588,7 @@ def p_object_defn(t):
     'object : AT NAME OPENBRACE keys COMMA fields conditionals CLOSEBRACE'
     t[2] = t[2].lower()
     try:
-        t.lexer.bib.addobject(t[2], t[4], [({}, t[6])] + t[7], t.lexer.defaults, t.lexer.file, t.lineno(2))._check()
+        t.lexer.bib.addobject(t[2], t[4], [({}, t[6])] + t[7], t.lexer.defaults, t.lexer.file, t.lineno(2))._resolve()
     except Warning, detail:
         t.lexer.bib.warning("%s:%d: %s" % (t.lexer.file, t.lineno(2), detail))
     except Exception, detail:
@@ -679,7 +679,7 @@ def p_field(t):
                     values.append(t.lexer.bib[key])
                 else:
                     try:
-                        t.lexer.bib.addobject('author', [key], [({}, {'name': key})], t.lexer.defaults, t.lexer.file, t.lineno(3))._check()
+                        t.lexer.bib.addobject('author', [key], [({}, {'name': key})], t.lexer.defaults, t.lexer.file, t.lineno(3))._resolve()
                         values.append(t.lexer.bib[key])
                     except Warning, detail:
                         t.lexer.bib.warning("%s:%d: %s" % (t.lexer.file, t.lineno(3), detail))
@@ -979,6 +979,18 @@ if 'titlephrase' in bib.options.dump:
     for small in bib.titlesmall:
         sys.stderr.write("%s\n" % small)
 
+# Retrieve the list of citations and check them
+if bib.options.convert != 'xtx' and bib.options.headinglevel > 1:
+    bib.options.headinglevel = 1
+citations = bib.citations()
+if bib.options.check > 1:
+    for cite in primarykeys:
+        bib[cite]._check()
+else:
+    for cite in citations:
+        bib[cite]._check()
+divided = bib.divide(citations)
+
 # Print headers required by output format.
 if bib.options.convert == 'bib' or bib.options.convert == 'xtx':
     for i in bib.preambles:
@@ -1003,11 +1015,7 @@ if bib.options.convert == 'html' or bib.options.convert == 'bbl':
         outfile.write("\\renewcommand{\\newblock}{\\\\}")
     outfile.write("\\newcommand{\\etalchar}[1]{$^{#1}$}\n")
 
-# Format each titled section.
-if bib.options.convert != 'xtx' and bib.options.headinglevel > 1:
-    bib.options.headinglevel = 1
-citations = bib.citations()
-divided = bib.divide(citations)
+# Format the actual entries
 writecategories(divided, bib, outfile)
 
 # Print footers required by output format.
