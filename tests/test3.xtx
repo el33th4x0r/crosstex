@@ -12,5 +12,6 @@
       author  = "A. Bavier and M. Bowman and B. Chun and D. Culler and S. Karlin and S. Muir and L. Peterson and T. Roscoe and T. Spalink and M. Wawrzoniak",
       booktitle = nsdi,
       year = 2004,
-      pages = "253--266"
+      pages = "253--266",
+      editor = "Bar Baz",
 }

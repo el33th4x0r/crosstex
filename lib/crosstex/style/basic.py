@@ -1,9 +1,9 @@
-from crosstex.objects import *
+from crosstex.style.common import *
 
 # Standard producers for top-level objects.
 publication._addproducer(makejoinproducer(".", "\n\\newblock ", ".", "", 'fullauthor', 'fulltitlepublicationextras'), 'value')
 location._addproducer(citystatecountryproducer, 'value')
-entrylist._addlistformatter(commalistformatter, 'value')
+ObjectList._addlistformatter(commalistformatter, 'value')
 
 # Long labels.
 publication._addproducer(longauthoryearproducer, 'fullnamelabel') # Default to author and year, separated by space.

@@ -4,6 +4,372 @@
 
 @default booktitle = ccs
 
+@default year = 2007
+
+@inproceedings{DBLP:conf/ccs/Adida07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315253",
+	title = "Beamauth: two-factor web authentication with a bookmark",
+	pages = "48-57",
+	author = "Ben Adida"}
+
+@inproceedings{DBLP:conf/ccs/AtenieseBCHKPS07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315318",
+	title = "Provable data possession at untrusted stores",
+	pages = "598-609",
+	author = "Giuseppe Ateniese and Randal C. Burns and Reza Curtmola and Joseph Herring and Lea Kissner and Zachary N. J. Peterson and Dawn Song"}
+
+@inproceedings{DBLP:conf/ccs/Azimi-SadjadiKMY07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315295",
+	title = "Robust key generation from signal envelopes in wireless
+               networks",
+	pages = "401-410",
+	author = {Babak Azimi-Sadjadi and Aggelos Kiayias and Alejandra Mercado and B{\"u}lent Yener}}
+
+@inproceedings{DBLP:conf/ccs/BaileyBGJ07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315283",
+	title = "Covert channels in privacy-preserving identification systems",
+	pages = "297-306",
+	author = "Daniel V. Bailey and Dan Boneh and Eu-Jin Goh and Ari Juels"}
+
+@inproceedings{DBLP:conf/ccs/BalzarottiCFV07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315250",
+	title = "Multi-module vulnerability analysis of web-based applications",
+	pages = "25-35",
+	author = "Davide Balzarotti and Marco Cova and Viktoria Felmetsger and Giovanni Vigna"}
+
+@inproceedings{DBLP:conf/ccs/BandhakaviBMV07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315249",
+	title = "CANDID: preventing sql injection attacks using dynamic candidate
+               evaluations",
+	pages = "12-24",
+	author = "Sruthi Bandhakavi and Prithvi Bisht and P. Madhusudan and V. N. Venkatakrishnan"}
+
+@inproceedings{DBLP:conf/ccs/BoldyrevaGOY07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315280",
+	title = "Ordered multisignatures and identity-based sequential aggregate
+               signatures, with applications to secure routing",
+	pages = "276-285",
+	author = "Alexandra Boldyreva and Craig Gentry and Adam O'Neill and Dae Hyun Yum"}
+
+@inproceedings{DBLP:conf/ccs/BorisovDMT07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315258",
+	title = "Denial of service or denial of security?",
+	pages = "92-102",
+	author = "Nikita Borisov and George Danezis and Prateek Mittal and Parisa Tabriz"}
+
+@inproceedings{DBLP:conf/ccs/BrickellPSW07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315307",
+	title = "Privacy-preserving remote diagnostics",
+	pages = "498-507",
+	author = "Justin Brickell and Donald E. Porter and Vitaly Shmatikov and Emmett Witchel"}
+
+@inproceedings{DBLP:conf/ccs/BunnO07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315306",
+	title = "Secure two-party k-means clustering",
+	pages = "486-497",
+	author = "Paul Bunn and Rafail Ostrovsky"}
+
+@inproceedings{DBLP:conf/ccs/CaballeroYLS07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315286",
+	title = "Polyglot: automatic extraction of protocol message format
+               using dynamic binary analysis",
+	pages = "317-329",
+	author = "Juan Caballero and Heng Yin and Zhenkai Liang and Dawn Song"}
+
+@inproceedings{DBLP:conf/ccs/CabukDRS07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315275",
+	title = "Towards automated provisioning of secure virtualized networks",
+	pages = "235-245",
+	author = "Serdar Cabuk and Chris I. Dalton and HariGovind V. Ramasamy and Matthias Schunter"}
+
+@inproceedings{DBLP:conf/ccs/CanettiH07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315269",
+	title = "Chosen-ciphertext secure proxy re-encryption",
+	pages = "185-194",
+	author = "Ran Canetti and Susan Hohenberger"}
+
+@inproceedings{DBLP:conf/ccs/ChenRW07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315248",
+	title = "An analysis of browser domain-isolation bugs and a light-weight
+               transparent defense mechanism",
+	pages = "2-11",
+	author = "Shuo Chen and David Ross and Yi-Min Wang"}
+
+@inproceedings{DBLP:conf/ccs/CheungN07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315302",
+	title = "Provably secure ciphertext policy ABE",
+	pages = "456-465",
+	author = "Ling Cheung and Calvin C. Newport"}
+
+@inproceedings{DBLP:conf/ccs/CrandallZBBE07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315290",
+	title = "ConceptDoppler: a weather tracker for internet censorship",
+	pages = "352-365",
+	author = "Jedidiah R. Crandall and Daniel Zinn and Michael Byrd and Earl Barr and Rich East"}
+
+@inproceedings{DBLP:conf/ccs/DewriPRW07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315272",
+	title = "Optimal security hardening using multi-objective optimization
+               on attack tree models of networks",
+	pages = "204-213",
+	author = "Rinku Dewri and Nayot Poolsappasit and Indrajit Ray and Darrell Whitley"}
+
+@inproceedings{DBLP:conf/ccs/DorrendorfGP07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315304",
+	title = "Cryptanalysis of the windows random number generator",
+	pages = "476-485",
+	author = "Leo Dorrendorf and Zvi Gutterman and Benny Pinkas"}
+
+@inproceedings{DBLP:conf/ccs/DunphyY07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315252",
+	title = "Do background images improve \"draw a secret\" graphical passwords?",
+	pages = "36-47",
+	author = "Paul Dunphy and Jeff Yan"}
+
+@inproceedings{DBLP:conf/ccs/DwoskinL07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315294",
+	title = "Hardware-rooted trust for secure key management and transient
+               trust",
+	pages = "389-400",
+	author = "Jeffrey S. Dwoskin and Ruby B. Lee"}
+
+@inproceedings{DBLP:conf/ccs/ElsonDHS07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315291",
+	title = "Asirra: a CAPTCHA that exploits interest-aligned manual
+               image categorization",
+	pages = "366-374",
+	author = "Jeremy Elson and John R. Douceur and Jon Howell and Jared Saul"}
+
+@inproceedings{DBLP:conf/ccs/FranklinP07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315292",
+	title = "An inquiry into the nature and causes of the wealth of internet
+               miscreants",
+	pages = "375-388",
+	author = "Jason Franklin and Vern Paxson"}
+
+@inproceedings{DBLP:conf/ccs/GareraR07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315278",
+	title = "An independent audit framework for software dependent voting
+               systems",
+	pages = "256-265",
+	author = "Sujata Garera and Aviel D. Rubin"}
+
+@inproceedings{DBLP:conf/ccs/GianvecchioW07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315284",
+	title = "Detecting covert timing channels: an entropy-based approach",
+	pages = "307-316",
+	author = "Steven Gianvecchio and Haining Wang"}
+
+@inproceedings{DBLP:conf/ccs/GonzalezPW07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315264",
+	title = "Shunting: a hardware/software architecture for flexible,
+               high-performance network intrusion prevention",
+	pages = "139-149",
+	author = {Jos{\'e} M. Gonz{\'a}lez and Vern Paxson and Nicholas Weaver}}
+
+@inproceedings{DBLP:conf/ccs/HaldermanW07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315287",
+	title = "Harvesting verifiable challenges from oblivious online sources",
+	pages = "330-341",
+	author = "J. Alex Halderman and Brent Waters"}
+
+@inproceedings{DBLP:conf/ccs/HaleviK07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315303",
+	title = "Security under key-dependent inputs",
+	pages = "466-475",
+	author = "Shai Halevi and Hugo Krawczyk"}
+
+@inproceedings{DBLP:conf/ccs/HohGXA07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315266",
+	title = "Preserving privacy in gps traces via uncertainty-aware path
+               cloaking",
+	pages = "161-171",
+	author = "Baik Hoh and Marco Gruteser and Hui Xiong and Ansaf Alrabady"}
+
+@inproceedings{DBLP:conf/ccs/HopperVC07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315257",
+	title = "How much anonymity does network latency leak?",
+	pages = "82-91",
+	author = "Nicholas Hopper and Eugene Y. Vasserman and Eric Chan-Tin"}
+
+@inproceedings{DBLP:conf/ccs/JacksonBBSB07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315298",
+	title = "Protecting browsers from dns rebinding attacks",
+	pages = "421-431",
+	author = "Collin Jackson and Adam Barth and Andrew Bortz and Weidong Shao and Dan Boneh"}
+
+@inproceedings{DBLP:conf/ccs/JareckiKT07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315296",
+	title = "Robust group key agreement using short broadcasts",
+	pages = "411-420",
+	author = "Stanislaw Jarecki and Jihye Kim and Gene Tsudik"}
+
+@inproceedings{DBLP:conf/ccs/JiangWX07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315262",
+	title = "Stealthy malware detection through vmm-based \"out-of-the-box\"
+               semantic view reconstruction",
+	pages = "128-138",
+	author = "Xuxian Jiang and Xinyuan Wang and Dongyan Xu"}
+
+@inproceedings{DBLP:conf/ccs/JuelsK07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315317",
+	title = "Pors: proofs of retrievability for large files",
+	pages = "584-597",
+	author = "Ari Juels and Burton S. Kaliski Jr."}
+
+@inproceedings{DBLP:conf/ccs/KarlofSTW07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315254",
+	title = "Dynamic pharming attacks and locked same-origin policies
+               for web browsers",
+	pages = "58-71",
+	author = "Chris Karlof and Umesh Shankar and J. Doug Tygar and David Wagner"}
+
+@inproceedings{DBLP:conf/ccs/KopfB07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315282",
+	title = "An information-theoretic model for adaptive side-channel
+               attacks",
+	pages = "286-296",
+	author = {Boris K{\"o}pf and David A. Basin}}
+
+@inproceedings{DBLP:conf/ccs/Lesniewski-LaasFSMK07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315299",
+	title = "Alpaca: extensible authorization for distributed services",
+	pages = "432-444",
+	author = "Chris Lesniewski-Laas and Bryan Ford and Jacob Strauss and Robert Morris and M. Frans Kaashoek"}
+
+@inproceedings{DBLP:conf/ccs/LiLLLC07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315308",
+	title = "Automaton segmentation: a new approach to preserve privacy
+               in xml information brokering",
+	pages = "508-518",
+	author = "Fengjun Li and Bo Luo and Peng Liu and Dongwon Lee and Chao-Hsien Chu"}
+
+@inproceedings{DBLP:conf/ccs/LibertQY07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315279",
+	title = "Forward-secure signatures in untrusted update environments:
+               efficient and generic constructions",
+	pages = "266-275",
+	author = {Beno\^{\i}t Libert and Jean-Jacques Quisquater and Moti Yung}}
+
+@inproceedings{DBLP:conf/ccs/Lipner07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315246",
+	title = "Assurance and evaluation: what next?",
+	pages = 1,
+	author = "Steven B. Lipner"}
+
+@inproceedings{DBLP:conf/ccs/MitraPGG07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315274",
+	title = "Analyzing the vulnerability of superpeer networks against
+               attack",
+	pages = "225-234",
+	author = "Bivas Mitra and Fernando Peruani and Sujoy Ghose and Niloy Ganguly"}
+
+@inproceedings{DBLP:conf/ccs/MoranN07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315277",
+	title = "Split-ballot voting: everlasting privacy with distributed
+               trust",
+	pages = "246-255",
+	author = "Tal Moran and Moni Naor"}
+
+@inproceedings{DBLP:conf/ccs/NeuhausZHZ07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315311",
+	title = "Predicting vulnerable software components",
+	pages = "529-540",
+	author = "Stephan Neuhaus and Thomas Zimmermann and Christian Holler and Andreas Zeller"}
+
+@inproceedings{DBLP:conf/ccs/OstrovskySW07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315270",
+	title = "Attribute-based encryption with non-monotonic access structures",
+	pages = "195-203",
+	author = "Rafail Ostrovsky and Amit Sahai and Brent Waters"}
+
+@inproceedings{DBLP:conf/ccs/PetroniH07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315260",
+	title = "Automated detection of persistent kernel control-flow attacks",
+	pages = "103-115",
+	author = "Nick L. Petroni Jr. and Michael W. Hicks"}
+
+@inproceedings{DBLP:conf/ccs/PonecGBW07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315265",
+	title = "Highly efficient techniques for network forensics",
+	pages = "150-160",
+	author = {Miroslav Ponec and Paul Giura and Herv{\'e} Br{\"o}nnimann and Joel Wein}}
+
+@inproceedings{DBLP:conf/ccs/RamachandranFV07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315288",
+	title = "Filtering spam with behavioral blacklisting",
+	pages = "342-351",
+	author = "Anirudh Ramachandran and Nick Feamster and Santosh Vempala"}
+
+@inproceedings{DBLP:conf/ccs/RogawayB07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315268",
+	title = "Robust computational secret sharing and a unified account
+               of classical secret-sharing goals",
+	pages = "172-184",
+	author = "Phillip Rogaway and Mihir Bellare"}
+
+@inproceedings{DBLP:conf/ccs/SezerNKX07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315314",
+	title = "Memsherlock: an automated debugger for unknown memory corruption
+               vulnerabilities",
+	pages = "562-572",
+	author = "Emre Can Sezer and Peng Ning and Chongkyung Kil and Jun Xu"}
+
+@inproceedings{DBLP:conf/ccs/Shacham07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315313",
+	title = "The geometry of innocent flesh on the bone: return-into-libc
+               without function calls (on the x86)",
+	pages = "552-561",
+	author = "Hovav Shacham"}
+
+@inproceedings{DBLP:conf/ccs/SongLSKS07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315312",
+	title = "On the infeasibility of modeling polymorphic shellcode",
+	pages = "541-551",
+	author = "Yingbo Song and Michael E. Locasto and Angelos Stavrou and Angelos D. Keromytis and Salvatore J. Stolfo"}
+
+@inproceedings{DBLP:conf/ccs/StollerYRG07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315300",
+	title = "Efficient policy analysis for administrative role based
+               access control",
+	pages = "445-455",
+	author = "Scott D. Stoller and Ping Yang and C. R. Ramakrishnan and Mikhail I. Gofman"}
+
+@inproceedings{DBLP:conf/ccs/Troncoso-PastorizaKC07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315309",
+	title = "Privacy preserving error resilient dna searching through
+               oblivious automata",
+	pages = "519-528",
+	author = {Juan Ram{\'o}n Troncoso-Pastoriza and Stefan Katzenbeisser and Mehmet Celik}}
+
+@inproceedings{DBLP:conf/ccs/TsangAKS07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315256",
+	title = "Blacklistable anonymous credentials: blocking misbehaving
+               users without ttps",
+	pages = "72-81",
+	author = "Patrick P. Tsang and Man Ho Au and Apu Kapadia and Sean W. Smith"}
+
+@inproceedings{DBLP:conf/ccs/YinSEKK07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315261",
+	title = "Panorama: capturing system-wide information flow for malware
+               detection and analysis",
+	pages = "116-127",
+	author = "Heng Yin and Dawn Song and Manuel Egele and Christopher Kruegel and Engin Kirda"}
+
+@inproceedings{DBLP:conf/ccs/ZageN07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315273",
+	title = "On the accuracy of decentralized virtual coordinate systems
+               in adversarial networks",
+	pages = "214-224",
+	author = "David John Zage and Cristina Nita-Rotaru"}
+
+@inproceedings{DBLP:conf/ccs/ZhangJB07,
+	ee = "http://doi.acm.org/10.1145/1315245.1315316",
+	title = "Information disclosure under realistic assumptions: privacy
+               versus optimality",
+	pages = "573-583",
+	author = "Lei Zhang and Sushil Jajodia and Alexander Brodsky"}
+
 @default year = 2006
 
 @inproceedings{DBLP:conf/ccs/AtenieseSFM06,

@@ -1,4 +1,4 @@
-VERSION=0.5.6
+VERSION=0.6
 RELEASE=1
 PACKAGE=crosstex-${VERSION}
 
@@ -78,4 +78,5 @@ deb: dist
 clean:
 	rm -rf *~ *.pyc *.aux *.bbl *.dvi *.log *.tar.gz *.rpm *.html \
 	       *.out *.toc *.pdf *.haux *.htoc *-rpm *.bak ${PACKAGE} \
-	       crosstex_${VERSION}*
+	       crosstex_${VERSION}* `find lib -name \*.pyc` \
+	       {data,tests}/.*.cache

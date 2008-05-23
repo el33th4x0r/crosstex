@@ -294,8 +294,8 @@
 @workshop{wcsss,
   shortname = "WCSSS Workshop",
   longname = "Workshop on Compiler Support for System Software"
-  [year=1999] address=, month=,
-  [year=1997] address=, month=,
+  [year=1999] %address=, month=,
+  [year=1997] %address=, month=,
 }
 @workshop{ncatnc,	shortname = "NCA-TNC Workshop", longname = "International Symposium on Network Computing and Applications, Trusted Network Computing Workshop"}
 @workshop{wwwcaching,	shortname = "WWW Caching Workshop", longname = "International WWW Caching Workshop"}

@@ -1,8 +1,15 @@
+@include locations
+@include workshops-cs
+@include foo
+@include test3
+
 @inproceedings{udi,
       author = "Udi Wieder and Moni Naor",
-      title = "{A Simple Fault Tolerant Distributed Hash Table}",
+      title = "{A Simple Fault-Tolerant and \silly \blah{}blah blah\blah\ Distributed---foo $n^2$ algorithm for $$foo$$ bar: stuff! yay, s{\'e}ances. Hash Table}",
       booktitle = iptps,
       address = Berkeley,
       month = feb,
-      year = 2003
+      year = 2003,
+      pages = 14,
+      editor = "Foo Bar and Baz Quux",
 }

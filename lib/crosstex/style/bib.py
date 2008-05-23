@@ -1,4 +1,4 @@
-from crosstex.objects import *
+from crosstex.style.common import *
 
 # Prefer long names.
 string._addproducer(makegetterproducer('shortname'), 'value')
@@ -7,7 +7,7 @@ string._addproducer(makegetterproducer('longname'), 'value')
 # Standard producers for top-level objects.
 publication._addproducer(bibtexproducer, 'value')
 location._addproducer(citystatecountryproducer, 'value')
-entrylist._addlistformatter(andlistformatter, 'value')
+ObjectList._addlistformatter(andlistformatter, 'value')
 
 # Use empty labels (irrelevant, but labels determine what is 'citeable' and thus produced.
 publication._addproducer(emptyproducer, 'label')

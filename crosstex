@@ -1,25 +1,6 @@
 #! /usr/bin/env python
-#
-# CROSSTEX: This is a new, object-oriented cross-referencing engine, to
-#         replace BIBTEX.
-#
-# (c) August 2006, Emin Gun Sirer
-# Distributed under the GNU Public License, v2
-# See the file COPYING for copyright info
-#
-#         Features:
-#         Object-oriented: Need only enter conference, workshop, venue, etc
-#            information once, no need to reenter everything under every descriptor
-#            as is required in the relational bibtex model
-#         Can generate short or long form references: Suitable for the space crunch as well
-#            as formal, long-form references.
-#         Capitalization works: Things get capitalized the way they appear in the references.
-#         Include files: A bibliography can be broken up into modular units.
-#         Sanity checking: Running crosstex on a bib/xtx file will check all entries for conformance.
-#         Supports entries with multiple keys, e.g. @book{x=y=z, author=...}
-#         Backwards compatible with bibtex
-#         Can generate bibtex output: if you must use a bibtex style file, you can
-#
+
+# XXX find paths to libraries and system databases using kpsewhich
 version = 'Testing'
 xtxlib = 'lib'
 plylib = '/usr/local/lib/crosstex'
@@ -27,10 +8,7 @@ plylib = '/usr/local/lib/crosstex'
 import sys
 sys.path.append(xtxlib)
 if plylib not in sys.path:
-    sys.path.append(plylib)
-
-import ply.lex as lex
-import ply.yacc as yacc
+  sys.path.append(plylib)
 
 import copy
 import math
@@ -40,987 +18,173 @@ import optparse
 import string
 import tempfile
 import imp
+import os.path
 
+from crosstex.options import OptionParser, warning, error
+from crosstex.resolve import Database
+from crosstex.parse import Parser
+import crosstex.style.common
 import crosstex.objects
 
 
-# Set up options.
-
-optparser = optparse.OptionParser(usage="usage: %prog [options] files", version="CrossTeX %s" % version, description="A modern, object-oriented bibliographic tool intended to replace BibTeX.")
-
-def optheading(option, opt, value, parser, reversed=False):
-    parser.values.heading.append((reversed, value))
-    parser.values.headinglevel += 1
-
-def optsort(option, opt, value, parser, reversed=False):
-    if parser.values.sort == None or value == 'none':
-        parser.values.sort = []
-        if value == 'none':
-            return
-    parser.values.sort.append((reversed, value))
-
-optparser.add_option('-d', '--dir', type='string', action='append', help="Add a directory in which to find data files, searched from last specified to first. Default: %default")
-optparser.add_option('--quiet', action='store_const', const=0, dest='check', help="Do not sanity check the input.")
-optparser.add_option('--strict', action='store_const', const=2, dest='check', help="Apply stricter checks and check all entries.")
-optparser.add_option('--dump', metavar='TYPE', type='string', action='append', help="After parsing the bibliography, dump a list of all objects of the type specified, or, with \"file\", print a list of files processed.")
-
-optparser.add_option('--cite', type='string', action='append', help="Cite a key exactly as with the \\cite LaTeX command.")
-optparser.add_option('-l', '--link', metavar='FIELD', type='string', action='append', help="Add to the list of fields used to generate links. LaTeX documents should make use of links by including the hyperref package. When converting to html, this defaults to [Abstract, URL, PS, PDF, HTML, DVI, TEX, BIB, FTP, HTTP, and RTF].")
-optparser.add_option('--no-link', action='store_const', const=[], dest='link')
-
-optparser.add_option('--cite-by', type='choice', choices=['number', 'initials', 'fullname'], help="With \"number\", use numeric labels such as [1]. With \"initials\", use labels based on author last-names such as [SBRD04b]. With \"fullname\", use labels based on author names such as [Sirer et al. 2004].")
-optparser.add_option('--style', metavar='STYLE', type='string', help="Use a standard style such as plain, unsrt, abbrv, full, or alpha.  Options set by the style may be overidden by further command-line options.")
-
-optparser.add_option('-s', '--sort', metavar='FIELD', type='string', action='callback', callback=optsort, help="Sort by specified field. Multiple sort orders are applied in the order specified, e.g. \"-s year -s author\" will cause elements to be grouped primarily by author and sub-grouped by year.")
-optparser.add_option('-S', '--reverse-sort', metavar='FIELD', type='string', action='callback', callback=optsort, callback_args=(True,), help="Exactly as --sort, but sort by descending field values rather than ascending.")
-optparser.add_option('--no-sort', action='store_const', const=[], dest='sort')
-
-optparser.add_option('--heading', metavar='FIELD', type='string', action='callback', callback=optheading, help="Divide entries and create headings in bibliography by the value of the given field.")
-optparser.add_option('--reverse-heading', metavar='FIELD', type='string', action='callback', callback=optheading, callback_args=(True,), help="Divide entries and create headings in bibliography by the value of the given field.")
-
-optparser.add_option('--short', metavar='TYPE', type='choice', choices=[ name for name in dir(crosstex.objects) if isinstance(getattr(crosstex.objects, name), type) and issubclass(getattr(crosstex.objects, name), crosstex.objects.string) ], action='append', help="Specify any string-like object, i.e. one with name and shortname fields. Whenever possible, the short name will be used, e.g. two-letter state codes for \"state\", conference acronyms such as NSDI for \"conference\", or initials such as E. G. Sirer for \"author\".")
-optparser.add_option('--capitalize', metavar='TYPE', type='choice', choices=[ name for name in dir(crosstex.objects) if isinstance(getattr(crosstex.objects, name), type) and issubclass(getattr(crosstex.objects, name), crosstex.objects.string) ], action='append', help="Specify any string-like object, i.e. one with name and shortname fields. Strings of the specified types will appear in ALL CAPS.")
-optparser.add_option('--no-field', metavar='FIELD', action='append', help="Specify a field name, and in any objects where that field is optional it will be unassigned no matter what appears in the database.  For example, to turn off page numbers, use '--no-field pages'.")
-
-optparser.add_option('--add-in', action='store_true', help="Add \"In\" for articles.")
-optparser.add_option('--add-proc', action='store_true', help="Add \"Proc. of\" for conference and workshop publications.")
-optparser.add_option('--add-proceedings', action='store_true', help="Add \"Proceedings of the\" for conference and workshop publications.")
-optparser.add_option('--abstract', action='store_true', help="In the bibliography, include paper abstracts if available.")
-optparser.add_option('--no-abstract', action='store_false', dest='abstract')
-optparser.add_option('--keywords', action='store_true', help="In the bibliography, include paper keywords if available.")
-optparser.add_option('--no-keywords', action='store_false', dest='keywords')
-optparser.add_option('--popups', action='store_true', help="If abstracts or keywords are to appear for an entry when generating HTML, instead hide these extra blocks and reveal them as popups when the mouse hovers over the entry.")
-optparser.add_option('--no-popups', action='store_false')
-optparser.add_option('--titlecase', type='choice', choices=['lower', 'upper', 'as-is', 'default'], help="In the bibliography, force titles into lower-, upper-, or title-case.  Default: Leave titles unchanged.")
-optparser.add_option('--title-head', action='store_true', help="In the bibliography, put the title bold and first.")
-optparser.add_option('--no-title-head', action='store_false', dest='title_head')
-optparser.add_option('--blank-labels', action='store_true', help="In the bibliography, leave out item labels.")
-optparser.add_option('--no-blank-labels', action='store_false', dest='blank_labels')
-optparser.add_option('--break-lines', action='store_true', help="In the bibliography, put author, title, and publication information on separate lines.")
-optparser.add_option('--no-break-lines', action='store_false', dest='break_lines')
-optparser.add_option('--last-first', action='store_true', help="The first name in each author list will appear 'Last, First' instead of 'First Last' (the latter is the default).")
-optparser.add_option('--no-last-first', action='store_false', dest='last_first')
-
-optparser.add_option('--xtx2bib', action='store_const', const='bib', dest='convert', help="Convert the bibliography information to old-style BibTeX.")
-optparser.add_option('--xtx2html', action='store_const', const='html', dest='convert', help="Format the bibliography as HTML.")
-optparser.add_option('--bib2xtx', action='store_const', const='xtx', dest='convert', help="Format the bibliography as HTML.")
-
-
-# A self-contained bibliographic environment.
-
-def tryint(x):
-    try:
-        return int(str(x))
-    except ValueError:
-        return x
-
-class bibliography(dict):
-
-    def __init__(self):
-        self.optlist = []
-        self.primarykeys = []
-        self.aliases = {}
-        self.preambles = []
-        self.seenfiles = []
-        self.titlephrases = {}
-        self.titlesmall = []
-        self.punctuation = re.compile('.*([:!.?]|-{2,})$')
-        self._citations = None
-        self.location = []
-        self.errors = 0
-        self.objects = {}
-        for name in dir(crosstex.objects):
-            objtype = getattr(crosstex.objects, name)
-            if isinstance(objtype, type) and issubclass(objtype, crosstex.objects.entry):
-                self.objects[name] = objtype
-    
-    def addtitlephrase(self, phrase):
-        self.titlephrases[phrase.lower()] = phrase
-    
-    def addtitlesmall(self, phrase):
-        self.titlesmall.append(phrase.lower())
-        
-    def specialres(self):
-        return '|'.join([ r'\b' + re.sub(r'([\[\]^$*+?{\\|()])', r'\\\1', phrase.lower()) + r'\b' for phrase in self.titlephrases.keys() + self.titlesmall.keys() ])
-
-    def setoptions(self, optlist):
-        global optparser
-        self.optlist = optlist + self.optlist
-        optparser.set_defaults(
-            check=1,
-            cite=[],
-            convert='bbl',
-            dir=[xtxlib, '.'],
-            dump=[],
-            heading=[],
-            headinglevel=0,
-            headingdepth=0,
-            short=[],
-            capitalize=[],
-            no_field=[],
-            sort=[(False, 'title'), (False, 'monthno'), (False, 'year'), (False, 'author')],
-            titlecase='default',
-            style='plain',
-        )
-        (self.options, args) = optparser.parse_args(args=self.optlist)
-        self.options.dir.reverse()
-        if self.options.convert != 'bbl':
-            self.options.style = self.options.convert
-        self._citations = None
-        return args
-
-    def citations(self):
-        if self._citations != None:
-            return self._citations
-        self._citations = []
-
-        for key in self.options.cite:
-            if key == '*':
-                for key in self.primarykeys:
-                    if self[key].label != None and self[key]._citekey == None:
-                        self[key]._citekey = key
-                        self._citations.append(key)
-            else:
-                # a leading ! indicates that the citation key
-                # specifies a set of nbibtex-style constraints.
-                # constraints are of the form field=value, but
-                # default to author for first field, title for
-                # second, and year for third.
-                if key[0] == "!":
-                    try:
-                        def cspec_splitter(x):
-                            if x.find("=") > 0:
-                                fields = x.split("=")
-                                return [fields[0], fields[1].split("-")]
-                            else:
-                                return ["", x.split("-")]
-                        cspec = map(cspec_splitter, string.split(key[1:].lower(), ":"))
-                        # fill in defaults
-                        if len(cspec) > 0 and cspec[0][0] == '':
-                            cspec[0][0] = "author"
-                        if len(cspec) > 1 and cspec[1][0] == '':
-                            if int(cspec[1][1][0]) > 0:
-                                cspec[1][0] = "year"
-                            else:
-                                cspec[1][0] = "title"
-                        if len(cspec) > 2 and cspec[2][0] == "":
-                            cspec[2][0] = "year"
-
-                        # check to make sure that constraint specification is not just "!"
-                        if len(cspec) == 0:
-                                self.error("crosstex: citation constraint <%s> is missing a value constraint" % key)
-                                raise Exception("missing field in constrained citation")
-                        # check for underspecified constraints -- missing fieldname
-                        for constraint in cspec:
-                            if constraint[0] == '':
-                                self.error("crosstex: citation constraint <%s> is missing a field qualifier" % key)
-                                raise Exception("missing fieldname in constrained citation")
-                        # check for underspecified constraints -- missing value
-                        for constraint in cspec:
-                            if constraint[1] == ['']:
-                                self.error("crosstex: citation constraint <%s> is missing a value constraint" % key)
-                                raise Exception("missing value in constrained citation")
-                    except:
-                        continue
-                    # at this point, we have all the constraints on the citation
-                    # cspec = [['author', ['sirer']], ['title', ['sharp', 'hybrid']]]
-                    match = None
-                    # look through all objects for all matching citations, we'll cite it if the citation is unique
-                    for objkey in self.primarykeys:
-                        try:
-                            # only cite citeable objects
-                            if self[objkey].label == None:
-                                continue
-                            # go through all constraints
-                            for (fieldname, values) in cspec:
-                                # check if constrained field exists
-                                if hasattr(self[objkey], fieldname):
-                                    fieldvalue = str(getattr(self[objkey], fieldname)).lower()
-                                    # check if constrained field contains all the values specified in the citation
-                                    for val in values:
-                                        string.index(fieldvalue, val)
-                            else:
-                                # we get here only when all constraints are satisfied
-                                if match != None:
-                                    self.error("crosstex: citation constraint %s is ambiguous, both %s and %s match" % (key, match, objkey))
-                                    raise Exception("non-unique constraint citation")
-                                match = objkey
-                                if self[objkey]._citekey == None:
-                                    self[objkey]._citekey = key
-                                    self._citations.append(objkey)
-                                if key != self[objkey]._citekey:
-                                    self.error("crosstex: multiply cited object <%s> must be cited under the same key or alias in all citations (attempted to cite it as %s)" % (self[objkey]._citekey, key))
-                        except Exception, e:
-                            if str(e) == "non-unique constraint citation":
-                                break
-                else:
-                    if key in self:
-                        if self[key].label != None:
-                            if self[key]._citekey == None:
-                                self[key]._citekey = key
-                                self._citations.append(key)
-                            if key != self[key]._citekey:
-                                self.error("crosstex: multiply cited object <%s> must be cited under the same key or alias in all citations (attempted to cite it as %s)" % (self[key]._citekey, key))
-                        else:
-                            self.warning("crosstex: %s %s is not citeable" % (self[key]._name, key))
-                    else:
-                        self.error("crosstex: citation for nonexistant key %s" % key)
-
-        for reverse, field in self.options.sort:
-            def keyfunc(x):
-                try:
-                    if field == 'citation':
-                        return self._citations.index(x)
-                    else:
-                        return tryint(self[x]._format('sort', field))
-                except:
-                    return ''
-            citelist = copy.copy(self._citations)
-            if reverse:
-                citelist.reverse()
-            sorted = [ (keyfunc(citation), i, citation) for i, citation in enumerate(citelist) ]
-            sorted.sort()
-            if reverse:
-                sorted.reverse()
-            self._citations = [ citation for _, _, citation in sorted ]
-
-        return self._citations
-
-    def divide(self, list=[], heading=-1):
-        if self.options.headinglevel + heading < 0:
-            return {'': list}
-        results = {}
-        for cite in list:
-            key = ''
-            if self[cite]._fields == None:
-                self[cite]._resolve()
-            if self.options.heading[heading][1] in self[cite]._fields:
-                key = self[cite]._fields[self.options.heading[heading][1]] or ''
-            results.setdefault(key, []).append(cite)
-        if self.options.headinglevel + heading > 0:
-            for key in results:
-                results[key] = self.divide(results[key], heading - 1)
-        return results
-
-    def addobject(self, name, keys, data, defaults, file, line):
-        name = name.strip().lower()
-        obj = None
-        try:
-            obj = self.objects[name](file, line)
-        except KeyError:
-            raise KeyError, "object type %s is not defined" % (name)
-        obj._citekey = None
-        obj._primarykey = None
-
-        for condition, fields in data:
-            for key in fields:
-                try:
-                    obj._addfield(key, fields[key], condition)
-                except ValueError, details:
-                    self.warning("%s:%d: %s" % (file, line, details))
-        for key in defaults:
-            try:
-                obj._addfield(key, defaults[key], {}, layer=1)
-            except ValueError, details:
-                pass
-
-        for key in keys:
-            if key in self:
-                other = self[key]
-                if obj == other:
-                    raise Warning, "re-definition of %s %s at %s:%d" % (obj._name, key, other._file, other._line)
-                else:
-                    raise KeyError, "%s %s is already defined at %s:%d" % (obj._name, key, other._file, other._line)
-            else:
-                self[key] = obj
-                if obj._primarykey == None:
-                    obj._primarykey = key
-                    self.primarykeys += [key]
-                self.aliases[key] = obj._primarykey
-        return obj
-
-    def extendobject(self, keys, data, defaults, file, line):
-        base = None
-        for key in keys:
-            if key in self:
-                if base != None and base != self[key]:
-                    raise KeyError, "aliases do not refer to a single object"
-                base = self[key]
-        if base == None:
-            raise KeyError, "no object found to extend"
-        
-        for condition, fields in data:
-            for key in fields:
-                try:
-                    base._addfield(key, fields[key], condition, extend=True)
-                except ValueError, details:
-                    self.warning("%s:%d: %s" % (file, line, details))
-        for key in defaults:
-            try:
-                base._addfield(key, defaults[key], {}, layer=1)
-            except ValueError, details:
-                pass
-        
-        for key in keys:
-            if key not in self:
-                self[key] = base
-                self.aliases[key] = base._primarykey
-        return base
-
-    def error(self, message):
-        if self.options.check > 0:
-            self.errors += 1
-            sys.stderr.write(str(message) + "\n")
-
-    def warning(self, message):
-        if self.options.check > 1:
-            self.errors += 1
-            sys.stderr.write(str(message) + "\n")
-
-
-# Lexer
-
-# Tokens
-tokens = (
-    'AT', 'COMMA', 'SHARP', 'OPENBRACE', 'CLOSEBRACE', 'LBRACK', 'RBRACK', 'EQUALS', 
-    'ATINCLUDE', 'ATSTRING', 'ATEXTEND', 'ATPREAMBLE', 'ATCOMMENT', 'ATDEFAULT', 'ATTITLEPHRASE', 'ATTITLESMALL',
-    'NUMBER', 'NAME', 'STRING',
-    )
-
-def t_COMMENT(t):
-    r'\%.*'
-    pass
-    # No return value. Token discarded
-
-def t_ATINCLUDE(t):
-    r'@[iI][nN][cC][lL][uU][dD][eE]'
-    t.lexer.followsequals = 0
-    return t
-    
-def t_ATSTRING(t):
-    r'@[sS][tT][rR][iI][nN][gG]'
-    t.lexer.followsequals = 0
-    return t
-
-def t_ATEXTEND(t):
-    r'@[eE][xX][tT][eE][nN][dD]'
-    t.lexer.followsequals = 0
-    return t
-    
-def t_ATPREAMBLE(t):
-    r'@[pP][rR][eE][aA][mM][bB][lL][eE]'
-    t.lexer.followsequals = 0
-    return t
-
-def t_ATCOMMENT(t):
-    r'@[Cc][Oo][Mm][Mm][Ee][Nn][Tt]'
-    t.lexer.followsequals = 1
-    return t
-
-def t_ATDEFAULT(t):
-    r'@[Dd][Ee][Ff][Aa][Uu][Ll][Tt]'
-    t.lexer.followsequals = 0
-    return t
-
-def t_ATTITLEPHRASE(t):
-    r'@[Tt][Ii][Tt][Ll][Ee][Pp][Hh][Rr][Aa][Ss][Ee]'
-    t.lexer.followsequals = 1
-    return t
-
-def t_ATTITLESMALL(t):
-    r'@[Tt][Ii][Tt][Ll][Ee][Ss][Mm][Aa][Ll][Ll]'
-    t.lexer.followsequals = 1
-    return t
-    
-def t_NUMBER(t):
-    r'\d+'
-    t.lexer.followsequals = 1
-    return t
-
-def t_STRING(t):
-    r'"(\\.|[^\\"])*"'
-    if t.value.count("{") != t.value.count("}"):
-        t.lexer.bib.error("%s:%d: mismatched braces in string" % (t.lexer.file, t.lexer.lineno))
-    t.lexer.followsequals = 0
-    for i in re.finditer('\r\n|\r|\n', t.value):
-        t.lexer.lineno += 1
-    t.value = t.value[1:-1]
-    return t
-
-def t_EQUALS(t):
-    r'='
-    t.lexer.followsequals = 1
-    return t
-
-def t_OPENBRACE(t):
-    r'\{'
-    # if the open brace is a value, treat it like a string
-    if t.lexer.followsequals == 1:
-        bracelevel = 1
-        # add a char at a time until we have a matching brace
-        while bracelevel > 0:
-            c = t.lexer.lexdata[t.lexer.lexpos]
-            t.lexer.lexpos += 1
-            if c == "{" and t.value[-1] != "\\":
-                bracelevel += 1
-            if c == "}" and t.value[-1] != "\\":
-                bracelevel -= 1
-            t.value += c
-        t.lexer.followsequals = 0
-        for i in re.finditer('\r\n|\r|\n', t.value):
-            t.lexer.lineno += 1
-        t.value = t.value[1:-1]
-        if re.compile('\d+').match(t.value):
-            t.type = "NUMBER"
-        else:
-            t.type = "STRING"
-    return t
-
-def t_CLOSEBRACE(t):
-    r'\}'
-    t.lexer.followsequals = 0
-    return t
-
-def t_AT(t):
-    r'@'
-    t.lexer.followsequals = 0
-    return t
-    
-def t_SHARP(t):
-    r'\#'
-    t.lexer.followsequals = 0
-    return t
-    
-def t_COMMA(t):
-    r','
-    t.lexer.followsequals = 0
-    return t
-
-def t_LBRACK(t):
-    r'\['
-    t.lexer.followsequals = 0
-    return t
-
-def t_RBRACK(t):
-    r'\]'
-    t.lexer.followsequals = 0
-    return t
-
-def t_NAME(t):
-    r'[a-zA-Z_][-a-zA-Z:0-9/_]*'
-    t.lexer.followsequals = 0
-    return t
-
-# Ignored characters
-t_ignore = " \t"
-
-def t_newline(t):
-    r'(\r\n|\r|\n)'
-    t.lexer.lineno += 1
-
-def t_error(t):
-    t.lexer.bib.error("%s:%d: syntax error at '%s'" % (t.lexer.file, t.lexer.lineno, t.value[0]))
-    t.skip(1)
-    
-# Grammar
-
-# Parsing rules
-precedence = ( )
-
-def p_stmt_singleton(t):
-    'stmts : stmt'
-    pass
-
-def p_stmt_multiple(t):
-    'stmts : stmt stmts'
-    pass
-
-def p_stmt_include(t):
-    'stmt : ATINCLUDE NAME'
-    filename = t[2]
-    try:
-        processfile(filename, t.lexer.bib, ['.xtx', '.bib', '.aux'])
-    except Exception, detail:
-        t.lexer.bib.error("%s:%d: %s" % (t.lexer.file, t.lineno(2), detail))
-
-def p_stmt_preamble(t):
-    'stmt : ATPREAMBLE OPENBRACE STRING CLOSEBRACE'
-    t.lexer.bib.preambles += [t[3]]
-
-def p_stmt_comment(t):
-    'stmt : ATCOMMENT STRING'
-    pass
-
-def p_stmt_default(t):
-    'stmt : ATDEFAULT field'
-    for key in t[2]:
-        if t[2][key] == '':
-            try:
-                del t.lexer.defaults[key]
-            except KeyError:
-                pass
-        else:
-            t.lexer.defaults[key] = t[2][key]
-
-def p_stmt_titlephrase(t):
-    'stmt : ATTITLEPHRASE STRING'
-    t.lexer.bib.addtitlephrase(t[2])
-
-def p_stmt_titlesmall(t):
-    'stmt : ATTITLESMALL STRING'
-    t.lexer.bib.addtitlesmall(t[2])
-
-def p_stmt_string(t):
-    'stmt : ATSTRING OPENBRACE stringdefs CLOSEBRACE'
-    for key in t[3]:
-        try:
-            t.lexer.bib.addobject('string', [key], [({}, {'name': t[3][key]})], t.lexer.defaults, t.lexer.file, t.lineno(3))._resolve()
-        except Warning, detail:
-            t.lexer.bib.warning("%s:%d: %s" % (t.lexer.file, t.lineno(3), detail))
-        except Exception, detail:
-            t.lexer.bib.error("%s:%d: %s" % (t.lexer.file, t.lineno(3), detail))
-
-def p_stmt_object(t):
-    'stmt : object'
-    t[0] = t[1]
-
-def p_object_defn(t):
-    'object : AT NAME OPENBRACE keys COMMA fields conditionals CLOSEBRACE'
-    t[2] = t[2].lower()
-    try:
-        t.lexer.bib.addobject(t[2], t[4], [({}, t[6])] + t[7], t.lexer.defaults, t.lexer.file, t.lineno(2))._resolve()
-    except Warning, detail:
-        t.lexer.bib.warning("%s:%d: %s" % (t.lexer.file, t.lineno(2), detail))
-    except Exception, detail:
-        t.lexer.bib.error("%s:%d: %s" % (t.lexer.file, t.lineno(2), detail))
-
-def p_object_extension(t):
-    'object : ATEXTEND OPENBRACE keys COMMA fields conditionals CLOSEBRACE'
-    try:
-        t.lexer.bib.extendobject(t[3], [({}, t[5])] + t[6], t.lexer.defaults, t.lexer.file, t.lineno(1))
-    except Warning, detail:
-        t.lexer.bib.warning("%s:%d: %s" % (t.lexer.file, t.lineno(1), detail))
-    except Exception, detail:
-        t.lexer.bib.error("%s:%d: %s" % (t.lexer.file, t.lineno(1), detail))
-
-def p_object_extension_empty(t):
-    'object : ATEXTEND OPENBRACE keys CLOSEBRACE'
-    try:
-        t.lexer.bib.extendobject(t[3], [], t.lexer.defaults, t.lexer.file, t.lineno(1))
-    except Warning, detail:
-        t.lexer.bib.warning("%s:%d: %s" % (t.lexer.file, t.lineno(1), detail))
-    except Exception, detail:
-        t.lexer.bib.error("%s:%d: %s" % (t.lexer.file, t.lineno(1), detail))
-
-def p_object_error(t):
-    'object : error CLOSEBRACE'
-    pass
-
-def p_keys_singleton(t):
-    'keys : NAME'
-    t[0] = [t[1]]
-
-def p_keys_multiple(t):
-    'keys : NAME EQUALS keys'
-    t[0] = [t[1]] + t[3]
-
-def p_conditionals_empty(t):
-    'conditionals :'
-    t[0] = []
-
-def p_conditionals_singleton(t):
-    'conditionals : conditional'
-    t[0] = [t[1]]
-
-def p_conditionals_multiple(t):
-    'conditionals : conditional conditionals'
-    t[0] = [t[1]] + t[2]
-
-def p_conditional(t):
-    'conditional : LBRACK fields RBRACK fields'
-    t[0] = (t[2], t[4])
-
-def p_stringdefs_singleton(t):
-    'stringdefs : stringdef'
-    t[0] = t[1]
-
-def p_stringdefs(t):
-    'stringdefs : stringdef COMMA stringdefs'
-    t[0] = t[1]
-    for key in t[3]:
-        t[0][key] = t[3][key]
-              
-def p_stringdef(t):
-    'stringdef : NAME EQUALS value'
-    t[0] = {t[1]: t[3]}
-
-def p_fields_empty(t):
-    'fields :'
-    t[0] = []
-
-def p_fields_singleton(t):
-    'fields : field'
-    t[0] = t[1]
-
-def p_fields(t):
-    'fields : field COMMA fields'
-    t[0] = t[1]
-    for key in t[3]:
-        t[0][key] = t[3][key]
-              
-def p_field(t):
-    'field : NAME EQUALS value'
-    t[1] = t[1].lower()
-    if t[1] == 'author' or t[1] == 'editor':
-        values = crosstex.objects.entrylist()
-        if isinstance(t[3], str):
-            for key in re.compile('\s+and\s+').split(t[3]):
-                if key in t.lexer.bib:
-                    values.append(t.lexer.bib[key])
-                else:
-                    try:
-                        t.lexer.bib.addobject('author', [key], [({}, {'name': key})], t.lexer.defaults, t.lexer.file, t.lineno(3))._resolve()
-                        values.append(t.lexer.bib[key])
-                    except Warning, detail:
-                        t.lexer.bib.warning("%s:%d: %s" % (t.lexer.file, t.lineno(3), detail))
-                    except Exception, detail:
-                        t.lexer.bib.error("%s:%d: %s" % (t.lexer.file, t.lineno(3), detail))
-        else:
-            values.append(t[3])
-        t[0] = {t[1]: values}
-    else:
-        t[0] = {t[1]: t[3]}
-
-def p_value_singleton(t):
-    'value : simplevalue'
-    t[0] = t[1]
-
-def p_value_concat(t):
-    'value : value SHARP simplevalue'
-    t[0] = t[1].rstrip("\"") + t[3].lstrip("\"")
-
-def p_simplevalue_number(t):
-    'simplevalue : NUMBER'
-    t[0] = t[1]
-    
-def p_simplevalue_name(t):
-    'simplevalue : NAME'
-    try:
-        t[0] = t.lexer.bib[t[1]]
-    except KeyError:
-        t.lexer.bib.warning("%s:%d: reference to undefined object '%s', using it as a string" % (t.lexer.file, t.lineno(1), t[1]))
-        t[0] = t[1]
-    
-def p_simplevalue_string(t):
-    'simplevalue : STRING'
-    t[0] = t[1]
-
-def p_error(t):
-    t.lexer.bib.error("%s:%d: parse error at '%s'" % (t.lexer.file, t.lexer.lineno, t.value[0]))
-
-def processfile(infilename, bib, exts=['.aux', '.xtx', '.bib']):
-    if infilename in bib.seenfiles:
-        if 'file' in bib.options.dump:
-            sys.stderr.write("File %s already processed, skipping.\n" % infilename)
-        return infilename
-
-    names = []
-    if infilename[infilename.rfind('.'):] in exts:
-        names = [infilename]
-    else:
-        names = [infilename + ext for ext in exts]
-
-    paths = []
-    if infilename[0] == '/':
-        paths = names
-    else:
-        for name in names:
-            if bib.location:
-                paths.append('/'.join([bib.location[-1], name]))
-            paths.extend(['/'.join([path, name]) for path in bib.options.dir])
-
-    for filename in paths:
-        try:
-            instream = open(filename, 'r')
-            if 'file' in bib.options.dump:
-                sys.stderr.write("Processing %s...\n" % filename)
-            bib.location.append(filename[0:filename.rfind("/")])
-            if filename.endswith('.aux'):
-                parseaux(instream, bib)
-            else:
-                parsextx(instream, infilename, bib)
-            bib.location.pop()
-            instream.close()
-            bib.seenfiles.append(infilename)
-            return filename
-        except IOError:
-            continue
-    else:
-        raise IOError, '%s does not exist or is not a bibliographic database' % infilename
-
-def parseaux(instream, bib):
-    options = []
-    datafiles = []
-    while 1:
-        line = instream.readline()
-        if not line:
-            break
-        if line.startswith("\\citation"):
-            citeline = line[10:].strip().rstrip("}")
-            for cite in citeline.split(","):
-                if cite.find(" ") >= 0:
-                    bib.error("citation with empty space \"%s\"" % cite)
-                else:
-                    cite = cite.strip(",        ")
-                    if cite == "":
-                        bib.error("empty citation, check for spurious commas in \\cite{} commands")
-                    else:
-                        options.extend(['--cite', cite])
-        elif line.startswith("\\bibstyle"):
-            options.extend(['--style'] + line[10:].rstrip().rstrip("}").split(' '))
-        elif line.startswith("\\bibdata"):
-            datafiles.extend(line[9:].rstrip().rstrip("}").split(','))
-        elif line.startswith("\\@input"):
-            datafiles.extend(line[8:].rstrip().rstrip("}").split(','))
-    bib.setoptions(options)
-    for datafile in datafiles:
-        try:
-            processfile(datafile, bib, ['.xtx', '.bib', '.aux'])
-        except Exception, details:
-            bib.error("Could not process data file %s: %s" % (datafile, details))
-    
-def parsextx(instream, infilename, bib):
-    lexer = lex.lex()
-    lexer.bib = bib
-    lexer.file = infilename
-    lexer.lineno = 1
-    lexer.followsequals = 0
-    lexer.defaults = {}
-    parser = yacc.yacc(debug=0, write_tables=0) # set these to 1 for icky debugging
-    parser.parse(instream.read(), lexer=lexer)
-
-# Determine the space to allocate for labels
-def maxstr(citations, bib):
-    maxstr = ''
-    for key in citations:
-        citekey = bib[key].label.replace("{\\etalchar{+}}", "X")
-        if len(citekey) > len(maxstr):
-            maxstr = citekey
-    if maxstr == '':
-        maxstr = '0' * int(math.ceil(math.log(len(citations) + 1, 10)))
-    return maxstr
-
-# Display a hierarchal bibliography in categories
-def writecategories(categories, bib, outfile):
-    if isinstance(categories, list):
-        for key in categories:
-            if len(bib[key]._conditionals) < 2:
-                bib[key]._conditionals.append([])
-            for field in [x[1] for x in bib.options.heading[-bib.options.headingdepth-1:]]:
-                for entryfield, entryvalue, entrycondition in bib[key]._conditionals[0]:
-                    if entryfield == field:
-                        bib[key]._conditionals[-1].append((entryfield, entryvalue, entrycondition))
-            outfile.write(str(bib[key]))
-    elif isinstance(categories, dict):
-        headings = categories.keys()
-        headings.sort()
-        if len(bib.options.heading) and bib.options.heading[-bib.options.headingdepth-1][0]:
-            headings.reverse()
-        for heading in headings:
-            if bib.options.convert == 'html' or bib.options.convert == 'bbl':
-                if heading != '':
-                    outfile.write("{\\renewcommand{\\refname}{%s}\n" % heading)
-                outfile.write("\\begin{thebibliography}{" + maxstr(categories[heading], bib) + "}\n")
-            if bib.options.convert == 'xtx' and len(bib.options.heading):
-                outfile.write("@default " + crosstex.objects._fieldval(bib.options.heading[-bib.options.headingdepth-1][1], heading) + "\n\n")
-            bib.options.headingdepth += 1
-            writecategories(categories[heading], bib, outfile)
-            bib.options.headingdepth -= 1
-            if bib.options.convert == 'html' or bib.options.convert == 'bbl':
-                if heading != '':
-                    outfile.write("\\end{thebibliography}}\n")
-                else:
-                    outfile.write("\\end{thebibliography}\n")
-
-
-# Parse arguments and construct a bibliography.
-namearg = '--' + sys.argv[0].split('/')[-1]
+optparser = OptionParser(version, [xtxlib])
+namearg = '--' + os.path.basename(sys.argv[0])
 if optparser.has_option(namearg):
-    sys.argv.insert(1, namearg)
-bib = bibliography()
-args = bib.setoptions(sys.argv[1:])
-if len(args) != 1:
-    optparser.print_help()
-    sys.exit(0)
-infilename = args[0]
+  sys.argv.insert(1, namearg)
 
-# Include standard databases.
-try:
-    processfile('standard', bib)
-except:
-    pass
+opts, files = optparser.parse_args()
+if not files:
+  optparser.print_help()
+  sys.exit(0)
 
-# Parse the file.
-outfile = None
-filename = None
+dbparser = Parser(opts, optparser)
+paths = dbparser.files(files)
+path = '.'.join([os.path.splitext(paths[-1])[0], opts.convert])
+dbparser.parse('standard')
 try:
-    filename = processfile(infilename, bib)
-    outfilename = filename[:filename.rfind('.') + 1] + bib.options.convert
-    if outfilename == filename:
-        outfilename += '.new'
-    try:
-        if bib.options.convert == 'html':
-            t = pipes.Template()
-            t.append('hevea -O', '--')
-            outfile = t.open(outfilename, 'w')
-        else:
-            outfile = open(outfilename, 'w')
-    except:
-        raise IOError, "unable to open output file %s" % outfilename
-except Exception, details:
-    bib.error("crosstex: unable to process file %s: %s" % (infilename, details))
-    sys.exit(bib.errors)
+  if opts.convert == 'html':
+    t = pipes.Template()
+    t.append('hevea -O', '--')
+    out = t.open(path, 'w')
+  else:
+    out = open(path, 'w')
+except IOError, details:
+  error(opts, 'Unable to open output file "%s": %s.' % (path, details))
+  sys.exit(opts.errors)
 
-# Apply all the style filters so that we can continue.
-if bib.options.style in ['unsrt', 'ieeetr']:
-    bib.setoptions(['--no-sort'])
-if bib.options.style == 'html':
-    bib.setoptions(['--blank-labels', '--break-lines'])
-    if bib.options.link == None:
-        bib.setoptions(['-l', 'Abstract', '-l', 'URL', '-l', 'PS', '-l', 'PDF', '-l', 'HTML', '-l', 'DVI', '-l', 'TEX', '-l', 'BIB', '-l', 'FTP', '-l', 'HTTP', '-l', 'RTF'])
-for objtype in bib.options.capitalize:
-    try:
-        bib.objects[objtype]._addfilter(crosstex.objects.uppercasefilter, 'value')
-    except KeyError:
-        bib.error("crosstex: no such object type %s" % objtype)
-for field in bib.options.no_field:
-    bib.objects['publication']._addfilter(crosstex.objects.killfilter, field)
-if bib.options.add_in:
-    bib.objects['publication']._addfilter(crosstex.objects.infilter, 'fullpublication', 'booktitle')
-    bib.objects['publication']._addfilter(crosstex.objects.infilter, 'fullpublication', 'journal')
-if bib.options.add_proc:
-    bib.objects['conference']._addfilter(crosstex.objects.procfilter, 'value')
-if bib.options.add_proceedings:
-    bib.objects['conference']._addfilter(crosstex.objects.proceedingsfilter, 'value')
-if bib.titlephrases and bib.options.titlecase != 'upper':
-    bib.objects['publication']._addfilter(crosstex.objects.maketitlephrasefilter(bib.titlephrases), 'title')
-if bib.titlesmall and bib.options.titlecase != 'upper':
-    bib.objects['publication']._addfilter(crosstex.objects.makelowerphrasefilter(bib.titlesmall), 'title')
-if bib.options.titlecase == 'lower':
-    bib.objects['publication']._addfilter(crosstex.objects.lowertitlecasefilter, 'title')
-elif bib.options.titlecase == 'upper':
-    bib.objects['publication']._addfilter(crosstex.objects.uppercasefilter, 'title')
-elif bib.options.titlecase == 'default':
-    bib.objects['publication']._addfilter(crosstex.objects.titlecasefilter, 'title')
-if bib.options.last_first:
-    bib.objects['publication']._addlistfilter(crosstex.objects.lastfirstlistfilter, 'author')
-    bib.objects['publication']._addlistfilter(crosstex.objects.lastfirstlistfilter, 'editor')
-if bib.options.link:
-    bib.objects['publication']._addproducer(crosstex.objects.makelinksproducer(bib.options.link), 'links')
-if bib.options.abstract or bib.options.keywords:
-    bib.objects['publication']._addproducer(crosstex.objects.extrasproducer, 'extras')
-    if not bib.options.abstract:
-        bib.objects['publication']._addfilter(crosstex.objects.killfilter, 'extras', 'abstract')
-    if not bib.options.keywords:
-        bib.objects['publication']._addfilter(crosstex.objects.killfilter, 'extras', 'keywords')
-if bib.options.title_head:
-    bib.objects['publication']._addfilter(crosstex.objects.boldfilter, 'fulltitle')
+if opts.style is None:
+  if opts.convert == 'bbl':
+    opts.style = 'plain'
+  else:
+    opts.style = opts.convert
 try:
-    mod = None
-    try:
-        mod = imp.find_module(bib.options.style, [outfilename[:outfilename.rfind('/')]])
-        stylemodule = imp.load_module(bib.options.style, *mod)
-    finally:
-        if mod and mod[0]:
-            mod[0].close()
+  # XXX Use kpathsea
+  mod = None
+  try:
+    mod = imp.find_module(opts.style, [os.path.basename(path)])
+    stylemodule = imp.load_module(opts.style, *mod)
+  finally:
+    if mod and mod[0]:
+      mod[0].close()
 except ImportError, details:
-    try:
-        stylemodule = __import__('crosstex.style.' + bib.options.style)
-        stylemodule = getattr(stylemodule.style, bib.options.style)
-    except ImportError, details:
-        bib.error("crosstex: unable to load style %s" % bib.options.style)
-        sys.exit(bib.errors)
-if bib.options.cite_by == 'number':
-    bib.objects['publication']._addproducer(crosstex.objects.emptyproducer, 'label')
-elif bib.options.cite_by == 'initials':
-    bib.objects['publication']._addproducer(crosstex.objects.makegetterproducer('initialslabel'), 'label')
-elif bib.options.cite_by == 'fullname':
-    bib.objects['publication']._addproducer(crosstex.objects.makegetterproducer('fullnamelabel'), 'label')
-if bib.options.title_head:
-    bib.objects['publication']._addproducer(makebibitemproducer('fulltitle', 'fullauthor', 'fullpublication', 'links', 'extras'), 'value')
-for objtype in bib.options.short:
-    try:
-        bib.objects[objtype]._addproducer(crosstex.objects.makegetterproducer('shortname'), 'value')
-        if objtype == 'author':
-            bib.objects[objtype]._addfilter(crosstex.objects.shortnamesfilter, 'value')
-    except KeyError:
-        bib.error("crosstex: no such object type %s" % objtype)
-if len(bib.options.cite) == 0 and not filename.endswith('.aux'):
-    bib.setoptions(['--cite', '*'])
+  try:
+    stylemodule = __import__('crosstex.style.' + opts.style)
+    stylemodule = getattr(stylemodule.style, opts.style)
+  except ImportError, details:
+    error(opts, 'Can not load %s style: %s\n' % (opts.style, details))
+    sys.exit(opts.errors)
+if opts.style in ['unsrt', 'ieeetr']:
+  dbparser.addopts(['--no-sort'])
+if opts.style == 'html':
+  dbparser.addopts(['--blank-labels', '--break-lines'])
+  if opts.link == []:
+    dbparser.addopts(['-l', 'Abstract', '-l', 'URL', '-l', 'PS', '-l',
+                      'PDF', '-l', 'HTML', '-l', 'DVI', '-l', 'TEX', '-l',
+                      'BIB', '-l', 'FTP', '-l', 'HTTP', '-l', 'RTF'])
+for kind in opts.capitalize:
+  getattr(crosstex.objects, kind)._addfilter(crosstex.style.common.uppercasefilter, 'value')
+for field in opts.no_field:
+  crosstex.objects.publication._addfilter(crosstex.style.common.killfilter, field)
+if opts.add_in:
+  crosstex.objects.publication._addfilter(crosstex.style.common.infilter, 'fullpublication', 'booktitle')
+  crosstex.objects.publication._addfilter(crosstex.style.common.infilter, 'fullpublication', 'journal')
+if opts.add_proc:
+  crosstex.objects.conference._addfilter(crosstex.style.common.procfilter, 'value')
+if opts.add_proceedings:
+  crosstex.objects.conference._addfilter(crosstex.style.common.proceedingsfilter, 'value')
+if dbparser.titlephrases and opts.titlecase != 'upper':
+  crosstex.objects.publication._addfilter(crosstex.style.common.maketitlephrasefilter(dbparser.titlephrases), 'title')
+if dbparser.titlesmalls and opts.titlecase != 'upper':
+  crosstex.objects.publication._addfilter(crosstex.style.common.makelowerphrasefilter(dbparser.titlesmalls), 'title')
+if opts.titlecase == 'lower':
+  crosstex.objects.publication._addfilter(crosstex.style.common.lowertitlecasefilter, 'title')
+elif opts.titlecase == 'upper':
+  crosstex.objects.publication._addfilter(crosstex.style.common.uppercasefilter, 'title')
+elif opts.titlecase == 'default':
+  crosstex.objects.publication._addfilter(crosstex.style.common.titlecasefilter, 'title')
+if opts.last_first:
+  crosstex.objects.publication._addlistfilter(crosstex.style.common.lastfirstlistfilter, 'author')
+  crosstex.objects.publication._addlistfilter(crosstex.style.common.lastfirstlistfilter, 'editor')
+if opts.link:
+  crosstex.objects.publication._addproducer(crosstex.style.common.makelinksproducer(opts.link), 'links')
+if opts.abstract or opts.keywords:
+  crosstex.objects.publication._addproducer(crosstex.style.common.extrasproducer, 'extras')
+  if not opts.abstract:
+    crosstex.objects.publication._addfilter(crosstex.style.common.killfilter, 'extras', 'abstract')
+  if not opts.keywords:
+    crosstex.objects.publication._addfilter(crosstex.style.common.killfilter, 'extras', 'keywords')
+if opts.title_head:
+  crosstex.objects.publication._addfilter(crosstex.style.common.boldfilter, 'fulltitle')
+if opts.cite_by == 'number':
+  crosstex.objects.publication._addproducer(crosstex.style.common.emptyproducer, 'label')
+elif opts.cite_by == 'initials':
+  crosstex.objects.publication._addproducer(crosstex.style.common.makegetterproducer('initialslabel'), 'label')
+elif opts.cite_by == 'fullname':
+  crosstex.objects.publication._addproducer(crosstex.style.common.makegetterproducer('fullnamelabel'), 'label')
+if opts.title_head:
+  crosstex.objects.publication._addproducer(makejoinproducer(".", "\n\\newblock ", ".", "", 'fulltitle', 'fullauthorpublicationextras'), 'value')
+for kind in opts.short:
+  getattr(crosstex.objects, kind)._addproducer(crosstex.style.common.makegetterproducer('shortname'), 'value')
+  if kind in ['author', 'editor']:
+    crosstex.objects.publication._addlistfilter(crosstex.style.common.shortnameslistfilter, kind)
 
-# Handle dump-locations, dump-conferences, etc.
-for objtype in bib.options.dump:
-    if objtype not in bib.objects:
-        if objtype != 'file' and objtype != 'titlephrase':
-            sys.stderr.write("crosstex: no such object type %s.\n" % objtype)
-        continue
-    objs = [ "%s\t%s\n" % (key, bib[key]) for key in bib.primarykeys if isinstance(bib[key], bib.objects[objtype]) ]
-    if objs:
-        sys.stderr.write("%s\n" % (objtype.upper() + ':'))
-        for i in objs:
-            sys.stderr.write(i)
-    else:
-        sys.stderr.write("crosstex: no %s objects defined.\n" % objtype)
-if 'titlephrase' in bib.options.dump:
-    sys.stderr.write("TITLE PHRASES:\n")
-    for phrase in bib.titlephrases.values():
-        sys.stderr.write("%s\n" % phrase)
-    sys.stderr.write("TITLE SMALL WORDS:\n")
-    for small in bib.titlesmall:
-        sys.stderr.write("%s\n" % small)
+db = Database(dbparser)
 
-# Retrieve the list of citations and check them
-if bib.options.convert != 'xtx' and bib.options.headinglevel > 1:
-    bib.options.headinglevel = 1
-citations = bib.citations()
-if bib.options.check > 1:
-    for cite in primarykeys:
-        bib[cite]._check()
-else:
-    for cite in citations:
-        bib[cite]._check()
-divided = bib.divide(citations)
+for kind in opts.dump:
+  if kind in ['file', 'titlephrase', 'titlesmall']:
+    continue
+  entries = db.dump(kind)
+  if entries:
+    sys.stderr.write('\n%s:\n' % kind.upper())
+    entries.sort()
+    for entry in entries:
+      sys.stderr.write('%s\n' % entry)
+  else:
+    sys.stderr.write('No %s objects defined.\n' % kind)
+if 'titlephrase' in opts.dump and db.titlephrases:
+  sys.stderr.write('\nTITLE PHRASES:\n')
+  for phrase in db.titlephrases:
+    sys.stderr.write('%s\n' % phrase)
+if 'titlesmall' in opts.dump:
+  sys.stderr.write('\nTITLE SMALL WORDS:\n')
+  for small in db.titlesmalls:
+    sys.stderr.write('%s\n' % small)
 
-# Print headers required by output format.
-if bib.options.convert == 'bib' or bib.options.convert == 'xtx':
-    for i in bib.preambles:
-        outfile.write("@PREAMBLE { \"" + i + "\" }\n\n")
-if bib.options.convert == 'html':
-    outfile.write("\\documentclass{report}\n")
-    outfile.write("\\usepackage{hyperref}\n")
-    outfile.write("\\newstyle{.dt-list}{margin-top:1em}\n")
-    if bib.options.popups:
-        outfile.write("\\newstyle{.dd-list}{position:relative}\n")
-        outfile.write("\\newstyle{.dd-list .quotation}{visibility:hidden;position:absolute;top:100\%;left:4em;margin-top:-1em;padding:1em;border:1px solid \#aaaaaa;background:\#ffffff;z-index:1}\n")
-        outfile.write("\\newstyle{.dd-list .quotation *}{margin-left:0;padding-left:0}\n")
-        outfile.write("\\newstyle{.dd-list:hover .quotation}{visibility:visible}\n")
-    outfile.write("\\begin{document}\n")
-if bib.options.convert == 'html' or bib.options.convert == 'bbl':
-    for i in bib.preambles:
-        outfile.write(i)
-        outfile.write("\n")
-    if bib.options.blank_labels:
-        outfile.write("\\makeatletter\\def\\@biblabel#1{}\\makeatother\n")
-    if bib.options.break_lines:
-        outfile.write("\\renewcommand{\\newblock}{\\\\}")
-    outfile.write("\\newcommand{\\etalchar}[1]{$^{#1}$}\n")
+if opts.convert == 'html':
+  out.write("\\documentclass{report}\n")
+  out.write("\\usepackage{hyperref}\n")
+  out.write("\\newstyle{.dt-list}{margin-top:1em}\n")
+  if opts.popups:
+    out.write("\\newstyle{.dd-list}{position:relative}\n")
+    out.write("\\newstyle{.dd-list .quotation}"
+              "{visibility:hidden;position:absolute;top:100\%;"
+              "left:4em;margin-top:-1em;padding:1em;"
+              "border:1px solid \#aaaaaa;background:\#ffffff;"
+              "z-index:1}\n")
+    out.write("\\newstyle{.dd-list .quotation *}"
+              "{margin-left:0;padding-left:0}\n")
+    out.write("\\newstyle{.dd-list:hover .quotation}"
+              "{visibility:visible}\n")
+  out.write("\\begin{document}\n")
+if opts.convert == 'html' or opts.convert == 'bbl':
+  for i in db.preambles:
+    out.write(i + '\n')
+  if opts.blank_labels:
+    out.write("\\makeatletter\\def\\@biblabel#1{}\\makeatother\n")
+  if opts.break_lines:
+    out.write("\\renewcommand{\\newblock}{\\\\}")
+  out.write("\\newcommand{\\etalchar}[1]{$^{#1}$}\n")
+if opts.convert == 'bib' or opts.convert == 'xtx':
+  for i in db.preambles:
+    out.write('@PREAMBLE { "%s" }\n\n' % i)
 
-# Format the actual entries
-writecategories(divided, bib, outfile)
+#if opts.convert != 'xtx' and len(opts.heading) > 1:
+#  error(opts, 'The output format does not accept multiple heading levels.')
+#  opts.heading = opts.heading[:1]
+db.write(out)
 
-# Print footers required by output format.
-if bib.options.convert == 'html':
-    outfile.write("\\end{document}\n")
-outfile.close()
+if opts.convert == 'html':
+  out.write("\\end{document}\n")
+out.close()
 
-sys.exit(bib.errors)
+sys.exit(opts.errors)

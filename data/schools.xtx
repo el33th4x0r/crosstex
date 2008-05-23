@@ -1,0 +1,383 @@
+@include locations
+
+@school{ASU,
+  longname="Arizona State University",
+  shortname="ASU",
+  address=Phoenix,
+}
+
+@school{BostonU,
+  longname="Boston University",
+  shortname="BU",
+  address=Boston,
+}
+
+@school{Brown,
+  longname="Brown University",
+  shortname="Brown",
+  address=Providence,
+}
+
+@school{CMU,
+  longname="Carnegie Mellon University",
+  shortname="CMU",
+  address=Pittsburgh,
+}
+
+@school{Caltech,
+  longname="California Institute of Technology",
+  shortname="CalTech",
+  address=Pasadena,
+}
+
+@school{CaseWestern,
+  longname="Case Western Reserve University",
+  shortname="Case Western",
+  address=Cleveland,
+}
+
+@school{ColumbiaU,
+  longname="Columbia University",
+  shortname="Columbia",
+  address=NYC,
+}
+
+@school{Cornell,
+  longname="Cornell University",
+  shortname="Cornell",
+  address=Ithaca,
+}
+
+@school{Dartmouth,
+  longname="Dartmouth College",
+  shortname="Dartmouth",
+  address=Hanover,
+}
+
+@school{Duke,
+  longname="Duke University",
+  shortname="Duke",
+  address=Durham,
+}
+
+@school{GATech,
+  longname="Georgia Institute of Technology",
+  shortname="Georgia Tech",
+  address=Atlanta,
+}
+
+@school{Harvard,
+  longname="Harvard University",
+  shortname="Harvard",
+  address=CambridgeMA,
+}
+
+@school{IAState,
+  longname="Iowa State University",
+  shortname="ISU",
+  address=IA,
+}
+
+@school{IndianaU,
+  name="Indiana University",
+  address=IN,
+}
+
+@school{JHU,
+  longname="Johns Hopkins University",
+  shortname="Johns Hopkins",
+  address=Baltimore,
+}
+
+@school{MIT,
+  longname="Massachusetts Institute of Technology",
+  shortname="MIT",
+  address=CambridgeMA,
+}
+
+@school{MichiganState,
+  longname="Michigan State University",
+  shortname="MSU",
+  address=MI,
+}
+
+@school{NCSU,
+  longname="North Carolina State University",
+  shortname="NC State",
+  address=Raleigh,
+}
+
+@school{NYU,
+  longname="New York University",
+  shortname="NYU",
+  address=NYC,
+}
+
+@school{Northeastern,
+  name="Northeastern University",
+  address=Boston,
+}
+
+@school{Northwestern,
+  name="Northwestern University",
+  address=IL,
+}
+
+@school{OHSU,
+  longname="Oregon Health and Science University",
+  shortname="OHSU",
+  address=Portland,
+}
+
+@school{OSU,
+  longname="Oregon State University",
+  shortname="OSU",
+  address=Corvallis,
+}
+
+@school{OhioU,
+  longname="Ohio State University",
+  shortname="OSU",
+  address=Columbus,
+}
+
+@school{PennState,
+  longname="Penn State University",
+  shortname="Penn State",
+  address=PA,
+}
+
+@school{PrincetonU,
+  longname="Princeton University",
+  shortname="Princeton",
+  address=Princeton,
+}
+
+@school{Purdue,
+  longname="Purdue University",
+  shortname="Purdue",
+  address=WestLafayette,
+}
+
+@school{RPI,
+  longname="Rensselaer Polytechnic Institute",
+  shortname="RPI",
+  address=Troy,
+}
+
+@school{Rice,
+  longname="Rice University",
+  shortname="Rice",
+  address=Houston,
+}
+
+@school{Rutgers,
+  longname="Rutgers State University",
+  shortname="Rutgers",
+  address=NJ,
+}
+
+@school{SUNY,
+  longname="State University of New York",
+  shortname="SUNY",
+  address=NY,
+}
+
+@school{StanfordU,
+  longname="Stanford University",
+  shortname="Stanford",
+  address=PaloAlto,
+}
+
+@school{SyracuseU,
+  name="Syracuse University",
+  address=Syracuse,
+}
+
+@school{TAMU,
+  longname="Texas A&M University",
+  shortname="Texas A&M",
+  address=CollegeParkTX,
+}
+
+@school{UArizona,
+  name="University of Arizona",
+  address=Tucson,
+}
+
+@school{UC-Berkeley,
+  longname="University of California Berkeley",
+  shortname="Berkeley",
+  address=Berkeley,
+}
+
+@school{UC-Davis,
+  longname="University of California Davis",
+  shortname="UC Davis",
+  address=Davis,
+}
+
+@school{UC-Irvine,
+  longname="University of California Irvine",
+  shortname="UC Irvine",
+  address=Irvine,
+}
+
+@school{UCLA,
+  longname="University of California Los Angeles",
+  shortname="UCLA",
+  address=LosAngeles,
+}
+
+@school{UCSB,
+  longname="University of California Santa Barbara",
+  shortname="UCSB",
+  address=SantaBarbara,
+}
+
+@school{UCSC,
+  longname="University of California Santa Cruz",
+  shortname="UC Santa Cruz",
+  address=SantaCruz,
+}
+
+@school{UCSD,
+  longname="University of California San Diego",
+  shortname="UCSD",
+  address=SanDiego,
+}
+
+@school{UChicago,
+  name="University of Chicago",
+  address=Chicago,
+}
+
+@school{UColorado,
+  name="University of Colorado",
+  address=Boulder,
+}
+
+@school{UDelaware,
+  name="University of Delaware",
+  address=DE,
+}
+
+@school{UFlorida,
+  name="University of Florida",
+  address=FL,
+}
+
+@school{UI,
+  name="University of Illinois",
+  address=IL,
+}
+
+@school{UIowa,
+  name="University of Iowa",
+  address=IA,
+}
+
+@school{UMD,
+  name="University of Maryland",
+  address=CollegePark,
+}
+
+@school{UMass,
+  name="University of Massachusetts",
+  address=Amherst,
+}
+
+@school{UMich,
+  name="University of Michigan",
+  address=AnnArbor,
+}
+
+@school{UMinn,
+  name="University of Minnesota",
+  address=MN,
+}
+
+@school{UNC,
+  name="University of North Carolina",
+  address=NC,
+}
+
+@school{UOregon,
+  name="University of Oregon",
+  address=Eugene,
+}
+
+@school{UPenn,
+  longname="University of Pennsylvania",
+  shortname="UPenn",
+  address=Philadelphia,
+}
+
+@school{UPitt,
+  name="University of Pittsburgh",
+  address=Pittsburgh,
+}
+
+@school{URochester,
+  name="University of Rochester",
+  address=Rochester,
+}
+
+@school{USC,
+  longname="University of Southern California",
+  shortname="USC",
+  address=LosAngeles,
+}
+
+@school{UTenn,
+  name="University of Tennessee",
+  address=Knoxville,
+}
+
+@school{UTexas,
+  name="University of Texas",
+  address=Austin,
+}
+
+@school{UUtah,
+  name="University of Utah",
+  address=SaltLake,
+}
+
+@school{UVirginia,
+  name="University of Virginia",
+  address=Charlottesville,
+}
+
+@school{UWashington,
+  name="University of Washington",
+  address=Seattle,
+}
+
+@school{VATech,
+  longname="Virginia Polytechnic Institute",
+  shortname="Virginia Tech",
+  address=Blacksburg,
+}
+
+@school{Vanderbilt,
+  longname="Vanderbilt University",
+  shortname="Vanderbilt",
+  address=Nashville,
+}
+
+@school{UWisc,
+  name="University of Wisconsin",
+  address=WI,
+}
+
+@school{WUSTL,
+  name="Washington University",
+  address=StLouis,
+}
+
+@school{Yale,
+  longname="Yale University",
+  shortname="Yale",
+  address=NewHaven, 
+}
