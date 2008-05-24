@@ -647,8 +647,6 @@ def killfilter(obj, objvalue, context):
     return ''
 
 def titlecasefilter(obj, objvalue, context):
-  if len(objvalue) >= 3 and objvalue[0] == '{' and objvalue[-1] == '}' and objvalue[-2] != '\\':
-    objvalue = objvalue[1:-1]
   newtitle = ''
   dollars = 0
   dashlen = 0
@@ -674,18 +672,16 @@ def titlecasefilter(obj, objvalue, context):
     elif dollars > 0:
       inmath = not inmath
       dollars = 0
-    if not inmath and not incommand:
+    if nestingdepth == 0 and not inmath and not incommand:
       if wordbreak:
 	char = char.upper()
       else:
 	char = char.lower()
-    wordbreak = (nestingdepth == 0 and (char in '!?:.' or dashlen > 1 or char.isspace()))
+    wordbreak = (char in '!?:.' or dashlen > 1 or char.isspace())
     newtitle += char
   return newtitle
 
 def lowertitlecasefilter(obj, objvalue, context):
-  if len(objvalue) >= 3 and objvalue[0] == '{' and objvalue[-1] == '}' and objvalue[-2] != '\\':
-    objvalue = objvalue[1:-1]
   newtitle = ''
   dollars = 0
   dashlen = 0
@@ -711,7 +707,7 @@ def lowertitlecasefilter(obj, objvalue, context):
     elif dollars > 0:
       inmath = not inmath
       dollars = 0
-    if not inmath and not incommand:
+    if nestingdepth == 0 and not inmath and not incommand:
       if wordbreak:
 	char = char.upper()
       else:
@@ -721,8 +717,6 @@ def lowertitlecasefilter(obj, objvalue, context):
   return newtitle
 
 def uppercasefilter(obj, objvalue, context):
-  if len(objvalue) >= 3 and objvalue[0] == '{' and objvalue[-1] == '}' and objvalue[-2] != '\\':
-    objvalue = objvalue[1:-1]
   newtitle = ''
   dollars = 0
   nestingdepth = 0
@@ -750,8 +744,6 @@ def uppercasefilter(obj, objvalue, context):
 def maketitlephrasefilter(titlephrases):
   # XXX This will not permit brackets or anything else special in phrases
   def titlephrasefilter(obj, objvalue, context):
-    if len(objvalue) >= 3 and objvalue[0] == '{' and objvalue[-1] == '}' and objvalue[-2] != '\\':
-      objvalue = objvalue[1:-1]
     newtitle = ''
     nestingdepth = 0
     for word in _wordre.split(objvalue):
@@ -768,8 +760,6 @@ def maketitlephrasefilter(titlephrases):
 def makelowerphrasefilter(lowerphrases):
   # XXX This will not permit brackets or anything else special in lowers
   def lowerphrasefilter(obj, objvalue, context):
-    if len(objvalue) >= 3 and objvalue[0] == '{' and objvalue[-1] == '}' and objvalue[-2] != '\\':
-      objvalue = objvalue[1:-1]
     newtitle = ''
     needscaps = True
     nestingdepth = 0

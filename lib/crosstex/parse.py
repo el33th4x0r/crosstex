@@ -202,7 +202,7 @@ class Parser:
       lexer.db = db
       lexer.defaults = {}
 
-      parser = ply.yacc.yacc(debug=0)
+      parser = ply.yacc.yacc(debug=0, write_tables=0)
       parser.parse(contents, lexer=lexer)
     return db
 

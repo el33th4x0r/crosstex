@@ -1,0 +1,19 @@
+@author{john, name = "John Doe"}
+@journal{improb, name = "Journal of Improbable Results"}
+
+@misc{french,		title = "Sur les points singuliers d'une forme de {Pfaff} compl{\`e}ment int{\'e}grable ou d'une fonction num{\'e}rique"}
+
+@misc{foobar,		title = "foo BAR"}
+@misc{spaces1,		title = " foo BAR "}
+@misc{spaces2,		title = " BAR foo "}
+@misc{brackets,		title = "{foo BAR} {BAR foo} {foo} {BAR} {foo BAR foo} {BAR foo BAR} foo{BAR}foo BAR{foo}BAR"}
+@misc{math,		title = "$foo BAR foo$ foo BAR $BAR foo BAR$ BAR foo $$foo BAR foo$$ foo BAR $$BAR foo BAR$$ BAR foo $ foo $ foo BAR $ BAR $ $$ foo $$ $$ BAR $$"}
+@misc{commas,		title = "foo,BAR,foo,BAR foo, BAR foo, foo BAR , foo , BAR"}
+@misc{hyphen,		title = "foo-BAR-foo-BAR foo- BAR foo- foo BAR - foo - BAR"}
+@misc{ndash,		title = "foo--BAR--foo--BAR foo-- BAR foo-- foo BAR -- foo -- BAR"}
+@misc{mdash,		title = "foo---BAR---foo---BAR foo--- BAR foo--- foo BAR --- foo --- BAR"}
+@misc{periods,		title = "foo.BAR.foo.BAR foo. BAR foo. foo BAR . foo . BAR"}
+@misc{questions,	title = "foo?BAR?foo?BAR foo? BAR foo? foo BAR ? foo ? BAR"}
+@misc{exclamations,	title = "foo!BAR!foo!BAR foo! BAR foo! foo BAR ! foo ! BAR"}
+@misc{colons,		title = "foo:BAR:foo:BAR foo: BAR foo: foo BAR : foo : BAR"}
+@misc{semicolon,	title = "foo;BAR;foo;BAR foo; BAR foo; foo BAR ; foo ; BAR"}
