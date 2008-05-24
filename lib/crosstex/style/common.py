@@ -31,7 +31,7 @@ def _punctuate(string, punctuation='', tail=' '):
     return string
   punct = re.compile('([?!:]|--+|' + _sanitize(punctuation) + ')[\'\\s}]*$')
   if not punct.search(string):
-    string = re.sub('([\'\\s}]*)$', punctuation + r'\1', string)
+    string += punctuation
   return string + tail
 
 def _names(name, short=False, plain=False):

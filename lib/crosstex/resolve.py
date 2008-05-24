@@ -201,12 +201,13 @@ class Database(list):
           return int(value)
         except ValueError:
           return value
-      sortlist = [ (keyfunc(x), i, x) for i, x in enumerate(citations) ]
       if reverse:
+        sortlist = [ (keyfunc(x), len(citations) - i, x) for i, x in enumerate(citations) ]
+        sortlist.sort()
         sortlist.reverse()
-      sortlist.sort()
-      if reverse:
-        sortlist.reverse()
+      else:
+        sortlist = [ (keyfunc(x), i, x) for i, x in enumerate(citations) ]
+        sortlist.sort()
       citations = [ x[-1] for x in sortlist ]
     self[:] = citations
 

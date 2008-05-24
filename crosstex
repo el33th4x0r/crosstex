@@ -122,7 +122,7 @@ elif opts.cite_by == 'initials':
 elif opts.cite_by == 'fullname':
   crosstex.objects.publication._addproducer(crosstex.style.common.makegetterproducer('fullnamelabel'), 'label')
 if opts.title_head:
-  crosstex.objects.publication._addproducer(makejoinproducer(".", "\n\\newblock ", ".", "", 'fulltitle', 'fullauthorpublicationextras'), 'value')
+  crosstex.objects.publication._addproducer(crosstex.style.common.makejoinproducer(".", "\n\\newblock ", ".", "", 'fulltitle', 'fullauthorpublicationextras'), 'value')
 for kind in opts.short:
   getattr(crosstex.objects, kind)._addproducer(crosstex.style.common.makegetterproducer('shortname'), 'value')
   if kind in ['author', 'editor']:

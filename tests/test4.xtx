@@ -7,7 +7,7 @@
       author = "Udi Wieder and Moni Naor",
       title = "{A Simple Fault-Tolerant and \silly \blah{}blah blah\blah\ Distributed---foo $n^2$ algorithm for $$foo$$ bar: stuff! yay, s{\'e}ances. Hash Table}",
       booktitle = iptps,
-      address = Berkeley,
+      address = DC, % Berkeley,
       month = feb,
       year = 2003,
       pages = 14,
