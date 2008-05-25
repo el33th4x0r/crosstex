@@ -6,6 +6,7 @@ _specialre = re.compile(r'^(\\.*|\$[^\$]*\$)$')
 _punctuationre = re.compile('([:!.?]|-{2,})[\'}\n]*$')
 _linkre = re.compile("[a-zA-Z][-+.a-zA-Z0-9]*://([:/?#[\]@!$&'()*+,;=a-zA-Z0-9_\-.~]|%[0-9a-fA-F][0-9a-fA-F]|\\-|\s)*")
 _linksub = re.compile('\\-\s')
+_protectre = re.compile(r'[\\{}]')
 
 _bibtexkinds = ['article', 'book', 'booklet', 'conference', 'inbook', \
   'incollection', 'inproceedings', 'manual', 'mastersthesis', 'phdthesis', \
@@ -650,131 +651,242 @@ def titlecasefilter(obj, objvalue, context):
   newtitle = ''
   dollars = 0
   dashlen = 0
-  nestingdepth = 0
   inmath = False
+  inliteral = False
   incommand = False
   wordbreak = True
-  for char in objvalue:
+  sentencebreak = True
+  for i, char in enumerate(objvalue):
     if char == '{':
-      nestingdepth += 1
+      close = _protectre.search(objvalue[i+1:])
+      inliteral = not incommand and (close is not None and close.group() == '}')
     if char == '}':
-      nestingdepth -= 1
+      inliteral = False
+
     if char == '\\':
       incommand = True
-    elif not char.isalnum() and char != '_':
+    elif char.isspace():
       incommand = False
+
     if char == '-':
       dashlen += 1
     else:
       dashlen = 0
+
     if char == '$':
       dollars += 1
     elif dollars > 0:
       inmath = not inmath
       dollars = 0
-    if nestingdepth == 0 and not inmath and not incommand:
+
+    if not (inliteral or inmath or incommand):
       if wordbreak:
-	char = char.upper()
+	newtitle += char.upper()
       else:
-	char = char.lower()
-    wordbreak = (char in '!?:.' or dashlen > 1 or char.isspace())
-    newtitle += char
+	newtitle += char.lower()
+    else:
+      newtitle += char
+
+    sentencebreak = (not inliteral and not inmath and not incommand and (char in '!?:.' or dashlen > 1)) or (sentencebreak and (char.isspace() or incommand or inmath or char == '{'))
+    wordbreak = sentencebreak or (not inliteral and not inmath and not incommand and (char.isspace() or char in ',-')) or (wordbreak and (incommand or inmath or char == '{'))
+
+    if not char.isalnum() and char not in '_\\':
+      incommand = False
   return newtitle
 
 def lowertitlecasefilter(obj, objvalue, context):
   newtitle = ''
   dollars = 0
   dashlen = 0
-  nestingdepth = 0
   inmath = False
+  inliteral = False
   incommand = False
-  wordbreak = True
-  for char in objvalue:
+  sentencebreak = True
+  for i, char in enumerate(objvalue):
     if char == '{':
-      nestingdepth += 1
+      close = _protectre.search(objvalue[i+1:])
+      inliteral = not incommand and (close is not None and close.group() == '}')
     if char == '}':
-      nestingdepth -= 1
+      inliteral = False
+
     if char == '\\':
       incommand = True
-    elif not char.isalnum() and char != '_':
+    elif char.isspace():
       incommand = False
+
     if char == '-':
       dashlen += 1
     else:
       dashlen = 0
+
     if char == '$':
       dollars += 1
     elif dollars > 0:
       inmath = not inmath
       dollars = 0
-    if nestingdepth == 0 and not inmath and not incommand:
-      if wordbreak:
-	char = char.upper()
+
+    if not (inliteral or inmath or incommand):
+      if sentencebreak:
+	newtitle += char.upper()
       else:
-	char = char.lower()
-    wordbreak = (char in '!?:.' or dashlen > 1 or (char.isspace() and wordbreak))
-    newtitle += char
+	newtitle += char.lower()
+    else:
+      newtitle += char
+
+    sentencebreak = (not inliteral and not inmath and not incommand and (char in '!?:.' or dashlen > 1)) or (sentencebreak and (char.isspace() or incommand or inmath or char == '{'))
+
+    if not char.isalnum() and char not in '_\\':
+      incommand = False
   return newtitle
 
 def uppercasefilter(obj, objvalue, context):
   newtitle = ''
   dollars = 0
-  nestingdepth = 0
+  dashlen = 0
   inmath = False
+  inliteral = False
   incommand = False
-  for char in objvalue:
+  for i, char in enumerate(objvalue):
     if char == '{':
-      nestingdepth += 1
+      close = _protectre.search(objvalue[i+1:])
+      inliteral = not incommand and (close is not None and close.group() == '}')
     if char == '}':
-      nestingdepth -= 1
+      inliteral = False
+
     if char == '\\':
       incommand = True
-    elif not char.isalnum() and char != '_':
+    elif char.isspace():
       incommand = False
+
+    if char == '-':
+      dashlen += 1
+    else:
+      dashlen = 0
+
     if char == '$':
       dollars += 1
     elif dollars > 0:
       inmath = not inmath
       dollars = 0
-    if nestingdepth == 0 and not inmath and not incommand:
-      char = char.upper()
-    newtitle += char
+
+    if not (inliteral or inmath or incommand):
+      newtitle += char.upper()
+    else:
+      newtitle += char
+
+    if not char.isalnum() and char not in '_\\':
+      incommand = False
   return newtitle
 
 def maketitlephrasefilter(titlephrases):
-  # XXX This will not permit brackets or anything else special in phrases
   def titlephrasefilter(obj, objvalue, context):
     newtitle = ''
-    nestingdepth = 0
-    for word in _wordre.split(objvalue):
-      if word == '{':
-        nestingdepth += 1
-      elif word == '}':
-        nestingdepth -= 1
-      elif not _spacere.match(word) and word != '-' and not _specialre.match(word) and nestingdepth == 0 and word.lower() in titlephrases:
-        word = titlephrases[word.lower()]
-      newtitle += word
+    ignoreuntil = 0
+    dollars = 0
+    dashlen = 0
+    inmath = False
+    inliteral = False
+    incommand = False
+    wordbreak = True
+    sentencebreak = True
+    for i, char in enumerate(objvalue):
+      if char == '{':
+	close = _protectre.search(objvalue[i+1:])
+	inliteral = not incommand and (close is not None and close.group() == '}')
+      if char == '}':
+	inliteral = False
+
+      if char == '\\':
+	incommand = True
+      elif char.isspace():
+	incommand = False
+
+      if char == '-':
+	dashlen += 1
+      else:
+	dashlen = 0
+
+      if char == '$':
+	dollars += 1
+      elif dollars > 0:
+	inmath = not inmath
+	dollars = 0
+
+      if i >= ignoreuntil:
+        if wordbreak and not (inliteral or inmath or incommand):
+	  match = ''
+	  for phrase in titlephrases:
+	    if objvalue.lower().startswith(phrase.lower(), i) and len(phrase) > len(match) and (i + len(phrase) >= len(objvalue) - 1 or not objvalue[i + len(phrase)].isalnum()):
+	      match = phrase
+	  if len(match) > 0:
+	    ignoreuntil = i + len(match)
+	    newtitle += match
+	  else:
+	    newtitle += char
+        else:
+	  newtitle += char
+
+      sentencebreak = (not inliteral and not inmath and not incommand and (char in '!?:.' or dashlen > 1)) or (sentencebreak and (char.isspace() or incommand or inmath or char == '{'))
+      wordbreak = sentencebreak or (not inliteral and not inmath and not incommand and (char.isspace() or char in ',-')) or (wordbreak and (incommand or inmath or char == '{'))
+
+      if not char.isalnum() and char not in '_\\':
+	incommand = False
     return newtitle
   return titlephrasefilter
 
 def makelowerphrasefilter(lowerphrases):
-  # XXX This will not permit brackets or anything else special in lowers
   def lowerphrasefilter(obj, objvalue, context):
     newtitle = ''
-    needscaps = True
-    nestingdepth = 0
-    for word in _wordre.split(objvalue):
-      if word == '{':
-        nestingdepth += 1
-        needscaps = False
-      elif word == '}':
-        nestingdepth -= 1
-        needscaps = False
-      elif not _spacere.match(word) and word != '-' and nestingdepth == 0:
-        if not _specialre.match(word) and not needscaps and word.lower() in lowerphrases:
-          word = word.lower()
-        needscaps = _punctuationre.search(word)
-      newtitle += word
+    ignoreuntil = 0
+    dollars = 0
+    dashlen = 0
+    inmath = False
+    inliteral = False
+    incommand = False
+    wordbreak = True
+    sentencebreak = True
+    for i, char in enumerate(objvalue):
+      if char == '{':
+	close = _protectre.search(objvalue[i+1:])
+	inliteral = not incommand and (close is not None and close.group() == '}')
+      if char == '}':
+	inliteral = False
+
+      if char == '\\':
+	incommand = True
+      elif char.isspace():
+	incommand = False
+
+      if char == '-':
+	dashlen += 1
+      else:
+	dashlen = 0
+
+      if char == '$':
+	dollars += 1
+      elif dollars > 0:
+	inmath = not inmath
+	dollars = 0
+
+      if i >= ignoreuntil:
+        if wordbreak and not (sentencebreak or inliteral or inmath or incommand):
+	  match = ''
+	  for phrase in lowerphrases:
+	    if objvalue.lower().startswith(phrase.lower(), i) and len(phrase) > len(match) and (i + len(phrase) >= len(objvalue) - 1 or not objvalue[i + len(phrase)].isalnum()):
+	      match = phrase.lower()
+	  if len(match) > 0:
+	    ignoreuntil = i + len(match)
+	    newtitle += match
+	  else:
+	    newtitle += char
+        else:
+	  newtitle += char
+	    
+      sentencebreak = (not inliteral and not inmath and not incommand and (char in '!?:.' or dashlen > 1)) or (sentencebreak and (char.isspace() or incommand or inmath or char == '{'))
+      wordbreak = sentencebreak or (not inliteral and not inmath and not incommand and (char.isspace() or char in ',-')) or (wordbreak and (incommand or inmath or char == '{'))
+
+      if not char.isalnum() and char not in '_\\':
+	incommand = False
     return newtitle
   return lowerphrasefilter
 

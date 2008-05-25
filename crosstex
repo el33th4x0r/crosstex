@@ -92,16 +92,16 @@ if opts.add_proc:
   crosstex.objects.conference._addfilter(crosstex.style.common.procfilter, 'value')
 if opts.add_proceedings:
   crosstex.objects.conference._addfilter(crosstex.style.common.proceedingsfilter, 'value')
-if dbparser.titlephrases and opts.titlecase != 'upper':
-  crosstex.objects.publication._addfilter(crosstex.style.common.maketitlephrasefilter(dbparser.titlephrases), 'title')
-if dbparser.titlesmalls and opts.titlecase != 'upper':
-  crosstex.objects.publication._addfilter(crosstex.style.common.makelowerphrasefilter(dbparser.titlesmalls), 'title')
 if opts.titlecase == 'lower':
   crosstex.objects.publication._addfilter(crosstex.style.common.lowertitlecasefilter, 'title')
 elif opts.titlecase == 'upper':
   crosstex.objects.publication._addfilter(crosstex.style.common.uppercasefilter, 'title')
 elif opts.titlecase == 'default':
   crosstex.objects.publication._addfilter(crosstex.style.common.titlecasefilter, 'title')
+if dbparser.titlephrases and opts.titlecase != 'upper':
+  crosstex.objects.publication._addfilter(crosstex.style.common.maketitlephrasefilter(dbparser.titlephrases), 'title')
+if dbparser.titlesmalls and opts.titlecase != 'upper':
+  crosstex.objects.publication._addfilter(crosstex.style.common.makelowerphrasefilter(dbparser.titlesmalls), 'title')
 if opts.last_first:
   crosstex.objects.publication._addlistfilter(crosstex.style.common.lastfirstlistfilter, 'author')
   crosstex.objects.publication._addlistfilter(crosstex.style.common.lastfirstlistfilter, 'editor')
