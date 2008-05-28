@@ -7,6 +7,7 @@ _punctuationre = re.compile('([:!.?]|-{2,})[\'}\n]*$')
 _linkre = re.compile("[a-zA-Z][-+.a-zA-Z0-9]*://([:/?#[\]@!$&'()*+,;=a-zA-Z0-9_\-.~]|%[0-9a-fA-F][0-9a-fA-F]|\\-|\s)*")
 _linksub = re.compile('\\-\s')
 _protectre = re.compile(r'[\\{}]')
+_endre = re.compile(r"(\\end\{[^}]*\}|['\s}])*$")
 
 _bibtexkinds = ['article', 'book', 'booklet', 'conference', 'inbook', \
   'incollection', 'inproceedings', 'manual', 'mastersthesis', 'phdthesis', \
@@ -26,14 +27,14 @@ def _sanitize(r):
 def _punctuate(string, punctuation='', tail=' '):
   if string == None:
     string = ''
-  else:
-    string = str.strip(str(string))
-  if string == '':
-    return string
-  punct = re.compile('([?!:]|--+|' + _sanitize(punctuation) + ')[\'\\s}]*$')
-  if not punct.search(string):
+  i = _endre.search(string).start()
+  end = string[i:]
+  string = string[:i]
+  if string and not (string.endswith('?') or string.endswith('!') or string.endswith(':') or string.endswith('--') or string.endswith(punctuation)):
     string += punctuation
-  return string + tail
+  if string or end:
+    end += tail
+  return string + end
 
 def _names(name, short=False, plain=False):
   value = ''

@@ -22,6 +22,57 @@ from copy import copy
 from crosstex.options import OptionParser, error
 
 
+class Value:
+  'A field value containing a string, number, key, or concatenation.'
+
+  def __init__(self, file, line, value, kind=None):
+    self.file = file
+    self.line = line
+    if kind is not None:
+      self.kind = kind
+      self.value = value
+    else: 
+      try:
+	self.value = int(value)
+	self.kind = 'number'
+      except ValueError:
+	self.value = str(value)
+	self.kind = 'string'
+
+  def concat(self, other, file, line):
+    if self.kind != 'concat':
+      self.value = [Value(self.file, self.line, self.value, self.kind)]
+      self.kind = 'concat'
+      self.file = file
+      self.line = line
+    if other.kind == 'concat':
+      self.value.extend(other)
+    else:
+      self.value.append(other)
+
+  def resolve(self, db, seen=None, trystrings=False):
+    entries = []
+    if self.kind == 'concat':
+      for other in self.value:
+	entries.extend(other.resolve(db, seen))
+    elif self.kind == 'key' or (trystrings and self.kind == 'string'):
+      entry = db._resolve(self.value, seen)
+      if entry is not None:
+	entries.append(entry)
+	self.value = entry
+	self.kind = 'entry'
+      elif self.kind == 'key':
+	error(db.options, '%s:%d: No such key "%s".' % (self.file, self.line, self.value))
+	self.kind = 'string'
+    return entries
+
+  def __str__(self):
+    if self.kind == 'concat':
+      return ''.join([str(other) for other in self.value])
+    else:
+      return str(self.value)
+
+
 class Entry:
   '''
   A single, raw entry in a database.
@@ -29,7 +80,7 @@ class Entry:
   Every piece of information is designed to avoid causing errors in the
   lexer/parser, and instead allow errors to be noticed during resolution.
   Thus, all fields (fields and defaults) are stored as lists of pairs
-  rather than dictionaries, etc.
+  rather than dictionaries, in order to preserve duplicates, etc.
   '''
 
   def __init__(self, kind, keys, fields, file, line, defaults={}):
@@ -39,10 +90,6 @@ class Entry:
     self.file = file
     self.line = line
     self.defaults = defaults
-
-
-class Key(str):
-  'A string field value referring to an entry key.'
 
 
 class XTXFileInfo:
@@ -481,18 +528,19 @@ def p_value_concat(t):
   warning(t.lexer.db.options, '%s:%d: The implementation of concatenation is currently broken.' % 
         (t.lexer.file, t.lexer.lineno, t.value))
   t[0] = t[1]
+  t[0].concat(t[3])
 
 def p_simplevalue_name(t):
   'simplevalue : NAME'
-  t[0] = Key(t[1])
+  t[0] = Value(t.lexer.file, t.lineno(1), t[1], 'key')
 
 def p_simplevalue_number(t):
   'simplevalue : NUMBER'
-  t[0] = t[1]
+  t[0] = Value(t.lexer.file, t.lineno(1), t[1])
 
 def p_simplevalue_string(t):
   'simplevalue : STRING'
-  t[0] = t[1]
+  t[0] = Value(t.lexer.file, t.lineno(1), t[1])
 
 def p_error(t):
   ply.yacc.errok()

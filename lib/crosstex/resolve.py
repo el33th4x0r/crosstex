@@ -16,7 +16,6 @@ import math
 import crosstex.objects
 
 from copy import copy
-from crosstex.parse import Key
 from crosstex.options import warning, error
 
 
@@ -72,8 +71,8 @@ class Database(list):
     self.options = parser.options
     self.resolved = {}
 
-    all = not self.options.cite
     semantic = []
+    all = not self.options.cite
     for key in self.options.cite:
       if key == '*':
         all = True
@@ -105,23 +104,23 @@ class Database(list):
       if not constraint:
         error(self.options, 'Empty constraint.')
         continue
-      matches = [ entry for entry in entries if constraint.match(entry) ]
+      matches = [entry for entry in entries if constraint.match(entry)]
       if not matches:
         error(self.options, 'Constraint "%s" has no matches.' % key)
-      else:
-        if matches[0].citation is None:
-          matches[0].citation = key
-          self.append(matches[0])
-        elif matches[0].citation != key:
-          error(self.options,
-                'Citations "%s" and "%s" refer to the same object.' %
-                (matches[0].citation, key))
-        if len(matches) > 1:
-          error(self.options, 'Ambiguous constraint "%s" has %d matches:' %
-                (key, len(matches)))
-          error(self.options, '  accepted key %s.' % (matches[0].keys[0]))
-          for match in matches[1:]:
-            error(self.options, '  rejected key %s.' % (match.keys[0]))
+        continue
+      if matches[0].citation is None:
+	matches[0].citation = key
+	self.append(matches[0])
+      elif matches[0].citation != key:
+	error(self.options,
+	      'Citations "%s" and "%s" refer to the same object.' %
+	      (matches[0].citation, key))
+      if len(matches) > 1:
+	error(self.options, 'Ambiguous constraint "%s" has %d matches:' %
+	      (key, len(matches)))
+	error(self.options, '  accepted key %s.' % (matches[0].keys[0]))
+	for match in matches[1:]:
+	  error(self.options, '  rejected key %s.' % (match.keys[0]))
 
     if all:
       for entry in entries:
@@ -156,22 +155,22 @@ class Database(list):
         max = ''
         for entry in entries:
           label = entry._format('label')
-          label = label.replace('{\\etalchar{+}}', 'X')
+          label = label.replace(r'{\etalchar{+}}', 'X')
           if len(label) > len(max):
             max = label
         if not max:
           max = '0' * int(math.ceil(math.log(len(entries) + 1, 10)))
-        out.write("\\begin{thebibliography}{%s}\n" % max)
+        out.write(r'\begin{thebibliography}{' + max + '}\n')
       for entry in entries:
         out.write(str(entry))
       if self.options.convert == 'html' or self.options.convert == 'bbl':
-        out.write("\\end{thebibliography}\n")
+        out.write(r'\end{thebibliography}' + '\n')
       return
 
     heading = headings[0][1]
     cats = {}
     for entry in entries:
-      cats.setdefault(entry.fields.get(heading, ''), []).append(entry)
+      cats.setdefault(str(entry.fields.get(heading, '')), []).append(entry)
 
     values = [k for k in cats.keys() if k != '']
     values.sort()
@@ -182,13 +181,13 @@ class Database(list):
 
     for value in values:
       if (self.options.convert == 'html' or self.options.convert == 'bbl') and value != '':
-        out.write("{\\renewcommand{\\refname}{%s}\n" % value)
+        out.write(r'{\renewcommand{\refname}{' + str(value) + '}\n')
       elif self.options.convert == 'xtx':
         default = crosstex.style.common._fieldval(heading, value)
-        out.write('@default %s \n\n' % default)
+        out.write('@default ' + default + ' \n\n')
       self.write(out, cats[value], headings[1:])
       if (self.options.convert == 'html' or self.options.convert == 'bbl') and value != '':
-        out.write("}\n")
+        out.write('}\n')
 
   def _sort(self):
     citations = self
@@ -305,7 +304,7 @@ class Database(list):
           field = field.lower()
           if field in fieldsdict:
             warning(self.options, '%s:%d: %s field is duplicated.' %
-                    (entry.file, entry.line, field))
+                    (value.file, value.line, field))
           else:
             fieldsdict[field] = value
 
@@ -323,8 +322,10 @@ class Database(list):
           field = field.lower()
           if field in conditiondict:
             warning(self.options, '%s:%d: Conditional %s field is duplicated.' %
-                    (entry.file, entry.line, field))
+                    (value.file, value.line, field))
           else:
+	    value.resolve(self)
+	    value = str(value)
             conditiondict[field] = value
         conditions.append((conditiondict, fieldsdict, entry))
 
@@ -335,63 +336,66 @@ class Database(list):
     inherited = {}
     fields = {}
     i = 0
-    while i < len(conditions):
+    while i < len(conditions) or not defaulted:
+      if i >= len(conditions):
+        conditions.append(({}, base.defaults, copy(base)))
+        defaulted = True
+        i = 0
+ 
       condition, assignments, source = conditions[i]
+      matches = False
       for field, value in condition.iteritems():
         try:
-          if fields[field] != value:
+          if str(fields[field]) != value:
             del conditions[i]
             break
         except KeyError:
           i += 1
           break
       else:
+        matches = True
         del conditions[i]
-        for field, value in assignments.iteritems():
-
-          # Do not assign to fields that do not exist.
-          if field not in kind._allowed:
-            if source is base:
-              # Complain iff they were set directly, e.g. not inherited.
-              warning(self.options, '%s:%d: No such field %s in %s.' %
-                      (base.file, base.line, field, base.kind))
-            continue
-
-          if field not in fields:
-            i = 0
-            if isinstance(value, Key):
-              entry = self._resolve(value, seen)
-              if entry is None:
-                error(self.options, '%s:%d: No such key "%s".' %
-                      (source.file, source.line, value))
-                value = str(value)
-              else:
-                inherited[value] = True
-                conditions.append(({}, entry.fields, entry))
-                conditions.extend(entry.conditions)
-                value = entry
-            else:
-              value = str(value)
-              if field in ['author', 'editor']:
-                authors = crosstex.objects.ObjectList()
-                oldcheck = self.options.check
-                self.options.check = 5 # Ignore everything
-                for part in re.split('\s+and\s+', value): # XXX split on word boundaries properly
-                  entry = self._resolve(part, seen)
-                  if entry is None:
-                    authors.append(part)
-                  else:
-                    inherited[part] = True
-                    conditions.append(({}, entry.fields, entry))
-                    conditions.extend(entry.conditions)
-                    authors.append(entry)
-                self.options.check = oldcheck
-                value = authors
-            fields[field] = value
-      if i >= len(conditions) and not defaulted:
-        defaulted = True
         i = 0
-        conditions.append(({}, base.defaults, copy(base)))
+      if not matches:
+        continue
+
+      for field, value in assignments.iteritems():
+	# Do not assign to fields that do not exist.
+	# Complain only if set directly in base or extensions.
+	if field not in kind._allowed:
+	  if source is base or source in extensions:
+	    warning(self.options, '%s:%d: No such field %s in %s.' %
+		    (base.file, base.line, field, base.kind))
+	  continue
+
+	# Do not assign fields twice.
+	if field in fields:
+          continue
+
+	for entry in value.resolve(self, seen):
+          if entry not in inherited:
+            inherited[entry] = True
+	    conditions.append(({}, entry.fields, entry))
+	    conditions.extend(entry.conditions)
+
+	if field in ['author', 'editor']:
+	  authors = crosstex.objects.ObjectList()
+	  oldcheck = self.options.check
+	  self.options.check = 5 # Ignore everything
+	  for part in re.split('\s+and\s+', str(value)): # XXX split on word boundaries properly
+	    entry = self._resolve(part, seen)
+	    if entry is None:
+	      authors.append(part)
+	    else:
+              if entry not in inherited:
+                inherited[entry] = True
+	        conditions.append(({}, entry.fields, entry))
+	        conditions.extend(entry.conditions)
+	      authors.append(entry)
+	  self.options.check = oldcheck
+	  fields[field] = authors
+	else:
+          fields[field] = value
 
     # Ensure required fields are all provided.
     for field in kind._required:
