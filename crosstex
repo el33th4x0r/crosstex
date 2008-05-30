@@ -150,41 +150,40 @@ if 'titlesmall' in opts.dump:
   for small in db.titlesmalls:
     sys.stderr.write('%s\n' % small)
 
-if opts.convert == 'html':
-  out.write("\\documentclass{report}\n")
-  out.write("\\usepackage{hyperref}\n")
-  out.write("\\newstyle{.dt-list}{margin-top:1em}\n")
-  if opts.popups:
-    out.write("\\newstyle{.dd-list}{position:relative}\n")
-    out.write("\\newstyle{.dd-list .quotation}"
-              "{visibility:hidden;position:absolute;top:100\%;"
-              "left:4em;margin-top:-1em;padding:1em;"
-              "border:1px solid \#aaaaaa;background:\#ffffff;"
-              "z-index:1}\n")
-    out.write("\\newstyle{.dd-list .quotation *}"
-              "{margin-left:0;padding-left:0}\n")
-    out.write("\\newstyle{.dd-list:hover .quotation}"
-              "{visibility:visible}\n")
-  out.write("\\begin{document}\n")
-if opts.convert == 'html' or opts.convert == 'bbl':
-  for i in db.preambles:
-    out.write(i + '\n')
-  if opts.blank_labels:
-    out.write("\\makeatletter\\def\\@biblabel#1{}\\makeatother\n")
-  if opts.break_lines:
-    out.write("\\renewcommand{\\newblock}{\\\\}")
-  out.write("\\newcommand{\\etalchar}[1]{$^{#1}$}\n")
-if opts.convert == 'bib' or opts.convert == 'xtx':
-  for i in db.preambles:
-    out.write('@PREAMBLE { "%s" }\n\n' % i)
-
-#if opts.convert != 'xtx' and len(opts.heading) > 1:
-#  error(opts, 'The output format does not accept multiple heading levels.')
-#  opts.heading = opts.heading[:1]
-db.write(out)
-
-if opts.convert == 'html':
-  out.write("\\end{document}\n")
-out.close()
+try:
+  if opts.convert == 'html':
+    out.write("\\documentclass{report}\n")
+    out.write("\\usepackage{hyperref}\n")
+    out.write("\\newstyle{.dt-list}{margin-top:1em}\n")
+    if opts.popups:
+      out.write("\\newstyle{.dd-list}{position:relative}\n")
+      out.write("\\newstyle{.dd-list .quotation}"
+		"{visibility:hidden;position:absolute;top:100\%;"
+		"left:4em;margin-top:-1em;padding:1em;"
+		"border:1px solid \#aaaaaa;background:\#ffffff;"
+		"z-index:1}\n")
+      out.write("\\newstyle{.dd-list .quotation *}"
+		"{margin-left:0;padding-left:0}\n")
+      out.write("\\newstyle{.dd-list:hover .quotation}"
+		"{visibility:visible}\n")
+    out.write("\\begin{document}\n")
+  if opts.convert == 'html' or opts.convert == 'bbl':
+    for i in db.preambles:
+      out.write(i + '\n')
+    if opts.blank_labels:
+      out.write("\\makeatletter\\def\\@biblabel#1{}\\makeatother\n")
+    if opts.break_lines:
+      out.write("\\renewcommand{\\newblock}{\\\\}")
+    out.write("\\newcommand{\\etalchar}[1]{$^{#1}$}\n")
+  if opts.convert == 'bib' or opts.convert == 'xtx':
+    for i in db.preambles:
+      out.write('@PREAMBLE { "%s" }\n\n' % i)
+  db.write(out)
+  if opts.convert == 'html':
+    out.write("\\end{document}\n")
+  out.close()
+except IOError, details:
+  print 'crosstex: %s' % details
+  opts.errors += 1
 
 sys.exit(opts.errors)
