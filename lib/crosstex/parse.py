@@ -102,7 +102,7 @@ class XTXFileInfo:
     self.entries = {}
     self.tobeparsed = []
 
-  def parse(self, file):
+  def parse(self, file, **kwargs):
     self.tobeparsed.append(file)
 
   def merge(self, db):
@@ -111,7 +111,7 @@ class XTXFileInfo:
     db.preambles = db.preambles + self.preambles
     db.entries.update(self.entries)
     for file in self.tobeparsed:
-      db.parse(file)
+      db.parse(file, exts=['.xtx', '.bib'])
 
 
 class Parser:
@@ -127,13 +127,8 @@ class Parser:
     self.seen = {}
     self.cur = []
 
-  def parse(self, file):
+  def parse(self, file, exts=['.aux', '.xtx', '.bib']):
     'Find a file with a reasonable extension and extract its information.'
-
-    if self.cur:
-      exts = ['.xtx', '.bib']
-    else:
-      exts = ['.aux', '.xtx', '.bib']
 
     filepath, file = os.path.split(file)
     file, fileext = os.path.splitext(file)
@@ -229,9 +224,9 @@ class Parser:
       elif line.startswith(r'\bibstyle'):
         self.addopts(['--style'] + line[10:].rstrip().rstrip('}').split(' '))
       elif line.startswith(r'\bibdata'):
-        self.files(line[9:].rstrip().rstrip('}').split(','))
+        self.files(line[9:].rstrip().rstrip('}').split(','), exts=['.bib', '.xtx'])
       elif line.startswith(r'\@input'):
-        self.files(line[8:].rstrip().rstrip('}').split(','))
+        self.files(line[8:].rstrip().rstrip('}').split(','), exts=['.aux'])
 
   def parsextx(self, stream, path):
     'Parse and handle options set in a CrossTeX .xtx or .bib database file.'
@@ -432,7 +427,7 @@ def p_stmt_titlesmall(t):
 
 def p_stmt_include(t):
   'stmt : ATINCLUDE NAME'
-  t.lexer.db.parse(t[2])
+  t.lexer.db.parse(t[2], exts=['.xtx', '.bib'])
 
 def p_stmt_default(t):
   'stmt : ATDEFAULT field'
