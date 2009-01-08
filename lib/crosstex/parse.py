@@ -19,7 +19,7 @@ import ply.lex
 import ply.yacc
 
 from copy import copy
-from crosstex.options import OptionParser, error
+from crosstex.options import OptionParser, error, warning
 
 
 class Value:
@@ -395,8 +395,8 @@ def t_newline(t):
   t.lexer.lineno += 1
 
 def t_error(t):
-  error(t.lexer.db.options, '%s:%d: Syntax error at %s.' %
-        (t.lexer.file, t.lexer.lineno, t.value))
+  error(t.lexer.db.options, '%s:%d: Syntax error near "%s".' %
+        (t.lexer.file, t.lexer.lineno, t.value[:20]))
   t.skip(1)
 
 
@@ -539,5 +539,5 @@ def p_simplevalue_string(t):
 
 def p_error(t):
   ply.yacc.errok()
-  error(t.lexer.db.options, '%s:%d: Parse error at "%s".' %
-        (t.lexer.file, t.lexer.lineno, t.value))
+  error(t.lexer.db.options, '%s:%d: Parse error near "%s".' %
+        (t.lexer.file, t.lexer.lineno, t.value[:20]))

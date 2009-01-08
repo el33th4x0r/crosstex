@@ -85,13 +85,13 @@ for kind in opts.capitalize:
   getattr(crosstex.objects, kind)._addfilter(crosstex.style.common.uppercasefilter, 'value')
 for field in opts.no_field:
   crosstex.objects.publication._addfilter(crosstex.style.common.killfilter, field)
+if opts.add_proc:
+  crosstex.objects.publication._addfilter(crosstex.style.common.procfilter, 'fullpublication', 'booktitle')
+if opts.add_proceedings:
+  crosstex.objects.publication._addfilter(crosstex.style.common.proceedingsfilter, 'fullpublication', 'booktitle')
 if opts.add_in:
   crosstex.objects.publication._addfilter(crosstex.style.common.infilter, 'fullpublication', 'booktitle')
   crosstex.objects.publication._addfilter(crosstex.style.common.infilter, 'fullpublication', 'journal')
-if opts.add_proc:
-  crosstex.objects.conference._addfilter(crosstex.style.common.procfilter, 'value')
-if opts.add_proceedings:
-  crosstex.objects.conference._addfilter(crosstex.style.common.proceedingsfilter, 'value')
 if opts.titlecase == 'lower':
   crosstex.objects.publication._addfilter(crosstex.style.common.lowertitlecasefilter, 'title')
 elif opts.titlecase == 'upper':
