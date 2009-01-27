@@ -386,7 +386,7 @@ def t_RBRACK(t):
   return t
 
 def t_NAME(t):
-  r'[a-zA-Z_][-a-zA-Z:0-9/_.]*'
+  r'[a-zA-Z0-9_][-a-zA-Z:0-9/_.]*'
   t.lexer.expectstring = False
   return t
 
