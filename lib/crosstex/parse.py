@@ -265,8 +265,8 @@ andre = re.compile(r'\s+and\s+')
 
 tokens = ( 'AT', 'COMMA', 'SHARP', 'OPENBRACE', 'CLOSEBRACE', 'LBRACK',
   'RBRACK', 'EQUALS', 'ATINCLUDE', 'ATSTRING', 'ATEXTEND', 'ATPREAMBLE',
-  'ATCOMMENT', 'ATDEFAULT', 'ATTITLEPHRASE', 'ATTITLESMALL', 'NUMBER',
-  'NAME', 'STRING', )
+  'ATCOMMENT', 'ATDEFAULT', 'ATTITLEPHRASE', 'ATTITLESMALL', 'NAME', 'NUMBER',
+  'STRING', )
 
 t_ignore = ' \t'
 
@@ -312,6 +312,11 @@ def t_ATTITLEPHRASE(t):
 def t_ATTITLESMALL(t):
   r'@[Tt][Ii][Tt][Ll][Ee][Ss][Mm][Aa][Ll][Ll]'
   t.lexer.expectstring = True
+  return t
+
+def t_NAME(t):
+  r'[a-zA-Z0-9_][-a-zA-Z:0-9/_.]*'
+  t.lexer.expectstring = False
   return t
 
 def t_NUMBER(t):
@@ -382,11 +387,6 @@ def t_LBRACK(t):
 
 def t_RBRACK(t):
   r'\]'
-  t.lexer.expectstring = False
-  return t
-
-def t_NAME(t):
-  r'[a-zA-Z0-9_][-a-zA-Z:0-9/_.]*'
   t.lexer.expectstring = False
   return t
 
@@ -540,4 +540,5 @@ def p_simplevalue_string(t):
 def p_error(t):
   ply.yacc.errok()
   error(t.lexer.db.options, '%s:%d: Parse error near "%s".' %
-        (t.lexer.file, t.lexer.lineno, t.value[:20]))
+	(t.lexer.file, t.lexer.lineno, t.value[:20]))
+
