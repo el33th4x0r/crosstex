@@ -260,7 +260,7 @@ class Parser:
 #
 
 newlinere = re.compile(r'\r\n|\r|\n')
-numberre = re.compile(r'\d+')
+numberre = re.compile(r'^\d+$')
 andre = re.compile(r'\s+and\s+')
 
 tokens = ( 'AT', 'COMMA', 'SHARP', 'OPENBRACE', 'CLOSEBRACE', 'LBRACK',
@@ -314,16 +314,6 @@ def t_ATTITLESMALL(t):
   t.lexer.expectstring = True
   return t
 
-def t_NAME(t):
-  r'[a-zA-Z0-9_][-a-zA-Z:0-9/_.]*'
-  t.lexer.expectstring = False
-  return t
-
-def t_NUMBER(t):
-  r'\d+'
-  t.lexer.expectstring = False
-  return t
-
 def t_STRING(t):
   r'"(\\.|[^\\"])*"'
   t.lexer.expectstring = False
@@ -334,6 +324,13 @@ def t_STRING(t):
 def t_EQUALS(t):
   r'='
   t.lexer.expectstring = True
+  return t
+
+def t_NAME(t):
+  r'[-a-zA-Z:0-9/_.]+'
+  t.lexer.expectstring = False
+  if numberre.match(t.value):
+    t.type = 'NUMBER'
   return t
 
 def t_OPENBRACE(t):
