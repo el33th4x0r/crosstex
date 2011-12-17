@@ -1,20 +1,22 @@
 #! /usr/bin/env python
 #
-# Fetch content from DBLP 
+# Fetch content from DBLP
 #
 # Author: Emin Gun Sirer
 # Updated by Robert Burgess January 2007
 
 import thread
-import socket 
+import socket
 import time
 import urllib
 import re
 import sys
 
+
 base = 'http://www.informatik.uni-trier.de/~ley/db/conf/'
 contentre = "<a href=\"([^\"]+)\">Contents</a>"
 bibtexre = "<a href=\"([^\"]+)\">BibTeX</a>"
+
 
 def getbibtex(str):
     url = urllib.urlopen(str)
@@ -35,13 +37,13 @@ for name in sys.argv[1:]:
     linkre = re.compile("<a href=\"([^/]+[^\"/]*.html)\">")
 
     for confmatch in linkre.finditer(confcontents):
-	year = confmatch.group(1)
+        year = confmatch.group(1)
 
         print '  ' + year
-	yearurl = urllib.urlopen(base + name + '/' + year)
-	contents = yearurl.read()
-	yearurl.close()
+    yearurl = urllib.urlopen(base + name + '/' + year)
+    contents = yearurl.read()
+    yearurl.close()
 
-	for match in re.compile(bibtexre, re.M).finditer(contents): 
-	    str = match.group(1)
-	    file.write(getbibtex(str))
+    for match in re.compile(bibtexre, re.M).finditer(contents):
+        str = match.group(1)
+        file.write(getbibtex(str))
