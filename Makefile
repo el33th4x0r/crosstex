@@ -14,8 +14,8 @@ all:
 
 install:
 	mkdir -p $(ROOT)$(PREFIX)$(BINDIR) $(ROOT)$(PREFIX)$(LIBDIR)/crosstex/style $(ROOT)$(PREFIX)$(MANDIR)/man1
-	install -m 0644 lib/crosstex/*.py $(ROOT)$(PREFIX)$(LIBDIR)/crosstex
-	install -m 0644 lib/crosstex/style/*.py $(ROOT)$(PREFIX)$(LIBDIR)/crosstex/style
+	install -m 0644 crosstex/*.py $(ROOT)$(PREFIX)$(LIBDIR)/crosstex
+	install -m 0644 crosstex/style/*.py $(ROOT)$(PREFIX)$(LIBDIR)/crosstex/style
 	install -m 0644 data/*.xtx $(ROOT)$(PREFIX)$(LIBDIR)
 	install -m 0644 crosstex.1 $(ROOT)$(PREFIX)$(MANDIR)/man1
 	ln -sf crosstex.1 $(ROOT)$(PREFIX)$(MANDIR)/man1/xtx2bib.1
@@ -27,7 +27,7 @@ install:
 	echo "xtxlib = '${PREFIX}${LIBDIR}'" >>crosstex.sed
 	echo '/^plylib = /c\' >>crosstex.sed
 	echo "plylib = '${PLY}'" >>crosstex.sed
-	sed -f crosstex.sed <crosstex >$(ROOT)$(PREFIX)$(BINDIR)/crosstex
+	sed -f crosstex.sed <bin/crosstex >$(ROOT)$(PREFIX)$(BINDIR)/crosstex
 	rm -f crosstex.sed
 	chmod 0755 $(ROOT)$(PREFIX)$(BINDIR)/crosstex
 	ln -sf crosstex $(ROOT)$(PREFIX)$(BINDIR)/xtx2bib
