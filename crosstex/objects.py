@@ -1,290 +1,248 @@
-'''
-Information about the objects that can occur in databases.
+import collections
+import copy
 
-The class hierarchy here describes how formatting works, which fields
-are required, optional, and can derive values from other fields, etc.
+import crosstex.parse
 
-REQUIRED and OPTIONAL are constants describing requirement levels for
-fields in objects.
-'''
+class CiteableTrue(object):
+    def __get__(self, obj, objtype):
+        return True
 
-import re
-from copy import copy
+class CiteableFalse(object):
+    def __get__(self, obj, objtype):
+        return False
 
+class Field(object):
+    def __init__(self, required=False, alternates=None, types=None, iterable=False):
+        self.required = required
+        self.alternates = alternates or []
+        self.types = tuple(types or [])
+        self.types += (str, crosstex.parse.Value)
+        self.iterable = iterable
+        self.name = None
+    def __get__(self, obj, objtype):
+        if hasattr(obj, '_' + self.name):
+            return getattr(obj, '_' + self.name)
+        return None
+    def __set__(self, obj, value):
+        if value is not None and \
+           value.__class__ not in self.types and \
+           not (self.iterable and isinstance(value, collections.Iterable) and
+                all([isinstance(v, self.types) for v in value])):
+            raise TypeError('Field %s does not allow type %s' %
+                            (self.name, str(type(value))))
+        setattr(obj, '_' + self.name, value)
 
-REQUIRED = object()
-OPTIONAL = object()
+class ObjectMeta(type):
+    def __new__(cls, name, bases, dct):
+        allowed = set([])
+        required = set([])
+        alternates = {}
+        for attr, value in dct.iteritems():
+            if attr == 'citeable':
+                assert value.__class__ in (CiteableTrue, CiteableFalse)
+            elif not attr.startswith('_') and not callable(value):
+                assert attr not in ('kind', 'required', 'allowed', 'alternates')
+                assert isinstance(value, Field)
+                allowed.add(attr)
+                if value.required:
+                    required.add(attr)
+                if isinstance(value.alternates, str):
+                    alternates[attr] = value.alternates
+                elif isinstance(value.alternates, collections.Iterable):
+                    assert all([isinstance(a, str) for a in value.alternates])
+                    alternates[attr] = [a for a in value.alternates]
+                else:
+                    assert False
+                value.name = attr
+        optional = allowed - required
+        assert len(bases) <= 1
+        for base in bases:
+            if hasattr(base, 'allowed'):
+                allowed |= base.allowed
+            if hasattr(base, 'required'):
+                required |= base.required - optional
+            if hasattr(base, 'alternates'):
+                newalternates = copy.copy(base.alternates)
+                newalternates.update(alternates)
+                alternates = newalternates
+                del newalternates
+        dct['kind'] = name
+        dct['allowed'] = allowed
+        dct['required'] = required
+        dct['alternates'] = alternates
+        return super(ObjectMeta, cls).__new__(cls, name, bases, dct)
 
+class Object(object):
+    __metaclass__ = ObjectMeta
+    citeable = CiteableFalse()
 
-def cmpclasses(a, b):
-    'A comparison function sorting subclasses before parents.'
+    def __init__(self, **kwargs):
+        for key, word in kwargs.iteritems():
+            assert not key.startswith('_') and hasattr(self, key)
+            setattr(self, key, word)
 
-    le = issubclass(a, b)
-    ge = issubclass(b, a)
-    if le and not ge:
-        return -1
-    if ge and not le:
-        return 1
-    return cmp(a.__name__, b.__name__)
+    def isset_field(self, name):
+        return getattr(self, name, None) is not None
 
+    def set_field(self, name, value):
+        setattr(self, name, value)
 
-_producers = {}
-_listfilters = {}
-_listformatters = {}
-_filters = {}
+    def iteritems(self):
+        for f in self.allowed:
+            v = getattr(self, f, None)
+            yield (f, v)
 
-
-class Formatter(object):
-
-    _citeable = False
-
-    def __init__(self, *kargs, **kwargs):
-        self._value = None
-        super(Formatter, self).__init__(*kargs, **kwargs)
-
-    def _chain(cls, filter, chain, context):
-        if not context:
-            raise ValueError, 'Empty context'
-        l = chain.setdefault(context, {}).setdefault(cls, [])
-        v = filter
-        if not hasattr(v, '__call__'):
-            v = lambda obj, value, context: filter
-        if chain is _producers:
-            l.insert(0, v)
-        else:
-            l.append(v)
-    _chain = classmethod(_chain)
-
-    def _addproducer(cls, filter, *context):
-        cls._chain(filter, _producers, context)
-    _addproducer = classmethod(_addproducer)
-
-    def _addlistfilter(cls, filter, *context):
-        cls._chain(filter, _listfilters, context)
-    _addlistfilter = classmethod(_addlistfilter)
-
-    def _addlistformatter(cls, filter, *context):
-        cls._chain(filter, _listformatters, context)
-    _addlistformatter = classmethod(_addlistformatter)
-
-    def _addfilter(cls, filter, *context):
-        cls._chain(filter, _filters, context)
-    _addfilter = classmethod(_addfilter)
-
-    def _filter(self, chain, value, stop, context):
-        if stop(value):
-            return value
-        for i in range(len(context)):
-            try:
-                filters = chain[context[i:]]
-            except KeyError:
-                continue
-            kinds = [ t for t in filters if isinstance(self, t) ]
-            kinds.sort(cmpclasses)
-            for kind in kinds:
-                for filter in filters[kind]:
-                    newvalue = filter(self, value, context)
-                    if newvalue is not None:
-                        value = newvalue
-                        if stop(value):
-                            return value
-        return value
-
-    def _format(self, *context):
-        listtest = lambda x: x is None or not hasattr(x, '__iter__')
-        value = self._filter(_producers, None, lambda x: x is not None, context)
-        value = self._filter(_listfilters, value, listtest, context)
-        value = self._filter(_listformatters, value, listtest, context)
-        if value is not None:
-            value = str(value)
-        value = self._filter(_filters, value, lambda x: x is None, context)
-        if value is not None:
-            value = str(value)
-        return value
-
-    def __str__(self):
-        if self._value is None:
-            self._value = self._format('value')
-            if self._value is None:
-                self._value = ''
-        return self._value
-
-
-class ObjectList(Formatter, list):
-    def __init__(self, *kargs, **kwargs):
-        super(ObjectList, self).__init__(*kargs, **kwargs)
-
-
-class Object(Formatter):
-    def __init__(self, keys, fields, conditions, file, line, *kargs, **kwargs):
-        super(Object, self).__init__(*kargs, **kwargs)
-        self.keys = keys
-        self.file = file
-        self.line = line
-        self.kind = type(self).__name__
-        self.kind = self.kind[self.kind.rfind('.')+1:]
-        self.conditions = conditions
-        self.fields = fields
-        self.citation = None
-
-
-class Concatenation(list):
-    def __str__(self):
-        return ''.join([str(x) for x in self])
-
-
-#
-# The actual objects.
-#
+###############################################################################
 
 class string(Object):
-    name = ['longname', 'shortname']
-    shortname = [REQUIRED, 'name', 'longname']
-    longname = [REQUIRED, 'name', 'shortname']
-
-class author(string):
-    address = OPTIONAL
-    affiliation = OPTIONAL
-    email = OPTIONAL
-    institution = OPTIONAL
-    organization = OPTIONAL
-    phone = OPTIONAL
-    school = OPTIONAL
-    url = OPTIONAL
-
-class state(string):
-    country = OPTIONAL
+    name      = Field(alternates=('longname', 'shortname'))
+    shortname = Field(required=True, alternates=('name', 'longname'))
+    longname  = Field(required=True, alternates=('name', 'shortname'))
 
 class country(string):
     pass
 
+class state(string):
+    country = Field(types=(country,))
+
 class location(string):
-    name = [REQUIRED, 'longname', 'shortname', 'city', 'state', 'country']
-    shortname = ['name', 'longname']
-    longname = ['name', 'shortname']
-    city = OPTIONAL
-    state = OPTIONAL
-    country = OPTIONAL
+    name    = Field(required=True, alternates=('longname', 'shortname', 'city', 'state', 'country'))
+    city    = Field()
+    state   = Field(types=(state,))
+    country = Field(types=(country,))
 
 class month(string):
-    monthno = REQUIRED
-
-class journal(string):
-    pass
+    monthno = Field()
 
 class institution(string):
-    address = OPTIONAL
+    address = Field(types=(location, country, state))
 
 class school(institution):
     pass
 
-class publication(Object):
-    _citeable = True
+class author(string):
+    address      = Field(types=(location, country, state))
+    affiliation  = Field()
+    email        = Field()
+    institution  = Field()
+    organization = Field()
+    phone        = Field()
+    school       = Field()
+    url          = Field()
 
-    abstract = OPTIONAL
-    address = OPTIONAL
-    affiliation = OPTIONAL
-    annote = OPTIONAL
-    author = OPTIONAL
-    bib = OPTIONAL
-    bibsource = OPTIONAL
-    booktitle = OPTIONAL
-    category = OPTIONAL
-    subcategory = OPTIONAL
-    chapter = OPTIONAL
-    contents = OPTIONAL
-    copyright = OPTIONAL
-    crossref = OPTIONAL
-    doi = OPTIONAL
-    dvi = OPTIONAL
-    edition = OPTIONAL
-    editor = OPTIONAL
-    ee = OPTIONAL
-    ftp = OPTIONAL
-    howpublished = OPTIONAL
-    html = OPTIONAL
-    http = OPTIONAL
-    institution = OPTIONAL
-    isbn = OPTIONAL
-    issn = OPTIONAL
-    journal = 'newspaper'
-    newspaper = 'journal'
-    key = OPTIONAL
-    keywords = OPTIONAL
-    language = OPTIONAL
-    lccn = OPTIONAL
-    location = OPTIONAL
-    month = OPTIONAL
-    monthno = OPTIONAL
-    mrnumber = OPTIONAL
-    note = OPTIONAL
-    number = OPTIONAL
-    organization = OPTIONAL
-    pages = OPTIONAL
-    pdf = OPTIONAL
-    price = OPTIONAL
-    ps = OPTIONAL
-    publisher = OPTIONAL
-    rtf = OPTIONAL
-    school = OPTIONAL
-    series = OPTIONAL
-    size = OPTIONAL
-    title = OPTIONAL
-    type = OPTIONAL
-    url = OPTIONAL
-    volume = OPTIONAL
-    year = OPTIONAL
+###############################################################################
 
-class misc(publication):
+class journal(string):
     pass
 
-class article(publication):
-    author = REQUIRED
-    title = REQUIRED
-    journal = [REQUIRED, 'newspaper']
-    newspaper = 'journal'
-    year = REQUIRED
+class conference(string):
+    pass
 
-class book(publication):
-    author = REQUIRED
-    editor = OPTIONAL
-    title = REQUIRED
-    publisher = REQUIRED
-    year = REQUIRED
+class conferencetrack(conference):
+    conference = Field(types=(conference,))
 
-class booklet(publication):
-    title = REQUIRED
+class workshop(conferencetrack):
+    conference = Field(types=(conference,))
 
-class inbook(publication):
-    author = REQUIRED
-    editor = REQUIRED
-    title = REQUIRED
-    chapter = REQUIRED
-    pages = REQUIRED
-    publisher = REQUIRED
-    year = REQUIRED
+###############################################################################
 
-class incollection(publication):
-    author = REQUIRED
-    title = REQUIRED
-    booktitle = REQUIRED
-    publisher = REQUIRED
-    year = REQUIRED
+def Author(required=False):
+    return Field(required=True, types=(author,), iterable=True)
 
-class inproceedings(publication):
-    author = REQUIRED
-    title = REQUIRED
-    booktitle = REQUIRED
-    year = REQUIRED
+def BookTitle(required=False):
+    return Field(required=required, types=(conference, conferencetrack, workshop))
 
-class manual(publication):
-    title = REQUIRED
+###############################################################################
 
-class thesis(publication):
-    author = REQUIRED
-    title = REQUIRED
-    school = REQUIRED
-    year = REQUIRED
+class citeableref(Object):
+    citeable = CiteableTrue()
+
+class article(citeableref):
+    author  = Author(required=True)
+    title   = Field(required=True)
+    journal = Field(required=True, alternates=('newspaper'), types=(journal,))
+    year    = Field(required=True)
+    #month   = Field(types=(month,))
+    volume  = Field()
+    number  = Field()
+    pages   = Field()
+
+class book(citeableref):
+    author    = Author(required=True)
+    editor    = Field()
+    title     = Field(required=True)
+    publisher = Field(required=True)
+    address   = Field(required=True)
+    year      = Field(required=True)
+
+class booklet(citeableref):
+    title = Field(required=True)
+
+class inbook(citeableref):
+    author    = Author(required=True)
+    editor    = Field()
+    title     = Field(required=True)
+    chapter   = Field(required=True)
+    pages     = Field(required=True)
+    publisher = Field(required=True)
+    year      = Field(required=True)
+
+class incollection(citeableref):
+    author    = Author(required=True)
+    title     = Field(required=True)
+    booktitle = BookTitle(required=True)
+    publisher = Field(required=True)
+    year      = Field(required=True)
+
+class inproceedings(citeableref):
+    author    = Author(required=True)
+    title     = Field(required=True)
+    booktitle = BookTitle(required=True)
+    pages     = Field()
+    address   = Field(types=(location, country, state))
+    year      = Field()
+    month     = Field(types=(month,))
+
+class manual(citeableref):
+    title = Field(required=True)
+
+class misc(citeableref):
+    author       = Author()
+    title        = Field()
+    howpublished = Field()
+    booktitle    = BookTitle()
+    address      = Field(types=(location, country, state))
+    year         = Field()
+
+class patent(citeableref):
+    author = Author(required=True)
+    title  = Field(required=True)
+    number = Field(required=True)
+    month  = Field(required=True, types=(month,))
+    year   = Field(required=True)
+
+class rfc(citeableref):
+    author = Author(required=True)
+    title  = Field(required=True)
+    number = Field(required=True)
+    month  = Field(required=True, types=(month,))
+    year   = Field(required=True)
+
+class techreport(citeableref):
+    author      = Author(required=True)
+    title       = Field(required=True)
+    number      = Field()
+    institution = Field(required=True)
+    address     = Field(types=(location, country, state))
+    year        = Field(required=True)
+    month       = Field(types=(month,))
+
+class thesis(citeableref):
+    author = Author(required=True)
+    title  = Field(required=True)
+    school = Field(required=True)
+    number = Field()
+    year   = Field(required=True)
 
 class mastersthesis(thesis):
     pass
@@ -292,147 +250,15 @@ class mastersthesis(thesis):
 class phdthesis(thesis):
     pass
 
-class proceedings(publication):
-    title = REQUIRED
-    year = REQUIRED
+class unpublished(citeableref):
+    author = Author(required=True)
+    title  = Field(required=True)
+    note   = Field(required=True)
 
-class collection(proceedings):
-    pass
-
-class patent(publication):
-    author = REQUIRED
-    title = REQUIRED
-    number = REQUIRED
-    month = REQUIRED
-    year = REQUIRED
-
-class techreport(publication):
-    author = REQUIRED
-    title = REQUIRED
-    institution = REQUIRED
-    year = REQUIRED
-
-class unpublished(publication):
-    author = REQUIRED
-    title = REQUIRED
-    note = REQUIRED
-
-class conference(string):
-    abstract = OPTIONAL
-    address = OPTIONAL
-    affiliation = OPTIONAL
-    annote = OPTIONAL
-    author = OPTIONAL
-    bib = OPTIONAL
-    bibsource = OPTIONAL
-    booktitle = OPTIONAL
-    category = OPTIONAL
-    subcategory = OPTIONAL
-    chapter = OPTIONAL
-    contents = OPTIONAL
-    copyright = OPTIONAL
-    crossref = OPTIONAL
-    doi = OPTIONAL
-    dvi = OPTIONAL
-    edition = OPTIONAL
-    editor = OPTIONAL
-    ee = OPTIONAL
-    ftp = OPTIONAL
-    howpublished = OPTIONAL
-    html = OPTIONAL
-    http = OPTIONAL
-    institution = OPTIONAL
-    isbn = OPTIONAL
-    issn = OPTIONAL
-    journal = 'newspaper'
-    newspaper = 'journal'
-    key = OPTIONAL
-    keywords = OPTIONAL
-    language = OPTIONAL
-    lccn = OPTIONAL
-    location = OPTIONAL
-    month = OPTIONAL
-    monthno = OPTIONAL
-    mrnumber = OPTIONAL
-    note = OPTIONAL
-    number = OPTIONAL
-    organization = OPTIONAL
-    pages = OPTIONAL
-    pdf = OPTIONAL
-    price = OPTIONAL
-    ps = OPTIONAL
-    publisher = OPTIONAL
-    rtf = OPTIONAL
-    school = OPTIONAL
-    series = OPTIONAL
-    size = OPTIONAL
-    title = OPTIONAL
-    type = OPTIONAL
-    url = OPTIONAL
-    volume = OPTIONAL
-    year = OPTIONAL
-
-class conferencetrack(conference):
-    conference = OPTIONAL
-
-class workshop(conferencetrack):
-    pass
-
-class rfc(publication):
-    author = REQUIRED
-    title = REQUIRED
-    number = REQUIRED
-    month = REQUIRED
-    year = REQUIRED
-
-class url(publication):
-    url = REQUIRED
-    accessmonth = OPTIONAL
-    accessyear = OPTIONAL
-    accessday = OPTIONAL
-
-class newspaperarticle(article):
-    author = OPTIONAL
-
-class newspaper(journal):
-    pass
-
-
-#
-# Initialization
-#
-
-def _fieldproducer(obj, value, context):
-    try:
-        return obj.fields.get(context[-1], None)
-    except AttributeError:
-        return
-    except IndexError:
-        return
-
-for kind in globals().values():
-    if not (isinstance(kind, type) and issubclass(kind, Object)):
-        continue
-
-    kind._required = {}
-    kind._allowed = {}
-    kind._fillin = {}
-
-    for field in dir(kind):
-        if field.startswith('_'):
-            continue
-        kind._allowed[field] = True
-        value = getattr(kind, field)
-
-        if hasattr(value, '__iter__'):
-            if REQUIRED in value:
-                kind._required[field] = True
-            kind._fillin[field] = [str(f) for f in value \
-                                   if f is not REQUIRED and f is not OPTIONAL]
-        else:
-            if value is REQUIRED:
-                kind._required[field] = True
-            elif value is not OPTIONAL:
-                kind._fillin[field] = [str(value)]
-
-        kind._addproducer(_fieldproducer, field)
+class url(citeableref):
+    author      = Author()
+    title       = Field()
+    url         = Field(required=True)
+    accessmonth = Field(types=(month,))
+    accessyear  = Field()
+    accessday   = Field()
