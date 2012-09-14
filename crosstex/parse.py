@@ -11,228 +11,172 @@ in a database, simply cite every entry, and then they will all have to
 be resolved and checked.
 '''
 
+import collections
+import copy
+import logging
 import os
-import re
 import cPickle as pickle
-import traceback
+import re
+
 import ply.lex
 import ply.yacc
 
-from copy import copy
-from crosstex.options import OptionParser, error, warning
+import crosstex
 
+logger = logging.getLogger('crosstex.parse')
 
-class Value:
-    'A field value containing a string, number, key, or concatenation.'
+Entry = collections.namedtuple('Entry', ('kind', 'keys', 'fields', 'file', 'line', 'defaults'))
+Value = collections.namedtuple('Value', ('file', 'line', 'kind', 'value'))
+Field = collections.namedtuple('Field', ('name', 'value'))
+Conditional = collections.namedtuple('Conditional', ('file', 'line', 'if_fields', 'then_fields'))
 
-    def __init__(self, file, line, value, kind=None):
-        self.file = file
-        self.line = line
-        if kind is not None:
-            self.kind = kind
-            self.value = value
-        else:
-            try:
-                self.value = int(value)
-                self.kind = 'number'
-            except ValueError:
-                self.value = str(value)
-                self.kind = 'string'
-
-    def concat(self, other, file, line):
-        if self.kind != 'concat':
-            self.value = [Value(self.file, self.line, self.value, self.kind)]
-            self.kind = 'concat'
-            self.file = file
-            self.line = line
-        if other.kind == 'concat':
-            self.value.extend(other)
-        else:
-            self.value.append(other)
-
-    def resolve(self, db, seen=None, trystrings=False):
-        entries = []
-        if self.kind == 'concat':
-            for other in self.value:
-                entries.extend(other.resolve(db, seen))
-        elif self.kind == 'key' or (trystrings and self.kind == 'string'):
-            entry = db._resolve(self.value, seen)
-            if entry is not None:
-                entries.append(entry)
-                self.value = entry
-                self.kind = 'entry'
-            elif self.kind == 'key':
-                error(db.options, '%s:%d: No such key "%s".' % (self.file, self.line, self.value))
-                self.kind = 'string'
-        return entries
-
-    def __str__(self):
-        if self.kind == 'concat':
-            return ''.join([str(other) for other in self.value])
-        else:
-            return str(self.value)
-
-
-class Entry:
-    '''
-    A single, raw entry in a database.
-
-    Every piece of information is designed to avoid causing errors in the
-    lexer/parser, and instead allow errors to be noticed during resolution.
-    Thus, all fields (fields and defaults) are stored as lists of pairs
-    rather than dictionaries, in order to preserve duplicates, etc.
-    '''
-
-    def __init__(self, kind, keys, fields, file, line, defaults={}):
-        self.kind = kind
-        self.keys = keys
-        self.fields = fields
-        self.file = file
-        self.line = line
-        self.defaults = defaults
-
+def create_value(_file, line, value, kind=None):
+    if kind is None:
+        try:
+            value = int(value)
+            kind = 'number'
+        except ValueError:
+            value = str(value)
+            kind = 'string'
+    return Value(_file, line, kind, value)
 
 class XTXFileInfo:
     'Same stuff as in Parser, but only for one file'
 
     def __init__(self):
-        self.titlephrases = []
-        self.titlesmalls = []
-        self.preambles = []
-        self.entries = {}
+        self.titlephrases = set([])
+        self.titlesmalls = set([])
+        self.preambles = set([])
+        self.entries = collections.defaultdict(list)
         self.tobeparsed = []
 
     def parse(self, file, **kwargs):
         self.tobeparsed.append(file)
 
     def merge(self, db):
-        db.titlephrases = db.titlephrases + self.titlephrases
-        db.titlesmalls = db.titlesmalls + self.titlesmalls
-        db.preambles = db.preambles + self.preambles
-        db.entries.update(self.entries)
+        db.titlephrases = set(db.titlephrases) | self.titlephrases
+        db.titlesmalls = set(db.titlesmalls) | self.titlesmalls
+        db.preambles = db.preambles | self.preambles
+        for k, es in self.entries.items():
+            db.entries[k] += es
         for file in self.tobeparsed:
             db.parse(file, exts=['.xtx', '.bib'])
-
 
 class Parser:
     'A structure of almost raw data from the databases.'
 
-    def __init__(self, options, optparser):
-        self.optparser = optparser
-        self.options = options
-        self.titlephrases = []
-        self.titlesmalls = []
-        self.preambles = []
-        self.entries = {}
-        self.seen = {}
-        self.cur = []
+    def __init__(self, path):
+        self.titlephrases = set([])
+        self.titlesmalls = set([])
+        self.preambles = set([])
+        self.entries = collections.defaultdict(list)
+        self.citations = set([])
+        self._bibstyle = 'plain'
+        self._path = path
+        self._seen = {}
+        self._dirstack = []
 
-    def parse(self, file, exts=['.aux', '.xtx', '.bib']):
+    def set_path(self, path):
+        self._path = path
+
+    def parse(self, name, exts=['.aux', '.xtx', '.bbl']):
         'Find a file with a reasonable extension and extract its information.'
-
-        filepath, file = os.path.split(file)
-        file, fileext = os.path.splitext(file)
-        if fileext in exts:
-            tryexts = [fileext]
+        if name in self._seen:
+            logger.debug('Already processed %r.' % name)
+            return self._seen[name]
+        if os.path.sep in name:
+            logger.debug('%r has a %r, treating it as a path to a file.' % (name, os.path.sep))
+            path = name
+            if self._dirstack:
+                path = os.path.jaoin(self._dirstack[-1], path)
+            if not os.path.exists(path):
+                logger.error('Can not parse %r because it resolves to %r which doesn\'t exist' % (name, path))
+                return None
+            try:
+                self._dirstack.append(os.path.dirname(path))
+                return self._parse_from_path(path)
+            finally:
+                self._dirstack.pop()
+        base, ext = os.path.splitext(name)
+        if ext:
+            if not self._check_ext(name, ext, exts):
+                return None
+            tryexts = [ext]
         else:
-            file += fileext
             tryexts = exts
-
-        if file in self.seen:
-            if 'file' in self.options.dump:
-                print 'Already processed %s.' % file
-            return self.seen[file]
-
-        if os.path.isabs(filepath):
-            trydirs = [filepath]
+        if self._dirstack:
+            trydirs = self._dirstack[-1:] + self._path
         else:
-            trydirs = [os.path.join(dir, filepath) for dir in self.options.dir]
-            if self.cur:
-                trydirs.append(os.path.join(self.cur[-1], filepath))
-            trydirs.reverse()
-
-        for dir in trydirs:
-            for ext in tryexts:
+            trydirs = self._path
+        for d in trydirs:
+            for e in tryexts:
                 try:
-                    self.cur.append(dir)
-                    path = os.path.join(dir, file + ext)
-                    try:
-                        stream = open(path, 'r')
-                    except IOError:
+                    self._dirstack.append(d)
+                    path = os.path.join(d, base + e)
+                    if not os.path.exists(path):
                         continue
-
-                    if ext == '.aux':
-                        if 'file' in self.options.dump:
-                            print 'Processing auxiliary file %s.' % path
-                        self.parseaux(stream, path)
-                        return path
-
-                    self.seen[file] = path
-                    cpath = os.path.join(dir, '.' + file + ext + '.cache')
-                    try:
-                        if os.path.getmtime(path) < os.path.getmtime(cpath):
-                            cstream = open(cpath, 'rb')
-                            if 'file' in self.options.dump:
-                                print "Processing database %s from cache." % path
-                            try:
-                                db = pickle.load(cstream)
-                                cstream.close()
-                                db.merge(self)
-                                return path
-                            except:
-                                if 'file' in self.options.dump:
-                                    print "Could not read cache %s, falling back to database." % cpath
-                    except IOError:
-                        pass
-                    except OSError:
-                        pass
-
-                    if 'file' in self.options.dump:
-                        print 'Processing database %s.' % path
-                    db = self.parsextx(stream, path)
-                    stream.close()
-                    db.merge(self)
-
-                    cpath = os.path.join(dir, '.' + file + ext + '.cache')
-                    try:
-                        cstream = open(cpath, 'wb')
-                        try:
-                            pickle.dump(db, cstream, protocol=2)
-                        except:
-                            if 'file' in self.options.dump:
-                                print "Could not write cache %s." % cpath
-                        cstream.close()
-                    except IOError:
-                        pass
-
-                    return path
+                    return self._parse_from_path(path, name=name)
                 finally:
-                    self.cur.pop()
+                    self._dirstack.pop()
+        logger.error('Can not find %s database.' % name)
+        return None
 
-        error(self.options, 'Can not find %s database.' % file)
-        return file
+    def _parse_from_path(self, path, name=None):
+        'Parse a file from an absolute path'
+        assert os.path.sep in path
+        name = name or path
+        ext = os.path.splitext(path)[1]
+        if self._check_ext(path, ext):
+            func = '_parse_ext_' + ext[1:]
+            self._seen[name] = path
+            return getattr(self, func)(path)
+        return None
 
-    def parseaux(self, stream, path):
+    def _parse_ext_aux(self, path):
         'Parse and handle options set in a TeX .aux file.'
-
+        stream = open(path)
+        logger.debug('Processing auxiliary file %s.' % path)
         for line in stream:
             if line.startswith(r'\citation'):
                 for citation in line[10:].strip().rstrip('}').split(','):
                     citation = citation.strip(',\t')
                     if citation:
-                        self.addopts(['--cite', citation])
+                        self.citations.add(citation)
             elif line.startswith(r'\bibstyle'):
-                self.addopts(['--style'] + line[10:].rstrip().rstrip('}').split(' '))
+                self._bibstyle = line[10:].rstrip().rstrip('}').split(' ')
             elif line.startswith(r'\bibdata'):
-                self.files(line[9:].rstrip().rstrip('}').split(','), exts=['.bib', '.xtx'])
+                for f in line[9:].rstrip().rstrip('}').split(','):
+                    self.parse(f, ['.bib', '.xtx'])
             elif line.startswith(r'\@input'):
-                self.files(line[8:].rstrip().rstrip('}').split(','), exts=['.aux'])
+                for f in line[8:].rstrip().rstrip('}').split(','):
+                    self.parse(f, ['.aux'])
 
-    def parsextx(self, stream, path):
-        'Parse and handle options set in a CrossTeX .xtx or .bib database file.'
+    def _parse_ext_bib(self, path):
+        return self._parse_ext_xtx(path)
 
+    def _parse_ext_xtx(self, path):
+        'Parse and handle options set in a CrossTeX .xtx or BibTeX .bib database file.'
+        cache_path = os.path.join(os.path.dirname(path),
+                                  '.' + os.path.basename(path) + '.cache')
+        try:
+            if os.path.exists(cache_path) and \
+               os.path.getmtime(path) < os.path.getmtime(cache_path):
+                logger.debug("Processing database %r from cache." % path)
+                with open(cache_path, 'rb') as cache_stream:
+                    db = pickle.load(cache_stream)
+                db.merge(self)
+                return path
+        except EOFError as e:
+            logger.error("Could not read cache '%r', falling back to database: %s." % (cache_path, e))
+        except pickle.UnpicklingError as e:
+            logger.error("Could not read cache '%r', falling back to database: %s." % (cache_path, e))
+        except IOError as e:
+            logger.error("Could not read cache '%r', falling back to database: %s." % (cache_path, e))
+        except OSError as e:
+            logger.error("Could not read cache '%r', falling back to database: %s." % (cache_path, e))
+        logger.debug('Processing database %s.' % path)
         db = XTXFileInfo()
-        db.options = self.options
+        stream = open(path)
         contents = stream.read()
         if contents:
             lexer = ply.lex.lex(reflags=re.UNICODE)
@@ -242,18 +186,30 @@ class Parser:
             lexer.expectstring = False
 
             lexer.db = db
-            lexer.defaults = {}
+            lexer.defaults = ()
 
             parser = ply.yacc.yacc(debug=0, write_tables=0)
             parser.parse(contents, lexer=lexer)
-        return db
+        stream.close()
+        db.merge(self)
+        try:
+            with open(cache_path, 'wb') as cache_stream:
+                pickle.dump(db, cache_stream, protocol=2)
+        except pickle.PicklingError as e:
+            logger.error("Could not write cache '%r', falling back to database: %s." % (cache_path, e))
+        except IOError as e:
+            logger.error("Could not write cache '%r', falling back to database: %s." % (cache_path, e))
+        except OSError as e:
+            logger.error("Could not write cache '%r', falling back to database: %s." % (cache_path, e))
+        return path
 
-    def files(self, files, **kwargs):
-        return [ self.parse(file, **kwargs) for file in files ]
-
-    def addopts(self, opts):
-        return self.optparser.parse_args(args=opts, values=self.options)
-
+    def _check_ext(self, name, ext, exts=['.aux', '.xtx', '.bib']):
+        func = '_parse_ext_' + ext[1:]
+        if not hasattr(self, func) or not ext in exts: 
+            logger.error('Can not parse %r because the extension is not %s.'
+                                % (name, '/'.join([e[1:] for e in exts])))
+            return False
+        return True
 
 #
 # Tokens
@@ -263,7 +219,7 @@ newlinere = re.compile(r'\r\n|\r|\n')
 numberre = re.compile(r'^\d+$')
 andre = re.compile(r'\s+and\s+')
 
-tokens = ( 'AT', 'COMMA', 'SHARP', 'OPENBRACE', 'CLOSEBRACE', 'LBRACK',
+tokens = ( 'AT', 'COMMA', 'OPENBRACE', 'CLOSEBRACE', 'LBRACK',
   'RBRACK', 'EQUALS', 'ATINCLUDE', 'ATSTRING', 'ATEXTEND', 'ATPREAMBLE',
   'ATCOMMENT', 'ATDEFAULT', 'ATTITLEPHRASE', 'ATTITLESMALL', 'NAME', 'NUMBER',
   'STRING', )
@@ -367,11 +323,6 @@ def t_AT(t):
     t.lexer.expectstring = False
     return t
 
-def t_SHARP(t):
-    r'\#'
-    t.lexer.expectstring = True
-    return t
-
 def t_COMMA(t):
     r','
     t.lexer.expectstring = False
@@ -392,10 +343,9 @@ def t_newline(t):
     t.lexer.lineno += 1
 
 def t_error(t):
-    error(t.lexer.db.options, '%s:%d: Syntax error near "%s".' %
-          (t.lexer.file, t.lexer.lineno, t.value[:20]))
+    logger.error('%s:%d: Syntax error near "%s".' %
+                 (t.lexer.file, t.lexer.lineno, t.value[:20]))
     t.skip(1)
-
 
 #
 # Grammar; start symbol is stmts.
@@ -412,15 +362,15 @@ def p_ignore(t):
 
 def p_stmt_preamble(t):
     'stmt : ATPREAMBLE OPENBRACE STRING CLOSEBRACE'
-    t.lexer.db.preambles.append(t[3])
+    t.lexer.db.preambles.add(t[3])
 
 def p_stmt_titlephrase(t):
     'stmt : ATTITLEPHRASE STRING'
-    t.lexer.db.titlephrases.append(t[2])
+    t.lexer.db.titlephrases.add(t[2])
 
 def p_stmt_titlesmall(t):
     'stmt : ATTITLESMALL STRING'
-    t.lexer.db.titlesmalls.append(t[2])
+    t.lexer.db.titlesmalls.add(t[2])
 
 def p_stmt_include(t):
     'stmt : ATINCLUDE NAME'
@@ -428,27 +378,27 @@ def p_stmt_include(t):
 
 def p_stmt_default(t):
     'stmt : ATDEFAULT field'
-    t.lexer.defaults = copy(t.lexer.defaults)
+    defaults = dict(t.lexer.defaults)
     if t[2][1]:
-        t.lexer.defaults[t[2][0]] = t[2][1]
+        defaults[t[2][0]] = t[2][1]
     else:
         try:
-            del t.lexer.defaults[t[2][0]]
+            del defaults[t[2]][0]
         except KeyError:
             pass
+    t.lexer.defaults = tuple(defaults.items())
 
 def p_stmt_string(t):
     'stmt : ATSTRING OPENBRACE fields CLOSEBRACE'
     file, line, defaults = t.lexer.file, t.lineno(2), t.lexer.defaults
     for key, value in t[3]:
-        ent = Entry('string', [key], [([], [('name', value)])],
-                    file, line, defaults)
-        t.lexer.db.entries.setdefault(key, []).append(ent)
+        ent = Entry('string', [key], [('name', value)], file, line, defaults)
+        t.lexer.db.entries[key].append(ent)
 
 def p_stmt_entry(t):
     'stmt : entry'
     for key in t[1].keys:
-        t.lexer.db.entries.setdefault(key, []).append(t[1])
+        t.lexer.db.entries[key].append(t[1])
 
 def p_entry(t):
     'entry : AT NAME OPENBRACE keys COMMA conditionals CLOSEBRACE'
@@ -460,81 +410,74 @@ def p_entry_extend(t):
     entry : ATEXTEND OPENBRACE keys COMMA conditionals CLOSEBRACE
           | ATEXTEND OPENBRACE keys CLOSEBRACE
     '''
-    try:
+    if len(t) == 7:
         fields = t[5]
-    except IndexError:
+    else:
         fields = []
     file, line, defaults = t.lexer.file, t.lineno(1), t.lexer.defaults
     t[0] = Entry('extend', t[3], fields, file, line, defaults)
 
 def p_keys_singleton(t):
     'keys : NAME'
-    t[0] = [t[1]]
+    t[0] = (t[1],)
 
 def p_keys_multiple(t):
     'keys : NAME EQUALS keys'
-    t[0] = [t[1]] + t[3]
+    t[0] = (t[1],) + t[3]
 
 def p_conditionals_empty(t):
     'conditionals :'
-    t[0] = []
+    t[0] = ()
 
 def p_conditionals_singleton(t):
     'conditionals : conditional'
-    t[0] = [t[1]]
+    t[0] = (t[1],)
 
 def p_conditionals_multiple(t):
     'conditionals : conditional conditionals'
-    t[0] = [t[1]] + t[2]
+    t[0] = (t[1],) + t[2]
 
 def p_conditionals_unconditional(t):
     'conditionals : fields conditionals'
-    t[0] = [([], t[1])] + t[2]
+    t[0] = t[1] + t[2]
 
 def p_conditional(t):
     'conditional : LBRACK fields RBRACK fields'
-    t[0] = (t[2], t[4])
+    t[0] = Conditional(t.lexer.file, t.lineno(1), t[2], t[4])
 
 def p_fields_empty(t):
     'fields :'
-    t[0] = []
+    t[0] = ()
 
 def p_fields_singleton(t):
     'fields : field'
-    t[0] = [t[1]]
+    t[0] = (t[1],)
 
 def p_fields(t):
     'fields : field COMMA fields'
-    t[0] = [t[1]] + t[3]
+    t[0] = (t[1],) + t[3]
 
 def p_field(t):
     'field : NAME EQUALS value'
-    t[0] = (t[1].lower(), t[3])
+    t[0] = Field(t[1].lower(), t[3])
 
 def p_value_singleton(t):
     'value : simplevalue'
     t[0] = t[1]
 
-def p_value_concat(t):
-    'value : value SHARP simplevalue'
-    warning(t.lexer.db.options, '%s:%d: The implementation of concatenation is currently broken.' %
-          (t.lexer.file, t.lexer.lineno, t.value))
-    t[0] = t[1]
-    t[0].concat(t[3])
-
 def p_simplevalue_name(t):
     'simplevalue : NAME'
-    t[0] = Value(t.lexer.file, t.lineno(1), t[1], 'key')
+    t[0] = create_value(t.lexer.file, t.lineno(1), t[1], 'key')
 
 def p_simplevalue_number(t):
     'simplevalue : NUMBER'
-    t[0] = Value(t.lexer.file, t.lineno(1), t[1])
+    t[0] = create_value(t.lexer.file, t.lineno(1), t[1], None)
 
 def p_simplevalue_string(t):
     'simplevalue : STRING'
-    t[0] = Value(t.lexer.file, t.lineno(1), t[1])
+    t[0] = create_value(t.lexer.file, t.lineno(1), t[1], None)
 
 def p_error(t):
     ply.yacc.errok()
-    error(t.lexer.db.options, '%s:%d: Parse error near "%s".' %
-          (t.lexer.file, t.lexer.lineno, t.value[:20]))
+    logger.error('%s:%d: Parse error near "%s".' %
+                 (t.lexer.file, t.lexer.lineno, t.value[:20]))

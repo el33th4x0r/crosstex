@@ -1,4 +1,0 @@
-@include dates
-@include title-en
-@include title-fr
-@include title-cs
