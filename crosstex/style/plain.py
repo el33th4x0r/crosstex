@@ -287,6 +287,9 @@ class Style(crosstex.style.Style):
         if number:
             third = crosstex.style.punctuate(third, ',', ' ')
             third += 'Technical Report ' +  number
+        else:
+            third = crosstex.style.punctuate(third, ',', ' ')
+            third += 'Technical Report'
         if year:
             third = crosstex.style.punctuate(third, ',', ' ') + year
         third = crosstex.style.punctuate(third, '.', '')
