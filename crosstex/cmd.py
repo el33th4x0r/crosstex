@@ -172,7 +172,8 @@ def main(argv):
         logger.error('Style does not support the format.')
         return 1
     # We'll use this check later
-    is_aux = os.path.splitext(args.files[-1])[1] == '.aux'
+    is_aux = os.path.splitext(args.files[-1])[1] == '.aux' or \
+             db.aux_citations() and os.path.splitext(args.files[-1])[1] == ''
     # Get a list of things to cite
     cite = []
     if args.cite:
