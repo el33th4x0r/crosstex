@@ -73,7 +73,7 @@ class Parser:
         self.citations = set([])
         self._bibstyle = 'plain'
         self._path = path
-        self._seen = {}
+        self._seen = collections.defaultdict(dict)
         self._dirstack = []
 
     def set_path(self, path):
@@ -83,12 +83,14 @@ class Parser:
         'Find a file with a reasonable extension and extract its information.'
         if name in self._seen:
             logger.debug('Already processed %r.' % name)
-            return self._seen[name]
+            for ext, path in self._seen[name].iteritems():
+                if ext in exts:
+                    return path
         if os.path.sep in name:
             logger.debug('%r has a %r, treating it as a path to a file.' % (name, os.path.sep))
             path = name
             if self._dirstack:
-                path = os.path.jaoin(self._dirstack[-1], path)
+                path = os.path.join(self._dirstack[-1], path)
             if not os.path.exists(path):
                 logger.error('Can not parse %r because it resolves to %r which doesn\'t exist' % (name, path))
                 return None
@@ -128,7 +130,7 @@ class Parser:
         ext = os.path.splitext(path)[1]
         if self._check_ext(path, ext):
             func = '_parse_ext_' + ext[1:]
-            self._seen[name] = path
+            self._seen[name][ext] = path
             return getattr(self, func)(path)
         return None
 
@@ -146,7 +148,7 @@ class Parser:
                 self._bibstyle = line[10:].rstrip().rstrip('}').split(' ')
             elif line.startswith(r'\bibdata'):
                 for f in line[9:].rstrip().rstrip('}').split(','):
-                    self.parse(f, ['.bib', '.xtx'])
+                    self.parse(f, ['.xtx', '.bib'])
             elif line.startswith(r'\@input'):
                 for f in line[8:].rstrip().rstrip('}').split(','):
                     self.parse(f, ['.aux'])
