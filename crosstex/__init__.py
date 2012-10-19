@@ -15,6 +15,7 @@ import logging
 logging.basicConfig(format='%(message)s')
 
 import copy
+import importlib
 import re
 
 import crosstex.objects
@@ -321,3 +322,74 @@ class Database(object):
         # consistent fashion.  Right now, conflicting extensions will be
         # resolved in a predictable manner
         return (keys, base, extensions)
+
+class CrossTeXError(Exception): pass
+
+class CrossTeX(object):
+
+    def __init__(self, xtx_path=None):
+        self._db = Database()
+        for p in xtx_path or []:
+            self._db.append_path(p)
+        self._flags = set([])
+        self._style = None
+
+    def add_in(self):
+        self._flags.add('add-in')
+
+    def add_proc(self):
+        if 'add-proceedings' in self._flags:
+            self._flags.remove('add-proceedings')
+        self._flags.add('add-proc')
+
+    def add_proceedings(self):
+        if 'add-proc' in self._flags:
+            self._flags.remove('add-proc')
+        self._flags.add('add-proceedings')
+
+    def add_short(self, field):
+        self._flags.add('short-' + field)
+
+    def set_titlecase(self, case):
+        self._flags.add('titlecase-' + case)
+
+    def set_style(self, fmt, style):
+        if fmt == 'bib':
+            raise CrossTeXError('CrossTeX currently doesn\'t write bib files.') # XXX
+        if fmt == 'xtx':
+            raise CrossTeXError('CrossTeX currently doesn\'t write xtx files.') # XXX
+        try:
+            stylemod = importlib.import_module('crosstex.style.' + style)
+            if not hasattr(stylemod, 'Style'):
+                raise CrossTeXError('Could not import style %r' % style)
+            styleclass = getattr(stylemod, 'Style')
+        except ImportError as e:
+            raise CrossTeXError('Could not import style %r' % style)
+        if fmt not in styleclass.formats():
+            raise CrossTeXError('Style %r does not support format %r' % (style, fmt))
+        self._style = styleclass(fmt, self._flags, self._db)
+
+    def parse(self, xtxname):
+        self._db.parse_file(xtxname)
+
+    def aux_citations(self):
+        return self._db.aux_citations()
+
+    def all_citations(self):
+        return self._db.all_citations()
+
+    def lookup(self, key):
+        return self._db.lookup(key)
+
+    def sort(self, citations):
+        if self._style is None:
+            raise CrossTeXError('Cannot sort citations because no style is set')
+        citations = list(citations)
+        citations.sort(key=self._style.sort_key)
+        return citations
+
+    def render(self, citations):
+        return self._style.render(citations)
+
+    def render_one(self, citation):
+        return self._style.render_one(citation)

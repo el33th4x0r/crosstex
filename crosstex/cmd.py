@@ -129,78 +129,57 @@ parser.add_argument('files', metavar='FILES', nargs='+',
 
 
 def main(argv):
-    args = parser.parse_args()
-    db = crosstex.Database()
-    for path in args.dirs or []:
-        db.append_path(path)
-    db.append_path(os.path.join(os.path.join(os.path.expanduser('~'), '.crosstex')))
-    db.append_path('/XXX') # XXX system crosstex
-    for f in reversed(args.files):
-        db.parse_file(f)
-    flags = set([])
-    flags.add('titlecase-' + args.titlecase)
-    if args.add_in:
-        flags.add('add-in')
-    if args.add_proc == 'proc':
-        flags.add('add-proc')
-    if args.add_proc == 'proceedings':
-        flags.add('add-proceedings')
-    for s in args.short or []:
-        flags.add('short-' + s)
-    # Find the right format and style
-    # 'bib' and 'xtx' are hard-coded and not affected by the style
-    if args.fmt == 'bib':
-        logger.error('CrossTeX currently doesn\'t write bib files.') # XXX
-        return 1
-    if args.fmt == 'xtx':
-        logger.error('CrossTeX currently doesn\'t write xtx files.') # XXX
-        return 1
-    # Otherwise, we need to look up the style object, and see if it can support
-    # the given format
     try:
-        stylemod = importlib.import_module('crosstex.style.' + args.style)
-        if not hasattr(stylemod, 'Style'):
-            logger.error('Style not found.')
+        args = parser.parse_args()
+        path = list(args.dirs or []) + \
+               [os.path.join(os.path.join(os.path.expanduser('~'), '.crosstex'))] + \
+               ['/XXX']
+        xtx = crosstex.CrossTeX(xtx_path=path)
+        xtx.set_titlecase(args.titlecase)
+        if args.add_in:
+            xtx.add_in()
+        if args.add_proc == 'proc':
+            xtx.add_proc()
+        if args.add_proc == 'proceedings':
+            xtx.add_proceedings()
+        for s in args.short or []:
+            xtx.add_short(s)
+        xtx.set_style(args.fmt, args.style)
+        for f in reversed(args.files):
+            xtx.parse(f)
+        # We'll use this check later
+        is_aux = os.path.splitext(args.files[-1])[1] == '.aux' or \
+                 xtx.aux_citations() and os.path.splitext(args.files[-1])[1] == ''
+        # Get a list of things to cite
+        cite = []
+        if args.cite:
+            cite = args.cite
+        elif is_aux:
+            cite = xtx.aux_citations()
+        else:
+            cite = xtx.all_citations()
+        objects = [(c, xtx.lookup(c)) for c in cite]
+        for c in [c for c, o in objects if not o or not o.citeable]:
+            logger.warning('Cannot find object for citation %r' % c)
+        citeable = [(c, o) for c, o in objects if o and o.citeable]
+        citeable = xtx.sort(citeable)
+        try:
+            rendered = xtx.render(citeable)
+        except crosstex.style.UnsupportedCitation as e:
+            logger.error('Style does not support citations for %s' % e.citetype)
             return 1
-        styleclass = getattr(stylemod, 'Style')
-    except ImportError as e:
-        logger.error('Style not found.')
+        if args.output:
+            with open(args.output, 'w') as fout:
+                fout.write(rendered)
+                fout.flush()
+        elif is_aux and args.fmt == 'bbl':
+            with open(os.path.splitext(args.files[-1])[0] + '.bbl', 'w') as fout:
+                fout.write(rendered)
+                fout.flush()
+        else:
+            sys.stdout.write(rendered)
+            sys.stdout.flush()
+        return 0
+    except crosstex.CrossTeXError as e:
+        print >>sys.stderr, e
         return 1
-    style = styleclass(flags, db.titlephrases(), db.titlesmalls())
-    # Check if the format and style work well together
-    if args.fmt not in styleclass.formats():
-        logger.error('Style does not support the format.')
-        return 1
-    # We'll use this check later
-    is_aux = os.path.splitext(args.files[-1])[1] == '.aux' or \
-             db.aux_citations() and os.path.splitext(args.files[-1])[1] == ''
-    # Get a list of things to cite
-    cite = []
-    if args.cite:
-        cite = args.cite
-    elif is_aux:
-        cite = db.aux_citations()
-    else:
-        cite = db.all_citations()
-    resolved = [(c, db.lookup(c)) for c in cite]
-    for c in [c for c, o in resolved if not o or not o.citeable]:
-        logger.warning('Cannot find object for citation %r' % c)
-    citeable = [(c, o) for c, o in resolved if o and o.citeable]
-    citeable.sort(key=style.sort_key)
-    try:
-        rendered = style.render(citeable)
-    except crosstex.style.UnsupportedCitation as e:
-        logger.error('Style does not support citations for %s' % e.citetype)
-        return 1
-    if args.output:
-        with open(args.output, 'w') as fout:
-            fout.write(rendered)
-            fout.flush()
-    elif is_aux:
-        with open(os.path.splitext(args.files[-1])[0] + '.bbl', 'w') as fout:
-            fout.write(rendered)
-            fout.flush()
-    else:
-        sys.stdout.write(rendered)
-        sys.stdout.flush()
-    return 0

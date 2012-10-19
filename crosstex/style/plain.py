@@ -3,15 +3,63 @@ import math
 import crosstex.style
 
 
+class PlainBbl(object):
+
+    def header(self, digits):
+        return '\\newcommand{\etalchar}[1]{$^{#1}$}\n' + \
+               '\\begin{thebibliography}{%s}\n' % ('0' * digits)
+
+    def footer(self):
+        return '\n\end{thebibliography}\n'
+
+    def item(self, key, rendered_obj):
+        return '\n' + ('\\bibitem{%s}\n' % key) + rendered_obj + '\n'
+
+    def block(self, text):
+        return text.strip()
+
+    def block_sep(self):
+        return '\n\\newblock '
+
+    def emph(self, text):
+        return r'\emph{' + text.strip() + '}'
+
+
+class PlainTxt(object):
+
+    def header(self, digits):
+        return ''
+
+    def footer(self):
+        return ''
+
+    def item(self, key, rendered_obj):
+        return rendered_obj + '\n'
+
+    def block(self, text):
+        return text.strip()
+
+    def block_sep(self):
+        return '  '
+
+    def emph(self, text):
+        return text.strip()
+
+
 class Style(crosstex.style.Style):
+
+    formatters = {'bbl': PlainBbl,
+                  'txt': PlainTxt}
 
     @classmethod
     def formats(cls):
-        return set(['bbl'])
+        return set(Style.formatters.keys())
 
-    def __init__(self, flags=None, titlephrases=None, titlesmalls=None):
-        self._titlephrases = titlephrases or set([])
-        self._titlesmalls = titlesmalls or set([])
+    def __init__(self, fmt, flags, db):
+        fmtr = Style.formatters.get(fmt, None)
+        assert fmtr
+        self._fmt = fmtr()
+        self._db = db
         self._flags = flags or set([])
 
     def sort_key(self, citation, fields=None):
@@ -37,31 +85,24 @@ class Style(crosstex.style.Style):
         return author, title, where, when
 
     def render(self, citations):
-        num = int(math.log10(len(citations))) + 1 if citations else 1
-        bib  = '\\newcommand{\etalchar}[1]{$^{#1}$}\n'
-        bib += '\\begin{thebibliography}{%s}\n' % ('0' * num)
+        digits = int(math.log10(len(citations))) + 1 if citations else 1
+        bib = self._fmt.header(digits)
         for cite, obj in citations:
             cb = self._callback(obj.kind)
             if cb is None:
                 raise crosstex.style.UnsupportedCitation(obj.kind)
             item = cb(obj)
-            bib += '\n' + self.bibitem(cite, item)
-        bib += '\n\end{thebibliography}\n'
+            bib += self._fmt.item(cite, item)
+        bib += self._fmt.footer()
         return bib
 
-    # Stuff to override for other formats
-
-    def bibitem(self, cite, item):
-        return ('\\bibitem{%s}\n' % cite) + item + '\n'
-
-    def emph(self, text):
-        return r'\emph{' + text.strip() + '}'
-
-    def block(self, text):
-        return text.strip()
-
-    def block_sep(self):
-        return '\n\\newblock '
+    def render_one(self, citation):
+        cite, obj = citation
+        cb = self._callback(obj.kind)
+        if cb is None:
+            raise crosstex.style.UnsupportedCitation(obj.kind)
+        item = cb(obj)
+        return self._fmt.item(cite, item)
 
     # Stuff for rendering
 
@@ -90,9 +131,9 @@ class Style(crosstex.style.Style):
         elif 'titlecase-upper' in self._flags:
             return crosstex.style.title_uppercase(title)
         elif 'titlecase-title' in self._flags:
-            return crosstex.style.title_titlecase(title, self._titlephrases)
+            return crosstex.style.title_titlecase(title, self._db.titlephrases())
         elif 'titlecase-lower' in self._flags:
-            return crosstex.style.title_lowercase(title, self._titlesmalls)
+            return crosstex.style.title_lowercase(title, self._db.titlesmalls())
         return title
 
     def render_booktitle(self, booktitle, context=None, history=None):
@@ -151,13 +192,13 @@ class Style(crosstex.style.Style):
         second = ''
         third = ''
         if author:
-            first = self.block(crosstex.style.punctuate(author, '.', ''))
+            first = self._fmt.block(crosstex.style.punctuate(author, '.', ''))
         if title:
-            second = self.block(crosstex.style.punctuate(title, '.', ''))
+            second = self._fmt.block(crosstex.style.punctuate(title, '.', ''))
         if journal:
             if 'add-in' in self._flags:
                 third += 'In '
-            third += self.emph(journal)
+            third += self._fmt.emph(journal)
         volnumpages = ''
         if number or volume or pages:
             if volume:
@@ -175,8 +216,8 @@ class Style(crosstex.style.Style):
         if year:
             third = crosstex.style.punctuate(third, ',', ' ') + year
         third = crosstex.style.punctuate(third, '.', '')
-        third = self.block(third)
-        return self.block_sep().join([b for b in (first, second, third) if b])
+        third = self._fmt.block(third)
+        return self._fmt.block_sep().join([b for b in (first, second, third) if b])
 
     def render_book(self, book, context=None, history=None):
         author    = self.render_author(book.author)
@@ -189,9 +230,9 @@ class Style(crosstex.style.Style):
         second = ''
         third = ''
         if author:
-            first = self.block(crosstex.style.punctuate(author, '.', ''))
+            first = self._fmt.block(crosstex.style.punctuate(author, '.', ''))
         if title:
-            second = self.block(crosstex.style.punctuate(title, '.', ''))
+            second = self._fmt.block(crosstex.style.punctuate(title, '.', ''))
         if publisher:
             third = publisher
         if address:
@@ -199,8 +240,8 @@ class Style(crosstex.style.Style):
         if year:
             third = crosstex.style.punctuate(third, ',', ' ') + year
         third = crosstex.style.punctuate(third, '.', '')
-        third = self.block(third)
-        return self.block_sep().join([b for b in (first, second, third) if b])
+        third = self._fmt.block(third)
+        return self._fmt.block_sep().join([b for b in (first, second, third) if b])
 
     def render_inproceedings(self, inproceedings, context=None, history=None):
         author    = self.render_author(inproceedings.author)
@@ -214,9 +255,9 @@ class Style(crosstex.style.Style):
         second = ''
         third = ''
         if author:
-            first = self.block(crosstex.style.punctuate(author, '.', ''))
+            first = self._fmt.block(crosstex.style.punctuate(author, '.', ''))
         if title:
-            second = self.block(crosstex.style.punctuate(title, '.', ''))
+            second = self._fmt.block(crosstex.style.punctuate(title, '.', ''))
         if booktitle:
             if 'add-in' in self._flags:
                 third += 'In '
@@ -224,7 +265,7 @@ class Style(crosstex.style.Style):
                 third += 'Proceedings of the '
             elif 'add-proc' in self._flags:
                 third += 'Proc. of '
-            third += crosstex.style.punctuate(self.emph(booktitle), ',', ' ')
+            third += crosstex.style.punctuate(self._fmt.emph(booktitle), ',', ' ')
         if pages:
             third = crosstex.style.punctuate(third, ',', ' ') + pages
         if address:
@@ -236,8 +277,8 @@ class Style(crosstex.style.Style):
             third = crosstex.style.punctuate(third, ',', ' ')
             third += year
         third = crosstex.style.punctuate(third, '.', '')
-        third = self.block(third)
-        return self.block_sep().join([b for b in (first, second, third) if b])
+        third = self._fmt.block(third)
+        return self._fmt.block_sep().join([b for b in (first, second, third) if b])
 
     def render_misc(self, misc, context=None, history=None):
         author    = self.render_author(misc.author) if misc.author else None
@@ -250,20 +291,20 @@ class Style(crosstex.style.Style):
         second = ''
         third = ''
         if author:
-            first = self.block(crosstex.style.punctuate(author, '.', ''))
+            first = self._fmt.block(crosstex.style.punctuate(author, '.', ''))
         if title:
-            second = self.block(crosstex.style.punctuate(title, '.', ''))
+            second = self._fmt.block(crosstex.style.punctuate(title, '.', ''))
         if howpub:
             third += howpub
         if booktitle:
-            third = crosstex.style.punctuate(third, ',', ' ') + self.emph(booktitle)
+            third = crosstex.style.punctuate(third, ',', ' ') + self._fmt.emph(booktitle)
         if address:
             third = crosstex.style.punctuate(third, ',', ' ') + address
         if year:
             third = crosstex.style.punctuate(third, ',', ' ') + year
         third = crosstex.style.punctuate(third, '.', '')
-        third = self.block(third)
-        return self.block_sep().join([b for b in (first, second, third) if b])
+        third = self._fmt.block(third)
+        return self._fmt.block_sep().join([b for b in (first, second, third) if b])
 
     def render_techreport(self, techreport, context=None, history=None):
         author  = self.render_author(techreport.author)
@@ -277,9 +318,9 @@ class Style(crosstex.style.Style):
         second = ''
         third = ''
         if author:
-            first = self.block(crosstex.style.punctuate(author, '.', ''))
+            first = self._fmt.block(crosstex.style.punctuate(author, '.', ''))
         if title:
-            second = self.block(crosstex.style.punctuate(title, '.', ''))
+            second = self._fmt.block(crosstex.style.punctuate(title, '.', ''))
         if insti:
             third = insti
         if address:
@@ -293,8 +334,8 @@ class Style(crosstex.style.Style):
         if year:
             third = crosstex.style.punctuate(third, ',', ' ') + year
         third = crosstex.style.punctuate(third, '.', '')
-        third = self.block(third)
-        return self.block_sep().join([b for b in (first, second, third) if b])
+        third = self._fmt.block(third)
+        return self._fmt.block_sep().join([b for b in (first, second, third) if b])
 
     def render_url(self, url, context=None, history=None):
         author = self.render_author(url.author) if url.author else None
@@ -307,14 +348,14 @@ class Style(crosstex.style.Style):
         second = ''
         third = ''
         if author:
-            first = self.block(crosstex.style.punctuate(author, '.', ''))
+            first = self._fmt.block(crosstex.style.punctuate(author, '.', ''))
         if title:
-            second = self.block(crosstex.style.punctuate(title, '.', ''))
+            second = self._fmt.block(crosstex.style.punctuate(title, '.', ''))
         if url:
             third = link
         if month and day and year:
-            third = self.block(crosstex.style.punctuate(third, '.', ''))
+            third = self._fmt.block(crosstex.style.punctuate(third, '.', ''))
             third += 'Accessed ' + month + ' ' + day + ', ' + year
-        third = self.block(crosstex.style.punctuate(third, '.', ''))
-        third = self.block(third)
-        return self.block_sep().join([b for b in (first, second, third) if b])
+        third = self._fmt.block(crosstex.style.punctuate(third, '.', ''))
+        third = self._fmt.block(third)
+        return self._fmt.block_sep().join([b for b in (first, second, third) if b])

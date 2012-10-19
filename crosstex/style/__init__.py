@@ -16,7 +16,7 @@ class Style(object):
     def formats(cls):
         return set([])
 
-    def __init__(self, flags=None, titlephrases=None, titlesmalls=None):
+    def __init__(self, fmt, flags, db):
         pass
 
     def sort_key(self, citation, fields=None):
@@ -25,6 +25,10 @@ class Style(object):
 
     def render(self, citations):
         '''Render the list of (key, obj) citations'''
+        raise NotImplementedError()
+
+    def render_one(self, citation):
+        '''Render one (key, obj) citation'''
         raise NotImplementedError()
 
     def _callback(self, kind):
@@ -47,7 +51,7 @@ def punctuate(string, punctuation='', tail=' '):
     if string and not (string.endswith('?') or string.endswith('!') or string.endswith(':') or string.endswith('--') or string.endswith(punctuation)):
         string += punctuation
     if string or end:
-        end += tail
+        end = end.strip() + tail
     return string + end
 
 ################################# Format Names #################################
