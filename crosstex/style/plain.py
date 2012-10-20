@@ -5,6 +5,9 @@ import crosstex.style
 
 class PlainBbl(object):
 
+    def __init__(self, style):
+        self._style = style
+
     def header(self, digits):
         return '\\newcommand{\etalchar}[1]{$^{#1}$}\n' + \
                '\\begin{thebibliography}{%s}\n' % ('0' * digits)
@@ -12,8 +15,17 @@ class PlainBbl(object):
     def footer(self):
         return '\n\end{thebibliography}\n'
 
-    def item(self, key, rendered_obj):
-        return '\n' + ('\\bibitem{%s}\n' % key) + rendered_obj + '\n'
+    def item(self, key, rendered_obj, author):
+        cite_by = self._style._options.get('cite-by', 'style')
+        if cite_by in ('style', 'number'):
+            label = ''
+        elif cite_by == 'initials':
+            label = '[%s]' % crosstex.style.label_initials_list(author)
+        elif cite_by == 'fullname':
+            label = '[%s]' % crosstex.style.label_fullnames_list(author)
+        else:
+            label = ''
+        return '\n' + ('\\bibitem%s{%s}\n' % (label, key)) + rendered_obj + '\n'
 
     def block(self, text):
         return text.strip()
@@ -27,13 +39,16 @@ class PlainBbl(object):
 
 class PlainTxt(object):
 
+    def __init__(self, style):
+        self._style = style
+
     def header(self, digits):
         return ''
 
     def footer(self):
         return ''
 
-    def item(self, key, rendered_obj):
+    def item(self, key, rendered_obj, author):
         return rendered_obj + '\n'
 
     def block(self, text):
@@ -55,12 +70,13 @@ class Style(crosstex.style.Style):
     def formats(cls):
         return set(Style.formatters.keys())
 
-    def __init__(self, fmt, flags, db):
+    def __init__(self, fmt, flags, options, db):
         fmtr = Style.formatters.get(fmt, None)
         assert fmtr
-        self._fmt = fmtr()
+        self._fmt = fmtr(self)
         self._db = db
         self._flags = flags or set([])
+        self._options = options or {}
 
     def sort_key(self, citation, fields=None):
         if fields is not None: # XXX
@@ -92,7 +108,7 @@ class Style(crosstex.style.Style):
             if cb is None:
                 raise crosstex.style.UnsupportedCitation(obj.kind)
             item = cb(obj)
-            bib += self._fmt.item(cite, item)
+            bib += self._fmt.item(cite, item, [a.name.value if hasattr(a, 'name') else a.value for a in obj.author])
         bib += self._fmt.footer()
         return bib
 
@@ -102,7 +118,7 @@ class Style(crosstex.style.Style):
         if cb is None:
             raise crosstex.style.UnsupportedCitation(obj.kind)
         item = cb(obj)
-        return self._fmt.item(cite, item)
+        return self._fmt.item(cite, item, [a.name.value if hasattr(a, 'name') else a.value for a in obj.author])
 
     # Stuff for rendering
 

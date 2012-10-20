@@ -332,6 +332,7 @@ class CrossTeX(object):
         for p in xtx_path or []:
             self._db.append_path(p)
         self._flags = set([])
+        self._options = {}
         self._style = None
 
     def add_in(self):
@@ -353,11 +354,14 @@ class CrossTeX(object):
     def set_titlecase(self, case):
         self._flags.add('titlecase-' + case)
 
-    def set_style(self, fmt, style):
+    def set_style(self, fmt, style, cite_by):
         if fmt == 'bib':
             raise CrossTeXError('CrossTeX currently doesn\'t write bib files.') # XXX
         if fmt == 'xtx':
             raise CrossTeXError('CrossTeX currently doesn\'t write xtx files.') # XXX
+        if cite_by not in ('number', 'initials', 'fullname', 'style'):
+            raise CrossTeXError('Unknown label style %r.' % cite_by)
+        self._options['cite-by'] = cite_by
         try:
             stylemod = importlib.import_module('crosstex.style.' + style)
             if not hasattr(stylemod, 'Style'):
@@ -367,7 +371,7 @@ class CrossTeX(object):
             raise CrossTeXError('Could not import style %r' % style)
         if fmt not in styleclass.formats():
             raise CrossTeXError('Style %r does not support format %r' % (style, fmt))
-        self._style = styleclass(fmt, self._flags, self._db)
+        self._style = styleclass(fmt, self._flags, self._options, self._db)
 
     def parse(self, xtxname):
         self._db.parse_file(xtxname)

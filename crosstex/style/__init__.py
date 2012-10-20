@@ -16,7 +16,7 @@ class Style(object):
     def formats(cls):
         return set([])
 
-    def __init__(self, fmt, flags, db):
+    def __init__(self, fmt, flags, options, db):
         pass
 
     def sort_key(self, citation, fields=None):
@@ -420,3 +420,29 @@ def title_lowercase(title, lowerphrases):
         if not char.isalnum() and char not in '_\\':
             incommand = False
     return newtitle
+
+################################# Label Makers #################################
+
+def label_initials_list(authors):
+    value = ''
+    if len(authors) == 1:
+        value = name_last_initials(authors[0], 3)
+    elif len(authors) <= 4:
+        value += ''.join([name_last_initials(a, 1) for a in authors])
+    else:
+        value += ''.join([name_last_initials(a, 1) for a in authors[:4]])
+        value += '{\etalchar{+}}'
+    return value
+
+def label_fullnames_list(authors):
+    value = ''
+    if len(authors) == 2:
+        (fnames1, mnames1, lnames1, snames1) = break_name(authors[0])
+        (fnames2, mnames2, lnames2, snames2) = break_name(authors[1])
+        value = ' '.join(mnames1 + lnames1) + ' \& ' + ' '.join(mnames2 + lnames2)
+    elif authors:
+        (fnames1, mnames1, lnames1, snames1) = break_name(authors[0])
+        value = ' '.join(mnames1 + lnames1)
+        if len(authors) > 2:
+            value += ' et al.'
+        return value

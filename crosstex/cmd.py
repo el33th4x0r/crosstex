@@ -22,12 +22,6 @@ parser = argparse.ArgumentParser(prog='crosstex',
 #                    help='After parsing the bibliography, dump a list of all '
 #                         'objects of the type specified, or, with "file", print '
 #                         'a list of files processed. XXX: ignored')
-#parser.add_argument('--cite-by', metavar='CITE_BY', default='style',
-#                    help='With "number", use numeric labels such as [1]. With '
-#                         '"initials", use labels based on author last-names such '
-#                         'as [SBRD04b]. With "fullname", use labels based on '
-#                         'author names such as [Sirer et al. 2004]. With '
-#                         '"style", use the style default. XXX:ignored')
 #parser.add_argument('-s', '--sort', metavar='FIELD', action='append',
 #                    help='Sort by specified field. Multiple sort orders are '
 #                         'applied in the order specified, e.g. "-s year -s '
@@ -94,6 +88,12 @@ parser.add_argument('-d', '--dir', metavar='DIR', action='append', dest='dirs',
                          'from last specified to first.')
 parser.add_argument('--cite', metavar='CITE', action='append',
                     help='Cite a key exactly as with the \cite LaTeX command.')
+parser.add_argument('--cite-by', metavar='CITE_BY', default='style',
+                    help='With "number", use numeric labels such as [1]. With '
+                         '"initials", use labels based on author last-names such '
+                         'as [SBRD04b]. With "fullname", use labels based on '
+                         'author names such as [Sirer et al. 2004]. With '
+                         '"style", use the style default.')
 parser.add_argument('--style', metavar='STYLE', default='plain',
                     help='Use a standard style such as plain, unsrt, abbrv, '
                          'full, or alpha. Options set by the style may be '
@@ -144,7 +144,7 @@ def main(argv):
             xtx.add_proceedings()
         for s in args.short or []:
             xtx.add_short(s)
-        xtx.set_style(args.fmt, args.style)
+        xtx.set_style(args.fmt, args.style, args.cite_by)
         for f in reversed(args.files):
             xtx.parse(f)
         # We'll use this check later
