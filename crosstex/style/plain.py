@@ -5,9 +5,9 @@ import crosstex.style
 
 class PlainBbl(object):
 
-    def header(self, digits):
+    def header(self, longest):
         return '\\newcommand{\etalchar}[1]{$^{#1}$}\n' + \
-               '\\begin{thebibliography}{%s}\n' % ('0' * digits)
+               '\\begin{thebibliography}{%s}\n' % longest
 
     def footer(self):
         return '\n\end{thebibliography}\n'
@@ -29,7 +29,7 @@ class PlainBbl(object):
 
 class PlainTxt(object):
 
-    def header(self, digits):
+    def header(self, longest):
         return ''
 
     def footer(self):
@@ -89,16 +89,20 @@ class Style(crosstex.style.Style):
 
     def render(self, citations):
         digits = int(math.log10(len(citations))) + 1 if citations else 1
-        bib = self._fmt.header(digits)
         cite_by = self._options.get('cite-by', 'style')
         if cite_by in ('style', 'number'):
+            longest = '0' * digits
             labels = [''] * len(citations)
         elif cite_by == 'initials':
             labels = crosstex.style.label_generate_initials(citations)
+            longest = max([(len(l), l) for l in labels])[1]
         elif cite_by == 'fullname':
             labels = crosstex.style.label_generate_fullnames(citations)
+            longest = max([(len(l), l) for l in labels])[1]
         else:
+            longest = '0' * digits
             labels = [''] * len(citations)
+        bib = self._fmt.header(longest)
         for (cite, obj), label in zip(citations, labels):
             cb = self._callback(obj.kind)
             if cb is None:
