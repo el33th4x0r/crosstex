@@ -1,4 +1,9 @@
+import collections
+import itertools
 import re
+
+import crosstex
+import crosstex.style
 
 
 class UnsupportedCitation(Exception):
@@ -25,10 +30,6 @@ class Style(object):
 
     def render(self, citations):
         '''Render the list of (key, obj) citations'''
-        raise NotImplementedError()
-
-    def render_one(self, citation):
-        '''Render one (key, obj) citation'''
         raise NotImplementedError()
 
     def _callback(self, kind):
@@ -423,7 +424,7 @@ def title_lowercase(title, lowerphrases):
 
 ################################# Label Makers #################################
 
-def label_initials_list(authors):
+def label_initials(authors):
     value = ''
     if len(authors) == 1:
         value = name_last_initials(authors[0], 3)
@@ -434,7 +435,7 @@ def label_initials_list(authors):
         value += '{\etalchar{+}}'
     return value
 
-def label_fullnames_list(authors):
+def label_fullnames(authors):
     value = ''
     if len(authors) == 2:
         (fnames1, mnames1, lnames1, snames1) = break_name(authors[0])
@@ -446,3 +447,31 @@ def label_fullnames_list(authors):
         if len(authors) > 2:
             value += ' et al.'
         return value
+
+def label_generate_initials(citations):
+    by_label = collections.defaultdict(list)
+    for cite, obj in citations:
+        author = [a.name.value if hasattr(a, 'name') else a.value for a in obj.author]
+        year = getattr(obj, 'year', None)
+        label = crosstex.style.label_initials(author)
+        if year:
+            if isinstance(year, crosstex.parse.Value):
+                label += '%i' % (year.value % 100)
+            else:
+                label += '%i' % (year % 100)
+        by_label[label].append(cite)
+    by_cite = {}
+    for label, citelist in by_label.iteritems():
+        suffixes = itertools.repeat('')
+        if len(citelist) > 1:
+            alpha = ['', ''] + list('abcdefghijklmnopqrstuvwxyz')
+            suffixes = itertools.imap(lambda y: ''.join(y), itertools.combinations(alpha, 3))
+        try:
+            for suffix, cite in itertools.izip(suffixes, citelist):
+                by_cite[cite] = label + suffix
+        except StopIteration:
+            raise crosstex.CrossTeXError('Way too many citations with the same author initials in the same year')
+    return [by_cite[c] for c, o in citations]
+
+def label_generate_fullnames(citations):
+    assert False # XXX

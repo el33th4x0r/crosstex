@@ -5,9 +5,6 @@ import crosstex.style
 
 class PlainBbl(object):
 
-    def __init__(self, style):
-        self._style = style
-
     def header(self, digits):
         return '\\newcommand{\etalchar}[1]{$^{#1}$}\n' + \
                '\\begin{thebibliography}{%s}\n' % ('0' * digits)
@@ -15,16 +12,9 @@ class PlainBbl(object):
     def footer(self):
         return '\n\end{thebibliography}\n'
 
-    def item(self, key, rendered_obj, author):
-        cite_by = self._style._options.get('cite-by', 'style')
-        if cite_by in ('style', 'number'):
-            label = ''
-        elif cite_by == 'initials':
-            label = '[%s]' % crosstex.style.label_initials_list(author)
-        elif cite_by == 'fullname':
-            label = '[%s]' % crosstex.style.label_fullnames_list(author)
-        else:
-            label = ''
+    def item(self, key, label, rendered_obj):
+        if label:
+            label = '[%s]' % label
         return '\n' + ('\\bibitem%s{%s}\n' % (label, key)) + rendered_obj + '\n'
 
     def block(self, text):
@@ -39,16 +29,13 @@ class PlainBbl(object):
 
 class PlainTxt(object):
 
-    def __init__(self, style):
-        self._style = style
-
     def header(self, digits):
         return ''
 
     def footer(self):
         return ''
 
-    def item(self, key, rendered_obj, author):
+    def item(self, key, label, rendered_obj):
         return rendered_obj + '\n'
 
     def block(self, text):
@@ -73,7 +60,7 @@ class Style(crosstex.style.Style):
     def __init__(self, fmt, flags, options, db):
         fmtr = Style.formatters.get(fmt, None)
         assert fmtr
-        self._fmt = fmtr(self)
+        self._fmt = fmtr()
         self._db = db
         self._flags = flags or set([])
         self._options = options or {}
@@ -103,22 +90,23 @@ class Style(crosstex.style.Style):
     def render(self, citations):
         digits = int(math.log10(len(citations))) + 1 if citations else 1
         bib = self._fmt.header(digits)
-        for cite, obj in citations:
+        cite_by = self._options.get('cite-by', 'style')
+        if cite_by in ('style', 'number'):
+            labels = [''] * len(citations)
+        elif cite_by == 'initials':
+            labels = crosstex.style.label_generate_initials(citations)
+        elif cite_by == 'fullname':
+            labels = crosstex.style.label_generate_fullnames(citations)
+        else:
+            labels = [''] * len(citations)
+        for (cite, obj), label in zip(citations, labels):
             cb = self._callback(obj.kind)
             if cb is None:
                 raise crosstex.style.UnsupportedCitation(obj.kind)
             item = cb(obj)
-            bib += self._fmt.item(cite, item, [a.name.value if hasattr(a, 'name') else a.value for a in obj.author])
+            bib += self._fmt.item(cite, label, item)
         bib += self._fmt.footer()
         return bib
-
-    def render_one(self, citation):
-        cite, obj = citation
-        cb = self._callback(obj.kind)
-        if cb is None:
-            raise crosstex.style.UnsupportedCitation(obj.kind)
-        item = cb(obj)
-        return self._fmt.item(cite, item, [a.name.value if hasattr(a, 'name') else a.value for a in obj.author])
 
     # Stuff for rendering
 

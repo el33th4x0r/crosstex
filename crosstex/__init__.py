@@ -394,6 +394,3 @@ class CrossTeX(object):
 
     def render(self, citations):
         return self._style.render(citations)
-
-    def render_one(self, citation):
-        return self._style.render_one(citation)
