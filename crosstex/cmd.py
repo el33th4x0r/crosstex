@@ -165,6 +165,7 @@ def main(argv):
         citeable = xtx.sort(citeable)
         try:
             rendered = xtx.render(citeable)
+            rendered = rendered.encode('utf8')
         except crosstex.style.UnsupportedCitation as e:
             logger.error('Style does not support citations for %s' % e.citetype)
             return 1

@@ -29,7 +29,7 @@ class Field(object):
            not (self.iterable and isinstance(value, collections.Iterable) and
                 all([isinstance(v, self.types) for v in value])):
             raise TypeError('Field %s does not allow type %s' %
-                            (self.name, str(type(value))))
+                            (self.name, unicode(type(value))))
         setattr(obj, '_' + self.name, value)
 
 class ObjectMeta(type):
@@ -46,7 +46,7 @@ class ObjectMeta(type):
                 allowed.add(attr)
                 if value.required:
                     required.add(attr)
-                if isinstance(value.alternates, str):
+                if isinstance(value.alternates, unicode):
                     alternates[attr] = value.alternates
                 elif isinstance(value.alternates, collections.Iterable):
                     assert all([isinstance(a, str) for a in value.alternates])

@@ -47,7 +47,7 @@ class Constraint(object):
                     values = constraint[0].split('-')
                 else:
                     field = 'year'
-                    values = [str(values)]
+                    values = [unicode(values)]
             else:
                 field = constraint[0]
                 values = constraint[1].split('-')
@@ -69,14 +69,14 @@ class Constraint(object):
             tocheck = getattr(entry, field)
             strings = set([])
             if isinstance(tocheck, crosstex.parse.Value):
-                strings.add(str(tocheck.value).lower())
+                strings.add(unicode(tocheck.value).lower())
             elif isinstance(tocheck, crosstex.objects.string):
-                strings.add(str(tocheck.name.value).lower())
-                strings.add(str(tocheck.shortname.value).lower())
-                strings.add(str(tocheck.longname.value).lower())
+                strings.add(unicode(tocheck.name.value).lower())
+                strings.add(unicode(tocheck.shortname.value).lower())
+                strings.add(unicode(tocheck.longname.value).lower())
             elif field == 'author' and isinstance(tocheck, list):
                 for a in tocheck:
-                    strings.add(str(a.value).lower())
+                    strings.add(unicode(a.value).lower())
             strings = tuple(strings)
             for value in values:
                 v = value.lower()

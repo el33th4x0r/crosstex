@@ -36,7 +36,7 @@ def create_value(_file, line, value, kind=None):
             value = int(value)
             kind = 'number'
         except ValueError:
-            value = str(value)
+            value = unicode(value)
             kind = 'string'
     return Value(_file, line, kind, value)
 
@@ -179,7 +179,7 @@ class Parser:
         logger.debug('Processing database %s.' % path)
         db = XTXFileInfo()
         stream = open(path)
-        contents = stream.read()
+        contents = stream.read().decode('utf8')
         if contents:
             lexer = ply.lex.lex(reflags=re.UNICODE)
             lexer.path = path
