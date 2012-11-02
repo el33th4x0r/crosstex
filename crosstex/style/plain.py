@@ -189,7 +189,7 @@ class Style(crosstex.style.Style):
             return self.render_str(booktitle, 'workshop')
         elif isinstance(booktitle, crosstex.objects.conference):
             return self.render_str(booktitle, 'conference')
-        elif isinstnace(booktitle, crosstex.parse.Value):
+        elif isinstance(booktitle, crosstex.parse.Value):
             return self.render_str(booktitle, 'booktitle')
 
     def render_journal(self, journal, context=None, history=None):
