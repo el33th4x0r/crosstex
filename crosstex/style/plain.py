@@ -164,12 +164,13 @@ class Style(crosstex.style.Style):
         return string
 
     def render_author(self, author, context=None, history=None):
-        author  = [a.name.value if hasattr(a, 'name') else a.value for a in author]
+        author = [a.name.value if hasattr(a, 'name') else a.value for a in author]
         if 'short-author' in self._flags:
-            author  = crosstex.style.names_shortfirst_last(author)
+            author = crosstex.style.names_shortfirst_last(author)
         else:
-            author  = crosstex.style.names_first_last(author)
-        author  = crosstex.style.list_comma_and(author)
+            author = crosstex.style.names_first_last(author)
+        author = [a.strip('{}') for a in author]
+        author = crosstex.style.list_comma_and(author)
         return author
 
     def render_title(self, title, context=None, history=None):
