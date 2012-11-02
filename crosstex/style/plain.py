@@ -5,6 +5,8 @@ import crosstex.style
 
 class PlainBbl(object):
 
+    etalchar = '{\etalchar{+}}'
+
     def header(self, longest):
         return '\\newcommand{\etalchar}[1]{$^{#1}$}\n' + \
                '\\begin{thebibliography}{%s}\n' % longest
@@ -29,6 +31,8 @@ class PlainBbl(object):
 
 class PlainTxt(object):
 
+    etalchar = '+'
+
     def header(self, longest):
         return ''
 
@@ -48,10 +52,36 @@ class PlainTxt(object):
         return text.strip()
 
 
+class PlainHtml(object):
+
+    etalchar = '+'
+
+    def header(self, longest):
+        return '<table>'
+
+    def footer(self):
+        return '</table>'
+
+    def item(self, key, label, rendered_obj):
+        return '<tr class="xtxentry"><td class="xtxlabel">' \
+               + '<a name="xtx:%s">%s</a></td><td class="xtxtext">' % (label, label) \
+               + rendered_obj + '</td></tr>\n'
+
+    def block(self, text):
+        return '<span>' + text.strip() + '</span>'
+
+    def block_sep(self):
+        return '\n'
+
+    def emph(self, text):
+        return '<em>' + text.strip() + '</em>'
+
+
 class Style(crosstex.style.Style):
 
     formatters = {'bbl': PlainBbl,
-                  'txt': PlainTxt}
+                  'txt': PlainTxt,
+                  'html': PlainHtml}
 
     @classmethod
     def formats(cls):
@@ -102,15 +132,24 @@ class Style(crosstex.style.Style):
         else:
             longest = '0' * digits
             labels = [''] * len(citations)
+        labels = [l.format(etalchar=self._fmt.etalchar) for l in labels]
         bib = self._fmt.header(longest)
+        label_dict = {}
         for (cite, obj), label in zip(citations, labels):
             cb = self._callback(obj.kind)
+            label_dict[cite] = label
             if cb is None:
                 raise crosstex.style.UnsupportedCitation(obj.kind)
             item = cb(obj)
             bib += self._fmt.item(cite, label, item)
         bib += self._fmt.footer()
-        return bib
+        return label_dict, bib
+
+    def _callback(self, kind):
+        if not hasattr(self, 'render_' + kind):
+            return None
+        else:
+            return getattr(self, 'render_' + kind)
 
     # Stuff for rendering
 

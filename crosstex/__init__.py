@@ -393,4 +393,7 @@ class CrossTeX(object):
         return citations
 
     def render(self, citations):
+        return self._style.render(citations)[1]
+
+    def render_with_labels_dict(self, citations):
         return self._style.render(citations)

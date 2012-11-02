@@ -32,12 +32,6 @@ class Style(object):
         '''Render the list of (key, obj) citations'''
         raise NotImplementedError()
 
-    def _callback(self, kind):
-        if not hasattr(self, 'render_' + kind):
-            return None
-        else:
-            return getattr(self, 'render_' + kind)
-
 ################################### Utilities ##################################
 
 _endre = re.compile(r"(\\end\{[^}]*\}|['\s}])*$")
@@ -432,7 +426,7 @@ def label_initials(authors):
         value += ''.join([name_last_initials(a, 1) for a in authors])
     else:
         value += ''.join([name_last_initials(a, 1) for a in authors[:4]])
-        value += '{\etalchar{+}}'
+        value += '{etalchar}'
     return value
 
 def label_fullnames(authors):
@@ -456,9 +450,9 @@ def label_generate_initials(citations):
         label = crosstex.style.label_initials(author)
         if year:
             if isinstance(year, crosstex.parse.Value):
-                label += '%i' % (year.value % 100)
+                label += '%02i' % (year.value % 100)
             else:
-                label += '%i' % (year % 100)
+                label += '%02i' % (year % 100)
         by_label[label].append(cite)
     by_cite = {}
     for label, citelist in by_label.iteritems():
