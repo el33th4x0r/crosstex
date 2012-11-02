@@ -58,7 +58,7 @@ class PlainHtml(object):
     etalchar = '+'
 
     def header(self, longest):
-        return '<table>'
+        return '<table class="xtxlist">'
 
     def footer(self):
         return '</table>'
