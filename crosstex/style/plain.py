@@ -386,6 +386,26 @@ class Style(crosstex.style.Style):
         third = self._fmt.block(third)
         return self._fmt.block_sep().join([b for b in (first, second, third) if b])
 
+    def render_phdthesis(self, phdthesis, context=None, history=None):
+        author  = self.render_author(phdthesis.author)
+        title   = self.render_title(phdthesis.title)
+        school  = unicode(phdthesis.school.value) if phdthesis.school else None
+        year    = self.render_year(phdthesis.year)
+        first = ''
+        second = ''
+        third = 'PhD thesis'
+        if author:
+            first = self._fmt.block(crosstex.style.punctuate(author, '.', ''))
+        if title:
+            second = self._fmt.block(crosstex.style.punctuate(title, '.', ''))
+        if school:
+            third = crosstex.style.punctuate(third, ',', ' ') + school
+        if year:
+            third = crosstex.style.punctuate(third, ',', ' ') + year
+        third = crosstex.style.punctuate(third, '.', '')
+        third = self._fmt.block(third)
+        return self._fmt.block_sep().join([b for b in (first, second, third) if b])
+
     def render_url(self, url, context=None, history=None):
         author = self.render_author(url.author) if url.author else None
         title  = self.render_title(url.title) if url.title else None
