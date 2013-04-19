@@ -133,6 +133,7 @@ def main(argv):
         args = parser.parse_args()
         path = list(args.dirs or []) + \
                [os.path.join(os.path.join(os.path.expanduser('~'), '.crosstex'))] + \
+               ['/usr/local/share/crosstex'] + \
                ['/XXX']
         xtx = crosstex.CrossTeX(xtx_path=path)
         xtx.set_titlecase(args.titlecase)
