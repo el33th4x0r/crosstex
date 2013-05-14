@@ -22,16 +22,6 @@ parser = argparse.ArgumentParser(prog='crosstex',
 #                    help='After parsing the bibliography, dump a list of all '
 #                         'objects of the type specified, or, with "file", print '
 #                         'a list of files processed. XXX: ignored')
-#parser.add_argument('-s', '--sort', metavar='FIELD', action='append',
-#                    help='Sort by specified field. Multiple sort orders are '
-#                         'applied in the order specified, e.g. "-s year -s '
-#                         'author" will cause elements to be grouped primarily by '
-#                         'author and sub-grouped by year.'
-#                         ' XXX: this is currently ignored')
-#parser.add_argument('-S', '--reverse-sort', metavar='FIELD', action='append',
-#                    help='Exactly as --sort, but sort by descending field values '
-#                         'rather than ascending.'
-#                         ' XXX: this is currently ignored')
 #parser.add_argument('--no-sort', help='XXX: ignored')
 #parser.add_argument('--heading', metavar='FIELD',
 #                    help='Divide entries and create headings in bibliography by '
@@ -114,6 +104,24 @@ parser.add_argument('-f', '--format', metavar='FORMAT', dest='fmt', default='bbl
                          '"bbl", "html", "bib", or "xtx".  "bib" and "xtx" are '
                          'always available and not affected by "--style".  '
                          'Other formats are dependent upon the choice of style.')
+
+class SortAction(argparse.Action):
+    def __call__(self, parser, args, values, option_string=None):
+        s = getattr(args, 'sort', []) or []
+        reverse = option_string in ('-S', '--reverse-sort')
+        s.append((values, reverse))
+        setattr(args, 'sort', s)
+parser.add_argument('-s', '--sort', metavar='FIELD', dest='sort', action=SortAction,
+                    help='Sort by specified field. Multiple sort orders are '
+                         'applied in the order specified, e.g. "-s year -s '
+                         'author" will cause elements to be grouped primarily by '
+                         'author and sub-grouped by year.'
+                         ' XXX: this is currently ignored')
+parser.add_argument('-S', '--reverse-sort', metavar='FIELD', dest='sort', action=SortAction,
+                    help='Exactly as --sort, but sort by descending field values '
+                         'rather than ascending.'
+                         ' XXX: this is currently ignored')
+
 parser.add_argument('-o', '--output', metavar='FILE',
                     help='Write the bibliography to the specified output file.')
 parser.add_argument('--add-in', action='store_const', const=True, default=False,
@@ -163,7 +171,7 @@ def main(argv):
         for c in [c for c, o in objects if not o or not o.citeable]:
             logger.warning('Cannot find object for citation %r' % c)
         citeable = [(c, o) for c, o in objects if o and o.citeable]
-        citeable = xtx.sort(citeable)
+        citeable = xtx.sort(citeable, args.sort)
         try:
             rendered = xtx.render(citeable)
             rendered = rendered.encode('utf8')

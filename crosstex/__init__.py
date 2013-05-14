@@ -16,12 +16,12 @@ logging.basicConfig(format='%(message)s')
 
 import copy
 import importlib
+import operator
 import re
 
 import crosstex.objects
 import crosstex.parse
 
-import inspect # XXX
 logger = logging.getLogger('crosstex')
 
 class UNIQUE(object): pass
@@ -385,11 +385,18 @@ class CrossTeX(object):
     def lookup(self, key):
         return self._db.lookup(key)
 
-    def sort(self, citations):
+    def sort(self, citations, fields=None):
         if self._style is None:
             raise CrossTeXError('Cannot sort citations because no style is set')
+        fields = fields or []
         citations = list(citations)
-        citations.sort(key=self._style.sort_key)
+        citations = sorted(citations, key=operator.itemgetter(0))
+        citations = sorted(citations, key=self._style.sort_key)
+        for field, reverse in reversed(fields):
+            def sort_key(x):
+                k, o = x
+                return self._style.get_field(o, field)
+            citations = sorted(citations, key=sort_key, reverse=reverse)
         return citations
 
     def render(self, citations):

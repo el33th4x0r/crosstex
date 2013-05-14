@@ -96,15 +96,11 @@ class Style(crosstex.style.Style):
         self._flags = flags or set([])
         self._options = options or {}
 
-    def sort_key(self, citation, fields=None):
-        if fields is not None: # XXX
-            raise NotImplementedError()
+    def sort_key(self, citation):
         cite, obj = citation
         author = None
         if 'author' in obj.allowed and obj.author:
-            author = [a.name.value if hasattr(a, 'name') else a.value for a in obj.author]
-            author = [crosstex.style.name_sort_last_first(a) for a in author]
-            author = tuple(author)
+            author = self.get_field(obj, 'author')
         title = None
         if 'title' in obj.allowed and obj.title:
             title = obj.title.value
@@ -117,6 +113,17 @@ class Style(crosstex.style.Style):
         if 'year' in obj.allowed and obj.year:
             when = unicode(obj.year.value)
         return author, title, where, when
+
+    def get_field(self, obj, field):
+        if field == 'author':
+            author = [a.name.value if hasattr(a, 'name') else a.value for a in obj.author]
+            author = [crosstex.style.name_sort_last_first(a) for a in author]
+            author = tuple(author)
+            return author
+        attr = getattr(obj, field, None)
+        if attr is not None:
+            return attr.name.value if hasattr(attr, 'name') else attr.value
+        return None
 
     def render(self, citations):
         digits = int(math.log10(len(citations))) + 1 if citations else 1
