@@ -6,6 +6,12 @@ import crosstex
 import crosstex.style
 
 
+class Heading(object):
+
+    def __init__(self, name):
+        self.name = name
+
+
 class UnsupportedCitation(Exception):
 
     def __init__(self, citetype):

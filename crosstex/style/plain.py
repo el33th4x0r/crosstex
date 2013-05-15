@@ -12,6 +12,9 @@ class PlainBbl(object):
         return '\\newcommand{\etalchar}[1]{$^{#1}$}\n' + \
                '\\begin{thebibliography}{%s}\n' % longest
 
+    def heading(self, name, first):
+        return ''
+
     def footer(self):
         return '\n\end{thebibliography}\n'
 
@@ -37,6 +40,11 @@ class PlainTxt(object):
     def header(self, longest):
         return ''
 
+    def heading(self, name, first):
+        if first:
+            return '%s\n' % name
+        return '\n%s\n' % name
+
     def footer(self):
         return ''
 
@@ -59,6 +67,9 @@ class PlainHtml(object):
 
     def header(self, longest):
         return '<table class="xtxlist">'
+
+    def heading(self, name, first):
+        return '\n<h1>%s<h1>\n' % name
 
     def footer(self):
         return '</table>'
@@ -126,11 +137,30 @@ class Style(crosstex.style.Style):
         return None
 
     def render(self, citations):
+        label_dict, longest = self.get_label_dict(citations)
+        bib = self._fmt.header(longest)
+        for citation in citations:
+            if isinstance(citation, crosstex.style.Heading):
+                bib += self._fmt.heading(citation.name, not bool(bib))
+                continue
+            cite, obj = citation
+            cb = self._callback(obj.kind)
+            if cb is None:
+                raise crosstex.style.UnsupportedCitation(obj.kind)
+            item = cb(obj)
+            label = label_dict[cite]
+            bib += self._fmt.item(cite, label, item)
+        bib += self._fmt.footer()
+        return label_dict, bib
+
+    def get_label_dict(self, citations):
+        citations = [c for c in citations
+                     if not isinstance(c, crosstex.style.Heading)]
         digits = int(math.log10(len(citations))) + 1 if citations else 1
         cite_by = self._options.get('cite-by', 'style')
         if cite_by in ('style', 'number'):
-            longest = '0' * digits
             labels = [''] * len(citations)
+            longest = '0' * digits
         elif cite_by == 'initials':
             labels = crosstex.style.label_generate_initials(citations)
             longest = max([(len(l), l) for l in labels])[1]
@@ -138,20 +168,11 @@ class Style(crosstex.style.Style):
             labels = crosstex.style.label_generate_fullnames(citations)
             longest = max([(len(l), l) for l in labels])[1]
         else:
-            longest = '0' * digits
             labels = [''] * len(citations)
+            longest = '0' * digits
         labels = [l.format(etalchar=self._fmt.etalchar) for l in labels]
-        bib = self._fmt.header(longest)
-        label_dict = {}
-        for (cite, obj), label in zip(citations, labels):
-            cb = self._callback(obj.kind)
-            label_dict[cite] = label
-            if cb is None:
-                raise crosstex.style.UnsupportedCitation(obj.kind)
-            item = cb(obj)
-            bib += self._fmt.item(cite, label, item)
-        bib += self._fmt.footer()
-        return label_dict, bib
+        label_dict = dict(zip([c for c, o in citations], labels))
+        return label_dict, longest
 
     def _callback(self, kind):
         if not hasattr(self, 'render_' + kind):

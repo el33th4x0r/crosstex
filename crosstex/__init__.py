@@ -16,6 +16,7 @@ logging.basicConfig(format='%(message)s')
 
 import copy
 import importlib
+import itertools
 import operator
 import re
 
@@ -398,6 +399,18 @@ class CrossTeX(object):
                 return self._style.get_field(o, field)
             citations = sorted(citations, key=sort_key, reverse=reverse)
         return citations
+
+    def heading(self, citations, field, reverse=False):
+        def sort_key(x):
+            k, o = x
+            return self._style.get_field(o, field)
+        citations = sorted(citations, key=sort_key, reverse=reverse)
+        new_citations = []
+        for heading, group in itertools.groupby(citations, sort_key):
+            if heading is not None:
+                new_citations.append(crosstex.style.Heading(heading))
+            new_citations += list(group)
+        return new_citations
 
     def render(self, citations):
         return self._style.render(citations)[1]
