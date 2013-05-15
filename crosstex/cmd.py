@@ -167,16 +167,29 @@ def main(argv):
                  xtx.aux_citations() and os.path.splitext(args.files[-1])[1] == ''
         # Get a list of things to cite
         cite = []
+        warn_uncitable = True
         if args.cite:
             cite = args.cite
         elif is_aux:
             cite = xtx.aux_citations()
         else:
+            warn_uncitable = False
             cite = xtx.all_citations()
         objects = [(c, xtx.lookup(c)) for c in cite]
-        for c in [c for c, o in objects if not o or not o.citeable]:
-            logger.warning('Cannot find object for citation %r' % c)
+        if warn_uncitable:
+            for c in [c for c, o in objects if not o or not o.citeable]:
+                logger.warning('Cannot find object for citation %r' % c)
         citeable = [(c, o) for c, o in objects if o and o.citeable]
+        unique = {}
+        for c, o in citeable:
+            if o in unique:
+                unique[o].append(c)
+            else:
+                unique[o] = [c]
+        for o, cs in unique.iteritems():
+            if len(cs) > 1:
+                cites = ', '.join(['%r' % c for c in cs])
+                logger.warning("Citations %s match to the same object; you'll see duplicates" % cites)
         citeable = xtx.sort(citeable, args.sort)
         if args.heading:
             citeable = xtx.heading(citeable, args.heading[0], args.heading[1])
