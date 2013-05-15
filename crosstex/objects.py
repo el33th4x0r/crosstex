@@ -156,6 +156,11 @@ def BookTitle(required=False):
 
 class citeableref(Object):
     citeable = CiteableTrue()
+    abstract    = Field()
+    category    = Field()
+    subcategory = Field()
+    ps  = Field()
+    pdf = Field()
 
 class article(citeableref):
     author  = Author(required=True)
