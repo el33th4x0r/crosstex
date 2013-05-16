@@ -12,11 +12,17 @@ class PlainBbl(object):
         return '\\newcommand{\etalchar}[1]{$^{#1}$}\n' + \
                '\\begin{thebibliography}{%s}\n' % longest
 
-    def heading(self, name, first):
+    def heading(self, name, sep):
         return ''
 
     def footer(self):
         return '\n\end{thebibliography}\n'
+
+    def list_begin(self):
+        return ''
+
+    def list_end(self):
+        return ''
 
     def item(self, key, label, rendered_obj):
         if label:
@@ -40,12 +46,19 @@ class PlainTxt(object):
     def header(self, longest):
         return ''
 
-    def heading(self, name, first):
-        if first:
+    def heading(self, name, sep):
+        if sep:
+            return '\n%s\n' % name
+        else:
             return '%s\n' % name
-        return '\n%s\n' % name
 
     def footer(self):
+        return ''
+
+    def list_begin(self):
+        return ''
+
+    def list_end(self):
         return ''
 
     def item(self, key, label, rendered_obj):
@@ -68,11 +81,17 @@ class PlainHtml(object):
     def header(self, longest):
         return '<table class="xtxlist">'
 
-    def heading(self, name, first):
-        return '\n<h1>%s<h1>\n' % name
+    def heading(self, name, sep):
+        return '\n<th colspan="2">%s</th>\n' % name
 
     def footer(self):
         return '</table>'
+
+    def list_begin(self):
+        return ''
+
+    def list_end(self):
+        return ''
 
     def item(self, key, label, rendered_obj):
         return '<tr class="xtxentry"><td class="xtxlabel">' \
@@ -100,7 +119,7 @@ class Style(crosstex.style.Style):
         return set(Style.formatters.keys())
 
     def __init__(self, fmt, flags, options, db):
-        fmtr = Style.formatters.get(fmt, None)
+        fmtr = self.formatters.get(fmt, None)
         assert fmtr
         self._fmt = fmtr()
         self._db = db
@@ -126,12 +145,21 @@ class Style(crosstex.style.Style):
         return author, title, where, when
 
     def get_field(self, obj, field):
+        # return or set attr
         if field == 'author':
             author = [a.name.value if hasattr(a, 'name') else a.value for a in obj.author]
             author = [crosstex.style.name_sort_last_first(a) for a in author]
             author = tuple(author)
             return author
-        attr = getattr(obj, field, None)
+        elif field == 'monthno' and not hasattr(obj, 'monthno'):
+            attr = getattr(obj, 'month', None)
+            if hasattr(attr, 'monthno'):
+                attr = attr.monthno
+            else:
+                attr = None
+        else:
+            attr = getattr(obj, field, None)
+        # do something with attr
         if attr is not None:
             return attr.name.value if hasattr(attr, 'name') else attr.value
         return None
@@ -139,9 +167,14 @@ class Style(crosstex.style.Style):
     def render(self, citations):
         label_dict, longest = self.get_label_dict(citations)
         bib = self._fmt.header(longest)
-        for citation in citations:
+        in_list = False
+        for idx, citation in enumerate(citations):
             if isinstance(citation, crosstex.style.Heading):
-                bib += self._fmt.heading(citation.name, not bool(bib))
+                if in_list:
+                    bib += self._fmt.list_end()
+                bib += self._fmt.heading(citation.name, in_list)
+                bib += self._fmt.list_begin()
+                in_list = True
                 continue
             cite, obj = citation
             cb = self._callback(obj.kind)
@@ -149,7 +182,13 @@ class Style(crosstex.style.Style):
                 raise crosstex.style.UnsupportedCitation(obj.kind)
             item = cb(obj)
             label = label_dict[cite]
+            if not in_list:
+                bib += self._fmt.list_begin()
+                in_list = True
             bib += self._fmt.item(cite, label, item)
+        if in_list:
+            in_list = False
+            bib += self._fmt.list_end()
         bib += self._fmt.footer()
         return label_dict, bib
 
