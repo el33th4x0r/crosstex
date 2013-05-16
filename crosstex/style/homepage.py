@@ -19,7 +19,7 @@ class HomepageHtml(object):
         return ''
 
     def list_begin(self):
-        return '<ul class=xtxlist>\n'
+        return '<ul class=citations>\n'
 
     def list_end(self):
         return '</ul>\n'
@@ -37,6 +37,16 @@ class HomepageHtml(object):
 
     def emph(self, text):
         return '<em>' + text.strip() + '</em>'
+
+    def URLs(self, obj):
+        links = []
+        if hasattr(obj, 'ps') and obj.ps:
+            links.append('[<a href="{0}">PS</a>]'.format(obj.ps.value))
+        if hasattr(obj, 'pdf') and obj.pdf:
+            links.append('[<a href="{0}">PDF</a>]'.format(obj.pdf.value))
+        if hasattr(obj, 'http') and obj.http:
+            links.append('[<a href="{0}">URL</a>]'.format(obj.http.value))
+        return self.block(' '.join(links), classes='urls')
 
 
 class Style(crosstex.style.plain.Style):
@@ -86,7 +96,8 @@ class Style(crosstex.style.plain.Style):
             third = crosstex.style.punctuate(third, ',', ' ') + year
         third = crosstex.style.punctuate(third, '.', '')
         third = self._fmt.block(third)
-        return self._fmt.block_sep().join([b for b in (first, second, third) if b])
+        fourth = self._fmt.URLs(article)
+        return self._fmt.block_sep().join([b for b in (first, second, third, fourth) if b])
 
     def render_book(self, book, context=None, history=None):
         author    = self.render_author(book.author)
@@ -110,7 +121,8 @@ class Style(crosstex.style.plain.Style):
             third = crosstex.style.punctuate(third, ',', ' ') + year
         third = crosstex.style.punctuate(third, '.', '')
         third = self._fmt.block(third)
-        return self._fmt.block_sep().join([b for b in (first, second, third) if b])
+        fourth = self._fmt.URLs(book)
+        return self._fmt.block_sep().join([b for b in (first, second, third, fourth) if b])
 
     def render_inproceedings(self, inproceedings, context=None, history=None):
         author    = self.render_author(inproceedings.author)
@@ -147,7 +159,8 @@ class Style(crosstex.style.plain.Style):
             third += year
         third = crosstex.style.punctuate(third, '.', '')
         third = self._fmt.block(third)
-        return self._fmt.block_sep().join([b for b in (first, second, third) if b])
+        fourth = self._fmt.URLs(inproceedings)
+        return self._fmt.block_sep().join([b for b in (first, second, third, fourth) if b])
 
     def render_misc(self, misc, context=None, history=None):
         author    = self.render_author(misc.author) if misc.author else None
@@ -173,7 +186,8 @@ class Style(crosstex.style.plain.Style):
             third = crosstex.style.punctuate(third, ',', ' ') + year
         third = crosstex.style.punctuate(third, '.', '')
         third = self._fmt.block(third)
-        return self._fmt.block_sep().join([b for b in (first, second, third) if b])
+        fourth = self._fmt.URLs(misc)
+        return self._fmt.block_sep().join([b for b in (first, second, third, fourth) if b])
 
     def render_techreport(self, techreport, context=None, history=None):
         author  = self.render_author(techreport.author)
@@ -204,7 +218,8 @@ class Style(crosstex.style.plain.Style):
             third = crosstex.style.punctuate(third, ',', ' ') + year
         third = crosstex.style.punctuate(third, '.', '')
         third = self._fmt.block(third)
-        return self._fmt.block_sep().join([b for b in (first, second, third) if b])
+        fourth = self._fmt.URLs(techreport)
+        return self._fmt.block_sep().join([b for b in (first, second, third, fourth) if b])
 
     def render_phdthesis(self, phdthesis, context=None, history=None):
         author  = self.render_author(phdthesis.author)
@@ -224,7 +239,8 @@ class Style(crosstex.style.plain.Style):
             third = crosstex.style.punctuate(third, ',', ' ') + year
         third = crosstex.style.punctuate(third, '.', '')
         third = self._fmt.block(third)
-        return self._fmt.block_sep().join([b for b in (first, second, third) if b])
+        fourth = self._fmt.URLs(phdthesis)
+        return self._fmt.block_sep().join([b for b in (first, second, third, fourth) if b])
 
     def render_url(self, url, context=None, history=None):
         author = self.render_author(url.author) if url.author else None
@@ -247,4 +263,5 @@ class Style(crosstex.style.plain.Style):
             third += 'Accessed ' + month + ' ' + day + ', ' + year
         third = self._fmt.block(crosstex.style.punctuate(third, '.', ''))
         third = self._fmt.block(third)
-        return self._fmt.block_sep().join([b for b in (first, second, third) if b])
+        fourth = self._fmt.URLs(url)
+        return self._fmt.block_sep().join([b for b in (first, second, third, fourth) if b])
