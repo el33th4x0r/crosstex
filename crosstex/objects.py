@@ -167,7 +167,7 @@ class article(citeableref):
     title   = Field(required=True)
     journal = Field(required=True, alternates=('newspaper'), types=(journal,))
     year    = Field(required=True)
-    #month   = Field(types=(month,))
+    month   = Field(types=(month,))
     volume  = Field()
     number  = Field()
     pages   = Field()
