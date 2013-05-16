@@ -236,8 +236,14 @@ class Database(object):
                         fields[f.name] = f.value
                         dupes.add(f.name)
                     elif f.name in kind.allowed:
-                        logger.warning('%s:%d: %s field not applied from conditional at %s:%d' %
-                                       (base.file, base.line, f.name, c.file, c.line))
+                        if f.value.kind == 'key':
+                            obj, conds = self._lookup(f.value.value, context)
+                            if obj != fields[f.name]:
+                                logger.warning('%s:%d: %s field not applied from conditional at %s:%d because it conflicts with other value' %
+                                               (base.file, base.line, f.name, c.file, c.line))
+                        elif fields[f.name] != value:
+                            logger.warning('%s:%d: %s field not applied from conditional at %s:%d' %
+                                           (base.file, base.line, f.name, c.file, c.line))
                 applied_conditionals.add(c)
             # This loop expands author/editor fields
             for name, value in fields.iteritems():
