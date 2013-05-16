@@ -159,8 +159,9 @@ class citeableref(Object):
     abstract    = Field()
     category    = Field()
     subcategory = Field()
-    ps  = Field()
-    pdf = Field()
+    ps   = Field()
+    pdf  = Field()
+    http = Field()
 
 class article(citeableref):
     author  = Author(required=True)
