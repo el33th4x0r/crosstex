@@ -16,12 +16,13 @@ logging.basicConfig(format='%(message)s')
 
 import copy
 import importlib
+import itertools
+import operator
 import re
 
 import crosstex.objects
 import crosstex.parse
 
-import inspect # XXX
 logger = logging.getLogger('crosstex')
 
 class UNIQUE(object): pass
@@ -235,8 +236,14 @@ class Database(object):
                         fields[f.name] = f.value
                         dupes.add(f.name)
                     elif f.name in kind.allowed:
-                        logger.warning('%s:%d: %s field not applied from conditional at %s:%d' %
-                                       (base.file, base.line, f.name, c.file, c.line))
+                        if f.value.kind == 'key':
+                            obj, conds = self._lookup(f.value.value, context)
+                            if obj != fields[f.name]:
+                                logger.warning('%s:%d: %s field not applied from conditional at %s:%d because it conflicts with other value' %
+                                               (base.file, base.line, f.name, c.file, c.line))
+                        elif fields[f.name] != value:
+                            logger.warning('%s:%d: %s field not applied from conditional at %s:%d' %
+                                           (base.file, base.line, f.name, c.file, c.line))
                 applied_conditionals.add(c)
             # This loop expands author/editor fields
             for name, value in fields.iteritems():
@@ -385,12 +392,31 @@ class CrossTeX(object):
     def lookup(self, key):
         return self._db.lookup(key)
 
-    def sort(self, citations):
+    def sort(self, citations, fields=None):
         if self._style is None:
             raise CrossTeXError('Cannot sort citations because no style is set')
+        fields = fields or []
         citations = list(citations)
-        citations.sort(key=self._style.sort_key)
+        citations = sorted(citations, key=operator.itemgetter(0))
+        citations = sorted(citations, key=self._style.sort_key)
+        for field, reverse in reversed(fields):
+            def sort_key(x):
+                k, o = x
+                return self._style.get_field(o, field)
+            citations = sorted(citations, key=sort_key, reverse=reverse)
         return citations
+
+    def heading(self, citations, field, reverse=False):
+        def sort_key(x):
+            k, o = x
+            return self._style.get_field(o, field)
+        citations = sorted(citations, key=sort_key, reverse=reverse)
+        new_citations = []
+        for heading, group in itertools.groupby(citations, sort_key):
+            if heading is not None:
+                new_citations.append(crosstex.style.Heading(heading))
+            new_citations += list(group)
+        return new_citations
 
     def render(self, citations):
         return self._style.render(citations)[1]

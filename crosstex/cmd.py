@@ -22,23 +22,7 @@ parser = argparse.ArgumentParser(prog='crosstex',
 #                    help='After parsing the bibliography, dump a list of all '
 #                         'objects of the type specified, or, with "file", print '
 #                         'a list of files processed. XXX: ignored')
-#parser.add_argument('-s', '--sort', metavar='FIELD', action='append',
-#                    help='Sort by specified field. Multiple sort orders are '
-#                         'applied in the order specified, e.g. "-s year -s '
-#                         'author" will cause elements to be grouped primarily by '
-#                         'author and sub-grouped by year.'
-#                         ' XXX: this is currently ignored')
-#parser.add_argument('-S', '--reverse-sort', metavar='FIELD', action='append',
-#                    help='Exactly as --sort, but sort by descending field values '
-#                         'rather than ascending.'
-#                         ' XXX: this is currently ignored')
 #parser.add_argument('--no-sort', help='XXX: ignored')
-#parser.add_argument('--heading', metavar='FIELD',
-#                    help='Divide entries and create headings in bibliography by '
-#                         'the value of the given field. XXX: ignored')
-#parser.add_argument('--reverse-heading', metavar='FIELD',
-#                    help='Exactly as --heading, but sort by descending field '
-#                         'values rather than ascending. XXX: ignored')
 #parser.add_argument('--capitalize', metavar='TYPE', action='append',
 #                    help='Specify any string-like object, i.e. one with name and '
 #                         'shortname fields. Strings of the specified types will '
@@ -114,6 +98,36 @@ parser.add_argument('-f', '--format', metavar='FORMAT', dest='fmt', default='bbl
                          '"bbl", "html", "bib", or "xtx".  "bib" and "xtx" are '
                          'always available and not affected by "--style".  '
                          'Other formats are dependent upon the choice of style.')
+
+class SortAction(argparse.Action):
+    def __call__(self, parser, args, values, option_string=None):
+        s = getattr(args, self.dest, []) or []
+        reverse = option_string in ('-S', '--reverse-sort')
+        s.append((values, reverse))
+        setattr(args, self.dest, s)
+parser.add_argument('-s', '--sort', metavar='FIELD', dest='sort', action=SortAction,
+                    help='Sort by specified field. Multiple sort orders are '
+                         'applied in the order specified, e.g. "-s year -s '
+                         'author" will cause elements to be grouped primarily by '
+                         'author and sub-grouped by year.'
+                         ' XXX: this is currently ignored')
+parser.add_argument('-S', '--reverse-sort', metavar='FIELD', dest='sort', action=SortAction,
+                    help='Exactly as --sort, but sort by descending field values '
+                         'rather than ascending.'
+                         ' XXX: this is currently ignored')
+
+class HeadingAction(argparse.Action):
+    def __call__(self, parser, args, values, option_string=None):
+        s = getattr(args, self.dest, None) or None
+        reverse = option_string in ('--reverse-heading',)
+        setattr(args, self.dest, (values, reverse))
+parser.add_argument('--heading', metavar='FIELD', dest='heading', action=HeadingAction,
+                    help='Divide entries and create headings in bibliography by '
+                         'the value of the given field. XXX: ignored')
+parser.add_argument('--reverse-heading', metavar='FIELD', dest='heading', action=HeadingAction,
+                    help='Exactly as --heading, but sort by descending field '
+                         'values rather than ascending. XXX: ignored')
+
 parser.add_argument('-o', '--output', metavar='FILE',
                     help='Write the bibliography to the specified output file.')
 parser.add_argument('--add-in', action='store_const', const=True, default=False,
@@ -153,17 +167,32 @@ def main(argv):
                  xtx.aux_citations() and os.path.splitext(args.files[-1])[1] == ''
         # Get a list of things to cite
         cite = []
+        warn_uncitable = True
         if args.cite:
             cite = args.cite
         elif is_aux:
             cite = xtx.aux_citations()
         else:
+            warn_uncitable = False
             cite = xtx.all_citations()
         objects = [(c, xtx.lookup(c)) for c in cite]
-        for c in [c for c, o in objects if not o or not o.citeable]:
-            logger.warning('Cannot find object for citation %r' % c)
+        if warn_uncitable:
+            for c in [c for c, o in objects if not o or not o.citeable]:
+                logger.warning('Cannot find object for citation %r' % c)
         citeable = [(c, o) for c, o in objects if o and o.citeable]
-        citeable = xtx.sort(citeable)
+        unique = {}
+        for c, o in citeable:
+            if o in unique:
+                unique[o].append(c)
+            else:
+                unique[o] = [c]
+        for o, cs in unique.iteritems():
+            if len(cs) > 1:
+                cites = ', '.join(['%r' % c for c in cs])
+                logger.warning("Citations %s match to the same object; you'll see duplicates" % cites)
+        citeable = xtx.sort(citeable, args.sort)
+        if args.heading:
+            citeable = xtx.heading(citeable, args.heading[0], args.heading[1])
         try:
             rendered = xtx.render(citeable)
             rendered = rendered.encode('utf8')

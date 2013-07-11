@@ -156,13 +156,19 @@ def BookTitle(required=False):
 
 class citeableref(Object):
     citeable = CiteableTrue()
+    abstract    = Field()
+    category    = Field()
+    subcategory = Field()
+    ps   = Field()
+    pdf  = Field()
+    http = Field()
 
 class article(citeableref):
     author  = Author(required=True)
     title   = Field(required=True)
     journal = Field(required=True, alternates=('newspaper'), types=(journal,))
     year    = Field(required=True)
-    #month   = Field(types=(month,))
+    month   = Field(types=(month,))
     volume  = Field()
     number  = Field()
     pages   = Field()

@@ -6,6 +6,12 @@ import crosstex
 import crosstex.style
 
 
+class Heading(object):
+
+    def __init__(self, name):
+        self.name = name
+
+
 class UnsupportedCitation(Exception):
 
     def __init__(self, citetype):
@@ -25,7 +31,11 @@ class Style(object):
         pass
 
     def sort_key(self, citation, fields=None):
-        '''Create a tuple to sort by for the (key, obj) citation'''
+        '''Create a tuple for the default sort of the (key, obj) citation'''
+        raise NotImplementedError()
+
+    def get_attr(self, obj, field):
+        '''Return a comparable representation of the field (for sorting)'''
         raise NotImplementedError()
 
     def render(self, citations):
