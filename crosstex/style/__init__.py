@@ -265,7 +265,7 @@ def names_last_first(names):
 ################################ List Formatters ###############################
 
 def list_comma_and(objs):
-    assert all([isinstance(s, unicode) for s in objs])
+    assert all([isinstance(s, unicode) or isinstance(s, str) for s in objs])
     value = ''
     for i in range(len(objs)):
         if value:
