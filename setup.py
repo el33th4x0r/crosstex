@@ -17,7 +17,7 @@ setup(name='CrossTex',
                ,'crosstex.style'
                ],
       scripts=['bin/crosstex'],
-      url='http://firmant.org/',
+      url='http:///',
       license='GPLv2',
       description='CrossTeX is a bibliography management tool',
       classifiers=classifiers,
