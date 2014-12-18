@@ -44,6 +44,7 @@ class XTXFileInfo:
     'Same stuff as in Parser, but only for one file'
 
     def __init__(self):
+        self.cite = set([])
         self.titlephrases = set([])
         self.titlesmalls = set([])
         self.preambles = set([])
@@ -54,6 +55,7 @@ class XTXFileInfo:
         self.tobeparsed.append(file)
 
     def merge(self, db):
+        db.cite = set(db.cite) | set(self.cite)
         db.titlephrases = set(db.titlephrases) | set(self.titlephrases)
         db.titlesmalls = set(db.titlesmalls) | set(self.titlesmalls)
         db.preambles = set(db.preambles) | set(self.preambles)
@@ -66,6 +68,7 @@ class Parser:
     'A structure of almost raw data from the databases.'
 
     def __init__(self, path):
+        self.cite = set([])
         self.titlephrases = set([])
         self.titlesmalls = set([])
         self.preambles = set([])
@@ -223,8 +226,8 @@ andre = re.compile(r'\s+and\s+')
 
 tokens = ( 'AT', 'COMMA', 'OPENBRACE', 'CLOSEBRACE', 'LBRACK',
   'RBRACK', 'EQUALS', 'ATINCLUDE', 'ATSTRING', 'ATEXTEND', 'ATPREAMBLE',
-  'ATCOMMENT', 'ATDEFAULT', 'ATTITLEPHRASE', 'ATTITLESMALL', 'NAME', 'NUMBER',
-  'STRING', )
+  'ATCOMMENT', 'ATDEFAULT', 'ATTITLEPHRASE', 'ATTITLESMALL', 'ATCITE', 'NAME',
+  'NUMBER', 'STRING', )
 
 t_ignore = ' \t'
 
@@ -269,6 +272,11 @@ def t_ATTITLEPHRASE(t):
 
 def t_ATTITLESMALL(t):
     r'@[Tt][Ii][Tt][Ll][Ee][Ss][Mm][Aa][Ll][Ll]'
+    t.lexer.expectstring = True
+    return t
+
+def t_ATCITE(t):
+    r'@[Cc][Ii][Tt][Ee]'
     t.lexer.expectstring = True
     return t
 
@@ -389,6 +397,10 @@ def p_stmt_default(t):
         except KeyError:
             pass
     t.lexer.defaults = tuple(defaults.items())
+
+def p_stmt_cite(t):
+    'stmt : ATCITE STRING'
+    t.lexer.db.cite.add(t[2])
 
 def p_stmt_string(t):
     'stmt : ATSTRING OPENBRACE fields CLOSEBRACE'

@@ -197,15 +197,18 @@ class Style(crosstex.style.Style):
                      if not isinstance(c, crosstex.style.Heading)]
         digits = int(math.log10(len(citations))) + 1 if citations else 1
         cite_by = self._options.get('cite-by', 'style')
+        longest = ''
         if cite_by in ('style', 'number'):
             labels = [''] * len(citations)
             longest = '0' * digits
         elif cite_by == 'initials':
             labels = crosstex.style.label_generate_initials(citations)
-            longest = max([(len(l), l) for l in labels])[1]
+            if labels:
+                longest = max([(len(l), l) for l in labels])[1]
         elif cite_by == 'fullname':
             labels = crosstex.style.label_generate_fullnames(citations)
-            longest = max([(len(l), l) for l in labels])[1]
+            if labels:
+                longest = max([(len(l), l) for l in labels])[1]
         else:
             labels = [''] * len(citations)
             longest = '0' * digits

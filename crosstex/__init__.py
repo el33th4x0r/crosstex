@@ -107,6 +107,12 @@ class Database(object):
     def aux_citations(self):
         return copy.copy(self._parser.citations)
 
+    def has_inline_citations(self):
+        return bool(self._parser.cite)
+
+    def inline_citations(self):
+        return copy.copy(self._parser.cite)
+
     def all_citations(self):
         return copy.copy(self._parser.entries.keys())
 
@@ -385,6 +391,12 @@ class CrossTeX(object):
 
     def aux_citations(self):
         return self._db.aux_citations()
+
+    def has_inline_citations(self):
+        return self._db.has_inline_citations()
+
+    def inline_citations(self):
+        return self._db.inline_citations()
 
     def all_citations(self):
         return self._db.all_citations()

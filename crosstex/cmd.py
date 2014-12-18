@@ -172,6 +172,8 @@ def main(argv):
             cite = args.cite
         elif is_aux:
             cite = xtx.aux_citations()
+        elif xtx.has_inline_citations():
+            cite = xtx.inline_citations()
         else:
             warn_uncitable = False
             cite = xtx.all_citations()

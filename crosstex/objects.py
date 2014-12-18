@@ -178,7 +178,7 @@ class book(citeableref):
     editor    = Field()
     title     = Field(required=True)
     publisher = Field(required=True)
-    address   = Field(required=True)
+    address   = Field(required=True,types=(location,country,state))
     year      = Field(required=True)
 
 class booklet(citeableref):
