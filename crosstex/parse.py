@@ -54,9 +54,9 @@ class XTXFileInfo:
         self.tobeparsed.append(file)
 
     def merge(self, db):
-        db.titlephrases = set(db.titlephrases) | self.titlephrases
-        db.titlesmalls = set(db.titlesmalls) | self.titlesmalls
-        db.preambles = db.preambles | self.preambles
+        db.titlephrases = set(db.titlephrases) | set(self.titlephrases)
+        db.titlesmalls = set(db.titlesmalls) | set(self.titlesmalls)
+        db.preambles = set(db.preambles) | set(self.preambles)
         for k, es in self.entries.items():
             db.entries[k] += es
         for file in self.tobeparsed:
