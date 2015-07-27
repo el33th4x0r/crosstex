@@ -150,6 +150,11 @@ class Database(object):
         Evaluate conditional fields, inheritance, @extend entries, etc. until
         the entry is stable and return the result.
         '''
+        if key in self._parser.alias:
+            key = self._parser.alias[key]
+            if key.startswith('!'):
+                return self._semantic_lookup(key)
+            return self._lookup(key)
         # Check for loops
         context = list(context or [])
         if key in context:
