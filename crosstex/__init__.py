@@ -353,6 +353,9 @@ class CrossTeX(object):
         self._options = {}
         self._style = None
 
+    def no_pages(self):
+        self._flags.add('no-pages')
+
     def add_in(self):
         self._flags.add('add-in')
 

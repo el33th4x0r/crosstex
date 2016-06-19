@@ -66,7 +66,7 @@ class Style(crosstex.style.plain.Style):
         year    = self.render_year(article.year) 
         volume  = unicode(article.volume.value) if article.volume else None
         number  = unicode(article.number.value) if article.number else None
-        pages   = unicode(article.pages.value) if article.pages else None
+        pages   = unicode(article.pages.value) if article.pages and 'no-pages' not in self._flags else None
         first = ''
         second = ''
         third = ''
@@ -128,7 +128,7 @@ class Style(crosstex.style.plain.Style):
         author    = self.render_author(inproceedings.author)
         title     = self.render_title(inproceedings.title)
         booktitle = self.render_booktitle(inproceedings.booktitle)
-        pages     = self.render_pages(inproceedings.pages.value) if inproceedings.pages else None
+        pages     = self.render_pages(inproceedings.pages.value) if inproceedings.pages and 'no-pages' not in self._flags else None
         address   = self.render_address(inproceedings.address) if inproceedings.address else None
         year      = self.render_year(inproceedings.year) if inproceedings.year else None
         month     = self.render_month(inproceedings.month) if inproceedings.month else None
