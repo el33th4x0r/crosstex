@@ -104,7 +104,7 @@ class Style(crosstex.style.plain.Style):
         # XXX need to handle editors
         title     = self.render_title(book.title)
         publisher = self.render_str(book.publisher, 'publisher') if book.publisher else None
-        address   = self.render_address(book.address) if book.address else None
+        address   = self.render_address(book.address) if book.address and 'no-address' not in self._flags else None
         year      = self.render_year(book.year) if book.year else None
         first = ''
         second = ''
@@ -129,7 +129,7 @@ class Style(crosstex.style.plain.Style):
         title     = self.render_title(inproceedings.title)
         booktitle = self.render_booktitle(inproceedings.booktitle)
         pages     = self.render_pages(inproceedings.pages.value) if inproceedings.pages and 'no-pages' not in self._flags else None
-        address   = self.render_address(inproceedings.address) if inproceedings.address else None
+        address   = self.render_address(inproceedings.address) if inproceedings.address and 'no-address' not in self._flags else None
         year      = self.render_year(inproceedings.year) if inproceedings.year else None
         month     = self.render_month(inproceedings.month) if inproceedings.month else None
         first = ''
@@ -167,7 +167,7 @@ class Style(crosstex.style.plain.Style):
         title     = self.render_title(misc.title) if misc.title else None
         howpub    = unicode(misc.howpublished.value) if misc.howpublished else None
         booktitle = self.render_booktitle(misc.booktitle) if misc.booktitle else None
-        address   = self.render_address(misc.address) if misc.address else None
+        address   = self.render_address(misc.address) if misc.address and 'no-address' not in self._flags else None
         year      = self.render_year(misc.year) if misc.year else None
         first = ''
         second = ''
@@ -194,7 +194,7 @@ class Style(crosstex.style.plain.Style):
         title   = self.render_title(techreport.title)
         number  = unicode(techreport.number.value) if techreport.number else None
         insti   = unicode(techreport.institution.value) if techreport.institution else None
-        address = self.render_address(techreport.address) if techreport.address else None
+        address = self.render_address(techreport.address) if techreport.address and 'no-address' not in self._flags else None
         year    = self.render_year(techreport.year) 
         month   = self.render_month(techreport.month) if techreport.month else None
         first = ''

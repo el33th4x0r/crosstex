@@ -132,6 +132,8 @@ parser.add_argument('-o', '--output', metavar='FILE',
                     help='Write the bibliography to the specified output file.')
 parser.add_argument('--no-pages', action='store_const', const=True, default=False,
                     help='Skip pages.')
+parser.add_argument('--no-address', action='store_const', const=True, default=False,
+                    help='Skip address.')
 parser.add_argument('--add-in', action='store_const', const=True, default=False,
                     help='Add "In" for articles.')
 parser.add_argument('--add-proc', dest='add_proc',
@@ -155,6 +157,8 @@ def main(argv):
         xtx.set_titlecase(args.titlecase)
         if args.no_pages:
             xtx.no_pages()
+        if args.no_address:
+            xtx.no_address()
         if args.add_in:
             xtx.add_in()
         if args.add_proc == 'proc':
