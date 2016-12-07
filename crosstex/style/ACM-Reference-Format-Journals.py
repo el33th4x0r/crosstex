@@ -274,7 +274,7 @@ class Style(crosstex.style.Style):
                 country = self.render_str(address.country, 'country')
         elif isinstance(address, crosstex.parse.Value):
             return self.render_str(address, 'address')
-        return ', '.join([x for x in (city, state, country) if x is not None])
+        return ', '.join([x for x in (city, state, country) if x is not None and x != ''])
 
     def render_year(self, year, context=None, history=None):
         if isinstance(year, crosstex.parse.Value):
