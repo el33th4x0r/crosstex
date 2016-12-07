@@ -201,7 +201,6 @@ class Style(crosstex.style.Style):
         return label_dict, longest
 
     def _callback(self, kind):
-        print 'RENDER', kind
         if not hasattr(self, 'render_' + kind):
             return None
         else:
