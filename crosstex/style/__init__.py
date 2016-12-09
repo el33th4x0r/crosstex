@@ -470,10 +470,12 @@ def label_lastnames_all(authors):
 
 def label_lastnames_first(authors):
     last_names = label_lastnames_list(authors)
-    if len(last_names) > 0:
+    if len(last_names) == 0:
+        return ''
+    elif len(last_names) == 1:
         return last_names[0]
     else:
-        return ''
+        return '%s et~al\mbox{.}' % last_names[0]
 
 def label_generate_initials(citations):
     by_label = collections.defaultdict(list)
@@ -519,7 +521,7 @@ def label_generate_lastnames(citations):
             print 'year', cite
         assert year
 
-        label = '\protect\citeauthoryear{%s}{%s et~al\mbox{.}}' % (label_lastnames_all(author), label_lastnames_first(author))
+        label = '\protect\citeauthoryear{%s}{%s}' % (label_lastnames_all(author), label_lastnames_first(author))
         if year:
             if isinstance(year, crosstex.parse.Value):
                 label += '{%i}' % year.value
