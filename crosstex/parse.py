@@ -186,7 +186,15 @@ class Parser:
         logger.debug('Processing database %s.' % path)
         db = XTXFileInfo()
         stream = open(path)
-        contents = stream.read().decode('utf8')
+        coded  = stream.read()
+        try:
+            contents = coded.decode('utf8')
+        except UnicodeDecodeError:
+            try:
+                contents = coded.decode('utf16')
+            except UnicodeDecodeError:
+                print coded
+                contents = coded.decode()
         if contents:
             lexer = ply.lex.lex(reflags=re.UNICODE)
             lexer.path = path
