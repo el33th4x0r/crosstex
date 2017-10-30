@@ -15,8 +15,12 @@ import collections
 import copy
 import logging
 import os
-import cPickle as pickle
 import re
+
+try:
+    import cPickle as pickle
+except:
+    import pickle
 
 import ply.lex
 import ply.yacc
@@ -36,7 +40,7 @@ def create_value(_file, line, value, kind=None):
             value = int(value)
             kind = 'number'
         except ValueError:
-            value = unicode(value)
+            value = str(value)
             kind = 'string'
     return Value(_file, line, kind, value)
 
@@ -182,7 +186,7 @@ class Parser:
         logger.debug('Processing database %s.' % path)
         db = XTXFileInfo()
         stream = open(path)
-        contents = stream.read().decode('utf8')
+        contents = stream.read()
         if contents:
             lexer = ply.lex.lex(reflags=re.UNICODE)
             lexer.path = path
