@@ -188,7 +188,7 @@ def main(argv):
                 unique[o].append(c)
             else:
                 unique[o] = [c]
-        for o, cs in unique.iteritems():
+        for o, cs in unique.items():
             if len(cs) > 1:
                 cites = ', '.join(['%r' % c for c in cs])
                 logger.warning("Citations %s match to the same object; you'll see duplicates" % cites)
@@ -203,14 +203,14 @@ def main(argv):
             return 1
         if args.output:
             with open(args.output, 'w') as fout:
-                fout.write(rendered)
+                fout.write(rendered.decode('utf-8'))
                 fout.flush()
         elif is_aux and args.fmt == 'bbl':
             with open(os.path.splitext(args.files[-1])[0] + '.bbl', 'w') as fout:
-                fout.write(rendered)
+                fout.write(rendered.decode('utf-8'))
                 fout.flush()
         else:
-            sys.stdout.write(rendered)
+            sys.stdout.write(rendered.decode('utf-8'))
             sys.stdout.flush()
         return 0
     except crosstex.CrossTeXError as e:

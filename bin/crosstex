@@ -1,4 +1,5 @@
-#! /usr/bin/env python2
+#! /usr/bin/env python3
+
 import sys
 import crosstex.cmd
 crosstex.cmd.main(sys.argv[1:])

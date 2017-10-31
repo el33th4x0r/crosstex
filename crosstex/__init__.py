@@ -114,7 +114,7 @@ class Database(object):
         return copy.copy(self._parser.cite)
 
     def all_citations(self):
-        return copy.copy(self._parser.entries.keys())
+        return copy.copy(list(self._parser.entries))
 
     def titlephrases(self):
         return copy.copy(self._parser.titlephrases)
