@@ -1,4 +1,5 @@
 import math
+import re
 
 import crosstex.latex
 import crosstex.style
@@ -125,6 +126,7 @@ class Style(crosstex.style.Style):
         self._db = db
         self._flags = flags or set([])
         self._options = options or {}
+        self._url_pattern = re.compile(r"^\\url{.*}$")
 
     def sort_key(self, citation):
         cite, obj = citation
@@ -491,10 +493,40 @@ class Style(crosstex.style.Style):
         if title:
             second = self._fmt.block(crosstex.style.punctuate(title, '.', ''))
         if url:
-            third = link
+            if self._url_pattern.match(link):
+                third = link
+            else:
+                third = "\url{%s}" % link
         if month and day and year:
             third = self._fmt.block(crosstex.style.punctuate(third, '.', ''))
             third += 'Accessed ' + month + ' ' + day + ', ' + year
         third = self._fmt.block(crosstex.style.punctuate(third, '.', ''))
         third = self._fmt.block(third)
         return self._fmt.block_sep().join([b for b in (first, second, third) if b])
+
+    def render_patent(self, patent, context=None, history=None):
+        author    = self.render_author(patent.author) if patent.author else None
+        title     = self.render_title(patent.title) if patent.title else None
+        number    = unicode(patent.number.value) if patent.number else None
+        month     = self.render_month(patent.month) if patent.month else None
+        year      = self.render_year(patent.year) if patent.year else None
+        first = ''
+        second = ''
+        third = ''
+        if author:
+            first = self._fmt.block(crosstex.style.punctuate(author, '.', ''))
+        if title:
+            second = self._fmt.block(crosstex.style.punctuate(title, '.', ''))
+        if number:
+            third += crosstex.style.punctuate("US Patent %s" % number, ",", " ")
+        if month and year:
+            third = crosstex.style.punctuate(third, ',', ' ')
+            third += month + ' ' + year
+        elif year:
+            third = crosstex.style.punctuate(third, ',', ' ')
+            third += year
+        third = crosstex.style.punctuate(third, '.', '')
+        third = self._fmt.block(third)
+        return self._fmt.block_sep().join([b for b in (first, second, third) if b])
+
+

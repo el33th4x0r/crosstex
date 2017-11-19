@@ -1,4 +1,5 @@
 import math
+import re
 
 import crosstex.latex
 import crosstex.style
@@ -125,6 +126,7 @@ class Style(crosstex.style.Style):
         self._db = db
         self._flags = flags or set([])
         self._options = options or {}
+        self._url_pattern = re.compile(r"^\\url{.*}$")
 
     def sort_key(self, citation):
         cite, obj = citation
@@ -479,7 +481,10 @@ class Style(crosstex.style.Style):
         if title:
             second = self._fmt.block(crosstex.style.punctuate(title, '.', ''))
         if url:
-            third = '\url{%s}' % link
+            if self._url_pattern.match(link):
+                third = link
+            else:
+                third = "\url{%s}" % link
         if month and day and year:
             third = self._fmt.block(crosstex.style.punctuate(third, '.', ''))
             third += ' Accessed ' + month + ' ' + day + ', ' + year
