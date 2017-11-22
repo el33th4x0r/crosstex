@@ -90,7 +90,7 @@ class Parser:
         'Find a file with a reasonable extension and extract its information.'
         if name in self._seen:
             logger.debug('Already processed %r.' % name)
-            for ext, path in self._seen[name].iteritems():
+            for ext, path in self._seen[name].items():
                 if ext in exts:
                     return path
         if os.path.sep in name:
