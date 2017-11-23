@@ -9,7 +9,7 @@ Group: Applications/Publishing
 Packager: Emin Gun Sirer, egs at cs.cornell.edu
 URL: http://crosstex.sourceforge.net/
 Source: http://downloads.sourceforge.net/crosstex/%{name}-%{version}.tar.gz
-Requires: python >= 2.0
+Requires: python >= 3.0
 Requires: ply >= 2.2
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch

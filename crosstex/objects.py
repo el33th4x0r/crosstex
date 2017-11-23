@@ -19,17 +19,19 @@ class Field(object):
         self.types += (str, crosstex.parse.Value)
         self.iterable = iterable
         self.name = None
+    
     def __get__(self, obj, objtype):
         if hasattr(obj, '_' + self.name):
             return getattr(obj, '_' + self.name)
         return None
+
     def __set__(self, obj, value):
         if value is not None and \
            value.__class__ not in self.types and \
            not (self.iterable and isinstance(value, collections.Iterable) and
                 all([isinstance(v, self.types) for v in value])):
             raise TypeError('Field %s does not allow type %s' %
-                            (self.name, unicode(type(value))))
+                            (self.name, str(type(value))))
         setattr(obj, '_' + self.name, value)
 
 class ObjectMeta(type):
@@ -37,7 +39,8 @@ class ObjectMeta(type):
         allowed = set([])
         required = set([])
         alternates = {}
-        for attr, value in dct.iteritems():
+
+        for attr, value in dct.items():
             if attr == 'citeable':
                 assert value.__class__ in (CiteableTrue, CiteableFalse)
             elif not attr.startswith('_') and not callable(value):
@@ -46,7 +49,7 @@ class ObjectMeta(type):
                 allowed.add(attr)
                 if value.required:
                     required.add(attr)
-                if isinstance(value.alternates, unicode):
+                if isinstance(value.alternates, str):
                     alternates[attr] = value.alternates
                 elif isinstance(value.alternates, collections.Iterable):
                     assert all([isinstance(a, str) for a in value.alternates])
@@ -72,12 +75,11 @@ class ObjectMeta(type):
         dct['alternates'] = alternates
         return super(ObjectMeta, cls).__new__(cls, name, bases, dct)
 
-class Object(object):
-    __metaclass__ = ObjectMeta
+class Object(metaclass = ObjectMeta):
     citeable = CiteableFalse()
 
     def __init__(self, **kwargs):
-        for key, word in kwargs.iteritems():
+        for key, word in kwargs.items():
             assert not key.startswith('_') and hasattr(self, key)
             setattr(self, key, word)
 
@@ -87,7 +89,7 @@ class Object(object):
     def set_field(self, name, value):
         setattr(self, name, value)
 
-    def iteritems(self):
+    def items(self):
         for f in self.allowed:
             v = getattr(self, f, None)
             yield (f, v)

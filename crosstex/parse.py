@@ -29,10 +29,18 @@ import crosstex
 
 logger = logging.getLogger('crosstex.parse')
 
-Entry = collections.namedtuple('Entry', ('kind', 'keys', 'fields', 'file', 'line', 'defaults'))
+next_uid = 1
+
+Entry = collections.namedtuple('Entry', ('uid', 'kind', 'keys', 'fields', 'file', 'line', 'defaults'))
 Value = collections.namedtuple('Value', ('file', 'line', 'kind', 'value'))
 Field = collections.namedtuple('Field', ('name', 'value'))
 Conditional = collections.namedtuple('Conditional', ('file', 'line', 'if_fields', 'then_fields'))
+
+def create_entry(kind, keys, fields, _file, line, defaults):
+    global next_uid
+    uid = next_uid
+    next_uid += 1
+    return Entry(uid, kind, keys, fields, _file, line, defaults)
 
 def create_value(_file, line, value, kind=None):
     if kind is None:
@@ -410,7 +418,7 @@ def p_stmt_string(t):
     'stmt : ATSTRING OPENBRACE fields CLOSEBRACE'
     file, line, defaults = t.lexer.file, t.lineno(2), t.lexer.defaults
     for key, value in t[3]:
-        ent = Entry('string', [key], [('name', value)], file, line, defaults)
+        ent = create_entry('string', [key], [('name', value)], file, line, defaults)
         t.lexer.db.entries[key].append(ent)
 
 def p_stmt_entry(t):
@@ -421,7 +429,7 @@ def p_stmt_entry(t):
 def p_entry(t):
     'entry : AT NAME OPENBRACE keys COMMA conditionals CLOSEBRACE'
     file, line, defaults = t.lexer.file, t.lineno(2), t.lexer.defaults
-    t[0] = Entry(t[2].lower(), t[4], t[6], file, line, defaults)
+    t[0] = create_entry(t[2].lower(), t[4], t[6], file, line, defaults)
 
 def p_entry_extend(t):
     '''
@@ -433,7 +441,7 @@ def p_entry_extend(t):
     else:
         fields = []
     file, line, defaults = t.lexer.file, t.lineno(1), t.lexer.defaults
-    t[0] = Entry('extend', t[3], fields, file, line, defaults)
+    t[0] = create_entry('extend', t[3], fields, file, line, defaults)
 
 def p_keys_singleton(t):
     'keys : NAME'

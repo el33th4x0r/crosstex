@@ -64,7 +64,7 @@ class Constraint(object):
 
     def match(self, entry):
         entry = entry[0]
-        for field, values in self._fields.iteritems():
+        for field, values in self._fields.items():
             if not hasattr(entry, field):
                 return False
             tocheck = getattr(entry, field)
@@ -206,7 +206,7 @@ class Database(object):
         while anotherpass:
             anotherpass = False
             # This loop pulls references from other objects
-            for name, value in fields.iteritems():
+            for name, value in fields.items():
                 if not isinstance(value, crosstex.parse.Value):
                     continue
                 if value.kind != 'key':
@@ -252,7 +252,7 @@ class Database(object):
                                            (base.file, base.line, f.name, c.file, c.line))
                 applied_conditionals.add(c)
             # This loop expands author/editor fields
-            for name, value in fields.iteritems():
+            for name, value in fields.items():
                 if name not in ('author', 'editor'):
                     continue
                 if not isinstance(value, crosstex.parse.Value):
@@ -273,7 +273,7 @@ class Database(object):
                 anotherpass = True
                 break
         # Do a pass over alternate fields to copy them
-        for name, alternates in kind.alternates.iteritems():
+        for name, alternates in kind.alternates.items():
             if name not in fields:
                 for f in alternates:
                     if f in fields:
@@ -310,9 +310,11 @@ class Database(object):
             key = todo.pop()
             keys.add(key)
             for entry in self._parser.entries.get(key, []):
-                if entry in seen:
-                    continue;
-                seen.add(entry)
+                if entry.uid in seen:
+                    continue
+
+                seen.add(entry.uid)
+
                 if entry.kind == 'extend':
                     extensions.append(entry)
                 elif base is None:

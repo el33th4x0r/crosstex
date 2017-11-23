@@ -67,7 +67,7 @@ def break_name(name, short=False, plain=False):
     lastchar = ' '
     names = []
     nesting = 0
-    assert isinstance(name, unicode)
+    assert isinstance(name, str)
     for i in range(0, len(name)):
         charc = name[i]
         if nesting == 0 and lastchar != '\\' and lastchar != ' ' and charc == ' ':
@@ -265,7 +265,7 @@ def names_last_first(names):
 ################################ List Formatters ###############################
 
 def list_comma_and(objs):
-    assert all([isinstance(s, unicode) or isinstance(s, str) for s in objs])
+    assert all([isinstance(s, str) or isinstance(s, str) for s in objs])
     value = ''
     for i in range(len(objs)):
         if value:
@@ -274,7 +274,7 @@ def list_comma_and(objs):
             value += ' '
             if i == len(objs) - 1:
                 value += 'and '
-        value += unicode(objs[i])
+        value += str(objs[i])
     return value
 
 ############################### Title Formatters ###############################
