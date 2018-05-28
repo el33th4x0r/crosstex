@@ -3,7 +3,7 @@ language: python
 
 before_install:
     - sudo apt-get -qq update
-    - sudo apt-get install python3-ply texlive-xetex -y
+    - sudo apt-get install python3-ply texlive-xetex texlive-latex-base -y
 
 install:
     - sudo ./setup.py install
