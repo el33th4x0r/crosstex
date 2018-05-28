@@ -5,4 +5,5 @@
 *.pdf
 *.bbl
 *.out
+*.swp
 build/
