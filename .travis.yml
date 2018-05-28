@@ -6,7 +6,7 @@ before_install:
     - sudo apt-get install python3-ply
 
 install:
-    - sudo setup.py install
+    - sudo ./setup.py install
 
 script:
     - ./run-tests.sh
