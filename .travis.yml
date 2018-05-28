@@ -1,0 +1,8 @@
+sudo: required
+language: cpp
+env:
+  global:
+  - CACHE_FILE_YAEL=$CACHE_DIR/crosstex
+before_install: 
+jobs:
+    - sudo setup.py install

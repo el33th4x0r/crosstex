@@ -352,11 +352,11 @@ class Database(object):
                         todo.add(k)
         if base is None:
             if extensions:
-                logger.error('%s is extended but never defined.' % key)
+                logger.error(key + ' is extended but never defined.')
             elif key in builtins:
                 base = builtins[key]
             else:
-                raise CrossTeXError('%s is never defined.' % key)
+                raise CrossTeXError(key + " is never defined.")
 
         # XXX provide a guaranteed order for the extensions.
         # In an ideal world we'd traverse includes in a DFS manner according to

@@ -42,7 +42,7 @@ def create_entry(kind, keys, fields, _file, line, defaults):
     uid = next_uid
     next_uid += 1
     
-    print("creating " + kind + " with keys " + str(keys) + " and fields " + str(fields))
+    logger.debug("creating " + kind + " with keys " + str(keys) + " and fields " + str(fields))
 
     return Entry(uid, kind, keys, fields, _file, line, defaults)
 

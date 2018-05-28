@@ -17,13 +17,18 @@ def run_test(path, filename):
     
     print("### Running " + path)
 
+    # Prepare doc
+    latex_res = call(["xelatex", "--halt-on-error", filename], cwd=DIR, stdout=DEVNULL)
+
+    if latex_res != 0:
+        print("WARNING: xelatex failed")
+
     # Run test
-    call(["xelatex", "--halt-on-error", filename], cwd=DIR, stdout=DEVNULL)
     res = call(["crosstex" , "-v", filename], cwd=DIR)
 
     num_tests += 1
 
-    if res == 0:
+    if res == 0 and latex_res == 0:
         success += 1
     else:
         failure += 1
