@@ -29,7 +29,7 @@ def run_test(path, filename):
         failure += 1
 
     # Cleanup
-    call(["rm", "-f", "*.cache", filename + ".pdf", filename + ".log", filename + ".aux"], cwd=DIR)
+    call(["rm", "-f", "*.cache", filename + ".log", filename + ".aux"], cwd=DIR)
 
 
 def run_all_tests():

@@ -23,6 +23,8 @@ import re
 import crosstex.objects
 import crosstex.parse
 
+from crosstex.builtins import builtins
+
 class CrossTeXError(Exception): pass
 
 logger = logging.getLogger('crosstex')
@@ -351,6 +353,8 @@ class Database(object):
         if base is None:
             if extensions:
                 logger.error('%s is extended but never defined.' % key)
+            elif key in builtins:
+                base = builtins[key]
             else:
                 raise CrossTeXError('%s is never defined.' % key)
 
@@ -410,7 +414,7 @@ class CrossTeX(object):
                 raise CrossTeXError('Could not import style %r' % style)
             styleclass = getattr(stylemod, 'Style')
         except ImportError as e:
-            raise CrossTeXError('Could not import style %r' % style)
+            raise CrossTeXError('Could not import style %r' % style + ": " + str(e))
         if fmt not in styleclass.formats():
             raise CrossTeXError('Style %r does not support format %r' % (style, fmt))
         self._style = styleclass(fmt, self._flags, self._options, self._db)

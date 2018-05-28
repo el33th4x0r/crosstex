@@ -129,9 +129,9 @@ class location(string):
     state   = Field(types=(state,))
     country = Field(types=(country,))
 
-class month(string):
-    monthno = Field()
-
+class month(Object):
+    monthno = Field(types=[int])
+    
 class institution(string):
     address = Field(types=(location, country, state))
 
