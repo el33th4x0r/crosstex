@@ -229,5 +229,5 @@ def main(argv):
             sys.stdout.flush()
         return 0
     except crosstex.CrossTeXError as e:
-        print >>sys.stderr, e
+        logger.error(str(e))
         return 1

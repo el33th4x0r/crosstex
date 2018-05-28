@@ -90,10 +90,10 @@ class Object(metaclass = ObjectMeta):
     def __init__(self, **kwargs):
         for key, word in kwargs.items():
             if key.startswith('_'):
-                raise RuntimError("Invalid keyname. Starts with '_'.")
+                raise CrossTeXError("Invalid keyname. Starts with '_'.")
 
             if not hasattr(self, key):
-                raise RuntimeError("Cannot set attribute. No such field " + key + ".")
+                raise CrossTeXError("Cannot set attribute. No such field " + key + ".")
             
             setattr(self, key, word)
 

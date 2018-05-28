@@ -23,6 +23,8 @@ import re
 import crosstex.objects
 import crosstex.parse
 
+class CrossTeXError(Exception): pass
+
 logger = logging.getLogger('crosstex')
 
 class UNIQUE(object): pass
@@ -350,15 +352,14 @@ class Database(object):
             if extensions:
                 logger.error('%s is extended but never defined.' % key)
             else:
-                logger.error('%s is never defined.' % key)
+                raise CrossTeXError('%s is never defined.' % key)
+
         # XXX provide a guaranteed order for the extensions.
         # In an ideal world we'd traverse includes in a DFS manner according to
         # include order, thus guaranteeing that extensions will be resolved in a
         # consistent fashion.  Right now, conflicting extensions will be
         # resolved in a predictable manner
         return (keys, base, extensions)
-
-class CrossTeXError(Exception): pass
 
 class CrossTeX(object):
 
