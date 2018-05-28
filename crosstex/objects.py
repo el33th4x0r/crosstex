@@ -26,13 +26,22 @@ class Field(object):
         return None
 
     def __set__(self, obj, value):
-        if value is not None and \
-           value.__class__ not in self.types and \
-           not (self.iterable and isinstance(value, collections.Iterable) and
-                all([isinstance(v, self.types) for v in value])):
+        ''' Set the filed of a specified object '''
+
+        # It is a single value
+        is_compatible_type = value is None or value.__class__ in self.types
+
+        # It's multiple values, we need to check each values type
+        has_compatible_subtypes = self.iterable and \
+                isinstance(value, collections.Iterable) and \
+                all([isinstance(v, self.types) for v in value])
+
+        if is_compatible_type or has_compatible_subtypes:
+            setattr(obj, '_' + self.name, value)
+        else:
+            print(self.types)
             raise TypeError('Field %s does not allow type %s' %
                             (self.name, str(type(value))))
-        setattr(obj, '_' + self.name, value)
 
 class ObjectMeta(type):
     def __new__(cls, name, bases, dct):
@@ -57,6 +66,7 @@ class ObjectMeta(type):
                 else:
                     assert False
                 value.name = attr
+
         optional = allowed - required
         assert len(bases) <= 1
         for base in bases:
@@ -80,7 +90,12 @@ class Object(metaclass = ObjectMeta):
 
     def __init__(self, **kwargs):
         for key, word in kwargs.items():
-            assert not key.startswith('_') and hasattr(self, key)
+            if key.startswith('_'):
+                raise RuntimError("Invalid keyname. Starts with '_'.")
+
+            if not hasattr(self, key):
+                raise RuntimeError("Cannot set attribute. No such field " + key + ".")
+            
             setattr(self, key, word)
 
     def isset_field(self, name):
@@ -97,6 +112,8 @@ class Object(metaclass = ObjectMeta):
 ###############################################################################
 
 class string(Object):
+    ''' A string constants. Can either be a single string or a tuple of short and longname'''
+
     name      = Field(alternates=('longname', 'shortname'))
     shortname = Field(required=True, alternates=('name', 'longname'))
     longname  = Field(required=True, alternates=('name', 'shortname'))

@@ -64,9 +64,9 @@ class Style(crosstex.style.plain.Style):
         title   = self.render_title(article.title)
         journal = self.render_journal(article.journal)
         year    = self.render_year(article.year) 
-        volume  = unicode(article.volume.value) if article.volume else None
-        number  = unicode(article.number.value) if article.number else None
-        pages   = unicode(article.pages.value) if article.pages else None
+        volume  = str(article.volume.value) if article.volume else None
+        number  = str(article.number.value) if article.number else None
+        pages   = str(article.pages.value) if article.pages else None
         first = ''
         second = ''
         third = ''
@@ -81,7 +81,7 @@ class Style(crosstex.style.plain.Style):
         volnumpages = ''
         if number or volume or pages:
             if volume:
-                volnumpages += unicode(volume)
+                volnumpages += str(volume)
             if number:
                 volnumpages += '(%s)' % number
             if pages:
@@ -165,7 +165,7 @@ class Style(crosstex.style.plain.Style):
     def render_misc(self, misc, context=None, history=None):
         author    = self.render_author(misc.author) if misc.author else None
         title     = self.render_title(misc.title) if misc.title else None
-        howpub    = unicode(misc.howpublished.value) if misc.howpublished else None
+        howpub    = str(misc.howpublished.value) if misc.howpublished else None
         booktitle = self.render_booktitle(misc.booktitle) if misc.booktitle else None
         address   = self.render_address(misc.address) if misc.address else None
         year      = self.render_year(misc.year) if misc.year else None
@@ -192,8 +192,8 @@ class Style(crosstex.style.plain.Style):
     def render_techreport(self, techreport, context=None, history=None):
         author  = self.render_author(techreport.author)
         title   = self.render_title(techreport.title)
-        number  = unicode(techreport.number.value) if techreport.number else None
-        insti   = unicode(techreport.institution.value) if techreport.institution else None
+        number  = str(techreport.number.value) if techreport.number else None
+        insti   = str(techreport.institution.value) if techreport.institution else None
         address = self.render_address(techreport.address) if techreport.address else None
         year    = self.render_year(techreport.year) 
         month   = self.render_month(techreport.month) if techreport.month else None
@@ -224,7 +224,7 @@ class Style(crosstex.style.plain.Style):
     def render_phdthesis(self, phdthesis, context=None, history=None):
         author  = self.render_author(phdthesis.author)
         title   = self.render_title(phdthesis.title)
-        school  = unicode(phdthesis.school.value) if phdthesis.school else None
+        school  = str(phdthesis.school.value) if phdthesis.school else None
         year    = self.render_year(phdthesis.year)
         first = ''
         second = ''
@@ -245,7 +245,7 @@ class Style(crosstex.style.plain.Style):
     def render_url(self, url, context=None, history=None):
         author = self.render_author(url.author) if url.author else None
         title  = self.render_title(url.title) if url.title else None
-        link   = unicode(url.url.value)
+        link   = str(url.url.value)
         month  = self.render_month(url.accessmonth) if url.accessmonth else None
         day    = self.render_str(url.accessday, 'day') if url.accessday else None
         year   = self.render_year(url.accessyear) if url.accessyear else None

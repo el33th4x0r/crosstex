@@ -48,7 +48,7 @@ class Constraint(object):
                     values = constraint[0].split('-')
                 else:
                     field = 'year'
-                    values = [unicode(values)]
+                    values = [str(values)]
             else:
                 field = constraint[0]
                 values = constraint[1].split('-')
@@ -70,14 +70,14 @@ class Constraint(object):
             tocheck = getattr(entry, field)
             strings = set([])
             if isinstance(tocheck, crosstex.parse.Value):
-                strings.add(unicode(tocheck.value).lower())
+                strings.add(str(tocheck.value).lower())
             elif isinstance(tocheck, crosstex.objects.string):
-                strings.add(unicode(tocheck.name.value).lower())
-                strings.add(unicode(tocheck.shortname.value).lower())
-                strings.add(unicode(tocheck.longname.value).lower())
+                strings.add(str(tocheck.name.value).lower())
+                strings.add(str(tocheck.shortname.value).lower())
+                strings.add(str(tocheck.longname.value).lower())
             elif field == 'author' and isinstance(tocheck, list):
                 for a in tocheck:
-                    strings.add(unicode(a.value).lower())
+                    strings.add(str(a.value).lower())
             strings = tuple(strings)
             for value in values:
                 v = value.lower()
@@ -272,6 +272,7 @@ class Database(object):
                 fields[name] = names
                 anotherpass = True
                 break
+        
         # Do a pass over alternate fields to copy them
         for name, alternates in kind.alternates.items():
             if name not in fields:
@@ -284,8 +285,10 @@ class Database(object):
             if name not in fields:
                 logger.error('%s:%d: Missing required field %s in %s.' %
                              (base.file, base.line, name, base.kind))
+        
         # Create the object
         k = kind(**fields)
+        
         # Memoize
         for key in keys:
             self._cache[key] = (k, conditionals)
@@ -306,6 +309,7 @@ class Database(object):
         seen = set([])
         base = None
         extensions = []
+
         while todo:
             key = todo.pop()
             keys.add(key)

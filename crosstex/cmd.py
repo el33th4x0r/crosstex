@@ -149,8 +149,10 @@ def main(argv):
                [os.path.join(os.path.join(os.path.expanduser('~'), '.crosstex'))] + \
                ['/usr/local/share/crosstex'] + \
                ['/XXX']
+
         xtx = crosstex.CrossTeX(xtx_path=path)
         xtx.set_titlecase(args.titlecase)
+
         if args.add_in:
             xtx.add_in()
         if args.add_proc == 'proc':
@@ -162,6 +164,7 @@ def main(argv):
         xtx.set_style(args.fmt, args.style, args.cite_by)
         for f in reversed(args.files):
             xtx.parse(f)
+
         # We'll use this check later
         is_aux = os.path.splitext(args.files[-1])[1] == '.aux' or \
                  xtx.aux_citations() and os.path.splitext(args.files[-1])[1] == ''
@@ -177,6 +180,7 @@ def main(argv):
         else:
             warn_uncitable = False
             cite = xtx.all_citations()
+
         objects = [(c, xtx.lookup(c)) for c in cite]
         if warn_uncitable:
             for c in [c for c, o in objects if not o or not o.citeable]:
