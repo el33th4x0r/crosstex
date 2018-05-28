@@ -1,8 +1,12 @@
 sudo: required
-language: cpp
-env:
-  global:
-  - CACHE_FILE_YAEL=$CACHE_DIR/crosstex
-before_install: 
-jobs:
+language: python
+
+before_install:
+    - sudo apt-get -qq update
+    - sudo apt-get install python3-ply
+
+install:
     - sudo setup.py install
+
+script:
+    - ./run-tests.sh
