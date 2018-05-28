@@ -39,7 +39,6 @@ class Field(object):
         if is_compatible_type or has_compatible_subtypes:
             setattr(obj, '_' + self.name, value)
         else:
-            print(self.types)
             raise TypeError('Field %s does not allow type %s' %
                             (self.name, str(type(value))))
 
@@ -169,7 +168,7 @@ def Author(required=False):
     return Field(required=True, types=(author,), iterable=True)
 
 def BookTitle(required=False):
-    return Field(required=required, types=(conference, conferencetrack, workshop))
+    return Field(required=required, types=(conference, conferencetrack, workshop, string)) # FIXME allow string?
 
 ###############################################################################
 

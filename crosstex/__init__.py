@@ -155,6 +155,7 @@ class Database(object):
             if key.startswith('!'):
                 return self._semantic_lookup(key)
             return self._lookup(key)
+
         # Check for loops
         context = list(context or [])
         if key in context:
@@ -162,13 +163,16 @@ class Database(object):
             logger.error('There is a reference cycle: %s' % ', '.join(context))
             return (None, None)
         context.append(key)
+
         # This makes things about 30% faster
         if key in self._cache:
             return self._cache[key]
+
         # Lookup all raw Entry objects
         keys, base, extensions = self._select(key)
         if base is None:
             return (None, None)
+
         # Get the class from crosstex.objects that corresponds to this object
         if not hasattr(crosstex.objects, base.kind):
             logger.error('%s:%d: There is no such thing as a @%s.' % (base.file, base.line, base.kind))
@@ -180,30 +184,32 @@ class Database(object):
             return (None, None)
         fields = {}
         conditionals = []
+
         # This loop iterates through the base and extensions, applying fields
         # from each.
         for entry in [base] + extensions:
             dupes = set([])
+
             for name, value in entry.defaults:
                 if name in kind.allowed and name not in fields:
                     fields[name] = value
+
             for f in entry.fields:
-                if not isinstance(f, crosstex.parse.Field):
-                    continue
-                if f.name in dupes:
-                    logger.warning('%s:%d: %s field is duplicated.' %
-                                   (f.value.file, f.value.line, f.name))
-                elif f.name not in kind.allowed:
-                    logger.warning('%s:%d: No such field %s in %s.' %
-                                   (f.value.file, f.value.line, f.name, base.kind))
+                if isinstance(f, crosstex.parse.Field):
+                    if f.name in dupes:
+                        logger.warning('%s:%d: %s field is duplicated.' %
+                                       (f.value.file, f.value.line, f.name))
+                    elif f.name not in kind.allowed:
+                        logger.warning('%s:%d: No such field %s in %s.' %
+                                       (f.value.file, f.value.line, f.name, base.kind))
+                    else:
+                        fields[f.name] = f.value
+                        dupes.add(f.name)
+                elif isinstance(f, crosstex.parse.Conditional):
+                    conditionals.append(f)
                 else:
-                    fields[f.name] = f.value
-                    dupes.add(f.name)
-            for c in entry.fields:
-                if not isinstance(c, crosstex.parse.Conditional):
-                    continue
-                conditionals.append(c)
-        assert all([isinstance(c, crosstex.parse.Conditional) for c in conditionals])
+                    raise RuntimeError("unknown entry type  " + str(type(f)) + ": " + str(f))
+
         # This loop resolves conditionals or references until the object reaches
         # a fixed point
         anotherpass = True
@@ -256,12 +262,15 @@ class Database(object):
                             logger.warning('%s:%d: %s field not applied from conditional at %s:%d' %
                                            (base.file, base.line, f.name, c.file, c.line))
                 applied_conditionals.add(c)
+
             # This loop expands author/editor fields
             for name, value in fields.items():
                 if name not in ('author', 'editor'):
                     continue
+
                 if not isinstance(value, crosstex.parse.Value):
                     continue
+
                 names = []
                 for n in _author.split(value.value):
                     if n in self._parser.entries:
@@ -283,8 +292,10 @@ class Database(object):
             if name not in fields:
                 for f in alternates:
                     if f in fields:
+                        logger.debug("Using alternate value for " + key + "." + name + " copied from " + key + "." + f)
                         fields[name] = fields[f]
                         break
+
         # Ensure required fields are all provided
         for name in kind.required:
             if name not in fields:

@@ -26,6 +26,7 @@ import ply.lex
 import ply.yacc
 
 import crosstex
+from crosstex.constants import *
 
 logger = logging.getLogger('crosstex.parse')
 
@@ -40,16 +41,22 @@ def create_entry(kind, keys, fields, _file, line, defaults):
     global next_uid
     uid = next_uid
     next_uid += 1
+    
+    print("creating " + kind + " with keys " + str(keys) + " and fields " + str(fields))
+
     return Entry(uid, kind, keys, fields, _file, line, defaults)
 
 def create_value(_file, line, value, kind=None):
     if kind is None:
-        try:
+        if isinstance(value, int):
             value = int(value)
             kind = 'number'
-        except ValueError:
+        elif isinstance(value, str):
             value = str(value)
             kind = 'string'
+        else:
+            raise RuntimeError("Invalid type " + str(type(value)))
+
     return Value(_file, line, kind, value)
 
 class XTXFileInfo:
@@ -78,7 +85,7 @@ class XTXFileInfo:
         for k, es in self.entries.items():
             db.entries[k] += es
         for file in self.tobeparsed:
-            db.parse(file, exts=['.xtx', '.bib'])
+            db.parse(file, exts=[CROSSTEX_FILE_ENDING, BIBTEX_FILE_ENDING])
 
 class Parser:
     'A structure of almost raw data from the databases.'
@@ -99,7 +106,7 @@ class Parser:
     def set_path(self, path):
         self._path = path
 
-    def parse(self, name, exts=['.aux', '.xtx', '.bbl']):
+    def parse(self, name, exts=['.aux', CROSSTEX_FILE_ENDING, BIB_CACHE_FILE_ENDING]):
         'Find a file with a reasonable extension and extract its information.'
         if name in self._seen:
             logger.debug('Already processed %r.' % name)
@@ -168,7 +175,7 @@ class Parser:
                 self._bibstyle = line[10:].rstrip().rstrip('}').split(' ')
             elif line.startswith(r'\bibdata'):
                 for f in line[9:].rstrip().rstrip('}').split(','):
-                    self.parse(f, ['.xtx', '.bib'])
+                    self.parse(f, [CROSSTEX_FILE_ENDING, BIBTEX_FILE_ENDING])
             elif line.startswith(r'\@input'):
                 for f in line[8:].rstrip().rstrip('}').split(','):
                     self.parse(f, ['.aux'])
@@ -179,7 +186,7 @@ class Parser:
     def _parse_ext_xtx(self, path):
         'Parse and handle options set in a CrossTeX .xtx or BibTeX .bib database file.'
         cache_path = os.path.join(os.path.dirname(path),
-                                  '.' + os.path.basename(path) + '.cache')
+                                  os.path.basename(path) + CACHE_FILE_ENDING)
         try:
             if os.path.exists(cache_path) and \
                os.path.getmtime(path) < os.path.getmtime(cache_path):
@@ -227,7 +234,7 @@ class Parser:
             logger.error("Could not write cache '%r', falling back to database: %s." % (cache_path, e))
         return path
 
-    def _check_ext(self, name, ext, exts=['.aux', '.xtx', '.bib']):
+    def _check_ext(self, name, ext, exts=['.aux', CROSSTEX_FILE_ENDING, BIBTEX_FILE_ENDING]):
         func = '_parse_ext_' + ext[1:]
         if not hasattr(self, func) or not ext in exts: 
             logger.error('Can not parse %r because the extension is not %s.'
@@ -433,8 +440,9 @@ def p_stmt_alias(t):
 def p_stmt_string(t):
     'stmt : ATSTRING OPENBRACE fields CLOSEBRACE'
     file, line, defaults = t.lexer.file, t.lineno(2), t.lexer.defaults
+    
     for key, value in t[3]:
-        ent = create_entry('string', [key], [('name', value)], file, line, defaults)
+        ent = create_entry('string', [key], [Field('name', value)], file, line, defaults)
         t.lexer.db.entries[key].append(ent)
 
 def p_stmt_entry(t):

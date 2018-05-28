@@ -8,9 +8,7 @@ import sys
 import crosstex
 import crosstex.style
 
-
 logger = logging.getLogger('crosstex')
-
 
 parser = argparse.ArgumentParser(prog='crosstex',
                                  description='A modern, object-oriented bibliographic tool.')
@@ -66,7 +64,8 @@ parser = argparse.ArgumentParser(prog='crosstex',
 #                         'First" instead of "First Last" (the latter is the '
 #                         'default).  XXX:ignored')
 #parser.add_argument('--no-last-first')
-parser.add_argument('--version', version='CrossTeX 0.7.0', action='version')
+parser.add_argument('--version', version='CrossTeX 0.9.0', action='version')
+parser.add_argument('-v', '--verbose', action='store_true')
 parser.add_argument('-d', '--dir', metavar='DIR', action='append', dest='dirs',
                     help='Add a directory in which to find data files, searched '
                          'from last specified to first.')
@@ -153,6 +152,10 @@ def main(argv):
                [os.path.join(os.path.join(os.path.expanduser('~'), '.crosstex'))] + \
                ['/usr/local/share/crosstex'] + \
                ['/XXX']
+
+        if args.verbose:
+            logger.setLevel(logging.DEBUG)
+            logging.getLogger('crosstex.parse').setLevel(logging.DEBUG)
 
         xtx = crosstex.CrossTeX(xtx_path=path)
         xtx.set_titlecase(args.titlecase)
