@@ -9,4 +9,4 @@ install:
     - sudo ./setup.py install
 
 script:
-    - ./run-tests.sh
+    - ./run-tests.py
