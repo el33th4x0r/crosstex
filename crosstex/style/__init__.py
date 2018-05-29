@@ -1,10 +1,16 @@
 import collections
 import itertools
 import re
+import logging
 
 import crosstex
 import crosstex.style
+from crosstex.constants import SHORT_MONTHS
 
+logger = logging.getLogger('crosstex')
+
+def monthno_to_short_string(month):
+    return SHORT_MONTHS[month - 1]
 
 class Heading(object):
 
@@ -67,7 +73,10 @@ def break_name(name, short=False, plain=False):
     lastchar = ' '
     names = []
     nesting = 0
-    assert isinstance(name, str)
+
+    if not isinstance(name, str):
+        raise CrossTeXError("Name is not a string: " + str(name))
+
     for i in range(0, len(name)):
         charc = name[i]
         if nesting == 0 and lastchar != '\\' and lastchar != ' ' and charc == ' ':
@@ -85,7 +94,9 @@ def break_name(name, short=False, plain=False):
             if not plain:
                 value += charc
             nesting += 1
-        elif nesting == 0 and lastchar != '\\' and charc == ',':
+        elif charc == ',':
+            logger.warning("Name '" + name + "' contains a comma. Make sure it is formatted <first middle last>")
+        elif nesting == 0 and lastchar != '\\':
             pass
         else:
             if not plain or (charc != '\\' and lastchar != '\\'):

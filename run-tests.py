@@ -18,7 +18,7 @@ def run_test(path, filename):
     print("### Running " + path)
 
     # Prepare doc
-    latex_res = call(["xelatex", "-interaction", "errorstopmode", filename], cwd=DIR)
+    latex_res = call(["xelatex", "-interaction", "errorstopmode", filename], cwd=DIR, stdout=DEVNULL)
 
     if latex_res != 0:
         print("WARNING: xelatex failed")

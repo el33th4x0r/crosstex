@@ -3,8 +3,6 @@ import re
 
 import crosstex.style
 
-from crosstex.style.helper import monthno_to_short_string
-
 class PlainBbl(object):
 
     etalchar = '{\etalchar{+}}'
@@ -299,7 +297,7 @@ class Style(crosstex.style.Style):
             return self.render_str(year, 'year')
 
     def render_month(self, month, context=None, history=None):
-        return monthno_to_short_string(month.monthno)
+        return crosstex.style.monthno_to_short_string(month.monthno)
 
     def render_article(self, article, context=None, history=None):
         author  = self.render_author(article.author)
