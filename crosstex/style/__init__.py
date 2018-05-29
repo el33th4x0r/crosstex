@@ -94,10 +94,8 @@ def break_name(name, short=False, plain=False):
             if not plain:
                 value += charc
             nesting += 1
-        elif charc == ',':
+        elif charc == ',' and nesting == 0 and lastchar != '\\':
             logger.warning("Name '" + name + "' contains a comma. Make sure it is formatted <first middle last>")
-        elif nesting == 0 and lastchar != '\\':
-            pass
         else:
             if not plain or (charc != '\\' and lastchar != '\\'):
                 value += charc
