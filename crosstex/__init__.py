@@ -129,6 +129,7 @@ class Database(object):
     def lookup(self, key):
         if key.startswith('!'):
             return self._semantic_lookup(key)
+
         return self._lookup(key)[0]
 
     def _semantic_lookup(self, key, context=None):
@@ -154,6 +155,7 @@ class Database(object):
         Evaluate conditional fields, inheritance, @extend entries, etc. until
         the entry is stable and return the result.
         '''
+
         if key in self._parser.alias:
             key = self._parser.alias[key]
             if key.startswith('!'):
@@ -350,13 +352,14 @@ class Database(object):
                 for k in entry.keys:
                     if k not in keys:
                         todo.add(k)
+
         if base is None:
             if extensions:
-                logger.error(key + ' is extended but never defined.')
+                logger.error("Source " + key + ' is extended but never defined.')
             elif key in builtins:
                 base = builtins[key]
             else:
-                raise CrossTeXError(key + " is never defined.")
+                raise CrossTeXError("Source " + key + " is never defined.")
 
         # XXX provide a guaranteed order for the extensions.
         # In an ideal world we'd traverse includes in a DFS manner according to

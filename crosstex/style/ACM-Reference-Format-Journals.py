@@ -1,9 +1,7 @@
 import math
 import re
 
-import crosstex.latex
 import crosstex.style
-
 
 class ACMJournalBbl(object):
 
@@ -28,7 +26,7 @@ class ACMJournalBbl(object):
     def item(self, key, label, rendered_obj):
         if label:
             label = '[%s]' % label
-        return '\n' + ('\\bibitem%s{%s}\n' % (label, key)) + crosstex.latex.to_latex(rendered_obj) + '\n'
+        return '\n' + ('\\bibitem%s{%s}\n' % (label, key)) + rendered_obj + '\n'
 
     def block(self, text):
         return text.strip()

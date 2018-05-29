@@ -26,6 +26,9 @@ def run_test(path, filename):
     # Run test
     res = call(["crosstex" , "-v", filename], cwd=DIR)
 
+    # Compile final doc
+    latex_res = latex_res and call(["xelatex", "-interaction", "errorstopmode", filename], cwd=DIR, stdout=DEVNULL)
+
     num_tests += 1
 
     if res == 0 and latex_res == 0:

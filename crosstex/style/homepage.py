@@ -1,9 +1,7 @@
 import math
 
-import crosstex.latex
 import crosstex.style
 import crosstex.style.plain
-
 
 class HomepageHtml(object):
 
