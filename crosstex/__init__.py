@@ -23,8 +23,6 @@ import re
 import crosstex.objects
 import crosstex.parse
 
-from crosstex.builtins import builtins
-
 class CrossTeXError(Exception): pass
 
 logger = logging.getLogger('crosstex')
@@ -356,8 +354,6 @@ class Database(object):
         if base is None:
             if extensions:
                 logger.error("Source " + key + ' is extended but never defined.')
-            elif key in builtins:
-                base = builtins[key]
             else:
                 raise CrossTeXError("Source " + key + " is never defined.")
 

@@ -297,7 +297,7 @@ class Style(crosstex.style.Style):
             return self.render_str(year, 'year')
 
     def render_month(self, month, context=None, history=None):
-        return crosstex.style.monthno_to_short_string(month.monthno)
+        return self.render_str(month, 'shortname')
 
     def render_article(self, article, context=None, history=None):
         author  = self.render_author(article.author)

@@ -131,7 +131,9 @@ class location(string):
 
 class month(Object):
     monthno = Field(types=[int])
-    
+    shortname = Field(required=True, alternates=('name', 'longname'))
+    longname  = Field(required=True, alternates=('name', 'shortname'))
+
 class institution(string):
     address = Field(types=(location, country, state))
 

@@ -5,12 +5,8 @@ import logging
 
 import crosstex
 import crosstex.style
-from crosstex.constants import SHORT_MONTHS
 
 logger = logging.getLogger('crosstex')
-
-def monthno_to_short_string(month):
-    return SHORT_MONTHS[month - 1]
 
 class Heading(object):
 
