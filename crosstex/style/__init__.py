@@ -492,18 +492,18 @@ def label_generate_initials(citations):
         label = crosstex.style.label_initials(author)
         if year:
             if isinstance(year, crosstex.parse.Value):
-                label += '%02i' % (year.value % 100)
+                label += '%02i' % (int(year.value) % 100)
             else:
                 label += '%02i' % (year % 100)
         by_label[label].append(cite)
     by_cite = {}
-    for label, citelist in by_label.iteritems():
+    for label, citelist in by_label.items():
         suffixes = itertools.repeat('')
         if len(citelist) > 1:
             alpha = ['', ''] + list('abcdefghijklmnopqrstuvwxyz')
             suffixes = itertools.imap(lambda y: ''.join(y), itertools.combinations(alpha, 3))
         try:
-            for suffix, cite in itertools.izip(suffixes, citelist):
+            for suffix, cite in zip(suffixes, citelist):
                 by_cite[cite] = label + suffix
         except StopIteration:
             raise crosstex.CrossTeXError('Way too many citations with the same author initials in the same year')
@@ -534,7 +534,7 @@ def label_generate_lastnames(citations):
                 label += '{%i}' % year
         by_label[label].append(cite)
     by_cite = {}
-    for label, citelist in by_label.iteritems():
+    for label, citelist in by_label.items():
         suffixes = itertools.repeat('')
         if len(citelist) > 1:
             alpha = ['', ''] + list('abcdefghijklmnopqrstuvwxyz')
