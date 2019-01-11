@@ -19,25 +19,36 @@ class Field(object):
         self.types += (str, crosstex.parse.Value)
         self.iterable = iterable
         self.name = None
+    
     def __get__(self, obj, objtype):
         if hasattr(obj, '_' + self.name):
             return getattr(obj, '_' + self.name)
         return None
+
     def __set__(self, obj, value):
-        if value is not None and \
-           value.__class__ not in self.types and \
-           not (self.iterable and isinstance(value, collections.Iterable) and
-                all([isinstance(v, self.types) for v in value])):
+        ''' Set the filed of a specified object '''
+
+        # It is a single value
+        is_compatible_type = value is None or value.__class__ in self.types
+
+        # It's multiple values, we need to check each values type
+        has_compatible_subtypes = self.iterable and \
+                isinstance(value, collections.Iterable) and \
+                all([isinstance(v, self.types) for v in value])
+
+        if is_compatible_type or has_compatible_subtypes:
+            setattr(obj, '_' + self.name, value)
+        else:
             raise TypeError('Field %s does not allow type %s' %
-                            (self.name, unicode(type(value))))
-        setattr(obj, '_' + self.name, value)
+                            (self.name, str(type(value))))
 
 class ObjectMeta(type):
     def __new__(cls, name, bases, dct):
         allowed = set([])
         required = set([])
         alternates = {}
-        for attr, value in dct.iteritems():
+
+        for attr, value in dct.items():
             if attr == 'citeable':
                 assert value.__class__ in (CiteableTrue, CiteableFalse)
             elif not attr.startswith('_') and not callable(value):
@@ -46,7 +57,7 @@ class ObjectMeta(type):
                 allowed.add(attr)
                 if value.required:
                     required.add(attr)
-                if isinstance(value.alternates, unicode):
+                if isinstance(value.alternates, str):
                     alternates[attr] = value.alternates
                 elif isinstance(value.alternates, collections.Iterable):
                     assert all([isinstance(a, str) for a in value.alternates])
@@ -54,6 +65,7 @@ class ObjectMeta(type):
                 else:
                     assert False
                 value.name = attr
+
         optional = allowed - required
         assert len(bases) <= 1
         for base in bases:
@@ -72,13 +84,17 @@ class ObjectMeta(type):
         dct['alternates'] = alternates
         return super(ObjectMeta, cls).__new__(cls, name, bases, dct)
 
-class Object(object):
-    __metaclass__ = ObjectMeta
+class Object(metaclass = ObjectMeta):
     citeable = CiteableFalse()
 
     def __init__(self, **kwargs):
-        for key, word in kwargs.iteritems():
-            assert not key.startswith('_') and hasattr(self, key)
+        for key, word in kwargs.items():
+            if key.startswith('_'):
+                raise CrossTeXError("Invalid keyname. Starts with '_'.")
+
+            if not hasattr(self, key):
+                raise CrossTeXError("Cannot set attribute. No such field " + key + ".")
+            
             setattr(self, key, word)
 
     def isset_field(self, name):
@@ -87,7 +103,7 @@ class Object(object):
     def set_field(self, name, value):
         setattr(self, name, value)
 
-    def iteritems(self):
+    def items(self):
         for f in self.allowed:
             v = getattr(self, f, None)
             yield (f, v)
@@ -95,6 +111,8 @@ class Object(object):
 ###############################################################################
 
 class string(Object):
+    ''' A string constants. Can either be a single string or a tuple of short and longname'''
+
     name      = Field(alternates=('longname', 'shortname'))
     shortname = Field(required=True, alternates=('name', 'longname'))
     longname  = Field(required=True, alternates=('name', 'shortname'))
@@ -111,8 +129,10 @@ class location(string):
     state   = Field(types=(state,))
     country = Field(types=(country,))
 
-class month(string):
-    monthno = Field()
+class month(Object):
+    monthno = Field(types=[int])
+    shortname = Field(required=True, alternates=('name', 'longname'))
+    longname  = Field(required=True, alternates=('name', 'shortname'))
 
 class institution(string):
     address = Field(types=(location, country, state))
@@ -150,7 +170,7 @@ def Author(required=False):
     return Field(required=True, types=(author,), iterable=True)
 
 def BookTitle(required=False):
-    return Field(required=required, types=(conference, conferencetrack, workshop))
+    return Field(required=required, types=(conference, conferencetrack, workshop, string)) # FIXME allow string?
 
 ###############################################################################
 

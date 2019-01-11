@@ -1,1 +1,9 @@
 *.pyc
+*.aux
+*.log
+*.cache
+*.pdf
+*.bbl
+*.out
+*.swp
+build/

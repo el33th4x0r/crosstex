@@ -8,9 +8,7 @@ import sys
 import crosstex
 import crosstex.style
 
-
 logger = logging.getLogger('crosstex')
-
 
 parser = argparse.ArgumentParser(prog='crosstex',
                                  description='A modern, object-oriented bibliographic tool.')
@@ -66,7 +64,8 @@ parser = argparse.ArgumentParser(prog='crosstex',
 #                         'First" instead of "First Last" (the latter is the '
 #                         'default).  XXX:ignored')
 #parser.add_argument('--no-last-first')
-parser.add_argument('--version', version='CrossTeX 0.7.0', action='version')
+parser.add_argument('--version', version='CrossTeX 0.9.0', action='version')
+parser.add_argument('-v', '--verbose', action='store_true')
 parser.add_argument('-d', '--dir', metavar='DIR', action='append', dest='dirs',
                     help='Add a directory in which to find data files, searched '
                          'from last specified to first.')
@@ -130,6 +129,10 @@ parser.add_argument('--reverse-heading', metavar='FIELD', dest='heading', action
 
 parser.add_argument('-o', '--output', metavar='FILE',
                     help='Write the bibliography to the specified output file.')
+parser.add_argument('--no-pages', action='store_const', const=True, default=False,
+                    help='Skip pages.')
+parser.add_argument('--no-address', action='store_const', const=True, default=False,
+                    help='Skip address.')
 parser.add_argument('--add-in', action='store_const', const=True, default=False,
                     help='Add "In" for articles.')
 parser.add_argument('--add-proc', dest='add_proc',
@@ -149,8 +152,18 @@ def main(argv):
                [os.path.join(os.path.join(os.path.expanduser('~'), '.crosstex'))] + \
                ['/usr/local/share/crosstex'] + \
                ['/XXX']
+
+        if args.verbose:
+            logger.setLevel(logging.DEBUG)
+            logging.getLogger('crosstex.parse').setLevel(logging.DEBUG)
+
         xtx = crosstex.CrossTeX(xtx_path=path)
         xtx.set_titlecase(args.titlecase)
+
+        if args.no_pages:
+            xtx.no_pages()
+        if args.no_address:
+            xtx.no_address()
         if args.add_in:
             xtx.add_in()
         if args.add_proc == 'proc':
@@ -162,6 +175,7 @@ def main(argv):
         xtx.set_style(args.fmt, args.style, args.cite_by)
         for f in reversed(args.files):
             xtx.parse(f)
+
         # We'll use this check later
         is_aux = os.path.splitext(args.files[-1])[1] == '.aux' or \
                  xtx.aux_citations() and os.path.splitext(args.files[-1])[1] == ''
@@ -177,6 +191,7 @@ def main(argv):
         else:
             warn_uncitable = False
             cite = xtx.all_citations()
+
         objects = [(c, xtx.lookup(c)) for c in cite]
         if warn_uncitable:
             for c in [c for c, o in objects if not o or not o.citeable]:
@@ -188,7 +203,7 @@ def main(argv):
                 unique[o].append(c)
             else:
                 unique[o] = [c]
-        for o, cs in unique.iteritems():
+        for o, cs in unique.items():
             if len(cs) > 1:
                 cites = ', '.join(['%r' % c for c in cs])
                 logger.warning("Citations %s match to the same object; you'll see duplicates" % cites)
@@ -203,16 +218,16 @@ def main(argv):
             return 1
         if args.output:
             with open(args.output, 'w') as fout:
-                fout.write(rendered)
+                fout.write(rendered.decode('utf-8'))
                 fout.flush()
         elif is_aux and args.fmt == 'bbl':
             with open(os.path.splitext(args.files[-1])[0] + '.bbl', 'w') as fout:
-                fout.write(rendered)
+                fout.write(rendered.decode('utf-8'))
                 fout.flush()
         else:
-            sys.stdout.write(rendered)
+            sys.stdout.write(rendered.decode('utf-8'))
             sys.stdout.flush()
         return 0
     except crosstex.CrossTeXError as e:
-        print >>sys.stderr, e
+        logger.error(str(e))
         return 1

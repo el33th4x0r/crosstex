@@ -23,6 +23,8 @@ import re
 import crosstex.objects
 import crosstex.parse
 
+class CrossTeXError(Exception): pass
+
 logger = logging.getLogger('crosstex')
 
 class UNIQUE(object): pass
@@ -48,7 +50,7 @@ class Constraint(object):
                     values = constraint[0].split('-')
                 else:
                     field = 'year'
-                    values = [unicode(values)]
+                    values = [str(values)]
             else:
                 field = constraint[0]
                 values = constraint[1].split('-')
@@ -64,20 +66,20 @@ class Constraint(object):
 
     def match(self, entry):
         entry = entry[0]
-        for field, values in self._fields.iteritems():
+        for field, values in self._fields.items():
             if not hasattr(entry, field):
                 return False
             tocheck = getattr(entry, field)
             strings = set([])
             if isinstance(tocheck, crosstex.parse.Value):
-                strings.add(unicode(tocheck.value).lower())
+                strings.add(str(tocheck.value).lower())
             elif isinstance(tocheck, crosstex.objects.string):
-                strings.add(unicode(tocheck.name.value).lower())
-                strings.add(unicode(tocheck.shortname.value).lower())
-                strings.add(unicode(tocheck.longname.value).lower())
+                strings.add(str(tocheck.name.value).lower())
+                strings.add(str(tocheck.shortname.value).lower())
+                strings.add(str(tocheck.longname.value).lower())
             elif field == 'author' and isinstance(tocheck, list):
                 for a in tocheck:
-                    strings.add(unicode(a.value).lower())
+                    strings.add(str(a.value).lower())
             strings = tuple(strings)
             for value in values:
                 v = value.lower()
@@ -114,7 +116,7 @@ class Database(object):
         return copy.copy(self._parser.cite)
 
     def all_citations(self):
-        return copy.copy(self._parser.entries.keys())
+        return copy.copy(list(self._parser.entries))
 
     def titlephrases(self):
         return copy.copy(self._parser.titlephrases)
@@ -125,6 +127,7 @@ class Database(object):
     def lookup(self, key):
         if key.startswith('!'):
             return self._semantic_lookup(key)
+
         return self._lookup(key)[0]
 
     def _semantic_lookup(self, key, context=None):
@@ -150,6 +153,13 @@ class Database(object):
         Evaluate conditional fields, inheritance, @extend entries, etc. until
         the entry is stable and return the result.
         '''
+
+        if key in self._parser.alias:
+            key = self._parser.alias[key]
+            if key.startswith('!'):
+                return self._semantic_lookup(key)
+            return self._lookup(key)
+
         # Check for loops
         context = list(context or [])
         if key in context:
@@ -157,13 +167,16 @@ class Database(object):
             logger.error('There is a reference cycle: %s' % ', '.join(context))
             return (None, None)
         context.append(key)
+
         # This makes things about 30% faster
         if key in self._cache:
             return self._cache[key]
+
         # Lookup all raw Entry objects
         keys, base, extensions = self._select(key)
         if base is None:
             return (None, None)
+
         # Get the class from crosstex.objects that corresponds to this object
         if not hasattr(crosstex.objects, base.kind):
             logger.error('%s:%d: There is no such thing as a @%s.' % (base.file, base.line, base.kind))
@@ -175,30 +188,32 @@ class Database(object):
             return (None, None)
         fields = {}
         conditionals = []
+
         # This loop iterates through the base and extensions, applying fields
         # from each.
         for entry in [base] + extensions:
             dupes = set([])
+
             for name, value in entry.defaults:
                 if name in kind.allowed and name not in fields:
                     fields[name] = value
+
             for f in entry.fields:
-                if not isinstance(f, crosstex.parse.Field):
-                    continue
-                if f.name in dupes:
-                    logger.warning('%s:%d: %s field is duplicated.' %
-                                   (f.value.file, f.value.line, f.name))
-                elif f.name not in kind.allowed:
-                    logger.warning('%s:%d: No such field %s in %s.' %
-                                   (f.value.file, f.value.line, f.name, base.kind))
+                if isinstance(f, crosstex.parse.Field):
+                    if f.name in dupes:
+                        logger.warning('%s:%d: %s field is duplicated.' %
+                                       (f.value.file, f.value.line, f.name))
+                    elif f.name not in kind.allowed:
+                        logger.warning('%s:%d: No such field %s in %s.' %
+                                       (f.value.file, f.value.line, f.name, base.kind))
+                    else:
+                        fields[f.name] = f.value
+                        dupes.add(f.name)
+                elif isinstance(f, crosstex.parse.Conditional):
+                    conditionals.append(f)
                 else:
-                    fields[f.name] = f.value
-                    dupes.add(f.name)
-            for c in entry.fields:
-                if not isinstance(c, crosstex.parse.Conditional):
-                    continue
-                conditionals.append(c)
-        assert all([isinstance(c, crosstex.parse.Conditional) for c in conditionals])
+                    raise RuntimeError("unknown entry type  " + str(type(f)) + ": " + str(f))
+
         # This loop resolves conditionals or references until the object reaches
         # a fixed point
         anotherpass = True
@@ -206,7 +221,7 @@ class Database(object):
         while anotherpass:
             anotherpass = False
             # This loop pulls references from other objects
-            for name, value in fields.iteritems():
+            for name, value in fields.items():
                 if not isinstance(value, crosstex.parse.Value):
                     continue
                 if value.kind != 'key':
@@ -251,12 +266,15 @@ class Database(object):
                             logger.warning('%s:%d: %s field not applied from conditional at %s:%d' %
                                            (base.file, base.line, f.name, c.file, c.line))
                 applied_conditionals.add(c)
+
             # This loop expands author/editor fields
-            for name, value in fields.iteritems():
+            for name, value in fields.items():
                 if name not in ('author', 'editor'):
                     continue
+
                 if not isinstance(value, crosstex.parse.Value):
                     continue
+
                 names = []
                 for n in _author.split(value.value):
                     if n in self._parser.entries:
@@ -272,20 +290,25 @@ class Database(object):
                 fields[name] = names
                 anotherpass = True
                 break
+        
         # Do a pass over alternate fields to copy them
-        for name, alternates in kind.alternates.iteritems():
+        for name, alternates in kind.alternates.items():
             if name not in fields:
                 for f in alternates:
                     if f in fields:
+                        logger.debug("Using alternate value for " + key + "." + name + " copied from " + key + "." + f)
                         fields[name] = fields[f]
                         break
+
         # Ensure required fields are all provided
         for name in kind.required:
             if name not in fields:
                 logger.error('%s:%d: Missing required field %s in %s.' %
                              (base.file, base.line, name, base.kind))
+        
         # Create the object
         k = kind(**fields)
+        
         # Memoize
         for key in keys:
             self._cache[key] = (k, conditionals)
@@ -306,13 +329,16 @@ class Database(object):
         seen = set([])
         base = None
         extensions = []
+
         while todo:
             key = todo.pop()
             keys.add(key)
             for entry in self._parser.entries.get(key, []):
-                if entry in seen:
-                    continue;
-                seen.add(entry)
+                if entry.uid in seen:
+                    continue
+
+                seen.add(entry.uid)
+
                 if entry.kind == 'extend':
                     extensions.append(entry)
                 elif base is None:
@@ -324,19 +350,19 @@ class Database(object):
                 for k in entry.keys:
                     if k not in keys:
                         todo.add(k)
+
         if base is None:
             if extensions:
-                logger.error('%s is extended but never defined.' % key)
+                logger.error("Source " + key + ' is extended but never defined.')
             else:
-                logger.error('%s is never defined.' % key)
+                raise CrossTeXError("Source " + key + " is never defined.")
+
         # XXX provide a guaranteed order for the extensions.
         # In an ideal world we'd traverse includes in a DFS manner according to
         # include order, thus guaranteeing that extensions will be resolved in a
         # consistent fashion.  Right now, conflicting extensions will be
         # resolved in a predictable manner
         return (keys, base, extensions)
-
-class CrossTeXError(Exception): pass
 
 class CrossTeX(object):
 
@@ -347,6 +373,12 @@ class CrossTeX(object):
         self._flags = set([])
         self._options = {}
         self._style = None
+
+    def no_pages(self):
+        self._flags.add('no-pages')
+
+    def no_address(self):
+        self._flags.add('no-address')
 
     def add_in(self):
         self._flags.add('add-in')
@@ -381,7 +413,7 @@ class CrossTeX(object):
                 raise CrossTeXError('Could not import style %r' % style)
             styleclass = getattr(stylemod, 'Style')
         except ImportError as e:
-            raise CrossTeXError('Could not import style %r' % style)
+            raise CrossTeXError('Could not import style %r' % style + ": " + str(e))
         if fmt not in styleclass.formats():
             raise CrossTeXError('Style %r does not support format %r' % (style, fmt))
         self._style = styleclass(fmt, self._flags, self._options, self._db)

@@ -1,10 +1,12 @@
 import collections
 import itertools
 import re
+import logging
 
 import crosstex
 import crosstex.style
 
+logger = logging.getLogger('crosstex')
 
 class Heading(object):
 
@@ -67,7 +69,10 @@ def break_name(name, short=False, plain=False):
     lastchar = ' '
     names = []
     nesting = 0
-    assert isinstance(name, unicode)
+
+    if not isinstance(name, str):
+        raise CrossTeXError("Name is not a string: " + str(name))
+
     for i in range(0, len(name)):
         charc = name[i]
         if nesting == 0 and lastchar != '\\' and lastchar != ' ' and charc == ' ':
@@ -85,8 +90,8 @@ def break_name(name, short=False, plain=False):
             if not plain:
                 value += charc
             nesting += 1
-        elif nesting == 0 and lastchar != '\\' and charc == ',':
-            pass
+        elif charc == ',' and nesting == 0 and lastchar != '\\':
+            logger.warning("Name '" + name + "' contains a comma. Make sure it is formatted <first middle last>")
         else:
             if not plain or (charc != '\\' and lastchar != '\\'):
                 value += charc
@@ -265,7 +270,7 @@ def names_last_first(names):
 ################################ List Formatters ###############################
 
 def list_comma_and(objs):
-    assert all([isinstance(s, unicode) or isinstance(s, str) for s in objs])
+    assert all([isinstance(s, str) or isinstance(s, str) for s in objs])
     value = ''
     for i in range(len(objs)):
         if value:
@@ -274,7 +279,7 @@ def list_comma_and(objs):
             value += ' '
             if i == len(objs) - 1:
                 value += 'and '
-        value += unicode(objs[i])
+        value += str(objs[i])
     return value
 
 ############################### Title Formatters ###############################
@@ -452,20 +457,84 @@ def label_fullnames(authors):
             value += ' et al.'
         return value
 
+def label_lastnames_list(authors):
+    broken_names = [break_name(a) for a in authors]
+    last_names   = [' '.join(mname + lname) for (fname, mname, lname, sname) in broken_names]
+    return last_names
+
+def label_lastnames_all(authors):
+    value = ''
+    last_names = label_lastnames_list(authors)
+    if len(last_names) == 1:
+        value = last_names[0]
+    elif len(last_names) == 2:
+        value = '%s and %s' % (last_names[0], last_names[1])
+    elif len(last_names) > 0:
+        value = '%s, and %s' % (', '.join(last_names[:-1]), last_names[-1])
+    return value
+
+def label_lastnames_first(authors):
+    last_names = label_lastnames_list(authors)
+    if len(last_names) == 0:
+        return ''
+    elif len(last_names) == 1:
+        return last_names[0]
+    else:
+        return '%s et~al\mbox{.}' % last_names[0]
+
 def label_generate_initials(citations):
     by_label = collections.defaultdict(list)
     for cite, obj in citations:
+        if not obj.author:
+            continue
         author = [a.name.value if hasattr(a, 'name') else a.value for a in obj.author]
         year = getattr(obj, 'year', None)
         label = crosstex.style.label_initials(author)
         if year:
             if isinstance(year, crosstex.parse.Value):
-                label += '%02i' % (year.value % 100)
+                label += '%02i' % (int(year.value) % 100)
             else:
                 label += '%02i' % (year % 100)
         by_label[label].append(cite)
     by_cite = {}
-    for label, citelist in by_label.iteritems():
+    for label, citelist in by_label.items():
+        suffixes = itertools.repeat('')
+        if len(citelist) > 1:
+            alpha = ['', ''] + list('abcdefghijklmnopqrstuvwxyz')
+            suffixes = itertools.imap(lambda y: ''.join(y), itertools.combinations(alpha, 3))
+        try:
+            for suffix, cite in zip(suffixes, citelist):
+                by_cite[cite] = label + suffix
+        except StopIteration:
+            raise crosstex.CrossTeXError('Way too many citations with the same author initials in the same year')
+    return [by_cite[c] for c, o in citations]
+
+def label_generate_fullnames(citations):
+    assert False # XXX
+
+def label_generate_lastnames(citations):
+    by_label = collections.defaultdict(list)
+    for cite, obj in citations:
+        if not obj.author:
+            print('author', cite)
+        assert obj.author
+        author = [a.name.value if hasattr(a, 'name') else a.value for a in obj.author]
+        year = getattr(obj, 'year', None)
+        if not year:
+            year = getattr(obj, 'accessyear', None)
+        if not year:
+            print('year', cite)
+        assert year
+
+        label = '\protect\citeauthoryear{%s}{%s}' % (label_lastnames_all(author), label_lastnames_first(author))
+        if year:
+            if isinstance(year, crosstex.parse.Value):
+                label += '{%i}' % year.value
+            else:
+                label += '{%i}' % year
+        by_label[label].append(cite)
+    by_cite = {}
+    for label, citelist in by_label.items():
         suffixes = itertools.repeat('')
         if len(citelist) > 1:
             alpha = ['', ''] + list('abcdefghijklmnopqrstuvwxyz')
@@ -477,5 +546,3 @@ def label_generate_initials(citations):
             raise crosstex.CrossTeXError('Way too many citations with the same author initials in the same year')
     return [by_cite[c] for c, o in citations]
 
-def label_generate_fullnames(citations):
-    assert False # XXX

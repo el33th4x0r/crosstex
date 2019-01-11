@@ -15,29 +15,48 @@ import collections
 import copy
 import logging
 import os
-import cPickle as pickle
 import re
+
+try:
+    import cPickle as pickle
+except:
+    import pickle
 
 import ply.lex
 import ply.yacc
 
 import crosstex
+from crosstex.constants import *
 
 logger = logging.getLogger('crosstex.parse')
 
-Entry = collections.namedtuple('Entry', ('kind', 'keys', 'fields', 'file', 'line', 'defaults'))
+next_uid = 1
+
+Entry = collections.namedtuple('Entry', ('uid', 'kind', 'keys', 'fields', 'file', 'line', 'defaults'))
 Value = collections.namedtuple('Value', ('file', 'line', 'kind', 'value'))
 Field = collections.namedtuple('Field', ('name', 'value'))
 Conditional = collections.namedtuple('Conditional', ('file', 'line', 'if_fields', 'then_fields'))
 
+def create_entry(kind, keys, fields, _file, line, defaults):
+    global next_uid
+    uid = next_uid
+    next_uid += 1
+    
+    logger.debug("creating " + kind + " with keys " + str(keys) + " and fields " + str(fields))
+
+    return Entry(uid, kind, keys, fields, _file, line, defaults)
+
 def create_value(_file, line, value, kind=None):
     if kind is None:
-        try:
+        if isinstance(value, int):
             value = int(value)
             kind = 'number'
-        except ValueError:
-            value = unicode(value)
+        elif isinstance(value, str):
+            value = str(value)
             kind = 'string'
+        else:
+            raise RuntimeError("Invalid type " + str(type(value)))
+
     return Value(_file, line, kind, value)
 
 class XTXFileInfo:
@@ -45,6 +64,7 @@ class XTXFileInfo:
 
     def __init__(self):
         self.cite = set([])
+        self.alias = {}
         self.titlephrases = set([])
         self.titlesmalls = set([])
         self.preambles = set([])
@@ -56,19 +76,23 @@ class XTXFileInfo:
 
     def merge(self, db):
         db.cite = set(db.cite) | set(self.cite)
+        db.alias = db.alias.copy()
+        db.alias.update(self.alias)
         db.titlephrases = set(db.titlephrases) | set(self.titlephrases)
         db.titlesmalls = set(db.titlesmalls) | set(self.titlesmalls)
         db.preambles = set(db.preambles) | set(self.preambles)
+        
         for k, es in self.entries.items():
             db.entries[k] += es
         for file in self.tobeparsed:
-            db.parse(file, exts=['.xtx', '.bib'])
+            db.parse(file, exts=[CROSSTEX_FILE_ENDING, BIBTEX_FILE_ENDING])
 
 class Parser:
     'A structure of almost raw data from the databases.'
 
     def __init__(self, path):
         self.cite = set([])
+        self.alias = {}
         self.titlephrases = set([])
         self.titlesmalls = set([])
         self.preambles = set([])
@@ -82,11 +106,11 @@ class Parser:
     def set_path(self, path):
         self._path = path
 
-    def parse(self, name, exts=['.aux', '.xtx', '.bbl']):
+    def parse(self, name, exts=['.aux', CROSSTEX_FILE_ENDING, BIB_CACHE_FILE_ENDING]):
         'Find a file with a reasonable extension and extract its information.'
         if name in self._seen:
             logger.debug('Already processed %r.' % name)
-            for ext, path in self._seen[name].iteritems():
+            for ext, path in self._seen[name].items():
                 if ext in exts:
                     return path
         if os.path.sep in name:
@@ -151,7 +175,7 @@ class Parser:
                 self._bibstyle = line[10:].rstrip().rstrip('}').split(' ')
             elif line.startswith(r'\bibdata'):
                 for f in line[9:].rstrip().rstrip('}').split(','):
-                    self.parse(f, ['.xtx', '.bib'])
+                    self.parse(f, [CROSSTEX_FILE_ENDING, BIBTEX_FILE_ENDING])
             elif line.startswith(r'\@input'):
                 for f in line[8:].rstrip().rstrip('}').split(','):
                     self.parse(f, ['.aux'])
@@ -162,7 +186,7 @@ class Parser:
     def _parse_ext_xtx(self, path):
         'Parse and handle options set in a CrossTeX .xtx or BibTeX .bib database file.'
         cache_path = os.path.join(os.path.dirname(path),
-                                  '.' + os.path.basename(path) + '.cache')
+                                  os.path.basename(path) + CACHE_FILE_ENDING)
         try:
             if os.path.exists(cache_path) and \
                os.path.getmtime(path) < os.path.getmtime(cache_path):
@@ -182,7 +206,9 @@ class Parser:
         logger.debug('Processing database %s.' % path)
         db = XTXFileInfo()
         stream = open(path)
-        contents = stream.read().decode('utf8')
+        
+        contents  = stream.read()
+        
         if contents:
             lexer = ply.lex.lex(reflags=re.UNICODE)
             lexer.path = path
@@ -208,7 +234,7 @@ class Parser:
             logger.error("Could not write cache '%r', falling back to database: %s." % (cache_path, e))
         return path
 
-    def _check_ext(self, name, ext, exts=['.aux', '.xtx', '.bib']):
+    def _check_ext(self, name, ext, exts=['.aux', CROSSTEX_FILE_ENDING, BIBTEX_FILE_ENDING]):
         func = '_parse_ext_' + ext[1:]
         if not hasattr(self, func) or not ext in exts: 
             logger.error('Can not parse %r because the extension is not %s.'
@@ -226,8 +252,8 @@ andre = re.compile(r'\s+and\s+')
 
 tokens = ( 'AT', 'COMMA', 'OPENBRACE', 'CLOSEBRACE', 'LBRACK',
   'RBRACK', 'EQUALS', 'ATINCLUDE', 'ATSTRING', 'ATEXTEND', 'ATPREAMBLE',
-  'ATCOMMENT', 'ATDEFAULT', 'ATTITLEPHRASE', 'ATTITLESMALL', 'ATCITE', 'NAME',
-  'NUMBER', 'STRING', )
+  'ATCOMMENT', 'ATDEFAULT', 'ATTITLEPHRASE', 'ATTITLESMALL', 'ATCITE',
+  'ATALIAS', 'NAME', 'NUMBER', 'STRING', )
 
 t_ignore = ' \t'
 
@@ -277,6 +303,11 @@ def t_ATTITLESMALL(t):
 
 def t_ATCITE(t):
     r'@[Cc][Ii][Tt][Ee]'
+    t.lexer.expectstring = True
+    return t
+
+def t_ATALIAS(t):
+    r'@[Aa][Ll][Ii][Aa][Ss]'
     t.lexer.expectstring = True
     return t
 
@@ -402,11 +433,16 @@ def p_stmt_cite(t):
     'stmt : ATCITE STRING'
     t.lexer.db.cite.add(t[2])
 
+def p_stmt_alias(t):
+    'stmt : ATALIAS STRING STRING'
+    t.lexer.db.alias[t[2]] = t[3]
+
 def p_stmt_string(t):
     'stmt : ATSTRING OPENBRACE fields CLOSEBRACE'
     file, line, defaults = t.lexer.file, t.lineno(2), t.lexer.defaults
+    
     for key, value in t[3]:
-        ent = Entry('string', [key], [('name', value)], file, line, defaults)
+        ent = create_entry('string', [key], [Field('name', value)], file, line, defaults)
         t.lexer.db.entries[key].append(ent)
 
 def p_stmt_entry(t):
@@ -417,7 +453,7 @@ def p_stmt_entry(t):
 def p_entry(t):
     'entry : AT NAME OPENBRACE keys COMMA conditionals CLOSEBRACE'
     file, line, defaults = t.lexer.file, t.lineno(2), t.lexer.defaults
-    t[0] = Entry(t[2].lower(), t[4], t[6], file, line, defaults)
+    t[0] = create_entry(t[2].lower(), t[4], t[6], file, line, defaults)
 
 def p_entry_extend(t):
     '''
@@ -429,7 +465,7 @@ def p_entry_extend(t):
     else:
         fields = []
     file, line, defaults = t.lexer.file, t.lineno(1), t.lexer.defaults
-    t[0] = Entry('extend', t[3], fields, file, line, defaults)
+    t[0] = create_entry('extend', t[3], fields, file, line, defaults)
 
 def p_keys_singleton(t):
     'keys : NAME'

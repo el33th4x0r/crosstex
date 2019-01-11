@@ -1,3 +1,6 @@
+#! /usr/bin/python3
+
+
 from distutils.core import setup
 
 
@@ -10,14 +13,14 @@ classifiers = [ 'Development Status :: 5 - Production/Stable'
               ]
 
 setup(name='CrossTex',
-      version='0.8.dev',
-      author='Robert Escriva (maintainer)',
-      author_email='escriva@cs.cornell.edu',
+      version='0.9.dev',
+      author='Kai Mast (maintainer)',
+      author_email='crosstex@systems.cs.cornell.edu',
       packages=['crosstex'
                ,'crosstex.style'
                ],
       scripts=['bin/crosstex'],
-      url='http:///',
+      url='https://github.com/kaimast/crosstex',
       license='GPLv2',
       description='CrossTeX is a bibliography management tool',
       classifiers=classifiers,
